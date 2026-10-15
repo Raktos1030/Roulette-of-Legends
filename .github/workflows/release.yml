@@ -38,8 +38,9 @@ jobs:
         continue-on-error: true
         run: |
           perl -e 'alarm 180; exec @ARGV' "dist/Roulette of Legends Lite.app/Contents/MacOS/Roulette of Legends Lite" \
-            --autotest "$RUNNER_TEMP/autotest.txt" || true
-          cat "$RUNNER_TEMP/autotest.txt"
+            --autotest "$RUNNER_TEMP/autotest.txt" > "$RUNNER_TEMP/app.log" 2>&1 || true
+          python packaging/annotate.py "App self-test" "$RUNNER_TEMP/autotest.txt"
+          python packaging/annotate.py "App output" "$RUNNER_TEMP/app.log"
           grep -q "^OK$" "$RUNNER_TEMP/autotest.txt"
       - uses: actions/upload-artifact@v4
         with:

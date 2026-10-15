@@ -1,0 +1,39 @@
+# Checks the macOS Lite on every push to main: self-test from source, build, self-test of the built app.
+# Results (report, app output, errors.log) are posted as annotations of the run.
+name: Check
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  macos-lite:
+    runs-on: macos-14
+    env:
+      PYWEBVIEW_LOG: debug
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -r requirements.txt
+      - name: Self-test from source
+        continue-on-error: true
+        run: |
+          PYTHONPATH=lite perl -e 'alarm 180; exec @ARGV' python roulette_lol.py --autotest "$RUNNER_TEMP/source.txt" \
+            > "$RUNNER_TEMP/source.log" 2>&1 || true
+          python packaging/annotate.py "Source self-test" "$RUNNER_TEMP/source.txt"
+          python packaging/annotate.py "Source output" "$RUNNER_TEMP/source.log"
+          python packaging/annotate.py "Source errors.log" data/errors.log
+          grep -q "^OK$" "$RUNNER_TEMP/source.txt"
+      - run: python packaging/build.py lite --dist dist
+      - name: Self-test of the built app
+        continue-on-error: true
+        run: |
+          perl -e 'alarm 180; exec @ARGV' "dist/Roulette of Legends Lite.app/Contents/MacOS/Roulette of Legends Lite" \
+            --autotest "$RUNNER_TEMP/app.txt" > "$RUNNER_TEMP/app.log" 2>&1 || true
+          python packaging/annotate.py "App self-test" "$RUNNER_TEMP/app.txt"
+          python packaging/annotate.py "App output" "$RUNNER_TEMP/app.log"
+          python packaging/annotate.py "App errors.log" "$HOME/Library/Application Support/Roulette of Legends Lite/data/errors.log"
+          grep -q "^OK$" "$RUNNER_TEMP/app.txt"
