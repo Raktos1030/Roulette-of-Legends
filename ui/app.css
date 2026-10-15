@@ -1346,3 +1346,7 @@ body.maximized .rz { display: none; }
 .pm-foot { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 40px 30px; }
 .pm-foot p { margin: 0; font-size: 13px; }
 @media (max-width: 760px) { .pm-feats { grid-template-columns: 1fr; padding: 4px 20px 0; } .pm-head, .pm-foot { padding-left: 20px; padding-right: 20px; } .pm-foot { flex-direction: column; align-items: stretch; } }
+
+/* champion art under a thin translucent border: paint the art inside the border only, or it shows through the
+   border below the dark gradient (cards with an opaque gold border hid it) */
+.scard, .gcard, .duo-card, .gres-card { background-clip: padding-box; }
