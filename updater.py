@@ -16,6 +16,7 @@ Only the numbers change: the guide texts stay the same.
 """
 
 import gzip
+import hashlib
 import json
 import os
 import shutil
@@ -24,7 +25,7 @@ import time
 import urllib.error
 import urllib.request
 
-from core import DATA, T, log_error, read_json, write_json
+from core import DATA, LITE, T, log_error, read_json, write_json
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36"
 DD = "https://ddragon.leagueoflegends.com"
@@ -42,6 +43,12 @@ CACHE = os.path.join(DATA, "cache")
 CHECK_EVERY = 6 * 3600
 REFRESH_DAYS = 7
 MIN_PATCH_SHARE = 0.10   # the new patch must hold >= 10 % of the 30-day games (about 3 days)
+# stats published by .github/workflows/stats.yml on the repository's "stats" branch: the apps download them instead
+# of querying lolalytics and u.gg themselves (one update a day for everyone)
+STATS_URL = "https://raw.githubusercontent.com/Raktos1030/Roulette-of-Legends/stats/"
+STATS_FORMAT = 1
+STATS_FILES = ("stats.json", "compo.json", "champions.json", "items.json", "runes.json")
+CENTRAL_MAX_AGE = 14   # days; older published stats mean the workflow stopped, and the app updates on its own
 
 
 def fetch(url, tries=3, binary=False, timeout=45):
@@ -391,10 +398,18 @@ class Updater:
             raise Cancelled()
 
     # --- decision ---
-    def run(self, force=False):
+    def run(self, force=False, local=False):
+        """local: compute the stats here (lolalytics, u.gg) instead of downloading the published ones."""
         self.busy = True
         try:
             self._status({"state": "checking"})
+            if not local:
+                try:
+                    published = self._published(force)
+                except (IOError, ValueError, KeyError):
+                    published = None
+                if published is not None:
+                    return published
             versions = fetch(DD + "/api/versions.json")
             latest = versions[0]
             prev = next(v for v in versions if lola_patch(v) != lola_patch(latest))
@@ -436,6 +451,62 @@ class Updater:
             return True
         finally:
             self.busy = False
+
+    def _published(self, force=False):
+        """Downloads the stats published by the repository when they are newer than the local ones.
+        Returns True (installed), False (already up to date), or None when unavailable or stale."""
+        try:
+            manifest = fetch(STATS_URL + "manifest.json", tries=2, timeout=20)
+        except IOError:
+            return None
+        if not isinstance(manifest, dict) or manifest.get("format") != STATS_FORMAT or \
+                self._age_days(manifest.get("generated")) > CENTRAL_MAX_AGE:
+            return None
+        meta = self.core.data.meta
+        now = time.time()
+        self.state["last_check"] = now
+        self.state["last_check_txt"] = time.strftime("%d/%m/%Y %H:%M", time.localtime(now))
+        self._save_state()
+        if not force and (manifest.get("generated") or "") <= (meta.get("generated") or ""):
+            self._status({"state": "uptodate", "text": T("Statistiques à jour (patch %s).") % meta.get("patch")})
+            return False
+        files = {}
+        names = [n for n in STATS_FILES if not (LITE and n == "compo.json")]
+        for i, name in enumerate(names):
+            self._check_stop()
+            self._progress(i, len(names), T("Téléchargement des statistiques du patch %s…") % manifest.get("patch"))
+            info = (manifest.get("files") or {}).get(name) or {}
+            body = fetch(STATS_URL + name, binary=True, tries=2, timeout=60)
+            if not body or hashlib.sha256(body).hexdigest() != info.get("sha256"):
+                return None
+            files[name] = body
+        stats = json.loads(files["stats.json"].decode("utf-8"))
+        if len(stats.get("combos") or {}) < 0.95 * len(self.core.data.combos):
+            return None
+        dd_ver = stats["meta"].get("ddragon")
+        if dd_ver and dd_ver != meta.get("ddragon"):   # new patch: images of new champions, items and runes
+            self._status({"state": "building", "progress": 1.0, "text": T("Calcul des nouvelles statistiques…")})
+            full_fr = fetch("%s/cdn/%s/data/fr_FR/championFull.json" % (DD, dd_ver))["data"]
+            en = fetch("%s/cdn/%s/data/en_US/champion.json" % (DD, dd_ver))["data"]
+            runes_fr = fetch("%s/cdn/%s/data/fr_FR/runesReforged.json" % (DD, dd_ver))
+            runes = json.loads(files["runes.json"].decode("utf-8"))
+            self._download_assets(dd_ver, stats["combos"], runes.get("sums") or {}, full_fr, en, runes_fr)
+        os.makedirs(CACHE, exist_ok=True)
+        for name in ("stats.json", "compo.json", "champions.json"):
+            src = os.path.join(DATA, name)
+            if name in files and os.path.exists(src):
+                shutil.copy2(src, os.path.join(CACHE, name.replace(".json", "_previous.json")))
+        for name, body in files.items():
+            path = os.path.join(DATA, name)
+            with open(path + ".tmp", "wb") as f:
+                f.write(body)
+            os.replace(path + ".tmp", path)
+        self.state["last_ok"] = time.time()
+        self._save_state()
+        self.core.reload_data()
+        self._status({"state": "done", "text": T("Statistiques mises à jour : patch %s, données du %s.") % (
+            stats["meta"].get("patch"), time.strftime("%d/%m/%Y", time.strptime(stats["meta"]["generated"], "%Y-%m-%d")))})
+        return True
 
     def fill_duos(self):
         """Bot lane duos for stats that don't have them yet (one request per ADC and support guide, about a minute),
@@ -717,37 +788,18 @@ class Updater:
         runes_fr = fetch("%s/cdn/%s/data/fr_FR/runesReforged.json" % (DD, dd_ver))
         sums_fr = fetch("%s/cdn/%s/data/fr_FR/summoner.json" % (DD, dd_ver))["data"]
         rune_list = {"version": dd_ver, "trees": {}, "runes": {}, "sums": {}}
-        icons = []
         for tree in runes_fr:
             rune_list["trees"][str(tree["id"])] = {"name": tree["name"], "slots": [[r["id"] for r in sl["runes"]] for sl in tree["slots"]]}
-            icons.append((str(tree["id"]), tree["icon"]))
             for sl in tree["slots"]:
                 for r in sl["runes"]:
                     rune_list["runes"][str(r["id"])] = {"name": r["name"], "tree": tree["id"]}
-                    icons.append((str(r["id"]), r["icon"]))
         for v in sums_fr.values():
             rune_list["sums"][str(v["key"])] = {"name": v["name"], "image": v["image"]["full"]}
-        used = set()
-        for c in combos.values():
-            b = c.get("items") or {}
-            used.update(x[0] for x in b.get("start") or [])
-            used.update(b.get("core") or [])
-            for o in b.get("opts") or []:
-                used.update(o)
-            used.update(x[0] for x in b.get("pool") or [])
-            used.update(x[0] for x in b.get("boots") or [])
-            for bd in c.get("builds") or []:
-                used.update(bd.get("start", {}).get("ids") or [])
-                used.update(bd.get("core", {}).get("ids") or [])
-                for col in bd.get("opts") or []:
-                    used.update(o["id"] for o in col)
         rune_list["shards"] = {str(k): v[0] for k, v in SHARDS.items()}
         rune_list["shard_rows"] = SHARD_ROWS
-        icons += [(str(k), "perk-images/StatMods/%s.png" % v[1]) for k, v in SHARDS.items()]
 
         # 5. missing images (new champions, ability and suggested item icons)
-        self._assets(dd_ver, full_fr, en, [c["key"] for c in pool], sorted(str(i) for i in used), icons,
-                     [(k, v["image"]) for k, v in rune_list["sums"].items()])
+        self._download_assets(dd_ver, combos, rune_list["sums"], full_fr, en, runes_fr)
 
         # 6. replace (previous version kept in data/cache)
         for name in ("stats.json", "compo.json", "champions.json"):
@@ -844,6 +896,31 @@ class Updater:
                           "mobility": 2, "adaptive": adaptive, "source": "ddragon"}
         return out
 
+    def _download_assets(self, dd_ver, combos, sums, full_fr, en, runes_fr):
+        """Missing images for these stats: champions, abilities, items of the builds, runes, summoner spells."""
+        used = set()
+        for c in combos.values():
+            b = c.get("items") or {}
+            used.update(x[0] for x in b.get("start") or [])
+            used.update(b.get("core") or [])
+            for o in b.get("opts") or []:
+                used.update(o)
+            used.update(x[0] for x in b.get("pool") or [])
+            used.update(x[0] for x in b.get("boots") or [])
+            for bd in c.get("builds") or []:
+                used.update(bd.get("start", {}).get("ids") or [])
+                used.update(bd.get("core", {}).get("ids") or [])
+                for col in bd.get("opts") or []:
+                    used.update(o["id"] for o in col)
+        icons = []
+        for tree in runes_fr:
+            icons.append((str(tree["id"]), tree["icon"]))
+            for sl in tree["slots"]:
+                icons += [(str(r["id"]), r["icon"]) for r in sl["runes"]]
+        icons += [(str(k), "perk-images/StatMods/%s.png" % v[1]) for k, v in SHARDS.items()]
+        self._assets(dd_ver, full_fr, en, [c["key"] for c in combos.values()], sorted(str(i) for i in used), icons,
+                     [(k, v["image"]) for k, v in sums.items()])
+
     def _assets(self, dd_ver, full_fr, en, pool_keys, item_ids=(), rune_icons=(), sum_icons=()):
         img = os.path.join(DATA, "img")
         jobs = [(os.path.join(img, "items", i + ".png"), "%s/cdn/%s/img/item/%s.png" % (DD, dd_ver, i)) for i in item_ids]
@@ -876,3 +953,60 @@ class Updater:
                     os.replace(path + ".tmp", path)
             except IOError:
                 pass
+
+
+# ----------------------------------------------------------------------------
+# Publishing (repository workflow): python updater.py --publish DIR [--force]
+# ----------------------------------------------------------------------------
+
+class _Headless:
+    """Minimal core for running the updater outside the app."""
+
+    def __init__(self):
+        from core import Data
+        self._data_cls = Data
+        self.data = Data()
+        self.profile = {"auto_update": True}
+
+    def set_update_status(self, st):
+        if st.get("text") and st.get("state") != "downloading":
+            print(st["text"], flush=True)
+
+    def reload_data(self):
+        self.data = self._data_cls()
+
+
+def publish(out, force=False):
+    """Updates data/ from the previously published stats (out/), computes new stats when due, then writes the
+    published set back to out/: the stats files, the u.gg cache of finished patches and manifest.json."""
+    ugg_out, ugg_local = os.path.join(out, "cache", "ugg"), os.path.join(CACHE, "ugg")
+    for name in STATS_FILES:
+        if os.path.exists(os.path.join(out, name)):
+            shutil.copy2(os.path.join(out, name), os.path.join(DATA, name))
+    if os.path.isdir(ugg_out):
+        shutil.copytree(ugg_out, ugg_local, dirs_exist_ok=True)
+    updater = Updater(_Headless())
+    try:
+        updater.run(force=force, local=True)
+    except Exception as e:   # keep publishing the current stats; the workflow shows the error
+        print("::warning title=Stats update failed::%s" % " ".join(str(e).split()), flush=True)
+    files = {}
+    for name in STATS_FILES:
+        with open(os.path.join(DATA, name), "rb") as f:
+            body = f.read()
+        with open(os.path.join(out, name), "wb") as f:
+            f.write(body)
+        files[name] = {"sha256": hashlib.sha256(body).hexdigest(), "size": len(body)}
+    if os.path.isdir(ugg_local):
+        shutil.copytree(ugg_local, ugg_out, dirs_exist_ok=True)
+    meta = read_json(os.path.join(DATA, "stats.json"))["meta"]
+    write_json(os.path.join(out, "manifest.json"), {"format": STATS_FORMAT, "patch": meta.get("patch"),
+                                                    "generated": meta.get("generated"),
+                                                    "ddragon": meta.get("ddragon"), "files": files})
+    print("Published: patch %s, data of %s" % (meta.get("patch"), meta.get("generated")))
+
+
+if __name__ == "__main__":
+    import sys
+    if "--publish" in sys.argv:
+        publish(os.path.abspath(sys.argv[sys.argv.index("--publish") + 1]), force="--force" in sys.argv)

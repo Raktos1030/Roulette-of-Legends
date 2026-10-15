@@ -1,0 +1,48 @@
+# Updates the stats once a day and publishes them on the "stats" branch, read by the apps
+# (raw.githubusercontent.com/<repo>/stats/manifest.json). New stats are computed only when due: new patch with
+# enough games, or stats older than 7 days. The branch keeps a single commit (no history growth).
+name: Stats
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Recompute the stats even if they are recent"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ["updater.py", ".github/workflows/stats.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Previous stats
+        run: git clone -q --depth 1 --branch stats "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" published || mkdir published
+      - name: Update
+        run: python updater.py --publish published ${{ (github.event_name == 'push' || inputs.force) && '--force' || '' }}
+      - name: Publish
+        run: |
+          cd published
+          if [ -d .git ] && [ -z "$(git status --porcelain)" ]; then echo "No change"; exit 0; fi
+          rm -rf .git
+          git init -q -b stats
+          git add -A
+          git -c user.name="Raktos" -c user.email="143230534+Raktos1030@users.noreply.github.com" \
+            commit -q -m "Stats $(python -c "import json; print(json.load(open('manifest.json'))['generated'])")"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" stats
