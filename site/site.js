@@ -57,7 +57,9 @@
     tall: (k) => `${DD}img/champion/loading/${encodeURIComponent(k)}_0.jpg`,
     splash: (k) => `${DD}img/champion/splash/${encodeURIComponent(k)}_0.jpg`,
   };
-  const roleIcon = (r) => `<i class="ri" style="--m:url('${ROOT}img/roles/${ROLE_ICON[r] || "fill"}.png')"></i>`;
+  // absolute URL: inside a CSS variable a relative URL is resolved against the stylesheet using it, not the page
+  const ROLE_ICONS = new URL(ROOT + "img/roles/", location.href).href;
+  const roleIcon = (r) => `<i class="ri" style="--m:url('${ROLE_ICONS}${ROLE_ICON[r] || "fill"}.png')"></i>`;
   const ugg = (key, role) => `https://u.gg/lol/champions/${String(key).toLowerCase()}/build${UGG_ROLE[role] ? "/" + UGG_ROLE[role] : ""}`;
   const CHAOS_ICON = `<svg class="chaos-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c.6 3.3 3.9 4.6 3.9 8.5a3.9 3.9 0 0 1-7.8 0c0-1.5.6-2.6 1.4-3.5.2 1.6 1 2.5 2 2.5-1.1-2.6-.4-5.5.5-7.5z"/><path d="M6.4 9.6C5.2 11 4.5 12.8 4.5 14.7A7.5 7.5 0 0 0 12 22.2a7.5 7.5 0 0 0 7.5-7.5c0-2-.8-3.9-2.1-5.3"/></svg>`;
   const SOLO_SVG = `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c.6-4 3.6-6.5 7.5-6.5s6.9 2.5 7.5 6.5"/></svg>`;
@@ -979,7 +981,7 @@
     <div class="page-enter">
       <header class="page-head"><div>
         <div class="kicker">${esc(t("Sur ton PC"))}</div>
-        <h1 class="page-title">${esc(t("L'appli"))}</h1>
+        <h1 class="page-title">${esc(t("App"))}</h1>
         <p class="page-sub muted">${esc(t("Le site, c'est la roulette. L'appli la relie à League of Legends : elle suit chaque tirage jusqu'au bout et remplit ton historique toute seule."))}</p>
       </div></header>
       <div class="apps">
@@ -1172,7 +1174,7 @@
     "": { label: "Roulette", icon: NAV_ICONS.roulette, render: renderRoulette },
     favorites: { label: "Favoris", icon: NAV_ICONS.favorites, render: renderFavorites },
     rolls: { label: "Tirages", icon: NAV_ICONS.rolls, render: renderRolls },
-    app: { label: "L'appli", icon: NAV_ICONS.app, render: renderApps },
+    app: { label: "App", icon: NAV_ICONS.app, render: renderApps },
   };
   let heroKey = pick(CHAMPS).key;
 

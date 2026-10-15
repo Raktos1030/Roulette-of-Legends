@@ -1,4 +1,5 @@
 {
+"App": "App",
 "Aucun champion favori jouable en {0}. Ajoute-en dans les favoris ou désactive « Champions favoris seulement ».": "No favorite champion playable as {0}. Add some in Favorites or turn off \"Favorite champions only\".",
 "Aucun rôle de {0} n'est dans tes favoris : tous ses rôles sont en jeu.": "None of {0}'s roles are in your favorites: all their roles are in play.",
 "Bientôt disponible.": "Coming soon.",
@@ -23,7 +24,6 @@
 "Illustrations : Riot Games (Data Dragon).": "Artwork: Riot Games (Data Dragon).",
 "Installe l'appli": "Get the app",
 "Jusqu'à 5 joueurs : postes et champions différents pour tout le monde, prêts à copier sur Discord.": "Up to 5 players: a different role and champion for everyone, ready to paste on Discord.",
-"L'appli": "The app",
 "La même roulette, reliée à LoL : tes tirages suivis jusqu'au résultat, ton historique et tes LP. La version complète ajoute les fiches de jeu, le build importé et un overlay en partie.": "The same roulette, linked to LoL: your rolls tracked all the way to the result, your history and your LP. The full version adds guides, imported builds and an in-game overlay.",
 "La roulette, reliée à LoL": "The roulette, linked to LoL",
 "Lancer la roulette →": "Spin the roulette →",

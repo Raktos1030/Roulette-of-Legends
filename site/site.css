@@ -16,7 +16,7 @@ body.site #top { background: rgba(6, 10, 18, .96); }
 body.site #modal { background: rgba(2, 4, 8, .82); }
 body.site .bd-grain { display: none; }
 body.site .m-ring { will-change: transform; }
-body.site .btn-gold::after { left: 0; will-change: transform; animation-name: shineX; }
+body.site .btn-gold::after { left: 0; transform: translateX(-150%) skewX(-20deg); will-change: transform; animation-name: shineX; }   /* hidden until it sweeps */
 @keyframes shineX { 0%, 80% { transform: translateX(-150%) skewX(-20deg); } 100% { transform: translateX(325%) skewX(-20deg); } }
 
 /* --- header --- */
