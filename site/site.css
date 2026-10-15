@@ -154,6 +154,7 @@ body.site .btn-gold::after { left: 0; transform: translateX(-150%) skewX(-20deg)
   .gp-row { grid-template-columns: 30px minmax(0, 1fr) auto; }
   .gp-row .gp-roles { grid-column: 1 / -1; }
   .gp-row .gp-champ { grid-column: 1 / -1; }
+  .gp-row .gp-del { grid-column: 3; grid-row: 1; }
   .gres-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .fav-tools .input { width: 100%; }
   .fav-grid { grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); }
