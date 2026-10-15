@@ -2,9 +2,22 @@
    a top header instead of the side rail, a scrolling page, and a phone layout. */
 
 body.site { overflow-x: hidden; overflow-y: auto; height: auto; min-height: 100%; }
-body.site #main { position: relative; left: auto; top: auto; right: auto; bottom: auto; overflow: visible; z-index: 1; }
+body.site #main { position: relative; left: auto; top: auto; right: auto; bottom: auto; overflow: visible; z-index: 1;
+  display: flex; flex-direction: column; min-height: calc(100vh - 68px); }   /* footer at the bottom even on a short page */
+body.site #page, body.site .about, body.site #foot { width: 100%; }
 body.site #page { padding: 22px 34px 40px; max-width: 1400px; }
 body.site .input, body.site input { user-select: text; }
+
+/* --- smoothness: no live blur over the turning background (recomputed every frame), no blended grain,
+   animations limited to transforms the GPU handles alone --- */
+body.site *, body.site *::before, body.site *::after { backdrop-filter: none !important; }
+body.site .card, body.site .sum { background-color: rgba(9, 15, 26, .9); }
+body.site #top { background: rgba(6, 10, 18, .96); }
+body.site #modal { background: rgba(2, 4, 8, .82); }
+body.site .bd-grain { display: none; }
+body.site .m-ring { will-change: transform; }
+body.site .btn-gold::after { left: 0; will-change: transform; animation-name: shineX; }
+@keyframes shineX { 0%, 80% { transform: translateX(-150%) skewX(-20deg); } 100% { transform: translateX(325%) skewX(-20deg); } }
 
 /* --- header --- */
 #top {
@@ -32,7 +45,7 @@ body.site .input, body.site input { user-select: text; }
 .top-lang button { min-width: 42px; }
 
 /* --- footer --- */
-#foot { max-width: 1400px; margin: 0 auto; padding: 0 34px 34px; color: var(--muted); font-size: 12.5px; }
+#foot { max-width: 1400px; margin: auto auto 0; padding: 0 34px 34px; color: var(--muted); font-size: 12.5px; }
 .foot-row { display: flex; flex-wrap: wrap; gap: 6px 22px; justify-content: space-between; padding-top: 18px; border-top: 1px solid var(--hair); }
 #foot .legal { margin: 12px 0 0; font-size: 11.5px; line-height: 1.5; color: var(--faint); }
 
@@ -90,7 +103,7 @@ body.site .input, body.site input { user-select: text; }
 .cmp-note { margin: 16px 0 0; font-size: 13px; }
 
 /* --- presentation text (written in the page itself, shown on the home page) --- */
-.about { max-width: 1400px; padding: 0 34px 30px; }
+.about { max-width: 1400px; margin: 0 auto; padding: 0 34px 30px; }
 .about-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 40px; align-items: center; padding: 30px 36px;
   background: linear-gradient(110deg, rgba(200, 170, 110, .10), var(--glass) 45%); border-color: var(--hair-gold); }
 .about-card > :not(.btn) { grid-column: 1; }
@@ -109,6 +122,7 @@ body.site .input, body.site input { user-select: text; }
 }
 @media (max-width: 760px) {
   #top { height: 58px; padding: 0 16px; gap: 10px; }
+  body.site #main { min-height: calc(100vh - 58px); }
   .top-nav { margin-left: 0; gap: 2px; }
   .top-item { padding: 9px 10px; }
   .top-item span { display: none; }
