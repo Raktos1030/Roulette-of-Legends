@@ -1,0 +1,47 @@
+# Publishes the website (site/) on GitHub Pages: on every change of the site, and after each stats publication so
+# its champion roles follow the latest stats. Pages must use "GitHub Actions" as source (Settings > Pages).
+name: Site
+
+on:
+  push:
+    branches: [main]
+    paths: ["site/**", "ui/app.css", "ui/i18n/en.json", ".github/workflows/site.yml"]
+  workflow_run:
+    workflows: ["Stats"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Latest published stats
+        run: curl -sfL "https://raw.githubusercontent.com/${{ github.repository }}/stats/stats.json" -o data/stats.json || true
+      - run: python site/build_site.py
+      - name: Site files
+        run: |
+          mkdir _site
+          cp -r site/. _site/
+          rm -f _site/build_site.py _site/share_image.py _site/strings_en.json _site/preview_site.bat
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

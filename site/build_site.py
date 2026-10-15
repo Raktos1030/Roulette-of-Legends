@@ -5,7 +5,9 @@ ui/app.css.
   - data.js: champions and their roles (share of each role), the patch, the Data Dragon version;
   - en.js: the English strings used by site.js (from ui/i18n/en.json, otherwise from strings_en.json);
   - app.css: the desktop app's stylesheet (paths adapted to the site);
-  - fonts/, bg/, img/: free fonts (OFL), hextech backgrounds, logo and role icons.
+  - fonts/, bg/, img/: free fonts (OFL), hextech backgrounds, logo and role icons;
+  - en/index.html: the English page (from index.html: English title, description and link preview);
+  - sitemap.xml for search engines (to submit in Google Search Console).
 
 Champion art is not copied: the site loads it from Data Dragon, Riot's official CDN.
 No font or image taken from the LoL installation is copied.
@@ -20,6 +22,21 @@ ROOT = os.path.dirname(SITE)
 DATA = os.path.join(ROOT, "data")
 UI = os.path.join(ROOT, "ui")
 ROLES = ["top", "jgl", "mid", "adc", "sup"]
+SITE_URL = "https://raktos1030.github.io/Roulette-of-Legends/"
+# French page text -> English page text (index.html is the French page)
+PAGE_EN = [
+    ('<html lang="fr" data-root="">', '<html lang="en" data-root="../">'),
+    ("Roulette of Legends — Rôle et champion aléatoire LoL", "Roulette of Legends — Random LoL Role &amp; Champion"),
+    ("La roulette League of Legends : tire un rôle et un champion au hasard, seul ou en groupe jusqu'à 5. "
+     "Mode chaos, favoris, gratuit et sans compte.",
+     "League of Legends roulette: get a random role and champion, solo or with up to 5 friends. "
+     "Chaos mode, favorites, free, no account."),
+    ('<link rel="canonical" href="%s">' % SITE_URL, '<link rel="canonical" href="%sen/">' % SITE_URL),
+    ('<meta property="og:url" content="%s">' % SITE_URL, '<meta property="og:url" content="%sen/">' % SITE_URL),
+    ("img/share-fr.png", "img/share-en.png"),
+    ('<meta property="og:locale" content="fr_FR">', '<meta property="og:locale" content="en_US">'),
+    ('<meta property="og:locale:alternate" content="en_US">', '<meta property="og:locale:alternate" content="fr_FR">'),
+]
 
 
 def write_js(path, var, obj):
@@ -80,9 +97,30 @@ def copy_assets():
         shutil.copy2(os.path.join(DATA, "img", "roles", fn), os.path.join(SITE, "img", "roles", fn))
 
 
+def build_pages():
+    """en/index.html from the French page, then the sitemap (both pages, with their language alternates)."""
+    html = open(os.path.join(SITE, "index.html"), encoding="utf-8").read()
+    for fr, en in PAGE_EN:
+        if fr not in html:
+            raise SystemExit("index.html no longer contains: %s" % fr)
+        html = html.replace(fr, en)
+    # relative files of the English page live one folder up
+    html = re.sub(r'((?:href|src)=")(?!https?:|#|/|\.\./)', r"\1../", html)
+    os.makedirs(os.path.join(SITE, "en"), exist_ok=True)
+    with open(os.path.join(SITE, "en", "index.html"), "w", encoding="utf-8", newline="\n") as f:
+        f.write(html)
+    alt = "".join('\n    <xhtml:link rel="alternate" hreflang="%s" href="%s"/>' % (lang, url)
+                  for lang, url in (("fr", SITE_URL), ("en", SITE_URL + "en/"), ("x-default", SITE_URL + "en/")))
+    urls = "".join("\n  <url>\n    <loc>%s</loc>%s\n  </url>" % (url, alt) for url in (SITE_URL, SITE_URL + "en/"))
+    with open(os.path.join(SITE, "sitemap.xml"), "w", encoding="utf-8", newline="\n") as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+                'xmlns:xhtml="http://www.w3.org/1999/xhtml">%s\n</urlset>\n' % urls)
+
+
 def main():
     n, combos = build_data()
     copy_assets()
+    build_pages()
     k, missing = build_strings()
     print("data.js: %d champions, %d champion + role combos" % (n, combos))
     print("en.js: %d English strings" % k)

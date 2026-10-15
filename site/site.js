@@ -31,7 +31,11 @@
   };
 
   // --- language: French text is the key, en.js provides the English ------------------------------------------
-  let LANG = ls.get("lang", null) || (/^fr\b/i.test(navigator.language || "") ? "fr" : "en");
+  // each language has its own page: / (French) and /en/ (English); ROOT leads back to the site's root
+  const ROOT = document.documentElement.dataset.root || "";
+  const LANG = document.documentElement.lang === "en" ? "en" : "fr";
+  const otherLang = (lang) => ROOT + (lang === "en" ? "en/" : "") + location.hash;
+  if (ls.get("lang", null) && ls.get("lang", null) !== LANG) location.replace(otherLang(ls.get("lang", null)));
   function t(fr, ...args) {
     let s = LANG === "en" ? EN[fr] ?? fr : fr;
     if (args.length) s = s.replace(/\{(\d)\}/g, (m, i) => (args[+i] ?? ""));
@@ -53,7 +57,7 @@
     tall: (k) => `${DD}img/champion/loading/${encodeURIComponent(k)}_0.jpg`,
     splash: (k) => `${DD}img/champion/splash/${encodeURIComponent(k)}_0.jpg`,
   };
-  const roleIcon = (r) => `<i class="ri" style="--m:url('img/roles/${ROLE_ICON[r] || "fill"}.png')"></i>`;
+  const roleIcon = (r) => `<i class="ri" style="--m:url('${ROOT}img/roles/${ROLE_ICON[r] || "fill"}.png')"></i>`;
   const ugg = (key, role) => `https://u.gg/lol/champions/${String(key).toLowerCase()}/build${UGG_ROLE[role] ? "/" + UGG_ROLE[role] : ""}`;
   const CHAOS_ICON = `<svg class="chaos-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c.6 3.3 3.9 4.6 3.9 8.5a3.9 3.9 0 0 1-7.8 0c0-1.5.6-2.6 1.4-3.5.2 1.6 1 2.5 2 2.5-1.1-2.6-.4-5.5.5-7.5z"/><path d="M6.4 9.6C5.2 11 4.5 12.8 4.5 14.7A7.5 7.5 0 0 0 12 22.2a7.5 7.5 0 0 0 7.5-7.5c0-2-.8-3.9-2.1-5.3"/></svg>`;
   const SOLO_SVG = `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c.6-4 3.6-6.5 7.5-6.5s6.9 2.5 7.5 6.5"/></svg>`;
@@ -1180,10 +1184,8 @@
       b.classList.toggle("on", b.dataset.lang === LANG);
       b.onclick = () => {
         if (b.dataset.lang === LANG || spinning) return;
-        LANG = b.dataset.lang;
-        ls.set("lang", LANG);
-        buildChrome();
-        route();
+        ls.set("lang", b.dataset.lang);
+        location.href = otherLang(b.dataset.lang);
       };
     });
     document.getElementById("foot").innerHTML = `
