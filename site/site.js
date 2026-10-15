@@ -1194,7 +1194,7 @@
       <div class="foot-row"><span>${esc(t("Statistiques du patch {0} : rôles joués par chaque champion (Émeraude+).", D.patch))}</span>
         <a href="#/app" class="t-gold">${esc(t("Télécharger l'appli →"))}</a>
         <span>${esc(t("Illustrations : Riot Games (Data Dragon)."))}</span>
-        <span>${esc(t("Mesure d'audience anonyme, sans cookies (GoatCounter)."))}</span></div>
+        <span>${esc(t("Mesure d'audience anonyme, sans cookies."))}</span></div>
       <p class="legal">${esc(t("Roulette of Legends n'est pas approuvée par Riot Games et ne reflète pas les opinions de Riot Games ni de quiconque officiellement impliqué dans la production ou la gestion des propriétés de Riot Games. Riot Games et toutes les propriétés associées sont des marques commerciales ou déposées de Riot Games, Inc."))}</p>`;
     document.querySelector("#top .top-brand").onmouseenter = () => spinLogo(1.2);
   }
