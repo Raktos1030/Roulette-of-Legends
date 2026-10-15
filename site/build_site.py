@@ -12,6 +12,7 @@ ui/app.css.
 Champion art is not copied: the site loads it from Data Dragon, Riot's official CDN.
 No font or image taken from the LoL installation is copied.
 """
+import hashlib
 import json
 import os
 import re
@@ -107,8 +108,22 @@ def copy_assets():
         shutil.copy2(os.path.join(DATA, "img", "roles", fn), os.path.join(SITE, "img", "roles", fn))
 
 
+def stamp_assets():
+    """index.html links its styles and scripts with a hash of their content (app.css?v=...): browsers keep files in
+    cache for a while, and a new version must not show with the previous style or code."""
+    path = os.path.join(SITE, "index.html")
+    html = open(path, encoding="utf-8").read()
+    for name in ("app.css", "site.css", "data.js", "en.js", "site.js"):
+        with open(os.path.join(SITE, name), "rb") as f:
+            digest = hashlib.sha256(f.read()).hexdigest()[:10]
+        html = re.sub(r'(["/])%s(\?v=[0-9a-f]+)?"' % re.escape(name), r'\g<1>%s?v=%s"' % (name, digest), html)
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        f.write(html)
+
+
 def build_pages():
     """en/index.html from the French page, then the sitemap (both pages, with their language alternates)."""
+    stamp_assets()
     html = open(os.path.join(SITE, "index.html"), encoding="utf-8").read()
     for fr, en in PAGE_EN:
         if fr not in html:
@@ -130,8 +145,8 @@ def build_pages():
 def main():
     n, combos = build_data()
     copy_assets()
-    build_pages()
     k, missing = build_strings()
+    build_pages()   # last: links carry the hash of the final files
     print("data.js: %d champions, %d champion + role combos" % (n, combos))
     print("en.js: %d English strings" % k)
     for m in missing:
