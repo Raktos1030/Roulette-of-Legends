@@ -54,10 +54,11 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           path: assets
           merge-multiple: true
-      - run: gh release create "$GITHUB_REF_NAME" assets/*.zip --repo "$GITHUB_REPOSITORY" --title "Roulette of Legends $GITHUB_REF_NAME" --generate-notes
+      - run: gh release create "$GITHUB_REF_NAME" assets/*.zip --repo "$GITHUB_REPOSITORY" --title "Roulette of Legends $GITHUB_REF_NAME" --notes-file .github/release-notes.md
         env:
           GH_TOKEN: ${{ github.token }}
