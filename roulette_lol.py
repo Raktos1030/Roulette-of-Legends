@@ -420,7 +420,9 @@ def autotest(path):
         lines.append("BASE=%s" % core.BASE)
         lines.append("guides=%d combos=%d" % (len(c.data.guides), len(c.data.combos)))
         lines.append("glossary=%d" % len((c.data.glossary or {}).get("terms") or []))
-        window = webview.create_window("Autotest", server.url, width=1300, height=860, x=-4000, y=60,
+        # off-screen on Windows; macOS needs the window on a screen (pywebview fails without one)
+        x, y = (None, None) if MAC else (-4000, 60)
+        window = webview.create_window("Autotest", server.url, width=1300, height=860, x=x, y=y,
                                        background_color="#04070d")
 
         def drive():
