@@ -993,7 +993,7 @@
             t("Roulette de groupe avec les pseudos de ton salon LoL."),
             t("Discrète : elle attend près de l'horloge et peut se lancer avec Windows."),
           ])}
-          <div class="app-dl">${downloadButton("lite_win", t("Windows"))}${downloadButton("lite_mac", t("Mac"), "btn")}</div>
+          <div class="app-dl">${downloadButton("lite_win", t("Windows"), "btn")}${downloadButton("lite_mac", t("Mac"), "btn")}</div>
           <p class="app-note">${esc(DOWNLOADS.lite_win ? t("Mac (Apple Silicon) : au premier lancement, ouvre Réglages Système › Confidentialité et sécurité, puis « Ouvrir quand même ».")
             : t("Bientôt disponible."))}</p>
         </section>
