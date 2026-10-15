@@ -1,0 +1,84 @@
+{
+  "Kennen|top": {
+    "identity": "Champion à distance, à dégâts magiques et à énergie. Kennen marque ses cibles (passif Marque de tempête) : trois marques stun. Shuriken foudroyant (Q) poke à distance, Surtension (W) ajoute passivement une marque toutes les quelques attaques et, activé, frappe toutes les cibles marquées, Rush foudroyant (E) le transforme en éclair rapide qui traverse les unités, et Maelström (R) crée une tempête qui marque et stun tout autour de lui.",
+    "playstyle": "Lane de poke à distance contre des combattants au corps à corps, puis engage de teamfight par le flanc avec l'ultime. Kennen est un des rares tops à distance à pouvoir stun plusieurs cibles : son but est d'arriver au mid game avec un ultime capable de retourner les combats.",
+    "early_game": "Poke avec tes auto-attaques et Q à chaque last hit adverse. Surveille le compteur de ton passif sur l'adversaire : deux marques + un Q = stun. Garde toujours assez d'énergie pour E, ton seul moyen de fuir un engage.",
+    "level_1": "Shuriken foudroyant (Q) en premier. Poke à distance et last hit en sécurité ; ne laisse pas l'adversaire te coller au corps à corps.",
+    "level_2": "Surtension (W). Ton attaque renforcée passive ajoute une marque ; l'actif en ajoute une à chaque cible déjà marquée. Q puis W sur une cible marquée ajoute vite les marques vers le stun.",
+    "level_3": "Rush foudroyant (E). Tu traverses l'adversaire en le marquant, puis tu gagnes de la vitesse d'attaque en sortant : E → W → Q stun. Garde E aussi pour fuir.",
+    "level_6": "Maelström : tempête autour de toi qui marque plusieurs fois les ennemis proches, donc stun de zone. En lane, E puis R sur l'adversaire lui laisse peu de chances ; en teamfight, entre par le flanc (E, voire Flash) pour toucher plusieurs cibles.",
+    "power_spikes": [
+      "Niveau 3 : stun Q + E + W.",
+      "Niveau 6 : ultime pour les ganks et les all-in.",
+      "Premier item complet : ultime dévastateur.",
+      "Mid game : engages de flanc en teamfight."
+    ],
+    "lane_plan": "Joue une wave neutre ou légèrement poussée : tu as l'avantage de portée, profite-en à chaque last hit adverse. Évite les bushs non vérifiés, un combattant qui te colle gagne le trade. Recall quand ton énergie et tes PV sont bas. Après le 6, préviens ton jungler : Kennen + gank = kill presque garanti.",
+    "trading": "Trade court : attaque + Q, recul. Trade long : E (traverse et marque) → W → Q pour le stun, puis attaques. Engage quand l'adversaire a utilisé son dash ; abandonne si tu n'as plus d'énergie pour E.",
+    "jungle_plan": "",
+    "threats": [
+      "Tanks qui encaissent ton poke et te collent (Nasus, Dr. Mundo).",
+      "Gangplank, qui te poke à distance avec ses barils.",
+      "Ganks quand ton E est en recharge ou ton énergie vide."
+    ],
+    "mistakes": [
+      "Utiliser E pour engager sans énergie pour fuir.",
+      "Lancer l'ultime de face dans l'équipe adverse au lieu de flanker.",
+      "Rater Q à répétition et perdre ton poke."
+    ],
+    "matchup_notes": {
+      "Darius": "Kite-le hors de portée de son Crampon et stun-le quand il avance : il ne doit jamais te coller assez longtemps pour stacker.",
+      "Nasus": "Il encaisse ton poke et te slow avec Flétrissement : poke-le tôt pour limiter ses stacks, puis garde E pour fuir.",
+      "Yone": "Poke-le à distance ; garde E pour sortir de son Q3 et stun-le après son E.",
+      "Malphite": "Son Q te poke et son ultime t'engage au niveau 6 : reste loin et garde le stun pour sa fin de charge.",
+      "Jax": "Sa Contre-attaque n'esquive que les auto-attaques, pas tes sorts : lance Q et W pendant son esquive."
+    },
+    "mid_game": "Joue autour des objectifs et prépare les engages avec l'ultime. Flanke par la jungle pour arriver sur le côté de l'équipe adverse.",
+    "late_game": "Engage de teamfight : E pour entrer par le flanc, R pour stun plusieurs ennemis. Attends que ton équipe puisse suivre et vise les carries groupés.",
+    "ahead": "Roam avec E vers le mid et la rivière, crée des picks et domine les teamfights avec l'ultime.",
+    "behind": "Farm à distance, poke en sécurité et garde ton ultime pour un engage décisif en teamfight.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner la lane par le poke et engager les teamfights avec Maelström sur plusieurs ennemis.",
+    "final_tip": "Garde toujours assez d'énergie pour ton E : c'est à la fois ta fuite et ton engage."
+  },
+  "Kled|top": {
+    "identity": "Combattant à dégâts physiques qui monte Skaarl, son lézard. Skaarl a sa propre barre de PV : quand elle tombe à zéro, Kled descend et doit accumuler du courage en combattant pour remonter. Piège à ours en laisse (Q) accroche l'adversaire puis le tire, Penchant pour la violence (W) déclenche quatre attaques ultra rapides, Joute (E) dash deux fois et Chaaaaaaaargez !!! (R) charge à travers la carte en laissant une traînée qui accélère les alliés.",
+    "playstyle": "Lane très agressive et all-in fréquents. Kled veut se battre en permanence : il gagne la lane par la pression et devient un engage de teamfight grâce à l'ultime. Fort en early et mid game ; il faut apprendre à gérer le moment où Skaarl est à terre.",
+    "early_game": "Trade avec Q : si l'adversaire reste accroché, la corde le tire vers toi et le slow. Enchaîne W (quatre attaques rapides) et E pour coller. Quand Skaarl tombe, recule : Kled à pied est beaucoup plus faible. Frappe l'adversaire pour regagner du courage et remonter.",
+    "level_1": "Piège à ours en laisse (Q) en premier. Lance-le sur l'adversaire et recule légèrement pour déclencher la traction.",
+    "level_2": "Joute (E). Dash, puis second dash à travers la cible si le premier a touché un champion : Q + E pour engager.",
+    "level_3": "Penchant pour la violence (W). Quatre attaques très rapides, la dernière fait beaucoup plus mal : Q → E → W → recast E est un gros all-in avec Embrasement.",
+    "level_6": "Chaaaaaaaargez !!! : longue charge avec ton équipe (traînée qui accélère les alliés) qui repousse la cible à l'impact. Utilise-la pour engager des combats, rejoindre un gank ou revenir sur un combat en rivière.",
+    "power_spikes": [
+      "Niveau 3 : all-in très fort Q → E → W.",
+      "Niveau 6 : engage à longue distance avec ton équipe.",
+      "Premier item complet : duels très forts.",
+      "Mid game : escarmouches et engages."
+    ],
+    "lane_plan": "Joue une wave neutre ou poussée et trade agressivement avec Q et W. Si tu gagnes les trades, crash et dive avec ton jungler. Recall quand Skaarl est bas en PV ou quand tu es à pied sans courage. Les bushs de la lane cachent tes approches pour le Q.",
+    "trading": "Trade court : Q (traction) + attaques. Trade long : Q → E → W → recast E à travers la cible. Engage quand Q a accroché ; abandonne dès que Skaarl tombe, sauf si l'adversaire est presque mort.",
+    "jungle_plan": "",
+    "threats": [
+      "Singed et les champions qui te font courir derrière eux.",
+      "Pantheon et les duellistes plus forts en early.",
+      "CC quand tu es à pied (sans Skaarl)."
+    ],
+    "mistakes": [
+      "Engager sans Q (pas de traction ni de slow).",
+      "Continuer à se battre à pied alors que Skaarl vient de tomber.",
+      "Lancer l'ultime sans que ton équipe puisse suivre."
+    ],
+    "matchup_notes": {
+      "Darius": "Évite son Crampon et le bord de sa Décimation ; trade avec Q + W puis ressors avec E.",
+      "Gangplank": "Colle-le avec Q + E avant qu'il n'utilise ses barils ; il est fragile au contact.",
+      "Yone": "Attends son E avant d'engager ; Q le slow et l'empêche de fuir.",
+      "Singed": "Il te fait courir dans son poison : ne le poursuis pas, trade seulement quand il s'arrête.",
+      "Fiora": "Elle Riposte ton Q (stun). Attends que sa Riposte soit utilisée avant d'engager."
+    },
+    "mid_game": "Escarmouches et engages : ton ultime lance des combats à cinq. Rejoins les objectifs avec ton équipe derrière toi.",
+    "late_game": "Engage de teamfight avec l'ultime, puis combats au corps à corps. Choisis bien l'angle : tu veux emmener ton équipe sur leur carry, pas au milieu de leur frontline.",
+    "ahead": "Force des combats, dive avec ton jungler et engage les objectifs : Kled avec de l'avance est très difficile à arrêter.",
+    "behind": "Farm, évite les duels à pied et joue pour un engage décisif avec l'ultime.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner la lane par l'agressivité, puis engager les combats décisifs avec l'ultime et ton équipe derrière toi.",
+    "final_tip": "Quand Skaarl tombe, recule immédiatement : Kled à pied n'est pas fait pour se battre."
+  }
+}

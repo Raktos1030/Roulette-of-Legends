@@ -1,0 +1,43 @@
+{
+ "Rengar|jgl": {
+  "identity": "Physical damage assassin who leaps out of bushes (passive Unseen Predator). Every ability gives him Ferocity; at four stacks, his next ability is empowered: Savagery (Q) hits harder, Battle Roar (W) heals him and removes CC, and Bola Strike (E) roots instead of slowing. Thrill of the Hunt (R) camouflages him, reveals the nearest champion and lets him leap without a bush.",
+  "playstyle": "Assassination jungler: he uses bushes to leap and kill a target in one combo. He demands a lot of precision.",
+  "early_game": "Clear by leaping from the bushes next to camps. Gank by arriving through a bush with full Ferocity: leap → Q → empowered E (CC) → W. Avoid duels against tanky or long-fight junglers.",
+  "level_1": "Savagery (Q) first.",
+  "level_2": "Battle Roar (W). Heals recent damage taken: your clear gets healthier. Empowered, it removes CC.",
+  "level_3": "Bola Strike (E). First gank: leap from a bush → empowered E (CC) → Q → W.",
+  "level_6": "Thrill of the Hunt: camouflage, reveals the nearest champion and lets you leap without a bush. Use it to assassinate an isolated carry or join a fight by surprise.",
+  "power_spikes": [
+   "Level 3: ganks from bushes.",
+   "Level 6: assassinations with your ultimate.",
+   "First completed item: a combo that kills a carry.",
+   "Mid game: picks on isolated targets."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Clear using the bushes near camps to leap. Gank lanes where the opponent stands near a bush, with full Ferocity. Control Scuttles and invade when your target is alone. Avoid tanky or dueling junglers (Rammus, Sejuani, Warwick); focus on picks on carries.",
+  "trading": "Assassinating: full Ferocity → leap from a bush (or ultimate) → empowered E → Q → W. Give up on it against tanks who soak your combo or if your target still has their CC.",
+  "threats": [
+   "Rammus, Sejuani and Rek'Sai: hard matchups.",
+   "Tanks who soak your burst.",
+   "Wards and sweepers that see you coming."
+  ],
+  "mistakes": [
+   "Engaging without full Ferocity.",
+   "Using the empowerment on the wrong ability (Q instead of E to root).",
+   "Diving a tank instead of a carry."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Avoid his early invades.",
+   "Viego": "Burst him before he possesses one of your allies.",
+   "Kha'Zix": "You're both assassins: whoever engages first wins.",
+   "Rammus": "His taunt cancels your combo: avoid him.",
+   "Sejuani": "She roots you and soaks damage: don't dive her."
+  },
+  "mid_game": "Picks on isolated targets, especially those walking near bushes.",
+  "late_game": "Assassinate the enemy carry with your ultimate. Wait for the enemy CC to be used.",
+  "ahead": "Hunt isolated carries and take objectives.",
+  "behind": "Look for picks on isolated targets and avoid grouped fights.",
+  "win_condition": "To win this game, you want to assassinate isolated carries using bushes and your ultimate.",
+  "final_tip": "Always engage with full Ferocity: spend it on Bola Strike to root the target."
+ }
+}

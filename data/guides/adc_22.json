@@ -1,0 +1,43 @@
+{
+  "Smolder|adc": {
+    "identity": "Tireur de scaling à dégâts physiques. Dragon en herbe (passif) : toucher un champion avec un sort ou tuer une unité avec Boule de feu draconique lui donne des effets cumulés qui augmentent les dégâts de ses sorts de base. Boule de feu draconique (Q) évolue avec les effets : à 25, elle explose autour de la cible ; à 125, elle projette des traits de feu derrière ; à 225, elle brûle et peut exécuter les cibles basses en PV. Atchoum ! (W) est un éternuement qui explose sur les champions, Flap, flap, flap ! (E) le fait voler au-dessus des obstacles en bombardant l'ennemi le plus blessé, et MAMAAAN ! (R) fait cracher du feu à sa mère sur une longue ligne (slow au centre, et soin pour Smolder s'il se trouve sur la trajectoire).",
+    "playstyle": "Hypercarry de farm : il accumule des effets pendant toute la partie et devient dévastateur après 225. Il est en moyenne derrière en or à 15 min contre tous les ADC fréquents : c'est son profil, il doit survivre et farmer.",
+    "early_game": "Farm avec Q : chaque unité tuée par la boule de feu te donne un effet. Touche l'adversaire avec W et Q quand c'est sans risque (chaque champion touché par un sort donne aussi un effet). Garde E pour fuir : il passe au-dessus des murs.",
+    "level_1": "Boule de feu draconique (Q) en premier. Tue un maximum de sbires avec Q.",
+    "level_2": "Atchoum ! (W). Poke et effets supplémentaires sur les champions.",
+    "level_3": "Flap, flap, flap ! (E). Ta fuite, au-dessus des murs. Ne l'utilise pour attaquer que si tu es sûr du kill.",
+    "level_6": "MAMAAAN ! : longue ligne de feu qui slow au centre. Sers-t'en pour achever, pour slow un engage, ou pour te soigner en te plaçant dans sa trajectoire.",
+    "power_spikes": [
+      "25 effets : Q explose en zone (nettoyage de waves).",
+      "125 effets : traits de feu supplémentaires.",
+      "225 effets : brûlure et exécution.",
+      "Deux items complets avec 225 effets : très gros dégâts en teamfight."
+    ],
+    "lane_plan": "Farm au maximum avec Q et survis : ton scaling fait le travail. Ne force pas les trades contre les ADC agressifs. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense un farm régulier, exactement ce que tu cherches. Garde E pour fuir.",
+    "trading": "Trade de base : W puis Q, et recule. All-in rare avant tes effets : Q, W, attaques, R pour achever. Abandonne contre les ADC qui gagnent les trades (Jinx, Twitch, Zeri) : farm à distance.",
+    "jungle_plan": "",
+    "threats": [
+      "Jinx : adversaire fréquent et matchup difficile.",
+      "Twitch, Zeri, Hwei et Séraphine : matchups difficiles.",
+      "Divers quand E est en recharge."
+    ],
+    "mistakes": [
+      "Utiliser E pour attaquer et ne plus pouvoir fuir.",
+      "Rater des sbires avec Q (effets perdus).",
+      "Forcer des trades en début de partie au lieu de farmer."
+    ],
+    "matchup_notes": {
+      "Jinx": "Elle scale aussi, mais plus vite : farm, reste en vie et joue les teamfights après 225 effets.",
+      "Kai'Sa": "Elle dive avec son ultime : garde E pour fuir au-dessus d'un mur.",
+      "Caitlyn": "Survis à sa portée.",
+      "Ezreal": "Farm tranquillement : tu scales mieux.",
+      "Twitch": "Il te surprend depuis le camouflage : garde E pour fuir."
+    },
+    "mid_game": "Continue de farmer les waves latérales avec Q pour atteindre 225 effets, puis rejoins les combats avec ton équipe.",
+    "late_game": "Reste derrière ta frontline, bombarde avec Q (brûlure et exécution à 225 effets), achève avec R. Garde E pour fuir un diver.",
+    "ahead": "Farm et prends les objectifs : ton avance arrive plus vite à 225 effets.",
+    "behind": "Farm les waves latérales en sécurité : chaque effet te rapproche de ta puissance maximale.",
+    "win_condition": "Pour gagner cette partie, tu veux farmer jusqu'à 225 effets puis dominer les teamfights avec ta boule de feu.",
+    "final_tip": "Chaque sbire tué par Q est un effet de plus : en lane, finis les sbires avec Q plutôt qu'avec tes attaques."
+  }
+}

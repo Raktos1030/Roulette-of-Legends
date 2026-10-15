@@ -1,0 +1,84 @@
+{
+ "Urgot|top": {
+  "identity": "Mid-range physical damage juggernaut. Each of Urgot's legs fires a shotgun blast when he attacks in its direction (passive Echoing Flames, percent-health damage). Corrosive Charge (Q) slows, Purge (W) makes him fire rapidly at the nearest enemy with a shield, Disdain (E) charges and flips a champion over him, and Fear Beyond Death (R) executes a target below 25% health by dragging them to him.",
+  "playstyle": "Sustained mid-range combat: Urgot keeps fighters in range of his legs and wears them down with W. He wins long fights against slow melee champions, and his ultimate executes and fears in teamfights.",
+  "early_game": "Trade with Q, then W to trigger your legs: each leg has its own cooldown, so circle around your opponent to trigger several. Keep E to engage or answer an all-in (it flips your opponent behind you, toward your tower).",
+  "level_1": "Disdain (E) first on the most common path. It gives you an engage with a shield and a stun at level 1.",
+  "level_2": "Purge (W). Continuous fire at the nearest enemy, triggering your legs: E → W is a very strong trade at level 2. W is the ability you max first.",
+  "level_3": "Corrosive Charge (Q). Slows your opponent to keep them in W range: Q → W → attacks, then E if your opponent tries to escape or engage you.",
+  "level_6": "Fear Beyond Death: a projectile that slows the target; if they drop below 25% health, recast to drag them to you and execute them, fearing nearby enemies. Use it to finish a kill or to pull a carry out of a teamfight.",
+  "power_spikes": [
+   "Level 2: E + W, a big trade.",
+   "Level 6: executes with your ultimate.",
+   "First completed item: very strong sustained fights.",
+   "W maxed: continuous fire in fights."
+  ],
+  "lane_plan": "Play a neutral or pushed wave, trade with Q + W to trigger your legs. Take plates when you're winning. Recall when your wave crashes. Avoid ganks: you're slow during W.",
+  "trading": "Short trade: Q → W (legs). Long trade: E (flip) → W → Q → R to finish. Engage when your opponent is slowed; give up on it against armored tanks who soak damage (Malphite, Ornn) or ranged champions.",
+  "jungle_plan": "",
+  "threats": [
+   "Armored tanks (Malphite, Ornn).",
+   "Ranged kiting (Kayle).",
+   "Ganks while you're firing with W."
+  ],
+  "mistakes": [
+   "Casting your ultimate on a target who won't drop below 25%.",
+   "Missing E and losing your engage and shield.",
+   "Standing still instead of circling to trigger several legs."
+  ],
+  "matchup_notes": {
+   "Darius": "Keep him at mid-range with Q and W, and flip him with E when he winds up his Apprehend.",
+   "Yone": "Keep E for his engage and W to keep him in range.",
+   "Nasus": "Punish him early and keep E for his engage under Wither.",
+   "Malphite": "His armor reduces your damage; farm and play for your ultimate in teamfights.",
+   "Garen": "He silences you as he engages: keep E to flip him after his Q."
+  },
+  "mid_game": "Split pushing and fights around objectives. Your ultimate pulls a carry out of a fight and fears their allies.",
+  "late_game": "Sustained-fight frontline: W on the brawl, ultimate to execute the most exposed carry.",
+  "ahead": "Force duels, take towers and dive with your jungler.",
+  "behind": "Farm and play for your ultimate in teamfights.",
+  "win_condition": "To win this game, you want to win sustained mid-range fights and execute carries with your ultimate.",
+  "final_tip": "Circle around your opponent during W: each leg has its own cooldown."
+ },
+ "Varus|top": {
+  "identity": "Physical damage marksman. Piercing Arrow (Q) pokes from long range, Blighted Quiver (W) adds magic damage and Blight stacks to every attack, Hail of Arrows (E) slows and reduces healing, and Chain of Corruption (R) roots a target and spreads to nearby allies. In top, he punishes melee fighters from range.",
+  "playstyle": "Poke and kiting lane. He beats slow fighters, but struggles against mobile champions and tanks who withstand poke.",
+  "early_game": "Poke with attacks (Blight stacks) and Q when your opponent comes to last hit. Keep E to slow an engage and R (from level 6) to root. Never let yourself get stuck in melee range.",
+  "level_1": "Blighted Quiver (W) first on the most common path. Every attack adds Blight stacks; poke on every enemy last hit.",
+  "level_2": "Piercing Arrow (Q). Charge the arrow for more range: Q on a target with Blight stacks detonates them.",
+  "level_3": "Hail of Arrows (E). Slows and reduces healing: useful against fighters who heal (Darius, Aatrox) and to escape.",
+  "level_6": "Chain of Corruption: roots the first target hit, then spreads to nearby allies. Keep it to stop an enemy engage or for a gank with your jungler.",
+  "power_spikes": [
+   "Level 2: Q + attack poke.",
+   "Level 6: ultimate to stop an engage.",
+   "First completed item: stronger poke.",
+   "Mid game: poke before objectives."
+  ],
+  "lane_plan": "Play a neutral or pushed wave, poke from range and don't let your opponent stick to you. Recall when your wave crashes. Avoid uncontrolled bushes: you're fragile.",
+  "trading": "Short trade: attacks (stacks) → Q. Long trade: E to slow → attacks → R if your opponent engages you. Engage when your opponent is slowed; give up on it if they can stick to you (Yasuo, Olaf, Jax).",
+  "jungle_plan": "",
+  "threats": [
+   "Mobile champions who stick to you (Yasuo, Yone).",
+   "Olaf, who ignores your CC with his ultimate.",
+   "Tanks who soak your poke (Dr. Mundo)."
+  ],
+  "mistakes": [
+   "Fighting in melee range instead of kiting.",
+   "Wasting R without an enemy engage.",
+   "Pushing without vision."
+  ],
+  "matchup_notes": {
+   "Nasus": "Poke him to limit his stacks; E reduces his healing. Keep R for his engage under Wither.",
+   "Yone": "He sticks to you with E and Q3: keep R for his engage.",
+   "Darius": "Kite him and cut his healing with E.",
+   "Yasuo": "Wind Wall blocks your arrows: play very carefully and keep R for his engage.",
+   "Malphite": "His armor reduces your poke and his ultimate catches you: stay far away."
+  },
+  "mid_game": "Poke before objectives and play with your team. Avoid isolated side lanes.",
+  "late_game": "Poke from range and R to stop the enemy engage. Stay behind your frontline.",
+  "ahead": "Take towers and poke before objectives.",
+  "behind": "Farm from range and play with your team.",
+  "win_condition": "To win this game, you want to win your lane through poke and stop enemy engages with your ultimate.",
+  "final_tip": "Keep your Chain of Corruption for the enemy engage: it saves your life."
+ }
+}

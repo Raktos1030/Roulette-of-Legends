@@ -1,0 +1,84 @@
+{
+ "Poppy|top": {
+  "identity": "Physical damage tank-fighter who specializes in shutting down mobility. Steadfast Presence (W) stops dashes and leaps around her dead in their tracks, Heroic Charge (E) slams the enemy into a wall to stun them, Hammer Shock (Q) strikes twice and slows, and Keeper's Verdict (R) launches an enemy very far or knocks them up. In top, she mainly counters mobile champions.",
+  "playstyle": "Short trades around her passive buckler (throw it, then pick it up) and anti-dash control. Poppy isn't a big long-fight duelist, but she ruins champions who rely on mobility.",
+  "early_game": "Trade with your passive's strike (the thrown buckler), pick it up for the shield, then Q. Keep W against the enemy engage: a stopped dash is a won trade. Look to fight near walls to threaten E.",
+  "level_1": "Hammer Shock (Q) first. Use your passive's first strike, then Q when your opponent comes to last hit; Q explodes a second time after a short delay, so stay in the zone.",
+  "level_2": "Heroic Charge (E). If the enemy is near a wall, E slams them into it and stuns them: Q + E into a wall is a very strong trade at level 2.",
+  "level_3": "Steadfast Presence (W). Movement speed, resistances and above all stopping dashes around you. Cast it the moment your opponent commits (Irelia, Jax, Camille, Yone).",
+  "level_6": "Keeper's Verdict: released quickly, it knocks up at short range; charged, it launches enemies far away from their team. In lane, use the short version to hold a target; in teamfights, send the enemy diver or tank flying.",
+  "power_spikes": [
+   "Level 2: Q + E into a wall.",
+   "Level 3: W to stop mobile champions' engages.",
+   "Level 6: ultimate to eject a target from a fight.",
+   "First completed item: longer, safer trades."
+  ],
+  "lane_plan": "Play near the lane's walls: that's where your E becomes a stun. Keep the wave neutral or near your tower so those walls stay in reach. Always pick up your buckler after throwing it. Recall when W is your only defense and you're low on health.",
+  "trading": "Short trade: passive (buckler) → pick it up → Q. Long trade: E into a wall → Q → auto → W if your opponent tries to dash away. Engage when there's a wall behind your opponent; give up on it against a champion who beats you in long fights without mobility (Darius, Garen).",
+  "jungle_plan": "",
+  "threats": [
+   "Low-mobility fighters who win long fights (Darius, Garen): W is useless against them.",
+   "Ranged kiting (Kayle).",
+   "Ganks when you've used E away from a wall."
+  ],
+  "mistakes": [
+   "Casting E with no wall behind your opponent (no stun).",
+   "Using W too early, before the enemy dash.",
+   "Releasing the charged ultimate toward the enemy team and sending your target to safety."
+  ],
+  "matchup_notes": {
+   "Yone": "W the moment he uses his E or Q3: he gets stuck. Then punish him with Q + E into a wall.",
+   "Jax": "Leap Strike is a leap: W stops it dead. Keep W for that moment.",
+   "Camille": "Steadfast Presence stops the second part of her Hookshot: keep W for that moment. Her passive shield absorbs your first burst, so trade after it's been used up.",
+   "Darius": "He has no dash to block and wins long fights. Farm near your tower, E into a wall only to escape.",
+   "Garen": "No dash to stop, and a silence that cuts your combo. Trade briefly when his Q is on cooldown."
+  },
+  "mid_game": "Play around objectives: Poppy protects her team from divers and ejects enemy engages. Keep vision on the walls around dragon and Baron for your E's.",
+  "late_game": "Peel and control: stay near your carries, W against divers, ultimate to send the most dangerous one away. You can also engage with E into a wall on an isolated target.",
+  "ahead": "Force fights near walls, dive with your jungler and take plates. Your ultimate lets you isolate a carry.",
+  "behind": "Farm, defend your tower and play to protect your carries: your anti-mobility stays useful even without a lead.",
+  "win_condition": "To win this game, you want to neutralize mobile enemy champions with W and E, then protect your carries in teamfights.",
+  "final_tip": "Before every trade, find the nearest wall behind your opponent: your E decides the fight."
+ },
+ "Quinn|top": {
+  "identity": "Physical damage marksman played against melee fighters. Quinn marks her targets with Harrier (passive), blinds with Blinding Assault (Q), knocks back and interrupts with Vault (E) and roams very fast with Behind Enemy Lines (R). In top, she's a kiting and map-pressure pick.",
+  "playstyle": "Poke and kiting lane, then roams and split pushing thanks to her ultimate's speed. Quinn punishes melee fighters with no mobility, but she's fragile.",
+  "early_game": "Poke with marked attacks (Harrier) and Q. Keep E to knock back an enemy engage: it also interrupts some dashes. Build a farm lead by punishing every last hit.",
+  "level_1": "Vault (E) first on the most common path (E → Q → W). It knocks back and slows an opponent who walks into melee range, then you get your distance back.",
+  "level_2": "Blinding Assault (Q). Blinds your opponent: their basic attacks miss. Combo: Q → auto on the mark → E to knock back.",
+  "level_3": "Heightened Senses (W), maxed first. Every Harrier proc gives you attack and movement speed; the active reveals an area, handy for bushes.",
+  "level_6": "Behind Enemy Lines: a very fast form to roam and come back to lane. Use it to go mid or to dragon when your wave is pushed, then come back before losing too much farm.",
+  "power_spikes": [
+   "Level 2: Q + E, one-sided trades.",
+   "Level 6: roams and pressure across the whole map.",
+   "First completed item: burst on carries.",
+   "Mid game: split pushing and picks."
+  ],
+  "lane_plan": "Play a neutral or pushed wave, poke on every enemy last hit and don't let your opponent stick to you. Push before roaming with your ultimate. Recall when your wave crashes. Avoid uncontrolled bushes: you're fragile.",
+  "trading": "Short trade: marked auto → Q → back off. Long trade: Q to blind, E to knock back, marked attacks. Engage when your opponent no longer has their dash; give up on it if they can stick to you (Irelia, Malphite with his ultimate).",
+  "jungle_plan": "",
+  "threats": [
+   "Mobile champions who stick to you (Irelia).",
+   "Long-range engages (Malphite at level 6).",
+   "Ganks: you're fragile."
+  ],
+  "mistakes": [
+   "Using E to engage instead of keeping it to knock back an engage.",
+   "Roaming without pushing the wave.",
+   "Staying in melee range of a stronger fighter."
+  ],
+  "matchup_notes": {
+   "Darius": "Keep E for his Apprehend, blind him when he hits you and don't let him stack up.",
+   "Garen": "Kite him out of his Q; E after his silence.",
+   "Jayce": "Stick to him when he switches to hammer form and knock him back with E.",
+   "Malphite": "His armor bothers you and his ultimate catches you; keep E for the end of his charge.",
+   "Irelia": "She dashes through minions; keep E for her engage and stay away from the wave."
+  },
+  "mid_game": "Roam with your ultimate, create advantages across the map and split push. Quinn is very good at punishing isolated side lanes.",
+  "late_game": "Picks and split pushing. In teamfights, stay back, hit targets in range and keep E to defend yourself.",
+  "ahead": "Roam, create picks and take towers with your speed.",
+  "behind": "Farm from range and avoid fights: look for picks on isolated targets.",
+  "win_condition": "To win this game, you want to win your lane through kiting, then use your ultimate to create advantages across the whole map.",
+  "final_tip": "Keep your Vault for the moment your opponent commits: it knocks back and interrupts, it's your lifeline."
+ }
+}

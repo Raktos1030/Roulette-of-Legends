@@ -1,0 +1,43 @@
+{
+ "Jax|jgl": {
+  "identity": "Hybrid damage duelist, played in the jungle about one game in five (top lane remains his main role). Leap Strike (Q) jumps onto any unit, even an allied ward, Counter Strike (E) dodges basic attacks then stuns around him, Empower (W) empowers his next attack, and Grandmaster-at-Arms (R) adds a powerful strike every third attack and makes him tanky. In the jungle, he scales into a dueling and skirmishing monster.",
+  "playstyle": "Farming and dueling jungler who ramps up. Jax doesn't have the fastest clear, but he wins duels from his first items and becomes a split push and skirmish threat in the mid game. His ganks rely on Q + E.",
+  "early_game": "Clear using E to reduce camp damage and W for empowered attacks. Gank when you can jump on the target from an angle: Q → E (stun at the end) → W. Avoid duels against very aggressive early-game junglers.",
+  "level_1": "Counter Strike (E) first. It reduces camp damage and stuns.",
+  "level_2": "Empower (W). An empowered attack that resets your attack: your clear speeds up. Max W first.",
+  "level_3": "Leap Strike (Q). First gank: Q → E → W → recast E to stun. You can also jump to an allied ward to escape.",
+  "level_6": "Grandmaster-at-Arms: an extra strike every third attack and resistances when active. Your duels become very strong: you can invade and contest objectives.",
+  "power_spikes": [
+   "Level 3: Q + E gank.",
+   "Level 6: ultimate, strong duels.",
+   "First completed item: dominant duels.",
+   "Two items: split push and skirmishes."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Safe full clear, then opportunistic ganks and Scuttle control. Jax wins by scaling: don't force early duels against junglers who beat him. From your first item on, invade and take objectives. In the mid game, you can split push a side lane while your team holds mid.",
+  "trading": "Ganking: Q on the target → E → W → recast E. Dueling: E as your opponent starts hitting, W, then ultimate. Give up on it against ability-based champions (E only dodges basic attacks) or heavy CC.",
+  "threats": [
+   "CC tanks (Cho'Gath, Zac, Rammus).",
+   "Junglers who beat you early (Rek'Sai, Evelynn after her 6).",
+   "Ability-based champions against whom E is useless."
+  ],
+  "mistakes": [
+   "Casting E too early, with no attacks to dodge.",
+   "Dueling early-game junglers before your items.",
+   "Forgetting to jump to a ward to escape."
+  ],
+  "matchup_notes": {
+   "Master Yi": "E dodges all his attacks: cast it when he dives you.",
+   "Lee Sin": "He beats you early: wait for your items.",
+   "Viego": "E against his attacks; don't let him possess your allies.",
+   "Cho'Gath": "His silence and knock-up cut you off: avoid him.",
+   "Rek'Sai": "She beats you early: don't face her before your items."
+  },
+  "mid_game": "Skirmishes and split pushing. Jax becomes very hard to handle 1v1: force duels around objectives.",
+  "late_game": "Dive a carry with Q, E to dodge and stun, ultimate to survive. Or split push while your team holds mid.",
+  "ahead": "Invade, split push and force duels.",
+  "behind": "Farm and scale: Jax stays dangerous late game.",
+  "win_condition": "To win this game, you want to farm, scale and dominate duels and skirmishes in the mid and late game.",
+  "final_tip": "Cast your Counter Strike as your opponent starts hitting, not before."
+ }
+}

@@ -1,0 +1,29 @@
+# builds
+/Roulette of Legends/
+/_new_version/
+/_release/
+__pycache__/
+*.pyc
+*.spec
+
+# personal data (created by the app)
+/data/profile.json
+/data/history.json
+/data/games/
+/data/errors.log
+/data/update.json
+/data/.instance
+/data/cache/
+/backups/
+
+# extracted from the local League install, never redistributed
+/data/fonts/lol/
+/data/img/ui/
+
+# legacy names of the files above (versions before 2.1)
+/data/profil.json
+/data/historique.json
+/data/parties/
+/data/erreurs.log
+/data/maj.json
+/sauvegardes/

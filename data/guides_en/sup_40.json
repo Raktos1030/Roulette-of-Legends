@@ -1,0 +1,43 @@
+{
+ "Zilean|sup": {
+  "identity": "Utility mage. Time in a Bottle (passive): he stores XP he can give to an ally (right-click) once it's enough to level them up. Time Bomb (Q) sticks a bomb on a nearby unit that explodes after 3 seconds; if a second bomb detonates it early, enemies are stunned. Rewind (W) reduces his other abilities' cooldowns, Time Warp (E) slows an enemy or speeds up an ally, and Chronoshift (R) places a mark on an ally that revives them if they take lethal damage.",
+  "playstyle": "Control and rescue support: double bomb to stun, slow or speed with E, and revive his carry with his ultimate. No clearly unfavorable matchups, and he crushes dive supports and slow mages (Swain, Camille, Xerath, Brand).",
+  "early_game": "Poke with Time Bomb (Q): it sticks to the first champion who gets close. Look for the Q → W → Q combo to stun (the second bomb detonates the first). E on your opponent to slow them, or on your ADC so they can escape or chase.",
+  "level_1": "Time Bomb (Q) first. After that, max Q first.",
+  "level_2": "Rewind (W). Double bomb combo: Q → W → Q.",
+  "level_3": "Time Warp (E). Slow your opponent before the bomb so they can't get away from it.",
+  "level_6": "Chronoshift: a mark on the ally who's about to die; they come back to life a few seconds later. Cast it on your carry right before they take the lethal damage.",
+  "power_spikes": [
+   "Level 2: Q → W → Q, stun.",
+   "Level 6: revive.",
+   "First completed item: lower cooldowns, frequent bombs.",
+   "Teamfights: Chronoshift on the targeted carry."
+  ],
+  "lane_plan": "Poke with Q, look for the double bomb and keep E to protect or chase. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored). Give your stored XP to an ally when it gets them an important level.",
+  "trading": "Basic trade: Q on your opponent. All-in: E (slow) → Q → W → Q. Defense: bomb on the diver, E on your ADC to escape, R if they're about to die. Against enchanters (Janna, Sona, Soraka), the poke is even: play for stuns.",
+  "jungle_plan": "",
+  "threats": [
+   "Janna, Sona and Soraka: your worst matchups, close to even.",
+   "Engages that catch you: you're fragile.",
+   "Instant burst that kills your ally before your mark is placed."
+  ],
+  "mistakes": [
+   "Casting the mark too early: the enemy switches targets.",
+   "Throwing a single bomb when you can't follow with the second.",
+   "Forgetting to give your stored XP to an ally."
+  ],
+  "matchup_notes": {
+   "Thresh": "Stick a bomb on him when he steps up for his hook.",
+   "Lulu": "Poke trades: look for the double bomb.",
+   "Nautilus": "Bomb and E on him when he engages.",
+   "Seraphine": "Stay out of her charm range and poke with Q.",
+   "Swain": "He has to get close: slow him and stun him."
+  },
+  "mid_game": "Stick with your team, place Control Wards and keep the mark for the fight around the objective.",
+  "late_game": "Stay behind your carry: double bomb on the diver, E to slow or speed up, and Chronoshift on the targeted ally at the last moment.",
+  "ahead": "Force fights: your mark makes your carry almost impossible to kill.",
+  "behind": "Protect your carry: a well-timed revive turns a fight around.",
+  "win_condition": "To win this game, you want to control fights with your bombs and revive your carry at the deciding moment.",
+  "final_tip": "Place Chronoshift right before your ally dies: too early and the enemy switches targets; too late and they're already dead."
+ }
+}

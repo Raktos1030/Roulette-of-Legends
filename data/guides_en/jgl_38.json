@@ -1,0 +1,43 @@
+{
+ "Sylas|jgl": {
+  "identity": "Magic damage fighter-mage who steals enemy ultimates. Chain Lash (Q) crosses his chains to slow, then explode, Kingslayer (W) leaps onto a target and heals him (more when he's low), Abscond / Abduct (E) dashes, then throws a chain that pulls him to an enemy and stuns them, and Hijack (R) steals an enemy champion's ultimate. After every ability, his next attack hits in an area (passive). He's now played slightly more in the jungle than mid.",
+  "playstyle": "Skirmish and playmaking jungler. His ultimate depends on the enemy team comp: a stolen engage or area ultimate can win a teamfight on its own.",
+  "early_game": "Clear fast with Q and your passive. Gank when your target is in E range: dash, chain to stun, Q, then W to finish and heal. Duel junglers who don't do much early: W makes you very strong in short fights.",
+  "level_1": "Abscond / Abduct (E) first.",
+  "level_2": "Chain Lash (Q). A slow and an explosion where the chains cross: your clear speeds up.",
+  "level_3": "Kingslayer (W). Leap and heal: first full gank E → E (chain) → Q → W. W is the ability you max first.",
+  "level_6": "Hijack: you steal an enemy's ultimate and can use it. Look at the enemy comp: steal the most impactful ultimate (area engage, team heal, execute). You can hold it for the deciding moment.",
+  "power_spikes": [
+   "Level 3: ganks and duels with W.",
+   "Level 6: stolen ultimate depending on the enemy comp.",
+   "First completed item: very strong skirmishes.",
+   "Mid game: playmaking with the stolen ultimate."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear, ganks and skirmishes. Sylas wants to fight often: control Scuttles, invade when your laners have priority and play for Void Grubs (around 8 minutes). After 6, find the most interesting ultimate on the enemy team and set up a fight around it.",
+  "trading": "Ganking: E → chain (stun) → Q → W. Teamfighting: steal the strongest ultimate, then use it at the right moment; W to heal when you're low. Give up on it against champions who beat you in long fights (Gwen, Bel'Veth).",
+  "threats": [
+   "Gwen and Bel'Veth, who beat you in long fights.",
+   "Skarner, who kidnaps you away from your team.",
+   "Enemy comps with no interesting ultimate to steal."
+  ],
+  "mistakes": [
+   "Stealing an ultimate at random without looking at the enemy comp.",
+   "Using W too early, when you don't need the heal.",
+   "Missing E's chain and engaging anyway."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Duel him with W: your heal wins short fights.",
+   "Graves": "Catch him with the chain when he dashes.",
+   "Viego": "Steal his ultimate or save yours for after his possession.",
+   "Shyvana": "Steal her dragon transformation.",
+   "Gwen": "She beats you in long fights: avoid drawn-out duels."
+  },
+  "mid_game": "Skirmishes and playmaking with the stolen ultimate around objectives.",
+  "late_game": "Use the stolen ultimate at the right moment (engage, protection or execute), then W to survive.",
+  "ahead": "Choke out the enemy jungler and force fights.",
+  "behind": "Farm, play with your team and look for a decisive stolen ultimate.",
+  "win_condition": "To win this game, you want to win skirmishes with W and turn teamfights with the stolen ultimate.",
+  "final_tip": "Before stealing an ultimate, look at the whole enemy comp: the most impactful one isn't always the closest one."
+ }
+}

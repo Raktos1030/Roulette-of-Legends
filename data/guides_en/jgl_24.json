@@ -1,0 +1,43 @@
+{
+ "MasterYi|jgl": {
+  "identity": "Physical and true damage fighter, a jungle hypercarry. Alpha Strike (Q) makes him untargetable while striking several targets, Meditate (W) heals him and reduces damage taken, Wuju Style (E) adds true damage to his attacks, and Highlander (R) gives him attack and movement speed, makes him immune to slows, and extends with every takedown (which also lowers his cooldowns). Every few attacks, one strikes twice (passive).",
+  "playstyle": "Farming jungler who cleans up fights at the end. Master Yi scales very hard: he wants to farm, then enter fights once the enemy CC is used to chain takedowns. He's weak against CC and teams that watch for him.",
+  "early_game": "Clear very fast with Q and your double strikes. Avoid invades and duels against early-game junglers. Only gank lanes where the opponent is already low or has no CC: your ganks are weak before 6.",
+  "level_1": "Alpha Strike (Q) first.",
+  "level_2": "Wuju Style (E). True damage on your attacks: your clear speeds up.",
+  "level_3": "Meditate (W). Healing and damage reduction: use it on camps to keep your health, and in fights to soak a burst (it also resets your attack).",
+  "level_6": "Highlander: speed, slow immunity and an extension with every takedown. Your ganks become viable and your clean-up fights very dangerous.",
+  "power_spikes": [
+   "Level 6: Highlander, your first real ganks.",
+   "First completed item: strong clearing and dueling.",
+   "Two items: one of the best teamfight cleaners.",
+   "Late game: every takedown resets your abilities."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Very fast full clear, avoiding fights early. Master Yi wins through farming: take every camp, Scuttles when it's safe, and Void Grubs (around 8 minutes) if you can. After 6, gank lanes where the opponent has no lockdown. Avoid junglers who lock you down (Rammus, Zac, Elise).",
+  "trading": "Skirmishing: wait for the enemy CC to be used, then Q to go in (untargetable) → E → R → attacks. W to soak a burst. Give up on it against heavy CC champions if you haven't waited for their ability.",
+  "threats": [
+   "Hard CC (Rammus, Zac, Elise, Wukong).",
+   "Early invades.",
+   "Teams that watch for you in teamfights."
+  ],
+  "mistakes": [
+   "Being the first one into a fight.",
+   "Opening with Q instead of using it to dodge an ability.",
+   "Taking early duels."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He'll invade you early: keep vision and farm.",
+   "Graves": "He beats you early: farm, then punish him.",
+   "Viego": "Clean up fights before he possesses your allies.",
+   "Rammus": "His taunt and his Defensive Ball Curl shut you down: avoid him.",
+   "Wukong": "His clone and knock-up cut you off: wait for his ultimate."
+  },
+  "mid_game": "Farm, objectives and clean-up fights. Avoid fights where the enemy team still has its CC.",
+  "late_game": "Go in last, after the enemy CC, and clean up the fight with Highlander. Every takedown resets your abilities.",
+  "ahead": "Farm, take objectives and clean up fights.",
+  "behind": "Farm and scale: Master Yi stays dangerous late game.",
+  "win_condition": "To win this game, you want to farm, scale and clean up teamfights after the enemy CC.",
+  "final_tip": "Never go in first: wait for the enemy CC to be used."
+ }
+}

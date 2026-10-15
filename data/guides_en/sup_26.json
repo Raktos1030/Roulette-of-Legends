@@ -1,0 +1,43 @@
+{
+ "Senna|sup": {
+  "identity": "Physical damage, utility marksman support. Absolution (passive): units that die near her sometimes leave a soul; by attacking it, she collects Mist that permanently increases her attack damage, range and crit chance. Her attacks are slow but powerful. Piercing Darkness (Q) fires a beam that heals allies and damages enemies, Last Embrace (W) roots the target and nearby enemies after a short delay, Curse of the Black Mist (E) camouflages Senna and the allies in its area, and Dawning Shadow (R) fires a beam with unlimited range that shields allies hit and damages enemies in the center.",
+  "playstyle": "Poke and scaling support: she harasses from long range, heals with Q and becomes a real threat thanks to souls. No clearly unfavorable matchups: her worst ones (Blitzcrank, Zyra, Thresh) stay close to even. She crushes melee supports and slow mages (Swain, Pantheon, Brand, Poppy).",
+  "early_game": "Harass your opponent with your long-range attacks and Q (through a minion or your ADC, it also heals). Pick up the souls that appear: each one makes you permanently stronger. Keep W to stop an engage or start a kill.",
+  "level_1": "Piercing Darkness (Q) first. After that, max Q first.",
+  "level_2": "Last Embrace (W). A delayed CC: combo with your ADC, or defense against a diver.",
+  "level_3": "Curse of the Black Mist (E). Camouflage to escape, reposition your duo, or surprise your opponents.",
+  "level_6": "Dawning Shadow: a global beam that shields allies hit and damages enemies in the center. Save an ally in another lane or finish a fleeing enemy.",
+  "power_spikes": [
+   "Level 2: Q + W for kills.",
+   "Level 6: global shield ultimate.",
+   "Collected souls: increasing range and damage.",
+   "Late game: very long attack range."
+  ],
+  "lane_plan": "Harass with your attacks and Q, collect souls and protect your ADC. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored). Use your ultimate to help the other lanes.",
+  "trading": "Basic trade: attack, Q through a minion. All-in: W, Q, attacks. Defense: W on the engage, E to camouflage your duo. Against hooks (Blitzcrank, Thresh), stay behind minions: you're fragile.",
+  "jungle_plan": "",
+  "threats": [
+   "Blitzcrank, Thresh and Zyra: your worst matchups, close to even.",
+   "Hooks and engages that catch you: you're fragile.",
+   "Assassins who target you in teamfights."
+  ],
+  "mistakes": [
+   "Forgetting to collect souls.",
+   "Standing in the open against a hook.",
+   "Wasting your ultimate with no ally to shield and no enemy to finish."
+  ],
+  "matchup_notes": {
+   "Thresh": "Stay behind minions and keep W for his engage.",
+   "Lulu": "Poke trades: your range is longer.",
+   "Nautilus": "His anchor doesn't get through minions: stay behind them.",
+   "Nami": "Dodge her bubble and harass her from farther away.",
+   "Swain": "He has to get close: poke him from range."
+  },
+  "mid_game": "Collect souls, place Control Wards and poke before objectives. Protect your team with R.",
+  "late_game": "Hit from your very long range behind your frontline. W on divers, E to reposition the team, R at the start of the fight to protect.",
+  "ahead": "Poke and collect souls: you become a damage threat.",
+  "behind": "Play utility: Q, W, E and R stay decisive even without a lead.",
+  "win_condition": "To win this game, you want to harass from long range, collect souls and protect your team with your global ultimate.",
+  "final_tip": "Your Q heals allies it passes through: aim at your opponent through your ADC to heal and damage at the same time."
+ }
+}

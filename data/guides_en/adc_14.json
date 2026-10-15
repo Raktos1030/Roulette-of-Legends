@@ -1,0 +1,43 @@
+{
+ "Lucian|adc": {
+  "identity": "Short-range physical damage marksman. Lightslinger (passive): after each ability, his next attack fires twice; when an ally heals or shields him, or when a nearby enemy is rooted, his next two attacks deal bonus magic damage. Piercing Light (Q) fires a beam that passes through its target, Ardent Blaze (W) explodes in a star to mark enemies (he gains speed attacking a marked enemy), Relentless Pursuit (E) is a short dash whose cooldown drops with each double shot, and The Culling (R) fires a barrage of bullets in one direction.",
+  "playstyle": "Early-game ADC: he wins short trades by chaining ability, double shot, ability. He's ahead in gold at 15 minutes on average against common ADCs: he has to convert early, because he scales worse than the others.",
+  "early_game": "Short trades: ability, attack (double shot), ability, attack. With a support who heals or shields, every heal empowers your next two attacks. Press your lead to take plates. Keep E to dodge an engage if you're not sure to win.",
+  "level_1": "Piercing Light (Q) first. Q through a minion to hit your opponent, then double shot.",
+  "level_2": "Relentless Pursuit (E). Dash to reposition for a double shot, or to dodge an ability. Every double shot lowers its cooldown.",
+  "level_3": "Ardent Blaze (W). Completes the rotation: Q → attack → W → attack → E → attack. W reveals and gives you speed.",
+  "level_6": "The Culling: sustained damage in one direction. Use it when your opponent can't leave the line (slowed, rooted), and use E during the ultimate to reposition.",
+  "power_spikes": [
+   "Levels 2 to 3: very strong short trades.",
+   "Level 6: ultimate to finish.",
+   "First completed item: your main power spike.",
+   "Mid game: skirmishes with your support."
+  ],
+  "lane_plan": "Play aggressive with your support from level 2. Push to take plates and go to dragon with your jungler. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) completes fast when you dominate. End it fast: your late game is weaker.",
+  "trading": "Short trade: Q → double shot → W → double shot, then step back. All-in: add E to stay in range and R when your opponent is rooted. Avoid long fights against ADCs who scale (Jinx) or slow you (Ashe).",
+  "jungle_plan": "",
+  "threats": [
+   "Seraphine bot: your hardest matchup.",
+   "Jinx, Xayah and Ashe: hard matchups.",
+   "The late game, where your short range becomes a problem."
+  ],
+  "mistakes": [
+   "Attacking without weaving abilities (you lose the double shots).",
+   "Using E to attack and having no way to escape.",
+   "Letting the game drag on without converting your lead."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "Win lane before her evolutions.",
+   "Jinx": "She scales much better: turn your lead into towers and dragons.",
+   "Ezreal": "You win short trades: force them when he's used E.",
+   "Seraphine": "She pokes and charms from afar: avoid her abilities by staying behind your minions.",
+   "Ashe": "Her slow stops you from repositioning: engage when her W is on cooldown."
+  },
+  "mid_game": "Look for skirmishes with your support and jungler. Take towers and dragons while you're strong.",
+  "late_game": "Stay behind your frontline, go in with E when the target is in range, chain abilities and double shots. Keep E to escape a diver.",
+  "ahead": "Force fights and objectives: your power window is now.",
+  "behind": "Farm, stay with your team and look for short picks rather than long teamfights.",
+  "win_condition": "To win this game, you want to dominate lane with your support and end the game before the scaling ADCs take over.",
+  "final_tip": "Always weave an ability between two attacks: every double shot also lowers your dash cooldown."
+ }
+}

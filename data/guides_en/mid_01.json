@@ -1,0 +1,43 @@
+{
+ "Ahri|mid": {
+  "identity": "Magic damage mage-assassin. Orb of Deception (Q) goes out and comes back (true damage on the way back), Fox-Fire (W) speeds her up and sends three wisps at nearby enemies, Charm (E) draws the target toward her, and Spirit Rush (R) gives her three dashes (extended on takedowns). Her passive heals her after hitting several abilities or getting a takedown.",
+  "playstyle": "Pick and roam mage, very safe thanks to her ultimate's dashes. Ahri wins by landing Charm: every successful charm is a potential kill or a pick in the mid game. She roams easily after level 6.",
+  "early_game": "Farm with Q (it hits several minions on the way out and back) and poke your opponent when they come to last hit. Keep Charm to punish an opponent who steps up or to defend against an engage. You have good wave control: push before roaming.",
+  "level_1": "Fox-Fire (W) first on the most common path. Speed and damage on an opponent who walks into you; some players take Q to farm.",
+  "level_2": "Orb of Deception (Q). Poke on the way out and back (true damage on the way back): W + Q when your opponent comes to last hit.",
+  "level_3": "Charm (E). Combo: E → Q → W. If Charm lands, your opponent loses a big chunk of health.",
+  "level_6": "Spirit Rush: three dashes to engage, chase or escape. Kill combo: R → E → Q → W → R. With your ultimate, you can roam bot or into the jungle safely.",
+  "power_spikes": [
+   "Level 3: full combo with Charm.",
+   "Level 6: ultimate, kills and roams.",
+   "First completed item: burst that kills carries.",
+   "Mid game: picks with Charm."
+  ],
+  "lane_plan": "Push the wave with Q, poke when your opponent comes to last hit and keep Charm for defense. After level 6, push, then roam bot or to the river. The mid role quest (faster recall, upgraded boots) rewards roaming: use it. Avoid getting engaged on without Charm.",
+  "trading": "Short trade: Q on your opponent on the way out and back. Full trade: E → Q → W. All-in: R to close the gap → E → Q → W → R. Engage when Charm has landed; give up on it if you missed it against an assassin (Zed, Katarina).",
+  "jungle_plan": "",
+  "threats": [
+   "Assassins who burst you (Zed, Katarina).",
+   "Annie and her ranged stun.",
+   "CC cast right as you engage with R."
+  ],
+  "mistakes": [
+   "Throwing Charm at random and not having it to defend yourself.",
+   "Using all three ultimate dashes to go in with no escape.",
+   "Staying in lane instead of roaming when your wave is pushed."
+  ],
+  "matchup_notes": {
+   "Sylas": "Charm him when he uses his E; he can steal your ultimate.",
+   "Viktor": "Poke him with Q and keep R to dodge his ultimate.",
+   "Syndra": "Dodge her stun and charm her when she steps up.",
+   "Zed": "Keep R to dodge his ultimate.",
+   "Yone": "Charm him when he uses his E; poke him with Q."
+  },
+  "mid_game": "Roams, picks with Charm and objectives. Ahri is very good at catching carries who walk forward without vision.",
+  "late_game": "Picks and burst: charm the enemy carry, then ultimate and combo. Keep R to escape if needed.",
+  "ahead": "Roam, create picks and take objectives.",
+  "behind": "Farm, push the wave and look for picks with Charm.",
+  "win_condition": "To win this game, you want to create picks with Charm and roam to help the other lanes.",
+  "final_tip": "Always save Charm for when you can follow it up or defend yourself: it's your most important ability."
+ }
+}

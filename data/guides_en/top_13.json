@@ -1,0 +1,84 @@
+{
+ "Volibear|top": {
+  "identity": "Mixed damage fighter-tank. Thundering Smash (Q) speeds him up toward champions and stuns with his next attack, Frenzied Maul (W) marks the target, then heals him if he hits it again, Sky Splitter (E) calls down a lightning bolt that slows (and shields him if he's inside the zone), and Stormbringer (R) makes him leap while disabling towers. His passive speeds up his attacks and bounces lightning at full charge.",
+  "playstyle": "Aggressive lane, all-ins and tower dives. Volibear wins melee fights thanks to Q's stun and W's healing, and his ultimate makes dives very safe. He's weaker against kiting and champions who keep him at range.",
+  "early_game": "Trade with W (mark, then heal) and engage with Q when your opponent is in range. Place E on your position during a fight to get the shield. Look for the all-in when your passive is charged.",
+  "level_1": "Sky Splitter (E) first on the most common path (E → Q → W, then max W). You can poke from range when your opponent comes to last hit.",
+  "level_2": "Thundering Smash (Q). Speed and a stun: Q → attack → E on yourself for the shield. A good all-in at level 2.",
+  "level_3": "Frenzied Maul (W). W → attacks → W on the marked target for the heal: your long trades become very strong.",
+  "level_6": "Stormbringer: a leap that disables towers and gives health. Perfect for tower dives with your jungler or engaging in teamfights.",
+  "power_spikes": [
+   "Level 2: Q + E, a strong all-in.",
+   "Level 3: long trades with W.",
+   "Level 6: tower dives with your ultimate.",
+   "First completed item: dominant duels."
+  ],
+  "lane_plan": "Play a neutral or pushed wave, trade with W and engage with Q. After 6, dive with your jungler while disabling the tower. Recall when your wave crashes.",
+  "trading": "Short trade: W → attacks. Long trade: Q (stun) → E on yourself → W → W on the marked target. Engage when your opponent is in Q range; give up on it if they kite you or have Counter Strike (Jax).",
+  "jungle_plan": "",
+  "threats": [
+   "Teemo and ranged kiting.",
+   "Jax and his Counter Strike, which cancels your Q.",
+   "Armored tanks who hold up against you in long fights (Malphite)."
+  ],
+  "mistakes": [
+   "Engaging with Q when you can't follow up.",
+   "Forgetting to stand inside your E for the shield.",
+   "Using your ultimate without follow-up during a dive."
+  ],
+  "matchup_notes": {
+   "Darius": "Stun him with Q when he steps up and heal with W.",
+   "Sett": "Avoid the center of his W and engage after it.",
+   "Nasus": "Punish him early to limit his stacks, then convert your lead before he scales.",
+   "Jax": "His Counter Strike cancels your Q: wait it out before engaging.",
+   "Teemo": "He kites and blinds you: farm and wait for your jungler."
+  },
+  "mid_game": "Dives and skirmishes. Your ultimate disables towers: very strong for taking them with your jungler.",
+  "late_game": "Engage frontline: ultimate onto the enemy backline, Q to stun the carry, W to heal.",
+  "ahead": "Dive, take towers and force fights.",
+  "behind": "Farm and play for engages in teamfights.",
+  "win_condition": "To win this game, you want to dominate your lane and tower dive with your ultimate and your jungler.",
+  "final_tip": "During a fight, stand inside your Sky Splitter: it gives you a shield on top of the slow."
+ },
+ "Warwick|top": {
+  "identity": "Mixed damage fighter. Warwick heals by attacking when he's low on health (passive Eternal Hunger), bites with Jaws of the Beast (Q, which can follow the target if you hold the key), hunts wounded enemies with Blood Hunt (W), reduces damage taken, then fears with Primal Howl (E) and leaps to suppress with Infinite Duress (R).",
+  "playstyle": "Long-fight and sustain lane. Warwick wins duels thanks to his healing and fear.",
+  "early_game": "Trade with Q and attacks, heal with your passive. Keep E to reduce the damage of an all-in and fear your opponent at the right moment. W gives you speed toward wounded enemies: there's no escaping you when you're ahead.",
+  "level_1": "Jaws of the Beast (Q) first. Bite your opponent when they come to last hit and heal.",
+  "level_2": "Blood Hunt (W). Attack and movement speed against wounded enemies: your long trades become very strong.",
+  "level_3": "Primal Howl (E). Damage reduction, then a fear: cast it at the start of an enemy all-in to soak damage, then release it to fear.",
+  "level_6": "Infinite Duress: a leap that suppresses the target. Use it to start an all-in, gank with your jungler or catch a carry in teamfights.",
+  "power_spikes": [
+   "Level 3: E + Q, long fights.",
+   "Level 6: ultimate for kills.",
+   "First completed item: dominant duels.",
+   "Mid game: skirmishes around wounded enemies."
+  ],
+  "lane_plan": "Play a neutral wave, trade with Q and heal with your passive. Take plates when you're winning. Recall when your wave crashes. W gives you vision of wounded enemies on the map: use it to help your team.",
+  "trading": "Short trade: Q + attacks. Long trade: E (damage reduction) → Q → attacks → recast E for the fear → R. Engage when your opponent is wounded; give up on it against champions who kite you (Kennen).",
+  "jungle_plan": "",
+  "threats": [
+   "Kennen and ranged champions who kite you.",
+   "Urgot and champions who beat you in sustained fights.",
+   "Enemy healing reduction."
+  ],
+  "mistakes": [
+   "Using E too early.",
+   "Missing your ultimate.",
+   "Fighting at range."
+  ],
+  "matchup_notes": {
+   "Yone": "Keep E for his Q3 and heal in long fights.",
+   "Darius": "His bleeds hurt you: trade briefly and keep E for his all-in.",
+   "Mordekaiser": "Your healing holds up inside his Realm of Death.",
+   "Kennen": "He kites and stuns you: farm and wait for your jungler.",
+   "Irelia": "Fear her when she dashes onto you."
+  },
+  "mid_game": "Skirmishes and duels. Warwick excels at punishing wounded enemies thanks to W.",
+  "late_game": "Ultimate on the enemy carry and a long fight.",
+  "ahead": "Force duels and dive with your jungler.",
+  "behind": "Farm and play for your ultimate in teamfights.",
+  "win_condition": "To win this game, you want to win long fights thanks to your healing and catch carries with your ultimate.",
+  "final_tip": "Keep your Primal Howl for the moment your opponent starts their all-in."
+ }
+}

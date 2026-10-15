@@ -1,0 +1,43 @@
+{
+ "Swain|sup": {
+  "identity": "Durable battle mage. Ravenous Flock (passive): his ravens collect soul fragments that heal him and permanently increase his max health. Death's Hand (Q) fires several bolts that pass through enemies, Vision of Empire (W) strikes a distant area, slowing and revealing champions hit, Nevermove (E) sends out a wave that returns and roots, then can pull rooted champions toward him, and Demonic Ascension (R) transforms him: he drains nearby enemies' health and can cast Demonflare, an explosion that slows.",
+  "playstyle": "Control and extended-fight support: he catches with E, pulls the target toward his ADC and wins long fights with his drain. He beats engage tanks who come to him (Nautilus, Rell, Tahm Kench) but clearly loses to enchanters who poke and heal (Soraka, Nami, Janna, Lulu, Zilean, Yuumi).",
+  "early_game": "Threaten Nevermove (E): a rooted opponent gets pulled toward you and your ADC. Poke with W from range; it also reveals bushes. Against an engage support, let them come: E when they get into melee range.",
+  "level_1": "Nevermove (E) first. After that, max Q first.",
+  "level_2": "Vision of Empire (W). Long-range poke, vision and a slow.",
+  "level_3": "Death's Hand (Q). Combo: E → pull → point-blank Q.",
+  "level_6": "Demonic Ascension: a constant drain and Demonflare. Go into the fight after your E to drain both opponents.",
+  "power_spikes": [
+   "Level 3: E → pull → Q.",
+   "Level 6: drain in 2v2 fights.",
+   "First items: very durable in long fights.",
+   "Teamfights: E on several targets, then R in the middle."
+  ],
+  "lane_plan": "Poke with W, threaten E and let engage supports come to you. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "All-in: E → pull → Q → R. Defense: E on the diver, R to survive. Against enchanters (Soraka, Nami, Lulu), don't force trades: they poke and heal more than you drain.",
+  "jungle_plan": "",
+  "threats": [
+   "Soraka, Nami and Janna, the worst matchups.",
+   "Lulu, Zilean and Yuumi: hard matchups.",
+   "Enemy healing reduction, which weakens your drain."
+  ],
+  "mistakes": [
+   "Wasting E and no longer being able to defend yourself.",
+   "Casting your ultimate too far from enemies.",
+   "Forcing trades against an enchanter who pokes you."
+  ],
+  "matchup_notes": {
+   "Thresh": "Let him engage, then E when he arrives.",
+   "Nautilus": "His anchor brings him close to you: E, pull and drain.",
+   "Lulu": "She pokes and polymorphs: play defensively and wait for level 6.",
+   "Leona": "She comes into melee range: answer with E and R.",
+   "Nami": "She pokes and heals: stay behind minions and play around your jungler."
+  },
+  "mid_game": "Join fights, poke with W before objectives and place Control Wards.",
+  "late_game": "Mage frontline: E on several targets, pull, then R in the middle. Your drain keeps you alive in long fights.",
+  "ahead": "Force long fights and take objectives.",
+  "behind": "Poke with W, keep E to protect your ADC and play extended teamfights.",
+  "win_condition": "To win this game, you want to pull enemies toward your team with E and win long fights thanks to your drain.",
+  "final_tip": "Root with E, recast to pull the target toward your ADC, then Q: it's your best combo."
+ }
+}

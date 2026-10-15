@@ -1,0 +1,43 @@
+{
+  "Gwen|jgl": {
+    "identity": "Combattante à dégâts magiques et vrais, jouée en jungle environ une fois sur cinq (le top reste son rôle principal). En jungle, ses dégâts en pourcentage des PV (passif Mille coupures) nettoient très vite les gros camps et les monstres épiques. Tchac, tchac ! (Q) inflige des dégâts vrais au centre, Brume sacrée (W) la protège de tout ce qui vient de l'extérieur, Élan incisif (E) lui donne mobilité et vitesse d'attaque, et Piqûre (R) lance des aiguilles en trois temps qui slow.",
+    "playstyle": "Jungler de farm et d'escarmouche qui scale fort. Gwen n'a pas de hard CC : ses ganks reposent sur le slow de l'ultime et sur sa capacité à gagner les combats longs. Elle est excellente sur les objectifs grâce à ses dégâts en pourcentage.",
+    "early_game": "Clear complet en stackant Q sur les camps (chaque attaque ajoute un tchac, relâche-le à 4 stacks). Évite les duels contre les junglers d'early game ; gank surtout les lanes où l'adversaire est déjà bas ou poussé. Ta force arrive avec l'ultime et le premier item.",
+    "level_1": "Tchac, tchac ! (Q) en premier. Stack sur le camp et relâche à 4 stacks.",
+    "level_2": "Élan incisif (E). Vitesse d'attaque et portée : ton clear s'accélère.",
+    "level_3": "Second point en Q ; Brume sacrée (W) arrive au niveau 4. Q est maximisé en priorité pour le clear.",
+    "level_6": "Piqûre : trois lancers d'aiguilles qui slow. C'est ton outil de gank : E pour coller, R pour slow, Q centré pour finir. Tes combats longs deviennent très forts.",
+    "power_spikes": [
+      "Niveau 6 : ultime, ganks et escarmouches.",
+      "Premier item complet : dégâts en pourcentage très élevés.",
+      "Deux items : domination des combats longs.",
+      "Objectifs : Gwen fait fondre les dragons et le Baron."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Full clear en stackant Q, puis crabe. Gwen veut farmer et scale : ne force pas de ganks sans contrôle de tes laners. Prends les Larves (vers 8 min) et les dragons grâce à tes dégâts en pourcentage. À partir du niveau 6, gank les lanes avec contrôle (tes laners fournissent le stun, toi les dégâts). Évite les invasions contre les junglers forts en early.",
+    "trading": "En escarmouche : E pour coller → attaques pour stacker Q → W pour bloquer les dégâts extérieurs → Q centré → R pour slow. En gank : attends que ton laner contrôle la cible. Abandonne si l'adversaire te kite hors de ta Brume.",
+    "threats": [
+      "Junglers d'early game qui t'envahissent (Bel'Veth, Evelynn après son 6).",
+      "CC durs qui te sortent de ta Brume.",
+      "Kiting à distance."
+    ],
+    "mistakes": [
+      "Lancer Q sans 4 stacks.",
+      "Forcer des ganks sans CC.",
+      "Sortir de ta Brume au moment du burst adverse."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il t'envahira : protège tes camps et gagne en late game.",
+      "Viego": "Tu gagnes les combats longs ; ne le laisse pas réinitialiser en possédant tes alliés.",
+      "Graves": "Il te bat en early : évite ses invasions.",
+      "Bel'Veth": "Elle te bat en combat long : ne duel pas.",
+      "Evelynn": "Elle t'assassine après son 6 : place des wards et reste près de tes alliés."
+    },
+    "mid_game": "Escarmouches autour des objectifs et prise des dragons. Gwen est forte dans les combats longs.",
+    "late_game": "Découpe la frontline adverse avec tes dégâts en pourcentage, ou dive sur un carry avec E. Reste dans ta Brume.",
+    "ahead": "Prends les objectifs, force les combats longs et envahis.",
+    "behind": "Farm et scale : ton late game compense ton retard.",
+    "win_condition": "Pour gagner cette partie, tu veux scale, prendre les objectifs grâce à tes dégâts en pourcentage et gagner les combats longs.",
+    "final_tip": "Relâche toujours ton Q avec 4 stacks et en visant le centre."
+  }
+}

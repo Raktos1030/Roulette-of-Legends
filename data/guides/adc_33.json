@@ -1,0 +1,43 @@
+{
+  "Zeri|adc": {
+    "identity": "Tireuse très mobile à dégâts physiques et magiques. Sa vraie attaque est Rafale (Q), qui tire 7 balles sur le premier ennemi touché et compte comme une attaque ; son auto-attaque classique est un tir chargé (passif Batterie vivante) qui, une fois chargé en se déplaçant et en tirant, fait des dégâts supplémentaires. Laser électrocuteur (W) slow le premier ennemi touché et devient un laser à longue portée s'il touche un mur, Charge ionique (E) est un dash qui franchit les obstacles et rend Rafale perforante quelques secondes, et Éruption électrique (R) libère une nova puis la surcharge : vitesse d'attaque cumulée à chaque champion touché et Rafale qui tire en triple avec des éclairs en chaîne.",
+    "playstyle": "ADC de kiting : elle tire en se déplaçant sans arrêt et reste insaisissable grâce à son dash qui franchit les murs. Aucun matchup nettement défavorable : ses moins bons (Jinx, Tristana, Twitch) restent proches de l'équilibre. Elle écrase les ADC à poke peu mobiles (Ezreal, Varus, Miss Fortune).",
+    "early_game": "Farm avec Rafale (Q) : c'est ton attaque principale. Garde ton tir chargé pour achever un sbire ou toucher l'adversaire quand il est chargé à bloc. Poke avec W, en le tirant contre un mur pour obtenir le laser à longue portée. Garde E pour esquiver un engage.",
+    "level_1": "Rafale (Q) est apprise automatiquement au niveau 1. Ensuite, le chemin le plus joué prend Charge ionique (E) au niveau 2, Laser électrocuteur (W) au niveau 3, puis Q.",
+    "level_2": "Charge ionique (E). Dash qui franchit les murs et rend Q perforante : ta mobilité et tes dégâts sur la wave.",
+    "level_3": "Laser électrocuteur (W). Slow et poke ; contre un mur, il devient un laser à très longue portée.",
+    "level_6": "Éruption électrique : nova de dégâts, puis surcharge. Plus tu touches de champions, plus ta vitesse d'attaque augmente. Lance-la au début d'un combat, puis kite avec E.",
+    "power_spikes": [
+      "Niveau 2 : E pour les trades et la fuite.",
+      "Niveau 6 : surcharge en combat.",
+      "Premier item complet : Rafale beaucoup plus fréquente.",
+      "Teamfight : Rafale en triple avec éclairs en chaîne."
+    ],
+    "lane_plan": "Farm avec Q, poke avec W contre les murs, et joue avec ton support. Ne gâche pas E : c'est ta survie. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense un farm régulier. Participe aux dragons : ta mobilité te permet de t'y placer en sécurité.",
+    "trading": "Trade de base : Rafale sur l'adversaire, puis recule en continuant de tirer. All-in : W pour slow, E pour rester à portée, R, puis Rafale en continu. Évite les combats longs contre les ADC de scaling (Jinx) et les engages surprise (Twitch).",
+    "jungle_plan": "",
+    "threats": [
+      "Jinx, Tristana et Twitch : tes moins bons matchups, proches de l'équilibre.",
+      "CC de foule quand ton dash est en recharge.",
+      "Supports d'engage qui t'attrapent avant ta surcharge."
+    ],
+    "mistakes": [
+      "Rester immobile en tirant : Zeri doit se déplacer en permanence.",
+      "Gâcher E pour attaquer et ne plus pouvoir fuir.",
+      "Lancer l'ultime sans champion à toucher."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Esquive son ultime avec E au-dessus d'un mur.",
+      "Jinx": "Elle scale : transforme ton avance en tours.",
+      "Yunara": "Évite de te battre pendant sa transe.",
+      "Ezreal": "Ta mobilité esquive ses Q.",
+      "Tristana": "Garde E pour esquiver son Saut roquette."
+    },
+    "mid_game": "Groupe avec ton équipe et prends les objectifs. Utilise E et W autour des murs pour te déplacer et poke.",
+    "late_game": "Kite en permanence derrière ta frontline, lance R dès que plusieurs champions sont à portée, et utilise E pour rester à la bonne distance.",
+    "ahead": "Force les combats : ta surcharge et ta mobilité te rendent difficile à arrêter.",
+    "behind": "Farm, reste avec ton équipe et joue les teamfights en kitant.",
+    "win_condition": "Pour gagner cette partie, tu veux kiter les combats sans jamais t'arrêter et nettoyer les teamfights avec ta surcharge.",
+    "final_tip": "Tire W contre un mur : il devient un laser à très longue portée, ton meilleur poke."
+  }
+}

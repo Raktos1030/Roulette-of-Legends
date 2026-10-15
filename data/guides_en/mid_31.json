@@ -1,0 +1,43 @@
+{
+ "Swain|mid": {
+  "identity": "Magic damage battle mage. Death's Hand (Q) fires bolts in a cone, Vision of Empire (W) strikes a distant area after a delay, reveals and slows, Nevermove (E) throws a projectile that returns and roots, then can pull rooted champions toward him, and Demonic Ascension (R) transforms him: he drains nearby enemies and heals, then can unleash an explosion. His ravens collect soul fragments that heal him and permanently increase his health (passive).",
+  "playstyle": "In mid, Swain is a durable battle mage who wins extended fights thanks to his ultimate's drain. He punishes melee fighters and mages (Galio, Akali, Lissandra), but struggles against long-range or very mobile mages (Zoe, Hwei, Aurora).",
+  "early_game": "Poke with Q and W, root with E when your opponent walks into melee range. Recast E to pull the rooted target: E → pull → Q. Keep E to defend yourself against assassins.",
+  "level_1": "Nevermove (E) or Death's Hand (Q). E punishes an engage; Q is for farming and poking.",
+  "level_2": "Whichever of Q and E you're missing. E (CC) → recast to pull → Q.",
+  "level_3": "Vision of Empire (W). Long-range poke, vision and a slow: also useful to help other lanes.",
+  "level_6": "Demonic Ascension: a constant drain around you, then an explosion. You win long fights against melee champions.",
+  "power_spikes": [
+   "Level 3: E → pull → Q.",
+   "Level 6: ultimate drain.",
+   "First completed item: very durable in fights.",
+   "Mid game: extended teamfights."
+  ],
+  "lane_plan": "Poke and farm, keep E for engages. Use W to help other lanes from range. Push, then join fights: Swain shines in long fights. The mid role quest (faster recall) helps you come back fast.",
+  "trading": "Short trade: Q + W. All-in: E → pull → Q → R. Give up on it against mages who poke you from out of range (Zoe, Hwei).",
+  "jungle_plan": "",
+  "threats": [
+   "Zoe, Hwei and Aurora: hard matchups.",
+   "Long-range mages who poke you.",
+   "Enemy healing reduction."
+  ],
+  "mistakes": [
+   "Wasting E and no longer being able to defend yourself.",
+   "Casting your ultimate too far from enemies.",
+   "Chasing a mobile mage."
+  ],
+  "matchup_notes": {
+   "Ahri": "Keep E for the end of her ultimate.",
+   "Sylas": "Careful: he can steal your drain ultimate.",
+   "Zed": "Root him when he swaps back to his shadow.",
+   "Zoe": "She pokes you from very far away: stay behind your minions.",
+   "Hwei": "He pokes you: play around your jungler."
+  },
+  "mid_game": "Join fights and win the long ones with your ultimate.",
+  "late_game": "Mage frontline: go in with R, drain and explode. E to root the diver.",
+  "ahead": "Force long fights and take objectives.",
+  "behind": "Farm and play extended teamfights.",
+  "win_condition": "To win this game, you want to win extended fights thanks to your ultimate's drain.",
+  "final_tip": "Root with E, recast to pull the target, then Q: it's your best combo."
+ }
+}

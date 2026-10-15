@@ -1,0 +1,43 @@
+{
+  "Chogath|jgl": {
+    "identity": "Tank à dégâts magiques qui grossit en dévorant. En jungle, Cho'Gath profite du passif Carnivore pour se soigner sur les camps, de Piques vorpales (E) pour farmer, et surtout de Festin (R) pour sécuriser les monstres épiques en dégâts vrais tout en accumulant des PV permanents. Rupture (Q) knock-up et Cri sauvage (W) réduit au silence : de quoi ganker.",
+    "playstyle": "Jungler tank de contrôle d'objectifs et de scaling. Il gagne par les dragons, les Larves et le Baron (Festin + Châtiment), et devient une frontline énorme. Ses ganks sont corrects mais dépendent de la précision de Q.",
+    "early_game": "Clear complet avec E et le passif pour rester en vie sans rentrer à la base. Gank quand une lane a une cible sans dash ou déjà slow : Q sur sa trajectoire, puis W. Privilégie les objectifs : chaque monstre dévoré avec Festin te rapporte des stacks.",
+    "level_1": "Piques vorpales (E) en premier. Tes attaques renforcées nettoient les camps en zone.",
+    "level_2": "Rupture (Q). Dégâts de zone sur les camps et knock-up pour les ganks.",
+    "level_3": "Cri sauvage (W). Silence en cône : Q + W empêchent l'adversaire de répondre ou de fuir avec un sort. Premier gank possible.",
+    "level_6": "Festin : exécution en dégâts vrais qui donne des stacks permanents (PV et taille) sur les champions et les gros monstres. Combine-le avec Châtiment pour voler ou sécuriser les monstres épiques ; en gank, garde-le pour exécuter.",
+    "power_spikes": [
+      "Niveau 3 : Q + W pour les ganks.",
+      "Niveau 6 : Festin, contrôle total des objectifs.",
+      "Premier item complet : clear et survie très confortables.",
+      "Stacks de Festin accumulés : frontline imposante en teamfight."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear complet en utilisant E et le passif pour garder tes PV. Ton plan : être présent sur chaque objectif. Prépare les Larves du Néant (vers 8 min) et les dragons en poussant avec une lane prioritaire, puis Festin + Châtiment pour sécuriser. Festin te donne des stacks sur les gros monstres : garde-le pour eux quand aucun kill n'est en vue. Contre les junglers agressifs, ne duel pas en early : ils te battent avant tes items. Ta quête de rôle (or et XP sur les gros monstres) colle bien à ce style de farm.",
+    "trading": "En gank : vise Q là où l'adversaire va aller (quand il fuit ou dash), puis W et E. En escarmouche : garde W contre le champion qui dive sur tes carries. Festin sert à finir, pas à ouvrir. Abandonne si Q est raté contre un champion mobile.",
+    "threats": [
+      "Junglers agressifs qui t'envahissent en early.",
+      "Ivern et Zyra, qui te slow et te kitent (défavorables selon les données).",
+      "Voleurs d'objectifs qui ont plus de burst que ton Festin."
+    ],
+    "mistakes": [
+      "Lancer Q directement sur la position de la cible au lieu d'anticiper.",
+      "Utiliser Festin sur un petit camp alors qu'un objectif arrive.",
+      "Duel un jungler agressif avant ton premier item."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il te chassera tôt : protège-toi, puis domine les objectifs avec Festin.",
+      "Sylas": "Il peut voler ton Festin : sécurise les objectifs quand il n'est pas là.",
+      "Graves": "Il gagne en early : ne le laisse pas voler tes camps et punis-le avec Q quand il dash.",
+      "Viego": "Silence-le avec W quand il tente de posséder un de tes alliés.",
+      "Ivern": "Il farm vite et ne se bat pas : garde vision et conteste les objectifs à plusieurs."
+    },
+    "mid_game": "Contrôle d'objectifs : dragons, Héraut (vers 15 min) et Baron (20 min). Chaque Festin sur un monstre épique te rend plus fort. Groupe avec ton équipe pour fournir contrôle et frontline.",
+    "late_game": "Frontline de contrôle : Q sur la mêlée, W sur les divers, Festin sur le carry à portée et sur le Baron.",
+    "ahead": "Prends tous les objectifs, stack Festin et force les combats autour d'eux.",
+    "behind": "Farm, stack Festin sur les monstres et reste avec ton équipe : ton rôle de frontline compte plus que tes dégâts.",
+    "win_condition": "Pour gagner cette partie, tu veux contrôler les monstres épiques avec Festin et devenir une frontline impossible à ignorer.",
+    "final_tip": "Garde Festin pour les monstres épiques quand aucun kill n'est en vue : c'est ton meilleur outil de contrôle d'objectifs."
+  }
+}

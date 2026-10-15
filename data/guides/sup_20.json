@@ -1,0 +1,43 @@
+{
+  "Pantheon|sup": {
+    "identity": "Combattant agressif à dégâts physiques. Ardeur mortelle (passif) : après un certain nombre de sorts ou d'attaques, sa prochaine compétence est renforcée. Lance astrale (Q) donne un coup de lance ou la lance à distance, Assaut martial (W) le fait bondir sur une cible pour le stun, Égide impénétrable (E) le rend invulnérable aux attaques venant de face pendant qu'il frappe rapidement, et Météore (R) le fait sauter dans les airs pour retomber loin, à l'endroit choisi.",
+    "playstyle": "Support de lane agressive et de roam : il poke fort avec Q, stun avec W et rejoint les autres lanes avec son ultime. Il gagne la lane en or mais perd souvent la partie : contre les tanks et les enchanteurs (Taric, Braum, Soraka, Rell, Milio), son agressivité est annulée. Il doit convertir tôt.",
+    "early_game": "Poke avec Lance astrale (Q) lancée, puis cherche W → Q renforcé quand l'adversaire s'avance. Au niveau 2, tu peux gagner un all-in avec ton ADC. Égide impénétrable (E) te rend invulnérable aux attaques venant de face : utilise-la pour survivre à un all-in ou pour tenir sous une tourelle.",
+    "level_1": "Assaut martial (W) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Lance astrale (Q). Combo : W (stun) → attaques → Q (renforcée si le passif est prêt).",
+    "level_3": "Égide impénétrable (E). Bloque les attaques de face pendant le combat ou la fuite.",
+    "level_6": "Météore : saute pour rejoindre une autre lane ou un combat. Roam sur le mid ou le dragon, ou atterris derrière l'adversaire pour lui couper la fuite.",
+    "power_spikes": [
+      "Niveau 2 : W + Q, all-in très fort.",
+      "Niveau 6 : roams avec Météore.",
+      "Premier item complet : poke de Q très punitif.",
+      "Mid game : dives sur les cibles isolées."
+    ],
+    "lane_plan": "Harcèle avec Q, joue les all-in avec ton ADC et roam avec R au niveau 6. Attention : reste en bot lane jusqu'au niveau 5, car depuis le patch 26.16 l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "Trade de base : Q lancée. All-in : W → attaques → Q renforcée → E pour bloquer la riposte. Recule contre les supports qui te soignent ou te résistent (Soraka, Milio, Braum, Taric) : ton burst ne suffit pas.",
+    "jungle_plan": "",
+    "threats": [
+      "Taric : ton matchup le plus difficile.",
+      "Braum, Rell, Poppy, Soraka et Milio : matchups difficiles.",
+      "Supports tanks fréquents (Thresh, Leona), en dessous de ta moyenne."
+    ],
+    "mistakes": [
+      "Roamer avant le niveau 5 (pénalité de la quête de rôle).",
+      "Lancer E dans le mauvais sens (il ne bloque que de face).",
+      "Laisser la partie traîner sans convertir l'avance de lane."
+    ],
+    "matchup_notes": {
+      "Thresh": "Reste derrière les sbires pour son grappin, et stun-le avec W quand il avance.",
+      "Lulu": "Elle te métamorphose en plein engage : attends qu'elle ait utilisé W.",
+      "Pyke": "Il est fragile : W → Q le punit.",
+      "Nautilus": "Reste derrière les sbires pour son ancre, et stun-le avec W quand il engage.",
+      "Taric": "Son stun et son invulnérabilité annulent tes all-in : joue le poke."
+    },
+    "mid_game": "Roam avec Météore vers les objectifs et les combats. Pose des pinks et cherche les picks.",
+    "late_game": "Dive sur les cibles isolées avec W, ou atterris avec R derrière l'équipe adverse quand ton équipe engage. E pour bloquer la riposte.",
+    "ahead": "Roam et crée des avantages sur toute la carte avec R.",
+    "behind": "Poke avec Q et garde W pour protéger ton ADC.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner la lane tôt et transformer ton avance en objectifs grâce à tes roams.",
+    "final_tip": "Égide impénétrable ne bloque que ce qui vient de face : tourne-toi vers l'adversaire, pas vers ta fuite."
+  }
+}

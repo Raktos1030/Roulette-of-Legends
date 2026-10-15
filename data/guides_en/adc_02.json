@@ -1,0 +1,43 @@
+{
+ "Ashe|adc": {
+  "identity": "Utility physical damage marksman. Frost Shot (passive): her attacks slow and deal more damage to slowed targets (her crits strengthen the slow instead of adding damage). Ranger's Focus (Q) charges as she attacks, then turns her attacks into flurries of arrows with bonus attack speed. Volley (W) fires a cone of slowing arrows, Hawkshot (E) sends a hawk to reveal any area of the map, and Enchanted Crystal Arrow (R) flies across the map and stuns the first champion hit, longer the farther the arrow has traveled.",
+  "playstyle": "Control ADC: she slows everything she touches and starts fights with her ultimate. She has no dash: her positioning and her slow are her only defense.",
+  "early_game": "Poke with Volley (W) when your opponent walks up to last hit, then attack the slowed target. Charge Ranger's Focus while farming and save it for a trade. With an engage support, every slow can turn into a kill.",
+  "level_1": "Volley (W) first. Poke opponents who walk up to the minions.",
+  "level_2": "Ranger's Focus (Q). Charge it while farming, then activate it for a trade: big attack speed and flurries of arrows.",
+  "level_3": "Hawkshot (E). Send the hawk into the river or the enemy jungle to spot the jungler before you push.",
+  "level_6": "Enchanted Crystal Arrow: a global stun. Fire it at an opponent walking toward your support, at an isolated enemy in another lane, or to open a teamfight.",
+  "power_spikes": [
+   "Level 2: W + Q to win trades.",
+   "Level 6: a long-range engage ultimate.",
+   "First completed item: constant slows.",
+   "Mid game: picks with your ultimate."
+  ],
+  "lane_plan": "Poke with W and control the lane. Use E to spot the enemy jungler. At level 6, play with your support: your arrow can start the all-in from afar. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards steady farming. Help take dragons.",
+  "trading": "Short trade: W, then attack the slowed target. All-in: Q active and nonstop attacks, R if your opponent tries to escape. Back off against divers when your W is on cooldown.",
+  "jungle_plan": "",
+  "threats": [
+   "Xerath bot: a hard matchup.",
+   "Assassins and divers: you have no dash.",
+   "Opponents who block your arrow (Yasuo and his Wind Wall)."
+  ],
+  "mistakes": [
+   "Wasting your ultimate on a target protected by minions or a shield.",
+   "Forgetting to send the hawk before pushing.",
+   "Standing in front of your frontline."
+  ],
+  "matchup_notes": {
+   "Jinx": "She scales: punish her early with W and your support.",
+   "Ezreal": "He only has one dash to escape, and your slow catches him afterwards: stay out of his Q range.",
+   "Lucian": "He wins short trades: wait until his dash is used to attack.",
+   "Caitlyn": "She outranges you: farm carefully and win the fights later.",
+   "Xerath": "He pokes from afar: stay behind your minions and hit him with your arrow when he wastes his abilities."
+  },
+  "mid_game": "Group with your team. Send Hawkshot over objectives before going there, and start fights with your arrow.",
+  "late_game": "Hit whatever is in range behind your frontline: your slow protects your team and stops escapes. Save your ultimate for the enemy carry or to stop a diver.",
+  "ahead": "Look for picks with your arrow and take objectives.",
+  "behind": "Farm safely and play as the initiator: your arrow stays useful even when you're behind in gold.",
+  "win_condition": "To win this game, you want to create picks with your arrow and slow the enemy team during teamfights.",
+  "final_tip": "The farther the arrow travels, the longer the stun: fire it from far away at an enemy who doesn't see it coming."
+ }
+}

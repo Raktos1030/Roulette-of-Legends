@@ -1,0 +1,43 @@
+{
+  "Rell|sup": {
+    "identity": "Tank d'engage. Mise en pièces (passif) : ses attaques et ses sorts volent de l'armure et de la résistance magique. Frappe dislocatrice (Q) frappe en ligne, brise les shields et stun. Ferromancie (W) : à cheval, elle s'écrase au sol en projetant les ennemis en l'air et gagne un gros shield (elle passe alors à pied : plus résistante et plus de portée, mais slow) ; à pied, elle recrée son destrier et sa prochaine attaque knock-up. Joute endiablée (E) lui donne, à elle et à un allié, une vitesse croissante (doublée vers les ennemis), et Tempête magnétique (R) attire violemment les ennemis proches puis continue de les attirer.",
+    "playstyle": "Support d'engage massif : elle arrive vite grâce à E, knock-up avec W et regroupe toute l'équipe adverse avec son ultime. Un seul matchup défavorable (Janna), et elle écrase les supports tanks et divers (Nautilus, Camille, Shen, Sylas).",
+    "early_game": "Au niveau 1, W à cheval sur l'adversaire (knock-up) peut gagner un trade avec ton ADC. Utilise E pour arriver sur la cible avec ton ADC. Après l'engage, tu es à pied et slow : W de nouveau pour remonter en selle et repartir.",
+    "level_1": "Ferromancie (W) en premier. Ensuite, monte W en priorité, puis E.",
+    "level_2": "Frappe dislocatrice (Q). Combo : W (knock-up) → Q (stun) → attaques.",
+    "level_3": "Joute endiablée (E). Vitesse pour arriver sur la cible avec ton ADC, et explosion sur ta prochaine attaque.",
+    "level_6": "Tempête magnétique : attire tous les ennemis proches vers toi. Combo : E pour arriver → R au milieu → W → Q.",
+    "power_spikes": [
+      "Niveau 1 : W à cheval.",
+      "Niveau 3 : E → W → Q.",
+      "Niveau 6 : engage de groupe avec R.",
+      "Teamfight : ultime au milieu de l'équipe adverse."
+    ],
+    "lane_plan": "Menace l'engage en permanence avec W et E. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées) : pose-les autour du dragon.",
+    "trading": "All-in : E → W (knock-up) → Q → attaques, R au niveau 6. Défense : Q pour stun le diver et briser son shield, R pour attirer les divers loin de ton carry. Recule contre Janna : attends qu'elle ait utilisé sa tornade.",
+    "jungle_plan": "",
+    "threats": [
+      "Janna : ton matchup le plus difficile.",
+      "Kiting pendant que tu es à pied et slow.",
+      "Engager sans ton ADC : tu restes seule au milieu des adversaires."
+    ],
+    "mistakes": [
+      "Descendre de cheval sans pouvoir remonter rapidement (tu es lente à pied).",
+      "Lancer l'ultime sur une seule cible.",
+      "Engager sans lancer E sur ton ADC pour qu'il arrive avec toi."
+    ],
+    "matchup_notes": {
+      "Thresh": "Engage quand son grappin et sa lanterne sont en recharge.",
+      "Nautilus": "Tu gagnes le combat au contact : réponds à son engage par W → Q.",
+      "Lulu": "Sa métamorphose t'arrête : engage quand elle l'a utilisée.",
+      "Leona": "Deux engages : celle qui engage la première avec son ADC derrière gagne.",
+      "Janna": "Sa tornade et Mousson annulent ton engage."
+    },
+    "mid_game": "Cherche les engages avec ton jungler autour des objectifs. Pose des pinks et protège ton ADC.",
+    "late_game": "Engage sur l'équipe adverse regroupée : E pour arriver, R pour attirer, W et Q pour root. Ton équipe doit suivre immédiatement.",
+    "ahead": "Engage souvent : ton ultime gagne les teamfights.",
+    "behind": "Joue les contre-engages : Q et R arrêtent les divers sur ton carry.",
+    "win_condition": "Pour gagner cette partie, tu veux regrouper l'équipe adverse avec ton ultime et enchaîner les CC pour que ton équipe gagne le combat.",
+    "final_tip": "Lance Joute endiablée avec ton ADC : vous arrivez ensemble, et ton engage devient un kill."
+  }
+}

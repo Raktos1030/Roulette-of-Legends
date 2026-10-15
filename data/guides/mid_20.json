@@ -1,0 +1,43 @@
+{
+  "Lissandra|mid": {
+    "identity": "Mage de contrôle à dégâts magiques, spécialiste anti-assassin et de l'engage. Éclat de glace (Q) slow en ligne, Cercle de givre (W) root tout autour d'elle, Chemin glacial (E) lance une griffe que Lissandra peut rejoindre, et Tombeau polaire (R) stun un ennemi ou la place elle-même en stase (soin et zone qui slow). Les champions qu'elle tue se relèvent brièvement en esclaves de glace (passif).",
+    "playstyle": "Mage d'engage et de contre-dive. Lissandra gagne contre les assassins et combattants au corps à corps (Akali, Yasuo, Irelia, Yone) grâce à W et R, et engage les teamfights avec E + R. Elle souffre contre les mages à longue portée (Hwei, Xerath, Lux).",
+    "early_game": "Farm avec Q (qui traverse les sbires pour toucher l'adversaire derrière). Garde W pour l'engage adverse. Contre les mages à longue portée, farm et joue autour de ton jungler.",
+    "level_1": "Éclat de glace (Q) en premier. Poke à travers les sbires.",
+    "level_2": "Cercle de givre (W). CC autour de toi : contre un assassin qui t'engage, c'est un trade gagné.",
+    "level_3": "Chemin glacial (E). Engage (E → rejoins → W → Q) ou fuite. Garde-le aussi pour échapper aux ganks.",
+    "level_6": "Tombeau polaire : stun sur un ennemi ou stase sur toi-même. Combo d'engage : E → rejoins → R sur la cible → W → Q. Contre un assassin, R sur toi pour survivre et slow.",
+    "power_spikes": [
+      "Niveau 2 : W contre les engages.",
+      "Niveau 6 : engage et contre-dive avec R.",
+      "Premier item complet : burst et contrôle.",
+      "Mid game : engages de teamfight."
+    ],
+    "lane_plan": "Farm au Q, garde W pour les engages. Pousse ta wave et roam avec E après le 6 : Lissandra est une très bonne roameuse. La quête de rôle mid (retour accéléré) rend ces roams plus rentables.",
+    "trading": "Trade court : Q à travers les sbires. All-in : E → rejoins → R → W → Q. Défense : W puis R sur toi. Abandonne contre les mages à longue portée qui te poke.",
+    "jungle_plan": "",
+    "threats": [
+      "Mages à longue portée (Hwei, Xerath, Lux).",
+      "Ganks quand ton E est en recharge.",
+      "Poke continu avant le niveau 6."
+    ],
+    "mistakes": [
+      "Utiliser W trop tôt et ne plus pouvoir contrer un engage.",
+      "Rejoindre ta griffe dans une position dangereuse.",
+      "Utiliser R sur un tank au lieu du carry."
+    ],
+    "matchup_notes": {
+      "Zed": "R sur toi-même annule son ultime ; W quand il réapparaît.",
+      "Yasuo": "W et R contrent ses engages : il ne peut pas t'atteindre.",
+      "Ahri": "Garde W pour la fin de son ultime.",
+      "Hwei": "Il te poke de loin : farm et roam.",
+      "Xerath": "Il te poke : engage avec E + R quand il a utilisé ses sorts."
+    },
+    "mid_game": "Roams, engages et picks avec E + R.",
+    "late_game": "Engage de teamfight : E → R sur le carry → W. Ou protège tes carries en contrant les divers.",
+    "ahead": "Roam, crée des picks et prends les objectifs.",
+    "behind": "Farm, protège tes carries et joue pour un engage décisif.",
+    "win_condition": "Pour gagner cette partie, tu veux neutraliser les assassins adverses et engager les teamfights avec E + R.",
+    "final_tip": "Contre un assassin, garde W pour son engage : le CC retourne tout le combat."
+  }
+}

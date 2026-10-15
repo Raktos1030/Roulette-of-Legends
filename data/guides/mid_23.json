@@ -1,0 +1,43 @@
+{
+  "Malzahar|mid": {
+    "identity": "Mage de contrôle à dégâts magiques, spécialiste de la suppression. Son passif (Plan du Néant) le protège avec un shield qui bloque les dégâts et CC tant qu'il n'a pas été touché récemment. Appel du Néant (Q) réduit au silence, Nuée du Néant (W) invoque des larves, Visions maléfiques (E) inflige des dégâts continus qui se propagent quand la cible meurt, et Poigne du Néant (R) supprime une cible et crée une zone de dégâts.",
+    "playstyle": "Mage de farm, de contrôle de wave et d'anti-assassin. Malzahar nettoie les waves sans effort, résiste aux assassins grâce à son shield, et verrouille une cible avec l'ultime. Il est surtout fort contre les assassins et combattants au corps à corps (Yasuo, LeBlanc, Vladimir).",
+    "early_game": "Pousse la wave avec E (qui se propage de sbire en sbire) et les larves. Garde ton shield passif actif : ne te laisse pas poke gratuitement. Q réduit au silence un assassin qui s'engage.",
+    "level_1": "Visions maléfiques (E) en premier. Nettoie la wave et poke.",
+    "level_2": "Nuée du Néant (W). Larves qui attaquent tes cibles : E → W sur l'adversaire.",
+    "level_3": "Appel du Néant (Q). Silence : garde-le pour interrompre un engage.",
+    "level_6": "Poigne du Néant : suppression. Combo : E → W → R → Q. Avec ton jungler, c'est un kill quasi garanti. En teamfight, supprime le carry ou le diver le plus dangereux.",
+    "power_spikes": [
+      "Niveau 6 : suppression pour les kills et les ganks.",
+      "Premier item complet : nettoyage et dégâts.",
+      "Deux items : contrôle de teamfight.",
+      "Shield passif actif : très difficile à engager."
+    ],
+    "lane_plan": "Pousse la wave avec E et les larves, garde ton shield et rejoins le jungler pour les objectifs. Après le 6, prépare les ganks : ta suppression garantit le kill. La quête de rôle mid (retour accéléré) t'aide à reset après avoir poussé.",
+    "trading": "Trade de base : E + larves. All-in : E → W → R → Q. Défense : Q pour silencer l'assassin qui arrive. Abandonne contre les champions qui te poke pour casser ton shield (Hwei).",
+    "jungle_plan": "",
+    "threats": [
+      "Hwei, qui te poke et casse ton shield.",
+      "Tanks qui résistent à tes dégâts continus (Sion mid).",
+      "Purges et effets qui annulent ta suppression."
+    ],
+    "mistakes": [
+      "Perdre ton shield passif sur un petit poke.",
+      "Lancer R sans E et larves préalables.",
+      "Gaspiller Q et ne plus pouvoir silencer un engage."
+    ],
+    "matchup_notes": {
+      "Yasuo": "Ton shield bloque son Q3 ; Q le silence quand il s'engage.",
+      "Ahri": "Garde ton shield contre son Charme.",
+      "Viktor": "Il te poke : nettoie la wave et joue les objectifs.",
+      "Zed": "Ton shield absorbe son ultime ; supprime-le quand il réapparaît.",
+      "Hwei": "Il casse ton shield de loin : farm et joue autour de ton jungler."
+    },
+    "mid_game": "Rejoins les objectifs et prépare les picks avec la suppression.",
+    "late_game": "Supprime le carry ou le diver le plus dangereux ; nettoie les waves avec E.",
+    "ahead": "Prépare les ganks, prends les objectifs et roam.",
+    "behind": "Farm, pousse les waves et joue pour une suppression décisive.",
+    "win_condition": "Pour gagner cette partie, tu veux contrôler la wave, garder ton shield et verrouiller une cible avec la suppression au bon moment.",
+    "final_tip": "Protège ton shield passif : sans lui, les assassins peuvent te tuer ; avec lui, ils ne peuvent presque rien."
+  }
+}

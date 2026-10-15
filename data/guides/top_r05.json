@@ -1,0 +1,84 @@
+{
+  "Mordekaiser|top": {
+    "identity": "Juggernaut à dégâts magiques qui force les duels. Après trois frappes sur un champion ou un monstre, son passif (Vortex de ténèbres) crée une aura de dégâts autour de lui. Oblitération (Q) frappe en zone, avec un bonus si elle ne touche qu'un seul ennemi ; Emprise funeste (E) attire les ennemis ; Indestructible (W) transforme les dégâts infligés et subis en shield, que tu peux convertir en soin ; et Royaume des morts (R) enferme une cible avec toi dans un 1v1 où tu lui voles une partie de ses statistiques.",
+    "playstyle": "Lane de combat soutenu et duel forcé avec l'ultime. Mordekaiser gagne les 1v1 prolongés et scale bien. Lent et sans dash, il est facile à kiter : ses Q et E doivent toucher pour qu'il soit dangereux.",
+    "early_game": "Trade avec Q quand l'adversaire est isolé de ses sbires (bonus de dégâts) et active ton passif en enchaînant trois frappes. Garde E pour attirer l'adversaire dans ton Q ou pour répondre à un engage. Farm avec Q.",
+    "level_1": "Oblitération (Q) en premier. Poke l'adversaire quand il est seul, loin de ses sbires, pour profiter du bonus d'isolement.",
+    "level_2": "Emprise funeste (E). Elle attire les ennemis après un court délai : E → Q est ton combo de base. Elle donne aussi de la pénétration magique passive.",
+    "level_3": "Indestructible (W). Shield alimenté par tes dégâts et ceux que tu subis, puis soin si tu relances : active-le au cœur du trade, puis relance-le avant qu'il ne disparaisse.",
+    "level_6": "Royaume des morts : ta cible et toi êtes isolés du reste du combat pendant quelques secondes et tu lui voles une partie de ses statistiques (définitivement si tu la tues). Utilise-le quand tu gagnes le duel ; en teamfight, sur le carry le plus dangereux pour le retirer du combat.",
+    "power_spikes": [
+      "Niveau 3 : E + Q + W, bons trades longs.",
+      "Niveau 6 : duel forcé avec l'ultime.",
+      "Premier item complet : très fort en 1v1.",
+      "Mid game : isolement des carries en teamfight."
+    ],
+    "lane_plan": "Joue une wave neutre ou près de ta tour : tu es lent et vulnérable aux ganks. Trade au Q quand l'adversaire se sépare de sa wave. Recall quand ta wave crash. Après le niveau 6, cherche le duel dès que l'adversaire a utilisé un sort important.",
+    "trading": "Trade court : Q sur l'adversaire isolé. Trade long : E → Q → attaques (passif) → W → R pour finir. Engage quand l'adversaire n'a plus son dash ; abandonne s'il te kite à distance ou s'il est plus fort en duel que toi (Gwen, Yone).",
+    "jungle_plan": "",
+    "threats": [
+      "Kiting et champions mobiles (Yone).",
+      "Singed et les champions qui te fatiguent en course.",
+      "Ganks : tu es lent et facile à attraper."
+    ],
+    "mistakes": [
+      "Lancer l'ultime sur une cible que tu ne peux pas battre en 1v1.",
+      "Rater E et perdre ton seul engage.",
+      "Utiliser Q au milieu de la wave (pas de bonus d'isolement)."
+    ],
+    "matchup_notes": {
+      "Darius": "Évite le bord de sa Décimation et son Crampon ; combat au Q quand il a peu de stacks.",
+      "Malphite": "Tes dégâts magiques ignorent son armure : trade librement.",
+      "Yone": "Il esquive tes sorts avec E : attends qu'il l'ait utilisé avant de lancer E.",
+      "Garen": "Poke-le au Q quand il est isolé et évite son silence.",
+      "Nasus": "Punis-le tôt pendant ses stacks et évite les combats sous Flétrissement."
+    },
+    "mid_game": "Splitpush et force des duels avec l'ultime. Rejoins les objectifs pour isoler un carry.",
+    "late_game": "En teamfight, ultime sur la cible la plus dangereuse pour la retirer du combat ; en side lane, force des 1v1.",
+    "ahead": "Force des duels en side lane et dive avec ton jungler : chaque ultime qui tue te rend plus fort.",
+    "behind": "Farm, évite les duels contre les champions plus avancés et utilise l'ultime pour retirer un carry des teamfights.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner les duels forcés avec l'ultime et retirer les carries adverses des teamfights.",
+    "final_tip": "Avant de lancer l'ultime, demande-toi si tu gagnes le 1v1 : sinon, utilise-le sur un carry pour retirer un DPS du combat."
+  },
+  "Nasus|top": {
+    "identity": "Juggernaut à dégâts physiques qui scale à l'infini. Chaque élimination avec Buveuse d'âmes (Q) augmente définitivement ses dégâts. Flétrissement (W) slow fortement la vitesse de déplacement et d'attaque, Esprit enflammé (E) inflige des dégâts de zone et réduit l'armure, et Fureur des sables (R) lui donne PV, résistances, dégâts de zone et un Q plus rapide.",
+    "playstyle": "Lane de farm et de stacks, puis domination de side lane et de teamfight. Il dépend entièrement de ses stacks de Q.",
+    "early_game": "Stack Q sur chaque sbire possible, même au prix de quelques PV. Sous ta tour, les tirs de la tour + Q rendent les last hits faciles : ce n'est pas grave de jouer en défense. Utilise W contre les engages adverses et E pour farmer les sbires que tu ne peux pas atteindre.",
+    "level_1": "Buveuse d'âmes (Q) en premier. Last hit avec Q à chaque recharge pour stacker.",
+    "level_2": "Flétrissement (W) dans le chemin le plus joué. Il slow fortement la cible et réduit sa vitesse d'attaque : c'est ton outil pour survivre à un all-in ou punir un combattant qui te colle.",
+    "level_3": "Esprit enflammé (E). Dégâts de zone et réduction d'armure : il aide à farmer à distance et à préparer tes Q.",
+    "level_6": "Fureur des sables : PV, résistances, dégâts de zone et Q plus rapide. Tu gagnes les combats longs, tu peux répondre à un all-in et dive sous tour avec ton jungler.",
+    "power_spikes": [
+      "Niveau 6 : ultime et combats longs.",
+      "Accumulation des stacks : ton Q devient une exécution sur les carries.",
+      "Premier item complet : domination de side lane.",
+      "Late game : un des meilleurs splitpushers du jeu."
+    ],
+    "lane_plan": "Laisse la wave venir vers toi et stack Q sur les sbires. Farm avec E quand tu ne peux pas t'approcher. Évite les trades longs en early ; recall quand tu as assez d'or. Contre un adversaire qui te harcèle, garde la wave sous ta tour et accepte d'être en retard d'or à 15 minutes : ton scaling compense.",
+    "trading": "Trade court : W → Q. Trade long : Fureur des sables → W → Q → E. Engage quand tu as assez de stacks ou l'ultime ; abandonne si l'adversaire te kite à distance.",
+    "jungle_plan": "",
+    "threats": [
+      "Champions agressifs en early qui t'empêchent de stacker.",
+      "Kiting à distance.",
+      "Ganks quand tu es sur une wave poussée."
+    ],
+    "mistakes": [
+      "Oublier de stacker Q sur les sbires.",
+      "Se battre en early sans stacks ni ultime.",
+      "Lancer l'ultime trop tard, quand tu es déjà très bas."
+    ],
+    "matchup_notes": {
+      "Garen": "Stack en sécurité et évite son silence en early ; tu le dépasses en fin de partie.",
+      "Yone": "Il te poke : stack avec prudence et garde W pour son engage.",
+      "Darius": "Il te harcèle en early : W contre son engage et ultime pour le combat long.",
+      "Aatrox": "Esquive ses sweet spots et stack en sécurité : il te domine en lane, pas en fin de partie.",
+      "Malphite": "Il ne peut pas te punir : stack librement."
+    },
+    "mid_game": "Splitpush avec tes stacks et force des duels. L'ultime te permet de prendre les tours rapidement. Rejoins les objectifs quand ton équipe en a besoin.",
+    "late_game": "Frontline qui écrase les carries avec Q, ou splitpush qui attire plusieurs adversaires. Garde W pour le carry adverse le plus dangereux.",
+    "ahead": "Force des duels en side lane et prends toutes les tours ; chaque kill avec Q ajoute encore des stacks.",
+    "behind": "Stack en sécurité et scale : ton late game compense ton early. Évite simplement de donner des kills.",
+    "win_condition": "Pour gagner cette partie, tu veux accumuler des stacks et dominer la side lane en mid/late game.",
+    "final_tip": "Ne rate jamais un last hit avec Q : chaque stack perdu est de la puissance perdue pour toujours."
+  }
+}

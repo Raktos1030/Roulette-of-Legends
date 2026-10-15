@@ -1,0 +1,43 @@
+{
+ "Kayn|jgl": {
+  "identity": "Physical damage fighter who picks his form mid-game. By hitting melee or ranged champions, Kayn fills a gauge that unlocks Rhaast (red form, a self-healing fighter, against melee teams) or the Shadow Assassin (blue form, burst and mobility, against ranged teams). Reaping Slash (Q) dashes while spinning, Blade's Reach (W) strikes in a line and slows, Shadow Step (E) lets him walk through walls, and Umbral Trespass (R) hides him inside a champion he has damaged before bursting out to deal damage.",
+  "playstyle": "Farming jungler who turns into a pressure jungler. Before his transformation, Kayn is weak: he farms and looks for easy skirmishes to fill his gauge. After it, he becomes either a very durable fighter (Rhaast) or a very mobile assassin (blue).",
+  "early_game": "Clear fast with Q and W, and Shadow Step (E) to move through walls and heal on camps. Gank when a laner can lock down the target: W to slow, Q, attacks. Every hit on a champion fills your gauge: join the easy fights.",
+  "level_1": "Reaping Slash (Q) first.",
+  "level_2": "Shadow Step (E) or Blade's Reach (W) depending on your order. E lets you go through walls for surprise ganks.",
+  "level_3": "Full basic kit. Gank through walls with E, W to slow, Q to finish.",
+  "level_6": "Umbral Trespass: you hide inside a champion you recently damaged (you become untargetable), then burst out dealing damage. Use it to dodge a burst, finish a target or avoid a tower.",
+  "power_spikes": [
+   "Transformation (red or blue): your real spike, between 10 and 15 minutes depending on fights.",
+   "Level 6: ultimate to dodge and finish.",
+   "First completed item: strong ganks and skirmishes.",
+   "Mid game: dives (Rhaast) or assassinations (blue)."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Farm fast and join easy skirmishes to fill your gauge. Pick your form based on the enemy comp: Rhaast if the enemy team has lots of melee champions, the Shadow Assassin if it has lots of ranged carries. Use E for unexpected ganks through walls. Control Void Grubs (around 8 minutes) and dragons with your team.",
+  "trading": "Rhaast: Q → W (knock-up) → attacks, you heal off your damage. Blue: come through a wall with E, W → Q → R on the carry to dodge their counterattack. Give up on it against CC tanks before your transformation.",
+  "threats": [
+   "Invades before your transformation.",
+   "Fiddlesticks, the only clearly bad matchup according to the data.",
+   "CC that interrupts your dives."
+  ],
+  "mistakes": [
+   "Farming without joining fights and delaying your transformation.",
+   "Picking a form without looking at the enemy comp.",
+   "Using your ultimate too early, before the enemy burst."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He'll invade you before your transformation: avoid him.",
+   "Viego": "You both scale: be the first to transform.",
+   "Graves": "He steals your camps: keep vision.",
+   "Wukong": "His clone and knock-up bother you: wait for your transformation.",
+   "Fiddlesticks": "His ultimate destroys you when you dive: keep vision."
+  },
+  "mid_game": "Dives and skirmishes around objectives. Use E to arrive from unexpected angles.",
+  "late_game": "Rhaast: dive into the enemy team and survive with your healing. Blue: assassinate the carry with R to dodge their counterattack.",
+  "ahead": "Choke out the enemy jungler, dive and take objectives.",
+  "behind": "Farm, transform and play with your team.",
+  "win_condition": "To win this game, you want to get your transformation quickly and dominate fights with the form that suits the enemy comp.",
+  "final_tip": "Join easy fights early: every hit on a champion brings your transformation closer."
+ }
+}

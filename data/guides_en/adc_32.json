@@ -1,0 +1,43 @@
+{
+ "Yunara|adc": {
+  "identity": "Physical and magic damage marksman. Vow of the First Lands (passive): her crits deal bonus magic damage. Cultivation of Spirit (Q) passively adds magic damage to her attacks and charges as she attacks (twice as fast against champions); once charged, it gives 5 seconds of attack speed and makes her attacks bounce to nearby enemies. Arc of Judgment (W) throws a prayer bead that damages and slows heavily, Kanmei's Steps (E) gives her speed and makes her ghosted, and Transcend One's Self (R) puts her into a 15-second state that automatically activates Q and transforms W (a powerful beam) and E (a dash).",
+  "playstyle": "Sustained-fight ADC: she charges her Q by attacking, then wins long fights with her bounces and her transcended state. Only Kog'Maw and Twitch give her trouble, and she dominates early-game ADCs who have to kill her fast (Vayne, Kalista).",
+  "early_game": "Farm and trade when your Q is charged: attack your opponent (two charges per hit on a champion), then activate Q to win the trade. W slows heavily: use it for a kill with your support or to stop an engage. Keep E to escape or reposition.",
+  "level_1": "Cultivation of Spirit (Q) first. Charge it by attacking, activate it for trades.",
+  "level_2": "Arc of Judgment (W). A big slow: throw it when your support engages or when your opponent steps up.",
+  "level_3": "Kanmei's Steps (E). Speed and ghosting to reposition or escape.",
+  "level_6": "Transcend One's Self: 15 seconds of Q constantly active, W turned into a powerful beam and E into a dash, with W and E cooldowns greatly reduced when you enter and leave the state. Cast it at the start of a long fight.",
+  "power_spikes": [
+   "Level 2: charged Q + W for trades.",
+   "Level 6: Transcend One's Self for long fights.",
+   "First completed item: dangerous Q bounces.",
+   "Two completed items: crits empowered by your passive."
+  ],
+  "lane_plan": "Farm, charge your Q and trade at the right moment. Play with your support thanks to W's slow. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards steady farming. Join dragons: your bounces are very effective in grouped fights.",
+  "trading": "Basic trade: attacks to charge Q, then activate Q and step back. All-in: W, Q active, attacks, R if the fight drags on, transformed E to stay in range. Give up on it against ADCs who surprise you or beat you in long fights (Twitch, Kog'Maw).",
+  "jungle_plan": "",
+  "threats": [
+   "Kog'Maw and Twitch: your hardest matchups.",
+   "Crowd control that interrupts your transcended state.",
+   "Assassins when E is on cooldown."
+  ],
+  "mistakes": [
+   "Activating Q with no target in range (lost charges).",
+   "Using your ultimate for a fight that's too short.",
+   "Using E to attack and having no way to escape."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "Slow her with W when she dives.",
+   "Jinx": "Punish her early with your support.",
+   "Jhin": "Engage while he reloads.",
+   "Vayne": "Slow her with W and win the long fight.",
+   "Twitch": "He surprises you from camouflage: save W to slow him when he comes out."
+  },
+  "mid_game": "Group with your team around objectives. Your bounces are very strong in tight fights around dragons.",
+  "late_game": "Stay behind your frontline, cast your ultimate when the fight really starts, and use your transformed E to stay in range without exposing yourself.",
+  "ahead": "Force long fights and take objectives.",
+  "behind": "Farm and play teamfights behind your frontline: your ultimate can turn a fight around.",
+  "win_condition": "To win this game, you want to win long fights thanks to your charged Q and your ultimate.",
+  "final_tip": "Attack champions to charge your Q twice as fast, then activate it when it's time to trade."
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "AurelionSol|mid": {
+    "identity": "Mage à dégâts magiques qui scale à l'infini grâce à la Poussière d'étoile (passif Créateur cosmique) : il en récolte en tuant des sbires avec Trou noir (E), en touchant des champions et en éliminant, et chaque stack améliore ses sorts. Souffle de lumière (Q) canalise un souffle continu, Vol astral (W) le fait voler sur une longue distance, Trou noir (E) attire les ennemis vers son centre, et Étoile finale (R) knock-up, puis devient Apocalypse une fois assez de Poussière accumulée.",
+    "playstyle": "Mage de scaling pur : en lane, il stacke ; en mid/late game, il devient une menace de zone énorme. Il est faible contre les assassins qui le divent en early (Yone, Fizz, Zed).",
+    "early_game": "Stack la Poussière d'étoile en tuant les sbires dans ton Trou noir et en touchant l'adversaire avec Q. Évite les all-in contre les assassins : tu es fragile. Garde W pour fuir.",
+    "level_1": "Trou noir (E) en premier dans le chemin le plus joué. Il exécute les sbires faibles au centre et donne de la Poussière.",
+    "level_2": "Souffle de lumière (Q). Canalise le souffle sur l'adversaire pour poke et stacker.",
+    "level_3": "Vol astral (W). Ta fuite et ton outil de roam : tu peux voler par-dessus les murs.",
+    "level_6": "Étoile finale : knock-up de zone. Combo : E (attire) → R → Q. Après avoir accumulé assez de Poussière, elle devient Apocalypse (plus grande zone).",
+    "power_spikes": [
+      "Niveau 6 : Étoile finale.",
+      "Stacks de Poussière d'étoile : sorts de plus en plus grands et puissants.",
+      "Premier item complet : dégâts de zone.",
+      "Late game : un des mages les plus dévastateurs."
+    ],
+    "lane_plan": "Stack la Poussière en tuant les sbires avec E et en touchant l'adversaire avec Q. Garde la wave au centre ou vers toi contre les assassins. Roam avec W quand ta wave est poussée. La quête de rôle mid (retour accéléré) t'aide à reset rapidement pour continuer de stacker.",
+    "trading": "Trade de base : Q (souffle) sur l'adversaire quand il vient last hit. Trade long : E → R → Q. Engage quand l'adversaire est attiré par E ; abandonne contre les assassins qui te divent.",
+    "jungle_plan": "",
+    "threats": [
+      "Assassins qui te divent (Yone, Fizz, Zed, Kassadin).",
+      "Ganks sans W disponible.",
+      "Mages à longue portée qui te poke (Vel'Koz)."
+    ],
+    "mistakes": [
+      "Ne pas stacker la Poussière d'étoile.",
+      "Utiliser W pour poke et ne plus l'avoir pour fuir.",
+      "Canaliser Q trop longtemps à portée d'un assassin."
+    ],
+    "matchup_notes": {
+      "Yasuo": "Tiens-le à distance avec E et Q.",
+      "Viktor": "Scale plus vite que lui en stackant.",
+      "Syndra": "Esquive son stun et scale.",
+      "Yone": "Il te dive : garde W pour fuir et farm prudemment.",
+      "Fizz": "Il esquive tes sorts et te burst : farm sous ta tour."
+    },
+    "mid_game": "Stacke encore, rejoins les objectifs et contrôle les zones avec E et R.",
+    "late_game": "Mage de zone : E pour attirer, R pour projeter, Q pour brûler. Reste derrière ta frontline.",
+    "ahead": "Stack plus vite, prends les objectifs et domine les teamfights.",
+    "behind": "Continue de stacker en sécurité : ton late game compense ton retard.",
+    "win_condition": "Pour gagner cette partie, tu veux stacker la Poussière d'étoile et dominer les teamfights en fin de partie.",
+    "final_tip": "Tue les sbires dans le centre de ton Trou noir : chaque exécution rapporte de la Poussière d'étoile."
+  }
+}

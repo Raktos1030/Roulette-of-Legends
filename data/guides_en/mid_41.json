@@ -1,0 +1,43 @@
+{
+ "Xerath|mid": {
+  "identity": "Magic damage artillery mage. Arcanopulse (Q) charges up to gain range, Eye of Destruction (W) strikes an area (more damage and a slow in the center), Shocking Orb (E) stuns, and Rite of the Arcane (R) roots him in place to fire several very long-range barrages. His attacks regularly restore mana (passive Mana Surge).",
+  "playstyle": "Pure poke mage with the longest range in the game. Xerath wears down his opponent before they can act and finishes targets from range with his ultimate.",
+  "early_game": "Poke with a charged Q and W (center for big damage) when your opponent comes to last hit. Restore mana with your attacks (passive). Keep E to stun an assassin who engages you.",
+  "level_1": "Arcanopulse (Q) first. Long-range poke.",
+  "level_2": "Eye of Destruction (W). W, then Q on the slowed target: guaranteed poke.",
+  "level_3": "Shocking Orb (E). A stun: your defensive tool. Offensive combo: E → W → Q.",
+  "level_6": "Rite of the Arcane: very long-range barrages. Finish low targets anywhere, including other lanes, or poke before an objective. You're immobile while channeling: stand somewhere safe.",
+  "power_spikes": [
+   "Level 3: full poke with E.",
+   "Level 6: very long-range ultimate.",
+   "First completed item: very punishing poke.",
+   "Mid game: sieging and poking before objectives."
+  ],
+  "lane_plan": "Poke constantly and control the wave. Keep E against assassins. Push, then join objectives to poke before fights. The mid role quest (faster recall) helps you reset after emptying your mana.",
+  "trading": "Short trade: W → Q. Defense: E on the incoming assassin. Long-range all-in: E → W → Q → R. Give up on it against assassins who arrive while your E is on cooldown.",
+  "jungle_plan": "",
+  "threats": [
+   "Assassins (Fizz, Locke, Katarina, Talon).",
+   "Ganks when you're pushed up.",
+   "Channeling your ultimate within a diver's range."
+  ],
+  "mistakes": [
+   "Wasting E and no longer being able to defend yourself.",
+   "Channeling your ultimate somewhere unsafe.",
+   "Positioning too close in teamfights."
+  ],
+  "matchup_notes": {
+   "Viktor": "You outrange him: poke him from outside his laser range.",
+   "Syndra": "A range duel: stay out of her stun.",
+   "Ahri": "Keep E for her R engage.",
+   "Fizz": "He dodges your E: keep it for the end of his hop.",
+   "Locke": "He dives you with E: stun him as he arrives."
+  },
+  "mid_game": "Poke before objectives and siege towers.",
+  "late_game": "Artillery behind your frontline: poke, E on the diver, R to finish low targets.",
+  "ahead": "Poke before every objective and take towers.",
+  "behind": "Farm from range and play with your team.",
+  "win_condition": "To win this game, you want to wear down the enemy team from range before every fight and finish targets with your ultimate.",
+  "final_tip": "Aim for the center of your Eye of Destruction: that's where the damage and slow are highest."
+ }
+}

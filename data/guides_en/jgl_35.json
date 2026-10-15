@@ -1,0 +1,43 @@
+{
+ "Shaco|jgl": {
+  "identity": "Hybrid damage assassin (physical or magic depending on the build), a master of deception. Deceive (Q) teleports him and makes him invisible, Jack in the Box (W) places an invisible box that fears, then attacks, Two-Shiv Poison (E) slows and deals more damage to wounded targets, and Hallucinate (R) creates a clone that explodes when it dies. His attacks from behind deal more damage (passive).",
+  "playstyle": "Jungler built for very early ganks, invades and controlled trolling. Shaco creates chaos: invisible ganks, boxes placed in the enemy jungle, stolen camps. There are two builds: boxes (W maxed) or physical damage (E maxed).",
+  "early_game": "Place boxes at your first camp for a faster clear, then gank very early with Q (invisibility): Shaco is one of the earliest-ganking junglers. Invade the enemy jungle with boxes placed on their camps in advance.",
+  "level_1": "Jack in the Box (W) first. Place several boxes on the first camp to clear it fast.",
+  "level_2": "Deceive (Q). Invisibility and teleport: a gank is possible from level 2 on a pushed lane.",
+  "level_3": "Two-Shiv Poison (E). Passive slow and damage: Q → attacks from behind → E, with a box placed nearby to fear.",
+  "level_6": "Hallucinate: a clone that fools the enemy and explodes when it dies. Use it to dodge an ability, fake an escape or add damage.",
+  "power_spikes": [
+   "Level 2-3: very early invisible ganks.",
+   "Level 6: clone for mind games.",
+   "First completed item: burst that kills a carry.",
+   "Mid game: picks and invades."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Use boxes to clear, then very early ganks and invades. Place boxes on enemy camps and in bushes near objectives: they also give vision. Steal camps and harass the enemy jungler. Void Grubs (around 8 minutes) and dragons are easier to steal with boxes already in place.",
+  "trading": "Ganking: Q behind the target → attacks from behind → E → W to fear. Skirmishing: use the clone to fool the enemy. Give up on it against sweepers and targets surrounded by allies.",
+  "threats": [
+   "Talon: your hardest matchup.",
+   "Sweepers and Control Wards.",
+   "Tanks who soak your burst."
+  ],
+  "mistakes": [
+   "Using Q to engage with no way out.",
+   "Placing boxes anywhere instead of on walking paths.",
+   "Staying in grouped fights where you're fragile."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Trap his camps with boxes.",
+   "Viego": "Burst him before he possesses your allies.",
+   "Graves": "He beats you in duels: trap his camps and gank elsewhere.",
+   "Talon": "He's just as mobile and bursts harder: avoid duels.",
+   "Nocturne": "His ultimate finds you even while invisible: keep Q to escape."
+  },
+  "mid_game": "Picks, invades and objectives. Place boxes around objectives before fights.",
+  "late_game": "Picks on isolated carries and disrupting the enemy team with your clone and boxes.",
+  "ahead": "Choke out the enemy jungler and hunt the carries.",
+  "behind": "Look for picks on isolated targets and place boxes for vision.",
+  "win_condition": "To win this game, you want to create chaos early through ganks and invades, then hunt isolated carries.",
+  "final_tip": "Place your boxes in advance where the enemy will walk: they fear and give vision."
+ }
+}

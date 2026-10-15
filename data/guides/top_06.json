@@ -1,0 +1,84 @@
+{
+  "Poppy|top": {
+    "identity": "Tank-combattante à dégâts physiques spécialisée dans l'anti-mobilité. Présence immuable (W) arrête net les dashes et les sauts autour d'elle, Charge héroïque (E) plaque l'ennemi contre un mur pour le stun, Commotion (Q) frappe deux fois et slow, et Verdict de la gardienne (R) renvoie un ennemi très loin ou le knock-up. En top, elle est surtout un contre des champions mobiles.",
+    "playstyle": "Trades courts autour du shield passif (lancer du shield, puis le ramasser) et contrôle anti-dash. Poppy n'est pas une grosse duelliste en combat long, mais elle ruine les champions qui dépendent de leur mobilité.",
+    "early_game": "Trade avec la frappe du passif (le shield lancé), ramasse-le pour obtenir le shield, puis Q. Garde W contre l'engage adverse : un dash stoppé = un trade gagné. Cherche à te battre près des murs pour menacer E.",
+    "level_1": "Commotion (Q) en premier. Utilise la première frappe du passif puis Q quand l'adversaire vient last hit ; le Q explose une seconde fois après un court délai, reste sur la zone.",
+    "level_2": "Charge héroïque (E). Si l'ennemi est près d'un mur, E l'y plaque et le stun : Q + E contre un mur est un trade très fort au niveau 2.",
+    "level_3": "Présence immuable (W). Vitesse de déplacement, résistances et surtout arrêt des dashes autour de toi. Lance-la au moment où l'adversaire s'engage (Irelia, Jax, Camille, Yone).",
+    "level_6": "Verdict de la gardienne : relâché rapidement, il knock-up à courte portée ; chargé, il renvoie les ennemis loin de leur équipe. En lane, sers-toi de la version courte pour tenir une cible ; en teamfight, renvoie le diver ou le tank adverse.",
+    "power_spikes": [
+      "Niveau 2 : Q + E contre un mur.",
+      "Niveau 3 : W pour stopper les engages des champions mobiles.",
+      "Niveau 6 : ultime pour éjecter une cible d'un combat.",
+      "Premier item complet : trades plus longs et plus sûrs."
+    ],
+    "lane_plan": "Joue près des murs de la lane : c'est là que ton E devient un stun. Garde la wave neutre ou près de ta tour pour garder ces murs accessibles. Ramasse toujours ton shield après l'avoir lancé. Recall quand W est ta seule défense et que tu es bas en PV.",
+    "trading": "Trade court : passif (shield) → ramassage → Q. Trade long : E contre un mur → Q → auto → W si l'adversaire tente de fuir en dash. Engage quand un mur est derrière l'adversaire ; abandonne contre un champion qui te bat en combat long sans mobilité (Darius, Garen).",
+    "jungle_plan": "",
+    "threats": [
+      "Combattants sans mobilité qui gagnent les combats longs (Darius, Garen) : W ne sert à rien contre eux.",
+      "Kiting à distance (Kayle).",
+      "Ganks quand ton E est utilisé loin d'un mur."
+    ],
+    "mistakes": [
+      "Lancer E sans mur derrière l'adversaire (pas de stun).",
+      "Utiliser W trop tôt, avant le dash adverse.",
+      "Relâcher l'ultime chargé vers l'équipe adverse et renvoyer ta cible en sécurité."
+    ],
+    "matchup_notes": {
+      "Yone": "W au moment de son E ou de son Q3 : il reste bloqué. Punis-le ensuite avec Q + E contre un mur.",
+      "Jax": "Frappe bondissante est un saut : W l'arrête net. Garde W pour ce moment.",
+      "Camille": "Présence immuable stoppe la seconde partie de son Grappin : garde W pour ce moment. Son shield passif absorbe ton premier burst, donc trade après qu'il a été consommé.",
+      "Darius": "Il n'a pas de dash à bloquer et gagne les combats longs. Farm près de ta tour, E contre un mur uniquement pour fuir.",
+      "Garen": "Pas de dash à arrêter, silence qui coupe ton combo. Trade court quand son Q est en recharge."
+    },
+    "mid_game": "Joue autour des objectifs : Poppy protège son équipe des divers et éjecte les engages adverses. Garde vision sur les murs autour du dragon et du Baron pour tes E.",
+    "late_game": "Peel et contrôle : reste près de tes carries, W contre les divers, ultime pour renvoyer le plus dangereux. Tu peux aussi engager avec E contre un mur sur une cible isolée.",
+    "ahead": "Force des combats près des murs, dive avec ton jungler et prends les plaques. Ton ultime permet d'isoler un carry.",
+    "behind": "Farm, défends ta tour et joue pour protéger tes carries : ton anti-mobilité reste utile même sans avance.",
+    "win_condition": "Pour gagner cette partie, tu veux neutraliser les champions mobiles adverses avec W et E, puis protéger tes carries en teamfight.",
+    "final_tip": "Avant chaque trade, repère le mur le plus proche derrière l'adversaire : c'est ton E qui décide du combat."
+  },
+  "Quinn|top": {
+    "identity": "Tireuse à dégâts physiques jouée au corps à corps des combattants. Quinn marque ses cibles avec Busard (passif), aveugle avec Assaut aveuglant (Q), repousse et interrompt avec Salto (E) et roam très vite avec En territoire ennemi (R). En top, c'est un pick de kiting et de pression de carte.",
+    "playstyle": "Lane de poke et de kiting, puis roams et splitpush grâce à la vitesse de l'ultime. Quinn punit les combattants au corps à corps qui n'ont pas de mobilité, mais elle est fragile.",
+    "early_game": "Poke avec les attaques marquées (Busard) et Q. Garde E pour repousser un engage adverse : il interrompt aussi certains dashes. Prends l'avance de farm en punissant chaque last hit.",
+    "level_1": "Salto (E) en premier dans le chemin le plus joué (E → Q → W). Il repousse et slow l'adversaire qui vient au contact, puis tu reprends ta distance.",
+    "level_2": "Assaut aveuglant (Q). Aveugle l'adversaire : ses auto-attaques ratent. Combo : Q → auto sur la marque → E pour repousser.",
+    "level_3": "Œil d'aigle (W), maximisé en premier. Chaque déclenchement de Busard te donne vitesse d'attaque et de déplacement ; l'actif révèle une zone, pratique pour les bushs.",
+    "level_6": "En territoire ennemi : forme très rapide pour roam et revenir en lane. Utilise-le pour aller au mid ou au dragon quand ta wave est poussée, puis reviens avant de perdre trop de farm.",
+    "power_spikes": [
+      "Niveau 2 : Q + E, trades à sens unique.",
+      "Niveau 6 : roams et pression sur toute la carte.",
+      "Premier item complet : burst sur les carries.",
+      "Mid game : splitpush et picks."
+    ],
+    "lane_plan": "Joue une wave neutre ou poussée, poke à chaque last hit adverse et ne laisse pas l'adversaire te coller. Pousse avant de roam avec l'ultime. Recall quand ta wave crash. Évite les bushs non contrôlés : tu es fragile.",
+    "trading": "Trade court : auto marquée → Q → recul. Trade long : Q pour aveugler, E pour repousser, attaques marquées. Engage quand l'adversaire n'a plus son dash ; abandonne s'il peut te coller (Irelia, Malphite avec l'ultime).",
+    "jungle_plan": "",
+    "threats": [
+      "Champions mobiles qui te collent (Irelia).",
+      "Engages à distance (Malphite niveau 6).",
+      "Ganks : tu es fragile."
+    ],
+    "mistakes": [
+      "Utiliser E pour engager au lieu de le garder pour repousser un engage.",
+      "Roam sans pousser la wave.",
+      "Rester au contact d'un combattant plus fort."
+    ],
+    "matchup_notes": {
+      "Darius": "Garde E pour son Crampon, aveugle-le quand il te frappe et ne le laisse pas stacker.",
+      "Garen": "Kite-le hors de son Q ; E après son silence.",
+      "Jayce": "Colle-le quand il passe en forme marteau et repousse-le avec E.",
+      "Malphite": "Son armure te gêne et son ultime te rattrape ; garde E pour la fin de sa charge.",
+      "Irelia": "Elle dash à travers les sbires ; garde E pour son engage et reste loin de la wave."
+    },
+    "mid_game": "Roam avec l'ultime, crée des avantages sur la carte et splitpush. Quinn est très forte pour punir les side lanes isolées.",
+    "late_game": "Picks et splitpush. En teamfight, reste en arrière, frappe les cibles à portée et garde E pour te défendre.",
+    "ahead": "Roam, crée des picks et prends les tours avec ta vitesse.",
+    "behind": "Farm à distance et évite les combats : cherche des picks sur les cibles isolées.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner ta lane par le kiting, puis utiliser l'ultime pour créer des avantages sur toute la carte.",
+    "final_tip": "Garde ton Salto pour le moment où l'adversaire s'engage : il repousse et interrompt, c'est ta vie."
+  }
+}

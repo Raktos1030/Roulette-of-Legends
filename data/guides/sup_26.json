@@ -1,0 +1,43 @@
+{
+  "Senna|sup": {
+    "identity": "Tireuse de support à dégâts physiques et utilitaire. Absolution (passif) : les unités qui meurent près d'elle laissent parfois une âme ; en l'attaquant, elle récupère de la Brume qui augmente définitivement ses dégâts d'attaque, sa portée et ses chances de crit. Ses attaques sont lentes mais puissantes. Ombre perforante (Q) tire un rayon qui soigne les alliés et blesse les ennemis, Dernière étreinte (W) root après un court délai la cible et les ennemis proches, Malédiction de la Brume noire (E) camoufle Senna et les alliés dans sa zone, et Ténèbres aveuglantes (R) tire un rayon à portée illimitée qui protège les alliés touchés et blesse les ennemis au centre.",
+    "playstyle": "Support de poke et de scaling : elle harcèle à longue portée, soigne avec Q et devient une vraie menace grâce aux âmes. Aucun matchup nettement défavorable : ses moins bons (Blitzcrank, Zyra, Thresh) restent proches de l'équilibre. Elle écrase les supports de mêlée et les mages lents (Swain, Pantheon, Brand, Poppy).",
+    "early_game": "Harcèle l'adversaire avec tes attaques à longue portée et Q (à travers un sbire ou ton ADC, il soigne aussi). Ramasse les âmes qui apparaissent : chacune te rend définitivement plus forte. Garde W pour arrêter un engage ou lancer un kill.",
+    "level_1": "Ombre perforante (Q) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Dernière étreinte (W). CC retardé : combo avec ton ADC, ou défense contre un diver.",
+    "level_3": "Malédiction de la Brume noire (E). Camouflage pour fuir, pour repositionner ton duo, ou pour surprendre.",
+    "level_6": "Ténèbres aveuglantes : rayon global qui protège les alliés touchés et blesse les ennemis au centre. Sauve un allié dans une autre lane ou achève un ennemi en fuite.",
+    "power_spikes": [
+      "Niveau 2 : Q + W pour les kills.",
+      "Niveau 6 : ultime global de shield.",
+      "Âmes accumulées : portée et dégâts qui augmentent.",
+      "Late game : très longue portée d'attaque."
+    ],
+    "lane_plan": "Harcèle avec tes attaques et Q, ramasse les âmes et protège ton ADC. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées). Utilise ton ultime pour aider les autres lanes.",
+    "trading": "Trade de base : attaque, Q à travers un sbire. All-in : W, Q, attaques. Défense : W sur l'engage, E pour camoufler ton duo. Contre les grappins (Blitzcrank, Thresh), reste derrière les sbires : tu es fragile.",
+    "jungle_plan": "",
+    "threats": [
+      "Blitzcrank, Thresh et Zyra : tes moins bons matchups, proches de l'équilibre.",
+      "Grappins et engages qui t'attrapent : tu es fragile.",
+      "Assassins qui te ciblent en teamfight."
+    ],
+    "mistakes": [
+      "Oublier de ramasser les âmes.",
+      "Se placer à découvert face à un grappin.",
+      "Gâcher l'ultime sans allié à protéger ni ennemi à achever."
+    ],
+    "matchup_notes": {
+      "Thresh": "Reste derrière les sbires et garde W pour son engage.",
+      "Lulu": "Trades de poke : ta portée est plus grande.",
+      "Nautilus": "Son ancre ne passe pas les sbires : reste derrière eux.",
+      "Nami": "Esquive sa bulle et harcèle-la de plus loin.",
+      "Swain": "Il doit s'approcher : poke-le de loin."
+    },
+    "mid_game": "Ramasse les âmes, pose des pinks et poke avant les objectifs. Protège ton équipe avec R.",
+    "late_game": "Frappe depuis ta très longue portée derrière ta frontline. W sur les divers, E pour repositionner l'équipe, R au début du combat pour protéger.",
+    "ahead": "Poke et accumule les âmes : tu deviens une menace de dégâts.",
+    "behind": "Joue l'utilitaire : Q, W, E et R restent décisifs même sans avance.",
+    "win_condition": "Pour gagner cette partie, tu veux harceler à longue portée, accumuler les âmes et protéger ton équipe avec ton ultime global.",
+    "final_tip": "Ton Q soigne tes alliés en traversant : vise l'adversaire à travers ton ADC pour soigner et blesser en même temps."
+  }
+}

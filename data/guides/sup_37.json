@@ -1,0 +1,43 @@
+{
+  "Velkoz|sup": {
+    "identity": "Mage d'artillerie. Décomposition organique (passif) : ses sorts appliquent des effets ; à 3 effets, la cible subit une explosion de dégâts bruts. Fission du plasma (Q) tire un projectile qui slow et se divise en deux quand il touche un ennemi ou quand on le réactive, Ouverture de faille (W) ouvre une faille qui blesse puis explose après un court délai, Dislocation tectonique (E) knock-up les ennemis dans une zone, et Désintégrateur de formes de vie (R) canalise pendant 2,5 secondes un rayon qui suit le curseur (dégâts bruts sur les cibles marquées par son passif).",
+    "playstyle": "Support de poke et de dégâts : il harcèle à très longue portée avec W et Q, puis finit les combats avec son rayon. Il domine les supports de mêlée et les mages lents (Swain, Brand, Camille, Pantheon), mais craint les grappins et les engages (Blitzcrank). Aucune mobilité.",
+    "early_game": "Poke avec Ouverture de faille (W) sur l'adversaire qui vient last hit. Garde Dislocation tectonique (E) pour un engage adverse ou un kill. Trois sorts qui touchent la même cible déclenchent l'explosion du passif : W, puis Q, puis E.",
+    "level_1": "Fission du plasma (Q) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Ouverture de faille (W) ou Dislocation tectonique (E). W pour poke, E pour la sécurité face à un support d'engage.",
+    "level_3": "Le sort manquant. Combo : E (knock-up) → W → Q → explosion du passif.",
+    "level_6": "Désintégrateur de formes de vie : rayon canalisé qui suit ton curseur. Lance-le après un E ou sur une cible root ; tu es immobile pendant la canalisation.",
+    "power_spikes": [
+      "Niveau 3 : combo complet et passif.",
+      "Niveau 6 : rayon en fin de combo.",
+      "Premier item complet : poke très punitif.",
+      "Teamfight : rayon sur une équipe groupée."
+    ],
+    "lane_plan": "Poke avec W et Q, garde E pour la défense et joue les kills avec ton ADC. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "Trade de base : W. All-in : E → W → Q → R. Défense : E sur l'engage adverse. Contre Blitzcrank, reste derrière les sbires en permanence.",
+    "jungle_plan": "",
+    "threats": [
+      "Blitzcrank : matchup difficile.",
+      "Poppy : elle arrête ton rayon en te chargeant.",
+      "Engages et assassins : tu n'as aucune mobilité."
+    ],
+    "mistakes": [
+      "Lancer le rayon trop près des ennemis.",
+      "Rater E et ne plus pouvoir te défendre.",
+      "Se placer à découvert face à un grappin."
+    ],
+    "matchup_notes": {
+      "Thresh": "Reste derrière les sbires et E sous lui s'il engage.",
+      "Lulu": "Trades de poke : ta portée avec W est plus grande.",
+      "Nautilus": "E quand il arrive par son ancre.",
+      "Swain": "Il doit s'approcher : poke-le de loin.",
+      "Blitzcrank": "Un grappin sur toi est souvent mortel : reste derrière tes sbires."
+    },
+    "mid_game": "Poke avant les objectifs, pose des pinks et reste avec ton équipe.",
+    "late_game": "Reste loin derrière ta frontline, poke avec W et Q, E sur les divers, puis rayon sur le groupe adverse.",
+    "ahead": "Poke plus fort et force les combats groupés.",
+    "behind": "Poke à distance en sécurité et garde E pour protéger ton ADC.",
+    "win_condition": "Pour gagner cette partie, tu veux affaiblir l'équipe adverse avec ton poke et finir les combats avec ton rayon.",
+    "final_tip": "Trois sorts sur la même cible déclenchent l'explosion du passif : enchaîne E, W et Q sur le même ennemi."
+  }
+}

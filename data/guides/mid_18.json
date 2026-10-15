@@ -1,0 +1,43 @@
+{
+  "Katarina|mid": {
+    "identity": "Assassin à dégâts magiques (ou mixtes) qui nettoie les combats par les réinitialisations. Ses dagues tombent au sol ; les ramasser déclenche une frappe en zone (passif). Lame rebondissante (Q) lance une dague qui rebondit puis tombe, Préparation (W) lance une dague en l'air et l'accélère, Shunpo (E) la téléporte sur une unité ou une dague, et Lotus mortel (R) canalise une pluie de lames autour d'elle. Chaque élimination ou assistance réduit fortement ses temps de recharge.",
+    "playstyle": "Assassin de nettoyage : elle entre dans les combats une fois les CC adverses utilisés et enchaîne les éliminations.",
+    "early_game": "Farm avec Q et poke en ramassant tes dagues près de l'adversaire. Utilise E sur une dague ou un sbire pour trade puis repartir. Évite les trades contre les champions qui te contrôlent ou te battent au contact (Vladimir, Galio).",
+    "level_1": "Lame rebondissante (Q) en premier. Farm et poke.",
+    "level_2": "Shunpo (E). Q → E sur la dague au sol près de l'adversaire → ramassage : bon trade.",
+    "level_3": "Préparation (W). W → E sur la dague qui retombe → frappe en zone : ton combo de base.",
+    "level_6": "Lotus mortel : canalisation qui détruit tout autour. Combo : Q → E → W → R, et chaque élimination réinitialise tes sorts. Roam vers les side lanes après avoir poussé.",
+    "power_spikes": [
+      "Niveau 3 : combo de dagues.",
+      "Niveau 6 : Lotus mortel, kills et roams.",
+      "Premier item complet : burst qui tue les mages.",
+      "Mid game : nettoyage des escarmouches."
+    ],
+    "lane_plan": "Farm au Q, poke avec les dagues et roam dès que possible après le 6 : Katarina est une des meilleures roameuses. La quête de rôle mid (retour accéléré) rend ces allers-retours très rentables. Évite de pousser sans vision contre les junglers qui te contrôlent.",
+    "trading": "Trade court : Q → E sur la dague → ramassage. All-in : W → E → Q → R. En teamfight : attends les CC adverses, entre sur une cible basse et enchaîne. Abandonne contre les CC qui interrompent ton ultime.",
+    "jungle_plan": "",
+    "threats": [
+      "Vladimir et Galio : matchups difficiles.",
+      "CC qui interrompent Lotus mortel.",
+      "Équipes à fort CC en teamfight."
+    ],
+    "mistakes": [
+      "Entrer en premier dans un teamfight.",
+      "Lancer l'ultime à portée d'un contrôle disponible.",
+      "Oublier de ramasser tes dagues."
+    ],
+    "matchup_notes": {
+      "Zed": "Esquive son ultime avec E sur une dague.",
+      "Yasuo": "Son Mur de vent bloque tes dagues lancées, pas ton ultime ; attends son E.",
+      "Ahri": "Esquive son Charme avec E.",
+      "Syndra": "Dive quand son stun est en recharge.",
+      "Vladimir": "Il se soigne et esquive avec son Bain de sang : roam plutôt que de te battre."
+    },
+    "mid_game": "Roams, nettoyage des escarmouches et objectifs.",
+    "late_game": "Entre après les CC adverses, élimine une cible basse et enchaîne les réinitialisations.",
+    "ahead": "Roam, chasse les carries et nettoie les combats.",
+    "behind": "Farm et attends les combats désorganisés pour enchaîner les éliminations.",
+    "win_condition": "Pour gagner cette partie, tu veux roam, nettoyer les escarmouches et enchaîner les réinitialisations en teamfight.",
+    "final_tip": "N'entre jamais en premier : attends que les CC adverses soient utilisés, puis enchaîne."
+  }
+}

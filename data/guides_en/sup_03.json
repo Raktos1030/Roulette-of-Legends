@@ -1,0 +1,43 @@
+{
+ "Bard|sup": {
+  "identity": "Roaming, utility support. Traveler's Call (passive): chimes spawn on the map; picking them up gives him XP, mana and speed, and strengthens his Meeps, spirits that add damage to his attacks (then area damage and a slow). Cosmic Binding (Q) slows the first enemy hit and stuns it if the projectile continues into a wall or a second enemy, Caretaker's Shrine (W) places a shrine that heals and speeds up the first ally to touch it, Magical Journey (E) opens a one-way path through a wall, and Tempered Fate (R) puts every unit and turret in an area into stasis.",
+  "playstyle": "Roaming support who collects chimes, creates picks and saves allies with his ultimate. He loses to many engage supports (Thresh, Leona, Blitzcrank, Rell) when he leaves his ADC alone. Very demanding: every roam has to pay off.",
+  "early_game": "Stay in lane until level 5 (see the quest below), poke with your Meeps and look for Q into a wall or through a minion onto your opponent. Pick up the chimes near the bot lane when your ADC is safe. Place W so your ADC can heal between trades.",
+  "level_1": "Cosmic Binding (Q) first. Aim at an opponent standing in front of a wall or another enemy to stun them.",
+  "level_2": "Caretaker's Shrine (W). Healing and speed for your ADC: place it behind you before a trade.",
+  "level_3": "Magical Journey (E). To roam, escape through a wall or surprise your opponent from an unexpected path.",
+  "level_6": "Tempered Fate: area stasis on everything inside (allies, enemies, turrets). Use it to save an ally, hold enemies in place for an engage, or block an objective.",
+  "power_spikes": [
+   "Level 2: Q + Meeps for trades.",
+   "Level 6: a rescue or engage ultimate.",
+   "Chimes collected: Meeps that slow in an area.",
+   "Mid game: picks and roams with E."
+  ],
+  "lane_plan": "Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere, and the quest progresses more slowly. After that, roam with the chimes when your ADC can hold alone. The support role quest makes your Control Wards cheaper (40 gold, two stored): place them along your roaming path.",
+  "trading": "Basic trade: attacks with your Meeps, Q when your opponent is near a wall. All-in: a stunning Q, attacks, W to heal. Back off against engage supports (Thresh, Leona): don't leave your ADC alone while they have their abilities.",
+  "jungle_plan": "",
+  "threats": [
+   "Thresh: a common opponent and a hard matchup.",
+   "Rell, Leona, Blitzcrank and Maokai: hard matchups.",
+   "Roams that leave your ADC alone against an engage support."
+  ],
+  "mistakes": [
+   "Roaming at the wrong time and letting your ADC die.",
+   "Casting your ultimate on your own allies mid-fight.",
+   "Casting Q with no wall or second enemy behind the target."
+  ],
+  "matchup_notes": {
+   "Thresh": "His hooks punish your absence: don't roam while he has his abilities.",
+   "Lulu": "She protects her ADC well: play for picks in other lanes.",
+   "Karma": "She pokes: use W to heal your ADC.",
+   "Lux": "She's fragile and slow: stun her into a wall.",
+   "Rell": "Her engage catches you off guard: stay behind your ADC and keep R to block her."
+  },
+  "mid_game": "Roam with E, collect chimes and create picks. Place Control Wards around objectives.",
+  "late_game": "Stay with your team. Use R to save an ally or hold half the enemy team, and Q to stun a diver into a wall.",
+  "ahead": "Roam and help the other lanes: every pick speeds up the game.",
+  "behind": "Stay near your ADC and play utility: W, Q and R stay decisive.",
+  "win_condition": "To win this game, you want to create picks across the map and win teamfights thanks to your ultimate.",
+  "final_tip": "Before casting Tempered Fate, check who's in the area: it puts your allies in stasis too."
+ }
+}

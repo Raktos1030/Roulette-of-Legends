@@ -1,0 +1,43 @@
+{
+  "Nilah|adc": {
+    "identity": "Combattante au corps à corps à dégâts physiques. Joie éternelle (passif) : elle gagne plus d'expérience en tuant des sbires, et elle renforce et partage les soins et shields que lui donnent ses alliés proches. Lame fluide (Q) frappe en ligne et augmente brièvement sa portée d'attaque, Voile de liesse (W) lui donne de la vitesse et lui fait esquiver toutes les attaques (les alliés qu'elle touche en profitent aussi), Torrent (E) est un dash vers une cible, et Apothéose (R) inflige des dégâts autour d'elle avant d'attirer les ennemis vers elle.",
+    "playstyle": "ADC de mêlée qui gagne les combats rapprochés : elle esquive les attaques des tireurs avec W et attire toute l'équipe adverse avec son ultime. Elle dépend de son support : avec des soins et shields, son passif les renforce ; avec un support d'engage, elle suit dans le combat.",
+    "early_game": "Farm : ton passif te donne plus d'expérience sur les sbires, ce qui t'aide à atteindre le niveau 6 plus vite. Trade quand l'adversaire vient au contact, avec Q pour sa portée. Garde W pour esquiver les attaques d'un all-in adverse.",
+    "level_1": "Lame fluide (Q) en premier. Farm et trades courts avec la portée de Q.",
+    "level_2": "Torrent (E). Dash pour engager ou suivre l'engage de ton support.",
+    "level_3": "Voile de liesse (W). Esquive toutes les attaques : lance-le quand l'ADC adverse commence à tirer.",
+    "level_6": "Apothéose : dégâts autour de toi puis attraction. Entre avec E, attire les ennemis avec R, puis combats-les au corps à corps.",
+    "power_spikes": [
+      "Niveau 2 : E pour suivre les engages.",
+      "Niveau 6 : ultime qui attire plusieurs ennemis.",
+      "Premier item complet : dégâts de combat rapproché.",
+      "Mid game : combats à deux contre deux avec ton support."
+    ],
+    "lane_plan": "Farm et joue avec ton support : engage quand il root l'adversaire, ou profite de ses soins et shields renforcés. Ton passif accélère ton gain de niveau. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) se complète vite avec un bon farm.",
+    "trading": "Trade court : Q à portée maximale. All-in : E sur la cible, W quand l'adversaire tire, Q, puis R pour empêcher la fuite. Abandonne contre les champions qui te tiennent à distance ou qui te root avant que tu arrives (Xayah, Veigar).",
+    "jungle_plan": "",
+    "threats": [
+      "Xayah : ton matchup le plus difficile (son rappel de plumes te root quand tu arrives).",
+      "Jinx : matchup difficile.",
+      "Mages bot qui te root (Veigar, Séraphine)."
+    ],
+    "mistakes": [
+      "Engager sans ton support.",
+      "Lancer W trop tôt, avant que l'adversaire attaque.",
+      "Lancer l'ultime sur une seule cible au lieu d'attendre le groupe."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Esquive ses attaques avec W quand elle dive.",
+      "Jinx": "Ses Pyromâcheurs t'arrêtent quand tu engages : attends qu'ils soient utilisés.",
+      "Twitch": "Il dépend de ses attaques : W les esquive toutes.",
+      "Ezreal": "Engage quand il a utilisé son Transfert arcanique.",
+      "Xayah": "Son Appel des lames te root dans ses plumes : n'engage pas au milieu de celles-ci."
+    },
+    "mid_game": "Joue les escarmouches avec ton support et ton jungler. Entre dans les combats quand la cible est à portée de E.",
+    "late_game": "Attends que ton équipe engage, puis entre avec E, esquive avec W et attire le groupe avec R. Ton passif renforce les soins et shields de ton équipe.",
+    "ahead": "Force les combats rapprochés et prends les objectifs.",
+    "behind": "Farm, reste avec ton équipe et attends un engage de ton support pour entrer.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner les combats rapprochés en esquivant les attaques et en attirant toute l'équipe adverse avec ton ultime.",
+    "final_tip": "Voile de liesse esquive toutes les attaques : lance-le juste quand l'ADC adverse commence à tirer sur toi."
+  }
+}

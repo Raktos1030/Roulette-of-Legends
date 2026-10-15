@@ -1,0 +1,43 @@
+{
+  "MasterYi|jgl": {
+    "identity": "Combattant à dégâts physiques et vrais, hypercarry de la jungle. Assaut éclair (Q) le rend inciblable en frappant plusieurs cibles, Méditation (W) le soigne et réduit les dégâts subis, Style Wuju (E) ajoute des dégâts vrais à ses attaques, et Highlander (R) lui donne vitesse d'attaque et de déplacement, l'immunise aux slows, et se prolonge à chaque élimination (qui réduit aussi ses temps de recharge). Une attaque sur quelques-unes frappe deux fois (passif).",
+    "playstyle": "Jungler de farm et de nettoyage en fin de combat. Maître Yi scale très fort : il veut farmer, puis entrer dans les combats une fois les CC adverses utilisés pour enchaîner les éliminations. Il est faible contre les CC et les équipes qui le surveillent.",
+    "early_game": "Clear très rapide avec Q et les attaques doubles. Évite les invasions et les duels contre les junglers d'early game. Gank uniquement les lanes où l'adversaire est déjà bas ou sans CC : tes ganks sont faibles avant le 6.",
+    "level_1": "Assaut éclair (Q) en premier.",
+    "level_2": "Style Wuju (E). Dégâts vrais sur tes attaques : ton clear s'accélère.",
+    "level_3": "Méditation (W). Soin et réduction de dégâts : utilise-la sur les camps pour garder tes PV, et en combat pour encaisser un burst (elle réinitialise aussi ton attaque).",
+    "level_6": "Highlander : vitesse, immunité aux slows et prolongation à chaque élimination. Tes ganks deviennent possibles et tes combats de nettoyage très dangereux.",
+    "power_spikes": [
+      "Niveau 6 : Highlander, premiers ganks sérieux.",
+      "Premier item complet : clear et duel forts.",
+      "Deux items : un des meilleurs nettoyeurs de teamfight.",
+      "Late game : chaque élimination réinitialise tes sorts."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Full clear très rapide, en évitant les combats en early. Maître Yi gagne par le farm : prends tous les camps, les crabes quand c'est sûr, et les Larves (vers 8 min) si tu peux. Après le 6, gank les lanes où l'adversaire n'a pas de contrôle. Évite les junglers qui te contrôlent (Rammus, Zac, Elise).",
+    "trading": "En escarmouche : attends que les CC adverses soient utilisés, puis Q pour entrer (inciblable) → E → R → attaques. W pour encaisser un burst. Abandonne contre les champions à CC lourds si tu n'as pas attendu leur sort.",
+    "threats": [
+      "CC durs (Rammus, Zac, Elise, Wukong).",
+      "Invasions en early.",
+      "Équipes qui te surveillent en teamfight."
+    ],
+    "mistakes": [
+      "Entrer en premier dans un combat.",
+      "Utiliser Q en ouverture au lieu de l'utiliser pour esquiver un sort.",
+      "Accepter des duels en early."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il t'envahira en early : garde vision et farm.",
+      "Graves": "Il te bat en early : farm, puis punis-le.",
+      "Viego": "Nettoie les combats avant qu'il ne possède tes alliés.",
+      "Rammus": "Son taunt et sa Boule défensive t'annulent : évite-le.",
+      "Wukong": "Son clone et son knock-up te coupent : attends son ultime."
+    },
+    "mid_game": "Farm, objectifs et combats de nettoyage. Évite les combats où l'équipe adverse a encore ses CC.",
+    "late_game": "Entre en dernier, après les CC adverses, et nettoie le combat avec Highlander. Chaque élimination réinitialise tes sorts.",
+    "ahead": "Farm, prends les objectifs et nettoie les combats.",
+    "behind": "Farm et scale : Maître Yi reste dangereux en late game.",
+    "win_condition": "Pour gagner cette partie, tu veux farmer, scale et nettoyer les teamfights après les CC adverses.",
+    "final_tip": "N'entre jamais en premier : attends que les CC adverses soient utilisés."
+  }
+}

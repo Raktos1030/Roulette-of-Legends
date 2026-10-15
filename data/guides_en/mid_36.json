@@ -1,0 +1,43 @@
+{
+ "Veigar|mid": {
+  "identity": "Magic damage burst mage who builds power endlessly. Every last hit with Baleful Strike (Q) and every ability that hits a champion gives him permanent power (passive Phenomenal Evil Power). Dark Matter (W) falls after a delay, Event Horizon (E) creates a cage that stuns enemies who touch it, and Primordial Burst (R) deals damage that increases with the target's missing health.",
+  "playstyle": "Scaling mage: he stacks in lane (often behind in gold, which is normal for him), then one-shots carries late in the game. Weak against assassins early and against long-range mages.",
+  "early_game": "Last hit with Q to stack (two minions hit = two stacks). Keep E to protect yourself from an engage. Poke with W on a rooted opponent or one who farms in the same spot.",
+  "level_1": "Baleful Strike (Q) first. Last hit to stack.",
+  "level_2": "Dark Matter (W). Delayed poke: aim where your opponent will be.",
+  "level_3": "Event Horizon (E). A stun cage: E → W (on the stunned target) → Q. Also keep it for enemy engages.",
+  "level_6": "Primordial Burst: huge damage on a wounded target. Combo: E → W → Q → R. With your stacks, you one-shot more and more easily.",
+  "power_spikes": [
+   "Level 3: E → W → Q combo.",
+   "Level 6: executes with R.",
+   "Accumulated stacks: increasingly massive burst.",
+   "Late game: one-shots on carries."
+  ],
+  "lane_plan": "Stack by last hitting with Q, keep E for defense. Keep the wave in the middle or near you against assassins. Join your team for objectives. The mid role quest (faster recall) helps you reset often and stack safely.",
+  "trading": "Short trade: Q + W. All-in: E → W → Q → R. Defense: E on the incoming assassin. Give up on it against mages who poke you from out of range (Xerath).",
+  "jungle_plan": "",
+  "threats": [
+   "Assassins who dive you (Katarina).",
+   "Xerath, who pokes you from very far away.",
+   "Mid Gwen, very unfavorable according to the data."
+  ],
+  "mistakes": [
+   "Missing last hits with Q.",
+   "Wasting E and no longer being able to defend yourself.",
+   "Casting R on a target that still has full health."
+  ],
+  "matchup_notes": {
+   "Ahri": "Keep E for the end of her ultimate.",
+   "Viktor": "Stack and scale: you'll one-shot him late in the game.",
+   "Yasuo": "His tornado gets past your Q, not your cage: keep E for his engage.",
+   "Zed": "Keep E for the moment he reappears.",
+   "Katarina": "Her mobility dodges your cage: place it on her dagger."
+  },
+  "mid_game": "Keep stacking, join objectives and place your cage on engage zones.",
+  "late_game": "One-shot the enemy carry with E → W → Q → R. Stay behind your frontline.",
+  "ahead": "Stack faster, take objectives and dominate teamfights.",
+  "behind": "Keep stacking safely: your late game makes up for being behind.",
+  "win_condition": "To win this game, you want to stack in lane and one-shot carries late in the game.",
+  "final_tip": "Never miss a last hit with Q: every stack makes you stronger for the rest of the game."
+ }
+}

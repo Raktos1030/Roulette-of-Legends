@@ -1,0 +1,62 @@
+# Builds the apps on every version tag (v2.1, v2.2...) and publishes them as a GitHub release:
+#   Windows: Roulette-of-Legends-windows.zip, Roulette-of-Legends-Lite-windows.zip
+#   macOS (Apple Silicon): Roulette-of-Legends-Lite-mac.zip
+# Can also be run by hand (Actions tab) to get the builds as artifacts without publishing.
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -r requirements.txt
+      - run: python packaging/build.py full --dist dist
+      - run: python packaging/build.py lite --dist dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows
+          path: dist/*.zip
+
+  macos:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -r requirements.txt
+      - run: python packaging/build.py lite --dist dist
+      - name: Self-test (window off-screen, no League client)
+        continue-on-error: true
+        run: |
+          perl -e 'alarm 180; exec @ARGV' "dist/Roulette of Legends Lite.app/Contents/MacOS/Roulette of Legends Lite" \
+            --autotest "$RUNNER_TEMP/autotest.txt" || true
+          cat "$RUNNER_TEMP/autotest.txt"
+          grep -q "^OK$" "$RUNNER_TEMP/autotest.txt"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: macos
+          path: dist/*.zip
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/')
+    needs: [windows, macos]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: assets
+          merge-multiple: true
+      - run: gh release create "$GITHUB_REF_NAME" assets/*.zip --repo "$GITHUB_REPOSITORY" --title "Roulette of Legends $GITHUB_REF_NAME" --generate-notes
+        env:
+          GH_TOKEN: ${{ github.token }}

@@ -1,0 +1,43 @@
+{
+ "Chogath|jgl": {
+  "identity": "Magic damage tank who grows by devouring. In the jungle, Cho'Gath uses his Carnivore passive to heal on camps, Vorpal Spikes (E) to farm, and above all Feast (R) to secure epic monsters with true damage while stacking permanent health. Rupture (Q) knocks up and Feral Scream (W) silences: enough to gank.",
+  "playstyle": "Tank jungler built around objective control and scaling. He wins through dragons, grubs and Baron (Feast + Smite), and becomes a huge frontline. His ganks are decent but depend on Q's accuracy.",
+  "early_game": "Full clear with E and your passive to stay healthy without recalling. Gank when a lane has a target with no dash or already slowed: Q on their path, then W. Prioritize objectives: every monster devoured with Feast gives you stacks.",
+  "level_1": "Vorpal Spikes (E) first. Your empowered attacks clear camps in an area.",
+  "level_2": "Rupture (Q). Area damage on camps and a knock-up for ganks.",
+  "level_3": "Feral Scream (W). A cone silence: Q + W stop your opponent from answering or escaping with an ability. First gank possible.",
+  "level_6": "Feast: a true damage execute that gives permanent stacks (health and size) on champions and big monsters. Combine it with Smite to steal or secure epic monsters; in ganks, save it to execute.",
+  "power_spikes": [
+   "Level 3: Q + W for ganks.",
+   "Level 6: Feast, full objective control.",
+   "First completed item: very comfortable clearing and survival.",
+   "Stacked Feast: an imposing teamfight frontline."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Full clear, using E and your passive to keep your health up. Your plan: be at every objective. Set up Void Grubs (around 8 minutes) and dragons by pushing with a lane that has priority, then Feast + Smite to secure. Feast gives you stacks on big monsters: save it for them when no kill is in sight. Against aggressive junglers, don't duel early: they beat you before your items. Your role quest (gold and XP from big monsters) fits this farming style well.",
+  "trading": "Ganking: aim Q where your opponent is going (when they run or dash), then W and E. Skirmishing: save W for the champion diving your carries. Feast is for finishing, not opening. Give up on it if Q misses against a mobile champion.",
+  "threats": [
+   "Aggressive junglers who invade you early.",
+   "Ivern and Zyra, who slow and kite you (unfavorable according to the data).",
+   "Objective stealers with more burst than your Feast."
+  ],
+  "mistakes": [
+   "Casting Q right on the target's position instead of leading it.",
+   "Using Feast on a small camp when an objective is coming.",
+   "Dueling an aggressive jungler before your first item."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He'll hunt you early: protect yourself, then dominate objectives with Feast.",
+   "Sylas": "He can steal your Feast: secure objectives when he's not around.",
+   "Graves": "He wins early: don't let him steal your camps, and punish him with Q when he dashes.",
+   "Viego": "Silence him with W when he tries to possess one of your allies.",
+   "Ivern": "He farms fast and doesn't fight: keep vision and contest objectives as a group."
+  },
+  "mid_game": "Objective control: dragons, Herald (around 15 minutes) and Baron (20 minutes). Every Feast on an epic monster makes you stronger. Group with your team to provide control and frontline.",
+  "late_game": "Control frontline: Q into the brawl, W on divers, Feast on the carry in range and on Baron.",
+  "ahead": "Take every objective, stack Feast and force fights around them.",
+  "behind": "Farm, stack Feast on monsters and stay with your team: your frontline role matters more than your damage.",
+  "win_condition": "To win this game, you want to control epic monsters with Feast and become a frontline nobody can ignore.",
+  "final_tip": "Save Feast for epic monsters when no kill is in sight: it's your best objective control tool."
+ }
+}

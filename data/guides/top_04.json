@@ -1,0 +1,125 @@
+{
+  "Jax|top": {
+    "identity": "Duelliste à dégâts hybrides qui scale très fort. Jax saute sur n'importe quelle unité avec Frappe bondissante (Q), esquive les auto-attaques et stun avec Contre-attaque (E), et gagne en vitesse d'attaque à chaque coup (passif). Maître d'armes (R) le rend résistant et ajoute un coup puissant toutes les trois attaques.",
+    "playstyle": "Lane de survie et de trades courts autour de Contre-attaque, puis domination de side lane et duels en mid/late game. Jax devient l'un des meilleurs splitpushers du jeu avec ses items. Dépend beaucoup du timing de E.",
+    "early_game": "Farm et trade avec E : lance-le quand l'adversaire vient au corps à corps, puis frappe pendant l'esquive. Garde Q pour engager ou fuir sur un sbire ou une ward. Joue pour survivre et scale si l'adversaire est plus fort en early.",
+    "level_1": "Contre-attaque (E) en premier dans le chemin le plus joué (E → Q → W). Elle esquive les auto-attaques et stun à la fin : parfaite contre les combattants au corps à corps.",
+    "level_2": "Frappe bondissante (Q). E → Q sur l'adversaire → auto : ton trade de base. Garde Q pour fuir si tu risques un gank.",
+    "level_3": "Élargissement (W), qui sera ton sort maximisé en premier. Attaque renforcée qui réinitialise ton attaque : E → Q → W → auto → recast E.",
+    "level_6": "Maître d'armes : passif qui ajoute un coup de dégâts toutes les trois attaques, actif qui te donne armure et résistance magique. Tu gagnes beaucoup plus de duels longs.",
+    "power_spikes": [
+      "Niveau 3 : E + Q + W, bon trade court.",
+      "Niveau 6 : ultime qui gagne les duels longs.",
+      "Premier item complet : duels très forts.",
+      "Deux items et plus : splitpush dominant."
+    ],
+    "lane_plan": "Joue une wave neutre ou près de ta tour si l'adversaire est plus fort en early. Trade avec E quand il vient au contact. Pousse et recall quand tu as l'avantage. Garde une ward pour fuir avec Q.",
+    "trading": "Trade court : E → Q → W → auto → recast E pour le stun. Trade long : ultime puis attaques. Engage quand l'adversaire a utilisé son CC ; abandonne s'il te kite ou s'il te touche avec des sorts (E n'esquive que les attaques).",
+    "jungle_plan": "",
+    "threats": [
+      "Mages et champions qui font des dégâts par sorts (Vladimir, Kennen).",
+      "CC durs pendant ton E.",
+      "Ganks sans Q disponible."
+    ],
+    "mistakes": [
+      "Lancer E trop tôt, sans attaques à esquiver.",
+      "Engager avec Q sans E disponible.",
+      "Se battre contre un champion à sorts en croyant que E le bloque."
+    ],
+    "matchup_notes": {
+      "Yone": "E contre ses attaques ; attends son E pour engager.",
+      "Garen": "Il te silence avec Q pendant ton engage ; attends son Q avant de sauter.",
+      "Darius": "E contre ses attaques ; évite son Q au bord et son Crampon.",
+      "Irelia": "E au moment où elle dash sur toi.",
+      "Malphite": "Son armure te slow ; farm et scale, E contre ses attaques."
+    },
+    "mid_game": "Splitpush : Jax est un des meilleurs pour forcer des 1v1 et prendre les tours. Utilise ta Téléportation améliorée pour rejoindre les objectifs.",
+    "late_game": "En teamfight, saute sur un carry avec Q, E pour esquiver et stun, ultime pour survivre. En side lane, tiens la pression.",
+    "ahead": "Force des duels en side lane et dive avec ton jungler. Tu deviens très difficile à gérer.",
+    "behind": "Farm et scale : Jax reste dangereux en late game même sans avance.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane, scale et dominer la side lane en late game.",
+    "final_tip": "Lance ta Contre-attaque au moment où l'adversaire commence à frapper, pas avant."
+  },
+  "Jayce|top": {
+    "identity": "Combattant à distance et au corps à corps grâce à deux formes. En forme canon, Jayce poke avec Orbe électrique (Q) accéléré par Portail d'accélération (E) ; en forme marteau, il saute avec Direction le ciel ! (Q) et repousse avec Coup foudroyant (E). Canon Mercury / Marteau Mercury (R) change de forme.",
+    "playstyle": "Lane de poke et de trades agressifs, fort en early et mid game. Jayce est un champion de pression : il doit gagner la lane et transformer son avance.",
+    "early_game": "Poke en forme canon avec Q + E (Orbe accélérée) et reviens en forme marteau pour punir un adversaire qui s'approche. Joue pour l'avance de lane : Jayce baisse en fin de partie.",
+    "level_1": "Q en premier. Poke en forme canon, ou saute en forme marteau si l'adversaire est vulnérable.",
+    "level_2": "W. En forme canon, Hypercharge augmente ta vitesse d'attaque ; en forme marteau, Champ électrique fait des dégâts de zone. Utilise la forme adaptée à le trade.",
+    "level_3": "E. En forme canon, Portail d'accélération accélère ton Q ; en forme marteau, Coup foudroyant repousse. Combo : Q marteau → E marteau pour repousser → changement de forme → Q + E canon.",
+    "level_6": "Jayce a sa transformation dès le niveau 1 ; au niveau 6, elle gagne un rang automatiquement, ce qui renforce la première attaque après chaque changement de forme. Ton combo complet dans les deux formes devient très punitif.",
+    "power_spikes": [
+      "Niveau 3 : combo complet dans les deux formes.",
+      "Premier item complet : poke très fort.",
+      "Deux items : pic de mid game.",
+      "Mid game : pression de siège et de poke."
+    ],
+    "lane_plan": "Joue une wave neutre ou poussée, poke en forme canon et punis les approches en forme marteau. Prends les plaques quand tu gagnes les trades. Recall avec la wave poussée. Évite de te laisser coller par un combattant qui gagne au corps à corps.",
+    "trading": "Trade court : Q + E canon. Trade long : Q marteau → W → E marteau pour repousser → forme canon → Q + E. Engage quand l'adversaire est slow ; abandonne s'il te colle au corps à corps.",
+    "jungle_plan": "",
+    "threats": [
+      "Champions qui te collent et te battent au corps à corps (Irelia).",
+      "Tanks qui résistent à ton poke (Malphite, Ornn).",
+      "Ganks pendant que tu pousses."
+    ],
+    "mistakes": [
+      "Rester en forme marteau trop longtemps contre un combattant plus fort.",
+      "Rater Q + E et rester sans poke.",
+      "Jouer pour le late game alors que Jayce baisse en fin de partie."
+    ],
+    "matchup_notes": {
+      "Malphite": "Il résiste à ton poke et t'engage au niveau 6 ; farm prudemment et joue sur la carte.",
+      "Yone": "Poke-le en forme canon et garde E marteau pour repousser son engage.",
+      "Aatrox": "Esquive ses sweet spots et poke-le en forme canon.",
+      "Irelia": "Elle te colle : garde E marteau pour la repousser et reste à distance.",
+      "Nasus": "Punis-le tôt en forme canon avant qu'il ne stack."
+    },
+    "mid_game": "Poke et siège : ta forme canon pousse et affaiblit les ennemis avant les objectifs. Joue avec ton équipe pour transformer ton avance.",
+    "late_game": "Poke à distance avant les combats. Évite de t'engager en forme marteau dans l'équipe adverse.",
+    "ahead": "Prends les tours, poke avant les objectifs et roam avec ton jungler.",
+    "behind": "Farm à distance, poke en sécurité et joue avec ton équipe : ton scaling est limité.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner ta lane par le poke et transformer ton avance en tours et objectifs avant le late game.",
+    "final_tip": "Lance toujours ton Orbe à travers le Portail d'accélération : sans lui, ton poke est facile à esquiver."
+  },
+  "KSante|top": {
+    "identity": "Tank à dégâts physiques qui peut se transformer en combattant. Coups de ntofo (Q) slow, puis son troisième lancer devient une onde de choc qui attire les ennemis ; Pour Nazumah ! (W) charge en encaissant moins de dégâts puis repousse et stun ; Jeu de jambes (E) protège un allié ; Grand jeu (R) pousse un ennemi à travers un mur et le fait passer en mode offensif, au détriment de ses défenses.",
+    "playstyle": "Lane de tank et de trades contrôlés, puis choix en teamfight : protéger (tank) ou passer en mode offensif avec l'ultime.",
+    "early_game": "Farm et accumule les deux effets de Q pour préparer l'onde de choc. Trade court quand elle est prête. Joue pour survivre : K'Santé est plus fort en mid game.",
+    "level_1": "Coups de ntofo (Q) en premier. Farm en touchant les sbires pour charger l'onde de choc du troisième lancer.",
+    "level_2": "Jeu de jambes (E). Dash avec shield : garde-le pour fuir ou pour te rapprocher avant l'onde de choc du Q.",
+    "level_3": "Pour Nazumah ! (W). Tu charges en encaissant moins de dégâts, puis tu te rues pour repousser et stun. Q3 (qui attire) suivi de W est ton CC le plus long.",
+    "level_6": "Grand jeu : tu pousses un ennemi à travers un mur et tu passes en mode tout-ou-rien (moins de résistances, beaucoup plus de dégâts et de mobilité). Utilise-le pour isoler un carry ou pour finir un kill.",
+    "power_spikes": [
+      "Niveau 3 : Q3 + W, gros CC.",
+      "Niveau 6 : ultime pour isoler une cible.",
+      "Premier item complet : très résistant.",
+      "Mid game : teamfight et contrôle."
+    ],
+    "lane_plan": "Farm en sécurité en chargeant ton Q sur les sbires, et trade court quand l'onde de choc est prête. Recall quand ta wave crash. Au niveau 6, repère les murs : l'ultime est bien plus fort quand il pousse l'adversaire à travers l'un d'eux, loin de son équipe.",
+    "trading": "Trade court : Q → auto (marque du passif) → E pour reculer. Trade long : Q3 pour attirer → W pour stun → R contre un mur. Engage quand l'onde de choc est prête ; abandonne si tu as utilisé W sans toucher.",
+    "jungle_plan": "",
+    "threats": [
+      "Champions qui te kitent (Kayle).",
+      "Dégâts en pourcentage des PV (Fiora, Gwen).",
+      "Singed et les champions qui te fatiguent."
+    ],
+    "mistakes": [
+      "Utiliser l'ultime au mauvais moment, et perdre tes résistances au milieu de l'équipe adverse.",
+      "Lancer l'onde de choc (Q3) sans pouvoir suivre avec W.",
+      "Oublier de protéger ton carry avec E en teamfight."
+    ],
+    "matchup_notes": {
+      "Yone": "Garde W pour son Q3 et trade quand son E est en recharge.",
+      "Jayce": "Il te poke en forme canon ; colle-le avec E, puis Q3 et W.",
+      "Garen": "Il te silence ; trade quand son Q est en recharge.",
+      "Nasus": "Punis-le tôt avec Q et le passif, et évite les combats sous Flétrissement.",
+      "Darius": "Évite son Crampon et son Q au bord ; trade avec Q3."
+    },
+    "mid_game": "Joue autour des objectifs, protège ton équipe et isole un carry avec l'ultime quand l'occasion se présente.",
+    "late_game": "Tank de contrôle ou diver : décide selon le combat. Protège tes carries avec E, ou isole le carry adverse avec R.",
+    "ahead": "Isole les carries avec l'ultime et force les combats autour des objectifs.",
+    "behind": "Farm, tank pour ton équipe et évite les combats où tu passes en mode tout-ou-rien sans cible.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane, puis contrôler les teamfights en protégeant tes carries ou en isolant le carry adverse.",
+    "final_tip": "Avant d'utiliser Grand jeu, vérifie que ton équipe peut suivre : tu perds tes résistances pendant sa durée."
+  }
+}

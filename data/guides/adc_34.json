@@ -1,0 +1,43 @@
+{
+  "Ziggs|adc": {
+    "identity": "Mage d'artillerie à dégâts magiques. Mèche courte (passif) renforce régulièrement une attaque, plus souvent quand il lance des sorts. Bombe rebondissante (Q) poke à longue portée, Charge explosive (W) repousse les ennemis (et Ziggs lui-même) et détruit instantanément les tours ennemies basses en PV, Mines Hexplosives (E) disperse des mines qui blessent et slow, et Méga bombe infernale (R) frappe une grande zone à très longue portée.",
+    "playstyle": "Mage de siège joué comme un ADC : il nettoie les waves à distance, poke et détruit les tours. Il gagne en poussant et en prenant les structures plutôt qu'en duel. Il est vulnérable aux champions qui le collent (Yasuo, Katarina).",
+    "early_game": "Nettoie la wave avec Q et E, poke l'adversaire avec Q quand il vient last hit. Garde W pour fuir un engage (tu te repousses toi-même). Pousse pour prendre les plaques, et achève les tours basses avec W.",
+    "level_1": "Bombe rebondissante (Q) en premier. Poke et farm.",
+    "level_2": "Mines Hexplosives (E). Slow et nettoyage de wave ; pose-les sur le chemin d'un engage adverse.",
+    "level_3": "Charge explosive (W). Repousse l'adversaire ou toi-même : ta fuite principale, et ton outil pour achever les tours basses.",
+    "level_6": "Méga bombe infernale : frappe très loin. Utilise-la pour finir un combat sur une autre lane, nettoyer une wave lointaine ou toucher plusieurs ennemis en teamfight.",
+    "power_spikes": [
+      "Niveau 3 : W pour fuir et prendre les tours.",
+      "Niveau 6 : ultime à longue portée.",
+      "Premier item complet : nettoyage et poke.",
+      "Mid game : siège et destruction des tours."
+    ],
+    "lane_plan": "Pousse la wave, poke et prends les plaques. Achève les tours basses avec W. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) se complète vite grâce à ton farm à distance. Contre les champions qui te collent, garde W pour fuir.",
+    "trading": "Trade de base : Q à distance. Défense : W pour te repousser, E pour slow. Abandonne contre les champions qui franchissent tes mines et te collent (Yasuo, Katarina).",
+    "jungle_plan": "",
+    "threats": [
+      "Yasuo : matchup difficile (son Mur de vent bloque tes bombes).",
+      "Katarina bot : matchup difficile.",
+      "Supports d'engage quand W est en recharge."
+    ],
+    "mistakes": [
+      "Utiliser W pour poke et ne plus pouvoir fuir.",
+      "Oublier d'achever les tours basses avec W.",
+      "Se placer trop près en teamfight."
+    ],
+    "matchup_notes": {
+      "Caitlyn": "Elle a plus de portée d'attaque, mais tes bombes la touchent derrière ses pièges.",
+      "Jhin": "Garde W pour fuir quand il te root.",
+      "Kai'Sa": "Elle dive avec son ultime : garde W pour la repousser.",
+      "Varus": "Ta portée égale la sienne et tu nettoies mieux les waves.",
+      "Yasuo": "Son Mur de vent bloque tes bombes : garde W pour son engage."
+    },
+    "mid_game": "Siège : pousse les waves et détruis les tours avec W. Poke avant les objectifs.",
+    "late_game": "Poke derrière ta frontline, R sur le groupe, W pour te repositionner. Pose E autour de toi pour slow les divers.",
+    "ahead": "Prends toutes les tours et poke avant les objectifs.",
+    "behind": "Nettoie les waves à distance et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux pousser, prendre les tours et affaiblir l'équipe adverse à distance avant les combats.",
+    "final_tip": "Garde toujours ta Charge explosive pour fuir : c'est ta seule mobilité."
+  }
+}

@@ -1,0 +1,43 @@
+{
+ "Annie|mid": {
+  "identity": "Magic damage burst mage, simple and deadly. Every four abilities, her next ability stuns (passive Pyromania). Disintegrate (Q) hits a target (mana refunded if it kills), Incinerate (W) burns in a cone, Molten Shield (E) gives a shield and speed to an ally or herself, and Summon: Tibbers (R) drops the bear in an area, then lets it fight.",
+  "playstyle": "Short-range burst and engage mage. Annie wins by keeping her stun ready: it turns every combo into a potential kill.",
+  "early_game": "Last hit with Q (mana refunded) and build your passive on minions. Keep your stun ready (the counter is visible) to punish an opponent who steps up. E protects you from poke.",
+  "level_1": "Disintegrate (Q) first. Last hit to get your mana back.",
+  "level_2": "Incinerate (W). Q + W with your stun ready: a big trade.",
+  "level_3": "Molten Shield (E). It adds a passive stack without fighting: use it to prepare your stun before engaging.",
+  "level_6": "Summon: Tibbers: full combo with your stun ready: R (area stun) → W → Q, then Tibbers keeps hitting. With Flash, it's one of the most dangerous engages in the game.",
+  "power_spikes": [
+   "Level 3: Q + W burst with a stun.",
+   "Level 6: Tibbers and full combo.",
+   "First completed item: one-shots possible on carries.",
+   "Teamfights: area stun with Tibbers."
+  ],
+  "lane_plan": "Farm with Q, build your passive and keep your stun ready. Push your wave before roaming. Avoid long-range mages' poke by staying behind your minions. The mid role quest (faster recall) helps you roam after pushing.",
+  "trading": "Short trade: Q with your stun ready. Full trade: Q (stun) → W → attacks. All-in: Flash → R (stun) → W → Q. Engage when your stun is ready; give up on it if your opponent pokes you from out of range.",
+  "jungle_plan": "",
+  "threats": [
+   "Long-range mages who poke you (Syndra, Viktor).",
+   "Fizz, who dodges your combo.",
+   "Engaging without your stun ready."
+  ],
+  "mistakes": [
+   "Wasting your stun on minions.",
+   "Engaging without a passive stack.",
+   "Standing in range of enemy poke for no reason."
+  ],
+  "matchup_notes": {
+   "Ahri": "Stun her before she charms you, especially if she gets close.",
+   "Yasuo": "His Wind Wall doesn't block your stun (targeted abilities): punish him when he steps up.",
+   "Syndra": "She pokes you: stay behind your minions and engage when her stun is on cooldown.",
+   "Zed": "Keep your stun for his engage.",
+   "Katarina": "Stun her when she lands on her dagger."
+  },
+  "mid_game": "Picks and engages with Tibbers around objectives. Roam after pushing.",
+  "late_game": "Flash → Tibbers on several enemies with your stun ready. Protect yourself with E.",
+  "ahead": "Roam, create picks and engage teamfights.",
+  "behind": "Farm, keep your stun and play for a decisive engage.",
+  "win_condition": "To win this game, you want to engage with your stun ready and kill carries in one combo.",
+  "final_tip": "Always watch your passive counter: never engage without your stun ready."
+ }
+}

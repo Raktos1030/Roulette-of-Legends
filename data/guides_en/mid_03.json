@@ -1,0 +1,43 @@
+{
+ "Akshan|mid": {
+  "identity": "Physical damage marksman-assassin in mid. Three hits on a champion trigger bonus damage and a shield (passive Dirty Fighting), and his attacks fire twice. Avengerang (Q) throws a returning boomerang, Going Rogue (W) camouflages him and speeds him up (and marks enemies who kill his allies: taking them down revives those allies), Heroic Swing (E) swings him around a wall while shooting, and Comeuppance (R) channels bullets that execute.",
+  "playstyle": "Roaming and skirmishing mid, with a unique mechanic that revives allies. Akshan is good at punishing immobile mages and winning messy fights.",
+  "early_game": "Poke with Q and your passive (three hits). Keep E (the swing around a wall) to escape or stick to a target. Roam with W (camouflage) when your wave is pushed.",
+  "level_1": "Orders vary: E → Q → Q or Q → E → Q. Avengerang (Q) pokes and farms; Heroic Swing (E) is for trading and escaping.",
+  "level_2": "Whichever of Q and E you're missing. Q + passive (three hits) is your basic trade.",
+  "level_3": "Second point in Q; Going Rogue (W) comes at level 4. Q is maxed first.",
+  "level_6": "Comeuppance: channels, then fires bullets that execute based on missing health. Use it to finish a fleeing target or secure a kill from range.",
+  "power_spikes": [
+   "Level 3: trades with Q + passive.",
+   "Level 6: executes with your ultimate.",
+   "First completed item: strong skirmishes.",
+   "Mid game: roams and ally revives."
+  ],
+  "lane_plan": "Poke with Q and your passive, keep E to escape. Push your wave before roaming camouflaged with W. The mid role quest (faster recall) makes your roams more profitable. Avoid fights against champions who stick to you (Yasuo, Irelia).",
+  "trading": "Short trade: Q → attacks (passive). Long trade: E around a wall → attacks → Q. Engage when your opponent no longer has their CC; give up on it against champions who stick to you or block your shots (Yasuo's Wind Wall).",
+  "jungle_plan": "",
+  "threats": [
+   "Yasuo and his Wind Wall: your hardest matchup.",
+   "Vladimir and Diana, who beat you in short fights.",
+   "CC during your swing."
+  ],
+  "mistakes": [
+   "Casting E with no wall to swing around.",
+   "Channeling your ultimate in range of a CC ability.",
+   "Forgetting to kill the marked champion to revive your ally."
+  ],
+  "matchup_notes": {
+   "Ahri": "Dodge her Charm with E and poke her with Q.",
+   "Viktor": "Poke him and stay mobile to dodge his laser.",
+   "Zed": "Keep E to dodge his ultimate.",
+   "Yasuo": "His Wind Wall blocks your shots: don't trade with him while it's up.",
+   "Vladimir": "He heals and beats you in long fights: poke briefly and back off."
+  },
+  "mid_game": "Roams with W, skirmishes and ally revives. Akshan turns messy fights around.",
+  "late_game": "Hit from range, use E to reposition and R to finish low targets. Kill marked champions to revive your allies.",
+  "ahead": "Roam, take objectives and hunt the carries.",
+  "behind": "Farm and look for picks with your ultimate.",
+  "win_condition": "To win this game, you want to win messy skirmishes and execute low targets with your ultimate.",
+  "final_tip": "In fights, kill the champion marked by W first: it revives your ally."
+ }
+}

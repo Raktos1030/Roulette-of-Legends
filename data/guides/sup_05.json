@@ -1,0 +1,43 @@
+{
+  "Brand|sup": {
+    "identity": "Mage à dégâts magiques. Flammes (passif) : ses sorts enflamment les cibles (jusqu'à 3 fois) ; à 3 effets sur un champion, la cible explose après 2 secondes en blessant tout autour. Brûlure (Q) stun une cible déjà enflammée, Colonne de flammes (W) frappe une zone après un court délai (plus fort sur les cibles enflammées), Conflagration (E) fait exploser la cible et se propage aux ennemis proches (portée doublée si la cible brûle), et Pyrolyse (R) rebondit jusqu'à 5 fois entre les ennemis et Brand.",
+    "playstyle": "Support de dégâts : il poke fort, stun avec ses combos et fait exploser les groupes avec son ultime. Il domine les supports de mêlée qui doivent venir au contact (Swain, Camille, Pantheon), mais souffre contre ceux qui protègent ou soignent (Janna, Zilean, Milio). Très fragile : aucune mobilité.",
+    "early_game": "Poke avec Colonne de flammes (W) sur l'adversaire qui vient last hit. Garde Brûlure (Q) pour stun une cible déjà enflammée : W ou E d'abord, puis Q. Reste derrière ton ADC : un engage adverse te tue vite.",
+    "level_1": "Colonne de flammes (W) en premier. Ensuite, monte W en priorité.",
+    "level_2": "Brûlure (Q) ou Conflagration (E). Combo : W sur l'adversaire, puis Q pour le stun pendant qu'il brûle.",
+    "level_3": "Le sort manquant. Combo complet : E → Q (stun) → W → explosion du passif.",
+    "level_6": "Pyrolyse : rebondit entre les ennemis proches. Plus il y a d'ennemis groupés, plus les dégâts sont énormes. Lance-la après avoir enflammé plusieurs cibles.",
+    "power_spikes": [
+      "Niveau 2 : W → Q pour le stun.",
+      "Niveau 3 : combo complet et explosion du passif.",
+      "Niveau 6 : Pyrolyse sur un groupe.",
+      "Premier item complet : poke très punitif."
+    ],
+    "lane_plan": "Poke avec W, joue les kills avec ton stun et ton ADC. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées). Contre un support d'engage, reste derrière ton ADC.",
+    "trading": "Trade de base : W sur l'adversaire. All-in : E → Q → W → R. Recule contre les supports qui soignent ou protègent en continu (Janna, Milio, Zilean) : ton poke est annulé.",
+    "jungle_plan": "",
+    "threats": [
+      "Janna, Zilean et Milio : matchups difficiles.",
+      "Supports d'engage (Nautilus, Leona) : tu n'as aucune mobilité.",
+      "Assassins qui te sautent dessus en teamfight."
+    ],
+    "mistakes": [
+      "Lancer Q sur une cible qui ne brûle pas (pas de stun).",
+      "Se placer devant son ADC.",
+      "Lancer l'ultime sur une cible isolée alors qu'un groupe arrive."
+    ],
+    "matchup_notes": {
+      "Thresh": "Reste derrière les sbires pour éviter son grappin.",
+      "Lulu": "Elle peut te métamorphoser : garde Q pour après sa Fantaisie.",
+      "Nautilus": "Reste derrière les sbires pour éviter son ancre.",
+      "Swain": "Il doit venir au contact : poke-le et stun-le quand il avance.",
+      "Janna": "Son shield annule ton poke : cherche le stun sur l'ADC plutôt que le poke."
+    },
+    "mid_game": "Poke avant les objectifs et pose des pinks. Rejoins les combats avec ton équipe : ton ultime punit les groupes.",
+    "late_game": "Reste derrière ta frontline, enflamme plusieurs ennemis avec W et E, puis lance R quand ils sont groupés. Garde Q pour stun un diver.",
+    "ahead": "Poke et force les combats groupés : tes dégâts de zone sont énormes.",
+    "behind": "Reste en sécurité, poke à distance et garde ton stun pour protéger ton ADC.",
+    "win_condition": "Pour gagner cette partie, tu veux affaiblir l'équipe adverse avec ton poke et faire exploser les combats groupés avec ton ultime.",
+    "final_tip": "Enflamme d'abord, stun ensuite : Brûlure ne stun que les cibles déjà en flammes."
+  }
+}

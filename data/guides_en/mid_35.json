@@ -1,0 +1,43 @@
+{
+ "TwistedFate|mid": {
+  "identity": "Magic damage mage, a master of map pressure. Wild Cards (Q) throws three cards in a fan, Pick a Card (W) cycles three cards: blue (damage and mana), red (area and slow), gold (stun). Stacked Deck (E) empowers every fourth attack, and Destiny (R) reveals every enemy champion, then lets him teleport a long distance. He earns extra gold with every kill (passive).",
+  "playstyle": "Map-wide roaming and pick mid. Twisted Fate farms, pushes, then teleports with his ultimate to turn a fight in another lane.",
+  "early_game": "Clear the wave with Q and the red card, and use the blue card for mana. Keep the gold card to stun an opponent who steps up or an assassin who engages you. Push so you can roam.",
+  "level_1": "Pick a Card (W) first. Blue card to last hit and get mana back.",
+  "level_2": "Wild Cards (Q) or Stacked Deck (E). Gold card (stun) → Q on the rooted target: guaranteed poke.",
+  "level_3": "Full kit. Push with Q and the red card, then get ready to roam.",
+  "level_6": "Destiny: reveals every enemy and teleports you. Push your wave, then R to a side lane where a fight is winnable, and stun the target with the gold card.",
+  "power_spikes": [
+   "Level 2-3: gold card + Q.",
+   "Level 6: teleport roams.",
+   "First completed item: burst and wave clear.",
+   "Mid game: constant map pressure."
+  ],
+  "lane_plan": "Push the wave with Q and the red card, then roam with R as soon as a fight comes up. The mid role quest (faster recall, upgraded boots) makes your trips even faster. Talk to your team before every teleport.",
+  "trading": "Short trade: gold card → Q. Defense: gold card on the incoming assassin. Engage with the gold card when your opponent is in range; give up on it against assassins who dive you once your gold card is used.",
+  "jungle_plan": "",
+  "threats": [
+   "Assassins who dive you (Diana, Fizz, Kassadin), among the worst matchups.",
+   "Ganks while you're pushing.",
+   "Roaming without a pushed wave (you lose farm and plates)."
+  ],
+  "mistakes": [
+   "Teleporting when your team can't follow.",
+   "Wasting the gold card and no longer being able to defend yourself.",
+   "Roaming without pushing your wave."
+  ],
+  "matchup_notes": {
+   "Viktor": "Push and roam: he can't follow you.",
+   "Ahri": "Keep the gold card for her engage.",
+   "Sylas": "He can steal your Destiny: stun him before he engages.",
+   "Zed": "Gold card the moment he reappears after his ultimate.",
+   "Fizz": "He dodges your gold card with his hop: wait until he's used it."
+  },
+  "mid_game": "Roams with R, picks with the gold card and objectives. Twisted Fate is the king of map pressure.",
+  "late_game": "Picks with the gold card, flanks with R and poke with Q. Stay behind your frontline.",
+  "ahead": "Roam nonstop and take objectives.",
+  "behind": "Push waves and roam to help the other lanes.",
+  "win_condition": "To win this game, you want to push your wave and create advantages across the whole map with Destiny.",
+  "final_tip": "Before every teleport, push your wave: a successful roam shouldn't cost you your tower."
+ }
+}

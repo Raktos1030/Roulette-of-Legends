@@ -1,0 +1,43 @@
+{
+ "Lillia|jgl": {
+  "identity": "Magic damage mage who builds speed by hitting. Blooming Blows (Q) deals true damage at the edge and gives speed stacks, Watch Out! Eep! (W) deals big damage in the center, Swirlseed (E) rolls and slows, and Lilting Lullaby (R) puts every target marked by her passive (which burns for a percentage of health) to sleep.",
+  "playstyle": "Very fast-clearing jungler built for area fights. Lillia kites on the run thanks to her speed stacks and puts several targets to sleep with her ultimate. She's excellent against tanks (percent-health damage) and in long fights.",
+  "early_game": "Clear fast by spamming Q (edge for true damage) and W on camps. Gank when you can land E: slow, then Q while running around the target. Keep your speed stacks to arrive fast.",
+  "level_1": "Blooming Blows (Q) first. Hit camps with the edge.",
+  "level_2": "Watch Out! Eep! (W). Big damage in the center: your clear speeds up.",
+  "level_3": "Swirlseed (E). A slow: first gank possible, but Lillia is mostly strong after 6.",
+  "level_6": "Lilting Lullaby: every target marked by your passive becomes drowsy, then falls asleep. Hit several enemies with Q and E, then R. Hitting a sleeping target wakes it up with bonus damage.",
+  "power_spikes": [
+   "Level 6: putting several targets to sleep.",
+   "First completed item: excellent clearing and kiting.",
+   "Two items: dominant area fights.",
+   "Against tanks: very effective percent-health damage."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Very fast full clear, then ganks or skirmishes depending on the lanes. Lillia wins through farming and area fights: control Scuttles, Void Grubs (around 8 minutes) and dragons. Avoid duels against junglers who dive you early. After 6, every fight involving several players is a chance to put the whole enemy team to sleep.",
+  "trading": "Skirmishing: circle around the enemies, hitting with Q's edge, E to slow, then R when several targets are marked. Save W's center for a sleeping target. Give up on it against champions who dive you before you can kite.",
+  "threats": [
+   "Diving junglers early.",
+   "CC that breaks your kiting.",
+   "Jayce, the only clearly bad matchup according to the data."
+  ],
+  "mistakes": [
+   "Hitting with Q's center instead of its edge (no true damage).",
+   "Casting R with no marked targets.",
+   "Waking a sleeping target with a small ability instead of a big one."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He beats you early: avoid his invades.",
+   "Graves": "Kite him by circling around him.",
+   "Sylas": "Careful: he can steal your ultimate.",
+   "Sejuani": "Your percent-health damage melts her.",
+   "Jayce": "He pokes you in cannon form: play with your allies."
+  },
+  "mid_game": "Area fights around objectives, putting several enemies to sleep.",
+  "late_game": "Circle around the enemy team, mark as many targets as possible and put them to sleep with R.",
+  "ahead": "Take objectives and force area fights.",
+  "behind": "Farm and play for a decisive sleep in a teamfight.",
+  "win_condition": "To win this game, you want to farm fast and put several enemies to sleep in teamfights.",
+  "final_tip": "Always hit with the edge of your Q: that's where the true damage is."
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "Shaco|sup": {
+    "identity": "Trickster de contrôle de zone. Traîtrise (passif) : ses attaques et son poignard lancé font plus de dégâts dans le dos. Tromperie (Q) le rend invisible et le téléporte sur une courte distance (sa première attaque est renforcée), Boîte surprise (W) pose une boîte cachée qui terrifie puis attaque les ennemis proches, Poison double (E) empoisonne et slow passivement, et peut être lancé, et Hallucination (R) crée un clone qui combat et explose en trois mini-boîtes à sa mort.",
+    "playstyle": "Support de piège : il pose des Boîtes surprises dans les bushs et sur les chemins, terrifie les engages et crée des picks. Il souffre contre les enchanteurs et supports de lane solides (Lulu, Senna, Milio, Thresh).",
+    "early_game": "Pose des Boîtes surprises (W) dans les bushs de la lane et sur les chemins de fuite : un ennemi terrifié par plusieurs boîtes est un kill pour ton ADC. Garde Tromperie (Q) pour fuir ou surprendre. Poison double (E) lancé achève les ennemis bas en PV.",
+    "level_1": "Chemins dispersés : Boîte surprise (W) en premier est le plus joué, puis les chemins Q → E. La priorité de montée la plus jouée est W > E > Q.",
+    "level_2": "Poison double (E) ou Tromperie (Q). E pour poke et achever, Q pour la mobilité.",
+    "level_3": "Le sort manquant. Prépare les boîtes dans les bushs avant chaque trade.",
+    "level_6": "Hallucination : le clone trompe l'adversaire et explose en mini-boîtes. Utilise-le pour fuir, feinter ou ajouter des boîtes en plein combat.",
+    "power_spikes": [
+      "Niveau 2 : plusieurs boîtes posées dans un bush.",
+      "Niveau 6 : clone et mini-boîtes.",
+      "Premier item complet : boîtes très dangereuses.",
+      "Mid game : pièges autour des objectifs."
+    ],
+    "lane_plan": "Contrôle les bushs avec tes boîtes et joue les engages adverses à ton avantage : ils marchent dans tes pièges. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "Trade de base : E lancé. All-in : attire l'adversaire dans tes boîtes, Q pour te placer dans son dos, attaques. Défense : boîtes entre ton ADC et l'engage adverse. Contre les supports qui poke de loin (Lulu, Senna), ne force pas : tes boîtes sont révélées ou contournées.",
+    "jungle_plan": "",
+    "threats": [
+      "Lulu et Senna, pires matchups.",
+      "Milio et Thresh, défavorables.",
+      "Pinks et révélations qui découvrent tes boîtes."
+    ],
+    "mistakes": [
+      "Poser les boîtes à découvert, où elles sont vues.",
+      "Utiliser Tromperie pour attaquer et ne plus pouvoir fuir.",
+      "Quitter la lane trop tôt (pénalité de la quête de rôle)."
+    ],
+    "matchup_notes": {
+      "Thresh": "Pose des boîtes là où il atterrit après son grappin.",
+      "Lulu": "Elle te poke et te métamorphose : joue défensivement avec tes boîtes.",
+      "Nautilus": "Pose des boîtes autour de ton ADC : son engage finit dedans.",
+      "Morgana": "Ses sorts sont lents : tes boîtes la surprennent.",
+      "Senna": "Elle te poke de loin : n'avance pas sans tes boîtes devant toi."
+    },
+    "mid_game": "Pose des boîtes autour des objectifs avant qu'ils apparaissent, et dans la jungle adverse pour les picks.",
+    "late_game": "Prépare le terrain des combats avec plusieurs boîtes. Clone pour tromper l'adversaire, E pour achever les fuyards.",
+    "ahead": "Crée des picks avec tes boîtes et aide ton jungler.",
+    "behind": "Protège ton ADC avec des boîtes autour de lui.",
+    "win_condition": "Pour gagner cette partie, tu veux piéger le terrain des combats pour que l'adversaire entre dans tes boîtes.",
+    "final_tip": "Pose plusieurs boîtes au même endroit : la peur de chacune s'enchaîne et l'ennemi ne peut plus fuir."
+  }
+}

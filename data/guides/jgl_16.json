@@ -1,0 +1,43 @@
+{
+  "Jayce|jgl": {
+    "identity": "Combattant à deux formes joué en jungle environ une fois sur cinq. En forme marteau, Direction le ciel ! (Q) saute sur une cible, Champ électrique (W) brûle autour de lui et Coup foudroyant (E) repousse ; en forme canon, Orbe électrique (Q) accélérée par Portail d'accélération (E) poke de loin et Hypercharge (W) accélère ses attaques. Canon Mercury / Marteau Mercury (R) change de forme dès le niveau 1.",
+    "playstyle": "Jungler d'early game et de poke : ganks agressifs, invasions et pression avant les objectifs. Il doit gagner tôt ; en fin de partie, son impact baisse nettement.",
+    "early_game": "Clear en alternant les formes pour enchaîner les sorts. Gank dès le niveau 3 : Q marteau pour sauter, E marteau pour repousser la cible vers ton laner, puis forme canon et Q + E pour finir. Avant les objectifs, poke en forme canon pour affaiblir l'équipe adverse.",
+    "level_1": "Q en premier. Le saut du marteau aide sur les camps ; le poke du canon sert en escarmouche.",
+    "level_2": "W. Hypercharge (canon) pour le clear, ou Champ électrique (marteau) pour les dégâts de zone.",
+    "level_3": "E. Coup foudroyant (marteau) repousse la cible : vise-la vers ton laner ou ta tour. Portail d'accélération (canon) accélère ton Orbe. Premier gank possible.",
+    "level_6": "Pas d'ultime à débloquer : ta transformation monte automatiquement de rang, ce qui renforce la première attaque après chaque changement de forme. C'est surtout le moment où tes laners ont leur ultime pour tes ganks.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec le marteau.",
+      "Premier item complet : poke et burst très forts.",
+      "Deux items : dernier gros pic avant le late game.",
+      "Avant les objectifs : poke qui affaiblit l'équipe adverse."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide et ganks agressifs dès le niveau 3. Jayce doit créer l'avance tôt : invasions avec tes laners, contrôle du crabe, dives. Avant chaque objectif (Larves vers 8 min, dragons), poke l'équipe adverse en forme canon pour la forcer à reculer. Ne joue pas pour le late game : transforme ton avance avant 20 minutes.",
+    "trading": "En gank : Q marteau → E marteau vers ton laner → forme canon → Q + E. En escarmouche : poke d'abord, puis entre pour finir. Abandonne contre les tanks qui te contrôlent (Rammus) ou les junglers qui te kitent (Nidalee).",
+    "threats": [
+      "Nidalee, Zyra et les junglers qui te poke ou te battent à distance.",
+      "Rammus et les tanks à CC.",
+      "Perte d'impact en late game."
+    ],
+    "mistakes": [
+      "Repousser la cible loin de ton laner avec E marteau.",
+      "Rester en forme marteau au milieu de l'équipe adverse.",
+      "Farmer passivement au lieu de créer l'avance."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Vous êtes tous deux des junglers d'early game : sois plus rapide sur les ganks.",
+      "Graves": "Il te bat en duel : gank là où il n'est pas.",
+      "Sylas": "Poke-le en forme canon avant qu'il ne te colle.",
+      "Nidalee": "Elle farm plus vite et te poke : joue avec tes laners.",
+      "Rammus": "Son taunt et son armure t'annulent : évite-le."
+    },
+    "mid_game": "Poke et siège avant les objectifs. Joue avec ton équipe pour transformer ton avance.",
+    "late_game": "Poke à distance avant les combats et finis les cibles basses. Évite de t'engager en forme marteau.",
+    "ahead": "Étouffe le jungler adverse et prends les objectifs rapidement.",
+    "behind": "Poke en sécurité et joue avec ton équipe : ton scaling est limité.",
+    "win_condition": "Pour gagner cette partie, tu veux créer une avance en early grâce aux ganks et la transformer en objectifs avant le late game.",
+    "final_tip": "Avec le Coup foudroyant, repousse toujours la cible vers ton laner ou ta tour, jamais loin d'eux."
+  }
+}

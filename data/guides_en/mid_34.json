@@ -1,0 +1,43 @@
+{
+ "Taliyah|mid": {
+  "identity": "Magic damage mage. Threaded Volley (Q) fires a volley of rocks (weaker on already worked ground), Seismic Shove (W) knocks enemies in a direction, Unraveled Earth (E) lays a minefield that slows (and stuns if the target is knocked into it), and Weaver's Wall (R) creates a huge wall Taliyah can ride. Her passive speeds her up near walls.",
+  "playstyle": "Roaming and control mage: she clears the wave with Q, then crosses the map on her wall to help the side lanes. She's very vulnerable to assassins (Katarina, Zed, LeBlanc, Locke).",
+  "early_game": "Clear the wave with Q, poke and keep E + W against assassins (E, then W into the mines = stun). Push, then roam.",
+  "level_1": "Threaded Volley (Q) first.",
+  "level_2": "Unraveled Earth (E). A minefield that slows: protection against engages.",
+  "level_3": "Seismic Shove (W). E → W into the mines: stun. You can also knock an assassin away.",
+  "level_6": "Weaver's Wall: roam by riding the wall to a side lane, or cut off a target's escape during a gank. In teamfights, split the enemy team.",
+  "power_spikes": [
+   "Level 3: E + W combo.",
+   "Level 6: roams on your wall.",
+   "First completed item: wave clear and damage.",
+   "Mid game: roams and zone control."
+  ],
+  "lane_plan": "Clear the wave with Q (avoid already worked ground for your big damage), then roam with your wall after level 6. The mid role quest (faster recall) makes your roams even more profitable. Against assassins, play defensively with E and W.",
+  "trading": "Short trade: Q on your opponent. Defense: E, then W into the mines. Give up on it against assassins who dive you while your abilities are on cooldown.",
+  "jungle_plan": "",
+  "threats": [
+   "Assassins (Katarina, Zed, LeBlanc, Locke, Ekko).",
+   "Annie and her stun.",
+   "Ganks during your roams."
+  ],
+  "mistakes": [
+   "Knocking your opponent out of your mines with W.",
+   "Roaming without pushing your wave.",
+   "Cutting off your own team with the wall."
+  ],
+  "matchup_notes": {
+   "Yasuo": "E + W against his engage; his Wind Wall blocks your Q.",
+   "Ahri": "Keep E + W for her engage.",
+   "Viktor": "He pokes you: roam rather than fight.",
+   "Katarina": "Your mines don't stop her daggers: farm under your tower.",
+   "Zed": "Keep E + W for his ultimate."
+  },
+  "mid_game": "Roams with your wall, ganks and objectives.",
+  "late_game": "Split the enemy team with your wall, then E and W. Stay behind your frontline.",
+  "ahead": "Roam nonstop and take objectives.",
+  "behind": "Farm and roam to help the other lanes.",
+  "win_condition": "To win this game, you want to clear the wave fast and roam with your wall to create advantages elsewhere.",
+  "final_tip": "Always push your wave before riding your wall: a roam without a pushed wave costs you too much."
+ }
+}

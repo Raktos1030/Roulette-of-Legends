@@ -1,0 +1,43 @@
+{
+ "Sejuani|jgl": {
+  "identity": "Magic damage tank who specializes in engage and chain CC. Arctic Assault (Q) charges and knocks up, Winter's Wrath (W) strikes twice while slowing, and Permafrost (E) stuns a frozen target (once it has built up Frost stacks, especially from your melee allies' attacks). Glacial Prison (R) stuns a champion from range and creates a storm that slows. Her passive gives her resistances out of combat.",
+  "playstyle": "Tank jungler built for ganks and teamfights, most effective with melee allies (they add Frost stacks). Sejuani is very reliable in team fights thanks to her chain CC.",
+  "early_game": "Clear safely with W (maxed) and E. Gank when your laner can follow up: Q to knock up, W to slow and stack Frost, E to stun. Avoid duels against junglers who kite you (Lillia).",
+  "level_1": "Permafrost (E) first.",
+  "level_2": "Winter's Wrath (W). Two hits that slow and stack Frost: your clear speeds up. W is maxed first.",
+  "level_3": "Arctic Assault (Q). First gank: Q (knock-up) → W → E once the target is frozen.",
+  "level_6": "Glacial Prison: stuns the first champion hit, then the storm slows the area around it. Cast it from range to engage a teamfight or catch a carry who steps up.",
+  "power_spikes": [
+   "Level 3: ganks with Q + E.",
+   "Level 6: long-range engage with your ultimate.",
+   "First completed item: a solid tank.",
+   "Mid game: teamfights with melee allies."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Safe clear and ganks with Q. Sejuani is stronger with melee laners: gank those lanes first to make the most of Frost. Control Scuttles, Void Grubs (around 8 minutes) and dragons. Avoid duels against ranged junglers or junglers who kite you.",
+  "trading": "Ganking: Q → W → E. Teamfighting: R on the enemy carry or the closest target, then Q and W to stack Frost, E to stun. Give up on it against champions who kite you (Lillia).",
+  "threats": [
+   "Lillia and champions who kite you.",
+   "Trundle, who steals your stats.",
+   "Teams with no melee allies to stack Frost."
+  ],
+  "mistakes": [
+   "Casting E on a target that isn't frozen.",
+   "Engaging with your ultimate without follow-up.",
+   "Missing Q when ganking."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He'll invade you: don't duel, gank.",
+   "Viego": "Stun him with R when he dives.",
+   "Graves": "He beats you in duels: gank where he isn't.",
+   "Lillia": "She kites you and puts you to sleep: play with your team.",
+   "Trundle": "His Subjugate steals your resistances: avoid long fights against him."
+  },
+  "mid_game": "Engages and CC around objectives.",
+  "late_game": "Teamfight engage: R on the carry or the closest target, then Q, W and E.",
+  "ahead": "Gank, take objectives and force fights.",
+  "behind": "Tank for your team and play for a decisive engage.",
+  "win_condition": "To win this game, you want to engage teamfights with your ultimate and chain CC with your melee allies.",
+  "final_tip": "Cast Permafrost when the target is frozen: that stun decides the fight."
+ }
+}

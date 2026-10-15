@@ -1,0 +1,43 @@
+{
+  "Ezreal|adc": {
+    "identity": "Tireur à compétences, à dégâts physiques et magiques. Force grandissante (passif) augmente sa vitesse d'attaque à chaque compétence qui touche (jusqu'à 5 fois). Tir mystique (Q) est un tir en ligne qui réduit tous ses délais de récupération quand il touche, Flux essentiel (W) colle un orbe sur un champion ou un objectif (une attaque ou un sort le fait exploser), Transfert arcanique (E) le téléporte sur une courte distance en tirant un projectile autoguidé, et Arc térébrant (R) tire une vague d'énergie à travers toute la carte.",
+    "playstyle": "ADC de poke très mobile et très sûr : il reste loin et touche ses sorts. Il ne gagne nettement que deux matchups (Mel, Varus) et perd contre beaucoup d'ADC. Précision et patience sont indispensables.",
+    "early_game": "Farm avec Q et poke l'adversaire à chaque fois qu'il vient last hit. Chaque Q qui touche réduit tes délais : touche beaucoup, tu auras tes sorts plus souvent. Garde toujours Transfert arcanique (E) pour fuir un engage.",
+    "level_1": "Tir mystique (Q) en premier. Farm et poke avec Q.",
+    "level_2": "Transfert arcanique (E). Ta fuite : ne l'utilise pour attaquer que si l'adversaire n'a plus de quoi te punir.",
+    "level_3": "Flux essentiel (W). W sur l'adversaire puis Q pour le faire exploser : ton meilleur poke. W sur une tour aide aussi à la pousser.",
+    "level_6": "Arc térébrant : achève un ennemi bas en PV n'importe où, ou touche plusieurs ennemis en teamfight. Utile aussi pour nettoyer une wave lointaine.",
+    "power_spikes": [
+      "Niveau 3 : combo W → Q.",
+      "Niveau 6 : ultime global.",
+      "Premier item complet : Q beaucoup plus fréquent.",
+      "Deux items complets : poke et duel à distance."
+    ],
+    "lane_plan": "Farm en sécurité, poke avec Q et W et garde E pour fuir. Ne force pas les combats longs : la plupart des ADC te battent en lane. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) aide à rattraper ton scaling. Joue avec ton jungler sur les dragons.",
+    "trading": "Trade de base : W puis Q, et recule. All-in rare : W → Q → E vers l'arrière → attaques. Abandonne contre les ADC qui gagnent les combats longs ou qui bloquent tes sorts (Yasuo, Sivir).",
+    "jungle_plan": "",
+    "threats": [
+      "Yasuo et son Mur de vent : ton matchup le plus difficile.",
+      "Sivir, dont le Bouclier magique bloque tes sorts.",
+      "Zeri, Kalista et Kog'Maw : matchups difficiles."
+    ],
+    "mistakes": [
+      "Utiliser E pour attaquer et ne plus pouvoir fuir.",
+      "Rater ses Q : tes délais de récupération restent longs.",
+      "Forcer des combats longs en lane."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Elle t'atteint avec son ultime : garde E pour le moment où elle arrive.",
+      "Caitlyn": "Elle domine la portée : poke avec Q derrière les sbires.",
+      "Yasuo": "Son Mur de vent bloque tes Q : attends qu'il l'ait utilisé avant de poke.",
+      "Sivir": "Son Bouclier magique bloque un sort : lance d'abord un Q pour le faire sortir.",
+      "Varus": "Tu es plus mobile : esquive sa Chaîne corruptrice avec E."
+    },
+    "mid_game": "Poke avant les objectifs et rejoins les combats à distance. Utilise W sur les tours pour les prendre plus vite.",
+    "late_game": "Poke derrière ta frontline, touche tes Q pour enchaîner les sorts. Garde E pour fuir un diver, et R pour ouvrir ou finir un teamfight.",
+    "ahead": "Continue de poke avant chaque objectif : ton avance devient une supériorité à distance.",
+    "behind": "Farm à distance, reste en sécurité et joue le poke : ta mobilité te permet de survivre.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane puis affaiblir l'équipe adverse à distance avant chaque teamfight.",
+    "final_tip": "Ton E est ta vie : tant qu'il est disponible, tu es presque impossible à attraper."
+  }
+}

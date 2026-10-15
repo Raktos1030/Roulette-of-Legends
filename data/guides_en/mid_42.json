@@ -1,0 +1,43 @@
+{
+ "Yasuo|mid": {
+  "identity": "Crit-based physical damage fighter. His passive doubles his crit chance and gives him a Flow shield as he moves. Steel Tempest (Q) strikes in a line and, on the third cast, launches a tornado that knocks up; Wind Wall (W) blocks projectiles; Sweeping Blade (E) dashes through a target (Q during the dash strikes in a circle); Last Breath (R) teleports onto a knocked-up target. Very often played and very often banned.",
+  "playstyle": "Mid fighter who punishes projectile mages with Wind Wall and chains knock-ups with his team in teamfights. He's strong against immobile or projectile-based mages (Akshan, Ryze, Orianna), but struggles against zone-control mages (Lissandra, Taliyah, Annie) and against Vladimir.",
+  "early_game": "Stack Q on minions to keep your tornado ready, trade when your Flow shield is full. Use E from minion to minion to stick to your opponent or escape. Keep W for the enemy's key ability (a projectile).",
+  "level_1": "Steel Tempest (Q) first.",
+  "level_2": "Sweeping Blade (E). E through a minion toward your opponent → Q: a short trade.",
+  "level_3": "Wind Wall (W). Save it for the enemy's most dangerous projectile (stun, burst).",
+  "level_6": "Last Breath: on a target knocked up by your tornado or by an ally. Combo: E → Q3 (tornado) → R. Roam bot if your jungler or support has knock-ups.",
+  "power_spikes": [
+   "Level 2: E + Q.",
+   "Level 6: tornado + ultimate.",
+   "First completed item: heavy crit damage.",
+   "Two items: teamfights with your team's knock-ups."
+  ],
+  "lane_plan": "Stack Q, trade when your shield is full and keep W for the key ability. Push and roam when your ultimate can take advantage of allied knock-ups. The mid role quest (faster recall) makes your roams more profitable.",
+  "trading": "Short trade: E through your opponent → Q → back off with E on a minion. All-in: Q3 tornado → R → attacks. Give up on it against zone-control mages (Lissandra, Taliyah) when their abilities are ready.",
+  "jungle_plan": "",
+  "threats": [
+   "Zone-control mages (Lissandra, Taliyah, Annie).",
+   "Vladimir, who heals and dodges with his Sanguine Pool.",
+   "Aurelion Sol, who keeps you at range."
+  ],
+  "mistakes": [
+   "Using W on an unimportant ability.",
+   "Engaging without your Flow shield or tornado.",
+   "Dashing into an enemy wave with no way out."
+  ],
+  "matchup_notes": {
+   "Yone": "A mobility duel: wait for his E, and keep the tornado for when he snaps back.",
+   "Zed": "Wind Wall blocks his shurikens.",
+   "Ahri": "Wind Wall blocks her Charm: save it for that ability.",
+   "Lissandra": "Her CC and ultimate stop you: don't engage while she has W.",
+   "Vladimir": "He dodges your ultimate with his Sanguine Pool: wait until he's used it."
+  },
+  "mid_game": "Roams with your team's knock-ups and skirmishes around objectives.",
+  "late_game": "Go in after your team's knock-ups, ultimate on several targets, Wind Wall to protect your carries.",
+  "ahead": "Roam, take objectives and force fights.",
+  "behind": "Farm and play with your team: your ultimate depends on allied knock-ups.",
+  "win_condition": "To win this game, you want to block key abilities with Wind Wall and chain knock-ups with your ultimate in teamfights.",
+  "final_tip": "Save your Wind Wall for the enemy's most important ability."
+ }
+}

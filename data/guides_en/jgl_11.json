@@ -1,0 +1,43 @@
+{
+ "Gwen|jgl": {
+  "identity": "Magic and true damage fighter, played in the jungle about one game in five (top lane remains her main role). In the jungle, her percent-health damage (passive A Thousand Cuts) clears big camps and epic monsters very fast. Snip Snip! (Q) deals true damage in the center, Hallowed Mist (W) protects her from everything outside it, Skip 'n Slash (E) gives her mobility and attack speed, and Needlework (R) throws needles in three casts that slow.",
+  "playstyle": "Farming and skirmishing jungler who scales hard. Gwen has no hard CC: her ganks rely on her ultimate's slow and her ability to win long fights. She's excellent on objectives thanks to her percent-health damage.",
+  "early_game": "Full clear while stacking Q on camps (each attack adds a snip, release it at 4 stacks). Avoid duels against early-game junglers; gank mostly lanes where the opponent is already low or pushed up. Your strength comes with your ultimate and first item.",
+  "level_1": "Snip Snip! (Q) first. Stack on the camp and release at 4 stacks.",
+  "level_2": "Skip 'n Slash (E). Attack speed and range: your clear speeds up.",
+  "level_3": "A second point in Q; Hallowed Mist (W) comes at level 4. Max Q first for clearing.",
+  "level_6": "Needlework: three needle casts that slow. It's your gank tool: E to stick, R to slow, centered Q to finish. Your long fights become very strong.",
+  "power_spikes": [
+   "Level 6: ultimate, ganks and skirmishes.",
+   "First completed item: very high percent-health damage.",
+   "Two items: you dominate long fights.",
+   "Objectives: Gwen melts dragons and Baron."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Full clear while stacking Q, then Scuttle. Gwen wants to farm and scale: don't force ganks when your laners have no CC. Take Void Grubs (around 8 minutes) and dragons thanks to your percent-health damage. From level 6, gank lanes with CC (your laners provide the stun, you provide the damage). Avoid invades against strong early junglers.",
+  "trading": "Skirmishing: E to stick → attacks to stack Q → W to block outside damage → centered Q → R to slow. Ganking: wait for your laner to lock down the target. Give up on it if your opponent kites you out of your Mist.",
+  "threats": [
+   "Early-game junglers who invade you (Bel'Veth, Evelynn after her 6).",
+   "Hard CC that pulls you out of your Mist.",
+   "Ranged kiting."
+  ],
+  "mistakes": [
+   "Casting Q without 4 stacks.",
+   "Forcing ganks with no CC.",
+   "Leaving your Mist when the enemy burst comes."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He'll invade you: protect your camps and win late.",
+   "Viego": "You win long fights; don't let him reset by possessing your allies.",
+   "Graves": "He beats you early: avoid his invades.",
+   "Bel'Veth": "She beats you in long fights: don't duel.",
+   "Evelynn": "She assassinates you after her 6: ward and stay near your allies."
+  },
+  "mid_game": "Skirmish around objectives and take dragons. Gwen is strong in long fights.",
+  "late_game": "Shred the enemy frontline with your percent-health damage, or dive a carry with E. Stay in your Mist.",
+  "ahead": "Take objectives, force long fights and invade.",
+  "behind": "Farm and scale: your late game makes up for falling behind.",
+  "win_condition": "To win this game, you want to scale, take objectives thanks to your percent-health damage and win long fights.",
+  "final_tip": "Always release your Q with 4 stacks and aim it at the center."
+ }
+}

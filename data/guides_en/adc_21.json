@@ -1,0 +1,43 @@
+{
+ "Sivir|adc": {
+  "identity": "Physical damage marksman, a wave clear and group fight specialist. Fleet of Foot (passive) gives her a brief burst of speed when she attacks a champion. Boomerang Blade (Q) damages on the way out and on the way back, Ricochet (W) makes her next attacks bounce to nearby targets with more attack speed, Spell Shield (E) blocks one enemy ability (and heals her if she blocks one), and On The Hunt (R) gives her whole team movement speed, while her attacks lower her cooldowns.",
+  "playstyle": "Safe scaling ADC: she clears waves very fast, blocks a key ability with E and starts or escapes fights with her ultimate's speed. She struggles against ADCs who beat her in long fights or chase her down (Twitch, Zeri, Yunara).",
+  "early_game": "Farm cleanly and poke with Q, throwing it so it hits both on the way out and on the way back. Push the wave with W when your support wants to roam or when you want to recall. Save E for the enemy support's engage ability.",
+  "level_1": "Ricochet (W) or Boomerang Blade (Q). After that, max Q first.",
+  "level_2": "Whichever of Q and W you skipped. Q to poke, W to push the wave.",
+  "level_3": "Spell Shield (E). Block the hook, the CC or the big enemy ability: your best survival tool in lane.",
+  "level_6": "On The Hunt: movement speed for the whole team. Cast it to engage a fight, catch enemies, or escape a bad fight.",
+  "power_spikes": [
+   "Level 3: Spell Shield to counter engages.",
+   "Level 6: an engage or escape ultimate for the team.",
+   "First completed item: very fast wave clear.",
+   "Two completed items: Ricochet devastates grouped teamfights."
+  ],
+  "lane_plan": "Farm, poke with Q, and push the wave with W when it's useful (recall, dragon). Save E for the key enemy ability. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards your fast farming.",
+  "trading": "Basic trade: Q out and back. All-in: W, attacks, Q, E to block the enemy CC. Give up on it against ADCs who win long fights (Twitch, Yunara): farm and wait for your items.",
+  "jungle_plan": "",
+  "threats": [
+   "Twitch: your hardest matchup.",
+   "Zeri, Kog'Maw and Yunara: hard matchups.",
+   "Several CCs in a row: your shield only blocks one."
+  ],
+  "mistakes": [
+   "Casting E too early and taking the real ability right after.",
+   "Using your ultimate when the team can't follow.",
+   "Leaving waves uncleared in the late game."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "Save E to block her W or her support's Q.",
+   "Jinx": "She scales too: clear waves and win fights with your ultimate.",
+   "Caitlyn": "Block her Ace in the Hole or her net with E.",
+   "Twitch": "He surprises you from camouflage: ward around you and save E for his W.",
+   "Yunara": "Avoid long fights against her."
+  },
+  "mid_game": "Clear the side waves, then join your team. Use your ultimate to engage a fight around an objective.",
+  "late_game": "Stay behind your frontline, W on into the group: your bounces hit everyone. Block the key CC with E, and cast R to engage or disengage.",
+  "ahead": "Engage fights with your ultimate and take objectives.",
+  "behind": "Clear waves safely and wait for grouped teamfights.",
+  "win_condition": "To win this game, you want to control the waves and win grouped teamfights with your bounces and your ultimate's speed.",
+  "final_tip": "Your Spell Shield only blocks one ability: save it for the one that can kill you."
+ }
+}

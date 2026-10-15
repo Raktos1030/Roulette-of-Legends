@@ -1,0 +1,43 @@
+{
+  "MonkeyKing|jgl": {
+    "identity": "Combattant à dégâts physiques, maître de la tromperie et de l'engage. Nimbus (E) fonce sur une cible (des clones frappent d'autres ennemis proches), Écrasement (Q) renforce sa prochaine attaque et réduit l'armure, Guerrier espiègle (W) le fait dasher en le rendant invisible et laisse un clone à sa place, et Cyclone (R) le fait tourbillonner en projetant les ennemis en l'air (deux lancers possibles). Son passif Peau de pierre augmente ses résistances et sa régénération.",
+    "playstyle": "Jungler de ganks, d'escarmouches et d'engage de teamfight. Son ultime double projette plusieurs ennemis en teamfight.",
+    "early_game": "Clear rapide avec E et Q. Gank dès le niveau 3 : E pour foncer, Q pour l'attaque renforcée, W pour esquiver ou tromper l'adversaire avec le clone. Tu gagnes beaucoup de duels en early.",
+    "level_1": "Nimbus (E) en premier.",
+    "level_2": "Écrasement (Q). Attaque renforcée qui réduit l'armure : E → Q est ton combo de base.",
+    "level_3": "Guerrier espiègle (W). Dash invisible avec clone : pour tromper l'adversaire, esquiver un sort ou te repositionner. Premier gank : E → Q → attaques → W si la cible riposte.",
+    "level_6": "Cyclone : tu tourbillonnes en projetant les ennemis en l'air, et tu peux le relancer une seconde fois. En teamfight, E sur une cible au milieu du groupe puis R deux fois : plusieurs ennemis restent en l'air longtemps.",
+    "power_spikes": [
+      "Niveau 3 : ganks et duels forts.",
+      "Niveau 6 : double Cyclone en teamfight.",
+      "Premier item complet : escarmouches dominantes.",
+      "Mid game : engages décisifs."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide, ganks et invasions. Wukong gagne les duels en early : envahis quand tes laners ont la priorité et contrôle les crabes. Joue les Larves (vers 8 min) et les dragons avec ton équipe : ton ultime rend les combats d'objectif très dangereux pour l'adversaire.",
+    "trading": "En gank : E → Q → attaques → W pour tromper. En teamfight : E au milieu du groupe → R → R. Abandonne contre les tanks qui encaissent ou les junglers qui protègent leurs alliés (Ivern).",
+    "threats": [
+      "Gwen, Ivern et Cho'Gath, parmi les moins bons matchups selon les données.",
+      "CC qui t'arrêtent avant l'ultime.",
+      "Engage sans suivi."
+    ],
+    "mistakes": [
+      "Utiliser W à l'ouverture au lieu de le garder pour esquiver.",
+      "Lancer l'ultime sur une seule cible en teamfight.",
+      "Oublier la seconde relance de Cyclone."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Trompe-le avec le clone quand il lance Q.",
+      "Graves": "Colle-le avec E et Q.",
+      "Viego": "Projette-le avec l'ultime avant qu'il ne possède tes alliés.",
+      "Maître Yi": "Projette-le au moment où il entre en teamfight.",
+      "Cho'Gath": "Son silence coupe ton ultime : attends qu'il l'ait utilisé."
+    },
+    "mid_game": "Escarmouches et engages autour des objectifs.",
+    "late_game": "Engage de teamfight : E au milieu du groupe, puis double Cyclone.",
+    "ahead": "Étouffe le jungler adverse, prends les objectifs et force les combats.",
+    "behind": "Farm et joue pour un engage décisif avec l'ultime.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner les escarmouches en early et engager les teamfights avec le double Cyclone.",
+    "final_tip": "Garde Guerrier espiègle pour esquiver le sort clé adverse : ton clone le trompe."
+  }
+}

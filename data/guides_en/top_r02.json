@@ -1,0 +1,84 @@
+{
+ "Kennen|top": {
+  "identity": "Ranged, magic damage, energy-based champion. Kennen marks his targets (passive Mark of the Storm): three marks stun. Thundering Shuriken (Q) pokes from range, Electrical Surge (W) passively adds a mark every few attacks and, when activated, hits every marked target, Lightning Rush (E) turns him into a fast lightning ball that passes through units, and Slicing Maelstrom (R) creates a storm that marks and stuns everything around him.",
+  "playstyle": "Ranged poke lane against melee fighters, then flank teamfight engages with his ultimate. Kennen is one of the few ranged top laners who can stun several targets: his goal is to reach the mid game with an ultimate that can turn fights around.",
+  "early_game": "Poke with your auto-attacks and Q on every enemy last hit. Watch your passive counter on your opponent: two marks + a Q = stun. Always keep enough energy for E, your only way to escape an engage.",
+  "level_1": "Thundering Shuriken (Q) first. Poke from range and last hit safely; don't let your opponent stick to you in melee range.",
+  "level_2": "Electrical Surge (W). Your passive empowered attack adds a mark; the active adds one to every target already marked. Q, then W on a marked target quickly stacks marks toward the stun.",
+  "level_3": "Lightning Rush (E). You pass through your opponent, marking them, then gain attack speed as you exit: E → W → Q stun. Also keep E to escape.",
+  "level_6": "Slicing Maelstrom: a storm around you that marks nearby enemies several times, so an area stun. In lane, E then R on your opponent leaves them little chance; in teamfights, go in from the flank (E, or even Flash) to hit several targets.",
+  "power_spikes": [
+   "Level 3: Q + E + W stun.",
+   "Level 6: ultimate for ganks and all-ins.",
+   "First completed item: a devastating ultimate.",
+   "Mid game: flank engages in teamfights."
+  ],
+  "lane_plan": "Play a neutral or slightly pushed wave: you have the range advantage, so use it on every enemy last hit. Avoid unchecked bushes, a fighter who sticks to you wins the trade. Recall when your energy and health are low. After 6, ping your jungler: Kennen + gank = an almost guaranteed kill.",
+  "trading": "Short trade: attack + Q, back off. Long trade: E (pass through and mark) → W → Q for the stun, then attacks. Engage when your opponent has used their dash; give up on it if you no longer have energy for E.",
+  "jungle_plan": "",
+  "threats": [
+   "Tanks who soak your poke and stick to you (Nasus, Dr. Mundo).",
+   "Gangplank, who pokes you from range with his kegs.",
+   "Ganks while your E is on cooldown or your energy is empty."
+  ],
+  "mistakes": [
+   "Using E to engage with no energy left to escape.",
+   "Casting your ultimate head-on into the enemy team instead of flanking.",
+   "Missing Q over and over and losing your poke."
+  ],
+  "matchup_notes": {
+   "Darius": "Kite him out of his Apprehend range and stun him when he steps up: he must never stick to you long enough to stack.",
+   "Nasus": "He soaks your poke and slows you with Wither: poke him early to limit his stacks, then keep E to escape.",
+   "Yone": "Poke him from range; keep E to get out of his Q3 and stun him after his E.",
+   "Malphite": "His Q pokes you and his ultimate engages you at level 6: stay far away and keep the stun for the end of his charge.",
+   "Jax": "His Counter Strike only dodges basic attacks, not your abilities: cast Q and W during his dodge."
+  },
+  "mid_game": "Play around objectives and set up engages with your ultimate. Flank through the jungle to arrive on the enemy team's side.",
+  "late_game": "Teamfight engage: E to come in from the flank, R to stun several enemies. Wait until your team can follow and aim for grouped carries.",
+  "ahead": "Roam with E to mid and the river, create picks and dominate teamfights with your ultimate.",
+  "behind": "Farm from range, poke safely and keep your ultimate for a decisive teamfight engage.",
+  "win_condition": "To win this game, you want to win the lane through poke and engage teamfights with Slicing Maelstrom on several enemies.",
+  "final_tip": "Always keep enough energy for your E: it's both your escape and your engage."
+ },
+ "Kled|top": {
+  "identity": "Physical damage fighter who rides Skaarl, his lizard. Skaarl has his own health bar: when it hits zero, Kled dismounts and has to build courage by fighting to remount. Bear Trap on a Rope (Q) hooks his opponent, then yanks them, Violent Tendencies (W) triggers four ultra-fast attacks, Jousting (E) dashes twice and Chaaaaaaaarge!!! (R) charges across the map, leaving a trail that speeds up allies.",
+  "playstyle": "Very aggressive lane and frequent all-ins. Kled wants to fight all the time: he wins the lane through pressure and becomes a teamfight engager thanks to his ultimate. Strong in the early and mid game; you have to learn to handle the moments when Skaarl is down.",
+  "early_game": "Trade with Q: if your opponent stays hooked, the rope yanks them toward you and slows them. Follow with W (four fast attacks) and E to stick. When Skaarl falls, back off: Kled on foot is much weaker. Hit your opponent to regain courage and remount.",
+  "level_1": "Bear Trap on a Rope (Q) first. Throw it at your opponent and step back slightly to trigger the yank.",
+  "level_2": "Jousting (E). A dash, then a second dash through the target if the first one hit a champion: Q + E to engage.",
+  "level_3": "Violent Tendencies (W). Four very fast attacks, the last one hits much harder: Q → E → W → E recast is a big all-in with Ignite.",
+  "level_6": "Chaaaaaaaarge!!!: a long charge with your team (a trail that speeds up allies) that knocks back the target on impact. Use it to start fights, join a gank or get back to a river fight.",
+  "power_spikes": [
+   "Level 3: a very strong Q → E → W all-in.",
+   "Level 6: long-range engage with your team.",
+   "First completed item: very strong duels.",
+   "Mid game: skirmishes and engages."
+  ],
+  "lane_plan": "Play a neutral or pushed wave and trade aggressively with Q and W. If you're winning trades, crash and dive with your jungler. Recall when Skaarl is low or when you're on foot with no courage. The lane bushes hide your approach for Q.",
+  "trading": "Short trade: Q (yank) + attacks. Long trade: Q → E → W → E recast through the target. Engage when Q has hooked; give up on it as soon as Skaarl falls, unless your opponent is almost dead.",
+  "jungle_plan": "",
+  "threats": [
+   "Singed and champions who make you chase them.",
+   "Pantheon and duelists who are stronger early.",
+   "CC while you're on foot (without Skaarl)."
+  ],
+  "mistakes": [
+   "Engaging without Q (no yank and no slow).",
+   "Keeping on fighting on foot right after Skaarl falls.",
+   "Casting your ultimate when your team can't follow."
+  ],
+  "matchup_notes": {
+   "Darius": "Avoid his Apprehend and the edge of his Decimate; trade with Q + W, then get out with E.",
+   "Gangplank": "Stick to him with Q + E before he uses his kegs; he's fragile up close.",
+   "Yone": "Wait for his E before engaging; Q slows him and stops him from escaping.",
+   "Singed": "He makes you run through his poison: don't chase him, only trade when he stops.",
+   "Fiora": "She Ripostes your Q (stun). Wait until her Riposte is used before engaging."
+  },
+  "mid_game": "Skirmishes and engages: your ultimate starts 5v5 fights. Join objectives with your team behind you.",
+  "late_game": "Teamfight engage with your ultimate, then melee fighting. Pick the angle carefully: you want to bring your team onto their carry, not into the middle of their frontline.",
+  "ahead": "Force fights, dive with your jungler and engage objectives: a Kled with a lead is very hard to stop.",
+  "behind": "Farm, avoid duels on foot and play for a decisive engage with your ultimate.",
+  "win_condition": "To win this game, you want to win the lane through aggression, then engage the deciding fights with your ultimate and your team behind you.",
+  "final_tip": "When Skaarl falls, back off immediately: Kled on foot isn't built to fight."
+ }
+}

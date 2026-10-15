@@ -1,0 +1,43 @@
+{
+  "Poppy|sup": {
+    "identity": "Tank anti-dive. Ambassadrice de fer (passif) : elle lance son écu, qui rebondit sur la cible ; en le ramassant, elle obtient un shield. Commotion (Q) frappe au marteau et laisse une zone qui slow puis explose, Présence immuable (W) lui donne passivement des résistances et, activée, de la vitesse tout en arrêtant les dashs des ennemis autour d'elle, Charge héroïque (E) la fait charger une cible pour la repousser (stun contre un mur), et Verdict de la gardienne (R) canalise un coup de marteau qui projette les ennemis très loin.",
+    "playstyle": "Support de contre-engage : elle arrête les dashs avec W, stun contre les murs avec E et renvoie les divers loin de son équipe avec son ultime. Elle écrase les supports de dive (Camille, Pantheon, Pyke) et souffre contre les enchanteurs qui la poke à distance (Janna, Zilean, Sona).",
+    "early_game": "Joue autour des murs : Charge héroïque (E) stun l'adversaire si tu le repousses contre un mur. Garde Présence immuable (W) pour arrêter le dash ou le grappin adverse. Ramasse ton écu après chaque attaque renforcée pour le shield.",
+    "level_1": "Charge héroïque (E) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Commotion (Q). Combo : E contre un mur → Q → attaques.",
+    "level_3": "Présence immuable (W). Arrête les dashs adverses autour de toi : lance-la quand un engage arrive.",
+    "level_6": "Verdict de la gardienne : canalisé, il projette très loin (loin de ton équipe = disengage parfait). Un coup rapide (sans charge) projette moins loin mais peut aussi servir à séparer un diver de ton carry.",
+    "power_spikes": [
+      "Niveau 2 : E contre un mur + Q.",
+      "Niveau 3 : W contre les engages.",
+      "Niveau 6 : ultime de disengage.",
+      "Teamfight : W au milieu des divers adverses."
+    ],
+    "lane_plan": "Contrôle les engages adverses avec W, cherche les stuns contre les murs. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "All-in : E contre un mur → Q → attaques (ramasse l'écu). Défense : W contre les dashs, E pour repousser le diver, R pour le renvoyer au loin. Contre les enchanteurs qui te poke (Janna, Zilean), ne force pas : joue les contre-engages.",
+    "jungle_plan": "",
+    "threats": [
+      "Janna et Zilean : matchups difficiles.",
+      "Sona : matchup difficile.",
+      "Poke à distance : tu dois t'approcher pour être utile."
+    ],
+    "mistakes": [
+      "Utiliser E loin de tout mur (pas de stun).",
+      "Lancer W trop tôt, avant le dash adverse.",
+      "Projeter un ennemi avec l'ultime vers son équipe au lieu de l'en éloigner."
+    ],
+    "matchup_notes": {
+      "Thresh": "W arrête le grappin quand il dash vers son ADC.",
+      "Nautilus": "Garde W pour le moment où son ancre le tire vers vous.",
+      "Alistar": "W arrête sa charge : ne le laisse pas arriver au contact.",
+      "Pyke": "Son dash (E) est arrêtée par ton W.",
+      "Janna": "Elle te repousse et te poke : joue défensivement."
+    },
+    "mid_game": "Protège ton ADC et ton jungler, pose des pinks et cherche les stuns contre les murs autour des objectifs.",
+    "late_game": "Reste près de ton carry : W quand les divers arrivent, E pour les repousser, R pour renvoyer le plus dangereux loin du combat.",
+    "ahead": "Engage avec E contre les murs et prends les objectifs.",
+    "behind": "Joue l'anti-dive : ton W et ton ultime protègent ton carry.",
+    "win_condition": "Pour gagner cette partie, tu veux arrêter les dives adverses et garder ton carry en vie.",
+    "final_tip": "Présence immuable arrête toutes les dashs autour de toi : lance-la au moment où l'adversaire saute, pas avant."
+  }
+}

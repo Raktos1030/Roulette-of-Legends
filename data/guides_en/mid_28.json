@@ -1,0 +1,43 @@
+{
+ "Orianna|mid": {
+  "identity": "Magic damage control mage who fights through her Ball. Command: Attack (Q) moves the Ball while dealing damage, Command: Dissonance (W) creates a pulse that speeds up allies and slows enemies, Command: Protect (E) sends the Ball to an ally (shield and damage along the way), and Command: Shockwave (R) pulls every enemy near the Ball toward it. Her attacks deal increasing magic damage (passive).",
+  "playstyle": "Teamfight and zone-control mage. Orianna wins by placing the Ball on an ally who engages, then pulling several enemies in with her ultimate.",
+  "early_game": "Poke with Q (Ball placed in front of you) and your attacks, farm safely. Keep E to protect yourself from an engage. The Ball creates a zone: control it to stop your opponent from walking forward.",
+  "level_1": "Command: Attack (Q) first. Poke and farm.",
+  "level_2": "Command: Dissonance (W). Q to place the Ball on your opponent, then W: damage and a slow.",
+  "level_3": "Command: Protect (E). A shield on yourself or an ally: defense against assassins, or E on your ganking jungler for extra damage.",
+  "level_6": "Command: Shockwave: pulls in enemies near the Ball. In teamfights, place the Ball on an ally who engages (E), then R when they land in the middle of the enemy team.",
+  "power_spikes": [
+   "Level 6: Shockwave for teamfights.",
+   "First completed item: poke and area damage.",
+   "Two items: dominant teamfight control.",
+   "Mid game: objective fights."
+  ],
+  "lane_plan": "Poke with Q, farm safely and keep E for defense. Push your wave and join your team on objectives: Orianna shines in grouped fights. The mid role quest (faster recall) helps you come back quickly after pushing.",
+  "trading": "Short trade: Q + attacks. Long trade: Q → W. Defense: E on yourself. In teamfights, engage with E on the ally who dives, then R. Give up on it against assassins who dive you (Locke, Qiyana, Irelia).",
+  "jungle_plan": "",
+  "threats": [
+   "Assassins who dive you (Locke, Qiyana, Irelia).",
+   "Long-range mages (Xerath, Lux).",
+   "Aurelion Sol, who scales better than you."
+  ],
+  "mistakes": [
+   "Placing the Ball far from you and no longer being able to protect yourself.",
+   "Casting your ultimate on a single target.",
+   "Staying in lane instead of joining grouped fights."
+  ],
+  "matchup_notes": {
+   "Viktor": "Poke him with the Ball and stay out of his Gravity Field.",
+   "Syndra": "She outpokes you: farm and keep E.",
+   "Ahri": "Keep E for her R engage.",
+   "Locke": "He bursts you: keep E and play under your tower.",
+   "Ryze": "Poke him with the Ball."
+  },
+  "mid_game": "Join grouped fights and control objective areas with the Ball.",
+  "late_game": "Ball on the ally who engages, R in the middle of several enemies. Stay behind your frontline.",
+  "ahead": "Force grouped fights around objectives.",
+  "behind": "Farm and play for a decisive ultimate in teamfights.",
+  "win_condition": "To win this game, you want to survive the lane and turn teamfights with a Shockwave on several enemies.",
+  "final_tip": "In teamfights, put the Ball on the ally who engages: your ultimate goes off where they land."
+ }
+}

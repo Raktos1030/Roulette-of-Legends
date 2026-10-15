@@ -1,0 +1,43 @@
+{
+  "Orianna|mid": {
+    "identity": "Mage de contrôle à dégâts magiques qui combat par l'intermédiaire de sa Balle. Ordre : Attaque (Q) déplace la Balle en infligeant des dégâts, Ordre : Dissonance (W) crée une impulsion qui accélère les alliés et slow les ennemis, Ordre : Protection (E) envoie la Balle sur un allié (shield et dégâts sur le trajet), et Ordre : Onde de choc (R) attire tous les ennemis proches de la Balle vers elle. Ses attaques infligent des dégâts magiques croissants (passif).",
+    "playstyle": "Mage de teamfight et de contrôle de zone. Orianna gagne en plaçant la Balle sur un allié qui engage, puis en attirant plusieurs ennemis avec l'ultime.",
+    "early_game": "Poke avec Q (Balle placée devant toi) et tes attaques, farm en sécurité. Garde E pour te protéger d'un engage. La Balle crée une zone : contrôle-la pour empêcher l'adversaire d'avancer.",
+    "level_1": "Ordre : Attaque (Q) en premier. Poke et farm.",
+    "level_2": "Ordre : Dissonance (W). Q pour placer la Balle sur l'adversaire, puis W : dégâts et slow.",
+    "level_3": "Ordre : Protection (E). Shield sur toi ou un allié : défense contre les assassins, ou E sur ton jungler qui gank pour des dégâts en plus.",
+    "level_6": "Ordre : Onde de choc : attire les ennemis proches de la Balle. En teamfight, place la Balle sur un allié qui engage (E), puis R quand il atterrit au milieu de l'équipe adverse.",
+    "power_spikes": [
+      "Niveau 6 : Onde de choc pour les teamfights.",
+      "Premier item complet : poke et dégâts de zone.",
+      "Deux items : contrôle de teamfight dominant.",
+      "Mid game : combats d'objectifs."
+    ],
+    "lane_plan": "Poke au Q, farm en sécurité et garde E en défense. Pousse ta wave et rejoins ton équipe sur les objectifs : Orianna brille en combat groupé. La quête de rôle mid (retour accéléré) t'aide à revenir vite après avoir poussé.",
+    "trading": "Trade court : Q + attaques. Trade long : Q → W. Défense : E sur toi. Engage en teamfight avec E sur l'allié qui dive, puis R. Abandonne contre les assassins qui te divent (Locke, Qiyana, Irelia).",
+    "jungle_plan": "",
+    "threats": [
+      "Assassins qui te divent (Locke, Qiyana, Irelia).",
+      "Mages à longue portée (Xerath, Lux).",
+      "Aurelion Sol, qui scale mieux que toi."
+    ],
+    "mistakes": [
+      "Placer la Balle loin de toi et ne plus pouvoir te protéger.",
+      "Lancer l'ultime sur une seule cible.",
+      "Rester en lane au lieu de rejoindre les combats groupés."
+    ],
+    "matchup_notes": {
+      "Viktor": "Poke-le avec la Balle et reste hors de son champ gravitationnel.",
+      "Syndra": "Elle te surclasse en poke : farm et garde E.",
+      "Ahri": "Garde E pour son engage avec R.",
+      "Locke": "Il te burst : garde E et joue sous ta tour.",
+      "Ryze": "Poke-le avec la Balle."
+    },
+    "mid_game": "Rejoins les combats groupés et contrôle les zones d'objectifs avec la Balle.",
+    "late_game": "Balle sur l'allié qui engage, R au milieu de plusieurs ennemis. Reste derrière ta frontline.",
+    "ahead": "Force les combats groupés autour des objectifs.",
+    "behind": "Farm et joue pour un ultime décisif en teamfight.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane et retourner les teamfights avec Onde de choc sur plusieurs ennemis.",
+    "final_tip": "En teamfight, place la Balle sur l'allié qui engage : l'ultime part de là où il atterrit."
+  }
+}

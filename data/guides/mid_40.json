@@ -1,0 +1,43 @@
+{
+  "Vladimir|mid": {
+    "identity": "Mage à dégâts magiques qui se soigne en combat, joué au mid environ deux fois sur trois. Transfusion (Q) draine les PV (renforcée tous les deux lancers, avec vitesse et soin accrus), Bain de sang (W) le rend inciblable dans une flaque, Vagues de sang (E) se charge puis explose en zone, et Peste sanguine (R) amplifie les dégâts subis par les cibles avant de les faire exploser. Son passif convertit ses PV bonus en puissance et inversement.",
+    "playstyle": "Mage de sustain et de scaling. Au mid, Vladimir tient la lane grâce à Q, esquive les engages avec W et devient un mage de combat très fort en teamfight.",
+    "early_game": "Farm avec Q (tu te soignes à chaque lancer), poke l'adversaire quand ton Q renforcé est prêt. Garde W pour esquiver l'engage ou le gros sort adverse. Évite les all-in avant le niveau 6 contre les mages à burst.",
+    "level_1": "Transfusion (Q) en premier. Farm et soin.",
+    "level_2": "Vagues de sang (E) ou Bain de sang (W). E pour nettoyer la wave et poke ; W pour esquiver contre un assassin.",
+    "level_3": "Kit de base complet. Q renforcé → E → attaques ; W pour esquiver.",
+    "level_6": "Peste sanguine : amplifie les dégâts puis explose. Combo : R → E → Q → W pour esquiver la riposte. En teamfight, touche plusieurs ennemis.",
+    "power_spikes": [
+      "Niveau 6 : ultime pour les all-in.",
+      "Premier item complet : dégâts et sustain.",
+      "Deux items : mage de combat très fort.",
+      "Late game : teamfight dévastateur."
+    ],
+    "lane_plan": "Farm avec Q, poke avec le Q renforcé et garde W. Pousse puis rejoins les objectifs. La quête de rôle mid (retour accéléré) t'aide à reset rapidement quand tu as utilisé W.",
+    "trading": "Trade court : Q renforcé. All-in : E → Q → R → W. Abandonne contre les mages qui te contrôlent à distance (Malzahar, Aurora).",
+    "jungle_plan": "",
+    "threats": [
+      "Malzahar et Aurora : matchups difficiles.",
+      "Réductions de soins adverses.",
+      "Ganks avant le niveau 6 sans W disponible."
+    ],
+    "mistakes": [
+      "Utiliser W trop tôt et ne plus pouvoir esquiver.",
+      "Engager avant le niveau 6 contre un mage à burst.",
+      "Rater l'ultime en teamfight."
+    ],
+    "matchup_notes": {
+      "Yasuo": "Ton sustain tient ses trades ; W esquive son Q3.",
+      "Zed": "W esquive la Marque de la mort au dernier moment.",
+      "Ahri": "W esquive son Charme.",
+      "Katarina": "W esquive son Lotus mortel, puis punis-la.",
+      "Malzahar": "Sa suppression te bloque : garde W pour la fin de son ultime."
+    },
+    "mid_game": "Joue autour des objectifs et prépare les teamfights avec l'ultime.",
+    "late_game": "Mage de combat : entre dans la mêlée avec W, lance l'ultime sur plusieurs cibles, soigne-toi avec Q.",
+    "ahead": "Force les combats autour des objectifs et domine les teamfights.",
+    "behind": "Farm et scale : Vladimir reste fort en late game.",
+    "win_condition": "Pour gagner cette partie, tu veux tenir la lane grâce à ton sustain, scale et dominer les teamfights avec l'ultime.",
+    "final_tip": "Garde ton Bain de sang pour le gros sort adverse : il esquive presque tout."
+  }
+}

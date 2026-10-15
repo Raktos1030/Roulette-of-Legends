@@ -1,0 +1,42 @@
+{
+  "Taliyah|sup": {
+    "identity": "Mage de contrôle. Surf tellurique (passif) : elle va plus vite près des murs. Rafale filée (Q) lance une rafale de pierres et crée un sol ouvragé sous elle ; relancée sur ce sol, elle le consomme pour lancer un gros rocher qui slow. Poussée sismique (W) fait jaillir le sol et projette les ennemis dans la direction choisie, Défilage tellurique (E) pose un champ de mines qui slow ; un ennemi qui fait un dash ou qui est projeté dessus fait exploser les mines et est stun. Mur de la tisseuse (R) crée un très long mur sur lequel elle peut surfer.",
+    "playstyle": "Support de contrôle : elle pose ses mines, puis projette l'adversaire dessus avec W pour le stun, et coupe les combats avec son mur.",
+    "early_game": "Poke avec Rafale filée (Q). Cherche le combo E → W : pose les mines, puis projette l'adversaire à travers elles pour le stun. Les supports qui font des dashs (grappins, charges) déclenchent eux-mêmes tes mines : pose-les devant ton ADC.",
+    "level_1": "Rafale filée (Q) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Défilage tellurique (E). Mines devant ton ADC : un engage adverse déclenche le stun.",
+    "level_3": "Poussée sismique (W). Combo : E, puis W pour projeter l'adversaire à travers les mines.",
+    "level_6": "Mur de la tisseuse : très long mur qui bloque le passage. Coupe la fuite adverse, sépare l'équipe ennemie en deux, ou sers-t'en pour roam en surfant dessus.",
+    "power_spikes": [
+      "Niveau 3 : combo E → W.",
+      "Niveau 6 : mur pour couper les combats.",
+      "Premier item complet : poke de Q plus fort.",
+      "Mid game : roams rapides grâce au passif et au mur."
+    ],
+    "lane_plan": "Poke avec Q, pose tes mines contre les engages et joue le combo E → W. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "Trade de base : Q. All-in : E → W à travers les mines → Q. Défense : mines devant ton ADC, W pour repousser un diver. Contre les grappins (Blitzcrank), reste derrière les sbires.",
+    "jungle_plan": "",
+    "threats": [
+      "Blitzcrank : matchup difficile.",
+      "Nami et Leona : matchups difficiles.",
+      "Assassins et engages : tu es fragile."
+    ],
+    "mistakes": [
+      "Projeter l'adversaire avec W sans mines derrière lui.",
+      "Poser le mur de façon à bloquer ton propre ADC.",
+      "Gaspiller E pour poke au lieu de le garder contre un engage."
+    ],
+    "matchup_notes": {
+      "Thresh": "Pose tes mines devant ton ADC : son engage les déclenche.",
+      "Lulu": "Elle poke : joue le combo E → W plutôt que les trades.",
+      "Nautilus": "Son ancre le fait avancer sur tes mines.",
+      "Nami": "Esquive sa bulle et reste à distance."
+    },
+    "mid_game": "Roam grâce à ta vitesse près des murs, pose des pinks et coupe les chemins avec ton ultime.",
+    "late_game": "Reste derrière ta frontline, pose tes mines devant ton carry et projette les divers dessus avec W. Le mur coupe l'équipe adverse en deux.",
+    "ahead": "Roam et crée des picks avec ton mur.",
+    "behind": "Protège ton ADC avec tes mines et ton W.",
+    "win_condition": "Pour gagner cette partie, tu veux contrôler le terrain avec tes mines et ton mur et stun les engages adverses.",
+    "final_tip": "Les dashs et knock-ups déclenchent tes mines : pose-les là où l'adversaire va engager, puis W pour finir le travail."
+  }
+}

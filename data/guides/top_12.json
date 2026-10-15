@@ -1,0 +1,84 @@
+{
+  "Vayne|top": {
+    "identity": "Tireuse à dégâts physiques et vrais. Roulade (Q) dash et renforce l'attaque suivante, Carreaux d'argent (W) inflige des dégâts vrais en pourcentage des PV toutes les trois attaques, Condamnation (E) repousse et stun contre un mur, et Combat ultime (R) augmente ses dégâts et la rend invisible après chaque Roulade. En top, c'est un contre des juggernauts lents.",
+    "playstyle": "Lane de kiting et de trades courts contre les combattants au corps à corps, puis splitpush.",
+    "early_game": "Kite l'adversaire au corps à corps et trade avec Q + attaque. Garde E pour le repousser quand il s'engage, idéalement contre un mur. Farm en sécurité : tu es fragile et sans sustain.",
+    "level_1": "Roulade (Q) en premier. Q + attaque sur l'adversaire qui vient last hit, puis recule.",
+    "level_2": "Carreaux d'argent (W). Troisième attaque en dégâts vrais : Q → attaque → attaque → attaque est ton trade de base.",
+    "level_3": "Condamnation (E). Repousse l'adversaire ; contre un mur, il est stun. C'est ton outil de survie principal contre les engages et ton meilleur all-in près des murs de la lane.",
+    "level_6": "Combat ultime : plus de dégâts et invisibilité après chaque Roulade. Tu gagnes les combats longs contre les combattants et tu peux esquiver des sorts ciblés.",
+    "power_spikes": [
+      "Niveau 3 : Q + W + E contre un mur.",
+      "Niveau 6 : ultime qui gagne les duels longs.",
+      "Premier item complet : DPS réel contre les tanks.",
+      "Late game : duels et splitpush dominants si tu as survécu à la lane."
+    ],
+    "lane_plan": "Joue une wave neutre, kite au corps à corps et utilise les murs de la lane pour Condamnation. Recall quand ta wave crash. Contre un tank à armure ou un champion à distance, joue près de ta tour et vise le late game.",
+    "trading": "Trade court : Q → attaque → recul. Trade long : Q → attaques (W) → E contre un mur. Engage quand l'adversaire n'a plus son dash ; abandonne contre les champions qui te bloquent (Malphite avec son ultime, Teemo avec son aveuglement).",
+    "jungle_plan": "",
+    "threats": [
+      "Malphite et son ultime : ton matchup le plus difficile.",
+      "Teemo et son aveuglement, qui annule tes attaques.",
+      "Nasus et ses slows de vitesse d'attaque."
+    ],
+    "mistakes": [
+      "Utiliser Q pour engager et ne plus pouvoir fuir.",
+      "Gaspiller E sans mur derrière l'adversaire.",
+      "Te battre de face contre des CC."
+    ],
+    "matchup_notes": {
+      "Malphite": "Farm sous ta tour, ne prends aucun risque et joue pour le late game.",
+      "Darius": "Kite-le hors de portée de son Crampon et repousse-le avec E s'il te colle.",
+      "Garen": "Kite-le hors de son Q et repousse-le avec E après son silence.",
+      "K'Santé": "Tes dégâts vrais ignorent ses résistances ; repousse son engage avec E.",
+      "Nasus": "Flétrissement te rend inutile : punis-le tôt avant qu'il ne stack, puis évite ses combats."
+    },
+    "mid_game": "Splitpush et duels. Évite les zones de contrôle adverses et utilise ta Téléportation améliorée (quête de rôle) pour rejoindre les objectifs.",
+    "late_game": "DPS de mêlée à distance : frappe le tank adverse avec W, repousse les divers avec E et utilise l'invisibilité de l'ultime pour repositionner.",
+    "ahead": "Splitpush, force des duels et prends les tours.",
+    "behind": "Farm et scale : Vayne reste dangereuse en late game.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre aux tanks en lane, puis dominer la side lane en duel.",
+    "final_tip": "Joue près des murs : Condamnation contre un mur, c'est ton stun et ta survie."
+  },
+  "Vladimir|top": {
+    "identity": "Mage à dégâts magiques qui se soigne en combat. Transfusion (Q) draine les PV (renforcé tous les deux lancers), Bain de sang (W) le rend inciblable dans une flaque, Vagues de sang (E) se charge puis explose en zone, et Peste sanguine (R) amplifie les dégâts subis par les cibles avant de les faire exploser. Son passif convertit ses PV bonus en puissance et inversement. En top, il joue environ un cinquième de ses parties (le mid reste son rôle principal).",
+    "playstyle": "Lane de sustain et de scaling. Vladimir est faible en early contre les combattants agressifs et devient un mage de combat de zone très fort en teamfight en mid/late game. Il ne dépend pas du mana mais de ses PV.",
+    "early_game": "Farm avec Q (tu te soignes à chaque lancer) et poke l'adversaire quand ton Q renforcé est prêt. Garde W pour esquiver un engage ou un gros sort. Évite les all-in avant le niveau 6.",
+    "level_1": "Transfusion (Q) en premier. Q sur les sbires pour farmer et te soigner ; Q renforcé sur l'adversaire.",
+    "level_2": "Vagues de sang (E) dans le chemin le plus joué (Q → E → W), ou Bain de sang (W) dans l'alternative. E aide à farm et poke en zone ; W est ton outil d'esquive.",
+    "level_3": "Kit de base complet. W te rend inciblable : utilise-le pour esquiver le gros sort adverse ou pour sortir d'un all-in.",
+    "level_6": "Peste sanguine : amplifie les dégâts subis par toutes les cibles touchées puis explose. En teamfight, lance-la sur plusieurs ennemis ; en lane, pour un all-in après ton Q renforcé.",
+    "power_spikes": [
+      "Niveau 6 : ultime pour les all-in.",
+      "Premier item complet : dégâts et sustain.",
+      "Deux items : mage de combat très fort.",
+      "Late game : teamfight dévastateur."
+    ],
+    "lane_plan": "Laisse la wave venir vers toi, farm avec Q et poke l'adversaire. Évite les engages adverses avant le niveau 6. Recall avec une wave poussée.",
+    "trading": "Trade court : Q renforcé. Trade long : E → Q → R → W pour esquiver. Engage quand ton Q est renforcé ; abandonne contre les champions qui te battent au corps à corps (Irelia, Riven).",
+    "jungle_plan": "",
+    "threats": [
+      "Combattants agressifs en early (Irelia, Riven).",
+      "Nasus et les tanks qui encaissent ton burst.",
+      "Ganks avant le niveau 6."
+    ],
+    "mistakes": [
+      "Utiliser W trop tôt et ne plus pouvoir esquiver.",
+      "Engager avant le niveau 6 contre un combattant plus fort.",
+      "Rater l'ultime en teamfight."
+    ],
+    "matchup_notes": {
+      "Yone": "Garde W pour son Q3 et poke au Q renforcé.",
+      "Jax": "Sa Contre-attaque n'esquive pas tes sorts : Q et E pendant son esquive.",
+      "Teemo": "Ton sustain encaisse son poke.",
+      "Irelia": "Garde W pour son engage.",
+      "Nasus": "Il encaisse ton burst et te slow : farm et scale."
+    },
+    "mid_game": "Joue autour des objectifs et prépare les teamfights avec l'ultime. Farm les side lanes en sécurité.",
+    "late_game": "Mage de combat : entre dans la mêlée avec W, lance l'ultime sur plusieurs cibles et soigne-toi avec Q.",
+    "ahead": "Force les combats autour des objectifs et domine les teamfights.",
+    "behind": "Farm et scale : Vladimir reste fort en late game.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane, scale et dominer les teamfights avec l'ultime.",
+    "final_tip": "Garde ton Bain de sang pour le gros sort adverse : il esquive presque tout."
+  }
+}

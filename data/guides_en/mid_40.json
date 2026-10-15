@@ -1,0 +1,43 @@
+{
+ "Vladimir|mid": {
+  "identity": "Magic damage mage who heals in combat, played mid about two games out of three. Transfusion (Q) drains health (empowered every second cast, with extra speed and healing), Sanguine Pool (W) makes him untargetable in a pool, Tides of Blood (E) charges up, then explodes in an area, and Hemoplague (R) amplifies the damage targets take before making them explode. His passive converts his bonus health into ability power and vice versa.",
+  "playstyle": "Sustain and scaling mage. In mid, Vladimir holds the lane thanks to Q, dodges engages with W and becomes a very strong battle mage in teamfights.",
+  "early_game": "Farm with Q (you heal with every cast), poke your opponent when your empowered Q is ready. Keep W to dodge the enemy engage or big ability. Avoid all-ins before level 6 against burst mages.",
+  "level_1": "Transfusion (Q) first. Farm and heal.",
+  "level_2": "Tides of Blood (E) or Sanguine Pool (W). E to clear the wave and poke; W to dodge against an assassin.",
+  "level_3": "Full basic kit. Empowered Q → E → attacks; W to dodge.",
+  "level_6": "Hemoplague: amplifies damage, then explodes. Combo: R → E → Q → W to dodge the counterattack. In teamfights, hit several enemies.",
+  "power_spikes": [
+   "Level 6: ultimate for all-ins.",
+   "First completed item: damage and sustain.",
+   "Two items: a very strong battle mage.",
+   "Late game: devastating teamfights."
+  ],
+  "lane_plan": "Farm with Q, poke with your empowered Q and keep W. Push, then join objectives. The mid role quest (faster recall) helps you reset quickly once you've used W.",
+  "trading": "Short trade: empowered Q. All-in: E → Q → R → W. Give up on it against mages who lock you down from range (Malzahar, Aurora).",
+  "jungle_plan": "",
+  "threats": [
+   "Malzahar and Aurora: hard matchups.",
+   "Enemy healing reduction.",
+   "Ganks before level 6 without W available."
+  ],
+  "mistakes": [
+   "Using W too early and no longer being able to dodge.",
+   "Engaging before level 6 against a burst mage.",
+   "Missing your ultimate in teamfights."
+  ],
+  "matchup_notes": {
+   "Yasuo": "Your sustain holds up in his trades; W dodges his Q3.",
+   "Zed": "W dodges Death Mark at the last moment.",
+   "Ahri": "W dodges her Charm.",
+   "Katarina": "W dodges her Death Lotus, then punish her.",
+   "Malzahar": "His suppression locks you down: keep W for the end of his ultimate."
+  },
+  "mid_game": "Play around objectives and set up teamfights with your ultimate.",
+  "late_game": "Battle mage: go into the brawl with W, cast your ultimate on several targets, heal with Q.",
+  "ahead": "Force fights around objectives and dominate teamfights.",
+  "behind": "Farm and scale: Vladimir stays strong in the late game.",
+  "win_condition": "To win this game, you want to hold the lane thanks to your sustain, scale and dominate teamfights with your ultimate.",
+  "final_tip": "Keep your Sanguine Pool for the enemy's big ability: it dodges almost everything."
+ }
+}

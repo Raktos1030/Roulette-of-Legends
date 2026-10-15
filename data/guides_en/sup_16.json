@@ -1,0 +1,43 @@
+{
+ "Morgana|sup": {
+  "identity": "Control mage. Soul Siphon (passive) heals her when she damages champions, large minions or monsters. Dark Binding (Q) roots the first enemy hit for a long time, Tormented Shadow (W) creates a zone that deals damage over time (stronger on wounded targets), Black Shield (E) protects an ally from magic damage and CC as long as it isn't broken, and Soul Shackles (R) chains her to nearby champions: she slows them and stuns them if they don't break the chains in time.",
+  "playstyle": "Pick and anti-engage support: her Q roots for a very long time, and her shield cancels the enemy engage. She crushes engage supports who rely on their CC (Nautilus, Leona) and struggles against enchanters who outclass her in lane (Milio, Janna).",
+  "early_game": "Poke with W on your opponent when they come to last hit, and keep Dark Binding (Q) to punish or start a kill. Black Shield (E) on your ADC against the enemy engage: it blocks CC as long as it holds. A landed Q at level 2 often means a kill.",
+  "level_1": "Dark Binding (Q) first. After that, max Q first.",
+  "level_2": "Tormented Shadow (W) or Black Shield (E). W to poke, E if the enemy support is an engager.",
+  "level_3": "The missing ability. Combo: Q → W under the rooted target → attacks; E on your ADC if the enemy engages.",
+  "level_6": "Soul Shackles: walk into the middle of the enemies (with E on yourself) and stun them all if they don't move away. Combo: Q, then R on the rooted target.",
+  "power_spikes": [
+   "Level 2: Q + W for kills.",
+   "Level 3: Black Shield against engages.",
+   "Level 6: area ultimate.",
+   "Teamfights: E on your carry, Q on the diver."
+  ],
+  "lane_plan": "Poke with W, threaten Q and protect your ADC with E. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "Basic trade: W under your opponent. All-in: Q → W → attacks → R. Defense: E on your ADC, Q on the diver. Against enchanters (Milio, Janna), don't force it: they cancel your poke.",
+  "jungle_plan": "",
+  "threats": [
+   "Milio and Janna: hard matchups.",
+   "Physical damage: your shield only blocks magic damage.",
+   "Long-range poke that stops you from getting close enough for Q."
+  ],
+  "mistakes": [
+   "Throwing Q through minions (it stops on the first one).",
+   "Shielding too early, before the enemy engage.",
+   "Casting your ultimate when you can't stay in range long enough to stun."
+  ],
+  "matchup_notes": {
+   "Thresh": "Your shield cancels his hook on your ADC.",
+   "Nautilus": "Shield the target of his anchor: it gets blocked.",
+   "Leona": "Black Shield on your ADC when she casts E: her engage fails.",
+   "Lulu": "She pokes you: stay behind minions and aim at her with Q.",
+   "Milio": "His ultimate removes your CC: keep Q for after."
+  },
+  "mid_game": "Look for picks with Q in the fog of war and place Control Wards around objectives.",
+  "late_game": "Keep E for your carry against the enemy engage. Q on the diver or an isolated carry, R when several enemies dive into your team.",
+  "ahead": "Look for picks with Q: every rooted target dies.",
+  "behind": "Play anti-engage: your shield and Q protect your carry.",
+  "win_condition": "To win this game, you want to cancel enemy engages with your shield and catch isolated targets with your Q.",
+  "final_tip": "Keep Black Shield for the enemy engage, not for poke: a blocked CC wins the fight."
+ }
+}

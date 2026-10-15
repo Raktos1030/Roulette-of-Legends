@@ -1,0 +1,43 @@
+{
+ "Zaahen|top": {
+  "identity": "Darkin physical damage fighter (released in late 2025). Every hit on a champion gives him a stack of his passive (Cultivation of War, up to 12) that increases his attack damage; at 12 stacks, the bonus doubles and, if he takes lethal damage, he rises again with part of his health (long cooldown). The Darkin Glaive (Q) strikes twice and heals, then can be recast to knock up; Dreaded Return (W) throws the glaive, then pulls in and briefly stuns what it hits at the end of its path; Aureate Rush (E) dashes, then slashes around him; Grim Deliverance (R) lifts him into the air (CC-immune) before a massive impact that heals him.",
+  "playstyle": "Aggressive duelist, often described as a mix of old Aatrox and Xin Zhao. Guides present him as one of the strongest top laners in the early game, but also as mechanically demanding. Everything revolves around his 12 passive stacks: a fully stacked Zaahen wins almost every duel and can even come back to life.",
+  "early_game": "Trade to build stacks: Q (double hit that heals), then W to pull your opponent in if they back off. Keep E to stick to a target or dodge a key ability. With good wave management, guides recommend looking for kills from the first levels.",
+  "level_1": "The Darkin Glaive (Q) first. A double empowered attack that heals; recast it to knock up your opponent the moment they try to leave.",
+  "level_2": "Aureate Rush (E). A dash, then a slash around you: the edge of the area deals more damage. E → Q → attacks is a good trade at level 2.",
+  "level_3": "Dreaded Return (W). The glaive flies in a line; at the end of its path, it briefly stuns and pulls enemies toward you. Combo: E → Q → W to stop the escape, Q recast for the knock-up.",
+  "level_6": "Grim Deliverance: you rise into the air (CC-immune, half damage taken), then slam the ground for big damage and a heal per champion hit. R's passive also gives you armor penetration. Cast it to win an all-in or to dodge CC at the right moment.",
+  "power_spikes": [
+   "Level 3: full E → Q → W combo.",
+   "12 passive stacks: doubled attack damage and a chance to come back to life.",
+   "Level 6: an ultimate that wins all-ins.",
+   "First completed item: dominant duels."
+  ],
+  "lane_plan": "Play a neutral or slightly pushed wave and trade as soon as possible to keep your stacks (they last a few seconds and refresh with every hit). Take plates when you're winning. Recall when your wave crashes. Q's healing lets you chain trades.",
+  "trading": "Short trade: Q (double hit) → back off. Long trade: E → Q → W → Q recast (knock-up) → R. Engage when you can reach 12 stacks; give up on it against champions who kite you from range (Teemo) or make you chase (Singed).",
+  "jungle_plan": "",
+  "threats": [
+   "Teemo and ranged kiting: your hardest matchup.",
+   "Singed and champions who make you chase.",
+   "CC that breaks your combos before 12 stacks."
+  ],
+  "mistakes": [
+   "Engaging when you can't reach 12 stacks.",
+   "Forgetting to recast Q for the knock-up.",
+   "Using R too early, before the enemy CC."
+  ],
+  "matchup_notes": {
+   "Yone": "Wait for his E, then W to pull him back and Q to knock him up.",
+   "Garen": "His silence breaks your combos: trade when his Q is on cooldown.",
+   "Darius": "Avoid the edge of his Decimate and use W to stop him from sticking to you with Apprehend.",
+   "Jax": "His Counter Strike dodges your attacks (so your Q): wait for his dodge to end.",
+   "Teemo": "He kites and blinds you: farm, wait for your jungler, and only engage with E when he's in range."
+  },
+  "mid_game": "Skirmishes and duels: a Zaahen at 12 stacks wins almost everything. Join objectives and force fights.",
+  "late_game": "Go in after the enemy CC, build your stacks on the frontline, then hit the carries; your R and your revive keep you alive.",
+  "ahead": "Force duels, dive with your jungler and take towers.",
+  "behind": "Farm and play teamfights after the enemy CC.",
+  "win_condition": "To win this game, you want to dominate the early game and win duels thanks to your 12 passive stacks.",
+  "final_tip": "Watch your passive stacks: at 12, you double your damage and can come back to life. Don't engage when you can't reach them."
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "Smolder|adc": {
+  "identity": "Scaling physical damage marksman. Dragon Practice (passive): hitting a champion with an ability or killing a unit with Super Scorcher Breath gives him stacks that increase his basic abilities' damage. Super Scorcher Breath (Q) evolves with stacks: at 25 it explodes around the target; at 125 it shoots fire bolts behind it; at 225 it burns and can execute low-health targets. Achooo! (W) is a sneeze that explodes on champions, Flap, Flap, Flap (E) flies him over obstacles while bombing the most injured enemy, and MMOOOMMMM! (R) makes his mother breathe fire in a long line (slowing in the center, and healing Smolder if he stands in its path).",
+  "playstyle": "Farming hypercarry: he stacks all game long and becomes devastating after 225. He's behind in gold at 15 minutes on average against every common ADC: that's his profile, he has to survive and farm.",
+  "early_game": "Farm with Q: every unit killed by the fire breath gives you a stack. Hit your opponent with W and Q when it's safe (every champion hit by an ability also gives a stack). Keep E to escape: it goes over walls.",
+  "level_1": "Super Scorcher Breath (Q) first. Kill as many minions as possible with Q.",
+  "level_2": "Achooo! (W). Poke and extra stacks on champions.",
+  "level_3": "Flap, Flap, Flap (E). Your escape, over walls. Only use it to attack if you're sure of the kill.",
+  "level_6": "MMOOOMMMM!: a long line of fire that slows in the center. Use it to finish, to slow an engage, or to heal yourself by standing in its path.",
+  "power_spikes": [
+   "25 stacks: Q explodes in an area (wave clear).",
+   "125 stacks: extra fire bolts.",
+   "225 stacks: burn and execute.",
+   "Two completed items with 225 stacks: very high teamfight damage."
+  ],
+  "lane_plan": "Farm as much as possible with Q and survive: your scaling does the work. Don't force trades against aggressive ADCs. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards steady farming, exactly what you're after. Keep E to escape.",
+  "trading": "Basic trade: W then Q, and step back. A rare all-in before your stacks: Q, W, attacks, R to finish. Give up on it against ADCs who win trades (Jinx, Twitch, Zeri): farm from range.",
+  "jungle_plan": "",
+  "threats": [
+   "Jinx: a common opponent and a hard matchup.",
+   "Twitch, Zeri, Hwei and Seraphine: hard matchups.",
+   "Divers when E is on cooldown."
+  ],
+  "mistakes": [
+   "Using E to attack and having no way to escape.",
+   "Missing minions with Q (lost stacks).",
+   "Forcing early trades instead of farming."
+  ],
+  "matchup_notes": {
+   "Jinx": "She scales too, but faster: farm, stay alive and play teamfights after 225 stacks.",
+   "Kai'Sa": "She dives with her ultimate: save E to escape over a wall.",
+   "Caitlyn": "Survive her range.",
+   "Ezreal": "Farm calmly: you scale better.",
+   "Twitch": "He surprises you from camouflage: save E to escape."
+  },
+  "mid_game": "Keep farming side waves with Q to reach 225 stacks, then join fights with your team.",
+  "late_game": "Stay behind your frontline, bombard with Q (burn and execute at 225 stacks), finish with R. Keep E to escape a diver.",
+  "ahead": "Farm and take objectives: your lead gets you to 225 stacks sooner.",
+  "behind": "Farm side waves safely: every stack brings you closer to your peak.",
+  "win_condition": "To win this game, you want to farm up to 225 stacks, then dominate teamfights with your fire breath.",
+  "final_tip": "Every minion killed by Q is one more stack: in lane, finish minions with Q rather than with your attacks."
+ }
+}

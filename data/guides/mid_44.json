@@ -1,0 +1,43 @@
+{
+  "Zed|mid": {
+    "identity": "Assassin à dégâts physiques et à énergie. Ombre vivante (W) crée une ombre qui imite ses sorts et avec laquelle il peut trade de place, Shuriken-rasoir (Q) est lancé par Zed et ses ombres, Taillade des ombres (E) frappe autour de lui et de ses ombres en slowant, et Marque de la mort (R) le rend inciblable, le téléporte derrière une cible et fait exploser une marque qui reprend une partie des dégâts infligés. Ses attaques sur les cibles basses font des dégâts bonus (passif).",
+    "playstyle": "Assassin de lane dominante et de roam. Ses seuls matchups nettement défavorables sont des tanks au mid (Nasus, Malphite).",
+    "early_game": "Poke avec W → Q (double shuriken) quand l'adversaire vient last hit, en gardant assez d'énergie pour revenir avec W. Farm avec E. Au niveau 3, W → E → Q est un gros trade.",
+    "level_1": "Shuriken-rasoir (Q) en premier.",
+    "level_2": "Ombre vivante (W) ou Taillade des ombres (E). W → Q : double shuriken pour poke.",
+    "level_3": "Kit complet : W → E (slow) → Q double. Garde W pour revenir en sécurité.",
+    "level_6": "Marque de la mort : R → E → Q → attaques → retour vers l'ombre de l'ultime. Roam vers les side lanes et chasse les carries.",
+    "power_spikes": [
+      "Niveau 3 : poke W → E → Q.",
+      "Niveau 6 : assassinats avec l'ultime.",
+      "Premier item complet : one-shot sur les mages.",
+      "Mid game : roams et picks."
+    ],
+    "lane_plan": "Poke avec les ombres, gère ton énergie et pousse. Après le niveau 6, roam vers les side lanes. La quête de rôle mid (retour accéléré) rend tes roams encore plus rentables. Contre les tanks au mid, joue le farm et roam.",
+    "trading": "Trade court : W → Q → retour avec W. All-in : R → E → Q → attaques → retour. Abandonne contre les champions qui encaissent ton burst (Nasus, Malphite) ou te contrôlent à ta sortie d'ultime.",
+    "jungle_plan": "",
+    "threats": [
+      "Tanks au mid (Nasus, Malphite).",
+      "CC au moment où tu sors de ton ultime.",
+      "Assassins et mages anti-dive (Lissandra, Vex)."
+    ],
+    "mistakes": [
+      "Utiliser W pour engager sans énergie pour revenir.",
+      "Lancer l'ultime sur une cible protégée.",
+      "Rester en lane au lieu de roam après le 6."
+    ],
+    "matchup_notes": {
+      "Yasuo": "Son Mur de vent bloque tes shurikens : attends qu'il l'ait utilisé.",
+      "Ahri": "Esquive son Charme avec W.",
+      "Katarina": "Esquive son Lotus mortel avec W ou R.",
+      "Lissandra": "Son ultime sur elle-même annule ton burst : garde R pour après.",
+      "Nasus": "Flétrissement ruine ton combo : farm et roam."
+    },
+    "mid_game": "Roams, picks et objectifs. Chasse les carries isolés.",
+    "late_game": "Assassine le carry adverse avec R, puis reviens à l'ombre. Attends que les CC adverses soient utilisés.",
+    "ahead": "Roam, chasse les carries et prends les objectifs.",
+    "behind": "Farm et cherche des picks sur les cibles isolées.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer ta lane, roam après le 6 et assassiner les carries.",
+    "final_tip": "Avant d'utiliser ton ombre pour entrer, prévois ta sortie : c'est elle qui te sauve."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "Vayne|adc": {
+    "identity": "Tireuse à dégâts physiques et bruts. Chasseresse nocturne (passif) lui donne de la vitesse de déplacement vers les champions ennemis proches. Roulade (Q) est une courte roulade qui renforce sa prochaine attaque, Carreaux d'argent (W) inflige tous les trois coups consécutifs sur une même cible des dégâts bruts selon ses PV max, Condamnation (E) repousse la cible et le stun si elle percute un mur, et Combat ultime (R) augmente ses dégâts d'attaque, la rend invisible pendant ses roulades et réduit le délai de Roulade.",
+    "playstyle": "Hypercarry de duel : faible en lane, elle détruit tanks et carries en fin de partie grâce à ses dégâts bruts. Sa courte portée la rend vulnérable en lane : elle est en moyenne derrière en or à 15 min contre tous les ADC fréquents. Elle doit survivre et scaler.",
+    "early_game": "Farm en sécurité : ta portée est courte et beaucoup d'ADC te harcèlent. Garde Condamnation (E) pour repousser un engage ou stun un adversaire contre un mur. Trade seulement quand l'adversaire vient au contact, avec Roulade pour replacer ton troisième coup.",
+    "level_1": "Roulade (Q) en premier. Farm et trades courts.",
+    "level_2": "Carreaux d'argent (W). Tes troisièmes coups font des dégâts bruts : compte tes attaques pendant un trade.",
+    "level_3": "Condamnation (E). Ta défense : repousse un diver, ou stun l'adversaire contre un mur pour un kill avec ton support.",
+    "level_6": "Combat ultime : plus de dégâts, roulades invisibles et plus fréquentes. Lance-le au début d'un combat pour enchaîner roulades et Carreaux d'argent.",
+    "power_spikes": [
+      "Niveau 6 : Combat ultime pour les duels.",
+      "Premier item complet : ton farm devient plus sûr.",
+      "Deux items complets : les tanks fondent sous tes dégâts bruts.",
+      "Late game : une des meilleures ADC de duel."
+    ],
+    "lane_plan": "Farm et survis : laisse passer le poke adverse et joue les combats uniquement sur les erreurs de l'adversaire. Préfère un support qui te protège. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) est parfaite pour une hypercarry : un item complet de plus.",
+    "trading": "Trade court : attaque, Roulade, attaque, attaque (troisième coup brut). All-in : E contre un mur, puis Q et attaques, R si l'adversaire a encore de quoi fuir. Recule contre les ADC à longue portée qui te poke (Jinx, Tristana, Corki).",
+    "jungle_plan": "",
+    "threats": [
+      "Xayah : ton matchup le plus difficile.",
+      "Jinx, Yunara, Twitch, Corki et Tristana : matchups difficiles.",
+      "CC de foule : ta Roulade ne suffit pas à fuir."
+    ],
+    "mistakes": [
+      "Forcer les trades en lane avec ta courte portée.",
+      "Utiliser E pour attaquer et ne plus pouvoir repousser un diver.",
+      "Rouler vers l'avant sans raison et se retrouver au milieu de l'équipe adverse."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Repousse-la avec E quand elle dive avec son ultime.",
+      "Jinx": "Sa portée te harcèle : farm prudemment et évite ses Pyromâcheurs.",
+      "Jhin": "Engage pendant son rechargement.",
+      "Ezreal": "Tu le bats dès qu'il n'a plus E.",
+      "Xayah": "Son rappel de plumes te root : ne roule pas au milieu de ses plumes."
+    },
+    "mid_game": "Farm les waves latérales en sécurité et rejoins les combats autour des objectifs. Évite les combats avant tes deux items.",
+    "late_game": "Reste derrière ta frontline et tue ce qui est à portée : tes dégâts bruts détruisent aussi les tanks. Garde E pour repousser un diver, R pour enchaîner les roulades invisibles.",
+    "ahead": "Prends les objectifs et force les duels : tu gagnes contre presque tout le monde.",
+    "behind": "Farm et attends ton scaling : Vayne reste une menace en fin de partie.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane, scaler et gagner les teamfights en détruisant tout ce qui est devant toi.",
+    "final_tip": "Garde Condamnation pour te défendre : repousser le diver au bon moment vaut plus qu'un stun contre un mur."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "Hwei|mid": {
+    "identity": "Mage à dégâts magiques aux neuf sorts : chaque « sujet » ouvre trois variantes. Sujet : Désastres (Q) regroupe les sorts de dégâts (QQ boule de feu, QW éclair qui punit les cibles immobiles ou basses, QE fissure qui slow), Sujet : Sérénités (W) les sorts utilitaires (WQ courant qui accélère, WW bassin qui protège, WE attaques renforcées qui rendent du mana), et Sujet : Tourments (E) les CC (EQ effroi, EW œil qui root, EE gueule qui attire). Vision de désespoir (R) slow de plus en plus puis explose. Toucher avec deux sorts différents déclenche son passif.",
+    "playstyle": "Mage de poke et de contrôle à longue portée. Il demande de bien choisir la bonne variante au bon moment.",
+    "early_game": "Poke avec QQ (boule de feu) et QE (fissure) quand l'adversaire vient last hit. Garde un contrôle de E prêt (EQ effroi ou EW CC) contre les assassins. WE t'aide à gérer le mana en farmant.",
+    "level_1": "Sujet : Désastres (Q) en premier. Poke et farm.",
+    "level_2": "Sujet : Tourments (E). CC défensifs : EQ pour effrayer un engage, EW pour root une cible.",
+    "level_3": "Sujet : Sérénités (W). WW pour te protéger, WQ pour fuir ou roam. Combo de kill : EW (CC) → QW (éclair sur cible immobile) → QQ.",
+    "level_6": "Vision de désespoir : slow croissant puis explosion qui se propage. Combo : EW → R → QW → QQ. En teamfight, lance-le sur une cible au milieu du groupe.",
+    "power_spikes": [
+      "Niveau 3 : combo complet EW → QW.",
+      "Niveau 6 : ultime de zone.",
+      "Premier item complet : poke très punitif.",
+      "Mid game : contrôle et poke avant les objectifs."
+    ],
+    "lane_plan": "Poke avec QQ et QE, garde E en défense. Pousse ta wave et rejoins ton jungler ou les objectifs. La quête de rôle mid (retour accéléré) t'aide à reset après avoir poké. Évite de te faire dive sans CC prêt.",
+    "trading": "Trade court : QQ à distance. Trade long : EW → QW → QQ. Contre un engage : EQ (effroi) ou WW (shield). Engage quand ton CC touche ; abandonne contre les assassins qui arrivent quand tes CC sont en recharge.",
+    "jungle_plan": "",
+    "threats": [
+      "Katarina : ton matchup le plus difficile.",
+      "Assassins qui te divent quand tes E sont en recharge.",
+      "Ganks sans WQ pour fuir."
+    ],
+    "mistakes": [
+      "Lancer QW (éclair) sur une cible qui peut bouger.",
+      "Gaspiller tes CC et ne plus pouvoir te défendre.",
+      "Rester trop près sans raison : ta force est la portée."
+    ],
+    "matchup_notes": {
+      "Viktor": "Poke-le à distance et garde EQ pour son engage.",
+      "Syndra": "Duel de portée : esquive son stun et poke-la.",
+      "Ahri": "Garde EW pour la fin de son ultime.",
+      "Katarina": "Garde EQ ou EW pour le moment où elle arrive sur sa dague.",
+      "Galio": "Poke-le de loin, il ne peut pas t'atteindre."
+    },
+    "mid_game": "Poke avant les objectifs et contrôle les zones avec E et R.",
+    "late_game": "Mage de poke et de contrôle derrière ta frontline : EW sur l'engage adverse, R sur le groupe, QQ pour le poke.",
+    "ahead": "Poke avant les objectifs, prends les tours et roam avec WQ.",
+    "behind": "Farm à distance et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux poke à longue portée et contrôler les teamfights avec tes sorts de Tourments et l'ultime.",
+    "final_tip": "Root d'abord (EW), puis lance l'éclair (QW) : il fait beaucoup plus mal sur une cible immobile."
+  }
+}

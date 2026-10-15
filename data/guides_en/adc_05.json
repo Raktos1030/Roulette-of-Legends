@@ -1,0 +1,43 @@
+{
+ "Corki|adc": {
+  "identity": "Mixed damage marksman. Hextech Munitions (passive) adds true damage to his attacks. Phosphorus Bomb (Q) deals magic damage in an area and reveals units hit, Valkyrie (W) flies him a short distance, leaving a trail of fire, Gatling Gun (E) sprays a cone while shredding armor and magic resist, and Missile Barrage (R) fires missiles stored up over time (every third one is a bigger, stronger missile).",
+  "playstyle": "Poke and mixed damage ADC: he harasses with Q and his missiles, then finishes fights with Gatling Gun and his attacks. He struggles against ADCs who scale or chase him down (Jinx, Zeri, Yunara).",
+  "early_game": "Poke with missiles and Q when your opponent walks up to last hit. Farm safely: your missiles recharge over time, so use them as soon as you have several. Keep Valkyrie (W) to escape an engage.",
+  "level_1": "Gatling Gun (E) first. After that, the leveling priority is Q > E > W. Win the first trades near the wave.",
+  "level_2": "Phosphorus Bomb (Q). Area poke and vision: it also reveals the jungler walking into a bush.",
+  "level_3": "Valkyrie (W). Your only mobility: mostly use it to escape, or to finish a low-health target.",
+  "level_6": "Missile Barrage: constant long-range poke. Fire as soon as you have missiles stored: the big missile (every third) hits an area.",
+  "power_spikes": [
+   "Level 2: E + Q for short trades.",
+   "Level 6: nonstop poke with missiles.",
+   "First completed item: poke and mixed damage.",
+   "Mid game: Gatling Gun shreds the whole enemy team's resistances."
+  ],
+  "lane_plan": "Poke with R and Q, farm and keep W to escape. Your mixed damage makes it hard for the enemy to itemize. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards steady farming. Play with your jungler around dragon.",
+  "trading": "Short trade: Q + missile, then step back. All-in: Q → E → attacks, W to finish. Give up on it against ADCs who chase you down (Zeri) or beat you in long fights (Jinx).",
+  "jungle_plan": "",
+  "threats": [
+   "Zeri and Viktor bot: hard matchups.",
+   "Jinx and Yunara, who scale better than you.",
+   "Engage supports when Valkyrie is on cooldown."
+  ],
+  "mistakes": [
+   "Using Valkyrie to attack and having no way to escape.",
+   "Sitting on a full stock of missiles instead of firing them.",
+   "Taking long fights against an ADC who scales better."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "Poke her with missiles before she can dive with her ultimate.",
+   "Tristana": "Keep W to escape her Rocket Jump.",
+   "Jinx": "Turn your lane lead into towers before she scales.",
+   "Vayne": "Poke her out of range of her Tumble.",
+   "Zeri": "She chases you: keep W to escape and play near your support."
+  },
+  "mid_game": "Poke before objectives with missiles and Q. Join fights with your team: Gatling Gun weakens enemy resistances.",
+  "late_game": "Poke from range, then walk into the fight when the enemy frontline is busy. Keep W to escape a diver.",
+  "ahead": "Poke and take towers: your mixed damage stays hard to counter.",
+  "behind": "Farm from range with missiles and play behind your frontline.",
+  "win_condition": "To win this game, you want to wear down the enemy team from range before fights, then finish targets with Gatling Gun and your attacks.",
+  "final_tip": "Your missiles recharge on their own: never sit at max stock, every missile you don't fire is wasted poke."
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "Udyr|jgl": {
+    "identity": "Combattant à dégâts mixtes qui alterne quatre postures, toutes montables jusqu'au rang 5 (même R). Griffe sauvage (Q) accélère ses attaques et frappe en éclairs, Cape de fer (W) donne un shield et du vol de vie, Piétinement flamboyant (E) l'accélère et fait stun sa prochaine attaque sur chaque cible, et Tempête spirituelle (R) crée une tempête qui slow autour de lui. Après chaque posture, ses deux attaques suivantes sont renforcées, et il peut éveiller une posture pour la rendre plus puissante.",
+    "playstyle": "Jungler de clear très rapide, d'invasions et de duels. Udyr peut orienter ses dégâts sur Q (physique, duel) ou sur R (magique, zone). Il est fort en escarmouche et gank grâce au stun de E.",
+    "early_game": "Clear rapide en alternant les postures pour profiter des attaques renforcées. Envahis quand tes laners ont la priorité : tu gagnes beaucoup de duels. Gank avec E : accélère, puis stun la cible avec ta prochaine attaque.",
+    "level_1": "Griffe sauvage (Q) en premier.",
+    "level_2": "Tempête spirituelle (R). Dans la plupart des parties, Udyr prend R très tôt pour le clear en zone.",
+    "level_3": "Cape de fer (W). Shield et vol de vie : ton clear devient plus sûr. Piétinement flamboyant (E) arrive au niveau 4 dans le chemin le plus joué, et avec lui tes ganks.",
+    "level_6": "Udyr n'a pas d'ultime classique : le niveau 6 renforce tes postures (surtout Q ou R selon ton orientation). Tes duels et ton clear deviennent plus forts.",
+    "power_spikes": [
+      "Niveau 4 : Piétinement flamboyant, ganks avec stun.",
+      "Premier item complet : duels très forts.",
+      "Postures éveillées : burst ou zone selon ton orientation.",
+      "Mid game : invasions et escarmouches."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear très rapide et invasions. Udyr veut dominer la jungle : vole les camps adverses, contrôle les crabes et prends les Larves (vers 8 min) quand tes laners ont la priorité. Gank avec E à partir du niveau 4, et joue les dragons avec ton équipe.",
+    "trading": "En gank : E pour accélérer → attaque qui stun → Q ou R → W pour le shield. En duel : alterne les postures pour profiter des attaques renforcées. Abandonne contre les champions qui te kitent (Ivern) ou qui te contrôlent longtemps (Zac).",
+    "threats": [
+      "Ivern et Zac : matchups difficiles.",
+      "Kiting à distance.",
+      "CC lourds qui coupent tes enchaînements."
+    ],
+    "mistakes": [
+      "Rester dans une seule posture et perdre les attaques renforcées.",
+      "Utiliser E sans cible à stun.",
+      "Choisir ton orientation sans regarder la composition adverse."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Duel-le avec les attaques renforcées.",
+      "Viego": "Stun-le avec E quand il dive.",
+      "Kayn": "Punis-le avant sa transformation.",
+      "Ivern": "Il ne se bat pas : impose le rythme avec tes laners.",
+      "Zac": "Il encaisse et contrôle : évite les combats longs."
+    },
+    "mid_game": "Invasions, escarmouches et objectifs.",
+    "late_game": "Dive sur la ligne arrière adverse avec E et stun le carry.",
+    "ahead": "Étouffe le jungler adverse et force les combats.",
+    "behind": "Farm vite et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer la jungle par le farm et les invasions, puis gagner les escarmouches.",
+    "final_tip": "Alterne tes postures : chaque changement renforce tes deux attaques suivantes."
+  }
+}

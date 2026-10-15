@@ -1,0 +1,43 @@
+{
+ "XinZhao|jgl": {
+  "identity": "Physical damage fighter who specializes in early ganks. Audacious Charge (E) dashes onto a target and makes him attack faster, Three Talon Strike (Q) empowers his next three attacks (the third knocks up), Wind Becomes Lightning (W) slashes, then thrusts while slowing, and Crescent Guard (R) knocks back every enemy except his last target and reduces damage from outside. His passive hits harder and heals him every three attacks.",
+  "playstyle": "Early-game jungler: ganks from level 3, duels and skirmishes. He needs to build his lead early.",
+  "early_game": "Clear fast with E and W. Gank from level 3: E to dash in, Q for the knock-up on the third hit, W to slow. Invade when your laners have priority.",
+  "level_1": "Audacious Charge (E) first.",
+  "level_2": "Wind Becomes Lightning (W). A slash, then a slowing thrust: your clear speeds up and you can poke a fleeing target.",
+  "level_3": "Three Talon Strike (Q). First gank: E → Q (three attacks, knock-up on the third) → W.",
+  "level_6": "Crescent Guard: knocks everyone back except your target and protects you from outside damage. Isolate a carry in teamfights or stop your target's allies from saving them.",
+  "power_spikes": [
+   "Level 3: ganks with E + Q.",
+   "Level 6: isolating a target with your ultimate.",
+   "First completed item: strong duels and dives.",
+   "Mid game: skirmishes before the carries scale."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear until level 3, then ganks and invades. Xin Zhao needs to build his lead early: control Scuttles, invade with your laners and take Void Grubs (around 8 minutes). Avoid duels against junglers who beat you (Udyr, Kha'Zix, Sylas).",
+  "trading": "Ganking: E → Q → W. Skirmishing: E onto the carry → R to knock back their allies → Q → W. Give up on it against junglers who burst or dodge you.",
+  "threats": [
+   "Udyr, Kha'Zix and Sylas: hard matchups.",
+   "Long games where your impact drops.",
+   "CC that stops your charge."
+  ],
+  "mistakes": [
+   "Casting your ultimate on the wrong target (it stays with you, the others get knocked back).",
+   "Farming passively instead of building a lead.",
+   "Engaging with E on a tank instead of a carry."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "You're both early-game junglers: be faster with your ganks.",
+   "Graves": "He beats you in duels: gank where he isn't.",
+   "Sylas": "He can steal your ultimate and beats you in duels: avoid him.",
+   "Viego": "Isolate him with your ultimate when he dives.",
+   "Kha'Zix": "He beats you in isolated duels: fight with your allies."
+  },
+  "mid_game": "Skirmishes and dives around objectives.",
+  "late_game": "Dive the enemy carry, ultimate to knock back their protectors.",
+  "ahead": "Choke out the enemy jungler, dive and take objectives.",
+  "behind": "Look for picks on isolated carries and play with your team.",
+  "win_condition": "To win this game, you want to build an early lead through ganks and isolate the carries with your ultimate.",
+  "final_tip": "Before your Crescent Guard, hit the carry: your last target is the one who stays with you."
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "Shyvana|jgl": {
+    "identity": "Combattante à dégâts mixtes, entièrement refondue en 2026 (patch 26.6). Shyvana accumule de la Fureur draconique (passivement en forme humaine et à chaque coup) ; à 100, Vol du dragon (R) la transforme en dragon avec un bond qui effraie, plus de PV, de portée et de taille, et renforce tous ses sorts. Frappe enflammée (Q) renforce ses attaques (deux relances en humaine, trois en dragon, la dernière en dégâts vrais), Égide de feu (W) donne shield et vitesse puis explose (et soigne en dragon), et Éruption (E) lance une boule de feu qui slow (qui traverse et brûle le sol en dragon). Son passif Armure d'écailles augmente ses résistances à chaque élimination de champion ou de gros monstre.",
+    "playstyle": "Jungler de farm et de scaling, orienté objectifs. Les guides de la refonte résument son plan en « farm → fureur → forme dragon → objectif ». Elle n'est pas une grosse menace en escarmouche précoce mais devient une frontline difficile à tuer en mid game.",
+    "early_game": "Full clear efficace en enchaînant Q (plusieurs relances) et W sur les camps : chaque gros monstre éliminé ajoute un stack d'Armure d'écailles. N'envahis pas au niveau 3 et évite les escarmouches avant ta forme dragon. Joue les dragons dès que ta botlane a la priorité.",
+    "level_1": "Frappe enflammée (Q) en premier. Ses attaques renforcées nettoient les camps, et chaque attaque réduit son temps de recharge.",
+    "level_2": "Éruption (E). Boule de feu qui explose sur un gros monstre ou un champion et slow : utile pour le clear et pour préparer un gank.",
+    "level_3": "Égide de feu (W). Shield (plus fort avec des champions ennemis proches) et vitesse, puis explosion à la relance. Ganks possibles, mais ta force est la forme dragon.",
+    "level_6": "Vol du dragon : tu apprends l'ultime avec 100 de fureur, donc première transformation immédiate. Bond qui effraie et slow, puis sorts renforcés. Ensuite, il faut regagner 100 de fureur pour te retransformer : planifie tes combats autour de ta jauge.",
+    "power_spikes": [
+      "Niveau 6 : première forme dragon.",
+      "Premier item complet : clear et combats bien plus confortables.",
+      "Stacks d'Armure d'écailles : frontline de plus en plus solide.",
+      "Mid game : combats d'objectif en forme dragon."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Full clear en priorité (farm → fureur → forme → objectif). Prends tous tes camps et les crabes quand c'est sûr, sans chercher les invasions précoces. Garde ta fureur à 100 à l'approche d'un objectif (dragon, Larves vers 8 min, Héraut vers 15 min, Baron à 20 min) : arrive en forme dragon. Dans la jungle, vise avec Éruption en forme dragon les couloirs étroits pour couper les fuites.",
+    "trading": "Hors forme dragon : trade court avec Q et W, puis recule. En forme dragon : R pour entrer et effrayer, E pour la traînée de feu, Q trois fois (dégâts vrais), W pour le soin. Abandonne quand ta fureur est vide et que tu n'es plus en forme dragon.",
+    "threats": [
+      "Sylas : matchup difficile (il peut voler ton ultime).",
+      "Invasions et escarmouches avant ta forme dragon.",
+      "CC qui te coupent quand tu es en forme humaine."
+    ],
+    "mistakes": [
+      "Engager un combat sans fureur pleine.",
+      "Envahir au niveau 3 contre un jungler d'early game.",
+      "Gaspiller ta transformation sur un combat sans enjeu juste avant un objectif."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Évite-le en early, bats-le autour des objectifs.",
+      "Viego": "Attends ta forme dragon.",
+      "Graves": "Ne l'affronte pas avant ta forme dragon.",
+      "Sylas": "Il peut voler ta transformation : ne t'engage pas quand il peut te la reprendre.",
+      "Kayn": "Frontline contre lui : ta résistance tient ses dives."
+    },
+    "mid_game": "Joue autour de ta jauge de fureur : arrive en forme dragon sur chaque objectif. Tu es une frontline plus dure à tuer qu'il n'y paraît.",
+    "late_game": "Frontline qui désorganise : R pour entrer et effrayer, E pour couper la zone, W pour survivre. Garde la transformation pour le combat décisif.",
+    "ahead": "Prends les objectifs en série et force les combats en forme dragon.",
+    "behind": "Farm, stack l'Armure d'écailles sur les gros monstres et joue pour les combats d'objectif en forme dragon.",
+    "win_condition": "Pour gagner cette partie, tu veux farmer, arriver en forme dragon sur chaque objectif et devenir une frontline impossible à ignorer.",
+    "final_tip": "Avant chaque objectif, vérifie ta fureur : à 100, tu arrives en dragon ; sinon, retarde le combat."
+  }
+}

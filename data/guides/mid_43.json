@@ -1,0 +1,43 @@
+{
+  "Yone|mid": {
+    "identity": "Combattant à dégâts mixtes (physiques et magiques) basé sur les critiques, joué presque autant au mid qu'au top. Une attaque sur deux inflige des dégâts magiques (passif). Acier mortel (Q) frappe en ligne et, au troisième cast, dash et knock-up les ennemis touchés ; Fendoir spirituel (W) frappe en cône et donne un shield ; Libération spirituelle (E) sépare son âme de son corps et, à la fin, répète une partie des dégâts infligés ; Destin scellé (R) traverse une ligne et attire les ennemis touchés.",
+    "playstyle": "Au mid, Yone affronte des mages et assassins : il gagne en esquivant leurs sorts avec E puis en all-in. Il domine Yasuo, son adversaire le plus fréquent, mais souffre contre les mages qui punissent ses dashes (Vex) ou le burst (LeBlanc, Annie, Twisted Fate).",
+    "early_game": "Stack Q sur les sbires pour garder Q3 prêt, trade court avec Q + W. Garde E pour les all-in : sans lui, tu es une cible facile pour les mages. Punis chaque sort clé raté.",
+    "level_1": "Acier mortel (Q) en premier.",
+    "level_2": "Fendoir spirituel (W). Q → W : trade court avec shield.",
+    "level_3": "Libération spirituelle (E). All-in : E → Q3 → W → attaques → retour dans ton corps.",
+    "level_6": "Destin scellé : E → R → Q3 → W. Roam vers les side lanes quand ta wave est poussée ; en teamfight, vise plusieurs cibles.",
+    "power_spikes": [
+      "Niveau 3 : all-in avec E.",
+      "Niveau 6 : ultime pour les kills et les engages.",
+      "Premier item complet : dégâts critiques importants.",
+      "Deux items : un des meilleurs combattants de teamfight."
+    ],
+    "lane_plan": "Stack Q, trade court et all-in quand le sort clé adverse est en recharge. Pousse et roam après le niveau 6. La quête de rôle mid (retour accéléré) rend tes roams plus rentables.",
+    "trading": "Trade court : Q → W → recul. All-in : E → Q3 → W → R → retour. Abandonne contre les mages qui punissent tes dashes (Vex) ou te burst quand ton E est en recharge.",
+    "jungle_plan": "",
+    "threats": [
+      "Vex : ton matchup le plus difficile (son passif stoppe tes dashes).",
+      "LeBlanc, Annie et Twisted Fate, qui te burst ou te contrôlent.",
+      "Ahri, adversaire fréquent et légèrement défavorable."
+    ],
+    "mistakes": [
+      "Utiliser E sans pouvoir revenir en sécurité.",
+      "Rater Q3.",
+      "Engager dans la zone de contrôle d'un mage."
+    ],
+    "matchup_notes": {
+      "Yasuo": "Il se bat à ta portée : trade court et all-in avec E.",
+      "Viktor": "Dive quand son champ gravitationnel est en recharge.",
+      "Ahri": "Esquive son Charme avec E, puis all-in.",
+      "Zed": "W pour absorber ses shurikens ; E pour esquiver son ultime.",
+      "Vex": "Son passif interrompt tes dashes : farm et roam."
+    },
+    "mid_game": "Roams, escarmouches et teamfights autour des objectifs.",
+    "late_game": "Entre après les CC adverses, ultime sur plusieurs cibles, puis E pour revenir.",
+    "ahead": "Roam, force les combats et prends les objectifs.",
+    "behind": "Farm et joue en teamfight après les CC adverses.",
+    "win_condition": "Pour gagner cette partie, tu veux punir les sorts ratés des mages et nettoyer les teamfights avec l'ultime.",
+    "final_tip": "Avant d'utiliser E, regarde où est ton corps : c'est là que tu reviendras."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "Akshan|mid": {
+    "identity": "Tireur-assassin à dégâts physiques au mid. Trois coups sur un champion déclenchent des dégâts bonus et un shield (passif Fourberie), et ses attaques tirent deux fois. Vengerang (Q) lance un boomerang qui revient, Cavalier seul (W) le camoufle et l'accélère (et marque les ennemis qui tuent ses alliés : les éliminer ressuscite ces alliés), Envolée héroïque (E) le fait se balancer autour d'un mur en tirant, et Bien mérité ! (R) canalise des balles qui exécutent.",
+    "playstyle": "Mid de roam et d'escarmouche, avec une mécanique unique de résurrection des alliés. Akshan est fort pour punir les mages sans mobilité et pour gagner les combats désorganisés.",
+    "early_game": "Poke avec Q et ton passif (trois coups). Garde E (balancier autour d'un mur) pour fuir ou coller. Roam avec W (camouflage) quand ta wave est poussée.",
+    "level_1": "Les ordres varient : E → Q → Q ou Q → E → Q. Vengerang (Q) poke et farm ; Envolée héroïque (E) sert à trade et fuir.",
+    "level_2": "Le sort qui manque entre Q et E. Q + passif (trois coups) est ton trade de base.",
+    "level_3": "Second point en Q ; Cavalier seul (W) arrive au niveau 4. Q est maximisé en priorité.",
+    "level_6": "Bien mérité ! : canalise puis tire des balles qui exécutent selon les PV manquants. Utilise-le pour finir une cible qui fuit ou pour sécuriser un kill à distance.",
+    "power_spikes": [
+      "Niveau 3 : trades avec Q + passif.",
+      "Niveau 6 : exécution avec l'ultime.",
+      "Premier item complet : escarmouches fortes.",
+      "Mid game : roams et résurrections d'alliés."
+    ],
+    "lane_plan": "Poke avec Q et le passif, garde E pour fuir. Pousse ta wave avant de roam en camouflage avec W. La quête de rôle mid (retour accéléré) rend tes roams plus rentables. Évite les combats contre les champions qui te collent (Yasuo, Irelia).",
+    "trading": "Trade court : Q → attaques (passif). Trade long : E autour d'un mur → attaques → Q. Engage quand l'adversaire n'a plus son CC ; abandonne contre les champions qui te collent ou bloquent tes tirs (Mur de vent de Yasuo).",
+    "jungle_plan": "",
+    "threats": [
+      "Yasuo et son Mur de vent : ton matchup le plus difficile.",
+      "Vladimir et Diana, qui te battent en combat court.",
+      "CC pendant ton balancier."
+    ],
+    "mistakes": [
+      "Lancer E sans mur autour duquel se balancer.",
+      "Canaliser l'ultime à portée d'un contrôle.",
+      "Oublier de tuer le champion marqué pour ressusciter ton allié."
+    ],
+    "matchup_notes": {
+      "Ahri": "Esquive son Charme avec E et poke-la au Q.",
+      "Viktor": "Poke-le et reste mobile pour esquiver son laser.",
+      "Zed": "Garde E pour esquiver son ultime.",
+      "Yasuo": "Son Mur de vent bloque tes tirs : ne trade pas avec lui quand il est disponible.",
+      "Vladimir": "Il se soigne et te bat en combat long : poke court et recule."
+    },
+    "mid_game": "Roams avec W, escarmouches et résurrections d'alliés. Akshan retourne les combats désorganisés.",
+    "late_game": "Frappe à distance, utilise E pour te repositionner et R pour finir les cibles basses. Tue les champions marqués pour ressusciter tes alliés.",
+    "ahead": "Roam, prends les objectifs et chasse les carries.",
+    "behind": "Farm et cherche des picks avec l'ultime.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner les escarmouches désorganisées et exécuter les cibles basses avec l'ultime.",
+    "final_tip": "En combat, tue en priorité le champion marqué par W : cela ressuscite ton allié."
+  }
+}

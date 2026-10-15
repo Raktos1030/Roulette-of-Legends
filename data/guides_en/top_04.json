@@ -1,0 +1,125 @@
+{
+ "Jax|top": {
+  "identity": "Hybrid damage duelist who scales very hard. Jax leaps onto any unit with Leap Strike (Q), dodges basic attacks and stuns with Counter Strike (E), and gains attack speed with every hit (passive). Grandmaster-at-Arms (R) makes him durable and adds a powerful strike every third attack.",
+  "playstyle": "Survival lane with short trades around Counter Strike, then side-lane dominance and duels in the mid and late game. Jax becomes one of the best split pushers in the game with items. Very dependent on E timing.",
+  "early_game": "Farm and trade with E: cast it when your opponent walks into melee range, then hit during the dodge. Keep Q to engage or escape onto a minion or ward. Play to survive and scale if your opponent is stronger early.",
+  "level_1": "Counter Strike (E) first on the most common path (E → Q → W). It dodges basic attacks and stuns at the end: perfect against melee fighters.",
+  "level_2": "Leap Strike (Q). E → Q onto your opponent → auto: your basic trade. Keep Q to escape if you risk a gank.",
+  "level_3": "Empower (W), which you'll max first. An empowered attack that resets your auto: E → Q → W → auto → recast E.",
+  "level_6": "Grandmaster-at-Arms: a passive that adds a damage strike every third attack, and an active that gives you armor and magic resist. You win far more long duels.",
+  "power_spikes": [
+   "Level 3: E + Q + W, a good short trade.",
+   "Level 6: an ultimate that wins long duels.",
+   "First completed item: very strong duels.",
+   "Two items and beyond: a dominant split push."
+  ],
+  "lane_plan": "Play a neutral wave, or near your tower if your opponent is stronger early. Trade with E when they walk into melee range. Push and recall when you have the advantage. Keep a ward to escape with Q.",
+  "trading": "Short trade: E → Q → W → auto → recast E for the stun. Long trade: ultimate, then attacks. Engage when your opponent has used their CC; give up on it if they kite you or hit you with abilities (E only dodges attacks).",
+  "jungle_plan": "",
+  "threats": [
+   "Mages and champions who deal damage with abilities (Vladimir, Kennen).",
+   "Hard CC during your E.",
+   "Ganks without Q available."
+  ],
+  "mistakes": [
+   "Casting E too early, with no attacks to dodge.",
+   "Engaging with Q without E available.",
+   "Fighting an ability-based champion thinking E blocks it."
+  ],
+  "matchup_notes": {
+   "Yone": "E against his attacks; wait for his E to engage.",
+   "Garen": "He silences you with Q during your engage; wait for his Q before jumping in.",
+   "Darius": "E against his attacks; avoid the edge of his Q and his Apprehend.",
+   "Irelia": "E the moment she dashes onto you.",
+   "Malphite": "His armor slows you down; farm and scale, E against his attacks."
+  },
+  "mid_game": "Split push: Jax is one of the best at forcing 1v1s and taking towers. Use your upgraded Teleport to join objectives.",
+  "late_game": "In teamfights, leap onto a carry with Q, E to dodge and stun, ultimate to survive. In the side lane, keep the pressure on.",
+  "ahead": "Force duels in the side lane and dive with your jungler. You become very hard to deal with.",
+  "behind": "Farm and scale: Jax stays dangerous late even without a lead.",
+  "win_condition": "To win this game, you want to survive the lane, scale and dominate the side lane in the late game.",
+  "final_tip": "Cast Counter Strike the moment your opponent starts attacking, not before."
+ },
+ "Jayce|top": {
+  "identity": "Fighter who switches between ranged and melee with two forms. In cannon form, Jayce pokes with Shock Blast (Q) sped up by Acceleration Gate (E); in hammer form, he leaps with To the Skies! (Q) and knocks back with Thundering Blow (E). Mercury Cannon / Mercury Hammer (R) switches forms.",
+  "playstyle": "Poke and aggressive trading lane, strong in the early and mid game. Jayce is a pressure champion: he has to win the lane and convert his lead.",
+  "early_game": "Poke in cannon form with Q + E (accelerated Shock Blast) and switch to hammer form to punish an opponent who gets close. Play for a lane lead: Jayce falls off late.",
+  "level_1": "Q first. Poke in cannon form, or leap in hammer form if your opponent is vulnerable.",
+  "level_2": "W. In cannon form, Hyper Charge boosts your attack speed; in hammer form, Lightning Field deals area damage. Use the form that fits the trade.",
+  "level_3": "E. In cannon form, Acceleration Gate speeds up your Q; in hammer form, Thundering Blow knocks back. Combo: hammer Q → hammer E to knock back → switch forms → cannon Q + E.",
+  "level_6": "Jayce has his transformation from level 1; at level 6, it automatically ranks up, empowering the first attack after each form switch. Your full combo across both forms becomes very punishing.",
+  "power_spikes": [
+   "Level 3: full combo in both forms.",
+   "First completed item: very strong poke.",
+   "Two items: a mid-game spike.",
+   "Mid game: siege and poke pressure."
+  ],
+  "lane_plan": "Play a neutral or pushed wave, poke in cannon form and punish approaches in hammer form. Take plates when you win trades. Recall with the wave pushed. Don't let a fighter who wins in melee range stick to you.",
+  "trading": "Short trade: cannon Q + E. Long trade: hammer Q → W → hammer E to knock back → cannon form → Q + E. Engage when your opponent is slowed; give up on it if they stick to you in melee range.",
+  "jungle_plan": "",
+  "threats": [
+   "Champions who stick to you and beat you in melee range (Irelia).",
+   "Tanks who withstand your poke (Malphite, Ornn).",
+   "Ganks while you're pushing."
+  ],
+  "mistakes": [
+   "Staying in hammer form too long against a stronger fighter.",
+   "Missing Q + E and being left with no poke.",
+   "Playing for the late game when Jayce falls off late."
+  ],
+  "matchup_notes": {
+   "Malphite": "He withstands your poke and engages you at level 6; farm carefully and play the map.",
+   "Yone": "Poke him in cannon form and keep hammer E to knock back his engage.",
+   "Aatrox": "Dodge his sweet spots and poke him in cannon form.",
+   "Irelia": "She sticks to you: keep hammer E to knock her back and stay at range.",
+   "Nasus": "Punish him early in cannon form before he stacks."
+  },
+  "mid_game": "Poke and siege: your cannon form pushes and wears enemies down before objectives. Play with your team to convert your lead.",
+  "late_game": "Poke from range before fights. Avoid committing into the enemy team in hammer form.",
+  "ahead": "Take towers, poke before objectives and roam with your jungler.",
+  "behind": "Farm from range, poke safely and play with your team: your scaling is limited.",
+  "win_condition": "To win this game, you want to win your lane through poke and turn your lead into towers and objectives before the late game.",
+  "final_tip": "Always fire your Shock Blast through the Acceleration Gate: without it, your poke is easy to dodge."
+ },
+ "KSante|top": {
+  "identity": "Physical damage tank who can transform into a fighter. Ntofo Strikes (Q) slows, then its third cast becomes a shockwave that pulls enemies in; Path Maker (W) charges up while taking reduced damage, then dashes to knock back and stun; Footwork (E) shields an ally; All Out (R) knocks an enemy through a wall and switches him into offensive mode at the cost of his defenses.",
+  "playstyle": "Tank lane with controlled trades, then a choice in teamfights: protect (tank) or go offensive with his ultimate.",
+  "early_game": "Farm and build Q's two stacks to set up the shockwave. Trade briefly when it's ready. Play to survive: K'Sante is stronger in the mid game.",
+  "level_1": "Ntofo Strikes (Q) first. Farm by hitting minions to charge the third cast's shockwave.",
+  "level_2": "Footwork (E). A dash with a shield: keep it to escape or to get close before Q's shockwave.",
+  "level_3": "Path Maker (W). You charge up while taking reduced damage, then rush forward to knock back and stun. Q3 (which pulls) followed by W is your longest CC.",
+  "level_6": "All Out: you knock an enemy through a wall and go all-in mode (fewer resistances, much more damage and mobility). Use it to isolate a carry or finish a kill.",
+  "power_spikes": [
+   "Level 3: Q3 + W, big CC.",
+   "Level 6: ultimate to isolate a target.",
+   "First completed item: very durable.",
+   "Mid game: teamfighting and control."
+  ],
+  "lane_plan": "Farm safely while charging your Q on minions, and trade briefly when the shockwave is ready. Recall when your wave crashes. At level 6, find the walls: your ultimate is much stronger when it knocks your opponent through one, away from their team.",
+  "trading": "Short trade: Q → auto (passive mark) → E to back off. Long trade: Q3 to pull → W to stun → R into a wall. Engage when the shockwave is ready; give up on it if you used W without hitting.",
+  "jungle_plan": "",
+  "threats": [
+   "Champions who kite you (Kayle).",
+   "Percent-health damage (Fiora, Gwen).",
+   "Singed and champions who wear you down."
+  ],
+  "mistakes": [
+   "Using your ultimate at the wrong time and losing your resistances in the middle of the enemy team.",
+   "Casting the shockwave (Q3) when you can't follow with W.",
+   "Forgetting to protect your carry with E in teamfights."
+  ],
+  "matchup_notes": {
+   "Yone": "Keep W for his Q3 and trade when his E is on cooldown.",
+   "Jayce": "He pokes you in cannon form; stick to him with E, then Q3 and W.",
+   "Garen": "He silences you; trade when his Q is on cooldown.",
+   "Nasus": "Punish him early with Q and your passive, and avoid fights under Wither.",
+   "Darius": "Avoid his Apprehend and the edge of his Q; trade with Q3."
+  },
+  "mid_game": "Play around objectives, protect your team and isolate a carry with your ultimate when the chance comes.",
+  "late_game": "Control tank or diver: decide based on the fight. Protect your carries with E, or isolate the enemy carry with R.",
+  "ahead": "Isolate carries with your ultimate and force fights around objectives.",
+  "behind": "Farm, tank for your team and avoid fights where you go all-in mode with no target.",
+  "win_condition": "To win this game, you want to survive the lane, then control teamfights by protecting your carries or isolating the enemy carry.",
+  "final_tip": "Before using All Out, make sure your team can follow: you lose your resistances while it lasts."
+ }
+}

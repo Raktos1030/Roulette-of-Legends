@@ -1,0 +1,43 @@
+{
+ "Qiyana|mid": {
+  "identity": "Physical damage assassin who wields the elements. Terrashape (W) dashes her toward a bush, the river or a wall to empower her Elemental Wrath (Q): invisibility (grass), CC then a slow (water), more damage to wounded targets (rock). Audacity (E) dashes onto an enemy, and Supreme Display of Talent (R) knocks back; enemies knocked into a wall are stunned and the terrain explodes.",
+  "playstyle": "Lane-dominant, roaming assassin. She punishes immobile mages and roams with the grass element.",
+  "early_game": "Start with W to pick up an element, then poke with an empowered Q. Rock hurts wounded targets; water roots for an all-in with your jungler. Keep E to stick to a target or escape.",
+  "level_1": "Terrashape (W) first in mid. Pick up an element to empower your first Q.",
+  "level_2": "Elemental Wrath (Q). Poke with your chosen element: W → Q.",
+  "level_3": "Audacity (E). All-in: E → Q (the right element) → W → Q.",
+  "level_6": "Supreme Display of Talent: look for angles where R pushes your opponent into a wall or along the river. Roam to the side lanes with the grass element (invisible).",
+  "power_spikes": [
+   "Level 3: all-in with the right element.",
+   "Level 6: ultimate into a wall.",
+   "First completed item: burst that kills mages.",
+   "Mid game: roams and playmaking."
+  ],
+  "lane_plan": "Dominate the lane with your elements, take plates and roam. The mid role quest (faster recall) makes your roams more profitable. Avoid tanks and mages who lock you down (Vex).",
+  "trading": "Short trade: W → Q. All-in: E → Q (water to root) → W → Q → R into a wall. Engage when the enemy CC is on cooldown; give up on it against tanks (mid Malphite).",
+  "jungle_plan": "",
+  "threats": [
+   "Vex, whose passive interrupts your dashes.",
+   "Mid Malphite and tanks who soak your burst.",
+   "CC cast in the middle of your combo."
+  ],
+  "mistakes": [
+   "Using the wrong element for the situation.",
+   "Casting your ultimate with no wall behind the target.",
+   "Staying in lane with a lead instead of roaming."
+  ],
+  "matchup_notes": {
+   "Zed": "Root him with the water element when he swaps back to his shadow.",
+   "Ahri": "Dodge her Charm and turn your lead into roams.",
+   "Yasuo": "His Wind Wall blocks your Q: wait until he's used it.",
+   "Syndra": "Dive when her stun is on cooldown.",
+   "Vex": "Her passive stops your dashes: don't engage when it's charged."
+  },
+  "mid_game": "Roams with the grass element, picks and fights near walls and the river.",
+  "late_game": "Look for an ultimate into a wall on several enemies, then burst the carry.",
+  "ahead": "Roam, create picks and take objectives.",
+  "behind": "Look for picks on isolated targets and a decisive ultimate.",
+  "win_condition": "To win this game, you want to dominate your lane, roam and create fights where your ultimate stuns several enemies into a wall.",
+  "final_tip": "Pick your element for the situation: water to root, grass to roam invisible, rock to finish."
+ }
+}

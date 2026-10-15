@@ -1,0 +1,43 @@
+{
+ "MonkeyKing|jgl": {
+  "identity": "Physical damage fighter, a master of deception and engage. Nimbus Strike (E) dashes onto a target (clones hit other nearby enemies), Crushing Blow (Q) empowers his next attack and shreds armor, Warrior Trickster (W) dashes him while making him invisible and leaves a clone in his place, and Cyclone (R) makes him spin, knocking enemies into the air (two casts possible). His passive Stone Skin boosts his resistances and regeneration.",
+  "playstyle": "Gank, skirmish and teamfight-engage jungler. His double ultimate knocks up several enemies in teamfights.",
+  "early_game": "Clear fast with E and Q. Gank from level 3: E to dash in, Q for the empowered attack, W to dodge or fool the enemy with your clone. You win a lot of early duels.",
+  "level_1": "Nimbus Strike (E) first.",
+  "level_2": "Crushing Blow (Q). An empowered attack that shreds armor: E → Q is your basic combo.",
+  "level_3": "Warrior Trickster (W). An invisible dash with a clone: to fool the enemy, dodge an ability or reposition. First gank: E → Q → attacks → W if the target fights back.",
+  "level_6": "Cyclone: you spin, knocking enemies into the air, and you can recast it a second time. In teamfights, E onto a target in the middle of the group, then R twice: several enemies stay airborne for a long time.",
+  "power_spikes": [
+   "Level 3: strong ganks and duels.",
+   "Level 6: double Cyclone in teamfights.",
+   "First completed item: dominant skirmishes.",
+   "Mid game: decisive engages."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear, ganks and invades. Wukong wins early duels: invade when your laners have priority and control Scuttles. Play Void Grubs (around 8 minutes) and dragons with your team: your ultimate makes objective fights very dangerous for the enemy.",
+  "trading": "Ganking: E → Q → attacks → W to fool them. Teamfighting: E into the middle of the group → R → R. Give up on it against tanks who soak damage or junglers who protect their allies (Ivern).",
+  "threats": [
+   "Gwen, Ivern and Cho'Gath, among the worst matchups according to the data.",
+   "CC that stops you before your ultimate.",
+   "Engaging without follow-up."
+  ],
+  "mistakes": [
+   "Using W to open instead of saving it to dodge.",
+   "Casting your ultimate on a single target in teamfights.",
+   "Forgetting Cyclone's second cast."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Fool him with your clone when he casts Q.",
+   "Graves": "Stick to him with E and Q.",
+   "Viego": "Knock him up with your ultimate before he possesses your allies.",
+   "Master Yi": "Knock him up the moment he enters a teamfight.",
+   "Cho'Gath": "His silence cuts off your ultimate: wait until he's used it."
+  },
+  "mid_game": "Skirmishes and engages around objectives.",
+  "late_game": "Teamfight engage: E into the middle of the group, then double Cyclone.",
+  "ahead": "Choke out the enemy jungler, take objectives and force fights.",
+  "behind": "Farm and play for a decisive engage with your ultimate.",
+  "win_condition": "To win this game, you want to win early skirmishes and engage teamfights with your double Cyclone.",
+  "final_tip": "Save Warrior Trickster to dodge the enemy's key ability: your clone fools them."
+ }
+}

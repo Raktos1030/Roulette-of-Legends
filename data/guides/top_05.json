@@ -1,0 +1,43 @@
+{
+  "Malphite|top": {
+    "identity": "Tank à dégâts magiques ou physiques, spécialiste de l'engage. Malphite vole la vitesse de l'ennemi avec Éclat sismique (Q), multiplie son armure avec Coup de tonnerre (W), slow la vitesse d'attaque avec Choc au sol (E) et lance les teamfights avec Force indomptable (R), une charge imparable qui knock-up tout ce qu'elle touche.",
+    "playstyle": "Lane de poke et de survie, très solide contre les attaquants physiques, puis engage de teamfight en mid/late game. Malphite ne gagne pas les duels par ses dégâts mais par sa résistance et par l'ultime. Il est considéré comme fort.",
+    "early_game": "Poke avec Q quand l'adversaire vient last hit, garde ton shield passif actif (il se recharge quand tu ne subis pas de dégâts) et farm en sécurité. Contre les attaquants physiques, ton armure rend leurs trades très coûteux.",
+    "level_1": "Éclat sismique (Q) en premier. Poke à distance : il vole de la vitesse de déplacement, ce qui t'aide à repartir.",
+    "level_2": "Choc au sol (E). Dégâts de zone et réduction de vitesse d'attaque des ennemis : lance-le quand un combattant au corps à corps t'engage.",
+    "level_3": "Coup de tonnerre (W). Il augmente ton armure et renforce tes attaques. Q + E + W fait un trade correct, mais ta force reste la défense.",
+    "level_6": "Force indomptable : charge imparable qui knock-up. Combo : R → E → Q. En lane, avec ton jungler, c'est un gank quasi garanti ; en teamfight, vise plusieurs cibles.",
+    "power_spikes": [
+      "Niveau 6 : engage imparable avec l'ultime.",
+      "Premier item complet : poke ou résistance selon l'orientation.",
+      "Mid game : engages de teamfight décisifs.",
+      "Contre les équipes physiques : Malphite devient très difficile à tuer."
+    ],
+    "lane_plan": "Laisse la wave venir vers toi, farm et poke au Q. Garde ton shield : évite les petits dégâts inutiles. Après le niveau 6, prépare les ganks avec ton jungler en gardant la wave près de ta tour. Recall avec une wave poussée.",
+    "trading": "Trade de base : Q à distance. Trade au contact : E pour réduire la vitesse d'attaque adverse, puis W. Engage avec R quand ton jungler est proche ou que l'adversaire est bas ; abandonne si l'adversaire a des dégâts magiques qui ignorent ton armure.",
+    "jungle_plan": "",
+    "threats": [
+      "Dégâts magiques et mages (Sylas en top, Vladimir).",
+      "Dégâts en pourcentage des PV (Dr. Mundo sur la durée, Gwen).",
+      "Perdre ton shield passif sur des petits poke."
+    ],
+    "mistakes": [
+      "Utiliser l'ultime sans suivi de ton équipe.",
+      "Échanger au contact contre un champion à dégâts magiques.",
+      "Oublier de garder ton shield passif actif."
+    ],
+    "matchup_notes": {
+      "Jayce": "Ton armure encaisse son poke ; engage avec R quand il est en forme marteau.",
+      "Yone": "E réduit sa vitesse d'attaque ; garde R pour son engage.",
+      "Sylas": "Il te vole ton ultime et fait des dégâts magiques. Farm et évite les trades.",
+      "Teemo": "Poke-le au Q et ne te laisse pas aveugler en trade.",
+      "Nasus": "Il gagne en fin de lane ; poke-le tôt et garde R pour lui."
+    },
+    "mid_game": "Joue autour des objectifs et prépare les engages avec l'ultime. Garde la vision sur les entrées de rivière pour choisir l'angle.",
+    "late_game": "Engage de teamfight : R sur plusieurs cibles, puis E et Q. Attends que ton équipe puisse suivre.",
+    "ahead": "Roam pour ganker avec l'ultime et force les combats autour des objectifs.",
+    "behind": "Farm, tank pour ton équipe et joue pour un ultime décisif.",
+    "win_condition": "Pour gagner cette partie, tu veux arriver aux teamfights avec ton ultime et projeter plusieurs ennemis au bon moment.",
+    "final_tip": "Avant chaque teamfight, cherche l'angle où ton ultime touche au moins deux cibles importantes."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "Morgana|sup": {
+    "identity": "Mage de contrôle. Siphon d'âme (passif) la soigne quand elle blesse des champions, de grands sbires ou des monstres. Entrave sombre (Q) root longuement le premier ennemi touché, Tourment ténébreux (W) crée une zone qui inflige des dégâts continus (plus forts sur les cibles blessées), Bouclier noir (E) protège un allié contre les dégâts magiques et contre les CC tant qu'il n'est pas brisé, et Chaînes spirituelles (R) l'enchaîne aux champions proches : elle les slow et les stun s'ils ne brisent pas les chaînes à temps.",
+    "playstyle": "Support de pick et d'anti-engage : son Q root très longtemps, et son shield annule l'engage adverse. Elle écrase les supports d'engage qui comptent sur leurs CC (Nautilus, Leona) et souffre contre les enchanteurs qui la surpassent en lane (Milio, Janna).",
+    "early_game": "Poke avec W sur l'adversaire qui vient last hit, et garde Entrave sombre (Q) pour punir ou lancer un kill. Bouclier noir (E) sur ton ADC contre l'engage adverse : il bloque les CC tant qu'il tient. Un Q touché au niveau 2, c'est souvent un kill.",
+    "level_1": "Entrave sombre (Q) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Tourment ténébreux (W) ou Bouclier noir (E). W pour poke, E si le support adverse est un engage.",
+    "level_3": "Le sort manquant. Combo : Q → W sous la cible root → attaques ; E sur ton ADC si l'adversaire engage.",
+    "level_6": "Chaînes spirituelles : entre au milieu des ennemis (avec E sur toi) et stun-les tous s'ils ne s'éloignent pas. Combo : Q, puis R sur la cible root.",
+    "power_spikes": [
+      "Niveau 2 : Q + W pour les kills.",
+      "Niveau 3 : Bouclier noir contre les engages.",
+      "Niveau 6 : ultime de zone.",
+      "Teamfight : E sur ton carry, Q sur le diver."
+    ],
+    "lane_plan": "Poke avec W, menace le Q et protège ton ADC avec E. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "Trade de base : W sous l'adversaire. All-in : Q → W → attaques → R. Défense : E sur ton ADC, Q sur le diver. Contre les enchanteurs (Milio, Janna), ne force pas : ils annulent ton poke.",
+    "jungle_plan": "",
+    "threats": [
+      "Milio et Janna : matchups difficiles.",
+      "Dégâts physiques : ton shield ne bloque que les dégâts magiques.",
+      "Poke à longue portée qui t'empêche de t'approcher pour le Q."
+    ],
+    "mistakes": [
+      "Lancer Q à travers les sbires (il s'arrête sur le premier).",
+      "Donner le shield trop tôt, avant l'engage adverse.",
+      "Lancer l'ultime sans pouvoir rester à portée jusqu'à le stun."
+    ],
+    "matchup_notes": {
+      "Thresh": "Ton shield annule son grappin sur ton ADC.",
+      "Nautilus": "Donne ton shield à la cible de son ancre : il est bloqué.",
+      "Leona": "Bouclier noir sur ton ADC quand elle lance E : son engage échoue.",
+      "Lulu": "Elle te poke : reste derrière les sbires et vise-la avec Q.",
+      "Milio": "Son ultime supprime tes CC : garde Q pour après."
+    },
+    "mid_game": "Cherche les picks avec Q dans le brouillard de guerre et pose des pinks autour des objectifs.",
+    "late_game": "Garde E pour ton carry face à l'engage adverse. Q sur le diver ou sur un carry isolé, R quand plusieurs ennemis entrent dans ton équipe.",
+    "ahead": "Cherche les picks avec Q : chaque cible root meurt.",
+    "behind": "Joue l'anti-engage : ton shield et ton Q protègent ton carry.",
+    "win_condition": "Pour gagner cette partie, tu veux annuler les engages adverses avec ton shield et attraper les cibles isolées avec ton Q.",
+    "final_tip": "Garde Bouclier noir pour l'engage adverse, pas pour un poke : un CC bloqué gagne le combat."
+  }
+}

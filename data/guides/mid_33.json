@@ -1,0 +1,43 @@
+{
+  "Syndra|mid": {
+    "identity": "Mage de burst à dégâts magiques. Sphère noire (Q) fait apparaître une sphère qui explose, Force de la volonté (W) attrape une sphère ou un sbire et la relance en slowant, Dispersion des faibles (E) repousse les ennemis et les sphères (qui stun ceux qu'elles touchent), et Déchaînement de puissance (R) envoie toutes les sphères sur une cible. Elle accumule des stacks qui améliorent ses sorts (passif Transcendance).",
+    "playstyle": "Mage de contrôle de lane et de burst. Syndra poke à distance, stun avec Q + E et one-shot une cible avec l'ultime.",
+    "early_game": "Poke avec Q quand l'adversaire vient last hit et farm les sbires lointains avec W. Garde E (et une sphère à proximité) pour stun l'assassin qui t'engage. Accumule tes stacks passifs en touchant des champions.",
+    "level_1": "Sphère noire (Q) en premier. Poke et farm.",
+    "level_2": "Dispersion des faibles (E). Q → E : la sphère est projetée et stun. C'est ton outil offensif et défensif principal.",
+    "level_3": "Force de la volonté (W). Combo complet : Q → E (stun) → W → Q.",
+    "level_6": "Déchaînement de puissance : toutes les sphères frappent la cible. Plus il y a de sphères, plus le burst est gros. Combo : Q → E → W → R.",
+    "power_spikes": [
+      "Niveau 2 : stun Q + E.",
+      "Niveau 6 : one-shot avec l'ultime.",
+      "Premier item complet : burst qui tue les carries.",
+      "Stacks passifs : sorts améliorés."
+    ],
+    "lane_plan": "Poke avec Q, contrôle la wave et garde E contre les engages. Pousse puis rejoins ton jungler ou les objectifs. La quête de rôle mid (retour accéléré) t'aide à revenir vite après avoir poussé.",
+    "trading": "Trade court : Q poke. All-in : Q → E → W → R. Défense : E sur l'assassin qui arrive. Abandonne contre les assassins qui esquivent ton stun.",
+    "jungle_plan": "",
+    "threats": [
+      "Fizz, Katarina, Ekko et Locke : matchups difficiles.",
+      "Ganks quand ton E est en recharge.",
+      "Poke à plus longue portée (Xerath)."
+    ],
+    "mistakes": [
+      "Gaspiller E sans stun.",
+      "Lancer l'ultime avec trop peu de sphères.",
+      "Rester à portée d'un assassin sans E disponible."
+    ],
+    "matchup_notes": {
+      "Viktor": "Poke-le et stun-le quand il s'avance.",
+      "Ahri": "Garde E pour son engage avec R.",
+      "Zed": "Garde E pour le moment où il réapparaît après son ultime.",
+      "Fizz": "Il esquive ton stun : garde E pour la fin de son saut.",
+      "Katarina": "Stun-la quand elle arrive sur sa dague."
+    },
+    "mid_game": "Picks et contrôle de zone autour des objectifs. One-shot les carries qui avancent sans vision.",
+    "late_game": "Burst le carry adverse avec l'ultime, protège-toi avec E. Reste derrière ta frontline.",
+    "ahead": "Roam, crée des picks et prends les objectifs.",
+    "behind": "Farm, poke en sécurité et cherche des picks.",
+    "win_condition": "Pour gagner cette partie, tu veux contrôler ta lane et one-shot les carries avec l'ultime.",
+    "final_tip": "Garde toujours une sphère et ton E pour l'engage adverse : le stun te sauve."
+  }
+}

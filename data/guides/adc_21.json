@@ -1,0 +1,43 @@
+{
+  "Sivir|adc": {
+    "identity": "Tireuse à dégâts physiques, spécialiste du nettoyage de waves et des combats de groupe. Mille-pattes (passif) lui donne un bref bonus de vitesse quand elle attaque un champion. Lame boomerang (Q) blesse à l'aller et au retour, Ricochet (W) fait rebondir ses prochaines attaques sur les cibles proches avec plus de vitesse d'attaque, Bouclier magique (E) bloque une compétence ennemie (et la soigne si elle en bloque une), et En chasse (R) donne de la vitesse de déplacement à toute son équipe, tandis que ses attaques réduisent ses délais de récupération.",
+    "playstyle": "ADC sûre et de scaling : elle nettoie les waves très vite, bloque un sort clé avec E et lance ou fuit les combats avec la vitesse de son ultime. Elle souffre contre les ADC qui la surpassent en combat long ou qui la poursuivent (Twitch, Zeri, Yunara).",
+    "early_game": "Farm proprement et poke avec Q, en le lançant pour toucher à l'aller et au retour. Pousse la wave avec W quand ton support veut roam ou quand tu veux rentrer à la base. Garde E pour le sort d'engage du support adverse.",
+    "level_1": "Ricochet (W) ou Lame boomerang (Q). Ensuite, monte Q en priorité.",
+    "level_2": "Le sort manquant entre Q et W. Q pour poke, W pour pousser la wave.",
+    "level_3": "Bouclier magique (E). Bloque le grappin, le CC ou le gros sort adverse : ton meilleur outil de survie en lane.",
+    "level_6": "En chasse : vitesse de déplacement pour toute l'équipe. Lance-le pour engager un combat, rattraper des ennemis, ou fuir un mauvais combat.",
+    "power_spikes": [
+      "Niveau 3 : Bouclier magique pour contrer les engages.",
+      "Niveau 6 : ultime d'engage ou de fuite pour l'équipe.",
+      "Premier item complet : nettoyage de waves très rapide.",
+      "Deux items complets : Ricochet dévaste les teamfights groupés."
+    ],
+    "lane_plan": "Farm, poke avec Q, et pousse la wave avec W quand c'est utile (retour à la base, dragon). Garde E contre le sort clé adverse. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense ton farm rapide.",
+    "trading": "Trade de base : Q à l'aller et au retour. All-in : W, attaques, Q, E pour bloquer le CC adverse. Abandonne contre les ADC qui gagnent les combats longs (Twitch, Yunara) : farm et attends tes items.",
+    "jungle_plan": "",
+    "threats": [
+      "Twitch : ton matchup le plus difficile.",
+      "Zeri, Kog'Maw et Yunara : matchups difficiles.",
+      "Plusieurs CC d'affilée : ton shield n'en bloque qu'un."
+    ],
+    "mistakes": [
+      "Lancer E trop tôt et subir le vrai sort juste après.",
+      "Utiliser l'ultime sans que l'équipe puisse suivre.",
+      "Laisser des waves sans les nettoyer en fin de partie."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Garde E pour bloquer son W ou le Q de son support.",
+      "Jinx": "Elle scale aussi : nettoie les waves et gagne les combats avec ton ultime.",
+      "Caitlyn": "Bloque son Tir chirurgical ou son filet avec E.",
+      "Twitch": "Il te surprend depuis le camouflage : place des wards autour de toi et garde E pour son W.",
+      "Yunara": "Évite les combats longs contre elle."
+    },
+    "mid_game": "Nettoie les waves latérales puis rejoins l'équipe. Utilise ton ultime pour engager un combat autour d'un objectif.",
+    "late_game": "Reste derrière ta frontline, W actif sur le groupe : tes rebonds touchent tout le monde. Bloque le CC clé avec E, et lance R pour engager ou disengage.",
+    "ahead": "Engage les combats avec ton ultime et prends les objectifs.",
+    "behind": "Nettoie les waves en sécurité et attends les teamfights groupés.",
+    "win_condition": "Pour gagner cette partie, tu veux contrôler les waves et gagner les teamfights groupés avec tes rebonds et la vitesse de ton ultime.",
+    "final_tip": "Ton Bouclier magique ne bloque qu'un sort : garde-le pour celui qui peut te tuer."
+  }
+}

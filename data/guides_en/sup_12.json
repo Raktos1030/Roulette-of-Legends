@@ -1,0 +1,43 @@
+{
+ "Lulu|sup": {
+  "identity": "Protective enchanter. Pix, her faerie, follows a champion and fires projectiles when they attack (passive). Glitterlance (Q): Lulu and Pix each fire a bolt that damages and heavily slows, Whimsy (W) speeds up an ally (movement and attack speed) or turns an enemy into a critter that can't attack or cast, Help, Pix! (E) sends Pix to shield an ally or damage an enemy (and follow them), and Wild Growth (R) enlarges an ally: they gain a lot of health, knock up nearby enemies and slow those around them.",
+  "playstyle": "Protection and poke support: she harasses with Pix and Q, then makes her carry nearly unkillable with W, E and R. Only one clearly unfavorable matchup (Sona), and she crushes divers she polymorphs (Camille, Pantheon, Swain).",
+  "early_game": "Poke with E on your opponent, then Q: Pix also fires from where it is. Keep Whimsy (W) to polymorph an enemy engage or speed up your ADC during a trade. Your shield (E) on your ADC helps win trades or survive an engage.",
+  "level_1": "Help, Pix! (E) first. After that, max E first, then W.",
+  "level_2": "Glitterlance (Q). Combo: E on your opponent, Q from Lulu and Pix, guaranteed slow.",
+  "level_3": "Whimsy (W). Polymorph an enemy engage, or speed up your ADC for an all-in.",
+  "level_6": "Wild Growth: saves an ally in danger (bonus health) and knocks up divers around them. Cast it on the carry the enemy wants to kill.",
+  "power_spikes": [
+   "Level 2: E + Q to poke.",
+   "Level 3: defensive or offensive W.",
+   "Level 6: an ultimate that cancels a dive.",
+   "Teamfights: W, E and R on your best carry."
+  ],
+  "lane_plan": "Harass with E + Q, protect your ADC and keep W against engages. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "Basic trade: E on your opponent, Q, attacks. All-in: W (speed) and E (shield) on your ADC. Defense: W on the enemy engage, R on the dived target. Back off against supports who poke harder (Sona): protect rather than trade.",
+  "jungle_plan": "",
+  "threats": [
+   "Sona: your hardest matchup.",
+   "Thresh, your most common opponent, below your average on both sources.",
+   "Several divers at once: you can only polymorph one target."
+  ],
+  "mistakes": [
+   "Using W to poke instead of keeping it against the engage.",
+   "Casting your ultimate too late, on an ally who's already dead.",
+   "Protecting a secondary ally instead of your best carry."
+  ],
+  "matchup_notes": {
+   "Thresh": "Polymorph him when he comes in with his hook, and E on the target he catches.",
+   "Nami": "Poke trades: shield your ADC when she casts Ebb and Flow.",
+   "Nautilus": "W to polymorph Nautilus as soon as his anchor lands.",
+   "Milio": "Two enchanters: the better poke wins, harass with E + Q.",
+   "Sona": "Her poke gets through your shields: stay behind minions."
+  },
+  "mid_game": "Stick with your strongest carry. Place Control Wards and harass before objectives.",
+  "late_game": "Stay next to your best carry: W to speed them up, E to protect them, R when they're dived. Polymorph the enemy diver or assassin.",
+  "ahead": "Harass harder and make your carry untouchable.",
+  "behind": "Play protection: as long as your carry lives, they can turn the game around.",
+  "win_condition": "To win this game, you want to keep your best carry alive and let them hit freely.",
+  "final_tip": "Polymorphing the enemy diver is often worth more than all your shields: keep W for the moment they go in."
+ }
+}

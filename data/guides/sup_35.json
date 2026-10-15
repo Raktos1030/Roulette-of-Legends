@@ -1,0 +1,43 @@
+{
+  "Taric|sup": {
+    "identity": "Tank protecteur. Plastronneur (passif) : chaque sort renforce ses deux prochaines attaques (dégâts magiques, délais réduits, attaques rapides). Bénédiction stellaire (Q) soigne les alliés proches selon les charges accumulées par ses attaques renforcées, Bastion (W) augmente l'armure et, activé, lie Taric à un allié avec un shield : ses sorts partent aussi depuis cet allié, Éblouissement (E) tire après un court délai un rayon qui stun, et Lumière cosmique (R) rend invulnérables, après un délai, tous les alliés proches pendant un court instant.",
+    "playstyle": "Support de protection et de contre-engage : il stun depuis son allié lié, soigne et rend toute son équipe invulnérable au moment clé. Aucun matchup nettement défavorable, et il écrase les supports d'engage (Nautilus, Blitzcrank, Pantheon).",
+    "early_game": "Lie-toi à ton ADC avec Bastion (W) : ton Éblouissement (E) part aussi de lui, ce qui double tes angles de stun. Alterne sorts et attaques pour profiter de Plastronneur (chaque sort renforce deux attaques et réduit tes délais). Soigne avec Q après les trades.",
+    "level_1": "Éblouissement (E) en premier. Ensuite, monte E en priorité, puis Q.",
+    "level_2": "Bastion (W) ou Bénédiction stellaire (Q). W pour lier ton ADC (stun depuis lui), Q pour le soin.",
+    "level_3": "Le sort manquant. Combo : E (depuis toi et ton ADC) → attaques renforcées → Q.",
+    "level_6": "Lumière cosmique : après un délai, tous les alliés proches deviennent invulnérables. Lance-la juste avant que l'engage adverse arrive, en tenant compte du délai.",
+    "power_spikes": [
+      "Niveau 2 : W + E, stun depuis deux positions.",
+      "Niveau 6 : invulnérabilité de groupe.",
+      "Premiers items : délais réduits, sorts très fréquents.",
+      "Teamfight : Lumière cosmique au moment de l'engage adverse."
+    ],
+    "lane_plan": "Lie ton ADC avec W, cherche le stun avec E et soigne avec Q. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "All-in : E (depuis toi et ton ADC) → attaques renforcées → Q. Défense : E sur le diver, R avant l'engage adverse. Contre Senna et Janna (tes moins bons matchups), joue défensivement : elles disengage ou poke de loin.",
+    "jungle_plan": "",
+    "threats": [
+      "Senna, Janna et Zilean : tes moins bons matchups, proches de l'équilibre.",
+      "Poke à distance qui t'empêche de t'approcher.",
+      "Réductions de soins adverses."
+    ],
+    "mistakes": [
+      "Lancer l'ultime trop tard : son délai laisse l'adversaire tuer ton allié.",
+      "Oublier de lier ton ADC avec Bastion.",
+      "Enchaîner les sorts sans attaquer entre eux (Plastronneur perdu)."
+    ],
+    "matchup_notes": {
+      "Thresh": "Stun-le avec E quand il avance pour son grappin.",
+      "Nautilus": "Son engage est annulé par ton stun et ton ultime.",
+      "Leona": "E depuis ton ADC quand elle engage sur lui.",
+      "Blitzcrank": "S'il attrape ton ADC, E depuis lui stun Blitzcrank.",
+      "Senna": "Elle poke de loin : protège ton ADC et attends qu'elle s'approche."
+    },
+    "mid_game": "Accompagne ton carry, pose des pinks et garde l'ultime pour les combats autour des objectifs.",
+    "late_game": "Lie ton meilleur carry avec W, stun les divers avec E et lance Lumière cosmique juste avant l'engage adverse.",
+    "ahead": "Force les combats : ton ultime rend ton équipe intouchable au pire moment pour l'adversaire.",
+    "behind": "Protège ton carry avec W, E et R.",
+    "win_condition": "Pour gagner cette partie, tu veux annuler les engages adverses avec tes stuns et ton invulnérabilité de groupe.",
+    "final_tip": "Anticipe le délai de Lumière cosmique : lance-la quand l'engage adverse commence, pas quand ton allié est déjà presque mort."
+  }
+}

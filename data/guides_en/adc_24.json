@@ -1,0 +1,43 @@
+{
+ "Tristana|adc": {
+  "identity": "Very mobile physical damage marksman. Draw a Bead (passive) increases her attack range with each level. Rapid Fire (Q) temporarily boosts her attack speed, Rocket Jump (W) launches her far, damaging and slowing on landing, Explosive Charge (E) makes units she kills explode and, when activated, plants a bomb that explodes after a short time (your attacks charge it up), and Buster Shot (R) deals magic damage and knocks the target back (doubling the radius of the Explosive Charge on the target).",
+  "playstyle": "Aggressive early-game ADC who also scales very well thanks to her growing range. No matchup is clearly unfavorable. She's ahead in gold at 15 minutes on average against every common ADC, and she takes down towers very fast with E.",
+  "early_game": "Harass with Explosive Charge (E) planted on your opponent, then attack to charge it up. Plant E on the tower when the wave arrives: it falls fast. With your support, an all-in at level 2 or 3 often wins.",
+  "level_1": "Explosive Charge (E) first. After that, max E first, then Q.",
+  "level_2": "Rocket Jump (W). Engage onto your opponent, or escape. Its cooldown resets on a kill or assist, and when a fully charged Explosive Charge detonates on a champion.",
+  "level_3": "Rapid Fire (Q). Attack speed to charge E and win trades.",
+  "level_6": "Buster Shot: knock a diver far away from you, or send your opponent toward your tower or your support. On a target carrying E, the explosion is doubled.",
+  "power_spikes": [
+   "Levels 2 to 3: all-in with E and W.",
+   "Level 6: Buster Shot to finish or protect yourself.",
+   "First completed item: towers fall in seconds.",
+   "Late game: max range, very high sustained damage."
+  ],
+  "lane_plan": "Play aggressive with your support, press your lead and take plates with E on the tower. Your jump lets you join or escape quickly. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) completes fast with the pressure you apply.",
+  "trading": "Basic trade: E on your opponent, attacks until it explodes, then step back. All-in: E, Q, W onto the target, attacks, R to finish or knock back. Keep W to escape if you're not sure of the kill.",
+  "jungle_plan": "",
+  "threats": [
+   "Hwei, Xayah and Yasuo: your weakest matchups, close to even.",
+   "Crowd control when you jump into the middle of the enemy team.",
+   "Divers when your jump is on cooldown."
+  ],
+  "mistakes": [
+   "Jumping in to attack without keeping an escape.",
+   "Forgetting to plant E on towers.",
+   "Casting R on an enemy and knocking them toward their team instead of yours."
+  ],
+  "matchup_notes": {
+   "Jinx": "She scales: turn your lead into towers.",
+   "Kai'Sa": "Knock her back with R when she dives with her ultimate.",
+   "Jhin": "Jump on him while he reloads.",
+   "Ezreal": "Engage once he's used E.",
+   "Xayah": "Don't jump into the middle of her feathers: her recall roots you."
+  },
+  "mid_game": "Take towers with E and dragons with your team. Join fights with W if the target is in range.",
+  "late_game": "Hit from max range behind your frontline. Keep W to escape or finish, R to knock a diver away.",
+  "ahead": "Force fights and towers: you have the lead and the range.",
+  "behind": "Farm and wait for your late-game range: you're still a great teamfight ADC.",
+  "win_condition": "To win this game, you want to win lane, take towers very fast with E, then dominate teamfights with your range.",
+  "final_tip": "A kill or an assist resets your jump: jump in to finish, then jump again onto the next target or to escape."
+ }
+}

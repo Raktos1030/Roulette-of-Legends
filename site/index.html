@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roulette of Legends</title>
+  <meta name="description" content="La roulette de League of Legends : rôle et champion au hasard, seul ou en groupe, mode chaos et favoris.">
+  <link rel="icon" href="img/app.png">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body data-bg="mech" class="ambient site">
+  <div id="backdrop" aria-hidden="true"><div class="bd-layer"></div><div class="bd-layer"></div><div class="bd-shade"></div><div class="bg-art"><div class="bg-mech"><div class="m-ring m1"><img src="bg/mech_1_outer.svg" alt=""></div><div class="m-ring m2"><img src="bg/mech_2_hexagons.svg" alt=""></div><div class="m-ring m3"><img src="bg/mech_3_roles.svg" alt=""></div><div class="m-ring m4"><img src="bg/mech_4_core.svg" alt=""></div><img class="m-mark" src="bg/mech_0_marker.svg" alt=""></div></div><div class="bd-grain"></div></div>
+
+  <header id="top">
+    <a class="top-brand" href="#/" aria-label="Roulette of Legends">
+      <span class="logo"><img class="l-base" src="img/logo_base.png" alt=""><img class="l-wheel" src="img/logo_wheel.png" alt=""><img class="l-ptr" src="img/logo_pointer.png" alt=""></span>
+      <span class="top-name">Roulette<small>of</small>Legends</span>
+    </a>
+    <nav class="top-nav" id="top-nav"></nav>
+    <div class="seg sm top-lang" id="top-lang"><button data-lang="fr">FR</button><button data-lang="en">EN</button></div>
+  </header>
+
+  <main id="main">
+    <div id="page"></div>
+    <footer id="foot"></footer>
+  </main>
+
+  <div id="toasts" aria-live="polite"></div>
+  <div id="modal" hidden></div>
+
+  <script src="data.js"></script>
+  <script src="en.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

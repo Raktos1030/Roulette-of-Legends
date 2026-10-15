@@ -1,0 +1,43 @@
+{
+  "Camille|sup": {
+    "identity": "Combattante de dive à dégâts physiques. Protection modulable (passif) : attaquer un champion lui donne un shield contre le type de dégâts de cet ennemi. Protocole de précision (Q) renforce sa prochaine attaque et peut être relancé (bien plus fort si elle attend entre les deux), Balayage tactique (W) frappe un cône après un délai (le bord slow et la soigne), Grappin (E) l'accroche à un mur puis la fait bondir sur les ennemis, qu'elle neutralise à l'atterrissage, et Ultimatum Hextech (R) la fait bondir sur un champion pour l'enfermer avec elle dans une zone.",
+    "playstyle": "Support de dive : elle engage depuis les murs avec son grappin et isole le carry adverse avec son ultime. Elle perd contre presque tous les supports tanks et enchanteurs.",
+    "early_game": "Joue autour des murs : ton grappin a besoin d'un mur pour engager. Au niveau 3, cherche E depuis le mur de la rivière ou des bushs, puis Q et W. Ne quitte pas la lane trop tôt : la quête de rôle te pénalise (voir plus bas).",
+    "level_1": "Grappin (E) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Protocole de précision (Q). Engage au grappin, puis Q (attends un peu avant la relance pour plus de dégâts).",
+    "level_3": "Balayage tactique (W). Frappe avec le bord du cône pour slow et te soigner.",
+    "level_6": "Ultimatum Hextech : bondis sur le carry adverse et enferme-le. Son équipe ne peut plus l'aider facilement : ton ADC et ton jungler doivent suivre.",
+    "power_spikes": [
+      "Niveau 3 : engage au grappin depuis un mur.",
+      "Niveau 6 : ultime pour isoler un carry.",
+      "Premier item complet : dives plus dangereuses.",
+      "Mid game : picks avec ton jungler."
+    ],
+    "lane_plan": "Engage depuis les murs quand ton ADC peut suivre. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs, ce qui pénalise les roams précoces. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "All-in : E depuis un mur → Q → attaques → W (bord du cône) → Q relancé. Recule contre les supports qui t'arrêtent ou disengage (Rakan, Rell, Braum, Poppy, Janna, Lulu) : ne dive pas quand ils ont leurs sorts.",
+    "jungle_plan": "",
+    "threats": [
+      "Rakan et Rell, pires matchups.",
+      "Braum, Poppy, Janna et Lulu : matchups difficiles.",
+      "Tout CC qui t'arrête en pleine dive."
+    ],
+    "mistakes": [
+      "Dive sans ton ADC ou sans ton jungler.",
+      "Quitter la lane trop tôt (pénalité de la quête de rôle).",
+      "Engager sans mur à proximité pour ton grappin."
+    ],
+    "matchup_notes": {
+      "Thresh": "Ne dive pas quand il a sa lanterne pour sauver son ADC.",
+      "Lulu": "Sa métamorphose t'arrête net : attends qu'elle l'ait utilisée.",
+      "Pyke": "Il est fragile : ton ultime l'isole.",
+      "Xerath": "Il n'a aucune mobilité : dive-le depuis un mur.",
+      "Rakan": "Ses engages et ses shields te surpassent : joue défensivement."
+    },
+    "mid_game": "Cherche les picks avec ton jungler autour des objectifs, en engageant depuis les murs. Pose des pinks.",
+    "late_game": "Attends que les CC adverses soient utilisés, puis grappin depuis un mur et ultime sur le carry adverse.",
+    "ahead": "Dive sur les carries et crée des picks.",
+    "behind": "Reste avec ton équipe et joue les contre-engages : ultime sur le diver adverse pour protéger ton ADC.",
+    "win_condition": "Pour gagner cette partie, tu veux isoler le carry adverse avec ton ultime et le tuer avec ton équipe.",
+    "final_tip": "Ton grappin a besoin d'un mur : place-toi toujours près d'un mur avant de chercher un engage."
+  }
+}

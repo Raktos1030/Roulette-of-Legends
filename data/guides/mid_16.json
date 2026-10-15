@@ -1,0 +1,43 @@
+{
+  "Irelia|mid": {
+    "identity": "Combattante à dégâts physiques très mobile. Rush fatal (Q) dash sur une cible et se réinitialise si elle meurt ou si elle est marquée, Duo parfait (E) stun et marque les ennemis entre deux lames, Danse de défi (W) réduit les dégâts reçus avant de frapper, et Pointe de l'avant-garde (R) marque plusieurs cibles et crée un mur de lames. Son passif augmente sa vitesse d'attaque et ses dégâts avec les stacks.",
+    "playstyle": "Tyran de lane contre les mages. Le vrai enjeu est de convertir l'avance de lane en objectifs.",
+    "early_game": "Monte tes stacks sur les sbires avec Q, puis engage les mages qui n'ont pas de dash : E → Q sur la cible marquée → attaques. Les mages à CC (Vex, Galio) et les assassins résistants te posent problème : respecte leurs sorts.",
+    "level_1": "Rush fatal (Q) en premier. Last hit et stacks.",
+    "level_2": "Duo parfait (E). E → Q → attaques : all-in de niveau 2 très fort contre les mages.",
+    "level_3": "Danse de défi (W). Encaisse le burst adverse ou les tirs de tour pendant un dive.",
+    "level_6": "Pointe de l'avant-garde : marque plusieurs cibles et crée un mur qui slow. Dives sous tour et escarmouches multi-cibles.",
+    "power_spikes": [
+      "Niveau 2 : E + Q contre les mages.",
+      "Niveau 6 : ultime, dives sous tour.",
+      "Premier item complet : duels dominants.",
+      "Mid game : escarmouches désorganisées."
+    ],
+    "lane_plan": "Pousse et punis les mages quand leur CC est en recharge. Prends les plaques et dive avec ton jungler. Surtout, convertis ton avance : roam vers les side lanes et les objectifs au lieu de rester à farmer. La quête de rôle mid (retour accéléré) t'y aide.",
+    "trading": "Trade court : Q sur un sbire → E → Q sur la cible marquée → attaques → Q sur un sbire pour sortir. Trade long : W pour encaisser, puis R. Engage quand le CC adverse est en recharge ; abandonne contre les mages qui te stun en premier (Vex, Galio).",
+    "jungle_plan": "",
+    "threats": [
+      "Vex et Galio, qui t'arrêtent en plein engage.",
+      "Tanks et combattants qui te battent au contact (Malphite, Nasus au mid).",
+      "Ne pas convertir ton avance de lane."
+    ],
+    "mistakes": [
+      "Engager sans stacks ni marque.",
+      "Rester en lane avec une grosse avance au lieu de roam.",
+      "Dive sous tour sans W pour encaisser."
+    ],
+    "matchup_notes": {
+      "Zed": "Garde W pour son ultime.",
+      "Viktor": "Punis-le quand son champ gravitationnel est en recharge, puis roam pour transformer l'avance.",
+      "Yasuo": "Son Mur de vent bloque ton E : attends qu'il l'ait utilisé.",
+      "Vex": "Son passif interrompt tes dashes : n'engage pas quand il est chargé.",
+      "Galio": "Son taunt t'arrête : engage quand son W est en recharge."
+    },
+    "mid_game": "Roams, dives et escarmouches. Transforme ton avance de lane en tours et dragons.",
+    "late_game": "Entre après les CC adverses, marque plusieurs cibles avec R et enchaîne les Q.",
+    "ahead": "Roam, dive et prends les objectifs rapidement : ton avance de lane doit devenir une avance d'équipe.",
+    "behind": "Farm, évite les mages à CC et joue après leurs sorts en teamfight.",
+    "win_condition": "Pour gagner cette partie, tu veux écraser le mage adverse en lane et transformer immédiatement cette avance en objectifs.",
+    "final_tip": "Quand tu as l'avance d'or, ne reste pas au mid : roam et prends des objectifs, c'est ce qui manque aux Irelia mid dans les données."
+  }
+}

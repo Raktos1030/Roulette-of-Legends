@@ -1,0 +1,43 @@
+{
+ "Blitzcrank|sup": {
+  "identity": "Pick support. Mana Barrier (passive) gives him a mana-based shield when he drops low on health. Rocket Grab (Q) grabs the first enemy hit and pulls it to him, Overdrive (W) greatly boosts his attack and movement speed (he's slowed at the end), Power Fist (E) makes his next attack deal double damage and knock up the target, and Static Field (R) passively zaps enemies he hits; when activated, it destroys nearby enemies' shields, damages them and silences them.",
+  "playstyle": "Pick support: a landed hook means a kill or a burned summoner spell. He dominates fragile long-range supports (Lux, Xerath, Mel) and struggles against those who protect their ADC from the hook (Taric, Braum, Rakan).",
+  "early_game": "Constantly threaten the hook from the bushes or behind the wave: your opponent has to stay behind their minions. Hook → Power Fist → R to silence: your ADC follows up. A missed hook puts you in danger: back off while Q is on cooldown.",
+  "level_1": "Rocket Grab (Q) first. Threaten from the bushes.",
+  "level_2": "Power Fist (E). Combo: Q → E (knock-up) → your ADC's attacks.",
+  "level_3": "Overdrive (W). Speed to get into position before a hook, or to join a fight.",
+  "level_6": "Static Field: silences and destroys shields around you. Q → E → R stops your opponent from fighting back or escaping with an ability.",
+  "power_spikes": [
+   "Level 2: hook + Power Fist.",
+   "Level 6: your ultimate's silence.",
+   "Mid game: picks on enemies who walk forward without vision.",
+   "Every landed hook on a carry."
+  ],
+  "lane_plan": "Control the bushes and threaten the hook. Play for kills with your ADC and jungler. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored): clear enemy vision so your hooks come without warning.",
+  "trading": "All-in: Q → E → R → attacks. Threat: stay in hook range without throwing it, and your opponent backs off. Avoid throwing Q against supports who protect their ADC (Braum and his shield, Taric): aim at them instead, or wait.",
+  "jungle_plan": "",
+  "threats": [
+   "Taric: your hardest matchup.",
+   "Braum, Rakan and Leona: hard matchups.",
+   "Hook on cooldown: you're an easy target then."
+  ],
+  "mistakes": [
+   "Throwing the hook through minions.",
+   "Pulling in a tank or support who actually wants to get into your team.",
+   "Standing in the open while your hook is on cooldown."
+  ],
+  "matchup_notes": {
+   "Thresh": "His lantern saves your hook's target: wait until it's used.",
+   "Lulu": "She can polymorph you or her ADC: hook once she's used W.",
+   "Leona": "She engages too: don't hook if she's waiting with her stun.",
+   "Lux": "She's fragile and slow: one hook kills her.",
+   "Taric": "His ultimate and stun cancel your picks: wait out his invulnerability."
+  },
+  "mid_game": "Look for picks in the fog of war: an enemy walking alone without vision is a free hook. Place Control Wards around objectives.",
+  "late_game": "Threaten the hook from the sides of the fight. A carry pulled into your team wins the fight; a tank pulled in loses it. Keep R to silence divers.",
+  "ahead": "Roam with your jungler and create picks everywhere.",
+  "behind": "Protect your ADC and look for one good hook to turn a fight.",
+  "win_condition": "To win this game, you want to catch isolated enemy carries and kill them with your team.",
+  "final_tip": "The threat of the hook matters as much as the hook itself: stay in range without throwing it, and your opponent won't dare step up."
+ }
+}

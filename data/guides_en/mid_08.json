@@ -1,0 +1,43 @@
+{
+ "Azir|mid": {
+  "identity": "Magic damage mage who fights through sand soldiers. Arise! (W) summons a soldier that attacks for him when Azir attacks in range, Conquering Sands (Q) sends the soldiers to a location while slowing, Shifting Sands (E) dashes Azir to a soldier with a shield (stopping on the first champion hit), and Emperor's Divide (R) raises a wall of soldiers that knocks enemies back. His passive lets him rebuild a destroyed tower as a Sun Disc.",
+  "playstyle": "Sustained-DPS and zone-control mage, very mechanical. Azir scales well and can turn a fight with his ultimate.",
+  "early_game": "Farm with your soldiers (W) and poke your opponent when they come to last hit. Keep a soldier in reserve to escape with E. Avoid all-ins against assassins: you're fragile.",
+  "level_1": "Arise! (W) first. Farm and poke with your soldier.",
+  "level_2": "Conquering Sands (Q). Moves your soldiers and slows: you can poke from farther away.",
+  "level_3": "Shifting Sands (E). A dash to a soldier with a shield: your escape. Advanced combo (later): E → Q → R to knock an enemy toward your team.",
+  "level_6": "Emperor's Divide: a wall of soldiers that knocks back. Shuffle combo: W behind the target → E to the soldier → Q to go farther → R to send the target toward your team. It takes a lot of practice.",
+  "power_spikes": [
+   "Level 6: ultimate to knock back and protect.",
+   "First completed item: soldier DPS.",
+   "Two items: dominant zone control and DPS.",
+   "Late game: one of the strongest teamfight mages."
+  ],
+  "lane_plan": "Farm with your soldiers, poke safely and keep a soldier to escape. Keep the wave in the middle or near you against assassins. Join objectives when your wave is pushed. Your passive can rebuild a destroyed tower to defend.",
+  "trading": "Basic trade: soldier attacks on your opponent. Long trade: Q to slow → soldier attacks. Engage with the shuffle once you've mastered it; give up on it against assassins who burst you (LeBlanc).",
+  "jungle_plan": "",
+  "threats": [
+   "LeBlanc: your hardest matchup.",
+   "Long-range mages (Xerath) and Twisted Fate.",
+   "Assassins who dive you when you have no soldier left to escape."
+  ],
+  "mistakes": [
+   "Using all your soldiers and having no escape left.",
+   "Trying the shuffle without having practiced it.",
+   "Staying in range of the enemy burst."
+  ],
+  "matchup_notes": {
+   "Yasuo": "Your soldiers aren't blocked by Wind Wall: keep him at range.",
+   "Viktor": "He pokes you: farm carefully.",
+   "Ahri": "Keep a soldier to dodge her Charm.",
+   "LeBlanc": "She bursts you before you can react: farm under your tower.",
+   "Twisted Fate": "He roams: follow him around the map."
+  },
+  "mid_game": "Zone control around objectives with your soldiers and ultimate.",
+  "late_game": "Area DPS behind your frontline, ultimate to knock back divers or send a carry toward your team.",
+  "ahead": "Take towers and dominate teamfights.",
+  "behind": "Farm and scale: Azir stays strong in the late game.",
+  "win_condition": "To win this game, you want to survive the lane, scale and dominate teamfights with your soldiers and ultimate.",
+  "final_tip": "Always keep a soldier in reserve: it's your only escape."
+ }
+}

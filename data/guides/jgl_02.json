@@ -1,0 +1,43 @@
+{
+  "Belveth|jgl": {
+    "identity": "Combattante à dégâts physiques, hypercarry de la jungle. Bel'Veth accumule de la vitesse d'attaque permanente avec les éliminations (passif), dash dans quatre directions indépendantes avec Charge du Néant (Q), knock-up avec Projection cinglante (W), canalise une rafale de coups qui la soigne et réduit les dégâts reçus avec Maelström impérial (E), et dévore le corail du Néant laissé par ses victimes avec Banquet infini (R) pour prendre sa vraie forme. Le corail d'un monstre épique du Néant lui permet d'invoquer des rémoras du Néant.",
+    "playstyle": "Jungler de farm et d'escarmouche qui scale fort. Elle gagne les combats longs et les combats désorganisés où elle peut enchaîner les éliminations et prendre sa vraie forme. Elle est plus faible en early contre les junglers agressifs et contre les CC lourds.",
+    "early_game": "Clear rapide avec Q (chaque direction a son propre temps de recharge) et E sur les gros camps. Prends le crabe et les escarmouches que ton équipe peut gagner. Chaque gros monstre et chaque élimination te donne des stacks de vitesse d'attaque permanents : le farm compte énormément.",
+    "level_1": "Charge du Néant (Q) en premier. Dash sur le camp pour commencer, puis attaques.",
+    "level_2": "Maelström impérial (E). Réduction de dégâts et vol de vie pendant la rafale : clé pour survivre sur les gros camps et en duel.",
+    "level_3": "Projection cinglante (W). Projection en ligne : W → Q → attaques → E est ton combo de gank. Vise-le pour que l'adversaire ne puisse pas s'enfuir en dash.",
+    "level_6": "Banquet infini : quand un champion ou un monstre épique meurt près de toi, il laisse du corail du Néant ; le dévorer te transforme (PV, portée, vitesse d'attaque). Le corail d'un monstre épique du Néant (Larves, Héraut, Baron) te donne aussi des rémoras qui poussent les lanes.",
+    "power_spikes": [
+      "Niveau 3 : combo W → Q → E pour les ganks.",
+      "Niveau 6 : vraie forme après la première élimination.",
+      "Premier item complet : escarmouches très fortes.",
+      "Stacks de vitesse d'attaque accumulés : duel dominant en mid/late game."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear complet rapide et crabe, puis ganks ou escarmouches en fonction des lanes qui ont la priorité. Bel'Veth scale avec le farm : ne laisse pas de camps sur la carte. Les Larves du Néant (vers 8 min) et le Héraut (vers 15 min) sont intéressants pour toi, car leur corail te donne des rémoras. Évite les invasions précoces contre les junglers forts en early ; à partir du premier item, c'est toi qui envahis. Suis la position du jungler adverse pour contre-ganker avec W.",
+    "trading": "En gank, W d'abord pour projeter, puis Q vers l'adversaire et E si ta vie baisse. En escarmouche, attends que les CC adverses soient utilisés avant d'entrer ; E te garde en vie pendant la rafale. Abandonne contre un champion qui te contrôle longtemps (Rammus).",
+    "threats": [
+      "CC lourds et taunts (Rammus).",
+      "Invasions précoces des junglers agressifs.",
+      "Combats où tu n'as pas de corail à dévorer pour prendre ta vraie forme."
+    ],
+    "mistakes": [
+      "Rater W et engager sans knock-up.",
+      "Laisser des camps sur la carte : ton scaling dépend de ton farm.",
+      "Oublier de dévorer le corail laissé par un kill ou un monstre épique."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il t'envahira tôt : protège tes camps et ne duel pas avant ton premier item.",
+      "Viego": "Tu gagnes les combats longs contre lui ; garde W pour son dash de possession.",
+      "Graves": "Il te bat en early grâce à son burst : évite ses invasions et prends l'avance en farm.",
+      "Kayn": "Punis-le avant sa transformation.",
+      "Rammus": "Son taunt annule tes attaques : ne l'attaque jamais quand sa Boule défensive (W) est active, elle te renvoie des dégâts."
+    },
+    "mid_game": "Escarmouches autour des objectifs et prise du Héraut pour les rémoras. Tes stacks de vitesse d'attaque te rendent de plus en plus forte : force les combats où tu peux enchaîner les éliminations.",
+    "late_game": "DPS principal de ton équipe : entre après les CC adverses, dévore le corail du premier kill pour prendre ta vraie forme, et nettoie le combat. Le Baron te donne des rémoras qui poussent les lanes.",
+    "ahead": "Envahis, prends les objectifs et force les combats : Bel'Veth avec de l'avance est très difficile à arrêter.",
+    "behind": "Farm, scale et évite les combats à fort CC : ton late game compense ton retard.",
+    "win_condition": "Pour gagner cette partie, tu veux farmer, accumuler des stacks de vitesse d'attaque et nettoyer les combats désorganisés en vraie forme.",
+    "final_tip": "Après chaque kill ou monstre épique, dévore le corail du Néant : c'est ce qui te transforme en vraie forme."
+  }
+}

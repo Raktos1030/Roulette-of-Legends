@@ -1,0 +1,43 @@
+{
+  "KogMaw|adc": {
+    "identity": "Tireur de scaling à dégâts physiques et magiques. Bave caustique (Q) inflige des dégâts magiques et réduit l'armure et la résistance magique de la cible (et augmente passivement sa vitesse d'attaque). Barrage bio-arcanique (W) augmente sa portée d'attaque et ajoute à ses attaques des dégâts magiques selon les PV max de la cible. Limon du Néant (E) laisse une traînée qui slow, et Artillerie vivante (R) bombarde une zone à très longue portée (plus de dégâts sur les cibles basses en PV, mais un coût en mana qui augmente si tu l'enchaînes). À sa mort, il explose en dégâts bruts après 4 secondes (passif).",
+    "playstyle": "Hypercarry immobile : avec W actif, il détruit tanks et carries depuis une grande portée, mais il n'a aucune mobilité. Il a besoin d'un support qui le protège.",
+    "early_game": "Farm et survis : ta force arrive avec les items. Active Barrage bio-arcanique (W) pour les trades quand l'adversaire vient au contact de la wave. Garde Limon du Néant (E) pour slow un engage.",
+    "level_1": "Barrage bio-arcanique (W) en premier. Trade avec W actif.",
+    "level_2": "Bave caustique (Q). Réduit les résistances de la cible : Q avant le trade pour que tes attaques fassent plus mal.",
+    "level_3": "Limon du Néant (E). Slow en ligne pour fuir ou poursuivre.",
+    "level_6": "Artillerie vivante : poke à très longue portée et achèvement des cibles basses en PV. Ne l'enchaîne pas trop : son coût en mana augmente.",
+    "power_spikes": [
+      "Niveau 6 : poke à longue portée.",
+      "Premier item complet : W très punitif.",
+      "Deux items complets : tu détruis les tanks.",
+      "Late game : une des meilleures menaces de teamfight."
+    ],
+    "lane_plan": "Farm et joue autour de ton support. Poke avec R quand tu as du mana. Préfère un support protecteur (shields, soins, disengage). La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) est idéale pour une hypercarry : un item complet de plus. Participe aux dragons avec W.",
+    "trading": "Trade de base : Q puis attaques avec W actif. All-in : E pour slow, Q, attaques, R pour achever. Recule dès que W est terminé : sans lui, tu es faible.",
+    "jungle_plan": "",
+    "threats": [
+      "Assassins et divers : tu n'as aucune mobilité.",
+      "Supports d'engage quand tu n'as plus E.",
+      "Nilah, Ziggs et Séraphine : matchups difficiles."
+    ],
+    "mistakes": [
+      "Se battre sans W actif.",
+      "Enchaîner l'ultime et vider son mana.",
+      "Se placer devant sa frontline."
+    ],
+    "matchup_notes": {
+      "Jinx": "Elle scale aussi : ne joue pas les combats longs sans ton support.",
+      "Kai'Sa": "Elle dive avec son ultime : garde E pour la slow à l'arrivée.",
+      "Jhin": "Ses CC à distance sont dangereuses : reste derrière ton support.",
+      "Ezreal": "Il poke de loin : farm prudemment, tu le domines dès tes items.",
+      "Varus": "Garde E pour sa Chaîne corruptrice."
+    },
+    "mid_game": "Groupe avec ton équipe, poke avec R avant les objectifs. Reste derrière ta frontline avec W actif.",
+    "late_game": "Frappe la cible la plus proche avec W actif : tes dégâts selon les PV max détruisent aussi les tanks. Ton équipe doit te protéger ; tu dois rester à portée maximale.",
+    "ahead": "Force les teamfights autour des objectifs : tu détruis tout ce qui est devant toi.",
+    "behind": "Farm, reste avec ton équipe et attends tes items : tu scales très bien.",
+    "win_condition": "Pour gagner cette partie, tu veux arriver au late game et frapper sans interruption en teamfight, protégé par ton équipe.",
+    "final_tip": "Ton W dure quelques secondes : active-le juste avant de frapper, pas en marchant vers le combat."
+  }
+}

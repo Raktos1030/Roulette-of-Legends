@@ -1,0 +1,43 @@
+{
+  "Annie|mid": {
+    "identity": "Mage de burst à dégâts magiques, simple et redoutable. Tous les quatre sorts, son prochain sort stun (passif Pyromanie). Désintégration (Q) frappe une cible (mana rendu si elle la tue), Incinération (W) brûle en cône, Bouclier en fusion (E) donne un shield et de la vitesse à un allié ou à elle-même, et Invocation : Tibbers (R) fait tomber l'ours en zone puis le laisse combattre.",
+    "playstyle": "Mage de burst et d'engage à courte portée. Annie gagne en gardant le stun prêt : il transforme chaque combo en kill potentiel.",
+    "early_game": "Last hit avec Q (mana rendu) et empile le passif sur les sbires. Garde le stun prêt (le compteur est visible) pour punir un adversaire qui s'avance. E te protège des poke.",
+    "level_1": "Désintégration (Q) en premier. Last hit pour récupérer le mana.",
+    "level_2": "Incinération (W). Q + W avec le stun prêt : gros trade.",
+    "level_3": "Bouclier en fusion (E). Il ajoute un stack de passif sans combat : utilise-le pour préparer le stun avant d'engager.",
+    "level_6": "Invocation : Tibbers : combo complet avec le stun prêt : R (stun de zone) → W → Q, puis Tibbers continue de frapper. Avec Flash, c'est un des engages les plus dangereux du jeu.",
+    "power_spikes": [
+      "Niveau 3 : burst Q + W avec stun.",
+      "Niveau 6 : Tibbers et combo complet.",
+      "Premier item complet : one-shot possible sur les carries.",
+      "Teamfight : stun de zone avec Tibbers."
+    ],
+    "lane_plan": "Farm avec Q, empile le passif et garde le stun prêt. Pousse ta wave avant de roam. Évite les poke des mages à longue portée en restant derrière tes sbires. La quête de rôle mid (retour accéléré) t'aide à roam après avoir poussé.",
+    "trading": "Trade court : Q avec le stun prêt. Trade complet : Q (stun) → W → attaques. All-in : Flash → R (stun) → W → Q. Engage quand le stun est prêt ; abandonne si l'adversaire te poke hors de portée.",
+    "jungle_plan": "",
+    "threats": [
+      "Mages à longue portée qui te poke (Syndra, Viktor).",
+      "Fizz, qui esquive ton combo.",
+      "Engager sans stun prêt."
+    ],
+    "mistakes": [
+      "Gaspiller le stun sur des sbires.",
+      "Engager sans stack de passif.",
+      "Rester à portée du poke adverse sans raison."
+    ],
+    "matchup_notes": {
+      "Ahri": "Stun-la avant qu'elle ne te charme, surtout si elle s'approche.",
+      "Yasuo": "Ton stun n'est pas bloqué par son Mur de vent (sorts ciblés) : punis-le quand il avance.",
+      "Syndra": "Elle te poke : reste derrière tes sbires et engage quand son stun est en recharge.",
+      "Zed": "Garde le stun pour son engage.",
+      "Katarina": "Stun-la quand elle arrive sur sa dague."
+    },
+    "mid_game": "Picks et engages avec Tibbers autour des objectifs. Roam après avoir poussé.",
+    "late_game": "Flash → Tibbers sur plusieurs ennemis avec le stun prêt. Protège-toi avec E.",
+    "ahead": "Roam, crée des picks et engage les teamfights.",
+    "behind": "Farm, garde le stun et joue pour un engage décisif.",
+    "win_condition": "Pour gagner cette partie, tu veux engager avec le stun prêt et tuer les carries en un combo.",
+    "final_tip": "Regarde toujours ton compteur de passif : n'engage jamais sans le stun prêt."
+  }
+}

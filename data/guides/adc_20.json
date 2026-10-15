@@ -1,0 +1,43 @@
+{
+  "Seraphine|adc": {
+    "identity": "Mage à dégâts magiques et utilitaire. Présence sur scène (passif) : toutes les trois compétences de base, elle lance deux fois la compétence choisie ; lancer des sorts près d'alliés donne à sa prochaine attaque plus de portée et des dégâts magiques. Note aiguë (Q) inflige des dégâts en zone, Son ambiophonique (W) donne un shield et de la vitesse aux alliés proches (et les soigne si elle a déjà un shield), Battement (E) blesse en ligne et restreint les déplacements, et Bis (R) charme les ennemis touchés, avec une portée qui s'allonge à chaque champion traversé.",
+    "playstyle": "Mage de scaling jouée comme un ADC : elle farm à distance, puis décide les teamfights avec son ultime et ses sorts doublés. Elle est en moyenne derrière en or à 15 min contre la plupart des ADC fréquents : elle gagne plus tard.",
+    "early_game": "Farm avec Note aiguë (Q) et poke l'adversaire en même temps. Compte tes sorts : le troisième est doublé par le passif (double Q pour poke, double E pour root, double W pour protéger). Reste près de ton support : tes attaques renforcées ont plus de portée.",
+    "level_1": "Note aiguë (Q) en premier. Farm et poke avec Q.",
+    "level_2": "Battement (E). Slow en ligne, qui devient un CC sur une cible déjà slow ou root : combo avec ton support.",
+    "level_3": "Son ambiophonique (W). Shield et vitesse pour ton duo, soin si tu as déjà un shield. Garde-le pour un trade ou pour fuir.",
+    "level_6": "Bis : charme en ligne, qui va plus loin à chaque champion traversé. Vise-le à travers ton support ou un ennemi pour toucher toute l'équipe adverse.",
+    "power_spikes": [
+      "Niveau 3 : sorts doublés par le passif.",
+      "Niveau 6 : ultime de teamfight.",
+      "Premier item complet : farm et poke à distance.",
+      "Late game : teamfights décidés par l'ultime."
+    ],
+    "lane_plan": "Farm à distance et poke avec Q, joue avec ton support et garde E pour les kills ou la défense. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense un farm régulier. Participe aux dragons : ton ultime y est décisif.",
+    "trading": "Trade de base : Q (doublé si possible), puis attaque renforcée. All-in : E doublé pour root, Q, attaques, R si plusieurs ennemis sont alignés. Abandonne contre les champions qui bloquent tes sorts ou te sautent dessus (Yasuo).",
+    "jungle_plan": "",
+    "threats": [
+      "Yasuo : ton matchup le plus difficile (son Mur de vent bloque ton ultime).",
+      "Mages bot à longue portée (Lux, Xerath).",
+      "Assassins qui te ciblent : tu n'as aucune mobilité."
+    ],
+    "mistakes": [
+      "Gâcher le sort doublé sur une wave au lieu de le garder pour un combat.",
+      "Lancer l'ultime sans l'allonger à travers un champion.",
+      "Se placer devant sa frontline."
+    ],
+    "matchup_notes": {
+      "Jinx": "Elle scale aussi : gagne les teamfights avec ton ultime.",
+      "Caitlyn": "Sa portée te harcèle : farm avec Q derrière les sbires.",
+      "Kai'Sa": "Garde E doublé pour le root quand elle dive.",
+      "Lucian": "Il doit venir au contact : root-le avec E.",
+      "Yasuo": "Son Mur de vent bloque tes sorts : attends qu'il l'ait utilisé avant de lancer ton ultime."
+    },
+    "mid_game": "Groupe avec ton équipe autour des objectifs. Poke avec Q, protège avec W, et prépare ton ultime pour le prochain combat.",
+    "late_game": "Reste derrière ta frontline. Lance Bis à travers un champion pour toucher le groupe, puis E et Q. Un W doublé protège toute ton équipe.",
+    "ahead": "Force les teamfights groupés : ton ultime et tes sorts doublés les gagnent.",
+    "behind": "Farm à distance et joue l'utilitaire : W et R restent décisifs même derrière en or.",
+    "win_condition": "Pour gagner cette partie, tu veux scaler en farmant à distance puis gagner les teamfights avec un ultime qui charme plusieurs ennemis.",
+    "final_tip": "Compte toujours tes sorts : ton troisième sort est doublé, garde-le pour le moment qui compte."
+  }
+}

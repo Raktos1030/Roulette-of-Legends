@@ -1,0 +1,43 @@
+{
+ "Naafiri|mid": {
+  "identity": "Physical damage assassin who fights with her pack (passive), played mid about one game in six (jungle is her main role). Darkin Daggers (Q) pokes and causes bleeding, The Call of the Pack (W) makes her briefly untargetable while empowering and enlarging her pack, Eviscerate (E) dashes and recalls the pack, and Hounds' Pursuit (R) launches her and her pack onto a champion (recastable after a takedown, with a shield). Her current kit swapped W and R compared to her original version.",
+  "playstyle": "Burst and roaming assassin in mid. Naafiri punishes immobile mages (Ryze, Xerath, LeBlanc, Sylas) with the help of her pack, but struggles against melee fighters and assassins (Yone, Irelia, Diana, Talon).",
+  "early_game": "Poke with Q (bleed) and let your pack hit your opponent when they come to last hit. Keep W to dodge a key ability. Roam as soon as your wave is pushed.",
+  "level_1": "Darkin Daggers (Q) first. Poke and farm.",
+  "level_2": "Eviscerate (E). A dash and a pack recall: Q → E → attacks.",
+  "level_3": "The Call of the Pack (W). Untargetability, an empowered pack and speed: W to dodge, then go in.",
+  "level_6": "Hounds' Pursuit: you leap onto a champion with your pack; a takedown allows a recast with a shield. Roam to the side lanes and hunt isolated targets.",
+  "power_spikes": [
+   "Level 3: burst with your pack.",
+   "Level 6: roams and assassinations with Hounds' Pursuit.",
+   "First completed item: one-shots on mages.",
+   "Mid game: picks and roams."
+  ],
+  "lane_plan": "Poke with Q and push the wave, then roam. The mid role quest (faster recall) makes your roams more profitable. Avoid long trades against melee fighters.",
+  "trading": "Short trade: Q + pack. All-in: W → E → Q → R. Engage when the enemy mage has used their CC; give up on it against fighters who beat you up close.",
+  "jungle_plan": "",
+  "threats": [
+   "Melee fighters and assassins (Yone, Irelia, Diana, Talon).",
+   "Vladimir, who heals and dodges.",
+   "Area damage that kills your pack."
+  ],
+  "mistakes": [
+   "Engaging on a target surrounded by minions that soak your pack.",
+   "Wasting W when it could dodge a key ability.",
+   "Staying in lane instead of roaming."
+  ],
+  "matchup_notes": {
+   "Ahri": "Dodge her Charm with W.",
+   "Zed": "He bursts you first: keep W for his ultimate.",
+   "LeBlanc": "Her chain doesn't hold if you dash with E: burst her.",
+   "Yone": "He beats you up close: farm and roam.",
+   "Talon": "He out-bursts you: avoid trades."
+  },
+  "mid_game": "Roams, picks and objectives. Hunt isolated mages.",
+  "late_game": "Assassinate the enemy carry with Hounds' Pursuit and chain onto the next if you get the takedown.",
+  "ahead": "Roam, hunt the carries and take objectives.",
+  "behind": "Farm and look for picks on isolated targets.",
+  "win_condition": "To win this game, you want to punish mages in lane and roam to assassinate the carries.",
+  "final_tip": "Save The Call of the Pack to dodge the enemy's key ability: you're untargetable for a moment."
+ }
+}

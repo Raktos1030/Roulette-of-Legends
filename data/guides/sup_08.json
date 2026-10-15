@@ -1,0 +1,43 @@
+{
+  "Elise|sup": {
+    "identity": "Mage de burst à deux formes. Forme arachnéenne (R) est disponible dès le niveau 1 et alterne entre deux jeux de sorts. En forme humaine : Neurotoxine (Q) inflige des dégâts selon les PV actuels, Araignée explosive (W) libère une araignée qui explose près d'une cible, et Cocon (E) stun et révèle le premier ennemi touché. En forme araignée : Morsure venimeuse (Q) fonce sur un ennemi (dégâts selon ses PV manquants), Frénésie symbiotique (W) augmente sa vitesse d'attaque, et Suspension (E) la suspend en l'air, intouchable, avant de retomber sur un ennemi. Reine araignée (passif) : ses sorts humains créent des araignées, et ses attaques en forme araignée la soignent.",
+    "playstyle": "Support de pick : un Cocon touché, c'est un burst complet et souvent un kill. Elle domine les supports fragiles (Lux, Pyke) et souffre contre les tanks d'engage (Leona).",
+    "early_game": "Menace le Cocon (E) : l'adversaire touché est stun, puis enchaîne Q humain, W humain, forme araignée, Q araignée. Poke avec Q humain quand l'adversaire vient last hit. Garde Suspension (E araignée) pour esquiver un sort clé ou un engage.",
+    "level_1": "Cocon (E) en premier. La Forme arachnéenne (R) est déjà disponible.",
+    "level_2": "Neurotoxine / Morsure venimeuse (Q). Cocon → Q humain → forme araignée → Q araignée : gros burst.",
+    "level_3": "Araignée explosive / Frénésie symbiotique (W). Combo complet : E → Q → W humains → R → Q araignée → attaques.",
+    "level_6": "Les rangs de l'ultime renforcent tes deux formes. C'est le moment de jouer les dives à trois avec ton ADC et ton jungler.",
+    "power_spikes": [
+      "Niveau 3 : combo complet après un Cocon.",
+      "Niveau 6 : deux formes renforcées.",
+      "Premier item complet : burst létal sur les supports fragiles.",
+      "Mid game : picks dans le brouillard de guerre."
+    ],
+    "lane_plan": "Menace le Cocon depuis les bushs, poke avec Q humain et joue les kills avec ton ADC. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées) : retire la vision adverse pour tes picks.",
+    "trading": "Trade court : Q humain. All-in : E → Q → W humains → R → Q araignée → attaques. Défense : Suspension pour esquiver. Évite les trades contre les tanks d'engage (Leona) qui te gardent au contact.",
+    "jungle_plan": "",
+    "threats": [
+      "Leona : matchup difficile.",
+      "Janna, Rell et Alistar : matchups difficiles.",
+      "Engages adverses quand ton Cocon est en recharge."
+    ],
+    "mistakes": [
+      "Lancer le Cocon à travers les sbires (il s'arrête sur le premier ennemi).",
+      "Rester en forme araignée face à un poke à distance.",
+      "Gâcher Suspension au lieu de la garder pour esquiver."
+    ],
+    "matchup_notes": {
+      "Thresh": "Esquive son grappin avec Suspension.",
+      "Lulu": "Sa métamorphose coupe ton combo : Cocon quand elle a utilisé W.",
+      "Pyke": "Il est fragile : un Cocon le tue.",
+      "Lux": "Elle ne peut pas fuir ton combo : Cocon quand elle a lancé son Q.",
+      "Leona": "Elle t'engage et résiste à ton burst : garde Suspension pour son engage."
+    },
+    "mid_game": "Cherche les picks avec ton jungler dans le brouillard de guerre. Pose des pinks autour des objectifs.",
+    "late_game": "Reste en forme humaine derrière ta frontline, cherche le Cocon sur un carry isolé, puis passe en araignée pour achever. Garde Suspension pour esquiver un engage.",
+    "ahead": "Crée des picks et aide ton jungler : un Cocon sur un carry gagne l'objectif.",
+    "behind": "Poke en forme humaine et garde le Cocon pour protéger ton ADC.",
+    "win_condition": "Pour gagner cette partie, tu veux attraper les ennemis isolés avec ton Cocon et les tuer avec ton burst.",
+    "final_tip": "Enchaîne toujours les sorts humains avant de passer en araignée : tu utilises ainsi les deux formes à chaque combo."
+  }
+}

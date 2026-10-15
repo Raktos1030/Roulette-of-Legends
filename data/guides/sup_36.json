@@ -1,0 +1,43 @@
+{
+  "Thresh|sup": {
+    "identity": "Support de pick et de protection. Damnation (passif) : il ramasse les âmes des ennemis morts près de lui, qui augmentent définitivement son armure et sa puissance. Peine capitale (Q) enchaîne un ennemi et l'attire ; en relançant, Thresh dash sur lui. Lien des ténèbres (W) lance une lanterne qui protège les alliés proches : un allié qui clique dessus est tiré jusqu'à Thresh. Fauchage (E) charge ses attaques avec le temps et, activé, balaye les ennemis dans la direction du coup, et La cage (R) crée une prison dont les murs slow et blessent ceux qui les traversent.",
+    "playstyle": "Le support le plus complet : il attrape avec Q, sauve avec la lanterne et contrôle avec E et R. Aucun matchup nettement défavorable, et il écrase les supports fragiles ou de dive (Yuumi, Camille, Pantheon, Mel). Il demande beaucoup de précision.",
+    "early_game": "Menace le grappin (Q) depuis les bushs, et ramasse les âmes dès que des ennemis meurent près de toi. Après un grappin, lance la lanterne (W) à ton ADC pour qu'il arrive avec toi. Fauchage (E) repousse un engage adverse ou ramène la cible vers ton ADC.",
+    "level_1": "Peine capitale (Q) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Fauchage (E). Combo : Q → E vers l'arrière (la cible est ramenée vers ton ADC).",
+    "level_3": "Lien des ténèbres (W). Lanterne pour ramener ton ADC ou un allié en danger, et shield.",
+    "level_6": "La cage : prison qui slow et blesse les ennemis qui en sortent. Combo : Q → relance → R → E.",
+    "power_spikes": [
+      "Niveau 2 : Q → E.",
+      "Niveau 3 : lanterne pour les engages et les sauvetages.",
+      "Niveau 6 : La cage.",
+      "Âmes accumulées : armure et puissance qui augmentent."
+    ],
+    "lane_plan": "Menace le grappin, ramasse les âmes et joue les kills avec ton ADC et ton jungler. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "All-in : Q → relance → E vers ton ADC → W pour l'amener → R. Défense : E pour repousser un engage, W pour sauver un allié. Contre Braum, Taric ou Zilean (tes moins bons matchups), ne lance pas le grappin quand ils peuvent annuler le pick.",
+    "jungle_plan": "",
+    "threats": [
+      "Braum, Taric et Zilean : tes moins bons matchups, proches de l'équilibre.",
+      "Grappin raté : tu es alors sans outil d'engage.",
+      "Supports qui annulent les picks (shield de Braum, invulnérabilité de Taric)."
+    ],
+    "mistakes": [
+      "Relancer Q pour te ruer au milieu de l'équipe adverse sans suite.",
+      "Oublier de ramasser les âmes.",
+      "Lancer la lanterne trop loin de l'allié à sauver."
+    ],
+    "matchup_notes": {
+      "Lulu": "Grappin quand elle a utilisé sa métamorphose.",
+      "Nautilus": "Repousse son engage avec E.",
+      "Nami": "Grappin quand sa bulle est utilisée.",
+      "Leona": "Repousse son E avec ton E, et lanterne pour sauver ton ADC.",
+      "Braum": "Son shield bloque ton grappin : vise sous un autre angle ou attends qu'il l'ait utilisé."
+    },
+    "mid_game": "Cherche les picks avec ton jungler, ramasse les âmes et pose des pinks autour des objectifs.",
+    "late_game": "Grappin sur un carry isolé, ou garde tes sorts pour protéger : E contre les divers, lanterne pour sauver, cage au milieu du groupe.",
+    "ahead": "Crée des picks partout et contrôle la vision.",
+    "behind": "Protège ton ADC : lanterne et Fauchage annulent les dives.",
+    "win_condition": "Pour gagner cette partie, tu veux attraper les cibles clés avec ton grappin et protéger ton équipe avec ta lanterne.",
+    "final_tip": "Après un grappin, lance la lanterne à ton ADC avant de te ruer : vous arrivez à deux sur la cible."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "Anivia|mid": {
+    "identity": "Mage de contrôle à dégâts magiques, jouée au mid environ deux fois sur trois. Lance de glace (Q) traverse les ennemis puis explose pour stun, Cristallisation (W) crée un mur de glace, Gelure (E) fait double dégâts aux cibles gelées, et Tempête glaciale (R) crée une zone qui slow et gèle. À sa mort, elle revient sous forme d'œuf (passif Renaissance).",
+    "playstyle": "Mage de contrôle de zone et de scaling. Au mid, Anivia tient la wave avec l'ultime, punit les assassins avec son mur et son stun, et devient très forte en teamfight. Elle est plus faible contre les mages à longue portée qui la poke (Xerath, Syndra).",
+    "early_game": "Farm avec E et Q en sécurité. Garde Q pour un engage adverse. Contre les assassins, garde W (mur) pour les bloquer. Tu es fragile en early : ne gaspille pas tes sorts.",
+    "level_1": "Lance de glace (Q) en premier. Farm et garde Q pour te défendre.",
+    "level_2": "Gelure (E). Double dégâts sur cible gelée : Q (qui gèle) puis E.",
+    "level_3": "Second point en E ; Cristallisation (W) arrive au niveau 4. E est maximisé en priorité.",
+    "level_6": "Tempête glaciale : zone qui slow et gèle, donc tous tes E font double dégâts. Tu nettoies les waves à distance et tu CC la lane.",
+    "power_spikes": [
+      "Niveau 6 : tempête pour farm et contrôler.",
+      "Premier item complet : mana et dégâts suffisants.",
+      "Deux items : mage de zone dominante.",
+      "Passif disponible : l'œuf décourage les dives."
+    ],
+    "lane_plan": "Farm avec E et Q avant le 6, puis nettoie les waves avec R. Garde la wave au centre ou vers toi contre les assassins. Pousse puis rejoins le jungler pour les objectifs. Garde W pour bloquer les engages ou les fuites.",
+    "trading": "Trade de base : Q (stun) → E doublé. Trade long : R sur l'adversaire pour rendre tous tes E doublés. Engage si Q touche ; abandonne si tu le rates contre un assassin.",
+    "jungle_plan": "",
+    "threats": [
+      "Mages à longue portée (Xerath, Syndra) qui te poke.",
+      "Twisted Fate, qui roam pendant que tu nettoies la wave.",
+      "Assassins qui franchissent ton mur."
+    ],
+    "mistakes": [
+      "Gaspiller Q et ne plus avoir de défense contre un engage.",
+      "Poser le mur au mauvais endroit et bloquer ta fuite.",
+      "Laisser R actif sans cible et vider ton mana."
+    ],
+    "matchup_notes": {
+      "Viktor": "Esquive son laser et garde Q pour son champ gravitationnel.",
+      "Ahri": "Elle esquive ton Q avec ses dashes : garde Q pour la fin de son ultime.",
+      "Syndra": "Elle te poke à distance : farm avec R et joue autour de ton jungler.",
+      "Yasuo": "Son Mur de vent bloque ton Q, mais ton mur de glace et ta tempête le contrôlent.",
+      "Xerath": "Il te poke de très loin : reste derrière tes sbires."
+    },
+    "mid_game": "Contrôle de zone autour des objectifs : R sur les entrées de rivière, mur pour couper les engages.",
+    "late_game": "Mage de zone : mur pour couper l'équipe adverse, tempête sur la zone de combat, Q pour le diver.",
+    "ahead": "Prends les tours avec ton contrôle de wave et roam vers les objectifs.",
+    "behind": "Farm à distance avec R et joue avec ton équipe : ton contrôle de zone reste utile.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane, scale et contrôler les zones de teamfight avec le mur et la tempête.",
+    "final_tip": "Garde toujours Lance de glace pour l'engage adverse : un Q réussi puis un E doublé retourne presque tous les all-in."
+  }
+}

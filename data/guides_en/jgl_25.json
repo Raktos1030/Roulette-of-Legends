@@ -1,0 +1,43 @@
+{
+ "Naafiri|jgl": {
+  "identity": "Physical damage assassin who fights with her pack of darkin hounds (passive). Darkin Daggers (Q) throws daggers that cause bleeding (recastable), The Call of the Pack (W) makes her briefly untargetable, empowers the pack, summons extra hounds and gives her speed and power, Eviscerate (E) dashes and recalls the pack, and Hounds' Pursuit (R) launches her and her pack onto a champion; a takedown reveals nearby enemies and allows a recast, which gives a shield. Her current kit swapped W and R compared to her original version.",
+  "playstyle": "Assassination and skirmish jungler, strong in the early and mid game. Naafiri kills isolated targets very fast with her pack and chains takedowns.",
+  "early_game": "Clear fast with Q and your pack. Gank as soon as your target is isolated: Hounds' Pursuit or E to go in, Q for the bleed, then the pack does the rest. Invade when your laners have priority: you win a lot of duels.",
+  "level_1": "Darkin Daggers (Q) first.",
+  "level_2": "Eviscerate (E). A dash and pack healing: your clear gets safer.",
+  "level_3": "The Call of the Pack (W). You become briefly untargetable, your pack grows and you gain speed and damage: perfect to dodge an ability and go in. First real gank: W → E → Q.",
+  "level_6": "Hounds' Pursuit: you leap onto a champion with your pack. A takedown reveals nearby enemies and gives you a recast with a shield. Chain targets in skirmishes.",
+  "power_spikes": [
+   "Level 3: strong ganks and duels.",
+   "Level 6: Hounds' Pursuit, chaining takedowns.",
+   "First completed item: burst that kills carries.",
+   "Mid game: picks and skirmishes."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear, then ganks and invades. Naafiri wants to build her lead in the early and mid game: control Scuttles, invade with your laners and take Void Grubs (around 8 minutes). Hunt isolated targets: your pack kills them very fast. Avoid fights against junglers who lock you down or beat you in long fights.",
+  "trading": "Ganking: W (untargetable, empowered pack) → E → Q → pack attacks → R to finish. Skirmishing: wait for an isolated or low target, then chain with R's recast. Give up on it against tanks who soak damage and lock you down.",
+  "threats": [
+   "Nocturne and Hecarim: hard matchups.",
+   "CC and tanks who soak your burst.",
+   "Grouped targets where your pack gets spread out."
+  ],
+  "mistakes": [
+   "Engaging on a target surrounded by their allies.",
+   "Wasting W when it could dodge a key ability.",
+   "Counting on R's recast without a takedown (no recast available)."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Duel him when he's alone: your pack beats him.",
+   "Graves": "Stick to him with E and your pack.",
+   "Kha'Zix": "Your pack stops him from getting his isolation bonus.",
+   "Nocturne": "His ultimate surprises you and his shield blocks your engage: play with vision.",
+   "Hecarim": "He catches you with his speed: avoid long fights."
+  },
+  "mid_game": "Picks and skirmishes around objectives. Hunt isolated carries.",
+  "late_game": "Assassinate the enemy carry with Hounds' Pursuit, then chain onto the next target if you get the takedown.",
+  "ahead": "Choke out the enemy jungler and hunt the carries.",
+  "behind": "Look for picks on isolated targets and play with your team.",
+  "win_condition": "To win this game, you want to build an early lead through duels and ganks, then assassinate the carries.",
+  "final_tip": "Save The Call of the Pack to dodge your opponent's key ability: you're untargetable for a moment."
+ }
+}

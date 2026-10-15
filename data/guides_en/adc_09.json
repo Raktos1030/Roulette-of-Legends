@@ -1,0 +1,43 @@
+{
+ "Jinx|adc": {
+  "identity": "Scaling physical damage marksman. Get Excited! (passive) gives her a huge burst of movement and attack speed when she takes part in taking down a champion, an epic monster or a structure. Switcheroo! (Q) swaps between her minigun (ramping attack speed) and her rocket launcher (area damage and more range, but costs mana). Zap! (W) fires a beam that damages, slows and reveals, Flame Chompers! (E) throws grenades that root champions who step on them, and Super Mega Death Rocket! (R) flies across the map, dealing more damage the farther it travels and the more health the target is missing.",
+  "playstyle": "Teamfight hypercarry: low mobility, but every takedown resets her thanks to her passive. Only one clearly bad matchup (Hwei). She's often behind in gold at 15 minutes: she wins later.",
+  "early_game": "Farm cleanly with the minigun and poke with rockets when your opponent walks up to last hit (watch your mana). Zap! to poke from afar. Save your Flame Chompers to defend against an engage: throw them on yourself or in your opponent's path.",
+  "level_1": "Switcheroo! (Q) first. Farm with the minigun, poke with rockets.",
+  "level_2": "Zap! (W). Long-range poke and a slow for kills with your support.",
+  "level_3": "Flame Chompers! (E). Your defense against divers, and a combo with your support's CC (throw them under the rooted target).",
+  "level_6": "Super Mega Death Rocket!: finishes a low-health enemy anywhere on the map. In teamfights, it also hurts enemies around the target.",
+  "power_spikes": [
+   "Level 6: global execute ultimate.",
+   "First completed item: good tower pressure.",
+   "Two completed items: rockets clean up fights.",
+   "Every takedown: your passive puts you back in the fight."
+  ],
+  "lane_plan": "Farm, poke with W and rockets, and survive: your strength comes with items. Play off your support's engages. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) is perfect for a hypercarry: one more completed item late game. Join dragons: your passive also triggers on epic monsters.",
+  "trading": "Short trade: W then rockets. All-in: E under the rooted target, minigun and nonstop attacks. Back off against engages when E is on cooldown: you have no dash.",
+  "jungle_plan": "",
+  "threats": [
+   "Hwei bot: your hardest matchup.",
+   "Assassins and divers: you have no dash.",
+   "Crowd control that stops you from using your passive."
+  ],
+  "mistakes": [
+   "Staying in rockets while farming and draining your mana.",
+   "Wasting your Flame Chompers and having no defense left.",
+   "Standing in front of your frontline in teamfights."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "She dives with her ultimate: throw your Flame Chompers at your feet when she arrives.",
+   "Caitlyn": "Farm carefully, you outscale her afterwards.",
+   "Tristana": "Save E for her Rocket Jump.",
+   "Samira": "Her combos happen up close: your Flame Chompers stop her.",
+   "Hwei": "He pokes you from afar: stay behind your minions and play with your support."
+  },
+  "mid_game": "Group with your team around dragons and towers. The first kill or the first tower triggers your passive: keep going.",
+  "late_game": "Stay behind your frontline and fire rockets into the group. From the first kill on, your passive lets you clean up the fight. Keep E for divers.",
+  "ahead": "Take towers quickly: every structure destroyed triggers your passive again.",
+  "behind": "Farm and wait for your items: you're still the biggest late-game threat.",
+  "win_condition": "To win this game, you want to survive until your items, then clean up teamfights thanks to your passive.",
+  "final_tip": "In teamfights, wait for the fight to start: the first kill triggers your passive and makes you very hard to catch."
+ }
+}

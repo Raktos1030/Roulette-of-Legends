@@ -1,0 +1,43 @@
+{
+  "Azir|mid": {
+    "identity": "Mage à dégâts magiques qui combat par l'intermédiaire de soldats de sable. Dresse-toi ! (W) invoque un soldat qui attaque à sa place quand Azir frappe à portée, Sables conquérants (Q) envoie les soldats à un endroit en slowant, Sables mouvants (E) fait dasher Azir vers un soldat avec un shield (et s'arrête sur le premier champion touché), et Partition impériale (R) fait surgir un mur de soldats qui repousse les ennemis. Son passif lui permet de reconstruire une tour détruite en Disque solaire.",
+    "playstyle": "Mage de DPS soutenu et de contrôle de zone, très mécanique. Azir scale bien et peut retourner un combat avec l'ultime.",
+    "early_game": "Farm avec les soldats (W) et poke l'adversaire quand il vient last hit. Garde un soldat en réserve pour fuir avec E. Évite les all-in contre les assassins : tu es fragile.",
+    "level_1": "Dresse-toi ! (W) en premier. Farm et poke avec le soldat.",
+    "level_2": "Sables conquérants (Q). Déplace les soldats et slow : tu peux poke plus loin.",
+    "level_3": "Sables mouvants (E). Dash vers un soldat avec shield : ta fuite. Combo avancé (plus tard) : E → Q → R pour repousser un ennemi vers ton équipe.",
+    "level_6": "Partition impériale : mur de soldats qui repousse. Combo « shuffle » : W derrière la cible → E vers le soldat → Q pour aller plus loin → R pour renvoyer la cible vers ton équipe. Il demande beaucoup d'entraînement.",
+    "power_spikes": [
+      "Niveau 6 : ultime pour repousser et protéger.",
+      "Premier item complet : DPS des soldats.",
+      "Deux items : contrôle de zone et DPS dominants.",
+      "Late game : un des mages les plus forts en teamfight."
+    ],
+    "lane_plan": "Farm avec les soldats, poke en sécurité et garde un soldat pour fuir. Garde la wave au centre ou vers toi contre les assassins. Rejoins les objectifs quand ta wave est poussée. Ton passif peut reconstruire une tour détruite pour défendre.",
+    "trading": "Trade de base : attaques de soldats sur l'adversaire. Trade long : Q pour slow → attaques de soldats. Engage avec le shuffle quand tu le maîtrises ; abandonne contre les assassins qui te burst (LeBlanc).",
+    "jungle_plan": "",
+    "threats": [
+      "LeBlanc : ton matchup le plus difficile.",
+      "Mages à longue portée (Xerath) et Twisted Fate.",
+      "Assassins qui te divent quand tu n'as plus de soldat pour fuir."
+    ],
+    "mistakes": [
+      "Utiliser tous tes soldats et ne plus pouvoir fuir.",
+      "Tenter le shuffle sans l'avoir entraîné.",
+      "Rester à portée du burst adverse."
+    ],
+    "matchup_notes": {
+      "Yasuo": "Tes soldats ne sont pas bloqués par Mur de vent : tiens-le à distance.",
+      "Viktor": "Il te poke : farm prudemment.",
+      "Ahri": "Garde un soldat pour esquiver son Charme.",
+      "LeBlanc": "Elle te burst avant que tu ne réagisses : farm sous ta tour.",
+      "Twisted Fate": "Il roam : suis-le sur la carte."
+    },
+    "mid_game": "Contrôle de zone autour des objectifs avec les soldats et l'ultime.",
+    "late_game": "DPS de zone derrière ta frontline, ultime pour repousser les divers ou renvoyer un carry vers ton équipe.",
+    "ahead": "Prends les tours et domine les teamfights.",
+    "behind": "Farm et scale : Azir reste fort en late game.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane, scale et dominer les teamfights avec les soldats et l'ultime.",
+    "final_tip": "Garde toujours un soldat en réserve : c'est ta seule fuite."
+  }
+}

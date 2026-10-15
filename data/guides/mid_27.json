@@ -1,0 +1,43 @@
+{
+  "Neeko|mid": {
+    "identity": "Mage à dégâts magiques qui trompe l'adversaire. Son passif Mirage inné lui permet de prendre l'apparence d'un allié ou d'autres unités de la carte ; le déguisement se brise si elle subit un CC qui root, lance un sort de dégâts ou encaisse trop de dégâts. Explosion florale (Q) explose en fleurissant de nouveau si elle touche un champion, Métaclonage (W) renforce ses attaques et crée un clone en la rendant invisible, Spirale épineuse (E) root, et Floraison renversante (R) la fait bondir avant une explosion qui stun en zone.",
+    "playstyle": "Au mid, Neeko est un mage de burst et d'engage : poke avec Q, CC avec E et gros engage de zone avec R, souvent déguisée pour surprendre.",
+    "early_game": "Poke avec Q (il fleurit de nouveau s'il touche un champion) et E quand l'adversaire vient last hit. Utilise le déguisement pour tromper les ganks ou pour approcher. Garde W pour fuir avec le clone.",
+    "level_1": "Explosion florale (Q) en premier. Poke et farm.",
+    "level_2": "Spirale épineuse (E). CC (plus longue si elle traverse un ennemi avant la cible) : E → Q.",
+    "level_3": "Métaclonage (W). Attaques renforcées et clone : W te permet de fuir en devenant invisible pendant que le clone court.",
+    "level_6": "Floraison renversante : bond puis explosion qui stun en zone. Combo : approche déguisée → R → E → Q. En teamfight, vise plusieurs ennemis groupés.",
+    "power_spikes": [
+      "Niveau 3 : combo E → Q.",
+      "Niveau 6 : engage de zone avec R.",
+      "Premier item complet : burst de zone.",
+      "Mid game : engages surprises déguisée."
+    ],
+    "lane_plan": "Poke et farm, pousse la wave puis roam déguisée. La quête de rôle mid (retour accéléré) t'aide à enchaîner les roams. Évite les assassins qui te divent (Ekko).",
+    "trading": "Trade court : E → Q. All-in : R → E → Q → attaques. Défense : W pour le clone et l'invisibilité. Abandonne contre les champions qui te burst avant ton engage.",
+    "jungle_plan": "",
+    "threats": [
+      "Ekko et les assassins qui te divent.",
+      "Veigar, qui t'enferme avec sa cage.",
+      "Échantillon faible : les tendances de matchup sont moins sûres."
+    ],
+    "mistakes": [
+      "Briser ton déguisement en lançant un sort de dégâts trop tôt.",
+      "Lancer R sans pouvoir toucher plusieurs cibles en teamfight.",
+      "Utiliser W pour attaquer et ne plus avoir de fuite."
+    ],
+    "matchup_notes": {
+      "Ahri": "Garde E pour la fin de son ultime.",
+      "Viktor": "Poke-le et engage quand son champ gravitationnel est en recharge.",
+      "Syndra": "Engage quand son stun est en recharge.",
+      "Lissandra": "Son contrôle est moins efficace contre ton déguisement.",
+      "Ekko": "Il te dive : garde W pour fuir."
+    },
+    "mid_game": "Engages surprises déguisée, picks et objectifs.",
+    "late_game": "Approche déguisée et R sur plusieurs ennemis, puis E et Q. Reste derrière ta frontline si ton ultime est en recharge.",
+    "ahead": "Roam, engage et prends les objectifs.",
+    "behind": "Farm et joue pour un engage décisif avec R.",
+    "win_condition": "Pour gagner cette partie, tu veux surprendre l'équipe adverse avec des engages déguisés et un stun de zone.",
+    "final_tip": "Approche déguisée : l'adversaire ne réagit pas avant que ton ultime ne soit lancé."
+  }
+}

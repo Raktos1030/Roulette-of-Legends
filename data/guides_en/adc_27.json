@@ -1,0 +1,43 @@
+{
+ "Vayne|adc": {
+  "identity": "Physical and true damage marksman. Night Hunter (passive) gives her movement speed toward nearby enemy champions. Tumble (Q) is a short roll that empowers her next attack, Silver Bolts (W) deals true damage based on max health every third consecutive hit on the same target, Condemn (E) knocks the target back and stuns it if it hits a wall, and Final Hour (R) increases her attack damage, makes her invisible while tumbling and lowers Tumble's cooldown.",
+  "playstyle": "Dueling hypercarry: weak in lane, she shreds tanks and carries late game thanks to her true damage. Her short range makes her vulnerable in lane: she's behind in gold at 15 minutes on average against every common ADC. She has to survive and scale.",
+  "early_game": "Farm safely: your range is short and many ADCs harass you. Save Condemn (E) to knock back an engage or stun your opponent against a wall. Only trade when your opponent comes close, using Tumble to reposition for your third hit.",
+  "level_1": "Tumble (Q) first. Farm and take short trades.",
+  "level_2": "Silver Bolts (W). Your third hits deal true damage: count your attacks during a trade.",
+  "level_3": "Condemn (E). Your defense: knock back a diver, or stun your opponent against a wall for a kill with your support.",
+  "level_6": "Final Hour: more damage, invisible and more frequent tumbles. Cast it at the start of a fight to chain tumbles and Silver Bolts.",
+  "power_spikes": [
+   "Level 6: Final Hour for duels.",
+   "First completed item: your farming gets safer.",
+   "Two completed items: tanks melt to your true damage.",
+   "Late game: one of the best dueling ADCs."
+  ],
+  "lane_plan": "Farm and survive: let the enemy poke pass and only fight off your opponent's mistakes. Prefer a support who protects you. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) is perfect for a hypercarry: one more completed item.",
+  "trading": "Short trade: attack, Tumble, attack, attack (third hit is true damage). All-in: E against a wall, then Q and attacks, R if your opponent still has a way to escape. Back off against long-range ADCs who poke you (Jinx, Tristana, Corki).",
+  "jungle_plan": "",
+  "threats": [
+   "Xayah: your hardest matchup.",
+   "Jinx, Yunara, Twitch, Corki and Tristana: hard matchups.",
+   "Crowd control: Tumble alone isn't enough to escape."
+  ],
+  "mistakes": [
+   "Forcing trades in lane with your short range.",
+   "Using E to attack and having nothing to knock back a diver.",
+   "Tumbling forward for no reason and ending up in the middle of the enemy team."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "Knock her back with E when she dives with her ultimate.",
+   "Jinx": "Her range harasses you: farm carefully and dodge her Flame Chompers.",
+   "Jhin": "Engage while he reloads.",
+   "Ezreal": "You beat him as soon as he doesn't have E.",
+   "Xayah": "Her feather recall roots you: don't tumble into the middle of her feathers."
+  },
+  "mid_game": "Farm side waves safely and join fights around objectives. Avoid fights before your two items.",
+  "late_game": "Stay behind your frontline and kill whatever is in range: your true damage shreds tanks too. Keep E to knock a diver back, R to chain invisible tumbles.",
+  "ahead": "Take objectives and force duels: you beat almost everyone.",
+  "behind": "Farm and wait for your scaling: Vayne stays a late-game threat.",
+  "win_condition": "To win this game, you want to survive lane, scale and win teamfights by destroying everything in front of you.",
+  "final_tip": "Save Condemn to defend yourself: knocking the diver away at the right time is worth more than a wall stun."
+ }
+}

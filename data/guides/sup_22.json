@@ -1,0 +1,43 @@
+{
+  "Pyke|sup": {
+    "identity": "Assassin de support à dégâts physiques. Don des noyés (passif) : quand les ennemis ne le voient pas, il régénère les dégâts récemment subis des champions ; il ne peut pas gagner de PV max (ses PV bonus deviennent des dégâts d'attaque). Harponnage (Q) poignarde devant lui ou, chargé, attire un ennemi vers lui, Plongée spectrale (W) le camoufle avec une grande vitesse, Ressac fantôme (E) le fait foncer en laissant un fantôme qui revient vers lui en qui stun les champions traversés, et Exécution abyssale (R) exécute les ennemis bas en PV dans une zone en croix, peut être relancée après un kill et donne de l'or en plus à un allié qui assiste.",
+    "playstyle": "Support assassin : il crée des kills avec son harpon et les termine avec son ultime, qui rapporte aussi de l'or à son équipe. Il écrase les supports fragiles (Lux, Xerath, Brand, Yuumi) et souffre contre les tanks et les supports qui le contre-engagent (Maokai, Rakan, Rell, Alistar, Poppy).",
+    "early_game": "Menace le harpon (Q chargé) depuis les bushs ou derrière la wave. Harpon → E à travers l'adversaire (stun au retour du fantôme) : ton ADC suit. Recule hors de vue pour régénérer tes PV grâce au passif.",
+    "level_1": "Harponnage (Q) en premier. Menace le harpon depuis les bushs.",
+    "level_2": "Ressac fantôme (E). Combo : Q (attraction) → E à travers la cible (stun).",
+    "level_3": "Plongée spectrale (W). Camouflage pour approcher sans être vu, roam ou fuir.",
+    "level_6": "Exécution abyssale : exécute les ennemis bas en PV dans la zone, puis relance après un kill. Un allié qui t'assiste reçoit aussi de l'or supplémentaire.",
+    "power_spikes": [
+      "Niveau 2 : Q → E.",
+      "Niveau 6 : exécutions en chaîne.",
+      "Premier item complet : burst très élevé.",
+      "Mid game : roams et picks camouflé."
+    ],
+    "lane_plan": "Menace le harpon et joue les kills avec ton ADC et ton jungler. Au niveau 6, roam camouflé avec W. Attention : reste en bot lane jusqu'au niveau 5, car depuis le patch 26.16 l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "All-in : Q → E → attaques → R quand l'adversaire passe sous le seuil d'exécution. Défense : E pour stun le diver, W pour fuir. Évite les trades contre les tanks qui gagnent au contact (Maokai, Alistar, Rell) : tu n'as pas de PV bonus.",
+    "jungle_plan": "",
+    "threats": [
+      "Maokai, Rakan, Rell, Renata, Alistar et Poppy : matchups difficiles.",
+      "Thresh, Nautilus et Leona, adversaires fréquents sous ta moyenne sur les deux sources.",
+      "CC de foule : tu es fragile et sans PV bonus."
+    ],
+    "mistakes": [
+      "Lancer le harpon à travers les sbires.",
+      "Lancer l'ultime sur une cible au-dessus du seuil d'exécution.",
+      "Rester visible après un trade au lieu de te cacher pour régénérer."
+    ],
+    "matchup_notes": {
+      "Thresh": "Sa lanterne sauve la cible de ton harpon : engage quand elle est utilisée.",
+      "Lulu": "Sa métamorphose coupe ton combo : harpon quand elle a lancé W.",
+      "Nautilus": "Il te résiste et t'engage : joue les picks sur son ADC.",
+      "Lux": "Elle est fragile : un harpon la tue.",
+      "Maokai": "Ses arbrisseaux révèlent ta présence : joue les roams plutôt que la lane."
+    },
+    "mid_game": "Roam camouflé avec W, cherche les picks et les exécutions. Pose des pinks, et retire celles de l'adversaire.",
+    "late_game": "Attends que les ennemis soient bas en PV, puis ultime en chaîne. Harpon sur un carry isolé, E pour stun les divers sur ton équipe.",
+    "ahead": "Roam et exécute : ton ultime rapporte de l'or à toute l'équipe.",
+    "behind": "Joue les picks à distance avec le harpon et garde E pour protéger ton ADC.",
+    "win_condition": "Pour gagner cette partie, tu veux créer des picks avec ton harpon et finir les combats avec tes exécutions.",
+    "final_tip": "Regarde le marqueur d'exécution au-dessus des PV ennemis : ton ultime ne tue que sous ce seuil."
+  }
+}

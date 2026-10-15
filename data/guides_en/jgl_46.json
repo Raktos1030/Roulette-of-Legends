@@ -1,0 +1,43 @@
+{
+ "Warwick|jgl": {
+  "identity": "Mixed damage fighter, played in the jungle about two games out of three. Blood Hunt (W) detects wounded champions over a wide area and speeds Warwick up toward them, Jaws of the Beast (Q) bites and heals (holding the key lets him follow the target), Primal Howl (E) reduces damage taken, then fears, and Infinite Duress (R) makes him leap to suppress his target. His passive heals him with every attack when he's low on health.",
+  "playstyle": "Dueling, ganking and hunting jungler. Very simple to play, he punishes any wounded target.",
+  "early_game": "Fast and very healthy clear thanks to your healing. Watch the lanes: as soon as an opponent is wounded, W shows you where they are and speeds you up toward them. Gank at level 2-3; you win most early duels against junglers.",
+  "level_1": "Jaws of the Beast (Q) first.",
+  "level_2": "Blood Hunt (W). Attack speed against wounded targets and detection of wounded champions: your ganks get very fast.",
+  "level_3": "Primal Howl (E). Damage reduction, then fear: full gank Q → attacks → E to soak damage → recast to fear.",
+  "level_6": "Infinite Duress: a leap and a suppression. The faster you are, the longer the leap: combine it with W to catch a target from far away. Your ganks become almost guaranteed.",
+  "power_spikes": [
+   "Level 2-3: strong duels and ganks.",
+   "Level 6: suppression for ganks.",
+   "First completed item: dominant duels.",
+   "Mid game: hunting wounded targets."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear, invades and ganks. Warwick punishes any wounded target: watch the lanes and show up as soon as an opponent drops below half health. Invade when your laners have priority: you win duels. Control Scuttles, Void Grubs (around 8 minutes) and dragons with your team.",
+  "trading": "Ganking: W → R on the target → Q → attacks → E to fear. Dueling: Q → attacks → E to soak damage → recast to fear. Give up on it against champions who taunt you (Rammus) or kite you (Lillia).",
+  "threats": [
+   "Rammus: a hard matchup.",
+   "Lillia and Ivern, who kite you or protect their allies.",
+   "Enemy healing reduction."
+  ],
+  "mistakes": [
+   "Casting R without a speed boost (short leap).",
+   "Using E too early, before the enemy burst.",
+   "Ignoring the wounded targets W shows you."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "You beat him in early duels: invade him.",
+   "Viego": "Your healing holds up in his fights and your suppression stops him.",
+   "Kayn": "Punish him before his transformation.",
+   "Master Yi": "Suppress him with R when he enters a teamfight.",
+   "Rammus": "His taunt turns your attacks against you: don't attack him during his Defensive Ball Curl."
+  },
+  "mid_game": "Hunting wounded targets, invades and objectives. Use W to spot your prey.",
+  "late_game": "Suppress the enemy carry with your ultimate, then fight long thanks to your healing.",
+  "ahead": "Choke out the enemy jungler and hunt wounded targets.",
+  "behind": "Farm and gank lanes where your laners have wounded their opponent.",
+  "win_condition": "To win this game, you want to punish every wounded target and win duels thanks to your healing.",
+  "final_tip": "Cast Infinite Duress while sped up by Blood Hunt: the leap is much longer."
+ }
+}

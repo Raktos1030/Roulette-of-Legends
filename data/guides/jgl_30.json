@@ -1,0 +1,43 @@
+{
+  "Quinn|jgl": {
+    "identity": "Tireuse à dégâts physiques. Busard (passif) marque les cibles pour une attaque bonus, Assaut aveuglant (Q) aveugle, Œil d'aigle (W) révèle une zone et donne de la vitesse quand Busard se déclenche, Salto (E) saute sur une cible puis repousse en slowant (et interrompt les dashes), et En territoire ennemi (R) la transforme en forme très rapide pour traverser la carte.",
+    "playstyle": "Jungler de tempo à distance : clear rapide, invasions, ganks rapides grâce à la vitesse de l'ultime. Quinn gagne les duels contre les junglers au corps à corps sans CC en les aveuglant et en les repoussant. Elle est fragile face aux tanks et aux CC.",
+    "early_game": "Clear rapide avec les attaques marquées. Envahis quand tes laners ont la priorité : Q (aveuglement) retourne beaucoup de duels contre les junglers au corps à corps. Gank en arrivant par des angles inattendus.",
+    "level_1": "Assaut aveuglant (Q) en premier.",
+    "level_2": "Salto (E). Saut qui repousse et slow, et interrompt les dashes adverses : ton outil de duel et de fuite.",
+    "level_3": "Œil d'aigle (W). Vitesse à chaque Busard et révélation d'une zone (utile pour voir dans les bushs ou suivre le jungler adverse).",
+    "level_6": "En territoire ennemi : forme très rapide pour traverser la carte, puis attaque puissante en sortie. Utilise-la pour ganker n'importe quelle lane rapidement ou rejoindre un combat d'objectif.",
+    "power_spikes": [
+      "Niveau 3 : duels avec Q + E.",
+      "Niveau 6 : ganks rapides sur toute la carte.",
+      "Premier item complet : burst sur les carries.",
+      "Mid game : picks et pression de carte."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide, invasions et ganks. Quinn veut imposer son tempo : contrôle les crabes, vole les camps adverses et gank avec la vitesse de l'ultime après le 6. Joue les Larves (vers 8 min) et les dragons avec ton équipe. Évite les combats contre les tanks à CC.",
+    "trading": "En duel : Q (aveuglement) → attaques marquées → E pour repousser quand il colle. En gank : arrive vite avec l'ultime, Q sur la cible, attaques. Abandonne contre les tanks qui te provoquent ou te root (Rammus).",
+    "threats": [
+      "Rammus : ton matchup le plus difficile.",
+      "Tanks à CC qui te collent.",
+      "Kindred et Naafiri, défavorables selon les données."
+    ],
+    "mistakes": [
+      "Utiliser E pour engager au lieu de le garder pour repousser un engage.",
+      "Rester en forme ultime au milieu de l'équipe adverse (tu es fragile).",
+      "Se battre contre un tank qui encaisse ton burst."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Aveugle-le quand il t'engage et repousse-le avec E.",
+      "Viego": "Aveugle ses attaques et kite-le.",
+      "Kayn": "Punis-le avant sa transformation.",
+      "Maître Yi": "Aveugle-le au moment où il entre.",
+      "Rammus": "Son taunt annule ton kiting : évite-le."
+    },
+    "mid_game": "Pression de carte avec l'ultime, picks et objectifs.",
+    "late_game": "Picks sur les cibles isolées ; en teamfight, frappe à distance et garde E pour te défendre.",
+    "ahead": "Étouffe le jungler adverse et crée des avantages sur toute la carte.",
+    "behind": "Farm et cherche des picks sur les cibles isolées.",
+    "win_condition": "Pour gagner cette partie, tu veux imposer ton tempo par les invasions et les ganks rapides avec l'ultime.",
+    "final_tip": "Garde ton Salto pour repousser l'engage adverse : il interrompt aussi les dashes."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "Swain|sup": {
+    "identity": "Mage de combat résistant. Nuée de corbeaux (passif) : ses corbeaux collectent des fragments d'âme qui le soignent et augmentent définitivement ses PV max. Poigne mortifère (Q) tire plusieurs projectiles qui traversent les ennemis, Œil de l'empire (W) frappe une zone lointaine en slowant et en révélant les champions touchés, Capture (E) lance une vague qui revient et root, puis peut attirer vers lui les champions root, et Incarnation démoniaque (R) le transforme : il draine les PV des ennemis proches et peut lancer Éruption démoniaque, une explosion qui slow.",
+    "playstyle": "Support de contrôle et de combat prolongé : il attrape avec E, attire la cible vers son ADC et gagne les combats longs avec son drain. Il bat les tanks d'engage qui viennent à lui (Nautilus, Rell, Tahm Kench) mais perd nettement contre les enchanteurs qui le poke et soignent (Soraka, Nami, Janna, Lulu, Zilean, Yuumi).",
+    "early_game": "Menace Capture (E) : un adversaire root est attiré vers toi et ton ADC. Poke avec W de loin, il révèle aussi les bushs. Contre un support d'engage, laisse-le venir : E quand il arrive au contact.",
+    "level_1": "Capture (E) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Œil de l'empire (W). Poke à longue distance, vision et slow.",
+    "level_3": "Poigne mortifère (Q). Combo : E → attraction → Q à bout portant.",
+    "level_6": "Incarnation démoniaque : drain continu et Éruption démoniaque. Entre dans le combat après ton E pour drainer les deux adversaires.",
+    "power_spikes": [
+      "Niveau 3 : E → attraction → Q.",
+      "Niveau 6 : drain en combat à 2 contre 2.",
+      "Premiers items : très résistant en combat long.",
+      "Teamfight : E sur plusieurs cibles, puis R au milieu."
+    ],
+    "lane_plan": "Poke avec W, menace E et laisse les supports d'engage venir à toi. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "All-in : E → attraction → Q → R. Défense : E sur le diver, R pour survivre. Contre les enchanteurs (Soraka, Nami, Lulu), ne force pas les trades : ils poke et soignent plus que tu ne draines.",
+    "jungle_plan": "",
+    "threats": [
+      "Soraka, Nami et Janna, pires matchups.",
+      "Lulu, Zilean et Yuumi : matchups difficiles.",
+      "Réductions de soins adverses, qui affaiblissent ton drain."
+    ],
+    "mistakes": [
+      "Gâcher E et ne plus pouvoir te défendre.",
+      "Lancer l'ultime trop loin des ennemis.",
+      "Forcer les trades contre un enchanteur qui te poke."
+    ],
+    "matchup_notes": {
+      "Thresh": "Laisse-le engager, puis E quand il arrive.",
+      "Nautilus": "Son ancre le rapproche de toi : E, attraction et drain.",
+      "Lulu": "Elle poke et métamorphose : joue défensivement et attends ton niveau 6.",
+      "Leona": "Elle vient au contact : réponds par E et R.",
+      "Nami": "Elle poke et soigne : reste derrière les sbires et joue autour de ton jungler."
+    },
+    "mid_game": "Rejoins les combats, poke avec W avant les objectifs et pose des pinks.",
+    "late_game": "Frontline de mage : E sur plusieurs cibles, attraction, puis R au milieu. Ton drain te garde en vie dans les combats longs.",
+    "ahead": "Force les combats longs et prends les objectifs.",
+    "behind": "Poke avec W, garde E pour protéger ton ADC et joue les teamfights prolongés.",
+    "win_condition": "Pour gagner cette partie, tu veux attirer les ennemis vers ton équipe avec E et gagner les combats longs grâce à ton drain.",
+    "final_tip": "Root avec E, réactive pour attirer la cible vers ton ADC, puis Q : c'est ton meilleur combo."
+  }
+}

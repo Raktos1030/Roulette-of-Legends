@@ -1,0 +1,43 @@
+{
+ "Caitlyn|adc": {
+  "identity": "Very long-range physical damage marksman. Headshot (passive) empowers one attack every few attacks, and always against a target caught in a trap or a net (with double range). Piltover Peacemaker (Q) fires a piercing shot after a one-second wind-up, Yordle Snap Trap (W) places a trap that reveals and roots for 1.5 seconds, 90 Caliber Net (E) slows the target and knocks Caitlyn backwards, and Ace in the Hole (R) deals big damage to one target at very long range (an enemy can step in the way).",
+  "playstyle": "Lane bully: her range lets her harass her opponent and take plates. Her hard matchups are mostly long-range bot lane mages (Lux, Xerath, Hwei).",
+  "early_game": "Use your range: attack your opponent every time they walk up to last hit, then step back. Place your traps under your tower and in bushes to protect yourself from engages. Push to take tower plates before 14 minutes.",
+  "level_1": "Piltover Peacemaker (Q) first. Poke with your attacks, keep Q for the wave or a rooted opponent.",
+  "level_2": "Yordle Snap Trap (W) or Net (E). Combo: net on your opponent, trap at their feet, then a guaranteed Headshot.",
+  "level_3": "The missing ability. Full combo: E → W → Q → empowered attack. E also gets you out of an engage.",
+  "level_6": "Ace in the Hole: finishes off a low-health target at very long range. Check that no enemy can step in the way.",
+  "power_spikes": [
+   "Levels 1 to 3: domination through range.",
+   "Level 3: net, trap, shot combo.",
+   "First completed item: damage and tower pressure.",
+   "Two completed items: very strong Headshots."
+  ],
+  "lane_plan": "Harass, push and take plates. Place traps around dragons and in bushes to control the area. Play with your jungler for dragon. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) completes quickly with good farming and pressure.",
+  "trading": "Basic trade: one attack at max range, then step back. All-in: E → W at their feet → Q → empowered attacks. Back off against bot lane mages who poke you from beyond your range.",
+  "jungle_plan": "",
+  "threats": [
+   "Long-range bot lane mages (Lux, Xerath, Hwei): hard matchups.",
+   "Yasuo and his Wind Wall.",
+   "Divers when your net is on cooldown."
+  ],
+  "mistakes": [
+   "Using the net to attack and having no way to escape.",
+   "Casting your ultimate when an enemy can step in the way.",
+   "Not pressing your range advantage early."
+  ],
+  "matchup_notes": {
+   "Jhin": "Save your net to dodge the CC of his Deadly Flourish.",
+   "Jinx": "She scales better: turn your lane lead into towers and dragons.",
+   "Ezreal": "Place your traps where he lands with his Arcane Shift.",
+   "Lux": "She pokes and roots from very far: stay behind your minions to block her Light Binding.",
+   "Xerath": "He outranges you: play around your support and jungler to reach him."
+  },
+  "mid_game": "Take towers with your range and place traps around objectives before they spawn.",
+  "late_game": "Hit from max range behind your frontline. Place traps around you to protect yourself from divers, and finish runners with Ace in the Hole.",
+  "ahead": "Keep taking towers: your range lets you siege safely.",
+  "behind": "Farm from range, stay behind your frontline and control the area with your traps.",
+  "win_condition": "To win this game, you want to win lane with your range, then turn that lead into towers and dragons.",
+  "final_tip": "An enemy caught in your trap or net takes a guaranteed Headshot at double range: always chain E → W → attack."
+ }
+}

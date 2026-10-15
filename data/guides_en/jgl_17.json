@@ -1,0 +1,43 @@
+{
+ "Karthus|jgl": {
+  "identity": "Magic damage mage who farms the jungle with area abilities. Lay Waste (Q) explodes on the ground (double damage on an isolated target), Wall of Pain (W) slows and lowers magic resist, Defile (E) burns around him, and Requiem (R) hits every enemy champion on the map after a channel. Even dead, he keeps casting for a few seconds (passive Death Defied).",
+  "playstyle": "Pure farming and scaling jungler, with a global ultimate that turns every skirmish into a kill. Karthus barely ganks early: he farms very fast and arrives in the mid game with more gold and XP. He's very vulnerable to invades.",
+  "early_game": "Full clear by spamming Q on camps, with E on for grouped camps. Ward your jungle entrances: you lose every duel. Watch the map: once you have your ultimate, every lane fight can turn into a kill.",
+  "level_1": "Lay Waste (Q) first. Spam Q on camps.",
+  "level_2": "Defile (E). A damage aura for grouped camps; turn it off to save mana.",
+  "level_3": "A second point in Q; Wall of Pain (W) comes at level 4. Max Q first.",
+  "level_6": "Requiem: after a channel, every enemy champion, visible or not, gets hit. Use it to finish low targets all over the map, especially after lane fights. Hide before you channel.",
+  "power_spikes": [
+   "Level 6: global Requiem.",
+   "First completed item: high clear speed and damage.",
+   "Two items: devastating teamfights.",
+   "Passive: even dead, you keep dealing damage."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Full clear as fast as possible while avoiding any fight. Karthus is one of the fastest farming junglers: take every camp, Scuttles and Void Grubs (around 8 minutes) if it's safe. Keep vision on your entrances: invades are your worst enemy. After 6, watch your opponents' health in lane: Requiem finishes fights from afar.",
+  "trading": "Skirmishing: W to slow, Q on isolated targets, E on. Teamfighting: stand behind your frontline, spam Q and save Requiem to finish several targets. Even dead, keep casting. Give up on it against junglers who dive you (Xin Zhao, Bel'Veth).",
+  "threats": [
+   "Invades and duels: you lose to almost every jungler early.",
+   "Assassins and divers (Xin Zhao, Bel'Veth).",
+   "Nidalee, who farms just as fast and pokes you."
+  ],
+  "mistakes": [
+   "Taking early duels.",
+   "Channeling Requiem in view of the enemy.",
+   "Leaving E on out of combat."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He'll invade you: keep vision and farm on the other side.",
+   "Graves": "He steals your camps: don't fight.",
+   "Viego": "You scale better: farm and punish him in teamfights.",
+   "Nidalee": "She farms just as fast and pokes you: play with your team.",
+   "Xin Zhao": "He dives you: keep allies close."
+  },
+  "mid_game": "Farm, Requiem on skirmishes and objectives. Karthus is very good at punishing lane fights.",
+  "late_game": "Area mage: spam Q behind your frontline, Requiem to finish several targets.",
+  "ahead": "Take objectives and force fights: your area damage becomes huge.",
+  "behind": "Farm and scale: Karthus stays dangerous late game.",
+  "win_condition": "To win this game, you want to farm faster than your opponent, finish skirmishes with Requiem and dominate teamfights.",
+  "final_tip": "Watch your opponents' health bars on the map: a well-timed Requiem is worth several kills."
+ }
+}

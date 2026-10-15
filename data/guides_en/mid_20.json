@@ -1,0 +1,43 @@
+{
+ "Lissandra|mid": {
+  "identity": "Magic damage control mage who specializes in shutting down assassins and engaging. Ice Shard (Q) slows in a line, Ring of Frost (W) roots everything around her, Glacial Path (E) launches a claw Lissandra can travel to, and Frozen Tomb (R) stuns an enemy or puts herself in stasis (healing and a slowing zone). Champions she kills briefly rise again as ice thralls (passive).",
+  "playstyle": "Engage and anti-dive mage. Lissandra beats melee assassins and fighters (Akali, Yasuo, Irelia, Yone) thanks to W and R, and engages teamfights with E + R. She struggles against long-range mages (Hwei, Xerath, Lux).",
+  "early_game": "Farm with Q (it passes through minions to hit your opponent behind them). Keep W for the enemy engage. Against long-range mages, farm and play around your jungler.",
+  "level_1": "Ice Shard (Q) first. Poke through minions.",
+  "level_2": "Ring of Frost (W). CC around you: against an assassin who engages you, it's a won trade.",
+  "level_3": "Glacial Path (E). Engage (E → travel → W → Q) or escape. Also keep it to get away from ganks.",
+  "level_6": "Frozen Tomb: a stun on an enemy or stasis on yourself. Engage combo: E → travel → R on the target → W → Q. Against an assassin, R on yourself to survive and slow.",
+  "power_spikes": [
+   "Level 2: W against engages.",
+   "Level 6: engage and anti-dive with R.",
+   "First completed item: burst and control.",
+   "Mid game: teamfight engages."
+  ],
+  "lane_plan": "Farm with Q, keep W for engages. Push your wave and roam with E after 6: Lissandra is a very good roamer. The mid role quest (faster recall) makes these roams more profitable.",
+  "trading": "Short trade: Q through minions. All-in: E → travel → R → W → Q. Defense: W, then R on yourself. Give up on it against long-range mages who poke you.",
+  "jungle_plan": "",
+  "threats": [
+   "Long-range mages (Hwei, Xerath, Lux).",
+   "Ganks while your E is on cooldown.",
+   "Constant poke before level 6."
+  ],
+  "mistakes": [
+   "Using W too early and no longer being able to counter an engage.",
+   "Traveling to your claw in a dangerous position.",
+   "Using R on a tank instead of the carry."
+  ],
+  "matchup_notes": {
+   "Zed": "R on yourself cancels his ultimate; W when he reappears.",
+   "Yasuo": "W and R counter his engages: he can't reach you.",
+   "Ahri": "Keep W for the end of her ultimate.",
+   "Hwei": "He pokes you from far away: farm and roam.",
+   "Xerath": "He pokes you: engage with E + R once he's used his abilities."
+  },
+  "mid_game": "Roams, engages and picks with E + R.",
+  "late_game": "Teamfight engage: E → R on the carry → W. Or protect your carries by countering divers.",
+  "ahead": "Roam, create picks and take objectives.",
+  "behind": "Farm, protect your carries and play for a decisive engage.",
+  "win_condition": "To win this game, you want to neutralize the enemy assassins and engage teamfights with E + R.",
+  "final_tip": "Against an assassin, keep W for their engage: that CC turns the whole fight."
+ }
+}

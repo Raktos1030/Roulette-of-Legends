@@ -1,0 +1,43 @@
+{
+ "Volibear|jgl": {
+  "identity": "Mixed damage fighter-tank. Thundering Smash (Q) speeds him up toward champions and stuns with his next attack, Frenzied Maul (W) marks, then heals him if he hits again, Sky Splitter (E) calls down a lightning bolt that slows (and shields him if he's inside the zone), and Stormbringer (R) makes him leap while disabling towers. In the jungle, he maxes Q to gank.",
+  "playstyle": "Gank and tower-dive jungler. Volibear reaches lanes fast thanks to Q and dives with his ultimate.",
+  "early_game": "Clear with E and W. Gank when your laner can follow up: Q to speed up and stun, W to heal. Avoid duels against assassins and junglers who kite you.",
+  "level_1": "Sky Splitter (E) first.",
+  "level_2": "Frenzied Maul (W). Mark, then heal: your clear gets healthier.",
+  "level_3": "Thundering Smash (Q). First gank: Q → attack (stun) → W → E on yourself for the shield. Q is maxed first.",
+  "level_6": "Stormbringer: a leap that disables towers. Dive under towers with your laners for guaranteed kills, or engage in teamfights.",
+  "power_spikes": [
+   "Level 3: ganks with Q.",
+   "Level 6: tower dives.",
+   "First completed item: strong ganks and dives.",
+   "Mid game: engages and skirmishes."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Safe clear and ganks from level 3. After 6, set up tower dives with your laners thanks to your ultimate. Control Scuttles, Void Grubs (around 8 minutes) and dragons. Avoid duels against mobile or ranged junglers (Talon, Quinn, Bel'Veth).",
+  "trading": "Ganking: Q → stun → W → W again on the marked target. Diving: R on the tower → Q → W. Give up on it against champions who kite or dodge you.",
+  "threats": [
+   "Talon, Quinn and Bel'Veth: hard matchups.",
+   "Ranged kiting.",
+   "Dives without follow-up from your laners."
+  ],
+  "mistakes": [
+   "Diving under a tower without your ultimate to disable it.",
+   "Engaging with Q when you can't follow up.",
+   "Forgetting to stand inside Sky Splitter for the shield."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Stun him with Q when he engages.",
+   "Viego": "Stun him before he possesses your allies.",
+   "Kayn": "Punish him before his transformation.",
+   "Talon": "He bursts you and escapes over walls.",
+   "Quinn": "She kites and blinds you: avoid her."
+  },
+  "mid_game": "Dives and engages around objectives.",
+  "late_game": "Engage on the enemy backline with your ultimate, Q to stun the carry.",
+  "ahead": "Dive under towers with your laners and take objectives.",
+  "behind": "Farm and play for engages in teamfights.",
+  "win_condition": "To win this game, you want to gank and tower-dive with your ultimate to create advantages.",
+  "final_tip": "Save your ultimate for dives: it disables towers for a few seconds."
+ }
+}

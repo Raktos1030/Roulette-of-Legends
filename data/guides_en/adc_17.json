@@ -1,0 +1,43 @@
+{
+ "Nilah|adc": {
+  "identity": "Melee physical damage fighter. Joy Unending (passive): she gains more experience from killing minions, and she empowers and shares the heals and shields her nearby allies give her. Formless Blade (Q) strikes in a line and briefly increases her attack range, Jubilant Veil (W) gives her speed and makes her dodge every attack (allies she touches benefit too), Slipstream (E) is a dash toward a target, and Apotheosis (R) deals damage around her before pulling enemies toward her.",
+  "playstyle": "Melee ADC who wins close-range fights: she dodges marksmen's attacks with W and pulls the whole enemy team in with her ultimate. She depends on her support: with heals and shields, her passive empowers them; with an engage support, she follows them into the fight.",
+  "early_game": "Farm: your passive gives you more experience from minions, which helps you reach level 6 sooner. Trade when your opponent comes close, using Q's range. Save W to dodge the attacks of an enemy all-in.",
+  "level_1": "Formless Blade (Q) first. Farm and take short trades with Q's range.",
+  "level_2": "Slipstream (E). Dash to engage or to follow your support's engage.",
+  "level_3": "Jubilant Veil (W). Dodges every attack: cast it when the enemy ADC starts shooting.",
+  "level_6": "Apotheosis: damage around you, then a pull. Go in with E, pull enemies in with R, then fight them up close.",
+  "power_spikes": [
+   "Level 2: E to follow engages.",
+   "Level 6: an ultimate that pulls in several enemies.",
+   "First completed item: close-range fighting damage.",
+   "Mid game: 2v2 fights with your support."
+  ],
+  "lane_plan": "Farm and play with your support: engage when they root your opponent, or make the most of their empowered heals and shields. Your passive speeds up your leveling. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) completes fast with good farming.",
+  "trading": "Short trade: Q at max range. All-in: E onto the target, W when your opponent shoots, Q, then R to stop the escape. Give up on it against champions who keep you at range or root you before you arrive (Xayah, Veigar).",
+  "jungle_plan": "",
+  "threats": [
+   "Xayah: your hardest matchup (her feather recall roots you when you arrive).",
+   "Jinx: a hard matchup.",
+   "Bot lane mages who root you (Veigar, Seraphine)."
+  ],
+  "mistakes": [
+   "Engaging without your support.",
+   "Casting W too early, before your opponent attacks.",
+   "Casting your ultimate on a single target instead of waiting for the group."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "Dodge her attacks with W when she dives.",
+   "Jinx": "Her Flame Chompers stop you when you engage: wait until they're used.",
+   "Twitch": "He relies on his attacks: W dodges them all.",
+   "Ezreal": "Engage once he's used his Arcane Shift.",
+   "Xayah": "Her Bladecaller roots you in her feathers: don't engage in the middle of them."
+  },
+  "mid_game": "Play skirmishes with your support and jungler. Go into fights when the target is within E range.",
+  "late_game": "Wait for your team to engage, then go in with E, dodge with W and pull the group in with R. Your passive empowers your team's heals and shields.",
+  "ahead": "Force close-range fights and take objectives.",
+  "behind": "Farm, stay with your team and wait for your support's engage before going in.",
+  "win_condition": "To win this game, you want to win close-range fights by dodging attacks and pulling the whole enemy team in with your ultimate.",
+  "final_tip": "Jubilant Veil dodges every attack: cast it right when the enemy ADC starts shooting at you."
+ }
+}

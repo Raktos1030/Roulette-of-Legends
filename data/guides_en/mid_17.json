@@ -1,0 +1,43 @@
+{
+ "Kassadin|mid": {
+  "identity": "Magic damage assassin who scales very hard. Null Sphere (Q) deals damage, interrupts channels and gives him a magic shield, Nether Blade (W) empowers his attacks and restores mana, Force Pulse (E) slows in a cone (it charges up when abilities are cast near him), and Riftwalk (R) teleports him; each Riftwalk in quick succession costs more mana but deals more damage. His passive reduces magic damage taken and lets him pass through units.",
+  "playstyle": "Scaling mid: he suffers through his lane, then becomes a huge threat from level 11 and especially 16. Weak against physical assassins and fighters early.",
+  "early_game": "Farm safely with Q and W, and accept losing a bit of lane against aggressive champions. Q interrupts channels and gives you a shield against abilities. Against magic damage mages, your passive and shield help you hold.",
+  "level_1": "Null Sphere (Q) first. Farm and magic shield.",
+  "level_2": "Nether Blade (W). An empowered attack and mana: last hit safely.",
+  "level_3": "Force Pulse (E). A cone slow: useful to escape or poke when it's charged.",
+  "level_6": "Riftwalk: teleportation. First roams possible and a dodging tool, but Kassadin stays fragile before his items. His big breakpoints are levels 11 and 16 (Riftwalk ranks).",
+  "power_spikes": [
+   "Level 6: mobility with Riftwalk.",
+   "Level 11: stronger Riftwalk, dangerous burst.",
+   "Level 16: Kassadin becomes a huge late-game threat.",
+   "First completed item: sustain and damage."
+  ],
+  "lane_plan": "Farm, survive and accept being behind in gold: your strength comes later. Keep the wave near your tower against physical assassins. After level 6, use R to dodge ganks. The mid role quest (faster recall) helps you reset often to hold the lane.",
+  "trading": "Before 6: Q on your opponent, W to last hit, no all-ins. After 11: R → W → Q → E. Engage when your opponent no longer has their CC; give up on it against physical fighters who burst you (Zed, Talon, Pantheon).",
+  "jungle_plan": "",
+  "threats": [
+   "Physical assassins and fighters (Zed, Talon, Pantheon, Qiyana).",
+   "Tristana and Akshan, who harass you from range.",
+   "Games that end before you scale."
+  ],
+  "mistakes": [
+   "Forcing fights before level 6.",
+   "Chaining Riftwalks without mana.",
+   "Dying and losing XP before your key levels."
+  ],
+  "matchup_notes": {
+   "Yone": "Farm carefully and scale.",
+   "Ahri": "Your Q shield absorbs her magic burst.",
+   "Yasuo": "Scale and punish him after 11.",
+   "Zed": "Farm under your tower and keep R for his ultimate.",
+   "Katarina": "Q interrupts her Death Lotus."
+  },
+  "mid_game": "Farm and roam with R once you have your core items. Avoid 5v5 fights before level 11.",
+  "late_game": "The main late-game threat: dive the carries with R, then get out with another Riftwalk.",
+  "ahead": "Roam with R, hunt the carries and take objectives.",
+  "behind": "Farm and scale: Kassadin makes up for being behind in the late game.",
+  "win_condition": "To win this game, you want to survive the lane, reach level 16 and dominate the late game.",
+  "final_tip": "Accept being behind in lane: every level you reach alive brings you closer to your level 16 spike."
+ }
+}

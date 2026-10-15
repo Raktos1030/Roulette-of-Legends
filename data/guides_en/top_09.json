@@ -1,0 +1,84 @@
+{
+ "Sion|top": {
+  "identity": "Physical damage tank who scales with health. Decimating Smash (Q) charges up, then knocks up (stuns if fully charged), Soul Furnace (W) gives a shield and permanent max health with every unit he kills, Roar of the Slayer (E) slows and shreds armor, and Unstoppable Onslaught (R) charges across the map. When he dies, Sion briefly comes back as a zombie (passive Glory in Death).",
+  "playstyle": "Scaling tank: every minion he kills adds permanent health thanks to W. In lane, he plays for farm and E trades; in the mid game, he split pushes with his ultimate ready to engage from the side lane. Mobile champions and those who win long fights give him trouble.",
+  "early_game": "Last hit every minion you can: W gives you permanent max health per kill (more on champions and large monsters). Trade with E: if it hits a minion, the minion is launched and hits your opponent behind it. A partially charged Q slows; fully charged, it knocks up and stuns, so only charge it fully if your opponent is slowed or trapped.",
+  "level_1": "Most common path: Q → W → E, with the alternative W → Q → E almost as common. At level 1, a partial Q to farm and slow an opponent who walks into melee range.",
+  "level_2": "Soul Furnace (W): a shield you can detonate by recasting after a short delay. Its passive (health per kill) starts adding up: prioritize last hits.",
+  "level_3": "Roar of the Slayer (E). It slows and shreds armor: E, then a charged Q is your main combo. Cast E on a minion to hit your opponent hiding behind it.",
+  "level_6": "Unstoppable Onslaught: a CC-immune charge that knocks up the first enemy hit (and stuns longer against a wall). You can steer it while running. Ideal to join a fight from the side lane, engage a teamfight or gank mid.",
+  "power_spikes": [
+   "Level 6: long-range engage and gank with your ultimate.",
+   "W health stacking: harder and harder to kill as the minutes go by.",
+   "First completed item: very durable in lane.",
+   "Late game: a dominant engage frontline."
+  ],
+  "lane_plan": "Let the wave come to you and prioritize farm: every last hit counts double for Sion (gold and permanent health). Against an aggressive opponent, keep the wave near your tower. Recall when your wave crashes or when your shield is on cooldown and your health is low. After level 6, push, then charge toward mid or the river if your team needs help.",
+  "trading": "Short trade: E (directly or through a minion) → partial Q → back off. Long trade: W (shield) → E → charged Q if your opponent is slowed → recast W for the explosion. Engage when your opponent has used their dash; give up on it if you're charging Q and they can leave the zone or interrupt you.",
+  "jungle_plan": "",
+  "threats": [
+   "Mobile champions who dodge your Q (Yone, Riven).",
+   "Tanks and fighters who win long fights (Shen, Ornn).",
+   "Ganks while you're charging Q."
+  ],
+  "mistakes": [
+   "Fully charging Q on an opponent who's free to move.",
+   "Casting your ultimate in a straight line with no target or follow-up.",
+   "Neglecting last hits: every missed minion is lost gold and permanent health."
+  ],
+  "matchup_notes": {
+   "Yone": "He dodges your Q with E and beats you in short trades. Farm carefully, trade with E through minions and keep W for his Q3.",
+   "Nasus": "You both scale: punish him with E when he comes to stack and don't commit under Wither.",
+   "Malphite": "He doesn't hurt you: farm, stack health and get the plate lead.",
+   "Darius": "Don't charge Q within range of his Apprehend; farm near your tower and slow him with E when he steps up.",
+   "Teemo": "His blind doesn't affect your abilities: E through minions, then a charged Q when he's slowed."
+  },
+  "mid_game": "Split push the side lane opposite the objective, then join the fight with your ultimate. Sion is also excellent at taking towers: even dead, his zombie passive can finish a structure.",
+  "late_game": "Engage frontline: ultimate onto the enemy backline or the group, then a charged Q on several targets while they're locked down. You're there to soak damage and disrupt.",
+  "ahead": "Split push and force the enemy to send two players; engage objectives with your ultimate.",
+  "behind": "Farm, stack health and become your team's frontline: your health scaling brings you back into the game.",
+  "win_condition": "To win this game, you want to build up health with W, then engage fights with your ultimate and soak damage for your team.",
+  "final_tip": "Only fully charge your Q on a slowed or locked-down target: otherwise, release it early for the slow."
+ },
+ "TahmKench|top": {
+  "identity": "Magic damage tank. Tahm Kench builds An Acquired Taste stacks (passive) with his attacks and Tongue Lash (Q); at three stacks, Q stuns and Devour (R) can swallow an enemy. Abyssal Dive (W) makes him resurface farther away, knocking enemies up, and Thick Skin (E) turns damage taken into recoverable grey health or a shield.",
+  "playstyle": "Melee fighting lane: Tahm Kench is very strong in long trades thanks to E and his passive stacks. He has no mobility apart from W, which makes him vulnerable to kiting. In teamfights, he protects an ally by swallowing them or isolates an enemy.",
+  "early_game": "Trade when you can apply three stacks: attacks + Q. On the third stack, Q stuns. Keep E ready to convert grey health into a shield at the right moment. Farm with Q and attacks.",
+  "level_1": "Tongue Lash (Q) first. It slows and applies a stack; with attacks, you quickly reach three stacks.",
+  "level_2": "Abyssal Dive (W) on the most common path (Q → W → E), or Thick Skin (E) on the alternative. W engages or escapes; E makes long trades much stronger.",
+  "level_3": "Full kit: attacks + Q for three stacks → stunning Q. E for the shield when the counterattack comes.",
+  "level_6": "Devour: on an enemy with three stacks, you swallow them for a few seconds (they're rooted), then you can walk toward your tower or your team; on an ally, you protect them and can move them. In lane, swallow your opponent and walk toward your tower or your jungler.",
+  "power_spikes": [
+   "Level 3: stun at three stacks.",
+   "Level 6: Devour to isolate or save.",
+   "First completed item: very strong long fights.",
+   "Mid game: protection and engage in teamfights."
+  ],
+  "lane_plan": "Play a neutral wave, trade in melee range when you can apply all three stacks. Keep E for long fights. Recall when your wave crashes. With W, you can also join the river or mid after level 6 to swallow an enemy.",
+  "trading": "Short trade: Q + attacks. Long trade: attacks → Q (stun at three stacks) → E to convert grey health into a shield → R to swallow. Engage when you can stick to your opponent; give up on it if they kite you from range (Heimerdinger).",
+  "jungle_plan": "",
+  "threats": [
+   "Ranged champions who kite you (Heimerdinger).",
+   "Tanks who beat you in long fights (Shen, Ornn).",
+   "Gwen and her percent-health damage."
+  ],
+  "mistakes": [
+   "Using E too early and losing the grey health shield.",
+   "Swallowing an enemy and spitting them out in the middle of their team.",
+   "Engaging with W when you can't apply stacks."
+  ],
+  "matchup_notes": {
+   "Nasus": "Stick to him with stacks and punish him early.",
+   "Darius": "His bleeds hurt, but E and your stacks win you the long fight; avoid the edge of his Decimate.",
+   "Yone": "He dodges your Q; keep E for his Q3.",
+   "Garen": "His silence cuts you off: trade when his Q is on cooldown.",
+   "Malphite": "You win long fights: stick to him and apply your stacks."
+  },
+  "mid_game": "Play around objectives and protect your team with R. You can swallow an ally in danger to save them.",
+  "late_game": "Protective frontline: swallow your carry to save them or swallow an enemy to isolate them. E keeps you alive.",
+  "ahead": "Force fights and dive with your jungler. Swallow isolated carries.",
+  "behind": "Farm and play to protect your carries.",
+  "win_condition": "To win this game, you want to win long fights in lane, then protect your carries and isolate enemies in teamfights.",
+  "final_tip": "Count your stacks: on the third one, Q stuns and Devour becomes available on the enemy."
+ }
+}

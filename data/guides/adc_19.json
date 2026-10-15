@@ -1,0 +1,43 @@
+{
+  "Senna|adc": {
+    "identity": "Tireuse à dégâts physiques et utilitaire. Absolution (passif) : les unités qui meurent près d'elle laissent parfois une âme ; en l'attaquant, elle récupère de la Brume qui augmente définitivement ses dégâts d'attaque, sa portée et ses chances de crit. Ses attaques sont lentes mais puissantes. Ombre perforante (Q) tire un rayon qui soigne les alliés et blesse les ennemis, Dernière étreinte (W) root après un court délai la cible et les ennemis proches, Malédiction de la Brume noire (E) la camoufle, elle et les alliés dans sa zone, et Ténèbres aveuglantes (R) tire un rayon à portée illimitée qui donne un shield aux alliés et blesse les ennemis au centre.",
+    "playstyle": "ADC de scaling atypique : elle farm les âmes pour gagner portée et dégâts, et apporte soins, CC et shield global à son équipe. Elle est en moyenne derrière en or à 15 min contre les ADC fréquents : son rôle est de scaler.",
+    "early_game": "Farm et ramasse les âmes qui apparaissent : chaque âme te rend définitivement plus forte. Poke avec Q (à travers un sbire ou un allié) et soigne ton support en même temps. Garde W pour te défendre contre un engage.",
+    "level_1": "Ombre perforante (Q) en premier. Poke et soin avec Q.",
+    "level_2": "Dernière étreinte (W). CC retardé : combo avec ton support, ou défense contre un diver.",
+    "level_3": "Malédiction de la Brume noire (E). Camouflage pour fuir, pour repositionner ton équipe, ou pour surprendre.",
+    "level_6": "Ténèbres aveuglantes : rayon global qui protège les alliés touchés et blesse les ennemis au centre. Sauve un allié dans une autre lane ou achève un ennemi en fuite.",
+    "power_spikes": [
+      "Niveau 6 : ultime global de shield et de dégâts.",
+      "Premier item complet : poke à longue portée.",
+      "Mid game : les âmes accumulées augmentent ta portée.",
+      "Late game : très longue portée d'attaque."
+    ],
+    "lane_plan": "Farm, ramasse les âmes et poke avec Q. Laisse ton support lancer les combats et suis avec W. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) aide à compenser ton retard d'or en lane. Utilise ton ultime pour aider les autres lanes.",
+    "trading": "Trade court : Q à travers un sbire, attaque, recule. All-in : W, puis Q et attaques. Abandonne contre les ADC qui te sautent dessus (Tristana) ou qui gagnent les combats longs (Jinx).",
+    "jungle_plan": "",
+    "threats": [
+      "Tristana et Jinx : matchups difficiles.",
+      "Divers : tu n'as aucun dash, seulement le camouflage de E.",
+      "Assassins qui te ciblent en teamfight."
+    ],
+    "mistakes": [
+      "Oublier de ramasser les âmes : c'est ton scaling.",
+      "Gâcher l'ultime sans allié à protéger ni ennemi à achever.",
+      "Se battre en combat long contre un ADC plus fort au corps à corps."
+    ],
+    "matchup_notes": {
+      "Jinx": "Elle scale plus vite : ramasse tes âmes et évite les combats longs.",
+      "Kai'Sa": "Garde W pour le root quand elle dive avec son ultime.",
+      "Caitlyn": "Survis à sa portée, tu la dépasses ensuite.",
+      "Ezreal": "Poke-le avec Q à travers les sbires.",
+      "Tristana": "Elle te saute dessus : garde W et E pour fuir son engage."
+    },
+    "mid_game": "Rejoins les combats, protège ton équipe avec R et soigne avec Q. Continue de ramasser les âmes.",
+    "late_game": "Frappe depuis ta très longue portée derrière ta frontline. W sur les divers, E pour repositionner l'équipe, R pour protéger au début du combat.",
+    "ahead": "Poke et prends les objectifs : ta portée te permet d'assiéger en sécurité.",
+    "behind": "Farm les âmes, protège ton équipe avec Q et R, et attends ton scaling.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane, accumuler les âmes et devenir une menace à très longue portée qui protège aussi son équipe.",
+    "final_tip": "Chaque âme compte : en lane, place-toi pour les ramasser sans prendre de risque."
+  }
+}

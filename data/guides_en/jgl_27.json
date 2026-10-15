@@ -1,0 +1,43 @@
+{
+ "Nocturne|jgl": {
+  "identity": "Physical damage fighter-assassin who specializes in long-range dives. Duskbringer (Q) leaves a trail that speeds him up and boosts his damage, Shroud of Darkness (W) blocks an ability and gives him attack speed, Unspeakable Horror (E) tethers a target and fears it if it doesn't get away fast enough, and Paranoia (R) reduces the whole enemy team's vision before he dashes onto a champion. His passive regularly hits in an area and heals him.",
+  "playstyle": "Farming jungler who starts diving at level 6. Nocturne turns every ultimate into a potential kill on an isolated carry.",
+  "early_game": "Clear fast thanks to your passive, which hits in an area and heals. Gank when a laner can follow up: Q to speed up, E for the fear, W to block the enemy's escape or CC. Farm until 6 if there's no clear opportunity.",
+  "level_1": "Duskbringer (Q) first.",
+  "level_2": "Shroud of Darkness (W). Blocks an ability: save it for the enemy CC in ganks or duels.",
+  "level_3": "Unspeakable Horror (E) or a second Q depending on your path. E tethers and fears: first gank possible.",
+  "level_6": "Paranoia: the whole enemy team loses vision, then you dash onto a champion. Use it on an isolated carry or a struggling lane: it's your main pressure tool.",
+  "power_spikes": [
+   "Level 6: Paranoia, dives across the whole map.",
+   "First completed item: burst that kills carries.",
+   "Levels 11 and 16: longer-range ultimate.",
+   "Mid game: picks on isolated targets."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast full clear until 6, ganking if an opportunity shows up. After 6, watch the map: every isolated carry is a target for Paranoia. Control Scuttles, Void Grubs (around 8 minutes) and dragons. Use the enemy's loss of vision during your ultimate to take an objective or set up a fight.",
+  "trading": "Ganking: Q → E → W to block the CC → attacks. Diving: R onto the target → E → W → attacks. Give up on it if the target is surrounded by allies who can lock you down after your W.",
+  "threats": [
+   "CC cast after your W.",
+   "Tanks who soak your burst.",
+   "Shyvana, Wukong and Udyr, among the worst matchups according to the data."
+  ],
+  "mistakes": [
+   "Casting W too early, with no ability to block.",
+   "Diving with your ultimate onto a target surrounded by allies.",
+   "Wasting your ultimate without follow-up from your team."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Block his Q with W and dive him with your ultimate.",
+   "Graves": "He beats you early: wait for your 6.",
+   "Viego": "Dive him when he's alone.",
+   "Wukong": "His clone fools your ultimate: aim for the real one.",
+   "Shyvana": "She scales well and soaks your burst: play before she gets strong."
+  },
+  "mid_game": "Ultimate dives and objectives. Use the enemy's loss of vision to set up fights.",
+  "late_game": "Dive the enemy carry with your ultimate; W to block the incoming CC.",
+  "ahead": "Dive isolated carries, take objectives and force fights.",
+  "behind": "Farm and look for picks with your ultimate on isolated targets.",
+  "win_condition": "To win this game, you want to use Paranoia to kill isolated carries and create advantages across the map.",
+  "final_tip": "Save Shroud of Darkness for the enemy CC: it decides whether your dive succeeds."
+ }
+}

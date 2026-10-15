@@ -1,0 +1,43 @@
+{
+  "RekSai|jgl": {
+    "identity": "Combattante à dégâts physiques qui se déplace sous terre. Hors du sol : Courroux de la reine (Q) renforce ses attaques, Morsure féroce (E) fait des dégâts vrais à pleine fureur. Enfouie : Sondeur explosif (Q) poke à distance et révèle, Tunnel (E) crée des tunnels réutilisables, et Jaillissement (W) la fait sortir de terre et knock-up les ennemis au-dessus d'elle. Rush du Néant (R) fonce sur une cible marquée pour l'exécuter. Enfouie, elle sent les ennemis qui bougent autour d'elle.",
+    "playstyle": "Jungler d'early game, de ganks et de duels. Rek'Sai gank très tôt grâce à ses tunnels et à son knock-up, et gagne la plupart des duels en early.",
+    "early_game": "Clear rapide en alternant surface et sous-sol (tu te soignes enfouie). Gank dès le niveau 3 : Tunnel pour arriver, Jaillissement pour projeter, puis Q et E en surface. Envahis quand tes laners ont la priorité.",
+    "level_1": "Courroux de la reine (Q) en premier.",
+    "level_2": "Enfouissement / Jaillissement (W). Tu passes sous terre (plus rapide, tu sens les ennemis) et tu ressors en knock-up les ennemis au-dessus de toi : premier gank possible au niveau 2.",
+    "level_3": "Morsure féroce / Tunnel (E). Gank complet : Tunnel → Jaillissement → Q → Morsure féroce à pleine fureur (dégâts vrais).",
+    "level_6": "Rush du Néant : fonce sur une cible marquée par tes dégâts pour l'exécuter. Utilise-le pour finir une cible qui fuit ; tu es inciblable pendant le dash.",
+    "power_spikes": [
+      "Niveau 2-3 : ganks avec Jaillissement.",
+      "Niveau 6 : exécution avec Rush du Néant.",
+      "Premier item complet : duels et escarmouches forts.",
+      "Mid game : pression constante grâce aux tunnels."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide, ganks précoces et invasions. Crée des tunnels vers les lanes que tu vas ganker et vers les objectifs : ils rendent tes rotations très rapides. Contrôle les crabes, les Larves (vers 8 min) et les dragons. Enfouie, tu sens les ennemis qui bougent près de toi : utilise-le pour traquer le jungler adverse.",
+    "trading": "En gank : Tunnel → Jaillissement → Q → E. En duel : Jaillissement sous la cible, puis Q et Morsure féroce à pleine fureur, R pour finir. Abandonne contre les champions qui te contrôlent (Zyra).",
+    "threats": [
+      "Zyra, seul matchup nettement défavorable selon les données.",
+      "CC qui t'empêchent de ressortir.",
+      "Parties longues où ton impact baisse."
+    ],
+    "mistakes": [
+      "Ressortir sans cible sous toi (knock-up perdue).",
+      "Oublier de créer des tunnels pour tes rotations.",
+      "Utiliser Morsure féroce avant d'avoir la fureur pleine."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Tu le bats en duel early : envahis-le.",
+      "Graves": "Projette-le avec Jaillissement quand il dash.",
+      "Viego": "Punis-le en early.",
+      "Kayn": "Punis-le avant sa transformation.",
+      "Zyra": "Ses plantes et ses racines te bloquent : ne la dive pas seule."
+    },
+    "mid_game": "Pression constante grâce aux tunnels, ganks et objectifs.",
+    "late_game": "Engage avec Jaillissement et exécute avec R. Garde des tunnels près des objectifs.",
+    "ahead": "Étouffe le jungler adverse et prends les objectifs.",
+    "behind": "Cherche des picks avec les tunnels et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux imposer ta pression en early grâce aux ganks et aux tunnels, puis transformer ton avance en objectifs.",
+    "final_tip": "Crée des tunnels vers les lanes et les objectifs : ils rendent tes rotations imprévisibles."
+  }
+}

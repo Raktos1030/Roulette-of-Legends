@@ -1,0 +1,43 @@
+{
+  "Yasuo|mid": {
+    "identity": "Combattant à dégâts physiques basé sur les critiques. Son passif double ses chances de critique et lui donne un shield de Flux quand il se déplace. Tempête d'acier (Q) frappe en ligne et, au troisième cast, lance une tornade qui knock-up ; Mur de vent (W) bloque les projectiles ; Cercle tranchant (E) dash à travers une cible (Q pendant le dash frappe en cercle) ; Dernier soupir (R) se téléporte sur une cible knock-up. Très joué et très banni.",
+    "playstyle": "Combattant de mid qui punit les mages à projectiles grâce à Mur de vent et enchaîne les knock-ups avec son équipe en teamfight. Il est fort contre les mages immobiles ou à projectiles (Akshan, Ryze, Orianna), mais souffre contre les mages à contrôles de zone (Lissandra, Taliyah, Annie) et contre Vladimir.",
+    "early_game": "Stack Q sur les sbires pour garder la tornade prête, trade quand ton shield de Flux est plein. Utilise E de sbire en sbire pour coller ou fuir. Garde W pour le sort clé adverse (projectile).",
+    "level_1": "Tempête d'acier (Q) en premier.",
+    "level_2": "Cercle tranchant (E). E à travers un sbire vers l'adversaire → Q : trade court.",
+    "level_3": "Mur de vent (W). Garde-le pour le projectile le plus dangereux adverse (stun, burst).",
+    "level_6": "Dernier soupir : sur une cible projetée par ta tornade ou par un allié. Combo : E → Q3 (tornade) → R. Roam vers le bot si ton jungler ou ton support a des knock-ups.",
+    "power_spikes": [
+      "Niveau 2 : E + Q.",
+      "Niveau 6 : tornade + ultime.",
+      "Premier item complet : dégâts critiques importants.",
+      "Deux items : teamfights avec les knock-ups de ton équipe."
+    ],
+    "lane_plan": "Stack Q, trade quand le shield est plein et garde W pour le sort clé. Pousse et roam quand ton ultime peut profiter des knock-ups alliés. La quête de rôle mid (retour accéléré) rend tes roams plus rentables.",
+    "trading": "Trade court : E à travers l'adversaire → Q → recul avec E sur un sbire. All-in : Q3 tornade → R → attaques. Abandonne contre les mages à contrôles de zone (Lissandra, Taliyah) quand leurs sorts sont prêts.",
+    "jungle_plan": "",
+    "threats": [
+      "Mages à contrôles de zone (Lissandra, Taliyah, Annie).",
+      "Vladimir, qui se soigne et esquive avec son Bain de sang.",
+      "Aurelion Sol, qui te tient à distance."
+    ],
+    "mistakes": [
+      "Utiliser W sur un sort sans importance.",
+      "Engager sans shield de Flux ni tornade.",
+      "Dasher dans une wave adverse sans sortie."
+    ],
+    "matchup_notes": {
+      "Yone": "Duel de mobilité : attends son E, et garde la tornade pour son retour.",
+      "Zed": "Mur de vent bloque ses shurikens.",
+      "Ahri": "Mur de vent bloque son Charme : garde-le pour ce sort.",
+      "Lissandra": "Son CC et son ultime t'arrêtent : n'engage pas quand elle a W.",
+      "Vladimir": "Il esquive ton ultime avec son Bain de sang : attends qu'il l'ait utilisé."
+    },
+    "mid_game": "Roams avec les knock-ups de ton équipe et escarmouches autour des objectifs.",
+    "late_game": "Entre après les knock-ups de ton équipe, ultime sur plusieurs cibles, Mur de vent pour protéger tes carries.",
+    "ahead": "Roam, prends les objectifs et force les combats.",
+    "behind": "Farm et joue avec ton équipe : l'ultime dépend des knock-ups alliés.",
+    "win_condition": "Pour gagner cette partie, tu veux bloquer les sorts clés avec Mur de vent et enchaîner les knock-ups avec l'ultime en teamfight.",
+    "final_tip": "Garde ton Mur de vent pour le sort qui compte le plus chez l'adversaire."
+  }
+}

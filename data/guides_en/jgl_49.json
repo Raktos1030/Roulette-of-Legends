@@ -1,0 +1,43 @@
+{
+ "Zac|jgl": {
+  "identity": "Magic damage tank who specializes in very long-range engages. Elastic Slingshot (E) charges up, then launches him far to knock up everything he lands on, Stretching Strikes (Q) grabs a target, then slams it into a second one, Unstable Matter (W) deals percent-health damage around him, and Let's Bounce! (R) makes him bounce several times, knocking back and slowing. His passive drops pieces of himself that heal him, and he can reform after dying if he isn't finished off.",
+  "playstyle": "Tank jungler built for surprise ganks and engages. Zac arrives from very far away thanks to E, over walls, and engages teamfights with E + R. He's very reliable (only two clearly unfavorable matchups) and very strong in team fights.",
+  "early_game": "Clear with W and Q, picking up your pieces to heal. Gank with a charged E from the jungle, over a wall: the enemy doesn't see you coming. Avoid duels against junglers who kite you (Lillia).",
+  "level_1": "Unstable Matter (W) first.",
+  "level_2": "Stretching Strikes (Q). Grabs a target, then slams it into another: useful for clearing and ganking.",
+  "level_3": "Elastic Slingshot (E). First gank: charged E over a wall → knock-up → Q → W. E is maxed first for range.",
+  "level_6": "Let's Bounce!: bounces that knock back and slow. Engage combo: charged E → R → Q → W. You can also use it to knock divers away from your carries.",
+  "power_spikes": [
+   "Level 3: ganks over walls with E.",
+   "Level 6: full E + R engage.",
+   "First completed item: a solid tank.",
+   "E ranks: an increasingly long engage range."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Safe clear and ganks over walls with E. Zac is one of the longest-range gankers: find the walls near the lanes. Control Scuttles, Void Grubs (around 8 minutes) and dragons with your team. Pick up your pieces to stay alive without going back to base.",
+  "trading": "Ganking: charged E → knock-up → Q → W. Teamfighting: E onto the backline → R → Q. Give up on it against junglers who interrupt your charge or kite you (Lillia, Rek'Sai).",
+  "threats": [
+   "Lillia and Rek'Sai: hard matchups.",
+   "CC that interrupts E's charge.",
+   "Enemies who stomp your pieces before you can reform."
+  ],
+  "mistakes": [
+   "Charging E in the enemy's vision (they walk away).",
+   "Engaging without follow-up from your team.",
+   "Forgetting to pick up your pieces to heal."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He'll invade you: don't duel, gank.",
+   "Viego": "Knock him up when he dives.",
+   "Sylas": "Careful: he can steal your ultimate.",
+   "Lillia": "She kites you and puts you to sleep: play with your team.",
+   "Rek'Sai": "She beats you early: avoid her invades."
+  },
+  "mid_game": "Engages and ganks around objectives.",
+  "late_game": "Teamfight engage: E onto the backline, R, then Q and W. Or protect your carries.",
+  "ahead": "Gank nonstop, engage and take objectives.",
+  "behind": "Tank for your team and play for a decisive engage.",
+  "win_condition": "To win this game, you want to engage teamfights from very far away with E and R.",
+  "final_tip": "Charge your Slingshot outside enemy vision: if they see you, they walk away."
+ }
+}

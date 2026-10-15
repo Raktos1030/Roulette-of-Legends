@@ -1,0 +1,43 @@
+{
+ "Belveth|jgl": {
+  "identity": "Physical damage fighter, a jungle hypercarry. Bel'Veth stacks permanent attack speed from takedowns (passive), dashes in four independent directions with Void Surge (Q), knocks up with Above and Below (W), channels a flurry of strikes that heals her and reduces the damage she takes with Royal Maelstrom (E), and devours the Void Coral left by her victims with Endless Banquet (R) to take her true form. Coral from an epic Void monster lets her summon Void Remoras.",
+  "playstyle": "Farming and skirmishing jungler who scales hard. She wins long fights and messy fights where she can chain takedowns and take her true form. She's weaker early against aggressive junglers and heavy CC.",
+  "early_game": "Clear fast with Q (each direction has its own cooldown) and E on big camps. Take Scuttle and the skirmishes your team can win. Every big monster and every takedown gives you permanent attack speed stacks: farming matters a lot.",
+  "level_1": "Void Surge (Q) first. Dash onto the camp to start, then attack.",
+  "level_2": "Royal Maelstrom (E). Damage reduction and lifesteal during the flurry: key to surviving big camps and duels.",
+  "level_3": "Above and Below (W). A line knock-up: W → Q → attacks → E is your gank combo. Aim it so your opponent can't dash away.",
+  "level_6": "Endless Banquet: when a champion or epic monster dies near you, it leaves Void Coral; devouring it transforms you (health, range, attack speed). Coral from an epic Void monster (Grubs, Herald, Baron) also gives you remoras that push lanes.",
+  "power_spikes": [
+   "Level 3: W → Q → E combo for ganks.",
+   "Level 6: true form after the first takedown.",
+   "First completed item: very strong skirmishes.",
+   "Stacked attack speed: a dominant duelist in the mid and late game."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast full clear and Scuttle, then ganks or skirmishes depending on which lanes have priority. Bel'Veth scales with farm: don't leave camps up on the map. Void Grubs (around 8 minutes) and Herald (around 15 minutes) are great for you, since their coral gives you remoras. Avoid early invades against strong early junglers; from your first item on, you're the one invading. Track the enemy jungler to counter-gank with W.",
+  "trading": "When ganking, W first to knock up, then Q toward your opponent and E if your health drops. In skirmishes, wait for the enemy CC to be used before going in; E keeps you alive during the flurry. Give up on it against a champion who locks you down for a long time (Rammus).",
+  "threats": [
+   "Heavy CC and taunts (Rammus).",
+   "Early invades from aggressive junglers.",
+   "Fights where there's no coral to devour for your true form."
+  ],
+  "mistakes": [
+   "Missing W and engaging without a knock-up.",
+   "Leaving camps up on the map: your scaling depends on your farm.",
+   "Forgetting to devour the coral left by a kill or an epic monster."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He'll invade you early: protect your camps and don't duel before your first item.",
+   "Viego": "You win long fights against him; save W for his possession dash.",
+   "Graves": "He beats you early with his burst: avoid his invades and get ahead in farm.",
+   "Kayn": "Punish him before his transformation.",
+   "Rammus": "His taunt shuts down your attacks: never attack him while his Defensive Ball Curl (W) is up, it reflects damage back at you."
+  },
+  "mid_game": "Skirmish around objectives and take Herald for the remoras. Your attack speed stacks make you stronger and stronger: force fights where you can chain takedowns.",
+  "late_game": "Your team's main DPS: go in after the enemy CC, devour the coral from the first kill to take your true form, and clean up the fight. Baron gives you remoras that push lanes.",
+  "ahead": "Invade, take objectives and force fights: a fed Bel'Veth is very hard to stop.",
+  "behind": "Farm, scale and avoid high-CC fights: your late game makes up for falling behind.",
+  "win_condition": "To win this game, you want to farm, stack attack speed and clean up messy fights in your true form.",
+  "final_tip": "After every kill or epic monster, devour the Void Coral: that's what gives you your true form."
+ }
+}

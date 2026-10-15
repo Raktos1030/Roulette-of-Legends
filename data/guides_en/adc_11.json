@@ -1,0 +1,43 @@
+{
+ "Kalista|adc": {
+  "identity": "Very mobile physical damage marksman. Martial Poise (passive): after each attack or Pierce, she hops a short distance in the direction you click. Pierce (Q) throws a spear that passes through enemies it kills, Sentinel (W) adds damage when Kalista and her Oathsworn (the ally bound to her) hit the same target, and sends a soul to scout a path, Rend (E) rips out the spears lodged by her attacks for damage that grows with their number and slows, and Fate's Call (R) pulls her Oathsworn to her, who can then charge to knock enemies back.",
+  "playstyle": "2v2 lane bully: she wins the first trades thanks to her hops and Rend, and she's ahead in gold at 15 minutes on average against common ADCs. She falls off late game: you have to convert the lead early. Mechanically very demanding (a hop after every attack).",
+  "early_game": "Harass by attacking then hopping back. Stack spears on your opponent, then Rend (E) when they back off. E can finish several minions at once: use it to secure tricky last hits. Play with your Oathsworn (usually your support).",
+  "level_1": "Rend (E) first. Stack spears, then E.",
+  "level_2": "Pierce (Q). Long-range poke that passes through the minions it kills to hit the opponent behind them.",
+  "level_3": "Sentinel (W). Bonus damage with your Oathsworn, and a soul to watch the river or a bush.",
+  "level_6": "Fate's Call: save your Oathsworn by pulling them back, then they charge to knock enemies away. Great for engaging with a tank support, or protecting an ally who's being dived.",
+  "power_spikes": [
+   "Levels 1 to 3: very strong trades with your hops.",
+   "Level 6: an engage or rescue ultimate.",
+   "First completed item: very punishing Rend.",
+   "Mid game: fast objective taking."
+  ],
+  "lane_plan": "Harass and get ahead as a duo. Use E for last hits and to punish a low-health opponent. Press your lead: plates, towers, dragons. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) completes fast when you dominate lane.",
+  "trading": "Basic trade: attacks with hops backwards, then E. All-in: attacks and Q, then E once the spears pile up. Back off against ADCs who scale (Jinx, Yunara) or chase you down (Tristana).",
+  "jungle_plan": "",
+  "threats": [
+   "Tristana, Jinx and Yunara: hard matchups.",
+   "Crowd control: your hops are useless when you're rooted.",
+   "The late game, where you lose strength."
+  ],
+  "mistakes": [
+   "Forgetting to hop between attacks.",
+   "Casting E too early, with few spears.",
+   "Letting the game drag on without converting your lead."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "Harass her early, before her evolutions.",
+   "Jinx": "She scales: turn your lead into towers quickly.",
+   "Tristana": "Keep your Oathsworn close to knock her back with R when she jumps on you.",
+   "Ezreal": "Your hops dodge his Qs: force trades.",
+   "Yunara": "Avoid long fights against her."
+  },
+  "mid_game": "Take towers and dragons with your team. Rend helps secure objectives.",
+  "late_game": "Hop between every attack to stay out of reach of divers. Use R to pull your Oathsworn out of danger or to start the engage.",
+  "ahead": "Force fights and objectives while you're stronger.",
+  "behind": "Farm with E, stay with your team and play around your ultimate.",
+  "win_condition": "To win this game, you want to dominate lane with your support and convert that lead into objectives before the late game.",
+  "final_tip": "Attack, then immediately click where you want to hop: your hops are your only defense."
+ }
+}

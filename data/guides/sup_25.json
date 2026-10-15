@@ -1,0 +1,43 @@
+{
+  "Renata|sup": {
+    "identity": "Enchanteresse de contrôle. Pression (passif) : ses attaques font des dégâts en plus et marquent les ennemis, et ses alliés font des dégâts supplémentaires aux cibles marquées. Poignée de main (Q) root le premier ennemi touché ; en la réactivant, Renata le lance dans une direction (il blesse les ennemis qu'il percute). Patronage (W) renforce un allié et retarde sa mort : s'il participe à un kill pendant ce temps, il survit. Programme de fidélité (E) tire deux projectiles qui protègent les alliés et slow les ennemis, et Prise de contrôle hostile (R) envoie une vague qui rend les ennemis touchés fous furieux : ils attaquent leurs propres alliés.",
+    "playstyle": "Support de contrôle et de retournement : son ultime fait se battre l'équipe adverse contre elle-même, et Patronage sauve son carry d'une mort certaine. Elle domine les supports tanks et divers (Nautilus, Pantheon, Swain) et souffre contre Zilean.",
+    "early_game": "Poke avec Programme de fidélité (E), qui protège aussi ton ADC. Cherche Poignée de main (Q) sur l'adversaire, puis relance pour le projeter vers ton ADC ou sur son allié. Garde Patronage (W) pour le all-in : ton ADC continue de frapper même en passant sous zéro, et survit s'il obtient le kill.",
+    "level_1": "Programme de fidélité (E) en premier. Ensuite, monte E en priorité, puis W.",
+    "level_2": "Poignée de main (Q). Root, puis projette la cible vers ton équipe.",
+    "level_3": "Patronage (W). Sur ton ADC pendant un all-in : il peut survivre à des dégâts mortels s'il participe au kill.",
+    "level_6": "Prise de contrôle hostile : les ennemis touchés s'attaquent entre eux. Lance-la sur les deux adversaires qui engagent, ou sur une équipe regroupée.",
+    "power_spikes": [
+      "Niveau 2 : Q et knock-up.",
+      "Niveau 3 : W pour gagner les all-in.",
+      "Niveau 6 : ultime qui retourne un engage adverse.",
+      "Teamfight : R sur plusieurs ennemis groupés."
+    ],
+    "lane_plan": "Poke avec E, cherche les CC avec Q et garde W pour les combats décisifs. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "Trade de base : E, attaques (marque de Pression). All-in : Q → knock-up → W sur ton ADC → attaques. Défense : R sur l'engage adverse, E pour protéger. Contre Zilean, ne force pas les all-in : son Retour temporel sauve la cible de ton combo.",
+    "jungle_plan": "",
+    "threats": [
+      "Zilean : matchup difficile.",
+      "Xerath : matchup difficile.",
+      "Poke à distance qui t'empêche d'approcher pour le Q."
+    ],
+    "mistakes": [
+      "Lancer W trop tôt, avant que ton ADC soit en danger.",
+      "Projeter la cible de Q vers son équipe au lieu de la tienne.",
+      "Lancer l'ultime sur un seul ennemi."
+    ],
+    "matchup_notes": {
+      "Thresh": "Si son grappin attrape ton ADC, W sur lui et R sur le duo adverse.",
+      "Lulu": "Elle harcèle mieux : joue les CC plutôt que le poke.",
+      "Nautilus": "Son engage le rapproche de son ADC : R sur les deux, ils s'attaquent entre eux.",
+      "Leona": "Garde R pour son engage.",
+      "Zilean": "Son Retour temporel sauve ses alliés : attends qu'il l'ait utilisé."
+    },
+    "mid_game": "Accompagne ton carry, pose des pinks et cherche les CC avec Q autour des objectifs.",
+    "late_game": "Reste derrière ta frontline. R sur l'équipe adverse regroupée, W sur ton carry quand il dive, Q sur le diver adverse.",
+    "ahead": "Force les combats groupés : ton ultime les gagne.",
+    "behind": "Protège ton carry avec E et W, et attends le bon moment pour ton ultime.",
+    "win_condition": "Pour gagner cette partie, tu veux retourner les engages adverses avec ton ultime et garder ton carry en vie avec Patronage.",
+    "final_tip": "Patronage ne sauve ton allié que s'il participe à un kill pendant l'effet : donne-le à celui qui peut encore tuer."
+  }
+}

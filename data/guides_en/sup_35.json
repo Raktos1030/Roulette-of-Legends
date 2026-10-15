@@ -1,0 +1,43 @@
+{
+ "Taric|sup": {
+  "identity": "Protective tank. Bravado (passive): every ability empowers his next two attacks (magic damage, reduced cooldowns, fast attacks). Starlight's Touch (Q) heals nearby allies based on the charges built by his empowered attacks, Bastion (W) increases armor and, when activated, links Taric to an ally with a shield: his abilities are also cast from that ally, Dazzle (E) fires a beam after a short delay that stuns, and Cosmic Radiance (R) makes every nearby ally invulnerable for a short moment after a delay.",
+  "playstyle": "Protection and counter-engage support: he stuns from his linked ally, heals and makes his whole team invulnerable at the key moment. No clearly unfavorable matchups, and he crushes engage supports (Nautilus, Blitzcrank, Pantheon).",
+  "early_game": "Link to your ADC with Bastion (W): your Dazzle (E) also fires from them, doubling your stun angles. Weave abilities and attacks to make the most of Bravado (each ability empowers two attacks and lowers your cooldowns). Heal with Q after trades.",
+  "level_1": "Dazzle (E) first. After that, max E first, then Q.",
+  "level_2": "Bastion (W) or Starlight's Touch (Q). W to link your ADC (stun from them), Q for healing.",
+  "level_3": "The missing ability. Combo: E (from you and your ADC) → empowered attacks → Q.",
+  "level_6": "Cosmic Radiance: after a delay, every nearby ally becomes invulnerable. Cast it right before the enemy engage lands, accounting for the delay.",
+  "power_spikes": [
+   "Level 2: W + E, stuns from two positions.",
+   "Level 6: group invulnerability.",
+   "First items: lower cooldowns, very frequent abilities.",
+   "Teamfights: Cosmic Radiance as the enemy engages."
+  ],
+  "lane_plan": "Link your ADC with W, look for the stun with E and heal with Q. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "All-in: E (from you and your ADC) → empowered attacks → Q. Defense: E on the diver, R before the enemy engage. Against Senna and Janna (your worst matchups), play defensively: they disengage or poke from range.",
+  "jungle_plan": "",
+  "threats": [
+   "Senna, Janna and Zilean: your worst matchups, close to even.",
+   "Ranged poke that stops you from getting close.",
+   "Enemy healing reduction."
+  ],
+  "mistakes": [
+   "Casting your ultimate too late: its delay lets the enemy kill your ally.",
+   "Forgetting to link your ADC with Bastion.",
+   "Chaining abilities without attacking in between (Bravado wasted)."
+  ],
+  "matchup_notes": {
+   "Thresh": "Stun him with E when he steps up for his hook.",
+   "Nautilus": "His engage is cancelled by your stun and ultimate.",
+   "Leona": "E from your ADC when she engages on them.",
+   "Blitzcrank": "If he grabs your ADC, E from them stuns Blitzcrank.",
+   "Senna": "She pokes from far away: protect your ADC and wait for her to get close."
+  },
+  "mid_game": "Stick with your carry, place Control Wards and keep your ultimate for fights around objectives.",
+  "late_game": "Link your best carry with W, stun divers with E and cast Cosmic Radiance right before the enemy engage.",
+  "ahead": "Force fights: your ultimate makes your team untouchable at the worst moment for the enemy.",
+  "behind": "Protect your carry with W, E and R.",
+  "win_condition": "To win this game, you want to cancel enemy engages with your stuns and your group invulnerability.",
+  "final_tip": "Account for Cosmic Radiance's delay: cast it when the enemy engage starts, not when your ally is already almost dead."
+ }
+}

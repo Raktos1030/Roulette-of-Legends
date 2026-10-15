@@ -1,0 +1,43 @@
+{
+  "XinZhao|jgl": {
+    "identity": "Combattant à dégâts physiques, spécialiste des ganks précoces. Charge audacieuse (E) fonce sur une cible et le rend plus rapide à frapper, Frappe des trois serres (Q) renforce ses trois attaques suivantes (la troisième knock-up), Vent et foudre (W) frappe puis perce en slowant, et Garde circulaire (R) repousse tous les ennemis sauf sa dernière cible et réduit les dégâts venant de l'extérieur. Son passif frappe plus fort et le soigne toutes les trois attaques.",
+    "playstyle": "Jungler d'early game : ganks dès le niveau 3, duels et escarmouches. Il doit créer l'avance tôt.",
+    "early_game": "Clear rapide avec E et W. Gank dès le niveau 3 : E pour foncer, Q pour le knock-up au troisième coup, W pour slow. Envahis quand tes laners ont la priorité.",
+    "level_1": "Charge audacieuse (E) en premier.",
+    "level_2": "Vent et foudre (W). Frappe puis percée qui slow : ton clear s'accélère et tu peux poke une cible qui fuit.",
+    "level_3": "Frappe des trois serres (Q). Premier gank : E → Q (trois attaques, knock-up au troisième) → W.",
+    "level_6": "Garde circulaire : repousse tout le monde sauf ta cible et te protège des dégâts extérieurs. Isole un carry en teamfight ou empêche les alliés de ta cible de la sauver.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec E + Q.",
+      "Niveau 6 : isolement d'une cible avec l'ultime.",
+      "Premier item complet : duels et dives forts.",
+      "Mid game : escarmouches avant que les carries ne scalent."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide jusqu'au niveau 3, puis ganks et invasions. Xin Zhao doit créer l'avance en early : contrôle les crabes, envahis avec tes laners et prends les Larves (vers 8 min). Évite les duels contre les junglers qui te battent (Udyr, Kha'Zix, Sylas).",
+    "trading": "En gank : E → Q → W. En escarmouche : E sur le carry → R pour repousser ses alliés → Q → W. Abandonne contre les junglers qui te burst ou t'esquivent.",
+    "threats": [
+      "Udyr, Kha'Zix et Sylas : matchups difficiles.",
+      "Parties longues où ton impact baisse.",
+      "CC qui t'arrêtent pendant ta charge."
+    ],
+    "mistakes": [
+      "Lancer l'ultime sur la mauvaise cible (elle reste avec toi, les autres sont repoussés).",
+      "Farmer passivement au lieu de créer l'avance.",
+      "Engager avec E sur un tank au lieu d'un carry."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Vous êtes tous deux des junglers d'early : sois plus rapide sur les ganks.",
+      "Graves": "Il te bat en duel : gank là où il n'est pas.",
+      "Sylas": "Il peut voler ton ultime et te bat en duel : évite-le.",
+      "Viego": "Isole-le avec l'ultime quand il dive.",
+      "Kha'Zix": "Il te bat en duel isolé : combats avec tes alliés."
+    },
+    "mid_game": "Escarmouches et dives autour des objectifs.",
+    "late_game": "Dive sur le carry adverse, ultime pour repousser ses protecteurs.",
+    "ahead": "Étouffe le jungler adverse, dive et prends les objectifs.",
+    "behind": "Cherche des picks sur les carries isolés et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux créer une avance en early par les ganks et isoler les carries avec l'ultime.",
+    "final_tip": "Avant ta Garde circulaire, frappe le carry : c'est ta dernière cible qui reste avec toi."
+  }
+}

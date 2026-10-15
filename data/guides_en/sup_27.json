@@ -1,0 +1,43 @@
+{
+ "Seraphine|sup": {
+  "identity": "Utility mage. Stage Presence (passive): every third basic ability, she casts the chosen ability twice; casting abilities near allies gives her next attack more range and magic damage. High Note (Q) deals area damage, Surround Sound (W) gives nearby allies a shield and speed (and heals them if she already has a shield), Beat Drop (E) damages in a line and impairs movement, and Encore (R) charms enemies hit, with range that extends for every champion it passes through.",
+  "playstyle": "Poke and teamfight support: she harasses with Q, protects with W and decides fights with her ultimate. No clearly unfavorable matchups: her worst ones (Rell, Milio, Nami) stay close to even.",
+  "early_game": "Poke with High Note (Q) when your opponent comes to last hit. Count your abilities: the third one is doubled (double Q to poke, double E to root, double W to protect). Stay near your ADC: your empowered attacks have more range.",
+  "level_1": "High Note (Q) first. After that, max Q first.",
+  "level_2": "Beat Drop (E). Slows in a line; on a target that's already slowed or rooted, it roots.",
+  "level_3": "Surround Sound (W). A shield and speed for your duo, healing if you already have a shield.",
+  "level_6": "Encore: a line charm that goes farther for every champion it passes through (ally or enemy). Aim through your ADC or the enemy support to hit both opponents.",
+  "power_spikes": [
+   "Level 3: doubled abilities.",
+   "Level 6: an ultimate that charms both opponents.",
+   "First completed item: stronger poke and shields.",
+   "Teamfights: Encore through several champions."
+  ],
+  "lane_plan": "Poke with Q, protect your ADC with W and keep E for kills or defense. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "Basic trade: Q (doubled if possible), empowered attack. All-in: doubled E to root, Q, R. Defense: doubled W to protect, E on the diver. Against enchanters who heal more than you poke (Milio, Nami), play for CC.",
+  "jungle_plan": "",
+  "threats": [
+   "Rell, Milio and Nami: your worst matchups, close to even.",
+   "Hooks and engages that catch you: you have no mobility.",
+   "Assassins who target you in teamfights."
+  ],
+  "mistakes": [
+   "Wasting the doubled ability on a wave.",
+   "Casting your ultimate without extending it through a champion.",
+   "Standing in front of your ADC against an engage support."
+  ],
+  "matchup_notes": {
+   "Thresh": "Stay behind minions; if his hook lands, doubled E on him.",
+   "Lulu": "Poke trades: your doubled Q wins.",
+   "Nami": "Dodge her bubble and keep W for her engage.",
+   "Nautilus": "His anchor pulls you to him: doubled E and R as soon as he arrives.",
+   "Swain": "He has to get close: poke him and root him."
+  },
+  "mid_game": "Group with your team, poke with Q before objectives and place Control Wards.",
+  "late_game": "Stay behind your frontline. Encore through a champion to hit the group, E on charmed targets, doubled W to protect the whole team.",
+  "ahead": "Force grouped teamfights: your ultimate and doubled abilities win them.",
+  "behind": "Play utility: W and R stay decisive even without a lead.",
+  "win_condition": "To win this game, you want to harass in lane, then decide teamfights with an ultimate that charms several enemies.",
+  "final_tip": "Aim your ultimate through your own ADC: it extends and often hits both opponents behind them."
+ }
+}

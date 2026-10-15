@@ -1,0 +1,43 @@
+{
+  "Yunara|adc": {
+    "identity": "Tireuse à dégâts physiques et magiques. Serment aux Terres premières (passif) : ses crits infligent des dégâts magiques bonus. Déchaînement spirituel (Q) ajoute passivement des dégâts magiques à ses attaques et se charge en attaquant (deux fois plus vite sur les champions) ; une fois chargé, il donne 5 secondes de vitesse d'attaque et fait rebondir ses attaques sur les ennemis proches. Arc du jugement (W) lance un grain de chapelet qui blesse et slow fortement, Célérité des kanmei (E) lui donne de la vitesse et la rend fantomatique, et Transe (R) la fait entrer 15 secondes dans un état qui active automatiquement Q et transforme W (un rayon puissant) et E (un dash).",
+    "playstyle": "ADC de combat soutenu : elle charge son Q en attaquant, puis gagne les combats longs grâce à ses rebonds et à sa transe. Seuls Kog'Maw et Twitch lui posent problème, et elle domine les ADC de début de partie qui doivent la tuer vite (Vayne, Kalista).",
+    "early_game": "Farm et trade quand ton Q est chargé : attaque l'adversaire (deux charges par coup sur un champion), puis active Q pour gagner le trade. W slow fortement : utilise-le pour un kill avec ton support ou pour empêcher un engage. Garde E pour fuir ou te replacer.",
+    "level_1": "Déchaînement spirituel (Q) en premier. Charge-le en attaquant, active-le pour les trades.",
+    "level_2": "Arc du jugement (W). Gros slow : lance-le quand ton support engage ou quand l'adversaire s'avance.",
+    "level_3": "Célérité des kanmei (E). Vitesse et état fantomatique pour te replacer ou fuir.",
+    "level_6": "Transe : 15 secondes de Q activé en continu, W transformé en rayon puissant et E en dash, avec les délais de W et E fortement réduits en entrant et en sortant. Lance-la au début d'un combat long.",
+    "power_spikes": [
+      "Niveau 2 : Q chargé + W pour les trades.",
+      "Niveau 6 : Transe pour les combats longs.",
+      "Premier item complet : rebonds de Q dangereux.",
+      "Deux items complets : crits renforcés par ton passif."
+    ],
+    "lane_plan": "Farm, charge ton Q et trade au bon moment. Joue avec ton support grâce au slow de W. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense un farm régulier. Participe aux dragons : tes rebonds sont très efficaces sur les combats groupés.",
+    "trading": "Trade de base : attaques pour charger Q, puis Q activé et recul. All-in : W, Q activé, attaques, R si le combat dure, E transformé pour rester à portée. Abandonne contre les ADC qui te surprennent ou te surpassent en combat long (Twitch, Kog'Maw).",
+    "jungle_plan": "",
+    "threats": [
+      "Kog'Maw et Twitch : tes matchups les plus difficiles.",
+      "CC de foule qui interrompent ta transe.",
+      "Assassins quand E est en recharge."
+    ],
+    "mistakes": [
+      "Activer Q sans cible à portée (charges perdues).",
+      "Lancer la transe pour un combat trop court.",
+      "Utiliser E pour attaquer et ne plus pouvoir fuir."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Slow-la avec W quand elle dive.",
+      "Jinx": "Punis-la tôt avec ton support.",
+      "Jhin": "Engage pendant son rechargement.",
+      "Vayne": "Slow-la avec W et gagne le combat long.",
+      "Twitch": "Il te surprend depuis le camouflage : garde W pour le slow à sa sortie."
+    },
+    "mid_game": "Groupe avec ton équipe autour des objectifs. Tes rebonds sont très forts dans les combats serrés autour des dragons.",
+    "late_game": "Reste derrière ta frontline, lance la transe quand le combat commence vraiment, et utilise E transformé pour rester à portée sans t'exposer.",
+    "ahead": "Force les combats longs et prends les objectifs.",
+    "behind": "Farm et joue les teamfights derrière ta frontline : ta transe peut renverser un combat.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner les combats longs grâce à ton Q chargé et à ta transe.",
+    "final_tip": "Attaque les champions pour charger ton Q deux fois plus vite, puis active-le au moment de trade."
+  }
+}

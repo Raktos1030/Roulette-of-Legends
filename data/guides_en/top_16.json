@@ -1,0 +1,43 @@
+{
+ "Yorick|top": {
+  "identity": "Physical damage fighter and summoner, a split push specialist. Graves appear around him when units die (passive Shepherd of Souls); Last Rites (Q) empowers his next attack and heals him, then lets him raise Mist Walkers from nearby graves. Dark Procession (W) traps enemies in a cage, Mourning Mist (E) shreds armor, slows and marks (your summons rush toward the marked target), and Eulogy of the Isles (R) summons the Maiden of the Mist, who fights with him or pushes a lane on her own.",
+  "playstyle": "Split pushing and group fighting with his summons. Yorick crushes towers and isolated champions with his ghouls and the Maiden, and forces the enemy team to send players at him.",
+  "early_game": "Farm with Q to create graves, then recast Q to raise ghouls and trade with them. Land E on your opponent so your ghouls chase them. Keep W to trap an opponent who tries to escape or to protect yourself from an engage.",
+  "level_1": "Last Rites (Q) first. Last hit with Q to create graves and heal.",
+  "level_2": "Mourning Mist (E). It marks your opponent, shreds their armor and slows them: the ghouls rush at them. Q (raise) + E is your first real trade.",
+  "level_3": "Dark Procession (W). A cage that traps: E → W around your opponent → ghouls + attacks. A very good kill threat with Ignite.",
+  "level_6": "Eulogy of the Isles: the Maiden of the Mist fights with you. You can let her push a lane on her own while you do something else, or bring her with you for a crushing all-in.",
+  "power_spikes": [
+   "Level 3: E + W + ghouls.",
+   "Level 6: Maiden of the Mist, split pushing and duels.",
+   "First completed item: towers destroyed very fast.",
+   "Mid game: constant pressure on a side lane."
+  ],
+  "lane_plan": "Farm with Q to create graves and raise ghouls to push. Use ghouls to poke your opponent. Recall when your wave crashes. After 6, send the Maiden down one lane while you push another: the enemy can't defend everything.",
+  "trading": "Short trade: empowered Q + ghouls. Long trade: E (mark) → W (cage) → ghouls → Q → R. Engage when your ghouls are available; give up on it against champions who quickly kill your summons (Yone, Gwen, Fiora).",
+  "jungle_plan": "",
+  "threats": [
+   "Yone: your hardest matchup.",
+   "Champions who clear your summons (Gwen, Fiora).",
+   "Ganks while you split push without vision."
+  ],
+  "mistakes": [
+   "Forgetting to raise your ghouls after Q.",
+   "Placing W in the wrong spot, without trapping your opponent.",
+   "Using your ultimate in a lost fight instead of keeping it to push."
+  ],
+  "matchup_notes": {
+   "Yone": "He clears your ghouls and beats you in melee range: farm under your tower and play for the split push later.",
+   "Nasus": "Push him under his tower with your ghouls to limit his stacks, and turn your lead into towers before he scales.",
+   "Jayce": "Your ghouls stop him from poking for free.",
+   "Darius": "Trap him in W and let your ghouls hit him.",
+   "Fiora": "She kills your ghouls and beats you in duels: farm and split push when she's not there."
+  },
+  "mid_game": "Split push: send the Maiden down one lane and push the other. Force the enemy team to send several players to deal with you.",
+  "late_game": "Split push with the Maiden while your team holds mid, or join fights with your summons.",
+  "ahead": "Split push, take every tower and force two opponents to come.",
+  "behind": "Farm and split push safely: your pressure stays real.",
+  "win_condition": "To win this game, you want to split push to draw several opponents and take towers.",
+  "final_tip": "Always recast your Q to raise the ghouls: they deal most of your damage."
+ }
+}

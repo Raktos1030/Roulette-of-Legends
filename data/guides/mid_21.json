@@ -1,0 +1,43 @@
+{
+  "Locke|mid": {
+    "identity": "Assassin à dégâts magiques sorti en juin 2026 (patch 26.13), construit autour de marques à déclencher. Ses attaques infligent des dégâts magiques bonus, plus élevés sur les cibles blessées (passif Pieu argenté). Clous rituels (Q) lance des clous qui marquent (jusqu'à trois stacks, slow fort à partir de deux) et se relance deux fois ; ses attaques ou son E consomment les stacks pour de gros dégâts. Brûlure d'âme (W) lui donne vitesse d'attaque et de déplacement en coûtant des PV, puis le soigne d'une partie des dégâts subis. Traque cendrée (E) le téléporte sur une cible puis transforme sa prochaine attaque en dash qui traverse ; elle se réinitialise sur une élimination de champion. Purgatoire (R) lance un totem qui marque et exécute les champions sous un seuil de PV ; ramasser leurs âmes réduit le temps de recharge et augmente définitivement le seuil.",
+    "playstyle": "Assassin « marquer puis déclencher » : tout son burst vient des trois clous consommés au bon moment. Il punit les mages immobiles (Orianna, Mel, Xerath, Malzahar) et craint les assassins qui le devancent (Katarina, Akali, Talon) ou le rattrapent (Kassadin, Ekko).",
+    "early_game": "Poke avec les clous (Q) puis consomme les stacks avec une attaque. Les guides conseillent de toucher les trois clous avant de s'engager. Garde E pour le moment qui compte : c'est ta seule mobilité. Les relances de Q non utilisées rendent une partie du temps de recharge et du mana.",
+    "level_1": "Clous rituels (Q) en premier. Pose des stacks sur l'adversaire, puis consomme-les avec une attaque quand il vient last hit.",
+    "level_2": "Traque cendrée (E). Téléportation sur la cible puis dash avec l'attaque renforcée : Q (stacks) → E → attaque qui consomme les stacks.",
+    "level_3": "Brûlure d'âme (W). Vitesse d'attaque et de déplacement au prix de PV ; les guides recommandent de l'activer avant l'arrivée des dégâts adverses pour stocker davantage de PV à récupérer.",
+    "level_6": "Purgatoire : totem qui marque et exécute sous un seuil de PV. Combo : Q ×3 → E → attaque → R pour achever. Ramasse toujours le totem après une élimination : il réduit le temps de recharge et augmente ton seuil d'exécution pour le reste de la partie.",
+    "power_spikes": [
+      "Niveau 3 : combo Q → E → attaque avec W.",
+      "Niveau 6 : exécution avec Purgatoire.",
+      "Premier item complet : burst qui tue les mages.",
+      "Âmes accumulées : seuil d'exécution de plus en plus haut."
+    ],
+    "lane_plan": "Poke avec Q, consomme les stacks et recule. Pousse la wave et roam après le niveau 6 : la réinitialisation de E sur élimination te permet d'enchaîner. La quête de rôle mid (retour accéléré) t'aide à revenir vite. Évite les assassins qui te burst avant toi.",
+    "trading": "Trade court : Q → attaque (consommation des stacks). All-in : Q ×3 → W → E → attaque → R. Engage quand les trois clous ont touché ; abandonne si tu dois utiliser E pour fuir.",
+    "jungle_plan": "",
+    "threats": [
+      "Katarina, Akali et Talon, qui te devancent en burst.",
+      "Kassadin et Ekko, qui te rattrapent.",
+      "CC qui t'interrompent avant la consommation des stacks."
+    ],
+    "mistakes": [
+      "Engager sans les trois clous.",
+      "Utiliser E pour poke et ne plus l'avoir au moment décisif.",
+      "Oublier de ramasser le totem après une exécution."
+    ],
+    "matchup_notes": {
+      "Viktor": "Pose les clous hors de son champ gravitationnel, puis dive.",
+      "Ahri": "Esquive son Charme avant d'utiliser E.",
+      "Syndra": "Dive quand son stun est en recharge.",
+      "Katarina": "Elle te devance en burst : interromps son ultime avec le slow des clous.",
+      "Akali": "Son Linceul esquive tes clous : attends qu'elle en sorte."
+    },
+    "mid_game": "Roams, picks et objectifs. Chaque élimination avec le totem augmente ton seuil d'exécution.",
+    "late_game": "Dive sur le carry adverse avec E, exécute avec R, puis enchaîne grâce à la réinitialisation de E.",
+    "ahead": "Roam, chasse les carries et accumule les âmes.",
+    "behind": "Farm et cherche des picks sur les cibles isolées.",
+    "win_condition": "Pour gagner cette partie, tu veux assassiner les carries avec les clous et accumuler les âmes pour exécuter de plus en plus haut.",
+    "final_tip": "Touche les trois clous avant de t'engager et ramasse toujours ton totem."
+  }
+}

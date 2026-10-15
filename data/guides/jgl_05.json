@@ -1,0 +1,43 @@
+{
+  "Diana|jgl": {
+    "identity": "Combattante-assassine à dégâts magiques, jouée presque autant en jungle qu'au mid. Croissant lunaire (Q) applique la Lumière lunaire, qui réinitialise Rush lunaire (E) : Diana peut dasher deux fois. Corps célestes (W) la protège avec des orbes, son passif frappe en zone toutes les trois attaques, et Attraction lunaire (R) attire tous les ennemis proches avant une explosion qui fait plus mal à chaque champion touché.",
+    "playstyle": "Jungler de clear rapide et de gros pic au niveau 6 : ganks et engages de teamfight avec l'ultime. Elle dépend beaucoup du Q qui touche et de son niveau 6.",
+    "early_game": "Clear rapide grâce aux attaques en zone du passif et à Q. Avant le niveau 6, tes ganks sont moyens : privilégie le farm et les ganks sur les cibles déjà en mauvaise posture. Garde le Q pour marquer avant chaque E.",
+    "level_1": "Croissant lunaire (Q) en premier. Il nettoie les camps et marque les cibles.",
+    "level_2": "Corps célestes (W). Shield et dégâts de zone : tu peux enchaîner les camps sans perdre trop de PV.",
+    "level_3": "Rush lunaire (E). Dash sur la cible ; sur une cible marquée par Q, il se réinitialise. Combo : Q → E → W → attaques. Premier gank possible mais pas encore décisif.",
+    "level_6": "Attraction lunaire : tu attires tous les ennemis proches puis tu explose. Q → E → R est ton combo de gank et de teamfight ; plus tu touches de champions, plus l'explosion fait mal. C'est ton vrai pic.",
+    "power_spikes": [
+      "Niveau 3 : combo Q → E.",
+      "Niveau 6 : ultime de zone, ganks et engages.",
+      "Premier item complet : burst ou tanking selon ton orientation.",
+      "Mid game : engages multicibles en teamfight."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear complet rapide jusqu'au niveau 6 si aucune lane n'offre de gank facile : Diana veut arriver vite à son ultime. Après le 6, gank en boucle avec Q → E → R, idéalement sur des lanes où deux adversaires sont proches (bot). Contrôle le crabe et envahis quand tes laners sont devant. Joue les dragons et les Larves (vers 8 min) avec ton équipe. Évite les duels précoces contre les junglers forts en early.",
+    "trading": "En gank : Q pour marquer, E pour coller, R si l'adversaire tente de fuir (ou pour toucher deux champions). En escarmouche : attends les CC adverses, puis Q → E → R sur plusieurs cibles. Abandonne si ton Q est raté (tu n'as plus de second E).",
+    "threats": [
+      "Tanks qui encaissent ton burst (Cho'Gath, Nunu et Willump).",
+      "Junglers qui gagnent les duels early (Briar, Udyr, Rek'Sai).",
+      "CC qui t'interrompent avant l'ultime."
+    ],
+    "mistakes": [
+      "Utiliser E sans marque de Q (pas de réinitialisation).",
+      "Lancer l'ultime sur une seule cible en teamfight.",
+      "Forcer des ganks avant le niveau 6 au lieu de farmer."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il t'envahit tôt : farm de l'autre côté de la carte et punis-le après ton 6.",
+      "Graves": "Il te bat en early ; prends ton temps pour atteindre le 6.",
+      "Viego": "Il réinitialise en possédant tes alliés : garde ton ultime pour le moment où il dive.",
+      "Cho'Gath": "Il encaisse ton burst et te silence : n'engage pas sur lui.",
+      "Briar": "Sa frénésie te bat en duel : évite les escarmouches sans alliés."
+    },
+    "mid_game": "Ganks en boucle avec l'ultime, dragons et escarmouches en rivière. Diana est forte quand les combats se font à plusieurs, là où son ultime touche beaucoup de cibles.",
+    "late_game": "Engage de flanc : Q sur la cible la plus proche, E pour entrer, R au milieu. Selon ton orientation, tu vises le carry ou la zone.",
+    "ahead": "Ganks répétés, invasions et objectifs : fais-toi respecter dès le 6.",
+    "behind": "Farm, joue avec ton équipe et attends les combats groupés où ton ultime peut toucher plusieurs cibles.",
+    "win_condition": "Pour gagner cette partie, tu veux arriver vite au niveau 6, ganker avec l'ultime et engager les teamfights sur plusieurs cibles.",
+    "final_tip": "Lance toujours Q avant E : sans la marque, tu perds ton second dash."
+  }
+}

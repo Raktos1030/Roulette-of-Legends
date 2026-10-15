@@ -1,0 +1,43 @@
+{
+  "Shen|sup": {
+    "identity": "Tank protecteur. Barrière de ki (passif) lui donne un shield après chaque sort (son délai diminue quand il affecte des champions). Assaut crépusculaire (Q) rappelle sa lame spirituelle pour renforcer ses attaques (dégâts selon les PV max, bien plus forts si la lame touche un champion) et slow les ennemis qui s'éloignent de lui, Refuge spirituel (W) bloque les attaques contre Shen et ses alliés près de la lame, Rush des ombres (E) est un dash qui taunt les ennemis traversés, et Soutien indéfectible (R) donne un shield à un allié n'importe où sur la carte puis téléporte Shen auprès de lui.",
+    "playstyle": "Support de protection globale : il taunt les ennemis avec E, bloque les attaques avec W et sauve n'importe quel allié avec son ultime. Il souffre contre les supports tanks et les enchanteurs qui disengage (Rell, Braum, Janna, Milio), et bat surtout les supports fragiles ou de dive (Camille, Yuumi).",
+    "early_game": "Trade avec Q : fais revenir la lame à travers l'adversaire pour renforcer tes attaques. Garde Rush des ombres (E) pour engager avec ton ADC ou provoquer un diver. Refuge spirituel (W) bloque les attaques de l'ADC adverse autour de la lame.",
+    "level_1": "Rush des ombres (E) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Assaut crépusculaire (Q). Combo : E (taunt) → Q (lame à travers la cible) → attaques.",
+    "level_3": "Refuge spirituel (W). Bloque les attaques autour de ta lame : place-la près de ton ADC avant un trade.",
+    "level_6": "Soutien indéfectible : shield sur un allié en danger n'importe où, puis téléportation. Sauve ton toplaner, rejoins un combat sur le mid ou transforme un dive adverse en contre-attaque.",
+    "power_spikes": [
+      "Niveau 2 : E → Q.",
+      "Niveau 6 : ultime global.",
+      "Premiers items de résistance : frontline durable.",
+      "Mid game : combats à 2 contre 2 sur toute la carte."
+    ],
+    "lane_plan": "Engage avec E quand ton ADC peut suivre, protège-le avec W. Au niveau 6, surveille la carte pour ton ultime. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "All-in : E → Q → attaques, W pour bloquer la riposte de l'ADC adverse. Défense : E sur le diver, W près de ton ADC. Recule contre les supports qui te surpassent au contact (Rell, Braum) : joue plutôt pour ton ultime.",
+    "jungle_plan": "",
+    "threats": [
+      "Rell et Braum, pires matchups.",
+      "Janna, Milio et Séraphine : matchups difficiles.",
+      "Poke à distance qui t'empêche de t'approcher pour provoquer."
+    ],
+    "mistakes": [
+      "Lancer l'ultime trop tard, sur un allié déjà mort.",
+      "Utiliser E sans que ton ADC puisse suivre.",
+      "Placer la lame loin de ton ADC avant un combat."
+    ],
+    "matchup_notes": {
+      "Thresh": "Provoque-le avec E quand il avance pour son grappin.",
+      "Lulu": "Sa métamorphose coupe ton taunt : engage quand elle l'a utilisée.",
+      "Nautilus": "Son engage le rapproche de toi : réponds par E.",
+      "Camille": "Elle doit dive : provoque-la et bloque ses attaques avec W.",
+      "Rell": "Son engage te dépasse : protège ton ADC et joue la carte avec ton ultime."
+    },
+    "mid_game": "Surveille toute la carte : ton ultime transforme chaque combat à distance. Pose des pinks autour des objectifs.",
+    "late_game": "Protège ton carry avec W, taunt les divers avec E et sauve un allié avec R. Ne gâche pas l'ultime avant le combat décisif.",
+    "ahead": "Aide toutes les lanes avec ton ultime.",
+    "behind": "Protège ton ADC et garde l'ultime pour sauver un carry.",
+    "win_condition": "Pour gagner cette partie, tu veux protéger ton équipe partout sur la carte et gagner les combats où ton ultime arrive.",
+    "final_tip": "Regarde la minicarte en permanence : ton ultime n'est utile que si tu le lances avant que ton allié meure."
+  }
+}

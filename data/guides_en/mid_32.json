@@ -1,0 +1,43 @@
+{
+ "Sylas|mid": {
+  "identity": "Magic damage fighter-mage who steals ultimates. Chain Lash (Q) crosses his chains to slow, then explode, Kingslayer (W) leaps onto a target and heals him more when he's low, Abscond / Abduct (E) dashes, then throws a chain that pulls him to the enemy and stuns them, and Hijack (R) steals an enemy champion's ultimate. After every ability, his next attack hits in an area (passive).",
+  "playstyle": "In mid, Sylas is a short-range fighter who wins trades thanks to W's healing and roams with E. His stolen ultimate depends on the enemy comp.",
+  "early_game": "Farm with Q and your passive. Trade with E → chain (stun) → Q → W when your opponent steps up. Against long-range mages, farm and wait for your jungler.",
+  "level_1": "Abscond / Abduct (E) first.",
+  "level_2": "Kingslayer (W). A leap and a heal: E → W is a good short trade.",
+  "level_3": "Chain Lash (Q). Full kit: E → chain → Q → W → attacks (passive).",
+  "level_6": "Hijack: steal the most useful ultimate on the enemy team (engage, area, execute, healing). Hold it for the deciding moment if it's a teamfight ultimate.",
+  "power_spikes": [
+   "Level 3: full combo.",
+   "Level 6: stolen ultimate.",
+   "First completed item: strong skirmishes.",
+   "Mid game: playmaking with the stolen ultimate."
+  ],
+  "lane_plan": "Farm, trade briefly with W and roam with E after level 6. The mid role quest (faster recall) makes your roams more profitable. Against long-range mages, play for farm and your jungler.",
+  "trading": "Short trade: E → chain → W. All-in: E → Q → W → stolen R. Give up on it against mages who stop you (Vex) or poke you from out of range.",
+  "jungle_plan": "",
+  "threats": [
+   "Vex: your hardest matchup (her passive stops your dashes).",
+   "Long-range mages (Hwei, Zoe, Taliyah).",
+   "Enemy comps with no interesting ultimate to steal."
+  ],
+  "mistakes": [
+   "Stealing an ultimate at random without looking at the enemy comp.",
+   "Using W too early, when you don't need the heal.",
+   "Engaging with E against a mage who can interrupt you."
+  ],
+  "matchup_notes": {
+   "Ahri": "Dodge her Charm with E and steal her ultimate to chase her.",
+   "Zed": "W heals you through his burst; steal his ultimate.",
+   "Viktor": "Engage when his Gravity Field is on cooldown.",
+   "Vex": "Her passive interrupts your E: farm and roam.",
+   "Hwei": "He pokes you: play around your jungler."
+  },
+  "mid_game": "Roams and playmaking with the stolen ultimate around objectives.",
+  "late_game": "Use the stolen ultimate at the right moment, then W to survive.",
+  "ahead": "Roam, take objectives and force fights.",
+  "behind": "Farm and look for a decisive stolen ultimate.",
+  "win_condition": "To win this game, you want to win short trades thanks to W and turn teamfights with the stolen ultimate.",
+  "final_tip": "Before stealing an ultimate, look at the whole enemy comp: pick the one that will have the most impact."
+ }
+}

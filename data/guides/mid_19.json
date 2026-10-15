@@ -1,0 +1,43 @@
+{
+  "Leblanc|mid": {
+    "identity": "Assassin à dégâts magiques, reine du burst et de la tromperie. Sceau de malveillance (Q) marque la cible (qui explose au sort suivant), Distorsion (W) la fait bondir puis revenir à son point de départ, Chaînes éthérées (E) root si la chaîne tient, et Imitation (R) copie son dernier sort. Quand elle tombe bas en PV, elle crée un clone et devient brièvement invisible (passif).",
+    "playstyle": "Assassin de burst et de roam, surtout dominante en early/mid game. LeBlanc punit les mages immobiles et roam facilement avec W.",
+    "early_game": "Poke avec W → Q ou Q → W quand l'adversaire vient last hit, puis reviens avec la seconde partie de W. Garde E pour punir un adversaire qui s'avance ou te défendre. Tu es très forte aux niveaux 2-3 contre les mages.",
+    "level_1": "Distorsion (W) en premier. Bond sur l'adversaire, puis retour.",
+    "level_2": "Sceau de malveillance (Q). Q → W (fait exploser la marque) : gros burst au niveau 2.",
+    "level_3": "Chaînes éthérées (E). Combo : Q → W → E → retour de W. Menace de kill avec Embrasement.",
+    "level_6": "Imitation : copie ton dernier sort (RQ, RW ou RE). Combo de burst : Q → R (Q) → W → E. Roam vers les side lanes avec W.",
+    "power_spikes": [
+      "Niveau 2 : Q + W.",
+      "Niveau 6 : burst complet avec Imitation.",
+      "Premier item complet : one-shot sur les mages et tireurs.",
+      "Mid game : roams et picks."
+    ],
+    "lane_plan": "Poke et gagne les niveaux 2-3, puis pousse et roam. La quête de rôle mid (retour accéléré) rend tes roams très efficaces. Contre les mages qui te bloquent (Vex, Malzahar), joue le farm et roam après le 6.",
+    "trading": "Trade court : W → Q → retour de W. All-in : Q → R → W → E. Engage quand le CC adverse est en recharge ; abandonne si tu dois revenir avec W et que ton point de départ n'est plus sûr.",
+    "jungle_plan": "",
+    "threats": [
+      "Vex : ton matchup le plus difficile (son passif te stoppe).",
+      "Malzahar, dont le shield absorbe ton burst.",
+      "Tanks qui encaissent ton burst en fin de partie."
+    ],
+    "mistakes": [
+      "Revenir avec W vers une position dangereuse.",
+      "Utiliser Imitation sur un sort qui ne fait pas de dégâts quand tu veux burst.",
+      "Jouer pour le late game au lieu de créer l'avance tôt."
+    ],
+    "matchup_notes": {
+      "Ahri": "Esquive son Charme et burst-la quand elle l'a raté.",
+      "Viktor": "Burst-le avant qu'il ne pose son champ gravitationnel.",
+      "Syndra": "Esquive son stun avec W.",
+      "Vex": "Son passif interrompt tes dashes : farm et roam après le 6.",
+      "Malzahar": "Son shield absorbe ton burst : casse-le avec un petit poke avant d'engager."
+    },
+    "mid_game": "Roams, picks et objectifs. LeBlanc est très forte pour punir les carries isolés.",
+    "late_game": "Picks sur les cibles isolées ; en teamfight, burst un carry puis reviens avec W.",
+    "ahead": "Roam, chasse les carries et prends les objectifs rapidement.",
+    "behind": "Farm et cherche des picks sur des cibles isolées.",
+    "win_condition": "Pour gagner cette partie, tu veux créer l'avance en early grâce au burst et aux roams, puis chasser les carries.",
+    "final_tip": "Avant de lancer W, regarde ton point de départ : c'est là que tu reviendras."
+  }
+}

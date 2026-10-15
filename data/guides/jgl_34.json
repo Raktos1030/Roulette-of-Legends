@@ -1,0 +1,43 @@
+{
+  "Sejuani|jgl": {
+    "identity": "Tank à dégâts magiques, spécialiste de l'engage et du CC en chaîne. Assaut arctique (Q) charge et knock-up, Colère de l'hiver (W) frappe deux fois en slowant, et Permafrost (E) stun une cible gelée (quand elle a accumulé des stacks de givre, notamment grâce aux attaques au corps à corps de tes alliés). Prison de glace (R) stun un champion à distance et crée une tempête qui slow. Son passif lui donne des résistances hors combat.",
+    "playstyle": "Jungler tank de ganks et de teamfight, surtout efficace avec des alliés au corps à corps (ils ajoutent les stacks de givre). Sejuani est très fiable en combat d'équipe grâce à ses CC en chaîne.",
+    "early_game": "Clear en sécurité avec W (maximisé) et E. Gank quand ton laner peut suivre : Q pour projeter, W pour slow et empiler le givre, E pour stun. Évite les duels contre les junglers qui te kitent (Lillia).",
+    "level_1": "Permafrost (E) en premier.",
+    "level_2": "Colère de l'hiver (W). Deux coups qui slow et empilent le givre : ton clear s'accélère. W est maximisé en priorité.",
+    "level_3": "Assaut arctique (Q). Premier gank : Q (knock-up) → W → E quand la cible est gelée.",
+    "level_6": "Prison de glace : stun le premier champion touché, puis la tempête slow autour. Lance-la de loin pour engager un teamfight ou pour attraper un carry qui s'avance.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec Q + E.",
+      "Niveau 6 : engage à distance avec l'ultime.",
+      "Premier item complet : tank solide.",
+      "Mid game : teamfights avec des alliés au corps à corps."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear sûr et ganks avec Q. Sejuani est plus forte avec des laners au corps à corps : gank en priorité ces lanes pour profiter du givre. Contrôle les crabes, les Larves (vers 8 min) et les dragons. Évite les duels contre les junglers à distance ou qui te kitent.",
+    "trading": "En gank : Q → W → E. En teamfight : R sur le carry adverse ou la cible la plus proche, puis Q et W pour empiler le givre, E pour stun. Abandonne contre les champions qui te kitent (Lillia).",
+    "threats": [
+      "Lillia et les champions qui te kitent.",
+      "Trundle, qui te vole tes statistiques.",
+      "Équipes sans alliés au corps à corps pour empiler le givre."
+    ],
+    "mistakes": [
+      "Lancer E sans cible gelée.",
+      "Engager avec l'ultime sans suivi.",
+      "Rater Q en gank."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il t'envahira : ne duel pas, gank.",
+      "Viego": "Stun-le avec R quand il dive.",
+      "Graves": "Il te bat en duel : gank là où il n'est pas.",
+      "Lillia": "Elle te kite et t'endort : joue avec ton équipe.",
+      "Trundle": "Sa Soumission te vole tes résistances : évite les combats longs contre lui."
+    },
+    "mid_game": "Engages et CC autour des objectifs.",
+    "late_game": "Engage de teamfight : R sur le carry ou la cible la plus proche, puis Q, W et E.",
+    "ahead": "Gank, prends les objectifs et force les combats.",
+    "behind": "Tank pour ton équipe et joue pour un engage décisif.",
+    "win_condition": "Pour gagner cette partie, tu veux engager les teamfights avec l'ultime et enchaîner les CC avec tes alliés au corps à corps.",
+    "final_tip": "Lance Permafrost quand la cible est gelée : c'est le stun qui décide du combat."
+  }
+}

@@ -1,0 +1,43 @@
+{
+ "Zed|mid": {
+  "identity": "Physical damage, energy-based assassin. Living Shadow (W) creates a shadow that mimics his abilities and that he can swap places with, Razor Shuriken (Q) is thrown by Zed and his shadows, Shadow Slash (E) strikes around him and his shadows while slowing, and Death Mark (R) makes him untargetable, teleports him behind a target and detonates a mark that repeats part of the damage dealt. His attacks on low targets deal bonus damage (passive).",
+  "playstyle": "Lane-dominant, roaming assassin. His only clearly unfavorable matchups are mid tanks (Nasus, Malphite).",
+  "early_game": "Poke with W → Q (double shuriken) when your opponent comes to last hit, keeping enough energy to swap back with W. Farm with E. At level 3, W → E → Q is a big trade.",
+  "level_1": "Razor Shuriken (Q) first.",
+  "level_2": "Living Shadow (W) or Shadow Slash (E). W → Q: double shuriken to poke.",
+  "level_3": "Full kit: W → E (slow) → double Q. Keep W to swap back to safety.",
+  "level_6": "Death Mark: R → E → Q → attacks → swap back to your ultimate's shadow. Roam to the side lanes and hunt carries.",
+  "power_spikes": [
+   "Level 3: W → E → Q poke.",
+   "Level 6: assassinations with your ultimate.",
+   "First completed item: one-shots on mages.",
+   "Mid game: roams and picks."
+  ],
+  "lane_plan": "Poke with your shadows, manage your energy and push. After level 6, roam to the side lanes. The mid role quest (faster recall) makes your roams even more profitable. Against mid tanks, play for farm and roam.",
+  "trading": "Short trade: W → Q → swap back with W. All-in: R → E → Q → attacks → swap back. Give up on it against champions who soak your burst (Nasus, Malphite) or lock you down as you come out of your ultimate.",
+  "jungle_plan": "",
+  "threats": [
+   "Mid tanks (Nasus, Malphite).",
+   "CC as you come out of your ultimate.",
+   "Anti-dive assassins and mages (Lissandra, Vex)."
+  ],
+  "mistakes": [
+   "Using W to engage without energy to swap back.",
+   "Casting your ultimate on a protected target.",
+   "Staying in lane instead of roaming after 6."
+  ],
+  "matchup_notes": {
+   "Yasuo": "His Wind Wall blocks your shurikens: wait until he's used it.",
+   "Ahri": "Dodge her Charm with W.",
+   "Katarina": "Dodge her Death Lotus with W or R.",
+   "Lissandra": "Her ultimate on herself cancels your burst: save R for after.",
+   "Nasus": "Wither ruins your combo: farm and roam."
+  },
+  "mid_game": "Roams, picks and objectives. Hunt isolated carries.",
+  "late_game": "Assassinate the enemy carry with R, then swap back to your shadow. Wait for the enemy CC to be used.",
+  "ahead": "Roam, hunt the carries and take objectives.",
+  "behind": "Farm and look for picks on isolated targets.",
+  "win_condition": "To win this game, you want to dominate your lane, roam after 6 and assassinate the carries.",
+  "final_tip": "Before using your shadow to go in, plan your way out: that's what saves you."
+ }
+}

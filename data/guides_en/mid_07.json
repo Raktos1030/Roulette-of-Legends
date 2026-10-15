@@ -1,0 +1,43 @@
+{
+ "Aurora|mid": {
+  "identity": "Very mobile magic damage mage who slips between worlds. Hitting an enemy three times with her abilities triggers bonus damage, healing and speed (passive Spirit Abjuration). Twofold Hex (Q) fires a projectile she can recall to hit on the way back, Across the Veil (W) makes her hop and camouflages her, The Weirding (E) blasts an explosion that slows and pushes her backward, and Between Worlds (R) makes her leap while creating an area enemies can't leave normally.",
+  "playstyle": "Mobile combat and pick mage. Aurora pokes, backs off and comes back in thanks to W and E, and traps enemies with her ultimate.",
+  "early_game": "Poke with Q (out and back) and E, aiming for three hits to trigger your passive. Keep W to dodge an engage. You can trade, then back off with E.",
+  "level_1": "Twofold Hex (Q) first. Poke on the way out and back.",
+  "level_2": "The Weirding (E). An explosion that slows and pushes you back: Q → E → Q's return triggers your passive.",
+  "level_3": "Across the Veil (W). A hop and camouflage: to dodge, reposition or chase.",
+  "level_6": "Between Worlds: a leap and an area that traps enemies inside. Combo: R → Q → E → Q's return. In teamfights, trap several enemies with your team.",
+  "power_spikes": [
+   "Level 3: full poke and passive.",
+   "Level 6: trapping with your ultimate.",
+   "First completed item: burst and mobility.",
+   "Mid game: picks and teamfights."
+  ],
+  "lane_plan": "Poke with Q and E, back off, and keep W for engages. Push your wave and roam using the mid role quest (faster recall). Avoid long fights against assassins who dive you (Fizz).",
+  "trading": "Short trade: Q out → E → Q back. Long trade: R → Q → E → W to reposition. Engage when the enemy CC is on cooldown; give up on it against assassins who dive you.",
+  "jungle_plan": "",
+  "threats": [
+   "Fizz: your hardest matchup.",
+   "CC that cuts you off before your hops.",
+   "Assassins who dive you."
+  ],
+  "mistakes": [
+   "Forgetting to recall Q for the second hit.",
+   "Using W and E to go in with no escape.",
+   "Trapping with your ultimate when your team can't follow."
+  ],
+  "matchup_notes": {
+   "Ahri": "Dodge her Charm with W and poke her with Q.",
+   "Viktor": "Dodge his laser and poke him.",
+   "Syndra": "Dodge her stun with W.",
+   "Yone": "Back off with E when he engages.",
+   "Fizz": "He dodges your abilities and bursts you: keep W for his ultimate."
+  },
+  "mid_game": "Picks and teamfights around objectives. Your ultimate traps enemies with your team.",
+  "late_game": "Poke, back off and trap enemies with your ultimate when your team can follow.",
+  "ahead": "Roam, create picks and take objectives.",
+  "behind": "Farm, poke safely and look for a decisive ultimate.",
+  "win_condition": "To win this game, you want to poke and trap enemies with your ultimate in teamfights.",
+  "final_tip": "Recall your Q after The Weirding: the three hits trigger your passive."
+ }
+}

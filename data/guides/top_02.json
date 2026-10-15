@@ -1,0 +1,207 @@
+{
+  "Chogath|top": {
+    "identity": "Tank à dégâts magiques qui grossit en mangeant ses ennemis. En top, Cho'Gath joue une lane stable grâce à ses soins sur les sbires (passif Carnivore), contrôle avec Rupture (Q) et Cri sauvage (W), puis devient une frontline énorme dont Festin (R) exécute en dégâts vrais.",
+    "playstyle": "Scaling et contrôle : peu de pression d'all-in en early, mais une lane difficile à faire craquer. Il accumule des stacks de Festin et devient plus tanky au fil de la partie. Joue autour du cooldown de Q, qui fait la majorité de ses trades et de son engage.",
+    "early_game": "Farm en sécurité et soigne-toi avec les sbires grâce au passif. Poke avec les attaques renforcées de Piques vorpales (E) quand l'adversaire vient last hit. Garde Q pour punir un engage ou couper une fuite ; la Rupture a un délai, vise là où l'ennemi va aller.",
+    "level_1": "Piques vorpales (E) en premier dans le chemin le plus joué (E → Q → W). Tes trois attaques renforcées slow et poussent les sbires : poke l'adversaire qui s'avance, sans chercher l'all-in.",
+    "level_2": "Rupture (Q). Soulève et slow après un court délai : lance-la sur la position d'arrivée de l'adversaire (quand il vient last hit ou qu'il dash). Q + E fait un bon trade court.",
+    "level_3": "Cri sauvage (W) : cône qui réduit au silence. Q + W empêchent l'adversaire de riposter avec ses sorts. Garde W contre les champions qui dépendent d'un sort pour engager ou fuir.",
+    "level_6": "Festin inflige des dégâts vrais et exécute ; chaque champion ou gros monstre mangé te donne un stack permanent (PV et taille). Utilise-le pour finir un kill ou pour sécuriser un gros monstre. En lane, garde-le en exécution plutôt qu'en ouverture.",
+    "power_spikes": [
+      "Niveau 3 : Q + W, bons trades contrôlés.",
+      "Niveau 6 : Festin, menace d'exécution en dégâts vrais.",
+      "Premier item complet : très difficile à tuer en lane.",
+      "Accumulation des stacks de Festin : frontline de plus en plus imposante."
+    ],
+    "lane_plan": "Laisse la wave venir vers toi et farm avec E et le passif. Pousse quand tu as l'avantage pour prendre les plaques, sinon garde une wave neutre. Recall quand ton mana est bas. Le cône de W et la zone de Q sont plus faciles à placer quand l'adversaire est pris entre les sbires et un mur.",
+    "trading": "Trade court : E + auto, ou Q sur l'adversaire qui vient last hit puis E. Combo complet : Q → W → E, puis R pour finir. Engage si ton Q touche ; abandonne si tu le rates, car tu perds ton CC principal.",
+    "jungle_plan": "",
+    "threats": [
+      "Dégâts en pourcentage des PV et ignore-armure (Gwen, Fiora).",
+      "Tanks qui te tiennent en combat long (Ornn, Dr. Mundo).",
+      "Poke à distance qui te fait manquer des sbires."
+    ],
+    "mistakes": [
+      "Lancer Q directement sur l'ennemi au lieu d'anticiper son déplacement.",
+      "Utiliser Festin sur des sbires alors qu'un kill ou un monstre épique est possible.",
+      "Oublier de stacker Festin sur les gros monstres en mid game."
+    ],
+    "matchup_notes": {
+      "Malphite": "Il te poke au Q mais ne te bat pas en combat long ; garde W pour son ultime.",
+      "Garen": "Silence-le avec W dès qu'il engage et tiens-le avec Q. Ne le laisse pas exécuter quand tu es bas : son ultime ignore ta résistance.",
+      "Jax": "Lance Q à la fin de sa Contre-attaque ou juste avant qu'il atterrisse ; ton W l'empêche d'enchaîner.",
+      "Ornn": "Il te bat en combat long et scale aussi bien. Farm, stack Festin et joue pour les teamfights.",
+      "Gwen": "Ses dégâts en pourcentage des PV ignorent ta taille. Place Q hors de sa Brume sacrée et évite les combats longs."
+    },
+    "mid_game": "Joue pour les objectifs : ton Festin sécurise les dragons et Baron. Groupe avec ton équipe pour fournir contrôle et frontline, et stack Festin sur chaque gros monstre accessible.",
+    "late_game": "Frontline de contrôle : lance Q sur la mêlée et W sur les divers, puis Festin sur le carry à portée. Protège tes carries plutôt que de chercher la backline.",
+    "ahead": "Stack Festin plus vite en envahissant avec ton jungler et en exécutant des kills. Pousse la side lane et force les combats autour de tes objectifs.",
+    "behind": "Farm, stack Festin sur les monstres et reste avec ton équipe : ton rôle de frontline compte plus que tes dégâts.",
+    "win_condition": "Pour gagner cette partie, tu veux accumuler des stacks de Festin, devenir une frontline impossible à ignorer et contrôler les teamfights avec Q et W.",
+    "final_tip": "Vise toujours ta Rupture là où l'adversaire va être dans une demi-seconde, pas là où il est."
+  },
+  "Darius|top": {
+    "identity": "Juggernaut à dégâts physiques qui domine les combats au corps à corps. Il accumule des saignements (passif Plaie béante), atteint la Puissance noxienne à 5 stacks et exécute en dégâts vrais avec Guillotine noxienne (R), qui se réinitialise à chaque kill.",
+    "playstyle": "Lane très agressive et all-in dès qu'il peut coller sa cible. Il gagne presque tous les combats longs au corps à corps, mais souffre contre le kiting à distance et la mobilité. Dépend de son Crampon (E) pour attraper.",
+    "early_game": "Joue pour les trades courts qui ajoutent des stacks : Q au bord (qui soigne), W pour réinitialiser l'attaque, puis recule. Dès que tu as 3 stacks sur l'adversaire, un all-in devient dangereux pour lui. Évite de gaspiller E, ton seul moyen de coller.",
+    "level_1": "Estropiaison (W) en premier dans le chemin le plus joué (W → Q → E), pour infliger une attaque renforcée et un slow au premier contact. Certains prennent Q pour poke : dans tous les cas, niveau 1 Darius gagne la plupart des trades au corps à corps.",
+    "level_2": "Décimation (Q). Touche avec le bord de la lame pour te soigner. Auto + W + Q au bord est un bon trade ; au niveau 2, cherche le combat si l'adversaire est encore niveau 1.",
+    "level_3": "Crampon (E) : attire l'ennemi et te donne de la pénétration d'armure passive. Niveau 3, tu menaces un kill : E → auto → W → Q au bord, et Embrasement si besoin.",
+    "level_6": "Guillotine noxienne inflige des dégâts vrais qui augmentent avec les stacks et se réinitialise si elle tue. Avec 5 stacks, tu gagnes presque tout 1v1 au corps à corps et tu peux enchaîner plusieurs kills en teamfight.",
+    "power_spikes": [
+      "Niveau 2 et 3 : all-in très fort.",
+      "Niveau 6 : exécution en dégâts vrais, réinitialisable.",
+      "Premier item complet : duels difficiles à battre.",
+      "Deux items : écrasante en combat de mêlée."
+    ],
+    "lane_plan": "Joue une wave au centre ou légèrement poussée pour pouvoir trade, mais évite de rester sur une wave poussée sans vision : tu es vulnérable aux ganks. Freeze près de ta tour si l'adversaire a peur de toi. Recall quand ton E est disponible et que la wave crash. Le bush de lane cache ton approche pour le Crampon.",
+    "trading": "Trade court : auto → W → Q au bord, puis recul. Trade long : E pour coller, empile les stacks, R quand le saignement plus l'ultime tuent. Engage quand l'adversaire n'a plus son dash ou son CC ; abandonne si tu es kité par un champion à distance.",
+    "jungle_plan": "",
+    "threats": [
+      "Champions à distance qui te kitent (Teemo, Quinn).",
+      "Wukong et les champions qui esquivent ou annulent ton Crampon.",
+      "Ganks sur une lane poussée sans vision."
+    ],
+    "mistakes": [
+      "Lancer Q au corps à corps (le centre ne soigne pas) au lieu de viser avec le bord.",
+      "Utiliser E pour engager sans pouvoir suivre, puis te faire kiter.",
+      "Lancer l'ultime trop tôt, avant d'avoir assez de stacks pour tuer."
+    ],
+    "matchup_notes": {
+      "Garen": "Ne te fais pas silence en plein combo ; trade quand son Q est en recharge et gagne le combat long au saignement.",
+      "Sett": "Il encaisse et renvoie avec son W : recule pendant sa charge. Trade court, puis all-in quand son W est utilisé.",
+      "Nasus": "Punis-le tôt pour limiter ses stacks. Sous Flétrissement, tu perds en DPS : recule, puis reviens quand il est terminé.",
+      "Yone": "Attends que son E soit consommé, puis Crampon et combat long.",
+      "Teemo": "Il te kite et t'aveugle. Joue pour le farm, attends ton jungler, et ne cours pas après lui sous son slow."
+    },
+    "mid_game": "Splitpush ou regroupe avec ton équipe pour les objectifs : Darius punit toute équipe qui se bat au corps à corps. En side lane, il gagne la plupart des 1v1.",
+    "late_game": "Entre en teamfight au moment où tu peux atteindre la mêlée, empile les stacks sur plusieurs cibles et enchaîne les Guillotines. Évite d'entrer quand l'équipe adverse peut te kiter indéfiniment.",
+    "ahead": "Pousse l'avance en side lane et dive sous tour avec ton jungler. Chaque ultime réinitialisé te permet de nettoyer un combat.",
+    "behind": "Farm prudemment sous tour, fais-toi aider de ton jungler et joue avec ton équipe : ta présence en mêlée reste dangereuse.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner ta lane par la force, puis te retrouver au contact de plusieurs ennemis en teamfight pour enchaîner les Guillotines.",
+    "final_tip": "Vise toujours le bord de ta Décimation : c'est la différence entre un trade gagné et un trade perdu."
+  },
+  "DrMundo|top": {
+    "identity": "Tank à dégâts physiques qui se régénère énormément. Dr. Mundo encaisse, poke avec Scie souillée (Q) et, avec Dosage maximal (R), devient presque impossible à tuer en combat prolongé. Son passif absorbe le premier CC qui root.",
+    "playstyle": "Lane passive de farm et de poke au Q, puis scaling vers un tank qui court au milieu de l'équipe adverse. Il ne tue pas vite mais gagne les combats longs par la régénération. Dépend de son niveau et de ses PV maximum.",
+    "early_game": "Farm avec Q, qui slow et fait des dégâts en pourcentage des PV. Ne cherche pas l'all-in : garde des PV et utilise ton passif (la bonbonne) pour régénérer. Le passif retient le premier CC qui root, ce qui te protège des ganks.",
+    "level_1": "Scie souillée (Q) en premier. Farm à distance et poke l'adversaire qui vient last hit, sans t'engager.",
+    "level_2": "Contusion (E). Frappe renforcée qui fait plus de dégâts quand tu manques de PV ; pratique pour last hit et trade. Q + E pour un trade court.",
+    "level_3": "Défibrillateur (W) : il stocke une partie des dégâts reçus en PV grisés que tu récupères. Active-le avant un trade pour le tenir plus longtemps.",
+    "level_6": "Dosage maximal : grosse régénération et vitesse de déplacement. C'est ton outil pour survivre à un gank, gagner un combat long ou traverser l'équipe adverse en teamfight.",
+    "power_spikes": [
+      "Niveau 6 : survie et régénération énormes.",
+      "Premier item complet : très difficile à tuer.",
+      "Niveau 11 et 16 : rangs d'ultime, régénération accrue.",
+      "Deux à trois items : tank de fin de partie dominant."
+    ],
+    "lane_plan": "Farm en sécurité, laisse la wave venir vers toi et poke avec Q. Ne pousse pas sans raison : tu es fort pour jouer passif. Recall quand ton passif et tes PV sont bas. Si l'adversaire te harcèle au corps à corps, laisse-le venir sous tour.",
+    "trading": "Trade de base : Q à distance. Trade court : Q + E + W. Engage seulement quand ton Q a slow la cible et que tu as l'ultime ; abandonne si l'adversaire a des dégâts en pourcentage ou une réduction de soins qui coupe ta régénération.",
+    "jungle_plan": "",
+    "threats": [
+      "Réductions de soins et dégâts en pourcentage des PV (Gwen, Fiora).",
+      "Aatrox et les combattants qui gagnent les trades au bord de leurs sorts.",
+      "Engage après que ton passif a absorbé un premier CC."
+    ],
+    "mistakes": [
+      "Chercher le kill en early au lieu de farmer tranquillement.",
+      "Lancer l'ultime trop tard, quand tu es déjà presque mort.",
+      "Rester sur une lane poussée sans ultime ni vision."
+    ],
+    "matchup_notes": {
+      "Malphite": "Il ne te fait pas mal en combat long ; farm, puis bats-le en fin de lane.",
+      "Darius": "Ne reste pas dans le bord de sa Décimation ; ta régénération et ton ultime tiennent ses saignements.",
+      "Yone": "Il gagne les trades rapides. Poke au Q et reste près de ta tour.",
+      "Aatrox": "Ses sweet spots te font très mal et il se soigne aussi. Joue à distance, évite ses Q et garde l'ultime pour le combat long.",
+      "Gwen": "Ses dégâts en pourcentage des PV ignorent ta taille. Farm, fais peu de trades et scale."
+    },
+    "mid_game": "Fais la frontline autour des objectifs et gère une side lane en sécurité. Tu peux engager en courant au milieu de l'équipe adverse avec l'ultime.",
+    "late_game": "Tank principal : entre en premier ou protège tes carries en te plaçant entre eux et les divers. Ton ultime te garde en vie pendant tout le combat.",
+    "ahead": "Pousse la side lane et force les adversaires à venir à deux sur toi. Entre en teamfight dès que tu as ton ultime.",
+    "behind": "Farm et scale : Dr. Mundo reste utile en teamfight même sans avance. Évite les duels contre les champions à dégâts en pourcentage.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane, scale en PV et devenir un tank qui traverse l'équipe adverse sans mourir.",
+    "final_tip": "Active Dosage maximal avant d'être bas en PV : la régénération dépend du temps passé en vie."
+  },
+  "Fiora|top": {
+    "identity": "Duelliste à dégâts vrais, reine du splitpush. Fiora frappe les points vitaux (passif) pour des dégâts en pourcentage des PV, esquive les CC avec Riposte (W) et gagne presque tout 1v1 avec Défi suprême (R), qui crée une zone de soin une fois les quatre vitaux touchés.",
+    "playstyle": "Trades courts sur les vitaux, puis domination de side lane. Fiora veut isoler l'adversaire en 1v1 plutôt que de se battre en 5v5. Très dépendante de la lecture des sorts adverses pour placer Riposte.",
+    "early_game": "Touche les vitaux avec Fente (Q) puis recule : chaque vital touché soigne et donne de la vitesse. Garde Riposte pour le sort le plus important de l'adversaire. Vise l'avance de farm et de plaques.",
+    "level_1": "Fente (Q) en premier. Utilise-la pour atteindre un vital et reculer. Contre un combattant fort niveau 1, farm à distance.",
+    "level_2": "Riposte (W). Elle bloque les dégâts et les effets pendant un court instant et stun si tu bloques un CC. Garde-la pour le sort d'engage ou de CC adverse.",
+    "level_3": "Botte secrète (E) : vitesse d'attaque, slow, puis crit. Q + E + vital donne un gros trade court.",
+    "level_6": "Défi suprême révèle quatre vitaux sur une cible ; les toucher inflige de gros dégâts et crée une zone de soin. En duel, c'est presque toujours une victoire si tu touches les vitaux.",
+    "power_spikes": [
+      "Niveau 3 : trades courts très forts sur les vitaux.",
+      "Niveau 6 : duel dominant avec l'ultime.",
+      "Premier item complet : splitpush menaçant.",
+      "Deux items : presque imbattable en 1v1."
+    ],
+    "lane_plan": "Joue une wave neutre, trade court quand un vital est bien placé et recule. Après ton premier item, pousse et prends les plaques. Freeze si tu es devant contre un adversaire qui ne peut pas te combattre sous ta tour. Recall quand ta wave crash.",
+    "trading": "Trade court : Q sur un vital → auto → E, recul. Trade long : Riposte sur le CC adverse, ultime, puis vitaux. Engage quand le sort clé adverse est en recharge ; abandonne si tu as gaspillé Riposte.",
+    "jungle_plan": "",
+    "threats": [
+      "CC que tu n'as pas bloqués avec Riposte.",
+      "Tanks à armure qui résistent à ton burst (Malphite).",
+      "Champions à distance qui te kitent (Heimerdinger)."
+    ],
+    "mistakes": [
+      "Lancer Riposte trop tôt, sans rien bloquer.",
+      "Se battre en 5v5 de face alors que tu gagnes les 1v1 en side.",
+      "Lancer l'ultime sur un tank au lieu d'un carry isolé."
+    ],
+    "matchup_notes": {
+      "Yone": "Riposte son Q3 ou son E ; tu gagnes les trades courts sur les vitaux.",
+      "Malphite": "Son armure te gêne et il te poke. Garde Riposte pour son ultime et joue pour le splitpush plus tard.",
+      "Aatrox": "Riposte son Q3 ou son W et punis ses temps de recharge.",
+      "Darius": "Riposte son Crampon et reste hors de son Q ; trade court sur les vitaux.",
+      "Nasus": "Flétrissement slow ton attaque. Garde Riposte pour lui et punis-le avant qu'il ne stack."
+    },
+    "mid_game": "Splitpush : pousse une side lane, force deux adversaires à venir et utilise ta Téléportation améliorée (quête de rôle) pour rejoindre les objectifs.",
+    "late_game": "Reste en side lane tant que ton équipe peut tenir, puis rejoins les combats par le flanc. En teamfight, ultime sur un carry pour que ton équipe profite de la zone de soin.",
+    "ahead": "Force des duels, dive avec ton jungler et prends toutes les tours de ta side. Chaque 1v1 gagné doit mener à un objectif.",
+    "behind": "Farm, évite les duels contre les adversaires plus avancés et attends tes items : ton scaling en side reste fort.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer ta side lane en 1v1 et obliger l'équipe adverse à t'envoyer plusieurs joueurs.",
+    "final_tip": "Avant chaque trade, identifie le sort que tu vas Riposter : c'est lui qui décide du combat."
+  },
+  "Gangplank|top": {
+    "identity": "Combattant à distance qui scale fort avec l'or et les crits. Gangplank place des Barils de poudre (E) qu'il fait exploser avec Pourparlers (Q) pour d'énormes dégâts de zone, se purifie avec Guérison du scorbut (W) et aide partout sur la carte avec Tir de barrage (R).",
+    "playstyle": "Farm et poke en lane, scaling fort, puis énormes dégâts de zone en teamfight grâce aux barils. Très mécanique : le placement et le timing des barils font toute la différence. Fragile en early contre les all-in.",
+    "early_game": "Farm avec Q (il rapporte de l'or supplémentaire sur les kills) et poke avec les barils. Utilise W pour te soigner et te purifier. Ne prends pas de trades longs au corps à corps : tes barils sont ta force.",
+    "level_1": "Baril de poudre (E) en premier dans le chemin le plus joué (E → Q → W). Pose un baril sur la wave et fais-le exploser pour poke l'adversaire.",
+    "level_2": "Pourparlers (Q). Il fait exploser les barils à distance et rapporte de l'or sur les kills. Q + baril = ton trade de base.",
+    "level_3": "Guérison du scorbut (W). Elle te soigne et retire les CC. Garde-la pour les engages adverses ou pour te soigner après un trade.",
+    "level_6": "Tir de barrage : tu peux aider partout sur la carte (slow et dégâts de zone). Utilise-le pour sauver un allié, sécuriser un kill ou un objectif. Le Q rapporte des Serpents d'argent qui améliorent l'ultime.",
+    "power_spikes": [
+      "Niveau 6 : ultime global utile sur toute la carte.",
+      "Premier item complet : poke de barils beaucoup plus fort.",
+      "Deux items : barils critiques très dangereux.",
+      "Fin de partie : un des meilleurs dégâts de zone en teamfight."
+    ],
+    "lane_plan": "Laisse la wave venir vers toi, farm au Q et poke avec les barils. Pose des barils à l'avance sur la wave pour la nettoyer après le niveau 6. Recall quand tu as assez d'or pour un gros achat. Évite de rester sur une lane poussée contre un jungler agressif.",
+    "trading": "Trade de base : baril posé près de l'adversaire → Q sur le baril quand il est prêt. Trade avancé : baril → second baril à côté pour enchaîner l'explosion. Engage quand l'adversaire est slow ; abandonne s'il t'engage au corps à corps sans que tu aies W.",
+    "jungle_plan": "",
+    "threats": [
+      "All-in au corps à corps en early.",
+      "Ganks quand tu as utilisé W.",
+      "Champions qui détruisent ou esquivent tes barils."
+    ],
+    "mistakes": [
+      "Faire exploser un baril qui n'est pas encore prêt.",
+      "Utiliser W trop tôt et ne plus avoir de purification contre un CC.",
+      "Garder l'ultime sans l'utiliser alors qu'un allié en a besoin ailleurs."
+    ],
+    "matchup_notes": {
+      "Yone": "Barils sur sa route et W pour son Q3 ; ne le laisse pas coller en combat long.",
+      "Aatrox": "Pose les barils là où il va lancer ses sweet spots et garde W pour son W (chaîne).",
+      "Malphite": "Poke-le avec les barils ; garde W pour son ultime et reste près de ta tour.",
+      "Darius": "Tiens-le à distance avec le slow des barils ; W pour son Crampon.",
+      "Kayle": "Punis-la avant ses niveaux clés, puis joue pour les teamfights."
+    },
+    "mid_game": "Farm les side lanes, prends les tours et utilise l'ultime pour aider les combats ailleurs. Tes barils nettoient les waves rapidement : profite-en pour prendre les objectifs.",
+    "late_game": "DPS principal de zone : place les barils en amont des combats pour les faire exploser sur plusieurs cibles. Reste derrière ta frontline.",
+    "ahead": "Pousse et prends les tours, utilise l'ultime sur les objectifs et les escarmouches ailleurs. Avec l'or supplémentaire du Q, tu scales encore plus vite.",
+    "behind": "Farm au Q, évite les side lanes dangereuses et reste avec ton équipe : ton scaling reste fort.",
+    "win_condition": "Pour gagner cette partie, tu veux farmer en sécurité, scale en or et dominer les teamfights avec des explosions de barils sur plusieurs cibles.",
+    "final_tip": "Place tes barils en avance sur le chemin de l'adversaire : c'est le placement qui touche, pas la vitesse de réaction."
+  }
+}

@@ -1,0 +1,43 @@
+{
+ "Pyke|sup": {
+  "identity": "Physical damage support assassin. Gift of the Drowned Ones (passive): when enemies can't see him, he regenerates recent damage taken from champions; he can't gain max health (his bonus health becomes attack damage). Bone Skewer (Q) stabs in front of him or, when charged, pulls an enemy toward him, Ghostwater Dive (W) camouflages him with a big speed boost, Phantom Undertow (E) dashes him forward, leaving a phantom that returns to him and stuns champions it passes through, and Death From Below (R) executes low-health enemies in an X-shaped area, can be recast after a kill and gives extra gold to an assisting ally.",
+  "playstyle": "Assassin support: he creates kills with his hook and finishes them with his ultimate, which also earns his team gold. He crushes fragile supports (Lux, Xerath, Brand, Yuumi) and struggles against tanks and supports who counter-engage him (Maokai, Rakan, Rell, Alistar, Poppy).",
+  "early_game": "Threaten the hook (charged Q) from the bushes or behind the wave. Hook → E through your opponent (stun when the phantom returns): your ADC follows up. Back off out of sight to regenerate health with your passive.",
+  "level_1": "Bone Skewer (Q) first. Threaten the hook from the bushes.",
+  "level_2": "Phantom Undertow (E). Combo: Q (pull) → E through the target (stun).",
+  "level_3": "Ghostwater Dive (W). Camouflage to approach unseen, roam or escape.",
+  "level_6": "Death From Below: executes low-health enemies in the area, then recast after a kill. An ally who assists you also gets extra gold.",
+  "power_spikes": [
+   "Level 2: Q → E.",
+   "Level 6: chained executes.",
+   "First completed item: very high burst.",
+   "Mid game: camouflaged roams and picks."
+  ],
+  "lane_plan": "Threaten the hook and play for kills with your ADC and jungler. At level 6, roam camouflaged with W. Careful: stay in the bot lane until level 5, because since patch 26.16 your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "All-in: Q → E → attacks → R once your opponent drops below the execute threshold. Defense: E to stun the diver, W to escape. Avoid trades against tanks who win up close (Maokai, Alistar, Rell): you have no bonus health.",
+  "jungle_plan": "",
+  "threats": [
+   "Maokai, Rakan, Rell, Renata, Alistar and Poppy: hard matchups.",
+   "Thresh, Nautilus and Leona, common opponents below your average on both sources.",
+   "Crowd control: you're fragile and have no bonus health."
+  ],
+  "mistakes": [
+   "Throwing the hook through minions.",
+   "Casting your ultimate on a target above the execute threshold.",
+   "Staying visible after a trade instead of hiding to regenerate."
+  ],
+  "matchup_notes": {
+   "Thresh": "His lantern saves your hook's target: engage once it's used.",
+   "Lulu": "Her polymorph cuts your combo: hook once she's cast W.",
+   "Nautilus": "He outlasts and engages you: play for picks on his ADC.",
+   "Lux": "She's fragile: one hook kills her.",
+   "Maokai": "His saplings reveal you: play roams rather than lane."
+  },
+  "mid_game": "Roam camouflaged with W, look for picks and executes. Place Control Wards, and clear the enemy's.",
+  "late_game": "Wait for enemies to drop low, then chain your ultimate. Hook an isolated carry, E to stun divers on your team.",
+  "ahead": "Roam and execute: your ultimate earns gold for the whole team.",
+  "behind": "Play ranged picks with the hook and keep E to protect your ADC.",
+  "win_condition": "To win this game, you want to create picks with your hook and finish fights with your executes.",
+  "final_tip": "Watch the execute marker above enemy health bars: your ultimate only kills below that threshold."
+ }
+}

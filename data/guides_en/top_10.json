@@ -1,0 +1,84 @@
+{
+ "Trundle|top": {
+  "identity": "Physical damage fighter and tank killer. Chomp (Q) empowers his next attack, slows and steals attack damage, Frozen Domain (W) creates a zone that boosts his attack speed, movement speed and healing, Pillar of Ice (E) places a pillar that knocks back and blocks the way, and Subjugate (R) steals health, armor and magic resist from a target. His passive heals him when an enemy dies near him.",
+  "playstyle": "Long-fight duelist and split pusher. Trundle gets stronger the tankier his target is, thanks to his stat steals.",
+  "early_game": "Trade with Q: the empowered attack steals attack damage from your opponent, which makes the following fight favorable. Fight inside your Frozen Domain for the attack speed and healing. Keep E to cut off a target's escape or block an engage.",
+  "level_1": "Chomp (Q) first. Q on your opponent when they come to last hit: they lose attack damage, and you gain it.",
+  "level_2": "Frozen Domain (W). An ice zone that gives you attack speed, movement speed and stronger healing: place it under you before a long trade.",
+  "level_3": "Pillar of Ice (E). A pillar that knocks back and slows, and blocks the path: place it behind your opponent to stop their escape, or in front of you to stop an engage.",
+  "level_6": "Subjugate: you steal part of the target's health and resistances for a few seconds. Use it on the enemy tank or your direct opponent at the start of an all-in: the tankier the target, the stronger the steal.",
+  "power_spikes": [
+   "Level 3: Q + W + E, an all-in with the damage steal.",
+   "Level 6: Subjugate against tanks and fighters.",
+   "First completed item: a threatening split push.",
+   "Mid game: fast tower takes in the side lane."
+  ],
+  "lane_plan": "Play a neutral wave, trade with Q and fight inside your Frozen Domain. Push and take plates when you're winning. Recall when your wave crashes. In the side lane, Trundle takes towers down very fast: it's your main asset in the mid game.",
+  "trading": "Short trade: Q → attacks → back off. Long trade: W under you → Q → E behind the target → R. Engage when your opponent no longer has their dash; give up on it against champions who kite you from range or burst you before the stat steal kicks in.",
+  "jungle_plan": "",
+  "threats": [
+   "Burst or ranged champions (Akali, Teemo).",
+   "Camille and mobile duelists who escape your pillar.",
+   "Ganks without E available."
+  ],
+  "mistakes": [
+   "Placing the pillar between you and your opponent (you block your own chase).",
+   "Fighting outside your Frozen Domain.",
+   "Casting Subjugate on a squishy target instead of the tank or your direct opponent."
+  ],
+  "matchup_notes": {
+   "Nasus": "Punish him early with Q (damage steal) and avoid fighting under Wither.",
+   "Olaf": "Q steals his attack damage; your pillar cuts off his chases.",
+   "Yone": "Place the pillar behind him to stop him from snapping back with his E.",
+   "Akali": "She pokes you and vanishes in her Shroud: farm carefully and place the pillar on her Shroud to push her out.",
+   "Teemo": "He kites and blinds you: farm, wait for your jungler, and don't chase him without E."
+  },
+  "mid_game": "Split push: Trundle takes towers very fast. Force the enemy to send two players and use your upgraded Teleport (role quest) to join objectives.",
+  "late_game": "Subjugate on the enemy tank to neutralize them, pillar to split the enemy team, Frozen Domain to fight. In the side lane, keep pushing.",
+  "ahead": "Split push, take every tower in your side lane and force duels. Your stat steals make the enemy tanks harmless.",
+  "behind": "Farm, play with your team and use your ultimate on the enemy tank in teamfights.",
+  "win_condition": "To win this game, you want to dominate your side lane, take towers and neutralize the enemy tank with Subjugate.",
+  "final_tip": "Place your pillar behind the target, never between it and you."
+ },
+ "Tryndamere|top": {
+  "identity": "Physical damage, crit-based duelist, king of the split push. His Fury (passive Battle Fury) increases his crit chance; Bloodlust (Q) heals him by consuming Fury, Mocking Shout (W) reduces enemy attack damage and slows those who turn their backs on him, Spinning Slash (E) dashes (its cooldown drops with every crit), and Undying Rage (R) stops him from dying for a few seconds.",
+  "playstyle": "Aggressive melee lane, then constant split pushing. Tryndamere wants to be alone in a side lane and force the enemy team to respond; in teamfights, he dives with his ultimate to kill the carry. Weak against kiting and CC, very strong in duels.",
+  "early_game": "Build Fury on minions, then trade in melee range. Q heals you by consuming Fury: save it for after a trade or when you're threatened. E to engage or escape.",
+  "level_1": "Spinning Slash (E) first on the most common path. It lets you trade, then get out.",
+  "level_2": "Bloodlust (Q). Passive: more attack damage based on missing health; active: healing with Fury. Many players level it twice before W.",
+  "level_3": "Q rank 2 or Mocking Shout (W) depending on your path. W reduces enemy attack damage and slows those running away: useful to win a trade or stop an escape.",
+  "level_6": "Undying Rage: you can't die for a few seconds. Cast it right before dying, then heal with Q at the end. You can tower dive and survive.",
+  "power_spikes": [
+   "Level 2: short trades with E + Q.",
+   "Level 6: ultimate to dive or survive.",
+   "First completed item: dominant duels.",
+   "Two items: split pushing and dives on carries."
+  ],
+  "lane_plan": "Play a pushed wave and trade aggressively. Push and take plates as soon as possible. Recall when your wave crashes. In the mid game, stay in the side lane and force two opponents to come.",
+  "trading": "Short trade: E → attacks → E to get out. Long trade: W to reduce enemy damage → attacks → R right before dying → Q at the end. Engage when your opponent no longer has their CC; give up on it if they kite you (Teemo) or lock you down (Malphite).",
+  "jungle_plan": "",
+  "threats": [
+   "Armored tanks who lock you down (Malphite).",
+   "Ranged kiting (Teemo).",
+   "Nasus and his attack speed slows."
+  ],
+  "mistakes": [
+   "Casting your ultimate too early or too late.",
+   "Forgetting to heal with Q at the end of your ultimate.",
+   "Fighting 5v5 head-on instead of split pushing."
+  ],
+  "matchup_notes": {
+   "Malphite": "His armor and ultimate shut you down; split push on your side when he leaves.",
+   "Garen": "W reduces his damage, stick to him with E.",
+   "Yone": "Wait for his E, then engage with E and W.",
+   "Jax": "Wait for his Counter Strike to end before hitting.",
+   "Nasus": "Punish him early before he stacks, then avoid fighting him under Wither."
+  },
+  "mid_game": "Split push constantly: push a side lane and force two opponents to come. Use your upgraded Teleport to join objectives.",
+  "late_game": "Split push or dive the enemy carry with your ultimate. Avoid fighting head-on against CC.",
+  "ahead": "Split push, take every tower and dive the carries.",
+  "behind": "Farm and split push safely: your side-lane threat stays real.",
+  "win_condition": "To win this game, you want to split push to draw several opponents and take towers.",
+  "final_tip": "Cast your ultimate the moment you're about to die, not before: every second of real health counts."
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "Zoe|sup": {
+    "identity": "Mage de burst à très longue portée. Plus d'étincelles ! (passif) : après chaque sort, sa prochaine attaque fait des dégâts magiques en plus. Astro-pong ! (Q) lance un projectile qu'elle peut rediriger ; ses dégâts augmentent avec la distance parcourue. Voleuse de sorts (W) ramasse les restes des sorts d'invocateur et effets actifs utilisés par l'ennemi pour s'en servir. Bulle soporifique (E) endort la cible (les dégâts qui la réveillent sont doublés), et Bond dimensionnel (R) la téléporte brièvement avant de la ramener.",
+    "playstyle": "Support de pick : elle endort une cible avec E puis la touche avec un Q allongé pour un burst énorme. Elle souffre nettement contre les supports tanks d'engage (Nautilus, Braum, Rell, Rakan) : sa bulle ne suffit pas à les arrêter.",
+    "early_game": "Poke avec Q allongé (lance-le en arrière puis redirige-le vers l'adversaire). Garde Bulle soporifique (E) pour punir ou te défendre : elle traverse les murs. Ramasse les sorts d'invocateur utilisés par l'adversaire (W) : un Flash ou un Embrasement volé change un combat.",
+    "level_1": "Bulle soporifique (E) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Astro-pong ! (Q). Combo : E (sommeil) → Q allongé sur la cible endormie : dégâts doublés.",
+    "level_3": "Voleuse de sorts (W). Ramasse les sorts d'invocateur et effets actifs utilisés par l'adversaire.",
+    "level_6": "Bond dimensionnel : téléportation courte puis retour. Combo : E → R en avant → Q (qui part de plus loin) → retour.",
+    "power_spikes": [
+      "Niveau 2 : E + Q sur cible endormie.",
+      "Niveau 6 : combo R → Q.",
+      "Premier item complet : burst à longue portée.",
+      "Mid game : picks avec la bulle."
+    ],
+    "lane_plan": "Poke avec Q, garde E pour les picks et la défense. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "Trade court : Q allongé. All-in : E → R → Q → attaques. Défense : E sur le support qui engage. Contre les tanks d'engage (Nautilus, Braum), reste derrière les sbires : ta bulle ne suffit pas toujours à les arrêter.",
+    "jungle_plan": "",
+    "threats": [
+      "Nautilus et Braum : matchups difficiles.",
+      "Janna : matchup difficile.",
+      "Rell, Rakan et Taric : matchups difficiles."
+    ],
+    "mistakes": [
+      "Lancer Q directement sans l'allonger (peu de dégâts).",
+      "Frapper la cible endormie avec un petit sort au lieu du Q.",
+      "Gâcher la bulle et ne plus pouvoir te défendre contre un engage."
+    ],
+    "matchup_notes": {
+      "Thresh": "Endors-le avant qu'il lance son grappin.",
+      "Lulu": "Trades de poke : ton Q allongé porte plus loin.",
+      "Nautilus": "Son ancre ne passe pas les sbires : reste derrière eux et garde E.",
+      "Braum": "Son shield bloque ton Q : vise sous un autre angle.",
+      "Janna": "Son shield absorbe ton burst : cherche les picks sur son ADC."
+    },
+    "mid_game": "Cherche les picks sur les cibles isolées avec la bulle et poke avant les objectifs. Pose des pinks.",
+    "late_game": "Picks à longue portée : endors le carry adverse et touche-le avec un Q allongé. Reste derrière ta frontline.",
+    "ahead": "Roam, crée des picks et prends les objectifs.",
+    "behind": "Poke en sécurité et garde la bulle pour protéger ton ADC.",
+    "win_condition": "Pour gagner cette partie, tu veux endormir et affaiblir les carries adverses à longue portée.",
+    "final_tip": "Allonge toujours ton Q (en arrière puis vers la cible) : ses dégâts augmentent avec la distance."
+  }
+}

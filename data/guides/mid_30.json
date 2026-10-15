@@ -1,0 +1,43 @@
+{
+  "Ryze|mid": {
+    "identity": "Mage de combat à dégâts magiques, basé sur l'enchaînement de sorts. Court-circuit (Q) tire un projectile qui rebondit sur les cibles marquées ; lancer W ou E réinitialise son temps de recharge. Prison runique (W) slow (et root une cible marquée), Flux envoûtant (E) marque la cible et les ennemis proches, et Portail transdimensionnel (R) téléporte Ryze et ses alliés proches à un endroit éloigné. Son mana augmente ses dégâts (passif Maîtrise des arcanes).",
+    "playstyle": "Mage de DPS soutenu et de mobilité d'équipe grâce à l'ultime. Ryze scale avec ses items et enchaîne Q entre chaque sort.",
+    "early_game": "Farm avec E et Q (qui rebondit sur les sbires marqués). Poke l'adversaire quand il est près des sbires marqués. Garde W pour root une cible marquée qui t'engage.",
+    "level_1": "Flux envoûtant (E) en premier. Il marque les sbires et l'adversaire pour tes rebonds.",
+    "level_2": "Court-circuit (Q). E → Q : le projectile rebondit sur les cibles marquées.",
+    "level_3": "Prison runique (W). CC sur une cible marquée : E → W → Q → E → Q.",
+    "level_6": "Portail transdimensionnel : téléporte ton équipe proche à un endroit éloigné. Utilise-le pour un roam surprise, un dive à plusieurs ou une rotation vers un objectif.",
+    "power_spikes": [
+      "Niveau 3 : enchaînement E → W → Q.",
+      "Niveau 6 : Portail pour les roams d'équipe.",
+      "Premier et deuxième items : DPS soutenu.",
+      "Late game : mage de combat très fort s'il a survécu."
+    ],
+    "lane_plan": "Farm en sécurité, poke quand l'adversaire est près des sbires marqués. Pousse ta wave et utilise l'ultime pour des rotations ou des dives avec ton jungler. La quête de rôle mid (retour accéléré) t'aide à scale en resetant souvent.",
+    "trading": "Trade court : E → Q. Trade long : E → W → Q → E → Q (Q entre chaque sort). Engage quand W peut root ; abandonne contre les mages qui te poke ou te burst à distance.",
+    "jungle_plan": "",
+    "threats": [
+      "Mages à burst ou à longue portée (Syndra, Hwei, Veigar).",
+      "Twisted Fate et Malzahar : matchups difficiles.",
+      "Aurelion Sol, qui scale mieux."
+    ],
+    "mistakes": [
+      "Oublier de lancer Q entre chaque sort.",
+      "Utiliser l'ultime sans plan (téléporter ton équipe dans un mauvais combat).",
+      "Forcer les trades contre les mages à burst."
+    ],
+    "matchup_notes": {
+      "Viktor": "Farm et joue autour de ton jungler.",
+      "Syndra": "Elle te burst : reste derrière tes sbires.",
+      "Ahri": "Garde W pour son engage.",
+      "Sylas": "Root-le quand il engage, mais attention à ton ultime qu'il peut voler.",
+      "Akali": "W sur elle quand elle sort de son Linceul."
+    },
+    "mid_game": "Rotations avec l'ultime, objectifs et DPS en teamfight.",
+    "late_game": "Mage de combat : enchaîne les sorts derrière ta frontline, root les divers avec W.",
+    "ahead": "Roam avec l'ultime et prends les objectifs.",
+    "behind": "Farm et scale en sécurité.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane, scale et enchaîner les sorts en teamfight.",
+    "final_tip": "Lance Q entre chaque sort : c'est ce qui fait tout ton DPS."
+  }
+}

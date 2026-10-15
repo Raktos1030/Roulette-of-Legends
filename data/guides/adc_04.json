@@ -1,0 +1,43 @@
+{
+  "Caitlyn|adc": {
+    "identity": "Tireuse à dégâts physiques et à très longue portée. Tir dans la tête (passif) renforce une attaque toutes les quelques attaques, et à coup sûr contre une cible prise dans un piège ou un filet (avec une portée doublée). Pacificateur de Piltover (Q) tire après une seconde de charge un tir perforant, Piège-yordle (W) pose un piège qui révèle et root 1,5 seconde, Filet de calibre 90 (E) slow la cible et projette Caitlyn en arrière, et Tir chirurgical (R) inflige de gros dégâts à une cible à très longue portée (un ennemi peut s'interposer).",
+    "playstyle": "Tyran de lane : sa portée lui permet de harceler l'adversaire et de prendre les plaques. Ses matchups difficiles sont surtout les mages bot à longue portée (Lux, Xerath, Hwei).",
+    "early_game": "Profite de ta portée : attaque l'adversaire chaque fois qu'il vient last hit, puis recule. Pose tes pièges sous ta tour et dans les bushs pour te protéger des engages. Pousse pour prendre les plaques de la tour avant 14 minutes.",
+    "level_1": "Pacificateur de Piltover (Q) en premier. Poke avec tes attaques, garde Q pour la wave ou un adversaire root.",
+    "level_2": "Piège-yordle (W) ou Filet (E). Combo : filet sur l'adversaire, piège à ses pieds, puis Tir dans la tête garanti.",
+    "level_3": "Le sort manquant. Combo complet : E → W → Q → attaque renforcée. E sert aussi à fuir un engage.",
+    "level_6": "Tir chirurgical : achève une cible basse en PV à très longue portée. Vérifie qu'aucun ennemi ne peut s'interposer.",
+    "power_spikes": [
+      "Niveau 1 à 3 : domination par la portée.",
+      "Niveau 3 : combo filet, piège, tir.",
+      "Premier item complet : dégâts et pression sur les tours.",
+      "Deux items complets : Tir dans la tête très puissant."
+    ],
+    "lane_plan": "Harcèle, pousse et prends les plaques. Pose des pièges autour des dragons et dans les bushs pour contrôler la zone. Joue avec ton jungler sur le dragon. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) se complète vite avec un bon farm et de la pression.",
+    "trading": "Trade de base : une attaque à portée maximale puis recul. All-in : E → W à ses pieds → Q → attaques renforcées. Recule contre les mages bot qui te poke de plus loin que ta portée.",
+    "jungle_plan": "",
+    "threats": [
+      "Mages bot à longue portée (Lux, Xerath, Hwei) : matchups difficiles.",
+      "Yasuo et son Mur de vent.",
+      "Divers quand ton filet est en recharge."
+    ],
+    "mistakes": [
+      "Utiliser le filet pour attaquer et ne plus pouvoir fuir.",
+      "Lancer l'ultime quand un ennemi peut s'interposer.",
+      "Ne pas pousser son avantage de portée en début de partie."
+    ],
+    "matchup_notes": {
+      "Jhin": "Garde le filet pour éviter le CC de sa Floraison mortelle.",
+      "Jinx": "Elle scale mieux : transforme ton avance de lane en tours et en dragons.",
+      "Ezreal": "Pose tes pièges là où il atterrit avec son Transfert arcanique.",
+      "Lux": "Elle poke et root de très loin : reste derrière les sbires pour bloquer son Entrave de lumière.",
+      "Xerath": "Il te dépasse en portée : joue autour de ton support et de ton jungler pour l'atteindre."
+    },
+    "mid_game": "Prends les tours avec ta portée et pose des pièges autour des objectifs avant qu'ils apparaissent.",
+    "late_game": "Frappe depuis la portée maximale derrière ta frontline. Pose des pièges autour de toi pour te protéger des divers, et achève les fuyards avec Tir chirurgical.",
+    "ahead": "Continue de prendre les tours : ta portée te permet d'assiéger en sécurité.",
+    "behind": "Farm à distance, reste derrière ta frontline et contrôle la zone avec tes pièges.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner la lane grâce à ta portée puis transformer cette avance en tours et en dragons.",
+    "final_tip": "Un ennemi pris dans ton piège ou ton filet subit un Tir dans la tête garanti, à portée doublée : enchaîne toujours E → W → attaque."
+  }
+}

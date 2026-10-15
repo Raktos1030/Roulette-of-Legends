@@ -1,0 +1,43 @@
+{
+  "Lillia|jgl": {
+    "identity": "Mage à dégâts magiques qui accumule de la vitesse en frappant. Frappe fleurie (Q) inflige des dégâts vrais au bord et donne des stacks de vitesse, Attention, désolée ! (W) fait de gros dégâts au centre, Graine tournoyante (E) roule et slow, et Douce berceuse (R) endort toutes les cibles marquées par son passif (qui brûle en pourcentage des PV).",
+    "playstyle": "Jungler de clear très rapide et de combats de zone. Lillia kite en courant grâce à ses stacks de vitesse et endort plusieurs cibles avec l'ultime. Elle excelle contre les tanks (dégâts en pourcentage) et dans les combats longs.",
+    "early_game": "Clear rapide en spammant Q (bord pour les dégâts vrais) et W sur les camps. Gank quand tu peux toucher E : slow, puis Q en courant autour de la cible. Garde tes stacks de vitesse pour arriver vite.",
+    "level_1": "Frappe fleurie (Q) en premier. Frappe les camps avec le bord.",
+    "level_2": "Attention, désolée ! (W). Gros dégâts au centre : ton clear s'accélère.",
+    "level_3": "Graine tournoyante (E). Slow : premier gank possible, mais Lillia est surtout forte après le 6.",
+    "level_6": "Douce berceuse : toutes les cibles marquées par ton passif deviennent somnolentes puis s'endorment. Touche plusieurs ennemis avec Q et E, puis R. Frapper une cible endormie la réveille avec des dégâts bonus.",
+    "power_spikes": [
+      "Niveau 6 : endormissement de plusieurs cibles.",
+      "Premier item complet : clear et kiting excellents.",
+      "Deux items : combats de zone dominants.",
+      "Contre les tanks : dégâts en pourcentage très efficaces."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Full clear très rapide, puis ganks ou escarmouches selon les lanes. Lillia gagne par le farm et les combats de zone : contrôle les crabes, les Larves (vers 8 min) et les dragons. Évite les duels contre les junglers qui te divent en early. Après le 6, chaque combat à plusieurs est une occasion d'endormir toute l'équipe adverse.",
+    "trading": "En escarmouche : tourne autour des ennemis en touchant avec le bord de Q, E pour slow, puis R quand plusieurs cibles sont marquées. Garde W pour le centre sur une cible endormie. Abandonne contre les champions qui te divent sans que tu puisses kiter.",
+    "threats": [
+      "Junglers de dive en early.",
+      "CC qui cassent ton kiting.",
+      "Jayce, seul matchup nettement défavorable selon les données."
+    ],
+    "mistakes": [
+      "Frapper avec le centre de Q au lieu du bord (pas de dégâts vrais).",
+      "Lancer R sans cibles marquées.",
+      "Réveiller une cible endormie avec un petit sort au lieu d'un gros."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il te bat en early : évite ses invasions.",
+      "Graves": "Kite-le en tournant autour de lui.",
+      "Sylas": "Attention : il peut voler ton ultime.",
+      "Sejuani": "Tes dégâts en pourcentage la font fondre.",
+      "Jayce": "Il te poke en forme canon : joue avec tes alliés."
+    },
+    "mid_game": "Combats de zone autour des objectifs, en endormant plusieurs ennemis.",
+    "late_game": "Tourne autour de l'équipe adverse, marque un maximum de cibles et endors-les avec R.",
+    "ahead": "Prends les objectifs et force les combats de zone.",
+    "behind": "Farm et joue pour un endormissement décisif en teamfight.",
+    "win_condition": "Pour gagner cette partie, tu veux farmer vite et endormir plusieurs ennemis en teamfight.",
+    "final_tip": "Frappe toujours avec le bord de ton Q : c'est là que se font les dégâts vrais."
+  }
+}

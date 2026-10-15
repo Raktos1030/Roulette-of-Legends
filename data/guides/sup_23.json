@@ -1,0 +1,43 @@
+{
+  "Rakan|sup": {
+    "identity": "Support d'engage très mobile. Plumes enchantées (passif) lui donne régulièrement un shield. Rémige rayonnante (Q) lance une plume qui blesse ; si elle touche un champion ou un monstre épique, Rakan soigne ensuite ses alliés proches. Entrée triomphale (W) le fait foncer vers un endroit et knock-up les ennemis à son arrivée, Valse guerrière (E) le fait voler vers un allié en lui donnant un shield (relançable gratuitement une fois), et Danse ultime (R) lui donne de la vitesse et charme tous les ennemis qu'il touche.",
+    "playstyle": "Support d'engage et de disengage : il entre avec W et R, puis ressort avec E vers un allié. Seuls Senna et Zilean le gênent nettement, et il écrase les supports de dive et de poke lent (Camille, Pantheon, Xerath). Tout repose sur le bon timing d'engage.",
+    "early_game": "Au niveau 2, cherche W → attaques, puis E vers ton ADC pour ressortir. Avant cela, poke avec Q (qui soigne aussi ton ADC s'il touche un champion). Garde toujours E pour rejoindre ou protéger ton ADC.",
+    "level_1": "Entrée triomphale (W) en premier. Ensuite, monte W en priorité.",
+    "level_2": "Valse guerrière (E). Combo : W (knock-up) → attaques → E vers ton ADC. Ou E vers un allié éloigné, puis W depuis sa position.",
+    "level_3": "Rémige rayonnante (Q). Poke et soin pour ton duo.",
+    "level_6": "Danse ultime : cours à travers l'équipe adverse pour charmer tout le monde. Combo : R → W → E vers un allié (le Flash se place souvent entre R et W).",
+    "power_spikes": [
+      "Niveau 2 : W → E.",
+      "Niveau 6 : R → W, engage sur plusieurs ennemis.",
+      "Premier item complet : shields et soins renforcés.",
+      "Teamfight : engage sur le groupe puis retour avec E."
+    ],
+    "lane_plan": "Menace l'engage en permanence, poke avec Q et protège ton ADC avec E. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "All-in : W → attaques → Q → E vers ton ADC, puis R au niveau 6. Défense : E vers l'allié attaqué, W pour interrompre l'engage adverse. Recule contre les supports qui te poke ou annulent ton engage (Senna, Zilean).",
+    "jungle_plan": "",
+    "threats": [
+      "Senna et Zilean : matchups difficiles.",
+      "CC de foule qui t'arrêtent en pleine dive.",
+      "Engager sans allié vers qui repartir avec E."
+    ],
+    "mistakes": [
+      "Utiliser E pour engager et ne plus pouvoir ressortir.",
+      "Engager quand ton ADC ne peut pas suivre.",
+      "Lancer l'ultime après W au lieu de l'inverse (R puis W charme plus de monde)."
+    ],
+    "matchup_notes": {
+      "Thresh": "Si son grappin touche ton ADC, E vers lui pour le protéger.",
+      "Lulu": "Sa métamorphose t'arrête : engage quand elle l'a utilisée.",
+      "Nautilus": "Tu es plus mobile : esquive son ancre, puis engage.",
+      "Pyke": "Il est fragile : W → R le punit.",
+      "Senna": "Elle te poke et te root : engage quand sa Dernière étreinte est utilisée."
+    },
+    "mid_game": "Cherche les engages avec ton jungler, pose des pinks et protège ton ADC avec E.",
+    "late_game": "Engage sur le groupe avec R → W, puis ressors avec E vers un allié. En défense, E sur le carry dive, W pour interrompre.",
+    "ahead": "Engage souvent : chaque charme multiple gagne un combat.",
+    "behind": "Protège avec E et Q, et attends le bon engage avec R.",
+    "win_condition": "Pour gagner cette partie, tu veux engager sur plusieurs ennemis et ressortir intact grâce à ta mobilité.",
+    "final_tip": "Garde toujours Valse guerrière pour ressortir : un Rakan sans E après l'engage meurt."
+  }
+}

@@ -1,0 +1,43 @@
+{
+ "Yasuo|top": {
+  "identity": "Crit-based physical damage fighter. His passive doubles his crit chance and gives him a shield as he moves (Flow). Steel Tempest (Q) strikes in a line and, after two hits, launches a tornado that knocks up; Wind Wall (W) blocks projectiles; Sweeping Blade (E) dashes through a target (Q during the dash = circular strike); Last Breath (R) teleports onto a knocked-up target. He's banned a lot.",
+  "playstyle": "Short trades with the Flow shield, then all-ins with the tornado and ultimate. In top, Yasuo exploits ranged or projectile-based top laners (Varus, Vayne, Heimerdinger, Teemo) thanks to Wind Wall. He's very mechanical and relies on the minion wave for his E's.",
+  "early_game": "Stack Q on minions to have the tornado ready, then engage: E through a minion toward your opponent → Q3 (tornado) → R if your ultimate is available. Your Flow shield absorbs the first trade: only engage when it's full. Keep W for the enemy's most dangerous projectile.",
+  "level_1": "Steel Tempest (Q) first. Stack Q on minions and poke your opponent when they come to last hit.",
+  "level_2": "Sweeping Blade (E). A dash through a unit: E + Q during the dash strikes in a circle. You can stick to your opponent by dashing from minion to minion.",
+  "level_3": "Wind Wall (W). It blocks projectiles: save it for the enemy's key ability (Varus's Q, Heimerdinger's rockets, Teemo's blind).",
+  "level_6": "Last Breath: a teleport onto a knocked-up target (by your tornado or an ally) that keeps them airborne. Combo: E → Q3 tornado → R. You can also use it on your jungler's knock-ups.",
+  "power_spikes": [
+   "Level 2: E + Q, short trades.",
+   "Level 6: tornado + ultimate, a big all-in.",
+   "First completed item: heavy crit damage.",
+   "Two items: dangerous duels and teamfights."
+  ],
+  "lane_plan": "Play a neutral wave, stack Q on minions and trade when your Flow shield is full. Keep minions between you and your opponent for your E's. Recall when your wave crashes. Against a ranged champion, step up with W ready.",
+  "trading": "Short trade: E through your opponent → Q → back off with E on a minion. Long trade: Q3 tornado → R → attacks. Engage when your tornado is ready and your shield is full; give up on it against champions who beat you in long melee fights (Renekton, Sett, Nasus).",
+  "jungle_plan": "",
+  "threats": [
+   "Fighters who win in melee range (Renekton, Sett).",
+   "Singed and champions who make you chase.",
+   "Nasus and his attack speed slows."
+  ],
+  "mistakes": [
+   "Using W on an unimportant ability.",
+   "Engaging without your Flow shield or tornado.",
+   "Dashing into an enemy wave with no way out."
+  ],
+  "matchup_notes": {
+   "Yone": "A mobility duel: wait until he's used his E to engage. Wind Wall barely helps here, his abilities aren't projectiles.",
+   "Renekton": "His empowered W stuns you: don't trade with him when his Fury is at 50.",
+   "Malphite": "His armor reduces your damage; W against his Q.",
+   "Jayce": "W blocks his cannon-form Q + E.",
+   "Varus": "Wind Wall blocks his arrows: stick to him."
+  },
+  "mid_game": "Split pushing and skirmishes. Your ultimate works with your allies' knock-ups: stay close to them around objectives.",
+  "late_game": "Go in after your team's knock-ups, ultimate on several targets, Wind Wall to protect your carries from projectiles.",
+  "ahead": "Force duels, take towers and dive with your jungler.",
+  "behind": "Farm, play with your team and wait for knock-ups for your ultimate.",
+  "win_condition": "To win this game, you want to dominate ranged top laners thanks to Wind Wall, then use your ultimate on your team's knock-ups in teamfights.",
+  "final_tip": "Always save your Wind Wall for the enemy's most important ability."
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "MissFortune|adc": {
+  "identity": "Physical damage marksman, a poke and teamfight specialist. Love Tap (passive) adds damage when she attacks a new target. Double Up (Q) fires a shot that bounces to a second target behind the first, Strut (W) gives her movement speed when she isn't being attacked and, when activated, attack speed, Make It Rain (E) slows and damages in an area it reveals, and Bullet Time (R) unleashes waves of bullets in a cone for a few seconds (every wave can crit).",
+  "playstyle": "Aggressive lane and teamfight ADC: she harasses with Q bounces, then crushes fights with her ultimate. She's very strong with a support who roots several targets, so she can cast her ultimate safely.",
+  "early_game": "Harass with Double Up (Q): aim at a low-health minion in front of your opponent, and the shot bounces onto them. Switch targets to use Love Tap. Keep Strut's speed by avoiding getting hit.",
+  "level_1": "Double Up (Q) first. Harass with the bounce onto your opponent.",
+  "level_2": "Strut (W). Attack speed for trades, and movement speed to position.",
+  "level_3": "Make It Rain (E). An area slow: useful for kills with your support and to reveal a bush.",
+  "level_6": "Bullet Time: huge damage in a cone during the channel. Cast it when enemies are rooted or can't leave the cone (a corridor, a wall, your support's CC).",
+  "power_spikes": [
+   "Level 2: Q and W for trades.",
+   "Level 6: an ultimate that wins a 2v2 fight.",
+   "First completed item: very punishing Q.",
+   "Teamfights: ultimate on a grouped team."
+  ],
+  "lane_plan": "Harass with Q and dominate lane with your support. Push to take plates and join dragons. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards steady farming. Your best partner is a support who roots in an area.",
+  "trading": "Basic trade: Q bounce, then attacks while switching targets. All-in: E to slow, W, attacks, R if enemies can't escape. Back off against bot lane mages who poke you from farther away (Hwei, Viktor, Xerath).",
+  "jungle_plan": "",
+  "threats": [
+   "Hwei and Viktor bot: hard matchups.",
+   "Zeri: a hard matchup.",
+   "Any CC that interrupts your ultimate."
+  ],
+  "mistakes": [
+   "Casting your ultimate into a team that can interrupt it or walk out of the cone.",
+   "Always attacking the same target and losing Love Tap.",
+   "Standing too close before your ultimate."
+  ],
+  "matchup_notes": {
+   "Jhin": "Harass him while he reloads.",
+   "Jinx": "She scales: punish her in lane with your support.",
+   "Caitlyn": "She has more range: harass with Q's bounce rather than your attacks.",
+   "Vayne": "Dominate her in lane with Q.",
+   "Hwei": "He pokes from afar and can root you: save your ultimate for after his CC."
+  },
+  "mid_game": "Group with your team and set up fights around objectives, in narrow areas where your ultimate hits everyone.",
+  "late_game": "Stay behind your frontline until it's time for your ultimate: wait for the enemy CC to be used, then cast Bullet Time on the group.",
+  "ahead": "Force grouped teamfights: your ultimate can win them on its own.",
+  "behind": "Harass with Q from range and save your ultimate for a grouped fight.",
+  "win_condition": "To win this game, you want to win lane through poke, then decide teamfights with a well-placed ultimate.",
+  "final_tip": "Your ultimate is worthless if it gets interrupted: wait for the enemy CC to be used before you cast it."
+ }
+}

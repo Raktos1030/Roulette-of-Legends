@@ -1,0 +1,84 @@
+{
+ "Riven|top": {
+  "identity": "Very mobile, very mechanical physical damage fighter. Every ability charges her Runic Blade (passive), which empowers her next attack: Riven lives on ability → attack chains. Broken Wings (Q) dashes three times (the third knocks up), Ki Burst (W) stuns around her, Valor (E) dashes with a shield, and Blade of the Exile (R) increases her damage and range before a wave that deals more damage to wounded targets.",
+  "playstyle": "Short, explosive trades, then an all-in with her ultimate. Riven wins by getting the most out of her passive (one attack between each ability) and using E to soak the counterattack. Strong in the early and mid game; very dependent on your combo mastery (animation canceling Q with a move command).",
+  "early_game": "Trade Q + attack, then back off before the counterattack. Keep E to absorb the enemy's big ability or get out of a fight that goes wrong. Use Q3 to hop thin walls and escape ganks.",
+  "level_1": "Broken Wings (Q) first. Q + your passive's empowered attack on an opponent who comes to last hit, then back off with your remaining Q's.",
+  "level_2": "Valor (E). E → Q → attack to go in while soaking damage; you can keep E to get out if the trade goes wrong.",
+  "level_3": "Ki Burst (W). Basic combo: E → W (stun) → attack → Q → attack → Q → attack. It's your first real kill threat with Ignite.",
+  "level_6": "Blade of the Exile: cast R1 at the start of an all-in (during an E, for example) to benefit from the damage and range, then finish with R2 (wave) when the target is low: its damage grows with missing health.",
+  "power_spikes": [
+   "Level 3: E → W → Q combo, a kill threat.",
+   "Level 6: all-in with R1 and execute with R2.",
+   "First completed item: lane dominance.",
+   "Mid game: messy skirmishes."
+  ],
+  "lane_plan": "Play a neutral or slightly pushed wave: Riven likes to trade but has no sustain in lane. Trade briefly when your opponent comes to last hit, then reset before the counterattack. Take plates when you're winning. Recall when your wave crashes and you're low. Q3 lets you hop jungle walls to avoid ganks.",
+  "trading": "Short trade: Q → attack → Q → attack, then Q3 backward. Long trade: E (shield) → R1 → W → attacks and Q's → R2 to finish. Engage when your opponent has used their CC or dash; give up on it if you've spent E and their big ability is coming.",
+  "jungle_plan": "",
+  "threats": [
+   "Kennen and champions who kite and stun you.",
+   "Renekton and Garen, who win short trades and stun/silence you.",
+   "Ganks while your Q's are on cooldown."
+  ],
+  "mistakes": [
+   "Chaining abilities without auto-attacks in between (you lose your passive).",
+   "Using E to engage when you can't get out afterward.",
+   "Casting R2 too early, when the target still has a lot of health."
+  ],
+  "matchup_notes": {
+   "Garen": "His Q silences you mid-combo. Only trade when his Q is on cooldown, and block his Judgment with E.",
+   "Renekton": "His empowered W stuns you for a long time: keep E to absorb it and avoid trades when his Fury is above 50.",
+   "Yone": "Engage when his E is on cooldown; W breaks his Q3 engage if he gets into melee range.",
+   "Darius": "Dodge his Q with a Q or E and don't stay in melee range long enough for him to stack up.",
+   "Irelia": "Cast W when she dashes onto you: she loses her combo."
+  },
+  "mid_game": "Skirmishes around objectives and dives with your jungler. Riven excels in messy fights where she can chain targets.",
+  "late_game": "Flank and dive a carry with E → W → Q; keep R2 to execute. Avoid engaging head-on into a CC-heavy team.",
+  "ahead": "Force duels in the side lane, tower dive with your jungler and turn every advantage into a tower.",
+  "behind": "Farm, avoid duels against champions who are further ahead and look for picks on isolated targets rather than split pushing.",
+  "win_condition": "To win this game, you want to dominate your lane through short trades, then turn your lead into dives and picks in the mid game.",
+  "final_tip": "Between every ability, land an auto-attack: without your passive, Riven loses half her damage."
+ },
+ "Rumble|top": {
+  "identity": "Magic damage battle mage who manages a heat gauge. Between 50 and 100 heat, his abilities are empowered; at 100, he overheats: no more abilities, but very powerful attacks. Flamespitter (Q) burns in a cone, Electro Harpoon (E) slows (two charges), Scrap Shield (W) protects and speeds him up, and The Equalizer (R) lays down a line of fire, one of the best teamfight ultimates. This patch's data shows him as weak.",
+  "playstyle": "Sustained melee trades while staying in the Danger Zone (50-100 heat), without overheating at the wrong time. Rumble has no mana cost: he can cast abilities on minions to build his heat. Very strong in teamfights thanks to his ultimate.",
+  "early_game": "Harass with E's two charges, then Q when your opponent walks into melee range. Heat up with W and Q on minions before a trade so you go straight into the Danger Zone.",
+  "level_1": "Electro Harpoon (E) first on the most common path (E → Q → W). Poke with both harpoons (the second deals more damage) and keep your distance.",
+  "level_2": "Flamespitter (Q). E to slow, then Q in melee range: your opponent can't easily get out of the cone.",
+  "level_3": "Scrap Shield (W). A shield and movement speed: it soaks damage, builds heat outside of fights and helps you close in.",
+  "level_6": "The Equalizer: a line of fire that slows and burns. In lane, place it on your opponent's escape path; in teamfights, on the area the enemy team has to cross.",
+  "power_spikes": [
+   "Level 3: full kit, a good all-in in the Danger Zone.",
+   "Level 6: ultimate for kills and ganks.",
+   "First completed item: damage in sustained fights.",
+   "Teamfights: a decisive ultimate on several targets."
+  ],
+  "lane_plan": "Play a neutral wave. Harass with E, heat up on minions with W and Q, and engage when you're between 50 and 100 heat. If you're about to overheat in melee range, that's fine: your attacks become strong. Recall when your wave crashes. Avoid sitting on a pushed lane: you have no dash.",
+  "trading": "Short trade: E + E. Long trade: W → E → Q in melee range → overheated attacks. Engage when your opponent no longer has their dash; give up on it if you're about to overheat far from them (you won't be able to cast abilities to escape).",
+  "jungle_plan": "",
+  "threats": [
+   "Ranged champions who kite you (Kayle, Anivia).",
+   "Mobile champions who get out of your Q cone (Irelia).",
+   "Overheating far from your opponent and being left without abilities."
+  ],
+  "mistakes": [
+   "Overheating at the wrong time (far from the target).",
+   "Placing your ultimate where your opponent already is instead of their path.",
+   "Forgetting to build heat before a trade."
+  ],
+  "matchup_notes": {
+   "Yone": "He gets out of your cone with E; slow him with E before Q and keep W for his Q3.",
+   "Jayce": "Stick to him when he switches to hammer form; in cannon form, dodge his Q + E by moving sideways.",
+   "Aatrox": "Step out of his sweet spots and burn him with Q during his cooldowns.",
+   "Malphite": "Your magic damage ignores his armor: trade with Q as soon as he walks into melee range.",
+   "Irelia": "She dashes through the wave; keep W to soak her engage and E to slow her."
+  },
+  "mid_game": "Play around objectives: your ultimate makes every dragon or Baron fight very costly for the enemy. Keep a pushed wave before joining.",
+  "late_game": "Place your ultimate on the engage area or the escape line, then fight in the Danger Zone. Stay behind your frontline if you're built for damage.",
+  "ahead": "Force fights around objectives with your ultimate and dive with your jungler.",
+  "behind": "Farm, avoid duels and play for a decisive ultimate in teamfights: it stays useful even without a lead.",
+  "win_condition": "To win this game, you want to survive the lane and dominate teamfights with The Equalizer on several targets.",
+  "final_tip": "Before every trade, raise your heat to 50 with W and Q on minions: you hit straight away with empowered abilities."
+ }
+}

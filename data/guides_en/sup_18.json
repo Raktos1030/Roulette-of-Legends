@@ -1,0 +1,43 @@
+{
+ "Nautilus|sup": {
+  "identity": "Engage tank. Staggering Blow (passive): his first attack on a target briefly roots it. Dredge Line (Q) throws his anchor: on an enemy, they're pulled toward each other; on a wall, Nautilus is pulled to the wall. Titan's Wrath (W) gives him a shield and makes his attacks deal damage over time around him, Riptide (E) creates three waves of explosions that slow, and Depth Charge (R) sends a shockwave that chases a target, knocking up enemies in its path, then launches and stuns the target.",
+  "playstyle": "Engage support with a huge amount of CC: anchor, passive root, slow and a targeted ultimate. He loses to tanks who win up close or counter-engage (Taric, Rell, Braum, Leona, Alistar) and crushes fragile supports (Yuumi, Xerath, Zyra, Pyke).",
+  "early_game": "At level 2, look for Q → attack (passive root) → E: your ADC follows up. Anchoring a wall also lets you escape or reposition. Don't throw Q through minions: it stops on the first one.",
+  "level_1": "Dredge Line (Q) first. After that, max Q first.",
+  "level_2": "Titan's Wrath (W). A shield during the engage, and damage over time with your attacks.",
+  "level_3": "Riptide (E). Full combo: Q → attack (root) → E → W.",
+  "level_6": "Depth Charge: targets a champion and can't be dodged; everything in its path gets knocked up too. Combo: R → Q → attack → E.",
+  "power_spikes": [
+   "Level 2: Q + passive.",
+   "Level 6: targeted ultimate on the carry.",
+   "First resistance items: a durable frontline.",
+   "Teamfights: a chain of CC on one target."
+  ],
+  "lane_plan": "Constantly threaten the anchor and play with your jungler. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored): place them around dragon.",
+  "trading": "All-in: Q → attack → E → W, then R at level 6. Defense: R or Q on the diver, attack to root them. Back off against tanks who win the fight up close (Braum, Leona, Taric): don't engage while they have their abilities.",
+  "jungle_plan": "",
+  "threats": [
+   "Taric and Rell, the worst matchups.",
+   "Braum and Leona: hard matchups.",
+   "Supports who block or turn your engage around (Braum and his shield)."
+  ],
+  "mistakes": [
+   "Throwing the anchor through minions.",
+   "Engaging when your ADC can't follow.",
+   "Forgetting the free root from your first attack."
+  ],
+  "matchup_notes": {
+   "Thresh": "Engage once his hook and lantern are used.",
+   "Leona": "She engages too and holds up well: play around your jungler.",
+   "Braum": "His shield blocks your anchor: aim from another angle or wait until he's used it.",
+   "Yuumi": "Her ADC is alone: engage on them.",
+   "Taric": "His invulnerability cancels your engages: wait out his ultimate."
+  },
+  "mid_game": "Place Control Wards, look for picks with Q and R, and protect your ADC.",
+  "late_game": "Frontline: R on the enemy carry, Q to engage or catch a diver. Chain your CC on the same target.",
+  "ahead": "Engage often and help your jungler control the map.",
+  "behind": "Play counter-engages: R and Q stop divers on your ADC.",
+  "win_condition": "To win this game, you want to chain your CC on key targets so your team can kill them.",
+  "final_tip": "Your first attack on each target roots it: after the anchor, always attack before casting another ability."
+ }
+}

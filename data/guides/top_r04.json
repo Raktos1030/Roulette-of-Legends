@@ -1,0 +1,84 @@
+{
+  "Renekton|top": {
+    "identity": "Combattant à dégâts physiques, tyran de la lane en early game. Renekton accumule de la fureur en attaquant ; à 50 de fureur, son prochain sort est renforcé. Destruction des faibles (Q) frappe en zone et soigne, Prédateur impitoyable (W) frappe deux fois et stun (trois fois et plus longtemps renforcé, en brisant les shields), Tranche et coupe (E) dash deux fois, et Dominus (R) le fait grossir avec des dégâts de zone.",
+    "playstyle": "Lane très agressive et trades courts renforcés par la fureur, puis dives sous tour en mid game. Renekton baisse en late game : il doit transformer son avance vite. La gestion de la fureur (arriver à 50 au bon moment) décide de tous tes trades.",
+    "early_game": "Farm avec Q pour générer de la fureur, puis engage avec les sorts renforcés. Un trade avec E (entrée) → W renforcé → Q → E (sortie) fait très mal et te laisse repartir. Prends les plaques dès que l'adversaire recall.",
+    "level_1": "Destruction des faibles (Q) en premier. Farm et génère de la fureur ; un Q renforcé sur l'adversaire au niveau 1 fait très mal et te soigne.",
+    "level_2": "Tranche et coupe (E). Deux dashes : le premier pour entrer, le second pour sortir après ton Q. Trade très fort au niveau 2, surtout avec la fureur à 50.",
+    "level_3": "Prédateur impitoyable (W). Combo : E → W renforcé (stun long) → Q → E pour sortir. Avec Embrasement, c'est une menace de kill sur la plupart des tops.",
+    "level_6": "Dominus : PV supplémentaires, dégâts de zone et génération de fureur. Lance-le au début d'un all-in pour gagner le combat long, ou pour survivre à un gank.",
+    "power_spikes": [
+      "Niveau 2 et 3 : trades et all-in très forts.",
+      "Niveau 6 : ultime qui gagne les combats longs.",
+      "Premier item complet : domination de lane.",
+      "Mid game : dives sous tour avec ton jungler."
+    ],
+    "lane_plan": "Joue une wave neutre ou poussée : génère de la fureur sur les sbires et trade avec les sorts renforcés. Prends les plaques et dive avec ton jungler. Recall quand ta wave crash. Si l'adversaire est plus fort en late game, tu dois l'étouffer avant 15 minutes.",
+    "trading": "Trade court : E → W renforcé → Q → E pour sortir. Trade long : Dominus → Q renforcé → W. Engage quand ta fureur est à 50 ; abandonne quand tu n'as plus de fureur ni de second E pour sortir.",
+    "jungle_plan": "",
+    "threats": [
+      "Illaoi et les champions qui te battent en combat long dans leur zone.",
+      "Tanks qui encaissent ton burst (Ornn, Dr. Mundo, Cho'Gath).",
+      "Perte de puissance en late game."
+    ],
+    "mistakes": [
+      "Utiliser W ou Q sans fureur à 50.",
+      "Utiliser les deux E pour entrer sans pouvoir ressortir.",
+      "Jouer passif et laisser un adversaire de late game scaler."
+    ],
+    "matchup_notes": {
+      "Yone": "Engage avec W renforcé quand son E est en recharge : le stun l'empêche de revenir.",
+      "Ambessa": "Trade court avec la fureur et sors avec E avant qu'elle n'enchaîne ses sorts.",
+      "Aatrox": "Esquive ses sweet spots avec E et trade court pendant ses temps de recharge.",
+      "Illaoi": "Ne te bats pas sur ses tentacules et esquive son E : si tu te fais prendre l'esprit, recule.",
+      "Ornn": "Il encaisse ton burst et te bat en combat long ; poke au Q, prends les plaques et joue sur la carte."
+    },
+    "mid_game": "Dive avec ton jungler, prends les tours et force les combats autour des objectifs pendant que tu es encore au sommet de ta puissance.",
+    "late_game": "Dive sur un carry avec E → W renforcé et sors avec le second E. Évite de te battre longtemps au milieu de l'équipe adverse.",
+    "ahead": "Dive, prends les tours et force les combats : chaque minute d'avance doit se transformer en objectif.",
+    "behind": "Farm, joue autour de ton jungler et cherche des dives sur les carries isolés.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer l'early, dive avec ton jungler et transformer ton avance avant le late game.",
+    "final_tip": "N'engage jamais sans 50 de fureur : c'est ce qui rend ton W et ton Q décisifs."
+  },
+  "Ornn|top": {
+    "identity": "Tank à dégâts magiques et physiques, spécialiste de l'engage et du CC. Fracture magmatique (Q) laisse un pilier au bout de sa course, Fournaise (W) souffle des flammes qui rendent les ennemis fragiles (une attaque sur une cible fragilisée la projette), Ruée ardente (E) charge et knock-up si Ornn percute un mur ou son pilier, et Appel du dieu de la forge (R) envoie un élémentaire qu'il peut relancer d'un coup de tête. Son passif lui permet d'améliorer les items de ses alliés en fin de partie.",
+    "playstyle": "Lane de tank et de contrôle, puis engage de teamfight en mid/late game. Ornn est très solide en lane et apporte une valeur énorme à toute son équipe en fin de partie.",
+    "early_game": "Farm et trade avec Q puis W (la fragilisation transforme ta prochaine attaque en knock-up). Garde E pour fuir ou pour engager contre un mur ou ton pilier. Ta résistance te laisse jouer la lane sereinement contre la plupart des combattants.",
+    "level_1": "Fracture magmatique (Q) en premier. Poke et crée un pilier que tu pourras utiliser avec E.",
+    "level_2": "Fournaise (W). Souffle de flammes qui rend l'ennemi fragile : Q + W + attaque est ton trade de base. Pendant W, tu es insensible aux slows.",
+    "level_3": "Ruée ardente (E). Charge qui projette si tu percutes un terrain (mur ou pilier). Combo : Q pour le pilier → E dans le pilier → W → attaque sur la cible fragilisée.",
+    "level_6": "Appel du dieu de la forge : l'élémentaire slow ce qu'il traverse ; relance-le d'un coup de tête pour projeter les ennemis vers ton équipe. Utilise-le pour engager en teamfight ou pour ganker avec ton jungler.",
+    "power_spikes": [
+      "Niveau 3 : combo Q + E dans le pilier + W.",
+      "Niveau 6 : engage à distance avec l'ultime.",
+      "Améliorations d'items pour ton équipe en fin de partie : énorme valeur collective.",
+      "Late game : tank et engage dominants."
+    ],
+    "lane_plan": "Farm en sécurité et trade avec Q et W. Utilise les murs de la lane pour ton E. Recall quand ta wave crash. Tu peux acheter en lane grâce à ton passif, ce qui te permet de rester plus longtemps sans perdre de sbires.",
+    "trading": "Trade court : Q + W + attaque sur la cible fragilisée. Trade long : Q → E dans le pilier → W → attaque. Engage quand ton Q touche ; abandonne contre les champions qui te kitent à distance.",
+    "jungle_plan": "",
+    "threats": [
+      "Fiora et les dégâts en pourcentage des PV.",
+      "Kiting à distance.",
+      "Shen et les champions qui gagnent les combats longs."
+    ],
+    "mistakes": [
+      "Rater E dans le pilier ou le mur (pas de knock-up).",
+      "Utiliser l'ultime sans que ton équipe puisse suivre.",
+      "Oublier les améliorations d'items pour ton équipe en fin de partie."
+    ],
+    "matchup_notes": {
+      "Yone": "Garde E pour son engage et fragilise-le avec W : ton knock-up casse son enchaînement.",
+      "Nasus": "Punis-le tôt avec Q + W et évite les combats sous Flétrissement.",
+      "Darius": "Ta résistance tient ses saignements ; projette-le avec W + attaque quand il avance.",
+      "Garen": "Évite son silence et trade avec Q + W quand son Q est en recharge.",
+      "Fiora": "Elle Riposte ton knock-up : attends sa Riposte avant d'utiliser W + attaque."
+    },
+    "mid_game": "Joue autour des objectifs et prépare les engages avec l'ultime. Garde vision sur les murs autour des objectifs pour tes E.",
+    "late_game": "Engage de teamfight : ultime sur plusieurs cibles, puis E et W. Protège tes carries quand tu n'as pas d'engage.",
+    "ahead": "Roam avec ton jungler, engage avec l'ultime et force les combats autour des objectifs.",
+    "behind": "Farm, tank pour ton équipe et améliore leurs items : ton impact reste énorme même sans avance.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane, renforcer toute ton équipe en fin de partie et engager les teamfights avec l'ultime.",
+    "final_tip": "Relance ton ultime au moment où l'élémentaire arrive sur ta cible, pour la projeter vers ton équipe."
+  }
+}

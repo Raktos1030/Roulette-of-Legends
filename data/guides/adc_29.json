@@ -1,0 +1,43 @@
+{
+  "Viktor|adc": {
+    "identity": "Mage de zone à dégâts magiques. Glorieuse évolution (passif) : chaque unité tuée lui donne des fragments Hextech (plus pour les gros sbires, les monstres épiques et les champions) ; tous les 100 fragments, il améliore définitivement un sort. Siphonnage (Q) blesse une cible, lui donne un shield et renforce sa prochaine attaque, Champ gravitationnel (W) slow dans une zone puis stun les ennemis qui y restent, Rayon Hextech (E) tire un laser en ligne, et Tempête arcanique (R) crée une tempête dirigeable qui inflige des dégâts continus et interrompt les canalisations.",
+    "playstyle": "Mage de contrôle de zone joué comme un carry : il nettoie les waves avec son laser, poke et domine les teamfights.",
+    "early_game": "Poke avec Rayon Hextech (E) en touchant à la fois l'adversaire et la wave. Last hit pour les fragments : ta première amélioration (souvent E) arrive plus vite si tu farm bien. Garde Champ gravitationnel (W) contre les engages.",
+    "level_1": "Siphonnage (Q) en premier. Beaucoup de joueurs retardent même l'ultime au niveau 7 pour monter E ; d'autres le prennent au niveau 6.",
+    "level_2": "Rayon Hextech (E). Ton poke principal et ton outil de nettoyage : vise l'adversaire à travers la wave.",
+    "level_3": "Champ gravitationnel (W). Ta défense : pose-le sous un diver ou sous l'adversaire root par ton support pour le stun.",
+    "level_6": "Tempête arcanique (au niveau 6 ou 7 selon ton choix) : tempête dirigeable qui fait des dégâts continus et interrompt les canalisations. Combo : W → R → E → Q.",
+    "power_spikes": [
+      "Première amélioration (souvent E) : laser beaucoup plus fort.",
+      "Tempête arcanique : combats à deux contre deux.",
+      "Premier item complet : nettoyage et poke.",
+      "Toutes les améliorations acquises : mage de zone dominant."
+    ],
+    "lane_plan": "Contrôle la wave avec E, poke et last hit pour les fragments. Garde W contre les engages. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) s'ajoute à ton scaling. Participe aux dragons : ton laser et ta tempête contrôlent la zone.",
+    "trading": "Trade court : Q → attaque renforcée → recul. Trade long : E → Q → attaque. All-in : W → R → E → Q. Abandonne contre les mages bot qui t'enferment (Veigar).",
+    "jungle_plan": "",
+    "threats": [
+      "Veigar : matchup difficile.",
+      "Supports d'engage quand W est en recharge.",
+      "Assassins qui te sautent dessus : tu n'as aucun dash."
+    ],
+    "mistakes": [
+      "Gaspiller W pour poke et ne plus pouvoir te défendre.",
+      "Rater les derniers coups et retarder tes améliorations.",
+      "Lancer la tempête loin des ennemis au lieu de la diriger sur eux."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Pose W sous toi quand elle dive avec son ultime.",
+      "Jinx": "Elle scale aussi : gagne les teamfights avec ta tempête.",
+      "Caitlyn": "Poke-la avec E à travers la wave.",
+      "Ezreal": "Il esquive avec E : lance W là où il atterrit.",
+      "Veigar": "Ne traverse pas sa cage : poke-le avec E de loin."
+    },
+    "mid_game": "Nettoie les waves avec E, rejoins les objectifs et contrôle la zone avec W et R.",
+    "late_game": "Reste derrière ta frontline, poke avec E, pose W sur les divers et dirige la tempête sur le groupe adverse.",
+    "ahead": "Force les teamfights autour des objectifs : ta tempête améliorée grandit à chaque kill.",
+    "behind": "Nettoie les waves en sécurité et atteins tes améliorations.",
+    "win_condition": "Pour gagner cette partie, tu veux obtenir tes améliorations en farmant, puis dominer les teamfights avec ton laser et ta tempête.",
+    "final_tip": "Chaque dernier coup compte pour tes améliorations : ne néglige pas le farm, même en bot lane."
+  }
+}

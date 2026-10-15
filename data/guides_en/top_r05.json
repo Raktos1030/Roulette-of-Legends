@@ -1,0 +1,84 @@
+{
+ "Mordekaiser|top": {
+  "identity": "Magic damage juggernaut who forces duels. After three hits on a champion or monster, his passive (Darkness Rise) creates a damage aura around him. Obliterate (Q) strikes an area, with a bonus if it hits only one enemy; Death's Grasp (E) pulls enemies in; Indestructible (W) turns damage dealt and taken into a shield that you can convert into healing; and Realm of Death (R) traps a target with you in a 1v1 where you steal part of their stats.",
+  "playstyle": "Sustained-fight lane and forced duels with his ultimate. Mordekaiser wins extended 1v1s and scales well. Slow and without a dash, he's easy to kite: his Q and E have to land for him to be dangerous.",
+  "early_game": "Trade with Q when your opponent is isolated from their minions (damage bonus) and activate your passive by chaining three hits. Keep E to pull your opponent into your Q or to answer an engage. Farm with Q.",
+  "level_1": "Obliterate (Q) first. Poke your opponent when they're alone, away from their minions, to get the isolation bonus.",
+  "level_2": "Death's Grasp (E). It pulls enemies in after a short delay: E → Q is your basic combo. It also gives passive magic penetration.",
+  "level_3": "Indestructible (W). A shield fed by the damage you deal and take, then a heal if you recast: activate it in the middle of the trade, then recast it before it fades.",
+  "level_6": "Realm of Death: you and your target are cut off from the rest of the fight for a few seconds and you steal part of their stats (permanently if you kill them). Use it when you win the duel; in teamfights, on the most dangerous carry to remove them from the fight.",
+  "power_spikes": [
+   "Level 3: E + Q + W, good long trades.",
+   "Level 6: forced duel with your ultimate.",
+   "First completed item: very strong in 1v1s.",
+   "Mid game: isolating carries in teamfights."
+  ],
+  "lane_plan": "Play a neutral wave or near your tower: you're slow and vulnerable to ganks. Trade with Q when your opponent separates from their wave. Recall when your wave crashes. After level 6, look for the duel as soon as your opponent has used an important ability.",
+  "trading": "Short trade: Q on an isolated opponent. Long trade: E → Q → attacks (passive) → W → R to finish. Engage when your opponent no longer has their dash; give up on it if they kite you from range or are stronger than you in a duel (Gwen, Yone).",
+  "jungle_plan": "",
+  "threats": [
+   "Kiting and mobile champions (Yone).",
+   "Singed and champions who wear you down in a chase.",
+   "Ganks: you're slow and easy to catch."
+  ],
+  "mistakes": [
+   "Casting your ultimate on a target you can't beat 1v1.",
+   "Missing E and losing your only engage.",
+   "Using Q in the middle of the wave (no isolation bonus)."
+  ],
+  "matchup_notes": {
+   "Darius": "Avoid the edge of his Decimate and his Apprehend; fight with Q when he has few stacks.",
+   "Malphite": "Your magic damage ignores his armor: trade freely.",
+   "Yone": "He dodges your abilities with E: wait until he's used it before casting E.",
+   "Garen": "Poke him with Q when he's isolated and avoid his silence.",
+   "Nasus": "Punish him early while he's stacking and avoid fights under Wither."
+  },
+  "mid_game": "Split push and force duels with your ultimate. Join objectives to isolate a carry.",
+  "late_game": "In teamfights, ultimate on the most dangerous target to remove them from the fight; in the side lane, force 1v1s.",
+  "ahead": "Force duels in the side lane and dive with your jungler: every ultimate that kills makes you stronger.",
+  "behind": "Farm, avoid duels against champions who are further ahead and use your ultimate to remove a carry from teamfights.",
+  "win_condition": "To win this game, you want to win forced duels with your ultimate and remove the enemy carries from teamfights.",
+  "final_tip": "Before casting your ultimate, ask yourself if you win the 1v1: if not, use it on a carry to remove a damage dealer from the fight."
+ },
+ "Nasus|top": {
+  "identity": "Physical damage juggernaut who scales endlessly. Every kill with Siphoning Strike (Q) permanently increases its damage. Wither (W) heavily slows movement and attack speed, Spirit Fire (E) deals area damage and shreds armor, and Fury of the Sands (R) gives him health, resistances, area damage and a faster Q.",
+  "playstyle": "Farming and stacking lane, then side-lane and teamfight dominance. He depends entirely on his Q stacks.",
+  "early_game": "Stack Q on every minion you can, even at the cost of some health. Under your tower, tower shots + Q make last hits easy: it's fine to play defensively. Use W against enemy engages and E to farm minions you can't reach.",
+  "level_1": "Siphoning Strike (Q) first. Last hit with Q every time it's up to stack.",
+  "level_2": "Wither (W) on the most common path. It heavily slows the target and reduces their attack speed: it's your tool to survive an all-in or punish a fighter who sticks to you.",
+  "level_3": "Spirit Fire (E). Area damage and armor shred: it helps you farm from range and set up your Q's.",
+  "level_6": "Fury of the Sands: health, resistances, area damage and a faster Q. You win long fights, can answer an all-in and tower dive with your jungler.",
+  "power_spikes": [
+   "Level 6: ultimate and long fights.",
+   "Stack buildup: your Q becomes an execute on carries.",
+   "First completed item: side-lane dominance.",
+   "Late game: one of the best split pushers in the game."
+  ],
+  "lane_plan": "Let the wave come to you and stack Q on minions. Farm with E when you can't get close. Avoid long trades early; recall when you have enough gold. Against an opponent who harasses you, keep the wave under your tower and accept being behind in gold at 15 minutes: your scaling makes up for it.",
+  "trading": "Short trade: W → Q. Long trade: Fury of the Sands → W → Q → E. Engage when you have enough stacks or your ultimate; give up on it if your opponent kites you from range.",
+  "jungle_plan": "",
+  "threats": [
+   "Aggressive early champions who stop you from stacking.",
+   "Ranged kiting.",
+   "Ganks when you're on a pushed wave."
+  ],
+  "mistakes": [
+   "Forgetting to stack Q on minions.",
+   "Fighting early without stacks or your ultimate.",
+   "Casting your ultimate too late, when you're already very low."
+  ],
+  "matchup_notes": {
+   "Garen": "Stack safely and avoid his silence early; you outscale him late.",
+   "Yone": "He pokes you: stack carefully and keep W for his engage.",
+   "Darius": "He harasses you early: W against his engage and your ultimate for the long fight.",
+   "Aatrox": "Dodge his sweet spots and stack safely: he dominates you in lane, not late in the game.",
+   "Malphite": "He can't punish you: stack freely."
+  },
+  "mid_game": "Split push with your stacks and force duels. Your ultimate lets you take towers quickly. Join objectives when your team needs you.",
+  "late_game": "A frontline that crushes carries with Q, or a split pusher who draws several opponents. Keep W for the most dangerous enemy carry.",
+  "ahead": "Force duels in the side lane and take every tower; every kill with Q adds even more stacks.",
+  "behind": "Stack safely and scale: your late game makes up for your early game. Just avoid giving kills.",
+  "win_condition": "To win this game, you want to build up stacks and dominate the side lane in the mid and late game.",
+  "final_tip": "Never miss a last hit with Q: every lost stack is power lost forever."
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "Corki|adc": {
+    "identity": "Tireur à dégâts mixtes. Munitions Hextech (passif) ajoute des dégâts bruts à ses attaques. Bombe au phosphore (Q) inflige des dégâts magiques en zone et révèle les unités touchées, Valkyrie (W) le fait voler sur une courte distance en laissant une traînée de feu, Gatling (E) mitraille un cône en réduisant l'armure et la résistance magique, et Barrage de projectiles (R) tire des roquettes stockées sur la durée (une sur trois est une grosse roquette plus puissante).",
+    "playstyle": "ADC de poke et de dégâts mixtes : il harcèle avec Q et ses roquettes, puis finit les combats avec Gatling et ses attaques. Il souffre contre les ADC qui scalent ou qui le poursuivent (Jinx, Zeri, Yunara).",
+    "early_game": "Poke avec les roquettes et Q quand l'adversaire vient last hit. Farm en sécurité : tes roquettes se rechargent sur la durée, utilise-les dès que tu en as plusieurs. Garde Valkyrie (W) pour fuir un engage.",
+    "level_1": "Gatling (E) en premier. Ensuite, la priorité de montée est Q > E > W. Gagne les premiers trades au contact de la wave.",
+    "level_2": "Bombe au phosphore (Q). Poke en zone et vision : elle révèle aussi le jungler qui arrive dans un bush.",
+    "level_3": "Valkyrie (W). Ta seule mobilité : sers-t'en surtout pour fuir, ou pour achever une cible basse en PV.",
+    "level_6": "Barrage de projectiles : poke constant à longue portée. Tire dès que tu as des roquettes stockées : la grosse roquette (une sur trois) touche en zone.",
+    "power_spikes": [
+      "Niveau 2 : E + Q pour les trades courts.",
+      "Niveau 6 : poke permanent avec les roquettes.",
+      "Premier item complet : poke et dégâts mixtes.",
+      "Mid game : Gatling réduit les résistances de toute l'équipe adverse."
+    ],
+    "lane_plan": "Poke avec R et Q, farm et garde W pour fuir. Tes dégâts mixtes compliquent la défense adverse. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense un farm régulier. Joue avec ton jungler autour du dragon.",
+    "trading": "Trade court : Q + roquette, puis recule. All-in : Q → E → attaques, W pour achever. Abandonne contre les ADC qui te poursuivent (Zeri) ou qui te surpassent en combat long (Jinx).",
+    "jungle_plan": "",
+    "threats": [
+      "Zeri et Viktor bot : matchups difficiles.",
+      "Jinx et Yunara, qui scalent mieux que toi.",
+      "Supports d'engage quand Valkyrie est en recharge."
+    ],
+    "mistakes": [
+      "Utiliser Valkyrie pour attaquer et ne plus pouvoir fuir.",
+      "Garder les roquettes au maximum au lieu de les tirer.",
+      "Se battre en combat long contre un ADC qui scale mieux."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Poke-la avec les roquettes avant qu'elle puisse dive avec son ultime.",
+      "Tristana": "Garde W pour fuir son Saut roquette.",
+      "Jinx": "Transforme ton avance de lane en tours avant qu'elle scale.",
+      "Vayne": "Poke-la hors de portée de sa Roulade.",
+      "Zeri": "Elle te poursuit : garde W pour fuir et joue près de ton support."
+    },
+    "mid_game": "Poke avant les objectifs avec les roquettes et Q. Rejoins les combats avec ton équipe : Gatling affaiblit les résistances adverses.",
+    "late_game": "Poke à distance, puis rentre dans le combat quand la frontline adverse est occupée. Garde W pour fuir un diver.",
+    "ahead": "Poke et prends les tours : tes dégâts mixtes restent difficiles à contrer.",
+    "behind": "Farm à distance avec les roquettes et joue derrière ta frontline.",
+    "win_condition": "Pour gagner cette partie, tu veux affaiblir l'équipe adverse à distance avant les combats, puis finir les cibles avec Gatling et tes attaques.",
+    "final_tip": "Tes roquettes se rechargent toutes seules : ne les garde jamais au maximum, chaque roquette non tirée est du poke perdu."
+  }
+}

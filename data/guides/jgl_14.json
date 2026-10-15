@@ -1,0 +1,43 @@
+{
+  "JarvanIV|jgl": {
+    "identity": "Combattant-tank à dégâts physiques, spécialiste des ganks précoces et de l'engage. Étendard demacien (E) plante un drapeau, Frappe du dragon (Q) frappe en ligne et, si elle atteint le drapeau, le tire jusqu'à lui et knock-up tout ce qu'il traverse : c'est le combo E-Q. Égide dorée (W) donne un shield et slow, Cataclysme (R) enferme les ennemis dans une arène, et son passif inflige des dégâts en pourcentage des PV à la première attaque sur chaque cible.",
+    "playstyle": "Jungler d'early game et d'engage : ganks dès le niveau 3 avec E-Q, dives et engages de teamfight avec l'ultime. Il doit créer l'avance tôt.",
+    "early_game": "Clear rapide puis gank au niveau 3 avec E-Q, qui knock-up et rapproche : c'est un des meilleurs ganks de début de partie. Utilise aussi E-Q pour passer les murs et échapper aux ganks. Contrôle le crabe et envahis quand tes laners ont la priorité.",
+    "level_1": "Étendard demacien (E) en premier. Le drapeau donne de la vitesse d'attaque et de l'armure aux alliés proches.",
+    "level_2": "Frappe du dragon (Q). E-Q : lance le drapeau puis Q vers lui pour te propulser et knock-up. C'est ton outil de gank et de mobilité.",
+    "level_3": "Égide dorée (W). Shield et slow : E-Q pour projeter, puis W pour empêcher la fuite. Premier gank très fort.",
+    "level_6": "Cataclysme : tu sautes sur une cible et l'enfermes dans une arène. Utilise-le pour isoler un carry en teamfight ou pour empêcher une fuite en gank. Tu peux le relancer pour détruire l'arène.",
+    "power_spikes": [
+      "Niveau 3 : gank avec E-Q + W.",
+      "Niveau 6 : arène pour isoler une cible.",
+      "Premier item complet : ganks et engages très forts.",
+      "Mid game : engages de teamfight."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide jusqu'au niveau 3, puis gank sur la lane la plus favorable. Jarvan IV veut créer l'avance tôt : ganks, invasions avec tes laners, contrôle du crabe. Prends les Larves (vers 8 min) et les dragons avec une lane prioritaire. Garde E-Q pour fuir si tu es envahi.",
+    "trading": "En gank : E-Q pour projeter → W → attaques. En escarmouche : E-Q sur plusieurs cibles, puis R sur le carry pour l'isoler. Abandonne si ton E-Q est raté et que l'adversaire a une fuite.",
+    "threats": [
+      "Junglers qui le battent en duel (Rek'Sai, Wukong, Maître Yi).",
+      "CC qui t'interrompent avant E-Q.",
+      "Parties longues où ton impact baisse."
+    ],
+    "mistakes": [
+      "Rater E-Q (drapeau mal placé).",
+      "Utiliser l'ultime sur un tank au lieu d'un carry.",
+      "Enfermer ton propre équipe dehors avec l'ultime."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Vous êtes tous deux forts en early : sois plus rapide sur les ganks.",
+      "Graves": "Il te bat en duel : gank là où il n'est pas.",
+      "Viego": "Isole-le avec l'ultime quand il dive.",
+      "Wukong": "Son clone te trompe : garde E-Q pour le vrai Wukong.",
+      "Maître Yi": "Son Assaut éclair esquive ton E-Q : lance-le après son dash."
+    },
+    "mid_game": "Engages et dives. Jarvan IV est très fort pour lancer les combats autour des objectifs.",
+    "late_game": "Engage de teamfight : E-Q sur plusieurs cibles, R sur le carry. Attends que ton équipe puisse suivre.",
+    "ahead": "Étouffe le jungler adverse, dive avec tes laners et prends les objectifs.",
+    "behind": "Cherche des picks avec E-Q et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux créer une avance en early grâce aux ganks E-Q, puis engager les teamfights avec l'ultime.",
+    "final_tip": "Place ton drapeau derrière la cible avant de lancer Q : c'est ce qui la projette."
+  }
+}

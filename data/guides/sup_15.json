@@ -1,0 +1,43 @@
+{
+  "Milio|sup": {
+    "identity": "Enchanteur de soins et de protection. Tout feu tout flamme (passif) : ses sorts enchantent les alliés touchés, dont les prochains dégâts sont renforcés et brûlent la cible. Ultra méga boule de feu (Q) repousse un ennemi puis rebondit en cloche pour blesser et slow en zone, Feu de camp (W) crée une zone qui soigne les alliés et augmente leur portée d'attaque (elle suit l'allié le plus proche), Chaud devant ! (E) donne un shield et de la vitesse à un allié (deux charges), et Flammes vitales (R) soigne les alliés proches et supprime les CC qui les affectent.",
+    "playstyle": "Enchanteur de protection : il soigne, protège et libère son équipe des CC avec son ultime. Il écrase les supports de mêlée et de poke lent (Camille, Swain, Pantheon, Morgana, Brand), mais souffre contre les grappins et les engages qu'il ne peut pas repousser à temps (Blitzcrank, Braum).",
+    "early_game": "Harcèle avec Q en repoussant l'adversaire vers ses sbires, et donne tes deux shields (E) à ton ADC pendant ses trades. Garde Q pour repousser un engage adverse loin de ton ADC. Feu de camp (W) soigne ton ADC entre les trades et allonge sa portée.",
+    "level_1": "Chaud devant ! (E) en premier. Ensuite, monte E en priorité, puis W.",
+    "level_2": "Feu de camp (W) ou Ultra méga boule de feu (Q). W pour le soin et la portée, Q pour la défense contre un support d'engage.",
+    "level_3": "Le sort manquant. Protection complète : E, W, et Q pour repousser.",
+    "level_6": "Flammes vitales : soigne et supprime les CC des alliés proches. Garde-la pour le CC adverse sur ton carry, pas pour un simple soin.",
+    "power_spikes": [
+      "Niveau 2 : shields et soin pour gagner les trades.",
+      "Niveau 6 : ultime qui annule les CC adverses.",
+      "Premier item complet : soins et shields renforcés.",
+      "Teamfight : R au moment où l'adversaire enchaîne ses CC."
+    ],
+    "lane_plan": "Protège ton ADC, harcèle avec Q et garde un sort pour chaque engage adverse. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "Trade de base : E sur ton ADC quand il frappe, Q sur l'adversaire. Défense : Q pour repousser le diver, E pour fuir, R contre les CC. Reste derrière les sbires contre Blitzcrank.",
+    "jungle_plan": "",
+    "threats": [
+      "Blitzcrank et Braum : matchups difficiles.",
+      "Thresh, adversaire fréquent et légèrement défavorable.",
+      "Grappins qui t'attrapent : tu es fragile."
+    ],
+    "mistakes": [
+      "Utiliser l'ultime pour soigner alors qu'aucun contrôle n'est en cours.",
+      "Utiliser Q pour poke et ne plus pouvoir repousser un engage.",
+      "Se placer devant son ADC."
+    ],
+    "matchup_notes": {
+      "Lulu": "Deux enchanteurs : le meilleur poke gagne, harcèle avec Q.",
+      "Thresh": "Si son grappin touche ton ADC, R supprime le CC.",
+      "Séraphine": "Garde R pour son charme.",
+      "Blitzcrank": "Reste derrière les sbires ; s'il attrape ton ADC, R le libère.",
+      "Braum": "Son shield bloque ta boule de feu : vise-la sous un autre angle."
+    },
+    "mid_game": "Accompagne ton carry le plus fort, pose des pinks, et garde R pour les combats autour des objectifs.",
+    "late_game": "Reste derrière ton carry : E en continu, W pour le soin et la portée, Q pour repousser les divers. R dès que l'adversaire root plusieurs alliés.",
+    "ahead": "Harcèle plus fort et rends ton carry intouchable.",
+    "behind": "Joue la protection : ton ultime peut annuler l'engage qui aurait gagné le combat.",
+    "win_condition": "Pour gagner cette partie, tu veux garder ton carry en vie et annuler les CC adverses au bon moment.",
+    "final_tip": "Ton ultime est avant tout un anti-CC : attends que l'adversaire ait root tes alliés pour le lancer."
+  }
+}

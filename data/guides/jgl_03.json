@@ -1,0 +1,43 @@
+{
+  "Briar|jgl": {
+    "identity": "Combattante à dégâts physiques, jungler de dive ultra agressive. Son passif fait saigner ses cibles et la soigne davantage quand elle est blessée. À table ! (Q) bondit sur une cible, le stun brièvement et réduit ses résistances ; Folie sanguinaire (W) la fait bondir et entrer en frénésie (elle attaque automatiquement la cible la plus proche, en priorité les champions), avec Juste un croc en relance pour une grosse morsure qui soigne ; Cri sanglant (E) réduit les dégâts reçus puis repousse (stun contre un mur) ; Vol mortel (R) la projette sur le premier champion touché à très longue distance.",
+    "playstyle": "Jungler de ganks et d'escarmouches, qui gagne par l'agressivité et le dive. Pendant la frénésie, tu ne CC pas ta cible : il faut choisir le bon moment pour la lancer.",
+    "early_game": "Clear rapide avec W (frénésie) et la morsure de relance pour te soigner. Gank dès le niveau 3 quand une lane peut suivre : Q pour stun, W pour la frénésie, E si l'adversaire tente de fuir contre un mur. Ne lance pas la frénésie au milieu de plusieurs sbires si tu veux frapper le champion : elle vise les champions en priorité, mais la position compte.",
+    "level_1": "Folie sanguinaire (W) en premier. Frénésie sur le premier camp, puis relance Juste un croc pour te soigner.",
+    "level_2": "Cri sanglant (E). Réduction de dégâts pendant la charge, puis repoussement ; contre un mur, il stun. Utile pour les camps et pour garder une cible en place.",
+    "level_3": "À table ! (Q). Bond qui stun brièvement et réduit les résistances : premier gank avec Q → W → attaques → Juste un croc. W est maximisé en priorité.",
+    "level_6": "Vol mortel : projectile à très longue portée qui te fait voler jusqu'au premier champion touché et effraie les ennemis autour. Parfait pour rejoindre un combat de loin, finir une cible ou contre-ganker. Attention : une fois lancée, tu es engagée.",
+    "power_spikes": [
+      "Niveau 3 : premier gank Q → W.",
+      "Niveau 6 : Vol mortel pour les ganks à distance et les contre-ganks.",
+      "Premier item complet : dives sous tour très fortes.",
+      "Mid game : escarmouches répétées autour des objectifs."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear avec W et la morsure, puis gank une lane avec un adversaire sans fuite dès le niveau 3-4. Briar est plus forte en ganks et en escarmouches qu'en farm pur : planifie tes chemins pour arriver là où ton équipe a la priorité. Contrôle le crabe et envahis les camps adverses quand tes laners sont devant. Ton ultime permet de contre-ganker depuis l'autre côté de la carte. Joue les Larves du Néant (vers 8 min) avec une lane prioritaire, et garde un œil sur les dragons.",
+    "trading": "En gank : Q (stun) → W (frénésie) → attaques → relance Juste un croc → E si la cible tente de fuir vers un mur. En escarmouche : lance W quand le champion visé est le plus proche de toi ; sinon, tu frapperas la mauvaise cible. Abandonne quand ta vie baisse et que tu ne peux plus te soigner avec la morsure.",
+    "threats": [
+      "CC qui coupent ta frénésie.",
+      "Champions qui t'attirent en mauvaise position pendant la frénésie (tu ne choisis pas ta cible).",
+      "Tanks qui encaissent sans mourir (Cho'Gath, Rammus)."
+    ],
+    "mistakes": [
+      "Lancer W au milieu de sbires ou de plusieurs ennemis et frapper la mauvaise cible.",
+      "Lancer l'ultime sans suivi de ton équipe.",
+      "Oublier de relancer Juste un croc pour te soigner."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Tu gagnes les escarmouches courtes grâce à la frénésie et aux soins ; attention à son Coup résonant pour te rattraper.",
+      "Viego": "Gagne les combats avant qu'il ne possède un de tes alliés.",
+      "Graves": "Il fait beaucoup de dégâts à distance : colle-le avec Q, il ne peut pas te kiter pendant la frénésie.",
+      "Kayn": "Punis-le avant sa transformation.",
+      "Cho'Gath": "Son silence et son Festin te punissent : évite de dive sur lui seul."
+    },
+    "mid_game": "Escarmouches autour des objectifs, dives sous tour avec tes laners, et contre-ganks avec l'ultime. Briar est forte tant qu'elle peut se battre souvent.",
+    "late_game": "Dive sur le carry adverse avec l'ultime ou Q, frénésie pour le tuer. Attends que les CC adverses soient utilisés avant de t'engager.",
+    "ahead": "Dive sous tour, prends les objectifs et force les combats : Briar avec de l'avance est très dure à arrêter.",
+    "behind": "Farm, joue avec ton équipe et cherche des picks sur les carries isolés avec l'ultime.",
+    "win_condition": "Pour gagner cette partie, tu veux transformer ton agressivité en kills et objectifs, et dive sur les carries en teamfight.",
+    "final_tip": "Avant de lancer ta frénésie, vérifie que le champion visé est bien le plus proche de toi."
+  }
+}

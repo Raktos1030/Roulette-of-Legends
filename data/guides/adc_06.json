@@ -1,0 +1,43 @@
+{
+  "Draven|adc": {
+    "identity": "Tireur à dégâts physiques très agressif. Hache tournoyante (Q) renforce sa prochaine attaque ; la hache rebondit en l'air et, s'il la rattrape, il en prépare une nouvelle (deux haches possibles en même temps). Pulsion sanguinaire (W) lui donne de la vitesse de déplacement et d'attaque (rattraper une hache remet son délai à zéro), Division (E) lance ses haches en ligne pour repousser sur le côté et slow, et Volée mortelle (R) envoie deux haches géantes à travers la carte, qui reviennent vers lui. Son passif lui donne de l'Adoration (haches rattrapées, sbires, tours), qui rapporte de l'or bonus quand il tue un champion et permet à l'ultime d'exécuter.",
+    "playstyle": "Tyran de lane : il cherche à prendre l'avantage très tôt et à le transformer en or grâce à l'Adoration. Il est en moyenne devant en or à 15 min contre presque tous les ADC, même dans ses matchups difficiles. Rattraper les haches demande beaucoup de pratique.",
+    "early_game": "Joue agressif dès le niveau 1 avec ton support : deux haches en rotation font des dégâts énormes. Rattrape tes haches sans te mettre en danger : si la hache tombe sous la tour adverse ou dans un sort ennemi, laisse-la. Chaque sbire tué et chaque hache rattrapée remplissent ton Adoration.",
+    "level_1": "Hache tournoyante (Q) en premier. Lance deux haches en rotation et harcèle l'adversaire à chaque dernier coup.",
+    "level_2": "Pulsion sanguinaire (W). Rattraper une hache remet W à zéro : tu restes rapide et tu enchaînes les attaques.",
+    "level_3": "Division (E). Ralentit et repousse : sert à poursuivre, ou à repousser un diver.",
+    "level_6": "Volée mortelle : achève les ennemis en fuite de n'importe où, et exécute ceux dont les PV sont sous ton Adoration. Réactive-la pour faire revenir les haches plus tôt.",
+    "power_spikes": [
+      "Niveau 1 à 3 : très gros dégâts avec deux haches.",
+      "Niveau 6 : ultime d'exécution global.",
+      "Premier item complet : tu peux tuer n'importe quel ADC en quelques attaques.",
+      "Chaque kill avec beaucoup d'Adoration : grosse avance en or."
+    ],
+    "lane_plan": "Force les trades avec ton support et prends l'avantage. Pousse ton avance : plaques, tours et dragon. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) s'ajoute à l'or de l'Adoration : ton avance peut devenir énorme. Mourir te fait perdre la moitié de ton Adoration : évite les morts inutiles.",
+    "trading": "Trade de base : attaques avec les haches à chaque dernier coup de l'adversaire. All-in : W, deux haches, E pour empêcher la fuite, R pour achever. Recule contre les mages bot qui t'empêchent de rattraper tes haches (Veigar et sa cage, Xerath).",
+    "jungle_plan": "",
+    "threats": [
+      "Yasuo et son Mur de vent : ton matchup le plus difficile.",
+      "Mages bot (Veigar, Hwei, Xerath) qui te punissent quand tu vas chercher tes haches.",
+      "CC de foule quand tu te déplaces pour rattraper une hache."
+    ],
+    "mistakes": [
+      "Aller chercher une hache sous la tour ou dans un sort ennemi.",
+      "Mourir avec beaucoup d'Adoration (tu en perds la moitié).",
+      "Jouer passif alors que ta force est le début de partie."
+    ],
+    "matchup_notes": {
+      "Jinx": "Elle rattrape son retard en scalant : transforme ton avance en tours et en dragons rapidement.",
+      "Kai'Sa": "Tu la domines en lane : force les trades avant ses évolutions.",
+      "Ezreal": "Il fuit avec son Transfert arcanique : garde E pour le slow après.",
+      "Yasuo": "Son Mur de vent bloque tes attaques et ton ultime : attaque-le quand le mur est en recharge.",
+      "Veigar": "Sa Profanation piège tes déplacements vers les haches : ne rattrape pas une hache qui tombe près de la cage."
+    },
+    "mid_game": "Continue de prendre les tours et les dragons. Groupe avec ton équipe : un Draven en avance tue n'importe qui en quelques haches.",
+    "late_game": "Reste derrière ta frontline et rattrape tes haches en sécurité. Lance l'ultime au début du combat puis fais-le revenir, ou garde-le pour achever.",
+    "ahead": "Force les combats et prends les objectifs : ton or d'Adoration fait boule de neige.",
+    "behind": "Farm pour reconstruire l'Adoration, évite de mourir et joue derrière ta frontline.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner la lane très tôt et transformer ton avance en or et en objectifs avant que les autres ADC scalent.",
+    "final_tip": "Une hache perdue vaut mieux qu'une mort : ne va jamais rattraper une hache dans une zone dangereuse."
+  }
+}

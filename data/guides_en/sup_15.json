@@ -1,0 +1,43 @@
+{
+ "Milio|sup": {
+  "identity": "Healing and protection enchanter. Fired Up! (passive): his abilities enchant allies they touch, whose next damage is empowered and burns the target. Ultra Mega Fire Kick (Q) knocks back an enemy, then bounces in an arc to damage and slow in an area, Cozy Campfire (W) creates a zone that heals allies and increases their attack range (it follows the nearest ally), Warm Hugs (E) gives an ally a shield and speed (two charges), and Breath of Life (R) heals nearby allies and removes the CC affecting them.",
+  "playstyle": "Protection enchanter: he heals, shields and frees his team from CC with his ultimate. He crushes melee and slow-poke supports (Camille, Swain, Pantheon, Morgana, Brand), but struggles against hooks and engages he can't knock back in time (Blitzcrank, Braum).",
+  "early_game": "Harass with Q by kicking your opponent back toward their minions, and give both your shields (E) to your ADC during their trades. Keep Q to knock an enemy engage away from your ADC. Cozy Campfire (W) heals your ADC between trades and extends their range.",
+  "level_1": "Warm Hugs (E) first. After that, max E first, then W.",
+  "level_2": "Cozy Campfire (W) or Ultra Mega Fire Kick (Q). W for healing and range, Q for defense against an engage support.",
+  "level_3": "The missing ability. Full protection: E, W, and Q to knock back.",
+  "level_6": "Breath of Life: heals and removes CC from nearby allies. Save it for the enemy CC on your carry, not for a simple heal.",
+  "power_spikes": [
+   "Level 2: shields and healing to win trades.",
+   "Level 6: an ultimate that cancels enemy CC.",
+   "First completed item: stronger heals and shields.",
+   "Teamfights: R the moment the enemy chains their CC."
+  ],
+  "lane_plan": "Protect your ADC, harass with Q and keep an ability for every enemy engage. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "Basic trade: E on your ADC when they hit, Q on your opponent. Defense: Q to knock back the diver, E to escape, R against CC. Stay behind minions against Blitzcrank.",
+  "jungle_plan": "",
+  "threats": [
+   "Blitzcrank and Braum: hard matchups.",
+   "Thresh, a common and slightly unfavorable opponent.",
+   "Hooks that catch you: you're fragile."
+  ],
+  "mistakes": [
+   "Using your ultimate to heal when no CC is happening.",
+   "Using Q to poke and no longer being able to knock back an engage.",
+   "Standing in front of your ADC."
+  ],
+  "matchup_notes": {
+   "Lulu": "Two enchanters: the better poke wins, harass with Q.",
+   "Thresh": "If his hook lands on your ADC, R removes the CC.",
+   "Seraphine": "Keep R for her charm.",
+   "Blitzcrank": "Stay behind minions; if he grabs your ADC, R frees them.",
+   "Braum": "His shield blocks your fire kick: aim from another angle."
+  },
+  "mid_game": "Stick with your strongest carry, place Control Wards, and keep R for fights around objectives.",
+  "late_game": "Stay behind your carry: E constantly, W for healing and range, Q to knock divers away. R as soon as the enemy roots several allies.",
+  "ahead": "Harass harder and make your carry untouchable.",
+  "behind": "Play protection: your ultimate can cancel the engage that would have won the fight.",
+  "win_condition": "To win this game, you want to keep your carry alive and cancel the enemy CC at the right moment.",
+  "final_tip": "Your ultimate is above all an anti-CC tool: wait until the enemy has rooted your allies before casting it."
+ }
+}

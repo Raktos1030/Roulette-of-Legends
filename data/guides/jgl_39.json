@@ -1,0 +1,43 @@
+{
+  "Taliyah|jgl": {
+    "identity": "Mage à dégâts magiques. Rafale filée (Q) tire une salve de pierres (moins fortes sur le sol déjà travaillé), Poussée sismique (W) projette les ennemis dans une direction, Défilage tellurique (E) pose un champ de mines qui slow (et stun si la cible est poussée dedans), et Mur de la tisseuse (R) crée un immense mur que Taliyah peut chevaucher. Son passif l'accélère près des murs.",
+    "playstyle": "Jungler de clear rapide et de ganks à longue distance grâce à l'ultime. Taliyah traverse la carte sur son mur pour ganker ou couper la fuite d'une cible.",
+    "early_game": "Clear très rapide avec Q (surtout sur les camps groupés). Gank avec le combo E puis W vers les mines : l'adversaire est stun. Utilise la vitesse près des murs pour te déplacer plus vite dans la jungle.",
+    "level_1": "Rafale filée (Q) en premier.",
+    "level_2": "Défilage tellurique (E). Champ de mines qui slow : ton clear devient plus sûr.",
+    "level_3": "Poussée sismique (W). Premier gank : E sur la cible → W pour la pousser dans les mines (stun) → Q.",
+    "level_6": "Mur de la tisseuse : mur géant que tu peux chevaucher pour traverser la carte. Utilise-le pour ganker de loin, couper la fuite d'une cible ou séparer l'équipe adverse en teamfight.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec E + W.",
+      "Niveau 6 : ganks à longue distance sur le mur.",
+      "Premier item complet : clear et dégâts élevés.",
+      "Mid game : picks et contrôle de zone."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide, ganks et escarmouches. Taliyah peut ganker n'importe quelle lane avec son ultime après le 6. Contrôle les crabes, les Larves (vers 8 min) et les dragons. Évite les duels contre les junglers qui te divent (Zed, Kindred, Maître Yi, Rengar).",
+    "trading": "En gank : E → W vers les mines → Q. En teamfight : R pour couper l'équipe adverse, puis E et W. Abandonne contre les junglers qui te divent sans que tu puisses les repousser.",
+    "threats": [
+      "Assassins et divers (Zed, Rengar, Kindred, Maître Yi).",
+      "Invasions en early.",
+      "CC pendant que tu chevauches ton mur."
+    ],
+    "mistakes": [
+      "Pousser l'adversaire avec W hors de tes mines ou vers son équipe.",
+      "Lancer Q sur du sol déjà travaillé (moins de dégâts).",
+      "Couper ton propre équipe avec le mur."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Repousse-le avec W quand il engage.",
+      "Graves": "Tiens-le à distance avec tes mines et W.",
+      "Sylas": "Attention : il peut voler ton mur.",
+      "Kindred": "Elle te kite et scale mieux : joue avec ton équipe.",
+      "Zed": "Il te dive : garde W pour le repousser."
+    },
+    "mid_game": "Ganks à longue distance et contrôle de zone autour des objectifs.",
+    "late_game": "Coupe l'équipe adverse avec le mur, puis E et W. Reste derrière ta frontline.",
+    "ahead": "Gank en boucle et prends les objectifs.",
+    "behind": "Farm et joue pour un mur décisif en teamfight.",
+    "win_condition": "Pour gagner cette partie, tu veux farmer vite, ganker de loin avec l'ultime et contrôler les teamfights avec le mur.",
+    "final_tip": "Pousse toujours la cible avec W vers tes mines, pas loin d'elles."
+  }
+}

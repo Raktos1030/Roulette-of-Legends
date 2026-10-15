@@ -1,0 +1,43 @@
+{
+ "Yone|top": {
+  "identity": "Crit-based fighter dealing mixed damage (physical and magic). Every second attack deals magic damage (passive). Mortal Steel (Q) strikes in a line and, on the third cast, dashes and knocks up enemies hit; Spirit Cleave (W) strikes in a cone and gives a shield; Soul Unbound (E) separates his soul from his body and, at the end, repeats part of the damage dealt; Fate Sealed (R) dashes through a line and pulls enemies hit.",
+  "playstyle": "Short trades and all-ins with E. Yone is strong at every stage and excels in messy fights. He relies heavily on managing E: using it well means going in, hitting and snapping back to his body safely.",
+  "early_game": "Stack Q on minions to have Q3 ready, then trade with Q + W. W's shield absorbs part of the counterattack. Keep E for all-ins: without it, you're an easy target.",
+  "level_1": "Mortal Steel (Q) first. Stack Q on minions and poke your opponent when they come to last hit.",
+  "level_2": "Spirit Cleave (W). A cone with a shield: Q → W is your basic short trade.",
+  "level_3": "Soul Unbound (E). All-in: E → Q3 (knock-up) → W → attacks, then snap back to your body. The snap back repeats part of the damage dealt during E.",
+  "level_6": "Fate Sealed: a line that knocks enemies toward you. Combo: E → R → Q3 → W. In teamfights, aim for several targets.",
+  "power_spikes": [
+   "Level 3: all-in with E.",
+   "Level 6: ultimate for engages and kills.",
+   "First completed item: heavy crit damage.",
+   "Two items: one of the best teamfight fighters."
+  ],
+  "lane_plan": "Play a neutral wave, stack Q on minions and trade briefly with Q + W. Keep E for all-ins. Take plates when you're winning. Recall when your wave crashes. The lane's walls let you dash through with Q3.",
+  "trading": "Short trade: Q → W → back off. Long trade: E → Q3 → W → attacks → snap back to your body. Engage when your Q3 is ready; give up on it against champions who stun you (Irelia, Kennen) or when your E is on cooldown.",
+  "jungle_plan": "",
+  "threats": [
+   "Irelia and champions who beat you in melee range.",
+   "Kennen and ranged CC.",
+   "Warwick and champions who follow you after E."
+  ],
+  "mistakes": [
+   "Using E when you can't snap back to safety.",
+   "Missing Q3.",
+   "Engaging without your ultimate or Q3."
+  ],
+  "matchup_notes": {
+   "Jax": "His Counter Strike dodges your attacks: use Q and W during his dodge.",
+   "Nasus": "Punish him on every stack.",
+   "Aatrox": "Dodge his sweet spots with E and Q3.",
+   "Irelia": "She beats you in melee range: trade briefly and keep E for her all-ins.",
+   "Malphite": "His armor bothers you: farm and play for teamfights."
+  },
+  "mid_game": "Skirmishes and split pushing. Yone excels in messy river fights.",
+  "late_game": "Go in after the enemy CC, ultimate on several targets, then E to snap back to safety.",
+  "ahead": "Force duels, dive with your jungler and take towers.",
+  "behind": "Farm and play teamfights after the enemy CC.",
+  "win_condition": "To win this game, you want to dominate your lane through short trades and clean up teamfights with your ultimate.",
+  "final_tip": "Before using E, look at where your body is: that's where you'll snap back to."
+ }
+}

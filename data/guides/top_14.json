@@ -1,0 +1,43 @@
+{
+  "Yasuo|top": {
+    "identity": "Combattant à dégâts physiques basé sur les crits. Son passif double ses chances de critique et lui donne un shield quand il se déplace (Flux). Tempête d'acier (Q) frappe en ligne et, après deux touches, lance une tornade qui knock-up ; Mur de vent (W) bloque les projectiles ; Cercle tranchant (E) dash à travers une cible (Q pendant le dash = frappe circulaire) ; Dernier soupir (R) se téléporte sur une cible knock-up. Il est très banni.",
+    "playstyle": "Trades courts avec le shield de Flux, puis all-in avec la tornade et l'ultime. En top, Yasuo exploite les tops à distance ou à projectiles (Varus, Vayne, Heimerdinger, Teemo) grâce à Mur de vent. Il est très mécanique et dépend de la vague de sbires pour ses E.",
+    "early_game": "Accumule Q sur les sbires pour avoir la tornade prête, puis engage : E à travers un sbire vers l'adversaire → Q3 (tornade) → R si l'ultime est disponible. Ton shield de Flux absorbe le premier trade : ne l'engage que s'il est plein. Garde W pour le projectile le plus dangereux adverse.",
+    "level_1": "Tempête d'acier (Q) en premier. Stack Q sur les sbires et poke l'adversaire quand il vient last hit.",
+    "level_2": "Cercle tranchant (E). Dash à travers une unité : E + Q pendant le dash frappe en cercle. Tu peux coller l'adversaire en dashant de sbire en sbire.",
+    "level_3": "Mur de vent (W). Il bloque les projectiles : garde-le pour le sort clé adverse (Q de Varus, roquettes d'Heimerdinger, aveuglement de Teemo).",
+    "level_6": "Dernier soupir : téléportation sur une cible knock-up (par ta tornade ou un allié), qui la maintient en l'air. Combo : E → Q3 tornade → R. Tu peux aussi l'utiliser sur les knock-ups de ton jungler.",
+    "power_spikes": [
+      "Niveau 2 : E + Q, trades courts.",
+      "Niveau 6 : tornade + ultime, gros all-in.",
+      "Premier item complet : dégâts critiques importants.",
+      "Deux items : duels et teamfights dangereux."
+    ],
+    "lane_plan": "Joue une wave neutre, stack Q sur les sbires et trade quand ton shield de Flux est plein. Garde des sbires entre toi et l'adversaire pour tes E. Recall quand ta wave crash. Contre un champion à distance, avance avec W prêt.",
+    "trading": "Trade court : E à travers l'adversaire → Q → recul avec E sur un sbire. Trade long : Q3 tornade → R → attaques. Engage quand ta tornade est prête et le shield plein ; abandonne contre les champions qui te battent au corps à corps en combat long (Renekton, Sett, Nasus).",
+    "jungle_plan": "",
+    "threats": [
+      "Combattants qui gagnent au corps à corps (Renekton, Sett).",
+      "Singed et les champions qui te font courir.",
+      "Nasus et ses slows de vitesse d'attaque."
+    ],
+    "mistakes": [
+      "Utiliser W sur un sort sans importance.",
+      "Engager sans shield de Flux ni tornade.",
+      "Dasher dans une wave adverse sans sortie."
+    ],
+    "matchup_notes": {
+      "Yone": "Duel de mobilité : attends qu'il ait utilisé son E pour engager. Mur de vent ne te sert presque à rien ici, ses sorts ne sont pas des projectiles.",
+      "Renekton": "Son W renforcé te stun : ne trade pas avec lui quand sa fureur est à 50.",
+      "Malphite": "Son armure réduit tes dégâts ; W contre son Q.",
+      "Jayce": "W bloque son Q + E en forme canon.",
+      "Varus": "Mur de vent bloque ses flèches : colle-le."
+    },
+    "mid_game": "Splitpush et escarmouches. Ton ultime fonctionne avec les knock-ups de tes alliés : reste proche d'eux autour des objectifs.",
+    "late_game": "Entre après les knock-ups de ton équipe, ultime sur plusieurs cibles, Mur de vent pour protéger tes carries des projectiles.",
+    "ahead": "Force des duels, prends les tours et dive avec ton jungler.",
+    "behind": "Farm, joue avec ton équipe et attends les knock-ups pour ton ultime.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer les tops à distance grâce à Mur de vent, puis utiliser l'ultime sur les knock-ups de ton équipe en teamfight.",
+    "final_tip": "Garde toujours ton Mur de vent pour le sort qui compte le plus chez l'adversaire."
+  }
+}

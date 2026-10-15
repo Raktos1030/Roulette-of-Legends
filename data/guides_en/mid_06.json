@@ -1,0 +1,43 @@
+{
+ "AurelionSol|mid": {
+  "identity": "Magic damage mage who scales endlessly thanks to Stardust (passive Cosmic Creator): he collects it by killing minions with Singularity (E), hitting champions and getting takedowns, and every stack upgrades his abilities. Breath of Light (Q) channels a continuous breath, Astral Flight (W) flies him over a long distance, Singularity (E) pulls enemies toward its center, and Falling Star (R) knocks up, then becomes The Skies Descend once he has gathered enough Stardust.",
+  "playstyle": "Pure scaling mage: in lane, he stacks; in the mid and late game, he becomes a huge area threat. He's weak against assassins who dive him early (Yone, Fizz, Zed).",
+  "early_game": "Stack Stardust by killing minions inside your Singularity and hitting your opponent with Q. Avoid all-ins against assassins: you're fragile. Keep W to escape.",
+  "level_1": "Singularity (E) first on the most common path. It executes weak minions in its center and gives Stardust.",
+  "level_2": "Breath of Light (Q). Channel the breath on your opponent to poke and stack.",
+  "level_3": "Astral Flight (W). Your escape and roaming tool: you can fly over walls.",
+  "level_6": "Falling Star: an area knock-up. Combo: E (pull) → R → Q. Once you've gathered enough Stardust, it becomes The Skies Descend (bigger area).",
+  "power_spikes": [
+   "Level 6: Falling Star.",
+   "Stardust stacks: bigger and stronger abilities.",
+   "First completed item: area damage.",
+   "Late game: one of the most devastating mages."
+  ],
+  "lane_plan": "Stack Stardust by killing minions with E and hitting your opponent with Q. Keep the wave in the middle or near you against assassins. Roam with W when your wave is pushed. The mid role quest (faster recall) helps you reset quickly to keep stacking.",
+  "trading": "Basic trade: Q (breath) on your opponent when they come to last hit. Long trade: E → R → Q. Engage when your opponent is pulled by E; give up on it against assassins who dive you.",
+  "jungle_plan": "",
+  "threats": [
+   "Assassins who dive you (Yone, Fizz, Zed, Kassadin).",
+   "Ganks without W available.",
+   "Long-range mages who poke you (Vel'Koz)."
+  ],
+  "mistakes": [
+   "Not stacking Stardust.",
+   "Using W to poke and not having it to escape.",
+   "Channeling Q for too long within an assassin's range."
+  ],
+  "matchup_notes": {
+   "Yasuo": "Keep him at range with E and Q.",
+   "Viktor": "Scale faster than him by stacking.",
+   "Syndra": "Dodge her stun and scale.",
+   "Yone": "He dives you: keep W to escape and farm carefully.",
+   "Fizz": "He dodges your abilities and bursts you: farm under your tower."
+  },
+  "mid_game": "Keep stacking, join objectives and control areas with E and R.",
+  "late_game": "Zone mage: E to pull, R to knock up, Q to burn. Stay behind your frontline.",
+  "ahead": "Stack faster, take objectives and dominate teamfights.",
+  "behind": "Keep stacking safely: your late game makes up for being behind.",
+  "win_condition": "To win this game, you want to stack Stardust and dominate teamfights late in the game.",
+  "final_tip": "Kill minions in the center of your Singularity: every execute grants Stardust."
+ }
+}

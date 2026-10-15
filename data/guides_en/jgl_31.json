@@ -1,0 +1,43 @@
+{
+ "Rammus|jgl": {
+  "identity": "Physical and magic damage tank, the nightmare of champions who rely on basic attacks. Powerball (Q) rolls him faster and faster and knocks up on impact, Defensive Ball Curl (W) boosts his resistances and returns damage to attackers, Frenzying Taunt (E) taunts a champion or monster, and Soaring Slam (R) makes him leap for an impact that knocks up. His passive gives him attack damage based on his armor and magic resist.",
+  "playstyle": "Tank jungler built for fast ganks and shutting down physical carries. He excels against junglers and teams that rely on basic attacks (Master Yi, Viego, Graves).",
+  "early_game": "Clear in Defensive Ball Curl (monsters hurt themselves hitting you). Gank from level 3 with Q from far away: Q → knock-up → E (taunt) → W. Don't duel magic damage junglers or junglers who kite you.",
+  "level_1": "Defensive Ball Curl (W) first. Camps hurt themselves hitting you.",
+  "level_2": "Powerball (Q). It speeds up as it rolls and knocks up on impact: your gank and movement tool.",
+  "level_3": "Frenzying Taunt (E). First gank: Q → E (the target attacks you during your Defensive Ball Curl and hurts itself) → attacks.",
+  "level_6": "Soaring Slam: a leap that knocks up on impact. Combo: Q → R → E → W. The longer the leap, the bigger the area; use it to engage a fight or catch a target.",
+  "power_spikes": [
+   "Level 3: ganks with Q + E.",
+   "Level 6: full engage with R.",
+   "First completed item: very hard for physical attackers to kill.",
+   "Mid game: engages and carry shutdown."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Clear in Defensive Ball Curl, then fast ganks with Q from unexpected angles. Rammus ganks very early and very often: his Q lets him cross the map. Control Scuttles and Void Grubs (around 8 minutes) with your team. Against an auto-attack jungler, taunt them when they invade: they'll hurt themselves on your Defensive Ball Curl.",
+  "trading": "Ganking: Q from far away → knock-up → E → W. Teamfighting: Q onto the carry or diver → E to taunt them (they hit you instead of your team) → R. Give up on it against magic damage champions who kite you (Lillia).",
+  "threats": [
+   "Lillia: your hardest matchup.",
+   "Magic and percent-health damage.",
+   "Slows that break your Q."
+  ],
+  "mistakes": [
+   "Taunting a mage: your Defensive Ball Curl only returns basic attack damage.",
+   "Casting Q too close (not enough speed for the impact).",
+   "Engaging without follow-up from your team."
+  ],
+  "matchup_notes": {
+   "Master Yi": "Taunt him during your Defensive Ball Curl: he kills himself hitting you.",
+   "Viego": "Taunt him when he dives: his attacks turn against him.",
+   "Lee Sin": "He'll invade you: hold your camps in ball form and gank.",
+   "Graves": "Taunt him: his shotgun attacks bounce damage back.",
+   "Lillia": "She kites you with magic damage: don't chase her without CC."
+  },
+  "mid_game": "Ganks and engages around objectives. Hunt the enemy physical carries with Q and E.",
+  "late_game": "Engage or protect: Q + E on the enemy physical carry, R to engage. Your taunt neutralizes a carry for several seconds.",
+  "ahead": "Gank nonstop, take objectives and force fights.",
+  "behind": "Tank for your team and neutralize the enemy physical carry with E.",
+  "win_condition": "To win this game, you want to gank very early and neutralize the enemy physical carries with your taunt.",
+  "final_tip": "Turn on Defensive Ball Curl before taunting: the enemy hurts themselves hitting you."
+ }
+}

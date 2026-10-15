@@ -1,0 +1,43 @@
+{
+ "Alistar|sup": {
+  "identity": "Engage tank. Triumphant Roar (passive) charges up when he stuns or displaces enemy champions, or when enemies die near him; once charged, it heals him and nearby allies. Pulverize (Q) knocks up enemies around him, Headbutt (W) charges a target and knocks it back, Trample (E) damages around him and, after several hits on champions, makes his next attack stun, and Unbreakable Will (R) removes all CC on him and greatly reduces the damage he takes.",
+  "playstyle": "Engage and peel support: he opens fights with the Headbutt → Pulverize combo, or knocks divers away from his ADC. He mostly struggles against supports who poke and disengage him (Janna, Senna, Sona).",
+  "early_game": "At level 2, look for the W → Q combo: charge your opponent, then pulverize them before they land. Before that, stay next to your ADC and threaten the engage. Use E to build up hits on champions before an all-in (stunning attack).",
+  "level_1": "Headbutt (W) or Pulverize (Q). After that, max Q first. Q at level 1 is for defending and contesting the bushes.",
+  "level_2": "Whichever of W and Q you're missing: the W → Q combo is available. Engage as soon as your opponent steps up without their support.",
+  "level_3": "Trample (E). Build up hits on champions to make your next attack stun: W → Q → E → attack.",
+  "level_6": "Unbreakable Will: removes CC and greatly reduces damage. Cast it as you enter a fight to survive, or as soon as CC stops you from protecting your ADC.",
+  "power_spikes": [
+   "Level 2: Headbutt → Pulverize combo.",
+   "Level 6: an engage that's almost impossible to punish.",
+   "First resistance items: a durable frontline.",
+   "Teamfights: W → Q on the enemy carry."
+  ],
+  "lane_plan": "Constantly threaten the engage and play with your jungler. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third outside the bot lane. The support role quest then makes your Control Wards cheaper (40 gold, two stored in a dedicated slot): place them around dragon.",
+  "trading": "All-in: W → Q (charge while the target is airborne), E, attacks. Defense: W to knock a diver away from your ADC, Q to stop an engage. Back off against supports who disengage you (Janna): keep your abilities to protect your team.",
+  "jungle_plan": "",
+  "threats": [
+   "Janna: your hardest matchup (she cancels your engages).",
+   "Senna and Sona: hard matchups.",
+   "Kiting: you have to reach your target to be useful."
+  ],
+  "mistakes": [
+   "Casting W → Q when your ADC can't follow.",
+   "Using W to engage when you should keep it to knock a diver away.",
+   "Going in without your ultimate against a CC-heavy team."
+  ],
+  "matchup_notes": {
+   "Thresh": "If his hook lands on your ADC, knock Thresh away with W.",
+   "Nautilus": "His anchor pulls you forward: answer with W → Q when he arrives.",
+   "Leona": "She engages too: keep R for her CC.",
+   "Yuumi": "When she's attached, her ADC is alone against your combo.",
+   "Janna": "Her Monsoon and tornado cancel your engage: wait until she's used them."
+  },
+  "mid_game": "Place Control Wards around objectives, look for picks with W → Q and protect your ADC.",
+  "late_game": "Frontline: engage on the enemy carry with W → Q, or keep your abilities to knock divers away. R before entering a long fight.",
+  "ahead": "Engage often and help your jungler control the map.",
+  "behind": "Protect your ADC: W and Q also knock divers away.",
+  "win_condition": "To win this game, you want to open the right fights with your combo and protect your ADC with your displacements.",
+  "final_tip": "Headbutt knocks the target in the direction of your charge: on defense, push the diver away from your ADC; on offense, walk around the target to send it toward your team."
+ }
+}

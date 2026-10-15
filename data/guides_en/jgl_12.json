@@ -1,0 +1,43 @@
+{
+ "Hecarim|jgl": {
+  "identity": "Physical damage fighter who turns speed into damage (passive Warpath: bonus attack damage based on bonus movement speed). Rampage (Q) hits in an area and comes back faster with each hit, Spirit of Dread (W) damages around him and heals him, Devastating Charge (E) makes him speed up, then knock his target back, and Onslaught of Shadows (R) charges with spectral riders that fear enemies on arrival.",
+  "playstyle": "Very fast-clearing jungler with high-speed ganks and teamfight engages. Hecarim comes out of nowhere thanks to his speed and his E. He's very strong in the mid game when he can run through the enemy lines.",
+  "early_game": "Clear fast by spamming Q on camps. Gank as soon as your laners can follow up: E to speed up and knock the target toward your lane, then Q and W. Watch your mana early.",
+  "level_1": "Rampage (Q) first. Spam Q on the camp.",
+  "level_2": "Spirit of Dread (W). Damage around you and healing: your clear becomes much healthier.",
+  "level_3": "A second Q or Devastating Charge (E) depending on the path. E speeds up, then knocks the target back: perfect for ganking by sending it toward your laner.",
+  "level_6": "Onslaught of Shadows: a charge with the riders that fears on arrival. E → R → Q → W is your engage: you go into the middle of the enemy team at high speed.",
+  "power_spikes": [
+   "Level 3: fast ganks with E.",
+   "Level 6: engage with your ultimate.",
+   "First completed item: high speed and damage.",
+   "Mid game: devastating engages."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Very fast clear, then ganks from unexpected angles thanks to your speed. Hecarim is great at going around wards: path through the enemy jungle to surprise lanes. Control Scuttles, take Void Grubs (around 8 minutes) and dragons with your team. Keep an eye on your mana early.",
+  "trading": "Ganking: E to speed up → knock the target toward your laner → Q → W. Teamfighting: E → R into the middle of the enemy team → Q and W. Give up on it if your opponent slows you (Sylas, Ivern).",
+  "threats": [
+   "Slows and CC that kill your speed (Ivern).",
+   "Sylas, unfavorable and common.",
+   "Enemy Grievous Wounds."
+  ],
+  "mistakes": [
+   "Knocking the target away from your laner with E.",
+   "Engaging with your ultimate with no follow-up from your team.",
+   "Draining your mana early."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He beats you in early duels: avoid him and gank.",
+   "Graves": "He invades well: keep vision on your camps.",
+   "Viego": "You win fast fights thanks to your speed.",
+   "Sylas": "He can steal your ultimate and beats you in duels: don't engage when he can take it back.",
+   "Ivern": "He slows you and protects his allies: gank lanes far from him."
+  },
+  "mid_game": "High-speed engages and ganks. Go around wards to surprise the side lanes.",
+  "late_game": "Teamfight engage: E → R onto the enemy backline. Wait until your team can follow.",
+  "ahead": "Take objectives, invade and force fights.",
+  "behind": "Farm and play for teamfight engages.",
+  "win_condition": "To win this game, you want to gank by surprise and engage teamfights at high speed onto the enemy backline.",
+  "final_tip": "With E, position yourself to knock the target toward your team, not away from it."
+ }
+}

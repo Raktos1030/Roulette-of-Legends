@@ -1,0 +1,43 @@
+{
+  "Zaahen|top": {
+    "identity": "Combattant darkin à dégâts physiques (sorti fin 2025). Chaque coup sur un champion lui donne un stack de Détermination (jusqu'à 12) qui augmente sa puissance d'attaque ; à 12 stacks, le bonus double et, s'il subit des dégâts mortels, il se relève en regagnant une partie de ses PV (long temps de recharge). Glaive des Darkin (Q) frappe deux fois et soigne, puis se relance pour knock-up ; Retour redoutable (W) lance la glaive, puis attire et stun brièvement ce qu'elle touche en bout de course ; Incursion dorée (E) dash puis tranche autour de lui ; Libération inexorable (R) le fait s'élever (insensible aux CC) avant un impact massif qui le soigne.",
+    "playstyle": "Duelliste agressif, souvent décrit comme un mélange de l'ancien Aatrox et de Xin Zhao. Les guides le présentent comme un des champions les plus forts du top en early game, mais aussi comme exigeant mécaniquement. Tout tourne autour des 12 stacks de Détermination : un Zaahen chargé gagne presque tous les duels et peut même revenir à la vie.",
+    "early_game": "Trade pour accumuler des stacks : Q (double coup qui soigne) puis W pour attirer l'adversaire s'il recule. Garde E pour coller ou esquiver un sort clé. Avec une bonne gestion de wave, les guides recommandent de chercher les kills dès les premiers niveaux.",
+    "level_1": "Glaive des Darkin (Q) en premier. Attaque renforcée double qui soigne ; relance-la pour knock-up l'adversaire au moment où il essaie de repartir.",
+    "level_2": "Incursion dorée (E). Dash puis tranche autour de toi : le bord de la zone fait plus de dégâts. E → Q → attaques est un bon trade au niveau 2.",
+    "level_3": "Retour redoutable (W). La glaive part en ligne ; en bout de course, elle stun brièvement et ramène les ennemis vers toi. Combo : E → Q → W pour empêcher la fuite, relance de Q pour le knock-up.",
+    "level_6": "Libération inexorable : tu t'élèves (insensible aux CC, dégâts réduits de moitié) puis tu frappes le sol pour de gros dégâts et un soin par champion touché. Le passif du R te donne aussi de la pénétration d'armure. Lance-le pour gagner un all-in ou pour esquiver un CC au bon moment.",
+    "power_spikes": [
+      "Niveau 3 : combo complet E → Q → W.",
+      "12 stacks de Détermination : puissance d'attaque doublée et possibilité de revenir à la vie.",
+      "Niveau 6 : ultime qui gagne les all-in.",
+      "Premier item complet : duels dominants."
+    ],
+    "lane_plan": "Joue une wave neutre ou légèrement poussée et trade dès que possible pour garder tes stacks (ils durent quelques secondes et se rafraîchissent à chaque coup). Prends les plaques quand tu gagnes. Recall quand ta wave crash. Le soin de Q te permet d'enchaîner les trades.",
+    "trading": "Trade court : Q (double coup) → recul. Trade long : E → Q → W → relance de Q (knock-up) → R. Engage quand tu peux atteindre 12 stacks ; abandonne contre les champions qui te kitent à distance (Teemo) ou te font courir (Singed).",
+    "jungle_plan": "",
+    "threats": [
+      "Teemo et le kiting à distance : ton matchup le plus difficile.",
+      "Singed et les champions qui te font courir.",
+      "CC qui coupent tes enchaînements avant 12 stacks."
+    ],
+    "mistakes": [
+      "Engager sans pouvoir atteindre 12 stacks.",
+      "Oublier de relancer Q pour le knock-up.",
+      "Utiliser le R trop tôt, avant le CC adverse."
+    ],
+    "matchup_notes": {
+      "Yone": "Attends son E, puis W pour le ramener et Q pour le projeter.",
+      "Garen": "Son silence coupe tes enchaînements : trade quand son Q est en recharge.",
+      "Darius": "Évite le bord de sa Décimation et utilise W pour l'empêcher de te coller au Crampon.",
+      "Jax": "Sa Contre-attaque esquive tes attaques (donc ton Q) : attends la fin de son esquive.",
+      "Teemo": "Il te kite et t'aveugle : farm, attends ton jungler, et engage avec E seulement quand il est à portée."
+    },
+    "mid_game": "Escarmouches et duels : un Zaahen à 12 stacks gagne presque tout. Rejoins les objectifs et force les combats.",
+    "late_game": "Entre après les CC adverses, accumule tes stacks sur la frontline puis frappe les carries ; ton R et ta résurrection te gardent en vie.",
+    "ahead": "Force des duels, dive avec ton jungler et prends les tours.",
+    "behind": "Farm et joue en teamfight après les CC adverses.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer l'early game et gagner les duels grâce à tes 12 stacks de Détermination.",
+    "final_tip": "Surveille tes stacks de Détermination : à 12, tu doubles tes dégâts et tu peux revenir à la vie. N'engage pas sans pouvoir les atteindre."
+  }
+}

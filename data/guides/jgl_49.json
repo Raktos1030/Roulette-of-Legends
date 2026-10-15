@@ -1,0 +1,43 @@
+{
+  "Zac|jgl": {
+    "identity": "Tank à dégâts magiques, spécialiste de l'engage à très longue distance. Fronde (E) se charge puis le propulse loin pour knock-up tout ce qu'il écrase, Étirements (Q) attrape une cible puis la projette contre une seconde, Matière instable (W) inflige des dégâts en pourcentage des PV autour de lui, et Boing ! (R) le fait rebondir plusieurs fois en projetant et en slowant. Son passif laisse tomber des morceaux de lui-même qui le soignent, et il peut se reformer après une mort s'il n'est pas achevé.",
+    "playstyle": "Jungler tank de ganks surprises et d'engage. Zac arrive de très loin grâce à E, par-dessus les murs, et engage les teamfights avec E + R. Il est très fiable (seulement deux matchups nettement défavorables) et très fort en combat d'équipe.",
+    "early_game": "Clear avec W et Q, en ramassant tes morceaux pour te soigner. Gank avec E chargé depuis la jungle, par-dessus un mur : l'adversaire ne te voit pas venir. Évite les duels contre les junglers qui te kitent (Lillia).",
+    "level_1": "Matière instable (W) en premier.",
+    "level_2": "Étirements (Q). Attrape une cible puis la projette contre une autre : utile pour le clear et pour les ganks.",
+    "level_3": "Fronde (E). Premier gank : E chargé par-dessus un mur → knock-up → Q → W. E est maximisé en priorité pour la portée.",
+    "level_6": "Boing ! : rebonds qui projettent et slow. Combo d'engage : E chargé → R → Q → W. Tu peux aussi l'utiliser pour repousser les divers de tes carries.",
+    "power_spikes": [
+      "Niveau 3 : ganks par-dessus les murs avec E.",
+      "Niveau 6 : engage complet E + R.",
+      "Premier item complet : tank solide.",
+      "Rangs de E : portée d'engage de plus en plus grande."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear sûr et ganks par-dessus les murs avec E. Zac est un des junglers qui gankent de plus loin : repère les murs proches des lanes. Contrôle les crabes, les Larves (vers 8 min) et les dragons avec ton équipe. Ramasse tes morceaux pour rester en vie sans rentrer à la base.",
+    "trading": "En gank : E chargé → knock-up → Q → W. En teamfight : E sur la ligne arrière → R → Q. Abandonne contre les junglers qui interrompent ta charge ou te kitent (Lillia, Rek'Sai).",
+    "threats": [
+      "Lillia et Rek'Sai : matchups difficiles.",
+      "CC qui interrompent la charge de E.",
+      "Adversaires qui écrasent tes morceaux avant que tu te reformes."
+    ],
+    "mistakes": [
+      "Charger E en vue de l'ennemi (il s'éloigne).",
+      "Engager sans suivi de ton équipe.",
+      "Oublier de ramasser tes morceaux pour te soigner."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il t'envahira : ne duel pas, gank.",
+      "Viego": "Projette-le quand il dive.",
+      "Sylas": "Attention : il peut voler ton ultime.",
+      "Lillia": "Elle te kite et t'endort : joue avec ton équipe.",
+      "Rek'Sai": "Elle te bat en early : évite ses invasions."
+    },
+    "mid_game": "Engages et ganks autour des objectifs.",
+    "late_game": "Engage de teamfight : E sur la ligne arrière, R, puis Q et W. Ou protège tes carries.",
+    "ahead": "Gank en boucle, engage et prends les objectifs.",
+    "behind": "Tank pour ton équipe et joue pour un engage décisif.",
+    "win_condition": "Pour gagner cette partie, tu veux engager les teamfights de très loin avec E et R.",
+    "final_tip": "Charge ta Fronde hors de la vision adverse : si l'ennemi te voit, il s'éloigne."
+  }
+}

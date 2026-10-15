@@ -1,0 +1,43 @@
+{
+  "Akali|mid": {
+    "identity": "Assassin à dégâts magiques et à énergie, jouée au mid environ deux fois sur trois. Vague de kunais (Q) poke en cône, Linceul nébuleux (W) la rend invisible et lui rend de l'énergie, Lancer acrobatique (E) la projette en arrière puis lui permet de foncer sur la cible touchée, et Maîtrise absolue (R) l'emmène à travers la cible puis exécute. Son passif crée un anneau : en sortir renforce sa prochaine attaque.",
+    "playstyle": "Assassin de roam et de pick. Au mid, Akali affronte des mages qui ont souvent des CC pensés contre les assassins (Lissandra, Galio, Vex) : elle doit choisir ses combats.",
+    "early_game": "Poke au Q et avec l'attaque du passif quand l'adversaire vient last hit. Gère ton énergie : garde toujours de quoi lancer W. Contre les mages à CC, joue le farm et attends le niveau 6.",
+    "level_1": "Vague de kunais (Q) en premier. Poke et farm à distance.",
+    "level_2": "Linceul nébuleux (W). Invisibilité et énergie : garde-le pour esquiver le gros sort adverse.",
+    "level_3": "Lancer acrobatique (E). Combo : E → E → Q → passif. Tu peux aussi utiliser E1 seul pour reculer.",
+    "level_6": "Maîtrise absolue : gros pic de kill et de roam. Combo : R1 → Q → passif → E → E → R2 pour finir. Pousse ta wave et roam vers les side lanes.",
+    "power_spikes": [
+      "Niveau 3 : combo complet.",
+      "Niveau 6 : kills et roams avec l'ultime.",
+      "Premier item complet : burst qui tue les carries.",
+      "Mid game : picks sur les side lanes."
+    ],
+    "lane_plan": "Pousse la wave quand tu peux, poke au Q et garde de l'énergie pour W. Après le niveau 6, pousse puis roam vers le bot ou le top. La quête de rôle mid accélère ton retour à la base : profite-en pour enchaîner roam et reset. Évite de rester dans la zone de contrôle d'un mage anti-assassin.",
+    "trading": "Trade court : Q + passif. Trade long : E → E → Q → W pour esquiver la riposte. All-in : R1 → combo → R2. Engage quand le CC adverse est en recharge ; abandonne contre les mages qui te contrôlent dans ton Linceul.",
+    "jungle_plan": "",
+    "threats": [
+      "Mages à CC anti-assassins (Lissandra, Galio, Vex).",
+      "Twisted Fate : ton matchup le plus difficile (il roam et te contrôle).",
+      "Dégâts de zone qui annulent ton Linceul."
+    ],
+    "mistakes": [
+      "Vider ton énergie et ne plus pouvoir lancer W.",
+      "Engager dans la zone de contrôle d'un mage.",
+      "Rester en lane au lieu de roam après le niveau 6."
+    ],
+    "matchup_notes": {
+      "Yasuo": "Son Mur de vent ne bloque pas ton Q en cône : poke-le, et engage après son E.",
+      "Viktor": "Poke-le et dive quand son champ gravitationnel est en recharge.",
+      "Locke": "Esquive ses clous avec W et engage quand il a utilisé son E.",
+      "Twisted Fate": "Il te stun et roam : suis-le sur la carte plutôt que de chercher le kill.",
+      "Lissandra": "Son ultime et sa glace t'arrêtent : attends qu'ils soient utilisés."
+    },
+    "mid_game": "Roams, picks et splitpush avec ta Téléportation ou ton retour accéléré. Chasse les carries isolés.",
+    "late_game": "Menace de pick : attends que les CC adverses soient utilisés, puis dive sur la backline avec l'ultime.",
+    "ahead": "Roam, prends les objectifs et chasse les carries.",
+    "behind": "Farm, évite les mages à CC et cherche des picks sur des cibles isolées.",
+    "win_condition": "Pour gagner cette partie, tu veux transformer ta lane en roams et picks sur les carries adverses.",
+    "final_tip": "Garde toujours assez d'énergie pour ton Linceul : c'est lui qui gagne tes trades."
+  }
+}

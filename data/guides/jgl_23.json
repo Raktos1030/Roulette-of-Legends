@@ -1,0 +1,43 @@
+{
+  "Maokai|jgl": {
+    "identity": "Tank à dégâts magiques, joué en jungle environ une fois sur quatre (le support reste son rôle principal). Coup de ronces (Q) repousse, Croissance torturée (W) le fait avancer en qui root sa cible (il est inciblable pendant le déplacement), Jet d'arbrisseau (E) lance des pousses qui explosent (plus fortes dans les bushs), et Emprise de la nature (R) envoie un mur de ronces qui root tout ce qu'il touche. Son passif renforce régulièrement une attaque qui le soigne.",
+    "playstyle": "Jungler tank de contrôle et de vision. Maokai gank facilement avec W, contrôle les zones avec ses pousses et engage les teamfights avec l'ultime. Il n'a pas le clear le plus rapide et ne duel pas bien, mais il est très fiable en combat d'équipe.",
+    "early_game": "Clear en sécurité avec E et Q, puis gank : W sur la cible (CC) → Q pour la repousser vers ton laner. Pose des pousses (E) dans les bushs autour des objectifs : elles donnent de la vision et explosent au contact.",
+    "level_1": "Coup de ronces (Q) en premier.",
+    "level_2": "Jet d'arbrisseau (E) ou Croissance torturée (W) selon ton ordre. E aide au clear ; W donne un gank immédiat.",
+    "level_3": "Kit complet : W → Q → E. Premier gank fiable grâce à le CC.",
+    "level_6": "Emprise de la nature : mur de ronces qui avance lentement et root tous les ennemis touchés. Utilise-le pour engager un teamfight, couper une fuite ou protéger ton équipe d'un engage.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec W.",
+      "Niveau 6 : ultime de zone pour les teamfights.",
+      "Premier item complet : tank solide.",
+      "Mid game : contrôle de zone autour des objectifs."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear en sécurité et ganks fréquents avec W. Maokai n'aime pas les duels : évite les invasions. Utilise les pousses pour la vision autour des Larves (vers 8 min), des dragons et du Héraut (vers 15 min). Joue avec tes laners pour les objectifs : ton CC est ton principal atout.",
+    "trading": "En gank : W → Q (repousse vers ton laner) → E. En teamfight : R pour engager ou couper, W sur le carry ou le diver adverse. Abandonne contre les junglers qui te battent en duel (Udyr, Bel'Veth).",
+    "threats": [
+      "Invasions et duels : tu perds contre les junglers agressifs.",
+      "Udyr, Shyvana et Bel'Veth, défavorables selon les données.",
+      "Kiting à distance."
+    ],
+    "mistakes": [
+      "Repousser la cible loin de ton laner avec Q.",
+      "Lancer l'ultime trop tôt, avant que l'adversaire soit engagé.",
+      "Oublier de poser des pousses pour la vision."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il t'envahira : ne duel pas, gank.",
+      "Sylas": "Il peut voler ton ultime : n'engage pas quand il peut le reprendre.",
+      "Viego": "Root-le avec W quand il dive.",
+      "Kayn": "Root-le avant sa transformation.",
+      "Bel'Veth": "Elle te bat en duel : joue avec ton équipe."
+    },
+    "mid_game": "Contrôle de zone autour des objectifs : pousses, W et ultime.",
+    "late_game": "Engage ou protège : R pour engager, W pour root le diver adverse.",
+    "ahead": "Prends les objectifs et engage les combats.",
+    "behind": "Tank pour ton équipe et joue pour un ultime décisif.",
+    "win_condition": "Pour gagner cette partie, tu veux ganker efficacement avec W et contrôler les teamfights avec l'ultime.",
+    "final_tip": "Place-toi de sorte que Coup de ronces repousse la cible vers ton laner."
+  }
+}

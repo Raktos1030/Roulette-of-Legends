@@ -1,0 +1,43 @@
+{
+ "Diana|mid": {
+  "identity": "Magic damage fighter-assassin. Crescent Strike (Q) applies Moonlight, which resets Lunar Rush (E); Pale Cascade (W) protects her with orbs; her passive hits in an area every three attacks; and Moonfall (R) pulls in every nearby enemy before an explosion that hurts more for each champion hit.",
+  "playstyle": "Burst and roaming mid. She punishes mages and melee assassins, and roams very well after level 6.",
+  "early_game": "Farm with Q and your passive, poke with Q when your opponent comes to last hit. At level 3, Q → E → W → attacks is a very strong all-in against mages. Keep W to soak poke.",
+  "level_1": "Crescent Strike (Q) first.",
+  "level_2": "Lunar Rush (E) or Pale Cascade (W) depending on your order. Q → E: dash onto the marked target.",
+  "level_3": "Full kit: Q → E → W → attacks (passive). A big all-in against mages with no escape.",
+  "level_6": "Moonfall: combo Q → E → R → E (reset if Q marked) → W. You can kill most mages and roam to the side lanes.",
+  "power_spikes": [
+   "Level 3: all-in against mages.",
+   "Level 6: full combo and roams.",
+   "First completed item: burst or durability depending on your build.",
+   "Mid game: multi-target engages in teamfights."
+  ],
+  "lane_plan": "Farm with Q and your passive, all-in when your opponent has used their CC or escape. After level 6, push the wave and roam. The mid role quest (faster recall) makes these trips worthwhile.",
+  "trading": "Short trade: Q poke. Full trade: Q → E → W → attacks. All-in: Q → E → R → E → W. Engage when the enemy CC is on cooldown; give up on it if your Q missed.",
+  "jungle_plan": "",
+  "threats": [
+   "Mid Nasus and tanks who soak your burst.",
+   "CC mages who stop you mid-engage.",
+   "Yasuo: a hard matchup."
+  ],
+  "mistakes": [
+   "Using E without a Q mark.",
+   "Engaging without your ultimate against a mage who has their CC ready.",
+   "Staying in lane instead of roaming after level 6."
+  ],
+  "matchup_notes": {
+   "Zed": "W absorbs his shurikens; engage once he's used his shadow.",
+   "Katarina": "Your ultimate interrupts her Death Lotus by pulling her in.",
+   "Viktor": "Engage when his Gravity Field is on cooldown.",
+   "Ahri": "Engage when her Charm is on cooldown.",
+   "Yasuo": "His Wind Wall blocks your Q: wait until he's used it."
+  },
+  "mid_game": "Roams, picks and teamfights. Diana is strong when she can hit several targets with her ultimate.",
+  "late_game": "Flank engage: Q on the closest target, E to go in, R in the middle of several enemies.",
+  "ahead": "Roam, create advantages across the map and take objectives.",
+  "behind": "Farm and play for a decisive ultimate on several targets.",
+  "win_condition": "To win this game, you want to punish mages in lane, roam after 6 and engage teamfights on several targets.",
+  "final_tip": "Always cast Q before E: without the mark, you lose your second dash."
+ }
+}

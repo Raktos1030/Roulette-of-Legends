@@ -1,0 +1,43 @@
+{
+ "Soraka|sup": {
+  "identity": "Healer. Salvation (passive) gives her speed toward weakened allies. Starcall (Q) drops a star that damages and slows (and heals Soraka if it hits a champion), Astral Infusion (W) sacrifices part of her health to heal an ally, Equinox (E) creates a zone that silences enemies, then roots those still inside at the end, and Wish (R) instantly heals every allied champion, wherever they are.",
+  "playstyle": "Healing and sustain support: she keeps her ADC alive in lane and heals her whole team in teamfights, anywhere on the map. No clearly unfavorable matchups: her worst ones (Nami, Blitzcrank, Senna) stay close to even. She crushes dive supports and slow mages (Swain, Camille, Pantheon, Xerath).",
+  "early_game": "Land Starcall (Q) on your opponent: it slows them and heals you, which makes up for the health spent on W. Heal your ADC with Astral Infusion (W) after every trade. Keep Equinox (E) to interrupt an engage (silence) or root your opponent.",
+  "level_1": "Starcall (Q) first. Poke and self-heal.",
+  "level_2": "Astral Infusion (W). A strong heal on your ADC; it costs you health, which Q gives back.",
+  "level_3": "Equinox (E). Silence and CC: place it under the enemy engage or under the rooted opponent.",
+  "level_6": "Wish: heals all your allies anywhere on the map. Watch fights in the other lanes: a well-timed Wish saves an ally on the other side of the map.",
+  "power_spikes": [
+   "Level 2: Q + W, your ADC wins long trades.",
+   "Level 6: global Wish.",
+   "First completed item: much more frequent heals.",
+   "Teamfights: constant W, Wish at the critical moment."
+  ],
+  "lane_plan": "Poke with Q, heal with W and keep E against engages. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored). Watch the other lanes for your ultimate.",
+  "trading": "Basic trade: Q on your opponent, W on your ADC. Defense: E under the enemy engage (silence), W on the target. Against hooks (Blitzcrank), stay behind minions: you're fragile and W costs you health.",
+  "jungle_plan": "",
+  "threats": [
+   "Nami, Blitzcrank and Senna: your worst matchups, close to even.",
+   "Enemy healing reduction.",
+   "Assassins who target you: you're fragile."
+  ],
+  "mistakes": [
+   "Using W when you're too low on health yourself.",
+   "Missing Q and no longer being able to heal yourself.",
+   "Holding Wish too long: it's meant for when an ally is about to die."
+  ],
+  "matchup_notes": {
+   "Lulu": "Poke trades: land Q to heal yourself.",
+   "Thresh": "Stay behind minions; E under him if he engages.",
+   "Nami": "Dodge her bubble and heal your ADC after her trades.",
+   "Nautilus": "E under him when his anchor lands: he gets silenced.",
+   "Swain": "His drain isn't enough against your healing."
+  },
+  "mid_game": "Stick with your team, place Control Wards and keep Wish for fights around objectives.",
+  "late_game": "Stay behind your frontline: constant W on your carries, E under divers, Wish when several allies are low.",
+  "ahead": "Force long fights: your team doesn't die.",
+  "behind": "Heal and keep your team alive: Wish can turn any fight.",
+  "win_condition": "To win this game, you want to keep your team alive in long fights thanks to your healing.",
+  "final_tip": "Every Q that hits a champion heals you: that's what lets you use W without dying."
+ }
+}

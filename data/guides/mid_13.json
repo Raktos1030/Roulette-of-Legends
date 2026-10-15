@@ -1,0 +1,43 @@
+{
+  "Fizz|mid": {
+    "identity": "Assassin à dégâts magiques insaisissable. Joueur / Filou (E) le fait sauter hors d'atteinte (il est inciblable pendant le saut) puis retomber en slowant, Frappe de l'oursin (Q) le fait traverser sa cible, Trident marin (W) fait saigner et renforce ses attaques, et Pêche au gros (R) lance un poisson qui attire un requin géant (plus il vole loin, plus le requin est gros). Son passif le rend fantôme et réduit les dégâts des auto-attaques.",
+    "playstyle": "Assassin de burst et d'esquive. Fizz esquive le sort clé adverse avec E, puis burst. Il punit particulièrement les mages immobiles (Mel, Aurelion Sol, Orianna, Syndra, Xerath).",
+    "early_game": "Farm prudemment avant le niveau 3 : tu es faible au niveau 1-2 contre les mages. Utilise E pour esquiver le gros sort adverse. À partir du niveau 3, Q → W → E devient un vrai all-in.",
+    "level_1": "Joueur / Filou (E) en premier. Farm et esquive.",
+    "level_2": "Trident marin (W). Saignement et attaques renforcées : utile pour farm et trade.",
+    "level_3": "Frappe de l'oursin (Q). All-in : Q (traverse) → W → attaques → E pour slow ou esquiver.",
+    "level_6": "Pêche au gros : lance le poisson de loin pour un gros requin, puis Q → W → E. C'est ton gros pic de kill et de roam.",
+    "power_spikes": [
+      "Niveau 3 : premier vrai all-in.",
+      "Niveau 6 : ultime, kills et roams.",
+      "Premier item complet : burst qui tue les mages.",
+      "Mid game : picks et dives."
+    ],
+    "lane_plan": "Farm prudemment jusqu'au niveau 3, puis trade quand le sort clé adverse est en recharge. Après le niveau 6, pousse et roam. La quête de rôle mid (retour accéléré) rend tes roams encore plus efficaces. Évite de gaspiller E : sans lui, tu es vulnérable.",
+    "trading": "Trade court : Q → attaque → E pour sortir. All-in : R de loin → Q → W → attaques → E. Engage quand le CC adverse est en recharge ; garde E pour l'esquiver sinon.",
+    "jungle_plan": "",
+    "threats": [
+      "Pantheon : ton matchup le plus difficile.",
+      "CC lancés après ton E.",
+      "Tanks qui encaissent ton burst."
+    ],
+    "mistakes": [
+      "Utiliser E pour engager et ne plus pouvoir esquiver.",
+      "Lancer l'ultime de trop près (petit requin).",
+      "Forcer les trades aux niveaux 1-2."
+    ],
+    "matchup_notes": {
+      "Zed": "Esquive son ultime avec E au moment où il réapparaît.",
+      "Syndra": "Esquive son stun avec E, puis dive.",
+      "Yasuo": "Son Mur de vent bloque ton poisson : lance-le quand il l'a utilisé.",
+      "Katarina": "E pour esquiver son Lotus mortel.",
+      "Pantheon": "Son shield bloque tes dégâts de face : attends qu'il l'ait utilisé."
+    },
+    "mid_game": "Roams, picks et objectifs. Chasse les mages isolés.",
+    "late_game": "Dive sur le carry adverse avec l'ultime, esquive le CC avec E.",
+    "ahead": "Roam, chasse les carries et prends les objectifs.",
+    "behind": "Farm et cherche des picks sur des cibles isolées.",
+    "win_condition": "Pour gagner cette partie, tu veux esquiver les sorts clés et burst les mages et carries.",
+    "final_tip": "Garde ton E pour le sort qui compte : c'est ce saut qui gagne tes combats."
+  }
+}

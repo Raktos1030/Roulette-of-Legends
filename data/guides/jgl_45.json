@@ -1,0 +1,43 @@
+{
+  "Volibear|jgl": {
+    "identity": "Combattant-tank à dégâts mixtes. Coup fulgurant (Q) l'accélère vers les champions et stun à la prochaine attaque, Folie mutilatrice (W) marque puis le soigne s'il frappe à nouveau, Foudroiement (E) fait tomber un éclair qui slow (et le protège s'il est dans la zone), et Tempête incarnée (R) le fait bondir en désactivant les tours. En jungle, il maximise Q pour ganker.",
+    "playstyle": "Jungler de ganks et de dives sous tour. Volibear arrive vite sur les lanes grâce à Q et dive avec l'ultime.",
+    "early_game": "Clear avec E et W. Gank quand ton laner peut suivre : Q pour accélérer et stun, W pour te soigner. Évite les duels contre les assassins et les junglers qui te kitent.",
+    "level_1": "Foudroiement (E) en premier.",
+    "level_2": "Folie mutilatrice (W). Marque puis soin : ton clear devient plus sain.",
+    "level_3": "Coup fulgurant (Q). Premier gank : Q → attaque (stun) → W → E sur toi pour le shield. Q est maximisé en priorité.",
+    "level_6": "Tempête incarnée : bond qui désactive les tours. Dive sous tour avec tes laners pour des kills garantis, ou engage en teamfight.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec Q.",
+      "Niveau 6 : dives sous tour.",
+      "Premier item complet : ganks et dives forts.",
+      "Mid game : engages et escarmouches."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear sûr et ganks dès le niveau 3. Après le 6, organise des dives sous tour avec tes laners grâce à l'ultime. Contrôle les crabes, les Larves (vers 8 min) et les dragons. Évite les duels contre les junglers mobiles ou à distance (Talon, Quinn, Bel'Veth).",
+    "trading": "En gank : Q → stun → W → W sur la cible marquée. En dive : R sur la tour → Q → W. Abandonne contre les champions qui te kitent ou t'esquivent.",
+    "threats": [
+      "Talon, Quinn et Bel'Veth : matchups difficiles.",
+      "Kiting à distance.",
+      "Dives sans suivi de tes laners."
+    ],
+    "mistakes": [
+      "Dive sous tour sans l'ultime pour la désactiver.",
+      "Engager avec Q sans pouvoir suivre.",
+      "Oublier de te placer dans Foudroiement pour le shield."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Stun-le avec Q quand il engage.",
+      "Viego": "Stun-le avant qu'il ne possède tes alliés.",
+      "Kayn": "Punis-le avant sa transformation.",
+      "Talon": "Il te burst et t'esquive par-dessus les murs.",
+      "Quinn": "Elle te kite et t'aveugle : évite-la."
+    },
+    "mid_game": "Dives et engages autour des objectifs.",
+    "late_game": "Engage sur la ligne arrière adverse avec l'ultime, Q pour stun le carry.",
+    "ahead": "Dive sous tour avec tes laners et prends les objectifs.",
+    "behind": "Farm et joue pour les engages en teamfight.",
+    "win_condition": "Pour gagner cette partie, tu veux ganker et dive sous tour avec l'ultime pour créer des avantages.",
+    "final_tip": "Garde ton ultime pour les dives : il désactive les tours pendant quelques secondes."
+  }
+}

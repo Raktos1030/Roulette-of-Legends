@@ -1,0 +1,43 @@
+{
+  "Aurora|mid": {
+    "identity": "Mage à dégâts magiques très mobile qui passe entre les mondes. Toucher trois fois un ennemi avec ses sorts déclenche des dégâts bonus, un soin et de la vitesse (passif Abjuration spirituelle). Maléfice (Q) lance un projectile qu'elle peut rappeler pour frapper au retour, Derrière le voile (W) la fait sauter et la camoufle, Sortilège (E) projette une explosion qui slow et la fait reculer, et Entre les mondes (R) la fait bondir en créant une zone dont les ennemis ne peuvent pas sortir normalement.",
+    "playstyle": "Mage de combat mobile et de pick. Aurora poke, recule et revient grâce à W et E, et piège les ennemis avec l'ultime.",
+    "early_game": "Poke avec Q (aller et retour) et E, en visant trois touches pour déclencher le passif. Garde W pour esquiver un engage. Tu peux trade puis reculer avec E.",
+    "level_1": "Maléfice (Q) en premier. Poke à l'aller et au retour.",
+    "level_2": "Sortilège (E). Explosion qui slow et te fait reculer : Q → E → retour de Q déclenche le passif.",
+    "level_3": "Derrière le voile (W). Saut et camouflage : pour esquiver, te repositionner ou poursuivre.",
+    "level_6": "Entre les mondes : bond et zone qui piège les ennemis à l'intérieur. Combo : R → Q → E → retour de Q. En teamfight, piège plusieurs ennemis avec ton équipe.",
+    "power_spikes": [
+      "Niveau 3 : poke complet et passif.",
+      "Niveau 6 : piège avec l'ultime.",
+      "Premier item complet : burst et mobilité.",
+      "Mid game : picks et teamfights."
+    ],
+    "lane_plan": "Poke au Q et à l'E, recule, et garde W pour les engages. Pousse ta wave et roam avec la quête de rôle mid (retour accéléré). Évite les combats longs contre les assassins qui te divent (Fizz).",
+    "trading": "Trade court : Q aller → E → Q retour. Trade long : R → Q → E → W pour te repositionner. Engage quand le CC adverse est en recharge ; abandonne contre les assassins qui te divent.",
+    "jungle_plan": "",
+    "threats": [
+      "Fizz : ton matchup le plus difficile.",
+      "CC qui te coupent avant tes sauts.",
+      "Assassins qui te divent."
+    ],
+    "mistakes": [
+      "Oublier de rappeler Q pour le second coup.",
+      "Utiliser W et E pour entrer sans fuite.",
+      "Piéger avec l'ultime quand ton équipe ne peut pas suivre."
+    ],
+    "matchup_notes": {
+      "Ahri": "Esquive son Charme avec W et poke-la au Q.",
+      "Viktor": "Esquive son laser et poke-le.",
+      "Syndra": "Esquive son stun avec W.",
+      "Yone": "Recule avec E quand il engage.",
+      "Fizz": "Il esquive tes sorts et te burst : garde W pour son ultime."
+    },
+    "mid_game": "Picks et teamfights autour des objectifs. L'ultime piège les ennemis avec ton équipe.",
+    "late_game": "Poke, recule et piège les ennemis avec l'ultime quand ton équipe peut suivre.",
+    "ahead": "Roam, crée des picks et prends les objectifs.",
+    "behind": "Farm, poke en sécurité et cherche un ultime décisif.",
+    "win_condition": "Pour gagner cette partie, tu veux poke et piéger les ennemis avec l'ultime en teamfight.",
+    "final_tip": "Rappelle ton Q après le Sortilège : les trois touches déclenchent ton passif."
+  }
+}

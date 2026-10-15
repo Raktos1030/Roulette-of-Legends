@@ -1,0 +1,43 @@
+{
+ "Talon|jgl": {
+  "identity": "Physical damage assassin. Rake (W) throws blades that return while slowing, Noxian Diplomacy (Q) leaps onto a target in melee (or strikes from range), Assassin's Path (E) vaults him over walls, and Shadow Assault (R) makes him invisible while throwing blades that return to him. Three ability hits on a target trigger a bleed (passive Blade's End).",
+  "playstyle": "Tempo, gank and assassination jungler. Talon crosses the map by vaulting over walls and ganks from anywhere. He needs to build his lead in the early and mid game.",
+  "early_game": "Clear fast with W (maxed) and your passive. Gank by vaulting over walls with E: you arrive through paths nobody watches. Combo: W → Q (leap) → attacks → passive bleed.",
+  "level_1": "Rake (W) first.",
+  "level_2": "Noxian Diplomacy (Q). A melee leap with an empowered hit: W → Q quickly triggers your passive.",
+  "level_3": "Assassin's Path (E). Vaulting over walls: your ganks come from everywhere. First gank: E over a wall → W → Q.",
+  "level_6": "Shadow Assault: invisibility and returning blades. Full combo: W → Q → R → attacks. You can also use R to escape or dodge an ability.",
+  "power_spikes": [
+   "Level 3: ganks over walls.",
+   "Level 6: full combo with your ultimate.",
+   "First completed item: burst that kills carries.",
+   "Mid game: roams and picks across the whole map."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear and very frequent ganks thanks to E. Talon wants to set the tempo: gank, invade, control Scuttles and take Void Grubs (around 8 minutes) when your laners have priority. His paths over walls make his ganks unpredictable. Turn every lead into an objective before the late game.",
+  "trading": "Ganking: E over a wall → W → Q → attacks. Assassinating: W → Q → R on the carry. Give up on it against tanks who lock you down (Rammus) or junglers who beat you in early duels (Rek'Sai).",
+  "threats": [
+   "Rammus and Rek'Sai, the only clearly unfavorable matchups.",
+   "CC tanks who soak your burst.",
+   "Long games where your impact drops."
+  ],
+  "mistakes": [
+   "Forgetting to catch W's blades for the second pass.",
+   "Engaging without your ultimate on a carry surrounded by protectors.",
+   "Farming passively instead of ganking."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Gank faster than him thanks to your wall vaults.",
+   "Graves": "Avoid his invades and gank on the other side.",
+   "Viego": "Burst him before he possesses your allies.",
+   "Rammus": "His taunt cancels your combo: avoid him.",
+   "Rek'Sai": "She beats you in early duels: gank where she isn't."
+  },
+  "mid_game": "Roams, picks and objectives. Hunt isolated carries.",
+  "late_game": "Assassinate the enemy carry with W → Q → R. Wait for the enemy CC to be used.",
+  "ahead": "Choke out the enemy jungler and take every objective.",
+  "behind": "Look for picks on isolated targets and play with your team.",
+  "win_condition": "To win this game, you want to set the tempo with ganks over walls and assassinate the carries.",
+  "final_tip": "Use your wall vaults to arrive where nobody is looking."
+ }
+}

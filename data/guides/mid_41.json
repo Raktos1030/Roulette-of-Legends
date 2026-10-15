@@ -1,0 +1,43 @@
+{
+  "Xerath|mid": {
+    "identity": "Mage d'artillerie à dégâts magiques. Rayon arcanique (Q) se charge pour gagner en portée, Œil de la destruction (W) frappe une zone (plus de dégâts et un slow au centre), Orbe d'électrocution (E) stun, et Rite arcanique (R) le root pour tirer plusieurs barrages à très longue portée. Ses attaques rendent régulièrement du mana (passif Afflux de mana).",
+    "playstyle": "Mage de poke pur à la plus longue portée du jeu. Xerath use l'adversaire avant qu'il ne puisse agir et finit les cibles à distance avec l'ultime.",
+    "early_game": "Poke avec Q chargé et W (centre pour les gros dégâts) quand l'adversaire vient last hit. Récupère du mana avec tes attaques (passif). Garde E pour stun un assassin qui t'engage.",
+    "level_1": "Rayon arcanique (Q) en premier. Poke à longue portée.",
+    "level_2": "Œil de la destruction (W). W puis Q sur la cible slow : poke garanti.",
+    "level_3": "Orbe d'électrocution (E). Stun : ton outil défensif. Combo offensif : E → W → Q.",
+    "level_6": "Rite arcanique : barrages à très longue portée. Finis les cibles basses partout, y compris sur les autres lanes, ou poke avant un objectif. Tu es immobile pendant la canalisation : place-toi en sécurité.",
+    "power_spikes": [
+      "Niveau 3 : poke complet avec E.",
+      "Niveau 6 : ultime à très longue portée.",
+      "Premier item complet : poke très punitif.",
+      "Mid game : siège et poke avant les objectifs."
+    ],
+    "lane_plan": "Poke en permanence et contrôle la wave. Garde E contre les assassins. Pousse puis rejoins les objectifs pour poke avant les combats. La quête de rôle mid (retour accéléré) t'aide à reset après avoir vidé ton mana.",
+    "trading": "Trade court : W → Q. Défense : E sur l'assassin qui arrive. All-in à distance : E → W → Q → R. Abandonne contre les assassins qui arrivent quand ton E est en recharge.",
+    "jungle_plan": "",
+    "threats": [
+      "Assassins (Fizz, Locke, Katarina, Talon).",
+      "Ganks quand tu es avancé.",
+      "Canaliser l'ultime à portée d'un diver."
+    ],
+    "mistakes": [
+      "Gaspiller E et ne plus pouvoir te défendre.",
+      "Canaliser l'ultime sans sécurité.",
+      "Se placer trop près en teamfight."
+    ],
+    "matchup_notes": {
+      "Viktor": "Tu le surclasses en portée : poke-le hors de son laser.",
+      "Syndra": "Duel de portée : reste hors de son stun.",
+      "Ahri": "Garde E pour son engage avec R.",
+      "Fizz": "Il esquive ton E : garde-le pour la fin de son saut.",
+      "Locke": "Il te dive avec E : stun-le à son arrivée."
+    },
+    "mid_game": "Poke avant les objectifs et siège des tours.",
+    "late_game": "Artillerie derrière ta frontline : poke, E sur le diver, R pour finir les cibles basses.",
+    "ahead": "Poke avant chaque objectif et prends les tours.",
+    "behind": "Farm à distance et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux user l'équipe adverse à distance avant chaque combat et finir les cibles avec l'ultime.",
+    "final_tip": "Vise le centre de ton Œil de la destruction : c'est là que les dégâts et le slow sont maximaux."
+  }
+}

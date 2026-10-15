@@ -1,0 +1,43 @@
+{
+  "Zoe|mid": {
+    "identity": "Mage de burst à dégâts magiques et à très longue portée. Astro-pong ! (Q) lance un projectile qu'elle peut rediriger ; ses dégâts augmentent avec la distance parcourue. Voleuse de sorts (W) ramasse les restes des sorts d'invocateur et effets actifs utilisés par l'ennemi pour s'en servir. Bulle soporifique (E) endort la cible (les dégâts qui la réveillent sont doublés), et Bond dimensionnel (R) la téléporte brièvement avant de la ramener. Après chaque sort, sa prochaine attaque fait des dégâts bonus (passif).",
+    "playstyle": "Mage de pick à longue portée : endormir avec E, puis Q allongé grâce à R pour un one-shot. Très mécanique : la portée du Q dépend de ta capacité à l'allonger.",
+    "early_game": "Poke avec Q allongé (lance-le en arrière puis redirige-le vers l'adversaire) quand il vient last hit. Garde E pour punir ou pour te défendre (la bulle traverse les murs). Ramasse les sorts d'invocateur que l'adversaire utilise.",
+    "level_1": "Astro-pong ! (Q) en premier. Poke avec un Q allongé.",
+    "level_2": "Bulle soporifique (E). E → Q allongé sur la cible endormie : dégâts doublés.",
+    "level_3": "Voleuse de sorts (W). Ramasse les sorts d'invocateur utilisés par l'adversaire : un Flash ou un Embrasement volé change un combat.",
+    "level_6": "Bond dimensionnel : téléportation courte puis retour. Combo : E (sommeil) → R en avant → Q (qui part de plus loin) → retour : énorme dégâts avec peu de risque.",
+    "power_spikes": [
+      "Niveau 2 : E + Q sur cible endormie.",
+      "Niveau 6 : combo R → Q pour le one-shot.",
+      "Premier item complet : burst à longue portée.",
+      "Mid game : picks avec la bulle."
+    ],
+    "lane_plan": "Poke avec Q, garde E et contrôle la wave. Pousse puis roam : ta bulle et ton Q allongé punissent les cibles isolées. La quête de rôle mid (retour accéléré) rend tes roams plus rentables.",
+    "trading": "Trade court : Q allongé. All-in : E → R → Q → retour → attaques. Abandonne contre les mages qui te bloquent (Malzahar et son shield) ou les champions qui te divent (Akshan).",
+    "jungle_plan": "",
+    "threats": [
+      "Malzahar, dont le shield absorbe ton burst.",
+      "Akshan, qui te dive avec son balancier.",
+      "Assassins quand ta bulle est en recharge."
+    ],
+    "mistakes": [
+      "Lancer Q directement sans l'allonger (peu de dégâts).",
+      "Frapper la cible endormie avec un petit sort au lieu du Q.",
+      "Oublier de ramasser les sorts d'invocateur."
+    ],
+    "matchup_notes": {
+      "Ahri": "Endors-la avant son engage.",
+      "Viktor": "Poke-le de plus loin que son laser.",
+      "Zed": "Endors-le quand il réapparaît après son ultime.",
+      "Malzahar": "Son shield absorbe ton Q : casse-le d'abord avec une petite attaque.",
+      "Akshan": "Garde E pour son balancier."
+    },
+    "mid_game": "Picks sur les cibles isolées et poke avant les objectifs.",
+    "late_game": "Picks à longue portée : endors le carry adverse et one-shot-le. Reste derrière ta frontline.",
+    "ahead": "Roam, crée des picks et prends les objectifs.",
+    "behind": "Farm, poke en sécurité et cherche des picks.",
+    "win_condition": "Pour gagner cette partie, tu veux endormir et one-shot les carries isolés à longue portée.",
+    "final_tip": "Allonge toujours ton Q (en arrière puis vers la cible) : ses dégâts augmentent avec la distance."
+  }
+}

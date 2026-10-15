@@ -1,0 +1,43 @@
+{
+ "Evelynn|jgl": {
+  "identity": "Magic damage assassin who hunts from invisibility. From level 6, Evelynn is camouflaged out of combat (passive Demon Shade) and heals when she's hurt out of combat. Hate Spike (Q) chains several strikes, Allure (W) charms the target if she waits before hitting it (and lowers its magic resist), Whiplash (E) strikes and becomes a dash while camouflaged, and Last Caress (R) makes her untargetable, slashes in a cone and blinks her backwards, with increased damage against low-health targets.",
+  "playstyle": "Farming jungler until level 6, then invisible assassinations and ganks. Very weak before 6, very dangerous after.",
+  "early_game": "Farm quickly to level 6: it's your absolute priority. Avoid skirmishes and enemy invades, you lose them. Ward your jungle entrances to see the enemy jungler coming.",
+  "level_1": "Hate Spike (Q) first. The spikes clear camps quickly.",
+  "level_2": "Whiplash (E). Damage on camps; while camouflaged (from level 6), it becomes a dash toward the target.",
+  "level_3": "Allure (W), or a second point in Q depending on the path. You can gank a very exposed target, but your real strength comes at level 6.",
+  "level_6": "Out-of-combat camouflage and Last Caress. Combo: invisible approach → W (wait for the charm to charge fully) → E dash → Q → R to finish and back off. Your ganks become very dangerous.",
+  "power_spikes": [
+   "Level 6: camouflage and ultimate, a big assassination spike.",
+   "First completed item: burst that kills carries.",
+   "Two items: one of the most dangerous assassins.",
+   "Mid game: invisible picks all over the map."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Full clear up to level 6 while avoiding fights: Evelynn is very weak before then. At level 6, gank in a row with camouflage: enemy laners don't see you coming. Control Void Grubs (around 8 minutes) and dragons by using your invisibility to surprise whoever contests them. Enemy Control Wards and reveals are your main threat: spot them and avoid them.",
+  "trading": "Ganking: camouflaged approach, fully charged W (longer charm), E dash, Q, then R when the target is low. Skirmishing: wait for the enemy CC to be used, burst the squishiest target and back off with R. Give up on it if you get revealed before engaging.",
+  "threats": [
+   "Reveals and Control Wards, which break your camouflage.",
+   "Invades before level 6.",
+   "Tanks who soak your burst."
+  ],
+  "mistakes": [
+   "Fighting before level 6.",
+   "Casting W and hitting right away (short charm).",
+   "Using R to engage instead of to finish and back off."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He'll invade you before 6: avoid him and come back stronger.",
+   "Viego": "Burst him before he possesses one of your allies.",
+   "Graves": "He beats you before 6; after that, you kill him from invisibility.",
+   "Sylas": "He can steal your ultimate: burst him quickly.",
+   "Ivern": "He protects his allies with his shields: go for targets out of his range."
+  },
+  "mid_game": "Invisible picks, ganks and objectives. Every isolated carry is a target.",
+  "late_game": "Flank while camouflaged, wait for the enemy CC and burst the carry. Back off with R.",
+  "ahead": "Chain picks and objectives: a fed Evelynn terrorizes the map.",
+  "behind": "Farm, look for picks on isolated targets and play with your team.",
+  "win_condition": "To win this game, you want to reach level 6 without losing, then assassinate the carries thanks to your camouflage.",
+  "final_tip": "Always wait for Allure to charge fully before hitting: the charm lasts much longer."
+ }
+}

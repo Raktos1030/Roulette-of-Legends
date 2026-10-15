@@ -1,0 +1,43 @@
+{
+  "Jinx|adc": {
+    "identity": "Tireuse à dégâts physiques de scaling. Enthousiasme ! (passif) lui donne un énorme bonus de vitesse de déplacement et d'attaque quand elle participe à l'élimination d'un champion, d'un monstre épique ou d'un bâtiment. Flip flap ! (Q) alterne entre son minigun (vitesse d'attaque qui monte) et son lance-roquettes (dégâts de zone et plus de portée, mais coûte du mana). Zap ! (W) tire un rayon qui blesse, slow et révèle, Pyromâcheurs ! (E) lance des grenades qui root les champions qui marchent dessus, et Super roquette de la mort ! (R) traverse la carte en faisant plus de dégâts selon la distance et les PV manquants.",
+    "playstyle": "Hypercarry de teamfight : faible en mobilité, mais chaque kill la relance grâce à son passif. Un seul matchup nettement défavorable (Hwei). Elle est souvent derrière en or à 15 min : elle gagne plus tard.",
+    "early_game": "Farm proprement avec le minigun et poke avec les roquettes quand l'adversaire vient last hit (surveille ton mana). Zap ! pour poke de loin. Garde tes Pyromâcheurs pour te défendre contre un engage : lance-les sur toi ou sur le chemin de l'adversaire.",
+    "level_1": "Flip flap ! (Q) en premier. Farm au minigun, poke avec les roquettes.",
+    "level_2": "Zap ! (W). Poke à longue portée et slow pour les kills avec ton support.",
+    "level_3": "Pyromâcheurs ! (E). Ta défense contre les divers, et un combo avec les CC de ton support (lance-les sous la cible root).",
+    "level_6": "Super roquette de la mort ! : achève un ennemi bas en PV n'importe où sur la carte. En teamfight, elle blesse aussi les ennemis autour de la cible.",
+    "power_spikes": [
+      "Niveau 6 : ultime global d'exécution.",
+      "Premier item complet : bonne pression sur les tours.",
+      "Deux items complets : les roquettes nettoient les combats.",
+      "Chaque élimination : le passif te relance dans le combat."
+    ],
+    "lane_plan": "Farm, poke avec W et les roquettes, et survis : ta force arrive avec les items. Joue avec ton support sur ses engages. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) est parfaite pour une hypercarry : un item complet de plus en fin de partie. Participe aux dragons : le passif se déclenche aussi sur les monstres épiques.",
+    "trading": "Trade court : W puis roquettes. All-in : E sous la cible root, minigun et attaques continues. Recule contre les engages quand E est en recharge : tu n'as aucun dash.",
+    "jungle_plan": "",
+    "threats": [
+      "Hwei bot : ton matchup le plus difficile.",
+      "Assassins et divers : tu n'as aucun dash.",
+      "CC de foule qui t'empêchent de profiter du passif."
+    ],
+    "mistakes": [
+      "Rester en roquettes en farmant et vider son mana.",
+      "Gâcher les Pyromâcheurs et ne plus avoir de défense.",
+      "Se placer devant sa frontline en teamfight."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Elle dive avec son ultime : lance tes Pyromâcheurs à tes pieds quand elle arrive.",
+      "Caitlyn": "Farm prudemment, tu la dépasses ensuite.",
+      "Tristana": "Garde E pour son Saut roquette.",
+      "Samira": "Ses combos se jouent au contact : tes Pyromâcheurs l'arrêtent.",
+      "Hwei": "Il te poke de loin : reste derrière les sbires et joue avec ton support."
+    },
+    "mid_game": "Groupe avec ton équipe autour des dragons et des tours. Le premier kill ou la première tour déclenchent le passif : enchaîne.",
+    "late_game": "Reste derrière ta frontline et tire en roquettes sur le groupe. Dès le premier kill, le passif te permet de nettoyer le combat. Garde E pour les divers.",
+    "ahead": "Prends les tours rapidement : chaque bâtiment détruit relance ton passif.",
+    "behind": "Farm et attends tes items : tu restes la meilleure menace de fin de partie.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre jusqu'à tes items puis nettoyer les teamfights grâce au passif.",
+    "final_tip": "En teamfight, attends que le combat soit lancé : le premier kill déclenche ton passif et te rend très difficile à attraper."
+  }
+}

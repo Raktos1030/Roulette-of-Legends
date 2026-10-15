@@ -1,0 +1,43 @@
+{
+  "Sona|sup": {
+    "identity": "Enchanteresse de poke et de soins. Accord de puissance (passif) : ses sorts bien utilisés lui donnent de l'accélération de compétence (puis réduisent le délai de son ultime), et après quelques sorts, sa prochaine attaque fait des dégâts magiques en plus avec un effet selon le dernier sort lancé. Hymne à la bravoure (Q) blesse les deux ennemis les plus proches, Aria de persévérance (W) la soigne ainsi qu'un allié blessé, Mélodie de vélocité (E) accélère les alliés proches (chaque sort laisse aussi une aura qui touche les alliés), et Crescendo (R) stun les champions ennemis en les forçant à danser.",
+    "playstyle": "Support de scaling : faible et fragile en début de partie, elle devient une source énorme de poke, de soins et d'accélération avec ses items. Aucun matchup nettement défavorable : ses moins bons (Rell, Blitzcrank, Thresh) restent proches de l'équilibre. Elle écrase les mages lents et les divers (Xerath, Swain, Lux).",
+    "early_game": "Poke avec Hymne à la bravoure (Q), qui touche automatiquement les deux ennemis les plus proches, puis attaque avec l'Accord de puissance. Soigne ton ADC avec W après les trades. Reste derrière les sbires face aux grappins : tu es très fragile.",
+    "level_1": "Hymne à la bravoure (Q) en premier.",
+    "level_2": "Aria de persévérance (W). Soin pour toi et ton ADC après chaque trade.",
+    "level_3": "Mélodie de vélocité (E). Vitesse pour fuir un engage ou rattraper une cible.",
+    "level_6": "Crescendo : stun tous les champions touchés dans une large zone devant toi. Engage sur les deux adversaires, ou arrête leur engage.",
+    "power_spikes": [
+      "Niveau 2 : Q + Accord de puissance.",
+      "Niveau 6 : Crescendo sur les deux adversaires.",
+      "Premier item complet : poke et soins beaucoup plus fréquents.",
+      "Late game : accélération de compétence au maximum."
+    ],
+    "lane_plan": "Poke avec Q, soigne avec W et survis : ton scaling fait le travail. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "Trade de base : Q, puis attaque renforcée. All-in : R, Q, attaques. Défense : E pour fuir, W pour soigner, R contre l'engage. Contre les grappins (Blitzcrank, Thresh), reste derrière les sbires en permanence.",
+    "jungle_plan": "",
+    "threats": [
+      "Rell, Blitzcrank et Thresh : tes moins bons matchups, proches de l'équilibre.",
+      "Grappins et engages qui t'attrapent : tu es très fragile.",
+      "Assassins qui te ciblent en teamfight."
+    ],
+    "mistakes": [
+      "Se placer à découvert face à un grappin.",
+      "Lancer l'ultime sur un seul ennemi alors que deux étaient alignés.",
+      "Oublier de soigner ton ADC après les trades."
+    ],
+    "matchup_notes": {
+      "Nami": "Esquive sa bulle et harcèle avec Q.",
+      "Lulu": "Trades de poke : ton Q touche automatiquement.",
+      "Thresh": "Reste derrière les sbires ; s'il attrape ton ADC, Crescendo sur lui.",
+      "Lux": "Elle est lente : Q à chaque fois qu'elle avance.",
+      "Xerath": "Il n'a pas de mobilité : Crescendo le punit."
+    },
+    "mid_game": "Reste avec ton équipe, poke avant les objectifs et pose des pinks. Tes auras profitent à tous les alliés proches.",
+    "late_game": "Reste derrière ta frontline : Q pour poke, W pour soigner, E pour accélérer, et Crescendo sur le groupe adverse au bon moment.",
+    "ahead": "Poke plus fort et force les teamfights : ton équipe est plus rapide et plus soignée.",
+    "behind": "Survis et scale : chaque item te rend plus utile.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane, scaler puis gagner les teamfights avec ton poke, tes soins et Crescendo.",
+    "final_tip": "Ton Q vise tout seul les deux ennemis les plus proches : place-toi pour que l'adversaire soit dans la portée, pas pour viser."
+  }
+}

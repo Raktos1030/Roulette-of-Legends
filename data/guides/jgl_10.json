@@ -1,0 +1,43 @@
+{
+  "Graves|jgl": {
+    "identity": "Tireur à dégâts physiques en jungle. Son fusil tire plusieurs plombs à courte portée et doit recharger après deux coups (passif). Terminus (Q) tire une charge qui explose après un délai ou contre un mur, Écran de fumée (W) réduit la vision et slow, Ruée vers l'or (E) dash, recharge une munition et donne de l'armure, et Dégâts collatéraux (R) tire un gros obus qui explose en cône.",
+    "playstyle": "Jungler de farm très rapide, d'invasions et de duels. Graves est un des meilleurs duellistes early de la jungle et peut voler les camps adverses. Il transforme son avance d'or en dégâts de carry. Moins bon contre les tanks et les junglers qui le contrôlent.",
+    "early_game": "Clear rapide en utilisant E pour recharger et gagner de l'armure. Graves est très fort pour envahir : si ton équipe a la priorité, vole les camps adverses et combats le jungler adverse. Gank les lanes où tes dégâts suffisent, mais farmer reste ta force principale.",
+    "level_1": "Ruée vers l'or (E) en premier. Dash pour recharger et gagner de l'armure sur le premier camp.",
+    "level_2": "Terminus (Q). Tire vers un mur pour une explosion plus rapide : Q + E recharge est ton combo de base.",
+    "level_3": "Écran de fumée (W) ou second Q selon le chemin. W réduit la vision de l'adversaire et le slow : très utile pour les duels et les fuites.",
+    "level_6": "Dégâts collatéraux : gros tir qui te repousse et explose en cône. Sert à finir un kill, à fuir ou à toucher plusieurs cibles.",
+    "power_spikes": [
+      "Niveau 3 : duels et invasions très forts.",
+      "Niveau 6 : ultime pour finir et fuir.",
+      "Premier item complet : dégâts de carry.",
+      "Mid game : invasions et contrôle de la jungle adverse."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Full clear très rapide, puis invasions si tes lanes ont la priorité. Graves gagne en or : vole les camps adverses, contrôle les crabes et prends les Larves (vers 8 min). Il peut aussi ganker, mais son vrai atout est de farmer plus vite et de gagner les duels. Suis le jungler adverse et punis-le quand il est de ton côté.",
+    "trading": "En duel : Q vers un mur → E (recharge + armure) → attaques → W si l'adversaire tente de fuir → R pour finir. En gank : W pour réduire la vision, puis Q et attaques. Abandonne contre les tanks qui te contrôlent (Rammus) ou quand tu n'as plus d'E.",
+    "threats": [
+      "Tanks qui te contrôlent et encaissent (Rammus, Skarner).",
+      "Fiddlesticks et Zyra, défavorables selon les données.",
+      "Duels sans E disponible (pas d'armure ni de recharge)."
+    ],
+    "mistakes": [
+      "Oublier de recharger avec E avant un combat.",
+      "Envahir sans priorité de lane.",
+      "Utiliser l'ultime en ouverture au lieu de finir ou fuir."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Vous êtes tous deux forts en early : gagne le duel avec E et W.",
+      "Viego": "Tu le bats en early : envahis-le avant qu'il ne scale.",
+      "Sylas": "Il peut voler ton ultime ; punis-le en duel.",
+      "Fiddlesticks": "Tu le bats en duel early, mais son ultime te détruit en teamfight : garde de la vision.",
+      "Nidalee": "Elle farm aussi vite et te poke : conteste ses camps avec ton équipe."
+    },
+    "mid_game": "Invasions, contrôle de la jungle adverse et objectifs. Graves est très fort pour étouffer le jungler adverse.",
+    "late_game": "Carry à courte portée : entre après les CC adverses, frappe les cibles proches et utilise E pour l'armure.",
+    "ahead": "Étouffe le jungler adverse, prends tous les objectifs et force les combats.",
+    "behind": "Farm, joue avec ton équipe et évite les invasions.",
+    "win_condition": "Pour gagner cette partie, tu veux farmer plus vite que l'adversaire, gagner les duels et transformer ton or en dégâts de carry.",
+    "final_tip": "Avant chaque combat, recharge avec E : l'armure et les munitions font la différence."
+  }
+}

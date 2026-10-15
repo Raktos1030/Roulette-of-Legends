@@ -1,0 +1,43 @@
+{
+  "Zyra|sup": {
+    "identity": "Mage de zone et d'invocation. Jardin de ronces (passif) : des graines apparaissent régulièrement autour d'elle ; lancer Épines funestes ou Racines fixatrices près d'une graine la transforme en plante qui combat pour elle. Épines funestes (Q) fait exploser des épines dans une zone (et fait pousser une Cracheuse de ronces à distance), Croissance incontrôlée (W) plante une graine (elle en stocke plusieurs, et les kills réduisent leur délai), Racines fixatrices (E) root les ennemis touchés en ligne (et fait pousser une Plante flagellante qui slow), et Ronces étrangleuses (R) blesse une zone puis knock-up les ennemis ; les plantes à l'intérieur deviennent enragées.",
+    "playstyle": "Support de poke et de contrôle de zone : ses plantes harcèlent l'adversaire et punissent chaque engage. Elle domine les supports de mêlée lents et les mages (Swain, Brand, Neeko, Morgana, Camille), mais craint les grappins et les engages rapides (Blitzcrank, Alistar). Très fragile, sans mobilité.",
+    "early_game": "Plante des graines (W) devant toi et fais-les pousser avec Q (Cracheuse, à distance) ou E (Flagellante, qui slow). Poke l'adversaire qui vient last hit avec Q + plantes. Garde Racines fixatrices (E) pour arrêter un engage ou lancer un kill.",
+    "level_1": "Racines fixatrices (E) en premier. Ensuite, monte E en priorité.",
+    "level_2": "Croissance incontrôlée (W). Graines supplémentaires : tes sorts deviennent des plantes.",
+    "level_3": "Épines funestes (Q). Combo : E (CC) → Q sur la cible → plantes qui frappent.",
+    "level_6": "Ronces étrangleuses : dégâts de zone puis knock-up. Lance-la sur un groupe, ou sous un engage adverse pour le retourner.",
+    "power_spikes": [
+      "Niveau 2 : graines + E pour les kills.",
+      "Niveau 3 : combo complet avec les plantes.",
+      "Niveau 6 : ultime de zone.",
+      "Premier item complet : plantes très dangereuses."
+    ],
+    "lane_plan": "Poke avec Q et tes plantes, contrôle la lane avec les graines et garde E contre les engages. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "Trade de base : graine + Q (Cracheuse). All-in : E → Q → plantes → R. Défense : E sur l'engage adverse, graines entre toi et lui. Contre Blitzcrank, reste derrière tes sbires en permanence.",
+    "jungle_plan": "",
+    "threats": [
+      "Blitzcrank et Alistar : matchups difficiles.",
+      "Nautilus, légèrement en dessous de ta moyenne.",
+      "Assassins et divers : tu n'as aucune mobilité."
+    ],
+    "mistakes": [
+      "Lancer Q et E loin des graines (pas de plantes).",
+      "Se placer à découvert face à un grappin.",
+      "Gâcher E en poke et ne plus pouvoir te défendre."
+    ],
+    "matchup_notes": {
+      "Thresh": "Tes plantes bloquent son grappin : place-les devant toi.",
+      "Lulu": "Trades de poke : tes plantes gagnent la durée.",
+      "Nami": "Esquive sa bulle et poke avec tes plantes.",
+      "Swain": "Il doit s'approcher : tes plantes et ton E l'arrêtent.",
+      "Blitzcrank": "Reste derrière tes sbires et tes plantes."
+    },
+    "mid_game": "Poke avant les objectifs, contrôle la zone avec tes graines et pose des pinks.",
+    "late_game": "Reste derrière ta frontline, plante des graines sur le terrain du combat, E sur les divers et R sur le groupe adverse.",
+    "ahead": "Poke et force les combats de zone autour des objectifs.",
+    "behind": "Contrôle la zone avec les plantes et garde E pour protéger ton ADC.",
+    "win_condition": "Pour gagner cette partie, tu veux contrôler la zone avec tes plantes et punir chaque engage adverse avec ton E et ton ultime.",
+    "final_tip": "Lance toujours Q et E près d'une graine : chaque sort devient alors une plante qui continue de frapper."
+  }
+}

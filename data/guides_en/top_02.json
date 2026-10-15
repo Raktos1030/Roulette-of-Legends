@@ -1,0 +1,207 @@
+{
+ "Chogath|top": {
+  "identity": "Magic damage tank who grows by eating his enemies. In top, Cho'Gath plays a stable lane thanks to healing off minions (passive Carnivore), controls with Rupture (Q) and Feral Scream (W), then becomes a huge frontline whose Feast (R) executes with true damage.",
+  "playstyle": "Scaling and control: little all-in pressure early, but a lane that's hard to crack. He builds Feast stacks and gets tankier as the game goes on. Play around Q's cooldown, which makes up most of his trades and his engage.",
+  "early_game": "Farm safely and heal off minions with your passive. Poke with Vorpal Spikes (E) empowered attacks when your opponent comes to last hit. Keep Q to punish an engage or cut off an escape; Rupture has a delay, so aim where the enemy is going.",
+  "level_1": "Vorpal Spikes (E) first on the most common path (E → Q → W). Your three empowered attacks slow and push minions: poke an opponent who steps up, without looking for an all-in.",
+  "level_2": "Rupture (Q). Knocks up and slows after a short delay: cast it where your opponent will land (when they come to last hit or dash). Q + E makes a good short trade.",
+  "level_3": "Feral Scream (W): a cone that silences. Q + W stop your opponent from fighting back with abilities. Keep W against champions who rely on an ability to engage or escape.",
+  "level_6": "Feast deals true damage and executes; every champion or large monster you eat gives you a permanent stack (health and size). Use it to finish a kill or secure a large monster. In lane, keep it as an execute rather than an opener.",
+  "power_spikes": [
+   "Level 3: Q + W, good controlled trades.",
+   "Level 6: Feast, a true damage execute threat.",
+   "First completed item: very hard to kill in lane.",
+   "Feast stacks: an increasingly imposing frontline."
+  ],
+  "lane_plan": "Let the wave come to you and farm with E and your passive. Push when you have the advantage to take plates; otherwise keep the wave neutral. Recall when your mana is low. W's cone and Q's area are easier to land when your opponent is caught between minions and a wall.",
+  "trading": "Short trade: E + auto, or Q on an opponent who comes to last hit, then E. Full combo: Q → W → E, then R to finish. Engage if your Q lands; give up on it if you miss, because you lose your main CC.",
+  "jungle_plan": "",
+  "threats": [
+   "Percent-health and armor-ignoring damage (Gwen, Fiora).",
+   "Tanks who hold up against you in long fights (Ornn, Dr. Mundo).",
+   "Ranged poke that makes you miss minions."
+  ],
+  "mistakes": [
+   "Casting Q straight at the enemy instead of leading their movement.",
+   "Using Feast on minions when a kill or an epic monster is available.",
+   "Forgetting to stack Feast on large monsters in the mid game."
+  ],
+  "matchup_notes": {
+   "Malphite": "He pokes you with Q but doesn't beat you in long fights; keep W for his ultimate.",
+   "Garen": "Silence him with W as soon as he engages and hold him with Q. Don't let him execute you when you're low: his ultimate ignores your resistances.",
+   "Jax": "Cast Q at the end of his Counter Strike or right before he lands; your W stops him from following up.",
+   "Ornn": "He beats you in long fights and scales just as well. Farm, stack Feast and play for teamfights.",
+   "Gwen": "Her percent-health damage ignores your size. Place Q outside her Hallowed Mist and avoid long fights."
+  },
+  "mid_game": "Play for objectives: your Feast secures dragons and Baron. Group with your team to provide control and frontline, and stack Feast on every large monster you can reach.",
+  "late_game": "Control frontline: cast Q on the brawl and W on divers, then Feast on the carry in range. Protect your carries rather than going for the backline.",
+  "ahead": "Stack Feast faster by invading with your jungler and executing kills. Push the side lane and force fights around your objectives.",
+  "behind": "Farm, stack Feast on monsters and stay with your team: your frontline role matters more than your damage.",
+  "win_condition": "To win this game, you want to build Feast stacks, become a frontline nobody can ignore and control teamfights with Q and W.",
+  "final_tip": "Always aim your Rupture where your opponent will be half a second from now, not where they are."
+ },
+ "Darius|top": {
+  "identity": "Physical damage juggernaut who dominates melee fights. He stacks bleeds (passive Hemorrhage), reaches Noxian Might at 5 stacks and executes with true damage using Noxian Guillotine (R), which resets on every kill.",
+  "playstyle": "Very aggressive lane and all-ins as soon as he can stick to his target. He wins almost every long melee fight, but struggles against ranged kiting and mobility. Depends on his Apprehend (E) to catch targets.",
+  "early_game": "Play for short trades that add stacks: Q with the edge (which heals), W to reset your attack, then back off. Once your opponent has 3 stacks, an all-in becomes dangerous for them. Avoid wasting E, your only way to stick to targets.",
+  "level_1": "Crippling Strike (W) first on the most common path (W → Q → E), for an empowered attack and a slow on first contact. Some take Q to poke: either way, a level 1 Darius wins most melee trades.",
+  "level_2": "Decimate (Q). Hit with the edge of the blade to heal. Auto + W + Q edge is a good trade; at level 2, look for a fight if your opponent is still level 1.",
+  "level_3": "Apprehend (E): pulls the enemy in and gives you passive armor penetration. At level 3, you threaten a kill: E → auto → W → Q edge, plus Ignite if needed.",
+  "level_6": "Noxian Guillotine deals true damage that grows with your stacks and resets if it kills. With 5 stacks, you win almost every melee 1v1 and can chain several kills in teamfights.",
+  "power_spikes": [
+   "Levels 2 and 3: a very strong all-in.",
+   "Level 6: a resetting true damage execute.",
+   "First completed item: duels that are hard to beat.",
+   "Two items: overwhelming in melee fights."
+  ],
+  "lane_plan": "Play the wave in the middle or slightly pushed so you can trade, but avoid sitting on a pushed wave without vision: you're vulnerable to ganks. Freeze near your tower if your opponent is afraid of you. Recall when your E is available and the wave crashes. The lane bush hides your approach for Apprehend.",
+  "trading": "Short trade: auto → W → Q edge, then back off. Long trade: E to stick, stack up, R when the bleed plus your ultimate will kill. Engage when your opponent no longer has their dash or CC; give up on it if you're getting kited by a ranged champion.",
+  "jungle_plan": "",
+  "threats": [
+   "Ranged champions who kite you (Teemo, Quinn).",
+   "Wukong and champions who dodge or cancel your Apprehend.",
+   "Ganks on a pushed lane without vision."
+  ],
+  "mistakes": [
+   "Casting Q in melee range (the center doesn't heal) instead of aiming with the edge.",
+   "Using E to engage when you can't follow up, then getting kited.",
+   "Casting your ultimate too early, before you have enough stacks to kill."
+  ],
+  "matchup_notes": {
+   "Garen": "Don't get silenced mid-combo; trade when his Q is on cooldown and win the long fight with your bleed.",
+   "Sett": "He soaks damage and sends it back with his W: back off during his charge. Trade briefly, then all-in once his W is used.",
+   "Nasus": "Punish him early to limit his stacks. Under Wither, you lose DPS: back off, then come back when it's over.",
+   "Yone": "Wait for his E to be used, then Apprehend and a long fight.",
+   "Teemo": "He kites and blinds you. Play for farm, wait for your jungler, and don't chase him under his slow."
+  },
+  "mid_game": "Split push or group with your team for objectives: Darius punishes any team that fights in melee. In the side lane, he wins most 1v1s.",
+  "late_game": "Enter teamfights when you can reach the brawl, stack up several targets and chain your Guillotines. Avoid going in when the enemy team can kite you forever.",
+  "ahead": "Press your lead in the side lane and tower dive with your jungler. Every reset ultimate lets you clean up a fight.",
+  "behind": "Farm carefully under your tower, get help from your jungler and play with your team: your presence in the brawl stays dangerous.",
+  "win_condition": "To win this game, you want to win your lane by force, then get in melee range of several enemies in teamfights to chain your Guillotines.",
+  "final_tip": "Always aim with the edge of your Decimate: it's the difference between a won trade and a lost one."
+ },
+ "DrMundo|top": {
+  "identity": "Physical damage tank who regenerates massively. Dr. Mundo soaks damage, pokes with Infected Bonesaw (Q) and, with Maximum Dosage (R), becomes nearly impossible to kill in long fights. His passive absorbs the first rooting CC.",
+  "playstyle": "Passive lane built on farming and Q poke, then scaling into a tank who runs into the middle of the enemy team. He doesn't kill fast but wins long fights through regeneration. Depends on his level and max health.",
+  "early_game": "Farm with Q, which slows and deals percent-health damage. Don't look for all-ins: keep your health and use your passive (the canister) to regenerate. Your passive absorbs the first rooting CC, which protects you from ganks.",
+  "level_1": "Infected Bonesaw (Q) first. Farm from range and poke an opponent who comes to last hit, without committing.",
+  "level_2": "Blunt Force Trauma (E). An empowered strike that deals more damage the less health you have; handy for last hitting and trading. Q + E for a short trade.",
+  "level_3": "Heart Zapper (W): stores part of the damage you take as grey health you can recover. Activate it before a trade to last longer.",
+  "level_6": "Maximum Dosage: huge regeneration and movement speed. It's your tool to survive a gank, win a long fight or run through the enemy team in teamfights.",
+  "power_spikes": [
+   "Level 6: huge survivability and regeneration.",
+   "First completed item: very hard to kill.",
+   "Levels 11 and 16: ultimate ranks, stronger regeneration.",
+   "Two to three items: a dominant late-game tank."
+  ],
+  "lane_plan": "Farm safely, let the wave come to you and poke with Q. Don't push without a reason: you're strong playing passively. Recall when your passive and health are low. If your opponent harasses you in melee range, let them come under your tower.",
+  "trading": "Basic trade: Q from range. Short trade: Q + E + W. Only engage when your Q has slowed the target and you have your ultimate; give up on it if your opponent has percent-health damage or healing reduction that cuts your regeneration.",
+  "jungle_plan": "",
+  "threats": [
+   "Healing reduction and percent-health damage (Gwen, Fiora).",
+   "Aatrox and fighters who win trades with the edges of their abilities.",
+   "An engage right after your passive has absorbed a first CC."
+  ],
+  "mistakes": [
+   "Looking for kills early instead of farming calmly.",
+   "Casting your ultimate too late, when you're already almost dead.",
+   "Staying on a pushed lane without your ultimate or vision."
+  ],
+  "matchup_notes": {
+   "Malphite": "He doesn't hurt you in long fights; farm, then beat him later in the lane.",
+   "Darius": "Don't stand in the outer edge of his Decimate; your regeneration and ultimate outlast his bleeds.",
+   "Yone": "He wins quick trades. Poke with Q and stay near your tower.",
+   "Aatrox": "His sweet spots hurt you a lot and he heals too. Play at range, dodge his Q's and keep your ultimate for the long fight.",
+   "Gwen": "Her percent-health damage ignores your size. Farm, take few trades and scale."
+  },
+  "mid_game": "Be the frontline around objectives and handle a side lane safely. You can engage by running into the middle of the enemy team with your ultimate.",
+  "late_game": "Main tank: go in first or protect your carries by standing between them and the divers. Your ultimate keeps you alive for the whole fight.",
+  "ahead": "Push the side lane and force your opponents to send two players at you. Enter teamfights as soon as you have your ultimate.",
+  "behind": "Farm and scale: Dr. Mundo stays useful in teamfights even without a lead. Avoid duels against percent-health damage champions.",
+  "win_condition": "To win this game, you want to survive the lane, scale your health and become a tank who runs through the enemy team without dying.",
+  "final_tip": "Activate Maximum Dosage before you're low on health: the regeneration depends on how long you stay alive."
+ },
+ "Fiora|top": {
+  "identity": "True damage duelist, queen of split pushing. Fiora strikes vitals (passive) for percent-health damage, dodges CC with Riposte (W) and wins almost every 1v1 with Grand Challenge (R), which creates a healing zone once all four vitals are hit.",
+  "playstyle": "Short trades on vitals, then side-lane dominance. Fiora wants to isolate her opponent in a 1v1 rather than fight 5v5. Very dependent on reading enemy abilities to time Riposte.",
+  "early_game": "Hit vitals with Lunge (Q), then back off: every vital you hit heals you and gives you speed. Keep Riposte for your opponent's most important ability. Aim for a farm and plate lead.",
+  "level_1": "Lunge (Q) first. Use it to reach a vital and back off. Against a fighter who's strong at level 1, farm from range.",
+  "level_2": "Riposte (W). It blocks damage and effects for a short moment and stuns if you block a CC. Keep it for the enemy's engage or CC ability.",
+  "level_3": "Bladework (E): attack speed, a slow, then a crit. Q + E + vital makes a big short trade.",
+  "level_6": "Grand Challenge reveals four vitals on a target; hitting them deals big damage and creates a healing zone. In a duel, it's almost always a win if you hit the vitals.",
+  "power_spikes": [
+   "Level 3: very strong short trades on vitals.",
+   "Level 6: a dominant duel with your ultimate.",
+   "First completed item: a threatening split push.",
+   "Two items: almost unbeatable in a 1v1."
+  ],
+  "lane_plan": "Play a neutral wave, trade briefly when a vital is well placed and back off. After your first item, push and take plates. Freeze if you're ahead against an opponent who can't fight you under your tower. Recall when your wave crashes.",
+  "trading": "Short trade: Q on a vital → auto → E, back off. Long trade: Riposte the enemy CC, ultimate, then vitals. Engage when the enemy's key ability is on cooldown; give up on it if you've wasted Riposte.",
+  "jungle_plan": "",
+  "threats": [
+   "CC you didn't block with Riposte.",
+   "Armored tanks who withstand your burst (Malphite).",
+   "Ranged champions who kite you (Heimerdinger)."
+  ],
+  "mistakes": [
+   "Casting Riposte too early, without blocking anything.",
+   "Fighting 5v5 head-on when you win 1v1s in the side lane.",
+   "Casting your ultimate on a tank instead of an isolated carry."
+  ],
+  "matchup_notes": {
+   "Yone": "Riposte his Q3 or his E; you win short trades on vitals.",
+   "Malphite": "His armor bothers you and he pokes you. Keep Riposte for his ultimate and play for the split push later.",
+   "Aatrox": "Riposte his Q3 or his W and punish his cooldowns.",
+   "Darius": "Riposte his Apprehend and stay out of his Q; trade briefly on vitals.",
+   "Nasus": "Wither slows your attacks. Keep Riposte for it and punish him before he stacks."
+  },
+  "mid_game": "Split push: push a side lane, force two opponents to come and use your upgraded Teleport (role quest) to join objectives.",
+  "late_game": "Stay in the side lane as long as your team can hold, then join fights from the flank. In teamfights, ultimate on a carry so your team benefits from the healing zone.",
+  "ahead": "Force duels, dive with your jungler and take every tower in your side lane. Every 1v1 you win should lead to an objective.",
+  "behind": "Farm, avoid duels against opponents who are further ahead and wait for your items: your side-lane scaling stays strong.",
+  "win_condition": "To win this game, you want to dominate your side lane in 1v1s and force the enemy team to send several players at you.",
+  "final_tip": "Before every trade, identify the ability you're going to Riposte: it decides the fight."
+ },
+ "Gangplank|top": {
+  "identity": "Ranged fighter who scales hard with gold and crits. Gangplank places Powder Kegs (E) that he detonates with Parrrley (Q) for huge area damage, cleanses himself with Remove Scurvy (W) and helps anywhere on the map with Cannon Barrage (R).",
+  "playstyle": "Farm and poke in lane, strong scaling, then huge area damage in teamfights thanks to his kegs. Very mechanical: keg placement and timing make all the difference. Fragile early against all-ins.",
+  "early_game": "Farm with Q (it gives extra gold on kills) and poke with your kegs. Use W to heal and cleanse. Don't take long melee trades: your kegs are your strength.",
+  "level_1": "Powder Keg (E) first on the most common path (E → Q → W). Place a keg on the wave and detonate it to poke your opponent.",
+  "level_2": "Parrrley (Q). It detonates kegs from range and gives gold on kills. Q + keg = your basic trade.",
+  "level_3": "Remove Scurvy (W). It heals you and removes CC. Keep it for enemy engages or to heal after a trade.",
+  "level_6": "Cannon Barrage: you can help anywhere on the map (slow and area damage). Use it to save an ally, secure a kill or an objective. Q earns Silver Serpents that upgrade your ultimate.",
+  "power_spikes": [
+   "Level 6: a global ultimate useful all over the map.",
+   "First completed item: much stronger keg poke.",
+   "Two items: very dangerous critting kegs.",
+   "Late game: some of the best area damage in teamfights."
+  ],
+  "lane_plan": "Let the wave come to you, farm with Q and poke with kegs. Place kegs on the wave in advance to clear it after level 6. Recall when you have enough gold for a big purchase. Avoid staying on a pushed lane against an aggressive jungler.",
+  "trading": "Basic trade: keg placed near your opponent → Q on the keg when it's ready. Advanced trade: keg → a second keg next to it to chain the explosion. Engage when your opponent is slowed; give up on it if they engage you in melee range while you don't have W.",
+  "jungle_plan": "",
+  "threats": [
+   "Melee all-ins early.",
+   "Ganks after you've used W.",
+   "Champions who destroy or dodge your kegs."
+  ],
+  "mistakes": [
+   "Detonating a keg that isn't ready yet.",
+   "Using W too early and having no cleanse left against a CC.",
+   "Holding your ultimate when an ally needs it elsewhere."
+  ],
+  "matchup_notes": {
+   "Yone": "Kegs on his path and W for his Q3; don't let him stick to you in a long fight.",
+   "Aatrox": "Place kegs where he'll throw his sweet spots and keep W for his W (chain).",
+   "Malphite": "Poke him with kegs; keep W for his ultimate and stay near your tower.",
+   "Darius": "Keep him at range with your kegs' slow; W for his Apprehend.",
+   "Kayle": "Punish her before her key levels, then play for teamfights."
+  },
+  "mid_game": "Farm the side lanes, take towers and use your ultimate to help fights elsewhere. Your kegs clear waves quickly: use that to take objectives.",
+  "late_game": "Main area DPS: place kegs ahead of fights to detonate them on several targets. Stay behind your frontline.",
+  "ahead": "Push and take towers, use your ultimate on objectives and skirmishes elsewhere. With Q's extra gold, you scale even faster.",
+  "behind": "Farm with Q, avoid dangerous side lanes and stay with your team: your scaling stays strong.",
+  "win_condition": "To win this game, you want to farm safely, scale with gold and dominate teamfights with keg explosions on several targets.",
+  "final_tip": "Place your kegs ahead of time on your opponent's path: placement is what lands hits, not reaction speed."
+ }
+}

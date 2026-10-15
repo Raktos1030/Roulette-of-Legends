@@ -1,0 +1,43 @@
+{
+  "Mel|adc": {
+    "identity": "Mage à dégâts magiques. Chaque sort lui donne trois projectiles bonus pour sa prochaine attaque (neuf au maximum), et tous ses dégâts appliquent Accablement : au-delà d'un certain nombre d'effets, la cible est exécutée (passif Luminescence incandescente). Salve radieuse (Q) fait exploser une rafale de projectiles en zone, Réfutation (W) crée une barrière qui renvoie les projectiles ennemis et la protège, Piège solaire (E) root au centre et slow autour, et Éclipse dorée (R) frappe tous les ennemis marqués par Accablement, quelle que soit la distance.",
+    "playstyle": "Mage de poke et d'exécution. Comme au mid, elle est en moyenne devant en or à 15 min contre les ADC fréquents, sans que cela se transforme en victoires : son impact en fin de partie semble trop faible.",
+    "early_game": "Poke avec Salve radieuse (Q) et les attaques renforcées pour accumuler Accablement sur l'adversaire. Garde Réfutation (W) pour renvoyer un projectile important (grappin, sort de CC, gros poke). Piège solaire (E) root un adversaire qui s'avance pour un kill avec ton support.",
+    "level_1": "Salve radieuse (Q) en premier. Poke et farm à distance.",
+    "level_2": "Piège solaire (E). CC au centre : E → Q → attaque renforcée.",
+    "level_3": "Réfutation (W). Ton outil défensif principal : garde-le pour le sort adverse qui compte.",
+    "level_6": "Éclipse dorée : frappe tous les ennemis marqués, où qu'ils soient. Accumule Accablement sur plusieurs cibles, puis R pour exécuter celles qui passent sous le seuil.",
+    "power_spikes": [
+      "Niveau 3 : E → Q → attaques.",
+      "Niveau 6 : Éclipse dorée globale.",
+      "Premier item complet : poke et exécutions.",
+      "Teamfight : exécution de plusieurs cibles marquées."
+    ],
+    "lane_plan": "Poke à distance et accumule Accablement ; joue les kills avec ton support et E. Transforme ton avance d'or en tours et en dragons : tes statistiques montrent que l'avance de lane ne suffit pas. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) t'aide à garder cette avance.",
+    "trading": "Trade de base : Q puis attaque renforcée. All-in : E → Q → attaques → R. Abandonne contre les champions qui te poursuivent ou qui bloquent tes sorts (Yasuo, Zeri).",
+    "jungle_plan": "",
+    "threats": [
+      "Yasuo et Zeri, les pires matchups.",
+      "Mages bot à longue portée (Ziggs, Viktor, Syndra) : matchups difficiles.",
+      "Kalista : matchup difficile."
+    ],
+    "mistakes": [
+      "Utiliser W au hasard et ne plus pouvoir renvoyer le sort clé.",
+      "Lancer l'ultime avant d'avoir assez d'Accablement sur les cibles.",
+      "Rester en lane au lieu de convertir l'avance en objectifs."
+    ],
+    "matchup_notes": {
+      "Caitlyn": "Sa portée te domine : reste derrière les sbires et garde E pour le root quand elle s'avance.",
+      "Kai'Sa": "Elle dive avec son ultime : garde E pour le root à l'arrivée.",
+      "Ezreal": "Renvoie son Q avec W.",
+      "Yasuo": "Son Mur de vent bloque tes projectiles : poke quand il l'a utilisé.",
+      "Zeri": "Elle est trop mobile pour ton E : reste près de ton support."
+    },
+    "mid_game": "Poke avant les objectifs et accumule Accablement sur toute l'équipe adverse. Rejoins les combats avec ton équipe.",
+    "late_game": "Reste derrière ta frontline, poke avec Q, garde W pour le sort qui te menace. Lance R quand plusieurs ennemis sont marqués et bas en PV.",
+    "ahead": "Prends les tours et les dragons : ton avance doit devenir des objectifs.",
+    "behind": "Farm à distance, poke et joue autour de ton ultime pour participer aux combats.",
+    "win_condition": "Pour gagner cette partie, tu veux transformer ton avance de lane en objectifs et exécuter plusieurs cibles avec Éclipse dorée en teamfight.",
+    "final_tip": "Garde Réfutation pour le sort qui compte vraiment : renvoyer un grappin ou un CC gagne un combat."
+  }
+}

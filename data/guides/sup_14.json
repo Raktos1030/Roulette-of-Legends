@@ -1,0 +1,43 @@
+{
+  "Maokai|sup": {
+    "identity": "Tank de contrôle. Sève magique (passif) : régulièrement, son attaque le soigne et fait des dégâts en plus ; ce délai diminue quand il lance un sort ou qu'il est touché par un sort ennemi. Coup de ronces (Q) repousse les ennemis proches et les slow, Croissance torturée (W) le fait foncer sur une cible, impossible à cibler pendant le trajet, puis le root, Jet d'arbrisseau (E) lance un arbrisseau qui surveille une zone et explose sur les ennemis (plus efficace dans les hautes herbes), et Emprise de la nature (R) envoie un immense mur de ronces qui avance lentement et root les ennemis sur son passage.",
+    "playstyle": "Support tank de contrôle de zone : il sécurise les bushs avec ses arbrisseaux, engage avec W et bloque les combats avec son ultime. Il domine les supports fragiles (Pyke, Brand, Xerath) et souffre contre les tanks qui le surpassent au contact (Braum, Alistar).",
+    "early_game": "Pose des arbrisseaux (E) dans les bushs de la lane : ils donnent la vision et punissent l'adversaire qui y entre. Engage avec W → Q (tu root, puis tu repousses vers ton ADC). Sève magique te soigne régulièrement en trade.",
+    "level_1": "Croissance torturée (W) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Coup de ronces (Q). Combo : W (CC), puis Q en te plaçant pour repousser la cible vers ton ADC.",
+    "level_3": "Jet d'arbrisseau (E). Vision et dégâts : lance-les dans les bushs et sur les chemins de fuite.",
+    "level_6": "Emprise de la nature : mur qui avance lentement et root. Lance-le de loin pour engager ou pour couper un engage adverse ; il traverse toute une zone.",
+    "power_spikes": [
+      "Niveau 2 : W → Q.",
+      "Niveau 6 : ultime de zone à longue portée.",
+      "Premiers items de résistance : frontline très durable.",
+      "Teamfight : R sur le groupe, puis W sur le carry."
+    ],
+    "lane_plan": "Contrôle les bushs avec E, engage avec W quand ton ADC peut suivre. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées) : couple-les avec tes arbrisseaux autour du dragon.",
+    "trading": "All-in : W → Q vers ton ADC → attaques (Sève magique). Défense : Q pour repousser un diver, W pour le poursuivre. Recule contre les tanks qui gagnent le combat au contact (Braum, Alistar).",
+    "jungle_plan": "",
+    "threats": [
+      "Braum et Alistar : matchups difficiles.",
+      "Taric : matchup difficile.",
+      "Kiting : tu dois atteindre ta cible avec W."
+    ],
+    "mistakes": [
+      "Repousser la cible loin de ton ADC avec Q.",
+      "Lancer l'ultime trop près, sans lui laisser le temps d'avancer.",
+      "Oublier de poser des arbrisseaux dans les bushs."
+    ],
+    "matchup_notes": {
+      "Thresh": "Tes arbrisseaux dans les bushs gênent ses grappins : contrôle la vision.",
+      "Nautilus": "S'il engage, réponds par W sur lui et Q vers ton ADC.",
+      "Pyke": "Tes arbrisseaux le révèlent dans les bushs : il ne peut plus te surprendre.",
+      "Leona": "Elle t'engage : repousse-la avec Q.",
+      "Braum": "Son passif et son shield gagnent les trades au contact : joue la vision et les contre-engages."
+    },
+    "mid_game": "Contrôle la vision autour des objectifs avec E et les pinks. Cherche les picks avec W.",
+    "late_game": "Frontline : ultime de loin sur le groupe adverse, puis W sur le carry. Q pour repousser les divers loin de ton ADC.",
+    "ahead": "Engage souvent et contrôle la vision de la carte.",
+    "behind": "Protège ton ADC avec Q et ton ultime.",
+    "win_condition": "Pour gagner cette partie, tu veux contrôler la vision et root l'équipe adverse avec ton ultime au bon moment.",
+    "final_tip": "Place-toi avant Coup de ronces : il repousse les ennemis loin de toi, donc renvoie-les vers ton équipe, pas vers la leur."
+  }
+}

@@ -1,0 +1,43 @@
+{
+ "Viktor|mid": {
+  "identity": "Magic damage control mage who evolves his abilities. He gains Hextech fragments by killing enemies; every 100 fragments, he permanently upgrades an ability (passive Glorious Evolution). Siphon Power (Q) hits a target, shields him and empowers his next attack; Gravity Field (W) slows, then stuns those who stay inside; Hextech Ray (E) fires a laser in a line (which leaves an explosion once upgraded); Arcane Storm (R) creates a storm he can steer that interrupts channels.",
+  "playstyle": "Zone and wave-clear mage who scales with his evolutions. He controls the lane with his laser, defends himself with W against assassins and dominates teamfights with his ultimate. He struggles against longer-range mages (Xerath, Zoe, Vel'Koz).",
+  "early_game": "Poke with E (laser) and Q + empowered attack. Last hit to gather fragments and reach your first evolution (often E). Keep W for defense against engages.",
+  "level_1": "Siphon Power (Q) first. Q + empowered attack to trade.",
+  "level_2": "Hextech Ray (E). Your main poke and wave-clear ability: hit your opponent and the minions at the same time.",
+  "level_3": "Gravity Field (W) or a second E. W is your defensive tool: place it under the assassin who engages you.",
+  "level_6": "Arcane Storm: a steerable storm that deals damage over time and interrupts channels. Combo: W (stun) → R → E → Q.",
+  "power_spikes": [
+   "First evolution (often E): a much stronger laser.",
+   "Level 6: storm.",
+   "First completed item: wave clear and poke.",
+   "All evolutions unlocked: a dominant zone mage."
+  ],
+  "lane_plan": "Control the wave with E, poke and last hit for fragments. Keep W against engages. Push, then join objectives. The mid role quest (faster recall) helps you reset after pushing.",
+  "trading": "Short trade: Q → empowered attack → back off. Long trade: E → Q → attack. All-in: W → R → E → Q. Give up on it against mages who poke you from out of range (Xerath).",
+  "jungle_plan": "",
+  "threats": [
+   "Xerath, Zoe and Vel'Koz, who outrange you.",
+   "Assassins while your W is on cooldown.",
+   "Ganks while you're pushing."
+  ],
+  "mistakes": [
+   "Wasting W and no longer being able to defend yourself.",
+   "Missing last hits and delaying your evolutions.",
+   "Placing the storm far from enemies."
+  ],
+  "matchup_notes": {
+   "Syndra": "Dodge her stun and clear the wave with E.",
+   "Ahri": "W against her R engage.",
+   "Yasuo": "His Wind Wall doesn't block your laser; W against his engage.",
+   "Zed": "W under yourself the moment he reappears.",
+   "Xerath": "He pokes you from farther away: play around your jungler."
+  },
+  "mid_game": "Zone control around objectives: W and R make every fight costly for the enemy.",
+  "late_game": "Zone mage: W on the enemy engage, R on the group, E to poke. Stay behind your frontline.",
+  "ahead": "Take towers, dominate teamfights and roam with your jungler.",
+  "behind": "Farm, unlock your evolutions and play with your team.",
+  "win_condition": "To win this game, you want to unlock your evolutions and dominate teamfights with the zone from W and R.",
+  "final_tip": "Last hit as much as possible: every kill brings your next evolution closer."
+ }
+}

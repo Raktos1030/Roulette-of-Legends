@@ -1,0 +1,43 @@
+{
+  "Yasuo|adc": {
+    "identity": "Combattant au corps à corps à dégâts physiques. Voie du vagabond (passif) augmente ses chances de crit et lui donne un shield qui se charge en se déplaçant. Tempête d'acier (Q) est un coup d'estoc en ligne (compté comme une attaque) : au troisième coup, il lance une tornade qui knock-up. Mur de vent (W) bloque tous les projectiles ennemis pendant 4 secondes, Cercle tranchant (E) le fait passer à travers une cible, et Dernier soupir (R) le fait bondir sur un champion ennemi knock-up et le maintient en l'air.",
+    "playstyle": "Carry de mêlée en bot lane : il bloque les projectiles des tireurs avec son Mur de vent et termine les combats avec son ultime, déclenché par sa tornade ou par les knock-ups de son support. Il écrase les tireurs à projectiles (Ezreal, Varus, Jhin, Caitlyn, Draven).",
+    "early_game": "Farm avec Q (son délai diminue avec ta vitesse d'attaque) et garde la tornade pour l'adversaire. Utilise E sur les sbires pour te rapprocher sans prendre de dégâts. Garde Mur de vent (W) pour le sort ou le poke clé de la lane adverse.",
+    "level_1": "Tempête d'acier (Q) en premier. Farm et charge ta tornade.",
+    "level_2": "Cercle tranchant (E). Mobilité à travers les sbires : combine E et Q pour un coup circulaire.",
+    "level_3": "Mur de vent (W). Bloque le grappin, le CC ou l'ultime adverse : c'est ce qui te fait gagner contre les tireurs.",
+    "level_6": "Dernier soupir : bondis sur un ennemi knock-up, par ta tornade ou par les sorts de ton support (knock-ups, soulèvements). Tous les ennemis en l'air dans la zone sont touchés.",
+    "power_spikes": [
+      "Niveau 2 : E + Q à travers les sbires.",
+      "Niveau 6 : ultime avec les knock-ups de ton support.",
+      "Premier item complet : crits fréquents.",
+      "Deux items complets : très gros dégâts en teamfight."
+    ],
+    "lane_plan": "Farm, charge ta tornade et joue avec un support qui knock-up : chaque knock-up te donne un ultime. Bloque le poke adverse avec W. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense un farm régulier. Participe aux dragons.",
+    "trading": "Trade court : E sur un sbire proche de l'adversaire, Q, recule avec E. All-in : tornade ou knock-up du support → R → Q → attaques, W pour bloquer la riposte. Abandonne contre les champions qui ne dépendent pas des projectiles ou qui te root (Nilah, Viktor, Kalista).",
+    "jungle_plan": "",
+    "threats": [
+      "Kalista et Nilah : matchups difficiles.",
+      "Viktor bot, qui te contrôle en zone.",
+      "CC de foule : tu dois entrer au contact pour faire des dégâts."
+    ],
+    "mistakes": [
+      "Gâcher le Mur de vent sur un poke sans importance.",
+      "Utiliser E au milieu de la wave adverse et prendre toute l'aggro.",
+      "Lancer la tornade sur un sbire au lieu de l'adversaire."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Elle n'a pas besoin de projectiles pour te tuer au contact : ne force pas sans ton support.",
+      "Jhin": "Bloque sa Floraison mortelle et son ultime avec W.",
+      "Ezreal": "Bloque ses Q avec W : il perd tout son poke.",
+      "Kalista": "Ses bonds l'éloignent de ta tornade : joue autour des knock-ups de ton support.",
+      "Nilah": "Elle se bat au contact et esquive tes attaques avec son Voile de liesse : évite les combats longs."
+    },
+    "mid_game": "Groupe avec ton équipe et prépare les combats autour des knock-ups de tes alliés. Pousse les waves latérales avec Q et E.",
+    "late_game": "Attends les knock-ups de ton équipe, puis ultime sur plusieurs ennemis en l'air. Garde W pour bloquer l'ultime ou le poke du carry adverse.",
+    "ahead": "Force les combats : un ultime sur plusieurs cibles gagne un teamfight.",
+    "behind": "Farm les waves latérales et attends les knock-ups de ton équipe pour entrer.",
+    "win_condition": "Pour gagner cette partie, tu veux bloquer les projectiles des tireurs adverses et gagner les combats avec ton ultime sur plusieurs ennemis en l'air.",
+    "final_tip": "Ton ultime se déclenche aussi sur les knock-ups de tes alliés : choisis un support qui knock-up, et regarde ses sorts."
+  }
+}

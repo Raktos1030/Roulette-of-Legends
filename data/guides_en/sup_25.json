@@ -1,0 +1,43 @@
+{
+ "Renata|sup": {
+  "identity": "Control enchanter. Leverage (passive): her attacks deal extra damage and mark enemies, and her allies deal bonus damage to marked targets. Handshake (Q) roots the first enemy hit; when recast, Renata throws them in a direction (they damage enemies they crash into). Bailout (W) empowers an ally and delays their death: if they take part in a kill during that time, they survive. Loyalty Program (E) fires two projectiles that shield allies and slow enemies, and Hostile Takeover (R) sends out a wave that drives enemies berserk: they attack their own allies.",
+  "playstyle": "Control and turnaround support: her ultimate makes the enemy team fight itself, and Bailout saves her carry from certain death. She dominates tank and dive supports (Nautilus, Pantheon, Swain) and struggles against Zilean.",
+  "early_game": "Poke with Loyalty Program (E), which also shields your ADC. Look for Handshake (Q) on your opponent, then recast to throw them toward your ADC or into their ally. Keep Bailout (W) for the all-in: your ADC keeps hitting even below zero health, and survives if they get the kill.",
+  "level_1": "Loyalty Program (E) first. After that, max E first, then W.",
+  "level_2": "Handshake (Q). Root, then throw the target toward your team.",
+  "level_3": "Bailout (W). On your ADC during an all-in: they can survive lethal damage if they take part in the kill.",
+  "level_6": "Hostile Takeover: enemies hit attack each other. Cast it on both opponents when they engage, or on a grouped team.",
+  "power_spikes": [
+   "Level 2: Q and the throw.",
+   "Level 3: W to win all-ins.",
+   "Level 6: an ultimate that turns an enemy engage around.",
+   "Teamfights: R on several grouped enemies."
+  ],
+  "lane_plan": "Poke with E, look for CC with Q and keep W for decisive fights. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "Basic trade: E, attacks (Leverage mark). All-in: Q → throw → W on your ADC → attacks. Defense: R on the enemy engage, E to shield. Against Zilean, don't force all-ins: his Chronoshift saves the target of your combo.",
+  "jungle_plan": "",
+  "threats": [
+   "Zilean: a hard matchup.",
+   "Xerath: a hard matchup.",
+   "Ranged poke that stops you from getting close for Q."
+  ],
+  "mistakes": [
+   "Casting W too early, before your ADC is in danger.",
+   "Throwing your Q target toward their team instead of yours.",
+   "Casting your ultimate on a single enemy."
+  ],
+  "matchup_notes": {
+   "Thresh": "If his hook catches your ADC, W on them and R on the enemy duo.",
+   "Lulu": "She harasses better: play for CC rather than poke.",
+   "Nautilus": "His engage brings him close to his ADC: R on both, and they attack each other.",
+   "Leona": "Keep R for her engage.",
+   "Zilean": "His Chronoshift saves his allies: wait until he's used it."
+  },
+  "mid_game": "Stick with your carry, place Control Wards and look for CC with Q around objectives.",
+  "late_game": "Stay behind your frontline. R on the grouped enemy team, W on your carry when they dive, Q on the enemy diver.",
+  "ahead": "Force grouped fights: your ultimate wins them.",
+  "behind": "Protect your carry with E and W, and wait for the right moment for your ultimate.",
+  "win_condition": "To win this game, you want to turn enemy engages around with your ultimate and keep your carry alive with Bailout.",
+  "final_tip": "Bailout only saves your ally if they take part in a kill during the effect: give it to whoever can still get one."
+ }
+}

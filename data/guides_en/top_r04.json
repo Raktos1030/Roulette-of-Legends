@@ -1,0 +1,84 @@
+{
+ "Renekton|top": {
+  "identity": "Physical damage fighter, an early-game lane bully. Renekton builds Fury by attacking; at 50 Fury, his next ability is empowered. Cull the Meek (Q) strikes in an area and heals, Ruthless Predator (W) strikes twice and stuns (three times and longer when empowered, breaking shields), Slice and Dice (E) dashes twice, and Dominus (R) makes him grow with area damage.",
+  "playstyle": "Very aggressive lane and Fury-empowered short trades, then tower dives in the mid game. Renekton falls off late: he has to convert his lead quickly. Fury management (reaching 50 at the right time) decides every trade.",
+  "early_game": "Farm with Q to build Fury, then engage with empowered abilities. A trade with E (in) → empowered W → Q → E (out) hurts a lot and lets you leave. Take plates as soon as your opponent recalls.",
+  "level_1": "Cull the Meek (Q) first. Farm and build Fury; an empowered Q on your opponent at level 1 hurts a lot and heals you.",
+  "level_2": "Slice and Dice (E). Two dashes: the first to go in, the second to get out after your Q. A very strong trade at level 2, especially with 50 Fury.",
+  "level_3": "Ruthless Predator (W). Combo: E → empowered W (long stun) → Q → E to get out. With Ignite, it's a kill threat on most top laners.",
+  "level_6": "Dominus: bonus health, area damage and Fury generation. Cast it at the start of an all-in to win the long fight, or to survive a gank.",
+  "power_spikes": [
+   "Levels 2 and 3: very strong trades and all-ins.",
+   "Level 6: an ultimate that wins long fights.",
+   "First completed item: lane dominance.",
+   "Mid game: tower dives with your jungler."
+  ],
+  "lane_plan": "Play a neutral or pushed wave: build Fury on minions and trade with empowered abilities. Take plates and dive with your jungler. Recall when your wave crashes. If your opponent is stronger late, you have to choke them out before 15 minutes.",
+  "trading": "Short trade: E → empowered W → Q → E to get out. Long trade: Dominus → empowered Q → W. Engage when your Fury is at 50; give up on it when you have no Fury and no second E to get out.",
+  "jungle_plan": "",
+  "threats": [
+   "Illaoi and champions who beat you in long fights inside their zone.",
+   "Tanks who soak your burst (Ornn, Dr. Mundo, Cho'Gath).",
+   "Falling off in the late game."
+  ],
+  "mistakes": [
+   "Using W or Q without 50 Fury.",
+   "Using both E's to go in with no way out.",
+   "Playing passively and letting a late-game opponent scale."
+  ],
+  "matchup_notes": {
+   "Yone": "Engage with an empowered W when his E is on cooldown: the stun stops him from snapping back.",
+   "Ambessa": "Trade briefly with Fury and get out with E before she chains her abilities.",
+   "Aatrox": "Dodge his sweet spots with E and trade briefly during his cooldowns.",
+   "Illaoi": "Don't fight on her tentacles and dodge her E: if your spirit gets pulled, back off.",
+   "Ornn": "He soaks your burst and beats you in long fights; poke with Q, take plates and play the map."
+  },
+  "mid_game": "Dive with your jungler, take towers and force fights around objectives while you're still at your peak.",
+  "late_game": "Dive a carry with E → empowered W and get out with the second E. Avoid fighting for long in the middle of the enemy team.",
+  "ahead": "Dive, take towers and force fights: every minute of lead has to turn into an objective.",
+  "behind": "Farm, play around your jungler and look for dives on isolated carries.",
+  "win_condition": "To win this game, you want to dominate the early game, dive with your jungler and convert your lead before the late game.",
+  "final_tip": "Never engage without 50 Fury: it's what makes your W and Q decisive."
+ },
+ "Ornn|top": {
+  "identity": "Tank dealing magic and physical damage, an engage and CC specialist. Volcanic Rupture (Q) leaves a pillar at the end of its path, Bellows Breath (W) breathes flames that make enemies brittle (an attack on a brittle target knocks it up), Searing Charge (E) charges and knocks up if Ornn hits a wall or his pillar, and Call of the Forge God (R) sends out an elemental that he can headbutt back. His passive lets him upgrade his allies' items late in the game.",
+  "playstyle": "Tank and control lane, then teamfight engages in the mid and late game. Ornn is very solid in lane and brings huge value to his whole team late in the game.",
+  "early_game": "Farm and trade with Q, then W (brittle turns your next attack into a knock-up). Keep E to escape or to engage against a wall or your pillar. Your durability lets you play the lane calmly against most fighters.",
+  "level_1": "Volcanic Rupture (Q) first. Poke and create a pillar you can use with E.",
+  "level_2": "Bellows Breath (W). A flame breath that makes the enemy brittle: Q + W + attack is your basic trade. During W, you're immune to slows.",
+  "level_3": "Searing Charge (E). A charge that knocks up if you crash into terrain (wall or pillar). Combo: Q for the pillar → E into the pillar → W → attack on the brittle target.",
+  "level_6": "Call of the Forge God: the elemental slows what it passes through; headbutt it back to knock enemies toward your team. Use it to engage teamfights or gank with your jungler.",
+  "power_spikes": [
+   "Level 3: Q + E into the pillar + W combo.",
+   "Level 6: long-range engage with your ultimate.",
+   "Item upgrades for your team late in the game: huge team value.",
+   "Late game: dominant tank and engage."
+  ],
+  "lane_plan": "Farm safely and trade with Q and W. Use the lane's walls for your E. Recall when your wave crashes. Your passive lets you buy items in lane, so you can stay longer without losing minions.",
+  "trading": "Short trade: Q + W + attack on the brittle target. Long trade: Q → E into the pillar → W → attack. Engage when your Q lands; give up on it against champions who kite you from range.",
+  "jungle_plan": "",
+  "threats": [
+   "Fiora and percent-health damage.",
+   "Ranged kiting.",
+   "Shen and champions who win long fights."
+  ],
+  "mistakes": [
+   "Missing E into the pillar or wall (no knock-up).",
+   "Using your ultimate when your team can't follow.",
+   "Forgetting item upgrades for your team late in the game."
+  ],
+  "matchup_notes": {
+   "Yone": "Keep E for his engage and make him brittle with W: your knock-up breaks his combo.",
+   "Nasus": "Punish him early with Q + W and avoid fights under Wither.",
+   "Darius": "Your durability holds up against his bleeds; knock him up with W + attack when he steps up.",
+   "Garen": "Avoid his silence and trade with Q + W when his Q is on cooldown.",
+   "Fiora": "She Ripostes your knock-up: wait for her Riposte before using W + attack."
+  },
+  "mid_game": "Play around objectives and set up engages with your ultimate. Keep vision on the walls around objectives for your E's.",
+  "late_game": "Teamfight engage: ultimate on several targets, then E and W. Protect your carries when you have no engage.",
+  "ahead": "Roam with your jungler, engage with your ultimate and force fights around objectives.",
+  "behind": "Farm, tank for your team and upgrade their items: your impact stays huge even without a lead.",
+  "win_condition": "To win this game, you want to survive the lane, empower your whole team late in the game and engage teamfights with your ultimate.",
+  "final_tip": "Recast your ultimate the moment the elemental reaches your target, to knock them toward your team."
+ }
+}

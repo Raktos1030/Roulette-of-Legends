@@ -1,0 +1,84 @@
+{
+ "Illaoi|top": {
+  "identity": "Physical damage juggernaut who fights with tentacles. Her passive regularly spawns tentacles on nearby walls; they slam when she uses Tentacle Smash (Q), Harsh Lesson (W) or when she hits the spirit pulled out by Test of Spirit (E). Every tentacle slam on a champion heals her. Leap of Faith (R) spawns a tentacle for every champion hit.",
+  "playstyle": "Zone control and long fights. Illaoi dominates when she fights near walls (where her tentacles spawn), especially after catching the enemy's spirit. Weak against kiting and mobility, very strong against fighters who accept a melee fight.",
+  "early_game": "Farm near the lane's walls so your tentacles are always in range. Trade when your E lands: hit the spirit to damage your opponent and heal yourself with tentacles. If the spirit isn't killed or your opponent moves too far away, they become a Vessel: tentacles slam them automatically.",
+  "level_1": "Orders vary a lot: Q → W → E or W → E → Q. At level 1, farm and avoid long fights: you don't have your E yet.",
+  "level_2": "W or E depending on the order you chose. Harsh Lesson (W) leaps onto the target and makes nearby tentacles slam; Test of Spirit (E) pulls out the spirit of the first champion hit (minions block it, so aim down a clear line).",
+  "level_3": "Full kit. Combo: E → hit the spirit → W → Q, on your tentacles. E is the ability you max first.",
+  "level_6": "Leap of Faith: a slam on the ground, a tentacle spawns per champion hit and your tentacles slam faster. Cast it when your opponent is in range: you win almost every long fight in your zone, especially against several enemies.",
+  "power_spikes": [
+   "Level 3: E + tentacles, big trades.",
+   "Level 6: an ultimate that wins long fights, even 1v2.",
+   "First completed item: very strong in duels.",
+   "Mid game: zone dominance around objectives."
+  ],
+  "lane_plan": "Play near walls: your tentacles spawn there and it's your fighting zone. Farm, set up tentacles and trade when your E lands. If your opponent runs from you, let them go: an unkilled spirit becomes a Vessel and your tentacles keep slamming them. Recall when your tentacles are destroyed and your health is low.",
+  "trading": "Basic trade: E, then hit the spirit (not the champion) to make tentacles slam. Long trade: W + Q + R on your tentacles. Engage when your E has landed; give up on it if you missed it against a fighter who beats you in melee range without tentacles.",
+  "jungle_plan": "",
+  "threats": [
+   "Ranged kiting (Kayle, Varus, Teemo).",
+   "Champions who destroy your tentacles or cut you off from your zone (Mordekaiser with his ultimate).",
+   "Ganks while your E is on cooldown."
+  ],
+  "mistakes": [
+   "Throwing E through minions (it gets blocked).",
+   "Fighting far from walls, without tentacles.",
+   "Casting your ultimate with no champion in range."
+  ],
+  "matchup_notes": {
+   "Nasus": "Punish him on every stack with E + tentacles.",
+   "Darius": "Hit his spirit on your tentacles and avoid his Apprehend outside your zone.",
+   "Renekton": "He sticks to you, which suits you: let him into your zone, E, then ultimate.",
+   "Mordekaiser": "His ultimate cuts you off from your tentacles: keep your abilities for when you leave the Realm of Death.",
+   "Kayle": "Punish her early in melee range; after her level 6, she kites you out of your zone."
+  },
+  "mid_game": "Split pushing and zone dominance. Illaoi is strong in the side lane and near objectives, whose areas are surrounded by walls.",
+  "late_game": "Zone frontline: ultimate on several champions, then fight on your tentacles. Avoid fighting in the middle of the river, far from walls.",
+  "ahead": "Force duels in the side lane, dive with your jungler and control objective areas.",
+  "behind": "Farm, defend your tower with your tentacles and play for teamfights around objectives.",
+  "win_condition": "To win this game, you want to force your opponent to fight in your tentacle zone, in lane and in teamfights.",
+  "final_tip": "Before every fight, check where your tentacles are: Illaoi without tentacles is just an average fighter."
+ },
+ "Irelia|top": {
+  "identity": "Very mobile physical damage fighter. Bladesurge (Q) dashes onto a target and resets if it dies or is marked, Flawless Duet (E) places two blades that stun and mark enemies between them, Defiant Dance (W) reduces damage taken before striking, and Vanguard's Edge (R) marks several targets and creates a wall of blades. Her passive (Ionian Fervor) builds stacks that increase her attack speed and, at max stacks, her damage.",
+  "playstyle": "Aggressive trades and all-ins at full stacks. Irelia is very strong in lane when she keeps her stacks, especially against champions without CC. Very mechanical and dependent on the minion wave for her dashes.",
+  "early_game": "Build your passive stacks by dashing onto minions with Q (last hits), then engage on your opponent. Use E to stun and mark: the next Q on a marked target resets. Play around the size of the wave: the bigger it is, the more mobile you are.",
+  "level_1": "Bladesurge (Q) first. Use it to last hit and build stacks without taking hits.",
+  "level_2": "Flawless Duet (E). Stuns and marks: E → Q on the marked target → attacks is your basic trade, one of the strongest level 2s in top.",
+  "level_3": "Defiant Dance (W). Damage reduction, then a strike: keep it to soak the enemy burst or a tower during a dive.",
+  "level_6": "Vanguard's Edge marks every target hit and creates a wall that slows. With your ultimate, you can chain reset Q's onto several champions: a very strong all-in threat.",
+  "power_spikes": [
+   "Level 2: E + Q, a big all-in.",
+   "Level 6: ultimate, a dominant all-in.",
+   "First completed item: very strong in duels.",
+   "Two items: dangerous in messy teamfights."
+  ],
+  "lane_plan": "Play a neutral wave, build your stacks on minions and engage when you have them. Keep a health margin before going in: Q heals a little but you have no real sustain. Recall when your wave crashes. Avoid fighting without minions to dash on.",
+  "trading": "Short trade: Q on a minion (stacks) → E → Q on the marked target → attacks → Q on a minion to get out. Long trade: W to soak damage, then your ultimate. Engage when your opponent has used their CC; give up on it if you have no stacks or minions to get out.",
+  "jungle_plan": "",
+  "threats": [
+   "Hard CC that breaks your combos (Warwick, Poppy).",
+   "Armored tanks who withstand your burst (Malphite).",
+   "Duelists who win long melee fights (Jax, Sett)."
+  ],
+  "mistakes": [
+   "Dashing onto your opponent without stacks or a mark.",
+   "Using W too early, before the enemy burst.",
+   "Staying in a long fight against a champion who outlasts you."
+  ],
+  "matchup_notes": {
+   "Jayce": "Stick to him in cannon form; he can't easily knock you back if you stay near minions.",
+   "Yone": "Build your stacks before engaging and keep W for his Q3.",
+   "Jax": "Don't engage during his Counter Strike; wait for the dodge to end before casting E.",
+   "Malphite": "His armor bothers you and his ultimate stops you; farm and avoid long fights.",
+   "Aatrox": "Dodge his sweet spots with Q and punish his cooldowns."
+  },
+  "mid_game": "Split pushing or river skirmishes. Irelia is strong in messy fights where she can chain reset Q's.",
+  "late_game": "Go in after the enemy CC, mark several targets with your ultimate and chain your Q's. Avoid being the first one in against a team with CC.",
+  "ahead": "Force duels, dive with your jungler and make your side lane respected.",
+  "behind": "Farm, play teamfights after the enemy CC and avoid duels against champions who are further ahead.",
+  "win_condition": "To win this game, you want to dominate your lane with your stacks, then clean up messy fights by chaining Q's.",
+  "final_tip": "Before engaging, check your passive stacks: at full stacks, you win the trade; without them, you lose it."
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "JarvanIV|jgl": {
+  "identity": "Physical damage fighter-tank, an early gank and engage specialist. Demacian Standard (E) plants a flag, Dragon Strike (Q) strikes in a line and, if it reaches the flag, pulls him to it and knocks up everything in his path: that's the E-Q combo. Golden Aegis (W) gives a shield and slows, Cataclysm (R) traps enemies in an arena, and his passive deals percent-health damage on the first attack on each target.",
+  "playstyle": "Early-game engage jungler: ganks from level 3 with E-Q, dives and teamfight engages with his ultimate. He has to build his lead early.",
+  "early_game": "Clear fast, then gank at level 3 with E-Q, which knocks up and closes the gap: one of the best early ganks. Also use E-Q to go over walls and escape ganks. Control Scuttle and invade when your laners have priority.",
+  "level_1": "Demacian Standard (E) first. The flag gives nearby allies attack speed and armor.",
+  "level_2": "Dragon Strike (Q). E-Q: throw the flag, then Q toward it to launch yourself and knock up. It's your gank and mobility tool.",
+  "level_3": "Golden Aegis (W). Shield and slow: E-Q to knock up, then W to stop the escape. A very strong first gank.",
+  "level_6": "Cataclysm: you leap onto a target and trap it in an arena. Use it to isolate a carry in teamfights or to stop an escape on a gank. You can recast it to destroy the arena.",
+  "power_spikes": [
+   "Level 3: E-Q + W gank.",
+   "Level 6: an arena to isolate a target.",
+   "First completed item: very strong ganks and engages.",
+   "Mid game: teamfight engages."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear up to level 3, then gank the most favorable lane. Jarvan IV wants to build a lead early: ganks, invades with your laners, Scuttle control. Take Void Grubs (around 8 minutes) and dragons with a lane that has priority. Keep E-Q to escape if you get invaded.",
+  "trading": "Ganking: E-Q to knock up → W → attacks. Skirmishing: E-Q on several targets, then R on the carry to isolate it. Give up on it if your E-Q misses and your opponent has an escape.",
+  "threats": [
+   "Junglers who beat him in duels (Rek'Sai, Wukong, Master Yi).",
+   "CC that interrupts you before E-Q.",
+   "Long games where your impact drops."
+  ],
+  "mistakes": [
+   "Missing E-Q (badly placed flag).",
+   "Using your ultimate on a tank instead of a carry.",
+   "Locking your own team out with your ultimate."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "You're both strong early: be faster on ganks.",
+   "Graves": "He beats you in duels: gank where he isn't.",
+   "Viego": "Isolate him with your ultimate when he dives.",
+   "Wukong": "His clone fools you: save E-Q for the real Wukong.",
+   "Master Yi": "His Alpha Strike dodges your E-Q: cast it after his dash."
+  },
+  "mid_game": "Engages and dives. Jarvan IV is great at starting fights around objectives.",
+  "late_game": "Teamfight engage: E-Q onto several targets, R on the carry. Wait until your team can follow.",
+  "ahead": "Choke out the enemy jungler, dive with your laners and take objectives.",
+  "behind": "Look for picks with E-Q and play with your team.",
+  "win_condition": "To win this game, you want to build an early lead through E-Q ganks, then engage teamfights with your ultimate.",
+  "final_tip": "Place your flag behind the target before casting Q: that's what knocks it up."
+ }
+}

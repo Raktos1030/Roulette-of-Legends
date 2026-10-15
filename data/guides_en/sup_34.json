@@ -1,0 +1,42 @@
+{
+ "Taliyah|sup": {
+  "identity": "Control mage. Rock Surfing (passive): she moves faster near walls. Threaded Volley (Q) fires a volley of rocks and creates worked ground under her; cast again on that ground, it consumes it to throw a big boulder that slows. Seismic Shove (W) erupts the ground and knocks enemies in the chosen direction, Unraveled Earth (E) lays a minefield that slows; an enemy who dashes or is knocked onto it detonates the mines and is stunned. Weaver's Wall (R) creates a very long wall she can surf on.",
+  "playstyle": "Control support: she lays her mines, then knocks her opponent onto them with W for the stun, and cuts fights apart with her wall.",
+  "early_game": "Poke with Threaded Volley (Q). Look for the E → W combo: lay the mines, then knock your opponent through them for the stun. Supports who dash (hooks, charges) set off your mines themselves: place them in front of your ADC.",
+  "level_1": "Threaded Volley (Q) first. After that, max Q first.",
+  "level_2": "Unraveled Earth (E). Mines in front of your ADC: an enemy engage triggers the stun.",
+  "level_3": "Seismic Shove (W). Combo: E, then W to knock your opponent through the mines.",
+  "level_6": "Weaver's Wall: a very long wall that blocks the way. Cut off the enemy's escape, split the enemy team in two, or use it to roam by surfing on it.",
+  "power_spikes": [
+   "Level 3: E → W combo.",
+   "Level 6: wall to cut fights apart.",
+   "First completed item: stronger Q poke.",
+   "Mid game: fast roams thanks to your passive and wall."
+  ],
+  "lane_plan": "Poke with Q, lay your mines against engages and play the E → W combo. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "Basic trade: Q. All-in: E → W through the mines → Q. Defense: mines in front of your ADC, W to knock back a diver. Against hooks (Blitzcrank), stay behind minions.",
+  "jungle_plan": "",
+  "threats": [
+   "Blitzcrank: a hard matchup.",
+   "Nami and Leona: hard matchups.",
+   "Assassins and engages: you're fragile."
+  ],
+  "mistakes": [
+   "Knocking your opponent with W with no mines behind them.",
+   "Placing the wall so it blocks your own ADC.",
+   "Wasting E to poke instead of keeping it against an engage."
+  ],
+  "matchup_notes": {
+   "Thresh": "Place your mines in front of your ADC: his engage sets them off.",
+   "Lulu": "She pokes: play the E → W combo rather than trades.",
+   "Nautilus": "His anchor pulls him forward onto your mines.",
+   "Nami": "Dodge her bubble and stay at range."
+  },
+  "mid_game": "Roam thanks to your speed near walls, place Control Wards and cut off paths with your ultimate.",
+  "late_game": "Stay behind your frontline, lay your mines in front of your carry and knock divers onto them with W. The wall splits the enemy team in two.",
+  "ahead": "Roam and create picks with your wall.",
+  "behind": "Protect your ADC with your mines and W.",
+  "win_condition": "To win this game, you want to control the terrain with your mines and wall and stun enemy engages.",
+  "final_tip": "Dashes and knock-ups set off your mines: place them where your opponent will engage, then W to finish the job."
+ }
+}

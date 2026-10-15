@@ -1,0 +1,43 @@
+{
+ "Yuumi|sup": {
+  "identity": "Attached enchanter. You and Me! (W), available from level 1, dashes her to an ally and attaches her: only turrets can target her then. Feline Friendship (passive): regularly, hitting a champion heals her and empowers the heal on the next ally she joins; she also builds a bond with her allies, and her Best Friend empowers her abilities. Prowling Projectile (Q) fires a projectile that damages and slows (stronger after a long flight, and steerable while attached), Zoomies (E) gives a shield plus movement and attack speed (to the ally carrying her if attached), and Final Chapter (R) sends out five waves that damage enemies and heal allies.",
+  "playstyle": "Companion support: attached to her carry, she heals them, speeds them up and pokes with Q, without being targetable. She clearly loses to every common engage support (Thresh, Nautilus, Leona, Alistar, Braum, Rell), because her ADC ends up alone against two opponents. She mostly beats slow mages (Swain, Brand, Xerath, Lux, Morgana).",
+  "early_game": "Stay attached to your ADC and poke with Q, steering it toward your opponent (the longer it flies, the harder it hits). Give Zoomies (E) to your ADC during their trades. Only detach to hit a champion with an attack (passive heal) when it's safe.",
+  "level_1": "Prowling Projectile (Q) first; You and Me! (W) is already available. Most common paths: Q → E → Q → E → Q; Q → E → E. Level Q and E; W only gets ranks at the very end.",
+  "level_2": "Zoomies (E). A shield plus movement and attack speed for your ADC.",
+  "level_3": "Keep leveling Q and E. Poke with a steered Q, E on your ADC in every trade.",
+  "level_6": "Final Chapter: five waves that damage enemies and heal allies. You can move and switch allies while channeling: follow the fight.",
+  "power_spikes": [
+   "Level 2: Q + E on your ADC.",
+   "Level 6: healing and damage ultimate.",
+   "First completed item: stronger heals and shields.",
+   "Late game: a carry constantly protected and sped up."
+  ],
+  "lane_plan": "Stay attached, poke with Q and play around your ADC. Against an engage support, play very carefully: your ADC is alone against two opponents. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored), but while attached, you have to pick the right moment to detach and place them.",
+  "trading": "Basic trade: a steered Q on your opponent, E on your ADC. All-in: R, Q, E constantly. Defense: E for escape speed, R to heal. Against engage supports, don't let your ADC step up.",
+  "jungle_plan": "",
+  "threats": [
+   "Thresh, Nautilus and Leona: common opponents and hard matchups.",
+   "Alistar, Braum and Rell: hard matchups.",
+   "Enemy healing reduction."
+  ],
+  "mistakes": [
+   "Staying attached to a dying ADC instead of switching to another ally.",
+   "Forgetting vision: you have to detach to place wards.",
+   "Throwing Q straight instead of letting it fly for more damage."
+  ],
+  "matchup_notes": {
+   "Lulu": "Poke trades: your steered Q is hard to dodge.",
+   "Thresh": "If he catches your ADC, E and R to save them.",
+   "Nautilus": "His engage on your ADC is hard to survive: play behind minions.",
+   "Seraphine": "A poke trade that suits you.",
+   "Swain": "He's slow: poke him with Q."
+  },
+  "mid_game": "Switch from one ally to another depending on the fight. Detach to place Control Wards when it's safe.",
+  "late_game": "Attach to your best carry (ideally your Best Friend): E constantly, Q to slow, R at the start of the fight. Switch allies if your host dies.",
+  "ahead": "Stick with the strongest carry: they become almost impossible to kill.",
+  "behind": "Stay on the safest carry and heal: avoid fights against engagers.",
+  "win_condition": "To win this game, you want to make your carry strong and durable enough to win fights on their own.",
+  "final_tip": "Let your Q fly as long as possible before it hits: it deals more damage and slows more."
+ }
+}

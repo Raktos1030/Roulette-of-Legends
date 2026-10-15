@@ -1,0 +1,84 @@
+{
+ "Gnar|top": {
+  "identity": "Two-form fighter. Mini Gnar pokes from range with Boomerang Throw (Q) and deals percent-health damage on every third hit (Hyper, W); Mega Gnar, who appears when the rage bar is full, becomes a CC tank whose GNAR! (R) slams enemies into a wall.",
+  "playstyle": "Kiting and poke lane in mini form, then area engages in mega form. Everything revolves around rage management: knowing when you'll transform and when you'll drop back. Strong in teamfights thanks to his ultimate.",
+  "early_game": "Poke with Q and Hyper's three hits, keeping your distance. Avoid long fights in mini form against fighters who stick to you. Watch your rage: a trade in mega form is much stronger than in mini form.",
+  "level_1": "Boomerang Throw (Q) first. Poke from range and farm; the boomerang comes back, so catch it to lower its cooldown.",
+  "level_2": "Hyper / Wallop (W). In mini form, the third attack or ability on a target deals percent-health damage and gives you speed. Use it to kite.",
+  "level_3": "Hop / Crunch (E). A repositioning hop in mini form (you can bounce off a unit), a slowing leap in mega form. Keep it to escape an engage.",
+  "level_6": "GNAR! (mega form only) knocks back and stuns against a wall. Build your rage so you're in mega form when a gank or fight happens: it's your big engage spike.",
+  "power_spikes": [
+   "Level 3 in mini form: kiting with all three abilities.",
+   "Level 6: mega form ultimate into a wall.",
+   "First completed item: better poke and staying power.",
+   "Mid-game teamfights: a decisive area ultimate."
+  ],
+  "lane_plan": "Play the wave in the middle, poke with Q and your three hits. Keep your rage low when you want to stay mini (kiting) and build it before a fight or gank. Recall when you've just dropped back to mini form with low health. For your ultimate, take fights near the lane's walls.",
+  "trading": "Mini form: three attacks/abilities for Hyper, then back off. Mega form: W (stun) → E → R into a wall. Engage when your rage is full and your opponent is near a wall; give up on it when you're about to drop back to mini.",
+  "jungle_plan": "",
+  "threats": [
+   "Fighters who stick to you in mini form (Malphite, Wukong, Irelia).",
+   "Dropping back to mini form in the middle of a fight.",
+   "Ganks while your E is on cooldown."
+  ],
+  "mistakes": [
+   "Transforming into mega form with nothing to engage on.",
+   "Missing Q and being left with no poke.",
+   "Engaging with your ultimate far from walls."
+  ],
+  "matchup_notes": {
+   "Malphite": "He pokes you and engages from range; farm carefully and keep E to escape his ultimate.",
+   "Yone": "Kite him in mini form and engage in mega form when his E is on cooldown.",
+   "Nasus": "Wither makes you very slow in mini form. Poke early to limit his stacks.",
+   "Garen": "Kite him out of his Q and don't get caught in a bush.",
+   "Darius": "Don't stay in melee range in mini form; keep E for his Apprehend."
+  },
+  "mid_game": "Play around objectives: your mega form and ultimate change river fights. Farm a side lane while waiting for rage.",
+  "late_game": "Control frontline in mega form: ultimate on several targets into a wall. Build your rage before the fight.",
+  "ahead": "Force fights near walls, take towers and dominate the side lane with your poke.",
+  "behind": "Farm from range, avoid duels and play for your ultimate in teamfights.",
+  "win_condition": "To win this game, you want to reach teamfights in mega form and slam several enemies into a wall with GNAR!",
+  "final_tip": "Check your rage bar before every fight: going mega at the right moment is worth more than anything else."
+ },
+ "Gwen|top": {
+  "identity": "Fighter dealing magic and true damage who shreds tanks with percent-health damage (passive A Thousand Cuts). Snip Snip! (Q) deals true damage in the center, Hallowed Mist (W) protects her from attacks from outside, Skip 'n Slash (E) gives her mobility and attack speed, and Needlework (R) throws needles in three casts.",
+  "playstyle": "Medium trades and long fights, especially against tanks and slow fighters. Gwen scales well and dominates the side lane and extended fights. Depends on managing the Mist and landing the center of Q.",
+  "early_game": "Farm and stack Q with your attacks (each attack adds a snip). Trade when you have 4 stacks and can land the center of Q. Keep E to escape or stick to a target.",
+  "level_1": "Snip Snip! (Q) first. Stack Q by hitting minions, then release it on your opponent.",
+  "level_2": "Skip 'n Slash (E). A dash that increases attack speed and range: E + auto + Q is a good short trade.",
+  "level_3": "Hallowed Mist (W). It makes you untargetable by enemies outside the mist: you cancel poke and ranged abilities. Keep it for long fights.",
+  "level_6": "Needlework: three needle casts that slow and deal damage. You win long fights and can finish a fleeing target.",
+  "power_spikes": [
+   "Level 3: centered Q + E + W.",
+   "Level 6: three-cast ultimate.",
+   "First completed item: percent-health damage against tanks.",
+   "Two items: side-lane dominance."
+  ],
+  "lane_plan": "Play a neutral or pushed wave, stack Q on minions and trade when you can land the center. Recall when your wave crashes. The Mist is very strong near walls to block poke.",
+  "trading": "Short trade: E → auto → centered Q. Long trade: W to block attacks from outside, then your ultimate. Engage when the enemy CC ability is on cooldown; give up on it if you can't stay inside your Mist.",
+  "jungle_plan": "",
+  "threats": [
+   "Hard CC that pulls you out of your Mist.",
+   "Ranged kiting (Kayle, Kennen).",
+   "Singed and champions who wear you down in long fights."
+  ],
+  "mistakes": [
+   "Casting Q without 4 stacks, which splits your damage.",
+   "Leaving your Mist just as your opponent uses their burst.",
+   "Engaging without your ultimate against a stronger duelist."
+  ],
+  "matchup_notes": {
+   "Nasus": "Punish him early with a centered Q and keep W for his engage during his ultimate.",
+   "Malphite": "Your percent-health damage cuts through his armor. Keep W against his ultimate.",
+   "Yone": "He wins quick trades; keep W for his Q3 and trade when his E is on cooldown.",
+   "Dr. Mundo": "You ignore his size: take long fights whenever you want.",
+   "Fiora": "She Ripostes your CC and wins duels. Play for scaling and avoid long fights without your ultimate."
+  },
+  "mid_game": "Split push or group around objectives. Gwen wins extended fights against frontlines.",
+  "late_game": "Go in after the enemy CC, shred the frontline or dive a carry with E, and stay inside your Mist.",
+  "ahead": "Force duels in the side lane, dive with your jungler and make your split push respected.",
+  "behind": "Farm, stack Q on minions and play teamfights against tanks, where your percent-health damage matters most.",
+  "win_condition": "To win this game, you want to scale in the side lane, then shred the enemy frontline in extended fights.",
+  "final_tip": "Always release your Q with 4 stacks and aim for the center: that's where the true damage is."
+ }
+}

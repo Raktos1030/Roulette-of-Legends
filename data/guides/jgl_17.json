@@ -1,0 +1,43 @@
+{
+  "Karthus|jgl": {
+    "identity": "Mage à dégâts magiques qui farm la jungle avec des sorts de zone. Dévastation (Q) explose au sol (dégâts doublés sur une cible isolée), Mur de douleur (W) slow et réduit la résistance magique, Souillure (E) brûle autour de lui, et Requiem (R) frappe tous les champions ennemis de la carte après une canalisation. Même mort, il continue de lancer ses sorts quelques secondes (passif Déni de mort).",
+    "playstyle": "Jungler de farm pur et de scaling, avec un ultime global qui transforme chaque escarmouche en kill. Karthus ne gank presque pas en early : il farme très vite et arrive en mid game avec plus d'or et d'XP. Il est très vulnérable aux invasions.",
+    "early_game": "Clear complet en spammant Q sur les camps, avec E actif sur les camps groupés. Place des wards sur tes entrées de jungle : tu perds tous les duels. Surveille la carte : dès que tu as l'ultime, chaque combat en lane peut devenir un kill.",
+    "level_1": "Dévastation (Q) en premier. Spam Q sur les camps.",
+    "level_2": "Souillure (E). Aura de dégâts pour les camps groupés ; désactive-la pour économiser ton mana.",
+    "level_3": "Second point en Q ; Mur de douleur (W) arrive au niveau 4. Q est maximisé en priorité.",
+    "level_6": "Requiem : après une canalisation, tous les champions ennemis visibles ou non sont touchés. Utilise-le pour finir des cibles basses partout sur la carte, surtout après des combats en lane. Cache-toi avant de canaliser.",
+    "power_spikes": [
+      "Niveau 6 : Requiem global.",
+      "Premier item complet : clear et dégâts élevés.",
+      "Deux items : teamfights dévastateurs.",
+      "Passif : même mort, tu continues de faire des dégâts."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Full clear le plus vite possible, en évitant tout combat. Karthus est un des junglers les plus rapides pour farmer : prends tous les camps, les crabes et les Larves (vers 8 min) si c'est sûr. Garde de la vision sur tes entrées : les invasions sont ton pire ennemi. Après le 6, surveille les PV des adversaires en lane : Requiem finit les combats à distance.",
+    "trading": "En escarmouche : W pour slow, Q sur les cibles isolées, E actif. En teamfight : place-toi derrière ta frontline, spam Q et garde Requiem pour finir plusieurs cibles. Même mort, continue de lancer tes sorts. Abandonne contre les junglers qui te divent (Xin Zhao, Bel'Veth).",
+    "threats": [
+      "Invasions et duels : tu perds contre presque tous les junglers en early.",
+      "Assassins et divers (Xin Zhao, Bel'Veth).",
+      "Nidalee, qui farm aussi vite et te poke."
+    ],
+    "mistakes": [
+      "Accepter des duels en early.",
+      "Canaliser Requiem en vue de l'ennemi.",
+      "Laisser E activé hors combat."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il t'envahira : garde vision et farm de l'autre côté.",
+      "Graves": "Il vole tes camps : ne te bats pas.",
+      "Viego": "Tu scales mieux : farm et punis-le en teamfight.",
+      "Nidalee": "Elle farm aussi vite et te poke : joue avec ton équipe.",
+      "Xin Zhao": "Il te dive : garde des alliés près de toi."
+    },
+    "mid_game": "Farm, Requiem sur les escarmouches et objectifs. Karthus est très fort pour punir les combats en lane.",
+    "late_game": "Mage de zone : spam Q derrière ta frontline, Requiem pour finir plusieurs cibles.",
+    "ahead": "Prends les objectifs et force les combats : tes dégâts de zone deviennent énormes.",
+    "behind": "Farm et scale : Karthus reste dangereux en late game.",
+    "win_condition": "Pour gagner cette partie, tu veux farmer plus vite que l'adversaire, finir les escarmouches avec Requiem et dominer les teamfights.",
+    "final_tip": "Surveille les barres de PV des adversaires sur la carte : un Requiem au bon moment vaut plusieurs kills."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "Gnar|top": {
+    "identity": "Combattant à deux formes. Mini Gnar poke à distance avec Jet de boomerang (Q) et inflige des dégâts en pourcentage des PV sur trois attaques (Agitation, W) ; Méga Gnar, qui apparaît quand la barre de rage est pleine, devient un tank à CC dont GNAR ! (R) projette les ennemis contre un mur.",
+    "playstyle": "Lane de kiting et de poke en mini forme, puis engage de zone en méga forme. Tout tourne autour de la gestion de la rage : savoir quand tu vas te transformer et quand tu vas retomber. Fort en teamfight grâce à l'ultime.",
+    "early_game": "Poke avec Q et les trois attaques d'Agitation, en gardant tes distances. Évite les combats longs en mini forme contre les combattants qui te collent. Surveille ta rage : un trade en méga forme est bien plus fort qu'en mini.",
+    "level_1": "Jet de boomerang (Q) en premier. Poke à distance et farm ; le boomerang revient, rattrape-le pour réduire son temps de recharge.",
+    "level_2": "Agitation / Beigne (W). En mini forme, la troisième attaque ou sort sur une cible inflige des dégâts en pourcentage des PV et te donne de la vitesse. Utilise-le pour kiter.",
+    "level_3": "Rebond / Aplatissement (E). Saut de repositionnement en mini forme (tu peux rebondir sur une unité), saut avec slow en méga forme. Garde-le pour fuir un engage.",
+    "level_6": "GNAR ! (méga forme uniquement) projette et stun contre un mur. Prépare ta rage pour être en méga forme au moment d'un gank ou d'un combat : c'est ton gros pic d'engage.",
+    "power_spikes": [
+      "Niveau 3 en mini forme : kiting avec les trois sorts.",
+      "Niveau 6 : ultime en méga forme contre un mur.",
+      "Premier item complet : poke et durée de combat meilleurs.",
+      "Teamfights de mid game : ultime de zone décisif."
+    ],
+    "lane_plan": "Joue la wave au centre, poke au Q et aux trois attaques. Garde la rage basse quand tu veux rester en mini (kiting) et fais-la monter avant un combat ou un gank. Recall quand tu viens de retomber en mini avec peu de PV. Pour l'ultime, positionne les combats près des murs de la lane.",
+    "trading": "Mini forme : trois attaques/sorts pour Agitation puis recul. Méga forme : W (stun) → E → R contre un mur. Engage quand ta rage est pleine et que l'adversaire est près d'un mur ; abandonne quand tu vas retomber en mini.",
+    "jungle_plan": "",
+    "threats": [
+      "Combattants qui te collent en mini forme (Malphite, Wukong, Irelia).",
+      "Tomber en mini forme au milieu d'un combat.",
+      "Ganks quand ton E est en recharge."
+    ],
+    "mistakes": [
+      "Se transformer en méga forme sans rien pour engager.",
+      "Rater Q et rester sans poke.",
+      "Engager avec l'ultime loin des murs."
+    ],
+    "matchup_notes": {
+      "Malphite": "Il te poke et t'engage à distance ; farm prudemment et garde E pour fuir son ultime.",
+      "Yone": "Kite-le en mini forme et engage en méga forme quand son E est en recharge.",
+      "Nasus": "Flétrissement te rend très lent en mini forme. Poke tôt pour limiter ses stacks.",
+      "Garen": "Kite-le hors de son Q et ne te laisse pas surprendre dans un bush.",
+      "Darius": "Ne reste pas au contact en mini forme ; garde E pour son Crampon."
+    },
+    "mid_game": "Joue autour des objectifs : ta méga forme et l'ultime changent les combats en rivière. Farm une side lane en attendant la rage.",
+    "late_game": "Frontline de contrôle en méga forme : ultime sur plusieurs cibles contre un mur. Prépare ta rage avant le combat.",
+    "ahead": "Force des combats près des murs, prends les tours et domine la side lane avec ton poke.",
+    "behind": "Farm à distance, évite les duels et joue pour l'ultime en teamfight.",
+    "win_condition": "Pour gagner cette partie, tu veux arriver aux teamfights en méga forme et projeter plusieurs ennemis contre un mur avec GNAR !.",
+    "final_tip": "Regarde ta barre de rage avant chaque combat : entrer en méga forme au bon moment vaut plus que tout le reste."
+  },
+  "Gwen|top": {
+    "identity": "Combattante à dégâts magiques et vrais qui découpe les tanks en pourcentage des PV (passif Mille coupures). Tchac, tchac ! (Q) inflige des dégâts vrais au centre, Brume sacrée (W) la protège des attaques extérieures, Élan incisif (E) lui donne mobilité et vitesse d'attaque, Piqûre (R) lance des aiguilles en trois temps.",
+    "playstyle": "Trades moyens et combats longs, surtout contre les tanks et les combattants lents. Gwen scale bien et domine la side lane et les combats prolongés. Dépend de la gestion de la Brume et de la précision du centre du Q.",
+    "early_game": "Farm et stack le Q avec tes attaques (chaque attaque ajoute un tchac). Trade quand tu as 4 stacks et que tu peux toucher le centre du Q. Garde E pour fuir ou coller.",
+    "level_1": "Tchac, tchac ! (Q) en premier. Stack le Q en frappant les sbires, puis relâche-le sur l'adversaire.",
+    "level_2": "Élan incisif (E). Dash qui augmente la vitesse d'attaque et la portée : E + auto + Q est un bon trade court.",
+    "level_3": "Brume sacrée (W). Elle te rend inciblable par les ennemis hors de la brume : tu annules les poke et les sorts à distance. Garde-la pour les combats longs.",
+    "level_6": "Piqûre : trois lancers d'aiguilles qui slow et infligent des dégâts. Tu gagnes des combats longs et tu peux finir une cible qui fuit.",
+    "power_spikes": [
+      "Niveau 3 : Q centre + E + W.",
+      "Niveau 6 : ultime en trois temps.",
+      "Premier item complet : dégâts en pourcentage contre les tanks.",
+      "Deux items : domination de side lane."
+    ],
+    "lane_plan": "Joue une wave neutre ou poussée, stack le Q sur les sbires et trade quand tu peux toucher le centre. Recall quand ta wave crash. La Brume est très forte près des murs pour bloquer les poke.",
+    "trading": "Trade court : E → auto → Q centré. Trade long : W pour bloquer les attaques extérieures, puis ultime. Engage quand le sort de CC adverse est en recharge ; abandonne si tu ne peux pas rester dans la Brume.",
+    "jungle_plan": "",
+    "threats": [
+      "CC durs qui te sortent de ta Brume.",
+      "Kiting à distance (Kayle, Kennen).",
+      "Singed et les champions qui te fatiguent en combat long."
+    ],
+    "mistakes": [
+      "Lancer Q sans 4 stacks, ce qui divise tes dégâts.",
+      "Sortir de ta Brume au moment où l'adversaire utilise son burst.",
+      "Engager sans ultime contre un duelliste plus fort."
+    ],
+    "matchup_notes": {
+      "Nasus": "Punis-le tôt avec Q centré et garde W pour son engage sous ultime.",
+      "Malphite": "Tes dégâts en pourcentage transpercent son armure. Garde W contre son ultime.",
+      "Yone": "Il gagne les trades rapides ; garde W pour son Q3 et trade quand son E est en recharge.",
+      "Dr. Mundo": "Tu ignores sa taille : combats longs quand tu veux.",
+      "Fiora": "Elle Riposte tes CC et gagne les duels. Joue pour le scaling et évite les combats longs sans ultime."
+    },
+    "mid_game": "Splitpush ou regroupe autour des objectifs. Gwen gagne les combats prolongés contre les frontlines.",
+    "late_game": "Entre après les CC adverses, découpe la frontline ou dive sur un carry avec E, et reste dans ta Brume.",
+    "ahead": "Force des duels en side lane, dive avec ton jungler et fais-toi respecter en splitpush.",
+    "behind": "Farm, stack Q sur les sbires et joue en teamfight contre les tanks, là où tes dégâts en pourcentage comptent le plus.",
+    "win_condition": "Pour gagner cette partie, tu veux scale en side lane puis découper la frontline adverse en combats prolongés.",
+    "final_tip": "Relâche toujours ton Q avec 4 stacks et en visant le centre : c'est là que se font les dégâts vrais."
+  }
+}

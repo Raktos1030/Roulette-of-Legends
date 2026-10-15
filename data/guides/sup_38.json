@@ -1,0 +1,43 @@
+{
+  "Xerath|sup": {
+    "identity": "Mage d'artillerie à très longue portée. Afflux de mana (passif) : ses attaques lui rendent régulièrement du mana (plus souvent quand il tue des unités). Rayon arcanique (Q) se charge pour tirer un rayon à très longue portée, Œil de la destruction (W) frappe une zone en slowant (plus fort au centre), Orbe d'électrocution (E) stun le premier ennemi touché, et Rite arcanique (R) le root pour tirer plusieurs barrages à très longue portée.",
+    "playstyle": "Support de poke : il harcèle de très loin avec Q et W, et achève avec son ultime. Il domine les mages et supports lents (Lux, Brand, Swain, Morgana), mais perd contre les enchanteurs qui soignent son poke (Janna, Soraka, Nami, Zilean) et contre les engages (Rell, Blitzcrank).",
+    "early_game": "Poke avec W au centre sur l'adversaire qui vient last hit, puis Q chargé. Garde Orbe d'électrocution (E) pour stun un engage adverse ou lancer un kill. Reste derrière les sbires face aux grappins : tu n'as aucune mobilité.",
+    "level_1": "Œil de la destruction (W) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Rayon arcanique (Q). Poke à très longue portée : W pour slow, puis Q.",
+    "level_3": "Orbe d'électrocution (E). Stun : ta seule défense contre un engage.",
+    "level_6": "Rite arcanique : barrages à très longue portée. Achève un ennemi en fuite ou bas en PV, même sur une autre lane. Tu es immobile pendant l'ultime.",
+    "power_spikes": [
+      "Niveau 2 : W + Q, poke très fort.",
+      "Niveau 3 : E pour les kills et la défense.",
+      "Niveau 6 : exécutions à très longue portée.",
+      "Premier item complet : poke dévastateur."
+    ],
+    "lane_plan": "Poke avec W et Q en permanence et garde E contre les engages. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "Trade de base : W puis Q. All-in : E → W → Q → R. Défense : E sur l'engage adverse. Contre les enchanteurs qui soignent (Janna, Soraka, Nami), le poke est annulé : cherche les stuns sur l'ADC plutôt.",
+    "jungle_plan": "",
+    "threats": [
+      "Janna, Soraka, Nami et Zilean : matchups difficiles.",
+      "Rell et Blitzcrank, qui t'attrapent : matchups difficiles.",
+      "Tout dive : tu n'as aucune mobilité."
+    ],
+    "mistakes": [
+      "Se placer à découvert face à un grappin.",
+      "Lancer l'ultime au milieu d'un combat où tu peux être dive.",
+      "Rater E et ne plus pouvoir te défendre."
+    ],
+    "matchup_notes": {
+      "Thresh": "Reste derrière les sbires ; E quand il dash vers vous.",
+      "Lux": "Ta portée est plus grande : poke-la.",
+      "Lulu": "Elle protège son ADC : vise-la directement.",
+      "Blitzcrank": "Reste derrière tes sbires en permanence.",
+      "Janna": "Son shield absorbe ton poke : garde tes sorts pour les stuns."
+    },
+    "mid_game": "Poke avant les objectifs depuis une position sûre et pose des pinks. Achève les fuyards avec R.",
+    "late_game": "Reste loin derrière ta frontline : W et Q avant le combat, E sur les divers, R pour achever. Ne lance jamais l'ultime quand un diver peut t'atteindre.",
+    "ahead": "Poke et force les objectifs : l'adversaire arrive affaibli aux combats.",
+    "behind": "Poke en sécurité et garde E pour protéger ton ADC.",
+    "win_condition": "Pour gagner cette partie, tu veux affaiblir l'équipe adverse à très longue portée avant chaque combat.",
+    "final_tip": "Vise le centre de ton W : les dégâts et le slow y sont bien plus forts, et ton Q touche ensuite facilement."
+  }
+}

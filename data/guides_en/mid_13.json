@@ -1,0 +1,43 @@
+{
+ "Fizz|mid": {
+  "identity": "Slippery magic damage assassin. Playful / Trickster (E) makes him hop out of reach (he's untargetable during the hop), then land while slowing, Urchin Strike (Q) dashes him through his target, Seastone Trident (W) causes bleeding and empowers his attacks, and Chum the Waters (R) throws a fish that attracts a giant shark (the farther it flies, the bigger the shark). His passive makes him ghosted and reduces damage from basic attacks.",
+  "playstyle": "Burst and dodge assassin. Fizz dodges the enemy's key ability with E, then bursts. He especially punishes immobile mages (Mel, Aurelion Sol, Orianna, Syndra, Xerath).",
+  "early_game": "Farm carefully before level 3: you're weak at levels 1-2 against mages. Use E to dodge the enemy's big ability. From level 3, Q → W → E becomes a real all-in.",
+  "level_1": "Playful / Trickster (E) first. Farm and dodge.",
+  "level_2": "Seastone Trident (W). Bleeding and empowered attacks: useful to farm and trade.",
+  "level_3": "Urchin Strike (Q). All-in: Q (dash through) → W → attacks → E to slow or dodge.",
+  "level_6": "Chum the Waters: throw the fish from far away for a big shark, then Q → W → E. It's your big kill and roam spike.",
+  "power_spikes": [
+   "Level 3: first real all-in.",
+   "Level 6: ultimate, kills and roams.",
+   "First completed item: burst that kills mages.",
+   "Mid game: picks and dives."
+  ],
+  "lane_plan": "Farm carefully until level 3, then trade when the enemy's key ability is on cooldown. After level 6, push and roam. The mid role quest (faster recall) makes your roams even more effective. Avoid wasting E: without it, you're vulnerable.",
+  "trading": "Short trade: Q → attack → E to get out. All-in: R from far away → Q → W → attacks → E. Engage when the enemy CC is on cooldown; otherwise keep E to dodge it.",
+  "jungle_plan": "",
+  "threats": [
+   "Pantheon: your hardest matchup.",
+   "CC cast after your E.",
+   "Tanks who soak your burst."
+  ],
+  "mistakes": [
+   "Using E to engage and having nothing left to dodge with.",
+   "Throwing your ultimate from too close (small shark).",
+   "Forcing trades at levels 1-2."
+  ],
+  "matchup_notes": {
+   "Zed": "Dodge his ultimate with E the moment he reappears.",
+   "Syndra": "Dodge her stun with E, then dive.",
+   "Yasuo": "His Wind Wall blocks your fish: throw it once he's used it.",
+   "Katarina": "E to dodge her Death Lotus.",
+   "Pantheon": "His shield blocks your damage from the front: wait until he's used it."
+  },
+  "mid_game": "Roams, picks and objectives. Hunt isolated mages.",
+  "late_game": "Dive the enemy carry with your ultimate, dodge the CC with E.",
+  "ahead": "Roam, hunt the carries and take objectives.",
+  "behind": "Farm and look for picks on isolated targets.",
+  "win_condition": "To win this game, you want to dodge key abilities and burst mages and carries.",
+  "final_tip": "Save your E for the ability that matters: that hop is what wins your fights."
+ }
+}

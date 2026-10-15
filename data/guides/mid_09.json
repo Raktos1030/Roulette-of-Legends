@@ -1,0 +1,43 @@
+{
+  "Cassiopeia|mid": {
+    "identity": "Mage de DPS à dégâts magiques, jouée au mid environ deux fois sur trois. Ses poisons (Bombe nocive, Q, et Miasmes, W) rendent Morsure fatale (E) très rapide et puissante ; W empêche aussi les dashes. Regard de la Méduse (R) pétrifie les ennemis qui la regardent. Son passif rend tous ses bonus de vitesse plus efficaces.",
+    "playstyle": "Mage de combat prolongé : empoisonner, puis spammer E. Elle devient très forte en teamfight avec ses items.",
+    "early_game": "Farm avec E (mana récupéré si le sbire meurt) et poke au Q quand l'adversaire vient last hit. Garde W contre les assassins (il empêche leurs dashes). Tu es vulnérable aux poke à longue portée : reste derrière tes sbires.",
+    "level_1": "Morsure fatale (E) en premier. Last hit en sécurité.",
+    "level_2": "Bombe nocive (Q). Q puis E en chaîne sur l'adversaire empoisonné.",
+    "level_3": "Miasmes (W). Il slow et empêche les dashes : garde-le contre l'engage d'un assassin.",
+    "level_6": "Regard de la Méduse : pétrification pour les ennemis face à toi. Combiné à W, il empêche presque toute fuite ou tout engage.",
+    "power_spikes": [
+      "Niveau 3 : poison + E en boucle.",
+      "Niveau 6 : pétrification.",
+      "Premier item complet : DPS élevé.",
+      "Deux à trois items : mage de combat prolongé dominante."
+    ],
+    "lane_plan": "Farm au E et poke au Q. Garde la wave au centre ou vers toi contre les assassins. Pousse avant de rejoindre le jungler. Évite de rester exposée aux mages à longue portée.",
+    "trading": "Trade de base : Q puis E répétés. Trade long : W pour empêcher la fuite, R pour pétrifier. Engage si ton Q touche ; abandonne contre les mages qui te poke hors de portée.",
+    "jungle_plan": "",
+    "threats": [
+      "Mages à longue portée et burst (Syndra, Hwei, Veigar).",
+      "Assassins qui arrivent quand W est en recharge (Qiyana, LeBlanc).",
+      "Twisted Fate, qui roam."
+    ],
+    "mistakes": [
+      "Utiliser W pour farmer et ne plus l'avoir contre un engage.",
+      "Lancer l'ultime dans le dos de l'ennemi.",
+      "Vider ton mana avec E sur des sbires non empoisonnés."
+    ],
+    "matchup_notes": {
+      "Viktor": "Il te poke : esquive son laser et combats quand tu peux l'empoisonner.",
+      "Syndra": "Elle te poke et te stun : reste derrière tes sbires.",
+      "Ahri": "Garde W pour ses dashes et R pour son engage.",
+      "Sylas": "W empêche ses dashes : attention, il peut voler ton ultime.",
+      "Yasuo": "W empêche ses dashes ; son Mur de vent bloque ton Q, pas ton E."
+    },
+    "mid_game": "Rejoins les objectifs et farm les waves à distance. W et R défendent très bien.",
+    "late_game": "DPS principal de zone : place-toi derrière ta frontline, empoisonne et spam E. Garde R pour l'engage adverse.",
+    "ahead": "Prends les tours et les objectifs, roam avec ton jungler.",
+    "behind": "Farm et scale : ton late game compense ton retard.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane et dominer les teamfights au poison.",
+    "final_tip": "Garde Miasmes pour l'engage adverse : empêcher un dash vaut plus que n'importe quel poke."
+  }
+}

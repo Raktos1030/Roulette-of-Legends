@@ -1,0 +1,43 @@
+{
+ "Qiyana|jgl": {
+  "identity": "Physical damage assassin who wields the elements. Terrashape (W) dashes her toward a terrain element (bush, river or wall) to empower her Q: Elemental Wrath grants invisibility (grass), roots then slows (water) or deals more damage to wounded targets (rock). Audacity (E) dashes onto an enemy, and Supreme Display of Talent (R) knocks enemies back; if they hit a wall, they're stunned and the terrain explodes. Today she's played in the jungle about two games out of three.",
+  "playstyle": "Assassination and playmaking jungler. Qiyana creates fights with an ultimate into a wall or along the river, and bursts a target with her elements. Very mechanical.",
+  "early_game": "Clear fast, switching elements depending on the camp. Gank with the right element: water (river) to root, grass (bush) to arrive invisible. Keep E to stick to a fleeing target.",
+  "level_1": "Elemental Wrath / Edge of Ixtal (Q) first.",
+  "level_2": "Terrashape (W). Dash toward an element: it empowers your Q and gives you speed. W → Q is your basic combo.",
+  "level_3": "Audacity (E) or a second Q depending on your path. Gank: W (water or grass) → E → empowered Q.",
+  "level_6": "Supreme Display of Talent: knocks enemies back; into a wall, they're stunned and the terrain explodes (river and bushes it hits explode too). Look for fights near walls and the river to stun several targets.",
+  "power_spikes": [
+   "Level 3: ganks with the water or grass element.",
+   "Level 6: ultimate into a wall, huge playmaking.",
+   "First completed item: burst that kills carries.",
+   "Mid game: fights around the river and walls."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear, ganks and invades. Qiyana wants to build her lead early: pick the right element for each gank and control Scuttles. Play around the river and walls, where your ultimate is strongest (Void Grubs around 8 minutes, dragons). Avoid duels against tanky junglers who soak your burst.",
+  "trading": "Ganking: W toward water or grass → E → empowered Q → R into a wall if the target runs. Teamfighting: look for the angle where R pushes several enemies into a wall. Give up on it against tanks (Rammus, Sejuani, Skarner).",
+  "threats": [
+   "CC tanks who soak your burst (Rammus, Sejuani, Skarner).",
+   "Rengar and Rek'Sai: hard matchups.",
+   "Fights far from walls and the river."
+  ],
+  "mistakes": [
+   "Using the wrong element for the situation.",
+   "Casting your ultimate with no wall behind the enemies.",
+   "Diving a tank instead of a carry."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "You're both strong early: use the water element to root him in duels.",
+   "Graves": "He beats you in a straight duel: arrive invisible with grass.",
+   "Viego": "Burst him before he possesses your allies.",
+   "Rammus": "His armor and taunt shut you down: avoid him.",
+   "Rengar": "He bursts you first: keep vision in bushes."
+  },
+  "mid_game": "Fights around the river and walls, near objectives. Every ultimate into a wall can win a fight.",
+  "late_game": "Look for the ultimate angle into a wall on several enemies, then burst the carry.",
+  "ahead": "Choke out the enemy jungler and create fights around objectives.",
+  "behind": "Look for picks and a decisive ultimate in teamfights.",
+  "win_condition": "To win this game, you want to create fights where your ultimate stuns several enemies into a wall.",
+  "final_tip": "Before every fight, find the wall or river behind the enemies: that's where your ultimate becomes decisive."
+ }
+}

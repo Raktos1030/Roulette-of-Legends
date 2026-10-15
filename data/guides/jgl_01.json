@@ -1,0 +1,43 @@
+{
+  "Amumu|jgl": {
+    "identity": "Tank à dégâts magiques, spécialiste de l'engage de zone. Jet de bandelette (Q, deux charges) l'attire sur sa cible et le stun, Désespoir (W) brûle tout autour de lui en pourcentage des PV, Colère (E) réduit les dégâts physiques reçus et frappe en zone, et Malédiction d'Amumu (R) stun tous les ennemis autour de lui. Son passif maudit les cibles : elles subissent des dégâts vrais supplémentaires des sources magiques.",
+    "playstyle": "Jungler de clear complet, de ganks après le niveau 3 et surtout de teamfight : un ultime bien placé gagne un combat à lui seul. Faible en duel early contre les junglers agressifs, fort dès que les combats se font à plusieurs.",
+    "early_game": "Clear complet en sécurité, puis gank là où une lane a une wave favorable et un adversaire sans dash. Ne cherche pas le duel contre les junglers agressifs (Lee Sin, Graves) : tu les bats en teamfight, pas en 1v1 niveau 3.",
+    "level_1": "Désespoir (W) en premier. Aura de dégâts en pourcentage des PV : idéale pour le premier camp.",
+    "level_2": "Colère (E). Dégâts de zone et réduction de dégâts physiques ; son temps de recharge baisse quand tu subis des coups. E est maximisé en priorité.",
+    "level_3": "Jet de bandelette (Q). Deux charges : premier gank possible. Q sur la cible → E → W, puis la seconde charge de Q si elle fuit.",
+    "level_6": "Malédiction d'Amumu : stun de zone autour de toi. Les ganks deviennent quasi garantis (Q → R), et chaque combat d'objectif est dangereux pour l'adversaire. Vise au moins deux champions en teamfight.",
+    "power_spikes": [
+      "Niveau 3 : premier gank avec Q.",
+      "Niveau 6 : ultime de zone, ganks et combats d'objectif.",
+      "Premier item complet : clear et tanking bien plus confortables.",
+      "Mid game : teamfights groupés autour des dragons et du Baron."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear complet en commençant par le côté opposé à ta lane la plus gankable, avec W et E sur les camps. Fin de premier clear vers le niveau 4 : gank la lane qui a la meilleure wave ou fais le crabe. Amumu n'aime pas être envahi : garde vision sur tes entrées de jungle et prends les Larves du Néant (une seule apparition, vers 8 min) quand ta botlane ou ta toplane a la priorité. Suis le jungler adverse via ses premiers camps et contre-gank si ta lane est attaquée. Ton meilleur moment : combats d'objectif après le niveau 6, où ton ultime change tout. Ta quête de rôle (vitesse en jungle, or et XP sur les gros monstres) récompense les clears propres.",
+    "trading": "En gank, entre par le côté (bush de rivière) pour que ton Q ne soit pas bloqué par les sbires. En escarmouche, attends que l'adversaire utilise son dash avant de lancer Q. En teamfight, Q sur la cible la plus proche du groupe, puis R au milieu de plusieurs ennemis. Abandonne si ton Q est bloqué et que l'adversaire a une fuite.",
+    "threats": [
+      "Junglers agressifs qui t'envahissent en early (Lee Sin, Graves).",
+      "Q bloqués par les sbires ou par Mur de vent.",
+      "Équipes à dégâts magiques élevés (ton E ne réduit que les dégâts physiques)."
+    ],
+    "mistakes": [
+      "Gaspiller les deux charges de Q en même temps.",
+      "Lancer l'ultime sur un seul champion alors qu'un gros combat arrive.",
+      "Laisser W activé hors combat et vider ton mana."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il t'envahira tôt : ne duel pas, garde vision et joue pour les combats d'objectif après le 6.",
+      "Viego": "Ton ultime l'empêche de réinitialiser en possédant un ennemi : garde R pour quand il dive.",
+      "Maître Yi": "Q + R arrêtent son Assaut éclair ; garde R pour son entrée en teamfight.",
+      "Sylas": "Il peut voler ton ultime : n'engage pas quand il est en position de le reprendre.",
+      "Graves": "Il te bat en duel early : évite-le, et stun-le avec Q quand il dash."
+    },
+    "mid_game": "Regroupe-toi autour des dragons et du Héraut, garde tes deux Q pour attraper une cible et ton ultime pour les combats à plusieurs. Évite les side lanes isolées.",
+    "late_game": "Engage principal de ton équipe : attends que les adversaires se regroupent, Q sur la cible la plus proche, puis R au milieu. Tu es aussi une frontline qui protège tes carries.",
+    "ahead": "Prends les objectifs en série et force les combats autour d'eux : tes ultimes deviennent de plus en plus décisifs.",
+    "behind": "Farm, reste avec ton équipe et joue pour un ultime décisif : Amumu reste dangereux en teamfight même sans avance.",
+    "win_condition": "Pour gagner cette partie, tu veux arriver aux combats d'objectif avec ton ultime et stun plusieurs adversaires au bon moment.",
+    "final_tip": "Garde ton second Q : c'est lui qui rattrape la cible qui essaie de sortir de ton ultime."
+  }
+}

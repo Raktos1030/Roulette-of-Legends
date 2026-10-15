@@ -1,0 +1,84 @@
+{
+  "Shen|top": {
+    "identity": "Tank à énergie, spécialiste de la protection et de la pression globale. Sa lame spirituelle reste là où il l'a laissée : Assaut crépusculaire (Q) la rappelle vers lui, slow les champions qu'elle traverse et renforce ses trois attaques suivantes (dégâts en pourcentage des PV). Refuge spirituel (W) bloque les auto-attaques dans une zone, Rush des ombres (E) provoque, et Soutien indéfectible (R) protège un allié n'importe où sur la carte avant de téléporter Shen à ses côtés.",
+    "playstyle": "Lane stable de trades courts à l'énergie, puis influence sur toute la carte avec l'ultime. Shen n'est pas un gros duelliste en fin de partie, mais il transforme des combats à 1v2 ou 2v2 ailleurs sur la carte. Chaque sort lancé lui donne aussi un shield (passif Barrière de ki).",
+    "early_game": "Place ta lame derrière l'adversaire (elle reste où tu l'as utilisée pour la dernière fois), puis rappelle-la avec Q pour qu'elle le traverse : il est slow et tes trois attaques suivantes font beaucoup plus mal. Garde E pour punir un engage ou pour fuir. Dès le niveau 6, surveille la minicarte en permanence.",
+    "level_1": "Assaut crépusculaire (Q) en premier. Trade avec les attaques renforcées du Q, surtout quand la lame a traversé l'adversaire.",
+    "level_2": "Rush des ombres (E). Dash qui provoque et te rend de l'énergie s'il touche un champion. E → Q → attaques renforcées est ton premier vrai engage.",
+    "level_3": "Refuge spirituel (W). Crée une zone autour de ta lame qui bloque les auto-attaques ennemies contre toi et tes alliés : très fort contre les combattants physiques qui frappent au corps à corps.",
+    "level_6": "Soutien indéfectible : gros shield sur un allié partout sur la carte (plus fort s'il a peu de PV), puis téléportation après une canalisation. Utilise-le pour sauver un carry, gagner une escarmouche en rivière ou transformer un gank de ton jungler en 2 kills.",
+    "power_spikes": [
+      "Niveau 2 : E + Q, engage court très efficace.",
+      "Niveau 6 : ultime global, pression sur toute la carte.",
+      "Premier item complet : très difficile à tuer en lane.",
+      "Mid game : l'ultime gagne les escarmouches à 2v2 et 3v3."
+    ],
+    "lane_plan": "Farm en sécurité, place la lame intelligemment avant chaque trade et trade court avec Q. Avant d'utiliser l'ultime, pousse ta wave pour ne pas perdre trop de sbires ni de plaques. Recall quand ton énergie et tes PV sont bas en même temps. Ta Téléportation améliorée (quête de rôle) s'ajoute à ton ultime : deux façons de rejoindre les combats.",
+    "trading": "Trade court : Q (lame qui traverse) → trois attaques renforcées → recul. Trade long : E (taunt) → Q → attaques → W pour bloquer la riposte. Engage quand E peut toucher ; abandonne si tu n'as plus assez d'énergie pour E ou si l'adversaire te kite à distance (W ne bloque que les auto-attaques).",
+    "jungle_plan": "",
+    "threats": [
+      "Champions à distance ou à sorts, contre lesquels W est inutile (Kayle).",
+      "Splitpushers qui te battent en 1v1 pendant que tu utilises l'ultime (Tryndamere).",
+      "Perdre ta tour parce que tu as utilisé l'ultime sans pousser."
+    ],
+    "mistakes": [
+      "Utiliser l'ultime trop tard : le shield ne sert à rien sur un allié déjà mort.",
+      "Rater E et rester sans énergie ni engage.",
+      "Rappeler ta lame sans qu'elle traverse l'adversaire (pas de slow)."
+    ],
+    "matchup_notes": {
+      "Nasus": "Punis-le quand il vient stack avec Q et E ; Flétrissement slow ton attaque, donc trade court et garde W pour ses attaques renforcées.",
+      "Garen": "W bloque ses attaques et son Jugement est slow par ton taunt. Trade quand son Q est en recharge.",
+      "Yone": "W bloque ses auto-attaques, pas ses Q : ne compte pas sur W pour son Q3.",
+      "Darius": "W annule une grosse partie de ses dégâts en attaques ; évite le bord de sa Décimation et son Crampon.",
+      "Tryndamere": "W bloque ses attaques, mais il te bat en side lane plus tard : ne le laisse pas seul quand tu utilises l'ultime."
+    },
+    "mid_game": "Joue la carte : pousse ta wave, regarde les escarmouches et utilise l'ultime au bon moment. Chaque ultime réussi doit se transformer en objectif (dragon, grubs, héraut, tour).",
+    "late_game": "Frontline de protection : garde l'ultime pour ton carry le plus menacé, taunt les divers avec E et bloque leurs attaques avec W. Tu peux aussi splitpush et téléporter dans le combat avec l'ultime.",
+    "ahead": "Splitpush pour attirer du monde, puis ultime sur le combat où ton équipe est en supériorité numérique.",
+    "behind": "Farm, défends ta tour et utilise l'ultime pour sauver tes alliés : ton impact sur la carte ne dépend pas de ton avance.",
+    "win_condition": "Pour gagner cette partie, tu veux utiliser l'ultime pour gagner des combats partout sur la carte pendant que ta side lane reste sous contrôle.",
+    "final_tip": "Avant chaque trade, fais passer ta lame derrière l'adversaire : c'est le Q qui traverse qui gagne le combat."
+  },
+  "Singed|top": {
+    "identity": "Tank à dégâts magiques au style unique. Singed laisse derrière lui une traînée de poison avec Piste empoisonnée (Q), colle et cloue au sol avec Attrape-mouche (W), projette l'adversaire par-dessus son épaule avec Projection (E) et gagne vitesse et statistiques avec Potion de démence (R). Il ne combat pas de face : il fait courir l'adversaire dans son poison.",
+    "playstyle": "Proxy farm (farmer derrière la tour adverse), perturbation des side lanes et contrôle en teamfight. Singed est fort pour faire perdre du temps à l'équipe adverse et pour gagner des matchups contre les combattants au corps à corps qui le poursuivent.",
+    "early_game": "Farm avec le poison en passant à travers la wave. Si l'adversaire est trop fort en early, va farmer entre sa tour extérieure et sa tour intérieure (proxy) : tu le forces à perdre des sbires ou à appeler son jungler. Ne te bats jamais de face au contact.",
+    "level_1": "Piste empoisonnée (Q) en premier. Farm en courant à travers les sbires sans t'exposer.",
+    "level_2": "Projection (E). Elle projette l'adversaire derrière toi : utile pour le ramener dans ton poison ou sous ta tour.",
+    "level_3": "Attrape-mouche (W). Il slow et cloue au sol (plus de dash) : W puis E dans la colle root l'ennemi.",
+    "level_6": "Potion de démence : vitesse, résistances et régénération. Utilise-la pour courir dans l'équipe adverse, empoisonner tout le monde et projeter un carry, ou pour fuir.",
+    "power_spikes": [
+      "Niveau 3 : combo W → E.",
+      "Niveau 6 : ultime pour les engages et la survie.",
+      "Premier item complet : très résistant et rapide.",
+      "Mid game : proxy farm et perturbation des side lanes."
+    ],
+    "lane_plan": "Farm avec le poison, proxy farm quand l'adversaire est trop fort ou quand son jungler est loin. Évite les combats de face. Recall quand ton mana est bas : le poison en coûte en continu. Les bushs sont tes amis pour briser la poursuite.",
+    "trading": "Trade de base : cours à côté de l'adversaire pour qu'il traverse ton poison. Trade long : W → E dans la colle → poison. Engage quand l'adversaire te poursuit ; abandonne s'il te kite à distance ou s'il a un gros burst.",
+    "jungle_plan": "",
+    "threats": [
+      "Gangplank et son poke de barils.",
+      "Kayle et les champions à distance qui ne te poursuivent pas.",
+      "Urgot et les champions qui te battent de face."
+    ],
+    "mistakes": [
+      "Se battre de face au contact.",
+      "Laisser le poison activé sans raison et vider ton mana.",
+      "Utiliser l'ultime trop tôt, sans cible à poursuivre."
+    ],
+    "matchup_notes": {
+      "Nasus": "Empêche-le de stack en proxy farmant ou en poussant sa wave ; il te slow avec Flétrissement, donc ne reste pas à portée.",
+      "Yone": "Il te poursuit volontiers : fais-le courir dans ton poison et W pour le clouer au sol.",
+      "Garen": "Il te silence et tourne sur lui-même : ne te laisse pas coller, fais-le courir.",
+      "Gangplank": "Il te poke avec les barils à distance ; proxy farm pour le forcer à bouger.",
+      "Aatrox": "Ses Q ont un délai : cours dans son dos pour qu'il te poursuive dans ton poison."
+    },
+    "mid_game": "Proxy farm et perturbation des side lanes : chaque minute où l'adversaire te poursuit est une minute gagnée pour ton équipe. Rejoins les objectifs pour lancer des knock-ups sur les carries.",
+    "late_game": "Cours dans l'équipe adverse avec l'ultime, empoisonne un maximum de cibles et projette un carry vers ton équipe avec E.",
+    "ahead": "Perturbe les side lanes, prends les tours et force deux adversaires à venir te chercher.",
+    "behind": "Proxy farm et évite les combats de face : ton rôle de perturbateur reste intact.",
+    "win_condition": "Pour gagner cette partie, tu veux faire perdre du temps et des ressources à l'adversaire en le forçant à te poursuivre dans ton poison.",
+    "final_tip": "Ne poursuis jamais : fais-toi poursuivre dans ton poison."
+  }
+}

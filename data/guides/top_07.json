@@ -1,0 +1,84 @@
+{
+  "Riven|top": {
+    "identity": "Combattante à dégâts physiques très mobile et très mécanique. Chaque sort charge sa Lame runique (passif), qui renforce l'attaque suivante : Riven vit d'enchaînements sort → attaque. Ailes brisées (Q) dash trois fois (le troisième knock-up), Décharge de ki (W) stun autour d'elle, Bravoure (E) dash avec shield, et Lame de l'exilée (R) augmente dégâts et portée avant une vague qui fait plus de dégâts sur les cibles blessées.",
+    "playstyle": "Trades courts et explosifs, puis all-in avec l'ultime. Riven gagne en tirant le maximum de son passif (une attaque entre chaque sort) et en utilisant E pour absorber la riposte. Forte en early/mid game ; très dépendante de ta maîtrise des enchaînements (annulation d'animation du Q par un déplacement).",
+    "early_game": "Trade Q + attaque, puis recule avant la riposte. Garde E pour absorber le gros sort adverse ou sortir d'un combat qui tourne mal. Utilise Q3 pour franchir les murs fins et échapper aux ganks.",
+    "level_1": "Ailes brisées (Q) en premier. Q + attaque renforcée du passif sur l'adversaire qui vient last hit, puis recule avec les Q restants.",
+    "level_2": "Bravoure (E). E → Q → attaque pour entrer en encaissant les dégâts ; tu peux garder E pour sortir si le trade tourne mal.",
+    "level_3": "Décharge de ki (W). Combo de base : E → W (stun) → attaque → Q → attaque → Q → attaque. C'est ta première vraie menace de kill avec Embrasement.",
+    "level_6": "Lame de l'exilée : lance R1 au début d'un all-in (dans un E par exemple) pour profiter des dégâts et de la portée, puis termine avec R2 (wave) quand la cible est basse : ses dégâts augmentent avec les PV manquants.",
+    "power_spikes": [
+      "Niveau 3 : combo E → W → Q, menace de kill.",
+      "Niveau 6 : all-in avec R1 et exécution avec R2.",
+      "Premier item complet : domination de lane.",
+      "Mid game : escarmouches désorganisées."
+    ],
+    "lane_plan": "Joue une wave neutre ou légèrement poussée : Riven aime trade mais n'a pas de soin en lane. Trade court quand l'adversaire vient last hit, puis reset avant la riposte. Prends les plaques quand tu gagnes. Recall quand ta wave crash et que tu es bas. Q3 sert à passer les murs de la jungle pour éviter les ganks.",
+    "trading": "Trade court : Q → attaque → Q → attaque, puis Q3 en arrière. Trade long : E (shield) → R1 → W → attaques et Q → R2 pour finir. Engage quand l'adversaire a utilisé son CC ou son dash ; abandonne si tu as dépensé E et que son gros sort arrive.",
+    "jungle_plan": "",
+    "threats": [
+      "Kennen et les champions qui te kitent et te stun.",
+      "Renekton et Garen, qui gagnent les trades courts et te silencent/stun.",
+      "Ganks quand tes Q sont en recharge."
+    ],
+    "mistakes": [
+      "Enchaîner les sorts sans auto-attaques entre eux (tu perds le passif).",
+      "Utiliser E pour engager sans pouvoir sortir ensuite.",
+      "Lancer R2 trop tôt, quand la cible a encore beaucoup de PV."
+    ],
+    "matchup_notes": {
+      "Garen": "Son Q te silence en plein combo. Trade uniquement quand son Q est en recharge, et bloque son Jugement avec E.",
+      "Renekton": "Son W renforcé te stun longtemps : garde E pour l'absorber et évite les trades quand sa fureur dépasse 50.",
+      "Yone": "Engage quand son E est en recharge ; W casse son engage au Q3 s'il arrive au contact.",
+      "Darius": "Esquive son Q avec un Q ou E et ne reste pas au contact assez longtemps pour qu'il stacke.",
+      "Irelia": "Lance W quand elle dash sur toi : elle perd son enchaînement."
+    },
+    "mid_game": "Escarmouches autour des objectifs et dives avec ton jungler. Riven excelle dans les combats désorganisés où elle peut enchaîner les cibles.",
+    "late_game": "Flanke et dive sur un carry avec E → W → Q ; garde R2 pour exécuter. Évite d'engager de face dans une équipe à fort CC.",
+    "ahead": "Force des duels en side lane, dive sous tour avec ton jungler et transforme chaque avantage en tour.",
+    "behind": "Farm, évite les duels contre les champions plus avancés et cherche des picks sur des cibles isolées plutôt que de splitpush.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer ta lane par des trades courts, puis transformer ton avance en dives et picks en mid game.",
+    "final_tip": "Entre chaque sort, place une auto-attaque : sans ton passif, Riven perd la moitié de ses dégâts."
+  },
+  "Rumble|top": {
+    "identity": "Mage de combat à dégâts magiques qui gère une jauge de chaleur. Entre 50 et 100 de chaleur, ses sorts sont renforcés ; à 100, il surchauffe : plus de sorts, mais des attaques très puissantes. Lance-flammes (Q) brûle en cône, Harpon électrique (E) slow (deux charges), Bouclier recyclé (W) protège et accélère, et Éradication (R) pose une ligne de feu, l'un des meilleurs ultimes de teamfight. Les données du patch le montrent faible.",
+    "playstyle": "Trades soutenus au corps à corps en restant dans la zone de danger (50-100 de chaleur), sans surchauffer au mauvais moment. Rumble ne coûte pas de mana : il peut lancer ses sorts sur les sbires pour préparer sa chaleur. Très fort en teamfight grâce à l'ultime.",
+    "early_game": "Harcèle avec les deux charges de E, puis Q quand l'adversaire vient au contact. Chauffe avec W et Q sur les sbires avant un trade pour entrer directement dans la zone de danger.",
+    "level_1": "Harpon électrique (E) en premier dans le chemin le plus joué (E → Q → W). Poke avec les deux harpons (le second fait plus de dégâts) et garde de la distance.",
+    "level_2": "Lance-flammes (Q). E pour slow, puis Q au contact : l'adversaire ne peut pas sortir facilement du cône.",
+    "level_3": "Bouclier recyclé (W). Shield et vitesse de déplacement : il sert à encaisser, à générer de la chaleur hors combat et à te rapprocher.",
+    "level_6": "Éradication : ligne de feu qui slow et brûle. En lane, place-la sur la trajectoire de fuite de l'adversaire ; en teamfight, sur la zone que l'équipe adverse doit traverser.",
+    "power_spikes": [
+      "Niveau 3 : kit complet, bon all-in en zone de danger.",
+      "Niveau 6 : ultime pour les kills et les ganks.",
+      "Premier item complet : dégâts en combat soutenu.",
+      "Teamfight : ultime décisif sur plusieurs cibles."
+    ],
+    "lane_plan": "Joue une wave neutre. Harcèle au E, chauffe sur les sbires avec W et Q, et engage quand tu es entre 50 et 100 de chaleur. Si tu vas surchauffer au contact, ce n'est pas grave : tes attaques deviennent fortes. Recall quand ta wave crash. Évite de rester sur une lane poussée : tu n'as pas de dash.",
+    "trading": "Trade court : E + E. Trade long : W → E → Q au contact → attaques en surchauffe. Engage quand l'adversaire n'a plus son dash ; abandonne si tu es sur le point de surchauffer loin de lui (tu ne pourras plus lancer de sorts pour fuir).",
+    "jungle_plan": "",
+    "threats": [
+      "Champions à distance qui te kitent (Kayle, Anivia).",
+      "Champions mobiles qui sortent du cône du Q (Irelia).",
+      "Surchauffer loin de l'adversaire et te retrouver sans sorts."
+    ],
+    "mistakes": [
+      "Surchauffer au mauvais moment (loin de la cible).",
+      "Poser l'ultime là où l'adversaire est déjà, au lieu de sa trajectoire.",
+      "Oublier de préparer la chaleur avant un trade."
+    ],
+    "matchup_notes": {
+      "Yone": "Il sort de ton cône avec E ; slow-le avec E avant Q et garde W pour son Q3.",
+      "Jayce": "Colle-le quand il passe en forme marteau ; en forme canon, esquive son Q + E en bougeant latéralement.",
+      "Aatrox": "Sors de ses sweet spots et brûle-le avec Q pendant ses temps de recharge.",
+      "Malphite": "Tes dégâts magiques ignorent son armure : trade au Q dès qu'il vient au contact.",
+      "Irelia": "Elle dash à travers la wave ; garde W pour encaisser son engage et E pour la slow."
+    },
+    "mid_game": "Joue autour des objectifs : ton ultime rend chaque combat de dragon ou de Baron très coûteux pour l'adversaire. Garde une wave poussée avant de rejoindre.",
+    "late_game": "Place l'ultime sur la zone d'engagement ou sur la ligne de fuite, puis combat en zone de danger. Reste derrière ta frontline si tu es orienté dégâts.",
+    "ahead": "Force les combats autour des objectifs avec l'ultime et dive avec ton jungler.",
+    "behind": "Farm, évite les duels et joue pour un ultime décisif en teamfight : il reste utile même sans avance.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane et dominer les teamfights avec Éradication sur plusieurs cibles.",
+    "final_tip": "Avant chaque trade, monte ta chaleur à 50 avec W et Q sur les sbires : tu frappes directement avec des sorts renforcés."
+  }
+}

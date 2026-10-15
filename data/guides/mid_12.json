@@ -1,0 +1,43 @@
+{
+  "Ekko|mid": {
+    "identity": "Assassin à dégâts magiques. Son passif (Rézonance) déclenche des dégâts et un slow au troisième coup sur la même cible. Rétrobang (Q) part et revient en slowant, Convergence parallèle (W) crée une zone qui stun les ennemis et lui donne un shield quand il y entre, Rush déphasé (E) dash puis téléporte sa prochaine attaque sur la cible, et Chronofracture (R) le ramène à sa position d'il y a quelques secondes en le soignant et en blessant autour de lui.",
+    "playstyle": "Mid d'assassinat et de roam, très sûr grâce à l'ultime. Il punit les mages sans mobilité.",
+    "early_game": "Poke au Q (aller et retour) sur l'adversaire qui vient last hit et farm les waves. Pose W à l'avance là où l'adversaire devra aller. Au niveau 3, E → attaques (passif) → Q est un bon trade.",
+    "level_1": "Rétrobang (Q) en premier. Poke et farm.",
+    "level_2": "Rush déphasé (E). Dash puis attaque téléportée : Q → E → attaque déclenche vite le passif.",
+    "level_3": "Convergence parallèle (W). Stun de zone à poser en avance : W sur la trajectoire de fuite → E → attaques.",
+    "level_6": "Chronofracture : dive, burst, puis reviens en sécurité. Tu peux aussi l'utiliser pour les dégâts : ta position passée peut être au cœur du combat.",
+    "power_spikes": [
+      "Niveau 3 : combo E + passif + Q.",
+      "Niveau 6 : dives avec retour en arrière.",
+      "Premier item complet : burst qui tue les mages.",
+      "Mid game : roams et picks."
+    ],
+    "lane_plan": "Pousse la wave au Q et poke. Après le niveau 6, pousse puis roam vers les side lanes : Ekko est un excellent roamer. La quête de rôle mid (retour accéléré) rend ces roams plus rentables.",
+    "trading": "Trade court : Q aller-retour. Trade complet : E → attaques → Q. All-in : W en avance → E → attaques → Q → R si besoin. Engage quand le CC adverse est en recharge ; abandonne si tu as utilisé R.",
+    "jungle_plan": "",
+    "threats": [
+      "Vladimir, Twisted Fate et Lissandra, parmi les moins bons matchups (neutres).",
+      "CC qui te bloquent avant ton retour en arrière.",
+      "Ganks quand ton ultime est en recharge."
+    ],
+    "mistakes": [
+      "Lancer l'ultime trop tard.",
+      "Poser W sur la position actuelle de la cible au lieu de sa trajectoire.",
+      "Dive sans vérifier où te renverra l'ultime."
+    ],
+    "matchup_notes": {
+      "Zed": "Garde R pour annuler son ultime.",
+      "Viktor": "Dive-le quand son champ gravitationnel est en recharge.",
+      "Syndra": "Esquive son stun et dive.",
+      "Yasuo": "Son Mur de vent bloque ton Q : attends qu'il l'ait utilisé.",
+      "Twisted Fate": "Il roam : suis-le sur la carte."
+    },
+    "mid_game": "Roams, picks et objectifs. Ekko est très fort pour tuer les carries qui avancent sans vision.",
+    "late_game": "Flanke et dive sur le carry adverse, puis ultime pour revenir.",
+    "ahead": "Roam, crée des picks et prends les objectifs.",
+    "behind": "Farm, pousse la wave et cherche des picks.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner ta lane, roam après le 6 et tuer les carries grâce à l'ultime.",
+    "final_tip": "Avant de dive, regarde où ton ultime te ramènera : c'est ta porte de sortie."
+  }
+}

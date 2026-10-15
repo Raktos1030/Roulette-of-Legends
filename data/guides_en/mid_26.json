@@ -1,0 +1,43 @@
+{
+ "Nasus|mid": {
+  "identity": "Physical damage juggernaut who scales endlessly. Siphoning Strike (Q) permanently increases its damage with every kill, Wither (W) heavily slows movement and attack speed, Spirit Fire (E) deals area damage and shreds armor, and Fury of the Sands (R) gives him health, resistances and area damage.",
+  "playstyle": "In mid, Nasus mainly serves as a counter to physical assassins and fighters (Zed, Yasuo, Katarina, Irelia, Diana): Wither makes them harmless. On the other hand, he struggles against long-range mages who poke him (Aurelion Sol, Anivia, Lissandra, Hwei).",
+  "early_game": "Stack Q on minions first, under your tower if needed (tower shots + Q make last hits easy). E clears waves you can't reach. Keep W for an assassin's engage: it ruins their combo.",
+  "level_1": "Siphoning Strike (Q) first. Last hit with Q.",
+  "level_2": "Spirit Fire (E) or Wither (W) depending on your opponent. E to farm from range against a mage; W against an assassin who wants to engage you.",
+  "level_3": "Full basic kit. Against an assassin: let them engage, W on them, then Q.",
+  "level_6": "Fury of the Sands: health, resistances and area damage. You win long fights against assassins and can answer dives.",
+  "power_spikes": [
+   "Level 6: ultimate, long fights.",
+   "Q stacks: your Q becomes an execute on carries.",
+   "First completed item: a dominant side lane.",
+   "Late game: split pushing and frontline."
+  ],
+  "lane_plan": "Farm under your tower if needed and stack Q. Clear the wave with E against mages. In mid, the lane is short: it's safer for stacking, but you roam little. In the mid game, take a side lane to split push. The mid role quest (faster recall, upgraded boots) helps you get back to lane quickly and move around.",
+  "trading": "Short trade: W → Q. Long trade: R → W → Q → E. Against an assassin: let them engage, then W. Give up on it against mages who poke you from range.",
+  "jungle_plan": "",
+  "threats": [
+   "Long-range mages (Aurelion Sol, Anivia, Lissandra, Hwei).",
+   "Ahri and Sylas: hard matchups.",
+   "Ganks while you're stacking."
+  ],
+  "mistakes": [
+   "Forgetting to stack Q on minions.",
+   "Chasing a ranged mage.",
+   "Staying mid in the mid game instead of split pushing."
+  ],
+  "matchup_notes": {
+   "Zed": "Wither cancels his combo: let him come to you.",
+   "Yasuo": "W when he engages; he can't beat you in a long fight.",
+   "Viktor": "He pokes you: clear the wave with E and stack under your tower.",
+   "Aurelion Sol": "He pokes you and also scales: farm under your tower.",
+   "Lissandra": "She locks you down and pokes you: farm and don't chase her."
+  },
+  "mid_game": "Split push a side lane with your stacks and force the enemy to send two players.",
+  "late_game": "A frontline that crushes carries with Q, or split push. Keep W for the enemy carry.",
+  "ahead": "Split push, take towers and force duels.",
+  "behind": "Stack safely and scale: your late game makes up for being behind.",
+  "win_condition": "To win this game, you want to neutralize the enemy assassin in lane, stack and dominate the side lane in the mid and late game.",
+  "final_tip": "Against an assassin, let them engage and answer with Wither: their combo no longer works."
+ }
+}

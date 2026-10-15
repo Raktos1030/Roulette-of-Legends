@@ -1,0 +1,43 @@
+{
+  "Vex|mid": {
+    "identity": "Mage de burst à dégâts magiques, cauchemar des champions mobiles. Son passif Malheur et Désespoir se charge régulièrement : chargé, son prochain sort effraie et interrompt les dashes ; les ennemis qui dashent près d'elle sont marqués (Désespoir) pour des dégâts bonus. Mistral perdant (Q) lance une vague qui accélère, Lâchez-moi ! (W) donne un shield et frappe autour d'elle, Ténèbres imminentes (E) slow en zone et marque, et Déferlement d'Ombre (R) marque un champion puis permet de dasher sur lui (réinitialisé en cas d'élimination).",
+    "playstyle": "Mage anti-assassin et anti-mobilité : elle punit tous les champions qui dashent (Yone, Irelia, Sylas, Akali, LeBlanc, Yasuo).",
+    "early_game": "Poke avec Q et E. Surveille ton passif : chargé, garde-le pour l'engage adverse (W au moment où l'assassin arrive = effroi et interruption). Marque les ennemis avec E pour des dégâts bonus.",
+    "level_1": "Ténèbres imminentes (E) en premier. Poke en zone et marque.",
+    "level_2": "Mistral perdant (Q). E → Q : dégâts bonus sur la cible marquée.",
+    "level_3": "Lâchez-moi ! (W). Shield et effroi avec le passif chargé : ton outil défensif contre les assassins.",
+    "level_6": "Déferlement d'Ombre : marque un champion, puis dash sur lui pour un gros burst. Une élimination réinitialise l'ultime : enchaîne les cibles en teamfight.",
+    "power_spikes": [
+      "Niveau 3 : effroi défensif avec W.",
+      "Niveau 6 : burst et poursuite avec R.",
+      "Premier item complet : one-shot sur les assassins.",
+      "Mid game : enchaînements d'ultimes en teamfight."
+    ],
+    "lane_plan": "Poke avec E et Q, garde le passif chargé pour les engages. Pousse puis roam avec l'ultime. La quête de rôle mid (retour accéléré) rend tes roams plus rentables. Contre les assassins, laisse-les venir : ton passif les punit.",
+    "trading": "Trade court : E → Q. All-in : R → dash → W (passif chargé) → E → Q. Défense : W au moment du dash adverse. Abandonne contre les champions qui te poke sans dasher (Vladimir, Annie).",
+    "jungle_plan": "",
+    "threats": [
+      "Champions sans dash qui te poke ou se soignent (Vladimir, Annie).",
+      "Nasus mid, qui encaisse ton burst.",
+      "Gaspiller ton passif chargé."
+    ],
+    "mistakes": [
+      "Utiliser le passif chargé sur un sbire au lieu de l'engage adverse.",
+      "Lancer R sans pouvoir tuer la cible.",
+      "Oublier que ton passif marque les champions qui dashent."
+    ],
+    "matchup_notes": {
+      "Yasuo": "Son E est un dash : il se fait marquer et ton passif interrompt ses engages.",
+      "LeBlanc": "Son W est un dash : garde le passif chargé pour elle.",
+      "Ahri": "Son ultime déclenche ton Désespoir : W quand elle arrive.",
+      "Yone": "Son E et son Q3 sont des dashes : punis-les.",
+      "Vladimir": "Il n'a pas de dash à punir et se soigne : poke et joue les objectifs."
+    },
+    "mid_game": "Roams avec l'ultime, picks sur les assassins et objectifs.",
+    "late_game": "Garde le passif chargé pour le diver adverse, puis enchaîne les ultimes sur les cibles basses.",
+    "ahead": "Roam, chasse les carries et prends les objectifs.",
+    "behind": "Farm et protège ton équipe contre les assassins.",
+    "win_condition": "Pour gagner cette partie, tu veux punir les champions mobiles avec ton passif et enchaîner les ultimes en teamfight.",
+    "final_tip": "Garde ton passif chargé pour le moment où l'adversaire dash sur toi : l'effroi retourne le combat."
+  }
+}

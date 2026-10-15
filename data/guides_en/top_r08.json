@@ -1,0 +1,84 @@
+{
+ "Garen|top": {
+  "identity": "Simple, solid physical damage juggernaut. Decisive Strike (Q) removes slows, speeds him up and silences; Courage (W) passively builds armor and magic resist with every kill and, when activated, reduces damage taken; Judgment (E) spins and shreds the armor of a target hit several times; Demacian Justice (R) executes with true damage based on missing health. His passive Perseverance regenerates him out of combat.",
+  "playstyle": "Short trades, then backing off to regenerate, and all-ins as soon as Q can reach the opponent. Very strong against champions without mobility, weak against ranged kiting. He scales decently and stays very good in the side lane.",
+  "early_game": "Farm with E, regenerate out of combat, and engage with Q when your opponent comes to last hit. Q + E is brutal; then back off for a few seconds out of combat so your passive restores your health. The lane bushes hide your approach: Q from a bush is your best engage.",
+  "level_1": "Judgment (E) first on the most common path: it farms quickly and deals damage while spinning. Use it when your opponent walks into melee range.",
+  "level_2": "Decisive Strike (Q). Speed + silence + an empowered attack: Q → E is your basic trade, look for it as soon as your opponent is in range.",
+  "level_3": "Courage (W). Damage reduction and tenacity: cast it before a trade or to soak an enemy combo. At level 3, you can all-in with Ignite.",
+  "level_6": "Demacian Justice deals true damage that grows with the target's missing health. It's an execute: cast it to finish, not to open the fight.",
+  "power_spikes": [
+   "Level 3: Q + E + W all-in.",
+   "Level 6: a true damage execute.",
+   "First completed item: lane dominance.",
+   "Courage passive stacks: more and more durable with every kill."
+  ],
+  "lane_plan": "Play a neutral wave, regenerate out of combat and trade when Q can reach your opponent. Push when you're winning trades and take plates. Recall with your wave crashed. Against a ranged champion, play near your tower and wait for your jungler.",
+  "trading": "Short trade: Q → E → back off to regenerate. Long trade: W → Q → E → R to finish. Engage when your opponent no longer has their dash; give up on it if they kite you from range (Kayle, Quinn).",
+  "jungle_plan": "",
+  "threats": [
+   "Ranged champions who kite you (Kayle, Quinn).",
+   "Constant poke that stops your out-of-combat regeneration.",
+   "Ganks on a pushed lane without vision."
+  ],
+  "mistakes": [
+   "Engaging with Q when you can't follow up.",
+   "Casting R too early, before the target is low enough.",
+   "Staying in combat when your passive could regenerate you between trades."
+  ],
+  "matchup_notes": {
+   "Nasus": "Punish him on every stack; Wither slows your attacks, so back off while it lasts.",
+   "Darius": "Q to silence his combo, avoid his Apprehend and the edge of his Decimate.",
+   "Jax": "Silence him before he casts Counter Strike, then spin with E.",
+   "Kayle": "Punish her early, before she becomes ranged; after that, play for teamfights.",
+   "Camille": "Keep W for her E + Q2 combo and silence her at the end of her Hookshot."
+  },
+  "mid_game": "Split push or group for objectives. Garen pushes a side lane fast and wins a lot of 1v1s; your upgraded Teleport (role quest) brings you back to fights.",
+  "late_game": "Go into the brawl, silence a carry and execute with your ultimate. Keep R for the most dangerous enemy target.",
+  "ahead": "Push the side lane, force duels and dive with your jungler. Your true damage executes become huge.",
+  "behind": "Farm, regenerate and play with your team. Garen stays useful as a frontline and executioner.",
+  "win_condition": "To win this game, you want to dominate your lane with short trades followed by regeneration, then execute carries in teamfights.",
+  "final_tip": "Between trades, step back out of combat for a few seconds: your passive gives you back the health you lost."
+ },
+ "Sett|top": {
+  "identity": "Juggernaut dealing physical and true damage. Sett alternates his two fists (passive Pit Grit, the right one is faster and stronger) and regenerates based on missing health. Knuckle Down (Q) speeds him up toward champions and empowers his next two punches, Haymaker (W) converts stored Grit into a shield and a punch that deals true damage in the center, Facebreaker (E) pulls enemies in from both sides (stun if there are some on each side) and The Show Stopper (R) slams an enemy down onto their allies.",
+  "playstyle": "Aggressive melee lane and long fights. Sett wins by taking damage to build Grit, then releasing it with the center of W at the right moment. Simple, solid and very strong in teamfights thanks to his ultimate.",
+  "early_game": "Trade with Q and your two empowered punches. Let your opponent deal their damage to build Grit (it decays quickly), then release W. Look for E's stun by putting your opponent between you and minions or a wall.",
+  "level_1": "Orders vary a lot: W → E → Q, E → Q → W or E → W → Q. Facebreaker (E) gives a good level 1 trade if your opponent is between you and units (stun).",
+  "level_2": "Depending on your order, Q or W. Knuckle Down (Q): Q → punch → punch, two fast empowered punches. W soaks an enemy combo and punishes it.",
+  "level_3": "Full kit: E (stun) → Q → punch → punch → W center for true damage.",
+  "level_6": "The Show Stopper: you grab a champion, carry them and slam them down; enemies in the impact zone take damage based on their bonus health. On a tank, you hurt their carries; on a carry, you drag them into your team.",
+  "power_spikes": [
+   "Level 3: full E → Q → W combo.",
+   "Level 6: ultimate to isolate or crush several enemies.",
+   "First completed item: lane dominance.",
+   "Teamfights: ultimate on several targets."
+  ],
+  "lane_plan": "Play a neutral or pushed wave, trade with Q and E. Take plates when you're winning. Recall when your wave crashes. Your passive regeneration lets you hold the lane for a long time, but it doesn't replace a real reset.",
+  "trading": "Short trade: Q → punch → punch. Long trade: E → Q → punches → W center with full Grit. Engage when your Grit is high; give up on it if your opponent kites you or has an armored tank who soaks your W.",
+  "jungle_plan": "",
+  "threats": [
+   "Armored tanks who hold up against you in long fights (Malphite, Ornn).",
+   "Ranged kiting.",
+   "Riven and champions who dodge your W."
+  ],
+  "mistakes": [
+   "Casting W with no Grit (low damage).",
+   "Casting E with no units on both sides (no stun).",
+   "Using your ultimate on a tank with no enemies in the impact zone."
+  ],
+  "matchup_notes": {
+   "Darius": "Take his bleeds to build Grit and release W center before he reaches 5 stacks.",
+   "Yone": "Stick to him with E and Q; release W when he tries his Q3.",
+   "Garen": "Take his combo (Grit) and release W when his Judgment ends.",
+   "Renekton": "Take his empowered W and release W after his second E.",
+   "Malphite": "His armor bothers you; your true damage W stays your best weapon."
+  },
+  "mid_game": "Skirmishes and teamfights: your ultimate changes fights. Join objectives and keep E for fights near walls.",
+  "late_game": "Melee frontline: ultimate on the enemy tank if they're glued to their carries, W for true damage. Protect your carries if the enemy team dives.",
+  "ahead": "Force duels and dive with your jungler: a Sett with a lead wins almost every melee fight.",
+  "behind": "Farm and play for your ultimate in teamfights, which stays very strong even without a lead.",
+  "win_condition": "To win this game, you want to dominate your lane and crush several enemies with your ultimate in teamfights.",
+  "final_tip": "Release Haymaker when your Grit is full and aim with the center of the zone for the true damage."
+ }
+}

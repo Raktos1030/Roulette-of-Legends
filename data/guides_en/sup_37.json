@@ -1,0 +1,43 @@
+{
+ "Velkoz|sup": {
+  "identity": "Artillery mage. Organic Deconstruction (passive): his abilities apply stacks; at 3 stacks, the target takes a burst of true damage. Plasma Fission (Q) fires a projectile that slows and splits in two when it hits an enemy or is recast, Void Rift (W) opens a rift that damages, then explodes after a short delay, Tectonic Disruption (E) knocks up enemies in an area, and Life Form Disintegration Ray (R) channels for 2.5 seconds a ray that follows the cursor (true damage on targets marked by his passive).",
+  "playstyle": "Poke and damage support: he harasses from very long range with W and Q, then finishes fights with his ray. He dominates melee supports and slow mages (Swain, Brand, Camille, Pantheon), but fears hooks and engages (Blitzcrank). No mobility.",
+  "early_game": "Poke with Void Rift (W) on your opponent when they come to last hit. Keep Tectonic Disruption (E) for an enemy engage or a kill. Three abilities hitting the same target trigger your passive explosion: W, then Q, then E.",
+  "level_1": "Plasma Fission (Q) first. After that, max Q first.",
+  "level_2": "Void Rift (W) or Tectonic Disruption (E). W to poke, E for safety against an engage support.",
+  "level_3": "The missing ability. Combo: E (knock-up) → W → Q → passive explosion.",
+  "level_6": "Life Form Disintegration Ray: a channeled ray that follows your cursor. Cast it after an E or on a rooted target; you're immobile while channeling.",
+  "power_spikes": [
+   "Level 3: full combo and passive.",
+   "Level 6: ray at the end of your combo.",
+   "First completed item: very punishing poke.",
+   "Teamfights: ray on a grouped team."
+  ],
+  "lane_plan": "Poke with W and Q, keep E for defense and play for kills with your ADC. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "Basic trade: W. All-in: E → W → Q → R. Defense: E on the enemy engage. Against Blitzcrank, stay behind minions at all times.",
+  "jungle_plan": "",
+  "threats": [
+   "Blitzcrank: a hard matchup.",
+   "Poppy: she stops your ray by charging you.",
+   "Engages and assassins: you have no mobility."
+  ],
+  "mistakes": [
+   "Casting the ray too close to enemies.",
+   "Missing E and no longer being able to defend yourself.",
+   "Standing in the open against a hook."
+  ],
+  "matchup_notes": {
+   "Thresh": "Stay behind minions and E under him if he engages.",
+   "Lulu": "Poke trades: your W range is longer.",
+   "Nautilus": "E when he arrives with his anchor.",
+   "Swain": "He has to get close: poke him from range.",
+   "Blitzcrank": "A hook on you is often fatal: stay behind your minions."
+  },
+  "mid_game": "Poke before objectives, place Control Wards and stay with your team.",
+  "late_game": "Stay far behind your frontline, poke with W and Q, E on divers, then ray on the enemy group.",
+  "ahead": "Poke harder and force grouped fights.",
+  "behind": "Poke safely from range and keep E to protect your ADC.",
+  "win_condition": "To win this game, you want to wear down the enemy team with your poke and finish fights with your ray.",
+  "final_tip": "Three abilities on the same target trigger your passive explosion: chain E, W and Q on the same enemy."
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "Kaisa|adc": {
+    "identity": "Tireuse hybride (dégâts physiques et magiques) très mobile. Seconde peau (passif) : ses attaques appliquent du Plasma, qui explose en dégâts magiques ; les CC de ses alliés en appliquent aussi, et ses items font évoluer ses sorts (Arme vivante). Pluie d'Icathia (Q) tire une volée de projectiles répartis sur les cibles proches, Rayon du Néant (W) tire un rayon à longue portée qui applique du Plasma, Surpresseur (E) donne de la vitesse de déplacement puis de la vitesse d'attaque (et un bref camouflage une fois évolué), et Instinct meurtrier (R) la fait dash sur un champion ennemi marqué par le Plasma.",
+    "playstyle": "ADC de dive : elle attend que son équipe engage, puis dive avec son ultime sur un carry pour le tuer. Ses matchups difficiles sont nombreux et fréquents (Jinx, Yunara, Xayah, Zeri) : elle dépend beaucoup de son support et de ses évolutions.",
+    "early_game": "Farm et poke avec Q quand l'adversaire est isolé de ses sbires (les projectiles se répartissent sur les cibles proches). Utilise W de loin pour poke ou pour marquer une cible avant l'engage de ton support. Garde E pour fuir.",
+    "level_1": "Pluie d'Icathia (Q) en premier. Q sur l'adversaire quand aucun sbire ne l'entoure : tous les projectiles le touchent.",
+    "level_2": "Rayon du Néant (W). Poke à longue portée, et marque une cible pour lancer un all-in avec ton support.",
+    "level_3": "Surpresseur (E). Vitesse de déplacement pour fuir ou poursuivre, puis vitesse d'attaque pour les trades.",
+    "level_6": "Instinct meurtrier : dash sur un champion marqué par le Plasma (par tes attaques, ton W ou les CC de ton support). Garde-la pour dive sur un carry quand ton équipe engage, ou pour fuir vers un ennemi éloigné.",
+    "power_spikes": [
+      "Niveau 6 : dive avec l'ultime.",
+      "Première évolution : Q (plus de projectiles) ou W selon tes items.",
+      "Deux évolutions : dégâts de burst très élevés.",
+      "Mid game : dive sur les carries isolés."
+    ],
+    "lane_plan": "Farm, poke avec W et Q, et joue autour des engages de ton support : ses CC appliquent du Plasma. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) accélère tes évolutions. Joue le dragon avec ton jungler.",
+    "trading": "Trade court : Q sur l'adversaire isolé, puis recule. All-in : W → engage du support → R → Q → attaques. Abandonne contre les ADC qui gagnent les combats longs (Jinx, Yunara) : ne dive pas sans ton équipe.",
+    "jungle_plan": "",
+    "threats": [
+      "Jinx, Yunara et Xayah : matchups difficiles et très fréquents.",
+      "CC de foule quand tu dives.",
+      "Nilah et Kog'Maw : matchups difficiles."
+    ],
+    "mistakes": [
+      "Dive avec l'ultime avant que l'équipe adverse ait utilisé ses CC.",
+      "Lancer Q au milieu des sbires (les projectiles se dispersent).",
+      "Négliger le farm : tes évolutions dépendent de tes items."
+    ],
+    "matchup_notes": {
+      "Jhin": "Dive sur lui quand il recharge après sa quatrième balle.",
+      "Jinx": "Ses Pyromâcheurs t'arrêtent quand tu dives : attends qu'elle les ait utilisés.",
+      "Ezreal": "Tu gagnes les trades quand il est à court de sorts.",
+      "Yunara": "Évite les combats longs contre elle : joue le poke et les dives avec ton équipe.",
+      "Xayah": "Sa Rafale de plumes la rend impossible à cibler : garde ton ultime pour après."
+    },
+    "mid_game": "Groupe avec ton équipe et cherche les carries isolés. Utilise W pour marquer une cible avant de dive.",
+    "late_game": "Attends que ton équipe engage, puis dive sur le carry adverse avec l'ultime et le camouflage de E évolué. Ne sois jamais la première à entrer.",
+    "ahead": "Dive sur les carries et prends les objectifs.",
+    "behind": "Farm pour tes évolutions, joue le poke avec W et reste avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux atteindre tes évolutions puis dive sur les carries adverses quand ton équipe a lancé le combat.",
+    "final_tip": "Les CC de tes alliés appliquent du Plasma : chaque engage de ton support te donne une cible pour ton ultime."
+  }
+}

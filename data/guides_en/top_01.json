@@ -1,0 +1,248 @@
+{
+ "Aatrox|top": {
+  "identity": "Physical damage fighter who lives off his three-part The Darkin Blade (Q). He wins trades by landing the outer edges of his Q's (sweet spots), heals massively in extended fights and becomes one of the best teamfighting top laners when he has room to hit several targets.",
+  "playstyle": "Medium-length area trades: chain Q1-Q2-Q3 aiming with the edges, adjust with Umbral Dash (E), then back off while your abilities are on cooldown. Very cooldown-dependent: without Q, Aatrox is vulnerable. Strong in mid-game skirmishes and group fights thanks to his ultimate's healing.",
+  "early_game": "Farm cleanly while punishing every enemy last hit with a sweet-spot Q. Always use your passive (an empowered, longer-range attack that heals) in trades. Keep E to adjust a Q or dodge a gank: it's your only mobility.",
+  "level_1": "Q first. You can already land a sweet-spot Q1 on an opponent who comes to last hit; against a champion who's strong at level 1 (Darius, Renekton), settle for poking from range and farming.",
+  "level_2": "Umbral Dash (E). Most common path: Q → E → W. E lets you adjust the area of Q2/Q3 during the animation, making sweet spots much more reliable. A good time for a Q1-Q2 trade if your opponent is still level 1.",
+  "level_3": "Infernal Chains (W). Q, then W (the chain pulls the enemy back to the center if they don't leave the zone) puts them back into the sweet spot of your next Q. You threaten a full trade, not yet a guaranteed all-in against a fighter of equal strength.",
+  "level_6": "World Ender increases your damage, speed and above all your healing, and extends on takedowns. You win long all-ins and become very hard to kill in duels. Save it for a decisive all-in or to survive a gank; enemy healing reduction makes it much weaker.",
+  "power_spikes": [
+   "Level 2 (Q + E): sweet spots much easier to land.",
+   "Level 6: your ultimate wins you most extended fights.",
+   "First completed item: much more punishing trades.",
+   "Level 9 (Q maxed): a mid-game skirmish spike."
+  ],
+  "lane_plan": "Keep the wave near your tower or in the middle: Aatrox likes long fights without being exposed to ganks. Trade every time your opponent comes to last hit inside your Q range. Freeze if you're ahead against a low-mobility champion; push, then recall when your Q is on cooldown or your health is low. The lane's walls let you throw unpredictable Q2/Q3s and angled W's.",
+  "trading": "Short trade: Q1 → Q2 (+E to adjust), then back off during the cooldown. The long trade comes with Q3 + W and your passive's empowered attacks. Engage when your opponent has used their mobility or area ability; give up on it if you miss two Q's in a row, because you have nothing during the cooldown.",
+  "jungle_plan": "",
+  "threats": [
+   "Enemy healing reduction: it cuts your strength in long fights.",
+   "Mobile champions who dodge your sweet spots (Irelia, Yone): don't throw Q while their dash is available.",
+   "Ganks while your E is on cooldown: keep it to escape if your wave is pushed."
+  ],
+  "mistakes": [
+   "Throwing all three Q's in a straight line without adjusting with E: it's predictable and easy to dodge.",
+   "Going all-in without your ultimate against a duelist who wins long fights.",
+   "Using E to move forward or farm: it's for adjusting your Q's and escaping."
+  ],
+  "matchup_notes": {
+   "Yone": "He dodges your Q's with his E: wait until he's used it to throw Q2/Q3. Step out of the line of his Q3 (tornado) and trade briefly near your wave to make the most of your healing.",
+   "Nasus": "Punish him before he stacks: sweet-spot Q on every last hit. Avoid long exchanges while his ultimate is active and watch out for Wither, which slows your attacks.",
+   "Malphite": "His armor and shield blunt your trades and he pokes you from range. Farm carefully, only trade with sweet spots and play for group fights.",
+   "Irelia": "She dodges your Q's by dashing on minions and can stun you with E. Trade when the wave is small (fewer minions to dash on) and keep W to pull her back into your Q's zone.",
+   "Darius": "Don't stand in the outer edge of his Decimate and don't let him reach 5 stacks. Poke with sweet spots and back out of his Apprehend; at level 6, your ultimate lets you go toe to toe with him at equal level."
+  },
+  "mid_game": "Take the side lane on the side of the upcoming objective and join river skirmishes: Aatrox excels in messy fights. Group for objectives when your ultimate is available; otherwise, keep pressure on the side lane with your upgraded Teleport once your role quest is complete.",
+  "late_game": "Aggressive frontline: go in after the first enemy engage ability, hit several targets with your sweet spots and survive thanks to your ultimate's healing. Hit whatever is in range of your Q's rather than diving the backline alone.",
+  "ahead": "Freeze to deny your opponent XP, then use your lead to invade with your jungler or push the side lane to draw two opponents. With your ultimate, tower dives become possible.",
+  "behind": "Play under your tower, farm with Q and avoid trades without sweet spots. Your teamfighting stays good: join grouped fights with your team instead of split pushing alone.",
+  "win_condition": "To win this game, you want to win mid-game skirmishes thanks to your sweet spots and ultimate, then enter teamfights in the second wave to hit several targets.",
+  "final_tip": "Every Q should hit the enemy with the edge of the ability: cast E during the Q animation to adjust the zone instead of dashing straight at them."
+ },
+ "Akali|top": {
+  "identity": "Magic damage assassin played top against melee fighters. She harasses with Five Point Strike (Q), uses her passive (ring, then empowered attack) and, from level 6, becomes able to kill an isolated target, then split push or join fights to take out a carry.",
+  "playstyle": "Energy-based poke and short trades, then an all-in with her ultimate. Very dependent on level and lead: strong against fighters without CC, much weaker against tanks and champions who shut her down (CC, damage inside the Shroud). More of a split push and pick style than a front-to-back teamfighter.",
+  "early_game": "Harass with Q on every enemy last hit; the slow at the tip of Q lets you leave before the counterattack. Manage your energy: always keep enough to cast W (Twilight Shroud) if the enemy engages. Aim for an XP lead to reach level 6 first.",
+  "level_1": "Q first. Poke with the tip of Q and place your passive's ring for the empowered attack, then back off. Avoid staying glued to a strong fighter at level 1.",
+  "level_2": "Twilight Shroud (W). Most common path: Q → W → E. The Shroud makes you invisible and restores energy: use it to sustain a longer trade or to escape an engage.",
+  "level_3": "Shuriken Flip (E): a shuriken that flips you backward, then a recast to dash to the target it hit. Q + passive + E + E + Q is your first real trading combo; you can also use E1 alone to back off.",
+  "level_6": "Perfect Execution: the first cast passes through to set up the combo, the second executes based on missing health. It's your big kill spike: an opponent at half health is often killable with the full combo and Ignite.",
+  "power_spikes": [
+   "Level 3: full Q + passive + E combo.",
+   "Level 6: a constant kill threat with your ultimate.",
+   "First completed item: your burst kills isolated carries.",
+   "Level 11: ultimate rank 2, lower cooldown to chain picks."
+  ],
+  "lane_plan": "Let the wave sit slightly on your side to trade without exposing yourself. Trade with Q every time your opponent steps up to last hit. After your first lead, push to take plates and reset. Use the lane's bushes to break vision and force the enemy to play back.",
+  "trading": "Short trade: Q + passive, then back off. Full trade: E1 → E2 → Q → passive → Q, with W placed if your opponent fights back. Engage when they've used their engage or CC ability; give up on it as soon as they can lock you down inside your Shroud (sweepers, area zones, area control).",
+  "jungle_plan": "",
+  "threats": [
+   "CC and area damage that cancel your Shroud.",
+   "Durable tanks who soak your burst without dying.",
+   "Ganks when you're out of energy."
+  ],
+  "mistakes": [
+   "Spending your energy on poke and no longer being able to place W when the enemy engages.",
+   "Using E2 to go in without your ultimate or Ignite against a fighter who wins long trades.",
+   "Charging head-first into teamfights instead of looking for a flank or a pick."
+  ],
+  "matchup_notes": {
+   "Yone": "Poke with Q when he comes to farm; avoid his Q3 (tornado), which ruins your combo. At level 6, wait until he's used his E before committing.",
+   "Jax": "Don't go in during his Counter Strike (E): back off, then punish when the dodge ends. Your Q's slow him and stop him from sticking to you.",
+   "Dr. Mundo": "He soaks damage and heals, so your poke barely bothers him. Farm, get the level lead and play the map rather than looking for a kill in lane.",
+   "Garen": "He cancels your Shroud with his silence (Q) and his spin. Only poke when his Q is on cooldown and don't let him walk up to you for free.",
+   "Nasus": "Punish him early to limit his stacks, then avoid fights under Wither (W), which ruins your DPS."
+  },
+  "mid_game": "Split push a side lane while your team holds mid, or flank toward objectives to kill the enemy carry. Your upgraded Teleport (role quest) lets you join a fight from behind.",
+  "late_game": "You're a pick threat: wait for the enemy CC to be used, then dive the backline with your ultimate. In the side lane, hold a wave and force two opponents to come.",
+  "ahead": "Roam mid or to dragon when your wave is pushed; kill isolated targets and take plates. Every kill should turn into a tower or an objective.",
+  "behind": "Farm under your tower with Q, avoid fights where tanks lock you down, and only look for picks on badly positioned carries.",
+  "win_condition": "To win this game, you want to turn your lane lead into picks on the enemy carries and side-lane pressure.",
+  "final_tip": "Always keep enough energy to place your Shroud when your opponent engages: that's what wins your trades, not the first Q."
+ },
+ "Ambessa|top": {
+  "identity": "Noxian physical damage, energy-based fighter built on ability chains. Every ability grants a short dash (passive) followed by an empowered attack that restores energy: she sticks to her targets, cuts them apart with fast combos and finishes with Public Execution, a suppression followed by a slam.",
+  "playstyle": "Aggressive combo duelist: she wants to chain ability → passive dash → empowered attack on repeat. Strong in the early and mid game and in duels, a bit less so late against CC-heavy teams. Depends on mechanical mastery and cooldowns.",
+  "early_game": "Trade as soon as possible with Q (the edge of Cunning Sweep deals more damage), then follow up with your passive's empowered attack. Keep Repudiation (W) to absorb the enemy's big ability. Play to dominate farm and XP.",
+  "level_1": "Q first. Hit with the edge of Cunning Sweep's cone to unlock the second part (Sundering Slam), then use your passive's empowered attack.",
+  "level_2": "Repudiation (W). Most common path: Q → W → E. W absorbs damage, then strikes around you (stronger if you blocked champion damage): cast it the moment your opponent engages.",
+  "level_3": "Lacerate (E) adds damage and a slow: your full combo Q1 → Q2 → E → W, woven with empowered attacks, becomes threatening. You can start looking for all-ins.",
+  "level_6": "Public Execution: you dash to the farthest champion in the line, suppress them and slam them into the ground. Use it to engage, stop an escape or catch a target behind their frontline. A big kill threat with Ignite.",
+  "power_spikes": [
+   "Level 3: full combo and a strong all-in threat.",
+   "Level 6: engage and suppression with your ultimate.",
+   "First completed item: very strong duels.",
+   "Two items: a mid-game skirmish spike."
+  ],
+  "lane_plan": "Play the wave in the middle or slightly pushed: Ambessa likes taking the initiative. Trade Q + passive on every enemy last hit. If you're winning trades, crash the wave and take plates; recall when you no longer have the energy or health to hold. You don't need walls: your mobility comes from your abilities.",
+  "trading": "Short trade: Q1 → dash → empowered attack → Q2, then back off. Full trade: E + W the moment the enemy fights back, then your ultimate to finish. Engage when your opponent no longer has their main CC; give up on it if you're out of energy, because your passive can't keep your momentum going.",
+  "jungle_plan": "",
+  "threats": [
+   "Hard CC (stuns, knock-ups) that breaks your chains.",
+   "Ranged kiting: Teemo, Kennen and champions who slow.",
+   "Champions who win long fights once you're out of energy."
+  ],
+  "mistakes": [
+   "Casting all your abilities at once without weaving your passive's empowered attacks (lost damage and energy).",
+   "Wasting W with no damage to block: you lose your defense and your damage bonus.",
+   "Using your ultimate to engage into several opponents with no follow-up."
+  ],
+  "matchup_notes": {
+   "Renekton": "He wins short trades with his Fury: don't trade when his bar is full. Look for trades after his dash.",
+   "Yone": "Wait for his E to engage; your W absorbs his Q3 well. At level 6, your ultimate stops his escape.",
+   "Teemo": "He slows and blinds you, so you struggle to stick to him. Farm carefully, only engage with your passive and dash, and ask your jungler for help.",
+   "Irelia": "She beats your combos when she has her stacks. Trade when her passive stacks have fallen off, and keep W for her E.",
+   "K'Sante": "You easily hold long trades against him. Just avoid his ultimate near a wall."
+  },
+  "mid_game": "Take the side lane and force duels, or join skirmishes around objectives. Your ultimate is excellent for catching a target trying to rejoin their team.",
+  "late_game": "Go in after the first enemy CC: ultimate on the closest carry, then chain your abilities to stay alive. Avoid engaging alone into a whole team.",
+  "ahead": "Press your dueling lead: split push, force 1v1s and use your upgraded Teleport to join objectives. Tower dive with your jungler.",
+  "behind": "Avoid duels, farm under your tower and join your team for fights where you're not the first one in.",
+  "win_condition": "To win this game, you want to win your lane through chained trades, then turn your lead into winning duels and picks with your ultimate.",
+  "final_tip": "Between every ability, land your passive's empowered attack: it's what restores your energy and deals most of your damage."
+ },
+ "Anivia|top": {
+  "identity": "Magic damage control mage played top to punish melee fighters. Her wall (W), stun (Q) and storm (R) control the lane, and her passive (rebirth in an egg) discourages all-ins. In top, she's mostly strong against champions with no range.",
+  "playstyle": "Zone control and poke, then scaling into a teamfight mage who holds an entire area. Very dependent on cooldowns and mana early on.",
+  "early_game": "Survive and farm: your E and Q are enough to last hit from range. Block engages with W and punish opponents who walk into melee range with Q + doubled E (E deals double damage on a chilled target). Keep Q to protect yourself from engages.",
+  "level_1": "Q or E: the most common path starts with Flash Frost (Q), then Frostbite (E), then E again (Q → E → E). At level 1, stay at range and farm; you don't have the tools to win a trade yet.",
+  "level_2": "Frostbite (E). Q (which chills) then E (double damage on a chilled target) is your basic trade. Use it when your opponent comes to last hit in melee range.",
+  "level_3": "A second point in E on the most common path, with Crystallize (W) arriving at level 4. Your Q + E trades hurt; keep your distance until you have your wall to stop an engage.",
+  "level_6": "Glacial Storm chills and slows a large area, doubling every E: you clear waves from range and slow fighters for a long time. The combo W to block, R to slow, Q to stun, doubled E kills careless opponents.",
+  "power_spikes": [
+   "Level 6: a storm that farms and controls the lane.",
+   "First completed item: enough damage and mana to hold the lane.",
+   "Two items: dominant zone control in teamfights.",
+   "Passive available: the egg discourages all-ins."
+  ],
+  "lane_plan": "Keep the wave near your tower: you're vulnerable to ganks and engages. Farm from range with E, poke with Q when your opponent steps up. After level 6, clear waves with R and recall with a comfortable margin. The wall is for cutting off engages, not for attacking.",
+  "trading": "Basic trade: Q (which passes through and stuns), then doubled E. Long trade: R placed on the enemy to double all your E's. Only engage when Q can land; give up on it if you miss Q, because you have no protection left against the engage.",
+  "jungle_plan": "",
+  "threats": [
+   "Mobile fighters who get over your wall (leaps, dashes).",
+   "Ganks without your Q available.",
+   "Olaf and champions immune to CC during their ultimate."
+  ],
+  "mistakes": [
+   "Using Q to poke and not having it against an engage.",
+   "Placing the wall in the wrong spot and blocking your own escape.",
+   "Leaving your ultimate on with no target and draining your mana."
+  ],
+  "matchup_notes": {
+   "Nasus": "Poke him when he wants to stack and keep Q for his engage under Wither.",
+   "Yone": "He dashes over your wall with E; keep Q for when he snaps back and don't stand in the line of his Q3.",
+   "Malphite": "He can't easily poke you beyond his Q; watch out for his ultimate at level 6, keep Q and the wall for after the engage.",
+   "Olaf": "His ultimate makes him immune to your CC. Respect his ultimate window and don't count on the wall to block him.",
+   "Riven": "Her dashes and leap get over your wall. Keep Q for the end of her combo and play near your tower."
+  },
+  "mid_game": "Stay close to your team and control objective areas: R placed on dragon or a river entrance makes enemy engages very costly. Farm side lanes from range with R.",
+  "late_game": "Zone mage: place the wall to split the enemy team in two, hold the storm over the fight area and keep Q for the diver coming at you. Position behind your frontline.",
+  "ahead": "Take towers with your wave control and roam to objectives: your ultimate makes every fight around an objective hard for the enemy.",
+  "behind": "Farm from range with R, avoid isolated side lanes and stay with your team: your zone control stays useful even without a lead.",
+  "win_condition": "To win this game, you want to survive the lane, reach your items and control teamfight zones with your wall and storm.",
+  "final_tip": "Always keep Flash Frost (Q) for the enemy engage: a landed Q then a doubled E turns almost every all-in."
+ },
+ "Camille|top": {
+  "identity": "Duelist dealing physical and true damage, a split push and pick specialist. Her Hookshot (E) gives her mobility off walls, Precision Protocol (Q) deals big damage in two parts and The Hextech Ultimatum (R) traps a target to kill or isolate them.",
+  "playstyle": "Short trades in lane, then side-lane dominance in the mid game. Strong in duels thanks to her second Q's true damage and her passive shield. Depends on her cooldowns (especially E) and wall placement.",
+  "early_game": "Survive and farm cleanly; you're fairly strong in extended duels. Use Tactical Sweep (W) to farm and poke with its edge (slow + heal). Keep E to escape or for a safe engage.",
+  "level_1": "Tactical Sweep (W) first on the most common path (W → Q → E). It lets you farm and poke with the cone's edge without taking risks. Some players take Q first to trade in melee range.",
+  "level_2": "Precision Protocol (Q). Short trade: auto + Q1, then wait for Q2 to charge up to deal true damage. Back off between the two if your opponent fights back.",
+  "level_3": "Hookshot (E): you latch onto a wall, then launch at the enemy, stunning them if you hit. It's your first real engage. Also keep it to escape if the enemy jungler shows up.",
+  "level_6": "The Hextech Ultimatum: you leap onto a target and create a zone they can't leave. Use it to isolate a carry in teamfights or stop an escape in a duel. A strong kill threat as soon as the target has no mobility left.",
+  "power_spikes": [
+   "Level 3: Q-E-Q combo with a stun.",
+   "Level 6: isolating a target with your ultimate.",
+   "First completed item: a big dueling spike.",
+   "Two items: side-lane dominance and picks."
+  ],
+  "lane_plan": "Play the wave in the middle, farm with W and trade briefly with Q when your opponent steps up. Don't waste E: without it, you're easy to punish. Once you have your first item, push the wave and take plates. Being near a wall is essential to engage or escape.",
+  "trading": "Short trade: auto + Q1, back off, come back for a charged Q2. Full trade: E1 (wall) → E2 (stun) → Q → W edge → Q2. Engage when your opponent has used their dash or CC; give up on it if they lock you down mid-Hookshot.",
+  "jungle_plan": "",
+  "threats": [
+   "CC and slows that lock you down (Teemo, Warwick).",
+   "Champions who win long fights against you (Gwen).",
+   "Ganks while your E is on cooldown."
+  ],
+  "mistakes": [
+   "Engaging with Hookshot with no wall nearby to escape afterward.",
+   "Casting Q2 too early, without the true damage.",
+   "Using your ultimate on a tank instead of isolating a carry."
+  ],
+  "matchup_notes": {
+   "Garen": "Poke with W, avoid his silence (Q) and punish him when he spins without hitting.",
+   "Yone": "He can't easily follow you when you use walls. Wait for his E, then engage with E and Q2.",
+   "Jax": "Don't cast E during his Counter Strike: wait for it to end. He beats you at the end of long fights when he's further ahead.",
+   "Teemo": "He blinds and slows you. Only engage with an E off a wall that catches him off guard and kill him quickly.",
+   "Darius": "Avoid the outer edge of his Decimate and his Apprehend; trade briefly with Q2 and back off before he stacks up."
+  },
+  "mid_game": "Split push: push a side lane, keep vision on the walls and force two players to come deal with you. Join objectives with your upgraded Teleport (role quest) or by cutting through the jungle with E.",
+  "late_game": "Pick and assassin role on a carry: ultimate on the most dangerous target, then keep them in the zone. In the side lane, keep the pressure on without exposing yourself to a 2v1.",
+  "ahead": "Force duels in the side lane, invade the enemy jungle with your jungler and dive carries as soon as they're alone.",
+  "behind": "Farm safely, avoid duels against champions who are further ahead and play for picks on isolated targets rather than split pushing.",
+  "win_condition": "To win this game, you want to dominate your side lane with winning duels and picks on isolated carries.",
+  "final_tip": "Never throw your Hookshot without knowing where you'll leave from: find your exit wall before committing."
+ },
+ "Cassiopeia|top": {
+  "identity": "Magic damage DPS mage played top to keep melee fighters at bay. Her poisons (Q, W) make Twin Fang (E) very fast and powerful, and Miasma (W) prevents dashes. Petrifying Gaze (R) petrifies enemies facing her.",
+  "playstyle": "Extended poison trades: poison, then spam E back to back. Very strong sustained DPS, weak against fast engages without Q available. Strong scaling and a big teamfight impact.",
+  "early_game": "Farm with E on poisoned minions or as a last hit to get mana back. Poke with Q when your opponent steps up, then chain E. Keep W (Miasma) against an engage: it prevents dashes and leaps.",
+  "level_1": "Twin Fang (E) first on the most common path (E → Q → W), to last hit safely. Level 1 isn't for trading against a fighter.",
+  "level_2": "Noxious Blast (Q). Q, then chain E: every E on a poisoned target deals much more damage. Use this combo when your opponent comes to last hit.",
+  "level_3": "Miasma (W). It slows and prevents dashes: place it under an opponent who tries to engage you. Your basic kit is complete, and your long trades become very strong.",
+  "level_6": "Petrifying Gaze: petrifies enemies facing you, slows the others. Combined with W, it prevents almost any escape. A strong kill threat on fighters who engage you head-on.",
+  "power_spikes": [
+   "Level 3: poison + E on repeat.",
+   "Level 6: petrification against engages.",
+   "First completed item: very high DPS.",
+   "Two to three items: one of the best extended-fight mages."
+  ],
+  "lane_plan": "Keep the wave near your tower or in the middle: you need to avoid ganks and engages in a long lane. Farm with E, poke with Q. If your opponent engages you, W then R. Recall with a pushed wave and don't stay without mana. Bushes are dangerous: keep vision on them.",
+  "trading": "Basic trade: Q, then repeated E's. Long trade: W to prevent escapes, R to petrify. Engage if your Q lands; give up on it if you miss against a fighter who can stick to you.",
+  "jungle_plan": "",
+  "threats": [
+   "Fast engages while W is on cooldown.",
+   "Very durable champions who soak your DPS (Ornn).",
+   "Ganks on a pushed lane."
+  ],
+  "mistakes": [
+   "Using W to farm and not having it against an engage.",
+   "Casting your ultimate at the enemy's back (no petrification).",
+   "Running out of mana from spamming E on unpoisoned minions."
+  ],
+  "matchup_notes": {
+   "Teemo": "Your E range stops him from poking you for free; watch out for his blinds, which don't block your abilities.",
+   "Nasus": "Poke him to stop him from stacking, then keep W and R for his engage under Wither.",
+   "Irelia": "She dashes through the wave. Keep W to block her dashes and R to petrify her when she comes back at you.",
+   "Malphite": "He pokes you with Q and engages you at level 6; keep R for the moment he lands.",
+   "Jax": "W stops his Leap Strike; keep him at range and spam E."
+  },
+  "mid_game": "Stay close to your team and farm waves from range. You're one of the best mages at defending a tower or objective thanks to W and R.",
+  "late_game": "Main area DPS: stand behind your frontline, poison and spam E. Keep R for the enemy engage or to stop an escape.",
+  "ahead": "Take towers and objectives with your wave clear. Roam with your jungler to secure skirmishes.",
+  "behind": "Farm under your tower, avoid isolated side lanes and play defensively: your scaling will bring you back into the game.",
+  "win_condition": "To win this game, you want to survive the lane and reach teamfights with enough items to hold a whole area with your poison.",
+  "final_tip": "Keep Miasma (W) for the enemy engage: stopping a dash is worth more than any poke."
+ }
+}

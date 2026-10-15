@@ -1,0 +1,43 @@
+{
+ "Rakan|sup": {
+  "identity": "Very mobile engage support. Fey Feathers (passive) regularly gives him a shield. Gleaming Quill (Q) throws a feather that damages; if it hits a champion or epic monster, Rakan then heals nearby allies. Grand Entrance (W) dashes him to a location and knocks up enemies on arrival, Battle Dance (E) flies him to an ally and shields them (recastable once for free), and The Quickness (R) gives him speed and charms every enemy he touches.",
+  "playstyle": "Engage and disengage support: he goes in with W and R, then gets out with E to an ally. Only Senna and Zilean clearly bother him, and he crushes dive and slow-poke supports (Camille, Pantheon, Xerath). Everything depends on engage timing.",
+  "early_game": "At level 2, look for W → attacks, then E to your ADC to get out. Before that, poke with Q (which also heals your ADC if it hits a champion). Always keep E to reach or protect your ADC.",
+  "level_1": "Grand Entrance (W) first. After that, max W first.",
+  "level_2": "Battle Dance (E). Combo: W (knock-up) → attacks → E to your ADC. Or E to a distant ally, then W from their position.",
+  "level_3": "Gleaming Quill (Q). Poke and healing for your duo.",
+  "level_6": "The Quickness: run through the enemy team to charm everyone. Combo: R → W → E to an ally (Flash often goes between R and W).",
+  "power_spikes": [
+   "Level 2: W → E.",
+   "Level 6: R → W, engage on several enemies.",
+   "First completed item: stronger shields and heals.",
+   "Teamfights: engage on the group, then out with E."
+  ],
+  "lane_plan": "Constantly threaten the engage, poke with Q and protect your ADC with E. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "All-in: W → attacks → Q → E to your ADC, then R at level 6. Defense: E to the ally under attack, W to interrupt the enemy engage. Back off against supports who poke you or cancel your engage (Senna, Zilean).",
+  "jungle_plan": "",
+  "threats": [
+   "Senna and Zilean: hard matchups.",
+   "Crowd control that stops you mid-dive.",
+   "Engaging with no ally to fly back to with E."
+  ],
+  "mistakes": [
+   "Using E to engage and no longer being able to get out.",
+   "Engaging when your ADC can't follow.",
+   "Casting your ultimate after W instead of the other way around (R then W charms more people)."
+  ],
+  "matchup_notes": {
+   "Thresh": "If his hook lands on your ADC, E to them to protect them.",
+   "Lulu": "Her polymorph stops you: engage once she's used it.",
+   "Nautilus": "You're more mobile: dodge his anchor, then engage.",
+   "Pyke": "He's fragile: W → R punishes him.",
+   "Senna": "She pokes and roots you: engage once her Last Embrace is used."
+  },
+  "mid_game": "Look for engages with your jungler, place Control Wards and protect your ADC with E.",
+  "late_game": "Engage on the group with R → W, then get out with E to an ally. On defense, E to the dived carry, W to interrupt.",
+  "ahead": "Engage often: every multi-charm wins a fight.",
+  "behind": "Protect with E and Q, and wait for the right engage with R.",
+  "win_condition": "To win this game, you want to engage on several enemies and get out unharmed thanks to your mobility.",
+  "final_tip": "Always keep Battle Dance to get out: a Rakan without E after the engage dies."
+ }
+}

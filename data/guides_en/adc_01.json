@@ -1,0 +1,43 @@
+{
+ "Aphelios|adc": {
+  "identity": "Physical damage marksman. Aphelios wields five Lunari weapons and carries two at a time: Phase (W) swaps between his main and off-hand weapon, and each weapon has its own attack and its own active ability (Q). Calibrum (rifle) marks the target for a second, very long-range attack, Severum (scythe pistol) makes him run while attacking nearby enemies and heals him, Gravitum (cannon) roots enemies it has slowed, Infernum (flamethrower) hits in a cone and Crescendum (chakram) drops a sentry. When a weapon runs out of ammo, the next one in the queue (E) replaces it. Moonlight Vigil (R) fires a beam that explodes on a champion and applies the main weapon's effect.",
+  "playstyle": "Teamfight hypercarry with a high skill ceiling: your strength depends on the weapon pair in your hands when the fight starts. He has no dash: he relies on his support to survive and on his weapon combos to win fights.",
+  "early_game": "You start with Calibrum as your main weapon and Severum as your off-hand (then Gravitum, Infernum and Crescendum in the queue). Poke with Calibrum's mark, swap to Severum for short trades: it heals you as you attack. Count your ammo: emptying a weapon right before a fight leaves you with a weak pair. Save Gravitum for kills with your support.",
+  "level_1": "Aphelios doesn't level his abilities: each point buys a bonus (Q = attack damage, W = attack speed, E = lethality). Most played path: three points in attack damage, one in lethality, then attack damage; the alternative goes attack speed first. At level 1 you only have Phase (W): farm with the attacks of both weapons.",
+  "level_2": "Weapon abilities (Q) unlock. Calibrum: a long-range marking shot, then you hit the mark from very far away. Severum: run while attacking, ideal for a short trade.",
+  "level_3": "Keep investing in attack damage. Play around the rotation: when Gravitum comes up, look for an engage with your support (slow, then Q to root).",
+  "level_6": "Moonlight Vigil: its effect depends on your main weapon (empowered marks with Calibrum, a heal with Severum, a huge slow with Gravitum, area damage with Infernum, extra chakrams with Crescendum). It ranks up on its own at levels 11 and 16.",
+  "power_spikes": [
+   "Level 2: weapon abilities.",
+   "Level 6: an ultimate tailored to the weapon in hand.",
+   "Two completed items: the rotation becomes dangerous in teamfights.",
+   "Late game: Infernum or Crescendum in hand for the teamfight ultimate."
+  ],
+  "lane_plan": "Farm safely and poke with Calibrum. Plan ahead for the rotation: you know which weapon is coming (E), so set up the fight for the right pair. Play around your support's engages and Gravitum. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards clean farming. Go for dragon with your jungler.",
+  "trading": "Short trade: Severum (speed and heal) or Calibrum's mark. All-in: Gravitum slow, Q root, then hit with your off-hand. Back off when your pair is weak (a weapon almost empty, a bad combination) against an opponent who dives you.",
+  "jungle_plan": "",
+  "threats": [
+   "Assassins and divers: you have no dash.",
+   "Long-range bot lane mages (Xerath) who poke you.",
+   "Nilah, who dodges your attacks with her Jubilant Veil."
+  ],
+  "mistakes": [
+   "Forgetting to count your ammo before a fight.",
+   "Casting your ultimate with the wrong main weapon.",
+   "Standing in front with no dash to escape."
+  ],
+  "matchup_notes": {
+   "Jinx": "She scales and chains kills with her passive: look for early fights, with Gravitum and your support.",
+   "Kai'Sa": "She has to come into melee range: punish her ultimate with Gravitum or Infernum.",
+   "Vayne": "Calibrum's range dominates her in lane.",
+   "Xerath": "He pokes you from afar: stay behind your minions and go for all-ins with your support.",
+   "Nilah": "Wait for her Jubilant Veil to end before engaging."
+  },
+  "mid_game": "Group with your team around dragons and Baron. Pick your fights based on your weapon pair: don't engage with a weapon that's almost empty.",
+  "late_game": "Stay behind your frontline and hit whatever is in range. Save your ultimate for a teamfight with Infernum or Crescendum in hand.",
+  "ahead": "Take dragons and towers, but don't split from your team: without a dash, a single engage can kill you.",
+  "behind": "Farm safely, let your support and tanks open fights, and wait for your two completed items.",
+  "win_condition": "To win this game, you want to reach the late game and win teamfights with the right weapon pair at the right time.",
+  "final_tip": "Always watch which weapon is coming next (E): setting up the fight for your best pair is worth more than one extra attack."
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "Ziggs|adc": {
+  "identity": "Artillery magic damage mage. Short Fuse (passive) regularly empowers an attack, more often when he casts abilities. Bouncing Bomb (Q) pokes at long range, Satchel Charge (W) knocks back enemies (and Ziggs himself) and instantly destroys low-health enemy towers, Hexplosive Minefield (E) scatters mines that damage and slow, and Mega Inferno Bomb (R) hits a large area at very long range.",
+  "playstyle": "Siege mage played like an ADC: he clears waves from range, pokes and destroys towers. He wins by pushing and taking structures rather than by dueling. He's vulnerable to champions who stick to him (Yasuo, Katarina).",
+  "early_game": "Clear the wave with Q and E, poke your opponent with Q when they walk up to last hit. Save W to escape an engage (you knock yourself back). Push to take plates, and finish low towers with W.",
+  "level_1": "Bouncing Bomb (Q) first. Poke and farm.",
+  "level_2": "Hexplosive Minefield (E). Slow and wave clear; place it in the path of an enemy engage.",
+  "level_3": "Satchel Charge (W). Knock back your opponent or yourself: your main escape, and your tool to finish low towers.",
+  "level_6": "Mega Inferno Bomb: hits very far. Use it to finish a fight in another lane, clear a faraway wave or hit several enemies in a teamfight.",
+  "power_spikes": [
+   "Level 3: W to escape and take towers.",
+   "Level 6: long-range ultimate.",
+   "First completed item: wave clear and poke.",
+   "Mid game: sieging and destroying towers."
+  ],
+  "lane_plan": "Push the wave, poke and take plates. Finish low towers with W. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) completes fast thanks to your farming from range. Against champions who stick to you, keep W to escape.",
+  "trading": "Basic trade: Q from range. Defense: W to knock yourself back, E to slow. Give up on it against champions who cross your mines and stick to you (Yasuo, Katarina).",
+  "jungle_plan": "",
+  "threats": [
+   "Yasuo: a hard matchup (his Wind Wall blocks your bombs).",
+   "Katarina bot: a hard matchup.",
+   "Engage supports when W is on cooldown."
+  ],
+  "mistakes": [
+   "Using W to poke and having no way to escape.",
+   "Forgetting to finish low towers with W.",
+   "Standing too close in teamfights."
+  ],
+  "matchup_notes": {
+   "Caitlyn": "She has more attack range, but your bombs hit her behind her traps.",
+   "Jhin": "Save W to escape when he roots you.",
+   "Kai'Sa": "She dives with her ultimate: save W to knock her back.",
+   "Varus": "Your range matches his and you clear waves better.",
+   "Yasuo": "His Wind Wall blocks your bombs: save W for his engage."
+  },
+  "mid_game": "Siege: push waves and destroy towers with W. Poke before objectives.",
+  "late_game": "Poke behind your frontline, R on the group, W to reposition. Place E around you to slow divers.",
+  "ahead": "Take every tower and poke before objectives.",
+  "behind": "Clear waves from range and play with your team.",
+  "win_condition": "To win this game, you want to push, take towers and wear down the enemy team from range before fights.",
+  "final_tip": "Always keep your Satchel Charge to escape: it's your only mobility."
+ }
+}

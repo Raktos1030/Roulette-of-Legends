@@ -1,0 +1,43 @@
+{
+ "Zyra|jgl": {
+  "identity": "Magic damage mage who fights with plants. Rampant Growth (W) places seeds; Deadly Spines (Q) grows a plant that shoots from range, Grasping Roots (E) roots in a line and grows a plant that slows, and Stranglethorns (R) knocks up after a delay while empowering her plants. Seeds also spawn around her over time (passive).",
+  "playstyle": "Fast-clearing jungler who ganks from range. Her plants clear camps and objectives for her, and E's CC makes her ganks very reliable.",
+  "early_game": "Clear fast by placing seeds on camps and growing them with Q and E. Gank with E from a safe distance: CC, then Q and your plants. Your plants also help you duel melee junglers.",
+  "level_1": "Deadly Spines (Q) first. Place seeds and grow them on the camp.",
+  "level_2": "Rampant Growth (W). More seeds for more plants: your clear speeds up.",
+  "level_3": "Grasping Roots (E). First gank: E (CC) → Q on a seed → plants.",
+  "level_6": "Stranglethorns: an area that knocks up after a delay and empowers your plants. Cast it on several grouped enemies or on an objective to contest it.",
+  "power_spikes": [
+   "Level 3: ganks with E.",
+   "Level 6: zone control with your ultimate.",
+   "First completed item: devastating plants.",
+   "Objectives: your plants clear epic monsters quickly."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear with your plants and ranged ganks. Zyra is very good on objectives: place seeds near Void Grubs (around 8 minutes) and dragons before fights. Control Scuttles and avoid tanky junglers who taunt you or stick to you (Rammus, Udyr).",
+  "trading": "Ganking: E → Q → plants. Teamfighting: R on several enemies, E to root, plants for damage. Give up on it against tanks who stick to you (Rammus, Udyr).",
+  "threats": [
+   "Rammus and Udyr, unfavorable according to the data.",
+   "Assassins who burst you (you're fragile).",
+   "Fights far from your seeds."
+  ],
+  "mistakes": [
+   "Casting E with no seed to grow a plant.",
+   "Positioning too close in teamfights.",
+   "Forgetting to place seeds before an objective."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Your plants bother him in duels: root him with E when he engages.",
+   "Graves": "Your plants soak his shots: fight near your seeds.",
+   "Viego": "Root him with E when he dives.",
+   "Sylas": "He can steal your ultimate: don't engage when he can take it back.",
+   "Rammus": "His taunt sticks to you: keep E to slow him before he arrives."
+  },
+  "mid_game": "Objective control with your plants and ranged ganks.",
+  "late_game": "Area mage: R on several enemies, E to root, plants for damage. Stay behind your frontline.",
+  "ahead": "Take objectives quickly and force fights near your seeds.",
+  "behind": "Farm, place seeds around objectives and play with your team.",
+  "win_condition": "To win this game, you want to control objectives with your plants and root enemies in teamfights.",
+  "final_tip": "Cast your abilities on your seeds: your plants deal most of the damage."
+ }
+}

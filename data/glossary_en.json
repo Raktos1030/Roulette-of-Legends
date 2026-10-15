@@ -1,0 +1,1627 @@
+{
+ "categories": [
+  {
+   "id": "base",
+   "label": "The basics"
+  },
+  {
+   "id": "roles",
+   "label": "Roles and classes"
+  },
+  {
+   "id": "lane",
+   "label": "Laning phase"
+  },
+  {
+   "id": "jungle",
+   "label": "Jungle and objectives"
+  },
+  {
+   "id": "combat",
+   "label": "Fighting"
+  },
+  {
+   "id": "vision",
+   "label": "Vision"
+  },
+  {
+   "id": "macro",
+   "label": "Strategy"
+  },
+  {
+   "id": "stats",
+   "label": "Stats and spells"
+  },
+  {
+   "id": "argot",
+   "label": "Slang and chat"
+  }
+ ],
+ "terms": [
+  {
+   "id": "lane",
+   "cat": "base",
+   "term": "Lane",
+   "aliases": [
+    "lanes"
+   ],
+   "def": "One of the three paths on the map (top, mid, bot) where minions march. \"Being in lane\" means playing your path in the early game.",
+   "ex": "Stay in lane until level 6."
+  },
+  {
+   "id": "early",
+   "cat": "base",
+   "term": "Early game",
+   "aliases": [
+    "early"
+   ],
+   "def": "The start of the game, roughly until the first towers fall: the laning phase.",
+   "ex": "Draven is very strong early."
+  },
+  {
+   "id": "midgame",
+   "cat": "base",
+   "term": "Mid game",
+   "aliases": [],
+   "def": "The middle of the game: lanes mix, teams fight over objectives.",
+   "ex": "In the mid game, follow your jungler to dragons."
+  },
+  {
+   "id": "late",
+   "cat": "base",
+   "term": "Late game",
+   "aliases": [],
+   "def": "The end of the game: champions are maxed out and a single lost teamfight can cost the game.",
+   "ex": "Kassadin becomes a huge threat late game."
+  },
+  {
+   "id": "scale",
+   "cat": "base",
+   "term": "Scale",
+   "aliases": [
+    "scaling",
+    "scales",
+    "scaled",
+    "outscale",
+    "outscales"
+   ],
+   "def": "Getting stronger over time, with levels and gold. A \"scaling\" champion is weak early but very strong late.",
+   "ex": "Farm calmly: you scale better than him."
+  },
+  {
+   "id": "spike",
+   "cat": "base",
+   "term": "Power spike",
+   "aliases": [
+    "power spikes",
+    "spike",
+    "spikes"
+   ],
+   "def": "The moment your champion gets noticeably stronger: a key level (often 2, 3 or 6), a completed item, an ultimate coming up.",
+   "ex": "Level 6 is a power spike: look for the kill."
+  },
+  {
+   "id": "snowball",
+   "cat": "base",
+   "term": "Snowball",
+   "aliases": [
+    "snowballs",
+    "snowballing"
+   ],
+   "def": "Turning a small lead into a huge one: every kill gives gold, which helps win the next fight, and so on.",
+   "ex": "Samira snowballs fast if she wins lane."
+  },
+  {
+   "id": "meta",
+   "cat": "base",
+   "term": "Meta",
+   "aliases": [],
+   "def": "The most effective champions and strategies right now, depending on the patch.",
+   "ex": "He isn't meta right now, but he's still playable."
+  },
+  {
+   "id": "patch",
+   "cat": "base",
+   "term": "Patch",
+   "aliases": [
+    "patches"
+   ],
+   "def": "A game update (about every two weeks) that changes champions, items or the map.",
+   "ex": "He got nerfed last patch."
+  },
+  {
+   "id": "nerf",
+   "cat": "base",
+   "term": "Nerf / Buff",
+   "aliases": [
+    "nerf",
+    "nerfed",
+    "nerfs"
+   ],
+   "def": "A nerf weakens a champion in a patch; a buff (patch-wise) makes it stronger.",
+   "ex": "Ahri got buffed, she's everywhere."
+  },
+  {
+   "id": "winrate",
+   "cat": "base",
+   "term": "Win rate",
+   "aliases": [
+    "winrate",
+    "WR"
+   ],
+   "def": "The percentage of games won. For a champion, 50% is average; one point more or less is already a lot.",
+   "ex": "51.9% win rate over 30 days.",
+   "hl": false
+  },
+  {
+   "id": "pickban",
+   "cat": "base",
+   "term": "Pick / Ban",
+   "aliases": [
+    "pick rate",
+    "ban rate",
+    "draft"
+   ],
+   "def": "Pick: choose a champion. Ban: remove it from the game. Pick rate and ban rate show how often that happens.",
+   "ex": "He's banned so much you rarely see him.",
+   "hl": false
+  },
+  {
+   "id": "autofill",
+   "cat": "base",
+   "term": "Autofill",
+   "aliases": [
+    "fill"
+   ],
+   "def": "When the game puts you in a role you didn't pick, to balance the teams.",
+   "ex": "Autofilled support: spin the roulette for that role.",
+   "hl": false
+  },
+  {
+   "id": "elo",
+   "cat": "base",
+   "term": "Elo / LP",
+   "aliases": [
+    "LP",
+    "elo"
+   ],
+   "def": "Elo is your ranked level (Iron, Bronze, Silver…). LP (League Points) are what you gain or lose each ranked game.",
+   "ex": "+18 LP, Gold IV soon.",
+   "hl": false
+  },
+  {
+   "id": "top",
+   "cat": "roles",
+   "term": "Top",
+   "aliases": [],
+   "def": "The top lane role, usually fighters or tanks who spend a long time alone against their opponent.",
+   "ex": "Top can TP to join a fight.",
+   "hl": false
+  },
+  {
+   "id": "jgl",
+   "cat": "roles",
+   "term": "Jungle",
+   "aliases": [
+    "jungler",
+    "junglers",
+    "jgl"
+   ],
+   "def": "The role that farms monsters between the lanes, ganks lanes and controls neutral objectives.",
+   "ex": "Their jungler is top: play safe bot.",
+   "hl": false
+  },
+  {
+   "id": "mid",
+   "cat": "roles",
+   "term": "Mid",
+   "aliases": [
+    "mid laner",
+    "midlaner"
+   ],
+   "def": "The middle lane role, the shortest lane: mages and assassins who can quickly help other lanes.",
+   "ex": "Mid roamed bot, ping MIA.",
+   "hl": false
+  },
+  {
+   "id": "adc",
+   "cat": "roles",
+   "term": "ADC",
+   "aliases": [
+    "bot laner",
+    "marksman",
+    "marksmen"
+   ],
+   "def": "Attack Damage Carry: the bot lane marksman, fragile, dealing huge sustained damage late game.",
+   "ex": "Protect your ADC in teamfights.",
+   "hl": false
+  },
+  {
+   "id": "sup",
+   "cat": "roles",
+   "term": "Support",
+   "aliases": [
+    "supp",
+    "sup"
+   ],
+   "def": "The role that goes with the ADC in bot lane: protection, CC, vision. Supports don't farm minions.",
+   "ex": "The support places control wards before dragon.",
+   "hl": false
+  },
+  {
+   "id": "carry",
+   "cat": "roles",
+   "term": "Carry",
+   "aliases": [
+    "carries"
+   ],
+   "def": "The champion who deals most of the team's damage and has to \"carry\" the game. \"Carry\" is also a verb: winning the game almost alone.",
+   "ex": "Their carry is a Jinx, focus her."
+  },
+  {
+   "id": "hypercarry",
+   "cat": "roles",
+   "term": "Hypercarry",
+   "aliases": [
+    "hypercarries"
+   ],
+   "def": "A carry that's very weak early but becomes almost unbeatable late if they've farmed.",
+   "ex": "Kog'Maw is a hypercarry: protect him."
+  },
+  {
+   "id": "tank",
+   "cat": "roles",
+   "term": "Tank",
+   "aliases": [
+    "tanks",
+    "tanky"
+   ],
+   "def": "A very durable champion who soaks up damage and starts fights. \"Tanky\": able to take a lot of damage.",
+   "ex": "Their frontline has two tanks: go for their carries."
+  },
+  {
+   "id": "squishy",
+   "cat": "roles",
+   "term": "Squishy",
+   "aliases": [
+    "squishies"
+   ],
+   "def": "A fragile champion who dies fast when caught (ADCs, mages, assassins).",
+   "ex": "Look for isolated squishies."
+  },
+  {
+   "id": "bruiser",
+   "cat": "roles",
+   "term": "Bruiser",
+   "aliases": [
+    "bruisers",
+    "fighter",
+    "fighters"
+   ],
+   "def": "A fighter that's both durable and dangerous, built for duels and melee brawls.",
+   "ex": "Darius is a bruiser who wins long fights."
+  },
+  {
+   "id": "juggernaut",
+   "cat": "roles",
+   "term": "Juggernaut",
+   "aliases": [
+    "juggernauts"
+   ],
+   "def": "A very durable fighter, deadly up close, but slow and without mobility.",
+   "ex": "Keep your distance from a juggernaut."
+  },
+  {
+   "id": "assassin",
+   "cat": "roles",
+   "term": "Assassin",
+   "aliases": [
+    "assassins"
+   ],
+   "def": "A mobile champion who kills a fragile target very fast, then gets out.",
+   "ex": "Zed looks for isolated mages."
+  },
+  {
+   "id": "mage",
+   "cat": "roles",
+   "term": "Mage",
+   "aliases": [
+    "mages"
+   ],
+   "def": "A champion who deals damage with abilities (magic damage), often from range.",
+   "ex": "Long-range bot lane mages bother Caitlyn."
+  },
+  {
+   "id": "enchanteur",
+   "cat": "roles",
+   "term": "Enchanter",
+   "aliases": [
+    "enchanters"
+   ],
+   "def": "A support who heals, shields and buffs allies (Lulu, Janna, Soraka…).",
+   "ex": "Against an enchanter, favor short fights."
+  },
+  {
+   "id": "diver",
+   "cat": "roles",
+   "term": "Diver",
+   "aliases": [
+    "divers"
+   ],
+   "def": "A champion built to dive onto enemy carries, even behind their frontline (Camille, Vi, Jarvan IV…).",
+   "ex": "Two divers on their team: stay near your frontline."
+  },
+  {
+   "id": "frontline",
+   "cat": "roles",
+   "term": "Frontline",
+   "aliases": [],
+   "def": "The durable champions in front during fights (tanks, bruisers) who protect the back of the team.",
+   "ex": "Stay behind your frontline."
+  },
+  {
+   "id": "backline",
+   "cat": "roles",
+   "term": "Backline",
+   "aliases": [],
+   "def": "The back of the team in a fight: the fragile carries (ADCs, mages) the frontline protects.",
+   "ex": "Nocturne dives into their backline."
+  },
+  {
+   "id": "wave",
+   "cat": "lane",
+   "term": "Wave",
+   "aliases": [
+    "waves",
+    "minion wave",
+    "minion waves"
+   ],
+   "def": "A group of minions marching down a lane. Managing the wave well (pushing it, freezing it) is one of the game's basics.",
+   "ex": "Push the wave before you recall."
+  },
+  {
+   "id": "farm",
+   "cat": "lane",
+   "term": "Farm",
+   "aliases": [
+    "farming",
+    "farms",
+    "farmed",
+    "CS"
+   ],
+   "def": "Killing minions and monsters for gold. CS (creep score) counts how many you've killed.",
+   "ex": "Farm under your tower if you're struggling."
+  },
+  {
+   "id": "lasthit",
+   "cat": "lane",
+   "term": "Last hit",
+   "aliases": [
+    "last hits",
+    "last-hit",
+    "last hitting"
+   ],
+   "def": "Landing the killing blow on a minion: it's the only way to get its gold.",
+   "ex": "Poke your opponent when they walk up to last hit."
+  },
+  {
+   "id": "poke",
+   "cat": "lane",
+   "term": "Poke",
+   "aliases": [
+    "pokes",
+    "poking",
+    "poked"
+   ],
+   "def": "Dealing damage from range, in small chunks, without committing to a real fight.",
+   "ex": "Poke with Q before you engage."
+  },
+  {
+   "id": "trade",
+   "cat": "lane",
+   "term": "Trade",
+   "aliases": [
+    "trades",
+    "trading",
+    "traded"
+   ],
+   "def": "A quick exchange of blows in lane: you hit, they hit back, both back off. A good trade means dealing more than you take.",
+   "ex": "Trade when their main ability is on cooldown."
+  },
+  {
+   "id": "allin",
+   "cat": "lane",
+   "term": "All-in",
+   "aliases": [
+    "all-ins"
+   ],
+   "def": "Throwing everything (abilities, ultimate, summoner spells) to kill the opponent, with no way back.",
+   "ex": "All-in at level 6 with your ultimate."
+  },
+  {
+   "id": "harass",
+   "cat": "lane",
+   "term": "Harass",
+   "aliases": [
+    "harassing",
+    "harassed"
+   ],
+   "def": "Repeatedly poking the opponent so they can't farm in peace.",
+   "ex": "Harass them every time they step up.",
+   "hl": false
+  },
+  {
+   "id": "sustain",
+   "cat": "lane",
+   "term": "Sustain",
+   "aliases": [],
+   "def": "The ability to regain health while staying in lane (heals, lifesteal) without going back to base.",
+   "ex": "Against a champion with big sustain, poke isn't enough."
+  },
+  {
+   "id": "freeze",
+   "cat": "lane",
+   "term": "Freeze",
+   "aliases": [
+    "freezing",
+    "frozen"
+   ],
+   "def": "Keeping the wave near your tower by only killing minions at the last moment: your opponent has to step up to farm, exposed to your jungler.",
+   "ex": "Freeze in front of your tower against a Nasus."
+  },
+  {
+   "id": "push",
+   "cat": "lane",
+   "term": "Push",
+   "aliases": [
+    "pushing",
+    "slow push",
+    "fast push",
+    "shove"
+   ],
+   "def": "Moving the wave toward the enemy tower by killing minions fast (fast push) or little by little to build a big wave (slow push).",
+   "ex": "Push, then roam mid.",
+   "hl": false
+  },
+  {
+   "id": "crash",
+   "cat": "lane",
+   "term": "Crash",
+   "aliases": [
+    "crashing",
+    "crashed"
+   ],
+   "def": "Sending a big wave into the enemy tower, which kills it: your opponent loses minions while you're free to move.",
+   "ex": "Crash the wave before dragon."
+  },
+  {
+   "id": "recall",
+   "cat": "lane",
+   "term": "Recall",
+   "aliases": [
+    "recalls"
+   ],
+   "def": "Going back to base (B key) to heal and shop.",
+   "ex": "Recall when your wave crashes into their tower."
+  },
+  {
+   "id": "proxy",
+   "cat": "lane",
+   "term": "Proxy farm",
+   "aliases": [
+    "proxy"
+   ],
+   "def": "Farming minions behind the enemy tower before they reach the lane. Singed is the specialist.",
+   "ex": "Proxy farm to force your opponent to move."
+  },
+  {
+   "id": "plates",
+   "cat": "lane",
+   "term": "Plates",
+   "aliases": [
+    "tower plates",
+    "plate"
+   ],
+   "def": "Outer towers have plates early in the game: each one destroyed gives gold.",
+   "ex": "Tristana takes plates very fast with her E."
+  },
+  {
+   "id": "zoning",
+   "cat": "lane",
+   "term": "Zoning",
+   "aliases": [],
+   "def": "Keeping your opponent away from minions with the threat of your abilities, so they lose gold and experience.",
+   "ex": "Caitlyn zones with her traps.",
+   "hl": false
+  },
+  {
+   "id": "prio",
+   "cat": "lane",
+   "term": "Priority",
+   "aliases": [
+    "prio",
+    "lane priority"
+   ],
+   "def": "Having lane priority: your wave is pushing, so you can leave your lane first (roam, help your jungler, objective).",
+   "ex": "Keep mid prio before dragon."
+  },
+  {
+   "id": "clear",
+   "cat": "jungle",
+   "term": "Clear",
+   "aliases": [
+    "full clear",
+    "clears",
+    "clearing"
+   ],
+   "def": "Killing the jungle's monster camps. A full clear is every camp on your side before you gank.",
+   "ex": "Karthus has a very fast clear."
+  },
+  {
+   "id": "gank",
+   "cat": "jungle",
+   "term": "Gank",
+   "aliases": [
+    "ganks",
+    "ganking",
+    "ganked"
+   ],
+   "def": "When the jungler (or another player) shows up in a lane to gang up on the opponent.",
+   "ex": "Gank from level 3."
+  },
+  {
+   "id": "countergank",
+   "cat": "jungle",
+   "term": "Counter-gank",
+   "aliases": [
+    "countergank",
+    "counter-ganks"
+   ],
+   "def": "Arriving during the enemy gank to turn it around.",
+   "ex": "Position to counter-gank bot."
+  },
+  {
+   "id": "invade",
+   "cat": "jungle",
+   "term": "Invade",
+   "aliases": [
+    "invades",
+    "invading"
+   ],
+   "def": "Going into the enemy jungle to steal their camps or attack their jungler.",
+   "ex": "You beat them early: invade."
+  },
+  {
+   "id": "counterjungle",
+   "cat": "jungle",
+   "term": "Counter-jungle",
+   "aliases": [
+    "counter-jungling"
+   ],
+   "def": "Regularly stealing camps in the enemy jungle to starve their jungler of gold and experience.",
+   "ex": "Kindred loves to counter-jungle."
+  },
+  {
+   "id": "leash",
+   "cat": "jungle",
+   "term": "Leash",
+   "aliases": [],
+   "def": "At the very start of the game, allies help the jungler kill their first camp.",
+   "ex": "Leash red buff, then go to lane."
+  },
+  {
+   "id": "camp",
+   "cat": "jungle",
+   "term": "Camp",
+   "aliases": [
+    "camps"
+   ],
+   "def": "A group of neutral jungle monsters.",
+   "ex": "Save a camp for your jungler."
+  },
+  {
+   "id": "buffs",
+   "cat": "jungle",
+   "term": "Blue / Red buff",
+   "aliases": [
+    "buffs",
+    "blue buff",
+    "red buff"
+   ],
+   "def": "Two big jungle monsters that grant a temporary bonus: blue helps with mana and cooldowns, red slows and burns the targets you hit.",
+   "ex": "Mid laners often take blue buff."
+  },
+  {
+   "id": "smite",
+   "cat": "jungle",
+   "term": "Smite",
+   "aliases": [],
+   "def": "The junglers' summoner spell: big damage to a monster, essential for securing objectives.",
+   "ex": "Save your Smite for dragon."
+  },
+  {
+   "id": "scuttle",
+   "cat": "jungle",
+   "term": "Scuttle Crab",
+   "aliases": [
+    "scuttle",
+    "scuttles"
+   ],
+   "def": "The river crab: killing it gives gold and a zone of vision and speed.",
+   "ex": "Contest Scuttle with your mid laner."
+  },
+  {
+   "id": "objectifs",
+   "cat": "jungle",
+   "term": "Objectives",
+   "aliases": [
+    "objective"
+   ],
+   "def": "Anything that rewards the whole team: towers, dragons, grubs, Herald, Baron. Games are mostly won through them.",
+   "ex": "Play around objectives, not kills."
+  },
+  {
+   "id": "drake",
+   "cat": "jungle",
+   "term": "Dragon",
+   "aliases": [
+    "dragons",
+    "drake",
+    "drakes",
+    "dragon soul"
+   ],
+   "def": "Epic monster in the bottom river. Each dragon gives a permanent bonus to the team; four give the dragon soul. Later, the Elder Dragon appears with a decisive buff.",
+   "ex": "Place control wards before dragon."
+  },
+  {
+   "id": "grubs",
+   "cat": "jungle",
+   "term": "Void Grubs",
+   "aliases": [
+    "grubs",
+    "void grub"
+   ],
+   "def": "Small epic monsters in the top river early on: killing them helps your team take down towers.",
+   "ex": "Take the grubs with your top laner."
+  },
+  {
+   "id": "herald",
+   "cat": "jungle",
+   "term": "Rift Herald",
+   "aliases": [
+    "herald"
+   ],
+   "def": "Epic monster in the top river: once killed, it can be summoned to charge a tower and break it.",
+   "ex": "Drop Herald mid to open up the map."
+  },
+  {
+   "id": "baron",
+   "cat": "jungle",
+   "term": "Baron Nashor",
+   "aliases": [
+    "baron",
+    "nashor"
+   ],
+   "def": "The biggest monster, in the top river from the mid game on: it gives the whole team a buff that empowers minions, perfect for breaking the enemy base.",
+   "ex": "Pick off a carry, then take Baron."
+  },
+  {
+   "id": "cc",
+   "cat": "combat",
+   "term": "CC",
+   "aliases": [
+    "crowd control"
+   ],
+   "def": "Crowd Control: any effect that stops a champion from acting normally (stun, root, slow, knock-up, silence…).",
+   "ex": "Save your CC for their diver."
+  },
+  {
+   "id": "stun",
+   "cat": "combat",
+   "term": "Stun",
+   "aliases": [
+    "stuns",
+    "stunned",
+    "stunning"
+   ],
+   "def": "The target can't do anything (move, attack or cast) for a short moment.",
+   "ex": "Annie stuns with her charged passive."
+  },
+  {
+   "id": "root",
+   "cat": "combat",
+   "term": "Root",
+   "aliases": [
+    "roots",
+    "rooted",
+    "snare"
+   ],
+   "def": "The target can't move, but can still attack and cast.",
+   "ex": "Morgana roots for a long time with her Q."
+  },
+  {
+   "id": "slow",
+   "cat": "combat",
+   "term": "Slow",
+   "aliases": [
+    "slows",
+    "slowed",
+    "slowing"
+   ],
+   "def": "Reduced movement speed (sometimes attack speed too).",
+   "ex": "Ashe slows everything she hits."
+  },
+  {
+   "id": "knockup",
+   "cat": "combat",
+   "term": "Knock-up",
+   "aliases": [
+    "knock-ups",
+    "knockup",
+    "knocked up"
+   ],
+   "def": "The target is launched into the air and loses control for a moment. Cleanse can't remove it.",
+   "ex": "Yasuo's ultimate needs a knock-up."
+  },
+  {
+   "id": "knockback",
+   "cat": "combat",
+   "term": "Knockback",
+   "aliases": [
+    "knock-back",
+    "knockbacks",
+    "knocked back"
+   ],
+   "def": "Pushing a target back. Against a wall, some champions stun it too (Vayne, Poppy).",
+   "ex": "Knock the diver away from your ADC."
+  },
+  {
+   "id": "silence",
+   "cat": "combat",
+   "term": "Silence",
+   "aliases": [
+    "silences",
+    "silenced"
+   ],
+   "def": "The target can't cast abilities, but can still move and attack.",
+   "ex": "The silence cuts off their combo."
+  },
+  {
+   "id": "taunt",
+   "cat": "combat",
+   "term": "Taunt",
+   "aliases": [
+    "taunts",
+    "taunted"
+   ],
+   "def": "The target is forced to attack whoever taunted it.",
+   "ex": "Rammus's taunt shuts down ADCs."
+  },
+  {
+   "id": "charm",
+   "cat": "combat",
+   "term": "Charm",
+   "aliases": [
+    "charms",
+    "charmed"
+   ],
+   "def": "The target walks helplessly toward the caster (Ahri, Seraphine, Evelynn).",
+   "ex": "A landed charm = a kill."
+  },
+  {
+   "id": "fear",
+   "cat": "combat",
+   "term": "Fear",
+   "aliases": [
+    "fears",
+    "feared"
+   ],
+   "def": "The target runs away, out of control, for a moment.",
+   "ex": "Fiddlesticks fears with his W."
+  },
+  {
+   "id": "suppression",
+   "cat": "combat",
+   "term": "Suppression",
+   "aliases": [
+    "suppressed",
+    "suppresses"
+   ],
+   "def": "The strongest CC: the target can't do anything while it lasts (Malzahar's or Warwick's ultimate).",
+   "ex": "Malzahar's ultimate suppresses its target for several seconds."
+  },
+  {
+   "id": "blind",
+   "cat": "combat",
+   "term": "Blind",
+   "aliases": [
+    "blinds",
+    "blinded"
+   ],
+   "def": "The target's attacks miss for a moment (Teemo, Quinn).",
+   "ex": "Blind the ADC when they hit you."
+  },
+  {
+   "id": "dash",
+   "cat": "combat",
+   "term": "Dash",
+   "aliases": [
+    "dashes",
+    "dashing",
+    "blink"
+   ],
+   "def": "A quick movement over a short distance (lunge, leap). A blink is instant, like Flash.",
+   "ex": "He has no dash: he depends on his positioning."
+  },
+  {
+   "id": "engage",
+   "cat": "combat",
+   "term": "Engage",
+   "aliases": [
+    "engages",
+    "engaging",
+    "engaged"
+   ],
+   "def": "Starting the fight, often with CC or an ultimate. An \"engage\" champion is built for that.",
+   "ex": "Leona engages with her E."
+  },
+  {
+   "id": "disengage",
+   "cat": "combat",
+   "term": "Disengage",
+   "aliases": [],
+   "def": "Stopping or breaking the enemy engage to get out without a fight.",
+   "ex": "Janna disengages everything with her ultimate."
+  },
+  {
+   "id": "peel",
+   "cat": "combat",
+   "term": "Peel",
+   "aliases": [
+    "peels",
+    "peeling"
+   ],
+   "def": "Protecting your carries by knocking back, slowing or blocking whoever attacks them.",
+   "ex": "Your job in teamfights: peel for your ADC."
+  },
+  {
+   "id": "kite",
+   "cat": "combat",
+   "term": "Kite",
+   "aliases": [
+    "kiting",
+    "kites",
+    "kited"
+   ],
+   "def": "Attacking then stepping back between each attack, to keep your distance from a chasing enemy.",
+   "ex": "Kite the bruiser, he must never touch you."
+  },
+  {
+   "id": "dive",
+   "cat": "combat",
+   "term": "Dive",
+   "aliases": [
+    "dives",
+    "diving",
+    "tower dive"
+   ],
+   "def": "Attacking an enemy where they're protected: under their tower, or in the middle of their team to reach the backline.",
+   "ex": "Tower dive with your jungler at level 6."
+  },
+  {
+   "id": "burst",
+   "cat": "combat",
+   "term": "Burst",
+   "aliases": [
+    "bursts",
+    "bursting"
+   ],
+   "def": "A lot of damage in very little time, often in a single combo.",
+   "ex": "LeBlanc bursts a target before it can react."
+  },
+  {
+   "id": "dps",
+   "cat": "combat",
+   "term": "DPS",
+   "aliases": [
+    "sustained damage"
+   ],
+   "def": "Damage per second: steady damage dealt over time, as opposed to burst.",
+   "ex": "ADCs win long fights thanks to their DPS."
+  },
+  {
+   "id": "oneshot",
+   "cat": "combat",
+   "term": "One-shot",
+   "aliases": [
+    "one-shots",
+    "one-shotting"
+   ],
+   "def": "Killing a target in a single hit or combo.",
+   "ex": "Veigar one-shots carries late game."
+  },
+  {
+   "id": "execute",
+   "cat": "combat",
+   "term": "Execute",
+   "aliases": [
+    "executes",
+    "executed"
+   ],
+   "def": "An effect that instantly kills a target below a health threshold.",
+   "ex": "Pyke's ultimate executes low targets."
+  },
+  {
+   "id": "focus",
+   "cat": "combat",
+   "term": "Focus",
+   "aliases": [
+    "focusing"
+   ],
+   "def": "Putting all of the team's attacks on a single target.",
+   "ex": "Focus their ADC as soon as the fight starts.",
+   "hl": false
+  },
+  {
+   "id": "teamfight",
+   "cat": "combat",
+   "term": "Teamfight",
+   "aliases": [
+    "teamfights",
+    "teamfighting"
+   ],
+   "def": "A fight between (almost) both full teams, often around an objective.",
+   "ex": "Orianna wins teamfights with her ultimate."
+  },
+  {
+   "id": "skirmish",
+   "cat": "combat",
+   "term": "Skirmish",
+   "aliases": [
+    "skirmishes"
+   ],
+   "def": "A small 2v2 or 3v3 fight, often in the jungle or river.",
+   "ex": "You win short skirmishes."
+  },
+  {
+   "id": "pick",
+   "cat": "combat",
+   "term": "Pick",
+   "aliases": [
+    "picks",
+    "pick-off"
+   ],
+   "def": "Catching an isolated enemy and killing them before help arrives, often with long-range CC. (In draft: choosing a champion.)",
+   "ex": "Thresh creates picks with his hook."
+  },
+  {
+   "id": "combo",
+   "cat": "combat",
+   "term": "Combo",
+   "aliases": [
+    "combos"
+   ],
+   "def": "Chaining abilities and attacks in a precise order for maximum effect.",
+   "ex": "Combo: E then Q, then auto."
+  },
+  {
+   "id": "auto",
+   "cat": "combat",
+   "term": "Auto",
+   "aliases": [
+    "autos",
+    "auto-attack",
+    "auto-attacks",
+    "AA"
+   ],
+   "def": "A basic attack (right click), no ability.",
+   "ex": "Weave an auto between each ability."
+  },
+  {
+   "id": "reset",
+   "cat": "combat",
+   "term": "Reset",
+   "aliases": [
+    "resets"
+   ],
+   "def": "An ability that comes back off cooldown immediately, often after a kill (Katarina, Kha'Zix). Also: going back to base to come back at full health.",
+   "ex": "Every kill resets your abilities: keep going."
+  },
+  {
+   "id": "stack",
+   "cat": "combat",
+   "term": "Stack",
+   "aliases": [
+    "stacks",
+    "stacking",
+    "stacked"
+   ],
+   "def": "A charge that builds up (passive, ability); \"stacking\" means building those charges. Example: Nasus's Q stacks.",
+   "ex": "Stack Q on minions all game."
+  },
+  {
+   "id": "outplay",
+   "cat": "combat",
+   "term": "Outplay",
+   "aliases": [
+    "outplayed"
+   ],
+   "def": "Turning a bad situation around through better execution (dodge, good timing).",
+   "ex": "He outplayed me with a perfect Flash.",
+   "hl": false
+  },
+  {
+   "id": "ward",
+   "cat": "vision",
+   "term": "Ward",
+   "aliases": [
+    "wards",
+    "warding",
+    "warded"
+   ],
+   "def": "An item placed on the map that gives vision around it for a while.",
+   "ex": "Ward the river before you push."
+  },
+  {
+   "id": "pink",
+   "cat": "vision",
+   "term": "Control Ward",
+   "aliases": [
+    "control wards",
+    "pink",
+    "pinks"
+   ],
+   "def": "The (pink) Control Ward: it reveals and disables enemy wards around it. You can only have one out at a time.",
+   "ex": "Place a Control Ward in the dragon bush."
+  },
+  {
+   "id": "trinket",
+   "cat": "vision",
+   "term": "Trinket",
+   "aliases": [
+    "trinkets"
+   ],
+   "def": "The free item slot for vision: Stealth Ward (yellow), Oracle Lens that detects wards (red) or Farsight Alteration (blue).",
+   "ex": "Swap to the red lens in the mid game."
+  },
+  {
+   "id": "sweep",
+   "cat": "vision",
+   "term": "Sweep",
+   "aliases": [
+    "sweeping",
+    "Oracle Lens"
+   ],
+   "def": "Finding and destroying enemy wards with the Oracle Lens (red trinket) or a Control Ward.",
+   "ex": "Sweep the area before starting dragon."
+  },
+  {
+   "id": "bush",
+   "cat": "vision",
+   "term": "Bush",
+   "aliases": [
+    "bushes",
+    "brush"
+   ],
+   "def": "Tall grass: a champion inside is invisible to those outside (without vision).",
+   "ex": "Pyke waits in the bush for his harpoon."
+  },
+  {
+   "id": "facecheck",
+   "cat": "vision",
+   "term": "Face-check",
+   "aliases": [
+    "facecheck",
+    "face-checking"
+   ],
+   "def": "Walking into a bush without vision, at the risk of finding an enemy there. Avoid it.",
+   "ex": "Never face-check alone."
+  },
+  {
+   "id": "vision",
+   "cat": "vision",
+   "term": "Vision",
+   "aliases": [
+    "vision control"
+   ],
+   "def": "What your team can see on the map. The rest is in the fog of war.",
+   "ex": "No vision: we don't go to dragon.",
+   "hl": false
+  },
+  {
+   "id": "mia",
+   "cat": "vision",
+   "term": "MIA",
+   "aliases": [
+    "SS"
+   ],
+   "def": "Missing In Action: your opponent has left your lane and may be helping elsewhere. Warn your team with a ping.",
+   "ex": "Mid MIA, careful bot.",
+   "hl": false
+  },
+  {
+   "id": "macro",
+   "cat": "macro",
+   "term": "Macro",
+   "aliases": [
+    "micro"
+   ],
+   "def": "Map-wide decisions (where to go, when to take an objective). Micro is your mechanical control of your champion.",
+   "ex": "He has good micro, but his macro is weak.",
+   "hl": false
+  },
+  {
+   "id": "roam",
+   "cat": "macro",
+   "term": "Roam",
+   "aliases": [
+    "roams",
+    "roaming",
+    "roamed"
+   ],
+   "def": "Leaving your lane to help another lane or the jungle.",
+   "ex": "Push your wave, then roam bot."
+  },
+  {
+   "id": "sidelane",
+   "cat": "macro",
+   "term": "Side lane",
+   "aliases": [
+    "side lanes",
+    "sidelane",
+    "sidelanes"
+   ],
+   "def": "The top and bottom lanes in the mid and late game, where you farm or push away from the group.",
+   "ex": "Take the side lane waves."
+  },
+  {
+   "id": "splitpush",
+   "cat": "macro",
+   "term": "Split push",
+   "aliases": [
+    "splitpush",
+    "split pushing",
+    "split pusher",
+    "split pushers",
+    "split-push"
+   ],
+   "def": "Pushing a side lane alone while your team is elsewhere, to force the enemy to send people.",
+   "ex": "Jax split pushes while the team holds mid."
+  },
+  {
+   "id": "tempo",
+   "cat": "macro",
+   "term": "Tempo",
+   "aliases": [],
+   "def": "The rhythm of the game: having tempo means you can act first (objective, gank) while the enemy is busy.",
+   "ex": "A successful gank gives you tempo for dragon."
+  },
+  {
+   "id": "throw",
+   "cat": "macro",
+   "term": "Throw",
+   "aliases": [
+    "threw",
+    "throwing"
+   ],
+   "def": "Losing a game you were leading, through one or more big mistakes.",
+   "ex": "We threw at Baron.",
+   "hl": false
+  },
+  {
+   "id": "comeback",
+   "cat": "macro",
+   "term": "Comeback",
+   "aliases": [],
+   "def": "Turning a bad game around.",
+   "ex": "With their scaling, a comeback is possible.",
+   "hl": false
+  },
+  {
+   "id": "shutdown",
+   "cat": "macro",
+   "term": "Shutdown",
+   "aliases": [
+    "bounty",
+    "bounties"
+   ],
+   "def": "The gold bounty on a champion on a kill streak: killing them is worth a lot.",
+   "ex": "He has a big shutdown, focus him."
+  },
+  {
+   "id": "ad",
+   "cat": "stats",
+   "term": "AD",
+   "aliases": [
+    "physical damage"
+   ],
+   "def": "Attack Damage: physical damage. An \"AD\" champion deals mostly physical damage; armor reduces it.",
+   "ex": "Their team is full AD: armor is enough.",
+   "hl": false
+  },
+  {
+   "id": "ap",
+   "cat": "stats",
+   "term": "AP",
+   "aliases": [
+    "magic damage"
+   ],
+   "def": "Ability Power: the strength of abilities, and by extension magic damage; magic resist reduces it.",
+   "ex": "Two AP mages on their team.",
+   "hl": false
+  },
+  {
+   "id": "true",
+   "cat": "stats",
+   "term": "True damage",
+   "aliases": [
+    "true"
+   ],
+   "def": "Damage that completely ignores armor and magic resist.",
+   "ex": "Vayne deals true damage with her W."
+  },
+  {
+   "id": "percent",
+   "cat": "stats",
+   "term": "% health damage",
+   "aliases": [
+    "percent health damage",
+    "max health damage"
+   ],
+   "def": "Damage based on a percentage of the target's health: very effective against tanks.",
+   "ex": "Her % health damage melts tanks.",
+   "hl": false
+  },
+  {
+   "id": "crit",
+   "cat": "stats",
+   "term": "Crit",
+   "aliases": [
+    "crits",
+    "critical strike",
+    "critical strikes"
+   ],
+   "def": "Critical strike: an attack that deals bonus damage. Many ADCs rely on crits.",
+   "ex": "Yasuo doubles his crit chance."
+  },
+  {
+   "id": "onhit",
+   "cat": "stats",
+   "term": "On-hit",
+   "aliases": [],
+   "def": "An effect that applies with every attack that lands (bonus damage, poison…).",
+   "ex": "Kog'Maw lives off on-hit effects."
+  },
+  {
+   "id": "lifesteal",
+   "cat": "stats",
+   "term": "Lifesteal",
+   "aliases": [
+    "omnivamp",
+    "life steal"
+   ],
+   "def": "Regaining health based on the damage you deal.",
+   "ex": "Aatrox heals a ton in fights."
+  },
+  {
+   "id": "antiheal",
+   "cat": "stats",
+   "term": "Grievous Wounds",
+   "aliases": [
+    "anti-heal",
+    "antiheal"
+   ],
+   "def": "An effect that reduces the healing a target receives: essential against champions who heal a lot.",
+   "ex": "Ignite applies Grievous Wounds."
+  },
+  {
+   "id": "shield",
+   "cat": "stats",
+   "term": "Shield",
+   "aliases": [
+    "shields",
+    "shielding",
+    "shielded"
+   ],
+   "def": "Temporary health that absorbs damage before your real health bar.",
+   "ex": "Lulu shields her ADC at the right time."
+  },
+  {
+   "id": "heal",
+   "cat": "stats",
+   "term": "Heal",
+   "aliases": [
+    "heals",
+    "healing"
+   ],
+   "def": "A heal. \"Heal\" is also a summoner spell (mostly for ADCs) that heals and speeds you up.",
+   "ex": "Save your Heal for the dive.",
+   "hl": false
+  },
+  {
+   "id": "cooldown",
+   "cat": "stats",
+   "term": "Cooldown",
+   "aliases": [
+    "CD",
+    "cooldowns"
+   ],
+   "def": "The wait before you can cast an ability again. \"It's on cooldown\": it can't be cast again right away.",
+   "ex": "Engage when their E is on cooldown."
+  },
+  {
+   "id": "ult",
+   "cat": "stats",
+   "term": "Ultimate",
+   "aliases": [
+    "ult",
+    "ulti",
+    "ultimates"
+   ],
+   "def": "The champion's most powerful ability (R key), unlocked at level 6, with a long cooldown.",
+   "ex": "Save your ultimate for the teamfight."
+  },
+  {
+   "id": "mana",
+   "cat": "stats",
+   "term": "Mana",
+   "aliases": [
+    "energy"
+   ],
+   "def": "The resource abilities consume. Some champions use energy (which regenerates fast) or nothing at all.",
+   "ex": "Out of mana: recall.",
+   "hl": false
+  },
+  {
+   "id": "haste",
+   "cat": "stats",
+   "term": "Ability Haste",
+   "aliases": [
+    "haste"
+   ],
+   "def": "A stat that reduces your abilities' cooldowns.",
+   "ex": "With lots of haste, you spam your abilities.",
+   "hl": false
+  },
+  {
+   "id": "tenacity",
+   "cat": "stats",
+   "term": "Tenacity",
+   "aliases": [],
+   "def": "Reduces the duration of the CC you take.",
+   "ex": "Against lots of CC, tenacity helps."
+  },
+  {
+   "id": "flash",
+   "cat": "stats",
+   "term": "Flash",
+   "aliases": [],
+   "def": "The most played summoner spell: a short, instant teleport to escape or engage. Long cooldown.",
+   "ex": "He doesn't have Flash: time to gank."
+  },
+  {
+   "id": "tp",
+   "cat": "stats",
+   "term": "TP",
+   "aliases": [
+    "Teleport"
+   ],
+   "def": "Teleport, a summoner spell: after a channel, teleports you to an allied tower (and other spots later on).",
+   "ex": "Top TPs bot for dragon."
+  },
+  {
+   "id": "ignite",
+   "cat": "stats",
+   "term": "Ignite",
+   "aliases": [],
+   "def": "Summoner spell: true damage over time and Grievous Wounds on the target. Great for finishing a kill.",
+   "ex": "Ignite + combo at level 2."
+  },
+  {
+   "id": "exhaust",
+   "cat": "stats",
+   "term": "Exhaust",
+   "aliases": [],
+   "def": "Summoner spell: slows the target and reduces its damage. Very strong against assassins.",
+   "ex": "Exhaust the Zed diving onto you."
+  },
+  {
+   "id": "cleanse",
+   "cat": "stats",
+   "term": "Cleanse",
+   "aliases": [],
+   "def": "Summoner spell that removes most CC you're under (not knock-ups or suppressions).",
+   "ex": "Cleanse an Ahri charm."
+  },
+  {
+   "id": "ghost",
+   "cat": "stats",
+   "term": "Ghost",
+   "aliases": [],
+   "def": "Summoner spell: a big movement speed boost for a few seconds.",
+   "ex": "Ghost to stick to ADCs.",
+   "hl": false
+  },
+  {
+   "id": "barrier",
+   "cat": "stats",
+   "term": "Barrier",
+   "aliases": [],
+   "def": "Summoner spell: a big shield for a few seconds.",
+   "ex": "Barrier to survive the burst.",
+   "hl": false
+  },
+  {
+   "id": "gg",
+   "cat": "argot",
+   "term": "GG",
+   "aliases": [
+    "gg wp",
+    "wp"
+   ],
+   "def": "Good Game; WP: Well Played. Say it at the end of the game, without irony.",
+   "ex": "GG WP all.",
+   "hl": false
+  },
+  {
+   "id": "ff",
+   "cat": "argot",
+   "term": "FF",
+   "aliases": [
+    "surrender",
+    "ff15",
+    "ff20"
+   ],
+   "def": "Forfeit: voting to surrender the game (possible after a certain time).",
+   "ex": "We don't FF, they scale worse.",
+   "hl": false
+  },
+  {
+   "id": "remake",
+   "cat": "argot",
+   "term": "Remake",
+   "aliases": [],
+   "def": "A game cancelled at the very start when a player never connected. It doesn't count.",
+   "ex": "Remake: nobody loses LP.",
+   "hl": false
+  },
+  {
+   "id": "afk",
+   "cat": "argot",
+   "term": "AFK",
+   "aliases": [],
+   "def": "Away From Keyboard: a player who left the game or stopped playing.",
+   "ex": "A loss with an AFK: LP loss reduced or prevented.",
+   "hl": false
+  },
+  {
+   "id": "dodge",
+   "cat": "argot",
+   "term": "Dodge",
+   "aliases": [],
+   "def": "Leaving champion select before the game starts (small penalty in ranked).",
+   "ex": "He dodged after seeing the comp.",
+   "hl": false
+  },
+  {
+   "id": "feed",
+   "cat": "argot",
+   "term": "Feed",
+   "aliases": [
+    "feeding",
+    "feeder"
+   ],
+   "def": "Dying a lot and giving the enemy loads of gold.",
+   "ex": "Stop going in alone, you're feeding.",
+   "hl": false
+  },
+  {
+   "id": "int",
+   "cat": "argot",
+   "term": "Int",
+   "aliases": [
+    "inting",
+    "inter"
+   ],
+   "def": "Dying on purpose or playing to make your team lose. Reportable.",
+   "ex": "He's been inting for 10 minutes, report.",
+   "hl": false
+  },
+  {
+   "id": "tilt",
+   "cat": "argot",
+   "term": "Tilt",
+   "aliases": [
+    "tilted"
+   ],
+   "def": "Being so annoyed or discouraged that you play badly. Best fix: take a break.",
+   "ex": "Three losses in a row, I'm tilted.",
+   "hl": false
+  },
+  {
+   "id": "flame",
+   "cat": "argot",
+   "term": "Flame",
+   "aliases": [
+    "flaming"
+   ],
+   "def": "Insulting or aggressively criticizing teammates in chat.",
+   "ex": "Don't flame your jungler, mute and play.",
+   "hl": false
+  },
+  {
+   "id": "ks",
+   "cat": "argot",
+   "term": "KS",
+   "aliases": [
+    "kill steal"
+   ],
+   "def": "Kill steal: taking the kill at the last moment when an ally did the work.",
+   "ex": "A KS is still a kill for the team.",
+   "hl": false
+  },
+  {
+   "id": "diff",
+   "cat": "argot",
+   "term": "Diff",
+   "aliases": [
+    "gap",
+    "jungle diff",
+    "jgl diff"
+   ],
+   "def": "\"Jungle diff\", \"top gap\": the skill gap between two players in the same role, often said to taunt.",
+   "ex": "GG, jungle diff.",
+   "hl": false
+  },
+  {
+   "id": "smurf",
+   "cat": "argot",
+   "term": "Smurf",
+   "aliases": [],
+   "def": "A good player on a lower-ranked secondary account.",
+   "ex": "That Yasuo is a smurf, 15/0.",
+   "hl": false
+  },
+  {
+   "id": "otp",
+   "cat": "argot",
+   "term": "OTP",
+   "aliases": [],
+   "def": "One Trick Pony: a player who plays almost only one champion. Their \"main\" is their main champion.",
+   "ex": "He's a Riven OTP, don't let her snowball.",
+   "hl": false
+  },
+  {
+   "id": "ping",
+   "cat": "argot",
+   "term": "Ping",
+   "aliases": [
+    "pings",
+    "pinging"
+   ],
+   "def": "A quick signal on the map (danger, on my way, enemy missing…). Also: your connection's latency.",
+   "ex": "Ping the enemy Flash when they use it.",
+   "hl": false
+  },
+  {
+   "id": "timer",
+   "cat": "argot",
+   "term": "Timer",
+   "aliases": [
+    "timers"
+   ],
+   "def": "Noting when an objective, a buff or an enemy summoner spell (Flash) will be up again.",
+   "ex": "Dragon timer: 2 minutes.",
+   "hl": false
+  },
+  {
+   "id": "care",
+   "cat": "argot",
+   "term": "Care",
+   "aliases": [],
+   "def": "Short for \"careful!\": danger is coming.",
+   "ex": "Care, the jungler is coming.",
+   "hl": false
+  }
+ ]
+}

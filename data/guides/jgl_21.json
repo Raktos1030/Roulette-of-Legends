@@ -1,0 +1,43 @@
+{
+  "LeeSin|jgl": {
+    "identity": "Combattant à dégâts physiques et à énergie. Chaque sort a deux temps : Onde sonore / Coup résonant (Q) touche puis le fait voler jusqu'à la cible, Rempart / Force d'âme (W) le fait bondir vers un allié ou une ward avec un shield, Trombe / Fracture (E) frappe en zone puis slow, et Rage du dragon (R) envoie un ennemi voler, qui blesse ceux qu'il percute. Son passif Rafale donne vitesse d'attaque et énergie après chaque sort.",
+    "playstyle": "Jungler d'early game, de ganks, d'invasions et de playmaking. Lee Sin est au sommet de sa puissance entre les niveaux 3 et 11 ; il doit créer l'avance tôt. Très mécanique : le kick (R) qui renvoie un carry dans ton équipe est son coup le plus décisif.",
+    "early_game": "Clear rapide en alternant les sorts et les attaques pour profiter du passif. Gank dès le niveau 3 : Q → second Q pour coller, E → second E pour slow, W si besoin. Envahis quand tes laners ont la priorité : tu gagnes la plupart des duels early.",
+    "level_1": "Trombe (E) en premier dans le chemin le plus joué. Dégâts de zone sur le premier camp.",
+    "level_2": "Onde sonore (Q). Premier cast pour toucher, second pour voler jusqu'à la cible : Q → second Q est ton outil de gank et de duel.",
+    "level_3": "Rempart (W). Bond vers un allié ou une ward avec shield, puis Force d'âme pour du vol de vie. Premier gank : Q → second Q → E → attaques. W sur une ward te permet de fuir ou de te repositionner.",
+    "level_6": "Rage du dragon : tu renvoies une cible, qui blesse les ennemis qu'elle percute. Le coup classique : ward derrière la cible → W sur la ward → R pour la renvoyer vers ton équipe. Utilise-le pour isoler un carry ou séparer l'équipe adverse.",
+    "power_spikes": [
+      "Niveau 3 : ganks et invasions très forts.",
+      "Niveau 6 : Rage du dragon pour les renvois.",
+      "Premier item complet : dégâts et survie.",
+      "Mid game : picks et escarmouches avant que les carries ne scalent."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide, puis ganks et invasions dès le niveau 3. Lee Sin veut dominer l'early : contrôle les crabes, vole les camps adverses quand tes laners ont la priorité et étouffe le jungler adverse. Prends les Larves (vers 8 min) et les premiers dragons avec l'avance. Garde toujours une ward pour W (fuite ou renvoi).",
+    "trading": "En gank : Q → second Q → E → second E → attaques → W pour le shield. En escarmouche : ward derrière le carry → W → R pour le renvoyer dans ton équipe. Abandonne si ton Q est raté et que tu n'as plus d'énergie.",
+    "threats": [
+      "Junglers qui te battent en duel early (Rek'Sai, Taliyah).",
+      "Naafiri : matchup difficile.",
+      "Parties longues où tes dégâts baissent."
+    ],
+    "mistakes": [
+      "Lancer tous tes sorts sans attaques entre eux (tu perds le passif).",
+      "Rater Q et engager quand même.",
+      "Farmer passivement au lieu de créer l'avance."
+    ],
+    "matchup_notes": {
+      "Graves": "Duel serré en early : garde E pour réduire sa vitesse d'attaque et W pour son burst.",
+      "Viego": "Punis-le en early, avant qu'il ne scale.",
+      "Sylas": "Il peut voler ton ultime : ne renvoie pas un ennemi vers lui.",
+      "Naafiri": "Ses chiens et son burst te battent en duel : combats avec tes alliés.",
+      "Rek'Sai": "Elle te bat en early : gank là où elle n'est pas."
+    },
+    "mid_game": "Picks et escarmouches : renvoie les carries dans ton équipe. Transforme chaque avance en objectif.",
+    "late_game": "Renvoie le carry adverse dans ton équipe ou sépare l'équipe adverse avec R. Protège tes carries avec W.",
+    "ahead": "Étouffe le jungler adverse, dive et prends tous les objectifs.",
+    "behind": "Cherche des picks avec Q et R, et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux créer une avance en early et transformer chaque kick (R) en avantage décisif.",
+    "final_tip": "Entre chaque sort, place une auto-attaque : le passif te rend énergie et vitesse d'attaque."
+  }
+}

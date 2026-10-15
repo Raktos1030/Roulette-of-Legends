@@ -1,0 +1,43 @@
+{
+ "Veigar|adc": {
+  "identity": "Burst magic damage mage who scales infinitely. Phenomenal Evil Power (passive): every champion hit by an ability, every kill and every assist permanently gives him ability power. Baleful Strike (Q) hits the first two enemies and grants ability power for each unit killed, Dark Matter (W) strikes an area after a delay (its cooldown drops with his stacks), Event Horizon (E) creates a cage that stuns enemies who cross it, and Primordial Burst (R) deals huge damage to one target, more the more health it's missing.",
+  "playstyle": "Scaling mage in bot lane: he farms with Q to stack ability power, traps ADCs in his cage and kills them in one combo. He's behind in gold at 15 minutes on average against common ADCs: his scaling does the work.",
+  "early_game": "Farm with Baleful Strike (Q): killing two minions in one shot doubles the stacks. Save Event Horizon (E) to defend against an engage, or to cage your opponent when your support roots them. Poke with W on a rooted target: it's slow to land.",
+  "level_1": "Baleful Strike (Q) first. Kill as many minions as possible with Q.",
+  "level_2": "Dark Matter (W) or Event Horizon (E). W to farm and poke, E for safety if the enemy lane is aggressive.",
+  "level_3": "The missing ability. Combo: E (cage), W on the stunned target, Q.",
+  "level_6": "Primordial Burst: an execute on a wounded target. Full combo: E → W → Q → R.",
+  "power_spikes": [
+   "Level 3: cage, Dark Matter, Baleful Strike combo.",
+   "Level 6: Primordial Burst.",
+   "First completed item: ADCs die to one combo.",
+   "Late game: huge stacked ability power."
+  ],
+  "lane_plan": "Farm with Q first, save the cage for engages and play for kills with your support. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards your farming. Join dragons: your cage protects the area.",
+  "trading": "Basic trade: Q on your opponent through a single minion. All-in: E, W, Q, R. Give up on it against ADCs who block your abilities (Sivir and her Spell Shield): bait her shield out with Q before the combo.",
+  "jungle_plan": "",
+  "threats": [
+   "Sivir: a hard matchup (her shield blocks one ability of your combo).",
+   "Assassins who jump on you when your cage is on cooldown.",
+   "Engage supports: you have no mobility."
+  ],
+  "mistakes": [
+   "Missing minions with Q (lost stacks).",
+   "Throwing the cage anywhere and having no defense left.",
+   "Casting your ultimate on a full-health target."
+  ],
+  "matchup_notes": {
+   "Jinx": "She scales too: trap her with your cage in fights.",
+   "Kai'Sa": "Drop the cage under yourself when she dives with her ultimate.",
+   "Caitlyn": "Survive her range and lock her in your cage.",
+   "Samira": "She has to come close: your cage stops her mid-combo.",
+   "Sivir": "Her Spell Shield blocks one ability: bait it out with Q before the real combo."
+  },
+  "mid_game": "Keep farming with Q and join fights around objectives. Your cage cuts off enemy engages.",
+  "late_game": "Stay behind your frontline, drop the cage on the group or on divers, and kill the enemy carry with a W → Q → R combo.",
+  "ahead": "Look for picks: every isolated target dies to one combo.",
+  "behind": "Farm with Q and stack ability power: you keep scaling when the others have finished buying.",
+  "win_condition": "To win this game, you want to stack ability power and kill the enemy carries in one combo, protected by your cage.",
+  "final_tip": "Two minions killed with a single Q give twice the stacks: line them up before you fire."
+ }
+}

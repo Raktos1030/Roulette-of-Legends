@@ -1,0 +1,43 @@
+{
+  "Rammus|jgl": {
+    "identity": "Tank à dégâts physiques et magiques, cauchemar des champions qui frappent avec leurs auto-attaques. Démolisseur (Q) le fait rouler de plus en plus vite et knock-up à l'impact, Boule défensive (W) augmente ses résistances et renvoie des dégâts aux attaquants, Provocation frénétique (E) provoque un champion ou un monstre, et Frappe ascendante (R) le fait bondir pour un impact qui knock-up. Son passif lui donne de la puissance d'attaque selon son armure et sa résistance magique.",
+    "playstyle": "Jungler tank de ganks rapides et d'anti-carry physique. Il excelle contre les junglers et équipes qui reposent sur les auto-attaques (Maître Yi, Viego, Graves).",
+    "early_game": "Clear en Boule défensive (les monstres se blessent en te frappant). Gank dès le niveau 3 avec Q depuis loin : Q → knock-up → E (taunt) → W. Ne duel pas les junglers à dégâts magiques ou qui te kitent.",
+    "level_1": "Boule défensive (W) en premier. Les camps se blessent en te frappant.",
+    "level_2": "Démolisseur (Q). Il accélère en roulant et projette à l'impact : ton outil de gank et de déplacement.",
+    "level_3": "Provocation frénétique (E). Premier gank : Q → E (la cible t'attaque pendant ta Boule défensive et se blesse) → attaques.",
+    "level_6": "Frappe ascendante : bond qui knock-up à l'impact. Combo : Q → R → E → W. Plus l'impact est long, plus la zone est grande ; utilise-le pour engager un combat ou rattraper une cible.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec Q + E.",
+      "Niveau 6 : engage complet avec R.",
+      "Premier item complet : très difficile à tuer pour les attaquants physiques.",
+      "Mid game : engages et anti-carry."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear en Boule défensive, puis ganks rapides avec Q depuis des angles inattendus. Rammus gank très tôt et très souvent : son Q lui permet de traverser la carte. Contrôle les crabes et les Larves (vers 8 min) avec ton équipe. Face à un jungler à auto-attaques, provoque-le quand il envahit : il se blessera sur ta Boule défensive.",
+    "trading": "En gank : Q depuis loin → knock-up → E → W. En teamfight : Q sur le carry ou le diver → E pour le provoquer (il te frappe au lieu de frapper ton équipe) → R. Abandonne contre les champions à dégâts magiques qui te kitent (Lillia).",
+    "threats": [
+      "Lillia : ton matchup le plus difficile.",
+      "Dégâts magiques et en pourcentage des PV.",
+      "Ralentissements qui cassent ton Q."
+    ],
+    "mistakes": [
+      "Provoquer un mage : ta Boule défensive ne renvoie que les auto-attaques.",
+      "Lancer Q trop près (pas assez de vitesse pour l'impact).",
+      "Engager sans suivi de ton équipe."
+    ],
+    "matchup_notes": {
+      "Maître Yi": "Provoque-le pendant ta Boule défensive : il se tue en te frappant.",
+      "Viego": "Provoque-le quand il dive : ses attaques se retournent contre lui.",
+      "Lee Sin": "Il t'envahira : tiens tes camps en boule et gank.",
+      "Graves": "Provoque-le : ses attaques de fusil te renvoient des dégâts.",
+      "Lillia": "Elle te kite avec des dégâts magiques : ne la poursuis pas sans CC."
+    },
+    "mid_game": "Ganks et engages autour des objectifs. Chasse les carries physiques adverses avec Q et E.",
+    "late_game": "Engage ou protège : Q + E sur le carry physique adverse, R pour engager. Ton taunt neutralise un carry pendant plusieurs secondes.",
+    "ahead": "Gank en boucle, prends les objectifs et force les combats.",
+    "behind": "Tank pour ton équipe et neutralise le carry physique adverse avec E.",
+    "win_condition": "Pour gagner cette partie, tu veux ganker très tôt et neutraliser les carries physiques adverses avec ton taunt.",
+    "final_tip": "Active ta Boule défensive avant de provoquer : l'adversaire se blesse en te frappant."
+  }
+}

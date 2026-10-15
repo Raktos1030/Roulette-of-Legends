@@ -1,0 +1,43 @@
+{
+  "Swain|mid": {
+    "identity": "Mage de combat à dégâts magiques. Poigne mortifère (Q) tire des éclairs en cône, Œil de l'empire (W) frappe une zone lointaine après un délai, révèle et slow, Capture (E) lance un projectile qui revient et root, puis peut attirer vers lui les champions root, et Incarnation démoniaque (R) le transforme : il draine les ennemis proches et se soigne, puis peut lancer une explosion. Ses corbeaux récoltent des fragments d'âme qui le soignent et augmentent définitivement ses PV (passif).",
+    "playstyle": "Au mid, Swain est un mage de combat résistant qui gagne les combats prolongés grâce au drain de l'ultime. Il punit les combattants et mages au corps à corps (Galio, Akali, Lissandra), mais souffre contre les mages à longue portée ou très mobiles (Zoé, Hwei, Aurora).",
+    "early_game": "Poke avec Q et W, root avec E quand l'adversaire vient au contact. Réactive E pour attirer la cible root : E → attraction → Q. Garde E pour te défendre contre les assassins.",
+    "level_1": "Capture (E) ou Poigne mortifère (Q). E sert à punir un engage ; Q à farmer et poke.",
+    "level_2": "Le sort manquant entre Q et E. E (CC) → réactivation pour attirer → Q.",
+    "level_3": "Œil de l'empire (W). Poke à longue distance, vision et slow : utile aussi pour aider les autres lanes.",
+    "level_6": "Incarnation démoniaque : drain continu autour de toi, puis explosion. Tu gagnes les combats longs contre les champions au corps à corps.",
+    "power_spikes": [
+      "Niveau 3 : E → attraction → Q.",
+      "Niveau 6 : drain de l'ultime.",
+      "Premier item complet : très résistant en combat.",
+      "Mid game : teamfights prolongés."
+    ],
+    "lane_plan": "Poke et farm, garde E pour les engages. Utilise W pour aider les autres lanes à distance. Pousse puis rejoins les combats : Swain brille dans les combats longs. La quête de rôle mid (retour accéléré) t'aide à revenir vite.",
+    "trading": "Trade court : Q + W. All-in : E → attraction → Q → R. Abandonne contre les mages qui te poke hors de portée (Zoé, Hwei).",
+    "jungle_plan": "",
+    "threats": [
+      "Zoé, Hwei et Aurora : matchups difficiles.",
+      "Mages à longue portée qui te poke.",
+      "Réductions de soins adverses."
+    ],
+    "mistakes": [
+      "Gaspiller E et ne plus pouvoir te défendre.",
+      "Lancer l'ultime trop loin des ennemis.",
+      "Poursuivre un mage mobile."
+    ],
+    "matchup_notes": {
+      "Ahri": "Garde E pour la fin de son ultime.",
+      "Sylas": "Attention : il peut voler ton ultime de drain.",
+      "Zed": "Root-le quand il revient vers son ombre.",
+      "Zoé": "Elle te poke de très loin : reste derrière tes sbires.",
+      "Hwei": "Il te poke : joue autour de ton jungler."
+    },
+    "mid_game": "Rejoins les combats et gagne les combats prolongés avec l'ultime.",
+    "late_game": "Frontline de mage : entre avec R, draine et explose. E pour root le diver.",
+    "ahead": "Force les combats longs et prends les objectifs.",
+    "behind": "Farm et joue les teamfights prolongés.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner les combats prolongés grâce au drain de l'ultime.",
+    "final_tip": "Root avec E, réactive pour attirer la cible, puis Q : c'est ton meilleur combo."
+  }
+}

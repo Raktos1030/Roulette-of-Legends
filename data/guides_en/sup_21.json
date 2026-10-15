@@ -1,0 +1,43 @@
+{
+ "Poppy|sup": {
+  "identity": "Anti-dive tank. Iron Ambassador (passive): she throws her buckler, which bounces off the target; picking it up gives her a shield. Hammer Shock (Q) slams her hammer and leaves a zone that slows, then explodes, Steadfast Presence (W) passively gives her resistances and, when activated, speed while stopping the dashes of enemies around her, Heroic Charge (E) charges a target to knock it back (stun against a wall), and Keeper's Verdict (R) channels a hammer swing that launches enemies very far away.",
+  "playstyle": "Counter-engage support: she stops dashes with W, stuns against walls with E and sends divers far away from her team with her ultimate. She crushes dive supports (Camille, Pantheon, Pyke) and struggles against enchanters who poke her from range (Janna, Zilean, Sona).",
+  "early_game": "Play around walls: Heroic Charge (E) stuns your opponent if you knock them into a wall. Keep Steadfast Presence (W) to stop the enemy dash or hook. Pick up your buckler after every empowered attack for the shield.",
+  "level_1": "Heroic Charge (E) first. After that, max Q first.",
+  "level_2": "Hammer Shock (Q). Combo: E into a wall → Q → attacks.",
+  "level_3": "Steadfast Presence (W). Stops enemy dashes around you: cast it when an engage is coming.",
+  "level_6": "Keeper's Verdict: when charged, it launches very far (away from your team = perfect disengage). A quick swing (uncharged) launches less far but can also separate a diver from your carry.",
+  "power_spikes": [
+   "Level 2: E into a wall + Q.",
+   "Level 3: W against engages.",
+   "Level 6: disengage ultimate.",
+   "Teamfights: W in the middle of the enemy divers."
+  ],
+  "lane_plan": "Shut down enemy engages with W, look for stuns against walls. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "All-in: E into a wall → Q → attacks (pick up the buckler). Defense: W against dashes, E to knock back the diver, R to send them far away. Against enchanters who poke you (Janna, Zilean), don't force it: play for counter-engages.",
+  "jungle_plan": "",
+  "threats": [
+   "Janna and Zilean: hard matchups.",
+   "Sona: a hard matchup.",
+   "Ranged poke: you have to get close to be useful."
+  ],
+  "mistakes": [
+   "Using E far from any wall (no stun).",
+   "Casting W too early, before the enemy dash.",
+   "Launching an enemy toward their team with your ultimate instead of away from it."
+  ],
+  "matchup_notes": {
+   "Thresh": "W stops his hook when he dashes toward his ADC.",
+   "Nautilus": "Keep W for the moment his anchor pulls him toward you.",
+   "Alistar": "W stops his charge: don't let him reach you.",
+   "Pyke": "His dash (E) is stopped by your W.",
+   "Janna": "She knocks you back and pokes you: play defensively."
+  },
+  "mid_game": "Protect your ADC and jungler, place Control Wards and look for wall stuns around objectives.",
+  "late_game": "Stay near your carry: W when divers arrive, E to knock them back, R to send the most dangerous one far from the fight.",
+  "ahead": "Engage with E into walls and take objectives.",
+  "behind": "Play anti-dive: your W and ultimate protect your carry.",
+  "win_condition": "To win this game, you want to stop enemy dives and keep your carry alive.",
+  "final_tip": "Steadfast Presence stops every dash around you: cast it the moment your opponent jumps, not before."
+ }
+}

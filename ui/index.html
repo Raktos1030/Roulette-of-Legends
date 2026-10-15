@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roulette of Legends</title>
+  <link rel="icon" href="/img/app.png">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body data-bg="mech">
+  <div id="backdrop" aria-hidden="true"><div class="bd-layer"></div><div class="bd-layer"></div><div class="bd-shade"></div><div class="bg-art"><div class="bg-mech"><div class="m-ring m1"><img src="bg/mech_1_outer.svg" alt=""></div><div class="m-ring m2"><img src="bg/mech_2_hexagons.svg" alt=""></div><div class="m-ring m3"><img src="bg/mech_3_roles.svg" alt=""></div><div class="m-ring m4"><img src="bg/mech_4_core.svg" alt=""></div><img class="m-mark" src="bg/mech_0_marker.svg" alt=""></div></div><div class="bd-grain"></div></div>
+
+  <nav id="rail">
+    <a class="rail-logo" href="#/roulette" title="Roulette of Legends">
+      <span class="logo"><img class="l-base" src="/img/logo_base.png" alt=""><img class="l-wheel" src="/img/logo_wheel.png" alt=""><img class="l-ptr" src="/img/logo_pointer.png" alt=""></span>
+    </a>
+    <div class="rail-nav" id="rail-nav"></div>
+    <div class="rail-foot">
+      <div class="rail-update" id="rail-update" hidden title="Mise à jour des statistiques"><svg viewBox="0 0 36 36"><circle class="ru-bg" cx="18" cy="18" r="15"/><circle class="ru-fg" cx="18" cy="18" r="15"/></svg><span></span></div>
+      <button class="rail-lol" id="rail-lol" title="Client League of Legends"><span class="dot"></span><span class="rail-lol-txt">LoL</span></button>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div id="cs-banner" hidden></div>
+    <div id="page"></div>
+  </main>
+
+  <div id="toasts" aria-live="polite"></div>
+  <div id="tip" role="tooltip" hidden></div>
+  <div id="menu" hidden></div>
+  <div id="modal" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

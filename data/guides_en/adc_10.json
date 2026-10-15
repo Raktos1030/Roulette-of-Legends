@@ -1,0 +1,43 @@
+{
+ "Kaisa|adc": {
+  "identity": "Very mobile hybrid marksman (physical and magic damage). Second Skin (passive): her attacks apply Plasma, which bursts for magic damage; her allies' CC applies it too, and her items evolve her abilities (Living Weapon). Icathian Rain (Q) fires a volley of missiles spread across nearby targets, Void Seeker (W) fires a long-range beam that applies Plasma, Supercharge (E) gives movement speed then attack speed (and a brief invisibility once evolved), and Killer Instinct (R) dashes her to an enemy champion marked by Plasma.",
+  "playstyle": "Dive ADC: she waits for her team to engage, then dives a carry with her ultimate to kill them. She has many common hard matchups (Jinx, Yunara, Xayah, Zeri): she relies a lot on her support and her evolutions.",
+  "early_game": "Farm and poke with Q when your opponent is away from their minions (the missiles spread over nearby targets). Use W from afar to poke or to mark a target before your support's engage. Keep E to escape.",
+  "level_1": "Icathian Rain (Q) first. Q on your opponent when no minion is around them: all the missiles hit them.",
+  "level_2": "Void Seeker (W). Long-range poke, and marking a target to start an all-in with your support.",
+  "level_3": "Supercharge (E). Movement speed to escape or chase, then attack speed for trades.",
+  "level_6": "Killer Instinct: dash onto a champion marked by Plasma (from your attacks, your W or your support's CC). Save it to dive a carry when your team engages, or to escape toward a distant enemy.",
+  "power_spikes": [
+   "Level 6: dive with your ultimate.",
+   "First evolution: Q (more missiles) or W depending on your items.",
+   "Two evolutions: very high burst damage.",
+   "Mid game: diving isolated carries."
+  ],
+  "lane_plan": "Farm, poke with W and Q, and play around your support's engages: their CC applies Plasma. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) speeds up your evolutions. Play dragon with your jungler.",
+  "trading": "Short trade: Q on your isolated opponent, then step back. All-in: W → support engage → R → Q → attacks. Give up on it against ADCs who win long fights (Jinx, Yunara): don't dive without your team.",
+  "jungle_plan": "",
+  "threats": [
+   "Jinx, Yunara and Xayah: hard and very common matchups.",
+   "Crowd control when you dive.",
+   "Nilah and Kog'Maw: hard matchups."
+  ],
+  "mistakes": [
+   "Diving with your ultimate before the enemy team has used its CC.",
+   "Casting Q in the middle of minions (the missiles spread out).",
+   "Neglecting farm: your evolutions depend on your items."
+  ],
+  "matchup_notes": {
+   "Jhin": "Dive him while he reloads after his fourth shot.",
+   "Jinx": "Her Flame Chompers stop you when you dive: wait until she's used them.",
+   "Ezreal": "You win trades when he's out of abilities.",
+   "Yunara": "Avoid long fights against her: play the poke game and dive with your team.",
+   "Xayah": "Her Featherstorm makes her untargetable: save your ultimate for after."
+  },
+  "mid_game": "Group with your team and look for isolated carries. Use W to mark a target before you dive.",
+  "late_game": "Wait for your team to engage, then dive the enemy carry with your ultimate and evolved E's invisibility. Never be the first one in.",
+  "ahead": "Dive the carries and take objectives.",
+  "behind": "Farm for your evolutions, play the poke game with W and stay with your team.",
+  "win_condition": "To win this game, you want to reach your evolutions, then dive the enemy carries once your team has started the fight.",
+  "final_tip": "Your allies' CC applies Plasma: every engage from your support gives you a target for your ultimate."
+ }
+}

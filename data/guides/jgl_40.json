@@ -1,0 +1,43 @@
+{
+  "Talon|jgl": {
+    "identity": "Assassin à dégâts physiques. Ratissage (W) lance des lames qui reviennent en slowant, Diplomatie noxienne (Q) bondit sur une cible au corps à corps (ou frappe à distance), Voie de l'assassin (E) le fait sauter par-dessus les murs, et Assaut ténébreux (R) le rend invisible en lançant des lames qui reviennent vers lui. Trois coups de sorts sur une cible déclenchent une hémorragie (passif Saignée fatale).",
+    "playstyle": "Jungler de tempo, de ganks et d'assassinats. Talon traverse la carte en sautant par-dessus les murs et gank de n'importe où. Il doit créer l'avance en early/mid game.",
+    "early_game": "Clear rapide avec W (maximisé) et le passif. Gank en sautant par-dessus les murs avec E : tu arrives par des chemins que personne ne surveille. Combo : W → Q (bond) → attaques → hémorragie du passif.",
+    "level_1": "Ratissage (W) en premier.",
+    "level_2": "Diplomatie noxienne (Q). Bond au corps à corps avec coup renforcé : W → Q déclenche vite le passif.",
+    "level_3": "Voie de l'assassin (E). Saut par-dessus les murs : tes ganks arrivent de partout. Premier gank : E par un mur → W → Q.",
+    "level_6": "Assaut ténébreux : invisibilité et lames qui reviennent. Combo complet : W → Q → R → attaques. Tu peux aussi utiliser R pour fuir ou éviter un sort.",
+    "power_spikes": [
+      "Niveau 3 : ganks par-dessus les murs.",
+      "Niveau 6 : combo complet avec l'ultime.",
+      "Premier item complet : burst qui tue les carries.",
+      "Mid game : roams et picks sur toute la carte."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide et ganks très fréquents grâce à E. Talon veut imposer son tempo : gank, envahis, contrôle les crabes et prends les Larves (vers 8 min) quand tes laners ont la priorité. Ses chemins par-dessus les murs rendent ses ganks imprévisibles. Transforme chaque avance en objectif avant le late game.",
+    "trading": "En gank : E par un mur → W → Q → attaques. En assassinat : W → Q → R sur le carry. Abandonne contre les tanks qui te contrôlent (Rammus) ou les junglers qui te battent en duel early (Rek'Sai).",
+    "threats": [
+      "Rammus et Rek'Sai, seuls matchups nettement défavorables.",
+      "Tanks à CC qui encaissent ton burst.",
+      "Parties longues où ton impact baisse."
+    ],
+    "mistakes": [
+      "Oublier de rattraper les lames de W pour le second passage.",
+      "Engager sans ultime sur un carry entouré de protecteurs.",
+      "Farmer passivement au lieu de ganker."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Gank plus vite que lui grâce à tes sauts par-dessus les murs.",
+      "Graves": "Évite ses invasions et gank de l'autre côté.",
+      "Viego": "Burst-le avant qu'il ne possède tes alliés.",
+      "Rammus": "Son taunt annule ton combo : évite-le.",
+      "Rek'Sai": "Elle te bat en duel early : gank là où elle n'est pas."
+    },
+    "mid_game": "Roams, picks et objectifs. Chasse les carries isolés.",
+    "late_game": "Assassine le carry adverse avec W → Q → R. Attends que les CC adverses soient utilisés.",
+    "ahead": "Étouffe le jungler adverse et prends tous les objectifs.",
+    "behind": "Cherche des picks sur des cibles isolées et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux imposer ton tempo par les ganks par-dessus les murs et assassiner les carries.",
+    "final_tip": "Utilise tes sauts par-dessus les murs pour arriver là où personne ne regarde."
+  }
+}

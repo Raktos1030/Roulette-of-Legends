@@ -1,0 +1,43 @@
+{
+ "Briar|jgl": {
+  "identity": "Physical damage fighter, an ultra-aggressive diving jungler. Her passive makes her targets bleed and heals her more when she's low. Head Rush (Q) leaps onto a target, briefly stuns it and lowers its resistances; Blood Frenzy (W) makes her leap and go into a frenzy (she automatically attacks the nearest target, champions first), with Snack Attack as a recast for a big healing bite; Chilling Scream (E) reduces the damage she takes, then knocks back (stunning against a wall); Certain Death (R) launches her onto the first champion hit at very long range.",
+  "playstyle": "Gank and skirmish jungler who wins through aggression and diving. During the frenzy you don't control your target: you have to pick the right moment to start it.",
+  "early_game": "Clear fast with W (frenzy) and the recast bite to heal. Gank from level 3 when a lane can follow up: Q to stun, W for the frenzy, E if your opponent tries to run against a wall. Don't start the frenzy in the middle of several minions if you want to hit the champion: it targets champions first, but position matters.",
+  "level_1": "Blood Frenzy (W) first. Frenzy on the first camp, then recast Snack Attack to heal.",
+  "level_2": "Chilling Scream (E). Damage reduction while charging, then a knockback; against a wall, it stuns. Useful for camps and to keep a target in place.",
+  "level_3": "Head Rush (Q). A leap that briefly stuns and lowers resistances: first gank with Q → W → attacks → Snack Attack. Max W first.",
+  "level_6": "Certain Death: a very long-range projectile that flies you to the first champion hit and fears enemies around it. Perfect to join a fight from afar, finish a target or counter-gank. Careful: once it's cast, you're committed.",
+  "power_spikes": [
+   "Level 3: first gank with Q → W.",
+   "Level 6: Certain Death for long-range ganks and counter-ganks.",
+   "First completed item: very strong tower dives.",
+   "Mid game: repeated skirmishes around objectives."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Clear with W and the bite, then gank a lane with an opponent who has no escape from level 3-4. Briar is stronger at ganking and skirmishing than at pure farming: plan your paths to show up where your team has priority. Control Scuttle and invade enemy camps when your laners are ahead. Your ultimate lets you counter-gank from across the map. Play Void Grubs (around 8 minutes) with a lane that has priority, and keep an eye on dragons.",
+  "trading": "Ganking: Q (stun) → W (frenzy) → attacks → recast Snack Attack → E if the target tries to run toward a wall. Skirmishing: start W when the champion you want is the closest one to you; otherwise you'll hit the wrong target. Give up on it when your health drops and you can't heal with the bite anymore.",
+  "threats": [
+   "CC that cuts off your frenzy.",
+   "Champions who drag you into a bad spot during the frenzy (you don't choose your target).",
+   "Tanks who soak damage without dying (Cho'Gath, Rammus)."
+  ],
+  "mistakes": [
+   "Starting W in the middle of minions or several enemies and hitting the wrong target.",
+   "Casting your ultimate with no follow-up from your team.",
+   "Forgetting to recast Snack Attack to heal."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "You win short skirmishes thanks to the frenzy and heals; watch out for his Resonating Strike catching you.",
+   "Viego": "Win fights before he possesses one of your allies.",
+   "Graves": "He deals a lot of ranged damage: stick to him with Q, he can't kite you during the frenzy.",
+   "Kayn": "Punish him before his transformation.",
+   "Cho'Gath": "His silence and his Feast punish you: avoid diving him alone."
+  },
+  "mid_game": "Skirmish around objectives, tower dive with your laners, and counter-gank with your ultimate. Briar is strong as long as she can fight often.",
+  "late_game": "Dive the enemy carry with your ultimate or Q, frenzy to kill them. Wait for the enemy CC to be used before committing.",
+  "ahead": "Tower dive, take objectives and force fights: a fed Briar is very hard to stop.",
+  "behind": "Farm, play with your team and look for picks on isolated carries with your ultimate.",
+  "win_condition": "To win this game, you want to turn your aggression into kills and objectives, and dive the carries in teamfights.",
+  "final_tip": "Before starting your frenzy, check that the champion you want really is the closest one to you."
+ }
+}

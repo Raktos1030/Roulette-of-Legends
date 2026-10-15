@@ -1,0 +1,43 @@
+{
+ "Ekko|mid": {
+  "identity": "Magic damage assassin. His passive (Z-Drive Resonance) triggers damage and a slow on the third hit on the same target. Timewinder (Q) goes out and comes back while slowing, Parallel Convergence (W) creates an area that stuns enemies and shields him when he steps in, Phase Dive (E) dashes, then teleports his next attack onto the target, and Chronobreak (R) rewinds him to where he was a few seconds ago, healing him and damaging enemies around him.",
+  "playstyle": "Assassination and roaming mid, very safe thanks to his ultimate. He punishes immobile mages.",
+  "early_game": "Poke with Q (out and back) when your opponent comes to last hit and farm the waves. Place W in advance where your opponent will have to go. At level 3, E → attacks (passive) → Q is a good trade.",
+  "level_1": "Timewinder (Q) first. Poke and farm.",
+  "level_2": "Phase Dive (E). A dash, then a teleporting attack: Q → E → attack quickly triggers your passive.",
+  "level_3": "Parallel Convergence (W). An area stun to place in advance: W on the escape path → E → attacks.",
+  "level_6": "Chronobreak: dive, burst, then rewind to safety. You can also use it for damage: your past position can be in the middle of the fight.",
+  "power_spikes": [
+   "Level 3: E + passive + Q combo.",
+   "Level 6: dives with a rewind.",
+   "First completed item: burst that kills mages.",
+   "Mid game: roams and picks."
+  ],
+  "lane_plan": "Push the wave with Q and poke. After level 6, push, then roam to the side lanes: Ekko is an excellent roamer. The mid role quest (faster recall) makes these roams more profitable.",
+  "trading": "Short trade: Q out and back. Full trade: E → attacks → Q. All-in: W in advance → E → attacks → Q → R if needed. Engage when the enemy CC is on cooldown; give up on it if you've used R.",
+  "jungle_plan": "",
+  "threats": [
+   "Vladimir, Twisted Fate and Lissandra, among the worst matchups (even ones).",
+   "CC that locks you down before your rewind.",
+   "Ganks while your ultimate is on cooldown."
+  ],
+  "mistakes": [
+   "Casting your ultimate too late.",
+   "Placing W on the target's current position instead of their path.",
+   "Diving without checking where your ultimate will take you back."
+  ],
+  "matchup_notes": {
+   "Zed": "Keep R to undo his ultimate.",
+   "Viktor": "Dive him when his Gravity Field is on cooldown.",
+   "Syndra": "Dodge her stun and dive.",
+   "Yasuo": "His Wind Wall blocks your Q: wait until he's used it.",
+   "Twisted Fate": "He roams: follow him around the map."
+  },
+  "mid_game": "Roams, picks and objectives. Ekko is very good at killing carries who walk forward without vision.",
+  "late_game": "Flank and dive the enemy carry, then ultimate to get back out.",
+  "ahead": "Roam, create picks and take objectives.",
+  "behind": "Farm, push the wave and look for picks.",
+  "win_condition": "To win this game, you want to win your lane, roam after 6 and kill carries thanks to your ultimate.",
+  "final_tip": "Before diving, look at where your ultimate will take you back: that's your way out."
+ }
+}

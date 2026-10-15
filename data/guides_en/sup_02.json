@@ -1,0 +1,43 @@
+{
+ "Amumu|sup": {
+  "identity": "Magic damage engage tank. Cursed Touch (passive): his attacks curse enemies, who take extra true damage whenever they take magic damage. Bandage Toss (Q) pulls him to the enemy hit and stuns them, Despair (W) deals a percentage of nearby enemies' max health every second, Tantrum (E) reduces the physical damage he takes and can be activated to damage around him (its cooldown drops when he's hit), and Curse of the Sad Mummy (R) stuns every enemy around him.",
+  "playstyle": "Engage support who can stun the whole enemy team with his ultimate. He's very strong when his ADC can follow up on his engages.",
+  "early_game": "Threaten the engage with Bandage Toss (Q): land it on your opponent, attack them to apply the curse, and let your ADC finish. Before level 6, don't waste Q: without it, you're no threat. Use E defensively: it reduces the physical damage you take.",
+  "level_1": "Bandage Toss (Q) first.",
+  "level_2": "Tantrum (E). Reduces physical damage taken: you hold up better in trades against ADCs.",
+  "level_3": "Despair (W). Constant damage around you during an all-in; turn it off outside of fights to save mana.",
+  "level_6": "Curse of the Sad Mummy: stuns every enemy around you. In lane, Q then R on both enemies; in teamfights, go into the middle of the group.",
+  "power_spikes": [
+   "Level 2: Q + E for your first engages.",
+   "Level 6: an ultimate that stuns the whole enemy bot lane.",
+   "First resistance items: durable engages.",
+   "Teamfights: Q then R on several enemies."
+  ],
+  "lane_plan": "Play engages with Q when your ADC can follow, and keep your ultimate for a 4v4 with your jungler. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored): control vision at dragon.",
+  "trading": "All-in: Q → attacks → E → W on, R if both opponents are close. Defense: E to reduce damage, R to stop an engage. Avoid long trades against Leona, who engages too and outlasts you.",
+  "jungle_plan": "",
+  "threats": [
+   "Leona: a hard matchup.",
+   "Supports who poke you from outside your Q range.",
+   "Kiting: you have to land Q to be useful."
+  ],
+  "mistakes": [
+   "Casting Q when your ADC can't follow.",
+   "Leaving Despair on outside of fights and draining your mana.",
+   "Casting your ultimate on a single target in teamfights."
+  ],
+  "matchup_notes": {
+   "Thresh": "His hook and lantern save his allies: keep R for after his lantern.",
+   "Lulu": "Her polymorph stops you: engage once she's used it.",
+   "Nautilus": "His engages bring him close to you: answer with R on both opponents.",
+   "Pyke": "He's fragile: your Q punishes him.",
+   "Leona": "She engages you and outlasts you: play defensively with E and R."
+  },
+  "mid_game": "Place Control Wards around objectives and look for picks with Q. Group with your team for teamfights.",
+  "late_game": "Get into the enemy group with Q (or with Flash) and cast R to stun as many enemies as possible. Your team has to be ready to follow.",
+  "ahead": "Engage often and help your jungler control the map.",
+  "behind": "Protect your ADC: R also stops an enemy engage.",
+  "win_condition": "To win this game, you want to stun the whole enemy team with your ultimate at the right moment.",
+  "final_tip": "A landed Q is an engage: never throw it if your ADC can't follow."
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "Lux|mid": {
+  "identity": "Long-range magic damage burst mage, played mid a bit more than one game in three (support remains her main role). Light Binding (Q) roots up to two enemies, Prismatic Barrier (W) shields allies on the way out and back, Lucent Singularity (E) slows in an area, then explodes, and Final Spark (R) fires a very long-range laser. Her abilities mark targets, and her next attack or ultimate detonates the mark (passive Illumination).",
+  "playstyle": "In mid, Lux plays as a damage carry: wave clear with E, long-range poke and one-shots on rooted targets. Unlike the support version, she has to farm and maximize her damage.",
+  "early_game": "Clear the wave and poke with E, detonating the mark with an attack. Keep Q to defend against an engage or to secure a kill. Stay at your maximum range: you're fragile.",
+  "level_1": "Lucent Singularity (E) first. Poke and farm.",
+  "level_2": "Light Binding (Q). CC: Q → E → attack (mark).",
+  "level_3": "Prismatic Barrier (W). A shield for you (and your allies when roaming).",
+  "level_6": "Final Spark: a very long-range laser. Combo: Q → E → R → attack. You can also finish kills in other lanes or steal an objective.",
+  "power_spikes": [
+   "Level 3: Q → E combo.",
+   "Level 6: laser for long-range kills.",
+   "First completed item: one-shots on rooted targets.",
+   "Mid game: poke and picks before objectives."
+  ],
+  "lane_plan": "Clear the wave with E, poke and stay at range. Push, then join objectives. Use your ultimate to finish fights in other lanes. The mid role quest (faster recall) helps you reset after pushing.",
+  "trading": "Short trade: E → attack (mark). All-in: Q → E → R → attack. Engage if Q lands; give up on it against assassins who arrive while Q is on cooldown.",
+  "jungle_plan": "",
+  "threats": [
+   "Assassins who dive you (Fizz, Locke).",
+   "Xerath, who outranges you.",
+   "Ganks while your Q is on cooldown."
+  ],
+  "mistakes": [
+   "Wasting Q and no longer being able to defend yourself.",
+   "Forgetting to detonate the mark with an attack.",
+   "Positioning too close in teamfights."
+  ],
+  "matchup_notes": {
+   "Ahri": "Keep Q for the end of her ultimate.",
+   "Viktor": "Poke him from farther away than he can reach.",
+   "Syndra": "A range duel: dodge her stun.",
+   "Zed": "Keep Q for his ultimate and W to absorb his burst.",
+   "Xerath": "He outranges you: play around your jungler."
+  },
+  "mid_game": "Poke before objectives and picks with Q. Finish fights across the map with R.",
+  "late_game": "Long-range burst mage: Q on the enemy carry, then E and R. Stay behind your frontline.",
+  "ahead": "Poke, take towers and create picks.",
+  "behind": "Farm from range and play with your team.",
+  "win_condition": "To win this game, you want to poke from long range and one-shot targets rooted by your Q.",
+  "final_tip": "After every ability, land an auto-attack on the marked target: the passive detonation deals a lot of damage."
+ }
+}

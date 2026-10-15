@@ -1,0 +1,43 @@
+{
+ "Cassiopeia|mid": {
+  "identity": "Magic damage DPS mage, played mid about two games out of three. Her poisons (Noxious Blast, Q, and Miasma, W) make Twin Fang (E) very fast and powerful; W also prevents dashes. Petrifying Gaze (R) petrifies enemies facing her. Her passive makes all her speed bonuses more effective.",
+  "playstyle": "Extended-fight mage: poison, then spam E. She becomes very strong in teamfights with her items.",
+  "early_game": "Farm with E (mana refunded if the minion dies) and poke with Q when your opponent comes to last hit. Keep W against assassins (it prevents their dashes). You're vulnerable to long-range poke: stay behind your minions.",
+  "level_1": "Twin Fang (E) first. Last hit safely.",
+  "level_2": "Noxious Blast (Q). Q, then chain E on the poisoned opponent.",
+  "level_3": "Miasma (W). It slows and prevents dashes: keep it against an assassin's engage.",
+  "level_6": "Petrifying Gaze: petrifies enemies facing you. Combined with W, it shuts down almost any escape or engage.",
+  "power_spikes": [
+   "Level 3: poison + E on repeat.",
+   "Level 6: petrification.",
+   "First completed item: high DPS.",
+   "Two to three items: a dominant extended-fight mage."
+  ],
+  "lane_plan": "Farm with E and poke with Q. Keep the wave in the middle or near you against assassins. Push before joining your jungler. Avoid staying exposed to long-range mages.",
+  "trading": "Basic trade: Q, then repeated E's. Long trade: W to prevent escapes, R to petrify. Engage if your Q lands; give up on it against mages who poke you from out of range.",
+  "jungle_plan": "",
+  "threats": [
+   "Long-range and burst mages (Syndra, Hwei, Veigar).",
+   "Assassins who arrive while W is on cooldown (Qiyana, LeBlanc).",
+   "Twisted Fate, who roams."
+  ],
+  "mistakes": [
+   "Using W to farm and not having it against an engage.",
+   "Casting your ultimate at the enemy's back.",
+   "Draining your mana with E on unpoisoned minions."
+  ],
+  "matchup_notes": {
+   "Viktor": "He pokes you: dodge his laser and fight when you can poison him.",
+   "Syndra": "She pokes and stuns you: stay behind your minions.",
+   "Ahri": "Keep W for her dashes and R for her engage.",
+   "Sylas": "W prevents his dashes; careful, he can steal your ultimate.",
+   "Yasuo": "W prevents his dashes; his Wind Wall blocks your Q, not your E."
+  },
+  "mid_game": "Join objectives and farm waves from range. W and R defend very well.",
+  "late_game": "Main area DPS: stand behind your frontline, poison and spam E. Keep R for the enemy engage.",
+  "ahead": "Take towers and objectives, roam with your jungler.",
+  "behind": "Farm and scale: your late game makes up for being behind.",
+  "win_condition": "To win this game, you want to survive the lane and dominate teamfights with your poison.",
+  "final_tip": "Keep Miasma for the enemy engage: stopping a dash is worth more than any poke."
+ }
+}

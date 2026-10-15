@@ -1,0 +1,43 @@
+{
+ "Udyr|jgl": {
+  "identity": "Mixed damage fighter who switches between four stances, all of which can be ranked up to 5 (R included). Wilding Claw (Q) boosts his attack speed and strikes with lightning, Iron Mantle (W) gives a shield and lifesteal, Blazing Stampede (E) speeds him up and makes his next attack on each target stun, and Wingborne Storm (R) creates a storm that slows around him. After every stance, his next two attacks are empowered, and he can awaken a stance to make it stronger.",
+  "playstyle": "Very fast-clearing jungler built for invades and duels. Udyr can lean his damage on Q (physical, dueling) or R (magic, area). He's strong in skirmishes and ganks thanks to E's stun.",
+  "early_game": "Clear fast, switching stances to make the most of your empowered attacks. Invade when your laners have priority: you win a lot of duels. Gank with E: speed up, then stun the target with your next attack.",
+  "level_1": "Wilding Claw (Q) first.",
+  "level_2": "Wingborne Storm (R). In most games, Udyr takes R very early for area clearing.",
+  "level_3": "Iron Mantle (W). A shield and lifesteal: your clear gets safer. Blazing Stampede (E) comes at level 4 on the most common path, and your ganks come with it.",
+  "level_6": "Udyr has no classic ultimate: level 6 strengthens your stances (mostly Q or R depending on your build). Your duels and clear get stronger.",
+  "power_spikes": [
+   "Level 4: Blazing Stampede, ganks with a stun.",
+   "First completed item: very strong duels.",
+   "Awakened stances: burst or area depending on your build.",
+   "Mid game: invades and skirmishes."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Very fast clear and invades. Udyr wants to dominate the jungle: steal enemy camps, control Scuttles and take Void Grubs (around 8 minutes) when your laners have priority. Gank with E from level 4, and play dragons with your team.",
+  "trading": "Ganking: E to speed up → stunning attack → Q or R → W for the shield. Dueling: switch stances to make the most of your empowered attacks. Give up on it against champions who kite you (Ivern) or lock you down for a long time (Zac).",
+  "threats": [
+   "Ivern and Zac: hard matchups.",
+   "Ranged kiting.",
+   "Heavy CC that breaks your combos."
+  ],
+  "mistakes": [
+   "Staying in one stance and losing your empowered attacks.",
+   "Using E with no target to stun.",
+   "Choosing your build without looking at the enemy comp."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Duel him with your empowered attacks.",
+   "Viego": "Stun him with E when he dives.",
+   "Kayn": "Punish him before his transformation.",
+   "Ivern": "He doesn't fight: set the pace with your laners.",
+   "Zac": "He soaks damage and locks you down: avoid long fights."
+  },
+  "mid_game": "Invades, skirmishes and objectives.",
+  "late_game": "Dive the enemy backline with E and stun the carry.",
+  "ahead": "Choke out the enemy jungler and force fights.",
+  "behind": "Farm fast and play with your team.",
+  "win_condition": "To win this game, you want to dominate the jungle through farming and invades, then win skirmishes.",
+  "final_tip": "Switch stances: every switch empowers your next two attacks."
+ }
+}

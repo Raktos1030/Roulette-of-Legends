@@ -1,0 +1,84 @@
+{
+  "Volibear|top": {
+    "identity": "Combattant-tank à dégâts mixtes. Coup fulgurant (Q) l'accélère vers les champions et stun à la prochaine attaque, Folie mutilatrice (W) marque la cible puis le soigne s'il la frappe à nouveau, Foudroiement (E) fait tomber un éclair qui slow (et le protège s'il est dans la zone), et Tempête incarnée (R) le fait bondir en désactivant les tours. Son passif accélère ses attaques et fait rebondir des éclairs à pleine charge.",
+    "playstyle": "Lane agressive, all-in et dives sous tour. Volibear gagne les combats au contact grâce au stun du Q et aux soins du W, et son ultime rend les dives très sûres. Il est plus faible contre le kiting et les champions qui le tiennent à distance.",
+    "early_game": "Trade avec W (marque puis soin) et engage avec Q quand l'adversaire est à portée. Pose E sur ta position pendant un combat pour obtenir le shield. Cherche l'all-in quand ton passif est chargé.",
+    "level_1": "Foudroiement (E) en premier dans le chemin le plus joué (E → Q → W, puis W maximisé). Tu peux poke à distance sur l'adversaire qui vient last hit.",
+    "level_2": "Coup fulgurant (Q). Accélération et stun : Q → attaque → E sur toi pour le shield. Bon all-in au niveau 2.",
+    "level_3": "Folie mutilatrice (W). W → attaques → W sur la cible marquée pour le soin : tes trades longs deviennent très forts.",
+    "level_6": "Tempête incarnée : bond qui désactive les tours et donne des PV. Parfait pour dive sous tour avec ton jungler ou pour engager en teamfight.",
+    "power_spikes": [
+      "Niveau 2 : Q + E, all-in fort.",
+      "Niveau 3 : trades longs avec W.",
+      "Niveau 6 : dives sous tour avec l'ultime.",
+      "Premier item complet : duels dominants."
+    ],
+    "lane_plan": "Joue une wave neutre ou poussée, trade au W et engage au Q. Après le 6, dive avec ton jungler en désactivant la tour. Recall quand ta wave crash.",
+    "trading": "Trade court : W → attaques. Trade long : Q (stun) → E sur toi → W → W sur la cible marquée. Engage quand l'adversaire est à portée de Q ; abandonne s'il te kite ou s'il a Contre-attaque (Jax).",
+    "jungle_plan": "",
+    "threats": [
+      "Teemo et le kiting à distance.",
+      "Jax et sa Contre-attaque, qui annule ton Q.",
+      "Tanks à armure qui te tiennent en combat long (Malphite)."
+    ],
+    "mistakes": [
+      "Engager avec Q sans pouvoir suivre.",
+      "Oublier de te placer dans ton E pour le shield.",
+      "Utiliser l'ultime sans suivi pendant un dive."
+    ],
+    "matchup_notes": {
+      "Darius": "Stun-le au Q quand il avance et soigne-toi au W.",
+      "Sett": "Évite son W au centre et engage après.",
+      "Nasus": "Punis-le tôt pour limiter ses stacks, puis transforme ton avance avant qu'il ne scale.",
+      "Jax": "Sa Contre-attaque annule ton Q : attends-la avant d'engager.",
+      "Teemo": "Il te kite et t'aveugle : farm et attends ton jungler."
+    },
+    "mid_game": "Dives et escarmouches. L'ultime désactive les tours : très fort pour les prendre avec ton jungler.",
+    "late_game": "Frontline d'engage : ultime sur la ligne arrière adverse, Q pour stun le carry, W pour te soigner.",
+    "ahead": "Dive, prends les tours et force les combats.",
+    "behind": "Farm et joue pour les engages en teamfight.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer ta lane et dive sous tour avec l'ultime et ton jungler.",
+    "final_tip": "Pendant un combat, place-toi dans ton Foudroiement : il te donne un shield en plus du slow."
+  },
+  "Warwick|top": {
+    "identity": "Combattant à dégâts mixtes. Warwick se soigne en attaquant quand il est bas en PV (passif Soif inextinguible), mord avec Dents de la bête (Q, qui peut suivre la cible si tu maintiens la touche), traque les ennemis blessés avec Traque sanguinaire (W), réduit les dégâts reçus puis effraie avec Hurlement bestial (E) et saute pour supprimer avec Contrainte infinie (R).",
+    "playstyle": "Lane de combat long et de sustain. Warwick gagne les duels grâce à ses soins et à son effroi.",
+    "early_game": "Trade avec Q et les attaques, soigne-toi avec le passif. Garde E pour réduire les dégâts d'un all-in et effrayer l'adversaire au bon moment. W te donne de la vitesse vers les ennemis blessés : impossible de t'échapper quand tu es devant.",
+    "level_1": "Dents de la bête (Q) en premier. Mords l'adversaire qui vient last hit et soigne-toi.",
+    "level_2": "Traque sanguinaire (W). Vitesse d'attaque et de déplacement contre les ennemis blessés : tes trades longs deviennent très forts.",
+    "level_3": "Hurlement bestial (E). Réduction de dégâts puis effroi : lance-le au début d'un all-in adverse pour encaisser, puis relâche-le pour effrayer.",
+    "level_6": "Contrainte infinie : saut qui supprime la cible. Utilise-le pour engager un all-in, pour ganker avec ton jungler ou pour attraper un carry en teamfight.",
+    "power_spikes": [
+      "Niveau 3 : E + Q, combats longs.",
+      "Niveau 6 : ultime pour les kills.",
+      "Premier item complet : duels dominants.",
+      "Mid game : escarmouches autour des ennemis blessés."
+    ],
+    "lane_plan": "Joue une wave neutre, trade avec Q et soigne-toi avec le passif. Prends les plaques quand tu gagnes. Recall quand ta wave crash. W te donne la vision des ennemis blessés sur la carte : profite-en pour aider ton équipe.",
+    "trading": "Trade court : Q + attaques. Trade long : E (réduction de dégâts) → Q → attaques → relance E pour l'effroi → R. Engage quand l'adversaire est blessé ; abandonne contre les champions qui te kitent (Kennen).",
+    "jungle_plan": "",
+    "threats": [
+      "Kennen et les champions à distance qui te kitent.",
+      "Urgot et les champions qui te battent en combat soutenu.",
+      "Réductions de soins adverses."
+    ],
+    "mistakes": [
+      "Utiliser E trop tôt.",
+      "Rater l'ultime.",
+      "Se battre à distance."
+    ],
+    "matchup_notes": {
+      "Yone": "Garde E pour son Q3 et soigne-toi en combat long.",
+      "Darius": "Ses saignements te font mal : trade court et garde E pour son all-in.",
+      "Mordekaiser": "Tes soins tiennent son Royaume des morts.",
+      "Kennen": "Il te kite et te stun : farm et attends ton jungler.",
+      "Irelia": "Effraie-la quand elle dash sur toi."
+    },
+    "mid_game": "Escarmouches et duels. Warwick excelle à punir les ennemis blessés grâce à W.",
+    "late_game": "Ultime sur le carry adverse et combat long.",
+    "ahead": "Force des duels et dive avec ton jungler.",
+    "behind": "Farm et joue pour l'ultime en teamfight.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner les combats longs grâce à tes soins et attraper les carries avec l'ultime.",
+    "final_tip": "Garde ton Hurlement bestial pour le moment où l'adversaire lance son all-in."
+  }
+}

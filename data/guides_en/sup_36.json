@@ -1,0 +1,43 @@
+{
+ "Thresh|sup": {
+  "identity": "Pick and protection support. Damnation (passive): he collects the souls of enemies who die near him, which permanently increase his armor and ability power. Death Sentence (Q) chains an enemy and pulls them; when recast, Thresh dashes to them. Dark Passage (W) throws a lantern that shields nearby allies: an ally who clicks it is pulled to Thresh. Flay (E) charges his attacks over time and, when activated, sweeps enemies in the direction of the swing, and The Box (R) creates a prison whose walls slow and damage whoever crosses them.",
+  "playstyle": "The most complete support: he catches with Q, saves with the lantern and controls with E and R. No clearly unfavorable matchups, and he crushes fragile or dive supports (Yuumi, Camille, Pantheon, Mel). He demands a lot of precision.",
+  "early_game": "Threaten the hook (Q) from the bushes, and collect souls whenever enemies die near you. After a hook, throw the lantern (W) to your ADC so they arrive with you. Flay (E) knocks back an enemy engage or pulls the target back toward your ADC.",
+  "level_1": "Death Sentence (Q) first. After that, max Q first.",
+  "level_2": "Flay (E). Combo: Q → E backward (the target is pulled back toward your ADC).",
+  "level_3": "Dark Passage (W). A lantern to bring in your ADC or an ally in danger, plus a shield.",
+  "level_6": "The Box: a prison that slows and damages enemies who leave it. Combo: Q → recast → R → E.",
+  "power_spikes": [
+   "Level 2: Q → E.",
+   "Level 3: lantern for engages and rescues.",
+   "Level 6: The Box.",
+   "Collected souls: increasing armor and ability power."
+  ],
+  "lane_plan": "Threaten the hook, collect souls and play for kills with your ADC and jungler. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "All-in: Q → recast → E toward your ADC → W to bring them in → R. Defense: E to knock back an engage, W to save an ally. Against Braum, Taric or Zilean (your worst matchups), don't throw the hook when they can cancel the pick.",
+  "jungle_plan": "",
+  "threats": [
+   "Braum, Taric and Zilean: your worst matchups, close to even.",
+   "A missed hook: you're then left without an engage tool.",
+   "Supports who cancel picks (Braum's shield, Taric's invulnerability)."
+  ],
+  "mistakes": [
+   "Recasting Q to rush into the middle of the enemy team with no follow-up.",
+   "Forgetting to collect souls.",
+   "Throwing the lantern too far from the ally you want to save."
+  ],
+  "matchup_notes": {
+   "Lulu": "Hook once she's used her polymorph.",
+   "Nautilus": "Knock back his engage with E.",
+   "Nami": "Hook once her bubble is used.",
+   "Leona": "Knock back her E with your E, and lantern to save your ADC.",
+   "Braum": "His shield blocks your hook: aim from another angle or wait until he's used it."
+  },
+  "mid_game": "Look for picks with your jungler, collect souls and place Control Wards around objectives.",
+  "late_game": "Hook an isolated carry, or keep your abilities to protect: E against divers, lantern to save, Box in the middle of the group.",
+  "ahead": "Create picks everywhere and control vision.",
+  "behind": "Protect your ADC: the lantern and Flay cancel dives.",
+  "win_condition": "To win this game, you want to catch key targets with your hook and protect your team with your lantern.",
+  "final_tip": "After a hook, throw the lantern to your ADC before rushing in: you both arrive on the target."
+ }
+}

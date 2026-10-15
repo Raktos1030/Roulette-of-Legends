@@ -1,0 +1,43 @@
+{
+ "Maokai|sup": {
+  "identity": "Control tank. Sap Magic (passive): regularly, his attack heals him and deals extra damage; this cooldown drops when he casts an ability or is hit by an enemy ability. Bramble Smash (Q) knocks back nearby enemies and slows them, Twisted Advance (W) launches him at a target, untargetable during the trip, then roots it, Sapling Toss (E) throws a sapling that watches an area and explodes on enemies (more effective in brush), and Nature's Grasp (R) sends out a huge wall of brambles that slowly advances and roots enemies in its path.",
+  "playstyle": "Zone-control tank support: he secures bushes with his saplings, engages with W and locks down fights with his ultimate. He dominates fragile supports (Pyke, Brand, Xerath) and struggles against tanks who beat him up close (Braum, Alistar).",
+  "early_game": "Place saplings (E) in the lane's bushes: they give vision and punish an opponent who walks in. Engage with W → Q (root, then knock the target back toward your ADC). Sap Magic regularly heals you in trades.",
+  "level_1": "Twisted Advance (W) first. After that, max Q first.",
+  "level_2": "Bramble Smash (Q). Combo: W (CC), then Q, positioned to knock the target toward your ADC.",
+  "level_3": "Sapling Toss (E). Vision and damage: throw them into bushes and onto escape paths.",
+  "level_6": "Nature's Grasp: a slowly advancing wall that roots. Cast it from far away to engage or cut off an enemy engage; it sweeps across a whole area.",
+  "power_spikes": [
+   "Level 2: W → Q.",
+   "Level 6: long-range area ultimate.",
+   "First resistance items: a very durable frontline.",
+   "Teamfights: R on the group, then W on the carry."
+  ],
+  "lane_plan": "Control the bushes with E, engage with W when your ADC can follow. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored): pair them with your saplings around dragon.",
+  "trading": "All-in: W → Q toward your ADC → attacks (Sap Magic). Defense: Q to knock back a diver, W to chase them. Back off against tanks who win the fight up close (Braum, Alistar).",
+  "jungle_plan": "",
+  "threats": [
+   "Braum and Alistar: hard matchups.",
+   "Taric: a hard matchup.",
+   "Kiting: you need to reach your target with W."
+  ],
+  "mistakes": [
+   "Knocking the target away from your ADC with Q.",
+   "Casting your ultimate too close, without giving it time to advance.",
+   "Forgetting to place saplings in the bushes."
+  ],
+  "matchup_notes": {
+   "Thresh": "Your saplings in the bushes disrupt his hooks: control vision.",
+   "Nautilus": "If he engages, answer with W on him and Q toward your ADC.",
+   "Pyke": "Your saplings reveal him in the bushes: he can't surprise you anymore.",
+   "Leona": "She engages you: knock her back with Q.",
+   "Braum": "His passive and shield win trades up close: play for vision and counter-engages."
+  },
+  "mid_game": "Control vision around objectives with E and Control Wards. Look for picks with W.",
+  "late_game": "Frontline: ultimate from far away on the enemy group, then W on the carry. Q to knock divers away from your ADC.",
+  "ahead": "Engage often and control vision across the map.",
+  "behind": "Protect your ADC with Q and your ultimate.",
+  "win_condition": "To win this game, you want to control vision and root the enemy team with your ultimate at the right moment.",
+  "final_tip": "Position before Bramble Smash: it knocks enemies away from you, so send them toward your team, not theirs."
+ }
+}

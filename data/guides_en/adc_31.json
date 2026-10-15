@@ -1,0 +1,43 @@
+{
+ "Yasuo|adc": {
+  "identity": "Melee physical damage fighter. Way of the Wanderer (passive) increases his crit chance and gives him a shield that charges as he moves. Steel Tempest (Q) is a line thrust (it counts as an attack): on the third hit, he throws a tornado that knocks up. Wind Wall (W) blocks every enemy projectile for 4 seconds, Sweeping Blade (E) dashes him through a target, and Last Breath (R) blinks him to a knocked-up enemy champion and keeps it in the air.",
+  "playstyle": "Melee carry in bot lane: he blocks marksmen's projectiles with his Wind Wall and ends fights with his ultimate, set up by his tornado or by his support's knock-ups. He crushes projectile-based marksmen (Ezreal, Varus, Jhin, Caitlyn, Draven).",
+  "early_game": "Farm with Q (its cooldown drops with your attack speed) and save the tornado for your opponent. Use E on minions to get close without taking damage. Save Wind Wall (W) for the enemy lane's key ability or poke.",
+  "level_1": "Steel Tempest (Q) first. Farm and charge your tornado.",
+  "level_2": "Sweeping Blade (E). Mobility through minions: combine E and Q for a circular strike.",
+  "level_3": "Wind Wall (W). Block the hook, the CC or the enemy ultimate: that's what makes you beat marksmen.",
+  "level_6": "Last Breath: blink to a knocked-up enemy, from your tornado or your support's abilities (knock-ups, airborne effects). Every airborne enemy in the area is hit.",
+  "power_spikes": [
+   "Level 2: E + Q through minions.",
+   "Level 6: ultimate off your support's knock-ups.",
+   "First completed item: frequent crits.",
+   "Two completed items: very high teamfight damage."
+  ],
+  "lane_plan": "Farm, charge your tornado and play with a support who knocks up: every knock-up gives you an ultimate. Block the enemy poke with W. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards steady farming. Join dragons.",
+  "trading": "Short trade: E onto a minion near your opponent, Q, back off with E. All-in: tornado or support knock-up → R → Q → attacks, W to block their counterattack. Give up on it against champions who don't rely on projectiles or who root you (Nilah, Viktor, Kalista).",
+  "jungle_plan": "",
+  "threats": [
+   "Kalista and Nilah: hard matchups.",
+   "Viktor bot, who controls you with his zones.",
+   "Crowd control: you have to get close to deal damage."
+  ],
+  "mistakes": [
+   "Wasting Wind Wall on unimportant poke.",
+   "Using E into the middle of the enemy wave and pulling all the aggro.",
+   "Throwing the tornado at a minion instead of your opponent."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "She doesn't need projectiles to kill you up close: don't force it without your support.",
+   "Jhin": "Block his Deadly Flourish and his ultimate with W.",
+   "Ezreal": "Block his Qs with W: he loses all his poke.",
+   "Kalista": "Her hops keep her away from your tornado: play around your support's knock-ups.",
+   "Nilah": "She fights up close and dodges your attacks with her Jubilant Veil: avoid long fights."
+  },
+  "mid_game": "Group with your team and set up fights around your allies' knock-ups. Push side waves with Q and E.",
+  "late_game": "Wait for your team's knock-ups, then ultimate onto several airborne enemies. Save W to block the enemy carry's ultimate or poke.",
+  "ahead": "Force fights: an ultimate on several targets wins a teamfight.",
+  "behind": "Farm side waves and wait for your team's knock-ups before going in.",
+  "win_condition": "To win this game, you want to block the enemy marksmen's projectiles and win fights with your ultimate on several airborne enemies.",
+  "final_tip": "Your ultimate also triggers on your allies' knock-ups: pick a support who knocks up, and watch their abilities."
+ }
+}

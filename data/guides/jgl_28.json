@@ -1,0 +1,43 @@
+{
+  "Nunu|jgl": {
+    "identity": "Tank à dégâts magiques, spécialiste des ganks en boule de neige et du contrôle d'objectifs. Voracité (Q) mord un monstre ou un sbire (gros dégâts vrais et soin) ou un champion, Boule de neige géante ! (W) roule une boule qui grossit et knock-up à l'impact, Rafale de boules de neige (E) slow puis root les ennemis touchés plusieurs fois, et Zéro absolu (R) canalise une zone glaciale qui slow avant une explosion massive. Son passif accélère Nunu et un allié proche.",
+    "playstyle": "Jungler de ganks et d'objectifs. Nunu traverse la carte en boule de neige pour ganker n'importe quelle lane et sécurise les monstres épiques grâce à son Q.",
+    "early_game": "Clear avec Q (très fort sur les monstres) et E. Gank dès le niveau 3 : W depuis loin, knock-up, puis E pour root. Utilise Q sur les crabes et les monstres épiques pour les sécuriser.",
+    "level_1": "Voracité (Q) en premier.",
+    "level_2": "Boule de neige géante ! (W) dans le chemin le plus joué. Elle grossit en roulant : plus elle vient de loin, plus elle fait mal. Premier gank possible dès le niveau 2-3.",
+    "level_3": "Rafale de boules de neige (E). Ralentit puis root : W → E est ton gank complet.",
+    "level_6": "Zéro absolu : canalisation qui slow fortement puis explose. Lance-le quand les ennemis ne peuvent pas sortir de la zone (après ton knock-up ou en combat d'objectif). Tu peux l'interrompre plus tôt pour moins de dégâts.",
+    "power_spikes": [
+      "Niveau 2-3 : ganks en boule de neige.",
+      "Niveau 6 : Zéro absolu en combat d'objectif.",
+      "Premier item complet : tank solide.",
+      "Objectifs : Voracité sécurise les monstres épiques."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide avec Q, puis ganks fréquents en boule de neige : Nunu peut ganker n'importe quelle lane rapidement. Contrôle les crabes et utilise Q pour sécuriser les Larves (vers 8 min), les dragons et le Baron. Envahis avec tes laners : ton Q sur les camps adverses est très rapide.",
+    "trading": "En gank : W depuis loin → knock-up → E pour root → Q. En teamfight : W pour engager, E pour slow, R quand les ennemis ne peuvent pas sortir. Abandonne contre les champions qui interrompent ta canalisation de R.",
+    "threats": [
+      "CC qui interrompent ton Zéro absolu.",
+      "Ivern, seul matchup nettement défavorable selon les données.",
+      "Duels contre les junglers d'early game très agressifs."
+    ],
+    "mistakes": [
+      "Lancer la boule de neige trop près (peu de dégâts et facile à esquiver).",
+      "Canaliser R quand l'ennemi peut en sortir facilement.",
+      "Oublier d'utiliser Q pour sécuriser les monstres épiques."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il t'envahira : gank et sécurise les objectifs avec Q.",
+      "Viego": "Root-le avec E quand il dive.",
+      "Graves": "Il te bat en duel early : évite-le, gank de l'autre côté.",
+      "Sylas": "Il peut voler ton ultime : n'utilise pas R quand il peut le reprendre.",
+      "Ivern": "Il protège ses alliés : vise des cibles hors de sa portée."
+    },
+    "mid_game": "Ganks et contrôle des objectifs. Nunu est très fort pour sécuriser les monstres épiques avec Q.",
+    "late_game": "Engage avec W, contrôle avec E et R. Protège tes carries et sécurise le Baron avec Q.",
+    "ahead": "Gank en boucle, prends les objectifs et force les combats.",
+    "behind": "Sécurise les objectifs avec Q et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux ganker toutes les lanes en boule de neige et contrôler les monstres épiques avec Voracité.",
+    "final_tip": "Lance ta boule de neige de loin : plus elle roule, plus elle est grosse et fait mal."
+  }
+}

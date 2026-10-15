@@ -1,0 +1,43 @@
+{
+  "Karma|sup": {
+    "identity": "Enchanteresse de poke. Mantra (R) est disponible dès le niveau 1 et renforce sa prochaine compétence ; ses sorts qui blessent réduisent son délai (passif Concentration ardente). Flamme intérieure (Q) explose au contact d'un ennemi (avec Mantra, elle laisse une zone qui explose après un délai), Volonté concentrée (W) la lie à un ennemi et le root si le lien tient (avec Mantra, elle se soigne et le CC dure plus longtemps), et Exaltation (E) donne un shield et de la vitesse à un allié (avec Mantra, à tous les alliés proches).",
+    "playstyle": "Support de poke et d'utilitaire : elle harcèle avec Q renforcé en lane, puis accélère et protège toute son équipe avec E renforcé. Elle souffre contre les supports d'engage (Thresh, Nautilus, Rakan, Rell, Blitzcrank, Braum), et domine les mages et supports de mêlée lents (Swain, Brand, Xerath, Camille).",
+    "early_game": "Poke avec Q renforcé par Mantra dès le niveau 1 : c'est ton meilleur outil de lane. Chaque sort qui touche réduit le délai de Mantra. Contre un support d'engage, garde plutôt Mantra pour E (shield et vitesse sur ton ADC et toi) ou W (CC plus longue).",
+    "level_1": "Flamme intérieure (Q) en premier. Mantra (R) est déjà disponible : Mantra → Q pour un gros poke.",
+    "level_2": "Exaltation (E). Shield et vitesse : protège ton ADC ou fuis un engage.",
+    "level_3": "Volonté concentrée (W). CC si le lien tient : W sur un ennemi qui ne peut pas s'éloigner, puis Q.",
+    "level_6": "Mantra monte de rang et se recharge plus vite. En teamfight, Mantra → E protège et accélère toute ton équipe (engage ou fuite).",
+    "power_spikes": [
+      "Niveau 1 : Q renforcé, poke très fort.",
+      "Niveau 3 : W pour les kills avec ton ADC.",
+      "Premier item complet : poke et shields renforcés.",
+      "Teamfight : Mantra → E sur toute l'équipe."
+    ],
+    "lane_plan": "Poke avec Q renforcé et garde E contre les engages. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées). Contre un support d'engage, joue défensivement.",
+    "trading": "Trade de base : Mantra → Q. All-in : W, Q, attaques, E sur ton ADC. Défense : Mantra → E pour le shield et la vitesse des deux. Recule contre les supports d'engage quand Mantra est en recharge.",
+    "jungle_plan": "",
+    "threats": [
+      "Thresh et Nautilus : matchups difficiles.",
+      "Rakan, Blitzcrank, Rell et Braum : matchups difficiles.",
+      "Engages quand Mantra est en recharge."
+    ],
+    "mistakes": [
+      "Utiliser Mantra pour poke contre un support d'engage et ne plus pouvoir protéger.",
+      "Lancer W sur une cible qui peut facilement briser le lien.",
+      "Rater Q au milieu des sbires (il explose sur le premier touché)."
+    ],
+    "matchup_notes": {
+      "Lulu": "Elle harcèle aussi : ton poke Q renforcé porte plus loin.",
+      "Thresh": "Garde Mantra → E pour sauver ton ADC de son grappin.",
+      "Nautilus": "Reste derrière les sbires pour bloquer son ancre.",
+      "Lux": "Esquive son Entrave de lumière et poke-la en retour.",
+      "Swain": "Il doit s'approcher : poke-le et fuis avec E."
+    },
+    "mid_game": "Poke avant les objectifs et pose des pinks. Utilise Mantra → E pour lancer les engages de ton équipe ou fuir.",
+    "late_game": "Reste derrière ta frontline, poke avec Q renforcé avant le combat, puis Mantra → E pour protéger toute l'équipe quand il commence.",
+    "ahead": "Poke plus fort et force les objectifs : ton équipe accélérée gagne les combats.",
+    "behind": "Joue l'utilitaire : shields et vitesse sauvent ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux affaiblir l'équipe adverse avec ton poke et accélérer ton équipe au bon moment avec Mantra → E.",
+    "final_tip": "Choisis Mantra selon la situation : Q pour poke, W pour root plus longtemps, E pour sauver ou engager avec toute l'équipe."
+  }
+}

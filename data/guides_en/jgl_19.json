@@ -1,0 +1,43 @@
+{
+ "Khazix|jgl": {
+  "identity": "Physical damage assassin who hunts isolated targets. Taste Their Fear (Q) deals much more damage to a target with no nearby ally, Void Spike (W) slows and heals him, Leap (E) jumps onto a target, and Void Assault (R) makes him invisible. When he isn't seen, his next attack is empowered (passive). At levels 6, 11 and 16, he evolves an ability of his choice, which changes his playstyle.",
+  "playstyle": "Invading, dueling jungler who assassinates isolated targets. Kha'Zix is strong in duels against lone junglers and in messy skirmishes.",
+  "early_game": "Clear fast and duel isolated enemy junglers: your Q is huge on a lone target. Gank when an opponent is far from their allies. Keep E to escape or finish.",
+  "level_1": "Taste Their Fear (Q) first. Use it on an isolated camp for the bonus.",
+  "level_2": "Void Spike (W). Healing and a slow: your clear gets healthier.",
+  "level_3": "Leap (E). First gank or invade: E → Q on an isolated target → W. You win a lot of duels against lone junglers.",
+  "level_6": "Void Assault (invisibility) and your first evolution. You usually evolve Q (isolated damage and range) or E (leap range and a reset on takedowns) depending on your game. Your assassinations get much more dangerous.",
+  "power_spikes": [
+   "Level 3: duels against isolated junglers.",
+   "Level 6: invisibility and first evolution.",
+   "Levels 11 and 16: more evolutions.",
+   "First completed item: assassinations on carries."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear and invades: Kha'Zix wants to hunt the enemy jungler when they're alone. Track their position through their camps and invade when your laners have priority. Control Scuttles and Void Grubs (around 8 minutes). Gank lanes where the opponent is isolated (without their support or jungler nearby).",
+  "trading": "Dueling: E → Q on the isolated target → W → attacks. Skirmishing: wait for a target to be isolated, go invisible with R, then E → Q. Give up on it if the target has allies around (no isolation bonus).",
+  "threats": [
+   "Grouped targets (no isolation bonus).",
+   "Junglers who lock you down (Rammus, Sejuani, Wukong).",
+   "Reveals during your invisibility."
+  ],
+  "mistakes": [
+   "Using Q on a target surrounded by allies.",
+   "Diving into a group without invisibility.",
+   "Picking an evolution without thinking about your game."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Duel him when he's alone in his jungle.",
+   "Graves": "He beats you in early duels: wait for your E to engage him.",
+   "Viego": "Isolate him and punish him.",
+   "Wukong": "His clone fools you and his knock-up cuts you off: attack the real one.",
+   "Naafiri": "Her packmates stop you from getting the isolation bonus."
+  },
+  "mid_game": "Picks on isolated targets, invades and objectives.",
+  "late_game": "Flank invisibly and kill the isolated target or the carry who walked too far forward.",
+  "ahead": "Choke out the enemy jungler and hunt isolated carries.",
+  "behind": "Farm and look for picks on isolated targets.",
+  "win_condition": "To win this game, you want to isolate and kill lone targets, then assassinate the carries in teamfights.",
+  "final_tip": "Before casting Q, check that the target is alone: that's what doubles your damage."
+ }
+}

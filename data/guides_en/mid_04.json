@@ -1,0 +1,43 @@
+{
+ "Anivia|mid": {
+  "identity": "Magic damage control mage, played mid about two games out of three. Flash Frost (Q) passes through enemies, then explodes to stun, Crystallize (W) creates an ice wall, Frostbite (E) deals double damage to chilled targets, and Glacial Storm (R) creates an area that slows and chills. When she dies, she comes back as an egg (passive Rebirth).",
+  "playstyle": "Zone control and scaling mage. In mid, Anivia holds the wave with her ultimate, punishes assassins with her wall and stun, and becomes very strong in teamfights. She's weaker against long-range mages who poke her (Xerath, Syndra).",
+  "early_game": "Farm safely with E and Q. Keep Q for an enemy engage. Against assassins, keep W (wall) to block them. You're fragile early: don't waste your abilities.",
+  "level_1": "Flash Frost (Q) first. Farm and keep Q to defend yourself.",
+  "level_2": "Frostbite (E). Double damage on a chilled target: Q (which chills) then E.",
+  "level_3": "Second point in E; Crystallize (W) comes at level 4. E is maxed first.",
+  "level_6": "Glacial Storm: an area that slows and chills, so all your E's deal double damage. You clear waves from range and control the lane.",
+  "power_spikes": [
+   "Level 6: storm to farm and control.",
+   "First completed item: enough mana and damage.",
+   "Two items: dominant zone mage.",
+   "Passive available: the egg discourages dives."
+  ],
+  "lane_plan": "Farm with E and Q before 6, then clear waves with R. Keep the wave in the middle or near you against assassins. Push, then join your jungler for objectives. Keep W to block engages or escapes.",
+  "trading": "Basic trade: Q (stun) → doubled E. Long trade: R on your opponent so all your E's are doubled. Engage if Q lands; give up on it if you miss it against an assassin.",
+  "jungle_plan": "",
+  "threats": [
+   "Long-range mages (Xerath, Syndra) who poke you.",
+   "Twisted Fate, who roams while you clear the wave.",
+   "Assassins who get over your wall."
+  ],
+  "mistakes": [
+   "Wasting Q and having no defense left against an engage.",
+   "Placing the wall in the wrong spot and blocking your own escape.",
+   "Leaving R on with no target and draining your mana."
+  ],
+  "matchup_notes": {
+   "Viktor": "Dodge his laser and keep Q for his Gravity Field.",
+   "Ahri": "She dodges your Q with her dashes: keep Q for the end of her ultimate.",
+   "Syndra": "She pokes you from range: farm with R and play around your jungler.",
+   "Yasuo": "His Wind Wall blocks your Q, but your ice wall and storm control him.",
+   "Xerath": "He pokes you from very far away: stay behind your minions."
+  },
+  "mid_game": "Zone control around objectives: R on river entrances, wall to cut off engages.",
+  "late_game": "Zone mage: wall to split the enemy team, storm on the fight area, Q for the diver.",
+  "ahead": "Take towers with your wave control and roam to objectives.",
+  "behind": "Farm from range with R and play with your team: your zone control stays useful.",
+  "win_condition": "To win this game, you want to survive the lane, scale and control teamfight zones with your wall and storm.",
+  "final_tip": "Always keep Flash Frost for the enemy engage: a landed Q then a doubled E turns almost every all-in."
+ }
+}

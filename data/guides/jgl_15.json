@@ -1,0 +1,43 @@
+{
+  "Jax|jgl": {
+    "identity": "Duelliste à dégâts hybrides, joué en jungle environ une fois sur cinq (le top reste son rôle principal). Frappe bondissante (Q) saute sur n'importe quelle unité, même une ward alliée, Contre-attaque (E) esquive les auto-attaques puis stun autour de lui, Élargissement (W) renforce l'attaque suivante, et Maître d'armes (R) ajoute un coup puissant toutes les trois attaques et le rend résistant. En jungle, il scale vers un monstre de duel et d'escarmouche.",
+    "playstyle": "Jungler de farm et de duel qui monte en puissance. Jax n'a pas le clear le plus rapide, mais il gagne les duels dès ses premiers items et devient une menace de splitpush et d'escarmouche en mid game. Ses ganks reposent sur Q + E.",
+    "early_game": "Clear en utilisant E pour réduire les dégâts des camps et W pour les attaques renforcées. Gank quand tu peux sauter sur la cible depuis un angle : Q → E (stun à la fin) → W. Évite les duels contre les junglers d'early game très agressifs.",
+    "level_1": "Contre-attaque (E) en premier. Elle réduit les dégâts sur les camps et stun.",
+    "level_2": "Élargissement (W). Attaque renforcée qui réinitialise l'attaque : ton clear s'accélère. W est maximisé en priorité.",
+    "level_3": "Frappe bondissante (Q). Premier gank : Q → E → W → relance E pour stun. Tu peux aussi sauter sur une ward alliée pour fuir.",
+    "level_6": "Maître d'armes : coup supplémentaire toutes les trois attaques et résistances en actif. Tes duels deviennent très forts : tu peux envahir et contester les objectifs.",
+    "power_spikes": [
+      "Niveau 3 : gank Q + E.",
+      "Niveau 6 : ultime, duels forts.",
+      "Premier item complet : duels dominants.",
+      "Deux items : splitpush et escarmouches."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear complet en sécurité, puis ganks opportunistes et contrôle du crabe. Jax gagne par le scaling : ne force pas les duels en early contre les junglers qui le battent. À partir du premier item, envahis et prends les objectifs. En mid game, tu peux splitpush une side lane pendant que ton équipe tient le mid.",
+    "trading": "En gank : Q sur la cible → E → W → relance E. En duel : E au moment où l'adversaire frappe, W, puis ultime. Abandonne contre les champions à sorts (E n'esquive que les auto-attaques) ou à CC lourds.",
+    "threats": [
+      "Tanks à CC (Cho'Gath, Zac, Rammus).",
+      "Junglers qui te battent en early (Rek'Sai, Evelynn après son 6).",
+      "Champions à sorts contre qui E est inutile."
+    ],
+    "mistakes": [
+      "Lancer E trop tôt, sans attaques à esquiver.",
+      "Duel les junglers d'early game avant tes items.",
+      "Oublier de sauter sur une ward pour fuir."
+    ],
+    "matchup_notes": {
+      "Maître Yi": "E esquive toutes ses attaques : lance-le quand il dive sur toi.",
+      "Lee Sin": "Il te bat en early : attends tes items.",
+      "Viego": "E contre ses attaques ; ne le laisse pas posséder tes alliés.",
+      "Cho'Gath": "Son silence et son knock-up te coupent : évite-le.",
+      "Rek'Sai": "Elle te bat en early : ne l'affronte pas avant tes items."
+    },
+    "mid_game": "Escarmouches et splitpush. Jax devient très difficile à gérer en 1v1 : force les duels autour des objectifs.",
+    "late_game": "Dive sur un carry avec Q, E pour esquiver et stun, ultime pour survivre. Ou splitpush pendant que ton équipe tient le mid.",
+    "ahead": "Envahis, splitpush et force les duels.",
+    "behind": "Farm et scale : Jax reste dangereux en late game.",
+    "win_condition": "Pour gagner cette partie, tu veux farmer, scale et dominer les duels et les escarmouches en mid/late game.",
+    "final_tip": "Lance ta Contre-attaque au moment où l'adversaire commence à frapper, pas avant."
+  }
+}

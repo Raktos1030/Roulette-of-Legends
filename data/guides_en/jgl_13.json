@@ -1,0 +1,43 @@
+{
+ "Ivern|jgl": {
+  "identity": "One-of-a-kind magic damage support jungler. Ivern doesn't kill monsters: he \"frees\" them by planting a grove that ripens, then collects it (passive Friend of the Forest), and he can leave jungle buffs for an ally. Rootcaller (Q) roots and lets him leap to the target (or have an ally leap there), Brushmaker (W) creates bushes, Triggerseed (E) shields an ally, then explodes and slows, and Daisy! (R) summons a golem who knocks up after several hits.",
+  "playstyle": "Helper and tempo jungler: a very safe clear, ganks with Q and shields for his laners. Ivern doesn't duel, but he makes his allies stronger.",
+  "early_game": "Free camps quickly and pass buffs to your laners when they can use them (blue buff to a mage, red to a marksman). Gank with Q when a laner can follow up: Q → leap to the target → E on your laner. Never fight the enemy jungler alone.",
+  "level_1": "Rootcaller (Q) first. It's for camps and quick ganks.",
+  "level_2": "Triggerseed (E). A shield on an ally that explodes and slows: put it on your laner during a fight, or on yourself for camps.",
+  "level_3": "Brushmaker (W). Creates a bush that empowers your attacks and gives vision: useful for ganks and to hide your approach. Max E first.",
+  "level_6": "Daisy!: summons the golem, who hits and knocks up after several hits. Send her onto the most dangerous champion or onto an objective. In fights, she keeps the enemy busy while you protect your team.",
+  "power_spikes": [
+   "Level 3: ganks with Q + E.",
+   "Level 6: Daisy for fights and objectives.",
+   "First completed item: much stronger shields.",
+   "Mid game: team fights where you protect your carries."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Free camps by planting your groves, then move on quickly: your clear is fast and costs no health. Use your ability to share buffs to empower your laners. Gank a lot: your ganks are easy and safe thanks to Q and E. Avoid invading (you can't duel) but keep W's bushes to see the enemy jungler coming. Help your team on Void Grubs (around 8 minutes) and dragons with Daisy.",
+  "trading": "Ganking: Q on the target → leap (or have your laner leap) → E on your laner. Teamfighting: E on your carry, Q on the enemy diver, Daisy on the most dangerous target. Give up on it if you're alone against an opponent who can kill you.",
+  "threats": [
+   "Enemy jungler invades: you don't win duels.",
+   "Fiddlesticks: your hardest matchup.",
+   "Assassins who target you in teamfights."
+  ],
+  "mistakes": [
+   "Dueling the enemy jungler.",
+   "Keeping buffs for yourself when a laner would get more out of them.",
+   "Casting Q in a way that puts you in danger."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He'll invade you: don't fight, help your lanes win.",
+   "Viego": "Don't let him reset: protect your carries with E.",
+   "Graves": "He steals your camps: keep vision and gank on the other side.",
+   "Hecarim": "Your Q and your slow kill his speed.",
+   "Fiddlesticks": "His ultimate destroys your grouped team: place bushes and vision to spot him."
+  },
+  "mid_game": "Stay with your carries, protect them with E and help on objectives with Daisy. Ivern is very strong in organized team fights.",
+  "late_game": "Protect your main carry: E on them, Q on the enemy diver, Daisy on the most dangerous target.",
+  "ahead": "Share the lead with your laners: shared buffs, repeated ganks and objectives.",
+  "behind": "Farm, protect your carries and play for team fights.",
+  "win_condition": "To win this game, you want to make your laners stronger through ganks, shared buffs and shields, and protect your carries in teamfights.",
+  "final_tip": "Remember to leave your buffs to a laner who gets more out of them than you."
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "Neeko|sup": {
+  "identity": "Control and ambush mage. Inherent Glamour (passive): she can take the appearance of an allied champion or other units; the disguise ends when she casts an offensive ability, takes CC or too much damage. Blooming Burst (Q) throws a seed that blooms again if it hits a champion or kills an enemy, Shapesplitter (W) passively empowers every third attack and, when activated, sends out a clone, Tangle-Barbs (E) roots every enemy it passes through (longer after passing through a champion), and Pop Blossom (R) makes her leap to knock up, then stun enemies around her (the windup is invisible while she's disguised).",
+  "playstyle": "Control and surprise support: she roots from range with E and engages in disguise with her ultimate. She beats fragile or slow supports (Xerath, Pyke, Swain) but struggles against enchanters who cancel her engage (Janna, Milio, Zilean).",
+  "early_game": "Poke with Blooming Burst (Q) on your opponent when they come to last hit. Look for Tangle-Barbs (E) through a minion or champion: it grows and roots longer. Disguise yourself as a minion or ally to surprise your opponent.",
+  "level_1": "Blooming Burst (Q) first. After that, max Q first.",
+  "level_2": "Tangle-Barbs (E). Combo: E through your opponent, then Q on the rooted target.",
+  "level_3": "Shapesplitter (W). Speed and damage on every third attack; the clone fools your opponent or helps you escape.",
+  "level_6": "Pop Blossom: disguised, approach the enemy group (as an ally, for example), then R: the windup can't be seen. Chain E and Q on stunned enemies.",
+  "power_spikes": [
+   "Level 2: E + Q for kills.",
+   "Level 6: surprise engage in disguise.",
+   "First completed item: poke and burst.",
+   "Teamfights: ultimate on several enemies."
+  ],
+  "lane_plan": "Poke with Q, look for CC with E and surprise your opponent in disguise. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "Basic trade: Q. All-in: E → Q → attacks → R. Defense: E on the diver, clone to escape. Against enchanters who heal and disengage (Janna, Milio), play for poke rather than engage.",
+  "jungle_plan": "",
+  "threats": [
+   "Janna, Zilean and Milio: hard matchups.",
+   "Karma: a hard matchup.",
+   "Engage supports who dive you: you're fragile."
+  ],
+  "mistakes": [
+   "Casting an offensive ability too early and breaking your disguise.",
+   "Casting E with no minion or champion to pass through.",
+   "Casting your ultimate in plain sight in the middle of the enemy team with no follow-up."
+  ],
+  "matchup_notes": {
+   "Thresh": "Stay behind minions for his hook, and E him when he steps up.",
+   "Lulu": "Her polymorph cuts off your ultimate: engage once she's used it.",
+   "Karma": "She pokes you: play for CC rather than trades.",
+   "Xerath": "He has no mobility: your E punishes him.",
+   "Janna": "Her tornado and ultimate cancel your engage: wait until she's used them."
+  },
+  "mid_game": "Disguise yourself to roam and surprise isolated enemies. Place Control Wards around objectives.",
+  "late_game": "Approach the enemy group in disguise, then ultimate in the middle. E to root divers on your ADC.",
+  "ahead": "Look for surprise engages and picks.",
+  "behind": "Poke from range and keep E to protect your ADC.",
+  "win_condition": "To win this game, you want to surprise the enemy team with your disguised ultimate and chain your CC.",
+  "final_tip": "While disguised, your ultimate's windup can't be seen: it's your best engage."
+ }
+}

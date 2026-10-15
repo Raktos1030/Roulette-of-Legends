@@ -1,0 +1,43 @@
+{
+  "Zed|jgl": {
+    "identity": "Assassin à dégâts physiques et à énergie, joué en jungle environ une fois sur cinq (le mid reste son rôle principal). Ombre vivante (W) crée une ombre qui imite ses sorts et avec laquelle il peut trade de place, Shuriken-rasoir (Q) est lancé par Zed et ses ombres, Taillade des ombres (E) frappe autour de lui et de ses ombres en slowant, et Marque de la mort (R) le rend inciblable, le téléporte derrière une cible et fait exploser une marque qui reprend une partie des dégâts infligés.",
+    "playstyle": "Jungler d'assassinat. Il est très mécanique et dépend de l'avance.",
+    "early_game": "Clear avec Q et E en utilisant ton ombre pour toucher plusieurs monstres. Gank en posant l'ombre (W) derrière la cible, puis E pour slow et Q. Évite les duels contre les junglers qui te battent (Nidalee, Rammus, Warwick, Evelynn).",
+    "level_1": "Shuriken-rasoir (Q) en premier.",
+    "level_2": "Taillade des ombres (E). Ralentit avec l'ombre : ton clear s'accélère.",
+    "level_3": "Ombre vivante (W). Premier gank : W derrière la cible → E (slow) → Q de l'ombre et de Zed → trade de place avec l'ombre pour coller ou fuir.",
+    "level_6": "Marque de la mort : inciblable, téléportation derrière la cible, et explosion de la marque après quelques secondes. Combo : R → W → E → Q, puis retour vers l'ombre de l'ultime pour fuir.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec l'ombre.",
+      "Niveau 6 : assassinats avec l'ultime.",
+      "Premier item complet : burst sur les carries.",
+      "Mid game : picks sur les cibles isolées."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide et ganks sur les cibles sans fuite. Zed jungle a du mal en duel contre la plupart des junglers : évite les invasions adverses et joue autour des ganks et des picks. Utilise l'ombre pour franchir les murs pendant les ganks. Prends les Larves (vers 8 min) seulement avec tes laners.",
+    "trading": "En gank : W → E → Q → trade avec l'ombre. En assassinat : R → W → E → Q → retour à l'ombre de l'ultime. Abandonne contre les junglers qui te battent en duel ou te contrôlent.",
+    "threats": [
+      "Nidalee, Rammus, Ivern, Evelynn, Warwick et Talon : matchups difficiles.",
+      "Tanks qui encaissent ton burst.",
+      "CC au moment où ton ultime s'active."
+    ],
+    "mistakes": [
+      "Utiliser l'ombre (W) pour engager sans pouvoir revenir.",
+      "Lancer l'ultime sur une cible protégée.",
+      "Duel les junglers qui te battent."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Évite ses invasions et gank là où il n'est pas.",
+      "Graves": "Il te bat en duel : ne le laisse pas voler tes camps.",
+      "Viego": "Assassine-le avant qu'il ne possède tes alliés.",
+      "Nidalee": "Elle farm plus vite et te poke : joue avec tes laners.",
+      "Rammus": "Il encaisse ton burst et te provoque : évite-le."
+    },
+    "mid_game": "Picks sur les cibles isolées et objectifs avec ton équipe.",
+    "late_game": "Assassine le carry adverse avec l'ultime, puis reviens à l'ombre. Attends que les CC adverses soient utilisés.",
+    "ahead": "Chasse les carries isolés et prends les objectifs.",
+    "behind": "Cherche des picks sur les cibles isolées et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux assassiner les carries isolés et transformer chaque kill en objectif.",
+    "final_tip": "Avant d'utiliser ton ombre pour entrer, prévois ta sortie : c'est elle qui te sauve."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "Veigar|mid": {
+    "identity": "Mage de burst à dégâts magiques qui accumule de la puissance à l'infini. Chaque last hit avec Coup malin (Q) et chaque sort qui touche un champion lui donne de la puissance permanente (passif Pouvoir maléfique phénoménal). Matière noire (W) tombe après un délai, Profanation (E) crée une cage qui stun les ennemis qui la touchent, et Explosion primordiale (R) inflige des dégâts qui augmentent avec les PV manquants de la cible.",
+    "playstyle": "Mage de scaling : il stacke en lane (souvent en retard d'or, ce qui est normal pour lui), puis one-shot les carries en fin de partie. Faible contre les assassins en early et contre les mages à longue portée.",
+    "early_game": "Last hit avec Q pour stacker (deux sbires touchés = deux stacks). Garde E pour te protéger d'un engage. Poke avec W sur un adversaire root ou qui farm au même endroit.",
+    "level_1": "Coup malin (Q) en premier. Last hit pour stacker.",
+    "level_2": "Matière noire (W). Poke retardé : vise où l'adversaire va être.",
+    "level_3": "Profanation (E). Cage de stun : E → W (sur la cible stun) → Q. Garde-la aussi pour les engages adverses.",
+    "level_6": "Explosion primordiale : dégâts énormes sur une cible blessée. Combo : E → W → Q → R. Avec tes stacks, tu one-shot de plus en plus facilement.",
+    "power_spikes": [
+      "Niveau 3 : combo E → W → Q.",
+      "Niveau 6 : exécution avec R.",
+      "Stacks accumulés : burst de plus en plus massif.",
+      "Late game : one-shot sur les carries."
+    ],
+    "lane_plan": "Stack en last hittant avec Q, garde E en défense. Garde la wave au centre ou vers toi contre les assassins. Rejoins ton équipe pour les objectifs. La quête de rôle mid (retour accéléré) t'aide à reset souvent et à stacker en sécurité.",
+    "trading": "Trade court : Q + W. All-in : E → W → Q → R. Défense : E sur l'assassin qui arrive. Abandonne contre les mages qui te poke hors de portée (Xerath).",
+    "jungle_plan": "",
+    "threats": [
+      "Assassins qui te divent (Katarina).",
+      "Xerath, qui te poke de très loin.",
+      "Gwen au mid, très défavorable selon les données."
+    ],
+    "mistakes": [
+      "Rater des last hits avec Q.",
+      "Gaspiller E et ne plus pouvoir te défendre.",
+      "Lancer R sur une cible encore pleine de PV."
+    ],
+    "matchup_notes": {
+      "Ahri": "Garde E pour la fin de son ultime.",
+      "Viktor": "Stack et scale : tu le one-shot en fin de partie.",
+      "Yasuo": "Sa tornade passe ton Q, pas ta cage : garde E pour son engage.",
+      "Zed": "Garde E pour le moment où il réapparaît.",
+      "Katarina": "Sa mobilité esquive ta cage : place-la sur sa dague."
+    },
+    "mid_game": "Stacke, rejoins les objectifs et pose ta cage sur les zones d'engage.",
+    "late_game": "One-shot le carry adverse avec E → W → Q → R. Reste derrière ta frontline.",
+    "ahead": "Stack plus vite, prends les objectifs et domine les teamfights.",
+    "behind": "Continue de stacker en sécurité : ton late game compense ton retard.",
+    "win_condition": "Pour gagner cette partie, tu veux stacker en lane et one-shot les carries en fin de partie.",
+    "final_tip": "Ne rate jamais un last hit avec Q : chaque stack te rend plus fort pour le reste de la partie."
+  }
+}

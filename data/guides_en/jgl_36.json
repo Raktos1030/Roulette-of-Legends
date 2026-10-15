@@ -1,0 +1,43 @@
+{
+ "Shyvana|jgl": {
+  "identity": "Mixed damage fighter, fully reworked in 2026 (patch 26.6). Shyvana builds Dragon Fury (passively in human form and with every hit); at 100, Dragon's Descent (R) transforms her into a dragon with a leap that fears, more health, range and size, and empowers all her abilities. Emberstrike (Q) empowers her attacks (two recasts in human form, three in dragon form, the last one dealing true damage), Inferno Aegis (W) gives a shield and speed, then explodes (and heals in dragon form), and Molten Burst (E) launches a fireball that slows (it passes through and burns the ground in dragon form). Her passive Scalemail increases her resistances with every champion or large monster takedown.",
+  "playstyle": "Farming and scaling jungler focused on objectives. Rework guides sum up her plan as farm, fury, dragon form, then objective. She isn't a big threat in early skirmishes but becomes a hard-to-kill frontline in the mid game.",
+  "early_game": "Efficient full clear chaining Q (several recasts) and W on camps: every large monster you kill adds a Scalemail stack. Don't invade at level 3 and avoid skirmishes before your dragon form. Play for dragons as soon as your bot lane has priority.",
+  "level_1": "Emberstrike (Q) first. Its empowered attacks clear camps, and every attack lowers its cooldown.",
+  "level_2": "Molten Burst (E). A fireball that explodes on a large monster or champion and slows: useful for clearing and setting up a gank.",
+  "level_3": "Inferno Aegis (W). A shield (stronger with enemy champions nearby) and speed, then an explosion on recast. Ganks are possible, but your strength is dragon form.",
+  "level_6": "Dragon's Descent: you learn your ultimate with 100 Fury, so your first transformation is immediate. A leap that fears and slows, then empowered abilities. After that, you need to build 100 Fury again to transform: plan your fights around your gauge.",
+  "power_spikes": [
+   "Level 6: first dragon form.",
+   "First completed item: much more comfortable clearing and fighting.",
+   "Scalemail stacks: an increasingly solid frontline.",
+   "Mid game: objective fights in dragon form."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Full clear first (farm, Fury, dragon form, objective). Take all your camps and Scuttles when it's safe, without looking for early invades. Keep your Fury at 100 as an objective comes up (dragon, Void Grubs around 8 minutes, Herald around 15 minutes, Baron at 20 minutes): arrive in dragon form. In the jungle, aim dragon-form Molten Burst down narrow corridors to cut off escapes.",
+  "trading": "Outside dragon form: short trades with Q and W, then back off. In dragon form: R to go in and fear, E for the fire trail, Q three times (true damage), W for healing. Give up on it when your Fury is empty and you're no longer in dragon form.",
+  "threats": [
+   "Sylas: a hard matchup (he can steal your ultimate).",
+   "Invades and skirmishes before your dragon form.",
+   "CC that cuts you off while you're in human form."
+  ],
+  "mistakes": [
+   "Starting a fight without full Fury.",
+   "Invading at level 3 against an early-game jungler.",
+   "Wasting your transformation on a pointless fight right before an objective."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Avoid him early, beat him around objectives.",
+   "Viego": "Wait for your dragon form.",
+   "Graves": "Don't fight him before your dragon form.",
+   "Sylas": "He can steal your transformation: don't commit when he can take it back.",
+   "Kayn": "Frontline against him: your resistances hold up against his dives."
+  },
+  "mid_game": "Play around your Fury gauge: arrive in dragon form at every objective. You're a harder frontline to kill than you look.",
+  "late_game": "A disruptive frontline: R to go in and fear, E to cut off the area, W to survive. Save your transformation for the deciding fight.",
+  "ahead": "Take objectives one after another and force fights in dragon form.",
+  "behind": "Farm, stack Scalemail on large monsters and play for objective fights in dragon form.",
+  "win_condition": "To win this game, you want to farm, arrive in dragon form at every objective and become a frontline nobody can ignore.",
+  "final_tip": "Before every objective, check your Fury: at 100, you arrive as a dragon; otherwise, delay the fight."
+ }
+}

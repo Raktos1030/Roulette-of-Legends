@@ -1,0 +1,43 @@
+{
+  "Fiddlesticks|jgl": {
+    "identity": "Mage à dégâts magiques, spécialiste de l'embuscade. Terreur (Q) effraie (et effraie passivement quand Fiddlesticks frappe sans être vu), Moisson fructueuse (W) draine les ennemis autour de lui et le soigne, Fauchaison (E) slow et réduit au silence au centre, et Rafale de corbeaux (R) le téléporte après une canalisation dans une tempête de corbeaux dévastatrice. Son passif pose des épouvantails qui ressemblent à Fiddlesticks et servent de wards.",
+    "playstyle": "Jungler de farm rapide, puis d'embuscades avec l'ultime en teamfight. Il cherche à surprendre l'équipe adverse avec un ultime sur plusieurs cibles, lancé depuis un bush ou une zone sans vision.",
+    "early_game": "Clear très rapide avec W (drain en zone) et E. Évite les duels contre les junglers agressifs : tu es fragile. Gank les lanes où l'adversaire est slow ou contrôlé, avec Q (effroi) et E (silence).",
+    "level_1": "Moisson fructueuse (W) en premier. Le drain nettoie les camps et te soigne.",
+    "level_2": "Fauchaison (E). Ralentit et réduit au silence au centre : utile sur les camps et pour les ganks.",
+    "level_3": "Second point en W dans le chemin le plus joué ; Terreur (Q) arrive au niveau 4. W est maximisé en priorité pour le clear et le drain.",
+    "level_6": "Rafale de corbeaux : après une canalisation, tu te téléportes dans une tempête qui détruit tout autour. Lance-la depuis un bush ou une zone sans vision pour surprendre plusieurs cibles, puis Q et W. Utilise Flash pour raccourcir la canalisation.",
+    "power_spikes": [
+      "Niveau 6 : ultime d'embuscade sur plusieurs cibles.",
+      "Premier item complet : ultime dévastateur.",
+      "Deux items : teamfights gagnés sur un seul ultime.",
+      "Mid game : embuscades autour des objectifs."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear complet très rapide grâce à W. Fiddlesticks gagne en farm et en embuscades : pose tes épouvantails (qui servent aussi de wards) sur les chemins adverses pour les tromper. Évite les invasions et les duels en early. Après le 6, joue autour des objectifs : cache-toi dans un bush près du dragon ou des Larves (vers 8 min) et attends que l'équipe adverse se regroupe pour lancer l'ultime.",
+    "trading": "En gank : Q (effroi) → E (silence) → W (drain). En teamfight : ultime depuis une zone sans vision sur plusieurs cibles, puis Q sur la plus dangereuse et W. Abandonne si tu es révélé pendant la canalisation.",
+    "threats": [
+      "Révélateurs et pinks, qui te voient venir.",
+      "Junglers agressifs qui t'envahissent (Rek'Sai, Rammus).",
+      "CC qui interrompent ton drain."
+    ],
+    "mistakes": [
+      "Lancer l'ultime quand l'adversaire te voit (il recule).",
+      "Canaliser W trop longtemps au milieu de l'équipe adverse.",
+      "Accepter des duels en early."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il t'envahira : évite-le en early et punis-le en teamfight.",
+      "Graves": "Il te bat en duel early, mais ton ultime le détruit en teamfight.",
+      "Kayn": "Punis-le avant sa transformation et surprends-le autour des objectifs.",
+      "Sylas": "Il peut voler ton ultime : ne le lance pas quand il peut le reprendre.",
+      "Rammus": "Son taunt annule ton drain : ne le draine pas quand il est en boule."
+    },
+    "mid_game": "Embuscades autour des objectifs. Utilise tes épouvantails pour tromper l'équipe adverse et lancer l'ultime au bon moment.",
+    "late_game": "Garde ton ultime pour le teamfight décisif, depuis une zone sans vision. Une seule tempête bien placée gagne le combat.",
+    "ahead": "Prends les objectifs et force les combats près des bushs : ton ultime devient dévastateur.",
+    "behind": "Farm et attends un ultime décisif en teamfight : Fiddlesticks reste dangereux même sans avance.",
+    "win_condition": "Pour gagner cette partie, tu veux surprendre l'équipe adverse avec un ultime sur plusieurs cibles au bon moment.",
+    "final_tip": "Lance ton ultime depuis une zone sans vision : si l'adversaire te voit canaliser, il recule."
+  }
+}

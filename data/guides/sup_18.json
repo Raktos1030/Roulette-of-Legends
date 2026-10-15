@@ -1,0 +1,43 @@
+{
+  "Nautilus|sup": {
+    "identity": "Tank d'engage. Coup écrasant (passif) : sa première attaque sur une cible le root brièvement. Abordage (Q) lance son ancre : sur un ennemi, ils sont tirés l'un vers l'autre ; sur un mur, Nautilus est tiré vers le mur. Colère du titan (W) lui donne un shield et fait infliger à ses attaques des dégâts sur la durée autour de lui, Répliques (E) crée trois vagues d'explosions qui slow, et Grenade ASM (R) envoie une onde qui poursuit une cible, knock-up les ennemis sur son passage, puis projette et stun la cible.",
+    "playstyle": "Support d'engage avec énormément de CC : ancre, CC du passif, slow et ultime ciblé. Il perd contre les tanks qui gagnent au contact ou contre-engagent (Taric, Rell, Braum, Leona, Alistar) et écrase les supports fragiles (Yuumi, Xerath, Zyra, Pyke).",
+    "early_game": "Au niveau 2, cherche Q → attaque (CC du passif) → E : ton ADC suit. L'ancre sur un mur te sert aussi à fuir ou à te replacer. Ne lance pas Q à travers les sbires : il s'arrête sur le premier.",
+    "level_1": "Abordage (Q) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Colère du titan (W). Shield pendant l'engage, et dégâts continus avec tes attaques.",
+    "level_3": "Répliques (E). Combo complet : Q → attaque (CC) → E → W.",
+    "level_6": "Grenade ASM : cible un champion, impossible à esquiver ; tout ce qui se trouve sur le chemin est aussi knock-up. Combo : R → Q → attaque → E.",
+    "power_spikes": [
+      "Niveau 2 : Q + passif.",
+      "Niveau 6 : ultime ciblé sur le carry.",
+      "Premiers items de résistance : frontline durable.",
+      "Teamfight : chaîne de CC sur une cible."
+    ],
+    "lane_plan": "Menace l'ancre en permanence et joue avec ton jungler. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées) : pose-les autour du dragon.",
+    "trading": "All-in : Q → attaque → E → W, puis R au niveau 6. Défense : R ou Q sur le diver, attaque pour le root. Recule contre les tanks qui gagnent le combat au contact (Braum, Leona, Taric) : n'engage pas quand ils ont leurs sorts.",
+    "jungle_plan": "",
+    "threats": [
+      "Taric et Rell, pires matchups.",
+      "Braum et Leona : matchups difficiles.",
+      "Supports qui bloquent ou renvoient ton engage (Braum et son shield)."
+    ],
+    "mistakes": [
+      "Lancer l'ancre à travers les sbires.",
+      "Engager quand ton ADC ne peut pas suivre.",
+      "Oublier le CC gratuite de ta première attaque."
+    ],
+    "matchup_notes": {
+      "Thresh": "Engage quand son grappin et sa lanterne sont utilisés.",
+      "Leona": "Elle t'engage aussi et résiste bien : joue autour de ton jungler.",
+      "Braum": "Son shield bloque ton ancre : vise sous un autre angle ou attends qu'il l'ait utilisé.",
+      "Yuumi": "Son ADC est seul : engage sur lui.",
+      "Taric": "Son invulnérabilité annule tes engages : attends son ultime."
+    },
+    "mid_game": "Pose des pinks, cherche les picks avec Q et R, et protège ton ADC.",
+    "late_game": "Frontline : R sur le carry adverse, Q pour engager ou pour attraper un diver. Enchaîne tes CC sur la même cible.",
+    "ahead": "Engage souvent et aide ton jungler à contrôler la carte.",
+    "behind": "Joue les contre-engages : R et Q arrêtent les divers sur ton ADC.",
+    "win_condition": "Pour gagner cette partie, tu veux enchaîner tes CC sur les cibles clés pour que ton équipe les tue.",
+    "final_tip": "Ta première attaque sur chaque cible le root : après l'ancre, attaque toujours avant de lancer un autre sort."
+  }
+}

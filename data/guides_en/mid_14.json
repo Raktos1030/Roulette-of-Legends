@@ -1,0 +1,43 @@
+{
+ "Galio|mid": {
+  "identity": "Magic damage tank-mage who specializes in shutting down mages and stepping in across the map. Winds of War (Q) fires two gusts that merge into a tornado, Shield of Durand (W) reduces damage (especially magic), then taunts around him, Justice Punch (E) charges and knocks up, and Hero's Entrance (R) shields a distant ally before landing beside them, knocking enemies up. His passive regularly empowers an attack that hits in an area.",
+  "playstyle": "Control and roaming mid. Galio punishes magic damage assassins (Akali, Katarina) and helps his allies everywhere with his ultimate. He's worse against long-range mages who poke him (Hwei, Lux, Syndra).",
+  "early_game": "Farm with Q and your passive. Against magic assassins, W absorbs a big part of their damage: let them come to you. Against ranged mages, farm and wait for level 6.",
+  "level_1": "Winds of War (Q) first.",
+  "level_2": "Shield of Durand (W). Damage reduction, then a taunt: cast it when an assassin engages you.",
+  "level_3": "Justice Punch (E). All-in: E (knock-up) → W (taunt) → Q.",
+  "level_6": "Hero's Entrance: shields a distant ally, then you land knocking enemies up. Watch the map: every fight bot or top can become an advantage with your ultimate.",
+  "power_spikes": [
+   "Level 3: E + W against assassins.",
+   "Level 6: ultimate for fights all over the map.",
+   "First completed item: very resistant to magic damage.",
+   "Mid game: roams and engages."
+  ],
+  "lane_plan": "Farm with Q, let assassins come into your W. After level 6, push your wave and watch the map for your ultimate. The mid role quest (faster recall) helps you reset before stepping in.",
+  "trading": "Basic trade: Q from range. All-in: E → W → Q → passive attack. Against an assassin: let them engage, W to absorb and taunt. Give up on it against mages who poke you from out of range.",
+  "jungle_plan": "",
+  "threats": [
+   "Long-range mages (Hwei, Lux, Syndra, Veigar).",
+   "Ahri: a hard matchup.",
+   "Qiyana, who bursts you with her elements."
+  ],
+  "mistakes": [
+   "Casting your ultimate into a fight that's already lost.",
+   "Wasting W and no longer being able to absorb the enemy burst.",
+   "Staying in lane instead of helping with your ultimate."
+  ],
+  "matchup_notes": {
+   "Locke": "W absorbs his magic burst; taunt him when he dives with E.",
+   "Katarina": "W reduces her damage and your taunt interrupts her Death Lotus.",
+   "Akali": "W absorbs her burst and taunts her out of her Shroud.",
+   "Ahri": "She pokes you and dodges your E: farm and keep E for the end of her ultimate.",
+   "Hwei": "He pokes you from very far away: stay behind your minions."
+  },
+  "mid_game": "Roams and ultimates on other lanes' fights. Every intervention should turn into an objective.",
+  "late_game": "Control frontline: ultimate on the engaged ally, E to knock up, W to taunt.",
+  "ahead": "Roam, create advantages with your ultimate and take objectives.",
+  "behind": "Farm and use your ultimate to save your allies.",
+  "win_condition": "To win this game, you want to neutralize the enemy mid laner and win fights everywhere with Hero's Entrance.",
+  "final_tip": "Keep an eye on the minimap: your ultimate is worth more on a fight elsewhere than in lane."
+ }
+}

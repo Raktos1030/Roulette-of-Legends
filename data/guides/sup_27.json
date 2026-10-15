@@ -1,0 +1,43 @@
+{
+  "Seraphine|sup": {
+    "identity": "Mage utilitaire. Présence sur scène (passif) : toutes les trois compétences de base, elle lance deux fois la compétence choisie ; lancer des sorts près d'alliés donne à sa prochaine attaque plus de portée et des dégâts magiques. Note aiguë (Q) inflige des dégâts en zone, Son ambiophonique (W) donne un shield et de la vitesse aux alliés proches (et les soigne si elle a déjà un shield), Battement (E) blesse en ligne et restreint les déplacements, et Bis (R) charme les ennemis touchés, avec une portée qui s'allonge à chaque champion traversé.",
+    "playstyle": "Support de poke et de teamfight : elle harcèle avec Q, protège avec W et décide les combats avec son ultime. Aucun matchup nettement défavorable : ses moins bons (Rell, Milio, Nami) restent proches de l'équilibre.",
+    "early_game": "Poke avec Note aiguë (Q) quand l'adversaire vient last hit. Compte tes sorts : le troisième est doublé (double Q pour poke, double E pour root, double W pour protéger). Reste près de ton ADC : tes attaques renforcées ont plus de portée.",
+    "level_1": "Note aiguë (Q) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Battement (E). Ralentit en ligne ; sur une cible déjà slow ou root, il le root.",
+    "level_3": "Son ambiophonique (W). Shield et vitesse pour ton duo, soin si tu as déjà un shield.",
+    "level_6": "Bis : charme en ligne, qui va plus loin à chaque champion traversé (allié ou ennemi). Vise à travers ton ADC ou le support adverse pour toucher les deux adversaires.",
+    "power_spikes": [
+      "Niveau 3 : sorts doublés.",
+      "Niveau 6 : ultime qui charme les deux adversaires.",
+      "Premier item complet : poke et shields renforcés.",
+      "Teamfight : Bis à travers plusieurs champions."
+    ],
+    "lane_plan": "Poke avec Q, protège ton ADC avec W et garde E pour les kills ou la défense. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "Trade de base : Q (doublé si possible), attaque renforcée. All-in : E doublé pour root, Q, R. Défense : W doublé pour protéger, E sur le diver. Contre les enchanteurs qui soignent plus que tu ne poke (Milio, Nami), joue les CC.",
+    "jungle_plan": "",
+    "threats": [
+      "Rell, Milio et Nami : tes moins bons matchups, proches de l'équilibre.",
+      "Grappins et engages qui t'attrapent : tu n'as aucune mobilité.",
+      "Assassins qui te ciblent en teamfight."
+    ],
+    "mistakes": [
+      "Gâcher le sort doublé sur une wave.",
+      "Lancer l'ultime sans l'allonger à travers un champion.",
+      "Se placer devant son ADC face à un support d'engage."
+    ],
+    "matchup_notes": {
+      "Thresh": "Reste derrière les sbires ; si son grappin touche, E doublé sur lui.",
+      "Lulu": "Trades de poke : ton Q doublé gagne.",
+      "Nami": "Esquive sa bulle et garde W pour son engage.",
+      "Nautilus": "Son ancre te rapproche de lui : E doublé et R dès qu'il arrive.",
+      "Swain": "Il doit s'approcher : poke-le et root-le."
+    },
+    "mid_game": "Groupe avec ton équipe, poke avec Q avant les objectifs et pose des pinks.",
+    "late_game": "Reste derrière ta frontline. Bis à travers un champion pour toucher le groupe, E sur les cibles charmées, W doublé pour protéger toute l'équipe.",
+    "ahead": "Force les teamfights groupés : ton ultime et tes sorts doublés les gagnent.",
+    "behind": "Joue l'utilitaire : W et R restent décisifs même sans avance.",
+    "win_condition": "Pour gagner cette partie, tu veux harceler en lane puis décider les teamfights avec un ultime qui charme plusieurs ennemis.",
+    "final_tip": "Vise ton ultime à travers ton propre ADC : il s'allonge et touche souvent les deux adversaires derrière lui."
+  }
+}

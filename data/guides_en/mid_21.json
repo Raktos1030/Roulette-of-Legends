@@ -1,0 +1,43 @@
+{
+ "Locke|mid": {
+  "identity": "Magic damage assassin released in June 2026 (patch 26.13), built around marks you detonate. His attacks deal bonus magic damage, higher on wounded targets (passive Silver Stake). Ritual Nails (Q) throws nails that mark (up to three stacks, a strong slow from two) and can be recast twice; his attacks or his E consume the stacks for big damage. Soul Ignition (W) gives him attack and movement speed at the cost of health, then heals him for part of the damage taken. Ashen Pursuit (E) teleports him onto a target, then turns his next attack into a dash that passes through; it resets on a champion takedown. Purgatory (R) throws a totem that marks and executes champions below a health threshold; picking up their souls lowers its cooldown and permanently raises the threshold.",
+  "playstyle": "Mark-then-detonate assassin: all his burst comes from the three nails consumed at the right moment. He punishes immobile mages (Orianna, Mel, Xerath, Malzahar) and fears assassins who out-burst him (Katarina, Akali, Talon) or catch him (Kassadin, Ekko).",
+  "early_game": "Poke with your nails (Q), then consume the stacks with an attack. Guides recommend landing all three nails before committing. Keep E for the moment that matters: it's your only mobility. Unused Q recasts refund part of the cooldown and mana.",
+  "level_1": "Ritual Nails (Q) first. Put stacks on your opponent, then consume them with an attack when they come to last hit.",
+  "level_2": "Ashen Pursuit (E). A teleport onto the target, then a dash with the empowered attack: Q (stacks) → E → attack that consumes the stacks.",
+  "level_3": "Soul Ignition (W). Attack and movement speed at the cost of health; guides recommend turning it on before the enemy damage arrives to bank more health to recover.",
+  "level_6": "Purgatory: a totem that marks and executes below a health threshold. Combo: Q ×3 → E → attack → R to finish. Always pick up the totem after a takedown: it lowers the cooldown and raises your execute threshold for the rest of the game.",
+  "power_spikes": [
+   "Level 3: Q → E → attack combo with W.",
+   "Level 6: executes with Purgatory.",
+   "First completed item: burst that kills mages.",
+   "Collected souls: an increasingly high execute threshold."
+  ],
+  "lane_plan": "Poke with Q, consume the stacks and back off. Push the wave and roam after level 6: E's reset on takedowns lets you chain. The mid role quest (faster recall) helps you come back fast. Avoid assassins who burst you first.",
+  "trading": "Short trade: Q → attack (consuming the stacks). All-in: Q ×3 → W → E → attack → R. Engage once all three nails have landed; give up on it if you need E to escape.",
+  "jungle_plan": "",
+  "threats": [
+   "Katarina, Akali and Talon, who out-burst you.",
+   "Kassadin and Ekko, who catch you.",
+   "CC that interrupts you before you consume the stacks."
+  ],
+  "mistakes": [
+   "Engaging without all three nails.",
+   "Using E to poke and not having it at the deciding moment.",
+   "Forgetting to pick up the totem after an execute."
+  ],
+  "matchup_notes": {
+   "Viktor": "Land your nails outside his Gravity Field, then dive.",
+   "Ahri": "Dodge her Charm before using E.",
+   "Syndra": "Dive when her stun is on cooldown.",
+   "Katarina": "She out-bursts you: interrupt her ultimate with your nails' slow.",
+   "Akali": "Her Shroud dodges your nails: wait for her to step out of it."
+  },
+  "mid_game": "Roams, picks and objectives. Every takedown with the totem raises your execute threshold.",
+  "late_game": "Dive the enemy carry with E, execute with R, then chain thanks to E's reset.",
+  "ahead": "Roam, hunt the carries and collect souls.",
+  "behind": "Farm and look for picks on isolated targets.",
+  "win_condition": "To win this game, you want to assassinate carries with your nails and collect souls to execute higher and higher.",
+  "final_tip": "Land all three nails before committing and always pick up your totem."
+ }
+}

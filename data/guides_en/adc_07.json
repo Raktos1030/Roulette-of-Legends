@@ -1,0 +1,43 @@
+{
+ "Ezreal|adc": {
+  "identity": "Ability-based marksman with physical and magic damage. Rising Spell Force (passive) increases his attack speed with each ability that hits (up to 5 times). Mystic Shot (Q) is a skillshot that lowers all his cooldowns when it hits, Essence Flux (W) sticks an orb on a champion or an objective (an attack or ability makes it explode), Arcane Shift (E) teleports him a short distance while firing a homing bolt, and Trueshot Barrage (R) fires a wave of energy across the whole map.",
+  "playstyle": "Very mobile and very safe poke ADC: he stays far away and lands his abilities. He only clearly wins two matchups (Mel, Varus) and loses to many ADCs. Precision and patience are a must.",
+  "early_game": "Farm with Q and poke your opponent every time they walk up to last hit. Every Q that lands lowers your cooldowns: land a lot and you'll have your abilities more often. Always keep Arcane Shift (E) to escape an engage.",
+  "level_1": "Mystic Shot (Q) first. Farm and poke with Q.",
+  "level_2": "Arcane Shift (E). Your escape: only use it to attack when your opponent has nothing left to punish you with.",
+  "level_3": "Essence Flux (W). W on your opponent then Q to detonate it: your best poke. W on a tower also helps push it.",
+  "level_6": "Trueshot Barrage: finishes a low-health enemy anywhere, or hits several enemies in a teamfight. Also useful to clear a faraway wave.",
+  "power_spikes": [
+   "Level 3: W → Q combo.",
+   "Level 6: global ultimate.",
+   "First completed item: much more frequent Q.",
+   "Two completed items: ranged poke and dueling."
+  ],
+  "lane_plan": "Farm safely, poke with Q and W and keep E to escape. Don't force long fights: most ADCs beat you in lane. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) helps you reach your scaling. Play with your jungler on dragons.",
+  "trading": "Basic trade: W then Q, and step back. Rare all-in: W → Q → E backwards → attacks. Give up on it against ADCs who win long fights or block your abilities (Yasuo, Sivir).",
+  "jungle_plan": "",
+  "threats": [
+   "Yasuo and his Wind Wall: your hardest matchup.",
+   "Sivir, whose Spell Shield blocks your abilities.",
+   "Zeri, Kalista and Kog'Maw: hard matchups."
+  ],
+  "mistakes": [
+   "Using E to attack and having no way to escape.",
+   "Missing your Qs: your cooldowns stay long.",
+   "Forcing long fights in lane."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "She reaches you with her ultimate: save E for the moment she arrives.",
+   "Caitlyn": "She owns the range: poke with Q from behind your minions.",
+   "Yasuo": "His Wind Wall blocks your Qs: wait until he's used it before poking.",
+   "Sivir": "Her Spell Shield blocks one ability: throw a Q first to bait it out.",
+   "Varus": "You're more mobile: dodge his Chain of Corruption with E."
+  },
+  "mid_game": "Poke before objectives and join fights from range. Use W on towers to take them faster.",
+  "late_game": "Poke behind your frontline, land your Qs to keep chaining abilities. Keep E to escape a diver, and R to open or finish a teamfight.",
+  "ahead": "Keep poking before every objective: your lead becomes ranged superiority.",
+  "behind": "Farm from range, stay safe and play the poke game: your mobility keeps you alive.",
+  "win_condition": "To win this game, you want to survive lane, then wear down the enemy team from range before every teamfight.",
+  "final_tip": "Your E is your life: as long as it's up, you're almost impossible to catch."
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "Kassadin|mid": {
+    "identity": "Assassin à dégâts magiques qui scale très fort. Orbe du Néant (Q) inflige des dégâts, interrompt les canalisations et lui donne un shield anti-magie, Lame éthérée (W) renforce ses attaques et lui rend du mana, Pulsation (E) slow en cône (elle se recharge quand des sorts sont lancés près de lui), et Fissure (R) le téléporte ; chaque Fissure rapprochée coûte plus de mana mais fait plus de dégâts. Son passif réduit les dégâts magiques qu'il subit et lui permet de traverser les unités.",
+    "playstyle": "Mid de scaling : il subit sa lane, puis devient une menace énorme à partir du niveau 11 et surtout 16. Faible contre les assassins et combattants physiques en early.",
+    "early_game": "Farm en sécurité avec Q et W, accepte de perdre un peu de lane contre les champions agressifs. Q interrompt les canalisations et te donne un shield contre les sorts. Contre les mages magiques, ton passif et ton shield t'aident à tenir.",
+    "level_1": "Orbe du Néant (Q) en premier. Farm et shield anti-magie.",
+    "level_2": "Lame éthérée (W). Attaque renforcée et mana : last hit en sécurité.",
+    "level_3": "Pulsation (E). Slow en cône : utile pour fuir ou poke quand elle est chargée.",
+    "level_6": "Fissure : téléportation. Premiers roams possibles et un outil d'esquive, mais Kassadin reste fragile avant ses items. Ses gros paliers sont les niveaux 11 et 16 (rangs de Fissure).",
+    "power_spikes": [
+      "Niveau 6 : mobilité avec Fissure.",
+      "Niveau 11 : Fissure plus forte, burst dangereux.",
+      "Niveau 16 : Kassadin devient une menace énorme en late game.",
+      "Premier item complet : sustain et dégâts."
+    ],
+    "lane_plan": "Farm, survis et accepte le retard d'or : ta force arrive plus tard. Garde la wave vers ta tour contre les assassins physiques. Après le niveau 6, utilise R pour esquiver les ganks. La quête de rôle mid (retour accéléré) t'aide à reset souvent pour tenir la lane.",
+    "trading": "Avant le 6 : Q sur l'adversaire, W pour last hit, pas d'all-in. Après le 11 : R → W → Q → E. Engage quand l'adversaire n'a plus son CC ; abandonne contre les combattants physiques qui te burst (Zed, Talon, Pantheon).",
+    "jungle_plan": "",
+    "threats": [
+      "Assassins et combattants physiques (Zed, Talon, Pantheon, Qiyana).",
+      "Tristana et Akshan, qui te harcèlent à distance.",
+      "Parties qui se terminent avant ton scaling."
+    ],
+    "mistakes": [
+      "Forcer des combats avant le niveau 6.",
+      "Enchaîner les Fissures sans mana.",
+      "Mourir et perdre de l'XP avant tes niveaux clés."
+    ],
+    "matchup_notes": {
+      "Yone": "Farm prudemment et scale.",
+      "Ahri": "Ton shield Q absorbe son burst magique.",
+      "Yasuo": "Scale et punis-le après le 11.",
+      "Zed": "Farm sous ta tour et garde R pour son ultime.",
+      "Katarina": "Q interrompt son Lotus mortel."
+    },
+    "mid_game": "Farm et roams avec R une fois tes items principaux obtenus. Évite les combats à 5 avant le niveau 11.",
+    "late_game": "Menace principale en late game : dive sur les carries avec R, puis sors avec une autre Fissure.",
+    "ahead": "Roam avec R, chasse les carries et prends les objectifs.",
+    "behind": "Farm et scale : Kassadin compense son retard en late game.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane, atteindre le niveau 16 et dominer le late game.",
+    "final_tip": "Accepte d'être derrière en lane : chaque niveau atteint en vie te rapproche de ton pic du niveau 16."
+  }
+}

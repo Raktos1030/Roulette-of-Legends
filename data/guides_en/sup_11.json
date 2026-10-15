@@ -1,0 +1,43 @@
+{
+ "Leona|sup": {
+  "identity": "Engage tank. Sunlight (passive): her abilities mark enemies, and her allies' damage on a marked target deals extra magic damage. Shield of Daybreak (Q) makes her next attack stun, Eclipse (W) boosts her resistances and reduces damage taken (then damages nearby enemies and extends the effect), Zenith Blade (E) projects a blade in a line: the last champion hit is rooted and Leona dashes to them, and Solar Flare (R) strikes a distant area (stun in the center, slow around it).",
+  "playstyle": "Pure engage support: she dives with E, stuns with Q and follows up with her ultimate. Only one clearly unfavorable matchup (Janna), and she crushes supports she can reach (Yuumi, Nautilus, Pantheon, Camille).",
+  "early_game": "At level 2, E → Q on the most exposed opponent: your ADC follows up. At level 1, stay low-key and control the bushes. After every engage, W protects you while your ADC deals the damage; don't cast E when you can't follow up.",
+  "level_1": "Shield of Daybreak (Q) first. After that, max W first.",
+  "level_2": "Zenith Blade (E). E → Q combo: CC, then stun.",
+  "level_3": "Eclipse (W). Resistances and damage reduction during the engage: cast it right before going in.",
+  "level_6": "Solar Flare: a stun in the center of a distant area. Combo: R on your opponent, E, Q. Or R to stop an enemy engage.",
+  "power_spikes": [
+   "Level 2: E → Q engage.",
+   "Level 6: R → E → Q, almost impossible to dodge.",
+   "First resistance items: a very solid frontline.",
+   "Teamfights: R on several enemies."
+  ],
+  "lane_plan": "Constantly threaten the engage and play with your jungler. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored): place them around dragon.",
+  "trading": "All-in: W → E → Q → your ADC's attacks (your passive adds damage), R at level 6. Back off against supports who disengage (Janna): wait until she's used her tornado.",
+  "jungle_plan": "",
+  "threats": [
+   "Janna: your hardest matchup.",
+   "Enemy kiting and disengage.",
+   "Engaging without your ADC: you land alone in the middle of the enemies."
+  ],
+  "mistakes": [
+   "Casting E when your ADC can't follow.",
+   "Forgetting W before engaging.",
+   "Casting your ultimate on an isolated target when a group is in range."
+  ],
+  "matchup_notes": {
+   "Thresh": "Engage once his hook is used.",
+   "Nautilus": "Engage on his ADC once he's thrown his anchor.",
+   "Blitzcrank": "If he hooks you, you're exactly where you wanted to be: E → Q on his ADC.",
+   "Yuumi": "Her ADC is alone against your engage.",
+   "Janna": "Her tornado cancels your E: wait until she's used it."
+  },
+  "mid_game": "Place Control Wards around objectives, look for picks with E → Q and play with your jungler.",
+  "late_game": "Frontline: W, then E on the enemy carry, Q, and R on the group. Or keep R to stop the enemy engage.",
+  "ahead": "Engage often and help your jungler control the map.",
+  "behind": "Play counter-engages: R and Q stop divers on your ADC.",
+  "win_condition": "To win this game, you want to start fights on the right targets and chain your CC so your team gets the kills.",
+  "final_tip": "Cast Eclipse right before engaging: you land on the target already protected."
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "Ivern|jgl": {
+    "identity": "Jungler de soutien à dégâts magiques, unique en son genre. Ivern ne tue pas les monstres : il les « libère » en posant un bosquet qui mûrit, puis les ramasse (passif Ami de la forêt), et il peut laisser les buffs de jungle à un allié. Enracinement (Q) root et lui permet de bondir sur la cible (ou d'y faire bondir un allié), Main verte (W) crée des bushs, Graine à retardement (E) protège un allié puis explose en slowant, et Marguerite ! (R) invoque un golem qui knock-up après plusieurs coups.",
+    "playstyle": "Jungler d'aide et de tempo : clear très sûr, ganks avec Q et shields pour ses laners. Ivern ne duel pas, mais il rend ses alliés plus forts.",
+    "early_game": "Libère les camps rapidement et passe les buffs à tes laners quand ils peuvent en profiter (le buff bleu à un mage, le rouge à un tireur). Gank avec Q quand un laner peut suivre : Q → bond vers la cible → E sur ton laner. Ne te bats jamais seul contre le jungler adverse.",
+    "level_1": "Enracinement (Q) en premier. Il sert aux camps et aux ganks rapides.",
+    "level_2": "Graine à retardement (E). Shield sur un allié qui explose en slowant : pose-le sur ton laner pendant un combat, ou sur toi pour les camps.",
+    "level_3": "Main verte (W). Crée un bush qui renforce tes attaques et donne de la vision : utile pour les ganks et pour cacher ton approche. E est maximisé en priorité.",
+    "level_6": "Marguerite ! : invoque le golem, qui frappe et knock-up après plusieurs coups. Envoie-la sur le champion le plus dangereux ou sur un objectif. En combat, elle occupe l'adversaire pendant que tu protèges ton équipe.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec Q + E.",
+      "Niveau 6 : Marguerite pour les combats et les objectifs.",
+      "Premier item complet : shields bien plus forts.",
+      "Mid game : combats d'équipe où tu protèges tes carries."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Libère les camps en posant tes bosquets, puis enchaîne vite : ton clear est rapide et sans perte de PV. Utilise ta capacité à partager les buffs pour renforcer tes laners. Gank beaucoup : tes ganks sont faciles et sûrs grâce à Q et E. Évite les invasions (tu ne peux pas duel) mais garde les bushs de W pour voir venir le jungler adverse. Aide ton équipe sur les Larves (vers 8 min) et les dragons avec Marguerite.",
+    "trading": "En gank : Q sur la cible → bond (ou fais bondir ton laner) → E sur ton laner. En teamfight : E sur ton carry, Q sur le diver adverse, Marguerite sur la cible la plus dangereuse. Abandonne si tu es seul contre un adversaire qui peut te tuer.",
+    "threats": [
+      "Invasions du jungler adverse : tu ne gagnes pas les duels.",
+      "Fiddlesticks : ton matchup le plus difficile.",
+      "Assassins qui te ciblent en teamfight."
+    ],
+    "mistakes": [
+      "Duel le jungler adverse.",
+      "Garder les buffs pour toi alors qu'un laner en profiterait davantage.",
+      "Lancer Q dans une position qui te met en danger."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il t'envahira : ne te bats pas, aide tes lanes à gagner.",
+      "Viego": "Ne le laisse pas réinitialiser : protège tes carries avec E.",
+      "Graves": "Il vole tes camps : garde vision et gank de l'autre côté.",
+      "Hecarim": "Ton Q et ton slow cassent sa vitesse.",
+      "Fiddlesticks": "Son ultime détruit ton équipe groupée : pose des bushs et de la vision pour le repérer."
+    },
+    "mid_game": "Accompagne tes carries, protège-les avec E et aide sur les objectifs avec Marguerite. Ivern est très fort dans les combats d'équipe organisés.",
+    "late_game": "Protège ton carry principal : E sur lui, Q sur le diver adverse, Marguerite sur la cible la plus dangereuse.",
+    "ahead": "Fais-en profiter tes laners : buffs partagés, ganks répétés et objectifs.",
+    "behind": "Farm, protège tes carries et joue pour les combats d'équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux rendre tes laners plus forts par les ganks, les buffs partagés et les shields, et protéger tes carries en teamfight.",
+    "final_tip": "Pense à laisser tes buffs à un laner qui en profite plus que toi."
+  }
+}

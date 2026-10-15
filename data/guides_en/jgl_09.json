@@ -1,0 +1,43 @@
+{
+ "Fiddlesticks|jgl": {
+  "identity": "Magic damage mage, an ambush specialist. Terrify (Q) fears (and passively fears when Fiddlesticks hits without being seen), Bountiful Harvest (W) drains enemies around him and heals him, Reap (E) slows and silences in the center, and Crowstorm (R) teleports him after a channel into a devastating storm of crows. His passive places effigies that look like Fiddlesticks and work as wards.",
+  "playstyle": "Fast-farming jungler, then ambushes with his ultimate in teamfights. He looks to surprise the enemy team with an ultimate on several targets, cast from a bush or an area with no vision.",
+  "early_game": "Clear very fast with W (area drain) and E. Avoid duels against aggressive junglers: you're fragile. Gank lanes where the opponent is slowed or controlled, with Q (fear) and E (silence).",
+  "level_1": "Bountiful Harvest (W) first. The drain clears camps and heals you.",
+  "level_2": "Reap (E). Slows and silences in the center: useful on camps and for ganks.",
+  "level_3": "A second point in W on the most played path; Terrify (Q) comes at level 4. Max W first for clearing and draining.",
+  "level_6": "Crowstorm: after a channel, you teleport into a storm that destroys everything around. Cast it from a bush or an area with no vision to surprise several targets, then Q and W. Use Flash to cut the channel short.",
+  "power_spikes": [
+   "Level 6: an ambush ultimate on several targets.",
+   "First completed item: a devastating ultimate.",
+   "Two items: teamfights won off a single ultimate.",
+   "Mid game: ambushes around objectives."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Very fast full clear thanks to W. Fiddlesticks wins through farming and ambushes: place your effigies (which also work as wards) on enemy paths to fool them. Avoid early invades and duels. After 6, play around objectives: hide in a bush near dragon or Void Grubs (around 8 minutes) and wait for the enemy team to group up before casting your ultimate.",
+  "trading": "Ganking: Q (fear) → E (silence) → W (drain). Teamfighting: ultimate from an area with no vision onto several targets, then Q on the most dangerous one and W. Give up on it if you get revealed during the channel.",
+  "threats": [
+   "Reveals and Control Wards, which see you coming.",
+   "Aggressive junglers who invade you (Rek'Sai, Rammus).",
+   "CC that interrupts your drain."
+  ],
+  "mistakes": [
+   "Casting your ultimate when the enemy can see you (they back off).",
+   "Channeling W too long in the middle of the enemy team.",
+   "Taking early duels."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He'll invade you: avoid him early and punish him in teamfights.",
+   "Graves": "He beats you in early duels, but your ultimate destroys him in teamfights.",
+   "Kayn": "Punish him before his transformation and surprise him around objectives.",
+   "Sylas": "He can steal your ultimate: don't cast it when he can take it back.",
+   "Rammus": "His taunt cancels your drain: don't drain him while he's curled up."
+  },
+  "mid_game": "Ambushes around objectives. Use your effigies to fool the enemy team and cast your ultimate at the right moment.",
+  "late_game": "Save your ultimate for the deciding teamfight, from an area with no vision. One well-placed storm wins the fight.",
+  "ahead": "Take objectives and force fights near bushes: your ultimate becomes devastating.",
+  "behind": "Farm and wait for a decisive ultimate in a teamfight: Fiddlesticks stays dangerous even without a lead.",
+  "win_condition": "To win this game, you want to surprise the enemy team with an ultimate on several targets at the right moment.",
+  "final_tip": "Cast your ultimate from an area with no vision: if the enemy sees you channeling, they back off."
+ }
+}

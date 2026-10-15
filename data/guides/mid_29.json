@@ -1,0 +1,43 @@
+{
+  "Qiyana|mid": {
+    "identity": "Assassin à dégâts physiques qui manie les éléments. Terraforce (W) la fait dasher vers un bush, la rivière ou un mur pour renforcer son Courroux élémentaire (Q) : invisibilité (herbe), CC puis slow (eau), dégâts accrus sur les cibles blessées (roche). Audace (E) dash sur un ennemi, et Tour de force suprême (R) repousse ; les ennemis projetés contre un mur sont stun et le terrain explose.",
+    "playstyle": "Assassin de lane dominante et de roam. Elle punit les mages immobiles et roam avec l'élément herbe.",
+    "early_game": "Commence avec W pour prendre un élément, puis poke avec Q renforcé. L'élément roche fait mal aux cibles blessées ; l'eau root pour un all-in avec ton jungler. Garde E pour coller ou fuir.",
+    "level_1": "Terraforce (W) en premier au mid. Prends un élément pour renforcer ton premier Q.",
+    "level_2": "Courroux élémentaire (Q). Poke avec l'élément choisi : W → Q.",
+    "level_3": "Audace (E). All-in : E → Q (élément adapté) → W → Q.",
+    "level_6": "Tour de force suprême : cherche les angles où R pousse l'adversaire contre un mur ou le long de la rivière. Roam vers les side lanes avec l'élément herbe (invisible).",
+    "power_spikes": [
+      "Niveau 3 : all-in avec l'élément adapté.",
+      "Niveau 6 : ultime contre un mur.",
+      "Premier item complet : burst qui tue les mages.",
+      "Mid game : roams et playmaking."
+    ],
+    "lane_plan": "Domine la lane avec les éléments, prends les plaques et roam. La quête de rôle mid (retour accéléré) rend tes roams plus rentables. Évite les tanks et les mages qui te contrôlent (Vex).",
+    "trading": "Trade court : W → Q. All-in : E → Q (eau pour root) → W → Q → R contre un mur. Engage quand le CC adverse est en recharge ; abandonne contre les tanks (Malphite au mid).",
+    "jungle_plan": "",
+    "threats": [
+      "Vex, dont le passif interrompt tes dashes.",
+      "Malphite mid et les tanks qui encaissent ton burst.",
+      "CC lancés en plein combo."
+    ],
+    "mistakes": [
+      "Utiliser le mauvais élément pour la situation.",
+      "Lancer l'ultime sans mur derrière la cible.",
+      "Rester en lane avec l'avance au lieu de roam."
+    ],
+    "matchup_notes": {
+      "Zed": "Root-le avec l'élément eau quand il revient vers son ombre.",
+      "Ahri": "Esquive son Charme et transforme ton avance en roams.",
+      "Yasuo": "Son Mur de vent bloque ton Q : attends qu'il l'ait utilisé.",
+      "Syndra": "Dive quand son stun est en recharge.",
+      "Vex": "Son passif stoppe tes dashes : n'engage pas quand il est chargé."
+    },
+    "mid_game": "Roams avec l'élément herbe, picks et combats près des murs et de la rivière.",
+    "late_game": "Cherche l'ultime contre un mur sur plusieurs ennemis, puis burst le carry.",
+    "ahead": "Roam, crée des picks et prends les objectifs.",
+    "behind": "Cherche des picks sur les cibles isolées et un ultime décisif.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer ta lane, roam et créer des combats où ton ultime stun plusieurs ennemis contre un mur.",
+    "final_tip": "Choisis ton élément selon la situation : eau pour root, herbe pour roam invisible, roche pour finir."
+  }
+}

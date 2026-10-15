@@ -1,0 +1,43 @@
+{
+  "Lux|mid": {
+    "identity": "Mage de burst à longue portée à dégâts magiques, jouée au mid un peu plus d'une fois sur trois (le support reste son rôle principal). Entrave de lumière (Q) root jusqu'à deux ennemis, Barrière prismatique (W) protège les alliés à l'aller et au retour, Anomalie radieuse (E) slow en zone puis explose, et Éclat final (R) tire un laser à très longue portée. Ses sorts marquent les cibles, et sa prochaine attaque ou son ultime fait exploser la marque (passif Illumination).",
+    "playstyle": "Au mid, Lux joue un rôle de carry à dégâts : nettoyage de waves avec E, poke à longue portée et one-shot des cibles root. Contrairement à la version support, elle doit farmer et maximiser ses dégâts.",
+    "early_game": "Nettoie la wave et poke avec E, en déclenchant la marque avec une attaque. Garde Q pour te défendre contre un engage ou pour un kill. Reste à ta portée maximale : tu es fragile.",
+    "level_1": "Anomalie radieuse (E) en premier. Poke et farm.",
+    "level_2": "Entrave de lumière (Q). CC : Q → E → attaque (marque).",
+    "level_3": "Barrière prismatique (W). Shield pour toi (et tes alliés en roam).",
+    "level_6": "Éclat final : laser à très longue portée. Combo : Q → E → R → attaque. Tu peux aussi finir des kills sur les autres lanes ou voler un objectif.",
+    "power_spikes": [
+      "Niveau 3 : combo Q → E.",
+      "Niveau 6 : laser pour les kills à distance.",
+      "Premier item complet : one-shot sur les cibles root.",
+      "Mid game : poke et picks avant les objectifs."
+    ],
+    "lane_plan": "Nettoie la wave avec E, poke et reste à distance. Pousse puis rejoins les objectifs. Utilise l'ultime pour finir les combats sur les autres lanes. La quête de rôle mid (retour accéléré) t'aide à reset après avoir poussé.",
+    "trading": "Trade court : E → attaque (marque). All-in : Q → E → R → attaque. Engage si Q touche ; abandonne contre les assassins qui arrivent quand Q est en recharge.",
+    "jungle_plan": "",
+    "threats": [
+      "Assassins qui te divent (Fizz, Locke).",
+      "Xerath, qui te surclasse en portée.",
+      "Ganks quand ton Q est en recharge."
+    ],
+    "mistakes": [
+      "Gaspiller Q et ne plus pouvoir te défendre.",
+      "Oublier de déclencher la marque avec une attaque.",
+      "Se placer trop près en teamfight."
+    ],
+    "matchup_notes": {
+      "Ahri": "Garde Q pour la fin de son ultime.",
+      "Viktor": "Poke-le de plus loin que lui.",
+      "Syndra": "Duel de portée : esquive son stun.",
+      "Zed": "Garde Q pour son ultime et W pour absorber son burst.",
+      "Xerath": "Il te surclasse en portée : joue autour de ton jungler."
+    },
+    "mid_game": "Poke avant les objectifs et picks avec Q. Finis les combats sur la carte avec R.",
+    "late_game": "Mage de burst à longue portée : Q sur le carry adverse, puis E et R. Reste derrière ta frontline.",
+    "ahead": "Poke, prends les tours et crée des picks.",
+    "behind": "Farm à distance et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux poke à longue portée et one-shot les cibles root par ton Q.",
+    "final_tip": "Après chaque sort, place une auto-attaque sur la cible marquée : l'explosion du passif fait beaucoup de dégâts."
+  }
+}

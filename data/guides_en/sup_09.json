@@ -1,0 +1,43 @@
+{
+ "Janna|sup": {
+  "identity": "Disengage enchanter. Tailwind (passive) gives speed to allies moving toward her and adds damage based on her bonus speed. Howling Gale (Q) creates a tornado that grows over time, then launches it to knock up enemies in its path, Zephyr (W) passively gives her speed and, when activated, damages and slows an enemy, Eye of the Storm (E) shields an ally or a turret and boosts their attack damage, and Monsoon (R) knocks back enemies around her, then heals nearby allies.",
+  "playstyle": "Protection support: she cancels enemy engages with her tornado and ultimate, and makes her ADC stronger with her shield. No clearly unfavorable matchups, and she crushes supports who have to come into melee range (Camille, Swain, Poppy) or poke without mobility (Xerath).",
+  "early_game": "Harass with Zephyr (W) and your attacks, protect your ADC with Eye of the Storm (E) during their trades (the shield also boosts their damage). Keep Howling Gale (Q) to stop an engage: cast it early so it grows, or instantly in response.",
+  "level_1": "Zephyr (W) first. After that, max W first, then E.",
+  "level_2": "Howling Gale (Q) or Eye of the Storm (E). Q for safety against an engage support, E to win trades.",
+  "level_3": "The missing ability. You now have your full protection: E on your ADC, Q against engages, W to slow.",
+  "level_6": "Monsoon: knocks back every enemy around you, then heals your allies. Use it to cancel an engage or knock a diver off your ADC. You can also walk around the enemy to knock them toward your team.",
+  "power_spikes": [
+   "Level 2: E to win trades.",
+   "Level 6: Monsoon cancels an all-in.",
+   "First completed item: stronger shields and heals.",
+   "Teamfights: the ADC protected by E and Monsoon wins the fight."
+  ],
+  "lane_plan": "Harass with W, protect your ADC with E and keep Q for enemy engages. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored). E on the turret when it's under attack.",
+  "trading": "Basic trade: W, attacks, E on your ADC when they hit. Defense: Q on the engage, R if needed. Against Thresh or Nami (even matchups), keep your abilities to respond rather than to poke.",
+  "jungle_plan": "",
+  "threats": [
+   "Thresh, Sona and Nami: your worst matchups, close to even.",
+   "Multiple engages while your tornado is on cooldown.",
+   "Assassins who target you in teamfights: you're fragile."
+  ],
+  "mistakes": [
+   "Throwing the tornado to poke and not having it against an engage.",
+   "Casting Monsoon in a way that knocks the enemy back toward their team instead of splitting them.",
+   "Holding your shield instead of using it to win trades."
+  ],
+  "matchup_notes": {
+   "Thresh": "Keep Q for his hook and E for the target he catches.",
+   "Lulu": "She harasses too: win trades with E.",
+   "Nami": "Her bubble and tidal wave are slow: Q to interrupt her engages.",
+   "Leona": "Q to stop her engage, E on the target.",
+   "Camille": "She has to dive: your tornado and Monsoon stop her."
+  },
+  "mid_game": "Stick with your ADC and jungler. Place Control Wards and use E on turrets under attack.",
+  "late_game": "Stay near your carry. E on them at the start of the fight, Q for engages, and Monsoon to knock divers away.",
+  "ahead": "Harass harder: your protected ADC wins every trade.",
+  "behind": "Play disengage: as long as you have Q and R, your ADC survives.",
+  "win_condition": "To win this game, you want to cancel enemy engages and keep your carry alive so they win the fights.",
+  "final_tip": "As long as your tornado is ready, an enemy engage is almost impossible: never waste it to poke."
+ }
+}

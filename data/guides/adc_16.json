@@ -1,0 +1,43 @@
+{
+  "MissFortune|adc": {
+    "identity": "Tireuse à dégâts physiques, spécialiste du poke et des teamfights. Cœur volage (passif) ajoute des dégâts quand elle attaque une nouvelle cible. Doublé (Q) tire une balle qui rebondit sur une seconde cible derrière la première, Fanfaronne (W) lui donne de la vitesse de déplacement quand elle n'est pas attaquée et, activée, de la vitesse d'attaque, Pluie de balles (E) slow et blesse dans une zone qu'elle révèle, et Barrage de plomb (R) déchaîne des vagues de balles dans un cône pendant quelques secondes (chaque vague peut faire un crit).",
+    "playstyle": "ADC de lane agressive et de teamfight : elle harcèle avec les rebonds de Q puis écrase les combats avec son ultime. Elle est très forte avec un support qui root plusieurs cibles, pour lancer l'ultime en toute sécurité.",
+    "early_game": "Harcèle avec Doublé (Q) : vise un sbire bas en PV devant l'adversaire, la balle rebondit sur lui. Alterne les cibles pour profiter de Cœur volage. Garde la vitesse de Fanfaronne en évitant de te faire toucher.",
+    "level_1": "Doublé (Q) en premier. Harcèle avec le rebond sur l'adversaire.",
+    "level_2": "Fanfaronne (W). Vitesse d'attaque pour les trades, et vitesse de déplacement pour te placer.",
+    "level_3": "Pluie de balles (E). Ralentit en zone : utile pour les kills avec ton support et pour révéler un bush.",
+    "level_6": "Barrage de plomb : énormes dégâts dans un cône pendant la canalisation. Lance-le quand les ennemis sont root ou ne peuvent pas sortir du cône (couloir, mur, CC de ton support).",
+    "power_spikes": [
+      "Niveau 2 : Q et W pour les trades.",
+      "Niveau 6 : ultime qui gagne un combat à deux contre deux.",
+      "Premier item complet : Q très punitif.",
+      "Teamfight : ultime sur une équipe regroupée."
+    ],
+    "lane_plan": "Harcèle avec Q et domine la lane avec ton support. Pousse pour prendre les plaques et participe aux dragons. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense un farm régulier. Ton meilleur partenaire est un support qui root en zone.",
+    "trading": "Trade de base : Q en rebond, puis attaques en changeant de cible. All-in : E pour slow, W, attaques, R si les ennemis ne peuvent pas fuir. Recule contre les mages bot qui te poke de plus loin (Hwei, Viktor, Xerath).",
+    "jungle_plan": "",
+    "threats": [
+      "Hwei et Viktor bot : matchups difficiles.",
+      "Zeri : matchup difficile.",
+      "Tout contrôle qui interrompt ton ultime."
+    ],
+    "mistakes": [
+      "Lancer l'ultime face à une équipe qui peut t'interrompre ou sortir du cône.",
+      "Attaquer toujours la même cible et perdre Cœur volage.",
+      "Se placer trop près avant l'ultime."
+    ],
+    "matchup_notes": {
+      "Jhin": "Harcèle-le pendant qu'il recharge.",
+      "Jinx": "Elle scale : punis-la en lane avec ton support.",
+      "Caitlyn": "Elle a plus de portée : harcèle avec le rebond de Q plutôt qu'avec tes attaques.",
+      "Vayne": "Domine-la en lane avec Q.",
+      "Hwei": "Il poke de loin et peut te root : garde ton ultime pour après ses CC."
+    },
+    "mid_game": "Groupe avec ton équipe et prépare les combats autour des objectifs, dans des zones étroites où ton ultime touche tout le monde.",
+    "late_game": "Reste derrière ta frontline jusqu'au moment de l'ultime : attends que les CC adverses soient utilisés, puis lance Barrage de plomb sur le groupe.",
+    "ahead": "Force les teamfights groupés : ton ultime peut les gagner seul.",
+    "behind": "Harcèle avec Q à distance et garde ton ultime pour un combat groupé.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner la lane par le poke puis décider les teamfights avec un ultime bien placé.",
+    "final_tip": "Ton ultime ne vaut rien s'il est interrompu : attends que les CC adverses soient utilisés avant de le lancer."
+  }
+}

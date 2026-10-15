@@ -1,0 +1,43 @@
+{
+  "Kayn|jgl": {
+    "identity": "Combattant à dégâts physiques qui choisit sa forme en cours de partie. En frappant des champions au corps à corps ou à distance, Kayn remplit une jauge qui débloque Rhaast (forme rouge, combattant qui se soigne, contre les équipes au corps à corps) ou l'Assassin de l'ombre (forme bleue, burst et mobilité, contre les équipes à distance). Moisson cruelle (Q) dash en tournoyant, Entaille sombre (W) frappe en ligne et slow, Passe-muraille (E) lui fait traverser les murs, et Intrusion obscure (R) le cache dans un champion qu'il a blessé avant d'en ressortir en infligeant des dégâts.",
+    "playstyle": "Jungler de farm puis de pression. Avant sa transformation, Kayn est faible : il farme et cherche des escarmouches faciles pour remplir sa jauge. Après, il devient soit un combattant très résistant (Rhaast), soit un assassin très mobile (bleu).",
+    "early_game": "Clear rapide avec Q et W, et Passe-muraille (E) pour te déplacer à travers les murs et te soigner sur les camps. Gank quand un laner peut contrôler la cible : W pour slow, Q, attaques. Chaque coup sur un champion remplit ta jauge : participe aux combats faciles.",
+    "level_1": "Moisson cruelle (Q) en premier.",
+    "level_2": "Passe-muraille (E) ou Entaille sombre (W) selon ton ordre. E te permet de traverser les murs pour des ganks surprises.",
+    "level_3": "Kit de base complet. Gank par les murs avec E, W pour slow, Q pour finir.",
+    "level_6": "Intrusion obscure : tu te caches dans un champion que tu as récemment blessé (tu deviens inciblable), puis tu en ressors en infligeant des dégâts. Sert à esquiver un burst, à finir une cible ou à éviter une tour.",
+    "power_spikes": [
+      "Transformation (rouge ou bleue) : ton vrai pic, entre 10 et 15 minutes selon les combats.",
+      "Niveau 6 : ultime pour esquiver et finir.",
+      "Premier item complet : ganks et escarmouches forts.",
+      "Mid game : dives (Rhaast) ou assassinats (bleu)."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Farm rapidement et participe aux escarmouches faciles pour remplir ta jauge. Choisis la forme selon la composition adverse : Rhaast si l'équipe adverse a beaucoup de champions au corps à corps, l'Assassin de l'ombre si elle a beaucoup de carries à distance. Utilise E pour des ganks inattendus à travers les murs. Contrôle les Larves (vers 8 min) et les dragons avec ton équipe.",
+    "trading": "Rhaast : Q → W (knock-up) → attaques, tu te soignes sur les dégâts. Bleu : entre par un mur avec E, W → Q → R sur le carry pour esquiver sa riposte. Abandonne contre les tanks à CC avant ta transformation.",
+    "threats": [
+      "Invasions avant ta transformation.",
+      "Fiddlesticks, seul matchup nettement défavorable selon les données.",
+      "CC qui t'interrompent pendant tes dives."
+    ],
+    "mistakes": [
+      "Farmer sans participer aux combats et retarder ta transformation.",
+      "Choisir la forme sans regarder la composition adverse.",
+      "Utiliser l'ultime trop tôt, avant le burst adverse."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il t'envahira avant ta transformation : évite-le.",
+      "Viego": "Vous scalez tous deux : sois le premier à transformer ta forme.",
+      "Graves": "Il vole tes camps : garde vision.",
+      "Wukong": "Son clone et son knock-up te gênent : attends ta transformation.",
+      "Fiddlesticks": "Son ultime te détruit quand tu dives : garde de la vision."
+    },
+    "mid_game": "Dives et escarmouches autour des objectifs. Utilise E pour arriver par des angles inattendus.",
+    "late_game": "Rhaast : dive dans l'équipe adverse et survis grâce aux soins. Bleu : assassine le carry avec R pour esquiver sa riposte.",
+    "ahead": "Étouffe le jungler adverse, dive et prends les objectifs.",
+    "behind": "Farm, transforme-toi et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux obtenir ta transformation rapidement et dominer les combats avec la forme adaptée à la composition adverse.",
+    "final_tip": "Participe aux combats faciles en early : chaque coup sur un champion rapproche ta transformation."
+  }
+}

@@ -1,0 +1,84 @@
+{
+ "Gragas|top": {
+  "identity": "Magic damage fighter-mage. Barrel Roll (Q) pokes and slows (stronger once it has fermented), Drunken Rage (W) reduces damage taken and empowers his next attack, Body Slam (E) charges and stuns the first enemy hit, and Explosive Cask (R) knocks everyone back from the point of impact. His passive heals him when he casts an ability.",
+  "playstyle": "Poke, short trades and control. Gragas is a safe top laner who soaks damage well, heals and puts enemies where his team wants them with his ultimate. He depends on landing Q, E and R; he's weaker in pure duels than in skirmishes.",
+  "early_game": "Poke with Q when your opponent comes to last hit: let the barrel ferment for a second for more damage and slow if your opponent doesn't move. Heal with your passive. Keep E to escape or engage when your jungler arrives.",
+  "level_1": "Barrel Roll (Q) first on the most common path; the alternative E → W → Q exists. Poke from range and farm minions out of reach.",
+  "level_2": "Body Slam (E). A charge that stuns the first enemy hit (minions block it): Q + E is a good short trade, and E remains your main escape.",
+  "level_3": "Drunken Rage (W). Damage reduction and an empowered attack: cast it before a melee trade or to soak a combo.",
+  "level_6": "Explosive Cask knocks enemies back. Throw it behind your opponent to knock them toward your tower or your jungler, then Q + E. In teamfights, use it to split the enemy team or isolate a carry.",
+  "power_spikes": [
+   "Level 3: Q + E + W for short trades.",
+   "Level 6: ultimate for ganks and picks.",
+   "First completed item: poke or durability depending on your build.",
+   "Mid game: control and picks in skirmishes."
+  ],
+  "lane_plan": "Play the wave in the middle, poke with Q and heal with your passive. Keep E for ganks: Gragas escapes well when E is available. Recall with the wave pushed. After 6, ping your jungler: an ultimate that knocks your opponent toward them is an almost guaranteed kill.",
+  "trading": "Short trade: Q → attack → E → back off. Long trade: W before hitting, then Q and E. Engage with E if Q landed; give up on it if you missed E, because you have no escape left.",
+  "jungle_plan": "",
+  "threats": [
+   "Fighters who win in melee range and silence you (Garen, Urgot).",
+   "Tanks who hold up against you in long fights (Ornn, Shen, Dr. Mundo).",
+   "Ganks while your E is on cooldown."
+  ],
+  "mistakes": [
+   "Casting your ultimate in the wrong direction and knocking the target out of your team's reach.",
+   "Wasting E to farm or poke.",
+   "Detonating Q immediately when your opponent can't dodge it anyway."
+  ],
+  "matchup_notes": {
+   "Jax": "His Counter Strike doesn't dodge your abilities: Q during his dodge, then E at the end.",
+   "Yone": "Keep E for his engage (the stun cancels his Q3) and poke with Q when he comes to farm.",
+   "Jayce": "Poke him with Q and engage with E when he switches to hammer form.",
+   "Garen": "He silences you and beats you in long fights; poke from range and keep E for his Q.",
+   "Nasus": "Punish him early with Q and avoid fights under Wither."
+  },
+  "mid_game": "Play around objectives: E and R create picks. Join river skirmishes with your upgraded Teleport (role quest).",
+  "late_game": "Teamfight control: R to split or isolate a target, E to stun, W to soak damage. Protect your carries if the enemy team dives.",
+  "ahead": "Roam, create picks with your ultimate and take objectives with your team.",
+  "behind": "Farm carefully and play for teamfights: your CC stays useful without a lead.",
+  "win_condition": "To win this game, you want to create picks and control teamfights with Explosive Cask and Body Slam.",
+  "final_tip": "Place Explosive Cask behind the target to knock them toward your team, never between them and you."
+ },
+ "Heimerdinger|top": {
+  "identity": "Magic damage mage who controls an area with his turrets. H-28 G Evolution Turret (Q) places up to three turrets, Hextech Micro-Rockets (W) pokes from range, CH-2 Electron Storm Grenade (E) stuns in the center and slows around it, and UPGRADE!!! (R) empowers his next ability (giant turret, rocket barrage or bouncing grenade). His passive speeds him up near his turrets and allied towers.",
+  "playstyle": "Zone control and poke: you set up your turrets before the wave, defend them and force your opponent to attack them or back off. Very strong in lane against melee fighters, much weaker if caught outside his zone.",
+  "early_game": "Place your turrets just behind the wave before it arrives: they hit your opponent when they come to last hit. Poke with W and keep E to stun an engage. Don't leave your turret zone to chase.",
+  "level_1": "H-28 G Evolution Turret (Q) first. Place two turrets near the wave and let them hit your opponent as they approach.",
+  "level_2": "CH-2 Electron Storm Grenade (E). It stuns in the center and slows on the edges: throw it when your opponent walks into your turrets.",
+  "level_3": "Hextech Micro-Rockets (W). Ranged poke: E, then W is your basic combo. Rockets deal less damage when several hit the same target, so aim well.",
+  "level_6": "UPGRADE!!! empowers your next ability: a big turret that holds the area, a massive rocket barrage or a grenade that stuns several times. Save it for an all-in, a tower defense or an objective.",
+  "power_spikes": [
+   "Level 2: Q + E, a dangerous turret zone.",
+   "Level 6: upgraded abilities.",
+   "First completed item: high poke and turret damage.",
+   "Objective and tower defense: a very strong zone."
+  ],
+  "lane_plan": "Keep the wave near your turrets. Stagger them behind the wave so they don't all get hit at once, poke with W and stun with E. Recall when you need mana or your turrets are destroyed. Avoid pushing far without vision: without turrets, you're very vulnerable.",
+  "trading": "Basic trade: E, then W inside your turret zone. Long trade: R on the turret or rockets when your opponent engages you. Engage when your opponent is inside your turrets; give up on it if they can dive you outside your zone.",
+  "jungle_plan": "",
+  "threats": [
+   "Champions who dive you outside your zone (Yasuo and his Wind Wall against your rockets).",
+   "Tanks who soak your turrets (Nasus, Ornn).",
+   "Long-range mages who destroy your turrets."
+  ],
+  "mistakes": [
+   "Leaving your turret zone to chase a target.",
+   "Wasting E and having no protection left against the engage.",
+   "Placing turrets too far forward, where they get destroyed for free."
+  ],
+  "matchup_notes": {
+   "Nasus": "You can win the lane but his late game catches up with you: turn your lead into towers before he scales, and keep E for his engage during his ultimate.",
+   "Darius": "He can't easily reach you inside your turrets; keep E for his Apprehend.",
+   "Yone": "Place your turrets out of his Q3's line and keep E for his engage.",
+   "Yasuo": "Wind Wall blocks your rockets: play with your turrets and keep E for his dash.",
+   "Garen": "He spins through your turrets: stun him at the edge of your zone and don't let him silence you."
+  },
+  "mid_game": "Defend and take objectives: your turrets lock down an area. Push the side lane with your turrets and watch out for opponents coming to get you in numbers.",
+  "late_game": "Zone control: place turrets ahead of time on the fight area, stun divers with E and poke with W. Stay behind your frontline.",
+  "ahead": "Take towers, defend objectives and force the enemy to play inside your zone.",
+  "behind": "Defend your tower with your turrets and play for zone teamfights. Avoid isolated side lanes.",
+  "win_condition": "To win this game, you want to force fights inside your turret zone, on objectives as well as in lane.",
+  "final_tip": "Always place your turrets before the fight: a Heimerdinger without turrets has no zone."
+ }
+}

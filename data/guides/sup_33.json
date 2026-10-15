@@ -1,0 +1,43 @@
+{
+  "TahmKench|sup": {
+    "identity": "Tank protecteur. Goût acquis (passif) : ses PV totaux augmentent ses dégâts, et blesser un champion lui applique des effets ; à 3 effets, Tahm Kench peut le dévorer. Coup de langue (Q) blesse et slow la première unité touchée (il se soigne sur un champion ; à 3 effets, la cible est stun), Plongée abyssale (W) le fait disparaître sous terre puis réapparaître plus loin, ce qui knock-up les ennemis de la zone, Peau épaisse (E) stocke une partie des dégâts subis pour les transformer en shield, et Dévoration (R) avale un champion : un ennemi subit des dégâts, un allié reçoit un shield et est protégé.",
+    "playstyle": "Support de protection : il avale son ADC pour le sauver, encaisse énormément grâce à Peau épaisse et punit les supports qui restent au contact. Il bat les supports fragiles ou de dive (Camille, Xerath, Pantheon, Lux), mais souffre contre les enchanteurs qui le poke et soignent (Soraka, Nami) et les tanks qui le contrôlent (Braum, Alistar, Rell).",
+    "early_game": "Trade au contact avec ton ADC : tes attaques et Coup de langue (Q) accumulent Goût acquis ; à 3 effets, Q stun. Garde Dévoration (R) pour sauver ton ADC d'un engage. Peau épaisse (E) transforme les dégâts subis en shield quand tu en as besoin.",
+    "level_1": "Coup de langue (Q) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Plongée abyssale (W). Engage : W sur l'adversaire (knock-up), attaques, Q.",
+    "level_3": "Peau épaisse (E). Shield à partir des dégâts stockés : lance-le au milieu d'un combat.",
+    "level_6": "Dévoration : avale ton ADC dive pour le sauver et le déplacer, ou avale un ennemi à 3 effets pour l'emmener vers ton équipe.",
+    "power_spikes": [
+      "Niveau 2 : W → attaques → Q.",
+      "Niveau 6 : sauvetage avec Dévoration.",
+      "Premiers items de PV : dégâts et résistance qui augmentent.",
+      "Teamfight : ton carry protégé par R, ton E absorbe."
+    ],
+    "lane_plan": "Joue au contact avec ton ADC, protège-le avec R et engage avec W. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "All-in : W → attaques → Q (stun à 3 effets) → E pour le shield. Défense : R sur ton ADC dive. Recule contre les enchanteurs qui te poke (Soraka, Nami) : ne leur donne pas de trades gratuits.",
+    "jungle_plan": "",
+    "threats": [
+      "Soraka et Nami : matchups difficiles.",
+      "Braum, Alistar et Rell : matchups difficiles.",
+      "Poke à distance : tu dois t'approcher pour appliquer Goût acquis."
+    ],
+    "mistakes": [
+      "Utiliser Dévoration pour attaquer alors que ton ADC va mourir.",
+      "Utiliser E trop tôt, avec peu de dégâts stockés.",
+      "Engager avec W sans que ton ADC puisse suivre."
+    ],
+    "matchup_notes": {
+      "Thresh": "S'il attrape ton ADC, avale-le avec R.",
+      "Nautilus": "S'il engage sur ton ADC, avale ton ADC : l'engage est perdu.",
+      "Lulu": "Elle poke : joue au contact avec ton ADC.",
+      "Camille": "Elle dive : avale sa cible ou stun-la avec Q.",
+      "Soraka": "Ses soins annulent tes trades : joue les engages rapides avec W."
+    },
+    "mid_game": "Accompagne ton carry, pose des pinks et protège-le autour des objectifs.",
+    "late_game": "Reste à côté de ton carry : R quand il est dive, E au milieu du combat, W pour engager ou interrompre.",
+    "ahead": "Engage avec W et prends les objectifs.",
+    "behind": "Protège ton carry avec R : tant qu'il vit, il peut gagner le combat.",
+    "win_condition": "Pour gagner cette partie, tu veux garder ton carry en vie grâce à Dévoration et encaisser les dégâts adverses.",
+    "final_tip": "Dévoration sur un allié le rend intouchable un instant : attends le dernier moment pour annuler l'engage adverse."
+  }
+}

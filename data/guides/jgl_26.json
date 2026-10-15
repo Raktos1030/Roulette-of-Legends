@@ -1,0 +1,43 @@
+{
+  "Nidalee|jgl": {
+    "identity": "Chasseresse à dégâts magiques à deux formes, spécialiste du clear rapide et du poke. En forme humaine : Javelot (Q) fait plus de dégâts à longue distance et marque la cible (Chassée), Guérilla (W) pose un piège, Charge primale (E) soigne un allié et accélère ses attaques. En forme couguar : Mise à terre (Q) exécute les cibles blessées, Bond (W) saute plus loin sur une cible Chassée, Taillade (E) frappe en cône. Aspect du Couguar (R) change de forme dès le niveau 1.",
+    "playstyle": "Jungler de tempo : clear très rapide, invasions, poke au javelot et dives sur les cibles marquées. Un javelot raté réduit fortement tes options.",
+    "early_game": "Clear rapide en alternant les formes (javelot sur le camp pour le marquer, puis forme couguar). Envahis quand tu peux : tu es un des junglers qui volent le plus vite les camps. Poke les lanes avec le javelot avant de ganker, et soigne tes laners avec E humain.",
+    "level_1": "Javelot / Mise à terre (Q) en premier.",
+    "level_2": "Charge primale / Taillade (E). Soin en forme humaine, gros dégâts en cône en forme couguar : ton clear s'accélère.",
+    "level_3": "Guérilla / Bond (W). Premier gank : javelot qui marque → Bond allongé sur la cible Chassée → Taillade → Mise à terre pour finir.",
+    "level_6": "Ta transformation monte de rang au niveau 6 (renforcement des sorts couguar). Tes dives sur les cibles marquées deviennent très dangereuses, surtout en escarmouche.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec javelot + Bond.",
+      "Premier item complet : javelot qui enlève une grosse partie des PV.",
+      "Deux items : poke dominant avant les objectifs.",
+      "Mid game : picks sur les cibles marquées."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear très rapide et invasions. Nidalee gagne par le tempo : vole les camps adverses, contrôle les crabes et poke avant les Larves (vers 8 min) et les dragons. Pose des pièges (W humain) dans les bushs et les entrées de jungle pour la vision. Gank les lanes où ton javelot peut toucher.",
+    "trading": "En gank : javelot (marque) → Bond → Taillade → Mise à terre. En escarmouche : poke au javelot avant d'engager, puis dive sur la cible marquée. Abandonne si ton javelot est raté et que la cible n'est pas basse.",
+    "threats": [
+      "Tanks qui encaissent ton poke (Rammus, Zac, Nunu et Willump).",
+      "Fiddlesticks et Evelynn, qui te surprennent.",
+      "Dive sans cible marquée."
+    ],
+    "mistakes": [
+      "Rater le javelot et dive quand même.",
+      "Rester dans une seule forme.",
+      "Oublier de soigner tes laners avec E humain."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Tu farmes plus vite : vole ses camps et poke-le.",
+      "Graves": "Tu le poke avant qu'il ne te colle ; vole ses camps quand il est loin.",
+      "Viego": "Poke-le au javelot avant les combats.",
+      "Rammus": "Son armure annule ton poke et son taunt te bloque : évite-le.",
+      "Fiddlesticks": "Pose des pièges dans les bushs pour repérer ses embuscades."
+    },
+    "mid_game": "Poke et picks avant les objectifs. Transforme ton tempo en dragons et tours.",
+    "late_game": "Poke au javelot, puis dive sur les cibles marquées et basses. Reste en retrait tant que ton javelot n'a pas touché.",
+    "ahead": "Étouffe le jungler adverse, prends les objectifs et poke avant chaque combat.",
+    "behind": "Farm, poke en sécurité et cherche des picks sur des cibles marquées.",
+    "win_condition": "Pour gagner cette partie, tu veux imposer ton tempo par le farm et les invasions, puis poke et exécuter les cibles marquées.",
+    "final_tip": "Lance ton javelot de loin : plus il parcourt de distance, plus il fait de dégâts."
+  }
+}

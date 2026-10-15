@@ -1,0 +1,43 @@
+{
+  "Veigar|adc": {
+    "identity": "Mage de burst à dégâts magiques qui scale à l'infini. Pouvoir maléfique phénoménal (passif) : chaque champion touché par un sort, chaque kill et chaque assistance lui donnent de la puissance définitivement. Coup malin (Q) touche les deux premiers ennemis et donne de la puissance pour chaque unité tuée, Matière noire (W) frappe une zone après un délai (son délai diminue avec ses effets cumulés), Profanation (E) crée une cage qui stun les ennemis qui la traversent, et Explosion primordiale (R) inflige d'énormes dégâts à une cible, d'autant plus qu'il lui manque des PV.",
+    "playstyle": "Mage de scaling en bot lane : il farm avec Q pour accumuler de la puissance, piège les ADC avec sa cage et les tue d'un combo. Il est en moyenne derrière en or à 15 min contre les ADC fréquents : son scaling fait le travail.",
+    "early_game": "Farm avec Coup malin (Q) : tuer deux sbires d'un coup double le gain de puissance. Garde Profanation (E) pour te défendre contre un engage, ou pour enfermer l'adversaire quand ton support le root. Poke avec W sur une cible root : il est lent à tomber.",
+    "level_1": "Coup malin (Q) en premier. Tue un maximum de sbires avec Q.",
+    "level_2": "Matière noire (W) ou Profanation (E). W pour farmer et poke, E pour la sécurité si la lane adverse est agressive.",
+    "level_3": "Le sort manquant. Combo : E (cage), W sur la cible stun, Q.",
+    "level_6": "Explosion primordiale : exécution sur une cible blessée. Combo complet : E → W → Q → R.",
+    "power_spikes": [
+      "Niveau 3 : combo cage, Matière noire, Coup malin.",
+      "Niveau 6 : Explosion primordiale.",
+      "Premier item complet : les ADC meurent en un combo.",
+      "Late game : puissance accumulée énorme."
+    ],
+    "lane_plan": "Farm avec Q en priorité, garde la cage pour les engages et joue les kills avec ton support. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense ton farm. Participe aux dragons : ta cage protège la zone.",
+    "trading": "Trade de base : Q sur l'adversaire à travers un seul sbire. All-in : E, W, Q, R. Abandonne contre les ADC qui bloquent tes sorts (Sivir et son Bouclier magique) : fais sortir son shield avec Q avant le combo.",
+    "jungle_plan": "",
+    "threats": [
+      "Sivir : matchup difficile (son shield bloque un sort de ton combo).",
+      "Assassins qui te sautent dessus quand ta cage est en recharge.",
+      "Supports d'engage : tu n'as aucune mobilité."
+    ],
+    "mistakes": [
+      "Rater des sbires avec Q (puissance perdue).",
+      "Lancer la cage n'importe où et ne plus pouvoir te défendre.",
+      "Lancer l'ultime sur une cible en pleine santé."
+    ],
+    "matchup_notes": {
+      "Jinx": "Elle scale aussi : piège-la avec la cage dans les combats.",
+      "Kai'Sa": "Pose la cage sous toi quand elle dive avec son ultime.",
+      "Caitlyn": "Survis à sa portée et enferme-la dans ta cage.",
+      "Samira": "Elle doit venir au contact : ta cage l'arrête en plein combo.",
+      "Sivir": "Son Bouclier magique bloque un sort : fais-le sortir avec Q avant le vrai combo."
+    },
+    "mid_game": "Continue de farmer avec Q et rejoins les combats autour des objectifs. Ta cage coupe les engages adverses.",
+    "late_game": "Reste derrière ta frontline, pose la cage sur le groupe ou sur les divers, et tue le carry adverse d'un combo W → Q → R.",
+    "ahead": "Cherche les picks : chaque cible isolée meurt en un combo.",
+    "behind": "Farm avec Q et accumule de la puissance : tu scales encore quand les autres ont fini d'acheter.",
+    "win_condition": "Pour gagner cette partie, tu veux accumuler de la puissance et tuer les carries adverses d'un combo, protégé par ta cage.",
+    "final_tip": "Deux sbires tués avec un seul Q donnent deux fois plus de puissance : aligne-les avant de tirer."
+  }
+}

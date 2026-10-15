@@ -1,0 +1,43 @@
+{
+  "Alistar|sup": {
+    "identity": "Tank d'engage. Cri triomphant (passif) se charge quand il stun ou déplace des champions ennemis, ou quand des ennemis meurent près de lui ; une fois chargé, il le soigne et soigne les alliés proches. Atomisation (Q) knock-up les ennemis autour de lui, Coup de tête (W) le fait charger une cible et la repousse, Piétinement (E) blesse autour de lui et, après plusieurs coups sur des champions, rend sa prochaine attaque qui stun, et Volonté de fer (R) dissipe tous les CC qui l'affectent et réduit fortement les dégâts qu'il subit.",
+    "playstyle": "Support d'engage et de protection : il ouvre les combats avec le combo Coup de tête → Atomisation, ou il repousse les divers loin de son ADC. Il souffre surtout contre les supports qui le poke et le disengage (Janna, Senna, Sona).",
+    "early_game": "Au niveau 2, cherche le combo W → Q : charge l'adversaire, puis atomise-le avant qu'il retombe. Avant cela, reste à côté de ton ADC et menace l'engage. Utilise E pour accumuler des effets sur les champions avant un all-in (attaque qui stun).",
+    "level_1": "Coup de tête (W) ou Atomisation (Q). Ensuite, monte Q en priorité. Q au niveau 1 sert à se défendre et à contester l'accès aux bushs.",
+    "level_2": "Le sort manquant entre W et Q : le combo W → Q est disponible. Engage dès que l'adversaire s'avance sans son support.",
+    "level_3": "Piétinement (E). Accumule des effets sur les champions pour rendre ta prochaine attaque qui stun : W → Q → E → attaque.",
+    "level_6": "Volonté de fer : dissipe les CC et réduit fortement les dégâts. Lance-la en entrant dans un combat pour survivre, ou dès qu'un CC t'empêche de protéger ton ADC.",
+    "power_spikes": [
+      "Niveau 2 : combo Coup de tête → Atomisation.",
+      "Niveau 6 : engage presque impossible à punir.",
+      "Premiers items de résistance : frontline durable.",
+      "Teamfight : W → Q sur le carry adverse."
+    ],
+    "lane_plan": "Menace l'engage en permanence et joue avec ton jungler. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers hors de la bot lane. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées dans un emplacement dédié) : pose-les autour du dragon.",
+    "trading": "All-in : W → Q (charge pendant que la cible est en l'air), E, attaques. Défense : W pour repousser un diver loin de ton ADC, Q pour arrêter un engage. Recule contre les supports qui te disengage (Janna) : garde tes sorts pour les protéger.",
+    "jungle_plan": "",
+    "threats": [
+      "Janna : ton matchup le plus difficile (elle annule tes engages).",
+      "Senna et Sona : matchups difficiles.",
+      "Kiting : tu dois atteindre ta cible pour être utile."
+    ],
+    "mistakes": [
+      "Lancer W → Q sans que ton ADC puisse suivre.",
+      "Utiliser W pour engager alors qu'il faudrait le garder pour repousser un diver.",
+      "Entrer sans ultime disponible contre une équipe riche en CC."
+    ],
+    "matchup_notes": {
+      "Thresh": "Si son grappin touche ton ADC, repousse Thresh avec W.",
+      "Nautilus": "Son ancre te fait avancer : réponds par W → Q quand il arrive.",
+      "Leona": "Elle t'engage aussi : garde R pour ses CC.",
+      "Yuumi": "Quand elle est attachée, son ADC est seul face à ton combo.",
+      "Janna": "Son Mousson et sa tornade annulent ton engage : attends qu'elle les ait utilisés."
+    },
+    "mid_game": "Pose des pinks autour des objectifs, cherche les picks avec W → Q et protège ton ADC.",
+    "late_game": "Frontline : engage sur le carry adverse avec W → Q, ou garde tes sorts pour repousser les divers. R avant d'entrer dans un combat long.",
+    "ahead": "Engage souvent et aide ton jungler à contrôler la carte.",
+    "behind": "Protège ton ADC : W et Q servent aussi à repousser les divers.",
+    "win_condition": "Pour gagner cette partie, tu veux ouvrir les bons combats avec ton combo et protéger ton ADC grâce à tes déplacements forcés.",
+    "final_tip": "Coup de tête repousse la cible dans le sens de ta charge : en défense, éloigne le diver de ton ADC ; en attaque, contourne la cible pour la renvoyer vers ton équipe."
+  }
+}

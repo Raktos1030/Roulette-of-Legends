@@ -1,0 +1,43 @@
+{
+  "Kindred|jgl": {
+    "identity": "Tireuse à dégâts physiques en jungle qui scale par les marques. Son passif fait apparaître des marques sur des monstres et des champions ; les chasser augmente définitivement sa portée et ses dégâts. Danse des flèches (Q) dash en tirant, Frénésie de Loup (W) crée une zone où Loup attaque, Terreur mortelle (E) slow puis déclenche une frappe de Loup (dégâts selon les PV manquants), et Repos d'Agneau (R) crée une zone où personne ne peut mourir pendant quelques secondes.",
+    "playstyle": "Jungler de farm, de marques et de carry à distance. Kindred scale avec ses stacks : plus elle en a, plus elle domine. Elle doit prendre des risques pour récupérer les marques dans la jungle adverse, ce qui la rend vulnérable aux invasions.",
+    "early_game": "Clear rapide avec W et Q. Récupère les marques de monstres (elles apparaissent souvent dans la jungle adverse) quand c'est sûr. Gank quand un laner peut suivre : E pour slow, Q, attaques.",
+    "level_1": "Frénésie de Loup (W) en premier. Loup attaque les camps avec toi.",
+    "level_2": "Danse des flèches (Q). Dash et vitesse d'attaque : ton clear s'accélère.",
+    "level_3": "Terreur mortelle (E). Ralentit, puis Loup frappe après trois attaques : premier gank possible.",
+    "level_6": "Repos d'Agneau : zone où personne ne peut mourir pendant quelques secondes. Utilise-le pour sauver ton équipe d'un burst ou pour survivre à un dive. Attention : il protège aussi les ennemis dans la zone.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec E.",
+      "Niveau 6 : Repos d'Agneau pour les combats.",
+      "Stacks de marques : portée et dégâts accrus.",
+      "Premier item complet : DPS de carry."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide et chasse des marques : elles augmentent définitivement ta portée et tes dégâts. Les marques de monstres apparaissent souvent dans la jungle adverse : prends-les quand tes laners ont la priorité. Contrôle les crabes, les Larves (vers 8 min) et les dragons. Évite les duels contre les junglers qui te divent.",
+    "trading": "En gank : E → attaques → Q pour rester à distance. En escarmouche : place-toi à distance, frappe et utilise R pour sauver ton équipe d'un burst. Abandonne contre les tanks à CC (Rammus) ou les junglers qui te divent.",
+    "threats": [
+      "Invasions et duels contre les junglers de dive.",
+      "Tanks à CC (Rammus).",
+      "Utiliser R au mauvais moment et sauver les ennemis."
+    ],
+    "mistakes": [
+      "Ignorer les marques : ton scaling en dépend.",
+      "Lancer R quand les ennemis bénéficient davantage de la zone.",
+      "Se placer trop près en teamfight."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il t'envahira : garde vision.",
+      "Graves": "Kite-le et garde R pour son burst.",
+      "Viego": "Kite-le à distance.",
+      "Rammus": "Son taunt annule tes attaques : ne l'attaque pas pendant sa Boule défensive.",
+      "Wukong": "Son clone te trompe : garde R pour son knock-up."
+    },
+    "mid_game": "Chasse des marques, objectifs et escarmouches. Kindred scale vers une carry à distance.",
+    "late_game": "Carry à distance : reste derrière ta frontline, frappe et garde R pour sauver ton équipe.",
+    "ahead": "Chasse les marques, prends les objectifs et force les combats.",
+    "behind": "Farm et scale : ton late game compense ton retard.",
+    "win_condition": "Pour gagner cette partie, tu veux accumuler des marques et devenir une carry à distance en teamfight.",
+    "final_tip": "Avant de lancer Repos d'Agneau, vérifie qu'il sauve plus de tes alliés que d'ennemis."
+  }
+}

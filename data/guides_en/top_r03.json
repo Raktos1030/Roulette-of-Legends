@@ -1,0 +1,84 @@
+{
+ "Pantheon|top": {
+  "identity": "Physical damage fighter built for the early game. Comet Spear (Q) stabs in melee range or is thrown far if you charge it, Shield Vault (W) leaps onto a target and stuns them, Aegis Assault (E) blocks all damage from the front, and Grand Starfall (R) jumps across a very long distance. Every few actions, his passive Mortal Will empowers his next ability.",
+  "playstyle": "Very aggressive lane, all-ins from level 2-3, plate taking and roams with his ultimate. Pantheon is stronger in the early and mid game than in the late game: he has to quickly turn his lead into towers, dragons and kills in other lanes.",
+  "early_game": "Poke with a thrown Spear (charged Q) when your opponent comes to last hit. Watch your passive: when it's ready, your next ability is empowered, and that's the moment to engage with W. Keep E to soak the enemy counterattack.",
+  "level_1": "Comet Spear (Q) first. Poke from range with the charged spear; in melee range, the quick stab is enough to punish a last hit.",
+  "level_2": "Shield Vault (W). A leap and a stun: W → attacks → Q. At level 2, look for a fight if your opponent is still level 1 and your passive is ready.",
+  "level_3": "Aegis Assault (E). You block all damage from the front while it lasts: W → E to soak the counterattack → empowered Q. It's a very strong all-in with Ignite.",
+  "level_6": "Grand Starfall: after a short windup, you leap to a distant area, which takes damage and is slowed. Use it to roam mid or bot when your wave is pushed, or to join a river fight.",
+  "power_spikes": [
+   "Level 2: all-in with W and an empowered passive.",
+   "Level 3: full combo with E.",
+   "Level 6: roams and skirmishes with your ultimate.",
+   "First completed item: dangerous burst on carries."
+  ],
+  "lane_plan": "Play a neutral or pushed wave: Pantheon is excellent at taking tower plates. Poke with Q, engage with W when your passive is ready. After level 6, push your wave before every roam with your ultimate and come back quickly so you don't lose too much farm. Recall when your wave crashes.",
+  "trading": "Short trade: thrown Q or melee Q. Long trade: W (stun) → attacks → E to block the counterattack → empowered Q. Engage when your passive is ready; give up on it against tanks who soak your burst.",
+  "jungle_plan": "",
+  "threats": [
+   "Tanks who soak your burst (Malphite, Sion, Cho'Gath).",
+   "Gangplank, who pokes you with his kegs.",
+   "Losing impact in the late game if you didn't get a lead."
+  ],
+  "mistakes": [
+   "Engaging with W without a charged passive.",
+   "Playing for the late game instead of converting your early lead.",
+   "Casting your ultimate with no target or objective to win."
+  ],
+  "matchup_notes": {
+   "Yone": "Block his Q3 with E and engage with W when his E is on cooldown.",
+   "Darius": "Poke him with Q from range and block his Decimate with E; don't stay in melee range if he already has stacks.",
+   "Jax": "His Counter Strike doesn't dodge your Q: poke him from range and engage after his dodge.",
+   "Malphite": "His armor reduces your burst: poke, take plates when he recalls and roam rather than looking for the kill.",
+   "Gangplank": "He pokes you with his kegs; engage with W before he sets up his kegs and block the explosion with E."
+  },
+  "mid_game": "Roam with your ultimate, create advantages in other lanes and force fights around objectives. Every ultimate should earn a kill, an objective or a tower.",
+  "late_game": "Burst a carry with W → empowered Q. Avoid long fights and head-on engages into a team with a strong frontline.",
+  "ahead": "Roam, take objectives and dive with your jungler: your burst kills isolated carries.",
+  "behind": "Farm, look for picks on isolated targets and play around your ultimate to join fights by surprise.",
+  "win_condition": "To win this game, you want to dominate the early game, roam with your ultimate and turn your lead into objectives before the late game.",
+  "final_tip": "Wait for your passive to be charged before engaging with W: the empowered ability makes all the difference."
+ },
+ "Kayle|top": {
+  "identity": "Hybrid damage hyperscaler. Kayle powers up in tiers (passive Divine Ascent): her attacks become ranged at level 6, send out waves of fire at level 11 and reach their final form at level 16. Radiant Blast (Q) slows and shreds resistances, Celestial Blessing (W) heals and speeds up, Starfire Spellblade (E) empowers her attacks, and Divine Judgment (R) makes an ally invulnerable.",
+  "playstyle": "Survival and farming lane, then late-game dominance. The whole game plan is reaching levels 6, 11 and 16 without losing too much. Very XP-dependent; the top role quest's bonus XP helps you get there faster.",
+  "early_game": "Last hit at the last moment, let the wave come to your tower and avoid trades: in melee range, you lose to almost everyone before level 6. Q slows an opponent who wants to stick to you, W heals you and speeds you up to escape. Ping your jungler if your opponent freezes too far forward.",
+  "level_1": "Starfire Spellblade (E) first. It helps you last hit safely with an empowered attack.",
+  "level_2": "Radiant Blast (Q). Slows and shreds resistances: use it to escape an engage or last hit from range.",
+  "level_3": "Celestial Blessing (W). Healing and speed: keep it to escape an engage or a gank, or to hold the lane when you're being harassed.",
+  "level_6": "Your attacks become ranged and you unlock Divine Judgment. Your first real spike: you can finally trade against melee fighters by kiting them. Keep your ultimate to save yourself or an ally from a burst.",
+  "power_spikes": [
+   "Level 6: ranged attacks and ultimate.",
+   "Level 11: attacks that hit in an area (waves of fire).",
+   "Level 16: final form, a devastating ranged carry.",
+   "Two items and beyond: dominant teamfight DPS."
+  ],
+  "lane_plan": "Let the wave come to you, farm safely and avoid trades before level 6. Don't push without vision. Recall with a comfortable health margin. After level 11, you clear waves in an area: use that to farm side lanes faster.",
+  "trading": "Before 6: no voluntary trades, Q only to slow. After 6: ranged attacks, Q to slow, E to finish. Only engage when your opponent is in execute range; give up on it if they can stick to you (Malphite with his ultimate, Irelia).",
+  "jungle_plan": "",
+  "threats": [
+   "Melee all-ins before level 6.",
+   "Ganks on a pushed lane.",
+   "Engages that stick to you despite your range (Malphite, Irelia)."
+  ],
+  "mistakes": [
+   "Trading early when you're very weak.",
+   "Using your ultimate on yourself too early, before the real enemy burst.",
+   "Dying and losing XP right before a key level."
+  ],
+  "matchup_notes": {
+   "Garen": "Survive the early game (his silence and Judgment hurt), then kite him from range after level 6.",
+   "Nasus": "Wither makes you useless in fights: don't fight, farm and scale; you outscale him late.",
+   "Malphite": "His armor reduces your damage and his ultimate catches you: keep W to escape and Divine Judgment for his engage.",
+   "Yone": "He dominates you early: farm carefully, then kite him after level 6.",
+   "Darius": "Never let him stick to you early; after 6, keep your distance out of his Apprehend range."
+  },
+  "mid_game": "Farm the side lanes to reach levels 11 and then 16. Avoid fights without vision and group with your team for important objectives.",
+  "late_game": "Ranged carry: stay behind your frontline and hit whatever is in range. Keep your ultimate to save your most important ally or yourself.",
+  "ahead": "Take towers and objectives with your ranged DPS; you become your team's main carry.",
+  "behind": "Farm, scale and avoid fights: Kayle stays a late-game threat even after a hard lane.",
+  "win_condition": "To win this game, you want to survive until level 16 and become your team's main carry.",
+  "final_tip": "Don't take any trades before level 6: every level you reach alive counts for more than a kill."
+ }
+}

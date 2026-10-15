@@ -1,0 +1,43 @@
+{
+  "Khazix|jgl": {
+    "identity": "Assassin à dégâts physiques qui chasse les cibles isolées. Goût de la peur (Q) inflige beaucoup plus de dégâts à une cible sans allié proche, Pique du Néant (W) slow et le soigne, Bond (E) saute sur une cible, et Assaut du Néant (R) le rend invisible. Quand il n'est pas vu, sa prochaine attaque est renforcée (passif). Aux niveaux 6, 11 et 16, il fait évoluer un sort au choix, ce qui change son style.",
+    "playstyle": "Jungler d'invasions, de duels et d'assassinats sur les cibles isolées. Kha'Zix est fort dans les duels contre les junglers seuls et dans les escarmouches désorganisées.",
+    "early_game": "Clear rapide et duel les junglers adverses isolés : ton Q est énorme sur une cible seule. Gank quand un adversaire est loin de ses alliés. Garde E pour fuir ou finir.",
+    "level_1": "Goût de la peur (Q) en premier. Utilise-le sur un camp isolé pour le bonus.",
+    "level_2": "Pique du Néant (W). Soin et slow : ton clear devient plus sain.",
+    "level_3": "Bond (E). Premier gank ou invasion : E → Q sur une cible isolée → W. Tu gagnes beaucoup de duels contre les junglers seuls.",
+    "level_6": "Assaut du Néant (invisibilité) et première évolution. Évolue généralement Q (dégâts sur cible isolée et portée) ou E (portée du saut et réinitialisation sur élimination) selon ta partie. Tes assassinats deviennent beaucoup plus dangereux.",
+    "power_spikes": [
+      "Niveau 3 : duels contre les junglers isolés.",
+      "Niveau 6 : invisibilité et première évolution.",
+      "Niveau 11 et 16 : évolutions supplémentaires.",
+      "Premier item complet : assassinats sur les carries."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide et invasions : Kha'Zix veut chasser le jungler adverse quand il est seul. Suis sa position via ses camps et envahis quand tes laners ont la priorité. Contrôle les crabes et les Larves (vers 8 min). Gank les lanes où l'adversaire est isolé (sans son support ou son jungler à côté).",
+    "trading": "En duel : E → Q sur la cible isolée → W → attaques. En escarmouche : attends qu'une cible soit isolée, entre en invisibilité avec R, puis E → Q. Abandonne si la cible a des alliés autour (pas de bonus d'isolement).",
+    "threats": [
+      "Cibles groupées (pas de bonus d'isolement).",
+      "Junglers qui te contrôlent (Rammus, Sejuani, Wukong).",
+      "Révélateurs pendant ton invisibilité."
+    ],
+    "mistakes": [
+      "Utiliser Q sur une cible entourée d'alliés.",
+      "Dive dans un groupe sans invisibilité.",
+      "Choisir une évolution sans penser à ta partie."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Duel-le quand il est seul dans sa jungle.",
+      "Graves": "Il te bat en duel early : attends ton E pour l'engager.",
+      "Viego": "Isole-le et punis-le.",
+      "Wukong": "Son clone te trompe et son knock-up te coupe : attaque le vrai.",
+      "Naafiri": "Ses chiens t'empêchent de bénéficier du bonus d'isolement."
+    },
+    "mid_game": "Picks sur les cibles isolées, invasions et objectifs.",
+    "late_game": "Flanke invisible et tue la cible isolée ou le carry qui s'est avancé.",
+    "ahead": "Étouffe le jungler adverse et chasse les carries isolés.",
+    "behind": "Farm et cherche des picks sur des cibles isolées.",
+    "win_condition": "Pour gagner cette partie, tu veux isoler et tuer les cibles seules, puis assassiner les carries en teamfight.",
+    "final_tip": "Avant de lancer Q, vérifie que la cible est seule : c'est ce qui double tes dégâts."
+  }
+}

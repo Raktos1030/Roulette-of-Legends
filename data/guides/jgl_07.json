@@ -1,0 +1,43 @@
+{
+  "Elise|jgl": {
+    "identity": "Mage-assassin à dégâts magiques à deux formes, spécialiste des ganks précoces. En forme humaine : Neurotoxine (Q) inflige des dégâts selon les PV actuels, Araignée explosive (W) fonce et explose, Cocon (E) stun à distance. En forme araignée : Morsure venimeuse (Q) inflige des dégâts selon les PV manquants, Frénésie symbiotique (W) accélère ses attaques et celles de ses araignées, Suspension (E) la rend inciblable puis la fait redescendre sur une cible. Forme arachnéenne (R) change de forme à tout moment.",
+    "playstyle": "Jungler d'early game agressif : ganks dès le niveau 3, dives sous tour avec Suspension (qui fait perdre l'aggro de la tour), et pression constante. Elle perd de l'impact si la partie s'éternise : il faut créer l'avance tôt.",
+    "early_game": "Clear rapide en alternant les formes pour profiter de tous les sorts. Gank au niveau 3 avec Cocon (E humain) : s'il touche, enchaîne Q + W humains, passe en araignée, Q araignée et attaques. Suspension te permet de dive sous tour puis d'esquiver les tirs.",
+    "level_1": "Araignée explosive (W) en premier dans le chemin le plus joué. Elle aide sur le premier camp ; tu débloques les deux formes grâce à l'ultime disponible dès le niveau 1.",
+    "level_2": "Neurotoxine (Q humain) / Morsure venimeuse (Q araignée). Q humain → forme araignée → Q araignée : gros burst sur les camps et les champions.",
+    "level_3": "Cocon (E humain) / Suspension (E araignée). Premier gank : Cocon → Q humain → W humain → forme araignée → Q araignée → attaques. Suspension permet d'esquiver un sort ou de dive sous tour.",
+    "level_6": "Tes deux formes montent en puissance avec les rangs de l'ultime, mais ton pic reste surtout le niveau 3 et les premières dives. Au niveau 6, tes laners ont souvent leur ultime : c'est le moment des dives à 2 ou 3.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec Cocon, un des meilleurs du jeu.",
+      "Premiers niveaux : dives sous tour avec Suspension.",
+      "Premier item complet : burst suffisant pour tuer les carries.",
+      "Mid game : picks sur les cibles isolées."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide jusqu'au niveau 3, puis gank immédiat sur la lane la plus favorable (adversaire poussé, sans dash, sans vision). Elise joue le tempo : ganks, dives, invasions et contrôle du crabe. Suspension te permet de faire perdre l'aggro d'une tour pendant un dive. Joue les Larves (vers 8 min) et les dragons après avoir créé une avance. Elle scale moins bien : ne passe pas 15 minutes à farmer.",
+    "trading": "En gank : Cocon est bloqué par les sbires, vise une ligne dégagée ; ensuite combo complet des deux formes. En escarmouche : Suspension pour esquiver le sort clé adverse. Abandonne si Cocon est raté contre une cible qui a une fuite.",
+    "threats": [
+      "Junglers tanky qui encaissent ton burst (Zac, Sejuani).",
+      "Contre-ganks pendant tes dives.",
+      "Parties longues où ton impact baisse."
+    ],
+    "mistakes": [
+      "Rater Cocon en le lançant à travers les sbires.",
+      "Rester dans une seule forme et perdre la moitié de tes dégâts.",
+      "Farmer passivement au lieu de créer des avantages tôt."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Vous êtes tous deux des junglers d'early game : sois plus rapide sur les ganks.",
+      "Viego": "Punis-le en early, avant qu'il ne scale.",
+      "Graves": "Évite ses invasions et gank les lanes où il n'est pas.",
+      "Talon": "Il est aussi mobile et agressif : ne te bats pas contre lui sans avance.",
+      "Zac": "Il encaisse ton burst et contre-gank de loin : garde Suspension pour son saut."
+    },
+    "mid_game": "Picks et dives sous tour avec tes laners. Transforme chaque avance en tour ou objectif.",
+    "late_game": "Picks sur les cibles isolées avec Cocon. En teamfight, attends les CC adverses et burst le carry.",
+    "ahead": "Dive sous tour, prends les objectifs et étouffe le jungler adverse.",
+    "behind": "Cherche des picks avec Cocon et joue avec ton équipe : ton impact baisse si tu attends.",
+    "win_condition": "Pour gagner cette partie, tu veux créer une grosse avance en early grâce aux ganks et aux dives, puis la transformer en objectifs.",
+    "final_tip": "Enchaîne toujours les sorts des deux formes : Q humain, puis forme araignée et Q araignée."
+  }
+}

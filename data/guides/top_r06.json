@@ -1,0 +1,84 @@
+{
+  "Illaoi|top": {
+    "identity": "Juggernaut à dégâts physiques qui se bat avec des tentacules. Son passif fait apparaître régulièrement des tentacules sur les murs proches ; ils frappent quand elle utilise Coup de tentacule (Q), Âpre leçon (W) ou quand elle frappe l'esprit arraché par Épreuve de l'esprit (E). Chaque coup de tentacule sur un champion la soigne. Acte de foi (R) fait apparaître un tentacule par champion touché.",
+    "playstyle": "Contrôle de zone et combats longs. Illaoi domine quand elle se bat près des murs (où naissent ses tentacules), surtout après avoir attrapé l'esprit adverse. Faible contre le kiting et la mobilité, très forte contre les combattants qui acceptent le combat au corps à corps.",
+    "early_game": "Farm près des murs de la lane pour que tes tentacules soient toujours à portée. Trade quand ton E touche : frappe l'esprit pour infliger des dégâts à l'adversaire et te soigner avec les tentacules. Si l'esprit n'est pas tué ou si l'adversaire s'éloigne trop, il devient un réceptacle : les tentacules le frappent automatiquement.",
+    "level_1": "Les ordres varient beaucoup : Q → W → E ou W → E → Q. Au niveau 1, farm et évite les combats longs : tu n'as pas encore ton E.",
+    "level_2": "W ou E selon l'ordre choisi. Âpre leçon (W) saute sur la cible et fait frapper les tentacules proches ; Épreuve de l'esprit (E) arrache l'esprit du premier champion touché (les sbires bloquent le sort, vise dans une ligne dégagée).",
+    "level_3": "Kit complet. Combo : E → frappe l'esprit → W → Q, sur tes tentacules. E est ton sort maximisé en priorité.",
+    "level_6": "Acte de foi : frappe au sol, un tentacule apparaît par champion touché et tes tentacules frappent plus vite. Lance-le quand l'adversaire est à portée : tu gagnes presque tout combat long dans ta zone, surtout contre plusieurs ennemis.",
+    "power_spikes": [
+      "Niveau 3 : E + tentacules, gros trades.",
+      "Niveau 6 : ultime qui gagne les combats longs, même à 1v2.",
+      "Premier item complet : très forte en duel.",
+      "Mid game : domination de zone autour des objectifs."
+    ],
+    "lane_plan": "Joue près des murs : tes tentacules y naissent et c'est ta zone de combat. Farm, prépare des tentacules et trade quand ton E touche. Si l'adversaire te fuit, laisse-le partir : l'esprit non tué devient un réceptacle et tes tentacules continuent de le frapper. Recall quand tes tentacules sont détruits et tes PV bas.",
+    "trading": "Trade de base : E, puis frappe l'esprit (pas le champion) pour faire frapper les tentacules. Trade long : W + Q + R sur tes tentacules. Engage quand ton E a touché ; abandonne si tu l'as raté contre un combattant qui te bat au corps à corps sans tentacules.",
+    "jungle_plan": "",
+    "threats": [
+      "Kiting à distance (Kayle, Varus, Teemo).",
+      "Champions qui détruisent tes tentacules ou t'isolent de ta zone (Mordekaiser avec son ultime).",
+      "Ganks quand ton E est en recharge."
+    ],
+    "mistakes": [
+      "Lancer E à travers les sbires (il est bloqué).",
+      "Combattre loin des murs, sans tentacules.",
+      "Lancer l'ultime sans champion à portée."
+    ],
+    "matchup_notes": {
+      "Nasus": "Punis-le à chaque stack avec E + tentacules.",
+      "Darius": "Frappe son esprit sur tes tentacules et évite son Crampon hors de ta zone.",
+      "Renekton": "Il te colle, ce qui te va : laisse-le entrer dans ta zone, E puis ultime.",
+      "Mordekaiser": "Son ultime t'isole de tes tentacules : garde tes sorts pour la sortie du Royaume des morts.",
+      "Kayle": "Punis-la tôt au corps à corps ; après son niveau 6, elle te kite hors de ta zone."
+    },
+    "mid_game": "Splitpush et domination de zone. Illaoi est forte en side lane et près des objectifs, dont les zones sont entourées de murs.",
+    "late_game": "Frontline de zone : ultime sur plusieurs champions, puis combats sur tes tentacules. Évite les combats en plein milieu de la rivière, loin des murs.",
+    "ahead": "Force des duels en side lane, dive avec ton jungler et contrôle les zones d'objectif.",
+    "behind": "Farm, défends ta tour avec tes tentacules et joue pour les teamfights autour des objectifs.",
+    "win_condition": "Pour gagner cette partie, tu veux obliger l'adversaire à se battre dans ta zone de tentacules, en lane comme en teamfight.",
+    "final_tip": "Avant chaque combat, regarde où sont tes tentacules : Illaoi sans tentacules n'est qu'une combattante moyenne."
+  },
+  "Irelia|top": {
+    "identity": "Combattante à dégâts physiques très mobile. Rush fatal (Q) dash sur une cible et se réinitialise si elle meurt ou si elle est marquée, Duo parfait (E) pose deux lames qui stun et marquent les ennemis entre elles, Danse de défi (W) réduit les dégâts reçus avant de frapper, et Pointe de l'avant-garde (R) marque plusieurs cibles et crée un mur de lames. Son passif (Ferveur ionienne) accumule des stacks qui augmentent sa vitesse d'attaque et, au maximum, ses dégâts.",
+    "playstyle": "Trades agressifs et all-in à stacks pleins. Irelia est très forte en lane quand elle garde ses stacks, surtout contre les champions sans CC. Très mécanique et dépendante de la vague de sbires pour ses dashes.",
+    "early_game": "Monte tes stacks de passif en dashant sur les sbires avec Q (last hit), puis engage sur l'adversaire. Utilise E pour stun et marquer : le Q suivant sur une cible marquée est réinitialisé. Joue autour de la taille de la wave : plus elle est grande, plus tu es mobile.",
+    "level_1": "Rush fatal (Q) en premier. Utilise-le pour last hit et monter tes stacks sans prendre de coups.",
+    "level_2": "Duo parfait (E). Étourdit et marque : E → Q sur la cible marquée → attaques est ton trade de base, un des plus forts niveaux 2 du top.",
+    "level_3": "Danse de défi (W). Réduction de dégâts puis frappe : garde-la pour encaisser le burst adverse ou une tour lors d'un dive.",
+    "level_6": "Pointe de l'avant-garde marque toutes les cibles touchées et crée un mur qui slow. Avec l'ultime, tu peux enchaîner les Q réinitialisés sur plusieurs champions : menace d'all-in très forte.",
+    "power_spikes": [
+      "Niveau 2 : E + Q, gros all-in.",
+      "Niveau 6 : ultime, all-in dominant.",
+      "Premier item complet : très forte en duel.",
+      "Deux items : dangereuse en teamfight désorganisé."
+    ],
+    "lane_plan": "Joue une wave neutre, monte tes stacks sur les sbires et engage quand tu les as. Garde de la marge en PV avant d'entrer : Q soigne un peu mais tu n'as pas de vrai sustain. Recall quand ta wave crash. Évite de te battre sans sbires pour dasher.",
+    "trading": "Trade court : Q sur un sbire (stacks) → E → Q sur la cible marquée → attaques → Q sur un sbire pour sortir. Trade long : W pour encaisser, puis ultime. Engage quand l'adversaire a utilisé son CC ; abandonne si tu n'as plus de stacks ou de sbires pour sortir.",
+    "jungle_plan": "",
+    "threats": [
+      "CC durs qui coupent tes enchaînements (Warwick, Poppy).",
+      "Tanks à armure qui résistent à ton burst (Malphite).",
+      "Duellistes qui gagnent au contact long (Jax, Sett)."
+    ],
+    "mistakes": [
+      "Dasher sur l'adversaire sans stacks ni marque.",
+      "Utiliser W trop tôt, avant le burst adverse.",
+      "Rester en combat long contre un champion qui te bat en durée."
+    ],
+    "matchup_notes": {
+      "Jayce": "Colle-le en forme canon, il ne peut pas te repousser facilement si tu restes près des sbires.",
+      "Yone": "Monte tes stacks avant d'engager et garde W pour son Q3.",
+      "Jax": "N'engage pas pendant sa Contre-attaque ; attends la fin de l'esquive pour lancer E.",
+      "Malphite": "Son armure te gêne et son ultime t'arrête ; farm et évite les combats longs.",
+      "Aatrox": "Esquive ses sweet spots avec Q et punis ses temps de recharge."
+    },
+    "mid_game": "Splitpush ou escarmouches en rivière. Irelia est forte dans les combats désorganisés où elle peut enchaîner les Q réinitialisés.",
+    "late_game": "Entre après les CC adverses, marque plusieurs cibles avec l'ultime et enchaîne les Q. Évite d'engager la première dans une équipe qui a des CC.",
+    "ahead": "Force des duels, dive avec ton jungler et fais-toi respecter en side lane.",
+    "behind": "Farm, joue en teamfight après les CC adverses et évite les duels contre les champions plus avancés.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer ta lane avec tes stacks, puis nettoyer les combats désorganisés en enchaînant les Q.",
+    "final_tip": "Avant d'engager, regarde tes stacks de passif : pleins, tu gagnes le trade ; sans eux, tu le perds."
+  }
+}

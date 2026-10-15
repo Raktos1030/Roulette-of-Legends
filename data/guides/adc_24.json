@@ -1,0 +1,43 @@
+{
+  "Tristana|adc": {
+    "identity": "Tireuse à dégâts physiques et très mobile. Tir de précision (passif) augmente sa portée d'attaque à chaque niveau. Tir rapide (Q) augmente temporairement sa vitesse d'attaque, Saut roquette (W) la propulse loin, blesse et slow à l'atterrissage, Charge explosive (E) fait exploser les unités qu'elle tue et, activée, pose une bombe qui explose après un court moment (elle se renforce avec tes attaques), et Tir à impact (R) inflige des dégâts magiques et repousse la cible (le rayon de la Charge explosive sur la cible est doublé).",
+    "playstyle": "ADC agressive de début de partie qui scale aussi très bien grâce à sa portée croissante. Aucun matchup n'est nettement défavorable. Elle est en moyenne devant en or à 15 min contre tous les ADC fréquents, et elle détruit les tours très vite avec E.",
+    "early_game": "Harcèle avec Charge explosive (E) posée sur l'adversaire, puis attaque pour la renforcer. Pose E sur la tour quand la wave arrive : elle tombe vite. Avec ton support, un all-in au niveau 2 ou 3 est souvent gagnant.",
+    "level_1": "Charge explosive (E) en premier. Ensuite, monte E en priorité, puis Q.",
+    "level_2": "Saut roquette (W). Engage sur l'adversaire, ou fuite. Son délai se réinitialise sur un kill ou une assistance, et quand une Charge explosive entièrement chargée explose sur un champion.",
+    "level_3": "Tir rapide (Q). Vitesse d'attaque pour charger E et gagner les trades.",
+    "level_6": "Tir à impact : repousse un diver loin de toi, ou renvoie l'adversaire vers ta tour ou ton support. Sur une cible portant E, l'explosion est doublée.",
+    "power_spikes": [
+      "Niveau 2 à 3 : all-in avec E et W.",
+      "Niveau 6 : Tir à impact pour achever ou te protéger.",
+      "Premier item complet : les tours tombent en quelques secondes.",
+      "Late game : portée maximale, très gros dégâts soutenus."
+    ],
+    "lane_plan": "Joue agressif avec ton support, pousse ton avance et prends les plaques avec E sur la tour. Ton saut te permet de rejoindre ou de fuir vite. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) se complète vite avec la pression que tu mets.",
+    "trading": "Trade de base : E sur l'adversaire, attaques jusqu'à l'explosion, puis recule. All-in : E, Q, W sur la cible, attaques, R pour achever ou repousser. Garde W pour fuir si tu n'es pas sûre du kill.",
+    "jungle_plan": "",
+    "threats": [
+      "Hwei, Xayah et Yasuo : tes moins bons matchups, proches de l'équilibre.",
+      "CC de foule quand tu sautes au milieu de l'équipe adverse.",
+      "Divers quand ton saut est en recharge."
+    ],
+    "mistakes": [
+      "Sauter pour attaquer sans garder de fuite.",
+      "Oublier de poser E sur les tours.",
+      "Lancer R sur un ennemi et le repousser vers son équipe au lieu de la tienne."
+    ],
+    "matchup_notes": {
+      "Jinx": "Elle scale : transforme ton avance en tours.",
+      "Kai'Sa": "Repousse-la avec R quand elle dive avec son ultime.",
+      "Jhin": "Saute sur lui pendant son rechargement.",
+      "Ezreal": "Engage quand il a utilisé E.",
+      "Xayah": "Ne saute pas au milieu de ses plumes : son rappel te root."
+    },
+    "mid_game": "Prends les tours avec E et les dragons avec ton équipe. Rejoins les combats avec W si la cible est à portée.",
+    "late_game": "Frappe depuis ta portée maximale derrière ta frontline. Garde W pour fuir ou pour achever, R pour repousser un diver.",
+    "ahead": "Force les combats et les tours : tu as l'avance et la portée.",
+    "behind": "Farm et attends ta portée de fin de partie : tu restes une très bonne ADC de teamfight.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner la lane, prendre les tours très vite avec E, puis dominer les teamfights avec ta portée.",
+    "final_tip": "Un kill ou une assistance remet ton saut à zéro : saute pour achever, puis ressaute sur la cible suivante ou pour fuir."
+  }
+}

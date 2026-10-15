@@ -1,0 +1,43 @@
+{
+ "Zoe|sup": {
+  "identity": "Very long-range burst mage. More Sparkles! (passive): after every ability, her next attack deals extra magic damage. Paddle Star! (Q) fires a projectile she can redirect; its damage grows with the distance traveled. Spell Thief (W) picks up the leftovers of summoner spells and active items the enemy used so she can cast them. Sleepy Trouble Bubble (E) puts the target to sleep (damage that wakes it is doubled), and Portal Jump (R) briefly teleports her before bringing her back.",
+  "playstyle": "Pick support: she puts a target to sleep with E, then hits it with an extended Q for a huge burst. She clearly struggles against engage tank supports (Nautilus, Braum, Rell, Rakan): her bubble isn't enough to stop them.",
+  "early_game": "Poke with an extended Q (throw it backward, then redirect it at your opponent). Keep Sleepy Trouble Bubble (E) to punish or defend yourself: it passes through walls. Pick up the summoner spells your opponent uses (W): a stolen Flash or Ignite changes a fight.",
+  "level_1": "Sleepy Trouble Bubble (E) first. After that, max Q first.",
+  "level_2": "Paddle Star! (Q). Combo: E (sleep) → extended Q on the sleeping target: double damage.",
+  "level_3": "Spell Thief (W). Pick up the summoner spells and active items your opponent used.",
+  "level_6": "Portal Jump: a short teleport, then a return. Combo: E → R forward → Q (which starts from farther away) → return.",
+  "power_spikes": [
+   "Level 2: E + Q on a sleeping target.",
+   "Level 6: R → Q combo.",
+   "First completed item: long-range burst.",
+   "Mid game: picks with the bubble."
+  ],
+  "lane_plan": "Poke with Q, keep E for picks and defense. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "Short trade: extended Q. All-in: E → R → Q → attacks. Defense: E on the engaging support. Against engage tanks (Nautilus, Braum), stay behind minions: your bubble isn't always enough to stop them.",
+  "jungle_plan": "",
+  "threats": [
+   "Nautilus and Braum: hard matchups.",
+   "Janna: a hard matchup.",
+   "Rell, Rakan and Taric: hard matchups."
+  ],
+  "mistakes": [
+   "Throwing Q straight without extending it (little damage).",
+   "Hitting the sleeping target with a small ability instead of Q.",
+   "Wasting the bubble and no longer being able to defend against an engage."
+  ],
+  "matchup_notes": {
+   "Thresh": "Put him to sleep before he throws his hook.",
+   "Lulu": "Poke trades: your extended Q reaches farther.",
+   "Nautilus": "His anchor doesn't get through minions: stay behind them and keep E.",
+   "Braum": "His shield blocks your Q: aim from another angle.",
+   "Janna": "Her shield absorbs your burst: look for picks on her ADC."
+  },
+  "mid_game": "Look for picks on isolated targets with the bubble and poke before objectives. Place Control Wards.",
+  "late_game": "Long-range picks: put the enemy carry to sleep and hit them with an extended Q. Stay behind your frontline.",
+  "ahead": "Roam, create picks and take objectives.",
+  "behind": "Poke safely and keep the bubble to protect your ADC.",
+  "win_condition": "To win this game, you want to put enemy carries to sleep and wear them down from long range.",
+  "final_tip": "Always extend your Q (backward, then toward the target): its damage grows with distance."
+ }
+}

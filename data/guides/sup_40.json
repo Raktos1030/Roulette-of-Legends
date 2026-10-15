@@ -1,0 +1,43 @@
+{
+  "Zilean|sup": {
+    "identity": "Mage utilitaire. Temps dans une bouteille (passif) : il stocke de l'expérience qu'il peut offrir à un allié (clic droit) quand elle suffit à lui faire gagner un niveau. Bombe à retardement (Q) colle une bombe sur une unité proche, qui explose après 3 secondes ; si une seconde bombe la fait exploser plus tôt, les ennemis sont stun. Retour rapide (W) réduit le délai de ses autres sorts, Distorsion temporelle (E) slow un ennemi ou accélère un allié, et Retour temporel (R) place une marque sur un allié qui le ressuscite s'il subit des dégâts mortels.",
+    "playstyle": "Support de contrôle et de sauvetage : double bombe pour stun, slow ou vitesse avec E, et résurrection de son carry avec l'ultime. Aucun matchup nettement défavorable, et il écrase les supports de dive et les mages lents (Swain, Camille, Xerath, Brand).",
+    "early_game": "Poke avec Bombe à retardement (Q) : elle se colle au premier champion qui s'approche. Cherche le combo Q → W → Q pour stun (la seconde bombe fait exploser la première). E sur l'adversaire pour le slow, ou sur ton ADC pour qu'il fuie ou rattrape.",
+    "level_1": "Bombe à retardement (Q) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Retour rapide (W). Combo double bombe : Q → W → Q.",
+    "level_3": "Distorsion temporelle (E). Slow l'adversaire avant la bombe pour qu'il ne puisse pas s'en éloigner.",
+    "level_6": "Retour temporel : marque sur l'allié qui va mourir ; il revient à la vie quelques secondes plus tard. Lance-la sur ton carry juste avant qu'il subisse les dégâts mortels.",
+    "power_spikes": [
+      "Niveau 2 : Q → W → Q, stun.",
+      "Niveau 6 : résurrection.",
+      "Premier item complet : délais réduits, bombes fréquentes.",
+      "Teamfight : Retour temporel sur le carry ciblé."
+    ],
+    "lane_plan": "Poke avec Q, cherche la double bombe et garde E pour protéger ou poursuivre. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées). Offre ton expérience stockée à un allié quand elle lui fait gagner un niveau important.",
+    "trading": "Trade de base : Q sur l'adversaire. All-in : E (slow) → Q → W → Q. Défense : bombe sur le diver, E sur ton ADC pour fuir, R s'il va mourir. Contre les enchanteurs (Janna, Sona, Soraka), le poke est équilibré : joue les stuns.",
+    "jungle_plan": "",
+    "threats": [
+      "Janna, Sona et Soraka : tes moins bons matchups, proches de l'équilibre.",
+      "Engages qui t'attrapent : tu es fragile.",
+      "Burst instantané qui tue ton allié avant que ta marque soit posée."
+    ],
+    "mistakes": [
+      "Lancer la marque trop tôt : l'adversaire change de cible.",
+      "Lancer une seule bombe sans pouvoir enchaîner la seconde.",
+      "Oublier d'offrir l'expérience stockée à un allié."
+    ],
+    "matchup_notes": {
+      "Thresh": "Colle-lui une bombe quand il avance pour son grappin.",
+      "Lulu": "Trades de poke : cherche la double bombe.",
+      "Nautilus": "Bombe et E sur lui quand il engage.",
+      "Séraphine": "Reste hors de portée de son charme et poke avec Q.",
+      "Swain": "Il doit s'approcher : slow-le et stun-le."
+    },
+    "mid_game": "Accompagne ton équipe, pose des pinks et garde la marque pour le combat autour de l'objectif.",
+    "late_game": "Reste derrière ton carry : double bombe sur le diver, E pour slow ou accélérer, et Retour temporel sur l'allié ciblé au dernier moment.",
+    "ahead": "Force les combats : ta marque rend ton carry presque impossible à tuer.",
+    "behind": "Protège ton carry : une résurrection au bon moment retourne un combat.",
+    "win_condition": "Pour gagner cette partie, tu veux contrôler les combats avec tes bombes et ressusciter ton carry au moment décisif.",
+    "final_tip": "Pose Retour temporel juste avant la mort de ton allié : trop tôt, l'adversaire change de cible ; trop tard, il est déjà mort."
+  }
+}

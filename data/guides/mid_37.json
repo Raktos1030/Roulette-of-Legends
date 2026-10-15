@@ -1,0 +1,43 @@
+{
+  "Velkoz|mid": {
+    "identity": "Mage d'artillerie à dégâts magiques et vrais, joué au mid environ une fois sur cinq (le support est son rôle principal). Fission du plasma (Q) se divise à angle droit pour toucher derrière les sbires, Ouverture de faille (W) frappe en ligne deux fois, Dislocation tectonique (E) knock-up après un délai, et Désintégrateur de formes de vie (R) canalise un rayon qui inflige des dégâts vrais aux cibles déjà « analysées ». Trois touches de sorts sur une cible déclenchent des dégâts vrais (passif).",
+    "playstyle": "Au mid, Vel'Koz est un mage de poke et de burst à longue portée, plus orienté dégâts qu'en support. Il nettoie les waves avec W et poke avec Q.",
+    "early_game": "Farm avec W (qui touche toute la ligne de sbires) et poke avec Q divisé. Garde E pour te défendre d'un engage : le knock-up arrive après un court délai, anticipe.",
+    "level_1": "Fission du plasma (Q) en premier. Poke en divisant le Q derrière les sbires.",
+    "level_2": "Ouverture de faille (W). Nettoie la wave et poke en ligne.",
+    "level_3": "Dislocation tectonique (E). Combo : E (knock-up) → W → Q → passif en dégâts vrais.",
+    "level_6": "Désintégrateur : rayon canalisé qui suit ta souris. Lance-le après E sur une cible root ou sur une équipe groupée. Tu peux l'interrompre si nécessaire.",
+    "power_spikes": [
+      "Niveau 3 : combo E → W → Q.",
+      "Niveau 6 : rayon en dégâts vrais.",
+      "Premier item complet : poke et burst à longue portée.",
+      "Teamfight : rayon sur plusieurs cibles."
+    ],
+    "lane_plan": "Nettoie la wave avec W, poke avec Q divisé et garde E en défense. Pousse puis rejoins les objectifs. La quête de rôle mid (retour accéléré) t'aide à reset après avoir poussé.",
+    "trading": "Trade court : Q divisé. All-in : E → W → Q → R. Abandonne contre les assassins qui te divent (LeBlanc) ou te roam autour (Twisted Fate).",
+    "jungle_plan": "",
+    "threats": [
+      "LeBlanc : ton matchup le plus difficile.",
+      "Assassins qui interrompent ton rayon.",
+      "Twisted Fate, qui roam pendant que tu poke."
+    ],
+    "mistakes": [
+      "Canaliser le rayon à portée d'un assassin.",
+      "Lancer E sans anticiper le délai.",
+      "Se placer trop près en teamfight."
+    ],
+    "matchup_notes": {
+      "Viktor": "Poke-le avec Q divisé et W.",
+      "Ahri": "Garde E pour la fin de son ultime.",
+      "Syndra": "Duel de portée : esquive son stun.",
+      "LeBlanc": "Elle te burst avant que tu ne réagisses : farm sous ta tour.",
+      "Twisted Fate": "Il roam : préviens ton équipe."
+    },
+    "mid_game": "Poke avant les objectifs et rayon sur les équipes groupées.",
+    "late_game": "Artillerie : poke, E sur l'engage adverse et rayon sur le groupe. Reste derrière ta frontline.",
+    "ahead": "Poke avant les objectifs et prends les tours.",
+    "behind": "Farm à distance et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux poke l'équipe adverse avant les combats et la finir avec le rayon.",
+    "final_tip": "Divise ton Q derrière les sbires : c'est ta façon de poke sans être bloqué."
+  }
+}

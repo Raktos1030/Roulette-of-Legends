@@ -1,0 +1,43 @@
+{
+ "Xayah|adc": {
+  "identity": "Physical damage marksman. Clean Cuts (passive): after each ability, her next attacks pass through every target and leave a feather on the ground. Double Daggers (Q) throws two daggers that leave feathers, Deadly Plumage (W) increases her attack speed and damage (and her speed when attacking a champion), Bladecaller (E) calls all her feathers back to her, damaging and rooting enemies hit by several feathers, and Featherstorm (R) makes her leap into the air, untargetable, before throwing daggers that leave feathers.",
+  "playstyle": "Self-sufficient ADC: she protects herself with her CC (E) and her ultimate that dodges everything. She crushes ADCs who have to come close (Vayne, Nilah, Samira).",
+  "early_game": "Poke with Q, then attack to drop feathers behind your opponent. When several feathers are between you and them, recall them with E to root them. Keep E to defend against an engage if you have feathers on the ground.",
+  "level_1": "Double Daggers (Q) first. After that, max E first, then W.",
+  "level_2": "Bladecaller (E). Recall the feathers through your opponent: several feathers passing through them = CC.",
+  "level_3": "Deadly Plumage (W). Attack speed and damage for trades, and more feathers placed quickly.",
+  "level_6": "Featherstorm: you become untargetable for a moment, then drop a line of feathers. Dodge an engage ability or an enemy ultimate, then recall every feather with E.",
+  "power_spikes": [
+   "Level 2: Q then E to root.",
+   "Level 6: an ultimate that dodges and drops feathers.",
+   "First completed item: big damage with your recalls.",
+   "Teamfights: R then E to root several enemies."
+  ],
+  "lane_plan": "Poke with Q, drop feathers and play for kills with your support thanks to E. Always keep feathers on the ground and E available to defend yourself. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards steady farming.",
+  "trading": "Basic trade: Q, attacks that drop feathers, E through your opponent. All-in: W, Q, attacks, E to root, R to dodge their counterattack. Avoid trades against bot lane mages who poke and charm you from afar (Seraphine).",
+  "jungle_plan": "",
+  "threats": [
+   "Seraphine bot: your hardest matchup.",
+   "Jinx and Yunara, below Xayah's average on both sources.",
+   "Crowd control when your ultimate is on cooldown."
+  ],
+  "mistakes": [
+   "Using E with no feathers on the ground or no target behind them.",
+   "Casting your ultimate to attack instead of dodging a key ability.",
+   "Forgetting to cast an ability before attacking (no feathers)."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "Dodge her ultimate with R and root her with E when she lands.",
+   "Jinx": "She scales: punish her early with E and your support.",
+   "Jhin": "Dodge his ultimate or his Deadly Flourish with R.",
+   "Vayne": "She comes close: your feathers root her.",
+   "Seraphine": "Save R to dodge her ultimate."
+  },
+  "mid_game": "Group with your team and take objectives. Drop feathers in chokepoints before fights.",
+  "late_game": "Stay behind your frontline, drop feathers as you attack, and use E to root divers. Save R to dodge the enemy engage, then recall every feather.",
+  "ahead": "Force fights: you're hard to catch and you root from range.",
+  "behind": "Farm, stay with your team and play defensively with E and R.",
+  "win_condition": "To win this game, you want to survive engages thanks to E and R and win teamfights with your feather recalls.",
+  "final_tip": "Position so the enemy is between you and your feathers: the recall roots them as it passes through."
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "Xayah|adc": {
+    "identity": "Tireuse à dégâts physiques. Plumes perçantes (passif) : après chaque compétence, ses prochaines attaques traversent toutes les cibles et laissent une plume au sol. Dagues jumelles (Q) lance deux dagues qui laissent des plumes, Plumage mortel (W) augmente sa vitesse d'attaque et ses dégâts (et sa vitesse quand elle attaque un champion), Appel des lames (E) rappelle toutes ses plumes vers elle en blessant et en qui root les ennemis traversés par plusieurs plumes, et Rafale de plumes (R) la fait bondir en l'air, impossible à cibler, avant de lancer des dagues qui laissent des plumes.",
+    "playstyle": "ADC autonome : elle se protège seule avec son CC (E) et son ultime qui esquive tout. Elle écrase les ADC qui doivent venir au contact (Vayne, Nilah, Samira).",
+    "early_game": "Poke avec Q, puis attaque pour poser des plumes derrière l'adversaire. Quand il y a plusieurs plumes entre toi et lui, rappelle-les avec E pour le root. Garde E pour te défendre contre un engage si tu as des plumes au sol.",
+    "level_1": "Dagues jumelles (Q) en premier. Ensuite, monte E en priorité, puis W.",
+    "level_2": "Appel des lames (E). Rappelle les plumes à travers l'adversaire : plusieurs plumes le traversent = CC.",
+    "level_3": "Plumage mortel (W). Vitesse d'attaque et dégâts pour les trades, et plus de plumes posées rapidement.",
+    "level_6": "Rafale de plumes : tu deviens impossible à cibler un court instant, puis tu poses une ligne de plumes. Esquive un sort d'engage ou un ultime adverse, puis rappelle toutes les plumes avec E.",
+    "power_spikes": [
+      "Niveau 2 : Q puis E pour root.",
+      "Niveau 6 : ultime qui esquive et pose des plumes.",
+      "Premier item complet : gros dégâts avec les rappels.",
+      "Teamfight : R puis E pour root plusieurs ennemis."
+    ],
+    "lane_plan": "Poke avec Q, pose des plumes et joue les kills avec ton support grâce à E. Garde toujours des plumes au sol et E disponible pour te défendre. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense un farm régulier.",
+    "trading": "Trade de base : Q, attaques qui posent des plumes, E à travers l'adversaire. All-in : W, Q, attaques, E pour root, R pour esquiver sa riposte. Évite les trades contre les mages bot qui te poke et te charment de loin (Séraphine).",
+    "jungle_plan": "",
+    "threats": [
+      "Séraphine bot : ton matchup le plus difficile.",
+      "Jinx et Yunara, en dessous de ta moyenne sur les deux sources.",
+      "CC de foule quand ton ultime est en recharge."
+    ],
+    "mistakes": [
+      "Utiliser E sans plumes au sol ou sans cible derrière les plumes.",
+      "Lancer l'ultime pour attaquer au lieu d'esquiver un sort clé.",
+      "Oublier de lancer un sort avant d'attaquer (pas de plumes)."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Esquive son ultime avec R et root-la avec E à l'arrivée.",
+      "Jinx": "Elle scale : punis-la tôt avec E et ton support.",
+      "Jhin": "Esquive son ultime ou sa Floraison mortelle avec R.",
+      "Vayne": "Elle vient au contact : tes plumes le root.",
+      "Séraphine": "Garde R pour esquiver son ultime."
+    },
+    "mid_game": "Groupe avec ton équipe et prends les objectifs. Pose des plumes dans les couloirs avant les combats.",
+    "late_game": "Reste derrière ta frontline, pose des plumes en attaquant, et utilise E pour root les divers. Garde R pour esquiver l'engage adverse, puis rappelle toutes les plumes.",
+    "ahead": "Force les combats : tu es difficile à attraper et tu root à distance.",
+    "behind": "Farm, reste avec ton équipe et joue défensivement avec E et R.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre aux engages grâce à E et R et gagner les teamfights avec tes rappels de plumes.",
+    "final_tip": "Place-toi pour que l'ennemi soit entre toi et tes plumes : le rappel le root en le traversant."
+  }
+}

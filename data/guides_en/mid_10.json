@@ -1,0 +1,43 @@
+{
+ "Corki|mid": {
+  "identity": "Mixed damage marksman (mostly magic). Phosphorus Bomb (Q) pokes in an area and reveals, Valkyrie (W) dashes him forward leaving a trail of fire, Gatling Gun (E) sprays in a cone while shredding resistances, and Missile Barrage (R) fires long-range missiles (a bigger one every third). He can regularly pick up The Package at base, which turns Valkyrie into a longer charge that knocks back.",
+  "playstyle": "Long-range poke and scaling. Corki is rarely played mid: if the roulette gives him to you in this role, play very carefully.",
+  "early_game": "Farm from range with Q and E, poke with Q when your opponent comes to last hit. Keep W to escape. Avoid any melee fight against assassins.",
+  "level_1": "Gatling Gun (E) first on the most common path. Farm and poke up close carefully.",
+  "level_2": "Phosphorus Bomb (Q) or Valkyrie (W) depending on your order. Q pokes in an area; W is your escape.",
+  "level_3": "Full basic kit: Q to poke, E for short trades, W to escape.",
+  "level_6": "Missile Barrage: long-range poke with charges. Harass your opponent with every charge, without exposing yourself.",
+  "power_spikes": [
+   "Level 6: poke with R.",
+   "Package available: engage or escape with the upgraded Valkyrie.",
+   "First completed item: much stronger poke.",
+   "Late game: constant poke in teamfights."
+  ],
+  "lane_plan": "Farm from range and poke with Q and R. Keep the wave in the middle or near you. Don't push without vision. Use The Package for a well-prepared engage with your jungler or to join a fight.",
+  "trading": "Basic trade: Q + R from range. Short trade: E up close, then back off. Only engage with The Package and your team; give up on it against assassins and burst mages.",
+  "jungle_plan": "",
+  "threats": [
+   "Almost every mid mage according to the data (Hwei, Viktor, Xerath, Syndra, Locke, Katarina).",
+   "Assassins who dive you.",
+   "A small data sample: the trends are less reliable."
+  ],
+  "mistakes": [
+   "Using W to engage and having no escape left.",
+   "Dueling instead of poking.",
+   "Forgetting to pick up The Package when it's available."
+  ],
+  "matchup_notes": {
+   "Viktor": "He pokes you and controls the area: farm from range.",
+   "Ahri": "Dodge her Charm and poke with R.",
+   "Syndra": "She outpokes you: stay behind your minions.",
+   "Hwei": "Play for farm only.",
+   "Galio": "Poke him before his level 6, then stay away from his ultimate."
+  },
+  "mid_game": "Poke before objectives and play with your team. Avoid isolated side lanes.",
+  "late_game": "Constant long-range poke with R, and stay behind your frontline. The Package can be used to engage or reposition.",
+  "ahead": "Poke before objectives and take towers.",
+  "behind": "Farm from range and play with your team: don't force anything.",
+  "win_condition": "To win this game, you want to survive the lane and poke the enemy team before teamfights.",
+  "final_tip": "Play mid Corki as a long-range poker: never look for a melee duel."
+ }
+}

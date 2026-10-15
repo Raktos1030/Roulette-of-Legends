@@ -1,0 +1,43 @@
+{
+ "Amumu|jgl": {
+  "identity": "Magic damage tank, an area engage specialist. Bandage Toss (Q, two charges) pulls him to his target and stuns it, Despair (W) burns everything around him for a percentage of their health, Tantrum (E) reduces the physical damage he takes and hits in an area, and Curse of the Sad Mummy (R) stuns every enemy around him. His passive curses targets: they take bonus true damage from magic sources.",
+  "playstyle": "Full-clear jungler who ganks after level 3 and above all shines in teamfights: one well-placed ultimate wins a fight on its own. Weak in early duels against aggressive junglers, strong as soon as fights involve several players.",
+  "early_game": "Full clear safely, then gank wherever a lane has a favorable wave and an opponent with no dash. Don't look for duels against aggressive junglers (Lee Sin, Graves): you beat them in teamfights, not 1v1 at level 3.",
+  "level_1": "Despair (W) first. A percent-health damage aura: ideal for the first camp.",
+  "level_2": "Tantrum (E). Area damage and physical damage reduction; its cooldown drops when you take hits. Max E first.",
+  "level_3": "Bandage Toss (Q). Two charges: first gank possible. Q on the target → E → W, then the second Q charge if they run.",
+  "level_6": "Curse of the Sad Mummy: an area stun around you. Ganks become almost guaranteed (Q → R), and every objective fight becomes dangerous for the enemy. Aim for at least two champions in teamfights.",
+  "power_spikes": [
+   "Level 3: first gank with Q.",
+   "Level 6: area ultimate, ganks and objective fights.",
+   "First completed item: much more comfortable clearing and tanking.",
+   "Mid game: grouped teamfights around dragons and Baron."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Full clear starting on the side opposite your most gankable lane, using W and E on camps. You finish the first clear around level 4: gank the lane with the best wave or take Scuttle. Amumu hates being invaded: keep vision on your jungle entrances and take the Void Grubs (one spawn only, around 8 minutes) when your bot or top lane has priority. Track the enemy jungler from their first camps and counter-gank if your lane gets attacked. Your best moment: objective fights after level 6, where your ultimate changes everything. Your role quest (jungle speed, gold and XP from big monsters) rewards clean clears.",
+  "trading": "When ganking, come in from the side (river bush) so your Q doesn't get blocked by minions. In skirmishes, wait for your opponent to use their dash before throwing Q. In teamfights, Q on the target closest to the group, then R in the middle of several enemies. Give up on it if your Q gets blocked and your opponent has an escape.",
+  "threats": [
+   "Aggressive junglers who invade you early (Lee Sin, Graves).",
+   "Qs blocked by minions or Wind Wall.",
+   "Teams with high magic damage (your E only reduces physical damage)."
+  ],
+  "mistakes": [
+   "Wasting both Q charges at once.",
+   "Casting your ultimate on a single champion when a big fight is coming.",
+   "Leaving W on out of combat and draining your mana."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He'll invade you early: don't duel, keep vision and play for objective fights after 6.",
+   "Viego": "Your ultimate stops him from resetting by possessing an enemy: save R for when he dives.",
+   "Master Yi": "Q + R stop his Alpha Strike; save R for his teamfight entry.",
+   "Sylas": "He can steal your ultimate: don't engage when he's in position to take it back.",
+   "Graves": "He beats you in early duels: avoid him, and stun him with Q when he dashes."
+  },
+  "mid_game": "Group around dragons and Herald, keep your two Qs to catch a target and your ultimate for fights with several enemies. Avoid isolated side lanes.",
+  "late_game": "Your team's main engage: wait for the enemies to group up, Q on the closest target, then R in the middle. You're also a frontline that protects your carries.",
+  "ahead": "Chain objectives and force fights around them: your ultimates become more and more decisive.",
+  "behind": "Farm, stay with your team and play for a decisive ultimate: Amumu stays dangerous in teamfights even without a lead.",
+  "win_condition": "To win this game, you want to reach objective fights with your ultimate and stun several enemies at the right time.",
+  "final_tip": "Keep your second Q: it's what catches the target trying to walk out of your ultimate."
+ }
+}

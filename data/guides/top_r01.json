@@ -1,0 +1,84 @@
+{
+  "Teemo|top": {
+    "identity": "Tireur à dégâts magiques qui empoisonne à chaque attaque (Tir toxique, E), aveugle avec Fléchette aveuglante (Q), accélère avec Vélocité (W) et devient invisible s'il reste immobile quelques instants (passif Guérilla). Piège nocif (R) pose des champignons invisibles qui explosent, slow et empoisonnent. En top, il punit les combattants au corps à corps qui dépendent de leurs auto-attaques.",
+    "playstyle": "Lane de poke et de kiting, puis contrôle de zone et de vision avec les champignons. Teemo gagne en rendant chaque last hit adverse coûteux et en aveuglant les engages. Il est faible contre les tanks qui encaissent son poke et contre ceux qui le rattrapent malgré tout.",
+    "early_game": "Attaque l'adversaire à chaque fois qu'il touche un sbire : le poison continue après ton recul. Garde Q pour annuler son engage (ses attaques ratent pendant l'aveuglement). Le passif de W te donne de la vitesse tant qu'aucun champion ou tour ne te touche : ne reste pas à portée gratuite.",
+    "level_1": "Tir toxique (E) en premier. Chaque attaque empoisonne : poke dès que l'adversaire s'approche d'un sbire, puis recule.",
+    "level_2": "Fléchette aveuglante (Q). Q + attaques est un trade gagnant contre presque tous les combattants au corps à corps : pendant l'aveuglement, ses auto-attaques ratent. Attention, l'aveuglement n'empêche pas les sorts.",
+    "level_3": "Vélocité (W). Passif de vitesse de déplacement (perdu quelques secondes quand un champion te frappe) et actif pour kiter ou fuir. Tu peux désormais tourner autour de l'adversaire en attaquant.",
+    "level_6": "Piège nocif : les charges de champignons s'accumulent avec le temps. En lane, pose-en dans le bush de la lane et à l'entrée de la rivière pour voir les ganks ; plus tard, sur les chemins de fuite et autour des objectifs. Un champignon placé sur le chemin d'un adversaire qui fuit vaut souvent un kill.",
+    "power_spikes": [
+      "Niveau 2 : Q + E, trades à sens unique contre les combattants.",
+      "Niveau 6 : champignons, contrôle de la vision et des ganks.",
+      "Premier item complet : poke très punitif.",
+      "Mid game : zones de champignons autour des objectifs."
+    ],
+    "lane_plan": "Contre les combattants qui veulent un all-in, garde la wave légèrement vers ta tour ; contre ceux qui ne peuvent pas te punir, pousse et prends les plaques. Champignonne le bush de la lane et la rivière pour voir venir le jungler adverse. Recall quand la wave crash : W te ramène vite en lane.",
+    "trading": "Trade court : attaque + poison quand l'adversaire touche un sbire, puis recule. Contre un engage : Q (aveuglement) → recul avec W → attaques en kitant. Engage quand il n'a plus son dash ; abandonne s'il peut te coller malgré l'aveuglement (sorts de dégâts, ultime d'Olaf).",
+    "jungle_plan": "",
+    "threats": [
+      "Olaf avec Ragnarok, qui te rattrape malgré tes slows.",
+      "Ganks sans champignon ni ward dans la rivière.",
+      "Champions à sorts, pour qui l'aveuglement ne change rien."
+    ],
+    "mistakes": [
+      "Se battre au contact au lieu de kiter.",
+      "Utiliser Q pour poke et ne plus l'avoir contre l'engage adverse.",
+      "Poser tous tes champignons au même endroit ou en plein milieu de la lane."
+    ],
+    "matchup_notes": {
+      "Malphite": "Son Q te slow et son armure réduit ton poke. Garde W pour fuir son ultime et champignonne ses angles d'approche.",
+      "Darius": "Reste hors de portée de son Crampon, aveugle-le quand il te colle et kite avec W : il ne doit jamais atteindre 5 stacks.",
+      "Garen": "Son silence (Q) coupe ton aveuglement : aveugle-le avant qu'il n'arrive, puis kite hors de son Jugement.",
+      "Nasus": "Poke-le à chaque last hit pour limiter ses stacks ; sous Flétrissement, recule immédiatement.",
+      "Olaf": "Ses haches te slow et son ultime le rend inarrêtable : respecte sa fenêtre d'ultime et joue près de ta tour."
+    },
+    "mid_game": "Pose des champignons autour des objectifs à venir et dans les zones de passage de la jungle. Splitpush en sécurité grâce à la vision que donnent tes champignons, et punis les adversaires isolés.",
+    "late_game": "Poke derrière ta frontline, aveugle le diver au corps à corps qui menace tes carries, et prépare les zones de combat avec les champignons avant l'objectif.",
+    "ahead": "Prends les tours, splitpush et transforme la carte en champ de mines : l'adversaire perd du temps et des PV à chaque déplacement.",
+    "behind": "Farm à distance, pose des champignons pour protéger ton équipe et joue autour de la vision : tu restes utile même sans avance.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner ta lane par le poke, puis contrôler la carte et les objectifs avec tes champignons.",
+    "final_tip": "Garde toujours ta Fléchette aveuglante pour l'engage adverse : elle annule un combattant au corps à corps pendant toute sa durée."
+  },
+  "Olaf|top": {
+    "identity": "Combattant à dégâts physiques qui devient plus dangereux à mesure que ses PV baissent (passif Rage du berzerker : vitesse d'attaque croissante). Déchireuse (Q) lance une hache qui slow et réduit l'armure ; la ramasser réduit son temps de recharge. Frappe sauvage (E) inflige des dégâts vrais en coûtant des PV, Force décuplée (W) augmente sa vitesse d'attaque et ses soins, et Ragnarok (R) le rend insensible aux CC.",
+    "playstyle": "Lane agressive et combats longs au corps à corps. Olaf gagne la plupart des duels en early/mid game grâce aux dégâts vrais et aux haches. Son but : forcer des combats, ramasser ses haches et dive dans l'équipe adverse avec l'ultime. Plus faible en fin de partie contre le kiting.",
+    "early_game": "Trade avec Q en visant derrière l'adversaire pour que la hache retombe sur ton chemin, puis ramasse-la en avançant. E inflige des dégâts vrais et son temps de recharge baisse à chaque attaque : n'hésite pas à le relancer en combat. Joue agressif quand tes haches touchent.",
+    "level_1": "Déchireuse (Q) en premier. Poke et slow l'adversaire, puis ramasse la hache pour la relancer rapidement.",
+    "level_2": "Frappe sauvage (E). Dégâts vrais qui coûtent des PV : Q + E est un trade court très fort au niveau 2.",
+    "level_3": "Force décuplée (W). Vitesse d'attaque et soins renforcés quand tu es bas : Q → E → W → attaques est un gros all-in. Plus tu perds de PV, plus tu frappes vite.",
+    "level_6": "Ragnarok : tu purges les CC et tu y deviens insensible, avec plus de dégâts. Sert à engager malgré les CC adverses ou à rattraper une cible qui voulait te kiter.",
+    "power_spikes": [
+      "Niveau 2 : Q + E en dégâts vrais.",
+      "Niveau 3 : all-in complet avec W.",
+      "Niveau 6 : insensibilité aux CC.",
+      "Premier item complet : duels dominants en mid game."
+    ],
+    "lane_plan": "Joue une wave neutre ou poussée et trade dès que tes haches touchent. Si tu gagnes les trades, crash la wave et prends les plaques. Recall quand ta wave crash. Olaf est aussi très fort pour envahir la jungle adverse avec son jungler grâce à ses dégâts vrais.",
+    "trading": "Trade court : Q (en visant derrière la cible) → ramassage → E. Trade long : Q → E → W → attaques → E à nouveau → R si l'adversaire a un CC. Engage quand ton Q touche ; abandonne si l'adversaire te kite à distance ou si ton ultime est en recharge contre un champion à gros CC.",
+    "jungle_plan": "",
+    "threats": [
+      "Champions à distance qui te kitent (Kayle).",
+      "Kled et Camille, qui t'engagent fort et te battent en duel.",
+      "CC adverses quand ton ultime est en recharge."
+    ],
+    "mistakes": [
+      "Oublier de ramasser ta hache (temps de recharge beaucoup plus long).",
+      "Lancer l'ultime trop tôt, avant le CC adverse.",
+      "Se battre à distance au lieu de coller ta cible."
+    ],
+    "matchup_notes": {
+      "Nasus": "Punis-le à chaque stack, ses PV ne tiennent pas face à tes dégâts vrais.",
+      "Mordekaiser": "Tes dégâts vrais ignorent son shield ; garde l'ultime pour son Royaume des morts si tu as un CC à éviter.",
+      "Jax": "Sa Contre-attaque esquive tes attaques mais pas ton E : lance-le pendant son esquive.",
+      "Kled": "Il t'engage fort avec son Q ; garde la hache pour le slow quand il fonce et combats près de ta wave.",
+      "Camille": "Elle te kite avec son Grappin : lance Q sur sa trajectoire de sortie et garde l'ultime pour son stun."
+    },
+    "mid_game": "Escarmouches, invasions de jungle et combats autour des objectifs. Olaf excelle dans les combats désorganisés où il peut ramasser ses haches et dive.",
+    "late_game": "Dive sur le carry adverse avec l'ultime une fois les CC importants utilisés. Évite de te laisser kiter indéfiniment : attends que ta cible soit à portée de hache.",
+    "ahead": "Force des duels, envahis avec ton jungler et dive sur les carries isolés : tes dégâts vrais te rendent très difficile à ignorer.",
+    "behind": "Farm, joue avec ton équipe et garde l'ultime pour un dive décisive sur un carry.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer l'early game et dive sur les carries adverses avec l'ultime en mid game.",
+    "final_tip": "Vise toujours ta hache légèrement derrière l'adversaire : tu la ramasses en avançant sur lui et tu la relances aussitôt."
+  }
+}

@@ -1,0 +1,43 @@
+{
+ "Varus|adc": {
+  "identity": "Physical and magic damage marksman. Living Vengeance (passive) gives him bonus damage after a kill or assist. Piercing Arrow (Q) charges up to gain range and damage, Blighted Quiver (W) adds magic damage and Blight stacks to his attacks, which his other abilities detonate (damage based on max health), and when activated it empowers his next Piercing Arrow. Hail of Arrows (E) slows in an area and reduces the healing of enemies inside it, and Chain of Corruption (R) roots the first champion hit, then spreads to nearby champions.",
+  "playstyle": "Poke and engage ADC: he harasses from very far with a charged Q and starts fights with his ultimate. He loses to many long-fight ADCs (Jinx, Twitch, Zeri, Kog'Maw) and mostly beats short-range or low-mobility ADCs (Vayne, Lucian, Aphelios).",
+  "early_game": "Poke with a charged Piercing Arrow (Q) when your opponent walks up to last hit. Stack Blight with your attacks, then detonate it with Q or E. Save E to slow an engage or reduce enemy healing.",
+  "level_1": "Hail of Arrows (E) first. After that, max Q first.",
+  "level_2": "Blighted Quiver (W). Your attacks apply Blight: three attacks, then an ability to detonate it.",
+  "level_3": "Piercing Arrow (Q). Very long-range poke: charge it behind your minions and aim at your opponent.",
+  "level_6": "Chain of Corruption: roots the first champion hit, then spreads. Cast it on your opponent for a kill with your support, or on a diver to protect yourself.",
+  "power_spikes": [
+   "Level 3: charged Q poke and Blight detonations.",
+   "Level 6: engage ultimate.",
+   "First completed item: very punishing poke.",
+   "Mid game: poke before objectives, then engage with R."
+  ],
+  "lane_plan": "Poke with Q, cut enemy healing with E and play for kills with your support at level 6. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards steady farming. Join dragons by pushing the wave first.",
+  "trading": "Basic trade: attacks for Blight, then Q or E to detonate it. All-in: R, E, attacks, charged Q to finish. Give up on it against ADCs who win long fights (Jinx, Twitch): stick to poke.",
+  "jungle_plan": "",
+  "threats": [
+   "Yasuo and his Wind Wall: your hardest matchup.",
+   "Kog'Maw, Ziggs, Zeri, Jinx and Twitch: hard matchups.",
+   "Divers: you have no dash."
+  ],
+  "mistakes": [
+   "Charging Q too long and getting engaged on mid-charge.",
+   "Casting your ultimate on a minion or a tank with no follow-up.",
+   "Taking a long fight against a scaling ADC."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "Save R to root her when she dives.",
+   "Jinx": "She scales: poke her and take towers early.",
+   "Vayne": "She has short range: poke her with Q.",
+   "Ezreal": "He dodges with E: cast R after his Arcane Shift.",
+   "Yasuo": "His Wind Wall blocks Q and R: wait until he uses it."
+  },
+  "mid_game": "Poke the enemy team with Q before every objective. Cast your ultimate on a group so the chain spreads.",
+  "late_game": "Stay behind your frontline and poke. Use E against teams that heal, and R to start or disengage a fight.",
+  "ahead": "Poke and force objectives: your team engages behind your chain.",
+  "behind": "Poke from range and save your ultimate to protect your team or create a pick.",
+  "win_condition": "To win this game, you want to wear down the enemy team with poke before objectives and start fights with your ultimate.",
+  "final_tip": "Three attacks to stack Blight, then an ability to detonate it: that's where your damage is."
+ }
+}

@@ -1,0 +1,84 @@
+{
+  "Pantheon|top": {
+    "identity": "Combattant à dégâts physiques taillé pour l'early game. Lance astrale (Q) frappe au corps à corps ou se lance loin si tu la charges, Assaut martial (W) saute sur une cible et le stun, Égide impénétrable (E) bloque tous les dégâts venant de face, et Météore (R) saute sur une très grande distance. Toutes les quelques actions, son passif Ardeur mortelle renforce son prochain sort.",
+    "playstyle": "Lane très agressive, all-in dès le niveau 2-3, prise de plaques et roams avec l'ultime. Pantheon est plus fort en early et en mid game qu'en late game : il doit transformer son avance rapidement en tours, dragons et kills sur les autres lanes.",
+    "early_game": "Poke avec la Lance lancée (Q chargé) quand l'adversaire vient last hit. Surveille ton passif : quand il est prêt, ton prochain sort est renforcé, c'est le moment d'engager avec W. Garde E pour encaisser la riposte adverse.",
+    "level_1": "Lance astrale (Q) en premier. Poke à distance avec la lance chargée ; au corps à corps, le coup rapide suffit à punir un last hit.",
+    "level_2": "Assaut martial (W). Saut et stun : W → attaques → Q. Au niveau 2, cherche le combat si l'adversaire est encore niveau 1 et que ton passif est prêt.",
+    "level_3": "Égide impénétrable (E). Tu bloques tous les dégâts de face pendant sa durée : W → E pour encaisser la riposte → Q renforcé. C'est un all-in très fort avec Embrasement.",
+    "level_6": "Météore : après une courte préparation, tu sautes sur une zone lointaine, qui subit des dégâts et un slow. Utilise-le pour roam vers le mid ou le bot quand ta wave est poussée, ou pour rejoindre un combat en rivière.",
+    "power_spikes": [
+      "Niveau 2 : all-in avec W et passif renforcé.",
+      "Niveau 3 : combo complet avec E.",
+      "Niveau 6 : roams et escarmouches avec l'ultime.",
+      "Premier item complet : burst dangereux sur les carries."
+    ],
+    "lane_plan": "Joue une wave neutre ou poussée : Pantheon est excellent pour prendre les plaques de tour. Poke au Q, engage avec W quand le passif est prêt. Après le niveau 6, pousse ta wave avant chaque roam avec l'ultime et reviens vite pour ne pas perdre trop de farm. Recall quand ta wave crash.",
+    "trading": "Trade court : Q lancé ou Q au corps à corps. Trade long : W (stun) → attaques → E pour bloquer la riposte → Q renforcé. Engage quand ton passif est prêt ; abandonne contre les tanks qui encaissent ton burst.",
+    "jungle_plan": "",
+    "threats": [
+      "Tanks qui encaissent ton burst (Malphite, Sion, Cho'Gath).",
+      "Gangplank, qui te poke avec ses barils.",
+      "Perte d'impact en late game si tu n'as pas pris d'avance."
+    ],
+    "mistakes": [
+      "Engager avec W sans passif chargé.",
+      "Jouer pour le late game au lieu de transformer ton avance en early.",
+      "Lancer l'ultime sans cible ni objectif à gagner."
+    ],
+    "matchup_notes": {
+      "Yone": "Bloque son Q3 avec E et engage avec W quand son E est en recharge.",
+      "Darius": "Poke-le au Q à distance et bloque sa Décimation avec E ; ne reste pas au contact s'il a déjà des stacks.",
+      "Jax": "Sa Contre-attaque n'esquive pas ton Q : poke-le à distance et engage après son esquive.",
+      "Malphite": "Son armure réduit ton burst : poke, prends les plaques quand il recall et roam plutôt que de chercher le kill.",
+      "Gangplank": "Il te poke avec les barils ; engage avec W avant qu'il ne prépare ses barils et bloque l'explosion avec E."
+    },
+    "mid_game": "Roam avec l'ultime, crée des avantages sur les autres lanes et force les combats autour des objectifs. Chaque ultime doit rapporter un kill, un objectif ou une tour.",
+    "late_game": "Burst sur un carry avec W → Q renforcé. Évite les combats longs et les engages de face dans une équipe à forte frontline.",
+    "ahead": "Roam, prends les objectifs et dive avec ton jungler : ton burst tue les carries isolés.",
+    "behind": "Farm, cherche des picks sur des cibles isolées et joue autour de l'ultime pour rejoindre les combats par surprise.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer l'early, roam avec l'ultime et transformer ton avance en objectifs avant le late game.",
+    "final_tip": "Attends que ton passif soit chargé avant d'engager avec W : le sort renforcé fait la différence."
+  },
+  "Kayle|top": {
+    "identity": "Hyperscaling à dégâts hybrides. Kayle monte en puissance par paliers (passif Ascension divine) : ses attaques passent à distance au niveau 6, projettent des vagues de feu au niveau 11 et atteignent leur forme finale au niveau 16. Incandescence (Q) slow et réduit les résistances, Bénédiction céleste (W) soigne et accélère, Lame de feu stellaire (E) renforce ses attaques, et Jugement divin (R) rend un allié invulnérable.",
+    "playstyle": "Lane de survie et de farm, puis domination du late game. Tout le plan de jeu consiste à atteindre les niveaux 6, 11 et 16 sans trop perdre. Très dépendante de l'XP ; l'XP bonus de la quête de rôle top t'aide à y arriver plus vite.",
+    "early_game": "Farm au dernier moment, laisse la wave venir vers ta tour et évite les trades : au corps à corps, tu perds contre presque tout le monde avant le niveau 6. Q slow l'adversaire qui veut te coller, W te soigne et t'accélère pour fuir. Préviens ton jungler si l'adversaire freeze trop avancé.",
+    "level_1": "Lame de feu stellaire (E) en premier. Elle aide à last hit en sécurité avec une attaque renforcée.",
+    "level_2": "Incandescence (Q). Ralentit et réduit les résistances : utilise-la pour fuir un engage ou last hit à distance.",
+    "level_3": "Bénédiction céleste (W). Soin et vitesse : garde-la pour fuir un engage ou un gank, ou pour tenir la lane quand tu es harcelée.",
+    "level_6": "Tes attaques passent à distance et tu débloques Jugement divin. Premier vrai pic : tu peux enfin trade contre les combattants au corps à corps en les kitant. Garde l'ultime pour te sauver ou sauver un allié d'un burst.",
+    "power_spikes": [
+      "Niveau 6 : attaques à distance et ultime.",
+      "Niveau 11 : attaques qui touchent en zone (vagues de feu).",
+      "Niveau 16 : forme finale, carry à distance dévastatrice.",
+      "Deux items et plus : DPS dominant en teamfight."
+    ],
+    "lane_plan": "Laisse la wave venir vers toi, farm en sécurité et évite les trades avant le niveau 6. Ne pousse pas sans vision. Recall avec une bonne marge de PV. Après le niveau 11, tu nettoies les waves en zone : profite-en pour farmer les side lanes plus vite.",
+    "trading": "Avant le 6 : pas de trade volontaire, Q seulement pour slow. Après le 6 : attaques à distance, Q pour slow, E pour finir. Engage seulement quand l'adversaire est à portée d'exécution ; abandonne s'il peut te coller (Malphite avec l'ultime, Irelia).",
+    "jungle_plan": "",
+    "threats": [
+      "All-in au corps à corps avant le niveau 6.",
+      "Ganks sur une lane poussée.",
+      "Engages qui te collent malgré ta portée (Malphite, Irelia)."
+    ],
+    "mistakes": [
+      "Échanger en early alors que tu es très faible.",
+      "Utiliser l'ultime sur toi-même trop tôt, avant le vrai burst adverse.",
+      "Mourir et perdre de l'XP juste avant un niveau clé."
+    ],
+    "matchup_notes": {
+      "Garen": "Survis à l'early (son silence et son Jugement font mal), puis kite-le à distance après le niveau 6.",
+      "Nasus": "Flétrissement te rend inutile en combat : ne te bats pas, farm et scale ; tu le dépasses en late game.",
+      "Malphite": "Son armure réduit tes dégâts et son ultime te rattrape : garde W pour fuir et Jugement divin pour son engage.",
+      "Yone": "Il te domine en early : farm prudemment, puis kite-le après le niveau 6.",
+      "Darius": "Ne le laisse jamais te coller en early ; après le 6, garde tes distances hors de son Crampon."
+    },
+    "mid_game": "Farm les side lanes pour atteindre les niveaux 11 puis 16. Évite les combats sans vision et regroupe avec ton équipe pour les objectifs importants.",
+    "late_game": "Carry à distance : reste derrière ta frontline et frappe ce qui est à portée. Garde l'ultime pour sauver ton allié le plus important ou toi-même.",
+    "ahead": "Prends les tours et les objectifs avec ton DPS à distance ; tu deviens la carry principale de ton équipe.",
+    "behind": "Farm, scale et évite les combats : Kayle reste une menace en late game même après une lane difficile.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre jusqu'au niveau 16 et devenir la carry principale de ton équipe.",
+    "final_tip": "Ne prends aucun trade avant le niveau 6 : chaque niveau atteint en vie compte plus qu'un kill."
+  }
+}

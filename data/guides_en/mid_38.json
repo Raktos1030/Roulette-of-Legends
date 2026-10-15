@@ -1,0 +1,43 @@
+{
+ "Vex|mid": {
+  "identity": "Magic damage burst mage, the nightmare of mobile champions. Her passive Doom 'n Gloom charges up regularly: when charged, her next ability fears and interrupts dashes; enemies who dash near her are marked (Gloom) for bonus damage. Mistral Bolt (Q) sends a wave that speeds up, Personal Space (W) gives a shield and strikes around her, Looming Darkness (E) slows in an area and marks, and Shadow Surge (R) marks a champion, then lets her dash to them (reset on takedown).",
+  "playstyle": "Anti-assassin, anti-mobility mage: she punishes every champion who dashes (Yone, Irelia, Sylas, Akali, LeBlanc, Yasuo).",
+  "early_game": "Poke with Q and E. Watch your passive: when it's charged, save it for the enemy engage (W the moment the assassin arrives = fear and interrupt). Mark enemies with E for bonus damage.",
+  "level_1": "Looming Darkness (E) first. Area poke and marks.",
+  "level_2": "Mistral Bolt (Q). E → Q: bonus damage on the marked target.",
+  "level_3": "Personal Space (W). A shield and a fear with your passive charged: your defensive tool against assassins.",
+  "level_6": "Shadow Surge: marks a champion, then dash to them for a big burst. A takedown resets your ultimate: chain targets in teamfights.",
+  "power_spikes": [
+   "Level 3: defensive fear with W.",
+   "Level 6: burst and chase with R.",
+   "First completed item: one-shots on assassins.",
+   "Mid game: chained ultimates in teamfights."
+  ],
+  "lane_plan": "Poke with E and Q, keep your passive charged for engages. Push, then roam with your ultimate. The mid role quest (faster recall) makes your roams more profitable. Against assassins, let them come: your passive punishes them.",
+  "trading": "Short trade: E → Q. All-in: R → dash → W (passive charged) → E → Q. Defense: W the moment the enemy dashes. Give up on it against champions who poke you without dashing (Vladimir, Annie).",
+  "jungle_plan": "",
+  "threats": [
+   "Champions with no dash who poke you or heal (Vladimir, Annie).",
+   "Mid Nasus, who soaks your burst.",
+   "Wasting your charged passive."
+  ],
+  "mistakes": [
+   "Using your charged passive on a minion instead of the enemy engage.",
+   "Casting R when you can't kill the target.",
+   "Forgetting that your passive marks champions who dash."
+  ],
+  "matchup_notes": {
+   "Yasuo": "His E is a dash: he gets marked and your passive interrupts his engages.",
+   "LeBlanc": "Her W is a dash: keep your passive charged for her.",
+   "Ahri": "Her ultimate triggers your Gloom: W when she arrives.",
+   "Yone": "His E and Q3 are dashes: punish them.",
+   "Vladimir": "He has no dash to punish and heals: poke and play for objectives."
+  },
+  "mid_game": "Roams with your ultimate, picks on assassins and objectives.",
+  "late_game": "Keep your passive charged for the enemy diver, then chain ultimates on low targets.",
+  "ahead": "Roam, hunt the carries and take objectives.",
+  "behind": "Farm and protect your team against assassins.",
+  "win_condition": "To win this game, you want to punish mobile champions with your passive and chain ultimates in teamfights.",
+  "final_tip": "Keep your passive charged for the moment your opponent dashes onto you: the fear turns the fight."
+ }
+}

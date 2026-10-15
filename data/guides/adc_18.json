@@ -1,0 +1,43 @@
+{
+  "Samira|adc": {
+    "identity": "Tireuse de mêlée et de distance à dégâts physiques. Élan téméraire (passif) : elle monte en style en enchaînant des attaques et des sorts différents ; au corps à corps, ses attaques font des dégâts magiques en plus, et attaquer un ennemi root la fait dash à portée (elle maintient en l'air un ennemi projeté). Panache (Q) tire une balle ou donne un coup d'épée, Tourbillon de lame (W) blesse autour d'elle et détruit les projectiles ennemis, Charge sauvage (E) la fait passer à travers un ennemi (un kill remet son délai à zéro), et Gâchette infernale (R), disponible au rang de style maximal (S), arrose de balles tous les ennemis autour d'elle.",
+    "playstyle": "ADC de dive et de snowball : elle suit les engages de son support, monte son style en quelques secondes et nettoie le combat avec l'ultime. Elle est en moyenne devant en or à 15 min contre les ADC fréquents, mais elle souffre contre les mages bot qui la root (Veigar, Viktor, Hwei, Syndra) et contre Jinx.",
+    "early_game": "Joue avec un support d'engage : chaque CC te fait bondir sur la cible grâce au passif. Trade avec des enchaînements variés (Q à distance, attaque, Q à l'épée) pour monter ton style. Garde W pour bloquer un projectile important.",
+    "level_1": "Panache (Q) en premier. Trades courts : Q, puis attaque.",
+    "level_2": "Charge sauvage (E). Suis l'engage de ton support en passant à travers un sbire ou l'adversaire. E puis Q frappe tous les ennemis sur ton chemin.",
+    "level_3": "Tourbillon de lame (W). Détruit les projectiles ennemis : bloque le sort ou l'attaque qui te menace, puis continue ton combo.",
+    "level_6": "Gâchette infernale : quand ton style atteint le rang S, arrose tous les ennemis autour de toi. Combo type : E → Q → attaque → W → attaque → R.",
+    "power_spikes": [
+      "Niveau 2 : E pour suivre les engages.",
+      "Niveau 6 : ultime qui nettoie un combat.",
+      "Premier item complet : combo mortel sur un ADC.",
+      "Chaque kill : Charge sauvage remise à zéro pour enchaîner."
+    ],
+    "lane_plan": "Joue agressif avec ton support d'engage, prends l'avantage et pousse-le : plaques, tours, dragons. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) se complète vite quand tu gagnes les combats. Ne force pas contre un adversaire qui a tous ses CC.",
+    "trading": "Trade court : Q à distance, attaque, recule. All-in : suis le CC de ton support, E → Q → W sur le projectile clé → attaques → R au rang S. Abandonne contre les mages bot qui te root pendant ton dash.",
+    "jungle_plan": "",
+    "threats": [
+      "Veigar bot : ton matchup le plus difficile (sa cage t'arrête en plein combo).",
+      "Jinx, Xayah et les mages bot (Viktor, Hwei, Syndra) : matchups difficiles.",
+      "Tout CC qui t'arrête avant le rang S."
+    ],
+    "mistakes": [
+      "Dive sans l'engage de ton support.",
+      "Gâcher W au lieu de le garder pour le projectile qui compte.",
+      "Répéter la même action : ton style ne monte que si tu varies."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Force les trades avant ses évolutions.",
+      "Jinx": "Ses Pyromâcheurs t'arrêtent : engage quand ils sont utilisés.",
+      "Jhin": "Détruis sa Floraison mortelle avec W.",
+      "Yunara": "Évite les combats longs contre elle.",
+      "Veigar": "Ne rentre jamais dans sa Profanation : attends qu'il l'ait utilisée."
+    },
+    "mid_game": "Joue les escarmouches avec ton support et ton jungler. Chaque kill remet ton dash à zéro : enchaîne les cibles.",
+    "late_game": "Attends que les CC adverses soient utilisés, puis entre derrière ton équipe, monte ton style et lance l'ultime au milieu du groupe.",
+    "ahead": "Force les combats : chaque kill te relance sur la cible suivante.",
+    "behind": "Farm et attends l'engage de ton équipe : n'entre pas la première.",
+    "win_condition": "Pour gagner cette partie, tu veux suivre les engages de ton équipe et nettoyer les combats avec ton ultime au rang S.",
+    "final_tip": "Varie toujours tes actions : Q, attaque, E, W… le rang S arrive en quelques secondes si tu n'enchaînes jamais deux fois la même chose."
+  }
+}

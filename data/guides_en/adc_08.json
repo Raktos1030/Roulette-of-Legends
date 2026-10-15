@@ -1,0 +1,43 @@
+{
+ "Jhin|adc": {
+  "identity": "High physical damage utility marksman. Whisper (passive): his rate of fire is fixed, he fires four bullets then reloads, and the fourth is always an empowered crit (a crit also gives him movement speed). Dancing Grenade (Q) bounces between up to four targets and deals more damage after each enemy it kills, Deadly Flourish (W) fires at very long range and roots a champion recently hit by Jhin or his allies, Captive Audience (E) places an invisible trap that slows then explodes, and Curtain Call (R) lets him fire four slowing shots at very long range (the fourth is a guaranteed crit).",
+  "playstyle": "Long-range burst and control ADC: he hits hard, roots from afar and finishes with his ultimate. His fixed fire rate makes him weak in long fights: he wins by choosing the right moment for his fourth shot and his CC.",
+  "early_game": "Harass with the fourth shot: save it for your opponent rather than a minion. Reload safely (you're vulnerable while reloading). Dancing Grenade on a low-health minion next to your opponent: it bounces onto them with more damage.",
+  "level_1": "Dancing Grenade (Q) first. Harass with the fourth shot and Q.",
+  "level_2": "Deadly Flourish (W). Root an opponent your support just hit: it's your best tool for a 2v2 engage.",
+  "level_3": "Captive Audience (E). Place traps in bushes and on escape paths; a trap that explodes makes the target rootable by W.",
+  "level_6": "Curtain Call: finishes runners and wears down the enemy team from very far. The shots stop at the first champion hit: aim at the low-health target when it's isolated.",
+  "power_spikes": [
+   "Level 2: W on a target your support hit.",
+   "Level 6: long-range execute ultimate.",
+   "First completed item: a very punishing fourth shot.",
+   "Two completed items: burst and control in teamfights."
+  ],
+  "lane_plan": "Harass with the fourth shot and Q, place traps to control bushes and play your support's engages with W. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards clean farming. Help your jungler on dragons: W and R hit from very far.",
+  "trading": "Basic trade: fourth shot, then step back to reload. All-in: your support lands a hit → W → Q → attacks. Back off while reloading and against ADCs who win long fights.",
+  "jungle_plan": "",
+  "threats": [
+   "Yasuo and his Wind Wall: your hardest matchup.",
+   "Zeri and Kog'Maw: hard matchups.",
+   "Divers while you're reloading."
+  ],
+  "mistakes": [
+   "Wasting the fourth shot on a minion mid-trade.",
+   "Casting your ultimate on the front line: you can't move while it lasts.",
+   "Firing W at a target that hasn't been hit (no CC)."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "She reaches you with her ultimate: place your traps around you and save W to root her when she lands.",
+   "Caitlyn": "She owns the range in lane, but your CC wins the fights.",
+   "Jinx": "Punish her early with your support before she scales.",
+   "Yasuo": "His Wind Wall blocks W and R: wait until he uses it.",
+   "Zeri": "She's very mobile: save W for after her dash."
+  },
+  "mid_game": "Place traps around objectives, harass with W and R before fights, and group with your team.",
+  "late_game": "Stay behind your frontline, hit with the fourth shot, root divers with W. Cast R at the start or end of a fight, never in the middle of the danger.",
+  "ahead": "Look for picks with W and traps, take objectives.",
+  "behind": "Farm from range, control the area with traps and finish with R.",
+  "win_condition": "To win this game, you want to create picks with your long-range CC and finish fights with your ultimate.",
+  "final_tip": "The fourth shot makes the difference: count your bullets and save it for a champion."
+ }
+}

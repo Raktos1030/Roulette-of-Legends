@@ -1,0 +1,43 @@
+{
+ "Akali|mid": {
+  "identity": "Magic damage, energy-based assassin, played mid about two games out of three. Five Point Strike (Q) pokes in a cone, Twilight Shroud (W) makes her invisible and restores energy, Shuriken Flip (E) flips her backward, then lets her dash to the target she hit, and Perfect Execution (R) takes her through the target, then executes. Her passive creates a ring: leaving it empowers her next attack.",
+  "playstyle": "Roam and pick assassin. In mid, Akali faces mages who often have CC designed against assassins (Lissandra, Galio, Vex): she has to pick her fights.",
+  "early_game": "Poke with Q and your passive attack when your opponent comes to last hit. Manage your energy: always keep enough to cast W. Against CC mages, play for farm and wait for level 6.",
+  "level_1": "Five Point Strike (Q) first. Poke and farm from range.",
+  "level_2": "Twilight Shroud (W). Invisibility and energy: save it to dodge the enemy's big ability.",
+  "level_3": "Shuriken Flip (E). Combo: E → E → Q → passive. You can also use E1 alone to back off.",
+  "level_6": "Perfect Execution: a big kill and roam spike. Combo: R1 → Q → passive → E → E → R2 to finish. Push your wave and roam to the side lanes.",
+  "power_spikes": [
+   "Level 3: full combo.",
+   "Level 6: kills and roams with your ultimate.",
+   "First completed item: burst that kills carries.",
+   "Mid game: picks in the side lanes."
+  ],
+  "lane_plan": "Push the wave when you can, poke with Q and keep energy for W. After level 6, push, then roam bot or top. The mid role quest speeds up your recall: use it to chain roams and resets. Avoid standing in the control zone of an anti-assassin mage.",
+  "trading": "Short trade: Q + passive. Long trade: E → E → Q → W to dodge the counterattack. All-in: R1 → combo → R2. Engage when the enemy CC is on cooldown; give up on it against mages who lock you down inside your Shroud.",
+  "jungle_plan": "",
+  "threats": [
+   "Anti-assassin CC mages (Lissandra, Galio, Vex).",
+   "Twisted Fate: your hardest matchup (he roams and locks you down).",
+   "Area damage that cancels out your Shroud."
+  ],
+  "mistakes": [
+   "Emptying your energy and no longer being able to cast W.",
+   "Engaging inside a mage's control zone.",
+   "Staying in lane instead of roaming after level 6."
+  ],
+  "matchup_notes": {
+   "Yasuo": "His Wind Wall doesn't block your cone Q: poke him, and engage after his E.",
+   "Viktor": "Poke him and dive when his Gravity Field is on cooldown.",
+   "Locke": "Dodge his nails with W and engage once he's used his E.",
+   "Twisted Fate": "He stuns you and roams: follow him around the map rather than looking for the kill.",
+   "Lissandra": "Her ultimate and her ice stop you: wait until they're used."
+  },
+  "mid_game": "Roams, picks and split pushing with Teleport or your faster recall. Hunt isolated carries.",
+  "late_game": "Pick threat: wait for the enemy CC to be used, then dive the backline with your ultimate.",
+  "ahead": "Roam, take objectives and hunt the carries.",
+  "behind": "Farm, avoid CC mages and look for picks on isolated targets.",
+  "win_condition": "To win this game, you want to turn your lane into roams and picks on the enemy carries.",
+  "final_tip": "Always keep enough energy for your Shroud: it's what wins your trades."
+ }
+}

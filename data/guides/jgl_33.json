@@ -1,0 +1,43 @@
+{
+  "Rengar|jgl": {
+    "identity": "Assassin à dégâts physiques qui bondit depuis les bushs (passif Prédateur invisible). Chaque sort lui donne de la férocité ; à quatre stacks, son prochain sort est renforcé : Esprit sauvage (Q) frappe plus fort, Rugissement (W) le soigne et retire les CC, Bolas (E) root au lieu de slow. Chasseur-né (R) le camoufle, révèle le champion le plus proche et lui permet de bondir sans bush.",
+    "playstyle": "Jungler d'assassinat : il utilise les bushs pour bondir et tuer une cible en un combo. Il demande beaucoup de précision.",
+    "early_game": "Clear en bondissant depuis les bushs à côté des camps. Gank en arrivant par un bush avec la férocité pleine : bond → Q → E renforcé (CC) → W. Évite les duels contre les junglers tanky ou de combat long.",
+    "level_1": "Esprit sauvage (Q) en premier.",
+    "level_2": "Rugissement (W). Soin des dégâts récemment subis : ton clear devient plus sain. Renforcé, il retire les CC.",
+    "level_3": "Bolas (E). Premier gank : bond depuis un bush → E renforcé (CC) → Q → W.",
+    "level_6": "Chasseur-né : camouflage, révélation du champion le plus proche et bond sans bush. Utilise-le pour assassiner un carry isolé ou rejoindre un combat par surprise.",
+    "power_spikes": [
+      "Niveau 3 : ganks depuis les bushs.",
+      "Niveau 6 : assassinats avec l'ultime.",
+      "Premier item complet : combo qui tue un carry.",
+      "Mid game : picks sur les cibles isolées."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear en utilisant les bushs près des camps pour bondir. Gank les lanes où l'adversaire se trouve près d'un bush, avec la férocité pleine. Contrôle les crabes et envahis quand ta cible est seule. Évite les junglers tanky ou de duel (Rammus, Sejuani, Warwick) ; privilégie les picks sur les carries.",
+    "trading": "En assassinat : férocité pleine → bond depuis un bush (ou ultime) → E renforcé → Q → W. Abandonne contre les tanks qui encaissent ton combo ou si ta cible a ses CC.",
+    "threats": [
+      "Rammus, Sejuani et Rek'Sai : matchups difficiles.",
+      "Tanks qui encaissent ton burst.",
+      "Balises et révélateurs qui te voient arriver."
+    ],
+    "mistakes": [
+      "Engager sans férocité pleine.",
+      "Utiliser le sort renforcé sur le mauvais sort (Q au lieu de E pour root).",
+      "Dive sur un tank au lieu d'un carry."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Évite ses invasions en early.",
+      "Viego": "Burst-le avant qu'il ne possède un de tes alliés.",
+      "Kha'Zix": "Vous êtes tous deux des assassins : tu gagnes si tu engages le premier.",
+      "Rammus": "Son taunt annule ton combo : évite-le.",
+      "Sejuani": "Elle te root et encaisse : ne la dive pas."
+    },
+    "mid_game": "Picks sur les cibles isolées, surtout celles qui passent près des bushs.",
+    "late_game": "Assassine le carry adverse avec l'ultime. Attends que les CC adverses soient utilisés.",
+    "ahead": "Chasse les carries isolés et prends les objectifs.",
+    "behind": "Cherche des picks sur des cibles isolées et évite les combats groupés.",
+    "win_condition": "Pour gagner cette partie, tu veux assassiner les carries isolés grâce aux bushs et à l'ultime.",
+    "final_tip": "Engage toujours avec la férocité pleine : utilise-la sur Bolas pour root la cible."
+  }
+}

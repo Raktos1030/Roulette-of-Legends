@@ -1,0 +1,43 @@
+{
+ "Viego|jgl": {
+  "identity": "Physical damage fighter-assassin who possesses his victims. When an enemy champion dies after being hit by Viego, he can take their form (and their basic abilities) for a while and heals (passive Sovereign's Domination). Blade of the Ruined King (Q) deals current-health damage with every attack and hits twice after an ability, Spectral Maw (W) charges up and stuns as he dashes, Harrowed Path (E) creates a mist around terrain that camouflages him and speeds him up, and Heartbreaker (R) leaps onto a target to execute it based on missing health.",
+  "playstyle": "Farming jungler who then cleans up teamfights: every takedown gives him a new form and a heal, which lets him chain kills. He's very vulnerable to CC and to champions who punish him in duels.",
+  "early_game": "Clear fast with Q (double hit after every ability). Gank with W: charge, dash and stun, then Q and attacks. Avoid invades against early-game junglers who beat you in duels.",
+  "level_1": "Blade of the Ruined King (Q) first.",
+  "level_2": "Spectral Maw (W). Charge and stun: your gank and dueling tool.",
+  "level_3": "Harrowed Path (E) or a second Q depending on your path. E camouflages you and speeds you up in the mist: handy to arrive unseen.",
+  "level_6": "Heartbreaker: a leap and an execute based on missing health. Use it to finish a low target; every takedown lets you possess the champion and heal, so you can keep chaining.",
+  "power_spikes": [
+   "Level 3: ganks with W.",
+   "Level 6: executes and chained possessions.",
+   "First completed item: strong duels and clean-ups.",
+   "Mid game: cleaning up teamfights."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear, ganks with W and Scuttle control. Viego wants to enter fights where he can chain takedowns: play around Void Grubs (around 8 minutes) and dragons, where several players fight. Avoid duels against junglers who beat him (Rammus, Elise, Talon, Nidalee).",
+  "trading": "Ganking: W → Q → attacks. Teamfighting: wait for the enemy CC to be used, go in on a low target, R to execute it, then possess it and keep chaining. Give up on it against heavy-CC teams if you haven't waited for their abilities.",
+  "threats": [
+   "Talon: a hard matchup.",
+   "Rammus and his taunt, the worst matchup according to the data.",
+   "CC that stops you mid-chain."
+  ],
+  "mistakes": [
+   "Being the first one into a fight.",
+   "Keeping the possessed form too long instead of going back to Viego when that's better.",
+   "Casting your ultimate on a target with too much health."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He beats you early: wait for your items and grouped fights.",
+   "Graves": "Stun him with W when he dashes.",
+   "Sylas": "He can steal your ultimate: keep some health.",
+   "Talon": "He bursts you before you can chain: play with your team.",
+   "Rammus": "His taunt turns your attacks against you: don't attack him during his Defensive Ball Curl."
+  },
+  "mid_game": "Group skirmishes and objectives: every takedown lets you keep chaining.",
+  "late_game": "Go in after the enemy CC, execute a low target and chain possessions to clean up the fight.",
+  "ahead": "Force grouped fights and take objectives.",
+  "behind": "Farm and play to clean up fights after the enemy CC.",
+  "win_condition": "To win this game, you want to enter grouped fights at the right moment and chain takedowns with your possessions.",
+  "final_tip": "Never go in first: wait for a low target to cast Heartbreaker and start chaining."
+ }
+}

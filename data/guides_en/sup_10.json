@@ -1,0 +1,43 @@
+{
+ "Karma|sup": {
+  "identity": "Poke enchanter. Mantra (R) is available from level 1 and empowers her next ability; her damaging abilities lower its cooldown (passive Gathering Fire). Inner Flame (Q) explodes on contact with an enemy (with Mantra, it leaves a zone that explodes after a delay), Focused Resolve (W) tethers her to an enemy and roots them if the tether holds (with Mantra, she heals and the CC lasts longer), and Inspire (E) gives an ally a shield and speed (with Mantra, to every nearby ally).",
+  "playstyle": "Poke and utility support: she harasses with empowered Q in lane, then speeds up and protects her whole team with empowered E. She struggles against engage supports (Thresh, Nautilus, Rakan, Rell, Blitzcrank, Braum), and dominates slow mages and melee supports (Swain, Brand, Xerath, Camille).",
+  "early_game": "Poke with Mantra-empowered Q from level 1: it's your best laning tool. Every ability that lands lowers Mantra's cooldown. Against an engage support, save Mantra for E instead (shield and speed on your ADC and yourself) or W (longer CC).",
+  "level_1": "Inner Flame (Q) first. Mantra (R) is already available: Mantra → Q for a big poke.",
+  "level_2": "Inspire (E). Shield and speed: protect your ADC or escape an engage.",
+  "level_3": "Focused Resolve (W). CC if the tether holds: W on an enemy who can't get away, then Q.",
+  "level_6": "Mantra ranks up and recharges faster. In teamfights, Mantra → E protects and speeds up your whole team (engage or escape).",
+  "power_spikes": [
+   "Level 1: empowered Q, very strong poke.",
+   "Level 3: W for kills with your ADC.",
+   "First completed item: stronger poke and shields.",
+   "Teamfights: Mantra → E on the whole team."
+  ],
+  "lane_plan": "Poke with empowered Q and keep E against engages. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored). Against an engage support, play defensively.",
+  "trading": "Basic trade: Mantra → Q. All-in: W, Q, attacks, E on your ADC. Defense: Mantra → E for the shield and speed on both of you. Back off against engage supports while Mantra is on cooldown.",
+  "jungle_plan": "",
+  "threats": [
+   "Thresh and Nautilus: hard matchups.",
+   "Rakan, Blitzcrank, Rell and Braum: hard matchups.",
+   "Engages while Mantra is on cooldown."
+  ],
+  "mistakes": [
+   "Using Mantra to poke against an engage support and no longer being able to protect.",
+   "Casting W on a target who can easily break the tether.",
+   "Missing Q in the middle of minions (it explodes on the first one hit)."
+  ],
+  "matchup_notes": {
+   "Lulu": "She harasses too: your empowered Q poke reaches farther.",
+   "Thresh": "Keep Mantra → E to save your ADC from his hook.",
+   "Nautilus": "Stay behind minions to block his anchor.",
+   "Lux": "Dodge her Light Binding and poke her back.",
+   "Swain": "He has to get close: poke him and escape with E."
+  },
+  "mid_game": "Poke before objectives and place Control Wards. Use Mantra → E to start your team's engages or to escape.",
+  "late_game": "Stay behind your frontline, poke with empowered Q before the fight, then Mantra → E to protect the whole team when it starts.",
+  "ahead": "Poke harder and force objectives: your sped-up team wins the fights.",
+  "behind": "Play utility: shields and speed save your team.",
+  "win_condition": "To win this game, you want to wear down the enemy team with your poke and speed up your team at the right moment with Mantra → E.",
+  "final_tip": "Pick your Mantra for the situation: Q to poke, W to root longer, E to save or engage with the whole team."
+ }
+}

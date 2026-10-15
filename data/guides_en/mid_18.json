@@ -1,0 +1,43 @@
+{
+ "Katarina|mid": {
+  "identity": "Magic (or mixed) damage assassin who cleans up fights through resets. Her daggers fall to the ground; picking them up triggers an area strike (passive). Bouncing Blade (Q) throws a dagger that bounces, then lands, Preparation (W) tosses a dagger into the air and speeds her up, Shunpo (E) teleports her to a unit or dagger, and Death Lotus (R) channels a storm of blades around her. Every takedown sharply reduces her cooldowns.",
+  "playstyle": "Clean-up assassin: she enters fights once the enemy CC is used and chains takedowns.",
+  "early_game": "Farm with Q and poke by picking up your daggers near your opponent. Use E on a dagger or minion to trade, then leave. Avoid trades against champions who lock you down or beat you up close (Vladimir, Galio).",
+  "level_1": "Bouncing Blade (Q) first. Farm and poke.",
+  "level_2": "Shunpo (E). Q → E onto the dagger on the ground near your opponent → pick it up: a good trade.",
+  "level_3": "Preparation (W). W → E onto the falling dagger → area strike: your basic combo.",
+  "level_6": "Death Lotus: a channel that destroys everything around you. Combo: Q → E → W → R, and every takedown resets your abilities. Roam to the side lanes after pushing.",
+  "power_spikes": [
+   "Level 3: dagger combo.",
+   "Level 6: Death Lotus, kills and roams.",
+   "First completed item: burst that kills mages.",
+   "Mid game: cleaning up skirmishes."
+  ],
+  "lane_plan": "Farm with Q, poke with your daggers and roam as soon as possible after 6: Katarina is one of the best roamers. The mid role quest (faster recall) makes these trips very profitable. Avoid pushing without vision against junglers who lock you down.",
+  "trading": "Short trade: Q → E onto the dagger → pick it up. All-in: W → E → Q → R. In teamfights: wait for the enemy CC, go in on a low target and chain. Give up on it against CC that interrupts your ultimate.",
+  "jungle_plan": "",
+  "threats": [
+   "Vladimir and Galio: hard matchups.",
+   "CC that interrupts Death Lotus.",
+   "Heavy-CC teams in teamfights."
+  ],
+  "mistakes": [
+   "Being the first one into a teamfight.",
+   "Casting your ultimate in range of an available CC ability.",
+   "Forgetting to pick up your daggers."
+  ],
+  "matchup_notes": {
+   "Zed": "Dodge his ultimate with E onto a dagger.",
+   "Yasuo": "His Wind Wall blocks your thrown daggers, not your ultimate; wait for his E.",
+   "Ahri": "Dodge her Charm with E.",
+   "Syndra": "Dive when her stun is on cooldown.",
+   "Vladimir": "He heals and dodges with his Sanguine Pool: roam rather than fight him."
+  },
+  "mid_game": "Roams, cleaning up skirmishes and objectives.",
+  "late_game": "Go in after the enemy CC, take down a low target and chain your resets.",
+  "ahead": "Roam, hunt the carries and clean up fights.",
+  "behind": "Farm and wait for messy fights to chain takedowns.",
+  "win_condition": "To win this game, you want to roam, clean up skirmishes and chain resets in teamfights.",
+  "final_tip": "Never go in first: wait for the enemy CC to be used, then chain."
+ }
+}

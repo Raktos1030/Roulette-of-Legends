@@ -1,0 +1,43 @@
+{
+ "Diana|jgl": {
+  "identity": "Magic damage fighter-assassin, played almost as much in the jungle as in mid lane. Crescent Strike (Q) applies Moonlight, which resets Lunar Rush (E): Diana can dash twice. Pale Cascade (W) protects her with orbs, her passive hits in an area every third attack, and Moonfall (R) pulls in every nearby enemy before an explosion that hurts more for each champion hit.",
+  "playstyle": "Fast-clearing jungler with a big level 6 spike: ganks and teamfight engages with her ultimate. She relies heavily on landing Q and on reaching level 6.",
+  "early_game": "Clear fast thanks to your passive's area attacks and Q. Before level 6 your ganks are average: favor farming and ganks on targets already in a bad spot. Keep Q to mark before every E.",
+  "level_1": "Crescent Strike (Q) first. It clears camps and marks targets.",
+  "level_2": "Pale Cascade (W). Shield and area damage: you can chain camps without losing too much health.",
+  "level_3": "Lunar Rush (E). Dash onto the target; on a target marked by Q, it resets. Combo: Q → E → W → attacks. First gank possible but not decisive yet.",
+  "level_6": "Moonfall: you pull in every nearby enemy, then explode. Q → E → R is your gank and teamfight combo; the more champions you hit, the harder the explosion. This is your real spike.",
+  "power_spikes": [
+   "Level 3: Q → E combo.",
+   "Level 6: area ultimate, ganks and engages.",
+   "First completed item: burst or tankiness depending on your build.",
+   "Mid game: multi-target engages in teamfights."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast full clear up to level 6 if no lane offers an easy gank: Diana wants her ultimate quickly. After 6, gank over and over with Q → E → R, ideally in lanes where two enemies stand close together (bot). Control Scuttle and invade when your laners are ahead. Play dragons and Void Grubs (around 8 minutes) with your team. Avoid early duels against strong early junglers.",
+  "trading": "Ganking: Q to mark, E to stick, R if your opponent tries to run (or to hit two champions). Skirmishing: wait for the enemy CC, then Q → E → R on several targets. Give up on it if your Q misses (you don't get a second E).",
+  "threats": [
+   "Tanks who soak your burst (Cho'Gath, Nunu & Willump).",
+   "Junglers who win early duels (Briar, Udyr, Rek'Sai).",
+   "CC that interrupts you before your ultimate."
+  ],
+  "mistakes": [
+   "Using E without a Q mark (no reset).",
+   "Casting your ultimate on a single target in a teamfight.",
+   "Forcing ganks before level 6 instead of farming."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He invades you early: farm on the other side of the map and punish him after your 6.",
+   "Graves": "He beats you early; take your time to reach level 6.",
+   "Viego": "He resets by possessing your allies: save your ultimate for when he dives.",
+   "Cho'Gath": "He soaks your burst and silences you: don't engage on him.",
+   "Briar": "Her frenzy beats you in a duel: avoid skirmishes without allies."
+  },
+  "mid_game": "Gank over and over with your ultimate, play dragons and river skirmishes. Diana is strong when fights involve several players, where her ultimate hits many targets.",
+  "late_game": "Flank engage: Q on the closest target, E to go in, R in the middle. Depending on your build, you go for the carry or the area.",
+  "ahead": "Repeated ganks, invades and objectives: make yourself feared from level 6.",
+  "behind": "Farm, play with your team and wait for grouped fights where your ultimate can hit several targets.",
+  "win_condition": "To win this game, you want to reach level 6 fast, gank with your ultimate and engage teamfights on several targets.",
+  "final_tip": "Always cast Q before E: without the mark, you lose your second dash."
+ }
+}

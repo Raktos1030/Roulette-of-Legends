@@ -1,0 +1,43 @@
+{
+ "Rell|sup": {
+  "identity": "Engage tank. Break the Mold (passive): her attacks and abilities steal armor and magic resist. Shattering Strike (Q) strikes in a line, breaks shields and stuns. Ferromancy (W): while mounted, she crashes down, knocking enemies into the air and gaining a big shield (she's then on foot: tougher with more range, but slow); on foot, she rebuilds her mount and her next attack knocks up. Full Tilt (E) gives her and an ally increasing speed (doubled toward enemies), and Magnet Storm (R) violently pulls nearby enemies in, then keeps pulling them.",
+  "playstyle": "Massive engage support: she arrives fast thanks to E, knocks up with W and gathers the whole enemy team with her ultimate. Only one unfavorable matchup (Janna), and she crushes tank and dive supports (Nautilus, Camille, Shen, Sylas).",
+  "early_game": "At level 1, a mounted W on your opponent (knock-up) can win a trade with your ADC. Use E to reach the target with your ADC. After the engage, you're on foot and slow: W again to remount and leave.",
+  "level_1": "Ferromancy (W) first. After that, max W first, then E.",
+  "level_2": "Shattering Strike (Q). Combo: W (knock-up) → Q (stun) → attacks.",
+  "level_3": "Full Tilt (E). Speed to reach the target with your ADC, and an explosion on your next attack.",
+  "level_6": "Magnet Storm: pulls every nearby enemy toward you. Combo: E to arrive → R in the middle → W → Q.",
+  "power_spikes": [
+   "Level 1: mounted W.",
+   "Level 3: E → W → Q.",
+   "Level 6: group engage with R.",
+   "Teamfights: ultimate in the middle of the enemy team."
+  ],
+  "lane_plan": "Constantly threaten the engage with W and E. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored): place them around dragon.",
+  "trading": "All-in: E → W (knock-up) → Q → attacks, R at level 6. Defense: Q to stun the diver and break their shield, R to pull divers away from your carry. Back off against Janna: wait until she's used her tornado.",
+  "jungle_plan": "",
+  "threats": [
+   "Janna: your hardest matchup.",
+   "Kiting while you're on foot and slow.",
+   "Engaging without your ADC: you're left alone in the middle of the enemies."
+  ],
+  "mistakes": [
+   "Dismounting when you can't remount quickly (you're slow on foot).",
+   "Casting your ultimate on a single target.",
+   "Engaging without casting E on your ADC so they arrive with you."
+  ],
+  "matchup_notes": {
+   "Thresh": "Engage when his hook and lantern are on cooldown.",
+   "Nautilus": "You win the fight up close: answer his engage with W → Q.",
+   "Lulu": "Her polymorph stops you: engage once she's used it.",
+   "Leona": "Two engagers: whoever engages first with their ADC behind them wins.",
+   "Janna": "Her tornado and Monsoon cancel your engage."
+  },
+  "mid_game": "Look for engages with your jungler around objectives. Place Control Wards and protect your ADC.",
+  "late_game": "Engage on the grouped enemy team: E to arrive, R to pull, W and Q to lock them down. Your team has to follow immediately.",
+  "ahead": "Engage often: your ultimate wins teamfights.",
+  "behind": "Play counter-engages: Q and R stop divers on your carry.",
+  "win_condition": "To win this game, you want to gather the enemy team with your ultimate and chain CC so your team wins the fight.",
+  "final_tip": "Cast Full Tilt with your ADC: you arrive together, and your engage becomes a kill."
+ }
+}

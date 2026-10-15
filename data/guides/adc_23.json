@@ -1,0 +1,43 @@
+{
+  "Swain|adc": {
+    "identity": "Mage de combat résistant à dégâts magiques. Nuée de corbeaux (passif) : ses corbeaux collectent des fragments d'âme qui le soignent et augmentent définitivement ses PV max. Poigne mortifère (Q) tire plusieurs projectiles qui traversent les ennemis (plus il y en a sur une cible, plus elle subit de dégâts), Œil de l'empire (W) frappe une zone lointaine en slowant et en révélant, Capture (E) lance une vague qui revient et root, puis peut attirer les champions root vers lui, et Incarnation démoniaque (R) le transforme : il draine les PV des ennemis proches et peut lancer Éruption démoniaque, une explosion qui slow.",
+    "playstyle": "Mage de combat en bot lane : il gagne les combats prolongés grâce au drain de son ultime et à ses PV qui augmentent. Il n'a aucun dash : il gagne en attrapant ses cibles, pas en fuyant.",
+    "early_game": "Poke avec Poigne mortifère (Q) et Œil de l'empire (W). Capture (E) punit un adversaire qui s'avance : root, attire vers toi, puis Q à bout portant. Garde E pour te défendre contre un engage.",
+    "level_1": "Capture (E) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Poigne mortifère (Q). Poke et farm ; au contact, tous les projectiles touchent la même cible.",
+    "level_3": "Œil de l'empire (W). Poke à longue distance, vision et fragments d'âme sur les champions touchés.",
+    "level_6": "Incarnation démoniaque : drain continu autour de toi, puis Éruption démoniaque. Combo avec ton support : E → attraction → R → Q.",
+    "power_spikes": [
+      "Niveau 3 : E, attraction, Q à bout portant.",
+      "Niveau 6 : drain de l'ultime en combat à deux contre deux.",
+      "Premier item complet : très résistant en combat.",
+      "Mid game : teamfights prolongés."
+    ],
+    "lane_plan": "Poke avec Q et W, et garde E pour les engages ou la défense. Joue les kills avec ton support : chaque CC de sa part te permet de toucher E et d'attirer. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense un farm régulier. Rejoins les combats autour du dragon.",
+    "trading": "Trade court : Q + W. All-in : E → attraction → Q → R. Abandonne contre les ADC qui te poke hors de portée et te poursuivent (Zeri).",
+    "jungle_plan": "",
+    "threats": [
+      "Zeri : matchup difficile.",
+      "Réductions de soins adverses, qui affaiblissent ton drain.",
+      "Mages à longue portée (Syndra)."
+    ],
+    "mistakes": [
+      "Gaspiller E et ne plus pouvoir te défendre.",
+      "Lancer l'ultime trop loin des ennemis.",
+      "Poursuivre une cible mobile sans dash."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Elle doit venir au contact : root-la avec E quand elle dive.",
+      "Jinx": "Elle scale : force les combats tôt avec ton support.",
+      "Jhin": "Garde E pour sa Floraison mortelle : n'avance pas quand tu viens d'être touché.",
+      "Ezreal": "Il fuit avec E : attends qu'il l'ait utilisé pour lancer Capture.",
+      "Zeri": "Elle est trop mobile pour ton E : joue près de ton support."
+    },
+    "mid_game": "Rejoins les combats et gagne les combats prolongés avec l'ultime. Poke avec W avant les objectifs.",
+    "late_game": "Frontline de mage : entre avec R, draine et explose, E pour root le diver. Tes PV augmentent avec chaque fragment d'âme.",
+    "ahead": "Force les combats longs et prends les objectifs.",
+    "behind": "Farm, poke avec W et joue les teamfights prolongés.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner les combats prolongés grâce au drain de l'ultime et à tes CC.",
+    "final_tip": "Root avec E, réactive pour attirer la cible, puis Q à bout portant : c'est ton meilleur combo."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "Zyra|jgl": {
+    "identity": "Mage à dégâts magiques qui combat avec des plantes. Croissance incontrôlée (W) pose des graines ; Épines funestes (Q) fait pousser une plante qui tire à distance, Racines fixatrices (E) root en ligne et fait pousser une plante qui slow, et Ronces étrangleuses (R) knock-up après un délai en renforçant les plantes. Des graines apparaissent aussi autour d'elle au fil du temps (passif).",
+    "playstyle": "Jungler de clear rapide et de ganks à distance. Les plantes nettoient les camps et les objectifs à sa place, et le CC de E rend ses ganks très fiables.",
+    "early_game": "Clear rapide en posant des graines sur les camps et en les faisant pousser avec Q et E. Gank avec E depuis une distance sûre : CC, puis Q et les plantes. Les plantes t'aident aussi en duel contre les junglers au corps à corps.",
+    "level_1": "Épines funestes (Q) en premier. Pose des graines et fais-les pousser sur le camp.",
+    "level_2": "Croissance incontrôlée (W). Plus de graines pour plus de plantes : ton clear s'accélère.",
+    "level_3": "Racines fixatrices (E). Premier gank : E (CC) → Q sur une graine → plantes.",
+    "level_6": "Ronces étrangleuses : zone qui knock-up après un délai et renforce tes plantes. Lance-la sur plusieurs ennemis groupés ou sur un objectif pour le contester.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec E.",
+      "Niveau 6 : contrôle de zone avec l'ultime.",
+      "Premier item complet : plantes dévastatrices.",
+      "Objectifs : les plantes nettoient les monstres épiques rapidement."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide avec les plantes et ganks à distance. Zyra est très bonne sur les objectifs : pose des graines près des Larves (vers 8 min) et des dragons avant les combats. Contrôle les crabes et évite les junglers tanky qui te provoquent ou te collent (Rammus, Udyr).",
+    "trading": "En gank : E → Q → plantes. En teamfight : R sur plusieurs ennemis, E pour root, plantes pour les dégâts. Abandonne contre les tanks qui te collent (Rammus, Udyr).",
+    "threats": [
+      "Rammus et Udyr, défavorables selon les données.",
+      "Assassins qui te burst (tu es fragile).",
+      "Combats loin de tes graines."
+    ],
+    "mistakes": [
+      "Lancer E sans graine pour faire pousser une plante.",
+      "Se placer trop près en teamfight.",
+      "Oublier de poser des graines avant un objectif."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Tes plantes le gênent en duel : root-le avec E quand il engage.",
+      "Graves": "Tes plantes absorbent ses tirs : combats près de tes graines.",
+      "Viego": "Root-le avec E quand il dive.",
+      "Sylas": "Il peut voler ton ultime : n'engage pas quand il peut le reprendre.",
+      "Rammus": "Son taunt te colle : garde E pour le slow avant qu'il n'arrive."
+    },
+    "mid_game": "Contrôle des objectifs avec les plantes et ganks à distance.",
+    "late_game": "Mage de zone : R sur plusieurs ennemis, E pour root, plantes pour les dégâts. Reste derrière ta frontline.",
+    "ahead": "Prends les objectifs rapidement et force les combats près de tes graines.",
+    "behind": "Farm, pose des graines autour des objectifs et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux contrôler les objectifs avec tes plantes et root les ennemis en teamfight.",
+    "final_tip": "Lance tes sorts sur tes graines : ce sont les plantes qui font la majorité des dégâts."
+  }
+}

@@ -1,0 +1,43 @@
+{
+ "Elise|jgl": {
+  "identity": "Two-form magic damage mage-assassin, an early gank specialist. In human form: Neurotoxin (Q) deals damage based on current health, Volatile Spiderling (W) rushes forward and explodes, Cocoon (E) stuns at range. In spider form: Venomous Bite (Q) deals damage based on missing health, Skittering Frenzy (W) speeds up her attacks and her spiderlings', Rappel (E) makes her untargetable, then drops her onto a target. Spider Form (R) swaps forms at any time.",
+  "playstyle": "Aggressive early-game jungler: ganks from level 3, tower dives with Rappel (which drops tower aggro), and constant pressure. She loses impact if the game drags on: you have to build a lead early.",
+  "early_game": "Clear fast by switching forms to use every ability. Gank at level 3 with Cocoon (human E): if it lands, chain human Q + W, switch to spider, spider Q and attacks. Rappel lets you dive under a tower and then dodge its shots.",
+  "level_1": "Volatile Spiderling (W) first on the most played path. It helps on the first camp; you unlock both forms thanks to the ultimate being available from level 1.",
+  "level_2": "Neurotoxin (human Q) / Venomous Bite (spider Q). Human Q → spider form → spider Q: big burst on camps and champions.",
+  "level_3": "Cocoon (human E) / Rappel (spider E). First gank: Cocoon → human Q → human W → spider form → spider Q → attacks. Rappel lets you dodge an ability or dive under a tower.",
+  "level_6": "Both your forms grow stronger with your ultimate's ranks, but your peak is mostly level 3 and the first dives. At level 6, your laners often have their ultimates: it's time for 2- or 3-man dives.",
+  "power_spikes": [
+   "Level 3: ganks with Cocoon, among the best in the game.",
+   "First levels: tower dives with Rappel.",
+   "First completed item: enough burst to kill carries.",
+   "Mid game: picks on isolated targets."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear up to level 3, then an immediate gank on the most favorable lane (opponent pushed up, no dash, no vision). Elise plays for tempo: ganks, dives, invades and Scuttle control. Rappel lets you drop tower aggro during a dive. Play Void Grubs (around 8 minutes) and dragons once you've built a lead. She scales worse: don't spend 15 minutes farming.",
+  "trading": "Ganking: Cocoon gets blocked by minions, aim through a clear line; then the full combo of both forms. Skirmishing: Rappel to dodge the key enemy ability. Give up on it if Cocoon misses against a target with an escape.",
+  "threats": [
+   "Tanky junglers who soak your burst (Zac, Sejuani).",
+   "Counter-ganks during your dives.",
+   "Long games where your impact drops."
+  ],
+  "mistakes": [
+   "Missing Cocoon by throwing it through minions.",
+   "Staying in one form and losing half your damage.",
+   "Farming passively instead of building leads early."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "You're both early-game junglers: be faster on ganks.",
+   "Viego": "Punish him early, before he scales.",
+   "Graves": "Avoid his invades and gank the lanes where he isn't.",
+   "Talon": "He's just as mobile and aggressive: don't fight him without a lead.",
+   "Zac": "He soaks your burst and counter-ganks from afar: save Rappel for his jump."
+  },
+  "mid_game": "Picks and tower dives with your laners. Turn every lead into a tower or an objective.",
+  "late_game": "Picks on isolated targets with Cocoon. In teamfights, wait for the enemy CC and burst the carry.",
+  "ahead": "Tower dive, take objectives and choke out the enemy jungler.",
+  "behind": "Look for picks with Cocoon and play with your team: your impact drops if you wait.",
+  "win_condition": "To win this game, you want to build a big early lead through ganks and dives, then turn it into objectives.",
+  "final_tip": "Always chain both forms' abilities: human Q, then spider form and spider Q."
+ }
+}

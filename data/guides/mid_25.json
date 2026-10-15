@@ -1,0 +1,43 @@
+{
+  "Naafiri|mid": {
+    "identity": "Assassin à dégâts physiques qui combat avec sa meute (passif), jouée au mid environ une fois sur six (la jungle est son rôle principal). Dagues des Darkin (Q) poke et fait saigner, Appel de la meute (W) la rend brièvement inciblable en renforçant et en agrandissant sa meute, Éviscération (E) dash et rappelle la meute, et Hallali (R) la fait bondir avec sa meute sur un champion (relance possible après une élimination, avec shield). Son kit actuel a inversé W et R par rapport à sa version d'origine.",
+    "playstyle": "Assassin de burst et de roam au mid. Naafiri punit les mages sans mobilité (Ryze, Xerath, LeBlanc, Sylas) avec l'aide de sa meute, mais souffre contre les combattants et assassins au corps à corps (Yone, Irelia, Diana, Talon).",
+    "early_game": "Poke au Q (saignement) et laisse ta meute frapper l'adversaire quand il vient last hit. Garde W pour esquiver un sort clé. Roam dès que ta wave est poussée.",
+    "level_1": "Dagues des Darkin (Q) en premier. Poke et farm.",
+    "level_2": "Éviscération (E). Dash et rappel de la meute : Q → E → attaques.",
+    "level_3": "Appel de la meute (W). Inciblabilité, meute renforcée et vitesse : W pour esquiver puis entrer.",
+    "level_6": "Hallali : bond avec la meute sur un champion ; une élimination permet une relance avec shield. Roam vers les side lanes et chasse les cibles isolées.",
+    "power_spikes": [
+      "Niveau 3 : burst avec la meute.",
+      "Niveau 6 : roams et assassinats avec Hallali.",
+      "Premier item complet : one-shot sur les mages.",
+      "Mid game : picks et roams."
+    ],
+    "lane_plan": "Poke au Q et pousse la wave, puis roam. La quête de rôle mid (retour accéléré) rend tes roams plus rentables. Évite les trades longs contre les combattants au corps à corps.",
+    "trading": "Trade court : Q + meute. All-in : W → E → Q → R. Engage quand le mage adverse a utilisé son CC ; abandonne contre les combattants qui te battent au contact.",
+    "jungle_plan": "",
+    "threats": [
+      "Combattants et assassins au corps à corps (Yone, Irelia, Diana, Talon).",
+      "Vladimir, qui se soigne et esquive.",
+      "Dégâts de zone qui tuent ta meute."
+    ],
+    "mistakes": [
+      "Engager sur une cible entourée de sbires qui absorbent ta meute.",
+      "Gaspiller W alors qu'il pourrait esquiver un sort clé.",
+      "Rester en lane au lieu de roam."
+    ],
+    "matchup_notes": {
+      "Ahri": "Esquive son Charme avec W.",
+      "Zed": "Il te burst avant toi : garde W pour son ultime.",
+      "LeBlanc": "Sa chaîne ne tient pas si tu dashes avec E : burst-la.",
+      "Yone": "Il te bat au contact : farm et roam.",
+      "Talon": "Il te devance en burst : évite les trades."
+    },
+    "mid_game": "Roams, picks et objectifs. Chasse les mages isolés.",
+    "late_game": "Assassine le carry adverse avec Hallali et enchaîne si tu obtiens l'élimination.",
+    "ahead": "Roam, chasse les carries et prends les objectifs.",
+    "behind": "Farm et cherche des picks sur des cibles isolées.",
+    "win_condition": "Pour gagner cette partie, tu veux punir les mages en lane et roam pour assassiner les carries.",
+    "final_tip": "Garde Appel de la meute pour esquiver le sort clé adverse : tu es inciblable un court instant."
+  }
+}

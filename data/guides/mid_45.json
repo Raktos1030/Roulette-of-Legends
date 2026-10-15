@@ -1,0 +1,43 @@
+{
+  "Ziggs|mid": {
+    "identity": "Mage d'artillerie à dégâts magiques, spécialiste du siège. Bombe rebondissante (Q) poke à longue portée, Charge explosive (W) repousse (y compris Ziggs) et détruit instantanément les tours ennemies basses en PV, Mines Hexplosives (E) slow en zone, et Méga bombe infernale (R) frappe une grande zone à très longue portée. Son passif renforce régulièrement une attaque, plus souvent quand il lance des sorts.",
+    "playstyle": "Au mid, Ziggs nettoie les waves à distance, poke et détruit les tours. Il gagne en poussant et en prenant les structures plutôt qu'en tuant. Il est vulnérable aux assassins et aux tanks qui le collent.",
+    "early_game": "Nettoie la wave avec Q et E, poke avec Q quand l'adversaire vient last hit. Garde W pour fuir un engage (tu te repousses toi-même). Pousse pour prendre les plaques.",
+    "level_1": "Bombe rebondissante (Q) en premier. Poke et farm.",
+    "level_2": "Mines Hexplosives (E). Slow et nettoyage de wave.",
+    "level_3": "Charge explosive (W). Repousse l'adversaire ou toi-même : ta fuite principale, et ton outil pour achever les tours basses.",
+    "level_6": "Méga bombe infernale : frappe très loin. Utilise-la pour finir les combats sur les autres lanes, nettoyer une wave lointaine ou toucher plusieurs ennemis en teamfight.",
+    "power_spikes": [
+      "Niveau 3 : W pour fuir et prendre les tours.",
+      "Niveau 6 : ultime à longue portée.",
+      "Premier item complet : nettoyage et poke.",
+      "Mid game : siège et destruction des tours."
+    ],
+    "lane_plan": "Pousse la wave, poke et prends les plaques. Détruis les tours basses avec W. La quête de rôle mid (retour accéléré) t'aide à enchaîner poussée et retour. Contre les assassins, garde W pour fuir.",
+    "trading": "Trade de base : Q à distance. Défense : W pour te repousser, E pour slow. Abandonne contre les champions qui te collent (Nasus, Locke).",
+    "jungle_plan": "",
+    "threats": [
+      "Assassins (Locke, Zed).",
+      "Tanks qui te collent (Nasus mid).",
+      "Xerath, qui te surclasse en portée."
+    ],
+    "mistakes": [
+      "Utiliser W pour poke et ne plus pouvoir fuir.",
+      "Oublier d'achever les tours basses avec W.",
+      "Se placer trop près en teamfight."
+    ],
+    "matchup_notes": {
+      "Viktor": "Poke-le de plus loin.",
+      "Syndra": "Reste hors de son stun.",
+      "Ahri": "Garde W pour fuir son engage.",
+      "Yasuo": "Son Mur de vent bloque tes bombes : garde W pour son engage.",
+      "Nasus": "Il te colle : pousse et prends les tours ailleurs."
+    },
+    "mid_game": "Siège : pousse les waves et détruis les tours avec W.",
+    "late_game": "Poke derrière ta frontline, R sur le groupe, W pour te repositionner.",
+    "ahead": "Prends toutes les tours et poke avant les objectifs.",
+    "behind": "Pousse les waves à distance et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux pousser, prendre les tours et poke l'équipe adverse avant les combats.",
+    "final_tip": "Garde toujours ta Charge explosive pour fuir : c'est ta seule mobilité."
+  }
+}

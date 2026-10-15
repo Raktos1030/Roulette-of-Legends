@@ -1,0 +1,43 @@
+{
+ "Zoe|mid": {
+  "identity": "Very long-range magic damage burst mage. Paddle Star! (Q) fires a projectile she can redirect; its damage grows with the distance traveled. Spell Thief (W) picks up the leftovers of summoner spells and active items the enemy used so she can cast them. Sleepy Trouble Bubble (E) puts the target to sleep (damage that wakes it is doubled), and Portal Jump (R) briefly teleports her before bringing her back. After every ability, her next attack deals bonus damage (passive).",
+  "playstyle": "Long-range pick mage: put the target to sleep with E, then an extended Q thanks to R for a one-shot. Very mechanical: Q's range depends on how well you extend it.",
+  "early_game": "Poke with an extended Q (throw it backward, then redirect it at your opponent) when your opponent comes to last hit. Keep E to punish or defend yourself (the bubble passes through walls). Pick up the summoner spells your opponent uses.",
+  "level_1": "Paddle Star! (Q) first. Poke with an extended Q.",
+  "level_2": "Sleepy Trouble Bubble (E). E → extended Q on the sleeping target: double damage.",
+  "level_3": "Spell Thief (W). Pick up the summoner spells your opponent used: a stolen Flash or Ignite changes a fight.",
+  "level_6": "Portal Jump: a short teleport, then a return. Combo: E (sleep) → R forward → Q (which starts from farther away) → return: huge damage with little risk.",
+  "power_spikes": [
+   "Level 2: E + Q on a sleeping target.",
+   "Level 6: R → Q combo for the one-shot.",
+   "First completed item: long-range burst.",
+   "Mid game: picks with the bubble."
+  ],
+  "lane_plan": "Poke with Q, keep E and control the wave. Push, then roam: your bubble and extended Q punish isolated targets. The mid role quest (faster recall) makes your roams more profitable.",
+  "trading": "Short trade: extended Q. All-in: E → R → Q → return → attacks. Give up on it against mages who shut you down (Malzahar and his shield) or champions who dive you (Akshan).",
+  "jungle_plan": "",
+  "threats": [
+   "Malzahar, whose shield absorbs your burst.",
+   "Akshan, who dives you with his swing.",
+   "Assassins while your bubble is on cooldown."
+  ],
+  "mistakes": [
+   "Throwing Q straight without extending it (little damage).",
+   "Hitting the sleeping target with a small ability instead of Q.",
+   "Forgetting to pick up summoner spells."
+  ],
+  "matchup_notes": {
+   "Ahri": "Put her to sleep before her engage.",
+   "Viktor": "Poke him from beyond his laser's range.",
+   "Zed": "Put him to sleep when he reappears after his ultimate.",
+   "Malzahar": "His shield absorbs your Q: break it first with a small attack.",
+   "Akshan": "Keep E for his swing."
+  },
+  "mid_game": "Picks on isolated targets and poke before objectives.",
+  "late_game": "Long-range picks: put the enemy carry to sleep and one-shot them. Stay behind your frontline.",
+  "ahead": "Roam, create picks and take objectives.",
+  "behind": "Farm, poke safely and look for picks.",
+  "win_condition": "To win this game, you want to put isolated carries to sleep and one-shot them from long range.",
+  "final_tip": "Always extend your Q (backward, then toward the target): its damage grows with distance."
+ }
+}

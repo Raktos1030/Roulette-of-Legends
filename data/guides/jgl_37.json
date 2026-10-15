@@ -1,0 +1,43 @@
+{
+  "Skarner|jgl": {
+    "identity": "Tank à dégâts physiques, spécialiste de l'engage et de l'enlèvement. Terre brisée (Q) lui fait arracher un rocher qui renforce ses attaques, puis Soulèvement le lance ; Bastion sismique (W) donne un shield et slow autour de lui ; Impact d'Ixtal (E) charge à travers les murs, attrape le premier champion rencontré et le stun s'il le plaque contre un mur ; Empalement (R) empale jusqu'à trois champions et les traîne avec lui. Son passif inflige des dégâts en pourcentage des PV après trois sorts sur une même cible.",
+    "playstyle": "Jungler tank de ganks et d'enlèvement. Skarner attrape une cible (E ou R) et la ramène dans son équipe. Il est très fort en gank grâce à E qui traverse les murs, et en teamfight grâce à l'ultime qui retire jusqu'à trois ennemis du combat.",
+    "early_game": "Clear en sécurité avec Q et W. Gank en traversant les murs avec E : tu arrives par des angles inattendus et plaques la cible contre un mur pour le stun. Pas de duel contre les junglers qui te kitent (Lillia).",
+    "level_1": "Terre brisée (Q) en premier.",
+    "level_2": "Bastion sismique (W). Shield et slow : ton clear devient plus sûr.",
+    "level_3": "Impact d'Ixtal (E). Premier gank : E à travers le mur → attrape la cible → la plaque contre un mur (stun) → Q et W.",
+    "level_6": "Empalement : empale jusqu'à trois champions devant toi et les traîne avec toi. Combiné à E ou Flash, tu peux ramener un carry au milieu de ton équipe ou sous ta tour.",
+    "power_spikes": [
+      "Niveau 3 : ganks à travers les murs.",
+      "Niveau 6 : enlèvement de plusieurs cibles avec l'ultime.",
+      "Premier item complet : tank solide.",
+      "Mid game : picks et engages."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear sûr et ganks par des angles inattendus grâce à E. Skarner excelle à ganker sous tour : attrape la cible et ramène-la vers ton équipe. Contrôle les crabes, les Larves (vers 8 min) et les dragons avec ton équipe. Évite les duels contre les junglers qui te kitent ou te battent en combat long.",
+    "trading": "En gank : E à travers un mur → plaque contre un mur → Q → W. En teamfight : R sur jusqu'à trois ennemis → ramène-les dans ton équipe. Abandonne si ton E est raté et que la cible a une fuite.",
+    "threats": [
+      "Lillia, Udyr et Gwen : matchups difficiles.",
+      "Kiting à distance.",
+      "CC qui t'interrompent pendant ta charge."
+    ],
+    "mistakes": [
+      "Charger avec E sans mur derrière la cible (pas de stun).",
+      "Utiliser l'ultime sans pouvoir ramener la cible vers ton équipe.",
+      "Engager sans suivi."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il t'envahira : gank au lieu de duel.",
+      "Graves": "Attrape-le avec E quand il dash.",
+      "Sylas": "Attention : il peut voler ton ultime.",
+      "Lillia": "Elle te kite : joue avec ton équipe.",
+      "Udyr": "Il te bat en duel : évite-le."
+    },
+    "mid_game": "Picks et engages autour des objectifs. Attrape les carries qui s'avancent.",
+    "late_game": "Enlève le carry adverse avec l'ultime et ramène-le dans ton équipe.",
+    "ahead": "Gank en boucle, prends les objectifs et force les combats.",
+    "behind": "Tank pour ton équipe et cherche un enlèvement décisif.",
+    "win_condition": "Pour gagner cette partie, tu veux enlever les carries adverses et les ramener dans ton équipe.",
+    "final_tip": "Avant de charger avec E, repère le mur contre lequel tu vas plaquer la cible."
+  }
+}

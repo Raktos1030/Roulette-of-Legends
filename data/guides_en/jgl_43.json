@@ -1,0 +1,43 @@
+{
+ "Vi|jgl": {
+  "identity": "Physical damage fighter who specializes in ganking and locking down a target. Vault Breaker (Q) charges up, then dashes her forward, knocking back the first target, Denting Blows (W) shreds armor and deals percent-health damage every three attacks, Relentless Force (E) strikes in a cone through the target, and Cease and Desist (R) sends her charging, unstoppable, at a chosen champion to knock them up. Her passive gives her a shield when she hits an ability.",
+  "playstyle": "Simple, effective gank and engage jungler: her ultimate locks down a target with no way to stop it.",
+  "early_game": "Clear with W and E. Gank from level 3: charged Q to knock the target toward your laner, then attacks and E. Keep Q to go through a wall or escape.",
+  "level_1": "Denting Blows (W) first.",
+  "level_2": "Relentless Force (E). Strikes in a cone: your clear speeds up.",
+  "level_3": "Vault Breaker (Q). First gank: charged Q → knock back the target → attacks (W) → E. Q is maxed first.",
+  "level_6": "Cease and Desist: she charges, unstoppable, at a chosen champion and knocks them up. Ideal to lock down a carry in teamfights or a fleeing target in ganks.",
+  "power_spikes": [
+   "Level 3: ganks with Q.",
+   "Level 6: unstoppable lockdown with your ultimate.",
+   "First completed item: strong ganks and dives.",
+   "Mid game: engages on carries."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Safe clear and ganks from level 3. Vi wins through ganks and dives: control Scuttles, gank lanes where the target has no escape, and take Void Grubs (around 8 minutes) and dragons with your team. After 6, nearly every gank is guaranteed.",
+  "trading": "Ganking: charged Q → attacks → E. Teamfighting: R on the enemy carry → Q → attacks. Give up on it against junglers who beat you in duels (Wukong) or lock you down (Zyra).",
+  "threats": [
+   "Wukong: a hard matchup.",
+   "Zyra and Karthus, unfavorable according to the data.",
+   "Casting your ultimate without follow-up from your team."
+  ],
+  "mistakes": [
+   "Charging Q for too long (the target walks away).",
+   "Casting your ultimate on a tank instead of a carry.",
+   "Diving when your team can't follow."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Gank faster than him and avoid his invades.",
+   "Graves": "He beats you in duels: gank where he isn't.",
+   "Sylas": "He can steal your ultimate: don't engage when he can take it back.",
+   "Wukong": "His clone fools you: aim your ultimate at the real one.",
+   "Viego": "Lock him down with your ultimate when he dives."
+  },
+  "mid_game": "Ganks and engages on carries around objectives.",
+  "late_game": "Ultimate on the enemy carry, then Q and attacks. Wait until your team can follow.",
+  "ahead": "Gank nonstop, dive and take objectives.",
+  "behind": "Look for picks with your ultimate and play with your team.",
+  "win_condition": "To win this game, you want to create advantages through ganks and lock down the enemy carry in teamfights.",
+  "final_tip": "Save your ultimate for the enemy carry: it's an unstoppable charge, nobody can stop it."
+ }
+}

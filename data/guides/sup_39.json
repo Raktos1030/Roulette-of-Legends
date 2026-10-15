@@ -1,0 +1,43 @@
+{
+  "Yuumi|sup": {
+    "identity": "Enchanteresse attachée. Félin pour l'autre ! (W), disponible dès le niveau 1, la fait dash sur un allié et s'y attacher : seules les tourelles peuvent alors la cibler. Chat-maraderie (passif) : régulièrement, toucher un champion la soigne et renforce le soin du prochain allié rejoint ; elle crée aussi un lien avec ses alliés, et son « meilleur ami » renforce ses sorts. Tête chat-sseuse (Q) lance un projectile qui blesse et slow (plus fort après un long vol, et dirigeable quand elle est attachée), Zouuu ! (E) donne un shield et de la vitesse de déplacement et d'attaque (à l'allié porteur si elle est attachée), et Chat-pitre final (R) envoie cinq vagues qui blessent les ennemis et soignent les alliés.",
+    "playstyle": "Support d'accompagnement : attachée à son carry, elle le soigne, l'accélère et poke avec Q, sans pouvoir être ciblée. Elle perd nettement contre tous les supports d'engage fréquents (Thresh, Nautilus, Leona, Alistar, Braum, Rell), car son ADC se retrouve seul face à deux adversaires. Elle bat surtout les mages lents (Swain, Brand, Xerath, Lux, Morgana).",
+    "early_game": "Reste attachée à ton ADC et poke avec Q en le dirigeant vers l'adversaire (plus il vole longtemps, plus il frappe fort). Donne Zouuu ! (E) à ton ADC pendant ses trades. Détache-toi seulement pour toucher un champion avec une attaque (soin du passif) quand c'est sûr.",
+    "level_1": "Tête chat-sseuse (Q) en premier ; Félin pour l'autre (W) est déjà disponible. Chemins les plus joués : Q → E → Q → E → Q ; Q → E → E. Monte Q et E ; W n'est monté qu'en toute fin.",
+    "level_2": "Zouuu ! (E). Shield, vitesse de déplacement et d'attaque pour ton ADC.",
+    "level_3": "Continue Q et E. Poke avec Q dirigé, E sur ton ADC à chaque trade.",
+    "level_6": "Chat-pitre final : cinq vagues qui blessent les ennemis et soignent les alliés. Tu peux te déplacer et changer d'allié pendant la canalisation : suis le combat.",
+    "power_spikes": [
+      "Niveau 2 : Q + E sur ton ADC.",
+      "Niveau 6 : ultime de soin et de dégâts.",
+      "Premier item complet : soins et shields renforcés.",
+      "Late game : carry protégé et accéléré en permanence."
+    ],
+    "lane_plan": "Reste attachée, poke avec Q et joue autour de ton ADC. Contre un support d'engage, joue très prudemment : ton ADC est seul face à deux adversaires. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées), mais attachée, tu dois bien choisir quand te détacher pour les poser.",
+    "trading": "Trade de base : Q dirigé sur l'adversaire, E sur ton ADC. All-in : R, Q, E en continu. Défense : E pour la vitesse de fuite, R pour soigner. Contre les supports d'engage, ne laisse pas ton ADC avancer.",
+    "jungle_plan": "",
+    "threats": [
+      "Thresh, Nautilus et Leona : adversaires fréquents et matchups difficiles.",
+      "Alistar, Braum et Rell : matchups difficiles.",
+      "Réductions de soins adverses."
+    ],
+    "mistakes": [
+      "Rester attachée à un ADC qui meurt au lieu de passer sur un autre allié.",
+      "Oublier la vision : tu dois te détacher pour poser des wards.",
+      "Lancer Q directement au lieu de le laisser voler pour plus de dégâts."
+    ],
+    "matchup_notes": {
+      "Lulu": "Trades de poke : ton Q dirigé est difficile à esquiver.",
+      "Thresh": "S'il attrape ton ADC, E et R pour le sauver.",
+      "Nautilus": "Son engage sur ton ADC est difficile à survivre : jouez derrière les sbires.",
+      "Séraphine": "Trade de poke qui te convient.",
+      "Swain": "Il est lent : poke-le avec Q."
+    },
+    "mid_game": "Passe d'un allié à l'autre selon le combat. Détache-toi pour poser des pinks quand c'est sûr.",
+    "late_game": "Attache-toi à ton meilleur carry (idéalement ton meilleur ami) : E en continu, Q pour slow, R au début du combat. Change d'allié si ton porteur meurt.",
+    "ahead": "Accompagne le carry le plus fort : il devient presque impossible à tuer.",
+    "behind": "Reste sur le carry le plus sûr et soigne : évite les combats contre les engages.",
+    "win_condition": "Pour gagner cette partie, tu veux rendre ton carry assez fort et assez résistant pour gagner les combats seul.",
+    "final_tip": "Laisse voler ton Q le plus longtemps possible avant de toucher : il fait plus de dégâts et slow davantage."
+  }
+}

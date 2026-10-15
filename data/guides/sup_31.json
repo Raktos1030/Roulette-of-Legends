@@ -1,0 +1,43 @@
+{
+  "Soraka|sup": {
+    "identity": "Soigneuse. Salut (passif) lui donne de la vitesse vers les alliés affaiblis. Appel de l'étoile (Q) fait tomber une étoile qui blesse et slow (et soigne Soraka si elle touche un champion), Infusion astrale (W) sacrifie une partie de ses PV pour soigner un allié, Équinoxe (E) crée une zone qui réduit au silence les ennemis puis root ceux qui y sont encore à la fin, et Souhait (R) soigne instantanément tous les champions alliés, où qu'ils soient.",
+    "playstyle": "Support de soin et de maintien : elle garde son ADC en vie en lane et soigne toute son équipe en teamfight, partout sur la carte. Aucun matchup nettement défavorable : ses moins bons (Nami, Blitzcrank, Senna) restent proches de l'équilibre. Elle écrase les supports de dive et les mages lents (Swain, Camille, Pantheon, Xerath).",
+    "early_game": "Touche Appel de l'étoile (Q) sur l'adversaire : il le slow et te soigne, ce qui compense les PV sacrifiés par W. Soigne ton ADC avec Infusion astrale (W) après chaque trade. Garde Équinoxe (E) pour interrompre un engage (silence) ou root l'adversaire.",
+    "level_1": "Appel de l'étoile (Q) en premier. Poke et soin sur toi.",
+    "level_2": "Infusion astrale (W). Soin puissant sur ton ADC ; il te coûte des PV, que Q te rend.",
+    "level_3": "Équinoxe (E). Silence et CC : pose-la sous l'engage adverse ou sous l'adversaire root.",
+    "level_6": "Souhait : soigne tous tes alliés partout sur la carte. Surveille les combats des autres lanes : un Souhait au bon moment sauve un allié à l'autre bout de la carte.",
+    "power_spikes": [
+      "Niveau 2 : Q + W, ton ADC gagne les trades longs.",
+      "Niveau 6 : Souhait global.",
+      "Premier item complet : soins beaucoup plus fréquents.",
+      "Teamfight : W en continu, Souhait au moment critique."
+    ],
+    "lane_plan": "Poke avec Q, soigne avec W et garde E contre les engages. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées). Surveille les autres lanes pour ton ultime.",
+    "trading": "Trade de base : Q sur l'adversaire, W sur ton ADC. Défense : E sous l'engage adverse (silence), W sur la cible. Contre les grappins (Blitzcrank), reste derrière les sbires : tu es fragile et W te coûte des PV.",
+    "jungle_plan": "",
+    "threats": [
+      "Nami, Blitzcrank et Senna : tes moins bons matchups, proches de l'équilibre.",
+      "Réductions de soins adverses.",
+      "Assassins qui te ciblent : tu es fragile."
+    ],
+    "mistakes": [
+      "Utiliser W en étant toi-même trop basse en PV.",
+      "Rater Q et ne plus pouvoir te soigner.",
+      "Garder Souhait trop longtemps : il doit servir quand un allié va mourir."
+    ],
+    "matchup_notes": {
+      "Lulu": "Trades de poke : touche Q pour te soigner.",
+      "Thresh": "Reste derrière les sbires ; E sous lui s'il engage.",
+      "Nami": "Esquive sa bulle et soigne ton ADC après ses trades.",
+      "Nautilus": "E sous lui quand son ancre touche : il est réduit au silence.",
+      "Swain": "Son drain ne suffit pas contre tes soins."
+    },
+    "mid_game": "Accompagne ton équipe, pose des pinks et garde Souhait pour les combats autour des objectifs.",
+    "late_game": "Reste derrière ta frontline : W en continu sur les carries, E sous les divers, Souhait quand plusieurs alliés sont bas en PV.",
+    "ahead": "Force les combats longs : ton équipe ne meurt pas.",
+    "behind": "Soigne et garde ton équipe en vie : Souhait peut retourner n'importe quel combat.",
+    "win_condition": "Pour gagner cette partie, tu veux garder ton équipe en vie dans les combats longs grâce à tes soins.",
+    "final_tip": "Chaque Q qui touche un champion te soigne : c'est ce qui te permet d'utiliser W sans mourir."
+  }
+}

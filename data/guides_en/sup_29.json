@@ -1,0 +1,43 @@
+{
+ "Shen|sup": {
+  "identity": "Protective tank. Ki Barrier (passive) gives him a shield after every ability (its cooldown drops when he affects champions). Twilight Assault (Q) recalls his spirit blade to empower his attacks (max-health damage, much stronger if the blade hits a champion) and slows enemies moving away from him, Spirit's Refuge (W) blocks attacks against Shen and his allies near the blade, Shadow Dash (E) is a dash that taunts enemies it passes through, and Stand United (R) shields an ally anywhere on the map, then teleports Shen to them.",
+  "playstyle": "Global protection support: he taunts enemies with E, blocks attacks with W and saves any ally with his ultimate. He struggles against tank supports and disengage enchanters (Rell, Braum, Janna, Milio), and mostly beats fragile or dive supports (Camille, Yuumi).",
+  "early_game": "Trade with Q: bring the blade back through your opponent to empower your attacks. Keep Shadow Dash (E) to engage with your ADC or taunt a diver. Spirit's Refuge (W) blocks the enemy ADC's attacks around the blade.",
+  "level_1": "Shadow Dash (E) first. After that, max Q first.",
+  "level_2": "Twilight Assault (Q). Combo: E (taunt) → Q (blade through the target) → attacks.",
+  "level_3": "Spirit's Refuge (W). Blocks attacks around your blade: place it near your ADC before a trade.",
+  "level_6": "Stand United: a shield on an ally in danger anywhere, then a teleport. Save your top laner, join a fight mid or turn an enemy dive into a counterattack.",
+  "power_spikes": [
+   "Level 2: E → Q.",
+   "Level 6: global ultimate.",
+   "First resistance items: a durable frontline.",
+   "Mid game: 2v2 fights all over the map."
+  ],
+  "lane_plan": "Engage with E when your ADC can follow, protect them with W. At level 6, watch the map for your ultimate. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "All-in: E → Q → attacks, W to block the enemy ADC's counterattack. Defense: E on the diver, W near your ADC. Back off against supports who beat you up close (Rell, Braum): play for your ultimate instead.",
+  "jungle_plan": "",
+  "threats": [
+   "Rell and Braum, the worst matchups.",
+   "Janna, Milio and Seraphine: hard matchups.",
+   "Ranged poke that stops you from getting close to taunt."
+  ],
+  "mistakes": [
+   "Casting your ultimate too late, on an ally who's already dead.",
+   "Using E when your ADC can't follow.",
+   "Placing the blade far from your ADC before a fight."
+  ],
+  "matchup_notes": {
+   "Thresh": "Taunt him with E when he steps up for his hook.",
+   "Lulu": "Her polymorph cuts your taunt: engage once she's used it.",
+   "Nautilus": "His engage brings him close to you: answer with E.",
+   "Camille": "She has to dive: taunt her and block her attacks with W.",
+   "Rell": "Her engage outclasses you: protect your ADC and play the map with your ultimate."
+  },
+  "mid_game": "Watch the whole map: your ultimate turns every fight from afar. Place Control Wards around objectives.",
+  "late_game": "Protect your carry with W, taunt divers with E and save an ally with R. Don't waste your ultimate before the deciding fight.",
+  "ahead": "Help every lane with your ultimate.",
+  "behind": "Protect your ADC and keep your ultimate to save a carry.",
+  "win_condition": "To win this game, you want to protect your team anywhere on the map and win the fights your ultimate joins.",
+  "final_tip": "Watch the minimap constantly: your ultimate is only useful if you cast it before your ally dies."
+ }
+}

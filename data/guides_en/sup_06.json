@@ -1,0 +1,43 @@
+{
+ "Braum|sup": {
+  "identity": "Protective tank. Concussive Blows (passive): his attacks apply stacks; once the first is applied, his allies' attacks apply them too, and at 4 stacks the target is stunned. Winter's Bite (Q) throws ice that slows and applies a stack, Stand Behind Me (W) leaps him to an ally (both gain armor and magic resist), Unbreakable (E) raises his shield in a direction to destroy every projectile that hits it, and Glacial Fissure (R) knocks up enemies in a line and leaves a fissure that slows.",
+  "playstyle": "Protection and counter-engage support: he blocks projectiles, stuns with his passive and protects his ADC. No clearly unfavorable matchups: his worst ones (Senna, Zilean, Rell) stay close to even. He crushes melee supports and hooks (Blitzcrank, Nautilus).",
+  "early_game": "At level 1, Q then attacks: with your ADC, the passive stuns quickly. Keep E to block the enemy hook, anchor or big poke. W lets you reach your ADC instantly.",
+  "level_1": "Winter's Bite (Q) first. Q, then attacks with your ADC to stun.",
+  "level_2": "Unbreakable (E). Blocks hooks and projectiles: your ADC stays behind you.",
+  "level_3": "Stand Behind Me (W). Leap to your ADC when they're engaged on, then use E to cover them.",
+  "level_6": "Glacial Fissure: a knock-up in a line, then a slow. Use it to engage on both opponents or stop an enemy engage.",
+  "power_spikes": [
+   "Levels 1 to 2: passive stun with your ADC.",
+   "Level 6: engage or counter-engage ultimate.",
+   "First resistance items: a very durable shield.",
+   "Teamfights: E in front of your carry, R on divers."
+  ],
+  "lane_plan": "Trade at levels 1 and 2 with your passive, and protect your ADC from engages with E. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored): control vision at dragon.",
+  "trading": "Basic trade: Q, attacks with your ADC for the stun. Defense: W to your ADC, E facing the enemy. All-in: Q, attacks, R on both opponents. Against supports who poke without blockable projectiles (Zilean), play for engages instead.",
+  "jungle_plan": "",
+  "threats": [
+   "Senna, Zilean and Rell: your worst matchups, close to even.",
+   "Area or non-projectile damage, which your shield doesn't block.",
+   "Kiting: you need to be close to apply your passive."
+  ],
+  "mistakes": [
+   "Raising your shield in the wrong direction.",
+   "Using W to engage and no longer being able to reach your ADC.",
+   "Casting your ultimate without your team ready to follow."
+  ],
+  "matchup_notes": {
+   "Thresh": "Block his hook with E.",
+   "Nautilus": "E blocks his anchor; if he engages, W to your ADC, then R.",
+   "Blitzcrank": "Block his hook with E, or let him grab you instead.",
+   "Leona": "She engages you: answer with W to your ADC and your passive.",
+   "Senna": "She pokes you from far away: block her Q's with E and engage on her when she steps up."
+  },
+  "mid_game": "Stick with your ADC and jungler. Place Control Wards and protect objectives.",
+  "late_game": "Stay in front of your carry, E facing the enemy team, W to reach them, R on divers or to engage on a group.",
+  "ahead": "Engage with R and help your team take objectives.",
+  "behind": "Protect your ADC: your shield and ultimate cancel engages.",
+  "win_condition": "To win this game, you want to protect your carry with your shield and win fights thanks to your passive's stun.",
+  "final_tip": "The first stack comes from you, the rest from your team: Q or an attack on the target, then let your ADC finish the stun."
+ }
+}

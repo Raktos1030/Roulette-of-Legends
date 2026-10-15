@@ -1,0 +1,43 @@
+{
+ "Syndra|mid": {
+  "identity": "Magic damage burst mage. Dark Sphere (Q) summons a sphere that explodes, Force of Will (W) grabs a sphere or minion and throws it while slowing, Scatter the Weak (E) knocks back enemies and spheres (which stun whoever they hit), and Unleashed Power (R) sends every sphere at a target. She builds stacks that upgrade her abilities (passive Transcendent).",
+  "playstyle": "Lane-control and burst mage. Syndra pokes from range, stuns with Q + E and one-shots a target with her ultimate.",
+  "early_game": "Poke with Q when your opponent comes to last hit and farm distant minions with W. Keep E (and a sphere nearby) to stun an assassin who engages you. Build your passive stacks by hitting champions.",
+  "level_1": "Dark Sphere (Q) first. Poke and farm.",
+  "level_2": "Scatter the Weak (E). Q → E: the sphere is launched and stuns. It's your main offensive and defensive tool.",
+  "level_3": "Force of Will (W). Full combo: Q → E (stun) → W → Q.",
+  "level_6": "Unleashed Power: every sphere hits the target. The more spheres, the bigger the burst. Combo: Q → E → W → R.",
+  "power_spikes": [
+   "Level 2: Q + E stun.",
+   "Level 6: one-shots with your ultimate.",
+   "First completed item: burst that kills carries.",
+   "Passive stacks: upgraded abilities."
+  ],
+  "lane_plan": "Poke with Q, control the wave and keep E against engages. Push, then join your jungler or objectives. The mid role quest (faster recall) helps you come back quickly after pushing.",
+  "trading": "Short trade: Q poke. All-in: Q → E → W → R. Defense: E on the incoming assassin. Give up on it against assassins who dodge your stun.",
+  "jungle_plan": "",
+  "threats": [
+   "Fizz, Katarina, Ekko and Locke: hard matchups.",
+   "Ganks while your E is on cooldown.",
+   "Longer-range poke (Xerath)."
+  ],
+  "mistakes": [
+   "Wasting E without a stun.",
+   "Casting your ultimate with too few spheres.",
+   "Staying in an assassin's range without E available."
+  ],
+  "matchup_notes": {
+   "Viktor": "Poke him and stun him when he steps up.",
+   "Ahri": "Keep E for her R engage.",
+   "Zed": "Keep E for the moment he reappears after his ultimate.",
+   "Fizz": "He dodges your stun: keep E for the end of his hop.",
+   "Katarina": "Stun her when she lands on her dagger."
+  },
+  "mid_game": "Picks and zone control around objectives. One-shot carries who walk forward without vision.",
+  "late_game": "Burst the enemy carry with your ultimate, protect yourself with E. Stay behind your frontline.",
+  "ahead": "Roam, create picks and take objectives.",
+  "behind": "Farm, poke safely and look for picks.",
+  "win_condition": "To win this game, you want to control your lane and one-shot carries with your ultimate.",
+  "final_tip": "Always keep a sphere and your E for the enemy engage: the stun saves you."
+ }
+}

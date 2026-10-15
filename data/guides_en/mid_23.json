@@ -1,0 +1,43 @@
+{
+ "Malzahar|mid": {
+  "identity": "Magic damage control mage who specializes in suppression. His passive (Void Shift) protects him with a shield that blocks damage and CC as long as he hasn't been hit recently. Call of the Void (Q) silences, Void Swarm (W) summons voidlings, Malefic Visions (E) deals damage over time that jumps to a new target when its host dies, and Nether Grasp (R) suppresses a target and creates a damage zone.",
+  "playstyle": "Farming, wave-control and anti-assassin mage. Malzahar clears waves effortlessly, holds up against assassins thanks to his shield, and locks down a target with his ultimate. He's strongest against melee assassins and fighters (Yasuo, LeBlanc, Vladimir).",
+  "early_game": "Push the wave with E (which jumps from minion to minion) and your voidlings. Keep your passive shield up: don't let yourself get poked for free. Q silences an assassin who engages.",
+  "level_1": "Malefic Visions (E) first. Clear the wave and poke.",
+  "level_2": "Void Swarm (W). Voidlings that attack your targets: E → W on your opponent.",
+  "level_3": "Call of the Void (Q). A silence: keep it to interrupt an engage.",
+  "level_6": "Nether Grasp: suppression. Combo: E → W → R → Q. With your jungler, it's an almost guaranteed kill. In teamfights, suppress the most dangerous carry or diver.",
+  "power_spikes": [
+   "Level 6: suppression for kills and ganks.",
+   "First completed item: wave clear and damage.",
+   "Two items: teamfight control.",
+   "Passive shield up: very hard to engage on."
+  ],
+  "lane_plan": "Push the wave with E and your voidlings, keep your shield and join your jungler for objectives. After 6, set up ganks: your suppression guarantees the kill. The mid role quest (faster recall) helps you reset after pushing.",
+  "trading": "Basic trade: E + voidlings. All-in: E → W → R → Q. Defense: Q to silence the incoming assassin. Give up on it against champions who poke you to break your shield (Hwei).",
+  "jungle_plan": "",
+  "threats": [
+   "Hwei, who pokes you and breaks your shield.",
+   "Tanks who withstand your damage over time (mid Sion).",
+   "Cleanses and effects that cancel your suppression."
+  ],
+  "mistakes": [
+   "Losing your passive shield to a small poke.",
+   "Casting R without E and voidlings first.",
+   "Wasting Q and no longer being able to silence an engage."
+  ],
+  "matchup_notes": {
+   "Yasuo": "Your shield blocks his Q3; Q silences him when he engages.",
+   "Ahri": "Keep your shield up against her Charm.",
+   "Viktor": "He pokes you: clear the wave and play for objectives.",
+   "Zed": "Your shield absorbs his ultimate; suppress him when he reappears.",
+   "Hwei": "He breaks your shield from range: farm and play around your jungler."
+  },
+  "mid_game": "Join objectives and set up picks with your suppression.",
+  "late_game": "Suppress the most dangerous carry or diver; clear waves with E.",
+  "ahead": "Set up ganks, take objectives and roam.",
+  "behind": "Farm, push waves and play for a decisive suppression.",
+  "win_condition": "To win this game, you want to control the wave, keep your shield and lock down a target with your suppression at the right moment.",
+  "final_tip": "Protect your passive shield: without it, assassins can kill you; with it, they can barely do anything."
+ }
+}

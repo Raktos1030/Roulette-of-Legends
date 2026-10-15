@@ -1,0 +1,43 @@
+{
+ "Velkoz|mid": {
+  "identity": "Artillery mage dealing magic and true damage, played mid about one game in five (support is his main role). Plasma Fission (Q) splits at a right angle to hit behind minions, Void Rift (W) strikes in a line twice, Tectonic Disruption (E) knocks up after a delay, and Life Form Disintegration Ray (R) channels a ray that deals true damage to targets he has already researched. Three ability hits on a target trigger true damage (passive).",
+  "playstyle": "In mid, Vel'Koz is a long-range poke and burst mage, more damage-focused than in support. He clears waves with W and pokes with Q.",
+  "early_game": "Farm with W (which hits the whole line of minions) and poke with a split Q. Keep E to defend against an engage: the knock-up lands after a short delay, so anticipate.",
+  "level_1": "Plasma Fission (Q) first. Poke by splitting Q behind minions.",
+  "level_2": "Void Rift (W). Clear the wave and poke in a line.",
+  "level_3": "Tectonic Disruption (E). Combo: E (knock-up) → W → Q → true damage passive.",
+  "level_6": "Disintegration Ray: a channeled ray that follows your cursor. Cast it after E on a rooted target or on a grouped team. You can cancel it if needed.",
+  "power_spikes": [
+   "Level 3: E → W → Q combo.",
+   "Level 6: true damage ray.",
+   "First completed item: long-range poke and burst.",
+   "Teamfights: ray on several targets."
+  ],
+  "lane_plan": "Clear the wave with W, poke with a split Q and keep E for defense. Push, then join objectives. The mid role quest (faster recall) helps you reset after pushing.",
+  "trading": "Short trade: split Q. All-in: E → W → Q → R. Give up on it against assassins who dive you (LeBlanc) or roam around you (Twisted Fate).",
+  "jungle_plan": "",
+  "threats": [
+   "LeBlanc: your hardest matchup.",
+   "Assassins who interrupt your ray.",
+   "Twisted Fate, who roams while you poke."
+  ],
+  "mistakes": [
+   "Channeling the ray within an assassin's range.",
+   "Casting E without anticipating the delay.",
+   "Positioning too close in teamfights."
+  ],
+  "matchup_notes": {
+   "Viktor": "Poke him with a split Q and W.",
+   "Ahri": "Keep E for the end of her ultimate.",
+   "Syndra": "A range duel: dodge her stun.",
+   "LeBlanc": "She bursts you before you can react: farm under your tower.",
+   "Twisted Fate": "He roams: warn your team."
+  },
+  "mid_game": "Poke before objectives and ray on grouped teams.",
+  "late_game": "Artillery: poke, E on the enemy engage and ray on the group. Stay behind your frontline.",
+  "ahead": "Poke before objectives and take towers.",
+  "behind": "Farm from range and play with your team.",
+  "win_condition": "To win this game, you want to poke the enemy team before fights and finish them with your ray.",
+  "final_tip": "Split your Q behind minions: it's how you poke without getting blocked."
+ }
+}

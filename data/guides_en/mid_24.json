@@ -1,0 +1,43 @@
+{
+ "Mel|mid": {
+  "identity": "Magic damage mage. Every ability gives her bonus projectiles on her attacks, and all her damage applies Overwhelm: past a threshold, the target is executed (passive Searing Brilliance). Radiant Volley (Q) fires projectiles that explode in an area, Rebuttal (W) reflects enemy projectiles and makes her briefly immune to damage, Solar Snare (E) roots in the center and slows around it, and Golden Eclipse (R) strikes every enemy marked with Overwhelm, wherever they are.",
+  "playstyle": "Poke and execute mage.",
+  "early_game": "Poke with Q and your empowered attacks to build up Overwhelm. Keep W to reflect the enemy's big projectile (a mage's key ability, an arrow, a hook). E roots an opponent who steps up.",
+  "level_1": "Radiant Volley (Q) first. Poke and farm.",
+  "level_2": "Solar Snare (E). CC in the center: E → Q → attacks.",
+  "level_3": "Rebuttal (W). Reflects projectiles and protects you: it's your main defensive tool, and a nasty trap against projectile mages.",
+  "level_6": "Golden Eclipse: strikes every marked enemy, anywhere on the map. Build Overwhelm on several targets, then R to execute the ones that drop below the threshold.",
+  "power_spikes": [
+   "Level 3: E → Q → attacks.",
+   "Level 6: global Golden Eclipse.",
+   "First completed item: poke and executes.",
+   "Teamfights: executing several marked targets."
+  ],
+  "lane_plan": "Poke with Q and your attacks, keep W for the enemy's key ability. Push, then join objectives to mark several enemies. Turn your lane lead into objectives quickly, because your late game is weak this patch.",
+  "trading": "Short trade: Q → empowered attacks. Long trade: E → Q → attacks → R to execute. Defense: W the moment the enemy projectile arrives. Give up on it against champions who dive you (Fizz, Aurelion Sol, Viktor).",
+  "jungle_plan": "",
+  "threats": [
+   "Almost every common mage according to the data (Viktor, Syndra, Xerath).",
+   "Fizz, who dodges and bursts you.",
+   "Non-projectile abilities, which W can't reflect."
+  ],
+  "mistakes": [
+   "Wasting W with no projectile to reflect.",
+   "Casting your ultimate without enough Overwhelm stacks.",
+   "Playing for the late game when your late game is weak this patch."
+  ],
+  "matchup_notes": {
+   "Ahri": "Reflect her Orb or her Charm with W.",
+   "Viktor": "His laser can't be reflected: farm and play around your jungler.",
+   "Syndra": "Reflect her spheres with W at the right moment.",
+   "Xerath": "He pokes you from very far away: stay behind your minions.",
+   "Fizz": "Keep E for the end of his hop."
+  },
+  "mid_game": "Poke and mark several enemies before objectives, then R to execute.",
+  "late_game": "Build Overwhelm on the enemy team and execute with R. Stay behind your frontline.",
+  "ahead": "Turn your lead into objectives as fast as possible.",
+  "behind": "Farm, poke safely and play with your team.",
+  "win_condition": "To win this game, you want to turn your lane lead into objectives before the game drags on.",
+  "final_tip": "Keep Rebuttal for the enemy's key ability: reflecting the right projectile turns a fight."
+ }
+}

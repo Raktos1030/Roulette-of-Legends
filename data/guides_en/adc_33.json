@@ -1,0 +1,43 @@
+{
+ "Zeri|adc": {
+  "identity": "Very mobile physical and magic damage marksman. Her real attack is Burst Fire (Q), which fires 7 rounds at the first enemy hit and counts as an attack; her regular basic attack is a charged shot (passive Living Battery) that, once charged by moving and shooting, deals extra damage. Ultrashock Laser (W) slows the first enemy hit and becomes a long-range laser if it hits a wall, Spark Surge (E) is a dash that goes over obstacles and makes Burst Fire pierce for a few seconds, and Lightning Crash (R) releases a nova then overcharges her: stacking attack speed for each champion hit and Burst Fire firing in triple with chain lightning.",
+  "playstyle": "Kiting ADC: she shoots while constantly moving and stays slippery thanks to her dash over walls. No clearly bad matchup: her weakest ones (Jinx, Tristana, Twitch) stay close to even. She crushes low-mobility poke ADCs (Ezreal, Varus, Miss Fortune).",
+  "early_game": "Farm with Burst Fire (Q): it's your main attack. Save your charged shot to finish a minion or hit your opponent when it's fully charged. Poke with W, firing it at a wall to get the long-range laser. Keep E to dodge an engage.",
+  "level_1": "Burst Fire (Q) is learned automatically at level 1. After that, the most played path takes Spark Surge (E) at level 2, Ultrashock Laser (W) at level 3, then Q.",
+  "level_2": "Spark Surge (E). A dash that goes over walls and makes Q pierce: your mobility and your damage on the wave.",
+  "level_3": "Ultrashock Laser (W). Slow and poke; against a wall it becomes a very long-range laser.",
+  "level_6": "Lightning Crash: a damage nova, then overcharge. The more champions you hit, the more your attack speed goes up. Cast it at the start of a fight, then kite with E.",
+  "power_spikes": [
+   "Level 2: E for trades and escapes.",
+   "Level 6: overcharge in fights.",
+   "First completed item: much more frequent Burst Fire.",
+   "Teamfights: triple Burst Fire with chain lightning."
+  ],
+  "lane_plan": "Farm with Q, poke with W off walls, and play with your support. Don't waste E: it's your survival. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards steady farming. Join dragons: your mobility lets you position there safely.",
+  "trading": "Basic trade: Burst Fire on your opponent, then back off while still shooting. All-in: W to slow, E to stay in range, R, then nonstop Burst Fire. Avoid long fights against scaling ADCs (Jinx) and surprise engages (Twitch).",
+  "jungle_plan": "",
+  "threats": [
+   "Jinx, Tristana and Twitch: your weakest matchups, close to even.",
+   "Crowd control when your dash is on cooldown.",
+   "Engage supports who catch you before your overcharge."
+  ],
+  "mistakes": [
+   "Standing still while shooting: Zeri has to keep moving all the time.",
+   "Wasting E to attack and having no way to escape.",
+   "Casting your ultimate with no champion to hit."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "Dodge her ultimate with E over a wall.",
+   "Jinx": "She scales: turn your lead into towers.",
+   "Yunara": "Avoid fighting her while her ultimate is up.",
+   "Ezreal": "Your mobility dodges his Qs.",
+   "Tristana": "Save E to dodge her Rocket Jump."
+  },
+  "mid_game": "Group with your team and take objectives. Use E and W around walls to move and poke.",
+  "late_game": "Kite nonstop behind your frontline, cast R as soon as several champions are in range, and use E to keep the right distance.",
+  "ahead": "Force fights: your overcharge and mobility make you hard to stop.",
+  "behind": "Farm, stay with your team and play teamfights by kiting.",
+  "win_condition": "To win this game, you want to kite fights without ever stopping and clean up teamfights with your overcharge.",
+  "final_tip": "Fire W at a wall: it becomes a very long-range laser, your best poke."
+ }
+}

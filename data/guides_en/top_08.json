@@ -1,0 +1,84 @@
+{
+ "Shen|top": {
+  "identity": "Energy-based tank who specializes in protection and global pressure. His spirit blade stays where he left it: Twilight Assault (Q) recalls it to him, slows champions it passes through and empowers his next three attacks (percent-health damage). Spirit's Refuge (W) blocks basic attacks in an area, Shadow Dash (E) taunts, and Stand United (R) shields an ally anywhere on the map before teleporting Shen to their side.",
+  "playstyle": "Stable lane of short energy trades, then map-wide influence with his ultimate. Shen isn't a big late-game duelist, but he turns 1v2 or 2v2 fights elsewhere on the map. Every ability he casts also gives him a shield (passive Ki Barrier).",
+  "early_game": "Place your blade behind your opponent (it stays where you last used it), then recall it with Q so it passes through them: they're slowed and your next three attacks hit much harder. Keep E to punish an engage or escape. From level 6, watch the minimap constantly.",
+  "level_1": "Twilight Assault (Q) first. Trade with Q's empowered attacks, especially when the blade has passed through your opponent.",
+  "level_2": "Shadow Dash (E). A dash that taunts and restores energy if it hits a champion. E → Q → empowered attacks is your first real engage.",
+  "level_3": "Spirit's Refuge (W). Creates a zone around your blade that blocks enemy basic attacks against you and your allies: very strong against melee physical fighters.",
+  "level_6": "Stand United: a big shield on an ally anywhere on the map (stronger if they're low), then a teleport after a channel. Use it to save a carry, win a river skirmish or turn your jungler's gank into 2 kills.",
+  "power_spikes": [
+   "Level 2: E + Q, a very effective short engage.",
+   "Level 6: global ultimate, pressure across the whole map.",
+   "First completed item: very hard to kill in lane.",
+   "Mid game: your ultimate wins 2v2 and 3v3 skirmishes."
+  ],
+  "lane_plan": "Farm safely, place your blade cleverly before every trade and trade briefly with Q. Before using your ultimate, push your wave so you don't lose too many minions or plates. Recall when your energy and health are both low. Your upgraded Teleport (role quest) adds to your ultimate: two ways to join fights.",
+  "trading": "Short trade: Q (blade passing through) → three empowered attacks → back off. Long trade: E (taunt) → Q → attacks → W to block the counterattack. Engage when E can land; give up on it if you don't have enough energy for E or your opponent kites you from range (W only blocks basic attacks).",
+  "jungle_plan": "",
+  "threats": [
+   "Ranged or ability-based champions, against whom W is useless (Kayle).",
+   "Split pushers who beat you 1v1 while you use your ultimate (Tryndamere).",
+   "Losing your tower because you used your ultimate without pushing."
+  ],
+  "mistakes": [
+   "Using your ultimate too late: the shield is useless on an ally who's already dead.",
+   "Missing E and being left with no energy and no engage.",
+   "Recalling your blade without it passing through your opponent (no slow)."
+  ],
+  "matchup_notes": {
+   "Nasus": "Punish him with Q and E when he comes to stack; Wither slows your attacks, so trade briefly and keep W for his empowered attacks.",
+   "Garen": "W blocks his attacks and your taunt slows down his Judgment. Trade when his Q is on cooldown.",
+   "Yone": "W blocks his basic attacks, not his Q's: don't count on W for his Q3.",
+   "Darius": "W cancels a big part of his attack damage; avoid the edge of his Decimate and his Apprehend.",
+   "Tryndamere": "W blocks his attacks, but he beats you in the side lane later: don't leave him alone when you use your ultimate."
+  },
+  "mid_game": "Play the map: push your wave, watch skirmishes and use your ultimate at the right moment. Every successful ultimate should turn into an objective (dragon, Void Grubs, Herald, tower).",
+  "late_game": "Protective frontline: keep your ultimate for your most threatened carry, taunt divers with E and block their attacks with W. You can also split push and teleport into the fight with your ultimate.",
+  "ahead": "Split push to draw people in, then ultimate onto the fight where your team has the numbers advantage.",
+  "behind": "Farm, defend your tower and use your ultimate to save your allies: your map impact doesn't depend on your lead.",
+  "win_condition": "To win this game, you want to use your ultimate to win fights all over the map while keeping your side lane under control.",
+  "final_tip": "Before every trade, get your blade behind your opponent: the Q that passes through is what wins the fight."
+ },
+ "Singed|top": {
+  "identity": "Magic damage tank with a unique style. Singed leaves a poison trail behind him with Poison Trail (Q), sticks and grounds enemies with Mega Adhesive (W), flips his opponent over his shoulder with Fling (E) and gains speed and stats with Insanity Potion (R). He doesn't fight head-on: he makes his opponent run through his poison.",
+  "playstyle": "Proxy farming (farming behind the enemy tower), disrupting side lanes and controlling teamfights. Singed is good at wasting the enemy team's time and winning matchups against melee fighters who chase him.",
+  "early_game": "Farm with your poison by running through the wave. If your opponent is too strong early, go farm between their outer and inner towers (proxy): you force them to lose minions or call their jungler. Never fight head-on in melee range.",
+  "level_1": "Poison Trail (Q) first. Farm by running through minions without exposing yourself.",
+  "level_2": "Fling (E). It throws your opponent behind you: useful to bring them back into your poison or under your tower.",
+  "level_3": "Mega Adhesive (W). It slows and grounds (no more dashes): W, then E into the glue roots the enemy.",
+  "level_6": "Insanity Potion: speed, resistances and regeneration. Use it to run into the enemy team, poison everyone and fling a carry, or to escape.",
+  "power_spikes": [
+   "Level 3: W → E combo.",
+   "Level 6: ultimate for engages and survival.",
+   "First completed item: very durable and fast.",
+   "Mid game: proxy farming and side-lane disruption."
+  ],
+  "lane_plan": "Farm with your poison, proxy farm when your opponent is too strong or their jungler is far away. Avoid head-on fights. Recall when your mana is low: the poison drains it constantly. Bushes are your friends to break a chase.",
+  "trading": "Basic trade: run next to your opponent so they walk through your poison. Long trade: W → E into the glue → poison. Engage when your opponent is chasing you; give up on it if they kite you from range or have a big burst.",
+  "jungle_plan": "",
+  "threats": [
+   "Gangplank and his keg poke.",
+   "Kayle and ranged champions who don't chase you.",
+   "Urgot and champions who beat you head-on."
+  ],
+  "mistakes": [
+   "Fighting head-on in melee range.",
+   "Leaving your poison on for no reason and draining your mana.",
+   "Using your ultimate too early, with no target to chase."
+  ],
+  "matchup_notes": {
+   "Nasus": "Stop him from stacking by proxy farming or pushing his wave; he slows you with Wither, so don't stay in range.",
+   "Yone": "He's happy to chase you: make him run through your poison and W to ground him.",
+   "Garen": "He silences you and spins: don't let him stick to you, make him run.",
+   "Gangplank": "He pokes you from range with kegs; proxy farm to force him to move.",
+   "Aatrox": "His Q's have a delay: run behind him so he chases you through your poison."
+  },
+  "mid_game": "Proxy farming and side-lane disruption: every minute your opponent spends chasing you is a minute gained for your team. Join objectives to fling carries.",
+  "late_game": "Run into the enemy team with your ultimate, poison as many targets as possible and fling a carry toward your team with E.",
+  "ahead": "Disrupt the side lanes, take towers and force two opponents to come after you.",
+  "behind": "Proxy farm and avoid head-on fights: your disruptor role stays intact.",
+  "win_condition": "To win this game, you want to make your opponent waste time and resources by forcing them to chase you through your poison.",
+  "final_tip": "Never chase: get chased through your poison."
+ }
+}

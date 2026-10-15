@@ -1,0 +1,43 @@
+{
+ "Ekko|jgl": {
+  "identity": "Magic damage assassin, played about half the time in the jungle. His passive Z-Drive Resonance triggers damage and a slow on the third hit on the same target. Timewinder (Q) goes out and comes back, slowing, Parallel Convergence (W) creates a zone that stuns enemies and shields him when he steps into it, Phase Dive (E) dashes then blinks his next attack onto the target, and Chronobreak (R) brings him back to where he was a few seconds earlier, healing him and damaging around him.",
+  "playstyle": "Gank and pick jungler, with an ultimate that lets him dive and then undo the mistake. He's strong in skirmishes and very good at killing isolated carries. Early skill orders vary: he's a flexible champion.",
+  "early_game": "Clear fast with Q and your passive. Gank from level 3: E to get close, attacks to trigger your passive, Q to slow. Place W ahead of time on your opponent's escape path so you can stun them when you step into it.",
+  "level_1": "Orders vary: Q → W → E, W → Q → E or Q → E → W. Timewinder (Q) helps clear camps.",
+  "level_2": "W or Q depending on your order. Parallel Convergence (W): an area stun, to be placed ahead of time.",
+  "level_3": "Full kit with Phase Dive (E). Gank combo: W placed early → E → attacks (passive) → Q. You step into W to stun.",
+  "level_6": "Chronobreak: you go back to your position from a few seconds ago, healing part of the damage taken and exploding where you land. Dive, kill the target, then rewind to safety. It's also a great damage tool: your past position can be in the middle of the enemy team.",
+  "power_spikes": [
+   "Level 3: ganks with W + E.",
+   "Level 6: dives with a rewind.",
+   "First completed item: burst that kills carries.",
+   "Mid game: picks and skirmishes."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear, then ganks on lanes where the opponent has no escape. Ekko is a tempo jungler: he creates leads through kills and picks. Control Scuttle, invade when your laners have priority, and play Void Grubs (around 8 minutes) and dragons with your team. With your ultimate, you can tower dive and rewind out.",
+  "trading": "Ganking: W early → E → attacks → Q. Skirmishing: wait for the enemy CC to be used, dive, and keep R to rewind. Give up on it if you've used R and have no escape left.",
+  "threats": [
+   "Talon and assassins who burst you before your ultimate.",
+   "Nidalee and junglers who kite you from range.",
+   "CC that locks you down before your rewind."
+  ],
+  "mistakes": [
+   "Casting your ultimate too late, when you're already dead.",
+   "Placing W on the target's current position instead of their path.",
+   "Diving without checking where your ultimate will send you back."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Avoid his early invades and punish him after your 6.",
+   "Viego": "Save your ultimate to undo his burst.",
+   "Graves": "He beats you early: farm, then punish him with W and your ultimate.",
+   "Talon": "He bursts you before your ultimate: play with your allies.",
+   "Sylas": "He can steal your ultimate: don't dive without it."
+  },
+  "mid_game": "Picks and skirmishes around objectives. Ekko is very good at killing carries who walk forward without vision.",
+  "late_game": "Flank and dive the enemy carry, then ultimate to rewind out. Wait for the enemy CC.",
+  "ahead": "Picks, invades and objectives: make yourself feared by killing isolated carries.",
+  "behind": "Farm, play with your team and look for picks on isolated targets.",
+  "win_condition": "To win this game, you want to create leads through ganks and picks, then kill carries in teamfights with your ultimate.",
+  "final_tip": "Before you dive, check where your ultimate will bring you back: it's your way out."
+ }
+}

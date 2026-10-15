@@ -1,0 +1,43 @@
+{
+  "Lucian|adc": {
+    "identity": "Tireur à dégâts physiques et à courte portée. Pistolero (passif) : après chaque compétence, sa prochaine attaque tire deux fois ; quand un allié le soigne ou lui donne un shield, ou quand un ennemi proche est root, ses deux prochaines attaques font des dégâts magiques en plus. Lumière perforante (Q) tire un rayon qui traverse sa cible, Flamboiement (W) explose en étoile pour marquer les ennemis (il gagne de la vitesse en attaquant un ennemi marqué), Poursuite inlassable (E) est un dash court dont le délai diminue avec chaque double tir, et Déluge de balles (R) tire une rafale de balles dans une direction.",
+    "playstyle": "ADC de début de partie : il gagne les trades courts en enchaînant sort, double tir, sort. Il est en moyenne devant en or à 15 min contre les ADC fréquents : il doit convertir tôt, car il scale moins bien que les autres.",
+    "early_game": "Trades courts : sort, attaque (double tir), sort, attaque. Avec un support qui soigne ou donne des shields, chaque soin renforce tes deux prochaines attaques. Pousse ton avance pour prendre les plaques. Garde E pour esquiver un engage si tu n'es pas sûr de gagner.",
+    "level_1": "Lumière perforante (Q) en premier. Q à travers un sbire pour toucher l'adversaire, puis double tir.",
+    "level_2": "Poursuite inlassable (E). Dash pour replacer un double tir, ou pour esquiver un sort. Chaque double tir réduit son délai.",
+    "level_3": "Flamboiement (W). Complète la rotation : Q → attaque → W → attaque → E → attaque. W révèle et te donne de la vitesse.",
+    "level_6": "Déluge de balles : dégâts soutenus dans une direction. Utilise-le quand l'adversaire ne peut pas sortir de la ligne (slow, root), et utilise E pendant l'ultime pour te replacer.",
+    "power_spikes": [
+      "Niveau 2 à 3 : trades courts très forts.",
+      "Niveau 6 : ultime pour achever.",
+      "Premier item complet : ton pic de puissance majeur.",
+      "Mid game : escarmouches avec ton support."
+    ],
+    "lane_plan": "Joue agressif avec ton support dès le niveau 2. Pousse pour prendre les plaques et va sur le dragon avec ton jungler. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) se complète vite quand tu domines. Termine vite : ta fin de partie est plus faible.",
+    "trading": "Trade court : Q → double tir → W → double tir, puis recule. All-in : ajoute E pour rester à portée et R quand l'adversaire est root. Évite les combats longs contre les ADC qui scalent (Jinx) ou qui te slow (Ashe).",
+    "jungle_plan": "",
+    "threats": [
+      "Séraphine bot : ton matchup le plus difficile.",
+      "Jinx, Xayah et Ashe : matchups difficiles.",
+      "La fin de partie, où ta portée courte devient un problème."
+    ],
+    "mistakes": [
+      "Attaquer sans intercaler de sorts (tu perds les doubles tirs).",
+      "Utiliser E pour attaquer et ne plus pouvoir fuir.",
+      "Laisser la partie traîner sans convertir l'avance."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Gagne la lane avant ses évolutions.",
+      "Jinx": "Elle scale bien mieux : transforme ton avance en tours et en dragons.",
+      "Ezreal": "Tu gagnes les trades courts : force-les quand il a utilisé E.",
+      "Séraphine": "Elle poke et charme de loin : évite ses sorts en restant derrière les sbires.",
+      "Ashe": "Son slow t'empêche de te replacer : engage quand son W est en recharge."
+    },
+    "mid_game": "Cherche les escarmouches avec ton support et ton jungler. Prends les tours et les dragons tant que tu es fort.",
+    "late_game": "Reste derrière ta frontline, entre avec E quand la cible est à portée, enchaîne sorts et doubles tirs. Garde E pour fuir un diver.",
+    "ahead": "Force les combats et les objectifs : ta fenêtre de puissance est maintenant.",
+    "behind": "Farm, reste avec ton équipe et cherche les picks courts plutôt que les teamfights longs.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer la lane avec ton support et finir la partie avant que les ADC de scaling prennent le dessus.",
+    "final_tip": "Intercale toujours une compétence entre deux attaques : chaque double tir réduit aussi le délai de ton dash."
+  }
+}

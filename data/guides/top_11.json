@@ -1,0 +1,84 @@
+{
+  "Urgot|top": {
+    "identity": "Juggernaut à dégâts physiques à distance moyenne. Chaque jambe d'Urgot tire une décharge de chevrotine quand il attaque dans sa direction (passif Flammes purificatrices, dégâts en pourcentage des PV). Torpille corrosive (Q) slow, Géhenne (W) le fait tirer en rafale sur l'ennemi le plus proche avec un shield, Mépris (E) charge et retourne un champion par-dessus lui, et Règne de la terreur (R) exécute une cible sous 25 % de PV en l'attirant à lui.",
+    "playstyle": "Combat soutenu à mi-distance : Urgot tient les combattants à portée de ses jambes et les use avec W. Il gagne les combats longs contre les champions lents au corps à corps, et son ultime exécute et effraie en teamfight.",
+    "early_game": "Trade avec Q puis W pour déclencher les jambes : chaque jambe a son propre temps de recharge, tourne autour de l'adversaire pour en déclencher plusieurs. Garde E pour engager ou pour répondre à un all-in (il retourne l'adversaire derrière toi, vers ta tour).",
+    "level_1": "Mépris (E) en premier dans le chemin le plus joué. Il t'offre un engage avec shield et stun au niveau 1.",
+    "level_2": "Géhenne (W). Rafale continue sur l'ennemi le plus proche, qui déclenche tes jambes : E → W est un trade très fort au niveau 2. W est ton sort maximisé en priorité.",
+    "level_3": "Torpille corrosive (Q). Ralentit l'adversaire pour le garder à portée de W : Q → W → attaques, puis E si l'adversaire tente de fuir ou de t'engager.",
+    "level_6": "Règne de la terreur : projectile qui slow la cible ; si elle passe sous 25 % de PV, relance pour l'attirer à toi et l'exécuter, ce qui effraie les ennemis proches. Utilise-le pour finir un kill ou pour retirer un carry d'un teamfight.",
+    "power_spikes": [
+      "Niveau 2 : E + W, gros trade.",
+      "Niveau 6 : exécution avec l'ultime.",
+      "Premier item complet : combats soutenus très forts.",
+      "W au rang maximum : rafale continue en combat."
+    ],
+    "lane_plan": "Joue une wave neutre ou poussée, trade avec Q + W pour déclencher tes jambes. Prends les plaques quand tu gagnes. Recall quand ta wave crash. Évite les ganks : tu es lent pendant W.",
+    "trading": "Trade court : Q → W (jambes). Trade long : E (retournement) → W → Q → R pour finir. Engage quand l'adversaire est slow ; abandonne contre les tanks à armure qui encaissent (Malphite, Ornn) ou les champions à distance.",
+    "jungle_plan": "",
+    "threats": [
+      "Tanks à armure (Malphite, Ornn).",
+      "Kiting à distance (Kayle).",
+      "Ganks pendant que tu tires avec W."
+    ],
+    "mistakes": [
+      "Lancer l'ultime sur une cible qui ne passera pas sous 25 %.",
+      "Rater E et perdre ton engage et ton shield.",
+      "Rester immobile au lieu de tourner pour déclencher plusieurs jambes."
+    ],
+    "matchup_notes": {
+      "Darius": "Tiens-le à mi-distance avec Q et W, et retourne-le avec E quand il charge son Crampon.",
+      "Yone": "Garde E pour son engage et W pour le tenir à portée.",
+      "Nasus": "Punis-le tôt et garde E pour son engage sous Flétrissement.",
+      "Malphite": "Son armure réduit tes dégâts ; farm et joue pour l'ultime en teamfight.",
+      "Garen": "Il te silence en engageant : garde E pour le retourner après son Q."
+    },
+    "mid_game": "Splitpush et combats autour des objectifs. Ton ultime retire un carry d'un combat et effraie ses alliés.",
+    "late_game": "Frontline de combat soutenu : W sur la mêlée, ultime pour exécuter le carry le plus exposé.",
+    "ahead": "Force des duels, prends les tours et dive avec ton jungler.",
+    "behind": "Farm et joue pour l'ultime en teamfight.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner les combats soutenus à mi-distance et exécuter les carries avec l'ultime.",
+    "final_tip": "Tourne autour de l'adversaire pendant W : chaque jambe a son propre temps de recharge."
+  },
+  "Varus|top": {
+    "identity": "Tireur à dégâts physiques. Flèche perforante (Q) poke à longue distance, Carquois meurtri (W) ajoute des dégâts magiques et des stacks de Fléau à chaque attaque, Pluie de flèches (E) slow et réduit les soins, et Chaîne corruptrice (R) root une cible et se propage aux alliés proches. En top, il punit les combattants au corps à corps à distance.",
+    "playstyle": "Lane de poke et de kiting. Il gagne contre les combattants lents, mais souffre contre les champions mobiles et les tanks qui résistent au poke.",
+    "early_game": "Poke avec les attaques (stacks de Fléau) et Q quand l'adversaire vient last hit. Garde E pour slow un engage et R (dès le 6) pour root. Ne te laisse jamais coller au corps à corps.",
+    "level_1": "Carquois meurtri (W) en premier dans le chemin le plus joué. Chaque attaque ajoute des stacks de Fléau ; poke à chaque last hit adverse.",
+    "level_2": "Flèche perforante (Q). Charge la flèche pour plus de portée : Q sur une cible avec des stacks de Fléau les fait exploser.",
+    "level_3": "Pluie de flèches (E). Ralentit et réduit les soins : utile contre les combattants qui se soignent (Darius, Aatrox) et pour fuir.",
+    "level_6": "Chaîne corruptrice : root la première cible touchée, puis se propage aux alliés proches. Garde-la pour arrêter un engage adverse ou pour un gank avec ton jungler.",
+    "power_spikes": [
+      "Niveau 2 : poke Q + attaques.",
+      "Niveau 6 : ultime pour stopper un engage.",
+      "Premier item complet : poke plus fort.",
+      "Mid game : poke avant les objectifs."
+    ],
+    "lane_plan": "Joue une wave neutre ou poussée, poke à distance et ne laisse pas l'adversaire te coller. Recall quand ta wave crash. Évite les bushs non contrôlés : tu es fragile.",
+    "trading": "Trade court : attaques (stacks) → Q. Trade long : E pour slow → attaques → R si l'adversaire t'engage. Engage quand l'adversaire est slow ; abandonne s'il peut te coller (Yasuo, Olaf, Jax).",
+    "jungle_plan": "",
+    "threats": [
+      "Champions mobiles qui te collent (Yasuo, Yone).",
+      "Olaf, qui ignore tes CC avec l'ultime.",
+      "Tanks qui encaissent ton poke (Dr. Mundo)."
+    ],
+    "mistakes": [
+      "Se battre au contact au lieu de kiter.",
+      "Gaspiller R sans engage adverse.",
+      "Pousser sans vision."
+    ],
+    "matchup_notes": {
+      "Nasus": "Poke-le pour limiter ses stacks ; E réduit ses soins. Garde R pour son engage sous Flétrissement.",
+      "Yone": "Il te colle avec E et Q3 : garde R pour son engage.",
+      "Darius": "Kite-le et réduis ses soins avec E.",
+      "Yasuo": "Mur de vent bloque tes flèches : joue très prudemment et garde R pour son engage.",
+      "Malphite": "Son armure réduit ton poke et son ultime te rattrape : reste loin."
+    },
+    "mid_game": "Poke avant les objectifs et joue avec ton équipe. Évite les side lanes isolées.",
+    "late_game": "Poke à distance et R pour arrêter l'engage adverse. Reste derrière ta frontline.",
+    "ahead": "Prends les tours et poke avant les objectifs.",
+    "behind": "Farm à distance et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner ta lane par le poke et arrêter les engages adverses avec l'ultime.",
+    "final_tip": "Garde ta Chaîne corruptrice pour l'engage adverse : elle te sauve la vie."
+  }
+}

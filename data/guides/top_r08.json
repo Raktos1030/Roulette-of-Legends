@@ -1,0 +1,84 @@
+{
+  "Garen|top": {
+    "identity": "Juggernaut à dégâts physiques, simple et solide. Coup décisif (Q) retire les slows, accélère et réduit au silence ; Courage (W) accumule passivement de l'armure et de la résistance magique à chaque élimination et, activé, réduit les dégâts reçus ; Jugement (E) tourne sur lui-même et réduit l'armure de la cible frappée plusieurs fois ; Justice de Demacia (R) exécute en dégâts vrais selon les PV manquants. Son passif Persévérance le régénère hors combat.",
+    "playstyle": "Trades courts puis retrait pour régénérer, et all-in dès que Q peut atteindre l'adversaire. Très fort contre les champions sans mobilité, faible contre le kiting à distance. Il scale correctement et reste très bon en side lane.",
+    "early_game": "Farm avec E, régénère hors combat, et engage avec Q quand l'adversaire vient last hit. Q + E est brutal ; recule ensuite quelques secondes hors combat pour que ton passif te rende tes PV. Les bushs de la lane cachent ton approche : Q depuis un bush est ton meilleur engage.",
+    "level_1": "Jugement (E) en premier dans le chemin le plus joué : il farm vite et fait des dégâts en tournant. Utilise-le quand l'adversaire vient au contact.",
+    "level_2": "Coup décisif (Q). Accélération + silence + attaque renforcée : Q → E est ton trade de base, cherche-le dès que l'adversaire est à portée.",
+    "level_3": "Courage (W). Réduction de dégâts et ténacité : lance-le avant un trade ou pour encaisser un combo adverse. Niveau 3, tu peux all-in avec Embrasement.",
+    "level_6": "Justice de Demacia inflige des dégâts vrais qui augmentent selon les PV manquants de la cible. C'est une exécution : lance-la pour finir, pas pour ouvrir le combat.",
+    "power_spikes": [
+      "Niveau 3 : all-in Q + E + W.",
+      "Niveau 6 : exécution en dégâts vrais.",
+      "Premier item complet : domination de lane.",
+      "Stacks passifs de Courage : de plus en plus résistant au fil des éliminations."
+    ],
+    "lane_plan": "Joue une wave neutre, régénère hors combat et trade quand Q peut atteindre l'adversaire. Pousse quand tu gagnes les trades et prends les plaques. Recall avec ta wave crashée. Contre un champion à distance, joue près de ta tour et attends ton jungler.",
+    "trading": "Trade court : Q → E → recul pour régénérer. Trade long : W → Q → E → R pour finir. Engage quand l'adversaire n'a plus son dash ; abandonne s'il te kite à distance (Kayle, Quinn).",
+    "jungle_plan": "",
+    "threats": [
+      "Champions à distance qui te kitent (Kayle, Quinn).",
+      "Poke continu qui empêche ta régénération hors combat.",
+      "Ganks sur une lane poussée sans vision."
+    ],
+    "mistakes": [
+      "Engager avec Q sans pouvoir suivre.",
+      "Lancer R trop tôt, avant que la cible soit assez basse.",
+      "Rester en combat quand ton passif pourrait te régénérer entre deux trades."
+    ],
+    "matchup_notes": {
+      "Nasus": "Punis-le à chaque stack ; Flétrissement slow ton attaque, recule pendant sa durée.",
+      "Darius": "Q pour silence son combo, évite son Crampon et le bord de sa Décimation.",
+      "Jax": "Silence-le avant qu'il ne lance sa Contre-attaque, puis tourne avec E.",
+      "Kayle": "Punis-la en early, avant qu'elle ne passe à distance ; ensuite, joue pour les teamfights.",
+      "Camille": "Garde W pour son combo E + Q2 et silence-la à la fin de son Grappin."
+    },
+    "mid_game": "Splitpush ou regroupe pour les objectifs. Garen pousse vite une side lane et gagne beaucoup de 1v1 ; ta Téléportation améliorée (quête de rôle) te ramène aux combats.",
+    "late_game": "Entre dans la mêlée, silence un carry et exécute avec l'ultime. Garde R pour la cible la plus dangereuse adverse.",
+    "ahead": "Pousse la side lane, force des duels et dive avec ton jungler. Tes exécutions en dégâts vrais deviennent énormes.",
+    "behind": "Farm, régénère et joue avec ton équipe. Garen reste utile comme frontline et exécuteur.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer ta lane par des trades courts suivis de régénération, puis exécuter les carries en teamfight.",
+    "final_tip": "Entre chaque trade, recule quelques secondes hors combat : ton passif te redonne les PV que tu as perdus."
+  },
+  "Sett|top": {
+    "identity": "Juggernaut à dégâts physiques et vrais. Sett alterne ses deux poings (passif Roi de l'arène, le droit est plus rapide et plus fort) et se régénère selon ses PV manquants. Rogne (Q) l'accélère vers les champions et renforce ses deux prochains coups, Coup cathartique (W) convertit la hargne accumulée en shield et en coup qui inflige des dégâts vrais au centre, Casse-tête (E) attire les ennemis des deux côtés (stun s'il y en a de chaque côté) et Le Clou du spectacle (R) écrase un ennemi sur ses alliés.",
+    "playstyle": "Lane agressive au corps à corps et combats longs. Sett gagne en encaissant pour charger sa hargne, puis en la relâchant au centre du W au bon moment. Simple, solide et très fort en teamfight grâce à l'ultime.",
+    "early_game": "Trade avec Q et les deux coups renforcés. Laisse l'adversaire t'infliger ses dégâts pour charger la hargne (elle décroît vite), puis relâche W. Cherche le stun de E en plaçant l'adversaire entre toi et des sbires ou un mur.",
+    "level_1": "Les ordres varient beaucoup : W → E → Q, E → Q → W ou E → W → Q. Casse-tête (E) permet un bon trade au niveau 1 si l'adversaire est entre toi et des unités (stun).",
+    "level_2": "Selon ton ordre, Q ou W. Rogne (Q) : Q → attaque → attaque, deux coups renforcés rapides. W encaisse un combo adverse et le punit.",
+    "level_3": "Kit complet : E (stun) → Q → attaque → attaque → W au centre pour les dégâts vrais.",
+    "level_6": "Le Clou du spectacle : tu attrapes un champion, tu l'emmènes et tu l'écrases ; les ennemis dans la zone d'impact subissent des dégâts selon ses PV bonus. Sur un tank, tu blesses ses carries ; sur un carry, tu le ramènes dans ton équipe.",
+    "power_spikes": [
+      "Niveau 3 : combo complet E → Q → W.",
+      "Niveau 6 : ultime pour isoler ou écraser plusieurs ennemis.",
+      "Premier item complet : domination de lane.",
+      "Teamfight : ultime sur plusieurs cibles."
+    ],
+    "lane_plan": "Joue une wave neutre ou poussée, trade avec Q et E. Prends les plaques quand tu gagnes. Recall quand ta wave crash. Ta régénération passive te permet de tenir la lane longtemps, mais elle ne remplace pas une vraie réinitialisation.",
+    "trading": "Trade court : Q → attaque → attaque. Trade long : E → Q → attaques → W au centre avec la hargne pleine. Engage quand ta hargne est haute ; abandonne si l'adversaire te kite ou s'il a un tank à armure qui encaisse ton W.",
+    "jungle_plan": "",
+    "threats": [
+      "Tanks à armure qui te tiennent en combat long (Malphite, Ornn).",
+      "Kiting à distance.",
+      "Riven et les champions qui esquivent ton W."
+    ],
+    "mistakes": [
+      "Lancer W sans hargne (dégâts faibles).",
+      "Lancer E sans unités des deux côtés (pas de stun).",
+      "Utiliser l'ultime sur un tank sans ennemis dans la zone d'impact."
+    ],
+    "matchup_notes": {
+      "Darius": "Encaisse ses saignements pour charger ta hargne et relâche W au centre avant qu'il n'atteigne 5 stacks.",
+      "Yone": "Colle-le avec E et Q ; relâche W quand il tente son Q3.",
+      "Garen": "Encaisse son combo (hargne) et relâche W quand son Jugement se termine.",
+      "Renekton": "Encaisse son W renforcé et relâche W après son second E.",
+      "Malphite": "Son armure te gêne ; le W en dégâts vrais reste ta meilleure arme."
+    },
+    "mid_game": "Escarmouches et teamfights : l'ultime change les combats. Rejoins les objectifs et garde E pour les combats près des murs.",
+    "late_game": "Frontline de mêlée : ultime sur le tank adverse s'il est collé à ses carries, W pour les dégâts vrais. Protège tes carries si l'équipe adverse dive.",
+    "ahead": "Force des duels et dive avec ton jungler : Sett avec de l'avance gagne presque tous les combats au corps à corps.",
+    "behind": "Farm et joue pour l'ultime en teamfight, qui reste très fort même sans avance.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer ta lane et écraser plusieurs ennemis avec l'ultime en teamfight.",
+    "final_tip": "Relâche Coup cathartique quand ta hargne est pleine et vise avec le centre de la zone pour les dégâts vrais."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "Taliyah|mid": {
+    "identity": "Mage à dégâts magiques. Rafale filée (Q) tire une salve de pierres (moins fortes sur le sol déjà travaillé), Poussée sismique (W) projette les ennemis dans une direction, Défilage tellurique (E) pose un champ de mines qui slow (stun si la cible est poussée dedans), et Mur de la tisseuse (R) crée un immense mur que Taliyah peut chevaucher. Son passif l'accélère près des murs.",
+    "playstyle": "Mage de roam et de contrôle : elle nettoie la wave avec Q, puis traverse la carte sur son mur pour aider les side lanes. Elle est très vulnérable aux assassins (Katarina, Zed, LeBlanc, Locke).",
+    "early_game": "Nettoie la wave avec Q, poke et garde E + W contre les assassins (E puis W vers les mines = stun). Pousse puis roam.",
+    "level_1": "Rafale filée (Q) en premier.",
+    "level_2": "Défilage tellurique (E). Champ de mines qui slow : protection contre les engages.",
+    "level_3": "Poussée sismique (W). E → W vers les mines : stun. Tu peux aussi repousser un assassin.",
+    "level_6": "Mur de la tisseuse : roam en chevauchant le mur vers une side lane, ou coupe la fuite d'une cible pendant un gank. En teamfight, sépare l'équipe adverse.",
+    "power_spikes": [
+      "Niveau 3 : combo E + W.",
+      "Niveau 6 : roams sur le mur.",
+      "Premier item complet : nettoyage et dégâts.",
+      "Mid game : roams et contrôle de zone."
+    ],
+    "lane_plan": "Nettoie la wave avec Q (évite le sol déjà travaillé pour tes gros dégâts), puis roam avec le mur après le niveau 6. La quête de rôle mid (retour accéléré) rend tes roams encore plus rentables. Contre les assassins, joue défensivement avec E et W.",
+    "trading": "Trade court : Q sur l'adversaire. Défense : E puis W vers les mines. Abandonne contre les assassins qui te divent quand tes sorts sont en recharge.",
+    "jungle_plan": "",
+    "threats": [
+      "Assassins (Katarina, Zed, LeBlanc, Locke, Ekko).",
+      "Annie et son stun.",
+      "Ganks pendant tes roams."
+    ],
+    "mistakes": [
+      "Pousser l'adversaire avec W hors de tes mines.",
+      "Roam sans pousser ta wave.",
+      "Couper ton équipe avec le mur."
+    ],
+    "matchup_notes": {
+      "Yasuo": "E + W contre son engage ; son Mur de vent bloque ton Q.",
+      "Ahri": "Garde E + W pour son engage.",
+      "Viktor": "Il te poke : roam plutôt que de te battre.",
+      "Katarina": "Ses dagues ne sont pas stoppées par tes mines : farm sous ta tour.",
+      "Zed": "Garde E + W pour son ultime."
+    },
+    "mid_game": "Roams avec le mur, ganks et objectifs.",
+    "late_game": "Coupe l'équipe adverse avec le mur, puis E et W. Reste derrière ta frontline.",
+    "ahead": "Roam en boucle et prends les objectifs.",
+    "behind": "Farm et roam pour aider les autres lanes.",
+    "win_condition": "Pour gagner cette partie, tu veux nettoyer la wave vite et roam avec le mur pour créer des avantages ailleurs.",
+    "final_tip": "Pousse toujours ta wave avant de monter sur ton mur : un roam sans wave poussée te coûte trop cher."
+  }
+}

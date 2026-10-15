@@ -1,0 +1,43 @@
+{
+ "LeeSin|jgl": {
+  "identity": "Energy-based physical damage fighter. Every ability has two casts: Sonic Wave / Resonating Strike (Q) hits, then flies him to the target, Safeguard / Iron Will (W) dashes him to an ally or a ward with a shield, Tempest / Cripple (E) hits in an area, then slows, and Dragon's Rage (R) kicks an enemy flying, damaging whoever it collides with. His passive Flurry grants attack speed and energy after each ability.",
+  "playstyle": "Early-game playmaking jungler built on ganks and invades. Lee Sin is at his strongest between levels 3 and 11; he has to build his lead early. Very mechanical: the kick (R) that sends a carry into your team is his most decisive move.",
+  "early_game": "Clear fast by weaving abilities and attacks to use your passive. Gank from level 3: Q → second Q to stick, E → second E to slow, W if needed. Invade when your laners have priority: you win most early duels.",
+  "level_1": "Tempest (E) first on the most played path. Area damage on the first camp.",
+  "level_2": "Sonic Wave (Q). First cast to hit, second to fly to the target: Q → second Q is your gank and dueling tool.",
+  "level_3": "Safeguard (W). A dash to an ally or a ward with a shield, then Iron Will for lifesteal. First gank: Q → second Q → E → attacks. W to a ward lets you escape or reposition.",
+  "level_6": "Dragon's Rage: you kick a target, damaging the enemies it collides with. The classic move: ward behind the target → W to the ward → R to kick it toward your team. Use it to isolate a carry or split the enemy team.",
+  "power_spikes": [
+   "Level 3: very strong ganks and invades.",
+   "Level 6: Dragon's Rage for kicks.",
+   "First completed item: damage and survivability.",
+   "Mid game: picks and skirmishes before the carries scale."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear, then ganks and invades from level 3. Lee Sin wants to dominate the early game: control Scuttles, steal enemy camps when your laners have priority and choke out the enemy jungler. Take Void Grubs (around 8 minutes) and the first dragons with your lead. Always keep a ward for W (escape or kick).",
+  "trading": "Ganking: Q → second Q → E → second E → attacks → W for the shield. Skirmishing: ward behind the carry → W → R to kick them into your team. Give up on it if your Q misses and you're out of energy.",
+  "threats": [
+   "Junglers who beat you in early duels (Rek'Sai, Taliyah).",
+   "Naafiri: a hard matchup.",
+   "Long games where your damage drops."
+  ],
+  "mistakes": [
+   "Casting all your abilities without attacks in between (you lose your passive).",
+   "Missing Q and engaging anyway.",
+   "Farming passively instead of building a lead."
+  ],
+  "matchup_notes": {
+   "Graves": "A close early duel: keep E to cut his attack speed and W for his burst.",
+   "Viego": "Punish him early, before he scales.",
+   "Sylas": "He can steal your ultimate: don't kick an enemy toward him.",
+   "Naafiri": "Her packmates and burst beat you in duels: fight with your allies.",
+   "Rek'Sai": "She beats you early: gank where she isn't."
+  },
+  "mid_game": "Picks and skirmishes: kick carries into your team. Turn every lead into an objective.",
+  "late_game": "Kick the enemy carry into your team or split the enemy team with R. Protect your carries with W.",
+  "ahead": "Choke out the enemy jungler, dive and take every objective.",
+  "behind": "Look for picks with Q and R, and play with your team.",
+  "win_condition": "To win this game, you want to build an early lead and turn every kick (R) into a decisive advantage.",
+  "final_tip": "Weave a basic attack between each ability: your passive gives you back energy and attack speed."
+ }
+}

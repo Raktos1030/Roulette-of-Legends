@@ -1,0 +1,43 @@
+{
+  "Warwick|jgl": {
+    "identity": "Combattant à dégâts mixtes, joué en jungle environ deux fois sur trois. Traque sanguinaire (W) détecte les champions blessés sur une large zone et accélère Warwick vers eux, Dents de la bête (Q) mord et soigne (maintenir la touche permet de suivre la cible), Hurlement bestial (E) réduit les dégâts reçus puis effraie, et Contrainte infinie (R) le fait bondir pour supprimer sa cible. Son passif le soigne à chaque attaque quand il est bas en PV.",
+    "playstyle": "Jungler de duel, de ganks et de traque. Très simple à jouer, il punit toute cible blessée.",
+    "early_game": "Clear rapide et très sain grâce à tes soins. Surveille les lanes : dès qu'un adversaire est blessé, W te montre sa position et t'accélère vers lui. Gank au niveau 2-3 ; tu gagnes la plupart des duels contre les junglers en early.",
+    "level_1": "Dents de la bête (Q) en premier.",
+    "level_2": "Traque sanguinaire (W). Vitesse d'attaque contre les cibles blessées et détection des champions blessés : tes ganks deviennent très rapides.",
+    "level_3": "Hurlement bestial (E). Réduction de dégâts puis effroi : gank complet Q → attaques → E pour encaisser → relance pour effrayer.",
+    "level_6": "Contrainte infinie : bond et suppression. Plus tu es rapide, plus le bond est long : combine-le avec W pour attraper une cible de loin. Tes ganks deviennent quasi garantis.",
+    "power_spikes": [
+      "Niveau 2-3 : duels et ganks forts.",
+      "Niveau 6 : suppression pour les ganks.",
+      "Premier item complet : duels dominants.",
+      "Mid game : traque des cibles blessées."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide, invasions et ganks. Warwick punit toute cible blessée : surveille les lanes et arrive dès qu'un adversaire tombe sous la moitié de ses PV. Envahis quand tes laners ont la priorité : tu gagnes les duels. Contrôle les crabes, les Larves (vers 8 min) et les dragons avec ton équipe.",
+    "trading": "En gank : W → R sur la cible → Q → attaques → E pour effrayer. En duel : Q → attaques → E pour encaisser → relance pour effrayer. Abandonne contre les champions qui te provoquent (Rammus) ou te kitent (Lillia).",
+    "threats": [
+      "Rammus : matchup difficile.",
+      "Lillia et Ivern, qui te kitent ou protègent leurs alliés.",
+      "Réductions de soins adverses."
+    ],
+    "mistakes": [
+      "Lancer R sans être accéléré (bond court).",
+      "Utiliser E trop tôt, avant le burst adverse.",
+      "Ignorer les cibles blessées que W te montre."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Tu le bats en duel early : envahis-le.",
+      "Viego": "Tes soins tiennent ses combats et ta suppression l'arrête.",
+      "Kayn": "Punis-le avant sa transformation.",
+      "Maître Yi": "Supprime-le avec R quand il entre en teamfight.",
+      "Rammus": "Son taunt retourne tes attaques contre toi : ne l'attaque pas pendant sa Boule défensive."
+    },
+    "mid_game": "Traque des cibles blessées, invasions et objectifs. Utilise W pour repérer les proies.",
+    "late_game": "Supprime le carry adverse avec l'ultime, puis combat long grâce à tes soins.",
+    "ahead": "Étouffe le jungler adverse et chasse les cibles blessées.",
+    "behind": "Farm et gank les lanes où tes laners ont blessé leur adversaire.",
+    "win_condition": "Pour gagner cette partie, tu veux punir chaque cible blessée et gagner les duels grâce à tes soins.",
+    "final_tip": "Lance Contrainte infinie en étant accéléré par Traque sanguinaire : le bond est beaucoup plus long."
+  }
+}

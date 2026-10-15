@@ -1,0 +1,43 @@
+{
+ "Zyra|sup": {
+  "identity": "Area and summoning mage. Garden of Thorns (passive): seeds regularly spawn around her; casting Deadly Spines or Grasping Roots near a seed turns it into a plant that fights for her. Deadly Spines (Q) blasts thorns in an area (and grows a ranged Thorn Spitter), Rampant Growth (W) plants a seed (she stores several, and kills lower their cooldown), Grasping Roots (E) roots enemies hit in a line (and grows a Vine Lasher that slows), and Stranglethorns (R) damages an area, then knocks up enemies; plants inside become enraged.",
+  "playstyle": "Poke and zone-control support: her plants harass the opponent and punish every engage. She dominates slow melee supports and mages (Swain, Brand, Neeko, Morgana, Camille), but fears hooks and fast engages (Blitzcrank, Alistar). Very fragile, no mobility.",
+  "early_game": "Plant seeds (W) in front of you and grow them with Q (Thorn Spitter, ranged) or E (Vine Lasher, slows). Poke your opponent when they come to last hit with Q + plants. Keep Grasping Roots (E) to stop an engage or start a kill.",
+  "level_1": "Grasping Roots (E) first. After that, max E first.",
+  "level_2": "Rampant Growth (W). Extra seeds: your abilities turn into plants.",
+  "level_3": "Deadly Spines (Q). Combo: E (CC) → Q on the target → plants attack.",
+  "level_6": "Stranglethorns: area damage, then a knock-up. Cast it on a group, or under an enemy engage to turn it around.",
+  "power_spikes": [
+   "Level 2: seeds + E for kills.",
+   "Level 3: full combo with your plants.",
+   "Level 6: area ultimate.",
+   "First completed item: very dangerous plants."
+  ],
+  "lane_plan": "Poke with Q and your plants, control the lane with seeds and keep E against engages. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "Basic trade: seed + Q (Thorn Spitter). All-in: E → Q → plants → R. Defense: E on the enemy engage, seeds between you and them. Against Blitzcrank, stay behind your minions at all times.",
+  "jungle_plan": "",
+  "threats": [
+   "Blitzcrank and Alistar: hard matchups.",
+   "Nautilus, slightly below your average.",
+   "Assassins and divers: you have no mobility."
+  ],
+  "mistakes": [
+   "Casting Q and E far from seeds (no plants).",
+   "Standing in the open against a hook.",
+   "Wasting E on poke and no longer being able to defend yourself."
+  ],
+  "matchup_notes": {
+   "Thresh": "Your plants block his hook: place them in front of you.",
+   "Lulu": "Poke trades: your plants win over time.",
+   "Nami": "Dodge her bubble and poke with your plants.",
+   "Swain": "He has to get close: your plants and E stop him.",
+   "Blitzcrank": "Stay behind your minions and your plants."
+  },
+  "mid_game": "Poke before objectives, control the area with your seeds and place Control Wards.",
+  "late_game": "Stay behind your frontline, plant seeds on the fight area, E on divers and R on the enemy group.",
+  "ahead": "Poke and force zone fights around objectives.",
+  "behind": "Control the area with your plants and keep E to protect your ADC.",
+  "win_condition": "To win this game, you want to control the area with your plants and punish every enemy engage with your E and ultimate.",
+  "final_tip": "Always cast Q and E near a seed: every ability then becomes a plant that keeps attacking."
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "AurelionSol|adc": {
+  "identity": "Area magic damage mage who scales infinitely. His abilities that hit enemies grant him stardust, which permanently upgrades them (passive). Breath of Light (Q) is a channeled breath that deals more damage to a champion every second. Astral Flight (W) lets him fly over terrain (his breath then has no range limit). Singularity (E) slowly pulls enemies toward its center, which executes low-health targets. Falling Star (R) stuns in an area, then becomes The Skies Descend (knock-up and shockwave) once he has enough stardust.",
+  "playstyle": "A scaling mage played like an ADC: weak early, he becomes a huge area threat with stardust. You're behind in gold at 15 minutes on average against every common ADC: that's normal, you win later.",
+  "early_game": "Farm and survive. Use Singularity (E) on the wave: minions that die inside give stardust. Hit champions with Q when they walk up to last hit to stack stardust without taking risks. Don't force trades against an ADC and their support.",
+  "level_1": "Breath of Light (Q) first. Farm and hit your opponent with the breath when they get close.",
+  "level_2": "Singularity (E). It pulls enemies in and executes low-health minions: perfect for farming from range and controlling an engage.",
+  "level_3": "Astral Flight (W). Your escape and roaming tool. Mostly save it to get away from the enemy support's engages.",
+  "level_6": "Falling Star: an area stun. Combo with your support: engage, E to hold them in place, R, then Q. With enough stardust, the star becomes The Skies Descend.",
+  "power_spikes": [
+   "Level 6: Falling Star for 2v2 fights.",
+   "First completed item: steady area damage.",
+   "The Skies Descend unlocked: every teamfight becomes dangerous for the enemy.",
+   "Late game: stardust stacked up, all your abilities are empowered."
+  ],
+  "lane_plan": "Farm safely with E and Q, stack stardust and avoid long trades. Let your support handle the lane and keep W to escape. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards steady farming, even if your early game is quiet.",
+  "trading": "Short trade: Q when your opponent comes into range of the minions. All-in (level 6): E to pull, R to stun, Q to finish. Give up on it against ADCs who harass you from long range or chase you down (Zeri).",
+  "jungle_plan": "",
+  "threats": [
+   "Zeri: a hard matchup.",
+   "Engage supports who dive you before level 6.",
+   "Assassins when you don't have Astral Flight."
+  ],
+  "mistakes": [
+   "Forcing early trades instead of farming stardust.",
+   "Using W to attack and having no way to escape.",
+   "Casting your ultimate without CC to guarantee it lands."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "She dives with her ultimate: save E and R to hold her when she arrives.",
+   "Jinx": "She scales too: farm and win teamfights with The Skies Descend.",
+   "Ezreal": "He pokes with Q: stay behind your minions, you dominate him in teamfights.",
+   "Lucian": "Survive the laning phase, the rest belongs to you.",
+   "Zeri": "She chases and pokes you: play near your support."
+  },
+  "mid_game": "Group with your team around dragons. Hit as many champions as possible for stardust, and set up The Skies Descend for the next fight.",
+  "late_game": "Deal area damage behind your frontline: E on the group, R in the middle, Q while flying with W. Keep W to escape if a diver arrives.",
+  "ahead": "Force teamfights around objectives: The Skies Descend wreaks havoc.",
+  "behind": "Farm and stack stardust: you keep scaling when the others have finished buying.",
+  "win_condition": "To win this game, you want to survive the laning phase, then win teamfights thanks to your stacked stardust.",
+  "final_tip": "Every enemy you hit gives you stardust: in lane, favor safe abilities that land over risky trades."
+ }
+}

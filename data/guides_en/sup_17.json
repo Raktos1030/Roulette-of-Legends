@@ -1,0 +1,43 @@
+{
+ "Nami|sup": {
+  "identity": "Aggressive enchanter. Surging Tides (passive) gives a brief speed boost to allies hit by her abilities. Aqua Prison (Q) throws a bubble that stuns every enemy on impact, Ebb and Flow (W) bounces between allies and enemies (healing one, damaging the other), Tidecaller's Blessing (E) empowers an ally: their attacks and abilities deal extra magic damage and slow, and Tidal Wave (R) sends a wave that knocks up, slows and damages every enemy hit.",
+  "playstyle": "Aggressive lane enchanter: she wins trades with W and E, and creates kills with her bubble. No clearly unfavorable matchups: her worst ones (Blitzcrank, Thresh, Braum) stay close to even. She crushes melee supports and slow mages (Swain, Camille, Pantheon, Xerath).",
+  "early_game": "Trade with Ebb and Flow (W): cast on your opponent, it bounces to your ADC (heal), then back; cast on your ADC, it then damages your opponent. Give Tidecaller's Blessing (E) to your ADC right before they attack. Keep Aqua Prison (Q) for an engage or to stop a dash.",
+  "level_1": "Ebb and Flow (W) first. After that, max W first, then E.",
+  "level_2": "Tidecaller's Blessing (E). E on your ADC, then W: a very strong trade at level 2.",
+  "level_3": "Aqua Prison (Q). A slow but powerful bubble: aim where your opponent is going, or under an enemy who's dashing.",
+  "level_6": "Tidal Wave: a wave that knocks up and slows. Engage on both opponents, or stop an enemy engage. It also speeds up the allies it touches.",
+  "power_spikes": [
+   "Level 2: E + W, winning trades.",
+   "Level 3: bubble for kills.",
+   "Level 6: Tidal Wave engage.",
+   "First completed item: stronger heals and poke."
+  ],
+  "lane_plan": "Trade aggressively with W and E, look for the bubble when your opponent is slowed or immobile. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "Basic trade: E on your ADC, then W. All-in: Q, E, W, R. Defense: Q under the enemy dash, R against an engage. Against Thresh or Blitzcrank, stay behind minions: a hook on you costs you the lane.",
+  "jungle_plan": "",
+  "threats": [
+   "Blitzcrank, Thresh and Braum: your worst matchups, close to even.",
+   "Hooks that catch you: you're fragile.",
+   "A missed bubble: your best defensive tool is then on cooldown."
+  ],
+  "mistakes": [
+   "Throwing the bubble straight at the target instead of leading their movement.",
+   "Holding E instead of using it in every trade.",
+   "Standing in the open against a hook."
+  ],
+  "matchup_notes": {
+   "Lulu": "Poke trades: your W heals and damages at the same time.",
+   "Thresh": "Q under him when he steps up with his hook.",
+   "Seraphine": "She pokes too: win trades with E + W.",
+   "Nautilus": "Bubble him when he arrives with his anchor.",
+   "Swain": "He has to get close: poke him with W."
+  },
+  "mid_game": "Stick with your ADC, place Control Wards and look for bubbles on isolated enemies.",
+  "late_game": "Stay behind your frontline: E on your best carry, W to heal, Q on the diver, R to engage or disengage.",
+  "ahead": "Harass harder and look for engages with Q and R.",
+  "behind": "Heal and protect: your bubble and ultimate stop divers.",
+  "win_condition": "To win this game, you want to win the lane through trades and create your team's engages with your bubble and wave.",
+  "final_tip": "Your bubble is slow: throw it where your opponent is going, or at an enemy who can't move (slowed, dashing, channeling)."
+ }
+}

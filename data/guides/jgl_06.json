@@ -1,0 +1,43 @@
+{
+  "Ekko|jgl": {
+    "identity": "Assassin à dégâts magiques, joué environ une fois sur deux en jungle. Son passif Rézonance déclenche des dégâts et un slow au troisième coup sur la même cible. Rétrobang (Q) part et revient en slowant, Convergence parallèle (W) crée une zone qui stun les ennemis et lui donne un shield quand il y entre, Rush déphasé (E) dash puis téléporte sa prochaine attaque sur la cible, et Chronofracture (R) le ramène là où il était quelques secondes plus tôt, en le soignant et en blessant autour de lui.",
+    "playstyle": "Jungler de ganks et de picks, avec un ultime qui lui permet de dive puis d'annuler l'erreur. Il est fort en escarmouche et très bon pour tuer les carries isolés. Les ordres de sorts en début de partie sont variés : c'est un champion flexible.",
+    "early_game": "Clear rapide avec Q et le passif. Gank dès le niveau 3 : E pour te rapprocher, attaques pour déclencher le passif, Q pour slow. Pose W à l'avance sur la trajectoire de fuite de l'adversaire pour le stun quand tu entres dedans.",
+    "level_1": "Les ordres varient : Q → W → E, W → Q → E ou Q → E → W. Rétrobang (Q) aide à nettoyer les camps.",
+    "level_2": "W ou Q selon ton ordre. Convergence parallèle (W) : stun de zone, à poser en avance.",
+    "level_3": "Kit complet avec Rush déphasé (E). Combo de gank : W posé en avance → E → attaques (passif) → Q. Tu entres dans W pour stun.",
+    "level_6": "Chronofracture : tu reviens à ta position d'il y a quelques secondes, en te soignant d'une partie des dégâts subis et en explosant sur place. Dive, tue la cible, puis reviens en sécurité. C'est aussi un excellent outil de dégâts : ta position passée peut être au milieu de l'équipe adverse.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec W + E.",
+      "Niveau 6 : dives avec retour en arrière.",
+      "Premier item complet : burst qui tue les carries.",
+      "Mid game : picks et escarmouches."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide, puis ganks sur les lanes où l'adversaire n'a pas de fuite. Ekko est un jungler de tempo : il crée des avantages par les kills et les picks. Contrôle le crabe, envahis quand tes laners ont la priorité, et joue les Larves (vers 8 min) et les dragons avec ton équipe. Avec l'ultime, tu peux dive sous tour et revenir.",
+    "trading": "En gank : W en avance → E → attaques → Q. En escarmouche : attends que les CC adverses soient utilisés, dive, et garde R pour revenir. Abandonne si tu as utilisé R et que tu n'as plus de fuite.",
+    "threats": [
+      "Talon et les assassins qui te burst avant ton ultime.",
+      "Nidalee et les junglers qui te kitent à distance.",
+      "CC qui te bloquent avant ton retour en arrière."
+    ],
+    "mistakes": [
+      "Lancer l'ultime trop tard, quand tu es déjà mort.",
+      "Poser W sur la position actuelle de la cible au lieu de sa trajectoire.",
+      "Dive sans vérifier où te renverra ton ultime."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Évite ses invasions en early et punis-le après ton 6.",
+      "Viego": "Garde ton ultime pour annuler son burst.",
+      "Graves": "Il te bat en early : farm, puis punis-le avec W et ton ultime.",
+      "Talon": "Il te burst avant ton ultime : joue avec tes alliés.",
+      "Sylas": "Il peut voler ton ultime : ne dive pas sans lui."
+    },
+    "mid_game": "Picks et escarmouches autour des objectifs. Ekko est très fort pour tuer les carries qui avancent sans vision.",
+    "late_game": "Flanke et dive sur le carry adverse, puis ultime pour revenir. Attends les CC adverses.",
+    "ahead": "Picks, invasions et objectifs : fais-toi respecter en tuant les carries isolés.",
+    "behind": "Farm, joue avec ton équipe et cherche des picks sur des cibles isolées.",
+    "win_condition": "Pour gagner cette partie, tu veux créer des avantages par des ganks et des picks, puis tuer les carries en teamfight avec l'ultime.",
+    "final_tip": "Avant de dive, regarde où ton ultime te ramènera : c'est ta porte de sortie."
+  }
+}

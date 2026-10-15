@@ -1,0 +1,43 @@
+{
+ "Neeko|mid": {
+  "identity": "Magic damage mage who deceives her opponents. Her passive Inherent Glamour lets her take the appearance of an ally or other units on the map; the disguise breaks if she's hit by rooting CC, casts a damaging ability or takes too much damage. Blooming Burst (Q) explodes and blooms again if it hits a champion, Shapesplitter (W) empowers her attacks and creates a clone while making her invisible, Tangle-Barbs (E) roots, and Pop Blossom (R) makes her leap before an explosion that stuns in an area.",
+  "playstyle": "In mid, Neeko is a burst and engage mage: poke with Q, CC with E and a big area engage with R, often disguised to catch enemies by surprise.",
+  "early_game": "Poke with Q (it blooms again if it hits a champion) and E when your opponent comes to last hit. Use your disguise to fool ganks or get close. Keep W to escape with your clone.",
+  "level_1": "Blooming Burst (Q) first. Poke and farm.",
+  "level_2": "Tangle-Barbs (E). CC (longer if it passes through an enemy before the target): E → Q.",
+  "level_3": "Shapesplitter (W). Empowered attacks and a clone: W lets you escape by turning invisible while the clone runs.",
+  "level_6": "Pop Blossom: a leap, then an explosion that stuns in an area. Combo: approach disguised → R → E → Q. In teamfights, aim for several grouped enemies.",
+  "power_spikes": [
+   "Level 3: E → Q combo.",
+   "Level 6: area engage with R.",
+   "First completed item: area burst.",
+   "Mid game: surprise engages in disguise."
+  ],
+  "lane_plan": "Poke and farm, push the wave, then roam in disguise. The mid role quest (faster recall) helps you chain roams. Avoid assassins who dive you (Ekko).",
+  "trading": "Short trade: E → Q. All-in: R → E → Q → attacks. Defense: W for the clone and invisibility. Give up on it against champions who burst you before your engage.",
+  "jungle_plan": "",
+  "threats": [
+   "Ekko and assassins who dive you.",
+   "Veigar, who traps you in his cage.",
+   "A small sample: matchup trends are less reliable."
+  ],
+  "mistakes": [
+   "Breaking your disguise by casting a damaging ability too early.",
+   "Casting R when you can't hit several targets in teamfights.",
+   "Using W to attack and having no escape left."
+  ],
+  "matchup_notes": {
+   "Ahri": "Keep E for the end of her ultimate.",
+   "Viktor": "Poke him and engage when his Gravity Field is on cooldown.",
+   "Syndra": "Engage when her stun is on cooldown.",
+   "Lissandra": "Her control is less effective against your disguise.",
+   "Ekko": "He dives you: keep W to escape."
+  },
+  "mid_game": "Surprise engages in disguise, picks and objectives.",
+  "late_game": "Approach disguised and R on several enemies, then E and Q. Stay behind your frontline if your ultimate is on cooldown.",
+  "ahead": "Roam, engage and take objectives.",
+  "behind": "Farm and play for a decisive engage with R.",
+  "win_condition": "To win this game, you want to surprise the enemy team with disguised engages and an area stun.",
+  "final_tip": "Approach in disguise: the enemy won't react until your ultimate is already cast."
+ }
+}

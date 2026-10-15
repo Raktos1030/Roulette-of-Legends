@@ -1,0 +1,43 @@
+{
+  "Hecarim|jgl": {
+    "identity": "Combattant à dégâts physiques qui transforme sa vitesse en dégâts (passif Galop : puissance d'attaque bonus selon la vitesse de déplacement bonus). Carnage (Q) frappe en zone et se recharge plus vite à chaque touche, Essence de la peur (W) inflige des dégâts autour de lui et le soigne, Charge dévastatrice (E) le fait accélérer puis repousser sa cible, et Légion des ombres (R) charge avec des cavaliers qui effraient les ennemis à l'arrivée.",
+    "playstyle": "Jungler de clear très rapide, de ganks à haute vitesse et d'engages de teamfight. Hecarim arrive de nulle part grâce à sa vitesse et à son E. Il est très fort en mid game quand il peut traverser les lignes adverses.",
+    "early_game": "Clear rapide en spammant Q sur les camps. Gank dès que tes laners peuvent suivre : E pour accélérer et repousser vers ta lane, Q et W ensuite. Attention à ton mana en early.",
+    "level_1": "Carnage (Q) en premier. Spam Q sur le camp.",
+    "level_2": "Essence de la peur (W). Dégâts autour de toi et soin : ton clear devient beaucoup plus sain.",
+    "level_3": "Second Q ou Charge dévastatrice (E) selon le chemin. E accélère puis repousse la cible : parfait pour ganker en la renvoyant vers ton laner.",
+    "level_6": "Légion des ombres : charge avec les cavaliers qui effraie à l'arrivée. E → R → Q → W est ton engage : tu entres au milieu de l'équipe adverse à grande vitesse.",
+    "power_spikes": [
+      "Niveau 3 : ganks rapides avec E.",
+      "Niveau 6 : engage avec l'ultime.",
+      "Premier item complet : vitesse et dégâts élevés.",
+      "Mid game : engages dévastateurs."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear très rapide, puis ganks par des angles inattendus grâce à ta vitesse. Hecarim excelle à contourner les wards : passe par la jungle adverse pour surprendre les lanes. Contrôle les crabes, prends les Larves (vers 8 min) et les dragons avec ton équipe. Garde l'œil sur ton mana en early.",
+    "trading": "En gank : E pour accélérer → repousse la cible vers ton laner → Q → W. En teamfight : E → R au milieu de l'équipe adverse → Q et W. Abandonne si l'adversaire te slow (Sylas, Ivern).",
+    "threats": [
+      "Ralentissements et CC qui cassent ta vitesse (Ivern).",
+      "Sylas, défavorable et fréquent.",
+      "Réductions de soins adverses."
+    ],
+    "mistakes": [
+      "Repousser la cible loin de ton laner avec E.",
+      "Engager avec l'ultime sans suivi de ton équipe.",
+      "Vider ton mana en early."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il te bat en duel early : évite-le et gank.",
+      "Graves": "Il envahit bien : garde tes camps en vision.",
+      "Viego": "Tu gagnes les combats rapides grâce à ta vitesse.",
+      "Sylas": "Il peut voler ton ultime et te bat en duel : n'engage pas quand il peut te le reprendre.",
+      "Ivern": "Il te slow et protège ses alliés : gank les lanes loin de lui."
+    },
+    "mid_game": "Engages et ganks à haute vitesse. Contourne les wards pour surprendre les side lanes.",
+    "late_game": "Engage de teamfight : E → R sur la ligne arrière adverse. Attends que ton équipe puisse suivre.",
+    "ahead": "Prends les objectifs, envahis et force les combats.",
+    "behind": "Farm et joue pour les engages en teamfight.",
+    "win_condition": "Pour gagner cette partie, tu veux ganker par surprise et engager les teamfights à grande vitesse sur la ligne arrière adverse.",
+    "final_tip": "Avec E, place-toi de façon à repousser la cible vers ton équipe, pas loin d'elle."
+  }
+}

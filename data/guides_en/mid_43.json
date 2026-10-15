@@ -1,0 +1,43 @@
+{
+ "Yone|mid": {
+  "identity": "Crit-based fighter dealing mixed damage (physical and magic), played almost as much mid as top. Every second attack deals magic damage (passive). Mortal Steel (Q) strikes in a line and, on the third cast, dashes and knocks up enemies hit; Spirit Cleave (W) strikes in a cone and gives a shield; Soul Unbound (E) separates his soul from his body and, at the end, repeats part of the damage dealt; Fate Sealed (R) dashes through a line and pulls enemies hit.",
+  "playstyle": "In mid, Yone faces mages and assassins: he wins by dodging their abilities with E, then going all-in. He dominates Yasuo, his most common opponent, but struggles against mages who punish his dashes (Vex) or burst him (LeBlanc, Annie, Twisted Fate).",
+  "early_game": "Stack Q on minions to keep Q3 ready, short trades with Q + W. Keep E for all-ins: without it, you're an easy target for mages. Punish every missed key ability.",
+  "level_1": "Mortal Steel (Q) first.",
+  "level_2": "Spirit Cleave (W). Q → W: a short trade with a shield.",
+  "level_3": "Soul Unbound (E). All-in: E → Q3 → W → attacks → snap back to your body.",
+  "level_6": "Fate Sealed: E → R → Q3 → W. Roam to the side lanes when your wave is pushed; in teamfights, aim for several targets.",
+  "power_spikes": [
+   "Level 3: all-in with E.",
+   "Level 6: ultimate for kills and engages.",
+   "First completed item: heavy crit damage.",
+   "Two items: one of the best teamfight fighters."
+  ],
+  "lane_plan": "Stack Q, trade briefly and all-in when the enemy's key ability is on cooldown. Push and roam after level 6. The mid role quest (faster recall) makes your roams more profitable.",
+  "trading": "Short trade: Q → W → back off. All-in: E → Q3 → W → R → snap back. Give up on it against mages who punish your dashes (Vex) or burst you while your E is on cooldown.",
+  "jungle_plan": "",
+  "threats": [
+   "Vex: your hardest matchup (her passive stops your dashes).",
+   "LeBlanc, Annie and Twisted Fate, who burst or lock you down.",
+   "Ahri, a common and slightly unfavorable opponent."
+  ],
+  "mistakes": [
+   "Using E when you can't snap back to safety.",
+   "Missing Q3.",
+   "Engaging inside a mage's control zone."
+  ],
+  "matchup_notes": {
+   "Yasuo": "He fights at your range: trade short and all-in with E.",
+   "Viktor": "Dive when his Gravity Field is on cooldown.",
+   "Ahri": "Dodge her Charm with E, then all-in.",
+   "Zed": "W to absorb his shurikens; E to dodge his ultimate.",
+   "Vex": "Her passive interrupts your dashes: farm and roam."
+  },
+  "mid_game": "Roams, skirmishes and teamfights around objectives.",
+  "late_game": "Go in after the enemy CC, ultimate on several targets, then E to snap back.",
+  "ahead": "Roam, force fights and take objectives.",
+  "behind": "Farm and play teamfights after the enemy CC.",
+  "win_condition": "To win this game, you want to punish mages' missed abilities and clean up teamfights with your ultimate.",
+  "final_tip": "Before using E, look at where your body is: that's where you'll snap back to."
+ }
+}

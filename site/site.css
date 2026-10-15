@@ -1,0 +1,136 @@
+/* Roulette website: web layout on top of the desktop app's style (app.css);
+   a top header instead of the side rail, a scrolling page, and a phone layout. */
+
+body.site { overflow-x: hidden; overflow-y: auto; height: auto; min-height: 100%; }
+body.site #main { position: relative; left: auto; top: auto; right: auto; bottom: auto; overflow: visible; z-index: 1; }
+body.site #page { padding: 22px 34px 40px; max-width: 1400px; }
+body.site .input, body.site input { user-select: text; }
+
+/* --- header --- */
+#top {
+  position: sticky; top: 0; z-index: 30; display: flex; align-items: center; gap: 22px;
+  height: 68px; padding: 0 34px;
+  background: linear-gradient(180deg, rgba(6, 10, 18, .92), rgba(6, 10, 18, .78));
+  backdrop-filter: blur(20px) saturate(1.3);
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(90deg, rgba(200, 170, 110, .05), rgba(200, 170, 110, .35) 40%, rgba(200, 170, 110, .05)) 1;
+}
+.top-brand { display: flex; align-items: center; gap: 12px; flex: none; }
+.top-brand .logo { width: 42px; height: 42px; }
+.top-name { font: 21px/1 var(--display); letter-spacing: .06em; color: var(--gold-pale); white-space: nowrap; }
+.top-name small { font-size: .55em; letter-spacing: .14em; margin: 0 .3em; color: var(--gold); vertical-align: .25em; }
+.top-nav { display: flex; gap: 4px; margin-left: 12px; }
+.top-item {
+  display: flex; align-items: center; gap: 8px; padding: 9px 15px; border-radius: 12px;
+  color: var(--muted); font: 12px/1 var(--display); letter-spacing: .12em; text-transform: uppercase;
+  transition: color .2s, background .25s;
+}
+.top-item svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.top-item:hover { color: var(--gold-pale); background: rgba(255, 255, 255, .04); }
+.top-item.on { color: var(--gold-hi); background: rgba(200, 170, 110, .12); box-shadow: inset 0 0 0 1px rgba(200, 170, 110, .28); }
+.top-lang { margin-left: auto; }
+.top-lang button { min-width: 42px; }
+
+/* --- footer --- */
+#foot { max-width: 1400px; margin: 0 auto; padding: 0 34px 34px; color: var(--muted); font-size: 12.5px; }
+.foot-row { display: flex; flex-wrap: wrap; gap: 6px 22px; justify-content: space-between; padding-top: 18px; border-top: 1px solid var(--hair); }
+#foot .legal { margin: 12px 0 0; font-size: 11.5px; line-height: 1.5; color: var(--faint); }
+
+/* --- u.gg button on the roll card --- */
+.sr-act .btn-gold[data-ugg] { display: inline-flex; align-items: center; gap: 8px; }
+.sr-act .btn-gold[data-ugg] svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.gr-act a.btn { display: inline-flex; align-items: center; }
+
+/* --- Rolls page --- */
+.sums { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 18px; }
+.sums .v .ri { width: 22px; height: 22px; vertical-align: -3px; }
+.rlist { display: flex; flex-direction: column; gap: 4px; }
+.rrow {
+  display: grid; grid-template-columns: 42px minmax(140px, 1.3fr) minmax(110px, 1fr) minmax(0, 1.4fr) 130px 64px;
+  align-items: center; gap: 14px; padding: 8px 12px; border-radius: 12px; transition: background .2s;
+}
+.rrow:hover { background: rgba(255, 255, 255, .05); }
+.rrow > img { width: 42px; height: 42px; border-radius: 10px; }
+.rr-main b { display: block; font-size: 14.5px; }
+.rr-main span { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--muted); }
+.rr-main .ri { width: 15px; height: 15px; }
+.rr-mode { font-size: 13px; color: var(--text-2); }
+.rr-group { display: flex; gap: 4px; }
+.rr-group img { width: 26px; height: 26px; border-radius: 7px; opacity: .85; }
+.rr-date { font-size: 12.5px; color: var(--muted); text-align: right; }
+.rr-go { font-size: 12px; color: var(--gold); text-align: right; }
+
+/* --- app reminders (roll card, home) --- */
+.sr-promo-link { font-size: 12.5px; font-weight: 600; color: var(--teal); }
+.sr-promo-link:hover { color: #fff; }
+.promo-card .btn-gold { white-space: nowrap; }
+
+/* --- Apps page --- */
+.apps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-bottom: 18px; }
+.app-card { display: flex; flex-direction: column; padding: 28px 30px; }
+.app-card h2 { margin: 10px 0 4px; font: 26px/1.1 var(--display); letter-spacing: .04em; color: var(--gold-pale); }
+.app-card.full { border-color: var(--hair-gold); background: linear-gradient(160deg, rgba(200, 170, 110, .12), var(--glass) 55%); }
+.app-tag { margin: 0 0 14px; color: var(--text-2); font-size: 15px; }
+.app-plus { margin: 0 0 6px; font-weight: 600; color: var(--gold); font-size: 13.5px; }
+.app-list { margin: 0 0 24px; padding: 0; list-style: none; display: grid; gap: 10px; flex: 1; }
+.app-list li { position: relative; padding-left: 22px; font-size: 14px; line-height: 1.5; color: var(--text); }
+.app-list li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--teal); font-weight: 700; }
+.app-dl { display: flex; flex-wrap: wrap; gap: 10px; }
+.app-dl .btn, .app-dl .btn-gold { display: inline-flex; align-items: center; gap: 9px; }
+.app-dl svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.app-note { margin: 12px 0 0; font-size: 12.5px; color: var(--muted); }
+.app-card .btn-gold svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.cmp { width: 100%; border-collapse: collapse; font-size: 14px; }
+.cmp th, .cmp td { padding: 10px 12px; border-bottom: 1px solid var(--hair); }
+.cmp thead th { font: 12px/1 var(--display); letter-spacing: .14em; text-transform: uppercase; color: var(--gold); text-align: center; }
+.cmp tbody th { text-align: left; font-weight: 500; color: var(--text); }
+.cmp td { text-align: center; width: 110px; }
+.cmp td.yes { color: var(--teal); font-weight: 700; }
+.cmp td.no { color: var(--faint); }
+.cmp-note { margin: 16px 0 0; font-size: 13px; }
+
+/* --- phones and small windows --- */
+@media (max-width: 1000px) {
+  .welcome { grid-template-columns: 1fr; }
+  .top-name { display: none; }
+  .rrow { grid-template-columns: 42px minmax(0, 1fr) auto; }
+  .rr-mode, .rr-group { display: none; }
+  .rr-go { display: none; }
+}
+@media (max-width: 760px) {
+  #top { height: 58px; padding: 0 16px; gap: 10px; }
+  .top-nav { margin-left: 0; gap: 2px; }
+  .top-item { padding: 9px 10px; }
+  .top-item span { display: none; }
+  body.site #page { padding: 16px 16px 30px; }
+  #foot { padding: 0 16px 24px; }
+  .controls, .controls.group { grid-template-columns: 1fr; padding: 16px; }
+  .controls .ctl-roles, .controls .ctl-champ, .controls .filters, .controls .launch { grid-column: 1; }
+  .controls.group .gpanel, .controls.group .launch { grid-column: 1; grid-row: auto; }
+  .roles { flex-wrap: wrap; }
+  .role-btn { flex: 1 1 64px; }
+  .launch { min-height: 64px; }
+  .strip { height: 220px; }
+  .sr-card { display: none; }
+  .sr-name { font-size: 30px; }
+  .w-hero { padding: 24px 20px; min-height: 300px; }
+  .w-brand { font-size: 34px; }
+  .w-feats { grid-template-columns: 1fr; }
+  .sums { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .apps { grid-template-columns: 1fr; }
+  .app-card { padding: 22px 20px; }
+  .cmp { font-size: 13px; }
+  .cmp td { width: 46px; padding: 9px 4px; }
+  .cmp th { padding: 9px 6px; }
+  .gp-head .ctl-label { white-space: nowrap; }
+  .gp-head .gp-hint { font-size: 12px; }
+  .gp-row { grid-template-columns: 30px minmax(0, 1fr) auto; }
+  .gp-row .gp-roles { grid-column: 1 / -1; }
+  .gp-row .gp-champ { grid-column: 1 / -1; }
+  .gres-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fav-tools .input { width: 100%; }
+  .fav-grid { grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); }
+  .ftile img { width: 56px; height: 56px; }
+  .fav-roles .role-btn { width: auto; flex: 1 1 60px; }
+  #toasts { left: 16px; right: 16px; bottom: 16px; align-items: stretch; }
+}

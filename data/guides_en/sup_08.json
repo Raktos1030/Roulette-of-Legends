@@ -1,0 +1,43 @@
+{
+ "Elise|sup": {
+  "identity": "Two-form burst mage. Spider Form (R) is available from level 1 and swaps between two sets of abilities. In human form: Neurotoxin (Q) deals damage based on current health, Volatile Spiderling (W) releases a spider that explodes near a target, and Cocoon (E) stuns and reveals the first enemy hit. In spider form: Venomous Bite (Q) lunges at an enemy (damage based on missing health), Skittering Frenzy (W) boosts her attack speed, and Rappel (E) lifts her into the air, untargetable, before dropping onto an enemy. Spider Queen (passive): her human abilities create spiderlings, and her spider-form attacks heal her.",
+  "playstyle": "Pick support: a landed Cocoon means a full burst and often a kill. She dominates fragile supports (Lux, Pyke) and struggles against engage tanks (Leona).",
+  "early_game": "Threaten the Cocoon (E): the opponent hit is stunned, then chain human Q, human W, spider form, spider Q. Poke with human Q when your opponent comes to last hit. Keep Rappel (spider E) to dodge a key ability or an engage.",
+  "level_1": "Cocoon (E) first. Spider Form (R) is already available.",
+  "level_2": "Neurotoxin / Venomous Bite (Q). Cocoon → human Q → spider form → spider Q: a big burst.",
+  "level_3": "Volatile Spiderling / Skittering Frenzy (W). Full combo: human E → Q → W → R → spider Q → attacks.",
+  "level_6": "Ultimate ranks strengthen both your forms. It's time to play 3-person dives with your ADC and jungler.",
+  "power_spikes": [
+   "Level 3: full combo after a Cocoon.",
+   "Level 6: both forms strengthened.",
+   "First completed item: lethal burst on fragile supports.",
+   "Mid game: picks in the fog of war."
+  ],
+  "lane_plan": "Threaten the Cocoon from the bushes, poke with human Q and play for kills with your ADC. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored): clear enemy vision for your picks.",
+  "trading": "Short trade: human Q. All-in: human E → Q → W → R → spider Q → attacks. Defense: Rappel to dodge. Avoid trades against engage tanks (Leona) who keep you in melee range.",
+  "jungle_plan": "",
+  "threats": [
+   "Leona: a hard matchup.",
+   "Janna, Rell and Alistar: hard matchups.",
+   "Enemy engages while your Cocoon is on cooldown."
+  ],
+  "mistakes": [
+   "Throwing the Cocoon through minions (it stops on the first enemy).",
+   "Staying in spider form against ranged poke.",
+   "Wasting Rappel instead of keeping it to dodge."
+  ],
+  "matchup_notes": {
+   "Thresh": "Dodge his hook with Rappel.",
+   "Lulu": "Her polymorph cuts your combo: Cocoon once she's used W.",
+   "Pyke": "He's fragile: one Cocoon kills him.",
+   "Lux": "She can't escape your combo: Cocoon once she's thrown her Q.",
+   "Leona": "She engages you and withstands your burst: keep Rappel for her engage."
+  },
+  "mid_game": "Look for picks with your jungler in the fog of war. Place Control Wards around objectives.",
+  "late_game": "Stay in human form behind your frontline, look for a Cocoon on an isolated carry, then switch to spider to finish. Keep Rappel to dodge an engage.",
+  "ahead": "Create picks and help your jungler: a Cocoon on a carry wins the objective.",
+  "behind": "Poke in human form and keep the Cocoon to protect your ADC.",
+  "win_condition": "To win this game, you want to catch isolated enemies with your Cocoon and kill them with your burst.",
+  "final_tip": "Always chain your human abilities before switching to spider: that way you use both forms in every combo."
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "Nunu|jgl": {
+  "identity": "Magic damage tank who specializes in snowball ganks and objective control. Consume (Q) bites a monster or minion (big true damage and healing) or a champion, Biggest Snowball Ever! (W) rolls a snowball that grows and knocks up on impact, Snowball Barrage (E) slows, then roots enemies hit several times, and Absolute Zero (R) channels a freezing zone that slows before a massive explosion. His passive speeds up Nunu and a nearby ally.",
+  "playstyle": "Gank and objective jungler. Nunu crosses the map in his snowball to gank any lane and secures epic monsters thanks to his Q.",
+  "early_game": "Clear with Q (very strong on monsters) and E. Gank from level 3: W from far away, knock-up, then E to root. Use Q on Scuttles and epic monsters to secure them.",
+  "level_1": "Consume (Q) first.",
+  "level_2": "Biggest Snowball Ever! (W) on the most common path. It grows as it rolls: the farther it comes from, the more it hurts. First gank possible from level 2-3.",
+  "level_3": "Snowball Barrage (E). Slows, then roots: W → E is your full gank.",
+  "level_6": "Absolute Zero: a channel that heavily slows, then explodes. Cast it when enemies can't get out of the zone (after your knock-up or in an objective fight). You can end it early for less damage.",
+  "power_spikes": [
+   "Level 2-3: snowball ganks.",
+   "Level 6: Absolute Zero in objective fights.",
+   "First completed item: a solid tank.",
+   "Objectives: Consume secures epic monsters."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear with Q, then frequent snowball ganks: Nunu can gank any lane quickly. Control Scuttles and use Q to secure Void Grubs (around 8 minutes), dragons and Baron. Invade with your laners: your Q on enemy camps is very fast.",
+  "trading": "Ganking: W from far away → knock-up → E to root → Q. Teamfighting: W to engage, E to slow, R when enemies can't get out. Give up on it against champions who interrupt your R channel.",
+  "threats": [
+   "CC that interrupts your Absolute Zero.",
+   "Ivern, the only clearly unfavorable matchup according to the data.",
+   "Duels against very aggressive early-game junglers."
+  ],
+  "mistakes": [
+   "Throwing the snowball too close (little damage and easy to dodge).",
+   "Channeling R when the enemy can easily walk out of it.",
+   "Forgetting to use Q to secure epic monsters."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He'll invade you: gank and secure objectives with Q.",
+   "Viego": "Root him with E when he dives.",
+   "Graves": "He beats you in early duels: avoid him, gank on the other side.",
+   "Sylas": "He can steal your ultimate: don't use R when he can take it back.",
+   "Ivern": "He protects his allies: aim for targets out of his range."
+  },
+  "mid_game": "Ganks and objective control. Nunu is very strong at securing epic monsters with Q.",
+  "late_game": "Engage with W, control with E and R. Protect your carries and secure Baron with Q.",
+  "ahead": "Gank nonstop, take objectives and force fights.",
+  "behind": "Secure objectives with Q and play with your team.",
+  "win_condition": "To win this game, you want to gank every lane with your snowball and control epic monsters with Consume.",
+  "final_tip": "Throw your snowball from far away: the longer it rolls, the bigger it gets and the more it hurts."
+ }
+}

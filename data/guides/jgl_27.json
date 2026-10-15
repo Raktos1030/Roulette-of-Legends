@@ -1,0 +1,43 @@
+{
+  "Nocturne|jgl": {
+    "identity": "Combattant-assassin à dégâts physiques, spécialiste des dives à longue distance. Crépuscule (Q) laisse une traînée qui l'accélère et renforce ses dégâts, Linceul des ténèbres (W) bloque un sort et lui donne de la vitesse d'attaque, Horreur indicible (E) attache une cible et l'effraie si elle ne s'éloigne pas assez vite, et Paranoïa (R) réduit la vision de toute l'équipe adverse avant de le faire foncer sur un champion. Son passif frappe en zone et le soigne régulièrement.",
+    "playstyle": "Jungler de farm puis de dives au niveau 6. Nocturne transforme chaque ultime en kill potentiel sur un carry isolé.",
+    "early_game": "Clear rapide grâce au passif qui frappe en zone et soigne. Gank quand un laner peut suivre : Q pour accélérer, E pour l'effroi, W pour bloquer le sort de fuite ou de CC adverse. Farm jusqu'au 6 si aucune occasion claire.",
+    "level_1": "Crépuscule (Q) en premier.",
+    "level_2": "Linceul des ténèbres (W). Bloque un sort : garde-le pour le CC adverse en gank ou en duel.",
+    "level_3": "Horreur indicible (E) ou second Q selon le chemin. E attache et effraie : premier gank possible.",
+    "level_6": "Paranoïa : toute l'équipe adverse perd sa vision, puis tu fonces sur un champion. Utilise-la sur un carry isolé ou une lane en difficulté : c'est ton principal outil de pression.",
+    "power_spikes": [
+      "Niveau 6 : Paranoïa, dives sur toute la carte.",
+      "Premier item complet : burst qui tue les carries.",
+      "Niveau 11 et 16 : ultime de plus longue portée.",
+      "Mid game : picks sur les cibles isolées."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear complet rapide jusqu'au 6, en gankant si une occasion se présente. Après le 6, surveille la carte : chaque carry isolé est une cible pour Paranoïa. Contrôle les crabes, les Larves (vers 8 min) et les dragons. Utilise la perte de vision adverse pendant l'ultime pour prendre un objectif ou organiser un combat.",
+    "trading": "En gank : Q → E → W pour bloquer le CC → attaques. En dive : R sur la cible → E → W → attaques. Abandonne si la cible est entourée d'alliés qui peuvent te contrôler après ton W.",
+    "threats": [
+      "CC lancés après ton W.",
+      "Tanks qui encaissent ton burst.",
+      "Shyvana, Wukong et Udyr, parmi les moins bons matchups selon les données."
+    ],
+    "mistakes": [
+      "Lancer W trop tôt, sans sort à bloquer.",
+      "Dive avec l'ultime sur une cible entourée d'alliés.",
+      "Gaspiller l'ultime sans suivi de ton équipe."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Bloque son Q avec W et dive sur lui avec l'ultime.",
+      "Graves": "Il te bat en early : attends ton 6.",
+      "Viego": "Dive-le quand il est seul.",
+      "Wukong": "Son clone trompe ton ultime : vise le vrai.",
+      "Shyvana": "Elle scale bien et encaisse ton burst : joue avant qu'elle ne soit forte."
+    },
+    "mid_game": "Dives avec l'ultime et objectifs. Utilise la perte de vision adverse pour organiser des combats.",
+    "late_game": "Dive sur le carry adverse avec l'ultime ; W pour bloquer le CC qui arrive.",
+    "ahead": "Dive sur les carries isolés, prends les objectifs et force les combats.",
+    "behind": "Farm et cherche des picks avec l'ultime sur des cibles isolées.",
+    "win_condition": "Pour gagner cette partie, tu veux utiliser Paranoïa pour tuer les carries isolés et créer des avantages sur la carte.",
+    "final_tip": "Garde Linceul des ténèbres pour le CC adverse : c'est lui qui décide si ton dive réussit."
+  }
+}

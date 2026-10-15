@@ -1,0 +1,43 @@
+{
+  "Yone|top": {
+    "identity": "Combattant à dégâts mixtes (physiques et magiques) basé sur les critiques. Une attaque sur deux inflige des dégâts magiques (passif). Acier mortel (Q) frappe en ligne et, au troisième cast, dash et knock-up les ennemis touchés ; Fendoir spirituel (W) frappe en cône et donne un shield ; Libération spirituelle (E) sépare son âme de son corps et, à la fin, répète une partie des dégâts infligés ; Destin scellé (R) traverse une ligne et attire les ennemis touchés.",
+    "playstyle": "Trades courts et all-in avec E. Yone est fort à tous les stades et excelle dans les combats désorganisés. Il dépend beaucoup de la gestion de E : bien l'utiliser, c'est entrer, frapper et revenir en sécurité dans son corps.",
+    "early_game": "Stack Q sur les sbires pour avoir Q3 prêt, puis trade avec Q + W. Le shield de W absorbe une partie de la riposte. Garde E pour les all-in : sans lui, tu es une cible facile.",
+    "level_1": "Acier mortel (Q) en premier. Stack Q sur les sbires et poke l'adversaire qui vient last hit.",
+    "level_2": "Fendoir spirituel (W). Cône avec shield : Q → W est ton trade court de base.",
+    "level_3": "Libération spirituelle (E). All-in : E → Q3 (knock-up) → W → attaques, puis retour dans ton corps. Le retour répète une partie des dégâts infligés pendant E.",
+    "level_6": "Destin scellé : ligne qui projette les ennemis vers toi. Combo : E → R → Q3 → W. En teamfight, vise plusieurs cibles.",
+    "power_spikes": [
+      "Niveau 3 : all-in avec E.",
+      "Niveau 6 : ultime pour les engages et les kills.",
+      "Premier item complet : dégâts critiques importants.",
+      "Deux items : un des meilleurs combattants de teamfight."
+    ],
+    "lane_plan": "Joue une wave neutre, stack Q sur les sbires et trade court avec Q + W. Garde E pour les all-in. Prends les plaques quand tu gagnes. Recall quand ta wave crash. Les murs de la lane te permettent de passer avec Q3.",
+    "trading": "Trade court : Q → W → recul. Trade long : E → Q3 → W → attaques → retour dans ton corps. Engage quand ta Q3 est prête ; abandonne contre les champions qui te stun (Irelia, Kennen) ou quand ton E est en recharge.",
+    "jungle_plan": "",
+    "threats": [
+      "Irelia et les champions qui te battent au contact.",
+      "Kennen et les CC à distance.",
+      "Warwick et les champions qui te suivent après E."
+    ],
+    "mistakes": [
+      "Utiliser E sans pouvoir revenir en sécurité.",
+      "Rater Q3.",
+      "Engager sans ultime ni Q3."
+    ],
+    "matchup_notes": {
+      "Jax": "Sa Contre-attaque esquive tes attaques : utilise Q et W pendant son esquive.",
+      "Nasus": "Punis-le à chaque stack.",
+      "Aatrox": "Esquive ses sweet spots avec E et Q3.",
+      "Irelia": "Elle te bat au contact : trade court et garde E pour ses all-in.",
+      "Malphite": "Son armure te gêne : farm et joue pour les teamfights."
+    },
+    "mid_game": "Escarmouches et splitpush. Yone excelle dans les combats désorganisés en rivière.",
+    "late_game": "Entre après les CC adverses, ultime sur plusieurs cibles, puis E pour revenir en sécurité.",
+    "ahead": "Force des duels, dive avec ton jungler et prends les tours.",
+    "behind": "Farm et joue en teamfight après les CC adverses.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer ta lane par des trades courts et nettoyer les teamfights avec l'ultime.",
+    "final_tip": "Avant d'utiliser E, regarde où est ton corps : c'est là que tu reviendras."
+  }
+}

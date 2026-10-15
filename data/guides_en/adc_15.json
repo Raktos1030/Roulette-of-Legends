@@ -1,0 +1,43 @@
+{
+ "Mel|adc": {
+  "identity": "Magic damage mage. Every ability gives her three bonus projectiles for her next attack (nine max), and all her damage applies Overwhelm: past a certain number of stacks, the target is executed (passive Searing Brilliance). Radiant Volley (Q) bursts a barrage of projectiles in an area, Rebuttal (W) creates a barrier that reflects enemy projectiles and protects her, Solar Snare (E) roots in the center and slows around it, and Golden Eclipse (R) hits every enemy marked by Overwhelm, no matter the distance.",
+  "playstyle": "Poke and execute mage. Just like in mid lane, she's ahead in gold at 15 minutes on average against common ADCs, without that turning into wins: her late-game impact seems too low.",
+  "early_game": "Poke with Radiant Volley (Q) and empowered attacks to stack Overwhelm on your opponent. Save Rebuttal (W) to reflect an important projectile (hook, CC ability, big poke). Solar Snare (E) roots an opponent who steps up, for a kill with your support.",
+  "level_1": "Radiant Volley (Q) first. Poke and farm from range.",
+  "level_2": "Solar Snare (E). CC in the center: E → Q → empowered attack.",
+  "level_3": "Rebuttal (W). Your main defensive tool: save it for the enemy ability that matters.",
+  "level_6": "Golden Eclipse: hits every marked enemy, wherever they are. Stack Overwhelm on several targets, then R to execute those that drop below the threshold.",
+  "power_spikes": [
+   "Level 3: E → Q → attacks.",
+   "Level 6: global Golden Eclipse.",
+   "First completed item: poke and executions.",
+   "Teamfights: executing several marked targets."
+  ],
+  "lane_plan": "Poke from range and stack Overwhelm; play for kills with your support and E. Turn your gold lead into towers and dragons: your stats show the lane lead isn't enough on its own. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) helps you keep that lead.",
+  "trading": "Basic trade: Q then an empowered attack. All-in: E → Q → attacks → R. Give up on it against champions who chase you or block your abilities (Yasuo, Zeri).",
+  "jungle_plan": "",
+  "threats": [
+   "Yasuo and Zeri, the worst matchups.",
+   "Long-range bot lane mages (Ziggs, Viktor, Syndra): hard matchups.",
+   "Kalista: a hard matchup."
+  ],
+  "mistakes": [
+   "Using W at random and not being able to reflect the key ability.",
+   "Casting your ultimate before you have enough Overwhelm on your targets.",
+   "Staying in lane instead of converting your lead into objectives."
+  ],
+  "matchup_notes": {
+   "Caitlyn": "Her range dominates you: stay behind your minions and save E to root her when she steps up.",
+   "Kai'Sa": "She dives with her ultimate: save E to root her when she lands.",
+   "Ezreal": "Reflect his Q with W.",
+   "Yasuo": "His Wind Wall blocks your projectiles: poke once he's used it.",
+   "Zeri": "She's too mobile for your E: stay close to your support."
+  },
+  "mid_game": "Poke before objectives and stack Overwhelm on the whole enemy team. Join fights with your team.",
+  "late_game": "Stay behind your frontline, poke with Q, keep W for the ability that threatens you. Cast R when several enemies are marked and low.",
+  "ahead": "Take towers and dragons: your lead has to become objectives.",
+  "behind": "Farm from range, poke and play around your ultimate to join fights.",
+  "win_condition": "To win this game, you want to turn your lane lead into objectives and execute several targets with Golden Eclipse in teamfights.",
+  "final_tip": "Save Rebuttal for the ability that really matters: reflecting a hook or a CC wins a fight."
+ }
+}

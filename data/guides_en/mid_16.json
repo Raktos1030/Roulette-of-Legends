@@ -1,0 +1,43 @@
+{
+ "Irelia|mid": {
+  "identity": "Very mobile physical damage fighter. Bladesurge (Q) dashes onto a target and resets if it dies or is marked, Flawless Duet (E) stuns and marks enemies caught between two blades, Defiant Dance (W) reduces damage taken before striking, and Vanguard's Edge (R) marks several targets and creates a wall of blades. Her passive boosts her attack speed and damage with stacks.",
+  "playstyle": "A lane bully against mages. The real challenge is turning your lane lead into objectives.",
+  "early_game": "Build your stacks on minions with Q, then engage mages who have no dash: E → Q on the marked target → attacks. CC mages (Vex, Galio) and durable assassins give you trouble: respect their abilities.",
+  "level_1": "Bladesurge (Q) first. Last hit and build stacks.",
+  "level_2": "Flawless Duet (E). E → Q → attacks: a very strong level 2 all-in against mages.",
+  "level_3": "Defiant Dance (W). Soak the enemy burst or tower shots during a dive.",
+  "level_6": "Vanguard's Edge: marks several targets and creates a wall that slows. Tower dives and multi-target skirmishes.",
+  "power_spikes": [
+   "Level 2: E + Q against mages.",
+   "Level 6: ultimate, tower dives.",
+   "First completed item: dominant duels.",
+   "Mid game: messy skirmishes."
+  ],
+  "lane_plan": "Push and punish mages when their CC is on cooldown. Take plates and dive with your jungler. Above all, convert your lead: roam to the side lanes and objectives instead of staying to farm. The mid role quest (faster recall) helps with that.",
+  "trading": "Short trade: Q on a minion → E → Q on the marked target → attacks → Q on a minion to get out. Long trade: W to soak damage, then R. Engage when the enemy CC is on cooldown; give up on it against mages who stun you first (Vex, Galio).",
+  "jungle_plan": "",
+  "threats": [
+   "Vex and Galio, who stop you mid-engage.",
+   "Tanks and fighters who beat you up close (Malphite, mid Nasus).",
+   "Not converting your lane lead."
+  ],
+  "mistakes": [
+   "Engaging without stacks or a mark.",
+   "Staying in lane with a big lead instead of roaming.",
+   "Diving under a tower without W to soak damage."
+  ],
+  "matchup_notes": {
+   "Zed": "Keep W for his ultimate.",
+   "Viktor": "Punish him when his Gravity Field is on cooldown, then roam to convert your lead.",
+   "Yasuo": "His Wind Wall blocks your E: wait until he's used it.",
+   "Vex": "Her passive interrupts your dashes: don't engage when it's charged.",
+   "Galio": "His taunt stops you: engage when his W is on cooldown."
+  },
+  "mid_game": "Roams, dives and skirmishes. Turn your lane lead into towers and dragons.",
+  "late_game": "Go in after the enemy CC, mark several targets with R and chain your Q's.",
+  "ahead": "Roam, dive and take objectives quickly: your lane lead has to become a team lead.",
+  "behind": "Farm, avoid CC mages and play after their abilities in teamfights.",
+  "win_condition": "To win this game, you want to crush the enemy mage in lane and immediately turn that lead into objectives.",
+  "final_tip": "When you have the gold lead, don't stay mid: roam and take objectives, that's what mid Irelias are missing in the data."
+ }
+}

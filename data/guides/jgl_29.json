@@ -1,0 +1,43 @@
+{
+  "Qiyana|jgl": {
+    "identity": "Assassin à dégâts physiques qui manie les éléments. Terraforce (W) la fait dasher vers un élément du terrain (bush, rivière ou mur) pour renforcer son Q : Courroux élémentaire rend invisible (herbe), root puis slow (eau) ou fait plus de dégâts aux cibles blessées (roche). Audace (E) dash sur un ennemi, et Tour de force suprême (R) repousse les ennemis ; s'ils percutent un mur, ils sont stun et le terrain explose. Aujourd'hui, elle est jouée en jungle environ deux fois sur trois.",
+    "playstyle": "Jungler d'assassinat et de playmaking. Qiyana crée des combats avec un ultime contre un mur ou le long de la rivière, et burst une cible avec ses éléments. Très mécanique.",
+    "early_game": "Clear rapide en changeant d'élément selon le camp. Gank avec l'élément adapté : eau (rivière) pour root, herbe (bush) pour arriver invisible. Garde E pour coller une cible qui fuit.",
+    "level_1": "Courroux élémentaire / Lame d'Ixtal (Q) en premier.",
+    "level_2": "Terraforce (W). Dash vers un élément : il renforce ton Q et te donne de la vitesse. W → Q est ton combo de base.",
+    "level_3": "Audace (E) ou second Q selon le chemin. Gank : W (eau ou herbe) → E → Q renforcé.",
+    "level_6": "Tour de force suprême : repousse les ennemis ; contre un mur, ils sont stun et le terrain explose (la rivière et les bushs touchés explosent aussi). Cherche les combats près des murs et de la rivière pour stun plusieurs cibles.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec l'élément eau ou herbe.",
+      "Niveau 6 : ultime contre un mur, gros playmaking.",
+      "Premier item complet : burst qui tue les carries.",
+      "Mid game : combats autour de la rivière et des murs."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide, ganks et invasions. Qiyana veut créer l'avance tôt : choisis l'élément adapté à chaque gank et contrôle les crabes. Joue autour de la rivière et des murs, où ton ultime est le plus fort (Larves vers 8 min, dragons). Évite les duels contre les junglers tanky qui encaissent ton burst.",
+    "trading": "En gank : W vers l'eau ou l'herbe → E → Q renforcé → R contre un mur si la cible fuit. En teamfight : cherche l'angle où R pousse plusieurs ennemis contre un mur. Abandonne contre les tanks (Rammus, Sejuani, Skarner).",
+    "threats": [
+      "Tanks à CC qui encaissent ton burst (Rammus, Sejuani, Skarner).",
+      "Rengar et Rek'Sai : matchups difficiles.",
+      "Combats loin des murs et de la rivière."
+    ],
+    "mistakes": [
+      "Utiliser le mauvais élément pour la situation.",
+      "Lancer l'ultime sans mur derrière les ennemis.",
+      "Dive sur un tank au lieu d'un carry."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Vous êtes tous deux forts en early : utilise l'élément eau pour le root en duel.",
+      "Graves": "Il te bat en duel direct : arrive invisible avec l'herbe.",
+      "Viego": "Burst-le avant qu'il ne possède tes alliés.",
+      "Rammus": "Son armure et son taunt t'annulent : évite-le.",
+      "Rengar": "Il te burst avant toi : garde vision dans les bushs."
+    },
+    "mid_game": "Combats autour de la rivière et des murs, près des objectifs. Chaque ultime contre un mur peut gagner un combat.",
+    "late_game": "Cherche l'angle d'ultime contre un mur sur plusieurs ennemis, puis burst le carry.",
+    "ahead": "Étouffe le jungler adverse et crée des combats autour des objectifs.",
+    "behind": "Cherche des picks et un ultime décisif en teamfight.",
+    "win_condition": "Pour gagner cette partie, tu veux créer des combats où ton ultime stun plusieurs ennemis contre un mur.",
+    "final_tip": "Avant chaque combat, repère le mur ou la rivière derrière les ennemis : c'est là que ton ultime devient décisif."
+  }
+}

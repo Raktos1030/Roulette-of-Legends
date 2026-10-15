@@ -1,0 +1,43 @@
+{
+  "Yorick|top": {
+    "identity": "Combattant à dégâts physiques et invocateur, spécialiste du splitpush. Des tombes apparaissent autour de lui quand des unités meurent (passif Berger des âmes) ; Derniers sacrements (Q) renforce sa prochaine attaque et le soigne, puis permet de réveiller les goules de la Brume depuis les tombes proches. Sombre cortège (W) enferme les ennemis dans une cage, Brume endeuillée (E) réduit l'armure, slow et marque (tes invocations accélèrent vers la cible marquée), et Élégie des Îles (R) invoque la Vierge de la Brume, qui combat avec lui ou pousse une lane seule.",
+    "playstyle": "Splitpush et combat en groupe avec ses invocations. Yorick écrase les tours et les champions isolés avec ses goules et la Vierge, et force l'équipe adverse à envoyer du monde.",
+    "early_game": "Farm avec Q pour créer des tombes, puis relance Q pour réveiller les goules et trade avec elles. Pose E sur l'adversaire pour que tes goules le chassent. Garde W pour enfermer un adversaire qui tente de fuir ou pour te protéger d'un engage.",
+    "level_1": "Derniers sacrements (Q) en premier. Last hit avec Q pour créer des tombes et te soigner.",
+    "level_2": "Brume endeuillée (E). Elle marque l'adversaire, réduit son armure et le slow : les goules foncent sur lui. Q (réveil) + E est ton premier vrai trade.",
+    "level_3": "Sombre cortège (W). Cage qui enferme : E → W autour de l'adversaire → goules + attaques. Très bonne menace de kill avec Embrasement.",
+    "level_6": "Élégie des Îles : la Vierge de la Brume combat avec toi. Tu peux la laisser pousser une lane seule pendant que tu fais autre chose, ou l'emmener avec toi pour un all-in écrasant.",
+    "power_spikes": [
+      "Niveau 3 : E + W + goules.",
+      "Niveau 6 : Vierge de la Brume, splitpush et duels.",
+      "Premier item complet : tours détruites très vite.",
+      "Mid game : pression constante sur une side lane."
+    ],
+    "lane_plan": "Farm avec Q pour créer des tombes et réveille les goules pour pousser. Utilise les goules pour poke l'adversaire. Recall quand ta wave crash. Après le 6, envoie la Vierge dans une lane pendant que tu en pousses une autre : l'adversaire ne peut pas tout défendre.",
+    "trading": "Trade court : Q renforcé + goules. Trade long : E (marque) → W (cage) → goules → Q → R. Engage quand tes goules sont disponibles ; abandonne contre les champions qui tuent vite tes invocations (Yone, Gwen, Fiora).",
+    "jungle_plan": "",
+    "threats": [
+      "Yone : ton matchup le plus difficile.",
+      "Champions qui nettoient tes invocations (Gwen, Fiora).",
+      "Ganks pendant que tu splitpush sans vision."
+    ],
+    "mistakes": [
+      "Oublier de réveiller les goules après Q.",
+      "Poser W au mauvais endroit, sans enfermer l'adversaire.",
+      "Utiliser l'ultime dans un combat perdu au lieu de le garder pour pousser."
+    ],
+    "matchup_notes": {
+      "Yone": "Il nettoie tes goules et te bat au contact : farm sous ta tour et joue pour le splitpush plus tard.",
+      "Nasus": "Pousse-le sous sa tour avec les goules pour limiter ses stacks, et transforme ton avance en tours avant qu'il ne scale.",
+      "Jayce": "Tes goules l'empêchent de poke gratuitement.",
+      "Darius": "Enferme-le dans W et fais-le frapper par les goules.",
+      "Fiora": "Elle tue tes goules et te bat en duel : farm et splitpush quand elle n'est pas là."
+    },
+    "mid_game": "Splitpush : envoie la Vierge dans une lane et pousse l'autre. Force l'équipe adverse à envoyer plusieurs joueurs pour te gérer.",
+    "late_game": "Splitpush avec la Vierge pendant que ton équipe tient le mid, ou rejoins les combats avec tes invocations.",
+    "ahead": "Splitpush, prends toutes les tours et force deux adversaires à venir.",
+    "behind": "Farm et splitpush en sécurité : ta pression reste réelle.",
+    "win_condition": "Pour gagner cette partie, tu veux splitpush pour attirer plusieurs adversaires et prendre les tours.",
+    "final_tip": "Relance toujours ton Q pour réveiller les goules : elles font l'essentiel de tes dégâts."
+  }
+}

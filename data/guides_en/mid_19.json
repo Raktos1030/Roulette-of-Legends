@@ -1,0 +1,43 @@
+{
+ "Leblanc|mid": {
+  "identity": "Magic damage assassin, queen of burst and deception. Sigil of Malice (Q) marks the target (which detonates on her next ability), Distortion (W) makes her leap, then return to where she started, Ethereal Chains (E) roots if the chain holds, and Mimic (R) copies her last ability. When she drops low on health, she creates a clone and briefly turns invisible (passive).",
+  "playstyle": "Burst and roaming assassin, most dominant in the early and mid game. LeBlanc punishes immobile mages and roams easily with W.",
+  "early_game": "Poke with W → Q or Q → W when your opponent comes to last hit, then return with W's second cast. Keep E to punish an opponent who steps up or to defend yourself. You're very strong at levels 2-3 against mages.",
+  "level_1": "Distortion (W) first. Leap onto your opponent, then return.",
+  "level_2": "Sigil of Malice (Q). Q → W (detonates the mark): big burst at level 2.",
+  "level_3": "Ethereal Chains (E). Combo: Q → W → E → W return. A kill threat with Ignite.",
+  "level_6": "Mimic: copies your last ability (RQ, RW or RE). Burst combo: Q → R (Q) → W → E. Roam to the side lanes with W.",
+  "power_spikes": [
+   "Level 2: Q + W.",
+   "Level 6: full burst with Mimic.",
+   "First completed item: one-shots on mages and marksmen.",
+   "Mid game: roams and picks."
+  ],
+  "lane_plan": "Poke and win levels 2-3, then push and roam. The mid role quest (faster recall) makes your roams very effective. Against mages who shut you down (Vex, Malzahar), play for farm and roam after 6.",
+  "trading": "Short trade: W → Q → W return. All-in: Q → R → W → E. Engage when the enemy CC is on cooldown; give up on it if you need to return with W and your starting point is no longer safe.",
+  "jungle_plan": "",
+  "threats": [
+   "Vex: your hardest matchup (her passive stops you).",
+   "Malzahar, whose shield absorbs your burst.",
+   "Tanks who soak your burst late in the game."
+  ],
+  "mistakes": [
+   "Returning with W to a dangerous position.",
+   "Using Mimic on an ability that doesn't deal damage when you want to burst.",
+   "Playing for the late game instead of building your lead early."
+  ],
+  "matchup_notes": {
+   "Ahri": "Dodge her Charm and burst her once she's missed it.",
+   "Viktor": "Burst him before he places his Gravity Field.",
+   "Syndra": "Dodge her stun with W.",
+   "Vex": "Her passive interrupts your dashes: farm and roam after 6.",
+   "Malzahar": "His shield absorbs your burst: break it with a small poke before engaging."
+  },
+  "mid_game": "Roams, picks and objectives. LeBlanc is very good at punishing isolated carries.",
+  "late_game": "Picks on isolated targets; in teamfights, burst a carry, then return with W.",
+  "ahead": "Roam, hunt the carries and take objectives quickly.",
+  "behind": "Farm and look for picks on isolated targets.",
+  "win_condition": "To win this game, you want to build an early lead through burst and roams, then hunt the carries.",
+  "final_tip": "Before casting W, look at your starting point: that's where you'll return to."
+ }
+}

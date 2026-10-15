@@ -1,0 +1,43 @@
+{
+  "Vi|jgl": {
+    "identity": "Combattante à dégâts physiques, spécialiste des ganks et du verrouillage d'une cible. Brise-coffre (Q) se charge puis la fait foncer en repoussant la première cible, Coups fracassants (W) réduit l'armure et inflige des dégâts en pourcentage des PV toutes les trois attaques, Force implacable (E) frappe en cône à travers la cible, et Mise en demeure (R) la fait foncer, imparable, sur un champion choisi pour le knock-up. Son passif lui donne un shield quand elle touche avec un sort.",
+    "playstyle": "Jungler de ganks et d'engage simple et efficace : l'ultime verrouille une cible sans qu'on puisse l'arrêter.",
+    "early_game": "Clear avec W et E. Gank dès le niveau 3 : Q chargé pour repousser la cible vers ton laner, puis attaques et E. Garde Q pour traverser un mur ou fuir.",
+    "level_1": "Coups fracassants (W) en premier.",
+    "level_2": "Force implacable (E). Frappe en cône : ton clear s'accélère.",
+    "level_3": "Brise-coffre (Q). Premier gank : Q chargé → repousse la cible → attaques (W) → E. Q est maximisé en priorité.",
+    "level_6": "Mise en demeure : elle fonce, imparable, sur un champion choisi et le knock-up. Idéal pour verrouiller un carry en teamfight ou une cible qui fuit en gank.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec Q.",
+      "Niveau 6 : verrouillage imparable avec l'ultime.",
+      "Premier item complet : ganks et dives forts.",
+      "Mid game : engages sur les carries."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear sûr et ganks dès le niveau 3. Vi gagne par les ganks et les dives : contrôle les crabes, gank les lanes où la cible n'a pas de fuite, et prends les Larves (vers 8 min) et les dragons avec ton équipe. Après le 6, chaque gank devient quasi garanti.",
+    "trading": "En gank : Q chargé → attaques → E. En teamfight : R sur le carry adverse → Q → attaques. Abandonne contre les junglers qui te battent en duel (Wukong) ou te contrôlent (Zyra).",
+    "threats": [
+      "Wukong : matchup difficile.",
+      "Zyra et Karthus, défavorables selon les données.",
+      "Ultime lancé sans suivi de ton équipe."
+    ],
+    "mistakes": [
+      "Charger Q trop longtemps (la cible s'éloigne).",
+      "Lancer l'ultime sur un tank au lieu d'un carry.",
+      "Dive sans que ton équipe puisse suivre."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Gank plus vite que lui et évite ses invasions.",
+      "Graves": "Il te bat en duel : gank là où il n'est pas.",
+      "Sylas": "Il peut voler ton ultime : n'engage pas quand il peut le reprendre.",
+      "Wukong": "Son clone te trompe : vise le vrai avec l'ultime.",
+      "Viego": "Verrouille-le avec l'ultime quand il dive."
+    },
+    "mid_game": "Ganks et engages sur les carries autour des objectifs.",
+    "late_game": "Ultime sur le carry adverse, puis Q et attaques. Attends que ton équipe puisse suivre.",
+    "ahead": "Gank en boucle, dive et prends les objectifs.",
+    "behind": "Cherche des picks avec l'ultime et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux créer des avantages par les ganks et verrouiller le carry adverse en teamfight.",
+    "final_tip": "Garde ton ultime pour le carry adverse : c'est une foncée imparable, personne ne peut l'arrêter."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "Ahri|mid": {
+    "identity": "Mage-assassin à dégâts magiques. Orbe d'illusion (Q) part et revient (dégâts vrais au retour), Lucioles (W) l'accélère et envoie trois feux follets sur les ennemis proches, Charme (E) attire la cible vers elle, et Assaut spirituel (R) lui donne trois dashes (prolongés en cas d'élimination). Son passif la soigne après avoir touché plusieurs fois avec ses sorts ou après une élimination.",
+    "playstyle": "Mage de pick et de roam, très sûre grâce aux dashes de l'ultime. Ahri gagne en touchant Charme : chaque charme réussi est un kill potentiel ou un pick en mid game. Elle roam facilement après le niveau 6.",
+    "early_game": "Farm avec Q (touche plusieurs sbires à l'aller et au retour) et poke l'adversaire quand il vient last hit. Garde Charme pour punir un adversaire qui s'avance ou pour te défendre d'un engage. Tu as une bonne gestion de wave : pousse avant de roam.",
+    "level_1": "Lucioles (W) en premier dans le chemin le plus joué. Vitesse et dégâts sur l'adversaire qui vient au contact ; certains prennent Q pour farmer.",
+    "level_2": "Orbe d'illusion (Q). Poke à l'aller et au retour (dégâts vrais au retour) : W + Q quand l'adversaire vient last hit.",
+    "level_3": "Charme (E). Combo : E → Q → W. Si Charme touche, l'adversaire perd une grosse partie de ses PV.",
+    "level_6": "Assaut spirituel : trois dashes pour engager, poursuivre ou fuir. Combo de kill : R → E → Q → W → R. Avec l'ultime, tu peux roam vers le bot ou la jungle en sécurité.",
+    "power_spikes": [
+      "Niveau 3 : combo complet avec Charme.",
+      "Niveau 6 : ultime, kills et roams.",
+      "Premier item complet : burst qui tue les carries.",
+      "Mid game : picks avec Charme."
+    ],
+    "lane_plan": "Pousse la wave avec Q, poke quand l'adversaire vient last hit et garde Charme en défense. Après le niveau 6, pousse puis roam vers le bot ou la rivière. La quête de rôle mid (retour à la base accéléré, bottes améliorées) récompense les roams : utilise-les. Évite de te faire engager sans Charme.",
+    "trading": "Trade court : Q sur l'adversaire à l'aller et au retour. Trade complet : E → Q → W. All-in : R pour se rapprocher → E → Q → W → R. Engage quand Charme a touché ; abandonne si tu l'as raté contre un assassin (Zed, Katarina).",
+    "jungle_plan": "",
+    "threats": [
+      "Assassins qui te burst (Zed, Katarina).",
+      "Annie et son stun à distance.",
+      "CC lancés au moment où tu engages avec R."
+    ],
+    "mistakes": [
+      "Lancer Charme au hasard et ne plus l'avoir pour te défendre.",
+      "Utiliser les trois dashes de l'ultime pour entrer sans fuite.",
+      "Rester en lane au lieu de roam quand ta wave est poussée."
+    ],
+    "matchup_notes": {
+      "Sylas": "Charme-le quand il utilise son E ; il peut voler ton ultime.",
+      "Viktor": "Poke-le au Q et garde R pour esquiver son ultime.",
+      "Syndra": "Esquive son stun et charme-la quand elle s'avance.",
+      "Zed": "Garde R pour esquiver son ultime.",
+      "Yone": "Charme-le quand il utilise son E ; poke-le au Q."
+    },
+    "mid_game": "Roams, picks avec Charme et objectifs. Ahri est très forte pour attraper les carries qui avancent sans vision.",
+    "late_game": "Picks et burst : charme le carry adverse, puis ultime et combo. Garde R pour fuir si besoin.",
+    "ahead": "Roam, crée des picks et prends les objectifs.",
+    "behind": "Farm, pousse la wave et cherche des picks avec Charme.",
+    "win_condition": "Pour gagner cette partie, tu veux créer des picks avec Charme et roam pour aider les autres lanes.",
+    "final_tip": "Garde toujours ton Charme pour le moment où tu peux l'enchaîner ou te défendre : c'est ton sort le plus important."
+  }
+}

@@ -1,0 +1,43 @@
+{
+ "Trundle|jgl": {
+  "identity": "Physical damage fighter and tank killer. Chomp (Q) slows and steals attack damage, Frozen Domain (W) boosts his attack and movement speed and increases his healing, Pillar of Ice (E) places a pillar that blocks the way, and Subjugate (R) steals health and resistances from a target. His passive heals him when an enemy dies near him, monsters included.",
+  "playstyle": "Dueling and objective jungler. Trundle wins fights against tanky junglers and fighters, takes objectives very fast thanks to his attack speed and ganks with his pillar.",
+  "early_game": "Clear fast with Q and W (you heal with every monster you kill). Invade when your laners have priority: your Q steals the enemy jungler's attack damage. Gank with E: pillar behind the target to cut off its escape.",
+  "level_1": "Chomp (Q) first.",
+  "level_2": "Frozen Domain (W). Attack speed and healing inside the zone: your clear speeds up.",
+  "level_3": "Pillar of Ice (E) or a second Q depending on your path. Gank: pillar behind the target → Q → attacks inside your Frozen Domain.",
+  "level_6": "Subjugate: steals health and resistances. On the enemy tank, or the jungler in a duel, you become much stronger for a few seconds.",
+  "power_spikes": [
+   "Level 3: duels and ganks with the pillar.",
+   "Level 6: Subjugate against tanks and junglers.",
+   "First completed item: objectives taken very fast.",
+   "Mid game: invades and control of the enemy jungle."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear and invades. Trundle wins duels against many tanky junglers (Rammus, Sejuani): steal their camps. Take objectives very fast with Q and W (Void Grubs around 8 minutes, dragons, Herald around 15 minutes). Gank with the pillar in lanes where the target has no dash.",
+  "trading": "Dueling: W under you → Q → attacks → R on the target. Ganking: E behind the target → Q → attacks. Give up on it against junglers who kite you from range (Lillia) or assassins who burst you (Talon).",
+  "threats": [
+   "Ivern, Talon and Lillia: hard matchups.",
+   "Ranged kiting and burst.",
+   "A badly placed pillar that blocks your team."
+  ],
+  "mistakes": [
+   "Placing the pillar between you and the target.",
+   "Fighting outside your Frozen Domain.",
+   "Using Subjugate on a squishy target instead of the tank."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Steal his damage with Q in duels.",
+   "Cho'Gath": "Subjugate steals a big chunk of his health.",
+   "Shyvana": "Beat her before her dragon form.",
+   "Talon": "He bursts you before you can steal his stats.",
+   "Ivern": "He doesn't fight and protects his allies: set the pace with your laners."
+  },
+  "mid_game": "Invades, objectives and fights against the enemy frontline.",
+  "late_game": "Subjugate on the enemy tank, pillar to split the enemy team, Frozen Domain to fight.",
+  "ahead": "Choke out the enemy jungler and take every objective.",
+  "behind": "Farm, take objectives quickly and play with your team.",
+  "win_condition": "To win this game, you want to win duels, take objectives quickly and neutralize the enemy tank with Subjugate.",
+  "final_tip": "Place your pillar behind the target, never between it and you."
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "Sona|sup": {
+  "identity": "Poke and healing enchanter. Power Chord (passive): her well-used abilities give her ability haste (then reduce her ultimate's cooldown), and after a few abilities, her next attack deals extra magic damage with an effect based on the last ability cast. Hymn of Valor (Q) damages the two nearest enemies, Aria of Perseverance (W) heals her and a wounded ally, Song of Celerity (E) speeds up nearby allies (each ability also leaves an aura that affects allies), and Crescendo (R) stuns enemy champions by forcing them to dance.",
+  "playstyle": "Scaling support: weak and fragile early, she becomes a huge source of poke, healing and speed with her items. No clearly unfavorable matchups: her worst ones (Rell, Blitzcrank, Thresh) stay close to even. She crushes slow mages and divers (Xerath, Swain, Lux).",
+  "early_game": "Poke with Hymn of Valor (Q), which automatically hits the two nearest enemies, then attack with Power Chord. Heal your ADC with W after trades. Stay behind minions against hooks: you're very fragile.",
+  "level_1": "Hymn of Valor (Q) first.",
+  "level_2": "Aria of Perseverance (W). Healing for you and your ADC after every trade.",
+  "level_3": "Song of Celerity (E). Speed to escape an engage or catch a target.",
+  "level_6": "Crescendo: stuns every champion hit in a wide area in front of you. Engage on both opponents, or stop their engage.",
+  "power_spikes": [
+   "Level 2: Q + Power Chord.",
+   "Level 6: Crescendo on both opponents.",
+   "First completed item: much more frequent poke and healing.",
+   "Late game: maxed-out ability haste."
+  ],
+  "lane_plan": "Poke with Q, heal with W and survive: your scaling does the work. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "Basic trade: Q, then an empowered attack. All-in: R, Q, attacks. Defense: E to escape, W to heal, R against the engage. Against hooks (Blitzcrank, Thresh), stay behind minions at all times.",
+  "jungle_plan": "",
+  "threats": [
+   "Rell, Blitzcrank and Thresh: your worst matchups, close to even.",
+   "Hooks and engages that catch you: you're very fragile.",
+   "Assassins who target you in teamfights."
+  ],
+  "mistakes": [
+   "Standing in the open against a hook.",
+   "Casting your ultimate on a single enemy when two were lined up.",
+   "Forgetting to heal your ADC after trades."
+  ],
+  "matchup_notes": {
+   "Nami": "Dodge her bubble and harass with Q.",
+   "Lulu": "Poke trades: your Q hits automatically.",
+   "Thresh": "Stay behind minions; if he catches your ADC, Crescendo on him.",
+   "Lux": "She's slow: Q every time she steps up.",
+   "Xerath": "He has no mobility: Crescendo punishes him."
+  },
+  "mid_game": "Stay with your team, poke before objectives and place Control Wards. Your auras benefit every nearby ally.",
+  "late_game": "Stay behind your frontline: Q to poke, W to heal, E to speed up, and Crescendo on the enemy group at the right moment.",
+  "ahead": "Poke harder and force teamfights: your team is faster and better healed.",
+  "behind": "Survive and scale: every item makes you more useful.",
+  "win_condition": "To win this game, you want to survive the lane, scale, then win teamfights with your poke, healing and Crescendo.",
+  "final_tip": "Your Q automatically targets the two nearest enemies: position so your opponent is in range, don't worry about aiming."
+ }
+}

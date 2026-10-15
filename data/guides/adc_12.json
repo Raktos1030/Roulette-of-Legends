@@ -1,0 +1,43 @@
+{
+  "Karthus|adc": {
+    "identity": "Mage de zone à dégâts magiques. Dévastation (Q) crée une explosion à retardement, plus forte sur un ennemi isolé. Mur de douleur (W) crée un mur qui slow et réduit la résistance magique des ennemis qui le traversent. Souillure (E) est une aura de dégâts autour de lui, coûteuse en mana (il récupère du mana en tuant). Requiem (R) frappe tous les champions ennemis de la carte après 3 secondes de canalisation. À sa mort, Déni de mort (passif) lui laisse quelques secondes pour continuer à lancer ses sorts.",
+    "playstyle": "Mage bot qui farm à distance avec Q, scale et achève les combats partout sur la carte avec Requiem. Il n'a aucune mobilité : il dépend de son support et de son placement.",
+    "early_game": "Farm avec Dévastation (Q), qui fait plus de dégâts sur un sbire isolé. Touche l'adversaire quand il est seul (sans sbire autour de lui dans la zone) : les dégâts sont plus forts. Garde Mur de douleur (W) pour slow un engage.",
+    "level_1": "Dévastation (Q) en premier. Farm et poke avec Q.",
+    "level_2": "Souillure (E). Aura de dégâts pour la wave et les combats au contact, mais très coûteuse en mana : coupe-la dès que tu n'en as plus besoin.",
+    "level_3": "Mur de douleur (W) (ou Q selon le chemin). Il slow et réduit la résistance magique : pose-le entre toi et un diver, ou sous l'adversaire pour un kill avec ton support.",
+    "level_6": "Requiem : dégâts sur tous les champions ennemis de la carte. Lance-le quand un allié se bat ailleurs ou pour achever les ennemis bas en PV après un combat. Même mort, tu peux encore le lancer grâce au passif.",
+    "power_spikes": [
+      "Niveau 6 : Requiem global.",
+      "Premier item complet : Q très punitif.",
+      "Deux items complets : Requiem qui tue les cibles à mi-vie.",
+      "Late game : dégâts de zone massifs en teamfight."
+    ],
+    "lane_plan": "Farm en sécurité avec Q, poke l'adversaire isolé et laisse ton support gérer les engages. Lance Requiem dès qu'un combat éclate ailleurs sur la carte. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense le farm régulier que permet Q.",
+    "trading": "Trade de base : Q sur l'adversaire isolé. All-in : W sous lui, Q, E activée. Abandonne contre les ADC qui te poursuivent (Zeri) : sans mobilité, tu dois rester derrière ton support.",
+    "jungle_plan": "",
+    "threats": [
+      "Zeri et Kalista : matchups difficiles.",
+      "Supports d'engage : tu n'as aucun dash.",
+      "Assassins qui te tuent avant que tu puisses lancer tes sorts."
+    ],
+    "mistakes": [
+      "Laisser Souillure active et vider son mana.",
+      "Lancer Requiem quand aucun ennemi n'est bas en PV ni en combat.",
+      "Se placer devant sa frontline : tu n'as aucune fuite."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Pose W entre toi et elle quand elle dive avec son ultime.",
+      "Jinx": "Farm et gagne les teamfights avec tes dégâts de zone.",
+      "Ezreal": "Il esquive tes Q avec son Transfert arcanique : vise l'endroit où il atterrit.",
+      "Samira": "Pose W pour la slow quand elle dash sur toi.",
+      "Zeri": "Elle te poursuit : reste près de ton support."
+    },
+    "mid_game": "Rejoins les combats et lance Requiem à chaque escarmouche sur la carte. Farm les waves avec Q entre les combats.",
+    "late_game": "Reste derrière ta frontline, bombarde avec Q, active E si les ennemis viennent au contact. Même si tu meurs, continue de lancer tes sorts pendant le passif.",
+    "ahead": "Lance Requiem à chaque combat et force les objectifs.",
+    "behind": "Farm avec Q et utilise Requiem pour participer aux kills à distance.",
+    "win_condition": "Pour gagner cette partie, tu veux farmer, scaler et faire basculer chaque combat de la carte avec Requiem.",
+    "final_tip": "Surveille les barres de PV de toute l'équipe adverse : un Requiem au bon moment vaut plusieurs kills."
+  }
+}

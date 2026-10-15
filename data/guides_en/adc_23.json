@@ -1,0 +1,43 @@
+{
+ "Swain|adc": {
+  "identity": "Durable magic damage battle mage. Ravenous Flock (passive): his ravens collect soul fragments that heal him and permanently increase his max health. Death's Hand (Q) fires several bolts that pass through enemies (the more that hit a target, the more damage it takes), Vision of Empire (W) strikes a faraway area, slowing and revealing, Nevermove (E) sends out a wave that comes back and roots, then can pull rooted champions toward him, and Demonic Ascension (R) transforms him: he drains health from nearby enemies and can cast Demonflare, an explosion that slows.",
+  "playstyle": "Bot lane battle mage: he wins drawn-out fights thanks to his ultimate's drain and his growing health. He has no dash: he wins by catching his targets, not by running.",
+  "early_game": "Poke with Death's Hand (Q) and Vision of Empire (W). Nevermove (E) punishes an opponent who steps up: root, pull them in, then point-blank Q. Save E to defend against an engage.",
+  "level_1": "Nevermove (E) first. After that, max Q first.",
+  "level_2": "Death's Hand (Q). Poke and farm; up close, every bolt hits the same target.",
+  "level_3": "Vision of Empire (W). Long-range poke, vision and soul fragments on the champions hit.",
+  "level_6": "Demonic Ascension: a constant drain around you, then Demonflare. Combo with your support: E → pull → R → Q.",
+  "power_spikes": [
+   "Level 3: E, pull, point-blank Q.",
+   "Level 6: your ultimate's drain in 2v2 fights.",
+   "First completed item: very tanky in fights.",
+   "Mid game: drawn-out teamfights."
+  ],
+  "lane_plan": "Poke with Q and W, and save E for engages or defense. Play for kills with your support: every CC they land lets you hit E and pull. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards steady farming. Join fights around dragon.",
+  "trading": "Short trade: Q + W. All-in: E → pull → Q → R. Give up on it against ADCs who poke you out of range and chase you down (Zeri).",
+  "jungle_plan": "",
+  "threats": [
+   "Zeri: a hard matchup.",
+   "Enemy Grievous Wounds, which weaken your drain.",
+   "Long-range mages (Syndra)."
+  ],
+  "mistakes": [
+   "Wasting E and having no defense left.",
+   "Casting your ultimate too far from enemies.",
+   "Chasing a mobile target with no dash."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "She has to come close: root her with E when she dives.",
+   "Jinx": "She scales: force early fights with your support.",
+   "Jhin": "Save E for his Deadly Flourish: don't step up right after you've been hit.",
+   "Ezreal": "He escapes with E: wait until he's used it before casting Nevermove.",
+   "Zeri": "She's too mobile for your E: play near your support."
+  },
+  "mid_game": "Join fights and win drawn-out fights with your ultimate. Poke with W before objectives.",
+  "late_game": "Mage frontline: go in with R, drain and explode, E to root the diver. Your health grows with every soul fragment.",
+  "ahead": "Force long fights and take objectives.",
+  "behind": "Farm, poke with W and play drawn-out teamfights.",
+  "win_condition": "To win this game, you want to win drawn-out fights thanks to your ultimate's drain and your CC.",
+  "final_tip": "Root with E, recast to pull the target in, then point-blank Q: that's your best combo."
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "Xerath|sup": {
+  "identity": "Very long-range artillery mage. Mana Surge (passive): his attacks regularly restore mana (more often when he kills units). Arcanopulse (Q) charges up to fire a very long-range beam, Eye of Destruction (W) strikes an area while slowing (stronger in the center), Shocking Orb (E) stuns the first enemy hit, and Rite of the Arcane (R) roots him in place to fire several very long-range barrages.",
+  "playstyle": "Poke support: he harasses from very far away with Q and W, and finishes with his ultimate. He dominates slow mages and supports (Lux, Brand, Swain, Morgana), but loses to enchanters who heal off his poke (Janna, Soraka, Nami, Zilean) and to engages (Rell, Blitzcrank).",
+  "early_game": "Poke with a centered W on your opponent when they come to last hit, then a charged Q. Keep Shocking Orb (E) to stun an enemy engage or start a kill. Stay behind minions against hooks: you have no mobility.",
+  "level_1": "Eye of Destruction (W) first. After that, max Q first.",
+  "level_2": "Arcanopulse (Q). Very long-range poke: W to slow, then Q.",
+  "level_3": "Shocking Orb (E). A stun: your only defense against an engage.",
+  "level_6": "Rite of the Arcane: very long-range barrages. Finish a fleeing or low-health enemy, even in another lane. You're immobile during your ultimate.",
+  "power_spikes": [
+   "Level 2: W + Q, very strong poke.",
+   "Level 3: E for kills and defense.",
+   "Level 6: very long-range executes.",
+   "First completed item: devastating poke."
+  ],
+  "lane_plan": "Poke constantly with W and Q and keep E against engages. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "Basic trade: W, then Q. All-in: E → W → Q → R. Defense: E on the enemy engage. Against healing enchanters (Janna, Soraka, Nami), your poke gets cancelled out: look for stuns on the ADC instead.",
+  "jungle_plan": "",
+  "threats": [
+   "Janna, Soraka, Nami and Zilean: hard matchups.",
+   "Rell and Blitzcrank, who catch you: hard matchups.",
+   "Any dive: you have no mobility."
+  ],
+  "mistakes": [
+   "Standing in the open against a hook.",
+   "Casting your ultimate in the middle of a fight where you can be dived.",
+   "Missing E and no longer being able to defend yourself."
+  ],
+  "matchup_notes": {
+   "Thresh": "Stay behind minions; E when he dashes toward you.",
+   "Lux": "Your range is longer: poke her.",
+   "Lulu": "She protects her ADC: aim at her directly.",
+   "Blitzcrank": "Stay behind your minions at all times.",
+   "Janna": "Her shield absorbs your poke: keep your abilities for stuns."
+  },
+  "mid_game": "Poke before objectives from a safe position and place Control Wards. Finish fleeing enemies with R.",
+  "late_game": "Stay far behind your frontline: W and Q before the fight, E on divers, R to finish. Never cast your ultimate when a diver can reach you.",
+  "ahead": "Poke and force objectives: the enemy arrives at fights already weakened.",
+  "behind": "Poke safely and keep E to protect your ADC.",
+  "win_condition": "To win this game, you want to wear down the enemy team from very long range before every fight.",
+  "final_tip": "Aim for the center of your W: the damage and slow are much stronger there, and your Q lands easily afterward."
+ }
+}

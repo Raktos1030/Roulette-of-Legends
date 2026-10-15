@@ -1,0 +1,43 @@
+{
+ "Brand|sup": {
+  "identity": "Magic damage mage. Blaze (passive): his abilities set targets ablaze (up to 3 stacks); at 3 stacks on a champion, the target explodes after 2 seconds, damaging everything around it. Sear (Q) stuns a target that's already ablaze, Pillar of Flame (W) strikes an area after a short delay (stronger on burning targets), Conflagration (E) blasts the target and spreads to nearby enemies (double range if the target is burning), and Pyroclasm (R) bounces up to 5 times between enemies and Brand.",
+  "playstyle": "Damage support: he pokes hard, stuns with his combos and blows up groups with his ultimate. He dominates melee supports who have to walk up to him (Swain, Camille, Pantheon), but struggles against those who protect or heal (Janna, Zilean, Milio). Very fragile: no mobility.",
+  "early_game": "Poke with Pillar of Flame (W) on your opponent when they come to last hit. Keep Sear (Q) to stun a target that's already burning: W or E first, then Q. Stay behind your ADC: an enemy engage kills you fast.",
+  "level_1": "Pillar of Flame (W) first. After that, max W first.",
+  "level_2": "Sear (Q) or Conflagration (E). Combo: W on your opponent, then Q to stun them while they burn.",
+  "level_3": "The missing ability. Full combo: E → Q (stun) → W → passive explosion.",
+  "level_6": "Pyroclasm: bounces between nearby enemies. The more enemies are grouped, the bigger the damage. Cast it after setting several targets ablaze.",
+  "power_spikes": [
+   "Level 2: W → Q for the stun.",
+   "Level 3: full combo and passive explosion.",
+   "Level 6: Pyroclasm on a group.",
+   "First completed item: very punishing poke."
+  ],
+  "lane_plan": "Poke with W, play for kills with your stun and your ADC. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored). Against an engage support, stay behind your ADC.",
+  "trading": "Basic trade: W on your opponent. All-in: E → Q → W → R. Back off against supports who constantly heal or shield (Janna, Milio, Zilean): your poke gets cancelled out.",
+  "jungle_plan": "",
+  "threats": [
+   "Janna, Zilean and Milio: hard matchups.",
+   "Engage supports (Nautilus, Leona): you have no mobility.",
+   "Assassins who jump on you in teamfights."
+  ],
+  "mistakes": [
+   "Casting Q on a target that isn't burning (no stun).",
+   "Standing in front of your ADC.",
+   "Casting your ultimate on an isolated target when a group is coming."
+  ],
+  "matchup_notes": {
+   "Thresh": "Stay behind minions to avoid his hook.",
+   "Lulu": "She can polymorph you: keep Q for after her Whimsy.",
+   "Nautilus": "Stay behind minions to avoid his anchor.",
+   "Swain": "He has to come to you: poke him and stun him when he steps up.",
+   "Janna": "Her shield cancels your poke: look for the stun on the ADC rather than poking."
+  },
+  "mid_game": "Poke before objectives and place Control Wards. Join fights with your team: your ultimate punishes groups.",
+  "late_game": "Stay behind your frontline, set several enemies ablaze with W and E, then cast R when they're grouped. Keep Q to stun a diver.",
+  "ahead": "Poke and force grouped fights: your area damage is huge.",
+  "behind": "Stay safe, poke from range and keep your stun to protect your ADC.",
+  "win_condition": "To win this game, you want to wear down the enemy team with your poke and blow up grouped fights with your ultimate.",
+  "final_tip": "Ignite first, stun second: Sear only stuns targets that are already burning."
+ }
+}

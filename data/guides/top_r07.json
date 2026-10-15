@@ -1,0 +1,84 @@
+{
+  "Gragas|top": {
+    "identity": "Combattant-mage à dégâts magiques. Fût roulant (Q) poke et slow (plus fort s'il a fermenté), Rage d'ivrogne (W) réduit les dégâts reçus et renforce la prochaine attaque, Coup de bidon (E) charge et stun le premier ennemi touché, et Fût explosif (R) repousse tout le monde à partir du point d'impact. Son passif le soigne quand il lance un sort.",
+    "playstyle": "Poke, trades courts et contrôle. Gragas est un top sûr qui encaisse bien, se soigne et place les ennemis là où son équipe les veut avec l'ultime. Il dépend de la précision de Q, E et R ; il est moins fort en duel pur qu'en escarmouche.",
+    "early_game": "Poke avec Q quand l'adversaire vient last hit : laisse le fût fermenter une seconde pour plus de dégâts et de slow si l'adversaire ne bouge pas. Soigne-toi avec le passif. Garde E pour fuir ou pour engager quand ton jungler arrive.",
+    "level_1": "Fût roulant (Q) en premier dans le chemin le plus joué, l'alternative E → W → Q existe. Poke à distance et farm les sbires hors de portée.",
+    "level_2": "Coup de bidon (E). Charge qui stun le premier ennemi touché (les sbires bloquent) : Q + E est un bon trade court, et E reste ta fuite principale.",
+    "level_3": "Rage d'ivrogne (W). Réduction de dégâts et attaque renforcée : lance-la avant un trade au corps à corps ou pour encaisser un combo.",
+    "level_6": "Fût explosif repousse les ennemis. Lance-le derrière l'adversaire pour le projeter vers ta tour ou ton jungler, puis Q + E. En teamfight, sers-t'en pour séparer l'équipe adverse ou isoler un carry.",
+    "power_spikes": [
+      "Niveau 3 : Q + E + W pour des trades courts.",
+      "Niveau 6 : ultime pour les ganks et les picks.",
+      "Premier item complet : poke ou résistance selon l'orientation.",
+      "Mid game : contrôle et picks en escarmouche."
+    ],
+    "lane_plan": "Joue la wave au centre, poke au Q et soigne-toi avec le passif. Garde E pour les ganks : Gragas fuit bien quand E est disponible. Recall avec la wave poussée. Après le 6, préviens ton jungler : un ultime qui repousse l'adversaire vers lui est un kill quasi assuré.",
+    "trading": "Trade court : Q → attaque → E → recul. Trade long : W avant de frapper, puis Q et E. Engage avec E si Q a touché ; abandonne si tu as raté E, car tu n'as plus de fuite.",
+    "jungle_plan": "",
+    "threats": [
+      "Combattants qui gagnent au contact et te silencent (Garen, Urgot).",
+      "Tanks qui te tiennent en combat long (Ornn, Shen, Dr. Mundo).",
+      "Ganks quand ton E est en recharge."
+    ],
+    "mistakes": [
+      "Lancer l'ultime dans le mauvais sens et repousser la cible hors de portée de ton équipe.",
+      "Gaspiller E pour farmer ou pour poke.",
+      "Faire exploser Q immédiatement alors que l'adversaire ne peut pas l'esquiver."
+    ],
+    "matchup_notes": {
+      "Jax": "Tes sorts ne sont pas esquivés par sa Contre-attaque : Q pendant son esquive, puis E à la fin.",
+      "Yone": "Garde E pour son engage (le stun coupe son Q3) et poke au Q quand il vient farmer.",
+      "Jayce": "Poke-le au Q et engage avec E quand il passe en forme marteau.",
+      "Garen": "Il te silence et te bat en combat long ; poke à distance et garde E pour son Q.",
+      "Nasus": "Punis-le tôt au Q et évite les combats sous Flétrissement."
+    },
+    "mid_game": "Joue autour des objectifs : E et R créent des picks. Rejoins les escarmouches en rivière avec ta Téléportation améliorée (quête de rôle).",
+    "late_game": "Contrôle de teamfight : R pour séparer ou isoler une cible, E pour stun, W pour encaisser. Protège tes carries si l'équipe adverse dive.",
+    "ahead": "Roam, crée des picks avec l'ultime et prends les objectifs avec ton équipe.",
+    "behind": "Farm prudemment et joue pour les teamfights : ton CC reste utile sans avance.",
+    "win_condition": "Pour gagner cette partie, tu veux créer des picks et contrôler les teamfights avec Fût explosif et Coup de bidon.",
+    "final_tip": "Place Fût explosif derrière la cible pour la projeter vers ton équipe, jamais entre elle et toi."
+  },
+  "Heimerdinger|top": {
+    "identity": "Mage à dégâts magiques qui contrôle une zone avec ses tourelles. Tourelle H-28G Évolution (Q) pose jusqu'à trois tourelles, Micro-roquettes Hextech (W) poke à distance, Grenade électro-tempête CH-2 (E) stun au centre et slow autour, et AMÉLIORATION ! (R) renforce son prochain sort (tourelle géante, barrage de roquettes ou grenade qui rebondit). Son passif l'accélère près de ses tourelles et des tours alliées.",
+    "playstyle": "Contrôle de zone et poke : tu poses tes tourelles avant la wave, tu les défends et tu forces l'adversaire à les attaquer ou à reculer. Très fort en lane contre les combattants au corps à corps, beaucoup plus faible s'il est surpris hors de sa zone.",
+    "early_game": "Pose tes tourelles juste derrière la wave avant qu'elle n'arrive : elles tapent l'adversaire qui vient last hit. Poke avec W et garde E pour stun un engage. Ne quitte pas ta zone de tourelles pour poursuivre.",
+    "level_1": "Tourelle H-28G Évolution (Q) en premier. Pose deux tourelles près de la wave et laisse-les frapper l'adversaire qui s'approche.",
+    "level_2": "Grenade électro-tempête (E). Elle stun au centre et slow sur les bords : lance-la quand l'adversaire entre au contact de tes tourelles.",
+    "level_3": "Micro-roquettes Hextech (W). Poke à distance : E puis W est ton combo de base. Les roquettes font moins de dégâts si plusieurs touchent la même cible, vise bien.",
+    "level_6": "AMÉLIORATION ! renforce ton prochain sort : grosse tourelle qui tient la zone, barrage de roquettes massif ou grenade qui stun plusieurs fois. Garde-le pour un all-in, une défense de tour ou un objectif.",
+    "power_spikes": [
+      "Niveau 2 : Q + E, zone de tourelles dangereuse.",
+      "Niveau 6 : sorts améliorés.",
+      "Premier item complet : poke et dégâts de tourelles élevés.",
+      "Défense d'objectifs et de tours : zone très forte."
+    ],
+    "lane_plan": "Garde la wave près de tes tourelles. Place-les en quinconce derrière la wave pour qu'elles ne soient pas toutes touchées d'un coup, poke avec W et stun avec E. Recall quand tu as besoin de mana ou que tes tourelles sont détruites. Évite de pousser loin sans vision : sans tourelles, tu es très vulnérable.",
+    "trading": "Trade de base : E puis W dans ta zone de tourelles. Trade long : R sur la tourelle ou les roquettes quand l'adversaire t'engage. Engage quand l'adversaire est dans tes tourelles ; abandonne s'il peut te dive hors de ta zone.",
+    "jungle_plan": "",
+    "threats": [
+      "Champions qui divent hors de ta zone (Yasuo et son Mur de vent contre tes roquettes).",
+      "Tanks qui encaissent tes tourelles (Nasus, Ornn).",
+      "Mages à longue portée qui détruisent tes tourelles."
+    ],
+    "mistakes": [
+      "Quitter ta zone de tourelles pour poursuivre une cible.",
+      "Gaspiller E et ne plus avoir de protection contre l'engage.",
+      "Poser les tourelles trop en avant, là où elles se font détruire gratuitement."
+    ],
+    "matchup_notes": {
+      "Nasus": "Ta lane se gagne mais sa fin de partie te rattrape : transforme ton avance en tours avant qu'il ne scale, et garde E pour son engage sous ultime.",
+      "Darius": "Il ne peut pas t'atteindre facilement dans tes tourelles ; garde E pour son Crampon.",
+      "Yone": "Place tes tourelles hors de la ligne de son Q3 et garde E pour son engage.",
+      "Yasuo": "Mur de vent bloque tes roquettes : joue avec les tourelles et garde E pour son dash.",
+      "Garen": "Il encaisse tes tourelles en tournant : stun-le à l'entrée de ta zone et ne le laisse pas te silencer."
+    },
+    "mid_game": "Défends et prends les objectifs : tes tourelles verrouillent une zone. Pousse la side lane avec les tourelles et fais attention aux adversaires qui viennent te chercher à plusieurs.",
+    "late_game": "Contrôle de zone : pose les tourelles en avance sur la zone de combat, stun les divers avec E et poke avec W. Reste derrière ta frontline.",
+    "ahead": "Prends les tours, défends les objectifs et force l'adversaire à jouer dans ta zone.",
+    "behind": "Défends ta tour avec tes tourelles et joue pour les teamfights en zone. Évite les side lanes isolées.",
+    "win_condition": "Pour gagner cette partie, tu veux forcer les combats dans ta zone de tourelles, sur les objectifs comme en lane.",
+    "final_tip": "Pose toujours tes tourelles avant le combat : un Heimerdinger sans tourelles n'a pas de zone."
+  }
+}

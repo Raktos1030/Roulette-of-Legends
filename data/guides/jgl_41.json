@@ -1,0 +1,43 @@
+{
+  "Trundle|jgl": {
+    "identity": "Combattant à dégâts physiques, anti-tank. Morsure (Q) slow et vole de la puissance d'attaque, Royaume gelé (W) accélère ses attaques et son déplacement et augmente ses soins, Montagne de glace (E) pose un pilier qui bloque le passage, et Soumission (R) vole PV et résistances à une cible. Son passif le soigne quand un ennemi meurt à côté de lui, y compris les monstres.",
+    "playstyle": "Jungler de duel et d'objectifs. Trundle gagne les combats contre les junglers tanky et les combattants, prend les objectifs très vite grâce à sa vitesse d'attaque et gank avec le pilier.",
+    "early_game": "Clear rapide avec Q et W (tu te soignes à chaque monstre tué). Envahis quand tes laners ont la priorité : ton Q vole la puissance d'attaque du jungler adverse. Gank avec E : pilier derrière la cible pour couper sa fuite.",
+    "level_1": "Morsure (Q) en premier.",
+    "level_2": "Royaume gelé (W). Vitesse d'attaque et soins dans la zone : ton clear s'accélère.",
+    "level_3": "Montagne de glace (E) ou second Q selon le chemin. Gank : pilier derrière la cible → Q → attaques dans ton Royaume gelé.",
+    "level_6": "Soumission : vole PV et résistances. Sur le tank adverse ou le jungler en duel, tu deviens beaucoup plus fort pendant quelques secondes.",
+    "power_spikes": [
+      "Niveau 3 : duels et ganks avec le pilier.",
+      "Niveau 6 : Soumission contre les tanks et les junglers.",
+      "Premier item complet : objectifs pris très vite.",
+      "Mid game : invasions et contrôle de la jungle adverse."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide et invasions. Trundle gagne les duels contre beaucoup de junglers tanky (Rammus, Sejuani) : vole leurs camps. Prends les objectifs très vite grâce à Q et W (Larves vers 8 min, dragons, Héraut vers 15 min). Gank avec le pilier sur les lanes où la cible n'a pas de dash.",
+    "trading": "En duel : W sous toi → Q → attaques → R sur la cible. En gank : E derrière la cible → Q → attaques. Abandonne contre les junglers qui te kitent à distance (Lillia) ou les assassins qui te burst (Talon).",
+    "threats": [
+      "Ivern, Talon et Lillia : matchups difficiles.",
+      "Kiting et burst à distance.",
+      "Pilier mal placé qui bloque ton équipe."
+    ],
+    "mistakes": [
+      "Poser le pilier entre toi et la cible.",
+      "Combattre hors de ton Royaume gelé.",
+      "Utiliser Soumission sur une cible fragile au lieu du tank."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Vole-lui sa puissance avec Q en duel.",
+      "Cho'Gath": "Soumission lui vole une grosse partie de ses PV.",
+      "Shyvana": "Bats-la avant sa forme dragon.",
+      "Talon": "Il te burst avant que tu ne voles ses statistiques.",
+      "Ivern": "Il ne se bat pas et protège ses alliés : impose le rythme avec tes laners."
+    },
+    "mid_game": "Invasions, objectifs et combats contre la frontline adverse.",
+    "late_game": "Soumission sur le tank adverse, pilier pour couper l'équipe adverse, Royaume gelé pour combattre.",
+    "ahead": "Étouffe le jungler adverse et prends tous les objectifs.",
+    "behind": "Farm, prends les objectifs rapidement et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner les duels, prendre les objectifs rapidement et neutraliser le tank adverse avec Soumission.",
+    "final_tip": "Pose ton pilier derrière la cible, jamais entre elle et toi."
+  }
+}

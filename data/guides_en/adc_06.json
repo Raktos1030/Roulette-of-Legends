@@ -1,0 +1,43 @@
+{
+ "Draven|adc": {
+  "identity": "Very aggressive physical damage marksman. Spinning Axe (Q) empowers his next attack; the axe bounces into the air and, if he catches it, he readies a new one (two axes at once are possible). Blood Rush (W) gives him movement and attack speed (catching an axe resets its cooldown), Stand Aside (E) throws his axes in a line to knock aside and slow, and Whirling Death (R) sends two giant axes across the map that come back to him. His passive grants Adoration (caught axes, minions, towers), which pays out bonus gold when he kills a champion and lets his ultimate execute.",
+  "playstyle": "Lane bully: he looks to get ahead very early and turn that into gold with Adoration. On average he's ahead in gold at 15 minutes against almost every ADC, even in his hard matchups. Catching axes takes a lot of practice.",
+  "early_game": "Play aggressive from level 1 with your support: two axes in rotation deal huge damage. Catch your axes without putting yourself in danger: if an axe drops under the enemy tower or into an enemy ability, leave it. Every minion killed and every axe caught fills your Adoration.",
+  "level_1": "Spinning Axe (Q) first. Get two axes rotating and harass your opponent on every last hit.",
+  "level_2": "Blood Rush (W). Catching an axe resets W: you stay fast and keep chaining attacks.",
+  "level_3": "Stand Aside (E). Slows and knocks aside: use it to chase, or to push a diver away.",
+  "level_6": "Whirling Death: finishes fleeing enemies from anywhere, and executes those whose health is below your Adoration. Recast it to bring the axes back sooner.",
+  "power_spikes": [
+   "Levels 1 to 3: huge damage with two axes.",
+   "Level 6: a global execute ultimate.",
+   "First completed item: you can kill any ADC in a few attacks.",
+   "Every kill with lots of Adoration: a big gold lead."
+  ],
+  "lane_plan": "Force trades with your support and get ahead. Press your lead: plates, towers and dragon. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) stacks on top of Adoration gold: your lead can become huge. Dying makes you lose half your Adoration: avoid pointless deaths.",
+  "trading": "Basic trade: axe attacks on every enemy last hit. All-in: W, two axes, E to stop the escape, R to finish. Back off against bot lane mages who stop you from catching your axes (Veigar and his cage, Xerath).",
+  "jungle_plan": "",
+  "threats": [
+   "Yasuo and his Wind Wall: your hardest matchup.",
+   "Bot lane mages (Veigar, Hwei, Xerath) who punish you when you go for your axes.",
+   "Crowd control while you move to catch an axe."
+  ],
+  "mistakes": [
+   "Going for an axe under the tower or inside an enemy ability.",
+   "Dying with lots of Adoration (you lose half of it).",
+   "Playing passive when your strength is the early game."
+  ],
+  "matchup_notes": {
+   "Jinx": "She catches up as she scales: turn your lead into towers and dragons quickly.",
+   "Kai'Sa": "You dominate her in lane: force trades before her evolutions.",
+   "Ezreal": "He escapes with his Arcane Shift: save E to slow him afterwards.",
+   "Yasuo": "His Wind Wall blocks your attacks and your ultimate: hit him when the wall is on cooldown.",
+   "Veigar": "His Event Horizon traps your moves toward the axes: don't catch an axe that lands near the cage."
+  },
+  "mid_game": "Keep taking towers and dragons. Group with your team: a fed Draven kills anyone in a few axes.",
+  "late_game": "Stay behind your frontline and catch your axes safely. Cast your ultimate at the start of the fight and bring it back, or save it to finish.",
+  "ahead": "Force fights and take objectives: your Adoration gold snowballs.",
+  "behind": "Farm to rebuild Adoration, avoid dying and play behind your frontline.",
+  "win_condition": "To win this game, you want to win lane very early and turn your lead into gold and objectives before the other ADCs scale.",
+  "final_tip": "A lost axe is better than a death: never go catch an axe in a dangerous spot."
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "Kalista|adc": {
+    "identity": "Tireuse à dégâts physiques et très mobile. Maintien martial (passif) : après chaque attaque ou Perforation, elle fait un petit bond dans la direction où tu cliques. Perforation (Q) lance une lance qui traverse les ennemis qu'elle tue, Sentinelle (W) ajoute des dégâts quand Kalista et son pactisant (l'allié lié à elle) frappent la même cible et envoie une âme repérer un chemin, Extirpation (E) arrache les lances plantées par ses attaques pour infliger des dégâts qui augmentent avec leur nombre et slow, et Appel du destin (R) téléporte son pactisant auprès d'elle, qui peut ensuite charger pour repousser les ennemis.",
+    "playstyle": "Tyran de lane en duo : elle gagne les premiers trades grâce à ses bonds et à Extirpation, et elle est en moyenne devant en or à 15 min contre les ADC fréquents. Elle devient plus faible en fin de partie : il faut convertir l'avance tôt. Très exigeante mécaniquement (bond après chaque attaque).",
+    "early_game": "Harcèle en attaquant puis en bondissant en arrière. Accumule des lances sur l'adversaire, puis Extirpation (E) quand il recule. E peut achever plusieurs sbires à la fois : sers-t'en pour sécuriser les derniers coups difficiles. Joue avec ton pactisant (généralement ton support).",
+    "level_1": "Extirpation (E) en premier. Accumule des lances puis E.",
+    "level_2": "Perforation (Q). Poke à longue portée, qui traverse les sbires qu'elle tue pour toucher l'adversaire derrière.",
+    "level_3": "Sentinelle (W). Dégâts bonus avec ton pactisant, et une âme pour surveiller la rivière ou un bush.",
+    "level_6": "Appel du destin : sauve ton pactisant en le ramenant, puis il charge pour repousser les ennemis. Excellent pour engager avec un support tank, ou pour protéger un allié dive.",
+    "power_spikes": [
+      "Niveau 1 à 3 : trades très forts avec les bonds.",
+      "Niveau 6 : ultime d'engage ou de sauvetage.",
+      "Premier item complet : Extirpation très punitive.",
+      "Mid game : prise d'objectifs rapide."
+    ],
+    "lane_plan": "Harcèle et prends l'avantage en duo. Utilise E pour les derniers coups et pour punir l'adversaire bas en PV. Pousse ton avance : plaques, tours, dragons. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) se complète vite quand tu domines la lane.",
+    "trading": "Trade de base : attaques avec bonds en arrière, puis E. All-in : attaques et Q, puis E quand les lances sont nombreuses. Recule contre les ADC qui scalent (Jinx, Yunara) ou qui te poursuivent (Tristana).",
+    "jungle_plan": "",
+    "threats": [
+      "Tristana, Jinx et Yunara : matchups difficiles.",
+      "CC de foule : tes bonds ne servent plus à rien si tu es root.",
+      "La fin de partie, où tu perds de ta force."
+    ],
+    "mistakes": [
+      "Oublier de bondir entre chaque attaque.",
+      "Lancer E trop tôt, avec peu de lances.",
+      "Laisser la partie traîner sans convertir l'avance."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Harcèle-la tôt, avant ses évolutions.",
+      "Jinx": "Elle scale : transforme ton avance en tours rapidement.",
+      "Tristana": "Garde ton pactisant proche pour la repousser avec R quand elle saute sur toi.",
+      "Ezreal": "Tes bonds esquivent ses Q : force les trades.",
+      "Yunara": "Évite les combats longs contre elle."
+    },
+    "mid_game": "Prends les tours et les dragons avec ton équipe. Extirpation aide à sécuriser les objectifs.",
+    "late_game": "Bondis entre chaque attaque pour rester hors de portée des divers. Utilise R pour ramener ton pactisant en danger ou pour lancer l'engage.",
+    "ahead": "Force les combats et les objectifs tant que tu es plus forte.",
+    "behind": "Farm avec E, reste avec ton équipe et joue autour de ton ultime.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer la lane avec ton support et convertir cette avance en objectifs avant la fin de partie.",
+    "final_tip": "Attaque, puis clique immédiatement là où tu veux bondir : tes bonds sont ta seule défense."
+  }
+}

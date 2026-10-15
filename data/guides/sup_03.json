@@ -1,0 +1,43 @@
+{
+  "Bard|sup": {
+    "identity": "Support de roam et d'utilitaire. Instinct du voyageur (passif) : des carillons apparaissent sur la carte ; les ramasser lui donne de l'expérience, du mana et de la vitesse, et renforce ses Meeps, des esprits qui ajoutent des dégâts à ses attaques (puis des dégâts de zone et un slow). Lien cosmique (Q) slow le premier ennemi touché et le stun si le projectile continue sur un mur ou sur un second ennemi, Don du gardien (W) pose un sanctuaire qui soigne et accélère le premier allié qui le touche, Route magique (E) ouvre un passage à sens unique à travers un mur, et Destin tempéré (R) met en stase toutes les unités et tourelles d'une zone.",
+    "playstyle": "Support de roam qui ramasse les carillons, crée des picks et sauve ses alliés avec son ultime. Il perd contre beaucoup de supports d'engage (Thresh, Leona, Blitzcrank, Rell) quand il laisse son ADC seul. Très exigeant : chaque roam doit rapporter quelque chose.",
+    "early_game": "Reste en lane jusqu'au niveau 5 (voir la quête plus bas), poke avec tes Meeps et cherche Q contre un mur ou à travers un sbire vers l'adversaire. Ramasse les carillons proches de la bot lane quand ton ADC est en sécurité. Pose W pour que ton ADC se soigne entre les trades.",
+    "level_1": "Lien cosmique (Q) en premier. Vise un adversaire devant un mur ou devant un autre ennemi pour le stun.",
+    "level_2": "Don du gardien (W). Soin et vitesse pour ton ADC : pose-le derrière vous avant un trade.",
+    "level_3": "Route magique (E). Pour roam, fuir à travers un mur ou surprendre l'adversaire par un chemin inattendu.",
+    "level_6": "Destin tempéré : stase de zone sur tout ce qui s'y trouve (alliés, ennemis, tourelles). Sert à sauver un allié, à retenir des ennemis pour un engage, ou à bloquer un objectif.",
+    "power_spikes": [
+      "Niveau 2 : Q + Meeps pour les trades.",
+      "Niveau 6 : ultime de sauvetage ou d'engage.",
+      "Carillons accumulés : Meeps qui slow en zone.",
+      "Mid game : picks et roams avec E."
+    ],
+    "lane_plan": "Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs, et la quête progresse moins vite. Ensuite, roam avec les carillons quand ton ADC peut tenir seul. La quête de rôle support rend tes pinks moins chères (40 PO, deux stockées) : pose-les sur ton chemin de roam.",
+    "trading": "Trade de base : attaques avec les Meeps, Q quand l'adversaire est près d'un mur. All-in : Q qui stun, attaques, W pour soigner. Recule contre les supports d'engage (Thresh, Leona) : ne laisse pas ton ADC seul quand ils ont leurs sorts.",
+    "jungle_plan": "",
+    "threats": [
+      "Thresh : adversaire fréquent et matchup difficile.",
+      "Rell, Leona, Blitzcrank et Maokai : matchups difficiles.",
+      "Roams qui laissent ton ADC seul face à un support d'engage."
+    ],
+    "mistakes": [
+      "Roamer au mauvais moment et laisser ton ADC mourir.",
+      "Lancer l'ultime sur tes propres alliés en plein combat.",
+      "Lancer Q sans mur ni second ennemi derrière la cible."
+    ],
+    "matchup_notes": {
+      "Thresh": "Ses grappins punissent ton absence : ne roam pas quand il a ses sorts.",
+      "Lulu": "Elle protège bien son ADC : joue les picks sur d'autres lanes.",
+      "Karma": "Elle poke : utilise W pour soigner ton ADC.",
+      "Lux": "Elle est fragile et lente : stun-la contre un mur.",
+      "Rell": "Son engage te surprend : reste derrière ton ADC et garde R pour la bloquer."
+    },
+    "mid_game": "Roam avec E, ramasse les carillons et crée des picks. Pose des pinks autour des objectifs.",
+    "late_game": "Reste avec ton équipe. Utilise R pour sauver un allié ou retenir la moitié de l'équipe adverse, et Q pour stun un diver contre un mur.",
+    "ahead": "Roam et aide les autres lanes : chaque pick accélère la partie.",
+    "behind": "Reste près de ton ADC et joue l'utilitaire : W, Q et R restent décisifs.",
+    "win_condition": "Pour gagner cette partie, tu veux créer des picks sur la carte et gagner les teamfights grâce à ton ultime.",
+    "final_tip": "Avant de lancer Destin tempéré, vérifie qui est dans la zone : il met aussi tes alliés en stase."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "Janna|sup": {
+    "identity": "Enchanteresse de disengage. Zéphyr (passif) donne de la vitesse aux alliés qui se dirigent vers elle et ajoute des dégâts selon sa vitesse bonus. Vent hurlant (Q) crée une tornade qui grossit avec le temps, puis la lance pour knock-up les ennemis sur son passage, Alizé (W) lui donne passivement de la vitesse et, activé, blesse et slow un ennemi, Œil du cyclone (E) protège un allié ou une tourelle avec un shield qui augmente ses dégâts d'attaque, et Mousson (R) repousse les ennemis autour d'elle puis soigne les alliés proches.",
+    "playstyle": "Support de protection : elle annule les engages adverses avec sa tornade et son ultime, et rend son ADC plus fort avec son shield. Aucun matchup nettement défavorable, et elle écrase les supports qui doivent venir au contact (Camille, Swain, Poppy) ou qui poke sans mobilité (Xerath).",
+    "early_game": "Harcèle avec Alizé (W) et tes attaques, protège ton ADC avec Œil du cyclone (E) pendant ses trades (le shield augmente aussi ses dégâts). Garde Vent hurlant (Q) pour arrêter un engage : lance-le tôt pour qu'il grossisse, ou immédiatement en réponse.",
+    "level_1": "Alizé (W) en premier. Ensuite, monte W en priorité, puis E.",
+    "level_2": "Vent hurlant (Q) ou Œil du cyclone (E). Q pour la sécurité contre un support d'engage, E pour gagner les trades.",
+    "level_3": "Le sort manquant. Tu as désormais ta protection complète : E sur ton ADC, Q contre les engages, W pour slow.",
+    "level_6": "Mousson : repousse tous les ennemis autour de toi, puis soigne tes alliés. Utilise-la pour annuler un engage ou pour repousser un diver sur ton ADC. Tu peux aussi contourner l'ennemi pour le repousser vers ton équipe.",
+    "power_spikes": [
+      "Niveau 2 : E pour gagner les trades.",
+      "Niveau 6 : Mousson annule un all-in.",
+      "Premier item complet : shields et soins renforcés.",
+      "Teamfight : l'ADC protégé par E et Mousson gagne le combat."
+    ],
+    "lane_plan": "Harcèle avec W, protège ton ADC avec E et garde Q pour les engages adverses. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées). E sur la tourelle quand elle est attaquée.",
+    "trading": "Trade de base : W, attaques, E sur ton ADC quand il frappe. Défense : Q sur l'engage, R si nécessaire. Contre Thresh ou Nami (équilibrés), garde tes sorts pour répondre plutôt que pour poke.",
+    "jungle_plan": "",
+    "threats": [
+      "Thresh, Sona et Nami : tes moins bons matchups, proches de l'équilibre.",
+      "Engages multiples quand ta tornade est en recharge.",
+      "Assassins qui te ciblent en teamfight : tu es fragile."
+    ],
+    "mistakes": [
+      "Lancer la tornade pour poke et ne plus l'avoir contre un engage.",
+      "Lancer Mousson en repoussant l'ennemi vers son équipe au lieu de le séparer.",
+      "Garder le shield au lieu de l'utiliser pour gagner les trades."
+    ],
+    "matchup_notes": {
+      "Thresh": "Garde Q pour son grappin et E pour la cible attrapée.",
+      "Lulu": "Elle harcèle aussi : gagne les trades avec E.",
+      "Nami": "Sa bulle et son raz-de-marée sont lents : Q pour interrompre ses engages.",
+      "Leona": "Q pour arrêter son engage, E sur la cible.",
+      "Camille": "Elle doit dive : ta tornade et Mousson l'arrêtent."
+    },
+    "mid_game": "Accompagne ton ADC et ton jungler. Pose des pinks et utilise E sur les tourelles attaquées.",
+    "late_game": "Reste près de ton carry. E sur lui au début du combat, Q pour les engages, et Mousson pour repousser les divers.",
+    "ahead": "Harcèle plus fort : ton ADC protégé gagne tous les trades.",
+    "behind": "Joue le disengage : tant que tu as Q et R, ton ADC survit.",
+    "win_condition": "Pour gagner cette partie, tu veux annuler les engages adverses et garder ton carry en vie pour qu'il gagne les combats.",
+    "final_tip": "Tant que ta tornade est prête, un engage adverse est presque impossible : ne la gaspille jamais pour poke."
+  }
+}

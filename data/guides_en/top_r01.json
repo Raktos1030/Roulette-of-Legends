@@ -1,0 +1,84 @@
+{
+ "Teemo|top": {
+  "identity": "Magic damage marksman who poisons with every attack (Toxic Shot, E), blinds with Blinding Dart (Q), speeds up with Move Quick (W) and turns invisible if he stands still for a moment (passive Guerrilla Warfare). Noxious Trap (R) places invisible mushrooms that explode, slow and poison. In top, he punishes melee fighters who rely on their basic attacks.",
+  "playstyle": "Poke and kiting lane, then zone and vision control with his mushrooms. Teemo wins by making every enemy last hit costly and by blinding engages. He's weak against tanks who soak his poke and against those who catch him anyway.",
+  "early_game": "Attack your opponent every time they hit a minion: the poison keeps ticking after you back off. Keep Q to cancel their engage (their attacks miss during the blind). W's passive gives you speed as long as no champion or tower hits you: don't stand in range for free.",
+  "level_1": "Toxic Shot (E) first. Every attack poisons: poke as soon as your opponent approaches a minion, then back off.",
+  "level_2": "Blinding Dart (Q). Q + attacks is a winning trade against almost every melee fighter: during the blind, their basic attacks miss. Careful, the blind doesn't stop abilities.",
+  "level_3": "Move Quick (W). A movement speed passive (lost for a few seconds when a champion hits you) and an active to kite or escape. You can now circle your opponent while attacking.",
+  "level_6": "Noxious Trap: mushroom charges build up over time. In lane, place them in the lane bush and at the river entrance to spot ganks; later, on escape paths and around objectives. A mushroom placed on a fleeing opponent's path is often worth a kill.",
+  "power_spikes": [
+   "Level 2: Q + E, one-sided trades against fighters.",
+   "Level 6: mushrooms, vision and gank control.",
+   "First completed item: very punishing poke.",
+   "Mid game: mushroom fields around objectives."
+  ],
+  "lane_plan": "Against fighters who want an all-in, keep the wave slightly toward your tower; against those who can't punish you, push and take plates. Mushroom the lane bush and the river to see the enemy jungler coming. Recall when the wave crashes: W gets you back to lane fast.",
+  "trading": "Short trade: attack + poison when your opponent hits a minion, then back off. Against an engage: Q (blind) → back off with W → attacks while kiting. Engage when they no longer have their dash; give up on it if they can stick to you despite the blind (damaging abilities, Olaf's ultimate).",
+  "jungle_plan": "",
+  "threats": [
+   "Olaf with Ragnarok, who catches you despite your slows.",
+   "Ganks without a mushroom or ward in the river.",
+   "Ability-based champions, for whom the blind changes nothing."
+  ],
+  "mistakes": [
+   "Fighting in melee range instead of kiting.",
+   "Using Q to poke and not having it against the enemy engage.",
+   "Placing all your mushrooms in the same spot or in the middle of the lane."
+  ],
+  "matchup_notes": {
+   "Malphite": "His Q slows you and his armor reduces your poke. Keep W to escape his ultimate and mushroom his approach angles.",
+   "Darius": "Stay out of his Apprehend range, blind him when he sticks to you and kite with W: he must never reach 5 stacks.",
+   "Garen": "His silence (Q) cuts off your blind: blind him before he arrives, then kite out of his Judgment.",
+   "Nasus": "Poke him on every last hit to limit his stacks; under Wither, back off immediately.",
+   "Olaf": "His axes slow you and his ultimate makes him unstoppable: respect his ultimate window and play near your tower."
+  },
+  "mid_game": "Place mushrooms around upcoming objectives and in the jungle's walking paths. Split push safely thanks to the vision your mushrooms provide, and punish isolated opponents.",
+  "late_game": "Poke from behind your frontline, blind the melee diver threatening your carries, and prepare fight areas with mushrooms before the objective.",
+  "ahead": "Take towers, split push and turn the map into a minefield: the enemy loses time and health every time they move.",
+  "behind": "Farm from range, place mushrooms to protect your team and play around vision: you stay useful even without a lead.",
+  "win_condition": "To win this game, you want to win your lane through poke, then control the map and objectives with your mushrooms.",
+  "final_tip": "Always keep your Blinding Dart for the enemy engage: it shuts down a melee fighter for its whole duration."
+ },
+ "Olaf|top": {
+  "identity": "Physical damage fighter who gets more dangerous as his health drops (passive Berserker Rage: increasing attack speed). Undertow (Q) throws an axe that slows and shreds armor; picking it up lowers its cooldown. Reckless Swing (E) deals true damage at a health cost, Tough It Out (W) boosts his attack speed and healing, and Ragnarok (R) makes him immune to CC.",
+  "playstyle": "Aggressive lane and long melee fights. Olaf wins most early and mid-game duels thanks to his true damage and axes. His goal: force fights, pick up his axes and dive the enemy team with his ultimate. Weaker late against kiting.",
+  "early_game": "Trade with Q, aiming behind your opponent so the axe lands on your path, then pick it up as you move in. E deals true damage and its cooldown drops with every attack: don't hesitate to recast it in fights. Play aggressively when your axes land.",
+  "level_1": "Undertow (Q) first. Poke and slow your opponent, then pick up the axe to throw it again quickly.",
+  "level_2": "Reckless Swing (E). True damage that costs health: Q + E is a very strong short trade at level 2.",
+  "level_3": "Tough It Out (W). Attack speed and stronger healing when you're low: Q → E → W → attacks is a big all-in. The more health you lose, the faster you hit.",
+  "level_6": "Ragnarok: you cleanse CC and become immune to it, with extra damage. Use it to engage despite enemy CC or to catch a target who wanted to kite you.",
+  "power_spikes": [
+   "Level 2: Q + E true damage.",
+   "Level 3: full all-in with W.",
+   "Level 6: CC immunity.",
+   "First completed item: dominant mid-game duels."
+  ],
+  "lane_plan": "Play a neutral or pushed wave and trade as soon as your axes land. If you're winning trades, crash the wave and take plates. Recall when your wave crashes. Olaf is also very strong at invading the enemy jungle with his jungler thanks to his true damage.",
+  "trading": "Short trade: Q (aimed behind the target) → pick it up → E. Long trade: Q → E → W → attacks → E again → R if your opponent has CC. Engage when your Q lands; give up on it if your opponent kites you from range or your ultimate is on cooldown against a heavy-CC champion.",
+  "jungle_plan": "",
+  "threats": [
+   "Ranged champions who kite you (Kayle).",
+   "Kled and Camille, who engage hard and beat you in duels.",
+   "Enemy CC while your ultimate is on cooldown."
+  ],
+  "mistakes": [
+   "Forgetting to pick up your axe (much longer cooldown).",
+   "Casting your ultimate too early, before the enemy CC.",
+   "Fighting at range instead of sticking to your target."
+  ],
+  "matchup_notes": {
+   "Nasus": "Punish him on every stack, his health can't hold up against your true damage.",
+   "Mordekaiser": "Your true damage ignores his shield; keep your ultimate for his Realm of Death if you have CC to avoid.",
+   "Jax": "His Counter Strike dodges your attacks but not your E: cast it during his dodge.",
+   "Kled": "He engages hard with his Q; keep your axe for the slow when he charges in and fight near your wave.",
+   "Camille": "She kites you with her Hookshot: throw Q on her exit path and keep your ultimate for her stun."
+  },
+  "mid_game": "Skirmishes, jungle invades and fights around objectives. Olaf excels in messy fights where he can pick up his axes and dive.",
+  "late_game": "Dive the enemy carry with your ultimate once the important CC is used. Avoid getting kited forever: wait until your target is in axe range.",
+  "ahead": "Force duels, invade with your jungler and dive isolated carries: your true damage makes you very hard to ignore.",
+  "behind": "Farm, play with your team and keep your ultimate for a decisive dive on a carry.",
+  "win_condition": "To win this game, you want to dominate the early game and dive the enemy carries with your ultimate in the mid game.",
+  "final_tip": "Always aim your axe slightly behind your opponent: you pick it up as you move in and throw it again right away."
+ }
+}

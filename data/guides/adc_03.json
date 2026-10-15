@@ -1,0 +1,43 @@
+{
+  "AurelionSol|adc": {
+    "identity": "Mage de zone à dégâts magiques qui scale à l'infini. Ses compétences qui touchent des ennemis lui donnent de la poussière d'étoile, qui les améliore définitivement (passif). Souffle de lumière (Q) est un souffle canalisé qui fait plus de dégâts sur un champion à chaque seconde. Vol astral (W) le fait survoler le terrain (son souffle n'a alors plus de limite). Trou noir (E) attire lentement les ennemis vers son centre, qui exécute les cibles basses en PV. Étoile finale (R) stun en zone, puis devient Apocalypse (knock-up et onde de choc) quand il a assez de poussière.",
+    "playstyle": "Mage de scaling joué comme un ADC : faible en début de partie, il devient une menace de zone énorme avec la poussière d'étoile. Tu es en moyenne derrière en or à 15 min contre tous les ADC fréquents : c'est normal, tu gagnes plus tard.",
+    "early_game": "Farm et survis. Utilise Trou noir (E) sur la wave : les sbires qui meurent dedans donnent de la poussière. Touche les champions avec Q quand ils viennent last hit pour accumuler de la poussière sans prendre de risque. Ne force pas les trades contre un ADC et son support.",
+    "level_1": "Souffle de lumière (Q) en premier. Farm et touche l'adversaire avec le souffle quand il s'approche.",
+    "level_2": "Trou noir (E). Il attire les ennemis et exécute les sbires bas en PV : parfait pour farmer à distance et contrôler un engage.",
+    "level_3": "Vol astral (W). Ton outil de fuite et de roam. Garde-le surtout pour échapper aux engages du support adverse.",
+    "level_6": "Étoile finale : stun en zone. Combo avec ton support : engage, E pour les retenir, R, puis Q. Avec assez de poussière, l'étoile devient Apocalypse.",
+    "power_spikes": [
+      "Niveau 6 : Étoile finale pour les combats à deux contre deux.",
+      "Premier item complet : dégâts de zone réguliers.",
+      "Apocalypse débloquée : chaque teamfight devient dangereux pour l'adversaire.",
+      "Late game : poussière d'étoile accumulée, tous tes sorts sont renforcés."
+    ],
+    "lane_plan": "Farm en sécurité avec E et Q, accumule la poussière d'étoile et évite les trades longs. Laisse ton support gérer la lane et garde W pour fuir. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense un farm régulier, même si ton début de partie est calme.",
+    "trading": "Trade court : Q quand l'adversaire vient au contact des sbires. All-in (niveau 6) : E pour attirer, R pour stun, Q pour finir. Abandonne contre les ADC qui te harcèlent à longue portée ou qui te poursuivent (Zeri).",
+    "jungle_plan": "",
+    "threats": [
+      "Zeri : matchup difficile.",
+      "Supports d'engage qui te divent avant ton niveau 6.",
+      "Assassins quand tu n'as plus Vol astral."
+    ],
+    "mistakes": [
+      "Forcer les trades en début de partie au lieu de farmer la poussière.",
+      "Utiliser W pour attaquer et ne plus pouvoir fuir.",
+      "Lancer l'ultime sans CC pour garantir l'impact."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Elle dive avec son ultime : garde E et R pour la retenir quand elle arrive.",
+      "Jinx": "Elle scale aussi : farm et gagne les teamfights avec l'Apocalypse.",
+      "Ezreal": "Il poke avec Q : reste derrière les sbires, tu le domines en teamfight.",
+      "Lucian": "Survis à la lane, la suite est pour toi.",
+      "Zeri": "Elle te poursuit et te poke : joue près de ton support."
+    },
+    "mid_game": "Groupe avec ton équipe autour des dragons. Touche le plus possible de champions pour la poussière, et prépare l'Apocalypse pour le prochain combat.",
+    "late_game": "Frappe en zone derrière ta frontline : E sur le groupe, R au milieu, Q en survolant avec W. Garde W pour fuir si un diver arrive.",
+    "ahead": "Force les teamfights autour des objectifs : l'Apocalypse fait des ravages.",
+    "behind": "Farm et accumule la poussière : tu scales encore quand les autres ont fini d'acheter.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane puis gagner les teamfights grâce à la poussière d'étoile accumulée.",
+    "final_tip": "Chaque ennemi touché te donne de la poussière : en lane, privilégie les sorts sûrs qui touchent plutôt que les trades risqués."
+  }
+}

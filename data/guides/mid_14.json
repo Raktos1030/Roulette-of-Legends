@@ -1,0 +1,43 @@
+{
+  "Galio|mid": {
+    "identity": "Tank-mage à dégâts magiques, spécialiste anti-mage et de l'intervention sur la carte. Vents de guerre (Q) lance deux rafales qui se rejoignent en tornade, Bouclier de Durand (W) réduit les dégâts (surtout magiques) puis provoque autour de lui, Horion de la justice (E) charge et knock-up, et Entrée héroïque (R) protège un allié à distance avant d'atterrir à ses côtés en projetant les ennemis. Son passif renforce régulièrement une attaque qui frappe en zone.",
+    "playstyle": "Mid de contrôle et de roam. Galio punit les assassins à dégâts magiques (Akali, Katarina) et aide ses alliés partout avec l'ultime. Il est moins bon contre les mages à longue portée qui le poke (Hwei, Lux, Syndra).",
+    "early_game": "Farm avec Q et le passif. Contre les assassins magiques, W absorbe une grosse partie de leurs dégâts : laisse-les venir. Contre les mages à distance, farm et attends le niveau 6.",
+    "level_1": "Vents de guerre (Q) en premier.",
+    "level_2": "Bouclier de Durand (W). Réduction de dégâts puis taunt : lance-le quand un assassin t'engage.",
+    "level_3": "Horion de la justice (E). All-in : E (knock-up) → W (taunt) → Q.",
+    "level_6": "Entrée héroïque : shield sur un allié lointain, puis tu atterris en projetant. Surveille la carte : chaque combat au bot ou au top peut devenir un avantage avec ton ultime.",
+    "power_spikes": [
+      "Niveau 3 : E + W contre les assassins.",
+      "Niveau 6 : ultime pour les combats partout sur la carte.",
+      "Premier item complet : très résistant aux dégâts magiques.",
+      "Mid game : roams et engages."
+    ],
+    "lane_plan": "Farm au Q, laisse les assassins venir sur ton W. Après le niveau 6, pousse ta wave et surveille la carte pour l'ultime. La quête de rôle mid (retour accéléré) t'aide à reset avant d'intervenir.",
+    "trading": "Trade de base : Q à distance. All-in : E → W → Q → attaque du passif. Contre un assassin : laisse-le engager, W pour absorber et provoquer. Abandonne contre les mages qui te poke hors de portée.",
+    "jungle_plan": "",
+    "threats": [
+      "Mages à longue portée (Hwei, Lux, Syndra, Veigar).",
+      "Ahri : matchup difficile.",
+      "Qiyana, qui te burst avec les éléments."
+    ],
+    "mistakes": [
+      "Lancer l'ultime sur un combat déjà perdu.",
+      "Gaspiller W et ne plus pouvoir absorber le burst adverse.",
+      "Rester en lane au lieu d'aider avec l'ultime."
+    ],
+    "matchup_notes": {
+      "Locke": "W absorbe son burst magique ; provoque-le quand il dive avec E.",
+      "Katarina": "W réduit ses dégâts et interrompt son Lotus mortel avec le taunt.",
+      "Akali": "W absorbe son burst et la provoque hors de son Linceul.",
+      "Ahri": "Elle te poke et esquive ton E : farm et garde E pour la fin de son ultime.",
+      "Hwei": "Il te poke de très loin : reste derrière tes sbires."
+    },
+    "mid_game": "Roams et ultimes sur les combats des autres lanes. Chaque intervention doit se transformer en objectif.",
+    "late_game": "Frontline de contrôle : ultime sur l'allié engagé, E pour projeter, W pour provoquer.",
+    "ahead": "Roam, crée des avantages avec l'ultime et prends les objectifs.",
+    "behind": "Farm et utilise l'ultime pour sauver tes alliés.",
+    "win_condition": "Pour gagner cette partie, tu veux neutraliser le mid adverse et gagner les combats partout avec Entrée héroïque.",
+    "final_tip": "Garde un œil sur la minicarte : ton ultime vaut plus sur un combat ailleurs qu'en lane."
+  }
+}

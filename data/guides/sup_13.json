@@ -1,0 +1,43 @@
+{
+  "Lux|sup": {
+    "identity": "Mage de poke et de contrôle. Illumination (passif) : ses sorts chargent la cible, et sa prochaine attaque la déclenche pour des dégâts magiques en plus. Entrave de lumière (Q) root et blesse jusqu'à deux ennemis, Barrière prismatique (W) lance son bâton qui protège les alliés touchés à l'aller et au retour, Anomalie radieuse (E) crée une zone qui slow et qu'elle peut faire exploser, et Éclat final (R) tire un rayon à très longue portée qui déclenche aussi son passif.",
+    "playstyle": "Support de poke et de pick à longue portée : elle affaiblit l'adversaire avec E, le root avec Q et l'achève avec R. Un seul matchup nettement défavorable (Blitzcrank). Très fragile et sans mobilité : son placement est sa seule défense.",
+    "early_game": "Poke avec Anomalie radieuse (E) quand l'adversaire vient last hit, puis attaque pour déclencher Illumination. Garde Entrave de lumière (Q) pour punir un engage ou lancer un kill : un Q touché, c'est un combo complet. Reste derrière les sbires face aux grappins.",
+    "level_1": "Anomalie radieuse (E) en premier. Ensuite, monte E en priorité.",
+    "level_2": "Entrave de lumière (Q). Combo : Q → E → attaque (Illumination).",
+    "level_3": "Barrière prismatique (W). Shield pour toi et ton ADC à l'aller et au retour du bâton.",
+    "level_6": "Éclat final : rayon à très longue portée. Après un Q qui root, R touche à coup sûr : Q → E → R. Achève aussi les ennemis bas en PV sur d'autres lanes.",
+    "power_spikes": [
+      "Niveau 2 : Q → E pour les kills.",
+      "Niveau 6 : combo complet à longue portée.",
+      "Premier item complet : poke très punitif.",
+      "Mid game : picks à distance avec Q."
+    ],
+    "lane_plan": "Poke avec E, garde Q pour les kills ou la défense, et protège ton ADC avec W. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "Trade de base : E, puis attaque. All-in : Q → E → attaque → R. Défense : Q sur l'engage, W sur ton ADC. Contre Blitzcrank, reste derrière tes sbires en permanence.",
+    "jungle_plan": "",
+    "threats": [
+      "Blitzcrank : ton matchup le plus difficile (son grappin te tue).",
+      "Supports d'engage (Nautilus, Thresh) qui te rattrapent.",
+      "Assassins qui te ciblent en teamfight."
+    ],
+    "mistakes": [
+      "Se placer à découvert face à un grappin.",
+      "Lancer Q au hasard et ne plus pouvoir se défendre.",
+      "Lancer R sans CC ni cible basse en PV."
+    ],
+    "matchup_notes": {
+      "Thresh": "Reste derrière les sbires pour éviter son grappin, et Q sur lui quand il avance.",
+      "Lulu": "Trade de poke : ta portée est plus grande, utilise E.",
+      "Nautilus": "Son ancre ne passe pas les sbires : reste derrière eux.",
+      "Swain": "Il doit s'approcher : poke-le et root-le quand il avance.",
+      "Blitzcrank": "Un grappin sur toi est souvent mortel : reste derrière tes sbires."
+    },
+    "mid_game": "Poke avant les objectifs, pose des pinks et cherche les picks avec Q dans le brouillard de guerre.",
+    "late_game": "Reste loin derrière ta frontline, poke avec E, root les divers avec Q et achève avec R. Barrière prismatique sur ton équipe au début du combat.",
+    "ahead": "Poke et cherche les picks : ta longue portée domine les combats.",
+    "behind": "Joue en sécurité et protège avec Q et W : ton ultime reste utile de très loin.",
+    "win_condition": "Pour gagner cette partie, tu veux affaiblir l'équipe adverse à distance et root les cibles clés pour ton équipe.",
+    "final_tip": "Après un Q qui root, ton ultime ne peut pas rater : enchaîne toujours Q → E → R."
+  }
+}

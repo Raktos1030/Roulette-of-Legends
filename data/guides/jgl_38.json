@@ -1,0 +1,43 @@
+{
+  "Sylas|jgl": {
+    "identity": "Combattant-mage à dégâts magiques qui vole les ultimes adverses. Croix du forçat (Q) croise ses chaînes pour slow puis exploser, Régicide (W) bondit sur une cible et le soigne (davantage quand il est bas), Évasion / Enlèvement (E) dash puis lance une chaîne qui le tire vers un ennemi en le stunnant, et Détournement (R) vole l'ultime d'un champion ennemi. Après chaque sort, son attaque suivante frappe en zone (passif). Il est désormais joué un peu plus en jungle qu'au mid.",
+    "playstyle": "Jungler d'escarmouche et de playmaking. Son ultime dépend de la composition adverse : un ultime d'engage ou de zone volé peut gagner un teamfight à lui seul.",
+    "early_game": "Clear rapide avec Q et le passif. Gank quand ta cible est à portée de E : dash, chaîne pour le stun, Q, puis W pour finir et te soigner. Duel les junglers qui gagnent peu en early : W te rend très fort en combat court.",
+    "level_1": "Évasion / Enlèvement (E) en premier.",
+    "level_2": "Croix du forçat (Q). Slow et explosion au croisement des chaînes : ton clear s'accélère.",
+    "level_3": "Régicide (W). Bond et soin : premier gank complet E → E (chaîne) → Q → W. W est ton sort maximisé en priorité.",
+    "level_6": "Détournement : tu voles l'ultime d'un ennemi et peux l'utiliser. Regarde la composition adverse : vole l'ultime le plus impactant (engage de zone, soin de groupe, exécution). Tu peux le garder pour le moment décisif.",
+    "power_spikes": [
+      "Niveau 3 : ganks et duels avec W.",
+      "Niveau 6 : ultime volé selon la composition adverse.",
+      "Premier item complet : escarmouches très fortes.",
+      "Mid game : playmaking avec l'ultime volé."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide, ganks et escarmouches. Sylas veut se battre souvent : contrôle les crabes, envahis quand tes laners ont la priorité et joue les Larves (vers 8 min). Après le 6, repère l'ultime le plus intéressant dans l'équipe adverse et organise un combat autour de lui.",
+    "trading": "En gank : E → chaîne (stun) → Q → W. En teamfight : vole l'ultime le plus fort, puis utilise-le au bon moment ; W pour te soigner quand tu es bas. Abandonne contre les champions qui te battent en combat long (Gwen, Bel'Veth).",
+    "threats": [
+      "Gwen et Bel'Veth, qui te battent en combat long.",
+      "Skarner, qui t'enlève loin de ton équipe.",
+      "Compositions adverses sans ultime intéressant à voler."
+    ],
+    "mistakes": [
+      "Voler l'ultime au hasard sans regarder la composition adverse.",
+      "Utiliser W trop tôt, sans avoir besoin du soin.",
+      "Rater la chaîne de E et engager quand même."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Duel-le avec W : ton soin gagne les combats courts.",
+      "Graves": "Attrape-le avec la chaîne quand il dash.",
+      "Viego": "Vole son ultime ou garde le tien pour après sa possession.",
+      "Shyvana": "Vole sa transformation en dragon.",
+      "Gwen": "Elle te bat en combat long : évite les duels prolongés."
+    },
+    "mid_game": "Escarmouches et playmaking avec l'ultime volé autour des objectifs.",
+    "late_game": "Utilise l'ultime volé au bon moment (engage, protection ou exécution), puis W pour survivre.",
+    "ahead": "Étouffe le jungler adverse et force les combats.",
+    "behind": "Farm, joue avec ton équipe et cherche un ultime volé décisif.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner les escarmouches grâce à W et retourner les teamfights avec l'ultime volé.",
+    "final_tip": "Avant de voler un ultime, regarde toute la composition adverse : le plus impactant n'est pas toujours celui du plus proche."
+  }
+}

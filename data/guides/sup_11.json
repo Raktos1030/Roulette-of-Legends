@@ -1,0 +1,43 @@
+{
+  "Leona|sup": {
+    "identity": "Tank d'engage. Rayon de soleil (passif) : ses sorts marquent les ennemis, et les dégâts de ses alliés sur une cible marquée infligent des dégâts magiques en plus. Bouclier de l'aube (Q) rend sa prochaine attaque qui stun, Éclipse (W) augmente ses résistances et réduit les dégâts qu'elle subit (puis blesse les ennemis proches et prolonge l'effet), Lame du zénith (E) projette une épée en ligne : le dernier champion touché est root et Leona fonce sur lui, et Éruption solaire (R) frappe une zone à distance (stun au centre, slow autour).",
+    "playstyle": "Support d'engage pur : elle dive avec E, stun avec Q et enchaîne avec son ultime. Un seul matchup nettement défavorable (Janna), et elle écrase les supports qu'elle peut atteindre (Yuumi, Nautilus, Pantheon, Camille).",
+    "early_game": "Au niveau 2, E → Q sur l'adversaire le plus exposé : ton ADC suit. Au niveau 1, reste discrète et contrôle les bushs. Après chaque engage, W te protège pendant que ton ADC fait les dégâts ; ne lance pas E quand tu ne peux pas suivre.",
+    "level_1": "Bouclier de l'aube (Q) en premier. Ensuite, monte W en priorité.",
+    "level_2": "Lame du zénith (E). Combo E → Q : CC, puis stun.",
+    "level_3": "Éclipse (W). Résistances et réduction de dégâts pendant l'engage : lance-la juste avant d'entrer.",
+    "level_6": "Éruption solaire : stun au centre d'une zone à distance. Combo : R sur l'adversaire, E, Q. Ou R pour arrêter un engage adverse.",
+    "power_spikes": [
+      "Niveau 2 : engage E → Q.",
+      "Niveau 6 : R → E → Q, presque impossible à esquiver.",
+      "Premiers items de résistance : frontline très solide.",
+      "Teamfight : R sur plusieurs ennemis."
+    ],
+    "lane_plan": "Menace l'engage en permanence et joue avec ton jungler. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées) : pose-les autour du dragon.",
+    "trading": "All-in : W → E → Q → attaques de ton ADC (ton passif ajoute des dégâts), R au niveau 6. Recule contre les supports qui disengage (Janna) : attends qu'elle ait utilisé sa tornade.",
+    "jungle_plan": "",
+    "threats": [
+      "Janna : ton matchup le plus difficile.",
+      "Kiting et disengage adverses.",
+      "Engager sans ton ADC : tu entres seule au milieu des adversaires."
+    ],
+    "mistakes": [
+      "Lancer E quand ton ADC ne peut pas suivre.",
+      "Oublier W avant d'engager.",
+      "Lancer l'ultime sur une cible isolée alors qu'un groupe est à portée."
+    ],
+    "matchup_notes": {
+      "Thresh": "Engage quand son grappin est utilisé.",
+      "Nautilus": "Engage sur son ADC quand il a lancé son ancre.",
+      "Blitzcrank": "S'il te grappine, tu es exactement où tu voulais être : E → Q sur son ADC.",
+      "Yuumi": "Son ADC est seul face à ton engage.",
+      "Janna": "Sa tornade annule ton E : attends qu'elle l'ait utilisée."
+    },
+    "mid_game": "Pose des pinks autour des objectifs, cherche les picks avec E → Q et joue avec ton jungler.",
+    "late_game": "Frontline : W, puis E sur le carry adverse, Q, et R sur le groupe. Ou garde R pour arrêter l'engage adverse.",
+    "ahead": "Engage souvent et aide ton jungler à contrôler la carte.",
+    "behind": "Joue les contre-engages : R et Q arrêtent les divers sur ton ADC.",
+    "win_condition": "Pour gagner cette partie, tu veux lancer les combats sur les bonnes cibles et enchaîner tes CC pour que ton équipe tue.",
+    "final_tip": "Lance Éclipse juste avant d'engager : tu arrives sur la cible déjà protégée."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "Naafiri|jgl": {
+    "identity": "Assassin à dégâts physiques qui combat avec sa meute de chiens darkin (passif). Dagues des Darkin (Q) lance des dagues qui font saigner (relançable), Appel de la meute (W) la rend inciblable un court instant, renforce la meute, fait apparaître des chiens supplémentaires et lui donne vitesse et puissance, Éviscération (E) dash et rappelle la meute, et Hallali (R) la fait bondir avec sa meute sur un champion ; une élimination révèle les ennemis proches et permet une relance, qui donne un shield. Son kit actuel a inversé W et R par rapport à sa version d'origine.",
+    "playstyle": "Jungler d'assassinat et d'escarmouche, fort en early/mid game. Naafiri tue très vite les cibles isolées avec sa meute et enchaîne les éliminations.",
+    "early_game": "Clear rapide avec Q et la meute. Gank dès que ta cible est isolée : Hallali ou E pour entrer, Q pour le saignement, puis la meute fait le reste. Envahis quand tes laners ont la priorité : tu gagnes beaucoup de duels.",
+    "level_1": "Dagues des Darkin (Q) en premier.",
+    "level_2": "Éviscération (E). Dash et soin de la meute : ton clear devient plus sûr.",
+    "level_3": "Appel de la meute (W). Tu deviens brièvement inciblable, ta meute grossit et tu gagnes vitesse et dégâts : parfait pour esquiver un sort et entrer. Premier gank sérieux : W → E → Q.",
+    "level_6": "Hallali : tu bondis avec ta meute sur un champion. Une élimination révèle les ennemis proches et te permet une relance avec shield. Enchaîne les cibles en escarmouche.",
+    "power_spikes": [
+      "Niveau 3 : ganks et duels forts.",
+      "Niveau 6 : Hallali, enchaînement d'éliminations.",
+      "Premier item complet : burst qui tue les carries.",
+      "Mid game : picks et escarmouches."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide, puis ganks et invasions. Naafiri veut créer l'avance en early/mid game : contrôle les crabes, envahis avec tes laners et prends les Larves (vers 8 min). Chasse les cibles isolées : ta meute les tue très vite. Évite les combats contre les junglers qui te contrôlent ou te battent en combat long.",
+    "trading": "En gank : W (inciblable, meute renforcée) → E → Q → attaques de la meute → R pour finir. En escarmouche : attends une cible isolée ou basse, puis enchaîne avec la relance de R. Abandonne contre les tanks qui encaissent et contrôlent.",
+    "threats": [
+      "Nocturne et Hecarim : matchups difficiles.",
+      "CC et tanks qui encaissent ton burst.",
+      "Cibles groupées où ta meute est dispersée."
+    ],
+    "mistakes": [
+      "Engager sur une cible entourée de ses alliés.",
+      "Gaspiller W alors qu'il pourrait esquiver un sort clé.",
+      "Utiliser la relance de R sans élimination (pas de relance disponible)."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Duel-le quand il est seul : ta meute le bat.",
+      "Graves": "Colle-le avec E et ta meute.",
+      "Kha'Zix": "Ta meute l'empêche de profiter de son bonus d'isolement.",
+      "Nocturne": "Son ultime te surprend et son shield bloque ton engage : joue avec vision.",
+      "Hecarim": "Il te rattrape avec sa vitesse : évite les combats longs."
+    },
+    "mid_game": "Picks et escarmouches autour des objectifs. Chasse les carries isolés.",
+    "late_game": "Assassine le carry adverse avec Hallali, puis enchaîne sur la cible suivante si tu obtiens l'élimination.",
+    "ahead": "Étouffe le jungler adverse et chasse les carries.",
+    "behind": "Cherche des picks sur les cibles isolées et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux créer une avance en early grâce aux duels et aux ganks, puis assassiner les carries.",
+    "final_tip": "Garde Appel de la meute pour esquiver le sort clé de l'adversaire : tu es inciblable pendant un instant."
+  }
+}

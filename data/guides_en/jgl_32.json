@@ -1,0 +1,43 @@
+{
+ "RekSai|jgl": {
+  "identity": "Physical damage fighter who travels underground. Unburrowed: Queen's Wrath (Q) empowers her attacks and Furious Bite (E) deals true damage at full Fury. Burrowed: Prey Seeker (Q) pokes from range and reveals, Tunnel (E) creates reusable tunnels, and Un-burrow (W) brings her out of the ground, knocking up enemies above her. Void Rush (R) dashes onto a marked target to execute it. While burrowed, she senses enemies moving around her.",
+  "playstyle": "Early-game jungler built for ganks and duels. Rek'Sai ganks very early thanks to her tunnels and knock-up, and wins most early duels.",
+  "early_game": "Clear fast, alternating between surface and underground (you heal while burrowed). Gank from level 3: Tunnel to arrive, Un-burrow to knock up, then Q and E on the surface. Invade when your laners have priority.",
+  "level_1": "Queen's Wrath (Q) first.",
+  "level_2": "Burrow / Un-burrow (W). You go underground (faster, you sense enemies) and come out knocking up enemies above you: first gank possible at level 2.",
+  "level_3": "Furious Bite / Tunnel (E). Full gank: Tunnel → Un-burrow → Q → Furious Bite at full Fury (true damage).",
+  "level_6": "Void Rush: dashes onto a target marked by your damage to execute it. Use it to finish a fleeing target; you're untargetable during the dash.",
+  "power_spikes": [
+   "Level 2-3: ganks with Un-burrow.",
+   "Level 6: executes with Void Rush.",
+   "First completed item: strong duels and skirmishes.",
+   "Mid game: constant pressure thanks to your tunnels."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear, early ganks and invades. Create tunnels toward the lanes you're going to gank and toward objectives: they make your rotations very fast. Control Scuttles, Void Grubs (around 8 minutes) and dragons. While burrowed, you sense enemies moving near you: use it to track the enemy jungler.",
+  "trading": "Ganking: Tunnel → Un-burrow → Q → E. Dueling: Un-burrow under the target, then Q and Furious Bite at full Fury, R to finish. Give up on it against champions who lock you down (Zyra).",
+  "threats": [
+   "Zyra, the only clearly unfavorable matchup according to the data.",
+   "CC that stops you from coming out.",
+   "Long games where your impact drops."
+  ],
+  "mistakes": [
+   "Un-burrowing with no target above you (wasted knock-up).",
+   "Forgetting to create tunnels for your rotations.",
+   "Using Furious Bite before reaching full Fury."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "You beat him in early duels: invade him.",
+   "Graves": "Knock him up with Un-burrow when he dashes.",
+   "Viego": "Punish him early.",
+   "Kayn": "Punish him before his transformation.",
+   "Zyra": "Her plants and roots lock you down: don't dive her alone."
+  },
+  "mid_game": "Constant pressure thanks to your tunnels, ganks and objectives.",
+  "late_game": "Engage with Un-burrow and execute with R. Keep tunnels near objectives.",
+  "ahead": "Choke out the enemy jungler and take objectives.",
+  "behind": "Look for picks with your tunnels and play with your team.",
+  "win_condition": "To win this game, you want to impose early pressure through ganks and tunnels, then turn your lead into objectives.",
+  "final_tip": "Create tunnels toward the lanes and objectives: they make your rotations unpredictable."
+ }
+}

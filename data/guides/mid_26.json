@@ -1,0 +1,43 @@
+{
+  "Nasus|mid": {
+    "identity": "Juggernaut à dégâts physiques qui scale à l'infini. Buveuse d'âmes (Q) augmente définitivement ses dégâts à chaque élimination, Flétrissement (W) slow fortement la vitesse de déplacement et d'attaque, Esprit enflammé (E) inflige des dégâts de zone et réduit l'armure, et Fureur des sables (R) lui donne PV, résistances et dégâts de zone.",
+    "playstyle": "Au mid, Nasus sert surtout de contre aux assassins et combattants physiques (Zed, Yasuo, Katarina, Irelia, Diana) : Flétrissement les rend inoffensifs. Il souffre en revanche contre les mages à longue portée qui le poke (Aurelion Sol, Anivia, Lissandra, Hwei).",
+    "early_game": "Stack Q sur les sbires en priorité, sous ta tour si besoin (les tirs de tour + Q rendent les last hits faciles). E nettoie les waves que tu ne peux pas atteindre. Garde W pour l'engage d'un assassin : il ruine son combo.",
+    "level_1": "Buveuse d'âmes (Q) en premier. Last hit avec Q.",
+    "level_2": "Esprit enflammé (E) ou Flétrissement (W) selon l'adversaire. E pour farmer à distance contre un mage ; W contre un assassin qui veut t'engager.",
+    "level_3": "Kit de base complet. Contre un assassin : laisse-le engager, W sur lui, puis Q.",
+    "level_6": "Fureur des sables : PV, résistances et dégâts de zone. Tu gagnes les combats longs contre les assassins et tu peux répondre aux dives.",
+    "power_spikes": [
+      "Niveau 6 : ultime, combats longs.",
+      "Stacks de Q : ton Q devient une exécution sur les carries.",
+      "Premier item complet : side lane dominante.",
+      "Late game : splitpush et frontline."
+    ],
+    "lane_plan": "Farm sous ta tour si nécessaire et stack Q. Nettoie la wave avec E contre les mages. Au mid, la lane est courte : c'est plus sûr pour stacker, mais tu roam peu. En mid game, prends une side lane pour splitpush. La quête de rôle mid (retour accéléré, bottes améliorées) t'aide à revenir vite en lane et à te déplacer.",
+    "trading": "Trade court : W → Q. Trade long : R → W → Q → E. Contre un assassin : laisse-le engager, puis W. Abandonne contre les mages qui te poke à distance.",
+    "jungle_plan": "",
+    "threats": [
+      "Mages à longue portée (Aurelion Sol, Anivia, Lissandra, Hwei).",
+      "Ahri et Sylas : matchups difficiles.",
+      "Ganks pendant que tu stackes."
+    ],
+    "mistakes": [
+      "Oublier de stacker Q sur les sbires.",
+      "Poursuivre un mage à distance.",
+      "Rester au mid en mid game au lieu de splitpush."
+    ],
+    "matchup_notes": {
+      "Zed": "Flétrissement annule son combo : laisse-le venir.",
+      "Yasuo": "W quand il engage ; il ne peut pas te battre en combat long.",
+      "Viktor": "Il te poke : nettoie la wave avec E et stack sous ta tour.",
+      "Aurelion Sol": "Il te poke et scale aussi : farm sous ta tour.",
+      "Lissandra": "Elle te contrôle et te poke : farm et ne cours pas après elle."
+    },
+    "mid_game": "Splitpush une side lane avec tes stacks et force l'adversaire à venir à deux.",
+    "late_game": "Frontline qui écrase les carries avec Q, ou splitpush. Garde W pour le carry adverse.",
+    "ahead": "Splitpush, prends les tours et force les duels.",
+    "behind": "Stack en sécurité et scale : ton late game compense ton retard.",
+    "win_condition": "Pour gagner cette partie, tu veux neutraliser l'assassin adverse en lane, stacker et dominer la side lane en mid/late game.",
+    "final_tip": "Contre un assassin, laisse-le engager et réponds avec Flétrissement : son combo ne passe plus."
+  }
+}

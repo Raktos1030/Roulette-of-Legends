@@ -1,0 +1,43 @@
+{
+ "Samira|adc": {
+  "identity": "Melee and ranged physical damage marksman. Daredevil Impulse (passive): she builds style by chaining different attacks and abilities; in melee range her attacks deal bonus magic damage, and attacking a rooted enemy makes her dash into range (she keeps a knocked-up enemy in the air). Flair (Q) fires a shot or slashes with her sword, Blade Whirl (W) damages around her and destroys enemy projectiles, Wild Rush (E) dashes her through an enemy (a takedown resets its cooldown), and Inferno Trigger (R), available at max style rank (S), sprays bullets at every enemy around her.",
+  "playstyle": "Dive and snowball ADC: she follows her support's engages, builds style in a few seconds and cleans up the fight with her ultimate. She's ahead in gold at 15 minutes on average against common ADCs, but she struggles against bot lane mages who root her (Veigar, Viktor, Hwei, Syndra) and against Jinx.",
+  "early_game": "Play with an engage support: every CC makes you leap onto the target thanks to your passive. Trade with varied combos (ranged Q, attack, sword Q) to build style. Keep W to block an important projectile.",
+  "level_1": "Flair (Q) first. Short trades: Q, then attack.",
+  "level_2": "Wild Rush (E). Follow your support's engage by dashing through a minion or your opponent. E then Q hits every enemy on your path.",
+  "level_3": "Blade Whirl (W). Destroys enemy projectiles: block the ability or attack that threatens you, then keep your combo going.",
+  "level_6": "Inferno Trigger: when your style reaches S rank, spray every enemy around you. Typical combo: E → Q → attack → W → attack → R.",
+  "power_spikes": [
+   "Level 2: E to follow engages.",
+   "Level 6: an ultimate that cleans up a fight.",
+   "First completed item: a deadly combo on an ADC.",
+   "Every takedown: Wild Rush resets so you can keep going."
+  ],
+  "lane_plan": "Play aggressive with your engage support, get ahead and press it: plates, towers, dragons. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) completes fast when you win fights. Don't force it against an opponent who has all their CC up.",
+  "trading": "Short trade: ranged Q, attack, step back. All-in: follow your support's CC, E → Q → W on the key projectile → attacks → R at S rank. Give up on it against bot lane mages who root you mid-dash.",
+  "jungle_plan": "",
+  "threats": [
+   "Veigar bot: your hardest matchup (his cage stops you mid-combo).",
+   "Jinx, Xayah and bot lane mages (Viktor, Hwei, Syndra): hard matchups.",
+   "Any CC that stops you before S rank."
+  ],
+  "mistakes": [
+   "Diving without your support's engage.",
+   "Wasting W instead of saving it for the projectile that matters.",
+   "Repeating the same action: your style only goes up if you mix it up."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "Force trades before her evolutions.",
+   "Jinx": "Her Flame Chompers stop you: engage once they're used.",
+   "Jhin": "Destroy his Deadly Flourish with W.",
+   "Yunara": "Avoid long fights against her.",
+   "Veigar": "Never walk into his Event Horizon: wait until he's used it."
+  },
+  "mid_game": "Play skirmishes with your support and jungler. Every takedown resets your dash: chain targets.",
+  "late_game": "Wait for the enemy CC to be used, then go in behind your team, build your style and cast your ultimate in the middle of the group.",
+  "ahead": "Force fights: every takedown sends you onto the next target.",
+  "behind": "Farm and wait for your team's engage: don't be the first one in.",
+  "win_condition": "To win this game, you want to follow your team's engages and clean up fights with your S-rank ultimate.",
+  "final_tip": "Always mix up your actions: Q, attack, E, W… S rank comes in a few seconds if you never repeat the same thing twice."
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "Shaco|sup": {
+  "identity": "Zone-control trickster. Backstab (passive): his attacks and thrown dagger deal more damage from behind. Deceive (Q) makes him invisible and teleports him a short distance (his first attack is empowered), Jack in the Box (W) places a hidden box that fears, then attacks nearby enemies, Two-Shiv Poison (E) passively poisons and slows, and can be thrown, and Hallucinate (R) creates a clone that fights and explodes into three mini-boxes when it dies.",
+  "playstyle": "Trap support: he places Jack in the Boxes in bushes and on paths, fears engages and creates picks. He struggles against enchanters and solid lane supports (Lulu, Senna, Milio, Thresh).",
+  "early_game": "Place Jack in the Boxes (W) in the lane's bushes and on escape paths: an enemy feared by several boxes is a kill for your ADC. Keep Deceive (Q) to escape or surprise. A thrown Two-Shiv Poison (E) finishes low-health enemies.",
+  "level_1": "Paths vary: Jack in the Box (W) first is the most common, then Q → E paths. The most common max order is W > E > Q.",
+  "level_2": "Two-Shiv Poison (E) or Deceive (Q). E to poke and finish, Q for mobility.",
+  "level_3": "The missing ability. Set up boxes in the bushes before every trade.",
+  "level_6": "Hallucinate: the clone fools your opponent and explodes into mini-boxes. Use it to escape, fake or add boxes mid-fight.",
+  "power_spikes": [
+   "Level 2: several boxes placed in a bush.",
+   "Level 6: clone and mini-boxes.",
+   "First completed item: very dangerous boxes.",
+   "Mid game: traps around objectives."
+  ],
+  "lane_plan": "Control the bushes with your boxes and turn enemy engages to your advantage: they walk into your traps. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "Basic trade: thrown E. All-in: lure your opponent into your boxes, Q to get behind them, attacks. Defense: boxes between your ADC and the enemy engage. Against supports who poke from range (Lulu, Senna), don't force it: your boxes get revealed or walked around.",
+  "jungle_plan": "",
+  "threats": [
+   "Lulu and Senna, the worst matchups.",
+   "Milio and Thresh, unfavorable.",
+   "Control Wards and reveals that uncover your boxes."
+  ],
+  "mistakes": [
+   "Placing boxes in the open, where they're seen.",
+   "Using Deceive to attack and no longer being able to escape.",
+   "Leaving the lane too early (role quest penalty)."
+  ],
+  "matchup_notes": {
+   "Thresh": "Place boxes where he lands after his hook.",
+   "Lulu": "She pokes and polymorphs you: play defensively with your boxes.",
+   "Nautilus": "Place boxes around your ADC: his engage ends up inside them.",
+   "Morgana": "Her abilities are slow: your boxes catch her off guard.",
+   "Senna": "She pokes you from far away: don't step up without your boxes in front of you."
+  },
+  "mid_game": "Place boxes around objectives before they spawn, and in the enemy jungle for picks.",
+  "late_game": "Prepare the fight area with several boxes. Clone to fool the enemy, E to finish fleeing enemies.",
+  "ahead": "Create picks with your boxes and help your jungler.",
+  "behind": "Protect your ADC with boxes around them.",
+  "win_condition": "To win this game, you want to trap the fight area so the enemy walks into your boxes.",
+  "final_tip": "Stack several boxes in the same spot: the fears chain together and the enemy can't escape."
+ }
+}

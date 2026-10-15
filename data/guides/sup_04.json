@@ -1,0 +1,43 @@
+{
+  "Blitzcrank|sup": {
+    "identity": "Support de pick. Barrière de mana (passif) lui donne un shield basé sur son mana quand il tombe bas en PV. Grappin propulsé (Q) attrape le premier ennemi touché et l'attire vers lui, Surcharge (W) augmente fortement ses vitesses d'attaque et de déplacement (il est slow à la fin), Poing d'acier (E) rend sa prochaine attaque deux fois plus forte et knock-up la cible, et Champ de stase (R) électrocute passivement les ennemis qu'il frappe ; activé, il détruit les shields des ennemis proches, les blesse et les réduit au silence.",
+    "playstyle": "Support de pick : un grappin réussi = un kill ou un sort d'invocateur brûlé. Il domine les supports fragiles à longue portée (Lux, Xerath, Mel) et souffre contre ceux qui protègent leur ADC du grappin (Taric, Braum, Rakan).",
+    "early_game": "Menace le grappin en permanence depuis les bushs ou derrière la wave : l'adversaire doit rester derrière ses sbires. Grappin → Poing d'acier → R en silence : ton ADC suit. Un grappin raté te met en danger : recule tant que Q est en recharge.",
+    "level_1": "Grappin propulsé (Q) en premier. Menace depuis les bushs.",
+    "level_2": "Poing d'acier (E). Combo : Q → E (knock-up) → attaques de ton ADC.",
+    "level_3": "Surcharge (W). Vitesse pour te placer avant un grappin, ou pour rejoindre un combat.",
+    "level_6": "Champ de stase : silence et destruction des shields autour de toi. Q → E → R empêche l'adversaire de riposter ou de fuir avec un sort.",
+    "power_spikes": [
+      "Niveau 2 : grappin + Poing d'acier.",
+      "Niveau 6 : silence de l'ultime.",
+      "Mid game : picks sur les ennemis qui avancent sans vision.",
+      "Chaque grappin réussi sur un carry."
+    ],
+    "lane_plan": "Contrôle les bushs et menace le grappin. Joue les kills avec ton ADC et ton jungler. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées) : retire la vision adverse pour que tes grappins arrivent sans prévenir.",
+    "trading": "All-in : Q → E → R → attaques. Menace : reste à portée de grappin sans le lancer, l'adversaire recule. Évite de lancer Q contre les supports qui protègent leur ADC (Braum et son shield, Taric) : vise-les plutôt eux, ou attends.",
+    "jungle_plan": "",
+    "threats": [
+      "Taric : ton matchup le plus difficile.",
+      "Braum, Rakan et Leona : matchups difficiles.",
+      "Grappin en recharge : tu es alors une cible facile."
+    ],
+    "mistakes": [
+      "Lancer le grappin à travers les sbires.",
+      "Attirer un tank ou un support qui veut justement entrer dans ton équipe.",
+      "Rester à découvert quand le grappin est en recharge."
+    ],
+    "matchup_notes": {
+      "Thresh": "Sa lanterne sauve la cible de ton grappin : attends qu'elle soit utilisée.",
+      "Lulu": "Elle peut métamorphoser ton ADC ou toi : grappin quand elle a utilisé W.",
+      "Leona": "Elle t'engage aussi : ne grappine pas si elle attend avec son stun.",
+      "Lux": "Elle est fragile et lente : un grappin la tue.",
+      "Taric": "Son ultime et son stun annulent tes picks : attends son invulnérabilité."
+    },
+    "mid_game": "Cherche les picks dans le brouillard de guerre : un ennemi qui marche seul sans vision est un grappin gratuit. Pose des pinks autour des objectifs.",
+    "late_game": "Menace le grappin depuis les côtés du combat. Un carry attiré dans ton équipe gagne le combat ; un tank attiré le perd. Garde R pour réduire au silence les divers.",
+    "ahead": "Roam avec ton jungler et crée des picks partout.",
+    "behind": "Protège ton ADC et cherche un seul bon grappin pour renverser un combat.",
+    "win_condition": "Pour gagner cette partie, tu veux attraper les carries adverses isolés et les tuer avec ton équipe.",
+    "final_tip": "La menace du grappin compte autant que le grappin : reste à portée sans le lancer, l'adversaire n'ose plus avancer."
+  }
+}

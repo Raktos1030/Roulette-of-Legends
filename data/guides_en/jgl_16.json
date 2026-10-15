@@ -1,0 +1,43 @@
+{
+ "Jayce|jgl": {
+  "identity": "Two-form fighter, played in the jungle about one game in five. In hammer form, To the Skies! (Q) leaps onto a target, Lightning Field (W) burns around him and Thundering Blow (E) knocks back; in cannon form, Shock Blast (Q) sped up by Acceleration Gate (E) pokes from afar and Hyper Charge (W) speeds up his attacks. Mercury Cannon / Mercury Hammer (R) swaps forms from level 1.",
+  "playstyle": "Early-game poke jungler: aggressive ganks, invades and pressure before objectives. He has to win early; late game, his impact drops sharply.",
+  "early_game": "Clear by switching forms to chain abilities. Gank from level 3: hammer Q to leap, hammer E to knock the target toward your laner, then cannon form and Q + E to finish. Before objectives, poke in cannon form to wear down the enemy team.",
+  "level_1": "Q first. The hammer leap helps on camps; the cannon poke helps in skirmishes.",
+  "level_2": "W. Hyper Charge (cannon) for clearing, or Lightning Field (hammer) for area damage.",
+  "level_3": "E. Thundering Blow (hammer) knocks the target back: aim it toward your laner or your tower. Acceleration Gate (cannon) speeds up your Shock Blast. First gank possible.",
+  "level_6": "No ultimate to unlock: your transformation ranks up automatically, which empowers the first attack after each form swap. It's mostly when your laners have their ultimates for your ganks.",
+  "power_spikes": [
+   "Level 3: hammer ganks.",
+   "First completed item: very strong poke and burst.",
+   "Two items: your last big spike before the late game.",
+   "Before objectives: poke that wears down the enemy team."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear and aggressive ganks from level 3. Jayce has to build his lead early: invades with your laners, Scuttle control, dives. Before every objective (Void Grubs around 8 minutes, dragons), poke the enemy team in cannon form to force them back. Don't play for the late game: convert your lead before 20 minutes.",
+  "trading": "Ganking: hammer Q → hammer E toward your laner → cannon form → Q + E. Skirmishing: poke first, then go in to finish. Give up on it against tanks who lock you down (Rammus) or junglers who kite you (Nidalee).",
+  "threats": [
+   "Nidalee, Zyra and junglers who poke you or beat you from range.",
+   "Rammus and CC tanks.",
+   "Losing impact late game."
+  ],
+  "mistakes": [
+   "Knocking the target away from your laner with hammer E.",
+   "Staying in hammer form in the middle of the enemy team.",
+   "Farming passively instead of building a lead."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "You're both early-game junglers: be faster on ganks.",
+   "Graves": "He beats you in duels: gank where he isn't.",
+   "Sylas": "Poke him in cannon form before he sticks to you.",
+   "Nidalee": "She farms faster and pokes you: play with your laners.",
+   "Rammus": "His taunt and armor shut you down: avoid him."
+  },
+  "mid_game": "Poke and siege before objectives. Play with your team to convert your lead.",
+  "late_game": "Poke from range before fights and finish low targets. Avoid committing in hammer form.",
+  "ahead": "Choke out the enemy jungler and take objectives quickly.",
+  "behind": "Poke safely and play with your team: your scaling is limited.",
+  "win_condition": "To win this game, you want to build an early lead through ganks and turn it into objectives before the late game.",
+  "final_tip": "With Thundering Blow, always knock the target toward your laner or your tower, never away from them."
+ }
+}

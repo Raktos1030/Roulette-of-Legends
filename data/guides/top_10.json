@@ -1,0 +1,84 @@
+{
+  "Trundle|top": {
+    "identity": "Combattant à dégâts physiques, spécialiste anti-tank. Morsure (Q) renforce sa prochaine attaque, slow et vole de la puissance d'attaque, Royaume gelé (W) crée une zone qui augmente sa vitesse d'attaque, sa vitesse de déplacement et ses soins, Montagne de glace (E) pose un pilier qui repousse et bloque le passage, et Soumission (R) vole PV, armure et résistance magique à une cible. Son passif le soigne quand un ennemi meurt à côté de lui.",
+    "playstyle": "Duelliste de combat long et splitpusher. Trundle devient plus fort à mesure que sa cible est tanky, grâce aux vols de statistiques.",
+    "early_game": "Trade avec Q : l'attaque renforcée vole de la puissance d'attaque à l'adversaire, ce qui rend le combat qui suit favorable. Combat dans ton Royaume gelé pour profiter de la vitesse d'attaque et des soins. Garde E pour couper la fuite d'une cible ou bloquer un engage.",
+    "level_1": "Morsure (Q) en premier. Q sur l'adversaire qui vient last hit : il perd de la puissance d'attaque, toi tu en gagnes.",
+    "level_2": "Royaume gelé (W). Zone de glace qui te donne vitesse d'attaque, vitesse de déplacement et soins accrus : pose-la sous toi avant un trade long.",
+    "level_3": "Montagne de glace (E). Pilier qui repousse et slow, et bloque le chemin : pose-le derrière l'adversaire pour l'empêcher de fuir, ou devant toi pour arrêter un engage.",
+    "level_6": "Soumission : tu voles une partie des PV et des résistances de la cible pendant quelques secondes. Utilise-le sur le tank adverse ou sur l'adversaire direct en début d'all-in : plus la cible est résistante, plus le vol est fort.",
+    "power_spikes": [
+      "Niveau 3 : Q + W + E, all-in avec vol de puissance.",
+      "Niveau 6 : Soumission contre les tanks et les combattants.",
+      "Premier item complet : splitpush menaçant.",
+      "Mid game : prise de tours rapide en side lane."
+    ],
+    "lane_plan": "Joue une wave neutre, trade avec Q et combats dans ton Royaume gelé. Pousse et prends les plaques quand tu gagnes. Recall quand ta wave crash. En side lane, Trundle abat les tours très vite : c'est ton principal atout en mid game.",
+    "trading": "Trade court : Q → attaques → recul. Trade long : W sous toi → Q → E derrière la cible → R. Engage quand l'adversaire n'a plus son dash ; abandonne contre les champions qui te kitent à distance ou qui te burst avant que le vol de statistiques fasse effet.",
+    "jungle_plan": "",
+    "threats": [
+      "Champions à burst ou à distance (Akali, Teemo).",
+      "Camille et les duellistes mobiles qui sortent de ton pilier.",
+      "Ganks sans E disponible."
+    ],
+    "mistakes": [
+      "Poser le pilier entre toi et l'adversaire (tu bloques ta propre poursuite).",
+      "Combattre hors de ton Royaume gelé.",
+      "Lancer Soumission sur une cible fragile au lieu du tank ou de ton adversaire direct."
+    ],
+    "matchup_notes": {
+      "Nasus": "Punis-le tôt avec Q (vol de puissance) et évite de te battre sous Flétrissement.",
+      "Olaf": "Q lui vole sa puissance d'attaque ; ton pilier coupe ses poursuites.",
+      "Yone": "Pose le pilier derrière lui pour l'empêcher de revenir avec son E.",
+      "Akali": "Elle te poke et disparaît dans son Linceul : farm prudemment et pose le pilier sur son Linceul pour la faire sortir.",
+      "Teemo": "Il te kite et t'aveugle : farm, attends ton jungler, et ne le poursuis pas sans E."
+    },
+    "mid_game": "Splitpush : Trundle prend les tours très vite. Force l'adversaire à venir à deux et utilise ta Téléportation améliorée (quête de rôle) pour rejoindre les objectifs.",
+    "late_game": "Soumission sur le tank adverse pour le neutraliser, pilier pour couper l'équipe adverse, Royaume gelé pour combattre. En side lane, continue de pousser.",
+    "ahead": "Splitpush, prends toutes les tours de ta side et force les duels. Tes vols de statistiques rendent les tanks adverses inoffensifs.",
+    "behind": "Farm, joue avec ton équipe et utilise l'ultime sur le tank adverse en teamfight.",
+    "win_condition": "Pour gagner cette partie, tu veux dominer ta side lane, prendre les tours et neutraliser le tank adverse avec Soumission.",
+    "final_tip": "Pose ton pilier derrière la cible, jamais entre elle et toi."
+  },
+  "Tryndamere|top": {
+    "identity": "Duelliste à dégâts physiques et critiques, roi du splitpush. Sa fureur (passif Vague de violence) augmente ses chances de crit ; Soif de sang (Q) le soigne en consommant la fureur, Moquerie (W) réduit les dégâts d'attaque adverses et slow ceux qui lui tournent le dos, Balafre (E) dash (son temps de recharge baisse à chaque crit), et Rage inépuisable (R) l'empêche de mourir pendant quelques secondes.",
+    "playstyle": "Lane agressive au corps à corps puis splitpush en continu. Tryndamere veut être seul en side lane et forcer l'équipe adverse à répondre ; en teamfight, il dive avec l'ultime pour tuer le carry. Faible contre le kiting et les CC, très fort en duel.",
+    "early_game": "Accumule la fureur sur les sbires, puis trade au corps à corps. Q te soigne en consommant la fureur : garde-le pour après un trade ou quand tu es menacé. E pour engager ou fuir.",
+    "level_1": "Balafre (E) en premier dans le chemin le plus joué. Elle te permet de trade puis de repartir.",
+    "level_2": "Soif de sang (Q). Passif : plus de puissance d'attaque selon tes PV manquants ; actif : soin avec la fureur. Beaucoup de joueurs le montent deux fois avant W.",
+    "level_3": "Q rang 2 ou Moquerie (W) selon le chemin. W réduit la puissance d'attaque adverse et slow ceux qui fuient : utile pour gagner un trade ou empêcher une fuite.",
+    "level_6": "Rage inépuisable : tu ne peux pas mourir pendant quelques secondes. Lance-la juste avant de mourir, puis soigne-toi avec Q à la fin. Tu peux dive sous tour et survivre.",
+    "power_spikes": [
+      "Niveau 2 : trades courts avec E + Q.",
+      "Niveau 6 : ultime pour dive ou survivre.",
+      "Premier item complet : duels dominants.",
+      "Deux items : splitpush et dives sur les carries."
+    ],
+    "lane_plan": "Joue une wave poussée et trade agressivement. Pousse et prends les plaques dès que possible. Recall quand ta wave crash. En mid game, reste en side lane et oblige deux adversaires à venir.",
+    "trading": "Trade court : E → attaques → E pour sortir. Trade long : W pour réduire les dégâts adverses → attaques → R juste avant de mourir → Q à la fin. Engage quand l'adversaire n'a plus son CC ; abandonne s'il te kite (Teemo) ou contrôle (Malphite).",
+    "jungle_plan": "",
+    "threats": [
+      "Tanks à armure qui te contrôlent (Malphite).",
+      "Kiting à distance (Teemo).",
+      "Nasus et ses slows de vitesse d'attaque."
+    ],
+    "mistakes": [
+      "Lancer l'ultime trop tôt ou trop tard.",
+      "Oublier de te soigner avec Q à la fin de l'ultime.",
+      "Se battre en 5v5 de face au lieu de splitpush."
+    ],
+    "matchup_notes": {
+      "Malphite": "Son armure et son ultime te bloquent ; splitpush de ton côté quand il part.",
+      "Garen": "W réduit ses dégâts, colle-le avec E.",
+      "Yone": "Attends son E, puis engage avec E et W.",
+      "Jax": "Attends la fin de sa Contre-attaque pour frapper.",
+      "Nasus": "Punis-le tôt avant qu'il ne stack, puis évite ses combats sous Flétrissement."
+    },
+    "mid_game": "Splitpush en continu : pousse une side lane et oblige deux adversaires à venir. Utilise ta Téléportation améliorée pour rejoindre les objectifs.",
+    "late_game": "Splitpush ou dive sur le carry adverse avec l'ultime. Évite de te battre de face contre des CC.",
+    "ahead": "Splitpush, prends toutes les tours et dive sur les carries.",
+    "behind": "Farm et splitpush en sécurité : ta menace en side lane reste réelle.",
+    "win_condition": "Pour gagner cette partie, tu veux splitpush pour attirer plusieurs adversaires et prendre les tours.",
+    "final_tip": "Lance ton ultime au moment où tu vas mourir, pas avant : chaque seconde de PV réels compte."
+  }
+}

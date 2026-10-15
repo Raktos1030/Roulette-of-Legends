@@ -1,0 +1,43 @@
+{
+ "Nidalee|jgl": {
+  "identity": "Two-form magic damage huntress who specializes in fast clearing and poke. In human form: Javelin Toss (Q) deals more damage the farther it travels and marks the target (Hunted), Bushwhack (W) places a trap, and Primal Surge (E) heals an ally and boosts their attack speed. In cougar form: Takedown (Q) executes wounded targets, Pounce (W) leaps farther onto a Hunted target, and Swipe (E) strikes in a cone. Aspect of the Cougar (R) switches forms from level 1.",
+  "playstyle": "Tempo jungler: very fast clear, invades, javelin poke and dives on marked targets. A missed javelin sharply reduces your options.",
+  "early_game": "Clear fast by alternating forms (javelin on the camp to mark it, then cougar form). Invade when you can: you're one of the fastest junglers at stealing camps. Poke lanes with the javelin before ganking, and heal your laners with human E.",
+  "level_1": "Javelin Toss / Takedown (Q) first.",
+  "level_2": "Primal Surge / Swipe (E). Healing in human form, big cone damage in cougar form: your clear speeds up.",
+  "level_3": "Bushwhack / Pounce (W). First gank: javelin to mark → long Pounce onto the Hunted target → Swipe → Takedown to finish.",
+  "level_6": "Your transformation ranks up at level 6 (stronger cougar abilities). Your dives on marked targets become very dangerous, especially in skirmishes.",
+  "power_spikes": [
+   "Level 3: ganks with javelin + Pounce.",
+   "First completed item: javelins that take a big chunk of health.",
+   "Two items: dominant poke before objectives.",
+   "Mid game: picks on marked targets."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Very fast clear and invades. Nidalee wins through tempo: steal enemy camps, control Scuttles and poke before Void Grubs (around 8 minutes) and dragons. Place traps (human W) in bushes and jungle entrances for vision. Gank lanes where your javelin can land.",
+  "trading": "Ganking: javelin (mark) → Pounce → Swipe → Takedown. Skirmishing: poke with the javelin before engaging, then dive on the marked target. Give up on it if your javelin missed and the target isn't low.",
+  "threats": [
+   "Tanks who soak your poke (Rammus, Zac, Nunu & Willump).",
+   "Fiddlesticks and Evelynn, who catch you by surprise.",
+   "Diving without a marked target."
+  ],
+  "mistakes": [
+   "Missing the javelin and diving anyway.",
+   "Staying in one form.",
+   "Forgetting to heal your laners with human E."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "You farm faster: steal his camps and poke him.",
+   "Graves": "Poke him before he sticks to you; steal his camps when he's far away.",
+   "Viego": "Poke him with the javelin before fights.",
+   "Rammus": "His armor cancels your poke and his taunt locks you down: avoid him.",
+   "Fiddlesticks": "Place traps in bushes to spot his ambushes."
+  },
+  "mid_game": "Poke and picks before objectives. Turn your tempo into dragons and towers.",
+  "late_game": "Poke with the javelin, then dive on marked, low targets. Stay back until your javelin has landed.",
+  "ahead": "Choke out the enemy jungler, take objectives and poke before every fight.",
+  "behind": "Farm, poke safely and look for picks on marked targets.",
+  "win_condition": "To win this game, you want to set the tempo through farming and invades, then poke and execute marked targets.",
+  "final_tip": "Throw your javelin from far away: the farther it travels, the more damage it deals."
+ }
+}

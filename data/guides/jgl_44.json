@@ -1,0 +1,43 @@
+{
+  "Viego|jgl": {
+    "identity": "Combattant-assassin à dégâts physiques qui possède ses victimes. Quand un champion ennemi meurt après avoir été touché par Viego, il peut prendre sa forme (et ses sorts de base) pendant un temps et se soigne (passif Assujettissement). Lame du roi déchu (Q) inflige des dégâts selon les PV actuels à chaque attaque et frappe deux fois après un sort, Gueule spectrale (W) charge et stun en dashant, Chemin tourmenté (E) crée une brume autour du terrain qui le camoufle et l'accélère, et Cœur brisé (R) le fait bondir sur une cible pour l'exécuter selon ses PV manquants.",
+    "playstyle": "Jungler de farm puis de nettoyage de teamfight : chaque élimination lui donne une nouvelle forme et un soin, ce qui lui permet d'enchaîner. Il est très sensible aux CC et aux champions qui le punissent en duel.",
+    "early_game": "Clear rapide avec Q (frappe double après chaque sort). Gank avec W : charge, dash et stun, puis Q et attaques. Évite les invasions contre les junglers d'early game qui te battent en duel.",
+    "level_1": "Lame du roi déchu (Q) en premier.",
+    "level_2": "Gueule spectrale (W). Charge et stun : ton outil de gank et de duel.",
+    "level_3": "Chemin tourmenté (E) ou second Q selon le chemin. E camoufle et accélère dans la brume : pratique pour arriver sans être vu.",
+    "level_6": "Cœur brisé : bond et exécution selon les PV manquants. Utilise-le pour finir une cible basse ; chaque élimination te permet de posséder le champion et de te soigner, donc d'enchaîner.",
+    "power_spikes": [
+      "Niveau 3 : ganks avec W.",
+      "Niveau 6 : exécution et enchaînement de possessions.",
+      "Premier item complet : duels et nettoyage forts.",
+      "Mid game : nettoyage des teamfights."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Clear rapide, ganks avec W et contrôle des crabes. Viego veut entrer dans des combats où il peut enchaîner les éliminations : joue autour des Larves (vers 8 min) et des dragons, où les combats se font à plusieurs. Évite les duels contre les junglers qui le battent (Rammus, Elise, Talon, Nidalee).",
+    "trading": "En gank : W → Q → attaques. En teamfight : attends que les CC adverses soient utilisés, entre sur une cible basse, R pour l'exécuter, puis possède-la et enchaîne. Abandonne contre les équipes à fort CC si tu n'as pas attendu leurs sorts.",
+    "threats": [
+      "Talon : matchup difficile.",
+      "Rammus et son taunt, pire matchup selon les données.",
+      "CC qui t'arrêtent pendant tes enchaînements."
+    ],
+    "mistakes": [
+      "Entrer en premier dans un combat.",
+      "Garder la forme possédée trop longtemps au lieu de revenir à Viego quand c'est mieux.",
+      "Lancer l'ultime sur une cible trop haute en PV."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il te bat en early : attends tes items et les combats groupés.",
+      "Graves": "Stun-le avec W quand il dash.",
+      "Sylas": "Il peut voler ton ultime : garde des PV.",
+      "Talon": "Il te burst avant que tu ne puisses enchaîner : joue avec ton équipe.",
+      "Rammus": "Son taunt retourne tes attaques contre toi : ne l'attaque pas pendant sa Boule défensive."
+    },
+    "mid_game": "Escarmouches à plusieurs et objectifs : chaque élimination te permet d'enchaîner.",
+    "late_game": "Entre après les CC adverses, exécute une cible basse et enchaîne les possessions pour nettoyer le combat.",
+    "ahead": "Force les combats groupés et prends les objectifs.",
+    "behind": "Farm et joue pour nettoyer les combats après les CC adverses.",
+    "win_condition": "Pour gagner cette partie, tu veux entrer dans les combats groupés au bon moment et enchaîner les éliminations grâce aux possessions.",
+    "final_tip": "N'entre jamais en premier : attends une cible basse pour lancer Cœur brisé et enchaîner."
+  }
+}

@@ -1,0 +1,43 @@
+{
+ "Viktor|adc": {
+  "identity": "Area magic damage mage. Glorious Evolution (passive): every unit killed gives him Hex Fragments (more for big minions, epic monsters and champions); every 100 fragments, he permanently augments an ability. Siphon Power (Q) damages a target, gives him a shield and empowers his next attack, Gravity Field (W) slows in an area, then stuns enemies who stay inside, Hextech Ray (E) fires a laser in a line, and Arcane Storm (R) creates a steerable storm that deals continuous damage and interrupts channels.",
+  "playstyle": "Zone control mage played like a carry: he clears waves with his laser, pokes and dominates teamfights.",
+  "early_game": "Poke with Hextech Ray (E) by hitting both your opponent and the wave. Last hit for fragments: your first augment (often E) comes sooner if you farm well. Save Gravity Field (W) against engages.",
+  "level_1": "Siphon Power (Q) first. Many players even delay their ultimate to level 7 to level E; others take it at level 6.",
+  "level_2": "Hextech Ray (E). Your main poke and wave clear tool: aim at your opponent through the wave.",
+  "level_3": "Gravity Field (W). Your defense: drop it under a diver or under the opponent your support rooted to stun them.",
+  "level_6": "Arcane Storm (at level 6 or 7, your choice): a steerable storm that deals continuous damage and interrupts channels. Combo: W → R → E → Q.",
+  "power_spikes": [
+   "First augment (often E): a much stronger laser.",
+   "Arcane Storm: 2v2 fights.",
+   "First completed item: wave clear and poke.",
+   "All augments unlocked: a dominant zone mage."
+  ],
+  "lane_plan": "Control the wave with E, poke and last hit for fragments. Save W against engages. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) adds to your scaling. Join dragons: your laser and storm control the area.",
+  "trading": "Short trade: Q → empowered attack → step back. Long trade: E → Q → attack. All-in: W → R → E → Q. Give up on it against bot lane mages who lock you down (Veigar).",
+  "jungle_plan": "",
+  "threats": [
+   "Veigar: a hard matchup.",
+   "Engage supports when W is on cooldown.",
+   "Assassins who jump on you: you have no dash."
+  ],
+  "mistakes": [
+   "Wasting W on poke and having no defense left.",
+   "Missing last hits and delaying your augments.",
+   "Casting the storm far from enemies instead of steering it onto them."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "Drop W under yourself when she dives with her ultimate.",
+   "Jinx": "She scales too: win teamfights with your storm.",
+   "Caitlyn": "Poke her with E through the wave.",
+   "Ezreal": "He dodges with E: cast W where he lands.",
+   "Veigar": "Don't walk through his cage: poke him with E from afar."
+  },
+  "mid_game": "Clear waves with E, join objectives and control the area with W and R.",
+  "late_game": "Stay behind your frontline, poke with E, drop W on divers and steer the storm onto the enemy group.",
+  "ahead": "Force teamfights around objectives: your augmented storm grows with every takedown.",
+  "behind": "Clear waves safely and reach your augments.",
+  "win_condition": "To win this game, you want to get your augments by farming, then dominate teamfights with your laser and your storm.",
+  "final_tip": "Every last hit counts toward your augments: don't neglect farming, even in bot lane."
+ }
+}

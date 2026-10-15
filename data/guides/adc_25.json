@@ -1,0 +1,43 @@
+{
+  "Twitch|adc": {
+    "identity": "Tireur à dégâts physiques et bruts, spécialiste des embuscades. Venin mortel (passif) : ses attaques empoisonnent la cible, qui subit des dégâts bruts chaque seconde. Embuscade (Q) le camoufle avec de la vitesse, puis lui donne de la vitesse d'attaque à la sortie (et se recharge si un champion empoisonné meurt), Dose de venin (W) empoisonne et slow une zone, Contamination (E) inflige des dégâts selon le poison accumulé sur chaque ennemi, et Panique (R) allonge sa portée : ses carreaux transpercent tous les ennemis touchés.",
+    "playstyle": "ADC d'embuscade : il arrive camouflé sur le flanc, empoisonne toute l'équipe adverse et nettoie le combat avec son ultime. Ses matchups difficiles sont les champions qui le surprennent au corps à corps (Nilah, Katarina, Yasuo).",
+    "early_game": "Farm et accumule du poison sur l'adversaire à chaque trade, puis Contamination (E) quand il a beaucoup d'effets. Utilise le camouflage de Q pour surprendre l'adversaire avec ton support, ou pour aider ton jungler sur un gank.",
+    "level_1": "Embuscade (Q) en premier. Ensuite, monte E en priorité.",
+    "level_2": "Contamination (E). Accumule le poison avec tes attaques, puis E pour un gros burst.",
+    "level_3": "Dose de venin (W). Ralentit et empoisonne en zone : W → attaques → E.",
+    "level_6": "Panique : longue portée et carreaux qui transpercent. En teamfight, place-toi pour aligner plusieurs ennemis.",
+    "power_spikes": [
+      "Niveau 2 : E sur une cible chargée de poison.",
+      "Niveau 6 : ultime qui transperce toute l'équipe.",
+      "Premier item complet : embuscades très dangereuses.",
+      "Teamfight : Q sur le flanc puis R sur le groupe."
+    ],
+    "lane_plan": "Farm, accumule du poison sur l'adversaire et joue les kills avec ton support. Utilise Q pour roam vers le mid ou surprendre au dragon. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense un farm propre.",
+    "trading": "Trade de base : attaques pour accumuler le poison, puis E. All-in : Q pour arriver camouflé, W, attaques, E. Abandonne contre les champions au corps à corps qui te sautent dessus (Nilah, Katarina).",
+    "jungle_plan": "",
+    "threats": [
+      "Nilah : ton matchup le plus difficile.",
+      "Katarina et Yasuo bot : matchups difficiles.",
+      "Pinks et révélations qui annulent ton camouflage."
+    ],
+    "mistakes": [
+      "Entrer dans le combat avant que les CC adverses soient utilisés.",
+      "Lancer E avec trop peu de poison sur les cibles.",
+      "Sortir du camouflage trop loin de la cible."
+    ],
+    "matchup_notes": {
+      "Jinx": "Ses Pyromâcheurs t'arrêtent : ne sors pas du camouflage juste devant elle.",
+      "Kai'Sa": "Garde Q pour éviter son engage.",
+      "Tristana": "Elle domine la lane : farm, tu te rattrapes en teamfight.",
+      "Sivir": "Son Bouclier magique peut bloquer ton E, pas le poison de tes attaques : force les trades longs et lance E quand son shield est utilisé.",
+      "Nilah": "Son Voile de liesse esquive tes attaques : attends qu'il soit utilisé."
+    },
+    "mid_game": "Utilise le camouflage pour prendre les ennemis à revers autour des objectifs. Empoisonne toute l'équipe adverse avant de lancer E.",
+    "late_game": "Arrive camouflé sur le flanc ou derrière ta frontline, lance R et aligne les ennemis. E quand ils ont beaucoup de poison.",
+    "ahead": "Cherche les embuscades et les picks : tu tues vite les cibles isolées.",
+    "behind": "Farm et attends les teamfights : un bon flanc avec l'ultime peut tout renverser.",
+    "win_condition": "Pour gagner cette partie, tu veux surprendre l'équipe adverse depuis le camouflage et nettoyer les teamfights avec ton ultime.",
+    "final_tip": "N'entre jamais le premier : attends que les CC adverses soient utilisés, puis sors du camouflage."
+  }
+}

@@ -1,0 +1,43 @@
+{
+ "Twitch|adc": {
+  "identity": "Physical and true damage marksman, an ambush specialist. Deadly Venom (passive): his attacks poison the target, which takes true damage every second. Ambush (Q) camouflages him with bonus speed, then gives him attack speed when he comes out (and resets if a poisoned champion dies), Venom Cask (W) poisons and slows an area, Contaminate (E) deals damage based on the poison stacked on each enemy, and Spray and Pray (R) extends his range: his bolts pierce every enemy they hit.",
+  "playstyle": "Ambush ADC: he arrives camouflaged on the flank, poisons the whole enemy team and cleans up the fight with his ultimate. His hard matchups are champions who surprise him up close (Nilah, Katarina, Yasuo).",
+  "early_game": "Farm and stack poison on your opponent with every trade, then Contaminate (E) when they have a lot of stacks. Use Q's camouflage to surprise your opponent with your support, or to help your jungler on a gank.",
+  "level_1": "Ambush (Q) first. After that, max E first.",
+  "level_2": "Contaminate (E). Stack poison with your attacks, then E for a big burst.",
+  "level_3": "Venom Cask (W). Slows and poisons in an area: W → attacks → E.",
+  "level_6": "Spray and Pray: long range and piercing bolts. In teamfights, position yourself to line up several enemies.",
+  "power_spikes": [
+   "Level 2: E on a target loaded with poison.",
+   "Level 6: an ultimate that pierces the whole team.",
+   "First completed item: very dangerous ambushes.",
+   "Teamfights: Q onto the flank, then R into the group."
+  ],
+  "lane_plan": "Farm, stack poison on your opponent and play for kills with your support. Use Q to roam mid or to surprise at dragon. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards clean farming.",
+  "trading": "Basic trade: attacks to stack poison, then E. All-in: Q to arrive camouflaged, W, attacks, E. Give up on it against melee champions who jump on you (Nilah, Katarina).",
+  "jungle_plan": "",
+  "threats": [
+   "Nilah: your hardest matchup.",
+   "Katarina and Yasuo bot: hard matchups.",
+   "Control Wards and reveals that cancel your camouflage."
+  ],
+  "mistakes": [
+   "Going into the fight before the enemy CC is used.",
+   "Casting E with too little poison on the targets.",
+   "Coming out of camouflage too far from the target."
+  ],
+  "matchup_notes": {
+   "Jinx": "Her Flame Chompers stop you: don't come out of camouflage right in front of her.",
+   "Kai'Sa": "Save Q to avoid her engage.",
+   "Tristana": "She dominates the lane: farm, you catch up in teamfights.",
+   "Sivir": "Her Spell Shield can block your E, not your attacks' poison: force long trades and cast E once her shield is used.",
+   "Nilah": "Her Jubilant Veil dodges your attacks: wait until it's used."
+  },
+  "mid_game": "Use camouflage to catch enemies from behind around objectives. Poison the whole enemy team before casting E.",
+  "late_game": "Arrive camouflaged on the flank or behind your frontline, cast R and line up enemies. E when they have lots of poison.",
+  "ahead": "Look for ambushes and picks: you kill isolated targets fast.",
+  "behind": "Farm and wait for teamfights: a good flank with your ultimate can turn everything around.",
+  "win_condition": "To win this game, you want to surprise the enemy team from camouflage and clean up teamfights with your ultimate.",
+  "final_tip": "Never go in first: wait for the enemy CC to be used, then come out of camouflage."
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "Camille|sup": {
+  "identity": "Physical damage dive fighter. Adaptive Defenses (passive): attacking a champion gives her a shield against that enemy's damage type. Precision Protocol (Q) empowers her next attack and can be recast (much stronger if she waits between the two), Tactical Sweep (W) strikes a cone after a delay (the outer edge slows and heals her), Hookshot (E) latches her onto a wall, then launches her at enemies, stunning them on landing, and The Hextech Ultimatum (R) makes her leap onto a champion to trap them with her in a zone.",
+  "playstyle": "Dive support: she engages from walls with her Hookshot and isolates the enemy carry with her ultimate. She loses to almost every tank and enchanter support.",
+  "early_game": "Play around walls: your Hookshot needs a wall to engage. At level 3, look for E from the river wall or the bushes, then Q and W. Don't leave the lane too early: the role quest penalizes you (see below).",
+  "level_1": "Hookshot (E) first. After that, max Q first.",
+  "level_2": "Precision Protocol (Q). Engage with your Hookshot, then Q (wait a moment before the recast for more damage).",
+  "level_3": "Tactical Sweep (W). Hit with the edge of the cone to slow and heal yourself.",
+  "level_6": "The Hextech Ultimatum: leap onto the enemy carry and trap them. Their team can't easily help them anymore: your ADC and jungler have to follow up.",
+  "power_spikes": [
+   "Level 3: Hookshot engages from a wall.",
+   "Level 6: ultimate to isolate a carry.",
+   "First completed item: more dangerous dives.",
+   "Mid game: picks with your jungler."
+  ],
+  "lane_plan": "Engage from walls when your ADC can follow. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere, which penalizes early roams. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "All-in: E from a wall → Q → attacks → W (edge of the cone) → Q recast. Back off against supports who stop or disengage you (Rakan, Rell, Braum, Poppy, Janna, Lulu): don't dive while they have their abilities.",
+  "jungle_plan": "",
+  "threats": [
+   "Rakan and Rell, the worst matchups.",
+   "Braum, Poppy, Janna and Lulu: hard matchups.",
+   "Any CC that stops you mid-dive."
+  ],
+  "mistakes": [
+   "Diving without your ADC or jungler.",
+   "Leaving the lane too early (role quest penalty).",
+   "Engaging with no wall nearby for your Hookshot."
+  ],
+  "matchup_notes": {
+   "Thresh": "Don't dive while he has his lantern to save his ADC.",
+   "Lulu": "Her polymorph stops you dead: wait until she's used it.",
+   "Pyke": "He's fragile: your ultimate isolates him.",
+   "Xerath": "He has no mobility: dive him from a wall.",
+   "Rakan": "His engages and shields outclass you: play defensively."
+  },
+  "mid_game": "Look for picks with your jungler around objectives, engaging from walls. Place Control Wards.",
+  "late_game": "Wait for the enemy CC to be used, then Hookshot from a wall and ultimate on the enemy carry.",
+  "ahead": "Dive the carries and create picks.",
+  "behind": "Stay with your team and play counter-engages: ultimate on the enemy diver to protect your ADC.",
+  "win_condition": "To win this game, you want to isolate the enemy carry with your ultimate and kill them with your team.",
+  "final_tip": "Your Hookshot needs a wall: always position near a wall before looking for an engage."
+ }
+}

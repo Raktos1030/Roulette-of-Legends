@@ -1,0 +1,43 @@
+{
+  "Lulu|sup": {
+    "identity": "Enchanteresse de protection. Pix, sa fée, suit un champion et tire des projectiles quand celui-ci attaque (passif). Duo éclatant (Q) : Lulu et Pix tirent chacun un projectile qui blesse et slow fortement, Fantaisie (W) accélère un allié (vitesse de déplacement et d'attaque) ou transforme un ennemi en petite bête qui ne peut ni attaquer ni lancer de sorts, Pix à la rescousse ! (E) envoie Pix protéger un allié avec un shield ou blesser un ennemi (et le suivre), et Croissance prodigieuse (R) fait grandir un allié : il gagne beaucoup de PV, knock-up les ennemis proches et les slow autour de lui.",
+    "playstyle": "Support de protection et de poke : elle harcèle avec Pix et Q, puis rend son carry presque intuable avec W, E et R. Un seul matchup nettement défavorable (Sona), et elle écrase les divers qu'elle métamorphose (Camille, Pantheon, Swain).",
+    "early_game": "Poke avec E sur l'adversaire, puis Q : Pix tire aussi depuis sa position. Garde Fantaisie (W) pour métamorphoser un engage adverse ou accélérer ton ADC pendant un trade. Ton shield (E) sur ton ADC sert à gagner les trades ou à survivre à un engage.",
+    "level_1": "Pix à la rescousse ! (E) en premier. Ensuite, monte E en priorité, puis W.",
+    "level_2": "Duo éclatant (Q). Combo : E sur l'adversaire, Q depuis Lulu et Pix, slow assuré.",
+    "level_3": "Fantaisie (W). Métamorphose un engage adverse, ou accélère ton ADC pour un all-in.",
+    "level_6": "Croissance prodigieuse : sauve un allié en danger (PV bonus) et knock-up les divers autour de lui. Lance-la sur le carry que l'adversaire veut tuer.",
+    "power_spikes": [
+      "Niveau 2 : E + Q pour poke.",
+      "Niveau 3 : W défensif ou offensif.",
+      "Niveau 6 : ultime qui annule un dive.",
+      "Teamfight : W, E et R sur ton meilleur carry."
+    ],
+    "lane_plan": "Harcèle avec E + Q, protège ton ADC et garde W contre les engages. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées).",
+    "trading": "Trade de base : E sur l'adversaire, Q, attaques. All-in : W (vitesse) et E (shield) sur ton ADC. Défense : W sur l'engage adverse, R sur la cible dive. Recule contre les supports qui te poke plus fort (Sona) : protège plutôt que de trade.",
+    "jungle_plan": "",
+    "threats": [
+      "Sona : ton matchup le plus difficile.",
+      "Thresh, adversaire le plus fréquent, sous ta moyenne sur les deux sources.",
+      "Plusieurs divers à la fois : tu ne peux métamorphoser qu'une cible."
+    ],
+    "mistakes": [
+      "Utiliser W pour poke au lieu de le garder contre l'engage.",
+      "Lancer l'ultime trop tard, sur un allié déjà mort.",
+      "Protéger un allié secondaire au lieu de ton meilleur carry."
+    ],
+    "matchup_notes": {
+      "Thresh": "Métamorphose-le quand il arrive avec son grappin, et E sur la cible attrapée.",
+      "Nami": "Trades de poke : utilise ton shield sur ton ADC quand elle lance Flux et reflux.",
+      "Nautilus": "W pour métamorphoser Nautilus dès que son ancre touche.",
+      "Milio": "Deux enchanteurs : le meilleur poke gagne, harcèle avec E + Q.",
+      "Sona": "Son poke passe tes shields : reste derrière les sbires."
+    },
+    "mid_game": "Accompagne ton carry le plus fort. Pose des pinks et harcèle avant les objectifs.",
+    "late_game": "Reste à côté de ton meilleur carry : W pour l'accélérer, E pour le protéger, R quand il est dive. Métamorphose le diver ou l'assassin adverse.",
+    "ahead": "Harcèle plus fort et rends ton carry intouchable.",
+    "behind": "Joue la protection : tant que ton carry vit, il peut renverser la partie.",
+    "win_condition": "Pour gagner cette partie, tu veux garder ton meilleur carry en vie et lui permettre de frapper librement.",
+    "final_tip": "Métamorphoser le diver adverse vaut souvent plus que tous tes shields : garde W pour le moment où il entre."
+  }
+}

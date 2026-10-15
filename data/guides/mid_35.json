@@ -1,0 +1,43 @@
+{
+  "TwistedFate|mid": {
+    "identity": "Mage à dégâts magiques, maître de la pression de carte. Atouts (Q) lance trois cartes en éventail, Bonne pioche (W) fait tourner trois cartes : bleue (dégâts et mana), rouge (zone et slow), dorée (stun). Paquet (E) renforce une attaque sur quatre, et Destinée (R) révèle tous les champions ennemis puis permet de se téléporter à distance. Il gagne de l'or supplémentaire à chaque élimination (passif).",
+    "playstyle": "Mid de roam et de pick à l'échelle de la carte. Twisted Fate farm, pousse, puis se téléporte avec l'ultime pour transformer un combat sur une autre lane.",
+    "early_game": "Nettoie la wave avec Q et la carte rouge, et utilise la carte bleue pour le mana. Garde la carte dorée pour stun un adversaire qui s'avance ou un assassin qui t'engage. Pousse pour pouvoir roam.",
+    "level_1": "Bonne pioche (W) en premier. Carte bleue pour last hit et récupérer du mana.",
+    "level_2": "Atouts (Q) ou Paquet (E). Carte dorée (stun) → Q sur la cible root : poke garanti.",
+    "level_3": "Kit complet. Pousse avec Q et la carte rouge, puis prépare-toi à roam.",
+    "level_6": "Destinée : révèle tous les ennemis et te téléporte. Pousse ta wave, puis R vers une side lane où un combat est gagnable, et stun la cible avec la carte dorée.",
+    "power_spikes": [
+      "Niveau 2-3 : carte dorée + Q.",
+      "Niveau 6 : roams par téléportation.",
+      "Premier item complet : burst et nettoyage de wave.",
+      "Mid game : pression constante sur la carte."
+    ],
+    "lane_plan": "Pousse la wave avec Q et la carte rouge, puis roam avec R dès qu'un combat se présente. La quête de rôle mid (retour accéléré, bottes améliorées) rend tes allers-retours encore plus rapides. Communique avec ton équipe avant chaque téléportation.",
+    "trading": "Trade court : carte dorée → Q. Défense : carte dorée sur l'assassin qui arrive. Engage avec la carte dorée quand l'adversaire est à portée ; abandonne contre les assassins qui te divent quand ta carte dorée est utilisée.",
+    "jungle_plan": "",
+    "threats": [
+      "Assassins qui te divent (Diana, Fizz, Kassadin), parmi les moins bons matchups.",
+      "Ganks pendant que tu pousses.",
+      "Roams sans wave poussée (tu perds farm et plaques)."
+    ],
+    "mistakes": [
+      "Se téléporter sans que ton équipe puisse suivre.",
+      "Gaspiller la carte dorée et ne plus pouvoir te défendre.",
+      "Roam sans pousser ta wave."
+    ],
+    "matchup_notes": {
+      "Viktor": "Pousse et roam : il ne peut pas te suivre.",
+      "Ahri": "Garde la carte dorée pour son engage.",
+      "Sylas": "Il peut voler ta Destinée : stun-le avant qu'il n'engage.",
+      "Zed": "Carte dorée au moment où il réapparaît après son ultime.",
+      "Fizz": "Il esquive ta carte dorée avec son saut : attends qu'il l'ait utilisé."
+    },
+    "mid_game": "Roams avec R, picks avec la carte dorée et objectifs. Twisted Fate est le roi de la pression de carte.",
+    "late_game": "Picks avec la carte dorée, flancs avec R et poke au Q. Reste derrière ta frontline.",
+    "ahead": "Roam en boucle et prends les objectifs.",
+    "behind": "Pousse les waves et roam pour aider les autres lanes.",
+    "win_condition": "Pour gagner cette partie, tu veux pousser ta wave et créer des avantages sur toute la carte avec Destinée.",
+    "final_tip": "Avant chaque téléportation, pousse ta wave : un roam réussi ne doit pas te coûter ta tour."
+  }
+}

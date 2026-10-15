@@ -1,0 +1,43 @@
+{
+ "Skarner|jgl": {
+  "identity": "Physical damage tank who specializes in engaging and kidnapping. Shattered Earth (Q) has him rip out a boulder that empowers his attacks, then Upheaval throws it; Seismic Bastion (W) gives a shield and slows around him; Ixtal's Impact (E) charges through walls, grabs the first champion it meets and stuns them if he slams them into a wall; Impale (R) impales up to three champions and drags them with him. His passive deals percent-health damage after three abilities on the same target.",
+  "playstyle": "Tank jungler built for ganks and kidnapping. Skarner grabs a target (E or R) and drags it into his team. He's very strong at ganking thanks to E, which goes through walls, and in teamfights thanks to his ultimate, which pulls up to three enemies out of the fight.",
+  "early_game": "Clear safely with Q and W. Gank by going through walls with E: you arrive from unexpected angles and slam the target into a wall to stun it. No duels against junglers who kite you (Lillia).",
+  "level_1": "Shattered Earth (Q) first.",
+  "level_2": "Seismic Bastion (W). A shield and a slow: your clear gets safer.",
+  "level_3": "Ixtal's Impact (E). First gank: E through the wall → grab the target → slam it into a wall (stun) → Q and W.",
+  "level_6": "Impale: impales up to three champions in front of you and drags them with you. Combined with E or Flash, you can drag a carry into the middle of your team or under your tower.",
+  "power_spikes": [
+   "Level 3: ganks through walls.",
+   "Level 6: kidnapping several targets with your ultimate.",
+   "First completed item: a solid tank.",
+   "Mid game: picks and engages."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Safe clear and ganks from unexpected angles thanks to E. Skarner excels at tower dives: grab the target and drag it toward your team. Control Scuttles, Void Grubs (around 8 minutes) and dragons with your team. Avoid duels against junglers who kite you or beat you in long fights.",
+  "trading": "Ganking: E through a wall → slam into a wall → Q → W. Teamfighting: R on up to three enemies → drag them into your team. Give up on it if your E missed and the target has an escape.",
+  "threats": [
+   "Lillia, Udyr and Gwen: hard matchups.",
+   "Ranged kiting.",
+   "CC that interrupts your charge."
+  ],
+  "mistakes": [
+   "Charging with E with no wall behind the target (no stun).",
+   "Using your ultimate when you can't drag the target toward your team.",
+   "Engaging without follow-up."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He'll invade you: gank instead of dueling.",
+   "Graves": "Grab him with E when he dashes.",
+   "Sylas": "Careful: he can steal your ultimate.",
+   "Lillia": "She kites you: play with your team.",
+   "Udyr": "He beats you in duels: avoid him."
+  },
+  "mid_game": "Picks and engages around objectives. Grab carries who step up.",
+  "late_game": "Kidnap the enemy carry with your ultimate and drag them into your team.",
+  "ahead": "Gank nonstop, take objectives and force fights.",
+  "behind": "Tank for your team and look for a decisive kidnap.",
+  "win_condition": "To win this game, you want to kidnap the enemy carries and drag them into your team.",
+  "final_tip": "Before charging with E, find the wall you're going to slam the target into."
+ }
+}

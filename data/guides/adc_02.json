@@ -1,0 +1,43 @@
+{
+  "Ashe|adc": {
+    "identity": "Tireuse utilitaire à dégâts physiques. Tir givrant (passif) : ses attaques slow et font plus de dégâts aux cibles slow (ses crits renforcent le slow au lieu d'augmenter les dégâts). Concentration du ranger (Q) se charge en attaquant puis transforme ses attaques en volées de flèches avec plus de vitesse d'attaque. Salve (W) tire un cône de flèches qui slow, Rapace (E) envoie un faucon révéler n'importe quelle zone de la carte, et Flèche de cristal enchantée (R) traverse la carte et stun le premier champion touché, d'autant plus longtemps que la flèche a voyagé loin.",
+    "playstyle": "ADC de contrôle : elle slow tout ce qu'elle touche et lance les combats avec son ultime. Elle n'a aucun dash : son placement et son slow sont sa seule défense.",
+    "early_game": "Poke avec Salve (W) quand l'adversaire vient last hit, puis attaque la cible slow. Charge Concentration du ranger en farmant et garde-la pour un trade. Avec un support d'engage, chaque slow peut devenir un kill.",
+    "level_1": "Salve (W) en premier. Poke les adversaires qui s'approchent des sbires.",
+    "level_2": "Concentration du ranger (Q). Charge-la en farmant, puis active-la pour un trade : grosse vitesse d'attaque et volées de flèches.",
+    "level_3": "Rapace (E). Envoie le faucon dans la rivière ou la jungle adverse pour repérer le jungler avant de pousser.",
+    "level_6": "Flèche de cristal enchantée : un stun global. Lance-la sur un adversaire qui marche vers ton support, sur un ennemi isolé dans une autre lane, ou pour ouvrir un teamfight.",
+    "power_spikes": [
+      "Niveau 2 : W + Q pour gagner les trades.",
+      "Niveau 6 : ultime d'engage à longue portée.",
+      "Premier item complet : slows constants.",
+      "Mid game : picks avec l'ultime."
+    ],
+    "lane_plan": "Poke avec W et contrôle la lane. Utilise E pour repérer le jungler adverse. Au niveau 6, joue avec ton support : ta flèche peut lancer l'all-in de loin. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense un farm régulier. Aide à prendre les dragons.",
+    "trading": "Trade court : W puis attaque la cible slow. All-in : Q activé et attaques continues, R si l'adversaire tente de fuir. Recule contre les divers quand ton W est en recharge.",
+    "jungle_plan": "",
+    "threats": [
+      "Xerath bot : matchup difficile.",
+      "Assassins et divers : tu n'as aucun dash.",
+      "Adversaires qui bloquent ta flèche (Yasuo et son Mur de vent)."
+    ],
+    "mistakes": [
+      "Gâcher l'ultime sur une cible protégée par des sbires ou un shield.",
+      "Oublier d'envoyer le faucon avant de pousser.",
+      "Se placer devant sa frontline."
+    ],
+    "matchup_notes": {
+      "Jinx": "Elle scale : punis-la tôt avec W et ton support.",
+      "Ezreal": "Il n'a qu'un dash pour fuir et ton slow le rattrape ensuite : reste hors de portée de son Q.",
+      "Lucian": "Il gagne les trades courts : attends que son dash soit utilisée pour attaquer.",
+      "Caitlyn": "Elle te dépasse en portée : farm prudemment et gagne les combats plus tard.",
+      "Xerath": "Il poke de loin : reste derrière les sbires et vise-le avec ta flèche quand il gaspille ses sorts."
+    },
+    "mid_game": "Groupe avec ton équipe. Envoie Rapace sur les objectifs avant d'y aller, et lance les combats avec ta flèche.",
+    "late_game": "Frappe ce qui est à portée derrière ta frontline : ton slow protège ton équipe et empêche les fuites. Garde l'ultime pour le carry adverse ou pour arrêter un diver.",
+    "ahead": "Cherche des picks avec ta flèche et prends les objectifs.",
+    "behind": "Farm en sécurité et joue le rôle d'initiatrice : ta flèche reste utile même derrière en or.",
+    "win_condition": "Pour gagner cette partie, tu veux créer des picks avec ta flèche et slow l'équipe adverse pendant les teamfights.",
+    "final_tip": "Plus la flèche voyage loin, plus le stun est long : lance-la de loin sur un ennemi qui ne la voit pas venir."
+  }
+}

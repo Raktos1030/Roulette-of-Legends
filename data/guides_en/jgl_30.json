@@ -1,0 +1,43 @@
+{
+ "Quinn|jgl": {
+  "identity": "Physical damage marksman. Harrier (passive) marks targets for a bonus attack, Blinding Assault (Q) blinds, Heightened Senses (W) reveals an area and gives her speed when Harrier triggers, Vault (E) leaps onto a target, then knocks it back and slows it (and interrupts dashes), and Behind Enemy Lines (R) turns her into a very fast form to cross the map.",
+  "playstyle": "Ranged tempo jungler: fast clear, invades and quick ganks thanks to the speed of her ultimate. Quinn wins duels against melee junglers without CC by blinding them and knocking them back. She's fragile against tanks and CC.",
+  "early_game": "Clear fast with your marked attacks. Invade when your laners have priority: Q (blind) turns a lot of duels against melee junglers. Gank from unexpected angles.",
+  "level_1": "Blinding Assault (Q) first.",
+  "level_2": "Vault (E). A leap that knocks back and slows, and interrupts enemy dashes: your dueling and escape tool.",
+  "level_3": "Heightened Senses (W). Speed on every Harrier and an area reveal (useful to see into bushes or track the enemy jungler).",
+  "level_6": "Behind Enemy Lines: a very fast form to cross the map, then a strong attack when you leave it. Use it to gank any lane quickly or join an objective fight.",
+  "power_spikes": [
+   "Level 3: duels with Q + E.",
+   "Level 6: fast ganks across the whole map.",
+   "First completed item: burst on carries.",
+   "Mid game: picks and map pressure."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear, invades and ganks. Quinn wants to set the tempo: control Scuttles, steal enemy camps and gank with the speed of your ultimate after 6. Play Void Grubs (around 8 minutes) and dragons with your team. Avoid fights against CC tanks.",
+  "trading": "Dueling: Q (blind) → marked attacks → E to knock them back when they stick to you. Ganking: arrive fast with your ultimate, Q on the target, attacks. Give up on it against tanks who taunt or root you (Rammus).",
+  "threats": [
+   "Rammus: your hardest matchup.",
+   "CC tanks who stick to you.",
+   "Kindred and Naafiri, unfavorable according to the data."
+  ],
+  "mistakes": [
+   "Using E to engage instead of saving it to knock back an engage.",
+   "Staying in ultimate form in the middle of the enemy team (you're fragile).",
+   "Fighting a tank who soaks your burst."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Blind him when he engages you and knock him back with E.",
+   "Viego": "Blind his attacks and kite him.",
+   "Kayn": "Punish him before his transformation.",
+   "Master Yi": "Blind him the moment he goes in.",
+   "Rammus": "His taunt cancels your kiting: avoid him."
+  },
+  "mid_game": "Map pressure with your ultimate, picks and objectives.",
+  "late_game": "Picks on isolated targets; in teamfights, hit from range and keep E to defend yourself.",
+  "ahead": "Choke out the enemy jungler and create advantages across the whole map.",
+  "behind": "Farm and look for picks on isolated targets.",
+  "win_condition": "To win this game, you want to set the tempo through invades and fast ganks with your ultimate.",
+  "final_tip": "Keep Vault to knock back the enemy engage: it also interrupts dashes."
+ }
+}

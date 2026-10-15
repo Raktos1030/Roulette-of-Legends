@@ -1,0 +1,43 @@
+{
+ "Graves|jgl": {
+  "identity": "Physical damage marksman in the jungle. His shotgun fires several pellets at short range and has to reload after two shots (passive). End of the Line (Q) fires a charge that explodes after a delay or against a wall, Smoke Screen (W) cuts vision and slows, Quickdraw (E) dashes, reloads one shell and gives armor, and Collateral Damage (R) fires a big shell that explodes in a cone.",
+  "playstyle": "Very fast farming jungler who invades and duels. Graves is one of the best early duelists in the jungle and can steal enemy camps. He turns his gold lead into carry damage. Weaker against tanks and junglers who lock him down.",
+  "early_game": "Clear fast, using E to reload and gain armor. Graves is very good at invading: if your team has priority, steal enemy camps and fight the enemy jungler. Gank lanes where your damage is enough, but farming remains your main strength.",
+  "level_1": "Quickdraw (E) first. Dash to reload and gain armor on the first camp.",
+  "level_2": "End of the Line (Q). Fire it toward a wall for a faster explosion: Q + E reload is your basic combo.",
+  "level_3": "Smoke Screen (W) or a second Q depending on the path. W cuts your opponent's vision and slows them: very useful for duels and escapes.",
+  "level_6": "Collateral Damage: a big shot that knocks you back and explodes in a cone. Use it to finish a kill, to escape or to hit several targets.",
+  "power_spikes": [
+   "Level 3: very strong duels and invades.",
+   "Level 6: ultimate to finish and escape.",
+   "First completed item: carry damage.",
+   "Mid game: invades and control of the enemy jungle."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Very fast full clear, then invades if your lanes have priority. Graves wins through gold: steal enemy camps, control Scuttles and take Void Grubs (around 8 minutes). He can gank too, but his real edge is farming faster and winning duels. Track the enemy jungler and punish them when they're on your side.",
+  "trading": "Dueling: Q toward a wall → E (reload + armor) → attacks → W if your opponent tries to run → R to finish. Ganking: W to cut vision, then Q and attacks. Give up on it against tanks who lock you down (Rammus) or when you have no E left.",
+  "threats": [
+   "Tanks who lock you down and soak damage (Rammus, Skarner).",
+   "Fiddlesticks and Zyra, unfavorable according to the data.",
+   "Duels with no E available (no armor, no reload)."
+  ],
+  "mistakes": [
+   "Forgetting to reload with E before a fight.",
+   "Invading without lane priority.",
+   "Opening with your ultimate instead of using it to finish or escape."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "You're both strong early: win the duel with E and W.",
+   "Viego": "You beat him early: invade him before he scales.",
+   "Sylas": "He can steal your ultimate; punish him in duels.",
+   "Fiddlesticks": "You beat him in early duels, but his ultimate destroys you in teamfights: keep vision.",
+   "Nidalee": "She farms just as fast and pokes you: contest her camps with your team."
+  },
+  "mid_game": "Invades, control of the enemy jungle and objectives. Graves is very good at choking out the enemy jungler.",
+  "late_game": "Short-range carry: go in after the enemy CC, hit nearby targets and use E for armor.",
+  "ahead": "Choke out the enemy jungler, take every objective and force fights.",
+  "behind": "Farm, play with your team and avoid invading.",
+  "win_condition": "To win this game, you want to farm faster than your opponent, win duels and turn your gold into carry damage.",
+  "final_tip": "Before every fight, reload with E: the armor and the shells make the difference."
+ }
+}

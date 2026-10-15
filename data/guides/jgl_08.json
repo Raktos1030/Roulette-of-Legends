@@ -1,0 +1,43 @@
+{
+  "Evelynn|jgl": {
+    "identity": "Assassin à dégâts magiques qui chasse dans l'invisibilité. À partir du niveau 6, Evelynn devient camouflée hors combat (passif Ombre démoniaque) et se soigne quand elle est blessée hors combat. Piques de haine (Q) enchaîne plusieurs frappes, Séduction (W) charme la cible si elle attend avant de frapper (et réduit sa résistance magique), Coup de fouet (E) frappe et devient un dash en camouflage, et Faiseuse de veuves (R) la rend inciblable, frappe en cône et la fait reculer, avec des dégâts accrus sur les cibles basses.",
+    "playstyle": "Jungler de farm jusqu'au niveau 6, puis d'assassinats et de ganks invisibles. Très faible avant le 6, très dangereuse ensuite.",
+    "early_game": "Farm rapidement jusqu'au niveau 6 : c'est ta priorité absolue. Évite les escarmouches et les invasions adverses, tu les perds. Place des wards sur tes entrées de jungle pour voir venir le jungler adverse.",
+    "level_1": "Piques de haine (Q) en premier. Les piques nettoient les camps rapidement.",
+    "level_2": "Coup de fouet (E). Dégâts sur les camps ; en camouflage (à partir du 6), il devient un dash vers la cible.",
+    "level_3": "Séduction (W), ou un deuxième Q selon le chemin. Tu peux ganker une cible très exposée, mais ta vraie force arrive au niveau 6.",
+    "level_6": "Camouflage hors combat et Faiseuse de veuves. Combo : approche invisible → W (attends que le charme se charge au maximum) → E dash → Q → R pour finir et reculer. Tes ganks deviennent très dangereux.",
+    "power_spikes": [
+      "Niveau 6 : camouflage et ultime, gros pic d'assassinat.",
+      "Premier item complet : burst qui tue les carries.",
+      "Deux items : une des assassins les plus dangereuses.",
+      "Mid game : picks invisibles sur toute la carte."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Full clear jusqu'au niveau 6 en évitant les combats : Evelynn est très faible avant. Au niveau 6, gank en série avec le camouflage : les laners adverses ne te voient pas venir. Contrôle les Larves (vers 8 min) et les dragons en profitant de ton invisibilité pour surprendre ceux qui les contestent. Les pinks et les révélateurs adverses sont ta principale menace : repère-les et évite-les.",
+    "trading": "En gank : approche camouflée, W chargé au maximum (charme plus long), E dash, Q, puis R quand la cible est basse. En escarmouche : attends que les CC adverses soient utilisés, burst la cible la plus fragile et recule avec R. Abandonne si tu es révélé avant d'engager.",
+    "threats": [
+      "Révélateurs et pinks, qui brisent ton camouflage.",
+      "Invasions avant le niveau 6.",
+      "Tanks qui encaissent ton burst."
+    ],
+    "mistakes": [
+      "Se battre avant le niveau 6.",
+      "Lancer W et frapper tout de suite (charme court).",
+      "Utiliser R pour engager au lieu de finir et reculer."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Il t'envahira avant le 6 : évite-le et reviens plus forte.",
+      "Viego": "Burst-le avant qu'il ne possède un de tes alliés.",
+      "Graves": "Il te bat avant le 6 ; après, tu le tues dans l'invisibilité.",
+      "Sylas": "Il peut voler ton ultime : burst-le rapidement.",
+      "Ivern": "Il protège ses alliés avec ses shields : vise des cibles hors de sa portée."
+    },
+    "mid_game": "Picks invisibles, ganks et objectifs. Chaque carry isolé est une cible.",
+    "late_game": "Flanke camouflée, attends les CC adverses et burst le carry. Recule avec R.",
+    "ahead": "Picks en série et objectifs : Evelynn avec de l'avance terrorise la carte.",
+    "behind": "Farm, cherche des picks sur des cibles isolées et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux atteindre le niveau 6 sans perdre, puis assassiner les carries grâce au camouflage.",
+    "final_tip": "Attends toujours que Séduction soit chargée au maximum avant de frapper : le charme dure beaucoup plus longtemps."
+  }
+}

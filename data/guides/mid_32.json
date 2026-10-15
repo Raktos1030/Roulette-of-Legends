@@ -1,0 +1,43 @@
+{
+  "Sylas|mid": {
+    "identity": "Combattant-mage à dégâts magiques qui vole les ultimes. Croix du forçat (Q) croise ses chaînes pour slow puis exploser, Régicide (W) bondit sur une cible et le soigne davantage quand il est bas, Évasion / Enlèvement (E) dash puis lance une chaîne qui le tire vers l'ennemi en le stunnant, et Détournement (R) vole l'ultime d'un champion adverse. Après chaque sort, son attaque suivante frappe en zone (passif).",
+    "playstyle": "Au mid, Sylas est un combattant de courte portée qui gagne les trades grâce aux soins de W et roam avec E. Son ultime volé dépend de la composition adverse.",
+    "early_game": "Farm avec Q et le passif. Trade avec E → chaîne (stun) → Q → W quand l'adversaire s'avance. Contre les mages à longue portée, farm et attends ton jungler.",
+    "level_1": "Évasion / Enlèvement (E) en premier.",
+    "level_2": "Régicide (W). Bond et soin : E → W est un bon trade court.",
+    "level_3": "Croix du forçat (Q). Kit complet : E → chaîne → Q → W → attaques (passif).",
+    "level_6": "Détournement : vole l'ultime le plus utile de l'équipe adverse (engage, zone, exécution, soin). Garde-le pour le moment décisif si c'est un ultime de teamfight.",
+    "power_spikes": [
+      "Niveau 3 : combo complet.",
+      "Niveau 6 : ultime volé.",
+      "Premier item complet : escarmouches fortes.",
+      "Mid game : playmaking avec l'ultime volé."
+    ],
+    "lane_plan": "Farm, trade court avec W et roam avec E après le niveau 6. La quête de rôle mid (retour accéléré) rend tes roams plus rentables. Contre les mages à longue portée, joue le farm et le jungler.",
+    "trading": "Trade court : E → chaîne → W. All-in : E → Q → W → R volé. Abandonne contre les mages qui te stoppent (Vex) ou te poke hors de portée.",
+    "jungle_plan": "",
+    "threats": [
+      "Vex : ton matchup le plus difficile (son passif stoppe tes dashes).",
+      "Mages à longue portée (Hwei, Zoé, Taliyah).",
+      "Compositions adverses sans ultime intéressant à voler."
+    ],
+    "mistakes": [
+      "Voler l'ultime au hasard sans regarder la composition adverse.",
+      "Utiliser W trop tôt, sans avoir besoin du soin.",
+      "Engager avec E contre un mage qui peut t'interrompre."
+    ],
+    "matchup_notes": {
+      "Ahri": "Esquive son Charme avec E et vole son ultime pour la poursuivre.",
+      "Zed": "W te soigne pendant son burst ; vole son ultime.",
+      "Viktor": "Engage quand son champ gravitationnel est en recharge.",
+      "Vex": "Son passif interrompt ton E : farm et roam.",
+      "Hwei": "Il te poke : joue autour de ton jungler."
+    },
+    "mid_game": "Roams et playmaking avec l'ultime volé autour des objectifs.",
+    "late_game": "Utilise l'ultime volé au bon moment, puis W pour survivre.",
+    "ahead": "Roam, prends les objectifs et force les combats.",
+    "behind": "Farm et cherche un ultime volé décisif.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner les trades courts grâce à W et retourner les teamfights avec l'ultime volé.",
+    "final_tip": "Avant de voler un ultime, regarde toute la composition adverse : choisis celui qui aura le plus d'impact."
+  }
+}

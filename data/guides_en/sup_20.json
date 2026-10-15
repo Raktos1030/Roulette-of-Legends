@@ -1,0 +1,43 @@
+{
+ "Pantheon|sup": {
+  "identity": "Aggressive physical damage fighter. Mortal Will (passive): after a certain number of abilities or attacks, his next ability is empowered. Comet Spear (Q) stabs with his spear or throws it from range, Shield Vault (W) leaps onto a target to stun it, Aegis Assault (E) makes him invulnerable to attacks from the front while he strikes rapidly, and Grand Starfall (R) launches him into the air to land far away, at the chosen spot.",
+  "playstyle": "Aggressive laning and roaming support: he pokes hard with Q, stuns with W and joins other lanes with his ultimate. He wins the lane in gold but often loses the game: against tanks and enchanters (Taric, Braum, Soraka, Rell, Milio), his aggression gets cancelled out. He has to convert early.",
+  "early_game": "Poke with a thrown Comet Spear (Q), then look for W → empowered Q when your opponent steps up. At level 2, you can win an all-in with your ADC. Aegis Assault (E) makes you invulnerable to attacks from the front: use it to survive an all-in or tank a turret.",
+  "level_1": "Shield Vault (W) first. After that, max Q first.",
+  "level_2": "Comet Spear (Q). Combo: W (stun) → attacks → Q (empowered if your passive is ready).",
+  "level_3": "Aegis Assault (E). Blocks attacks from the front while fighting or escaping.",
+  "level_6": "Grand Starfall: jump to join another lane or a fight. Roam mid or to dragon, or land behind your opponent to cut off their escape.",
+  "power_spikes": [
+   "Level 2: W + Q, a very strong all-in.",
+   "Level 6: roams with Grand Starfall.",
+   "First completed item: very punishing Q poke.",
+   "Mid game: dives on isolated targets."
+  ],
+  "lane_plan": "Harass with Q, play all-ins with your ADC and roam with R at level 6. Careful: stay in the bot lane until level 5, because since patch 26.16 your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "Basic trade: thrown Q. All-in: W → attacks → empowered Q → E to block the counterattack. Back off against supports who heal or outlast you (Soraka, Milio, Braum, Taric): your burst isn't enough.",
+  "jungle_plan": "",
+  "threats": [
+   "Taric: your hardest matchup.",
+   "Braum, Rell, Poppy, Soraka and Milio: hard matchups.",
+   "Common tank supports (Thresh, Leona), below your average."
+  ],
+  "mistakes": [
+   "Roaming before level 5 (role quest penalty).",
+   "Casting E in the wrong direction (it only blocks from the front).",
+   "Letting the game drag on without converting your lane lead."
+  ],
+  "matchup_notes": {
+   "Thresh": "Stay behind minions for his hook, and stun him with W when he steps up.",
+   "Lulu": "She polymorphs you mid-engage: wait until she's used W.",
+   "Pyke": "He's fragile: W → Q punishes him.",
+   "Nautilus": "Stay behind minions for his anchor, and stun him with W when he engages.",
+   "Taric": "His stun and invulnerability cancel your all-ins: play for poke."
+  },
+  "mid_game": "Roam with Grand Starfall to objectives and fights. Place Control Wards and look for picks.",
+  "late_game": "Dive isolated targets with W, or land with R behind the enemy team when your team engages. E to block the counterattack.",
+  "ahead": "Roam and create advantages across the whole map with R.",
+  "behind": "Poke with Q and keep W to protect your ADC.",
+  "win_condition": "To win this game, you want to win the lane early and turn your lead into objectives through your roams.",
+  "final_tip": "Aegis Assault only blocks what comes from the front: face your opponent, not your escape route."
+ }
+}

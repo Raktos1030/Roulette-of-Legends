@@ -1,0 +1,43 @@
+{
+  "Shaco|jgl": {
+    "identity": "Assassin à dégâts hybrides (physiques ou magiques selon l'orientation), maître de la tromperie. Tromperie (Q) le téléporte et le rend invisible, Boîte surprise (W) pose une boîte invisible qui effraie puis attaque, Poison double (E) slow et inflige plus de dégâts aux cibles blessées, et Hallucination (R) crée un clone qui explose en mourant. Ses attaques dans le dos font plus de dégâts (passif).",
+    "playstyle": "Jungler de ganks précoces, d'invasions et de trolling contrôlé. Shaco crée le chaos : ganks invisibles, boîtes placées dans la jungle adverse, vol de camps. Deux orientations existent : boîtes (W maximisé) ou dégâts physiques (E maximisé).",
+    "early_game": "Pose des boîtes à ton premier camp pour un clear plus rapide, puis gank très tôt avec Q (invisibilité) : Shaco est un des junglers qui gankent le plus tôt. Envahis la jungle adverse avec des boîtes posées à l'avance sur ses camps.",
+    "level_1": "Boîte surprise (W) en premier. Pose plusieurs boîtes sur le premier camp pour le nettoyer vite.",
+    "level_2": "Tromperie (Q). Invisibilité et téléportation : gank possible dès le niveau 2 sur une lane poussée.",
+    "level_3": "Poison double (E). Slow passif et dégâts : Q → attaques dans le dos → E, avec une boîte posée à côté pour effrayer.",
+    "level_6": "Hallucination : clone qui trompe l'adversaire et explose en mourant. Utilise-le pour esquiver un sort, pour faire croire à une fuite ou pour ajouter des dégâts.",
+    "power_spikes": [
+      "Niveau 2-3 : ganks invisibles très précoces.",
+      "Niveau 6 : clone pour les jeux de tromperie.",
+      "Premier item complet : burst qui tue un carry.",
+      "Mid game : picks et invasions."
+    ],
+    "lane_plan": "",
+    "jungle_plan": "Pose des boîtes pour le clear, puis ganks très précoces et invasions. Place des boîtes sur les camps adverses et dans les bushs près des objectifs : elles donnent aussi de la vision. Vole les camps et harcèle le jungler adverse. Les Larves (vers 8 min) et les dragons sont plus faciles à voler avec des boîtes déjà posées.",
+    "trading": "En gank : Q derrière la cible → attaques dans le dos → E → W pour effrayer. En escarmouche : utilise le clone pour tromper. Abandonne contre les révélateurs et les cibles entourées d'alliés.",
+    "threats": [
+      "Talon : ton matchup le plus difficile.",
+      "Révélateurs et pinks.",
+      "Tanks qui encaissent ton burst."
+    ],
+    "mistakes": [
+      "Utiliser Q pour engager sans issue de sortie.",
+      "Poser les boîtes n'importe où au lieu des chemins de passage.",
+      "Rester dans les combats groupés où tu es fragile."
+    ],
+    "matchup_notes": {
+      "Lee Sin": "Piège ses camps avec des boîtes.",
+      "Viego": "Burst-le avant qu'il ne possède tes alliés.",
+      "Graves": "Il te bat en duel : piège ses camps et gank ailleurs.",
+      "Talon": "Il est aussi mobile et burst plus fort : évite les duels.",
+      "Nocturne": "Son ultime te trouve même invisible : garde Q pour fuir."
+    },
+    "mid_game": "Picks, invasions et objectifs. Pose des boîtes autour des objectifs avant les combats.",
+    "late_game": "Picks sur les carries isolés et désorganisation de l'équipe adverse avec le clone et les boîtes.",
+    "ahead": "Étouffe le jungler adverse et chasse les carries.",
+    "behind": "Cherche des picks sur les cibles isolées et pose des boîtes pour la vision.",
+    "win_condition": "Pour gagner cette partie, tu veux créer le chaos en early par les ganks et les invasions, puis chasser les carries isolés.",
+    "final_tip": "Pose tes boîtes à l'avance là où l'ennemi va passer : elles effraient et donnent de la vision."
+  }
+}

@@ -1,0 +1,43 @@
+{
+ "Hwei|mid": {
+  "identity": "Magic damage mage with nine abilities: each subject opens three variants. Subject: Disaster (Q) holds the damage spells (QQ fireball, QW bolt that punishes immobile or low targets, QE fissure that slows), Subject: Serenity (W) the utility spells (WQ current that speeds up, WW pool that protects, WE empowered attacks that restore mana), and Subject: Torment (E) the CC (EQ fear, EW eye that roots, EE maw that pulls). Spiraling Despair (R) slows more and more, then explodes. Hitting with two different spells triggers his passive.",
+  "playstyle": "Long-range poke and control mage. He demands picking the right variant at the right moment.",
+  "early_game": "Poke with QQ (fireball) and QE (fissure) when your opponent comes to last hit. Keep an E control spell ready (EQ fear or EW CC) against assassins. WE helps you manage mana while farming.",
+  "level_1": "Subject: Disaster (Q) first. Poke and farm.",
+  "level_2": "Subject: Torment (E). Defensive CC: EQ to fear an engage, EW to root a target.",
+  "level_3": "Subject: Serenity (W). WW to protect yourself, WQ to escape or roam. Kill combo: EW (CC) → QW (bolt on an immobile target) → QQ.",
+  "level_6": "Spiraling Despair: a growing slow, then an explosion that spreads. Combo: EW → R → QW → QQ. In teamfights, cast it on a target in the middle of the group.",
+  "power_spikes": [
+   "Level 3: full EW → QW combo.",
+   "Level 6: area ultimate.",
+   "First completed item: very punishing poke.",
+   "Mid game: control and poke before objectives."
+  ],
+  "lane_plan": "Poke with QQ and QE, keep E for defense. Push your wave and join your jungler or objectives. The mid role quest (faster recall) helps you reset after poking. Avoid getting dived without CC ready.",
+  "trading": "Short trade: QQ from range. Long trade: EW → QW → QQ. Against an engage: EQ (fear) or WW (shield). Engage when your CC lands; give up on it against assassins who arrive while your CC is on cooldown.",
+  "jungle_plan": "",
+  "threats": [
+   "Katarina: your hardest matchup.",
+   "Assassins who dive you when your E spells are on cooldown.",
+   "Ganks without WQ to escape."
+  ],
+  "mistakes": [
+   "Casting QW (bolt) on a target who can move.",
+   "Wasting your CC and no longer being able to defend yourself.",
+   "Standing too close for no reason: your strength is range."
+  ],
+  "matchup_notes": {
+   "Viktor": "Poke him from range and keep EQ for his engage.",
+   "Syndra": "A range duel: dodge her stun and poke her.",
+   "Ahri": "Keep EW for the end of her ultimate.",
+   "Katarina": "Keep EQ or EW for the moment she lands on her dagger.",
+   "Galio": "Poke him from far away, he can't reach you."
+  },
+  "mid_game": "Poke before objectives and control areas with E and R.",
+  "late_game": "Poke and control mage behind your frontline: EW on the enemy engage, R on the group, QQ to poke.",
+  "ahead": "Poke before objectives, take towers and roam with WQ.",
+  "behind": "Farm from range and play with your team.",
+  "win_condition": "To win this game, you want to poke from long range and control teamfights with your Torment spells and ultimate.",
+  "final_tip": "Root first (EW), then cast the bolt (QW): it hurts much more on an immobile target."
+ }
+}

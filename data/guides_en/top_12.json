@@ -1,0 +1,84 @@
+{
+ "Vayne|top": {
+  "identity": "Marksman dealing physical and true damage. Tumble (Q) dashes and empowers her next attack, Silver Bolts (W) deals percent-health true damage every third attack, Condemn (E) knocks back and stuns against a wall, and Final Hour (R) increases her damage and makes her invisible after each Tumble. In top, she counters slow juggernauts.",
+  "playstyle": "Kiting and short-trade lane against melee fighters, then split pushing.",
+  "early_game": "Kite melee opponents and trade with Q + attack. Keep E to knock them back when they engage, ideally into a wall. Farm safely: you're fragile with no sustain.",
+  "level_1": "Tumble (Q) first. Q + attack on an opponent who comes to last hit, then back off.",
+  "level_2": "Silver Bolts (W). Third attack deals true damage: Q → attack → attack → attack is your basic trade.",
+  "level_3": "Condemn (E). Knocks back your opponent; against a wall, they're stunned. It's your main survival tool against engages and your best all-in near the lane's walls.",
+  "level_6": "Final Hour: more damage and invisibility after each Tumble. You win long fights against fighters and can dodge targeted abilities.",
+  "power_spikes": [
+   "Level 3: Q + W + E into a wall.",
+   "Level 6: an ultimate that wins long duels.",
+   "First completed item: real DPS against tanks.",
+   "Late game: dominant duels and split pushing if you survived the lane."
+  ],
+  "lane_plan": "Play a neutral wave, kite melee champions and use the lane's walls for Condemn. Recall when your wave crashes. Against an armored tank or a ranged champion, play near your tower and aim for the late game.",
+  "trading": "Short trade: Q → attack → back off. Long trade: Q → attacks (W) → E into a wall. Engage when your opponent no longer has their dash; give up on it against champions who shut you down (Malphite with his ultimate, Teemo with his blind).",
+  "jungle_plan": "",
+  "threats": [
+   "Malphite and his ultimate: your hardest matchup.",
+   "Teemo and his blind, which cancels your attacks.",
+   "Nasus and his attack speed slows."
+  ],
+  "mistakes": [
+   "Using Q to engage and having no escape left.",
+   "Wasting E with no wall behind your opponent.",
+   "Fighting head-on against CC."
+  ],
+  "matchup_notes": {
+   "Malphite": "Farm under your tower, take no risks and play for the late game.",
+   "Darius": "Kite him out of his Apprehend range and knock him back with E if he sticks to you.",
+   "Garen": "Kite him out of his Q and knock him back with E after his silence.",
+   "K'Sante": "Your true damage ignores his resistances; knock back his engage with E.",
+   "Nasus": "Wither makes you useless: punish him early before he stacks, then avoid his fights."
+  },
+  "mid_game": "Split pushing and duels. Avoid enemy control zones and use your upgraded Teleport (role quest) to join objectives.",
+  "late_game": "Ranged melee-killer DPS: hit the enemy tank with W, knock back divers with E and use your ultimate's invisibility to reposition.",
+  "ahead": "Split push, force duels and take towers.",
+  "behind": "Farm and scale: Vayne stays dangerous in the late game.",
+  "win_condition": "To win this game, you want to survive the tanks in lane, then dominate the side lane in duels.",
+  "final_tip": "Play near walls: Condemn into a wall is your stun and your survival."
+ },
+ "Vladimir|top": {
+  "identity": "Magic damage mage who heals in combat. Transfusion (Q) drains health (empowered every second cast), Sanguine Pool (W) makes him untargetable in a pool, Tides of Blood (E) charges up, then explodes in an area, and Hemoplague (R) amplifies the damage targets take before making them explode. His passive converts his bonus health into ability power and vice versa. He's played top in about a fifth of his games (mid remains his main role).",
+  "playstyle": "Sustain and scaling lane. Vladimir is weak early against aggressive fighters and becomes a very strong area battle mage in teamfights in the mid and late game. He doesn't use mana but health.",
+  "early_game": "Farm with Q (you heal with every cast) and poke your opponent when your empowered Q is ready. Keep W to dodge an engage or a big ability. Avoid all-ins before level 6.",
+  "level_1": "Transfusion (Q) first. Q on minions to farm and heal; empowered Q on your opponent.",
+  "level_2": "Tides of Blood (E) on the most common path (Q → E → W), or Sanguine Pool (W) on the alternative. E helps you farm and poke in an area; W is your dodging tool.",
+  "level_3": "Full basic kit. W makes you untargetable: use it to dodge the enemy's big ability or get out of an all-in.",
+  "level_6": "Hemoplague: amplifies the damage taken by every target hit, then explodes. In teamfights, cast it on several enemies; in lane, for an all-in after your empowered Q.",
+  "power_spikes": [
+   "Level 6: ultimate for all-ins.",
+   "First completed item: damage and sustain.",
+   "Two items: a very strong battle mage.",
+   "Late game: devastating teamfights."
+  ],
+  "lane_plan": "Let the wave come to you, farm with Q and poke your opponent. Avoid enemy engages before level 6. Recall with a pushed wave.",
+  "trading": "Short trade: empowered Q. Long trade: E → Q → R → W to dodge. Engage when your Q is empowered; give up on it against champions who beat you in melee range (Irelia, Riven).",
+  "jungle_plan": "",
+  "threats": [
+   "Aggressive early fighters (Irelia, Riven).",
+   "Nasus and tanks who soak your burst.",
+   "Ganks before level 6."
+  ],
+  "mistakes": [
+   "Using W too early and no longer being able to dodge.",
+   "Engaging before level 6 against a stronger fighter.",
+   "Missing your ultimate in teamfights."
+  ],
+  "matchup_notes": {
+   "Yone": "Keep W for his Q3 and poke with your empowered Q.",
+   "Jax": "His Counter Strike doesn't dodge your abilities: Q and E during his dodge.",
+   "Teemo": "Your sustain soaks his poke.",
+   "Irelia": "Keep W for her engage.",
+   "Nasus": "He soaks your burst and slows you: farm and scale."
+  },
+  "mid_game": "Play around objectives and set up teamfights with your ultimate. Farm side lanes safely.",
+  "late_game": "Battle mage: go into the brawl with W, cast your ultimate on several targets and heal with Q.",
+  "ahead": "Force fights around objectives and dominate teamfights.",
+  "behind": "Farm and scale: Vladimir stays strong in the late game.",
+  "win_condition": "To win this game, you want to survive the lane, scale and dominate teamfights with your ultimate.",
+  "final_tip": "Keep your Sanguine Pool for the enemy's big ability: it dodges almost everything."
+ }
+}

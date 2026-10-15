@@ -1,0 +1,43 @@
+{
+ "Seraphine|adc": {
+  "identity": "Magic damage utility mage. Stage Presence (passive): every third basic ability, she casts the chosen ability twice; casting near allies gives her next attack more range and magic damage. High Note (Q) deals area damage, Surround Sound (W) shields and speeds up nearby allies (and heals them if she already has a shield), Beat Drop (E) damages in a line and impairs movement, and Encore (R) charms enemies hit, with a range that extends with every champion it passes through.",
+  "playstyle": "A scaling mage played like an ADC: she farms from range, then decides teamfights with her ultimate and her double-cast abilities. She's behind in gold at 15 minutes on average against most common ADCs: she wins later.",
+  "early_game": "Farm with High Note (Q) and poke your opponent at the same time. Count your abilities: the third one is double-cast by your passive (double Q to poke, double E to root, double W to protect). Stay near your support: your empowered attacks have more range.",
+  "level_1": "High Note (Q) first. Farm and poke with Q.",
+  "level_2": "Beat Drop (E). A line slow that becomes CC on a target that's already slowed or rooted: combo with your support.",
+  "level_3": "Surround Sound (W). Shield and speed for your duo, a heal if you already have a shield. Save it for a trade or to escape.",
+  "level_6": "Encore: a line charm that goes farther with every champion it passes through. Aim it through your support or an enemy to hit the whole enemy team.",
+  "power_spikes": [
+   "Level 3: double-cast abilities from your passive.",
+   "Level 6: teamfight ultimate.",
+   "First completed item: farming and poking from range.",
+   "Late game: teamfights decided by your ultimate."
+  ],
+  "lane_plan": "Farm from range and poke with Q, play with your support and save E for kills or defense. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards steady farming. Join dragons: your ultimate is decisive there.",
+  "trading": "Basic trade: Q (double-cast if possible), then an empowered attack. All-in: double E to root, Q, attacks, R if several enemies are lined up. Give up on it against champions who block your abilities or jump on you (Yasuo).",
+  "jungle_plan": "",
+  "threats": [
+   "Yasuo: your hardest matchup (his Wind Wall blocks your ultimate).",
+   "Long-range bot lane mages (Lux, Xerath).",
+   "Assassins who target you: you have no mobility."
+  ],
+  "mistakes": [
+   "Wasting the double-cast on a wave instead of saving it for a fight.",
+   "Casting your ultimate without extending it through a champion.",
+   "Standing in front of your frontline."
+  ],
+  "matchup_notes": {
+   "Jinx": "She scales too: win teamfights with your ultimate.",
+   "Caitlyn": "Her range harasses you: farm with Q from behind your minions.",
+   "Kai'Sa": "Save double E to root her when she dives.",
+   "Lucian": "He has to come close: root him with E.",
+   "Yasuo": "His Wind Wall blocks your abilities: wait until he's used it before casting your ultimate."
+  },
+  "mid_game": "Group with your team around objectives. Poke with Q, protect with W, and have your ultimate ready for the next fight.",
+  "late_game": "Stay behind your frontline. Cast Encore through a champion to hit the group, then E and Q. A double W protects your whole team.",
+  "ahead": "Force grouped teamfights: your ultimate and double-cast abilities win them.",
+  "behind": "Farm from range and play utility: W and R stay decisive even when you're behind in gold.",
+  "win_condition": "To win this game, you want to scale by farming from range, then win teamfights with an ultimate that charms several enemies.",
+  "final_tip": "Always count your abilities: your third one is double-cast, save it for the moment that matters."
+ }
+}

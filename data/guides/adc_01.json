@@ -1,0 +1,43 @@
+{
+  "Aphelios|adc": {
+    "identity": "Tireur à dégâts physiques. Aphelios manie cinq armes de Lunari et en porte deux à la fois : Phase (W) trade l'arme principale et la secondaire, et chaque arme a sa propre attaque et sa propre compétence active (Q). Calibrum (fusil) marque la cible pour une seconde attaque à très longue portée, Severum (pistolet-faux) le fait courir en attaquant les ennemis proches et le soigne, Gravitum (canon) root les ennemis qu'il a slow, Infernum (lance-flammes) frappe en cône et Crescendum (chakram) pose une vigie. Quand une arme n'a plus de munitions, la suivante de la file (E) la remplace. Veille au clair de lune (R) envoie un rayon qui explose sur un champion et applique l'effet de l'arme principale.",
+    "playstyle": "Hypercarry de teamfight, très exigeant : ta force dépend de la paire d'armes en main au moment du combat. Il n'a aucun dash : il dépend de son support pour survivre et de ses combinaisons d'armes pour gagner les combats.",
+    "early_game": "Tu commences avec Calibrum en main et Severum en arme secondaire (puis Gravitum, Infernum et Crescendum dans la file). Poke avec la marque de Calibrum, passe sur Severum pour les trades courts : il te soigne en attaquant. Compte tes munitions : vider une arme juste avant un combat te laisse avec une paire faible. Garde Gravitum pour les kills avec ton support.",
+    "level_1": "Aphelios ne monte pas ses sorts : chaque point achète un bonus (Q = dégâts d'attaque, W = vitesse d'attaque, E = létalité). Chemin le plus joué : trois points en dégâts d'attaque, un en létalité, puis dégâts d'attaque ; variante vitesse d'attaque d'abord. Au niveau 1, tu n'as que Phase (W) : farm avec les attaques de tes deux armes.",
+    "level_2": "Les compétences d'arme (Q) se débloquent. Calibrum : tir marquant à longue portée, puis attaque de la marque de très loin. Severum : course en attaquant, idéale pour un trade court.",
+    "level_3": "Continue d'investir dans les dégâts d'attaque. Joue autour de la rotation : quand Gravitum arrive, cherche un engage avec ton support (slow, puis Q pour root).",
+    "level_6": "Veille au clair de lune : son effet dépend de l'arme principale (marques renforcées avec Calibrum, soin avec Severum, slow énorme avec Gravitum, dégâts en zone avec Infernum, chakrams supplémentaires avec Crescendum). Il s'améliore tout seul aux niveaux 11 et 16.",
+    "power_spikes": [
+      "Niveau 2 : compétences d'arme.",
+      "Niveau 6 : ultime adapté à l'arme en main.",
+      "Deux items complets : la rotation devient dangereuse en teamfight.",
+      "Late game : Infernum ou Crescendum en main pour l'ultime en teamfight."
+    ],
+    "lane_plan": "Farm en sécurité et poke avec Calibrum. Anticipe la rotation : tu sais quelle arme arrive (E), prépare le combat pour la bonne paire. Joue autour des engages de ton support et de Gravitum. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense un farm propre. Vise le dragon avec ton jungler.",
+    "trading": "Trade court : Severum (course et soin) ou marque de Calibrum. All-in : Gravitum slow, Q root, puis tu frappes avec l'arme secondaire. Recule quand ta paire est faible (arme presque vide, mauvaise combinaison) contre un adversaire qui te dive.",
+    "jungle_plan": "",
+    "threats": [
+      "Assassins et divers : tu n'as aucun dash.",
+      "Mages bot à longue portée (Xerath) qui te poke.",
+      "Nilah, qui esquive tes attaques avec son Voile de liesse."
+    ],
+    "mistakes": [
+      "Oublier de compter les munitions avant un combat.",
+      "Lancer l'ultime avec une arme principale inadaptée.",
+      "Se placer devant sans dash pour fuir."
+    ],
+    "matchup_notes": {
+      "Jinx": "Elle scale et enchaîne les kills avec son passif : cherche les combats tôt, avec Gravitum et ton support.",
+      "Kai'Sa": "Elle doit venir au contact : punis son ultime avec Gravitum ou Infernum.",
+      "Vayne": "La portée de Calibrum la domine en lane.",
+      "Xerath": "Il te poke de loin : reste derrière les sbires et joue les all-in avec ton support.",
+      "Nilah": "Attends la fin de son Voile de liesse avant d'engager."
+    },
+    "mid_game": "Groupe avec ton équipe autour des dragons et de Baron. Choisis tes combats selon la paire d'armes : n'engage pas avec une arme presque vide.",
+    "late_game": "Reste derrière ta frontline et frappe ce qui est à portée. Garde l'ultime pour un teamfight avec Infernum ou Crescendum en main.",
+    "ahead": "Prends les dragons et les tours, mais ne te sépare pas de ton équipe : sans dash, un seul engage peut te tuer.",
+    "behind": "Farm en sécurité, laisse ton support et tes tanks ouvrir les combats, et attends les deux items complets.",
+    "win_condition": "Pour gagner cette partie, tu veux arriver au late game et gagner les teamfights avec la bonne paire d'armes au bon moment.",
+    "final_tip": "Regarde toujours quelle arme arrive (E) : préparer le combat pour ta meilleure paire vaut plus qu'une attaque de plus."
+  }
+}

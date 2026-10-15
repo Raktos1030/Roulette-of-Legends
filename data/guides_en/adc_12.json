@@ -1,0 +1,43 @@
+{
+ "Karthus|adc": {
+  "identity": "Area magic damage mage. Lay Waste (Q) creates a delayed explosion, stronger against an isolated enemy. Wall of Pain (W) creates a wall that slows and lowers the magic resist of enemies who cross it. Defile (E) is a damage aura around him that costs a lot of mana (he regains mana when he gets kills). Requiem (R) hits every enemy champion on the map after a 3-second channel. When he dies, Death Defied (passive) gives him a few seconds to keep casting.",
+  "playstyle": "Bot lane mage who farms from range with Q, scales and finishes fights anywhere on the map with Requiem. He has no mobility: he relies on his support and his positioning.",
+  "early_game": "Farm with Lay Waste (Q), which deals more damage to an isolated minion. Hit your opponent when they're alone (no minion next to them in the zone): the damage is stronger. Save Wall of Pain (W) to slow an engage.",
+  "level_1": "Lay Waste (Q) first. Farm and poke with Q.",
+  "level_2": "Defile (E). A damage aura for the wave and close-range fights, but very mana hungry: turn it off as soon as you don't need it.",
+  "level_3": "Wall of Pain (W) (or Q depending on the path). It slows and lowers magic resist: place it between you and a diver, or under your opponent for a kill with your support.",
+  "level_6": "Requiem: damage on every enemy champion on the map. Cast it when an ally is fighting elsewhere or to finish low-health enemies after a fight. Even dead, you can still cast it thanks to your passive.",
+  "power_spikes": [
+   "Level 6: global Requiem.",
+   "First completed item: very punishing Q.",
+   "Two completed items: a Requiem that kills targets at half health.",
+   "Late game: massive area damage in teamfights."
+  ],
+  "lane_plan": "Farm safely with Q, poke your isolated opponent and let your support handle engages. Cast Requiem as soon as a fight breaks out elsewhere on the map. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) rewards the steady farming Q allows.",
+  "trading": "Basic trade: Q on your isolated opponent. All-in: W under them, Q, E on. Give up on it against ADCs who chase you down (Zeri): with no mobility, you have to stay behind your support.",
+  "jungle_plan": "",
+  "threats": [
+   "Zeri and Kalista: hard matchups.",
+   "Engage supports: you have no dash.",
+   "Assassins who kill you before you can cast."
+  ],
+  "mistakes": [
+   "Leaving Defile on and draining your mana.",
+   "Casting Requiem when no enemy is low or fighting.",
+   "Standing in front of your frontline: you have no escape."
+  ],
+  "matchup_notes": {
+   "Kai'Sa": "Place W between you and her when she dives with her ultimate.",
+   "Jinx": "Farm and win teamfights with your area damage.",
+   "Ezreal": "He dodges your Qs with his Arcane Shift: aim where he lands.",
+   "Samira": "Place W to slow her when she dashes onto you.",
+   "Zeri": "She chases you: stay close to your support."
+  },
+  "mid_game": "Join fights and cast Requiem on every skirmish on the map. Farm waves with Q between fights.",
+  "late_game": "Stay behind your frontline, bombard with Q, turn on E if enemies come close. Even if you die, keep casting during your passive.",
+  "ahead": "Cast Requiem on every fight and force objectives.",
+  "behind": "Farm with Q and use Requiem to join kills from afar.",
+  "win_condition": "To win this game, you want to farm, scale and swing every fight on the map with Requiem.",
+  "final_tip": "Watch the whole enemy team's health bars: a well-timed Requiem is worth several kills."
+ }
+}

@@ -1,0 +1,5 @@
+pywebview==6.2.1
+Pillow==12.2.0
+pystray==0.19.5; sys_platform == "win32"
+numpy==2.4.6; sys_platform == "win32"
+pyinstaller==6.22.3

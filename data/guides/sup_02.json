@@ -1,0 +1,43 @@
+{
+  "Amumu|sup": {
+    "identity": "Tank d'engage à dégâts magiques. Toucher maudit (passif) : ses attaques maudissent les ennemis, qui subissent des dégâts bruts en plus chaque fois qu'ils prennent des dégâts magiques. Jet de bandelette (Q) le tire vers l'ennemi touché en le stunnant, Désespoir (W) inflige chaque seconde un pourcentage des PV max des ennemis proches, Colère (E) réduit les dégâts physiques qu'il subit et peut être activé pour blesser autour de lui (son délai diminue quand il est frappé), et Malédiction d'Amumu (R) stun tous les ennemis autour de lui.",
+    "playstyle": "Support d'engage qui peut stun toute l'équipe adverse avec son ultime. Il est très fort quand son ADC peut suivre ses engages.",
+    "early_game": "Menace l'engage avec Jet de bandelette (Q) : touche l'adversaire, attaque-le pour appliquer la malédiction, et laisse ton ADC finir. Avant le niveau 6, ne gaspille pas Q : sans lui, tu n'as aucune menace. Utilise E en défense : il réduit les dégâts physiques que tu subis.",
+    "level_1": "Jet de bandelette (Q) en premier.",
+    "level_2": "Colère (E). Réduit les dégâts physiques subis : tu résistes mieux aux trades contre les ADC.",
+    "level_3": "Désespoir (W). Dégâts continus autour de toi pendant un all-in ; coupe-le hors combat pour garder ton mana.",
+    "level_6": "Malédiction d'Amumu : stun tous les ennemis autour de toi. En lane, Q puis R sur les deux ennemis ; en teamfight, entre au milieu du groupe.",
+    "power_spikes": [
+      "Niveau 2 : Q + E pour les premiers engages.",
+      "Niveau 6 : ultime qui stun toute la bot lane adverse.",
+      "Premiers items de résistance : engages durables.",
+      "Teamfight : Q puis R sur plusieurs ennemis."
+    ],
+    "lane_plan": "Joue les engages avec Q quand ton ADC peut suivre, et garde ton ultime pour un combat à quatre avec ton jungler. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées) : contrôle la vision du dragon.",
+    "trading": "All-in : Q → attaques → E → W actif, R si les deux adversaires sont proches. Défense : E pour réduire les dégâts, R pour arrêter un engage. Évite les trades longs contre Leona, qui t'engage aussi et te résiste.",
+    "jungle_plan": "",
+    "threats": [
+      "Leona : matchup difficile.",
+      "Supports qui te poke hors de portée de ton Q.",
+      "Kiting : tu dois toucher ton Q pour être utile."
+    ],
+    "mistakes": [
+      "Lancer Q sans que ton ADC puisse suivre.",
+      "Laisser Désespoir actif hors combat et vider ton mana.",
+      "Lancer l'ultime sur une seule cible en teamfight."
+    ],
+    "matchup_notes": {
+      "Thresh": "Son grappin et sa lanterne sauvent ses alliés : garde R pour après sa lanterne.",
+      "Lulu": "Sa métamorphose t'arrête : engage quand elle l'a utilisée.",
+      "Nautilus": "Ses engages le rapprochent de toi : réponds par R sur les deux adversaires.",
+      "Pyke": "Il est fragile : ton Q le punit.",
+      "Leona": "Elle t'engage et te résiste : joue défensivement avec E et R."
+    },
+    "mid_game": "Pose des pinks autour des objectifs et cherche les picks avec Q. Groupe avec ton équipe pour les teamfights.",
+    "late_game": "Entre dans le groupe adverse avec Q (ou avec un Flash) et lance R pour stun le plus d'ennemis possible. Ton équipe doit être prête à suivre.",
+    "ahead": "Engage souvent et aide ton jungler à contrôler la carte.",
+    "behind": "Protège ton ADC : R sert aussi à arrêter un engage adverse.",
+    "win_condition": "Pour gagner cette partie, tu veux stun toute l'équipe adverse avec ton ultime au bon moment.",
+    "final_tip": "Un Q touché, c'est un engage : ne le lance jamais si ton ADC ne peut pas suivre."
+  }
+}

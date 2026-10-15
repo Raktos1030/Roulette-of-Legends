@@ -1,0 +1,43 @@
+{
+ "Ziggs|mid": {
+  "identity": "Magic damage artillery mage who specializes in sieging. Bouncing Bomb (Q) pokes from long range, Satchel Charge (W) knocks back (Ziggs included) and instantly destroys low-health enemy towers, Hexplosive Minefield (E) slows in an area, and Mega Inferno Bomb (R) strikes a large area from very long range. His passive regularly empowers an attack, more often when he casts abilities.",
+  "playstyle": "In mid, Ziggs clears waves from range, pokes and destroys towers. He wins by pushing and taking structures rather than by getting kills. He's vulnerable to assassins and tanks who stick to him.",
+  "early_game": "Clear the wave with Q and E, poke with Q when your opponent comes to last hit. Keep W to escape an engage (you knock yourself back). Push to take plates.",
+  "level_1": "Bouncing Bomb (Q) first. Poke and farm.",
+  "level_2": "Hexplosive Minefield (E). A slow and wave clear.",
+  "level_3": "Satchel Charge (W). Knocks back your opponent or yourself: your main escape, and your tool to finish low towers.",
+  "level_6": "Mega Inferno Bomb: strikes very far away. Use it to finish fights in other lanes, clear a distant wave or hit several enemies in teamfights.",
+  "power_spikes": [
+   "Level 3: W to escape and take towers.",
+   "Level 6: long-range ultimate.",
+   "First completed item: wave clear and poke.",
+   "Mid game: sieging and tower destruction."
+  ],
+  "lane_plan": "Push the wave, poke and take plates. Destroy low towers with W. The mid role quest (faster recall) helps you chain pushing and recalling. Against assassins, keep W to escape.",
+  "trading": "Basic trade: Q from range. Defense: W to knock yourself back, E to slow. Give up on it against champions who stick to you (Nasus, Locke).",
+  "jungle_plan": "",
+  "threats": [
+   "Assassins (Locke, Zed).",
+   "Tanks who stick to you (mid Nasus).",
+   "Xerath, who outranges you."
+  ],
+  "mistakes": [
+   "Using W to poke and having no escape left.",
+   "Forgetting to finish low towers with W.",
+   "Positioning too close in teamfights."
+  ],
+  "matchup_notes": {
+   "Viktor": "Poke him from farther away.",
+   "Syndra": "Stay out of her stun.",
+   "Ahri": "Keep W to escape her engage.",
+   "Yasuo": "His Wind Wall blocks your bombs: keep W for his engage.",
+   "Nasus": "He sticks to you: push and take towers elsewhere."
+  },
+  "mid_game": "Siege: push waves and destroy towers with W.",
+  "late_game": "Poke behind your frontline, R on the group, W to reposition.",
+  "ahead": "Take every tower and poke before objectives.",
+  "behind": "Push waves from range and play with your team.",
+  "win_condition": "To win this game, you want to push, take towers and poke the enemy team before fights.",
+  "final_tip": "Always keep your Satchel Charge to escape: it's your only mobility."
+ }
+}

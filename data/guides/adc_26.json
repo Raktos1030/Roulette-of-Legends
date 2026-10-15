@@ -1,0 +1,43 @@
+{
+  "Varus|adc": {
+    "identity": "Tireur à dégâts physiques et magiques. Vengeance incarnée (passif) lui donne des dégâts bonus après un kill ou une assistance. Flèche perforante (Q) se charge pour gagner en portée et en dégâts, Carquois meurtri (W) ajoute à ses attaques des dégâts magiques et des effets de Meurtrissure, que ses autres sorts font exploser (dégâts selon les PV max), et renforce activé sa prochaine Flèche perforante. Pluie de flèches (E) slow dans une zone et réduit les soins des ennemis qui s'y trouvent, et Chaîne corruptrice (R) root le premier champion touché, puis se propage aux champions proches.",
+    "playstyle": "ADC de poke et d'engage : il harcèle de très loin avec Q chargé et lance les combats avec son ultime. Il perd contre beaucoup d'ADC de combat long (Jinx, Twitch, Zeri, Kog'Maw) et gagne surtout contre les ADC à courte portée ou peu mobiles (Vayne, Lucian, Aphelios).",
+    "early_game": "Poke avec Flèche perforante (Q) chargée quand l'adversaire vient last hit. Accumule de la Meurtrissure avec tes attaques, puis fais-la exploser avec Q ou E. Garde E pour slow un engage ou réduire les soins adverses.",
+    "level_1": "Pluie de flèches (E) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Carquois meurtri (W). Tes attaques appliquent la Meurtrissure : trois attaques puis un sort pour la faire exploser.",
+    "level_3": "Flèche perforante (Q). Poke à très longue portée : charge-la derrière les sbires et vise l'adversaire.",
+    "level_6": "Chaîne corruptrice : root le premier champion touché puis se propage. Lance-la sur l'adversaire pour un kill avec ton support, ou sur un diver pour te protéger.",
+    "power_spikes": [
+      "Niveau 3 : poke avec Q chargé et explosion de Meurtrissure.",
+      "Niveau 6 : ultime d'engage.",
+      "Premier item complet : poke très punitif.",
+      "Mid game : poke avant les objectifs, puis engage avec R."
+    ],
+    "lane_plan": "Poke avec Q, réduis les soins adverses avec E et joue les kills avec ton support au niveau 6. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense un farm régulier. Participe aux dragons en poussant la wave avant.",
+    "trading": "Trade de base : attaques pour la Meurtrissure, puis Q ou E pour l'exploser. All-in : R, E, attaques, Q chargé pour finir. Abandonne contre les ADC qui gagnent les combats longs (Jinx, Twitch) : reste au poke.",
+    "jungle_plan": "",
+    "threats": [
+      "Yasuo et son Mur de vent : ton matchup le plus difficile.",
+      "Kog'Maw, Ziggs, Zeri, Jinx et Twitch : matchups difficiles.",
+      "Divers : tu n'as aucun dash."
+    ],
+    "mistakes": [
+      "Charger Q trop longtemps et se faire engager pendant la charge.",
+      "Lancer l'ultime sur un sbire ou un tank sans suite.",
+      "Se battre en combat long contre un ADC de scaling."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Garde R pour le root quand elle dive.",
+      "Jinx": "Elle scale : poke-la et prends les tours tôt.",
+      "Vayne": "Elle a une courte portée : poke-la avec Q.",
+      "Ezreal": "Il esquive avec E : lance R après son Transfert arcanique.",
+      "Yasuo": "Son Mur de vent bloque Q et R : attends qu'il l'utilise."
+    },
+    "mid_game": "Poke l'équipe adverse avec Q avant chaque objectif. Lance l'ultime sur un groupe pour que la chaîne se propage.",
+    "late_game": "Reste derrière ta frontline et poke. Utilise E contre les équipes qui se soignent, et R pour lancer ou disengage un combat.",
+    "ahead": "Poke et force les objectifs : ton équipe engage derrière ta chaîne.",
+    "behind": "Poke à distance et garde ton ultime pour protéger ton équipe ou créer un pick.",
+    "win_condition": "Pour gagner cette partie, tu veux affaiblir l'équipe adverse avec ton poke avant les objectifs et lancer les combats avec ton ultime.",
+    "final_tip": "Trois attaques pour charger la Meurtrissure, puis un sort pour la faire exploser : c'est là que se trouvent tes dégâts."
+  }
+}

@@ -1,0 +1,43 @@
+{
+ "Maokai|jgl": {
+  "identity": "Magic damage tank, played in the jungle about one game in four (support remains his main role). Bramble Smash (Q) knocks back, Twisted Advance (W) moves him forward and roots his target (he's untargetable while traveling), Sapling Toss (E) throws saplings that explode (stronger in bushes), and Nature's Grasp (R) sends out a wall of brambles that roots everything it hits. His passive regularly empowers an attack that heals him.",
+  "playstyle": "Control and vision tank jungler. Maokai ganks easily with W, controls areas with his saplings and engages teamfights with his ultimate. He doesn't have the fastest clear and doesn't duel well, but he's very reliable in team fights.",
+  "early_game": "Clear safely with E and Q, then gank: W on the target (CC) → Q to knock it toward your laner. Place saplings (E) in bushes around objectives: they give vision and explode on contact.",
+  "level_1": "Bramble Smash (Q) first.",
+  "level_2": "Sapling Toss (E) or Twisted Advance (W) depending on your order. E helps your clear; W gives you an immediate gank.",
+  "level_3": "Full kit: W → Q → E. A reliable first gank thanks to the CC.",
+  "level_6": "Nature's Grasp: a slowly advancing wall of brambles that roots every enemy hit. Use it to engage a teamfight, cut off an escape or protect your team from an engage.",
+  "power_spikes": [
+   "Level 3: ganks with W.",
+   "Level 6: area ultimate for teamfights.",
+   "First completed item: a solid tank.",
+   "Mid game: area control around objectives."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Clear safely and gank often with W. Maokai doesn't like duels: avoid invading. Use saplings for vision around Void Grubs (around 8 minutes), dragons and Herald (around 15 minutes). Play with your laners for objectives: your CC is your main asset.",
+  "trading": "Ganking: W → Q (knock toward your laner) → E. Teamfighting: R to engage or cut off, W on the enemy carry or diver. Give up on it against junglers who beat you in duels (Udyr, Bel'Veth).",
+  "threats": [
+   "Invades and duels: you lose to aggressive junglers.",
+   "Udyr, Shyvana and Bel'Veth, unfavorable according to the data.",
+   "Ranged kiting."
+  ],
+  "mistakes": [
+   "Knocking the target away from your laner with Q.",
+   "Casting your ultimate too early, before the enemy is committed.",
+   "Forgetting to place saplings for vision."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He'll invade you: don't duel, gank.",
+   "Sylas": "He can steal your ultimate: don't engage when he can take it back.",
+   "Viego": "Root him with W when he dives.",
+   "Kayn": "Root him before his transformation.",
+   "Bel'Veth": "She beats you in duels: play with your team."
+  },
+  "mid_game": "Area control around objectives: saplings, W and ultimate.",
+  "late_game": "Engage or protect: R to engage, W to root the enemy diver.",
+  "ahead": "Take objectives and engage fights.",
+  "behind": "Tank for your team and play for a decisive ultimate.",
+  "win_condition": "To win this game, you want to gank effectively with W and control teamfights with your ultimate.",
+  "final_tip": "Position yourself so Bramble Smash knocks the target toward your laner."
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "Diana|mid": {
+    "identity": "Combattante-assassine à dégâts magiques. Croissant lunaire (Q) applique la Lumière lunaire, qui réinitialise Rush lunaire (E) ; Corps célestes (W) la protège avec des orbes ; son passif frappe en zone toutes les trois attaques ; et Attraction lunaire (R) attire tous les ennemis proches avant une explosion qui fait plus mal à chaque champion touché.",
+    "playstyle": "Mid de burst et de roam. Elle punit les mages et les assassins au corps à corps, et roam très bien après le niveau 6.",
+    "early_game": "Farm avec Q et le passif, poke au Q quand l'adversaire vient last hit. Au niveau 3, Q → E → W → attaques est un all-in très fort contre les mages. Garde W pour encaisser les poke.",
+    "level_1": "Croissant lunaire (Q) en premier.",
+    "level_2": "Rush lunaire (E) ou Corps célestes (W) selon l'ordre. Q → E : dash sur la cible marquée.",
+    "level_3": "Kit complet : Q → E → W → attaques (passif). Gros all-in contre les mages sans fuite.",
+    "level_6": "Attraction lunaire : combo Q → E → R → E (réinitialisé si Q a marqué) → W. Tu peux tuer la plupart des mages et roam vers les side lanes.",
+    "power_spikes": [
+      "Niveau 3 : all-in contre les mages.",
+      "Niveau 6 : combo complet et roams.",
+      "Premier item complet : burst ou résistance selon l'orientation.",
+      "Mid game : engages multicibles en teamfight."
+    ],
+    "lane_plan": "Farm au Q et au passif, all-in quand l'adversaire a utilisé son CC ou sa fuite. Après le niveau 6, pousse la wave et roam. La quête de rôle mid (retour accéléré) rend ces allers-retours rentables.",
+    "trading": "Trade court : Q poke. Trade complet : Q → E → W → attaques. All-in : Q → E → R → E → W. Engage quand le CC adverse est en recharge ; abandonne si ton Q est raté.",
+    "jungle_plan": "",
+    "threats": [
+      "Nasus mid et les tanks qui encaissent ton burst.",
+      "Mages à CC qui t'arrêtent pendant ton engage.",
+      "Yasuo : matchup difficile."
+    ],
+    "mistakes": [
+      "Utiliser E sans marque de Q.",
+      "Engager sans ultime contre un mage qui a son CC prêt.",
+      "Rester en lane au lieu de roam après le niveau 6."
+    ],
+    "matchup_notes": {
+      "Zed": "W absorbe ses shurikens ; engage quand il a utilisé son ombre.",
+      "Katarina": "Ton ultime interrompt son Lotus mortel en l'attirant.",
+      "Viktor": "Engage quand son champ gravitationnel est en recharge.",
+      "Ahri": "Engage quand son Charme est en recharge.",
+      "Yasuo": "Son Mur de vent bloque ton Q : attends qu'il l'ait utilisé."
+    },
+    "mid_game": "Roams, picks et teamfights. Diana est forte quand elle peut toucher plusieurs cibles avec l'ultime.",
+    "late_game": "Engage de flanc : Q sur la cible la plus proche, E pour entrer, R au milieu de plusieurs ennemis.",
+    "ahead": "Roam, crée des avantages sur la carte et prends les objectifs.",
+    "behind": "Farm et joue pour un ultime décisif sur plusieurs cibles.",
+    "win_condition": "Pour gagner cette partie, tu veux punir les mages en lane, roam après le 6 et engager les teamfights sur plusieurs cibles.",
+    "final_tip": "Lance toujours Q avant E : sans la marque, tu perds ton second dash."
+  }
+}

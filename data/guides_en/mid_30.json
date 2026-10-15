@@ -1,0 +1,43 @@
+{
+ "Ryze|mid": {
+  "identity": "Magic damage battle mage built around chaining spells. Overload (Q) fires a projectile that bounces between marked targets; casting W or E resets its cooldown. Rune Prison (W) slows (and roots a marked target), Spell Flux (E) marks the target and nearby enemies, and Realm Warp (R) teleports Ryze and nearby allies to a distant location. His mana increases his damage (passive Arcane Mastery).",
+  "playstyle": "Sustained-DPS mage who gives his team mobility through his ultimate. Ryze scales with items and weaves Q between every other spell.",
+  "early_game": "Farm with E and Q (which bounces between marked minions). Poke your opponent when they're near marked minions. Keep W to root a marked target who engages you.",
+  "level_1": "Spell Flux (E) first. It marks minions and your opponent for your bounces.",
+  "level_2": "Overload (Q). E → Q: the projectile bounces between marked targets.",
+  "level_3": "Rune Prison (W). CC on a marked target: E → W → Q → E → Q.",
+  "level_6": "Realm Warp: teleports your nearby team to a distant spot. Use it for a surprise roam, a group dive or a rotation to an objective.",
+  "power_spikes": [
+   "Level 3: E → W → Q chain.",
+   "Level 6: Realm Warp for team roams.",
+   "First and second items: sustained DPS.",
+   "Late game: a very strong battle mage if he survives."
+  ],
+  "lane_plan": "Farm safely, poke when your opponent is near marked minions. Push your wave and use your ultimate for rotations or dives with your jungler. The mid role quest (faster recall) helps you scale by resetting often.",
+  "trading": "Short trade: E → Q. Long trade: E → W → Q → E → Q (Q between every spell). Engage when W can root; give up on it against mages who poke or burst you from range.",
+  "jungle_plan": "",
+  "threats": [
+   "Burst or long-range mages (Syndra, Hwei, Veigar).",
+   "Twisted Fate and Malzahar: hard matchups.",
+   "Aurelion Sol, who scales better."
+  ],
+  "mistakes": [
+   "Forgetting to cast Q between every spell.",
+   "Using your ultimate without a plan (teleporting your team into a bad fight).",
+   "Forcing trades against burst mages."
+  ],
+  "matchup_notes": {
+   "Viktor": "Farm and play around your jungler.",
+   "Syndra": "She bursts you: stay behind your minions.",
+   "Ahri": "Keep W for her engage.",
+   "Sylas": "Root him when he engages, but watch out: he can steal your ultimate.",
+   "Akali": "W on her when she steps out of her Shroud."
+  },
+  "mid_game": "Rotations with your ultimate, objectives and teamfight DPS.",
+  "late_game": "Battle mage: chain your spells behind your frontline, root divers with W.",
+  "ahead": "Roam with your ultimate and take objectives.",
+  "behind": "Farm and scale safely.",
+  "win_condition": "To win this game, you want to survive the lane, scale and chain spells in teamfights.",
+  "final_tip": "Cast Q between every spell: that's where all your DPS comes from."
+ }
+}

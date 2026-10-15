@@ -1,0 +1,43 @@
+{
+ "Lux|sup": {
+  "identity": "Poke and control mage. Illumination (passive): her abilities charge the target, and her next attack detonates it for extra magic damage. Light Binding (Q) roots and damages up to two enemies, Prismatic Barrier (W) throws her wand, shielding allies hit on the way out and back, Lucent Singularity (E) creates a slowing zone she can detonate, and Final Spark (R) fires a very long-range beam that also detonates her passive.",
+  "playstyle": "Long-range poke and pick support: she wears down her opponent with E, roots them with Q and finishes them with R. Only one clearly unfavorable matchup (Blitzcrank). Very fragile with no mobility: positioning is her only defense.",
+  "early_game": "Poke with Lucent Singularity (E) when your opponent comes to last hit, then attack to detonate Illumination. Keep Light Binding (Q) to punish an engage or start a kill: a landed Q means a full combo. Stay behind minions against hooks.",
+  "level_1": "Lucent Singularity (E) first. After that, max E first.",
+  "level_2": "Light Binding (Q). Combo: Q → E → attack (Illumination).",
+  "level_3": "Prismatic Barrier (W). A shield for you and your ADC on the wand's way out and back.",
+  "level_6": "Final Spark: a very long-range beam. After a rooting Q, R can't miss: Q → E → R. Also finish low-health enemies in other lanes.",
+  "power_spikes": [
+   "Level 2: Q → E for kills.",
+   "Level 6: full long-range combo.",
+   "First completed item: very punishing poke.",
+   "Mid game: long-range picks with Q."
+  ],
+  "lane_plan": "Poke with E, keep Q for kills or defense, and protect your ADC with W. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "Basic trade: E, then an attack. All-in: Q → E → attack → R. Defense: Q on the engage, W on your ADC. Against Blitzcrank, stay behind your minions at all times.",
+  "jungle_plan": "",
+  "threats": [
+   "Blitzcrank: your hardest matchup (his hook kills you).",
+   "Engage supports (Nautilus, Thresh) who catch you.",
+   "Assassins who target you in teamfights."
+  ],
+  "mistakes": [
+   "Standing in the open against a hook.",
+   "Throwing Q at random and no longer being able to defend yourself.",
+   "Casting R with no CC and no low-health target."
+  ],
+  "matchup_notes": {
+   "Thresh": "Stay behind minions to avoid his hook, and Q him when he steps up.",
+   "Lulu": "A poke trade: your range is longer, use E.",
+   "Nautilus": "His anchor doesn't get through minions: stay behind them.",
+   "Swain": "He has to get close: poke him and root him when he steps up.",
+   "Blitzcrank": "A hook on you is often fatal: stay behind your minions."
+  },
+  "mid_game": "Poke before objectives, place Control Wards and look for picks with Q in the fog of war.",
+  "late_game": "Stay far behind your frontline, poke with E, root divers with Q and finish with R. Prismatic Barrier on your team at the start of the fight.",
+  "ahead": "Poke and look for picks: your long range dominates fights.",
+  "behind": "Play safe and protect with Q and W: your ultimate stays useful from very far away.",
+  "win_condition": "To win this game, you want to wear down the enemy team from range and root key targets for your team.",
+  "final_tip": "After a rooting Q, your ultimate can't miss: always chain Q → E → R."
+ }
+}

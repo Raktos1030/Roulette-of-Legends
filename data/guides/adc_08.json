@@ -1,0 +1,43 @@
+{
+  "Jhin|adc": {
+    "identity": "Tireur à dégâts physiques élevés et utilitaire. Murmure (passif) : sa cadence de tir est fixe, il tire quatre balles puis recharge, et la quatrième est toujours un crit renforcé (un crit lui donne aussi de la vitesse de déplacement). Grenade dansante (Q) rebondit sur jusqu'à quatre cibles et fait plus de dégâts après chaque ennemi tué, Floraison mortelle (W) tire à très longue portée et root un champion récemment touché par Jhin ou par ses alliés, Public captif (E) pose un piège invisible qui slow puis explose, et Rappel de rideau (R) lui permet de tirer quatre balles à très longue portée qui slow (la quatrième est un crit garanti).",
+    "playstyle": "ADC de burst et de contrôle à longue portée : il frappe fort, root de loin et achève avec son ultime. Sa cadence fixe le rend faible en combat long : il gagne en choisissant le bon moment pour sa quatrième balle et ses CC.",
+    "early_game": "Harcèle avec la quatrième balle : garde-la pour l'adversaire plutôt que pour un sbire. Recharge en sécurité (tu es vulnérable pendant le rechargement). Grenade dansante sur un sbire bas en PV à côté de l'adversaire : elle rebondit sur lui avec plus de dégâts.",
+    "level_1": "Grenade dansante (Q) en premier. Harcèle avec la quatrième balle et Q.",
+    "level_2": "Floraison mortelle (W). Root un adversaire que ton support vient de toucher : c'est ton meilleur outil d'engage à deux.",
+    "level_3": "Public captif (E). Pose les pièges dans les bushs et sur les chemins de fuite ; un piège qui explose rend la cible rootable par W.",
+    "level_6": "Rappel de rideau : achève les fuyards et affaiblis l'équipe adverse de très loin. Les balles s'arrêtent au premier champion touché : vise la cible basse en PV quand elle est isolée.",
+    "power_spikes": [
+      "Niveau 2 : W sur une cible touchée par ton support.",
+      "Niveau 6 : ultime d'exécution à longue portée.",
+      "Premier item complet : quatrième balle très punitive.",
+      "Deux items complets : burst et contrôle en teamfight."
+    ],
+    "lane_plan": "Harcèle avec la quatrième balle et Q, pose des pièges pour contrôler les bushs et joue les engages avec ton support grâce à W. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) récompense un farm propre. Aide ton jungler sur les dragons : W et R touchent de très loin.",
+    "trading": "Trade de base : quatrième balle puis recul pour recharger. All-in : ton support touche → W → Q → attaques. Recule pendant ton rechargement et contre les ADC qui gagnent les combats longs.",
+    "jungle_plan": "",
+    "threats": [
+      "Yasuo et son Mur de vent : ton matchup le plus difficile.",
+      "Zeri et Kog'Maw : matchups difficiles.",
+      "Divers pendant ton rechargement."
+    ],
+    "mistakes": [
+      "Gâcher la quatrième balle sur un sbire en plein trade.",
+      "Lancer l'ultime en première ligne : tu es immobile pendant qu'il dure.",
+      "Tirer W sur une cible qui n'a pas été touchée (pas de CC)."
+    ],
+    "matchup_notes": {
+      "Kai'Sa": "Elle t'atteint avec son ultime : pose tes pièges autour de toi et garde W pour le root à l'arrivée.",
+      "Caitlyn": "Elle domine la portée en lane, mais tes CC gagnent les combats.",
+      "Jinx": "Punis-la tôt avec ton support avant qu'elle scale.",
+      "Yasuo": "Son Mur de vent bloque W et R : attends qu'il l'utilise.",
+      "Zeri": "Elle est très mobile : garde W pour après son dash."
+    },
+    "mid_game": "Pose des pièges autour des objectifs, harcèle avec W et R avant les combats, et groupe avec ton équipe.",
+    "late_game": "Reste derrière ta frontline, frappe avec la quatrième balle, root les divers avec W. Lance R au début ou à la fin d'un combat, jamais au milieu du danger.",
+    "ahead": "Cherche des picks avec W et les pièges, prends les objectifs.",
+    "behind": "Farm à distance, contrôle la zone avec les pièges et achève avec R.",
+    "win_condition": "Pour gagner cette partie, tu veux créer des picks avec tes CC à distance et achever les combats avec ton ultime.",
+    "final_tip": "La quatrième balle fait la différence : compte tes tirs et garde-la pour un champion."
+  }
+}

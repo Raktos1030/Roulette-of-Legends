@@ -1,0 +1,84 @@
+{
+  "Sion|top": {
+    "identity": "Tank à dégâts physiques qui scale en PV. Fracas meurtrier (Q) se charge puis knock-up (stun s'il est chargé à fond), Feu intérieur (W) donne un shield et des PV maximum permanents à chaque unité tuée, Cri du tueur (E) slow et réduit l'armure, et Assaut inarrêtable (R) charge à travers la carte. À sa mort, Sion revient brièvement en zombie (passif Gloire posthume).",
+    "playstyle": "Tank de scaling : chaque sbire tué accumule des PV permanents grâce à W. En lane, il joue le farm et les trades au E ; en mid game, il splitpush avec l'ultime prêt à engager depuis la side lane. Les champions mobiles et ceux qui gagnent les combats longs lui posent problème.",
+    "early_game": "Last hit tous les sbires possibles : W te donne des PV maximum permanents par élimination (davantage sur les champions et les gros monstres). Trade avec E : s'il touche un sbire, celui-ci est projeté et frappe l'adversaire derrière lui. Q partiellement chargé slow ; chargé à fond, il projette et stun — ne le charge à fond que si l'adversaire est slow ou coincé.",
+    "level_1": "Chemin le plus joué : Q → W → E, l'alternative W → Q → E est presque aussi fréquente. Au niveau 1, Q partiel pour farm et slow un adversaire qui vient au contact.",
+    "level_2": "Feu intérieur (W) : shield que tu peux faire exploser en relançant le sort après un court délai. Son passif (PV par élimination) commence à s'accumuler : priorité au last hit.",
+    "level_3": "Cri du tueur (E). Il slow et réduit l'armure : E puis Q chargé est ton combo principal. Lance E sur un sbire pour toucher l'adversaire caché derrière.",
+    "level_6": "Assaut inarrêtable : charge insensible aux CC qui projette le premier ennemi touché (et le stun plus longtemps contre un mur). Tu peux la diriger pendant la course. Idéale pour rejoindre un combat depuis la side lane, engager un teamfight ou ganker le mid.",
+    "power_spikes": [
+      "Niveau 6 : engage et gank à longue distance avec l'ultime.",
+      "Accumulation des PV de W : de plus en plus difficile à tuer au fil des minutes.",
+      "Premier item complet : très résistant en lane.",
+      "Late game : frontline d'engage dominante."
+    ],
+    "lane_plan": "Laisse la wave venir vers toi et privilégie le farm : chaque last hit compte double pour Sion (or et PV permanents). Contre un adversaire agressif, garde la wave près de ta tour. Recall quand ta wave crash ou quand ton shield est en recharge et tes PV bas. Après le niveau 6, pousse puis charge vers le mid ou la rivière si ton équipe a besoin d'aide.",
+    "trading": "Trade court : E (directement ou via un sbire) → Q partiel → recul. Trade long : W (shield) → E → Q chargé si l'adversaire est slow → relance W pour l'explosion. Engage quand l'adversaire a utilisé son dash ; abandonne si tu charges Q et qu'il peut sortir de la zone ou t'interrompre.",
+    "jungle_plan": "",
+    "threats": [
+      "Champions mobiles qui esquivent ton Q (Yone, Riven).",
+      "Tanks et combattants qui gagnent les combats longs (Shen, Ornn).",
+      "Ganks pendant que tu charges Q."
+    ],
+    "mistakes": [
+      "Charger Q au maximum sur un adversaire libre de bouger.",
+      "Lancer l'ultime en ligne droite sans cible ni suivi.",
+      "Négliger les last hits : chaque sbire manqué, c'est de l'or et des PV permanents perdus."
+    ],
+    "matchup_notes": {
+      "Yone": "Il esquive ton Q avec E et te bat en trades courts. Farm prudemment, trade au E à travers les sbires et garde W pour son Q3.",
+      "Nasus": "Les deux champions scalent : punis-le au E quand il vient stack et ne t'engage pas sous Flétrissement.",
+      "Malphite": "Il ne te fait pas mal : farm, stack les PV et prends l'avance de plaques.",
+      "Darius": "Ne charge pas Q à portée de son Crampon ; farm près de ta tour et slow-le au E quand il avance.",
+      "Teemo": "Son aveuglement ne gêne pas tes sorts : E à travers les sbires, puis Q chargé quand il est slow."
+    },
+    "mid_game": "Splitpush la side lane opposée à l'objectif, puis rejoins le combat avec l'ultime. Sion est aussi excellent pour prendre les tours : même mort, son passif zombie peut finir une structure.",
+    "late_game": "Frontline d'engage : ultime sur la ligne arrière adverse ou sur le groupe, puis Q chargé sur plusieurs cibles pendant qu'elles sont contrôlées. Tu es là pour encaisser et désorganiser.",
+    "ahead": "Splitpush et force l'adversaire à envoyer deux joueurs ; engage les objectifs avec l'ultime.",
+    "behind": "Farm, stack les PV et deviens la frontline de ton équipe : ton scaling en PV te remet dans la partie.",
+    "win_condition": "Pour gagner cette partie, tu veux accumuler des PV grâce à W, puis engager les combats avec l'ultime et encaisser pour ton équipe.",
+    "final_tip": "Ne charge ton Q au maximum que sur une cible slow ou contrôlée : sinon, relâche-le tôt pour le slow."
+  },
+  "TahmKench|top": {
+    "identity": "Tank à dégâts magiques. Tahm Kench accumule des stacks de Goût acquis (passif) avec ses attaques et Coup de langue (Q) ; à trois stacks, Q stun et Dévoration (R) peut avaler un ennemi. Plongée abyssale (W) le fait réapparaître plus loin en projetant les ennemis, et Peau épaisse (E) transforme les dégâts subis en PV grisés récupérables ou en shield.",
+    "playstyle": "Lane de combat au corps à corps : Tahm Kench est très fort en trade long grâce à E et aux stacks du passif. Il n'a pas de mobilité en dehors de W, ce qui le rend vulnérable au kiting. En teamfight, il protège un allié en l'avalant ou isole un ennemi.",
+    "early_game": "Trade quand tu peux appliquer trois stacks : attaques + Q. Au troisième stack, Q stun. Garde E actif pour convertir les PV grisés en shield au bon moment. Farm avec Q et les attaques.",
+    "level_1": "Coup de langue (Q) en premier. Il slow et applique un stack ; avec des attaques, tu arrives vite à trois stacks.",
+    "level_2": "Plongée abyssale (W) dans le chemin le plus joué (Q → W → E), ou Peau épaisse (E) dans l'alternative. W engage ou fuit ; E rend le trade long beaucoup plus fort.",
+    "level_3": "Kit complet : attaques + Q pour trois stacks → Q stun. E pour le shield quand la riposte arrive.",
+    "level_6": "Dévoration : sur un ennemi à trois stacks, tu l'avales quelques secondes (il est root), puis tu peux marcher vers ta tour ou ton équipe ; sur un allié, tu le protèges et tu peux le déplacer. En lane, avale l'adversaire et marche vers ta tour ou ton jungler.",
+    "power_spikes": [
+      "Niveau 3 : stun à trois stacks.",
+      "Niveau 6 : Dévoration pour isoler ou sauver.",
+      "Premier item complet : combats longs très forts.",
+      "Mid game : protection et engage en teamfight."
+    ],
+    "lane_plan": "Joue une wave neutre, trade au corps à corps quand tu peux appliquer les trois stacks. Garde E pour les combats longs. Recall quand ta wave crash. Avec W, tu peux aussi rejoindre la rivière ou le mid après le niveau 6 pour avaler un ennemi.",
+    "trading": "Trade court : Q + attaques. Trade long : attaques → Q (stun à trois stacks) → E pour convertir les PV grisés en shield → R pour avaler. Engage quand tu peux coller l'adversaire ; abandonne s'il te kite à distance (Heimerdinger).",
+    "jungle_plan": "",
+    "threats": [
+      "Champions à distance qui te kitent (Heimerdinger).",
+      "Tanks qui te battent en combat long (Shen, Ornn).",
+      "Gwen et ses dégâts en pourcentage des PV."
+    ],
+    "mistakes": [
+      "Utiliser E trop tôt et perdre le shield des PV grisés.",
+      "Avaler un ennemi et le relâcher au milieu de son équipe.",
+      "Engager avec W sans pouvoir appliquer les stacks."
+    ],
+    "matchup_notes": {
+      "Nasus": "Colle-le avec les stacks et punis-le tôt.",
+      "Darius": "Ses saignements te font mal, mais E et les stacks te font gagner le combat long ; évite le bord de sa Décimation.",
+      "Yone": "Il esquive ton Q ; garde E pour son Q3.",
+      "Garen": "Son silence te coupe : trade quand son Q est en recharge.",
+      "Malphite": "Tu gagnes les combats longs : colle-le et applique les stacks."
+    },
+    "mid_game": "Joue autour des objectifs et protège ton équipe avec R. Tu peux avaler un allié en danger pour le sauver.",
+    "late_game": "Frontline de protection : avale ton carry pour le sauver ou avale un ennemi pour l'isoler. E te garde en vie.",
+    "ahead": "Force des combats et dive avec ton jungler. Avale les carries isolés.",
+    "behind": "Farm et joue pour protéger tes carries.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner les combats longs en lane, puis protéger tes carries et isoler les ennemis en teamfight.",
+    "final_tip": "Compte tes stacks : au troisième, Q stun et Dévoration devient disponible sur l'ennemi."
+  }
+}

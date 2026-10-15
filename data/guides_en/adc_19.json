@@ -1,0 +1,43 @@
+{
+ "Senna|adc": {
+  "identity": "Physical damage utility marksman. Absolution (passive): units that die near her sometimes leave a soul; by attacking it she collects Mist, which permanently increases her attack damage, range and crit chance. Her attacks are slow but powerful. Piercing Darkness (Q) fires a beam that heals allies and damages enemies, Last Embrace (W) roots the target and nearby enemies after a short delay, Curse of the Black Mist (E) camouflages her and the allies in its area, and Dawning Shadow (R) fires a beam with unlimited range that shields allies and damages enemies in the center.",
+  "playstyle": "Unusual scaling ADC: she farms souls to gain range and damage, and brings heals, CC and a global shield to her team. She's behind in gold at 15 minutes on average against common ADCs: her job is to scale.",
+  "early_game": "Farm and pick up the souls that appear: each soul makes you permanently stronger. Poke with Q (through a minion or an ally) and heal your support at the same time. Keep W to defend against an engage.",
+  "level_1": "Piercing Darkness (Q) first. Poke and heal with Q.",
+  "level_2": "Last Embrace (W). A delayed CC: combo with your support, or defense against a diver.",
+  "level_3": "Curse of the Black Mist (E). Camouflage to escape, to reposition your team, or to surprise.",
+  "level_6": "Dawning Shadow: a global beam that protects the allies it hits and damages enemies in the center. Save an ally in another lane or finish a fleeing enemy.",
+  "power_spikes": [
+   "Level 6: global shield and damage ultimate.",
+   "First completed item: long-range poke.",
+   "Mid game: your stacked souls increase your range.",
+   "Late game: very long attack range."
+  ],
+  "lane_plan": "Farm, pick up souls and poke with Q. Let your support start fights and follow up with W. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) helps make up for your gold deficit in lane. Use your ultimate to help other lanes.",
+  "trading": "Short trade: Q through a minion, attack, step back. All-in: W, then Q and attacks. Give up on it against ADCs who jump on you (Tristana) or win long fights (Jinx).",
+  "jungle_plan": "",
+  "threats": [
+   "Tristana and Jinx: hard matchups.",
+   "Divers: you have no dash, only E's camouflage.",
+   "Assassins who target you in teamfights."
+  ],
+  "mistakes": [
+   "Forgetting to pick up souls: they're your scaling.",
+   "Wasting your ultimate with no ally to protect or enemy to finish.",
+   "Taking a long fight against an ADC who's stronger up close."
+  ],
+  "matchup_notes": {
+   "Jinx": "She scales faster: pick up your souls and avoid long fights.",
+   "Kai'Sa": "Save W to root her when she dives with her ultimate.",
+   "Caitlyn": "Survive her range, you outscale her afterwards.",
+   "Ezreal": "Poke him with Q through the minions.",
+   "Tristana": "She jumps on you: save W and E to escape her engage."
+  },
+  "mid_game": "Join fights, protect your team with R and heal with Q. Keep picking up souls.",
+  "late_game": "Hit from your very long range behind your frontline. W on divers, E to reposition the team, R to protect at the start of the fight.",
+  "ahead": "Poke and take objectives: your range lets you siege safely.",
+  "behind": "Farm souls, protect your team with Q and R, and wait for your scaling.",
+  "win_condition": "To win this game, you want to survive lane, stack souls and become a very long-range threat who also protects the team.",
+  "final_tip": "Every soul counts: in lane, position yourself to pick them up without taking risks."
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "Corki|mid": {
+    "identity": "Tireur à dégâts mixtes (surtout magiques). Bombe au phosphore (Q) poke en zone et révèle, Valkyrie (W) le fait foncer en laissant une traînée de feu, Gatling (E) mitraille en cône en réduisant les résistances, et Barrage de projectiles (R) tire des missiles à longue portée (un missile plus gros tous les trois). Régulièrement, il peut récupérer le Colis à la base, qui transforme Valkyrie en une charge plus longue qui repousse.",
+    "playstyle": "Poke à distance et scaling. Corki est rarement joué au mid : si la roulette te le donne à ce poste, joue très prudemment.",
+    "early_game": "Farm à distance avec Q et E, poke avec Q quand l'adversaire vient last hit. Garde W pour fuir. Évite tout combat au corps à corps contre les assassins.",
+    "level_1": "Gatling (E) en premier dans le chemin le plus joué. Farm et poke au contact prudemment.",
+    "level_2": "Bombe au phosphore (Q) ou Valkyrie (W) selon l'ordre. Q poke en zone ; W sert de fuite.",
+    "level_3": "Kit de base complet : Q pour poke, E pour les trades courts, W pour fuir.",
+    "level_6": "Barrage de projectiles : poke à longue portée avec des charges. Harcèle l'adversaire à chaque recharge, sans t'exposer.",
+    "power_spikes": [
+      "Niveau 6 : poke avec R.",
+      "Colis disponible : engage ou fuite avec la Valkyrie améliorée.",
+      "Premier item complet : poke nettement plus fort.",
+      "Late game : poke continu en teamfight."
+    ],
+    "lane_plan": "Farm à distance et poke avec Q et R. Garde la wave au centre ou vers toi. Ne pousse pas sans vision. Utilise le Colis pour un engage bien préparé avec ton jungler ou pour rejoindre un combat.",
+    "trading": "Trade de base : Q + R à distance. Trade court : E au contact, puis recul. Engage seulement avec le Colis et ton équipe ; abandonne contre les assassins et mages à burst.",
+    "jungle_plan": "",
+    "threats": [
+      "Presque tous les mages du mid selon les données (Hwei, Viktor, Xerath, Syndra, Locke, Katarina).",
+      "Assassins qui te divent.",
+      "Échantillon de données faible : les tendances sont moins fiables."
+    ],
+    "mistakes": [
+      "Utiliser W pour engager et ne plus pouvoir fuir.",
+      "Se battre en duel au lieu de poke.",
+      "Oublier de récupérer le Colis quand il est disponible."
+    ],
+    "matchup_notes": {
+      "Viktor": "Il te poke et contrôle la zone : farm à distance.",
+      "Ahri": "Esquive son Charme et poke avec R.",
+      "Syndra": "Elle te surclasse en poke : reste derrière tes sbires.",
+      "Hwei": "Joue pour le farm uniquement.",
+      "Galio": "Poke-le avant son niveau 6, puis reste loin de son ultime."
+    },
+    "mid_game": "Poke avant les objectifs et joue avec ton équipe. Évite les side lanes isolées.",
+    "late_game": "Poke continu à distance avec R, et reste derrière ta frontline. Le Colis peut servir d'engage ou de repositionnement.",
+    "ahead": "Poke avant les objectifs et prends les tours.",
+    "behind": "Farm à distance et joue avec ton équipe : ne force rien.",
+    "win_condition": "Pour gagner cette partie, tu veux survivre à la lane et poke l'équipe adverse avant les teamfights.",
+    "final_tip": "Joue Corki mid comme un poke à distance : ne cherche jamais le duel au corps à corps."
+  }
+}

@@ -1,0 +1,43 @@
+{
+ "Kindred|jgl": {
+  "identity": "Physical damage marksman in the jungle who scales through marks. Her passive spawns marks on monsters and champions; hunting them permanently increases her range and damage. Dance of Arrows (Q) dashes while firing, Wolf's Frenzy (W) creates a zone where Wolf attacks, Mounting Dread (E) slows, then triggers a Wolf strike (damage based on missing health), and Lamb's Respite (R) creates a zone where no one can die for a few seconds.",
+  "playstyle": "Farming, mark-hunting ranged carry jungler. Kindred scales with her stacks: the more she has, the more she dominates. She has to take risks to collect marks in the enemy jungle, which makes her vulnerable to invades.",
+  "early_game": "Clear fast with W and Q. Collect monster marks (they often spawn in the enemy jungle) when it's safe. Gank when a laner can follow up: E to slow, Q, attacks.",
+  "level_1": "Wolf's Frenzy (W) first. Wolf attacks camps with you.",
+  "level_2": "Dance of Arrows (Q). A dash and attack speed: your clear speeds up.",
+  "level_3": "Mounting Dread (E). Slows, then Wolf strikes after three attacks: first gank possible.",
+  "level_6": "Lamb's Respite: a zone where no one can die for a few seconds. Use it to save your team from a burst or to survive a dive. Careful: it also protects enemies inside the zone.",
+  "power_spikes": [
+   "Level 3: ganks with E.",
+   "Level 6: Lamb's Respite for fights.",
+   "Mark stacks: more range and damage.",
+   "First completed item: carry DPS."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear and mark hunting: marks permanently increase your range and damage. Monster marks often spawn in the enemy jungle: take them when your laners have priority. Control Scuttles, Void Grubs (around 8 minutes) and dragons. Avoid duels against junglers who dive you.",
+  "trading": "Ganking: E → attacks → Q to keep your distance. Skirmishing: stay at range, hit and use R to save your team from a burst. Give up on it against CC tanks (Rammus) or junglers who dive you.",
+  "threats": [
+   "Invades and duels against diving junglers.",
+   "CC tanks (Rammus).",
+   "Using R at the wrong time and saving the enemies."
+  ],
+  "mistakes": [
+   "Ignoring marks: your scaling depends on them.",
+   "Casting R when the enemies benefit more from the zone.",
+   "Standing too close in teamfights."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "He'll invade you: keep vision.",
+   "Graves": "Kite him and save R for his burst.",
+   "Viego": "Kite him from range.",
+   "Rammus": "His taunt cancels your attacks: don't attack him during his Defensive Ball Curl.",
+   "Wukong": "His clone fools you: save R for his knock-up."
+  },
+  "mid_game": "Mark hunting, objectives and skirmishes. Kindred scales into a ranged carry.",
+  "late_game": "Ranged carry: stay behind your frontline, hit and save R to rescue your team.",
+  "ahead": "Hunt marks, take objectives and force fights.",
+  "behind": "Farm and scale: your late game makes up for falling behind.",
+  "win_condition": "To win this game, you want to stack marks and become a ranged carry in teamfights.",
+  "final_tip": "Before casting Lamb's Respite, check that it saves more of your allies than enemies."
+ }
+}

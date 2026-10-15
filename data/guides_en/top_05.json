@@ -1,0 +1,43 @@
+{
+ "Malphite|top": {
+  "identity": "Magic or physical damage tank who specializes in engaging. Malphite steals the enemy's speed with Seismic Shard (Q), multiplies his armor with Thunderclap (W), slows attack speed with Ground Slam (E) and starts teamfights with Unstoppable Force (R), an unstoppable charge that knocks up everything it hits.",
+  "playstyle": "Poke and survival lane, very solid against physical attackers, then teamfight engages in the mid and late game. Malphite doesn't win duels through damage but through durability and his ultimate. He's considered strong.",
+  "early_game": "Poke with Q when your opponent comes to last hit, keep your passive shield up (it recharges when you're not taking damage) and farm safely. Against physical attackers, your armor makes their trades very costly.",
+  "level_1": "Seismic Shard (Q) first. Poke from range: it steals movement speed, which helps you get away.",
+  "level_2": "Ground Slam (E). Area damage and reduced enemy attack speed: cast it when a melee fighter engages you.",
+  "level_3": "Thunderclap (W). It boosts your armor and empowers your attacks. Q + E + W makes a decent trade, but your strength is still defense.",
+  "level_6": "Unstoppable Force: an unstoppable charge that knocks up. Combo: R → E → Q. In lane, with your jungler, it's an almost guaranteed gank; in teamfights, aim for several targets.",
+  "power_spikes": [
+   "Level 6: unstoppable engage with your ultimate.",
+   "First completed item: poke or durability depending on your build.",
+   "Mid game: decisive teamfight engages.",
+   "Against physical teams: Malphite becomes very hard to kill."
+  ],
+  "lane_plan": "Let the wave come to you, farm and poke with Q. Keep your shield up: avoid small, pointless damage. After level 6, set up ganks with your jungler while keeping the wave near your tower. Recall with a pushed wave.",
+  "trading": "Basic trade: Q from range. Melee trade: E to reduce the enemy's attack speed, then W. Engage with R when your jungler is nearby or your opponent is low; give up on it if your opponent has magic damage that ignores your armor.",
+  "jungle_plan": "",
+  "threats": [
+   "Magic damage and mages (top Sylas, Vladimir).",
+   "Percent-health damage (Dr. Mundo over time, Gwen).",
+   "Losing your passive shield to small pokes."
+  ],
+  "mistakes": [
+   "Using your ultimate without follow-up from your team.",
+   "Trading in melee range against a magic damage champion.",
+   "Forgetting to keep your passive shield up."
+  ],
+  "matchup_notes": {
+   "Jayce": "Your armor soaks his poke; engage with R when he's in hammer form.",
+   "Yone": "E reduces his attack speed; keep R for his engage.",
+   "Sylas": "He steals your ultimate and deals magic damage. Farm and avoid trades.",
+   "Teemo": "Poke him with Q and don't get blinded in trades.",
+   "Nasus": "He wins later in the lane; poke him early and keep R for him."
+  },
+  "mid_game": "Play around objectives and set up engages with your ultimate. Keep vision on river entrances to choose your angle.",
+  "late_game": "Teamfight engage: R on several targets, then E and Q. Wait until your team can follow.",
+  "ahead": "Roam to gank with your ultimate and force fights around objectives.",
+  "behind": "Farm, tank for your team and play for a decisive ultimate.",
+  "win_condition": "To win this game, you want to reach teamfights with your ultimate and knock up several enemies at the right moment.",
+  "final_tip": "Before every teamfight, find the angle where your ultimate hits at least two important targets."
+ }
+}

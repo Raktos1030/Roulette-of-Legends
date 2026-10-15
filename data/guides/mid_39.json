@@ -1,0 +1,43 @@
+{
+  "Viktor|mid": {
+    "identity": "Mage de contrôle à dégâts magiques qui fait évoluer ses sorts. Il gagne des fragments Hextech en tuant des ennemis ; tous les 100 fragments, il améliore définitivement un sort (passif Glorieuse évolution). Siphonnage (Q) frappe une cible, lui donne un shield et renforce son attaque suivante ; Champ gravitationnel (W) slow puis stun ceux qui restent dedans ; Rayon Hextech (E) tire un laser en ligne (qui laisse une explosion une fois amélioré) ; Tempête arcanique (R) crée une tempête qu'il peut diriger et qui interrompt les canalisations.",
+    "playstyle": "Mage de zone et de nettoyage de vague qui scale avec ses évolutions. Il contrôle la lane avec son laser, se défend avec W contre les assassins et domine les teamfights avec l'ultime. Il souffre contre les mages à plus longue portée (Xerath, Zoé, Vel'Koz).",
+    "early_game": "Poke avec E (laser) et Q + attaque renforcée. Last hit pour accumuler les fragments et atteindre ta première évolution (souvent E). Garde W en défense contre les engages.",
+    "level_1": "Siphonnage (Q) en premier. Q + attaque renforcée pour trade.",
+    "level_2": "Rayon Hextech (E). Ton sort principal de poke et de nettoyage : touche à la fois l'adversaire et les sbires.",
+    "level_3": "Champ gravitationnel (W) ou second E. W est ton outil défensif : pose-le sous l'assassin qui t'engage.",
+    "level_6": "Tempête arcanique : tempête dirigeable qui inflige des dégâts continus et interrompt les canalisations. Combo : W (stun) → R → E → Q.",
+    "power_spikes": [
+      "Première évolution (souvent E) : laser beaucoup plus fort.",
+      "Niveau 6 : tempête.",
+      "Premier item complet : nettoyage et poke.",
+      "Toutes évolutions acquises : mage de zone dominant."
+    ],
+    "lane_plan": "Contrôle la wave avec E, poke et last hit pour les fragments. Garde W contre les engages. Pousse puis rejoins les objectifs. La quête de rôle mid (retour accéléré) t'aide à reset après avoir poussé.",
+    "trading": "Trade court : Q → attaque renforcée → recul. Trade long : E → Q → attaque. All-in : W → R → E → Q. Abandonne contre les mages qui te poke hors de portée (Xerath).",
+    "jungle_plan": "",
+    "threats": [
+      "Xerath, Zoé et Vel'Koz, qui te surclassent en portée.",
+      "Assassins quand ton W est en recharge.",
+      "Ganks pendant que tu pousses."
+    ],
+    "mistakes": [
+      "Gaspiller W et ne plus pouvoir te défendre.",
+      "Rater tes last hits et retarder tes évolutions.",
+      "Placer la tempête loin des ennemis."
+    ],
+    "matchup_notes": {
+      "Syndra": "Esquive son stun et nettoie la wave avec E.",
+      "Ahri": "W contre son engage avec R.",
+      "Yasuo": "Son Mur de vent ne bloque pas ton laser ; W contre son engage.",
+      "Zed": "W sous toi au moment où il réapparaît.",
+      "Xerath": "Il te poke de plus loin : joue autour de ton jungler."
+    },
+    "mid_game": "Contrôle de zone autour des objectifs : W et R rendent chaque combat coûteux pour l'adversaire.",
+    "late_game": "Mage de zone : W sur l'engage adverse, R sur le groupe, E pour le poke. Reste derrière ta frontline.",
+    "ahead": "Prends les tours, domine les teamfights et roam avec ton jungler.",
+    "behind": "Farm, accumule les évolutions et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux accumuler tes évolutions et dominer les teamfights avec la zone de W et R.",
+    "final_tip": "Last hit le plus possible : chaque élimination rapproche ta prochaine évolution."
+  }
+}

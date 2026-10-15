@@ -1,0 +1,43 @@
+{
+ "TahmKench|sup": {
+  "identity": "Protective tank. An Acquired Taste (passive): his total health increases his damage, and damaging a champion applies stacks; at 3 stacks, Tahm Kench can devour them. Tongue Lash (Q) damages and slows the first unit hit (he heals on a champion; at 3 stacks, the target is stunned), Abyssal Dive (W) makes him vanish underground, then resurface farther away, knocking up enemies in the area, Thick Skin (E) stores part of the damage he takes to turn it into a shield, and Devour (R) swallows a champion: an enemy takes damage, an ally gets a shield and is protected.",
+  "playstyle": "Protection support: he swallows his ADC to save them, soaks a huge amount thanks to Thick Skin and punishes supports who stay in melee range. He beats fragile or dive supports (Camille, Xerath, Pantheon, Lux), but struggles against enchanters who poke and heal (Soraka, Nami) and tanks who lock him down (Braum, Alistar, Rell).",
+  "early_game": "Trade up close with your ADC: your attacks and Tongue Lash (Q) build An Acquired Taste; at 3 stacks, Q stuns. Keep Devour (R) to save your ADC from an engage. Thick Skin (E) turns damage taken into a shield when you need it.",
+  "level_1": "Tongue Lash (Q) first. After that, max Q first.",
+  "level_2": "Abyssal Dive (W). Engage: W on your opponent (knock-up), attacks, Q.",
+  "level_3": "Thick Skin (E). A shield from stored damage: cast it in the middle of a fight.",
+  "level_6": "Devour: swallow your dived ADC to save and move them, or swallow an enemy at 3 stacks to carry them toward your team.",
+  "power_spikes": [
+   "Level 2: W → attacks → Q.",
+   "Level 6: rescues with Devour.",
+   "First health items: increasing damage and durability.",
+   "Teamfights: your carry protected by R, your E soaking damage."
+  ],
+  "lane_plan": "Play up close with your ADC, protect them with R and engage with W. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third elsewhere. The support role quest then makes your Control Wards cheaper (40 gold, two stored).",
+  "trading": "All-in: W → attacks → Q (stun at 3 stacks) → E for the shield. Defense: R on your dived ADC. Back off against enchanters who poke you (Soraka, Nami): don't give them free trades.",
+  "jungle_plan": "",
+  "threats": [
+   "Soraka and Nami: hard matchups.",
+   "Braum, Alistar and Rell: hard matchups.",
+   "Ranged poke: you have to get close to apply An Acquired Taste."
+  ],
+  "mistakes": [
+   "Using Devour to attack when your ADC is about to die.",
+   "Using E too early, with little damage stored.",
+   "Engaging with W when your ADC can't follow."
+  ],
+  "matchup_notes": {
+   "Thresh": "If he catches your ADC, swallow them with R.",
+   "Nautilus": "If he engages on your ADC, swallow your ADC: the engage fails.",
+   "Lulu": "She pokes: play up close with your ADC.",
+   "Camille": "She dives: swallow her target or stun her with Q.",
+   "Soraka": "Her healing cancels your trades: play quick engages with W."
+  },
+  "mid_game": "Stick with your carry, place Control Wards and protect them around objectives.",
+  "late_game": "Stay next to your carry: R when they're dived, E mid-fight, W to engage or interrupt.",
+  "ahead": "Engage with W and take objectives.",
+  "behind": "Protect your carry with R: as long as they live, they can win the fight.",
+  "win_condition": "To win this game, you want to keep your carry alive with Devour and soak the enemy damage.",
+  "final_tip": "Devour on an ally makes them untouchable for a moment: wait until the last second to cancel the enemy engage."
+ }
+}

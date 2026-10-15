@@ -1,0 +1,43 @@
+{
+ "KogMaw|adc": {
+  "identity": "Scaling marksman with physical and magic damage. Caustic Spittle (Q) deals magic damage and lowers the target's armor and magic resist (and passively increases his attack speed). Bio-Arcane Barrage (W) increases his attack range and adds magic damage based on the target's max health to his attacks. Void Ooze (E) leaves a slowing trail, and Living Artillery (R) bombards an area at very long range (more damage to low-health targets, but a mana cost that rises if you chain it). When he dies, he explodes for true damage after 4 seconds (passive).",
+  "playstyle": "Immobile hypercarry: with W up, he destroys tanks and carries from long range, but he has no mobility. He needs a support who protects him.",
+  "early_game": "Farm and survive: your strength comes with items. Turn on Bio-Arcane Barrage (W) for trades when your opponent walks up to the wave. Keep Void Ooze (E) to slow an engage.",
+  "level_1": "Bio-Arcane Barrage (W) first. Trade with W on.",
+  "level_2": "Caustic Spittle (Q). Lowers the target's resistances: Q before the trade so your attacks hurt more.",
+  "level_3": "Void Ooze (E). A line slow to escape or chase.",
+  "level_6": "Living Artillery: very long-range poke and finishing low-health targets. Don't chain it too much: its mana cost goes up.",
+  "power_spikes": [
+   "Level 6: long-range poke.",
+   "First completed item: very punishing W.",
+   "Two completed items: you shred tanks.",
+   "Late game: one of the best teamfight threats."
+  ],
+  "lane_plan": "Farm and play around your support. Poke with R when you have mana. Prefer a protective support (shields, heals, disengage). The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) is ideal for a hypercarry: one more completed item. Join dragons with W.",
+  "trading": "Basic trade: Q, then attacks with W on. All-in: E to slow, Q, attacks, R to finish. Back off as soon as W ends: without it, you're weak.",
+  "jungle_plan": "",
+  "threats": [
+   "Assassins and divers: you have no mobility.",
+   "Engage supports when E is down.",
+   "Nilah, Ziggs and Seraphine: hard matchups."
+  ],
+  "mistakes": [
+   "Fighting without W on.",
+   "Chaining your ultimate and draining your mana.",
+   "Standing in front of your frontline."
+  ],
+  "matchup_notes": {
+   "Jinx": "She scales too: don't take long fights without your support.",
+   "Kai'Sa": "She dives with her ultimate: save E to slow her when she lands.",
+   "Jhin": "His long-range CC is dangerous: stay behind your support.",
+   "Ezreal": "He pokes from afar: farm carefully, you dominate him once you have items.",
+   "Varus": "Save E for his Chain of Corruption."
+  },
+  "mid_game": "Group with your team, poke with R before objectives. Stay behind your frontline with W on.",
+  "late_game": "Hit the closest target with W on: your max-health damage shreds tanks too. Your team has to protect you; you have to stay at max range.",
+  "ahead": "Force teamfights around objectives: you destroy everything in front of you.",
+  "behind": "Farm, stay with your team and wait for your items: you scale very well.",
+  "win_condition": "To win this game, you want to reach the late game and hit nonstop in teamfights, protected by your team.",
+  "final_tip": "Your W lasts a few seconds: turn it on right before you attack, not while walking to the fight."
+ }
+}

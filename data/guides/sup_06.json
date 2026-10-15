@@ -1,0 +1,43 @@
+{
+  "Braum|sup": {
+    "identity": "Tank protecteur. Coups étourdissants (passif) : ses attaques appliquent des effets ; une fois le premier appliqué, les attaques de ses alliés en appliquent aussi, et à 4 effets la cible est stun. Morsure de l'hiver (Q) lance des éclats de glace qui slow et appliquent un effet, Bouclier humain (W) le fait bondir vers un allié (tous deux gagnent de l'armure et de la résistance magique), Incassable (E) lève son shield dans une direction pour détruire tous les projectiles qui le touchent, et Fissure glaciale (R) knock-up les ennemis sur une ligne et laisse une fissure qui slow.",
+    "playstyle": "Support de protection et de contre-engage : il bloque les projectiles, stun avec son passif et protège son ADC. Aucun matchup nettement défavorable : ses moins bons (Senna, Zilean, Rell) restent proches de l'équilibre. Il écrase les supports de mêlée et les grappins (Blitzcrank, Nautilus).",
+    "early_game": "Au niveau 1, Q puis attaques : avec ton ADC, le passif stun vite. Garde E pour bloquer le grappin, l'ancre ou le gros poke adverse. W te permet de rejoindre ton ADC en un instant.",
+    "level_1": "Morsure de l'hiver (Q) en premier. Q, puis attaques avec ton ADC pour stun.",
+    "level_2": "Incassable (E). Bloque les grappins et les projectiles : ton ADC reste derrière toi.",
+    "level_3": "Bouclier humain (W). Bondis sur ton ADC quand il est engagé, et utilise ensuite E pour le couvrir.",
+    "level_6": "Fissure glaciale : knock-up sur une ligne, puis slow. Sert à engager sur deux adversaires ou à arrêter un engage adverse.",
+    "power_spikes": [
+      "Niveau 1 à 2 : stun du passif avec ton ADC.",
+      "Niveau 6 : ultime d'engage ou de contre-engage.",
+      "Premiers items de résistance : shield très durable.",
+      "Teamfight : E devant ton carry, R sur les divers."
+    ],
+    "lane_plan": "Joue les trades au niveau 1 et 2 avec le passif, et protège ton ADC contre les engages avec E. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers ailleurs. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées) : contrôle la vision du dragon.",
+    "trading": "Trade de base : Q, attaques avec ton ADC pour le stun. Défense : W sur ton ADC, E face à l'ennemi. All-in : Q, attaques, R sur les deux adversaires. Contre les supports qui poke sans projectile bloquable (Zilean), joue plutôt les engages.",
+    "jungle_plan": "",
+    "threats": [
+      "Senna, Zilean et Rell : tes moins bons matchups, proches de l'équilibre.",
+      "Dégâts de zone ou sans projectile, que ton shield ne bloque pas.",
+      "Kiting : tu dois être proche pour appliquer le passif."
+    ],
+    "mistakes": [
+      "Lever le shield dans la mauvaise direction.",
+      "Utiliser W pour engager et ne plus pouvoir rejoindre ton ADC.",
+      "Lancer l'ultime sans ton équipe prête à suivre."
+    ],
+    "matchup_notes": {
+      "Thresh": "Bloque son grappin avec E.",
+      "Nautilus": "E bloque son ancre ; s'il engage, W sur ton ADC puis R.",
+      "Blitzcrank": "Bloque son grappin avec E, ou laisse-le t'attraper toi.",
+      "Leona": "Elle t'engage : réponds avec W sur ton ADC et le passif.",
+      "Senna": "Elle te poke de loin : bloque ses Q avec E et engage sur elle quand elle avance."
+    },
+    "mid_game": "Accompagne ton ADC et ton jungler. Pose des pinks et protège les objectifs.",
+    "late_game": "Reste devant ton carry, E face à l'équipe adverse, W pour le rejoindre, R sur les divers ou pour engager sur un groupe.",
+    "ahead": "Engage avec R et aide ton équipe à prendre les objectifs.",
+    "behind": "Protège ton ADC : ton shield et ton ultime annulent les engages.",
+    "win_condition": "Pour gagner cette partie, tu veux protéger ton carry avec ton shield et gagner les combats grâce au stun de ton passif.",
+    "final_tip": "Le premier Coup qui stun vient de toi, les autres de ton équipe : Q ou une attaque sur la cible, puis laisse ton ADC finir le stun."
+  }
+}

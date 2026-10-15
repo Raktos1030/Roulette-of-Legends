@@ -1,0 +1,43 @@
+{
+ "Zed|jgl": {
+  "identity": "Physical damage, energy-based assassin, played in the jungle about one game in five (mid remains his main role). Living Shadow (W) creates a shadow that mimics his abilities and that he can swap places with, Razor Shuriken (Q) is thrown by Zed and his shadows, Shadow Slash (E) strikes around him and his shadows while slowing, and Death Mark (R) makes him untargetable, teleports him behind a target and detonates a mark that repeats part of the damage dealt.",
+  "playstyle": "Assassination jungler. He's very mechanical and depends on having a lead.",
+  "early_game": "Clear with Q and E, using your shadow to hit several monsters. Gank by placing your shadow (W) behind the target, then E to slow and Q. Avoid duels against junglers who beat you (Nidalee, Rammus, Warwick, Evelynn).",
+  "level_1": "Razor Shuriken (Q) first.",
+  "level_2": "Shadow Slash (E). Slows with your shadow: your clear speeds up.",
+  "level_3": "Living Shadow (W). First gank: W behind the target → E (slow) → Q from the shadow and Zed → swap with the shadow to stick or escape.",
+  "level_6": "Death Mark: untargetable, teleport behind the target, and the mark detonates after a few seconds. Combo: R → W → E → Q, then swap back to your ultimate's shadow to escape.",
+  "power_spikes": [
+   "Level 3: ganks with your shadow.",
+   "Level 6: assassinations with your ultimate.",
+   "First completed item: burst on carries.",
+   "Mid game: picks on isolated targets."
+  ],
+  "lane_plan": "",
+  "jungle_plan": "Fast clear and ganks on targets with no escape. Jungle Zed struggles in duels against most junglers: avoid enemy invades and play around ganks and picks. Use your shadow to cross walls during ganks. Only take Void Grubs (around 8 minutes) with your laners.",
+  "trading": "Ganking: W → E → Q → swap with the shadow. Assassinating: R → W → E → Q → swap back to your ultimate's shadow. Give up on it against junglers who beat you in duels or lock you down.",
+  "threats": [
+   "Nidalee, Rammus, Ivern, Evelynn, Warwick and Talon: hard matchups.",
+   "Tanks who soak your burst.",
+   "CC right as your ultimate kicks in."
+  ],
+  "mistakes": [
+   "Using your shadow (W) to engage with no way back.",
+   "Casting your ultimate on a protected target.",
+   "Dueling junglers who beat you."
+  ],
+  "matchup_notes": {
+   "Lee Sin": "Avoid his invades and gank where he isn't.",
+   "Graves": "He beats you in duels: don't let him steal your camps.",
+   "Viego": "Assassinate him before he possesses your allies.",
+   "Nidalee": "She farms faster and pokes you: play with your laners.",
+   "Rammus": "He soaks your burst and taunts you: avoid him."
+  },
+  "mid_game": "Picks on isolated targets and objectives with your team.",
+  "late_game": "Assassinate the enemy carry with your ultimate, then swap back to your shadow. Wait for the enemy CC to be used.",
+  "ahead": "Hunt isolated carries and take objectives.",
+  "behind": "Look for picks on isolated targets and play with your team.",
+  "win_condition": "To win this game, you want to assassinate isolated carries and turn every kill into an objective.",
+  "final_tip": "Before using your shadow to go in, plan your way out: that's what saves you."
+ }
+}

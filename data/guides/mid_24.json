@@ -1,0 +1,43 @@
+{
+  "Mel|mid": {
+    "identity": "Mage à dégâts magiques. Chaque sort lui donne des projectiles bonus sur ses attaques, et tous ses dégâts appliquent Accablement : au-delà d'un seuil, la cible est exécutée (passif Luminescence incandescente). Salve radieuse (Q) fait exploser des projectiles en zone, Réfutation (W) renvoie les projectiles adverses et la rend insensible aux dégâts un court instant, Piège solaire (E) root au centre et slow autour, et Éclipse dorée (R) frappe tous les ennemis marqués par Accablement, où qu'ils soient.",
+    "playstyle": "Mage de poke et d'exécution.",
+    "early_game": "Poke avec Q et les attaques renforcées pour accumuler Accablement. Garde W pour renvoyer le gros projectile adverse (sort clé d'un mage, flèche, grappin). E root un adversaire qui s'avance.",
+    "level_1": "Salve radieuse (Q) en premier. Poke et farm.",
+    "level_2": "Piège solaire (E). CC au centre : E → Q → attaques.",
+    "level_3": "Réfutation (W). Renvoie les projectiles et te protège : c'est ton outil défensif principal, et un piège redoutable contre les mages à projectiles.",
+    "level_6": "Éclipse dorée : frappe tous les ennemis marqués, partout sur la carte. Accumule Accablement sur plusieurs cibles, puis R pour exécuter celles qui passent sous le seuil.",
+    "power_spikes": [
+      "Niveau 3 : E → Q → attaques.",
+      "Niveau 6 : Éclipse dorée globale.",
+      "Premier item complet : poke et exécutions.",
+      "Teamfight : exécution de plusieurs cibles marquées."
+    ],
+    "lane_plan": "Poke au Q et avec les attaques, garde W pour le sort clé adverse. Pousse puis rejoins les objectifs pour marquer plusieurs ennemis. Transforme ton avance de lane en objectifs rapidement, car ta fin de partie est faible ce patch.",
+    "trading": "Trade court : Q → attaques renforcées. Trade long : E → Q → attaques → R pour exécuter. Défense : W au moment du projectile adverse. Abandonne contre les assassins qui te divent (Fizz, Aurelion Sol, Viktor).",
+    "jungle_plan": "",
+    "threats": [
+      "Presque tous les mages fréquents selon les données (Viktor, Syndra, Xerath).",
+      "Fizz, qui t'esquive et te burst.",
+      "Sorts sans projectile, que W ne peut pas renvoyer."
+    ],
+    "mistakes": [
+      "Gaspiller W sans projectile à renvoyer.",
+      "Lancer l'ultime sans assez de stacks d'Accablement.",
+      "Jouer pour le late game alors que ta fin de partie est faible ce patch."
+    ],
+    "matchup_notes": {
+      "Ahri": "Renvoie son Orbe ou son Charme avec W.",
+      "Viktor": "Son laser n'est pas renvoyable : farm et joue autour de ton jungler.",
+      "Syndra": "Renvoie ses sphères avec W au bon moment.",
+      "Xerath": "Il te poke de très loin : reste derrière tes sbires.",
+      "Fizz": "Garde E pour la fin de son saut."
+    },
+    "mid_game": "Poke et marque plusieurs ennemis avant les objectifs, puis R pour exécuter.",
+    "late_game": "Accumule Accablement sur l'équipe adverse et exécute avec R. Reste derrière ta frontline.",
+    "ahead": "Transforme ton avance en objectifs le plus vite possible.",
+    "behind": "Farm, poke en sécurité et joue avec ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux transformer ton avance de lane en objectifs avant que la partie ne se prolonge.",
+    "final_tip": "Garde Réfutation pour le sort clé adverse : renvoyer le bon projectile retourne un combat."
+  }
+}
