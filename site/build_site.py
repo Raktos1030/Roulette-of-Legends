@@ -36,6 +36,16 @@ PAGE_EN = [
     ("img/share-fr.png", "img/share-en.png"),
     ('<meta property="og:locale" content="fr_FR">', '<meta property="og:locale" content="en_US">'),
     ('<meta property="og:locale:alternate" content="en_US">', '<meta property="og:locale:alternate" content="fr_FR">'),
+    ('>Le principe<',
+     '>The idea<'),
+    ('>La roulette League of Legends<',
+     '>The League of Legends roulette<'),
+    (">Tu ne sais pas quoi jouer&nbsp;? Roulette of Legends tire pour toi un rôle et un champion au hasard, parmi ceux vraiment joués à chaque poste. Seul, ou à plusieurs avec la roulette de groupe&nbsp;: jusqu'à 5 joueurs, chacun reçoit un poste et un champion différents, prêts à coller sur Discord. Le mode chaos, lui, met n'importe quel champion à n'importe quel poste. Tes favoris et tes tirages restent dans ton navigateur, sans compte.<",
+     ">Don't know what to play? Roulette of Legends picks a random role and champion for you, among the champions actually played in each role. Solo, or with friends using the group roulette: up to 5 players, each one gets a different role and champion, ready to paste on Discord. Chaos mode puts any champion in any role. Your favorites and rolls stay in your browser, no account needed.<"),
+    (">Pour aller plus loin, l'appli suit ton tirage dans le client LoL jusqu'au résultat, et la version complète ajoute une fiche de jeu pour chaque champion à chaque poste, le build importé et un overlay en partie.<",
+     '>To go further, the app tracks your roll in the LoL client all the way to the result, and the full version adds a guide for every champion in every role, the imported build and an in-game overlay.<'),
+    (">Découvrir l'appli →<",
+     '>Discover the app →<'),
 ]
 
 

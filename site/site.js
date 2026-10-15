@@ -1200,6 +1200,7 @@
     const id = location.hash.replace(/^#\/?/, "").split("/")[0];
     const key = PAGES[id] ? id : "";
     document.querySelectorAll(".top-item").forEach((a) => a.classList.toggle("on", a.dataset.p === key));
+    document.getElementById("about").hidden = key !== "";   // presentation text: home page only
     root = null;
     const page = document.getElementById("page");
     window.scrollTo(0, 0);

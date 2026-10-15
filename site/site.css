@@ -89,6 +89,16 @@ body.site .input, body.site input { user-select: text; }
 .cmp td.no { color: var(--faint); }
 .cmp-note { margin: 16px 0 0; font-size: 13px; }
 
+/* --- presentation text (written in the page itself, shown on the home page) --- */
+.about { max-width: 1400px; padding: 0 34px 30px; }
+.about-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 40px; align-items: center; padding: 30px 36px;
+  background: linear-gradient(110deg, rgba(200, 170, 110, .10), var(--glass) 45%); border-color: var(--hair-gold); }
+.about-card > :not(.btn) { grid-column: 1; }
+.about-card h2 { margin: 8px 0 12px; font: 26px/1.15 var(--display); letter-spacing: .04em; color: var(--gold-pale); }
+.about-card p { margin: 0 0 10px; max-width: 880px; font-size: 15px; line-height: 1.65; color: var(--text-2); }
+.about-card p:last-of-type { margin-bottom: 0; }
+.about-card .btn { grid-column: 2; grid-row: 1 / span 4; white-space: nowrap; }
+
 /* --- phones and small windows --- */
 @media (max-width: 1000px) {
   .welcome { grid-template-columns: 1fr; }
@@ -104,6 +114,9 @@ body.site .input, body.site input { user-select: text; }
   .top-item span { display: none; }
   body.site #page { padding: 16px 16px 30px; }
   #foot { padding: 0 16px 24px; }
+  .about { padding: 0 16px 24px; }
+  .about-card { grid-template-columns: 1fr; padding: 22px 20px; }
+  .about-card .btn { grid-column: 1; grid-row: auto; justify-self: start; margin-top: 16px; }
   .controls, .controls.group { grid-template-columns: 1fr; padding: 16px; }
   .controls .ctl-roles, .controls .ctl-champ, .controls .filters, .controls .launch { grid-column: 1; }
   .controls.group .gpanel, .controls.group .launch { grid-column: 1; grid-row: auto; }
