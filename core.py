@@ -47,7 +47,7 @@ APP_SHORT = "RoL"
 # download page of both apps (release page), shown by the Lite to promote the full app; empty until published
 DOWNLOAD_URL = "https://github.com/Raktos1030/Roulette-of-Legends/releases/latest"
 OLD_NAMES = () if LITE else ("Roulette LoL",)   # former app names (Windows startup entry to migrate)
-APP_VERSION = "2.1"
+APP_VERSION = "2.1.1"
 # macOS app: data/ and ui/ are bundled read-only; data/ is copied to a writable folder of the user's Library
 RESOURCES = getattr(sys, "_MEIPASS", None) if MAC and getattr(sys, "frozen", False) else None
 BASE = os.path.join(os.path.expanduser("~"), "Library", "Application Support", APP_NAME) if RESOURCES else find_base()

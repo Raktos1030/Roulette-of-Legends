@@ -478,11 +478,26 @@ def autotest(path):
     report()
 
 
+def unblock_bundle():
+    """Files extracted from a downloaded zip carry Windows' "from the internet" mark, and .NET then refuses to load
+    the bundled Python.Runtime.dll (pythonnet, behind the WebView2 window). Drops that mark from the app's own DLLs."""
+    if sys.platform != "win32" or not getattr(sys, "frozen", False):
+        return
+    for base, _dirs, files in os.walk(getattr(sys, "_MEIPASS", None) or os.path.dirname(sys.executable)):
+        for f in files:
+            if f.lower().endswith(".dll"):
+                try:
+                    os.remove(os.path.join(base, f) + ":Zone.Identifier")
+                except OSError:
+                    pass
+
+
 def main():
     args = [LEGACY_FLAGS.get(a, a) for a in sys.argv[1:]]
     if "--check" in args:
         sys.exit(core.check())
     sys.excepthook = lambda t, v, tb: log_error("".join(traceback.format_exception(t, v, tb)))
+    unblock_bundle()
     if sys.platform == "win32":
         try:
             ctypes.windll.shcore.SetProcessDpiAwareness(1)
