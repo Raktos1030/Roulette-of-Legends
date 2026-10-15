@@ -71,6 +71,7 @@ async function boot() {
   route();
   listen(onEvent);
   document.addEventListener("keydown", onKey);
+  if (b.updated) setTimeout(() => toast(t("Mise à jour terminée : version {0}.", b.updated), "good", 7000), 900);
   if (b.update_notice) {
     // stats updated while the window was closed
     setTimeout(() => toast(t("Nouvelles statistiques : patch {0} (données du {1}).", b.update_notice.patch, fmtDate(b.update_notice.generated)), "good", 7000), 900);
@@ -254,23 +255,37 @@ function paintLol() {
     : t("Client LoL non détecté : lance-le pour relier tes parties");
 }
 
-// newer version of the app published on GitHub: slim notice until downloaded or dismissed for that version
+// newer version of the app published on GitHub: notice until installed or dismissed for that version
 function paintAppUpdate() {
   const u = store.boot.app_update;
   const box = document.getElementById("app-update");
-  const show = !!u && u.version !== (store.profile || {}).app_update_seen;
+  const busy = !!u && ["download", "install", "restart"].includes(u.state);
+  const show = !!u && (busy || u.state === "error" || u.version !== (store.profile || {}).app_update_seen);
   box.hidden = !show;
   if (!show) return;
-  box.innerHTML = `<span class="au-dot"></span><span>${esc(t("Nouvelle version {0} disponible.", u.version))}</span>
-    <button class="btn-gold" data-dl>${esc(t("Télécharger"))}</button>
-    <button class="au-close" data-x title="${esc(t("Masquer"))}">×</button>`;
-  box.querySelector("[data-dl]").onclick = async () => {
-    const r = await call("open_download");
+  const pct = Math.round((u.progress || 0) * 100);
+  const text = {
+    download: t("Téléchargement de la version {0}… {1} %", u.version, pct),
+    install: t("Installation de la version {0}…", u.version),
+    restart: t("Redémarrage sur la version {0}…", u.version),
+    error: u.text,
+  }[u.state] || t("Nouvelle version {0} disponible.", u.version);
+  const label = u.state === "error" ? t("Réessayer") : u.auto ? t("Mettre à jour") : t("Télécharger");
+  box.classList.toggle("busy", busy);
+  box.classList.toggle("bad", u.state === "error");
+  box.innerHTML = `<span class="au-dot"></span><span>${esc(text)}</span>
+    ${busy ? "" : `<button class="btn-gold" data-go>${esc(label)}</button>
+    <button class="au-close" data-x title="${esc(t("Masquer"))}">×</button>`}
+    ${u.state === "download" ? `<span class="au-bar"><i style="width:${pct}%"></i></span>` : ""}`;
+  if (busy) return;
+  box.querySelector("[data-go]").onclick = async () => {
+    const r = await call("install_update");
     if (r.error) toast(r.error, "bad");
   };
   box.querySelector("[data-x]").onclick = async () => {
     const r = await call("set_pref", { key: "app_update_seen", value: u.version });
     if (r.profile) store.profile = r.profile;
+    store.boot.app_update = { ...u, state: null };
     paintAppUpdate();
   };
 }

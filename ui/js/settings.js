@@ -228,7 +228,7 @@ function paintAbout() {
   const dl = root.querySelector("#s-about [data-dl]");
   if (dl) dl.onclick = async (e) => {
     e.preventDefault();
-    const r = await call("open_download");
+    const r = await call("install_update");
     if (r.error) toast(r.error, "bad");
   };
 }

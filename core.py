@@ -20,19 +20,6 @@ import lol_client as lol
 import lolassets
 
 
-def find_base():
-    """Folder holding data/: the script's folder, or for the .exe its own folder (or a parent when the exe sits in
-    a subfolder of the project)."""
-    if getattr(sys, "frozen", False):
-        exe_dir = os.path.dirname(os.path.abspath(sys.executable))
-        up = os.path.dirname(exe_dir)
-        for d in (exe_dir, up, os.path.dirname(up)):
-            if os.path.isfile(os.path.join(d, "data", "stats.json")):
-                return d
-        return exe_dir
-    return os.path.dirname(os.path.abspath(__file__))
-
-
 # Lite edition: a separate app built with lite/rol_lite.py. Roulette (solo, group, chaos), favorites and history
 # only; no guides, overlay, imports or Game page.
 try:
@@ -48,11 +35,36 @@ APP_SHORT = "RoL"
 DOWNLOAD_URL = "https://github.com/Raktos1030/Roulette-of-Legends/releases/latest"
 OLD_NAMES = () if LITE else ("Roulette LoL",)   # former app names (Windows startup entry to migrate)
 APP_VERSION = "2.2.1"
-# macOS app: data/ and ui/ are bundled read-only; data/ is copied to a writable folder of the user's Library
-RESOURCES = getattr(sys, "_MEIPASS", None) if MAC and getattr(sys, "frozen", False) else None
-BASE = os.path.join(os.path.expanduser("~"), "Library", "Application Support", APP_NAME) if RESOURCES else find_base()
+
+
+def find_layout():
+    """(APP_DIR, BASE, BUNDLED_DATA): folder of the app's own files (ui/), folder holding the working data/, and the
+    data/ shipped with a release build (None otherwise).
+
+    Release build: ui/ and data/ ship next to the exe (inside the bundle on macOS) and are replaced by updates;
+    data/ is copied to a folder of the user's account (profile, history, downloaded stats), which updates never touch.
+    Source run, or development build (exe in a subfolder of the project): everything is read from the project."""
+    if not getattr(sys, "frozen", False):
+        here = os.path.dirname(os.path.abspath(__file__))
+        return here, here, None
+    if MAC:
+        res = sys._MEIPASS
+        return res, os.path.join(os.path.expanduser("~"), "Library", "Application Support", APP_NAME), \
+            os.path.join(res, "data")
+    exe_dir = os.path.dirname(os.path.abspath(sys.executable))
+    if os.path.isfile(os.path.join(exe_dir, "data", "stats.json")):
+        local = os.environ.get("LOCALAPPDATA") or os.path.join(os.path.expanduser("~"), "AppData", "Local")
+        return exe_dir, os.path.join(local, APP_NAME), os.path.join(exe_dir, "data")
+    up = os.path.dirname(exe_dir)
+    for d in (up, os.path.dirname(up)):
+        if os.path.isfile(os.path.join(d, "data", "stats.json")):
+            return d, d, None
+    return exe_dir, exe_dir, None
+
+
+APP_DIR, BASE, BUNDLED_DATA = find_layout()
 DATA = os.path.join(BASE, "data")
-UI_DIR = os.path.join(RESOURCES or BASE, "ui")
+UI_DIR = os.path.join(APP_DIR, "ui")
 BACKUP_DIR = os.path.join(BASE, "backups")
 PROFILE_PATH = os.environ.get("ROL_PROFILE") or os.path.join(DATA, "profile.json")   # alternate profile for tests
 HISTORY_PATH = os.path.join(DATA, "history.json")
@@ -77,23 +89,49 @@ LEGACY_PATHS = [
      for name in ("stats", "champions", "compo", "items", "runes")]
 
 
-def seed_data_dir():
-    """macOS app: copies the bundled data to the user folder on first launch, and again when it ships newer stats."""
-    if not RESOURCES:
-        return
-    src = os.path.join(RESOURCES, "data")
+# data/ entries that belong to the user (current and legacy names): never replaced by the bundled copy
+USER_ENTRIES = {"profile.json", "history.json", "games", "cache", "update.json", "errors.log", ".instance",
+                "profil.json", "historique.json", "parties", "erreurs.log", "maj.json",
+                os.path.join("fonts", "lol"), os.path.join("img", "ui")}
+STATS_FILES = ("stats.json", "compo.json", "champions.json", "items.json", "runes.json")   # also refreshed online
+BUNDLE_MARK = ".bundle"   # in data/: app version whose bundled data was last copied
 
-    def generated(folder):
-        return ((read_json(os.path.join(folder, "stats.json"), {}) or {}).get("meta") or {}).get("generated") or ""
-    newer = generated(src) > generated(DATA)
-    for base, _dirs, files in os.walk(src):
-        rel = os.path.relpath(base, src)
-        dest = DATA if rel == "." else os.path.join(DATA, rel)
-        os.makedirs(dest, exist_ok=True)
-        for f in files:
-            target = os.path.join(dest, f)
-            if newer or not os.path.exists(target):
+
+def seed_data_dir():
+    """Release build: fills the user's data/ from the bundled one. First launch: copies everything (with the
+    profile and history of a version that kept them next to the exe). After an update: copies the new guides and
+    texts, and the bundled stats only when they are newer than the ones downloaded since."""
+    if not BUNDLED_DATA:
+        return
+    mark = os.path.join(DATA, BUNDLE_MARK)
+    if not os.path.isdir(DATA):
+        shutil.copytree(BUNDLED_DATA, DATA)
+    else:
+        try:
+            with open(mark, encoding="utf-8") as f:
+                if f.read().strip() == APP_VERSION:
+                    return
+        except OSError:
+            pass
+
+        def generated(folder):
+            return ((read_json(os.path.join(folder, "stats.json"), {}) or {}).get("meta") or {}).get("generated") or ""
+        newer_stats = generated(BUNDLED_DATA) > generated(DATA)
+        for base, dirs, files in os.walk(BUNDLED_DATA):
+            rel = os.path.relpath(base, BUNDLED_DATA)
+            rel = "" if rel == "." else rel
+            dirs[:] = [d for d in dirs if os.path.join(rel, d) not in USER_ENTRIES]
+            os.makedirs(os.path.join(DATA, rel), exist_ok=True)
+            for f in files:
+                path = os.path.join(rel, f)
+                target = os.path.join(DATA, path)
+                if path in USER_ENTRIES or (path in STATS_FILES and not newer_stats):
+                    continue
+                if rel.split(os.sep)[0] == "img" and os.path.exists(target):
+                    continue   # champion and item images: downloaded ones may be newer
                 shutil.copy2(os.path.join(base, f), target)
+    with open(mark, "w", encoding="utf-8") as f:
+        f.write(APP_VERSION)
 
 
 def migrate_legacy_paths():
@@ -103,6 +141,18 @@ def migrate_legacy_paths():
                 os.rename(old, new)
             except OSError:
                 pass
+
+
+_prepared = False
+
+
+def prepare_data():
+    """Working data/ ready (copied from the bundle, legacy names migrated); done once, before anything writes there."""
+    global _prepared
+    if not _prepared:
+        _prepared = True
+        seed_data_dir()
+        migrate_legacy_paths()
 
 ROLES = ["top", "jgl", "mid", "adc", "sup"]
 ROLE_LABEL = {"top": "Top", "jgl": "Jungle", "mid": "Mid", "adc": "ADC", "sup": "Support", "random": "Aléatoire"}
@@ -797,8 +847,7 @@ class NullUI:
 
 class Core:
     def __init__(self, use_lol=True):
-        seed_data_dir()
-        migrate_legacy_paths()
+        prepare_data()
         self.lock = threading.RLock()
         self.profile = Profile(PROFILE_PATH)
         set_lang(self.profile.get("lang") or system_lang())   # before the data: names and guides in that language
@@ -812,7 +861,7 @@ class Core:
         self.updater = None
         self._clients = []
         self._stop = threading.Event()
-        self.watcher = lol.LolWatcher(self.events, BASE, self.profile["lol_dir"]) if use_lol else None
+        self.watcher = lol.LolWatcher(self.events, APP_DIR, self.profile["lol_dir"]) if use_lol else None
         self.lol_state = {"connected": False}
         self.ranked = {}
         self._lp_check_at = 0.0
@@ -836,7 +885,10 @@ class Core:
         self.import_state = None
         self.status = {"text": "", "tone": "muted"}
         self.update_status = {"state": "idle"}
-        self.app_update = None   # newer published version of the app: {"version"}
+        # newer published version of the app: {"version", "auto" (installs itself), "state", "progress", "text"}
+        self.app_update = None
+        self.just_updated = False   # started by an update that just finished (one notice)
+        self._installer = None
         try:
             if any(e.get("status") in ("played", "remake") and e.get("queue") and e["queue"] not in lol.SR_QUEUES
                    and not e.get("free") for e in self.history.entries):
@@ -850,7 +902,7 @@ class Core:
         self.lol_assets = {}
         if not LITE and sys.platform == "win32":
             try:
-                self.lol_assets = lolassets.ensure(lol.LolClient(BASE, self.profile["lol_dir"]).candidate_dirs(), DATA)
+                self.lol_assets = lolassets.ensure(lol.LolClient(APP_DIR, self.profile["lol_dir"]).candidate_dirs(), DATA)
             except Exception:
                 pass
 
@@ -953,6 +1005,7 @@ class Core:
                 "platform": "mac" if MAC else "windows",
                 "download": bool(DOWNLOAD_URL),
                 "app_update": self.app_update,
+                "updated": self._take_updated(),
                 "window": {"frameless": bool(getattr(self.ui, "frameless", False))},
                 "app": {"name": APP_NAME, "version": APP_VERSION},
                 "meta": {"patch": d.meta.get("patch"), "generated": d.meta.get("generated"),
@@ -2535,10 +2588,36 @@ class Core:
         self.emit("update", st)
 
     def set_app_update(self, version):
-        """A newer version of the app is published: the UI shows a download notice."""
-        if (self.app_update or {}).get("version") != version:
-            self.app_update = {"version": version}
+        """A newer version of the app is published: the UI shows an update notice."""
+        if (self.app_update or {}).get("version") != version and not self._installer:
+            from selfupdate import installed_target
+            self.app_update = {"version": version, "auto": bool(installed_target())}
             self.emit("app_update", self.app_update)
+
+    def set_app_update_state(self, st):
+        """Progress of an in-app update (download, install, restart, error)."""
+        if self.app_update:
+            self.app_update = {**self.app_update, "progress": None, "text": None, **st}
+            if st.get("state") == "error":
+                self._installer = None
+            self.emit("app_update", self.app_update)
+
+    def api_install_update(self):
+        """"Update" button: the app downloads the new version and restarts on it (release page otherwise)."""
+        u = self.app_update
+        if not u:
+            return {"error": T("Aucune mise à jour disponible.")}
+        if not u.get("auto"):
+            return self.api_open_download()
+        if not self._installer:
+            from selfupdate import Installer
+            self._installer = Installer(self, u["version"])
+            self._installer.start()
+        return {"ok": True}
+
+    def _take_updated(self):
+        updated, self.just_updated = self.just_updated, False
+        return APP_VERSION if updated else None
 
     def api_update(self, action="check"):
         if not self.updater:

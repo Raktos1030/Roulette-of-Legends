@@ -290,7 +290,7 @@
 "Jungle": "Jungle",
 "Jungle : Châtiment et un compagnon de jungle au départ (il évolue en tuant des monstres). Ton expérience vient des camps de la jungle, pas des vagues de sbires.": "Jungle: start with Smite and a jungle pet (it evolves as you kill monsters). Your experience comes from jungle camps, not minion waves.",
 "KDA moyen": "Average KDA",
-"L'application n'a pas pu démarrer. Détail dans data\\errors.log.": "The app couldn't start. Details in data\\errors.log.",
+"L'application n'a pas pu démarrer. Détail dans %s.": "The app couldn't start. Details in %s.",
 "LA FAILLE DÉCIDE POUR TOI": "THE RIFT DECIDES FOR YOU",
 "LP en attente…": "LP pending…",
 "LP non mesurés (plusieurs parties classées entre-temps)": "LP not measured (several ranked games in between)",
@@ -816,5 +816,15 @@
 "Téléchargement des statistiques du patch %s…": "Downloading the patch %s stats…",
 "Nouvelle version {0} disponible.": "New version {0} available.",
 "Télécharger": "Download",
-"version {0} disponible": "version {0} available"
+"version {0} disponible": "version {0} available",
+"Téléchargement de la version {0}… {1} %": "Downloading version {0}… {1}%",
+"Installation de la version {0}…": "Installing version {0}…",
+"Redémarrage sur la version {0}…": "Restarting on version {0}…",
+"Réessayer": "Retry",
+"Mise à jour terminée : version {0}.": "Update complete: version {0}.",
+"La mise à jour n'a pas pu se faire (%s).": "The update couldn't be installed (%s).",
+"fichier introuvable dans la version publiée": "file missing from the published version",
+"téléchargement corrompu": "corrupted download",
+"version téléchargée incomplète": "downloaded version incomplete",
+"Aucune mise à jour disponible.": "No update available."
 }

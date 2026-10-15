@@ -15,6 +15,8 @@ Les deux applis sont sur la page des [releases](https://github.com/Raktos1030/Ro
 
 Décompresse le dossier où tu veux et lance l'appli. Sur Mac, au premier lancement : Réglages Système › Confidentialité et sécurité › « Ouvrir quand même ».
 
+Les nouvelles versions s'installent depuis l'appli : un bandeau apparaît avec un bouton **Mettre à jour**, et ton historique et tes réglages sont conservés. Sur Mac, place d'abord l'appli dans Applications.
+
 Les applis sont en français et en anglais.
 
 ## Les deux applis

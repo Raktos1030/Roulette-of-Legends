@@ -15,6 +15,8 @@ Both apps are on the [releases](https://github.com/Raktos1030/Roulette-of-Legend
 
 Unzip the folder anywhere and run the app. On Mac, on first launch: System Settings › Privacy & Security › "Open Anyway".
 
+New versions install from the app itself: a bar shows up with an **Update** button, and your history and settings are kept. On Mac, move the app to Applications first.
+
 The apps are available in French and English.
 
 ## The two apps

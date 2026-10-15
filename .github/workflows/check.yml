@@ -1,4 +1,5 @@
-# Checks the macOS Lite on every push to main: self-test from source, build, self-test of the built app.
+# Checks the macOS Lite on every push to main: self-test from source, build, self-test of the built app,
+# in-app update (packaging/test_update.py).
 # Results (report, app output, errors.log) are posted as annotations of the run.
 name: Check
 
@@ -37,3 +38,10 @@ jobs:
           python packaging/annotate.py "App output" "$RUNNER_TEMP/app.log"
           python packaging/annotate.py "App errors.log" "$HOME/Library/Application Support/Roulette of Legends Lite/data/errors.log"
           grep -q "^OK$" "$RUNNER_TEMP/app.txt"
+      - name: In-app update
+        continue-on-error: true
+        run: |
+          perl -e 'alarm 420; exec @ARGV' python packaging/test_update.py lite --dist dist > "$RUNNER_TEMP/update.txt" 2>&1 || true
+          python packaging/annotate.py "In-app update" "$RUNNER_TEMP/update.txt"
+          python packaging/annotate.py "Update errors.log" "$HOME/Library/Application Support/Roulette of Legends Lite/data/errors.log"
+          tail -1 "$RUNNER_TEMP/update.txt" | grep -q "^OK$"

@@ -25,7 +25,7 @@ import time
 import urllib.error
 import urllib.request
 
-from core import DATA, LITE, T, log_error, read_json, write_json
+from core import DATA, LITE, STATS_FILES, T, log_error, read_json, write_json
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36"
 DD = "https://ddragon.leagueoflegends.com"
@@ -47,7 +47,6 @@ MIN_PATCH_SHARE = 0.10   # the new patch must hold >= 10 % of the 30-day games (
 # of querying lolalytics and u.gg themselves (one update a day for everyone)
 STATS_URL = "https://raw.githubusercontent.com/Raktos1030/Roulette-of-Legends/stats/"
 STATS_FORMAT = 1
-STATS_FILES = ("stats.json", "compo.json", "champions.json", "items.json", "runes.json")
 CENTRAL_MAX_AGE = 14   # days; older published stats mean the workflow stopped, and the app updates on its own
 LATEST_RELEASE = "https://github.com/Raktos1030/Roulette-of-Legends/releases/latest"   # redirects to .../tag/vX.Y.Z
 

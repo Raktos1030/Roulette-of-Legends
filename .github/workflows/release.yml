@@ -1,6 +1,7 @@
 # Builds the apps on every version tag (v2.1, v2.2...) and publishes them as a GitHub release:
 #   Windows: Roulette-of-Legends-windows.zip, Roulette-of-Legends-Lite-windows.zip
 #   macOS (Apple Silicon): Roulette-of-Legends-Lite-mac.zip
+#   SHA256SUMS.txt: checksums of the archives, for the in-app update
 # Can also be run by hand (Actions tab) to get the builds as artifacts without publishing.
 name: Release
 
@@ -59,6 +60,8 @@ jobs:
         with:
           path: assets
           merge-multiple: true
-      - run: gh release create "$GITHUB_REF_NAME" assets/*.zip --repo "$GITHUB_REPOSITORY" --title "Roulette of Legends $GITHUB_REF_NAME" --notes-file .github/release-notes.md
+      # checked by the apps before installing an update (selfupdate.py)
+      - run: cd assets && sha256sum *.zip > SHA256SUMS.txt && cat SHA256SUMS.txt
+      - run: gh release create "$GITHUB_REF_NAME" assets/*.zip assets/SHA256SUMS.txt --repo "$GITHUB_REPOSITORY" --title "Roulette of Legends $GITHUB_REF_NAME" --notes-file .github/release-notes.md
         env:
           GH_TOKEN: ${{ github.token }}

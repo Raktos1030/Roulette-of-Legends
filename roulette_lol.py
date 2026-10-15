@@ -384,6 +384,12 @@ def run_app(args):
     migrate_autostart()
     c = core.Core(use_lol="--no-lol" not in args)
     c.actions = actions
+    c.just_updated = "--updated" in args
+    if core.BUNDLED_DATA:
+        import selfupdate
+        t = threading.Timer(20, selfupdate.cleanup)
+        t.daemon = True
+        t.start()
     server, overlay, tray = start_services(c, with_tray="--no-tray" not in args)
     ui = WindowUI(c, tray, server.url)
     c.ui = ui
@@ -497,7 +503,13 @@ def main():
     if "--check" in args:
         sys.exit(core.check())
     sys.excepthook = lambda t, v, tb: log_error("".join(traceback.format_exception(t, v, tb)))
+    if "--finish-update" in args:   # new version, started from its unpacked copy by the old one
+        import selfupdate
+        i = args.index("--finish-update")
+        selfupdate.finish(args[i + 1], int(args[i + 2]))
+        return
     unblock_bundle()
+    core.prepare_data()
     if sys.platform == "win32":
         try:
             ctypes.windll.shcore.SetProcessDpiAwareness(1)
@@ -517,7 +529,7 @@ def main():
     except Exception:
         log_error(traceback.format_exc())
         try:
-            ctypes.windll.user32.MessageBoxW(0, core.T("L'application n'a pas pu démarrer. Détail dans data\\errors.log."),
+            ctypes.windll.user32.MessageBoxW(0, core.T("L'application n'a pas pu démarrer. Détail dans %s.") % core.LOG_PATH,
                                              APP_NAME, 0x10)
         except Exception:
             pass

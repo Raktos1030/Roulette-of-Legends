@@ -1352,7 +1352,7 @@ body.maximized .rz { display: none; }
 .scard, .gcard, .duo-card, .gres-card { background-clip: padding-box; }
 
 /* ---------- new app version notice ---------- */
-#app-update { display: flex; align-items: center; gap: 14px; margin: 14px 34px 0; padding: 10px 14px 10px 18px; border-radius: 14px;
+#app-update { position: relative; overflow: hidden; display: flex; align-items: center; gap: 14px; margin: 14px 34px 0; padding: 10px 14px 10px 18px; border-radius: 14px;
   border: 1px solid var(--hair-gold); background: linear-gradient(90deg, rgba(200, 170, 110, .16), rgba(9, 15, 26, .92) 60%);
   font-size: 13.5px; color: var(--gold-pale); animation: pageIn .45s var(--ease) both; }
 #app-update[hidden] { display: none; }
@@ -1361,3 +1361,10 @@ body.maximized .rz { display: none; }
 .au-close { width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--hair-2); background: none; color: var(--muted); cursor: pointer; font-size: 16px; line-height: 1; }
 .au-close:hover { color: var(--text); border-color: var(--gold); }
 #app-update .btn-gold { padding: 7px 16px; font-size: 11.5px; }
+#app-update.busy { min-height: 50px; }
+#app-update.busy .au-dot { animation: auPulse 1.2s ease-in-out infinite; }
+#app-update.bad { border-color: rgba(232, 64, 87, .45); color: var(--text-2); }
+#app-update.bad .au-dot { background: #e84057; box-shadow: 0 0 10px rgba(232, 64, 87, .7); }
+.au-bar { position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: rgba(200, 170, 110, .15); }
+.au-bar i { display: block; height: 100%; background: var(--gold-hi); transition: width .3s linear; }
+@keyframes auPulse { 50% { opacity: .35; } }

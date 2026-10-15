@@ -31,7 +31,7 @@ from tkinter import font as tkfont
 import hud
 import live
 from analysis import counter_items, guess_roles, matchup_vs, strip_goal, team_profile, third_person
-from core import (BASE, DATA, GAMES_DIR, LITE, ROLES, ROLE_LABEL, ROLE_LONG, ROLE_ICON, OVERLAY_PAGES, OVERLAY_MODULES,
+from core import (APP_DIR, DATA, GAMES_DIR, LITE, ROLES, ROLE_LABEL, ROLE_LONG, ROLE_ICON, OVERLAY_PAGES, OVERLAY_MODULES,
                   fmt_int, fmt_pct, log_error, T)
 
 try:
@@ -1457,7 +1457,7 @@ class Overlay:
             try:
                 import lolassets
                 import lol_client
-                dirs = lol_client.LolClient(BASE, self.core.profile["lol_dir"]).candidate_dirs()
+                dirs = lol_client.LolClient(APP_DIR, self.core.profile["lol_dir"]).candidate_dirs()
                 self._hud_scale = (now, lolassets.hud_scale(dirs))
             except Exception:
                 self._hud_scale = (now, None)
