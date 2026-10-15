@@ -1350,3 +1350,14 @@ body.maximized .rz { display: none; }
 /* champion art under a thin translucent border: paint the art inside the border only, or it shows through the
    border below the dark gradient (cards with an opaque gold border hid it) */
 .scard, .gcard, .duo-card, .gres-card { background-clip: padding-box; }
+
+/* ---------- new app version notice ---------- */
+#app-update { display: flex; align-items: center; gap: 14px; margin: 14px 34px 0; padding: 10px 14px 10px 18px; border-radius: 14px;
+  border: 1px solid var(--hair-gold); background: linear-gradient(90deg, rgba(200, 170, 110, .16), rgba(9, 15, 26, .92) 60%);
+  font-size: 13.5px; color: var(--gold-pale); animation: pageIn .45s var(--ease) both; }
+#app-update[hidden] { display: none; }
+#app-update > span:nth-child(2) { flex: 1; }
+.au-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold-hi); box-shadow: 0 0 10px var(--gold); }
+.au-close { width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--hair-2); background: none; color: var(--muted); cursor: pointer; font-size: 16px; line-height: 1; }
+.au-close:hover { color: var(--text); border-color: var(--gold); }
+#app-update .btn-gold { padding: 7px 16px; font-size: 11.5px; }

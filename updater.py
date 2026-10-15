@@ -49,6 +49,7 @@ STATS_URL = "https://raw.githubusercontent.com/Raktos1030/Roulette-of-Legends/st
 STATS_FORMAT = 1
 STATS_FILES = ("stats.json", "compo.json", "champions.json", "items.json", "runes.json")
 CENTRAL_MAX_AGE = 14   # days; older published stats mean the workflow stopped, and the app updates on its own
+LATEST_RELEASE = "https://github.com/Raktos1030/Roulette-of-Legends/releases/latest"   # redirects to .../tag/vX.Y.Z
 
 
 def fetch(url, tries=3, binary=False, timeout=45):
@@ -69,6 +70,23 @@ def fetch(url, tries=3, binary=False, timeout=45):
             last = e
         time.sleep(2 + 3 * i)
     raise IOError("%s: %s" % (url.split("?")[0], last))
+
+
+def latest_app_version():
+    """Version of the latest published release ("2.3"), read from the redirect of the releases page, or None."""
+    req = urllib.request.Request(LATEST_RELEASE, method="HEAD", headers={"User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            final = r.geturl()
+    except (OSError, ValueError):
+        return None
+    tag = final.rstrip("/").rsplit("/", 1)[-1]
+    return tag[1:] if tag.startswith("v") and all(p.isdigit() for p in tag[1:].split(".")) else None
+
+
+def newer(version, than):
+    as_tuple = lambda v: tuple(int(p) for p in v.split("."))   # noqa: E731
+    return as_tuple(version) > as_tuple(than)
 
 
 def display_patch(ver):
@@ -382,6 +400,10 @@ class Updater:
         while not self._stop.is_set():
             force, self._force = self._force, False
             self._wake.clear()
+            from core import APP_VERSION
+            latest = latest_app_version()
+            if latest and newer(latest, APP_VERSION):
+                self.core.set_app_update(latest)
             if force or self.core.profile.get("auto_update", True):
                 try:
                     self.run(force=force)

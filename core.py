@@ -291,6 +291,7 @@ class Profile:
         "account_puuid": None,   # last connected LoL account: the history shows its games
         "board_geom": None,      # scoreboard grid (Tab), measured once for the resolution and HUD scale
         "roulette_paused": False,   # games don't count for the roulette, the current roll stays pending
+        "app_update_seen": None,    # newer app version whose notice was dismissed
     }
 
     def __init__(self, path):
@@ -835,6 +836,7 @@ class Core:
         self.import_state = None
         self.status = {"text": "", "tone": "muted"}
         self.update_status = {"state": "idle"}
+        self.app_update = None   # newer published version of the app: {"version"}
         try:
             if any(e.get("status") in ("played", "remake") and e.get("queue") and e["queue"] not in lol.SR_QUEUES
                    and not e.get("free") for e in self.history.entries):
@@ -950,6 +952,7 @@ class Core:
                 "lite": LITE,
                 "platform": "mac" if MAC else "windows",
                 "download": bool(DOWNLOAD_URL),
+                "app_update": self.app_update,
                 "window": {"frameless": bool(getattr(self.ui, "frameless", False))},
                 "app": {"name": APP_NAME, "version": APP_VERSION},
                 "meta": {"patch": d.meta.get("patch"), "generated": d.meta.get("generated"),
@@ -977,7 +980,7 @@ class Core:
         p = self.profile
         keys = ("fav_champs", "fav_combos", "fav_roles", "only_fav_roles", "only_fav_champs", "no_repeat",
                 "overlay_mode", "overlay_scale", "overlay_opacity", "auto_update", "glossary_hints", "lol_dir", "ambient",
-                "import_runes", "import_spells", "import_items", "import_replace", "roulette_paused")
+                "import_runes", "import_spells", "import_items", "import_replace", "roulette_paused", "app_update_seen")
         out = {k: p[k] for k in keys}
         out["overlay_pos"] = p["overlay_pos"]
         out["overlay_modules"] = {m["id"]: p.module_cfg(m["id"]) for m in OVERLAY_MODULES}
@@ -1598,7 +1601,7 @@ class Core:
     PREFS = {"only_fav_roles": bool, "only_fav_champs": bool, "no_repeat": bool, "auto_update": bool,
              "glossary_hints": bool, "ambient": bool, "overlay_mode": str, "overlay_scale": float,
              "overlay_opacity": float, "import_runes": bool, "import_spells": bool, "import_items": bool,
-             "import_replace": bool, "roulette_paused": bool}
+             "import_replace": bool, "roulette_paused": bool, "app_update_seen": str}
 
     def api_set_pref(self, key, value):
         with self.lock:
@@ -2530,6 +2533,12 @@ class Core:
     def set_update_status(self, st):
         self.update_status = st
         self.emit("update", st)
+
+    def set_app_update(self, version):
+        """A newer version of the app is published: the UI shows a download notice."""
+        if (self.app_update or {}).get("version") != version:
+            self.app_update = {"version": version}
+            self.emit("app_update", self.app_update)
 
     def api_update(self, action="check"):
         if not self.updater:

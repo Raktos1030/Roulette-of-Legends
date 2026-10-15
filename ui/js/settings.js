@@ -213,7 +213,7 @@ function paintAbout() {
   root.querySelector("#s-about").innerHTML = `
     <h3 class="card-title">${esc(t("À propos"))}</h3>
     <dl class="kv">
-      <dt>${esc(t("Version"))}</dt><dd>${esc(b.app.name)} ${esc(b.app.version)}</dd>
+      <dt>${esc(t("Version"))}</dt><dd>${esc(b.app.name)} ${esc(b.app.version)}${b.app_update ? ` · <a href="#" class="t-gold" data-dl>${esc(t("version {0} disponible", b.app_update.version))}</a>` : ""}</dd>
       ${isLite() ? "" : `<dt>${esc(t("Fiches"))}</dt><dd>${esc(t("{0} combinaisons champion + rôle (runes et objets : import en sélection et overlay)", b.meta.guides))}</dd>`}
       <dt>${esc(t("Statistiques"))}</dt><dd>lolalytics.com, u.gg</dd>
       <dt>${esc(t("Profils de champions"))}</dt><dd>Meraki Analytics</dd>
@@ -225,4 +225,10 @@ function paintAbout() {
       : t("Roulette of Legends n'est pas approuvée par Riot Games et ne reflète pas les opinions de Riot Games ni de quiconque officiellement impliqué dans la production ou la gestion des propriétés de Riot Games. Riot Games et toutes les propriétés associées sont des marques commerciales ou déposées de Riot Games, Inc. L'application ne choisit, ne bannit, ne verrouille et n'envoie jamais rien à ta place ; si tu l'actives, elle importe seulement ta page de runes, tes sorts d'invocateur et un set d'objets une fois ton champion verrouillé."))}</p>
     ${isLite() ? aboutPromo() : ""}`;
   wirePromo(root.querySelector("#s-about"));
+  const dl = root.querySelector("#s-about [data-dl]");
+  if (dl) dl.onclick = async (e) => {
+    e.preventDefault();
+    const r = await call("open_download");
+    if (r.error) toast(r.error, "bad");
+  };
 }

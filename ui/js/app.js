@@ -55,6 +55,7 @@ async function boot() {
     }
   });
   paintUpdate();
+  paintAppUpdate();
   paintCS();
   setupTips();
   if (b.current && !b.lite) {
@@ -196,6 +197,10 @@ async function onEvent(msg) {
     case "game":
       dispatch("game", data);
       break;
+    case "app_update":
+      store.boot.app_update = data;
+      paintAppUpdate();
+      break;
     case "update":
       store.update = data;
       paintUpdate();
@@ -247,6 +252,27 @@ function paintLol() {
   btn.title = l.connected
     ? `${l.text}${l.summoner ? " — " + l.summoner : ""}${l.rank ? "\n" + t("Solo/duo : {0}", l.rank) : ""}${l.flex ? "\n" + t("Flexible : {0}", l.flex) : ""}`
     : t("Client LoL non détecté : lance-le pour relier tes parties");
+}
+
+// newer version of the app published on GitHub: slim notice until downloaded or dismissed for that version
+function paintAppUpdate() {
+  const u = store.boot.app_update;
+  const box = document.getElementById("app-update");
+  const show = !!u && u.version !== (store.profile || {}).app_update_seen;
+  box.hidden = !show;
+  if (!show) return;
+  box.innerHTML = `<span class="au-dot"></span><span>${esc(t("Nouvelle version {0} disponible.", u.version))}</span>
+    <button class="btn-gold" data-dl>${esc(t("Télécharger"))}</button>
+    <button class="au-close" data-x title="${esc(t("Masquer"))}">×</button>`;
+  box.querySelector("[data-dl]").onclick = async () => {
+    const r = await call("open_download");
+    if (r.error) toast(r.error, "bad");
+  };
+  box.querySelector("[data-x]").onclick = async () => {
+    const r = await call("set_pref", { key: "app_update_seen", value: u.version });
+    if (r.profile) store.profile = r.profile;
+    paintAppUpdate();
+  };
 }
 
 function paintUpdate() {
