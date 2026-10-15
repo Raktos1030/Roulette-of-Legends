@@ -826,5 +826,7 @@
 "fichier introuvable dans la version publiée": "file missing from the published version",
 "téléchargement corrompu": "corrupted download",
 "version téléchargée incomplète": "downloaded version incomplete",
-"Aucune mise à jour disponible.": "No update available."
+"Aucune mise à jour disponible.": "No update available.",
+"Statistiques anonymes": "Anonymous statistics",
+"Compte les lancements de l'appli (version, Windows ou Mac). Rien d'autre n'est envoyé.": "Counts app launches (version, Windows or Mac). Nothing else is sent."
 }

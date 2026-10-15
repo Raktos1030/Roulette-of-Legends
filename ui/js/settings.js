@@ -188,7 +188,9 @@ function paintApp() {
         ${store.profile.lol_dir ? `<span class="tiny">${esc(t("Dossier : {0}", store.profile.lol_dir))}</span>` : ""}</div>
       <button class="btn sm" id="a-dir">${esc(t("Choisir le dossier…"))}</button></div>
     <div class="set-row"><div class="txt"><b>${esc(t("Fond animé"))}</b></div>
-      <label class="switch"><input type="checkbox" id="a-amb" ${store.profile.ambient !== false ? "checked" : ""}><i></i></label></div>`;
+      <label class="switch"><input type="checkbox" id="a-amb" ${store.profile.ambient !== false ? "checked" : ""}><i></i></label></div>
+    <div class="set-row"><div class="txt"><b>${esc(t("Statistiques anonymes"))}</b><span>${esc(t("Compte les lancements de l'appli (version, Windows ou Mac). Rien d'autre n'est envoyé."))}</span></div>
+      <label class="switch"><input type="checkbox" id="a-usage" ${store.profile.usage_stats !== false ? "checked" : ""}><i></i></label></div>`;
   const auto = box.querySelector("#a-auto");
   if (auto) auto.onchange = async (e) => {
     const r = await call("autostart", { on: e.target.checked });
@@ -196,6 +198,7 @@ function paintApp() {
     paintApp();
   };
   box.querySelector("#a-amb").onchange = (e) => setPref("ambient", e.target.checked);
+  box.querySelector("#a-usage").onchange = (e) => setPref("usage_stats", e.target.checked);
   box.querySelectorAll("#a-lang button").forEach((b) => (b.onclick = async () => {
     if (b.dataset.lang === LANG) return;
     const r = await call("set_lang", { lang: b.dataset.lang });

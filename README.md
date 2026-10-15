@@ -34,6 +34,8 @@ The apps are available in French and English.
 
 The apps read the LoL client and never play for you: no picks, bans, lock-ins or chat. The only writes (full version, optional) are your rune page, summoner spells and an item set, once your champion is locked in.
 
+Each launch sends one anonymous count (edition, version, Windows or Mac) to GoatCounter, with no cookie or identifier; it can be turned off in Settings. The website counts its visits the same way.
+
 ## From source
 
 Python 3.11:

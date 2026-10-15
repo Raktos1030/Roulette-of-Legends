@@ -33,8 +33,10 @@ APP_ID = "RouletteOfLegends.Lite" if LITE else "RouletteOfLegends.App"   # taskb
 APP_SHORT = "RoL"
 # download page of both apps (release page), shown by the Lite to promote the full app; empty until published
 DOWNLOAD_URL = "https://github.com/Raktos1030/Roulette-of-Legends/releases/latest"
+# anonymous launch count (edition, version, system), sent once per launch by release builds; off in Settings
+USAGE_COUNTER = "https://rouletteoflegends.goatcounter.com/count"
 OLD_NAMES = () if LITE else ("Roulette LoL",)   # former app names (Windows startup entry to migrate)
-APP_VERSION = "2.2.1"
+APP_VERSION = "2.3"
 
 
 def find_layout():
@@ -334,7 +336,7 @@ class Profile:
         "only_fav_champs": False, "no_repeat": True, "lol_dir": None, "tray_hint_shown": False,
         "overlay_mode": "tab", "overlay_side": "right", "overlay_page": "early",
         "overlay_pos": None, "overlay_scale": 1.0, "overlay_opacity": 0.95, "overlay_modules": {},
-        "auto_update": True, "seen_update": None, "glossary_hints": True, "ambient": True,
+        "auto_update": True, "seen_update": None, "glossary_hints": True, "ambient": True, "usage_stats": True,
         "lang": "",              # "fr", "en"; empty = the Windows language
         "import_runes": True, "import_spells": True, "import_items": True, "import_replace": False,
         "build_pick": {},   # build variant picked per guide (Build tab), imported in champ select
@@ -1032,7 +1034,7 @@ class Core:
     def _profile_view(self):
         p = self.profile
         keys = ("fav_champs", "fav_combos", "fav_roles", "only_fav_roles", "only_fav_champs", "no_repeat",
-                "overlay_mode", "overlay_scale", "overlay_opacity", "auto_update", "glossary_hints", "lol_dir", "ambient",
+                "overlay_mode", "overlay_scale", "overlay_opacity", "auto_update", "glossary_hints", "lol_dir", "ambient", "usage_stats",
                 "import_runes", "import_spells", "import_items", "import_replace", "roulette_paused", "app_update_seen")
         out = {k: p[k] for k in keys}
         out["overlay_pos"] = p["overlay_pos"]
@@ -1652,7 +1654,7 @@ class Core:
 
     # --- settings -------------------------------------------------------------------
     PREFS = {"only_fav_roles": bool, "only_fav_champs": bool, "no_repeat": bool, "auto_update": bool,
-             "glossary_hints": bool, "ambient": bool, "overlay_mode": str, "overlay_scale": float,
+             "glossary_hints": bool, "ambient": bool, "usage_stats": bool, "overlay_mode": str, "overlay_scale": float,
              "overlay_opacity": float, "import_runes": bool, "import_spells": bool, "import_items": bool,
              "import_replace": bool, "roulette_paused": bool, "app_update_seen": str}
 
@@ -2614,6 +2616,25 @@ class Core:
             self._installer = Installer(self, u["version"])
             self._installer.start()
         return {"ok": True}
+
+    def count_launch(self):
+        """One anonymous hit per launch: path /app/<edition>/<version>/<system>, nothing else about the user."""
+        if not (USAGE_COUNTER and BUNDLED_DATA and self.profile.get("usage_stats", True)) or os.environ.get("ROL_NO_COUNT"):
+            return
+        import urllib.parse
+        import urllib.request
+        system = "mac" if MAC else "windows"
+        query = urllib.parse.urlencode({"p": "/app/%s/%s/%s" % ("lite" if LITE else "full", APP_VERSION, system),
+                                        "t": "%s %s" % (APP_NAME, APP_VERSION), "b": 0,
+                                        "rnd": "%05x" % random.randrange(16 ** 5)})
+        # the system as a web view of that platform reports it (shown in the counter's "Systems")
+        ua = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)" if MAC else
+              "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36")
+        try:
+            urllib.request.urlopen(urllib.request.Request(USAGE_COUNTER + "?" + query, headers={"User-Agent": ua}),
+                                   timeout=15).close()
+        except Exception:
+            pass
 
     def _take_updated(self):
         updated, self.just_updated = self.just_updated, False

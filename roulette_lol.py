@@ -387,9 +387,10 @@ def run_app(args):
     c.just_updated = "--updated" in args
     if core.BUNDLED_DATA:
         import selfupdate
-        t = threading.Timer(20, selfupdate.cleanup)
-        t.daemon = True
-        t.start()
+        for delay, job in ((20, selfupdate.cleanup), (10, c.count_launch)):
+            t = threading.Timer(delay, job)
+            t.daemon = True
+            t.start()
     server, overlay, tray = start_services(c, with_tray="--no-tray" not in args)
     ui = WindowUI(c, tray, server.url)
     c.ui = ui

@@ -958,7 +958,7 @@
   // =============================================================================================================
   function downloadButton(which, label, cls = "btn-gold") {
     return DOWNLOADS[which]
-      ? `<a class="${cls} dl" href="${esc(DOWNLOADS[which])}" rel="noopener">${DOWNLOAD_SVG}${esc(label)}</a>`
+      ? `<a class="${cls} dl" href="${esc(DOWNLOADS[which])}" rel="noopener" data-track="${which}">${DOWNLOAD_SVG}${esc(label)}</a>`
       : `<button class="${cls}" disabled title="${esc(t("Bientôt disponible"))}">${esc(label)}</button>`;
   }
   function renderApps(page) {
@@ -1193,14 +1193,30 @@
     document.getElementById("foot").innerHTML = `
       <div class="foot-row"><span>${esc(t("Statistiques du patch {0} : rôles joués par chaque champion (Émeraude+).", D.patch))}</span>
         <a href="#/app" class="t-gold">${esc(t("Télécharger l'appli →"))}</a>
-        <span>${esc(t("Illustrations : Riot Games (Data Dragon)."))}</span></div>
+        <span>${esc(t("Illustrations : Riot Games (Data Dragon)."))}</span>
+        <span>${esc(t("Mesure d'audience anonyme, sans cookies (GoatCounter)."))}</span></div>
       <p class="legal">${esc(t("Roulette of Legends n'est pas approuvée par Riot Games et ne reflète pas les opinions de Riot Games ni de quiconque officiellement impliqué dans la production ou la gestion des propriétés de Riot Games. Riot Games et toutes les propriétés associées sont des marques commerciales ou déposées de Riot Games, Inc."))}</p>`;
     document.querySelector("#top .top-brand").onmouseenter = () => spinLogo(1.2);
   }
 
+  // anonymous visit count (GoatCounter, no cookies): one hit per page shown, and download clicks as events
+  const counted = [];
+  function track(vars) {
+    const gc = window.goatcounter;
+    if (gc && gc.count) gc.count(vars);
+    else counted.push(vars);
+  }
+  const counter = document.querySelector("script[data-goatcounter]");
+  if (counter) counter.addEventListener("load", () => counted.splice(0).forEach((v) => window.goatcounter.count(v)));
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest("[data-track]");
+    if (a) track({ path: "download/" + a.dataset.track, title: a.textContent.trim(), event: true });
+  });
+
   function route() {
     const id = location.hash.replace(/^#\/?/, "").split("/")[0];
     const key = PAGES[id] ? id : "";
+    track({ path: (LANG === "en" ? "/en/" : "/") + (key ? "#/" + key : ""), title: document.title });
     document.querySelectorAll(".top-item").forEach((a) => a.classList.toggle("on", a.dataset.p === key));
     document.getElementById("about").hidden = key !== "";   // presentation text: home page only
     root = null;

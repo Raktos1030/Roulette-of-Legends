@@ -34,6 +34,7 @@ def main():
     name = "Roulette of Legends Lite" if lite else "Roulette of Legends"
     archive = ("Roulette-of-Legends-Lite" if lite else "Roulette-of-Legends") + ("-mac.zip" if MAC else "-windows.zip")
     tmp = tempfile.mkdtemp(prefix="rol_update_")
+    os.environ["ROL_NO_COUNT"] = "1"   # test launches are not app launches (inherited by the started apps)
     local = os.path.join(tmp, "local")
     if not MAC:
         os.environ["LOCALAPPDATA"] = local   # the app's user folder, for this test only
