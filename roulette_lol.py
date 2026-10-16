@@ -237,6 +237,8 @@ class WindowUI:
     def _on_shown(self):
         self._visible = True
         self._style()
+        if self.core.updater:
+            self.core.updater.check_version_soon()
 
     def visible(self):
         return bool(self.window) and self._visible

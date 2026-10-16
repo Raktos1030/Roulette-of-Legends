@@ -25,7 +25,7 @@ import time
 import urllib.error
 import urllib.request
 
-from core import DATA, LITE, STATS_FILES, T, log_error, read_json, write_json
+from core import DATA, LITE, ROLE_MIN_SHARE, STATS_FILES, T, log_error, read_json, write_json
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36"
 DD = "https://ddragon.leagueoflegends.com"
@@ -41,6 +41,7 @@ K_SHRINK = 500
 STATE_PATH = os.path.join(DATA, "update.json")
 CACHE = os.path.join(DATA, "cache")
 CHECK_EVERY = 6 * 3600
+VERSION_EVERY = 30 * 60   # new app version: at launch, every half hour, and when the window is opened again
 REFRESH_DAYS = 7
 MIN_PATCH_SHARE = 0.10   # the new patch must hold >= 10 % of the 30-day games (about 3 days)
 # stats published by .github/workflows/stats.yml on the repository's "stats" branch: the apps download them instead
@@ -311,11 +312,18 @@ def bench(d):
             "k": st.get("kills", 0), "d": st["deaths"], "a": st.get("assists", 0), "n": n}
 
 
+def duo_partners(role, role_share, combos):
+    """Champions that really play that role: a guide there, or at least ROLE_MIN_SHARE % of their games."""
+    return ({c["key"] for c in combos.values() if c["role"] == role}
+            | {k for k, share in role_share.items() if (share.get(role) or 0) >= ROLE_MIN_SHARE})
+
+
 def duos(role, d_team, base, names, keys, partners=None):
     """Bot lane partners: which supports an ADC wins the most with (and the other way around). Same rules as
     matchups: enough games, played enough, win rate shrunk toward the champion's average (a duo over 300 games
     doesn't rank above a duo over 5,000). partners: champions that really play the partner's role (those with a
-    guide there); others (Tahm Kench "ADC" next to a Senna support...) stay out of the lists."""
+    guide there, or enough of their games: duo_partners); others (Tahm Kench "ADC" next to a Senna support...)
+    stay out of the lists."""
     lane = DUO_LANE.get(role)
     allrows = [r for r in (((d_team or {}).get("team") or {}).get(lane) or []) if isinstance(r, list) and len(r) >= 6]
     if not allrows:
@@ -369,6 +377,8 @@ class Updater:
         self._wake = threading.Event()
         self._stop = threading.Event()
         self._force = False
+        self._version_wake = threading.Event()
+        self._version_at = 0.0
         self.busy = False
         self.state = read_json(STATE_PATH, {}) or {}
         last = self.state.get("last_check_txt")
@@ -376,10 +386,17 @@ class Updater:
 
     def start(self):
         threading.Thread(target=self._loop, name="updater", daemon=True).start()
+        threading.Thread(target=self._version_loop, name="app-version", daemon=True).start()
 
     def stop(self):
         self._stop.set()
         self._wake.set()
+        self._version_wake.set()
+
+    def check_version_soon(self):
+        """Window opened again: a fresh check of the app version, unless one ran a few minutes ago."""
+        if time.time() - self._version_at > 300:
+            self._version_wake.set()
 
     def request(self, force=False):
         if self.busy:   # an update is already running
@@ -404,9 +421,15 @@ class Updater:
         if latest and newer(latest, APP_VERSION):
             self.core.set_app_update(latest)
 
+    def _version_loop(self):
+        while not self._stop.is_set():
+            self._version_at = time.time()
+            self._check_app_version()
+            self._version_wake.wait(VERSION_EVERY)
+            self._version_wake.clear()
+
     def _loop(self):
-        self._check_app_version()   # at launch (one light request): the notice shows right away
-        self._wake.wait(45)   # stats: let the app start quietly
+        self._wake.wait(45)   # let the app start quietly
         while not self._stop.is_set():
             force, self._force = self._force, False
             self._wake.clear()
@@ -420,8 +443,6 @@ class Updater:
                     log_error("update: " + traceback.format_exc())
                     self._status({"state": "error", "text": T("La mise à jour a échoué (%s). Nouvel essai plus tard.") % e})
             self._wake.wait(CHECK_EVERY)
-            if not self._stop.is_set():
-                self._check_app_version()
 
     def _check_stop(self):
         if self._stop.is_set():
@@ -562,7 +583,7 @@ class Updater:
                 continue
             partner = "sup" if c["role"] == "adc" else "adc"
             duo = duos(c["role"], dteam, c["month"]["wr"], names, keys,
-                       {x["key"] for x in st["combos"].values() if x["role"] == partner})
+                       duo_partners(partner, st.get("roles") or {}, st["combos"]))
             if duo:
                 c["duo"] = duo
         write_json(path, st, compact=True)
@@ -665,6 +686,7 @@ class Updater:
 
         # 3. lolalytics: 30 days, current patch, and all ranks when the Emerald+ sample is too small
         combos, vs, damage = {}, {}, {}
+        role_share, duo_raw = {}, {}
         failures = []
         for c in pool:
             self._check_stop()
@@ -747,15 +769,14 @@ class Updater:
             if sb.get("damageTaken") is not None:
                 combos[key]["taken"] = round(sb["damageTaken"])
             combos[key]["bench"] = bench(d30)
-            if c["role"] in DUO_LANE:   # bot lane: partners this champion wins with
+            # share of the champion's games in each role (the same for each of its lanes)
+            nav = (d30.get("nav") or {}).get("lanes") or {}
+            if nav:
+                role_share[c["key"]] = {r: round(nav.get(ln) or 0, 1) for r, ln in LANE.items()}
+            if c["role"] in DUO_LANE:   # bot lane: partners this champion wins with (ranked once all roles are known)
                 try:
-                    dteam = fetch(LOLA_TEAM % ("30", slug, lane, "emerald_plus"))
+                    duo_raw[key] = (c["role"], fetch(LOLA_TEAM % ("30", slug, lane, "emerald_plus")), month["wr"])
                     time.sleep(0.2)
-                    partner = "sup" if c["role"] == "adc" else "adc"
-                    duo = duos(c["role"], dteam, month["wr"], id2fr, id2key,
-                               {x["key"] for x in pool if x["role"] == partner})
-                    if duo:
-                        combos[key]["duo"] = duo
                 except IOError:
                     pass
             hd = d30["header"]
@@ -770,6 +791,11 @@ class Updater:
                 if role:
                     lanes[role] = {str(r[0]): [round(r[1], 1), r[5]] for r in rows if len(r) >= 6 and r[5] >= 150}
             vs[key] = {"avg": hd["wr"], "vs": lanes}
+
+        for key, (role, dteam, base) in duo_raw.items():
+            duo = duos(role, dteam, base, id2fr, id2key, duo_partners("sup" if role == "adc" else "adc", role_share, combos))
+            if duo:
+                combos[key]["duo"] = duo
 
         # 4. checks before replacing
         if len(combos) < 0.95 * len(pool):
@@ -802,6 +828,7 @@ class Updater:
             },
             "kits": kits,
             "combos": combos,
+            "roles": role_share,
         }
         old_compo = core.data.compo or {}
         profiles = dict(old_compo.get("profiles") or {})

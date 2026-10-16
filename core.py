@@ -98,6 +98,7 @@ USER_ENTRIES = {"profile.json", "history.json", "games", "cache", "update.json",
                 "profil.json", "historique.json", "parties", "erreurs.log", "maj.json",
                 os.path.join("fonts", "lol"), os.path.join("img", "ui")}
 STATS_FILES = ("stats.json", "compo.json", "champions.json", "items.json", "runes.json")   # also refreshed online
+ROLE_MIN_SHARE = 10   # % of a champion's games: below that, a role is marginal (Tahm Kench in the bot lane...)
 BUNDLE_MARK = ".bundle"   # in data/: app version whose bundled data was last copied
 
 
@@ -510,6 +511,7 @@ class Data:
         self.meta = st["meta"]
         self.kits = st["kits"]
         self.combos = st["combos"]
+        self.role_share = st.get("roles") or {}   # champion -> {role: % of its games}
         for c in self.combos.values():
             clean_skills(c)
         self.chaos_combos = {}   # chaos mode: a champion in a role without a guide (chaos.py), built on demand
@@ -1219,8 +1221,11 @@ class Core:
             x["delta"] = round(e["wr"] - base, 2)
             x["combo"] = combo if combo in d.combos else None
             return x
-        def entries(name):   # partners that really play that role (stats computed before that rule)
-            return [x for x in (ent(e) for e in du.get(name) or []) if x["combo"]]
+        def real(x):   # the partner really plays that role: a guide there, or enough of its games
+            return x["combo"] or (d.role_share.get(x["key"]) or {}).get(du["partner"], 0) >= ROLE_MIN_SHARE
+
+        def entries(name):
+            return [x for x in (ent(e) for e in du.get(name) or []) if real(x)]
         return {"partner": du["partner"], "partner_label": ROLE_LABEL[du["partner"]], "base": base,
                 "n_partners": du.get("n_partners"), "min_n": du.get("min_n"), "total": du.get("total"),
                 "good": entries("good"), "bad": entries("bad"), "frequent": entries("frequent")}
