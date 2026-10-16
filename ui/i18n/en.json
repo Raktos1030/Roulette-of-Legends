@@ -828,5 +828,9 @@
 "version téléchargée incomplète": "downloaded version incomplete",
 "Aucune mise à jour disponible.": "No update available.",
 "Statistiques anonymes": "Anonymous statistics",
-"Compte les lancements de l'appli (version, Windows ou Mac). Rien d'autre n'est envoyé.": "Counts app launches (version, Windows or Mac). Nothing else is sent."
+"Compte les lancements de l'appli (version, Windows ou Mac). Rien d'autre n'est envoyé.": "Counts app launches (version, Windows or Mac). Nothing else is sent.",
+"L'overlay ne peut pas s'afficher : LoL est en plein écran. Dans LoL, Options › Vidéo : choisis « Sans bordure ».": "The overlay can't show: LoL is in fullscreen. In LoL, Options › Video: pick “Borderless”.",
+"LoL est en plein écran : l'overlay ne peut pas s'afficher. Dans LoL, Options › Vidéo : choisis « Sans bordure ».": "LoL is in fullscreen: the overlay can't show. In LoL, Options › Video: pick “Borderless”.",
+"Maintiens Tab en partie pour l'afficher.": "Hold Tab in game to show it.",
+"Maintiens Tab pour afficher l'overlay.": "Hold Tab to show the overlay."
 }

@@ -333,7 +333,7 @@ def write_json(path, data, compact=False):
 class Profile:
     DEFAULT = {
         "fav_champs": [], "fav_combos": [], "fav_roles": [], "only_fav_roles": False,
-        "only_fav_champs": False, "no_repeat": True, "lol_dir": None, "tray_hint_shown": False,
+        "only_fav_champs": False, "no_repeat": True, "lol_dir": None, "tray_hint_shown": False, "overlay_tab_seen": False,
         "overlay_mode": "tab", "overlay_side": "right", "overlay_page": "early",
         "overlay_pos": None, "overlay_scale": 1.0, "overlay_opacity": 0.95, "overlay_modules": {},
         "auto_update": True, "seen_update": None, "glossary_hints": True, "ambient": True, "usage_stats": True,
@@ -872,6 +872,8 @@ class Core:
         self._cs_role = None
         self._cs_shown = None
         self._requested = set()
+        self._window_mode = (0.0, None)   # (read at, LoL display mode)
+        self._fullscreen_warned = False
         self.rolls = {}
         self.drawn = set()
         self.pending_reason = None
@@ -1976,10 +1978,36 @@ class Core:
             self.set_status(T("Dossier LoL enregistré : %s") % path, "teal")
             return {"profile": self._profile_view()}
 
+    def lol_window_mode(self):
+        """Display mode of the game, from its settings (Config/game.cfg): "fullscreen", "windowed", "borderless" or
+        None. The overlay can only draw over a borderless or windowed game."""
+        now = time.time()
+        if now - self._window_mode[0] < 30:
+            return self._window_mode[1]
+        mode = None
+        for d in lol.LolClient(APP_DIR, self.profile["lol_dir"]).candidate_dirs():
+            try:
+                with open(os.path.join(d, "Config", "game.cfg"), encoding="utf-8", errors="replace") as f:
+                    for line in f:
+                        key, _, value = line.partition("=")
+                        if key.strip() == "WindowMode":
+                            mode = {"0": "fullscreen", "1": "windowed", "2": "borderless"}.get(value.strip())
+                            break
+            except OSError:
+                continue
+            break
+        self._window_mode = (now, mode)
+        return mode
+
+    def _overlay_blocked(self):
+        """The overlay is on but LoL runs in exclusive fullscreen, where nothing can be drawn over the game."""
+        return not LITE and self.profile["overlay_mode"] != "never" and self.lol_window_mode() == "fullscreen"
+
     def _lol_view(self):
         st = self.lol_state
         if not st.get("connected"):
-            return {"connected": False, "text": T("Client LoL non détecté"), "sub": T("Lance-le pour relier tes parties")}
+            return {"connected": False, "text": T("Client LoL non détecté"), "sub": T("Lance-le pour relier tes parties"),
+                    "fullscreen": self._overlay_blocked()}
         phase = st.get("phase") or "None"
         solo = self.ranked.get("RANKED_SOLO_5x5")
         flex = self.ranked.get("RANKED_FLEX_SR")
@@ -1988,7 +2016,7 @@ class Core:
                 "rank": lol.rank_label(solo) if solo else "", "rank_tier": (solo or {}).get("tier", ""),
                 "flex": lol.rank_label(flex) if flex else "",
                 "in_game": phase in ("InProgress", "Reconnect"),
-                "lobby": st.get("lobby") or []}
+                "lobby": st.get("lobby") or [], "fullscreen": self._overlay_blocked()}
 
     # --- live game (champ select, loading screen, game) ---------------------------------
     def _live_players(self):
@@ -2481,6 +2509,7 @@ class Core:
 
     def _on_lol_state(self, st):
         prev_connected = self.lol_state.get("connected")
+        prev_phase = self.lol_state.get("phase")
         self.lol_state = st
         if not st.get("connected"):
             if prev_connected:
@@ -2490,6 +2519,12 @@ class Core:
             self._emit_live()
             return
         phase = st.get("phase") or "None"
+        if phase == "ChampSelect" and prev_phase != "ChampSelect" and not self._fullscreen_warned and self._overlay_blocked():
+            self._fullscreen_warned = True   # once per launch, while the client (not the game) is on screen
+            msg = T("L'overlay ne peut pas s'afficher : LoL est en plein écran. Dans LoL, Options › Vidéo : choisis « Sans bordure ».")
+            self.set_status(msg, "warn")
+            if self.tray and self.tray.running:
+                self.tray.notify(msg)
         if phase == "ChampSelect":
             cs = st.get("cs") or {}
             if cs.get("my_champ"):

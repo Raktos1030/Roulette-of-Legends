@@ -1160,6 +1160,8 @@ class Overlay:
         self.ctrl = Panel(self, "_controls")
         self.glow = Panel(self, "_hud")       # blue halo on the icon of the skill to level, on the game HUD
         self.board = Panel(self, "_board")    # gold diff next to the scoreboard portraits
+        self.hint = Panel(self, "_hint")      # "hold Tab" reminder, until Tab has been used once
+        self._hint_until = None
         self.hudw = HudWatcher()
         self.hudw.start()
         self._make_anchor_window()
@@ -1523,6 +1525,18 @@ class Overlay:
                 self._toggle_game = game
                 self.toggled = {}
                 self._page = None
+            # until the player has held Tab once: a reminder during the first 30 s of each game
+            if tab and master and not core.profile.get("overlay_tab_seen"):
+                core.profile["overlay_tab_seen"] = True
+            if not in_game:
+                self._hint_until = None
+            elif fg and self._hint_until is None:
+                self._hint_until = now + 30
+            if (master and fg and not tab and not previewing and not placing and info and self._hint_until
+                    and now < self._hint_until and not core.profile.get("overlay_tab_seen")):
+                self._show_hint()
+            else:
+                self.hint.hide()
             if fg and not previewing:
                 self._hotkeys()
             calcs = self._calcs(info, snap) if (info or snap) else {}
@@ -2130,6 +2144,27 @@ class Overlay:
             p.text(p.pad, p.y, label, p.f("ui_b", 12), C_TEXT)
             p.text(p.W - p.pad, p.y + p.px(0.5), txt, p.f("ui", 11.5), col, anchor="r")
             p.y += p.px(19)
+
+    def _show_hint(self):
+        panel = self.hint
+        sig = ("hint", self.S)
+        if panel.sig != sig:
+            p = Doc(self, 300)
+            p.y = p.px(12)
+            p.text(p.W / 2, p.y, "ROULETTE OF LEGENDS", p.f("disp", 9.5), C_GOLD, anchor="m", track=1.5)
+            p.y += p.px(19)
+            for line in p.wrap(T("Maintiens Tab pour afficher l'overlay."), p.f("ui", 12.5), p.inner):
+                p.text(p.W / 2, p.y, line, p.f("ui", 12.5), C_TEXT, anchor="m")
+                p.y += p.px(17)
+            img, m, size = p.render()
+            panel.set_image(img, m, size)
+            panel.sig = sig
+            panel.pos_px = None
+        pos = self.px_for(0.5, 0.14, self.ref_rect(), panel.size)
+        if panel.pos_px != pos:
+            panel.pos_px = pos
+            panel.push()
+        panel.show()
 
     def _render_controls(self):
         panel = self.ctrl

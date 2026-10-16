@@ -43,7 +43,10 @@ export function renderSettings(page) {
       paintOverlay();
       paintImport();
     }
-    if (type === "lol") paintApp();
+    if (type === "lol") {
+      paintApp();
+      if (!isLite()) paintOverlay();
+    }
     if (type === "data_reloaded") {
       paintData();
       paintAbout();
@@ -66,7 +69,8 @@ function paintOverlay() {
   const off = p.overlay_mode === "never";
   box.innerHTML = `
     <h3 class="card-title">${esc(t("Overlay en jeu"))}</h3>
-    <div class="set-row" title="${esc(t("Modules par-dessus la partie (LoL en plein écran sans bordure ou fenêtré). Tab ou en permanence ; Ctrl + la lettre du module le masque ou l'épingle."))}"><div class="txt"><b>${esc(t("Overlay"))}</b></div>
+    <div class="set-row" title="${esc(t("Modules par-dessus la partie (LoL en plein écran sans bordure ou fenêtré). Tab ou en permanence ; Ctrl + la lettre du module le masque ou l'épingle."))}"><div class="txt"><b>${esc(t("Overlay"))}</b>
+        ${(store.lol || {}).fullscreen ? `<span class="t-warn">${esc(t("LoL est en plein écran : l'overlay ne peut pas s'afficher. Dans LoL, Options › Vidéo : choisis « Sans bordure »."))}</span>` : `<span>${esc(t("Maintiens Tab en partie pour l'afficher."))}</span>`}</div>
       <label class="switch"><input type="checkbox" id="o-on" ${off ? "" : "checked"}><i></i></label></div>
     <div class="mods ${off ? "dim" : ""}">
       ${mods.map((m) => {
