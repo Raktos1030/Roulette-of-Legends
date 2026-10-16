@@ -764,8 +764,7 @@ class HudWatcher(threading.Thread):
         self.board_pitch = None     # row pitch (unit of the scoreboard anchors)
         self.new_geom = None        # freshly measured grid, to store in the profile
         self.board_state = "idle"   # searching (first search running), found, failed
-        self.mem_low = False        # system memory nearly full: no more screen captures
-        self.mem_info = None        # (biggest process, GB) when that happens
+        self.mem_low = False        # RoL over its own memory limit: no more screen captures
         self._mem_next = 0.0
         self._board_sig = None
         self._board_fails = 0
@@ -792,31 +791,24 @@ class HudWatcher(threading.Thread):
         elif not self.board_req and self.board_state == "searching":
             self.board_state = "idle"
 
-    MEM_MIN_FREE = 0.5 * 2 ** 30    # below 500 MB of available system memory: pause
-    MEM_MAX_OWN = 1.5 * 2 ** 30     # RoL itself must never exceed 1.5 GB
+    MEM_MAX_OWN = 1.5 * 2 ** 30     # RoL itself never gets near 1.5 GB (about 200 MB in use)
 
     def _check_memory(self):
-        """Every 5 s: when the system is really out of memory (or RoL uses too much), stop screen captures and image
-        work until it goes back down, silently (noted in errors.log only). Memory management is Windows' business;
-        this only avoids adding load when it is already struggling."""
+        """Every 5 s: if RoL itself grows past MEM_MAX_OWN (a fault of its own), screen captures and image work stop
+        until it goes back down, noted in errors.log. The memory used by the rest of the PC is Windows' business:
+        the app never holds back because of it."""
         now = time.time()
         if now < self._mem_next:
             return
         self._mem_next = now + 5.0
         try:
-            from system import memory_status, biggest_process
-            free, own = memory_status()
+            from system import memory_status
+            _free, own = memory_status()
         except Exception:
             return
-        low = free < self.MEM_MIN_FREE or own > self.MEM_MAX_OWN
+        low = own > self.MEM_MAX_OWN
         if low and not self.mem_low:
-            try:
-                top = biggest_process()
-            except Exception:
-                top = None
-            self.mem_info = (top[0], top[1] / 2 ** 30) if top else None
-            log_error("memory: %.1f GB available, RoL %.2f GB, biggest: %s -> captures paused" % (
-                free / 2 ** 30, own / 2 ** 30, "%s %.1f GB" % self.mem_info if self.mem_info else "?"))
+            log_error("memory: RoL uses %.2f GB -> captures paused" % (own / 2 ** 30))
             self.pos = None
             self.board_pos = None
         self.mem_low = low

@@ -105,43 +105,6 @@ def memory_status():
     return ms.apf, pmc.private
 
 
-def biggest_process():
-    """Process using the most memory (name, bytes), to tell the user. Read-only."""
-    import ctypes
-    from ctypes import wintypes
-    psapi, k = ctypes.windll.psapi, ctypes.windll.kernel32
-    k.OpenProcess.restype = wintypes.HANDLE
-    k.OpenProcess.argtypes = [wintypes.DWORD, wintypes.BOOL, wintypes.DWORD]
-    k.CloseHandle.argtypes = [wintypes.HANDLE]
-    k.QueryFullProcessImageNameW.argtypes = [wintypes.HANDLE, wintypes.DWORD, wintypes.LPWSTR, ctypes.POINTER(wintypes.DWORD)]
-    psapi.GetProcessMemoryInfo.argtypes = [wintypes.HANDLE, ctypes.c_void_p, wintypes.DWORD]
-
-    class PMC(ctypes.Structure):
-        _fields_ = [("cb", wintypes.DWORD), ("pf", wintypes.DWORD)] + \
-                   [(n, ctypes.c_size_t) for n in ("pws", "ws", "qppp", "qpp", "qpnp", "qnp", "pfu", "ppfu", "private")]
-    pids = (wintypes.DWORD * 4096)()
-    got = wintypes.DWORD()
-    if not psapi.EnumProcesses(pids, ctypes.sizeof(pids), ctypes.byref(got)):
-        return None
-    totals = {}
-    for pid in pids[:got.value // ctypes.sizeof(wintypes.DWORD)]:
-        h = k.OpenProcess(0x1000, False, pid)   # limited information: read-only
-        if not h:
-            continue
-        try:
-            pmc = PMC()
-            pmc.cb = ctypes.sizeof(PMC)
-            buf = ctypes.create_unicode_buffer(520)
-            n = wintypes.DWORD(520)
-            if psapi.GetProcessMemoryInfo(h, ctypes.byref(pmc), pmc.cb) and \
-                    k.QueryFullProcessImageNameW(h, 0, buf, ctypes.byref(n)):
-                name = os.path.basename(buf.value)
-                totals[name] = totals.get(name, 0) + pmc.private
-        finally:
-            k.CloseHandle(h)
-    return max(totals.items(), key=lambda kv: kv[1]) if totals else None
-
-
 class Tray:
     """Tray icon (pystray, on its own thread). Clicks go to the core through a queue, never directly."""
 
