@@ -3,9 +3,11 @@ Builds one edition of the app with PyInstaller and packs it for a release. Used 
 build_exe.bat on Windows, and by the release workflow (.github/workflows/release.yml) on Windows and macOS.
 
 Usage: python packaging/build.py full|lite [--dist DIR] [--dev]
-  Windows  DIST/<name>/ (exe + data/ + ui/) and DIST/<archive>-windows.zip
-  macOS    DIST/<name>.app (data/ and ui/ bundled, copied to the user's Library on first launch)
-           and DIST/<archive>-mac.zip; Lite only for now (the overlay is Windows-only)
+  Windows  DIST/<name>/ (exe + data/ + ui/) and DIST/<archive>-windows.zip (in-app updates); the installer is made
+           from that folder by installer.py
+  macOS    DIST/<name>.app (data/ and ui/ bundled, copied to the user's Library on first launch),
+           DIST/<archive>-mac.dmg (first install: the app next to a link to Applications) and
+           DIST/<archive>-mac.zip (in-app updates); Lite only for now (the overlay is Windows-only)
   --dev    Windows: exe only, no data copy or zip (the exe reads data/ and ui/ of the project, two levels up)
 """
 import os
@@ -55,9 +57,18 @@ def main():
     if dev:
         return
     if mac:
+        app = os.path.join(dist, name + ".app")
         archive = os.path.join(dist, ARCHIVES[edition] + "-mac.zip")
-        subprocess.run(["ditto", "-c", "-k", "--sequesterRsrc", "--keepParent",
-                        os.path.join(dist, name + ".app"), archive], check=True)
+        subprocess.run(["ditto", "-c", "-k", "--sequesterRsrc", "--keepParent", app, archive], check=True)
+        folder = os.path.join(work, "dmg")
+        shutil.rmtree(folder, ignore_errors=True)
+        os.makedirs(folder)
+        subprocess.run(["ditto", app, os.path.join(folder, name + ".app")], check=True)
+        os.symlink("/Applications", os.path.join(folder, "Applications"))
+        dmg = os.path.join(dist, ARCHIVES[edition] + "-mac.dmg")
+        subprocess.run(["hdiutil", "create", "-volname", name, "-srcfolder", folder, "-ov", "-format", "UDZO", dmg],
+                       check=True)
+        print("Disk image: %s (%.0f MB)" % (dmg, os.path.getsize(dmg) / 1e6))
     else:
         stage(edition, os.path.join(dist, name))
         archive = shutil.make_archive(os.path.join(dist, ARCHIVES[edition] + "-windows"), "zip", dist, name)

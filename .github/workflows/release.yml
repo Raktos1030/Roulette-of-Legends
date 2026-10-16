@@ -1,7 +1,8 @@
 # Builds the apps on every version tag (v2.1, v2.2...) and publishes them as a GitHub release:
-#   Windows: Roulette-of-Legends-windows.zip, Roulette-of-Legends-Lite-windows.zip
-#   macOS (Apple Silicon): Roulette-of-Legends-Lite-mac.zip
-#   SHA256SUMS.txt: checksums of the archives, for the in-app update
+#   Windows: Roulette-of-Legends-Setup.exe, Roulette-of-Legends-Lite-Setup.exe (first install),
+#            Roulette-of-Legends-windows.zip, Roulette-of-Legends-Lite-windows.zip (in-app updates)
+#   macOS (Apple Silicon): Roulette-of-Legends-Lite-mac.dmg (first install), Roulette-of-Legends-Lite-mac.zip (updates)
+#   SHA256SUMS.txt: checksums of every file, checked by the in-app update
 # Can also be run by hand (Actions tab) to get the builds as artifacts without publishing.
 name: Release
 
@@ -21,10 +22,16 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - run: python packaging/build.py full --dist dist
       - run: python packaging/build.py lite --dist dist
+      - name: Inno Setup
+        run: if (-not (Test-Path "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe")) { choco install innosetup --no-progress -y }
+      - run: python packaging/installer.py full --dist dist
+      - run: python packaging/installer.py lite --dist dist
       - uses: actions/upload-artifact@v4
         with:
           name: windows
-          path: dist/*.zip
+          path: |
+            dist/*.zip
+            dist/*-Setup.exe
 
   macos:
     runs-on: macos-14
@@ -46,7 +53,9 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: macos
-          path: dist/*.zip
+          path: |
+            dist/*.zip
+            dist/*.dmg
 
   release:
     if: startsWith(github.ref, 'refs/tags/')
@@ -61,7 +70,7 @@ jobs:
           path: assets
           merge-multiple: true
       # checked by the apps before installing an update (selfupdate.py)
-      - run: cd assets && sha256sum *.zip > SHA256SUMS.txt && cat SHA256SUMS.txt
-      - run: gh release create "$GITHUB_REF_NAME" assets/*.zip assets/SHA256SUMS.txt --repo "$GITHUB_REPOSITORY" --title "Roulette of Legends $GITHUB_REF_NAME" --notes-file .github/release-notes.md
+      - run: cd assets && sha256sum *.exe *.dmg *.zip > SHA256SUMS.txt && cat SHA256SUMS.txt
+      - run: gh release create "$GITHUB_REF_NAME" assets/*.exe assets/*.dmg assets/*.zip assets/SHA256SUMS.txt --repo "$GITHUB_REPOSITORY" --title "Roulette of Legends $GITHUB_REF_NAME" --notes-file .github/release-notes.md
         env:
           GH_TOKEN: ${{ github.token }}

@@ -16,7 +16,7 @@ import time
 import urllib.request
 import zipfile
 
-from core import APP_DIR, APP_NAME, APP_VERSION, BASE, BUNDLED_DATA, LITE, MAC, T, log_error
+from core import APP_DIR, APP_NAME, APP_VERSION, BASE, BUNDLED_DATA, INSTALLER_ID, LITE, MAC, T, log_error
 
 RELEASE_FILE = "https://github.com/Raktos1030/Roulette-of-Legends/releases/download/v%s/%s"
 ARCHIVE = ("Roulette-of-Legends-Lite" if LITE else "Roulette-of-Legends") + ("-mac.zip" if MAC else "-windows.zip")
@@ -223,7 +223,23 @@ def finish(target, pid):
             _remove(dst + ".old")
         except OSError:
             pass   # removed at the next launch
+    record_version(target)
     start(target, updated=True)
+
+
+def record_version(target, version=APP_VERSION):
+    """App installed with the setup: the version shown in Windows' installed apps follows the update."""
+    if sys.platform != "win32":
+        return
+    import winreg
+    key = r"Software\Microsoft\Windows\CurrentVersion\Uninstall\%s_is1" % INSTALLER_ID
+    try:
+        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, key, 0, winreg.KEY_QUERY_VALUE | winreg.KEY_SET_VALUE) as k:
+            location = winreg.QueryValueEx(k, "InstallLocation")[0]
+            if os.path.normcase(os.path.abspath(location)) == os.path.normcase(os.path.abspath(target)):
+                winreg.SetValueEx(k, "DisplayVersion", 0, winreg.REG_SZ, version)
+    except OSError:
+        pass
 
 
 def start(target, updated):

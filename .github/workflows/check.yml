@@ -1,5 +1,7 @@
-# Checks the macOS Lite on every push to main: self-test from source, build, self-test of the built app,
-# in-app update (packaging/test_update.py).
+# Checks on every push to main:
+#   macOS Lite: self-test from source, build, self-test of the built app, in-app update (packaging/test_update.py),
+#   disk image (packaging/test_installer.py)
+#   Windows installers of both editions: install, self-test, uninstall (packaging/test_installer.py)
 # Results (report, app output, errors.log) are posted as annotations of the run.
 name: Check
 
@@ -45,3 +47,33 @@ jobs:
           python packaging/annotate.py "In-app update" "$RUNNER_TEMP/update.txt"
           python packaging/annotate.py "Update errors.log" "$HOME/Library/Application Support/Roulette of Legends Lite/data/errors.log"
           tail -1 "$RUNNER_TEMP/update.txt" | grep -q "^OK$"
+      - name: Disk image
+        continue-on-error: true
+        run: |
+          python packaging/test_installer.py lite --dist dist > "$RUNNER_TEMP/dmg.txt" 2>&1 || true
+          python packaging/annotate.py "Disk image" "$RUNNER_TEMP/dmg.txt"
+          tail -1 "$RUNNER_TEMP/dmg.txt" | grep -q "^OK$"
+
+  windows-installers:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -r requirements.txt
+      - name: Inno Setup
+        run: if (-not (Test-Path "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe")) { choco install innosetup --no-progress -y }
+      - run: python packaging/build.py full --dist dist
+      - run: python packaging/build.py lite --dist dist
+      - run: python packaging/installer.py full --dist dist
+      - run: python packaging/installer.py lite --dist dist
+      - name: Install, self-test, uninstall
+        continue-on-error: true
+        shell: bash
+        run: |
+          for e in full lite; do
+            python packaging/test_installer.py $e --dist dist > "$RUNNER_TEMP/setup_$e.txt" 2>&1 || true
+            python packaging/annotate.py "Setup ($e)" "$RUNNER_TEMP/setup_$e.txt"
+          done
+          tail -1 "$RUNNER_TEMP/setup_full.txt" | grep -q "^OK$" && tail -1 "$RUNNER_TEMP/setup_lite.txt" | grep -q "^OK$"

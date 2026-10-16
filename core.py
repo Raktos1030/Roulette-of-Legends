@@ -30,6 +30,8 @@ except ImportError:
 MAC = sys.platform == "darwin"
 APP_NAME = "Roulette of Legends Lite" if LITE else "Roulette of Legends"
 APP_ID = "RouletteOfLegends.Lite" if LITE else "RouletteOfLegends.App"   # taskbar identity (AppUserModelID)
+# Windows installer identity (Inno Setup AppId, packaging/installer.py): entry of the installed apps list
+INSTALLER_ID = "{A36DEF74-B253-4708-9DA3-548AAB07E962}" if LITE else "{3F6AB0D1-9D1A-447A-994C-13571667B95E}"
 APP_SHORT = "RoL"
 # download page of both apps (release page), shown by the Lite to promote the full app; empty until published
 DOWNLOAD_URL = "https://github.com/Raktos1030/Roulette-of-Legends/releases/latest"
