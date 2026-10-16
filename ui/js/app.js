@@ -207,10 +207,16 @@ async function onEvent(msg) {
     case "game":
       dispatch("game", data);
       break;
-    case "app_update":
+    case "app_update": {
+      const fresh = (store.boot.app_update || {}).version !== data.version;
       store.boot.app_update = data;
       paintAppUpdate();
+      // scrolled down the page: the notice at the top is out of sight
+      if (fresh && !data.state && data.version !== (store.profile || {}).app_update_seen && document.getElementById("main").scrollTop > 60)
+        toast(t("Nouvelle version {0} disponible.", data.version), "gold", 7000);
+      dispatch("app_update", data);
       break;
+    }
     case "update":
       store.update = data;
       paintUpdate();

@@ -39,6 +39,7 @@ export function renderSettings(page) {
   unsub = on((type) => {
     if (!root || !document.body.contains(root)) return;
     if (type === "update") paintData();
+    if (type === "app_update") paintAbout();
     if (type === "profile" && !isLite()) {
       paintOverlay();
       paintImport();
