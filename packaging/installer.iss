@@ -67,9 +67,16 @@ Type: filesandordirs; Name: "{app}\data"
 Type: filesandordirs; Name: "{app}\*.old"
 
 [Code]
+const
+  RunKey = 'Software\Microsoft\Windows\CurrentVersion\Run';
+
 procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);
+var
+  Command: String;
 begin
-  { start with Windows: entry written by the app itself }
-  if CurUninstallStep = usUninstall then
-    RegDeleteValue(HKEY_CURRENT_USER, 'Software\Microsoft\Windows\CurrentVersion\Run', '{#AppName}');
+  { start with Windows: entry written by the app itself, removed only when it starts this installation
+    (another copy of the app may own it) }
+  if (CurUninstallStep = usUninstall) and RegQueryStringValue(HKEY_CURRENT_USER, RunKey, '{#AppName}', Command) then
+    if Pos(Lowercase(ExpandConstant('{app}')), Lowercase(Command)) > 0 then
+      RegDeleteValue(HKEY_CURRENT_USER, RunKey, '{#AppName}');
 end;

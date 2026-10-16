@@ -792,12 +792,13 @@ class HudWatcher(threading.Thread):
         elif not self.board_req and self.board_state == "searching":
             self.board_state = "idle"
 
-    MEM_MIN_FREE = 2.0 * 2 ** 30    # below 2 GB of available system memory: pause
+    MEM_MIN_FREE = 0.5 * 2 ** 30    # below 500 MB of available system memory: pause
     MEM_MAX_OWN = 1.5 * 2 ** 30     # RoL itself must never exceed 1.5 GB
 
     def _check_memory(self):
-        """Every 5 s: when the system is almost out of memory (or RoL uses too much), stop screen captures and image
-        work until it goes back down. Avoids adding load when Windows is struggling."""
+        """Every 5 s: when the system is really out of memory (or RoL uses too much), stop screen captures and image
+        work until it goes back down, silently (noted in errors.log only). Memory management is Windows' business;
+        this only avoids adding load when it is already struggling."""
         now = time.time()
         if now < self._mem_next:
             return
@@ -1143,7 +1144,6 @@ class Overlay:
         self._img_cache = {}
         self._tray_menu = None
         self._hud_scale = (0.0, None)
-        self._mem_warned = False
         self._bought, self._bought_game = set(), None   # items that went through the inventory during the game
         self.panels = {}
         self.ctrl = None
@@ -1438,19 +1438,6 @@ class Overlay:
         drunk = live.ELIXIR_SKILL in self._bought and live.ELIXIR_SKILL not in {it[0] for it in live.me_of(snap)["items"]}
         return max(over, 1 if drunk else 0)
 
-    def _warn_memory(self):
-        """System memory nearly full: tell the user (notification), with the process filling it."""
-        top = self.hudw.mem_info
-        msg = T("Mémoire de ton PC presque pleine : RoL met en pause le halo et l'écart d'or.")
-        if top and top[1] >= 2:
-            msg += T(" %s occupe %.0f Go, redémarre-le.") % (top[0].replace(".exe", ""), top[1])
-        try:
-            self.core.set_status(msg, "warn")
-            if self.core.tray and self.core.tray.running:
-                self.core.tray.notify(msg)
-        except Exception:
-            pass
-
     def _board_key(self, rect, mode=""):
         """What the scoreboard grid depends on: game window size, in-game HUD scale and game mode (e.g. the ARAM Mayhem
         scoreboard has a different layout than the Rift one)."""
@@ -1542,11 +1529,6 @@ class Overlay:
             calcs = self._calcs(info, snap) if (info or snap) else {}
             # HUD halo: the skill to level, only when a point is available
             plan = calcs.get("skills")
-            if self.hudw.mem_low and not self._mem_warned:
-                self._mem_warned = True
-                self._warn_memory()
-            elif not self.hudw.mem_low:
-                self._mem_warned = False
             hud_on = bool(master and fg and not previewing and info and plan and self.cfg("skills")["on"]
                           and not self.hudw.mem_low)
             self.hudw.want(info["key"] if hud_on else None, self.ref_rect() if hud_on else None)

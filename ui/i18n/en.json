@@ -1,5 +1,4 @@
 {
-" %s occupe %.0f Go, redémarre-le.": " %s is using %.0f GB, restart it.",
 " (%d combinaison(s) gardée(s) de la version précédente)": " (%d combo(s) kept from the previous version)",
 " (%d restante)": " (%d left)",
 " (%d restantes)": " (%d left)",
@@ -344,7 +343,6 @@
 "Mise à jour indisponible.": "Update unavailable.",
 "Modules par-dessus la partie (LoL en plein écran sans bordure ou fenêtré). Tab ou en permanence ; Ctrl + la lettre du module le masque ou l'épingle.": "Widgets on top of the game (LoL in borderless or windowed mode). On Tab or always on; Ctrl + the widget's letter hides or pins it.",
 "Mon groupe LoL · {0}": "My LoL party · {0}",
-"Mémoire de ton PC presque pleine : RoL met en pause le halo et l'écart d'or.": "Your PC's memory is almost full: RoL pauses the glow and the gold difference.",
 "N'importe quel champion à n'importe quel poste, pour tout le groupe": "Any champion in any role, for the whole group",
 "Nashor": "Baron",
 "Niv.": "Lvl",

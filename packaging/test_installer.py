@@ -3,7 +3,9 @@ Test of the first-install packages made for a release, on the system they target
 
   Windows  <archive>-Setup.exe: silent per-user install in a temporary folder, files, Start menu shortcut and
            installed apps entry, self-test of the installed app, version record after an in-app update, then
-           silent uninstall (files, shortcut and entry gone)
+           silent uninstall (files, shortcut and entry gone). Safe on a personal PC: not run when the app is already
+           installed with its setup; no desktop shortcut; existing shortcuts of the same name and the "start with
+           Windows" entry are put back as they were.
   macOS    <archive>-mac.dmg: attached read-only, holds the app and a link to Applications
 
   python packaging/test_installer.py full|lite [--dist DIR]
@@ -49,18 +51,47 @@ def test_windows(edition, dist, name):
     import selfupdate
     setup = os.path.join(dist, ARCHIVES[edition] + "-Setup.exe")
     check("installer built", os.path.isfile(setup), setup)
+    key = r"Software\Microsoft\Windows\CurrentVersion\Uninstall\%s_is1" % core.INSTALLER_ID
+    try:
+        winreg.OpenKey(winreg.HKEY_CURRENT_USER, key).Close()
+        check("not installed on this PC already (the test would uninstall it)", False)
+        return
+    except OSError:
+        pass
+    shortcut = os.path.join(os.environ["APPDATA"], "Microsoft", "Windows", "Start Menu", "Programs", name + ".lnk")
+    with winreg.OpenKey(winreg.HKEY_CURRENT_USER, r"Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders") as k:
+        desktop = os.path.join(winreg.QueryValueEx(k, "Desktop")[0], name + ".lnk")   # may be redirected (OneDrive)
+    saved = {p: open(p, "rb").read() for p in (shortcut, desktop) if os.path.isfile(p)}
+    run_key = r"Software\Microsoft\Windows\CurrentVersion\Run"
+    try:
+        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, run_key) as k:
+            run_value = winreg.QueryValueEx(k, name)[0]
+    except OSError:
+        run_value = None
+    try:
+        _install_cycle(setup, name, key, shortcut, winreg, core, selfupdate)
+    finally:   # the user's own shortcuts and startup entry, as they were
+        for p, content in saved.items():
+            with open(p, "wb") as f:
+                f.write(content)
+        if run_value is not None:
+            with winreg.OpenKey(winreg.HKEY_CURRENT_USER, run_key, 0, winreg.KEY_SET_VALUE) as k:
+                winreg.SetValueEx(k, name, 0, winreg.REG_SZ, run_value)
+        check("own shortcuts and startup entry unchanged", all(os.path.isfile(p) for p in saved))
+
+
+def _install_cycle(setup, name, key, shortcut, winreg, core, selfupdate):
     tmp = tempfile.mkdtemp(prefix="rol_setup_test_")
     target = os.path.join(tmp, name)
     env = dict(os.environ, LOCALAPPDATA=os.path.join(tmp, "local"), ROL_NO_COUNT="1")
-    r = subprocess.run([setup, "/VERYSILENT", "/SUPPRESSMSGBOXES", "/NORESTART", "/DIR=" + target], timeout=300)
+    r = subprocess.run([setup, "/VERYSILENT", "/SUPPRESSMSGBOXES", "/NORESTART", "/MERGETASKS=!desktopicon",
+                        "/DIR=" + target], timeout=300)
     check("silent install", r.returncode == 0, "exit code %d" % r.returncode)
     exe = os.path.join(target, name + ".exe")
     check("files", all(os.path.isfile(p) for p in (exe, os.path.join(target, "data", "stats.json"),
                                                    os.path.join(target, "ui", "index.html"),
                                                    os.path.join(target, "unins000.exe"))))
-    shortcut = os.path.join(os.environ["APPDATA"], "Microsoft", "Windows", "Start Menu", "Programs", name + ".lnk")
     check("Start menu shortcut", os.path.isfile(shortcut))
-    key = r"Software\Microsoft\Windows\CurrentVersion\Uninstall\%s_is1" % core.INSTALLER_ID
 
     def entry():
         try:
