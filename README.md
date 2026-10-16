@@ -10,12 +10,12 @@ Both apps are on the [releases](https://github.com/Raktos1030/Roulette-of-Legend
 
 | | Windows | Mac (Apple Silicon) |
 |---|---|---|
-| **Roulette of Legends Lite**: the roulette, linked to LoL | `Roulette-of-Legends-Lite-windows.zip` | `Roulette-of-Legends-Lite-mac.zip` |
-| **Roulette of Legends**: the full version | `Roulette-of-Legends-windows.zip` | coming soon |
+| **Roulette of Legends Lite**: the roulette, linked to LoL | `Roulette-of-Legends-Lite-Setup.exe` | `Roulette-of-Legends-Lite-mac.dmg` |
+| **Roulette of Legends**: the full version | `Roulette-of-Legends-Setup.exe` | coming soon |
 
-Unzip the folder anywhere and run the app. On Mac, on first launch: System Settings › Privacy & Security › "Open Anyway".
+Windows: run the installer. Mac: open the .dmg and drag the app into Applications; on first launch, System Settings › Privacy & Security › "Open Anyway".
 
-New versions install from the app itself: a bar shows up with an **Update** button, and your history and settings are kept. On Mac, move the app to Applications first.
+New versions install from the app itself: a bar shows up with an **Update** button, and your history and settings are kept.
 
 The apps are available in French and English.
 

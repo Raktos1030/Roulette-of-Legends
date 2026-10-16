@@ -38,7 +38,7 @@ DOWNLOAD_URL = "https://github.com/Raktos1030/Roulette-of-Legends/releases/lates
 # anonymous launch count (edition, version, system), sent once per launch by release builds; off in Settings
 USAGE_COUNTER = "https://rouletteoflegends.goatcounter.com/count"
 OLD_NAMES = () if LITE else ("Roulette LoL",)   # former app names (Windows startup entry to migrate)
-APP_VERSION = "2.3"
+APP_VERSION = "2.4"
 
 
 def find_layout():

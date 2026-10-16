@@ -10,12 +10,12 @@ Les deux applis sont sur la page des [releases](https://github.com/Raktos1030/Ro
 
 | | Windows | Mac (Apple Silicon) |
 |---|---|---|
-| **Roulette of Legends Lite** : la roulette, reliée à LoL | `Roulette-of-Legends-Lite-windows.zip` | `Roulette-of-Legends-Lite-mac.zip` |
-| **Roulette of Legends** : la version complète | `Roulette-of-Legends-windows.zip` | bientôt |
+| **Roulette of Legends Lite** : la roulette, reliée à LoL | `Roulette-of-Legends-Lite-Setup.exe` | `Roulette-of-Legends-Lite-mac.dmg` |
+| **Roulette of Legends** : la version complète | `Roulette-of-Legends-Setup.exe` | bientôt |
 
-Décompresse le dossier où tu veux et lance l'appli. Sur Mac, au premier lancement : Réglages Système › Confidentialité et sécurité › « Ouvrir quand même ».
+Windows : lance l'installeur. Mac : ouvre le .dmg et glisse l'appli dans Applications ; au premier lancement, Réglages Système › Confidentialité et sécurité › « Ouvrir quand même ».
 
-Les nouvelles versions s'installent depuis l'appli : un bandeau apparaît avec un bouton **Mettre à jour**, et ton historique et tes réglages sont conservés. Sur Mac, place d'abord l'appli dans Applications.
+Les nouvelles versions s'installent depuis l'appli : un bandeau apparaît avec un bouton **Mettre à jour**, et ton historique et tes réglages sont conservés.
 
 Les applis sont en français et en anglais.
 
