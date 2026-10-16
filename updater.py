@@ -22,6 +22,7 @@ import os
 import shutil
 import threading
 import time
+import http.client
 import urllib.error
 import urllib.request
 
@@ -66,7 +67,7 @@ def fetch(url, tries=3, binary=False, timeout=45):
             last = e
             if e.code == 404:
                 return None
-        except (OSError, ValueError) as e:
+        except (OSError, ValueError, http.client.HTTPException) as e:   # HTTPException: answer cut short
             last = e
         time.sleep(2 + 3 * i)
     raise IOError("%s: %s" % (url.split("?")[0], last))

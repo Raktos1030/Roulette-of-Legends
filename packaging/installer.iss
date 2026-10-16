@@ -57,7 +57,8 @@ Name: "{autodesktop}\{#AppName}"; Filename: "{app}\{#AppExe}"; Tasks: desktopico
 Filename: "{app}\{#AppExe}"; Description: "{cm:LaunchProgram,{#AppName}}"; Flags: nowait postinstall skipifsilent
 
 [UninstallRun]
-Filename: "{sys}\taskkill.exe"; Parameters: "/f /t /im ""{#AppExe}"""; Flags: runhidden; RunOnceId: "StopApp"
+; closes this copy of the app only (another copy may be running from elsewhere)
+Filename: "powershell.exe"; Parameters: "-NoProfile -NonInteractive -Command ""Get-Process | Where-Object {{ $_.Path -like '{app}\*' } | Stop-Process -Force"""; Flags: runhidden; RunOnceId: "StopApp"
 
 [UninstallDelete]
 ; files replaced or added by in-app updates since the install
