@@ -1187,7 +1187,8 @@ class Core:
             return None
         hit = next((x for x in du.get("all") or [] if x[1] == partner_key), None)
         out = {"key": partner_key, "name": d.champ_name(partner_key), "partner_label": ROLE_LABEL[du["partner"]],
-               "me_key": d.combos[combo]["key"], "me_name": d.combos[combo]["name"]}
+               "role": du["partner"], "me_key": d.combos[combo]["key"], "me_name": d.combos[combo]["name"],
+               "me_role": d.combos[combo]["role"]}
         if not hit:
             out.update({"wr": None, "text": T("Duo %s + %s : trop peu de parties ensemble pour le chiffrer.") % (
                 out["me_name"], out["name"]), "tone": "muted"})
@@ -1218,10 +1219,11 @@ class Core:
             x["delta"] = round(e["wr"] - base, 2)
             x["combo"] = combo if combo in d.combos else None
             return x
+        def entries(name):   # partners that really play that role (stats computed before that rule)
+            return [x for x in (ent(e) for e in du.get(name) or []) if x["combo"]]
         return {"partner": du["partner"], "partner_label": ROLE_LABEL[du["partner"]], "base": base,
                 "n_partners": du.get("n_partners"), "min_n": du.get("min_n"), "total": du.get("total"),
-                "good": [ent(e) for e in du.get("good") or []], "bad": [ent(e) for e in du.get("bad") or []],
-                "frequent": [ent(e) for e in du.get("frequent") or []]}
+                "good": entries("good"), "bad": entries("bad"), "frequent": entries("frequent")}
 
     def _builds_view(self, key):
         d = self.data

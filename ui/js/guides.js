@@ -2,7 +2,7 @@
 //   #/guides            every guide (role filter, search) + shortcut to the current roll
 //   #/guides/Ahri|mid   one guide
 import { esc, img, roleIcon, norm, pct, ROLES, ROLE_LABEL, stagger, CHAOS_ICON, t } from "./util.js";
-import { store, on, backdrop, toast, setStatus, openMenu, dispatch } from "./ctx.js";
+import { store, on, backdrop, toast, setStatus, openMenu, dispatch, modalOpen, closeModal, modalBack } from "./ctx.js";
 import { call } from "./api.js";
 import { renderGuide } from "./guide.js";
 
@@ -37,6 +37,7 @@ export function renderGuides(page) {
 
 // --- single guide ---
 function renderOne(page, v) {
+  while (backStack.length && backStack[backStack.length - 1].guide !== v.key) backStack.pop();   // opened from elsewhere
   page.innerHTML = `<div class="page-enter"><div class="guide-bar" id="fbar"></div><div id="fguide"></div></div>`;
   paintBar();
   const tab = store.nextTab;   // tab requested by the opening page (e.g. Matchups from the Game page)
@@ -54,7 +55,9 @@ function paintBar() {
   const v = store.current, r = store.roll;
   const mine = r && r.combo === v.key;
   const who = `<img src="${img.icon(v.champ.key)}" alt=""><b>${esc(v.champ.name)}</b>${roleIcon(v.role)}<span>${esc(v.role_label)}</span>`;
-  const back = `<a class="btn sm fb-back" href="#/guides" title="${esc(t("Toutes les fiches"))}"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>${esc(t("Toutes les fiches"))}</a>`;
+  const top = backStack[backStack.length - 1];
+  const back = (top && top.guide === v.key ? `<button class="btn sm fb-back fb-ctx" data-ctx-back><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>${esc(top.label)}</button>` : "")
+    + `<a class="btn sm fb-back" href="#/guides" title="${esc(t("Toutes les fiches"))}"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>${esc(t("Toutes les fiches"))}</a>`;
   if (mine) {
     bar.className = "guide-bar mine";
     bar.innerHTML = `${back}
@@ -73,6 +76,8 @@ function paintBar() {
     const b = bar.querySelector("[data-back]");
     if (b) b.onclick = () => openCombo(r.combo);
   }
+  const ctx = bar.querySelector("[data-ctx-back]");
+  if (ctx) ctx.onclick = goBack;
 }
 
 // --- guide list ---
@@ -215,9 +220,74 @@ export function showGuide(v) {
 }
 
 export async function openCombo(key, tab = null) {
+  const from = backPoint(key);
   store.nextTab = tab;
   const v = await call("combo", { key });
   if (v.error) return toast(v.error, "bad");
+  if (from) backStack.push(from);
+  if (modalOpen()) closeModal();
   setStatus(t("Fiche : {0} {1}", v.champ.name, v.role_label), "teal");
   showGuide(v);
+}
+
+// a champion portrait: its guide in that role when it has one, otherwise in its most played role
+export function openChamp(key, role) {
+  const c = (store.boot.champions || []).find((x) => x.key === key);
+  if (!c || !c.roles.length) return;
+  const r = c.roles.some((x) => x.role === role) ? role : c.roles.reduce((a, b) => (b.share > a.share ? b : a)).role;
+  openCombo(key + "|" + r);
+}
+
+// --- coming back from a guide -----------------------------------------------------------------------
+// A guide opened from somewhere (game details in the history, Game page, another guide...) offers to go back
+// there: same page, same scroll position, and the window it was opened from.
+const backStack = [];
+let pendingBack = null;
+const BACK_LABELS = { roulette: "Retour à la roulette", history: "Retour à l'historique", favorites: "Retour aux favoris",
+  game: "Retour à la partie", glossary: "Retour au lexique", settings: "Retour aux réglages" };
+
+function backPoint(key) {
+  const page = (location.hash.replace(/^#\/?/, "") || "roulette").split("/")[0];
+  const modal = modalOpen() ? modalBack() : null;
+  let label = modal ? modal.label : null;
+  if (!label) {
+    if (page === "guides") {
+      const cur = store.current;
+      if (!subKey() || !cur || cur.key === key) return null;
+      label = t("Retour à la fiche {0} {1}", cur.champ.name, cur.role_label);
+    } else label = BACK_LABELS[page] ? t(BACK_LABELS[page]) : null;
+  }
+  if (!label) return null;
+  return { hash: location.hash || "#/roulette", scroll: document.getElementById("main").scrollTop, label,
+    reopen: modal ? modal.reopen : null, guide: key };
+}
+
+export function goBack() {
+  const b = backStack.pop();
+  if (!b) return;
+  pendingBack = b;
+  if (location.hash === b.hash) restoreBack();
+  else location.hash = b.hash;
+}
+
+// called by the router once the page is drawn: scroll position (the page may still be loading) and window
+export function restoreBack() {
+  const b = pendingBack;
+  pendingBack = null;
+  if (!b) return false;
+  const main = document.getElementById("main");
+  const until = Date.now() + 2000;
+  const scroll = () => {
+    main.style.scrollBehavior = "auto";
+    main.scrollTop = b.scroll;
+    main.style.scrollBehavior = "";
+    if (Math.abs(main.scrollTop - b.scroll) > 2 && Date.now() < until) setTimeout(scroll, 80);
+  };
+  if (b.scroll) scroll();
+  if (b.reopen) b.reopen();
+  return true;
+}
+
+export function clearBack() {
+  backStack.length = 0;
 }

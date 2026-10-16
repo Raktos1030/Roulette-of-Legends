@@ -1,6 +1,6 @@
 // Guide of a champion + role combo: illustrated header, live numbers and guide tabs.
 import { esc, pct, int, kilo, signed, img, roleIcon, linkify, firstSentence, ICONS, spellMeta, countUp, stagger, CHAOS_ICON, t, LANG } from "./util.js";
-import { store, backdrop, toast, openMenu } from "./ctx.js";
+import { store, backdrop, toast, openMenu, champAttr } from "./ctx.js";
 import { call } from "./api.js";
 
 const TABS = [
@@ -35,6 +35,7 @@ const toneOf = (d) => (d >= 3 ? "good2" : d >= 1.5 ? "good" : d > -1.5 ? "even" 
 export function renderGuide(root, v, opts = {}) {
   store.current = v;
   SP = v.champ.key;
+  guideRole = v.role;
   backdrop(v.champ.key);
   if (v.key !== lastKey) currentTab = "summary";
   lastKey = v.key;
@@ -225,7 +226,7 @@ function formCard(v) {
 
 function mxCard(v) {
   const m = v.matchups;
-  const item = (e) => `<div class="mx-item"><img src="${img.icon(e.key)}" alt=""><span>${esc(e.name)}</span><span class="d t-${e.tone}">${signed(e.delta)}</span></div>`;
+  const item = (e) => `<div class="mx-item"><img src="${img.icon(e.key)}" alt=""${champAttr(e.key, v.role)}><span>${esc(e.name)}</span><span class="d t-${e.tone}">${signed(e.delta)}</span></div>`;
   return card(
     t("Matchups express"),
     `<div class="mx"><div><h4 class="t-good">${esc(t("Tu les bats"))}</h4>${m.good.slice(0, 3).map(item).join("")}</div>
@@ -326,12 +327,14 @@ function laneHTML(v, g, used) {
   </div>`;
 }
 
+let guideRole = null;   // role of the guide being drawn: its opponents' portraits open their guide in that role
+
 function mrow(e) {
   const w = Math.min(50, (Math.abs(e.delta) / 6) * 50);
   const cls = e.delta >= 0 ? "p" : "n";
   const chk = e.check === "ok" ? "t-good" : e.check === "contradiction" ? "t-warn" : "t-muted";
   return `<div class="mrow">
-    <div class="who"><img src="${img.icon(e.key)}" alt=""><div><div class="nm">${esc(e.name)}</div><div class="fr">${e.freq_rank ? esc(t("n°{0} des adversaires", e.freq_rank)) : ""}</div></div></div>
+    <div class="who"><img src="${img.icon(e.key)}" alt=""${champAttr(e.key, guideRole)}><div><div class="nm">${esc(e.name)}</div><div class="fr">${e.freq_rank ? esc(t("n°{0} des adversaires", e.freq_rank)) : ""}</div></div></div>
     <div class="wrbar"><span class="wr num t-${e.tone}">${pct(e.wr, 1)}</span><span class="dbar"><i class="${cls}" style="width:${w}%"></i></span><span class="dl t-${e.tone}">${signed(e.delta)}</span></div>
     <div class="cell num">${int(e.n)}<small>${esc(t("parties"))}</small></div>
     <div class="cell">${e.ugg_wr != null ? `<span class="num">${pct(e.ugg_wr, 1)}</span><small>${esc(t("{0} parties u.gg", int(e.ugg_n)))}</small>` : `<span class="t-muted">—</span>`}</div>
@@ -357,7 +360,7 @@ function matchupsHTML(v, g, used) {
     const e = n.live;
     const sub = esc(e ? (e.freq_rank ? t("n°{0} des adversaires", e.freq_rank) + " · " : "") + t("{0} parties", int(e.n)) : t("pas assez de parties pour chiffrer"));
     return `<div class="note">
-      <div class="note-head">${n.key ? `<img src="${img.icon(n.key)}" alt="">` : ""}<div><div class="nm">${esc(n.name)}</div><div class="sub">${sub}</div></div>
+      <div class="note-head">${n.key ? `<img src="${img.icon(n.key)}" alt=""${champAttr(n.key, v.role)}>` : ""}<div><div class="nm">${esc(n.name)}</div><div class="sub">${sub}</div></div>
         ${e ? `<span class="pill t-${e.tone}" title="${esc(t("{0} de victoires, {1} par rapport à sa moyenne", pct(e.wr, 1), signed(e.delta)))}">${esc(e.verdict)} · ${signed(e.delta)}</span>` : `<span class="pill t-muted">${esc(t("non chiffré"))}</span>`}</div>
       <p class="prose">${L(n.text, used, n.key)}</p></div>`;
   });

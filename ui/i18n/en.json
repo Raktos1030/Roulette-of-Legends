@@ -838,5 +838,12 @@
 "LoL est passé en « Sans bordure » : l'overlay s'affichera par-dessus le jeu.": "LoL is now in “Borderless”: the overlay will show over the game.",
 "LoL est en plein écran : l'overlay ne pourra pas s'afficher pendant la partie.": "LoL is in fullscreen: the overlay won't be able to show during the game.",
 "Passer en Sans bordure": "Switch to borderless",
-"LoL est en plein écran : l'overlay ne peut pas s'afficher. Passe-le en « Sans bordure » (le jeu remplit toujours tout l'écran).": "LoL is in fullscreen: the overlay can't show. Switch it to “Borderless” (the game still fills the whole screen)."
+"LoL est en plein écran : l'overlay ne peut pas s'afficher. Passe-le en « Sans bordure » (le jeu remplit toujours tout l'écran).": "LoL is in fullscreen: the overlay can't show. Switch it to “Borderless” (the game still fills the whole screen).",
+"Retour à la roulette": "Back to the roulette",
+"Retour à l'historique": "Back to history",
+"Retour aux favoris": "Back to favorites",
+"Retour à la partie": "Back to the game",
+"Retour au lexique": "Back to the glossary",
+"Retour aux réglages": "Back to settings",
+"Retour à la fiche {0} {1}": "Back to the {0} {1} guide"
 }

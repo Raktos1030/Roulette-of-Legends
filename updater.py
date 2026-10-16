@@ -311,10 +311,11 @@ def bench(d):
             "k": st.get("kills", 0), "d": st["deaths"], "a": st.get("assists", 0), "n": n}
 
 
-def duos(role, d_team, base, names, keys):
+def duos(role, d_team, base, names, keys, partners=None):
     """Bot lane partners: which supports an ADC wins the most with (and the other way around). Same rules as
     matchups: enough games, played enough, win rate shrunk toward the champion's average (a duo over 300 games
-    doesn't rank above a duo over 5,000)."""
+    doesn't rank above a duo over 5,000). partners: champions that really play the partner's role (those with a
+    guide there); others (Tahm Kench "ADC" next to a Senna support...) stay out of the lists."""
     lane = DUO_LANE.get(role)
     allrows = [r for r in (((d_team or {}).get("team") or {}).get(lane) or []) if isinstance(r, list) and len(r) >= 6]
     if not allrows:
@@ -329,6 +330,8 @@ def duos(role, d_team, base, names, keys):
     ents = []
     for r in rows:
         o, wr, _d1, d2, pr, n = r[:6]
+        if partners is not None and keys.get(o) not in partners:
+            continue
         ents.append({"cid": o, "name": names.get(o, str(o)), "key": keys.get(o), "wr": round(wr, 2), "n": n,
                      "pr": round(pr, 2), "syn": round(d2, 2),
                      "shr": round((wr * n + base * K_SHRINK) / (n + K_SHRINK), 2),
@@ -557,7 +560,9 @@ class Updater:
                 time.sleep(0.2)
             except IOError:
                 continue
-            duo = duos(c["role"], dteam, c["month"]["wr"], names, keys)
+            partner = "sup" if c["role"] == "adc" else "adc"
+            duo = duos(c["role"], dteam, c["month"]["wr"], names, keys,
+                       {x["key"] for x in st["combos"].values() if x["role"] == partner})
             if duo:
                 c["duo"] = duo
         write_json(path, st, compact=True)
@@ -746,7 +751,9 @@ class Updater:
                 try:
                     dteam = fetch(LOLA_TEAM % ("30", slug, lane, "emerald_plus"))
                     time.sleep(0.2)
-                    duo = duos(c["role"], dteam, month["wr"], id2fr, id2key)
+                    partner = "sup" if c["role"] == "adc" else "adc"
+                    duo = duos(c["role"], dteam, month["wr"], id2fr, id2key,
+                               {x["key"] for x in pool if x["role"] == partner})
                     if duo:
                         combos[key]["duo"] = duo
                 except IOError:

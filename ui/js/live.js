@@ -4,7 +4,7 @@
 //   Clicking a champion opens its guide (enemy: Matchups tab).
 //   In game: the real roles, then each player's rank and recent form (read from the client).
 import { esc, img, roleIcon, pct, int, signed, stagger, t, LANG } from "./util.js";
-import { store, on, backdrop } from "./ctx.js";
+import { store, on, backdrop, champAttr } from "./ctx.js";
 import { call } from "./api.js";
 import { openCombo } from "./guides.js";
 
@@ -51,7 +51,7 @@ function paint(v, first = false) {
       <h1 class="page-title">${esc(cs ? t("Sélection") : t("Partie en cours"))}</h1>
     </div>
     ${v.combo ? `<button class="btn sm" data-guide="${esc(v.combo)}">${esc(t("Ta fiche : {0}", v.combo_label))}</button>` : ""}</header>
-    ${v.bans && v.bans.length ? `<div class="lv-bans"><span class="lv-k">${esc(t("Bannis"))}</span>${v.bans.map((b) => `<img src="${img.icon(b.key)}" alt="" title="${esc(b.name)}">`).join("")}</div>` : ""}
+    ${v.bans && v.bans.length ? `<div class="lv-bans"><span class="lv-k">${esc(t("Bannis"))}</span>${v.bans.map((b) => `<img src="${img.icon(b.key)}" alt="" title="${esc(b.name)}"${champAttr(b.key)}>`).join("")}</div>` : ""}
     <section class="card lv-board">
       <div class="lv-cols"><span class="ally">${esc(t("Ton équipe"))}</span><span></span><span class="enemy">${esc(t("Équipe adverse"))}</span></div>
       ${v.rows.map((r) => rowHTML(r, cs)).join("")}
@@ -112,7 +112,7 @@ function duel(v) {
   const e = row && row.enemy;
   if (!e || !e.key || !(e.note || e.vs)) return "";
   return `<section class="card lv-duel">
-    <img src="${img.icon(row.ally.key)}" alt=""><span class="lv-vsx">${esc(t("contre"))}</span><img src="${img.icon(e.key)}" alt="">
+    <img src="${img.icon(row.ally.key)}" alt=""${champAttr(row.ally.key, row.ally.role)}><span class="lv-vsx">${esc(t("contre"))}</span><img src="${img.icon(e.key)}" alt=""${champAttr(e.key, e.role || row.ally.role)}>
     <div><h3 class="card-title">${esc(t("Ton duel : {0} contre {1}", row.ally.champ, e.champ))}${e.guessed ? esc(t(" (poste supposé)")) : ""}</h3>
       ${e.vs ? `<div class="lv-sub">${esc(t("Ton taux de victoire :"))} <b class="${e.vs.delta >= 1.5 ? "t-good" : e.vs.delta <= -1.5 ? "t-bad" : ""}">${pct(e.vs.wr, 1)}</b> ${esc(t("sur {0} parties (Émeraude+)", int(e.vs.n)))}</div>` : ""}
       ${e.note ? `<p class="prose">${esc(e.note)}</p>` : ""}</div>
@@ -124,7 +124,7 @@ function duoCard(v) {
   if (!d) return "";
   const cls = d.wr == null ? "" : d.delta >= 1.5 ? "t-good" : d.delta <= -1.5 ? "t-bad" : "";
   return `<section class="card lv-duel lv-duo">
-    <img src="${img.icon(d.me_key)}" alt=""><span class="lv-vsx">+</span><img src="${img.icon(d.key)}" alt="">
+    <img src="${img.icon(d.me_key)}" alt=""${champAttr(d.me_key, d.me_role)}><span class="lv-vsx">+</span><img src="${img.icon(d.key)}" alt=""${champAttr(d.key, d.role)}>
     <div><h3 class="card-title">${esc(t("Ton duo : {0} + {1}", d.me_name, d.name))}${d.guessed ? esc(t(" (poste supposé)")) : ""}${d.best ? `<span class="pill t-gold" style="margin-left:12px">${esc(t("★ un des meilleurs duos"))}</span>` : ""}</h3>
       ${d.wr != null ? `<div class="lv-sub">${esc(t("Ensemble :"))} <b class="${cls}">${pct(d.wr, 1)}</b> ${esc(t("de victoires sur {0} parties · {1} par rapport à la moyenne de {2} (Émeraude+)", int(d.n), signed(d.delta, 1), d.me_name))}</div>`
         : `<div class="lv-sub">${esc(t("Trop peu de parties ensemble pour chiffrer ce duo."))}</div>`}</div>

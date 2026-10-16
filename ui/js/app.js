@@ -1,9 +1,9 @@
 // UI entry point: boot, navigation, core events, champ select banner.
 import { call, listen } from "./api.js";
 import { esc, img, ICONS, roleIcon, setupGlossary, setupSpells, fmtDate, setupLang, t } from "./util.js";
-import { store, on, dispatch, toast, setStatus, setupTips, modalOpen, closeModal, spinLogo, mechRole, isLite, wireBorderless } from "./ctx.js";
+import { store, on, dispatch, toast, setStatus, setupTips, modalOpen, closeModal, spinLogo, mechRole, isLite, wireBorderless, champAttr } from "./ctx.js";
 import { renderRoulette, rouletteKey, launch } from "./roulette.js";
-import { renderGuides, showGuide } from "./guides.js";
+import { renderGuides, showGuide, openChamp, restoreBack, clearBack } from "./guides.js";
 import { setAmbient } from "./ambient.js";
 import { renderHistory } from "./history.js";
 import { renderFavorites } from "./favorites.js";
@@ -71,6 +71,14 @@ async function boot() {
   route();
   listen(onEvent);
   document.addEventListener("keydown", onKey);
+  // champion portraits open their guide, wherever they are (history, game details, Game page, guides...)
+  document.addEventListener("click", (e) => {
+    const el = e.target.closest("[data-champ]");
+    if (!el) return;
+    e.preventDefault();
+    e.stopPropagation();
+    openChamp(el.dataset.champ, el.dataset.role);
+  }, true);
   if (b.updated) setTimeout(() => toast(t("Mise à jour terminée : version {0}.", b.updated), "good", 7000), 900);
   if (b.update_notice) {
     // stats updated while the window was closed
@@ -128,6 +136,7 @@ function route() {
   main.scrollTop = 0;
   main.style.scrollBehavior = "";
   p.render(page);
+  if (!restoreBack() && current !== "guides") clearBack();   // other page: guides opened before have no way back
   paintGuideNav();
   moveNavIndicator();
   spinLogo(0.7);   // small wheel spin on every page change
@@ -320,7 +329,7 @@ function paintCS() {
       ${cs.pending ? `<div class="cs-line" style="color:var(--gold-pale)">${esc(t("Ton tirage :"))} <b>${esc(cs.pending.name)}</b> — ${esc(cs.pending.role === "jgl" ? "Jungle" : cs.pending.role === "sup" ? "Support" : cs.pending.role === "adc" ? "ADC" : cs.pending.role === "mid" ? "Mid" : "Top")}</div>` : ""}
       ${cs.lines.map((l) => `<div class="cs-line t-${l.tone}">${esc(l.text)}</div>`).join("")}
       ${(store.lol || {}).fullscreen ? `<div class="cs-line t-warn">${esc(t("LoL est en plein écran : l'overlay ne pourra pas s'afficher pendant la partie."))}</div>` : ""}
-      ${cs.duo ? `<div class="cs-line cs-duo t-${cs.duo.tone}"><img src="${img.icon(cs.duo.me_key)}" alt=""><b>+</b><img src="${img.icon(cs.duo.key)}" alt="">${esc(cs.duo.text)}</div>` : ""}
+      ${cs.duo ? `<div class="cs-line cs-duo t-${cs.duo.tone}"><img src="${img.icon(cs.duo.me_key)}" alt=""${champAttr(cs.duo.me_key, cs.duo.me_role)}><b>+</b><img src="${img.icon(cs.duo.key)}" alt=""${champAttr(cs.duo.key, cs.duo.role)}>${esc(cs.duo.text)}</div>` : ""}
       ${cs.imports ? `<div class="cs-imp"><span class="ci-t">${esc(t("Importé pour {0} :", cs.imports.label))}</span>${cs.imports.results.map((r) =>
         `<span class="ci ${r.state}" title="${esc(r.text)}">${r.state === "ok" ? "✓" : r.state === "full" ? "!" : "✕"} ${esc(r.label)}</span>`).join("")}</div>` : ""}
     </div>

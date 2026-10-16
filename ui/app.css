@@ -822,6 +822,10 @@ html:lang(en) .quote::after { content: "\201D"; }
   display: flex; align-items: center; gap: 14px; margin: 0 0 14px; padding: 10px 14px; border-radius: 14px;
   background: var(--glass); border: 1px solid var(--hair); backdrop-filter: blur(18px);
 }
+.guide-bar .fb-ctx { border-color: var(--hair-gold); color: var(--gold-pale); }
+/* champion portraits open their guide */
+img[data-champ] { cursor: pointer; transition: filter .15s, box-shadow .15s; }
+img[data-champ]:hover { filter: brightness(1.18); box-shadow: 0 0 0 2px var(--gold); }
 .guide-bar.mine { border-color: rgba(25, 211, 196, .35); background: linear-gradient(90deg, rgba(25, 211, 196, .12), var(--glass) 45%); }
 .fb-badge { display: inline-flex; align-items: center; gap: 8px; padding: 5px 11px; border-radius: 999px; font: 11.5px/1 var(--display); letter-spacing: .14em; text-transform: uppercase; color: var(--teal); background: rgba(25, 211, 196, .12); border: 1px solid rgba(25, 211, 196, .35); }
 .fb-badge.other { color: var(--gold-hi); background: rgba(200, 170, 110, .1); border-color: rgba(200, 170, 110, .3); }

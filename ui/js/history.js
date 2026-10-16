@@ -1,7 +1,7 @@
 // History page: every game (with or without the roulette) and roll: summary, LP chart, list, game details.
 // Games played without the app are caught up from the client's match history.
 import { esc, signed, img, roleIcon, ROLES, ROLE_LABEL, stagger, t, LANG } from "./util.js";
-import { on, toast, openModal, confirmBox, backdrop, isLite, openUgg } from "./ctx.js";
+import { on, toast, openModal, confirmBox, backdrop, isLite, openUgg, champAttr, setModalBack } from "./ctx.js";
 import { call } from "./api.js";
 import { openCombo } from "./guides.js";
 
@@ -201,7 +201,7 @@ function paintList(rows) {
     <div class="hrow head"><div>${esc(t("Champion"))}</div><div>${esc(t("Date"))}</div><div class="c-mode">${esc(t("Tirage"))}</div><div>${esc(t("Résultat"))}</div><div>KDA</div><div>LP</div><div>${esc(t("Détail"))}</div></div>
     ${rows.map((r) => `
     <div class="hrow" data-id="${r.id}">
-      <div class="who"><img src="${img.icon(r.key)}" alt=""><div><div class="nm">${esc(r.name)}</div><div class="rl">${r.role ? roleIcon(r.role) : ""}${esc(r.role_label)}</div></div></div>
+      <div class="who"><img src="${img.icon(r.key)}" alt=""${champAttr(r.key, r.role)}><div><div class="nm">${esc(r.name)}</div><div class="rl">${r.role ? roleIcon(r.role) : ""}${esc(r.role_label)}</div></div></div>
       <div class="c num">${esc(r.date)}</div>
       <div class="c c-mode${r.free ? " t-muted" : ""}">${esc(r.mode)}</div>
       <div><span class="pill t-${r.tone}">${esc(r.glyph)} ${esc(r.result)}</span></div>
@@ -223,18 +223,17 @@ async function showGame(id) {
   const v = await call("game", { id });
   if (v.error) return toast(v.error, "bad");
   const { box, close } = openModal(gameHTML(v), () => (openGame = null));
+  setModalBack(t("Retour à la partie"), () => showGame(id));
   backdrop(v.played);
   // the header and the "See the guide" buttons open the roll's guide
   const wire = (view) => {
     box.querySelectorAll("[data-guide]").forEach((b) => (b.onclick = (e) => {
       e.stopPropagation();
-      close();
-      openCombo(b.dataset.guide);
+      openCombo(b.dataset.guide);   // closes this window, which the guide can reopen
     }));
     const head = isLite() ? null : box.querySelector(".g-head.link");
     if (head) head.onclick = (e) => {
-      if (e.target.closest(".stat, button")) return;
-      close();
+      if (e.target.closest(".stat, button, [data-champ]")) return;
       openCombo(view.combo);
     };
   };
@@ -265,7 +264,7 @@ function gameHTML(v) {
         ${tm.rows.map((p) => `
           <div class="prow${p.me ? " me" : ""}">
             <div>${p.role ? roleIcon(p.role) : ""}</div>
-            <div class="who">${p.key ? `<img src="${img.icon(p.key)}" alt="">` : ""}<div style="min-width:0"><div class="nm">${esc(p.name)}</div><div class="ch">${esc(p.champ)}${p.tag ? " #" + esc(p.tag) : ""}</div></div></div>
+            <div class="who">${p.key ? `<img src="${img.icon(p.key)}" alt=""${champAttr(p.key, p.role)}>` : ""}<div style="min-width:0"><div class="nm">${esc(p.name)}</div><div class="ch">${esc(p.champ)}${p.tag ? " #" + esc(p.tag) : ""}</div></div></div>
             <div class="num">${p.level}</div><div class="num" style="color:var(--gold-pale)">${esc(p.kda)}</div><div class="num">${esc(p.ratio)}</div>
             <div class="num">${esc(p.cs)}</div><div class="num">${esc(p.gold)}</div>
             <div class="dmg"><span class="num">${esc(p.dmg_txt)}</span><i><b style="width:${(p.dmg_frac * 100).toFixed(1)}%;background:${tm.side === "blue" ? "var(--blue)" : "var(--red)"}"></b></i></div>
@@ -280,7 +279,7 @@ function gameHTML(v) {
         <h2 class="g-title t-${v.tone}">${esc(v.title.toUpperCase())}</h2>
         <div style="font-weight:600;color:var(--gold-pale)">${v.infos.map(esc).join("  ·  ")}</div>
         <div class="muted" style="margin:4px 0 14px">${esc(v.roll_text)}</div>
-        ${v.group ? `<div class="g-group">${v.group.map((m) => `<span class="gg ${m.ok === true ? "ok" : m.ok === false ? "ko" : ""}" title="${esc(m.played ? t("a joué {0}", m.played) : t("pas retrouvé dans la partie"))}"><img src="${img.icon(m.key)}" alt=""><b>${esc(m.name)}</b>${esc(m.champ)} · ${esc(m.role_label)}<i>${m.ok === true ? "✔" : m.ok === false ? "✘" : "?"}</i></span>`).join("")}${(() => { const k = v.group.filter((m) => m.ok != null); return k.length ? `<span class="gg-sum">${esc(t("{0} / {1} tirages respectés", k.filter((m) => m.ok).length, k.length))}</span>` : ""; })()}</div>` : ""}
+        ${v.group ? `<div class="g-group">${v.group.map((m) => `<span class="gg ${m.ok === true ? "ok" : m.ok === false ? "ko" : ""}" title="${esc(m.played ? t("a joué {0}", m.played) : t("pas retrouvé dans la partie"))}"><img src="${img.icon(m.key)}" alt=""${champAttr(m.key, m.role)}><b>${esc(m.name)}</b>${esc(m.champ)} · ${esc(m.role_label)}<i>${m.ok === true ? "✔" : m.ok === false ? "✘" : "?"}</i></span>`).join("")}${(() => { const k = v.group.filter((m) => m.ok != null); return k.length ? `<span class="gg-sum">${esc(t("{0} / {1} tirages respectés", k.filter((m) => m.ok).length, k.length))}</span>` : ""; })()}</div>` : ""}
         <div class="stats">${chips}</div>
       </div>
       <div class="g-guide">${isLite() ? "" : `

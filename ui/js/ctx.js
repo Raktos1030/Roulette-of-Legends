@@ -44,6 +44,20 @@ export function go(route) {
   else dispatch("route", route);
 }
 
+// champion portrait that opens its guide on click (app.js); none in the Lite, which has no guides
+export function champAttr(key, role) {
+  return key && !isLite() ? ` data-champ="${esc(key)}"${role ? ` data-role="${esc(role)}"` : ""}` : "";
+}
+
+// the open window can be reopened when coming back from a guide opened in it (e.g. game details)
+let modalReturn = null;
+export function setModalBack(label, reopen) {
+  modalReturn = { label, reopen };
+}
+export function modalBack() {
+  return modalReturn;
+}
+
 // LoL in exclusive fullscreen: one click switches it to borderless through the client
 export function wireBorderless(box) {
   const b = box.querySelector("[data-borderless]");
@@ -233,9 +247,11 @@ export function openModal(markup, onClose) {
   const box = document.getElementById("modal");
   box.innerHTML = `<div class="modal-box scroll">${markup}<button class="modal-close" title="${esc(t("Fermer"))}">×</button></div>`;
   box.hidden = false;
+  modalReturn = null;
   const close = () => {
     box.hidden = true;
     box.innerHTML = "";
+    modalReturn = null;
     document.removeEventListener("keydown", onKey);
     modalClose = null;
     onClose && onClose();
