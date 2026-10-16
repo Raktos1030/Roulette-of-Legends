@@ -394,15 +394,19 @@ class Updater:
         except OSError:
             pass
 
+    def _check_app_version(self):
+        """Newer version of the app on the releases page: the app shows its update notice."""
+        from core import APP_VERSION
+        latest = latest_app_version()
+        if latest and newer(latest, APP_VERSION):
+            self.core.set_app_update(latest)
+
     def _loop(self):
-        self._wake.wait(45)   # let the app start quietly
+        self._check_app_version()   # at launch (one light request): the notice shows right away
+        self._wake.wait(45)   # stats: let the app start quietly
         while not self._stop.is_set():
             force, self._force = self._force, False
             self._wake.clear()
-            from core import APP_VERSION
-            latest = latest_app_version()
-            if latest and newer(latest, APP_VERSION):
-                self.core.set_app_update(latest)
             if force or self.core.profile.get("auto_update", True):
                 try:
                     self.run(force=force)
@@ -413,6 +417,8 @@ class Updater:
                     log_error("update: " + traceback.format_exc())
                     self._status({"state": "error", "text": T("La mise à jour a échoué (%s). Nouvel essai plus tard.") % e})
             self._wake.wait(CHECK_EVERY)
+            if not self._stop.is_set():
+                self._check_app_version()
 
     def _check_stop(self):
         if self._stop.is_set():
