@@ -792,6 +792,8 @@ html:lang(en) .quote::after { content: "\201D"; }
 .set-row .txt { flex: 1; }
 .set-row .txt b { display: block; font-weight: 600; font-size: 14.5px; }
 .set-row .txt span { display: block; font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+.set-row .txt span.t-warn { color: var(--orange); }
+.set-row .txt [data-borderless] { margin-top: 8px; }
 .seg { display: inline-flex; padding: 4px; border-radius: 12px; background: rgba(0, 0, 0, .3); border: 1px solid var(--hair); gap: 3px; }
 .seg button { border: 0; background: none; padding: 8px 13px; border-radius: 9px; cursor: pointer; color: var(--muted); font-size: 13px; transition: all .2s; }
 .seg button:hover { color: var(--text); }

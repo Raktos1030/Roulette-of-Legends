@@ -69,8 +69,8 @@
   const STAR_SVG = `<svg class="star" viewBox="0 0 24 24"><path d="M12 3.2l2.7 5.5 6 .9-4.4 4.2 1 6-5.3-2.8-5.3 2.8 1-6-4.4-4.2 6-.9z"/></svg>`;
   // release downloads (github.com/<owner>/<repo>/releases/latest/download/<file>); empty until published
   const RELEASE = "https://github.com/Raktos1030/Roulette-of-Legends/releases/latest/download/";
-  const DOWNLOADS = { lite_win: RELEASE + "Roulette-of-Legends-Lite-windows.zip", lite_mac: RELEASE + "Roulette-of-Legends-Lite-mac.zip",
-    full_win: RELEASE + "Roulette-of-Legends-windows.zip" };
+  const DOWNLOADS = { lite_win: RELEASE + "Roulette-of-Legends-Lite-Setup.exe", lite_mac: RELEASE + "Roulette-of-Legends-Lite-mac.dmg",
+    full_win: RELEASE + "Roulette-of-Legends-Setup.exe" };
   const DOWNLOAD_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg>';
 
   const NAV_ICONS = {
@@ -996,7 +996,7 @@
             t("Discrète : elle attend près de l'horloge et peut se lancer avec Windows."),
           ])}
           <div class="app-dl">${downloadButton("lite_win", t("Windows"), "btn")}${downloadButton("lite_mac", t("Mac"), "btn")}</div>
-          <p class="app-note">${esc(DOWNLOADS.lite_win ? t("Mac (Apple Silicon) : au premier lancement, ouvre Réglages Système › Confidentialité et sécurité, puis « Ouvrir quand même ».")
+          <p class="app-note">${esc(DOWNLOADS.lite_win ? t("Mac (Apple Silicon) : ouvre le .dmg et glisse l'appli dans Applications. Au premier lancement : Réglages Système › Confidentialité et sécurité › « Ouvrir quand même ».")
             : t("Bientôt disponible."))}</p>
         </section>
         <section class="card app-card full">
