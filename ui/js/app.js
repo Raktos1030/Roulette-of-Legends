@@ -1,7 +1,7 @@
 // UI entry point: boot, navigation, core events, champ select banner.
 import { call, listen } from "./api.js";
 import { esc, img, ICONS, roleIcon, setupGlossary, setupSpells, fmtDate, setupLang, t } from "./util.js";
-import { store, on, dispatch, toast, setStatus, setupTips, modalOpen, closeModal, spinLogo, mechRole, isLite } from "./ctx.js";
+import { store, on, dispatch, toast, setStatus, setupTips, modalOpen, closeModal, spinLogo, mechRole, isLite, wireBorderless } from "./ctx.js";
 import { renderRoulette, rouletteKey, launch } from "./roulette.js";
 import { renderGuides, showGuide } from "./guides.js";
 import { setAmbient } from "./ambient.js";
@@ -319,14 +319,16 @@ function paintCS() {
       <div class="cs-title">${esc(t("Sélection des champions"))} — ${cs.assigned ? esc(t("rôle attribué : {0}", cs.assigned_label)) : esc(t("pas de rôle attribué"))}</div>
       ${cs.pending ? `<div class="cs-line" style="color:var(--gold-pale)">${esc(t("Ton tirage :"))} <b>${esc(cs.pending.name)}</b> — ${esc(cs.pending.role === "jgl" ? "Jungle" : cs.pending.role === "sup" ? "Support" : cs.pending.role === "adc" ? "ADC" : cs.pending.role === "mid" ? "Mid" : "Top")}</div>` : ""}
       ${cs.lines.map((l) => `<div class="cs-line t-${l.tone}">${esc(l.text)}</div>`).join("")}
+      ${(store.lol || {}).fullscreen ? `<div class="cs-line t-warn">${esc(t("LoL est en plein écran : l'overlay ne pourra pas s'afficher pendant la partie."))}</div>` : ""}
       ${cs.duo ? `<div class="cs-line cs-duo t-${cs.duo.tone}"><img src="${img.icon(cs.duo.me_key)}" alt=""><b>+</b><img src="${img.icon(cs.duo.key)}" alt="">${esc(cs.duo.text)}</div>` : ""}
       ${cs.imports ? `<div class="cs-imp"><span class="ci-t">${esc(t("Importé pour {0} :", cs.imports.label))}</span>${cs.imports.results.map((r) =>
         `<span class="ci ${r.state}" title="${esc(r.text)}">${r.state === "ok" ? "✓" : r.state === "full" ? "!" : "✕"} ${esc(r.label)}</span>`).join("")}</div>` : ""}
     </div>
-    <div class="cs-btns">${current !== "game" && !isLite() ? `<a class="btn" href="#/game">${esc(t("Voir les équipes"))}</a>` : ""}${cs.buttons.map((b, i) => `<button class="btn-gold" data-i="${i}">${esc(b.label)}</button>`).join("")}
+    <div class="cs-btns">${(store.lol || {}).fullscreen ? `<button class="btn" data-borderless>${esc(t("Passer en Sans bordure"))}</button>` : ""}${current !== "game" && !isLite() ? `<a class="btn" href="#/game">${esc(t("Voir les équipes"))}</a>` : ""}${cs.buttons.map((b, i) => `<button class="btn-gold" data-i="${i}">${esc(b.label)}</button>`).join("")}
       ${cs.imports && cs.imports.results.some((r) => r.id === "runes" && r.state === "full") ? `<button class="btn" data-replace title="${esc(t("Plus de place pour une nouvelle page : la page de runes sélectionnée dans le client sera remplacée"))}">${esc(t("Remplacer ma page de runes"))}</button>` : ""}</div>`;
   // guide tabs stick right under the banner
   requestAnimationFrame(() => document.documentElement.style.setProperty("--banner-h", box.offsetHeight + "px"));
+  wireBorderless(box);
   const rep = box.querySelector("[data-replace]");
   if (rep) rep.onclick = async () => {
     rep.disabled = true;

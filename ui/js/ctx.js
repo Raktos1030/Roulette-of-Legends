@@ -44,6 +44,19 @@ export function go(route) {
   else dispatch("route", route);
 }
 
+// LoL in exclusive fullscreen: one click switches it to borderless through the client
+export function wireBorderless(box) {
+  const b = box.querySelector("[data-borderless]");
+  if (b) b.onclick = async () => {
+    b.disabled = true;
+    const r = await call("borderless");
+    if (r.error) {
+      toast(r.error, "bad", 7000);
+      b.disabled = false;
+    } else toast(r.text, "good", 6000);
+  };
+}
+
 // --- toasts ---
 export function toast(text, tone = "gold", ms = 4600) {
   const box = document.getElementById("toasts");

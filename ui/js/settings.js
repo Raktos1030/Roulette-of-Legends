@@ -1,6 +1,6 @@
 // Settings page: in-game overlay, champ select import, stats, application and about.
 import { esc, fmtDate, t, LANG } from "./util.js";
-import { store, on, toast, isLite, isMac } from "./ctx.js";
+import { store, on, toast, isLite, isMac, wireBorderless } from "./ctx.js";
 import { aboutPromo, wirePromo } from "./promo.js";
 import { call } from "./api.js";
 
@@ -70,7 +70,8 @@ function paintOverlay() {
   box.innerHTML = `
     <h3 class="card-title">${esc(t("Overlay en jeu"))}</h3>
     <div class="set-row" title="${esc(t("Modules par-dessus la partie (LoL en plein écran sans bordure ou fenêtré). Tab ou en permanence ; Ctrl + la lettre du module le masque ou l'épingle."))}"><div class="txt"><b>${esc(t("Overlay"))}</b>
-        ${(store.lol || {}).fullscreen ? `<span class="t-warn">${esc(t("LoL est en plein écran : l'overlay ne peut pas s'afficher. Dans LoL, Options › Vidéo : choisis « Sans bordure »."))}</span>` : `<span>${esc(t("Maintiens Tab en partie pour l'afficher."))}</span>`}</div>
+        ${(store.lol || {}).fullscreen ? `<span class="t-warn">${esc(t("LoL est en plein écran : l'overlay ne peut pas s'afficher. Passe-le en « Sans bordure » (le jeu remplit toujours tout l'écran)."))}</span>
+        <button class="btn sm" data-borderless>${esc(t("Passer en Sans bordure"))}</button>` : `<span>${esc(t("Maintiens Tab en partie pour l'afficher."))}</span>`}</div>
       <label class="switch"><input type="checkbox" id="o-on" ${off ? "" : "checked"}><i></i></label></div>
     <div class="mods ${off ? "dim" : ""}">
       ${mods.map((m) => {
@@ -91,6 +92,7 @@ function paintOverlay() {
     <div class="set-row"><div class="txt"><b>${esc(t("Aperçu"))}</b></div>
       <button class="btn sm" id="o-prev">${esc(t("Aperçu"))}</button></div>`;
   box.querySelector("#o-on").onchange = (e) => setPref("overlay_mode", e.target.checked ? "tab" : "never");
+  wireBorderless(box);
   box.querySelectorAll(".mod-row").forEach((row) => {
     const id = row.dataset.id;
     row.querySelector(".m-on").onchange = (e) => setModule(id, { on: e.target.checked });

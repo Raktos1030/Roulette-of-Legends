@@ -832,5 +832,11 @@
 "L'overlay ne peut pas s'afficher : LoL est en plein écran. Dans LoL, Options › Vidéo : choisis « Sans bordure ».": "The overlay can't show: LoL is in fullscreen. In LoL, Options › Video: pick “Borderless”.",
 "LoL est en plein écran : l'overlay ne peut pas s'afficher. Dans LoL, Options › Vidéo : choisis « Sans bordure ».": "LoL is in fullscreen: the overlay can't show. In LoL, Options › Video: pick “Borderless”.",
 "Maintiens Tab en partie pour l'afficher.": "Hold Tab in game to show it.",
-"Maintiens Tab pour afficher l'overlay.": "Hold Tab to show the overlay."
+"Maintiens Tab pour afficher l'overlay.": "Hold Tab to show the overlay.",
+"Ouvre le client LoL pour changer ce réglage.": "Open the LoL client to change this setting.",
+"Le client LoL n'a pas accepté le changement. Dans LoL, Options › Vidéo : choisis « Sans bordure ».": "The LoL client didn't accept the change. In LoL, Options › Video: pick “Borderless”.",
+"LoL est passé en « Sans bordure » : l'overlay s'affichera par-dessus le jeu.": "LoL is now in “Borderless”: the overlay will show over the game.",
+"LoL est en plein écran : l'overlay ne pourra pas s'afficher pendant la partie.": "LoL is in fullscreen: the overlay won't be able to show during the game.",
+"Passer en Sans bordure": "Switch to borderless",
+"LoL est en plein écran : l'overlay ne peut pas s'afficher. Passe-le en « Sans bordure » (le jeu remplit toujours tout l'écran).": "LoL is in fullscreen: the overlay can't show. Switch it to “Borderless” (the game still fills the whole screen)."
 }

@@ -1981,25 +1981,53 @@ class Core:
             return {"profile": self._profile_view()}
 
     def lol_window_mode(self):
-        """Display mode of the game, from its settings (Config/game.cfg): "fullscreen", "windowed", "borderless" or
-        None. The overlay can only draw over a borderless or windowed game."""
+        """Display mode of the game: "fullscreen", "windowed", "borderless" or None. Read from the client's game
+        settings when it is open, otherwise from the game's settings file (Config/game.cfg). The overlay can only draw
+        over a borderless or windowed game."""
         now = time.time()
         if now - self._window_mode[0] < 30:
             return self._window_mode[1]
+        modes = {"0": "fullscreen", "1": "windowed", "2": "borderless"}
         mode = None
-        for d in lol.LolClient(APP_DIR, self.profile["lol_dir"]).candidate_dirs():
+        if self.watcher and self.lol_state.get("connected"):
+            try:
+                general = (self.watcher.client.get("/lol-game-settings/v1/game-settings") or {}).get("General") or {}
+                mode = modes.get(str(general.get("WindowMode")))
+            except OSError:
+                pass
+        for d in [] if mode else lol.LolClient(APP_DIR, self.profile["lol_dir"]).candidate_dirs():
             try:
                 with open(os.path.join(d, "Config", "game.cfg"), encoding="utf-8", errors="replace") as f:
                     for line in f:
                         key, _, value = line.partition("=")
                         if key.strip() == "WindowMode":
-                            mode = {"0": "fullscreen", "1": "windowed", "2": "borderless"}.get(value.strip())
+                            mode = modes.get(value.strip())
                             break
             except OSError:
                 continue
             break
         self._window_mode = (now, mode)
         return mode
+
+    def api_borderless(self):
+        """"Switch to borderless" button: the game's display mode is changed through the client, as in its video
+        options, so that the overlay can show over the game (the only other setting the app ever changes)."""
+        if LITE or not self.watcher or not self.lol_state.get("connected"):
+            return {"error": T("Ouvre le client LoL pour changer ce réglage.")}
+        client = self.watcher.client
+        try:
+            client.send("PATCH", "/lol-game-settings/v1/game-settings", {"General": {"WindowMode": 2}})
+            general = (client.get("/lol-game-settings/v1/game-settings") or {}).get("General") or {}
+            if str(general.get("WindowMode")) != "2":
+                raise OSError("WindowMode still %s" % general.get("WindowMode"))
+        except OSError as e:
+            log_error("borderless: %s" % e)
+            return {"error": T("Le client LoL n'a pas accepté le changement. Dans LoL, Options › Vidéo : choisis « Sans bordure ».")}
+        with self.lock:
+            self._window_mode = (time.time(), "borderless")
+            self.emit("lol", self._lol_view())
+            self.emit("cs", self._cs_view())
+        return {"ok": True, "text": T("LoL est passé en « Sans bordure » : l'overlay s'affichera par-dessus le jeu.")}
 
     def _overlay_blocked(self):
         """The overlay is on but LoL runs in exclusive fullscreen, where nothing can be drawn over the game."""
