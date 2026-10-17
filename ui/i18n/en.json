@@ -843,5 +843,13 @@
 "Retour à la partie": "Back to the game",
 "Retour au lexique": "Back to the glossary",
 "Retour aux réglages": "Back to settings",
-"Retour à la fiche {0} {1}": "Back to the {0} {1} guide"
+"Retour à la fiche {0} {1}": "Back to the {0} {1} guide",
+"Les joueurs de ton salon LoL, mis à jour tout seuls": "The players of your LoL lobby, updated automatically",
+"Groupe LoL · {0}": "LoL group · {0}",
+"Modifier la liste à la main": "Edit the list by hand",
+"Reprendre mon groupe LoL · {0}": "Use my LoL group · {0}",
+"Ne joue pas cette fois : clique pour l'ajouter au tirage": "Not playing this time: click to add them to the roll",
+"Clique si ce joueur ne veut pas de tirage": "Click if this player doesn't want a roll",
+"Pseudo du salon LoL": "Name from the LoL lobby",
+"ne joue pas": "not playing"
 }

@@ -1173,6 +1173,13 @@ body.maximized .rz { display: none; }
   border: 1px solid rgba(25, 211, 196, .45); background: rgba(25, 211, 196, .08); color: var(--teal); font-weight: 600; font-size: 12.5px; transition: all .2s; }
 .gp-lobby svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.7; }
 .gp-lobby:hover { background: rgba(25, 211, 196, .16); color: #fff; }
+.gp-sync, .gp-sync:hover { cursor: default; background: rgba(25, 211, 196, .08); color: var(--teal); }
+.gp-manual { width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--hair-2); background: none; color: var(--muted); cursor: pointer; font-size: 13px; line-height: 1; }
+.gp-manual:hover { color: var(--text); border-color: var(--gold); }
+button.gp-av { cursor: pointer; padding: 0; transition: border-color .18s, filter .18s; }
+button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
+.gp-row.out > :not(.gp-av) { opacity: .4; }
+.gp-row.out .gp-av { filter: grayscale(1); opacity: .6; }
 .gp-rows { display: grid; gap: 6px; }
 .gp-row { display: grid; grid-template-columns: 34px minmax(140px, 1fr) auto minmax(150px, 1fr) 34px; gap: 10px; align-items: center; padding: 5px 6px; border-radius: 12px; transition: background .2s; }
 .gp-row:hover { background: rgba(255, 255, 255, .02); }

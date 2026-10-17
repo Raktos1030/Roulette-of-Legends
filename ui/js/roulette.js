@@ -66,11 +66,12 @@ export function renderRoulette(page) {
     if (!root || !document.body.contains(root)) return;
     if (type === "status") paintStatus();
     if (type === "lol" && mode === "group") {
-      paintLobbyBtn();
+      if (!syncLobby() && synced() !== gSyncPainted) paintGroupPanel();
+      else paintLobbyBtn();
       const mine = root.querySelector(".gp-row.me .gp-name");
       if (mine) mine.value = myName();
       const lab = root.querySelector(".gs-row[data-i] .gs-id b");
-      const meIdx = gPlayers ? gPlayers.findIndex((p) => p.me) : -1;
+      const meIdx = gPlayers ? playing().findIndex((p) => p.me) : -1;
       const row = meIdx >= 0 && root.querySelector(`.gs-row[data-i="${meIdx}"] .gs-id b`);
       if (row && lab) row.textContent = myName();
     }
@@ -406,8 +407,10 @@ function lock(on) {
   store.spinning = on;
   const b = root.querySelector("#launch");
   if (b) b.disabled = on;
-  root.querySelectorAll(".role-btn, .chip, #cf-input, .gp-row input, .gp-role, .gp-add, .gp-del, .gp-lobby, .mode-tab, [data-reroll]")
+  root.querySelectorAll(".role-btn, .chip, #cf-input, .gp-row input, .gp-role, .gp-add, .gp-del, .gp-lobby, .gp-av, .gp-manual, .mode-tab, [data-reroll]")
     .forEach((x) => (x.disabled = on));
+  // group list redrawn after a roll: lobby changes held during the spin, names and taken roles locked again
+  if (!on && mode === "group" && gPlayers && !syncLobby()) paintGroupPanel();
 }
 
 export async function launch(opts = {}) {
@@ -489,11 +492,19 @@ const COPY_SVG = `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8
 const GCARD = 92, GSTEP = GCARD + 8;
 let mode = "solo";
 try { mode = localStorage.getItem("rol_mode") === "group" ? "group" : "solo"; } catch (e) { /* storage unavailable */ }
-let gPlayers = null;   // [{name, me, role, champ}]
+let gPlayers = null;   // [{name, me, role, champ, out}]; out: in the lobby but not in this roll
 let gResult = null;    // last group roll
 let gChaos = false;    // chaos for the whole group: any champion in any role
+let gManual = false;   // list edited by hand: the LoL lobby no longer fills it
+const gKeep = {};      // each lobby player's choices (role, champion, sitting out), kept while the lobby changes
+let gSyncPainted = null;
 
 const lobby = () => (store.lol && store.lol.lobby) || [];
+// the list follows the LoL lobby (players joining or leaving) unless edited by hand
+const synced = () => !gManual && lobby().length >= 2;
+const keyOf = (p) => (p.me ? "★" : p.name);
+const remember = (p) => (gKeep[keyOf(p)] = { role: p.role, champ: p.champ, out: !!p.out });
+const playing = () => gPlayers.filter((p) => !p.out);
 const shortName = (n) => String(n || "").split("#")[0];
 const initial = (p) => (p.me ? "★" : (shortName(p.name).trim().charAt(0) || "?").toUpperCase());
 // local player's Riot ID (without the #tag) once the client is connected; "Toi" otherwise
@@ -504,7 +515,21 @@ function playersFromLobby() {
   const lb = lobby().slice(0, 5);
   const firsts = lb.map((m) => m.pos1).filter(Boolean);
   const distinct = new Set(firsts).size === firsts.length;   // lobby roles reused when they don't overlap
-  return lb.map((m) => ({ name: m.me ? myName() : shortName(m.name), me: m.me, role: distinct && m.pos1 ? m.pos1 : "random", champ: "" }));
+  return lb.map((m) => {
+    const p = { name: m.me ? myName() : shortName(m.name), me: m.me, role: distinct && m.pos1 ? m.pos1 : "random", champ: "", out: false };
+    return { ...p, ...gKeep[keyOf(p)] };
+  });
+}
+
+// someone joined or left the lobby: the list follows (not during a roll)
+function syncLobby() {
+  if (!synced() || store.spinning || !gPlayers) return false;
+  const next = playersFromLobby();
+  if (next.map(keyOf).join("|") === gPlayers.map(keyOf).join("|")) return false;
+  gPlayers = next;
+  paintGroupPanel();
+  paintGroupStrips();
+  return true;
 }
 
 function paintMode() {
@@ -517,6 +542,7 @@ function paintMode() {
   if (group) {
     if (!gPlayers) gPlayers = lobby().length >= 2 ? playersFromLobby() : [
       { name: "", me: true, role: "random", champ: "" }, { name: "", me: false, role: "random", champ: "" }];
+    else if (synced()) gPlayers = playersFromLobby();   // the lobby may have changed meanwhile
     paintGroupPanel();
     paintGroupStrips();
     if (gResult) paintGroupResult();
@@ -527,34 +553,47 @@ function paintLobbyBtn() {
   const head = root && root.querySelector(".gp-head");
   if (!head) return;
   const lb = lobby();
-  head.querySelector(".gp-src").innerHTML = lb.length >= 2
-    ? `<button class="gp-lobby" data-lobby title="${esc(t("Reprend les pseudos et les postes choisis dans ton salon LoL"))}">${GROUP_SVG}${esc(t("Mon groupe LoL · {0}", lb.length))}</button>`
-    : `<span class="gp-hint">${esc(t("Groupe-toi dans le client LoL : vos pseudos se remplissent tout seuls."))}</span>`;
+  head.querySelector(".gp-src").innerHTML = synced()
+    ? `<span class="gp-lobby gp-sync" title="${esc(t("Les joueurs de ton salon LoL, mis à jour tout seuls"))}">${GROUP_SVG}${esc(t("Groupe LoL · {0}", lb.length))}</span>
+       <button class="gp-manual" data-manual title="${esc(t("Modifier la liste à la main"))}">✎</button>`
+    : lb.length >= 2
+      ? `<button class="gp-lobby" data-lobby title="${esc(t("Reprend les pseudos et les postes choisis dans ton salon LoL"))}">${GROUP_SVG}${esc(t("Reprendre mon groupe LoL · {0}", lb.length))}</button>`
+      : `<span class="gp-hint">${esc(t("Groupe-toi dans le client LoL : vos pseudos se remplissent tout seuls."))}</span>`;
   const b = head.querySelector("[data-lobby]");
   if (b) b.onclick = () => {
+    gManual = false;
     gPlayers = playersFromLobby();
     paintGroupPanel();
     paintGroupStrips();
+  };
+  const m = head.querySelector("[data-manual]");
+  if (m) m.onclick = () => {
+    gManual = true;
+    paintGroupPanel();
   };
 }
 
 function paintGroupPanel() {
   const box = root.querySelector("#gpanel");
-  const taken = (i) => new Set(gPlayers.filter((p, j) => j !== i && p.role !== "random").map((p) => p.role));
+  const taken = (i) => new Set(gPlayers.filter((p, j) => j !== i && !p.out && p.role !== "random").map((p) => p.role));
+  const auto = synced();
+  gSyncPainted = auto;
   box.innerHTML = `
     <div class="gp-head"><span class="ctl-label">${esc(t("Joueurs · {0} / 5", gPlayers.length))}</span><span class="gp-src"></span>
       <button class="chip chaos${gChaos ? " on" : ""}" data-gchaos title="${esc(t("N'importe quel champion à n'importe quel poste, pour tout le groupe"))}">${CHAOS_ICON}Chaos</button></div>
     <div class="gp-rows">${gPlayers.map((p, i) => {
       const tk = taken(i);
-      return `<div class="gp-row${p.me ? " me" : ""}" data-i="${i}">
-        <span class="gp-av">${esc(initial(p))}</span>
-        <input class="input gp-name" value="${esc(p.me ? myName() : p.name)}" placeholder="${esc(t("Pseudo du joueur {0}", i + 1))}" ${p.me ? `disabled title="${esc(t("Ton pseudo LoL"))}"` : ""} maxlength="24" spellcheck="false">
-        <div class="gp-roles">${["random", ...ROLES].map((r) => `<button class="gp-role${p.role === r ? " on" : ""}" data-role="${r}" ${r !== "random" && tk.has(r) ? "disabled" : ""} title="${esc(r === "random" ? t("Poste au hasard") : ROLE_LABEL[r])}">${roleIcon(r)}</button>`).join("")}</div>
-        <input class="input gp-champ" list="gp-champs" value="${esc(p.champ)}" placeholder="${esc(t("Champion au hasard"))}" spellcheck="false">
-        ${p.me ? `<span class="gp-me" title="${esc(t("Ton tirage est suivi dans ton historique"))}">${esc(t("toi"))}</span>` : `<button class="gp-del" title="${esc(t("Retirer ce joueur"))}">×</button>`}
+      const av = p.me ? `<span class="gp-av">${esc(initial(p))}</span>`
+        : `<button class="gp-av" data-out title="${esc(p.out ? t("Ne joue pas cette fois : clique pour l'ajouter au tirage") : t("Clique si ce joueur ne veut pas de tirage"))}">${esc(initial(p))}</button>`;
+      return `<div class="gp-row${p.me ? " me" : ""}${p.out ? " out" : ""}" data-i="${i}">
+        ${av}
+        <input class="input gp-name" value="${esc(p.me ? myName() : p.name)}" placeholder="${esc(t("Pseudo du joueur {0}", i + 1))}" ${p.me ? `disabled title="${esc(t("Ton pseudo LoL"))}"` : auto ? `disabled title="${esc(t("Pseudo du salon LoL"))}"` : ""} maxlength="24" spellcheck="false">
+        <div class="gp-roles">${["random", ...ROLES].map((r) => `<button class="gp-role${p.role === r ? " on" : ""}" data-role="${r}" ${p.out || (r !== "random" && tk.has(r)) ? "disabled" : ""} title="${esc(r === "random" ? t("Poste au hasard") : ROLE_LABEL[r])}">${roleIcon(r)}</button>`).join("")}</div>
+        <input class="input gp-champ" list="gp-champs" value="${esc(p.out ? "" : p.champ)}" placeholder="${esc(p.out ? t("ne joue pas") : t("Champion au hasard"))}" ${p.out ? "disabled" : ""} spellcheck="false">
+        ${p.me ? `<span class="gp-me" title="${esc(t("Ton tirage est suivi dans ton historique"))}">${esc(t("toi"))}</span>` : auto ? "<span></span>" : `<button class="gp-del" title="${esc(t("Retirer ce joueur"))}">×</button>`}
       </div>`;
     }).join("")}</div>
-    ${gPlayers.length < 5 ? `<button class="gp-add">${esc(t("+ Ajouter un joueur"))}</button>` : ""}
+    ${gPlayers.length < 5 && !auto ? `<button class="gp-add">${esc(t("+ Ajouter un joueur"))}</button>` : ""}
     <datalist id="gp-champs">${store.boot.champions.map((c) => `<option value="${esc(c.name)}">`).join("")}</datalist>`;
   paintLobbyBtn();
   box.querySelector("[data-gchaos]").onclick = () => {
@@ -567,16 +606,27 @@ function paintGroupPanel() {
     nm.oninput = () => {
       p.name = nm.value;
       row.querySelector(".gp-av").textContent = initial(p);
-      const g = root.querySelector(`.gs-row[data-i="${i}"] .gs-id b`);
+      const g = root.querySelector(`.gs-row[data-i="${playing().indexOf(p)}"] .gs-id b`);
       if (g) g.textContent = nm.value || t("Joueur {0}", i + 1);
     };
     row.querySelectorAll(".gp-role").forEach((b) => (b.onclick = () => {
       p.role = b.dataset.role;
+      remember(p);
       paintGroupPanel();
       paintGroupStrips();
     }));
     const ch = row.querySelector(".gp-champ");
-    ch.oninput = () => (p.champ = ch.value);
+    ch.oninput = () => {
+      p.champ = ch.value;
+      remember(p);
+    };
+    const out = row.querySelector("[data-out]");
+    if (out) out.onclick = () => {
+      p.out = !p.out;
+      remember(p);
+      paintGroupPanel();
+      paintGroupStrips();
+    };
     const del = row.querySelector(".gp-del");
     if (del) del.onclick = () => {
       gPlayers.splice(i, 1);
@@ -605,12 +655,12 @@ function roleChip(p) {
 function paintGroupStrips() {
   const box = root.querySelector("#gstrips");
   const champs = store.boot.champions;
-  box.innerHTML = gPlayers.map((p, i) => {
+  box.innerHTML = playing().map((p, i) => {   // i: index in the roll (players sitting out have no strip)
     const pool = shuffle([...champs]).slice(0, 16);
     const cards = pool.map((c) => gCard(c.key, c.name)).join("");
     return `<div class="gs-row idle" data-i="${i}">
       <div class="gs-who"><span class="gs-av">${esc(initial(p))}</span>
-        <div class="gs-id"><b>${esc(nameOf(p, i))}</b><span class="gs-role">${roleChip(p)}</span></div></div>
+        <div class="gs-id"><b>${esc(nameOf(p, gPlayers.indexOf(p)))}</b><span class="gs-role">${roleChip(p)}</span></div></div>
       <div class="gs-strip"><div class="gs-track">${cards}${cards}</div><i class="gs-mark"></i></div>
     </div>`;
   }).join("");
@@ -657,7 +707,7 @@ async function launchGroup() {
     store.spinning = false;
     if (!ok || !root) return;
   }
-  const r = await call("group_roll", { chaos: gChaos, players: gPlayers.map((p, i) => ({ name: nameOf(p, i), me: p.me, role: p.role, champ: p.champ })) });
+  const r = await call("group_roll", { chaos: gChaos, players: playing().map((p) => ({ name: nameOf(p, gPlayers.indexOf(p)), me: p.me, role: p.role, champ: p.champ })) });
   if (r.error) {
     setStatus(r.error, "warn");
     toast(r.error, "warn");
