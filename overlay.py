@@ -171,6 +171,11 @@ class Win32:
     def lol_window(self):
         return self.u.FindWindowW("RiotWindowClass", None) or None
 
+    def client_window(self):
+        """The LoL client (lobby, search, champ select), when it is on screen."""
+        h = self.u.FindWindowW("RCLIENT", None)
+        return h if h and self.u.IsWindowVisible(h) and not self.u.IsIconic(h) else None
+
     def foreground(self):
         return self.u.GetForegroundWindow()
 
@@ -1167,6 +1172,7 @@ class Overlay:
         self.glow = Panel(self, "_hud")       # blue halo on the icon of the skill to level, on the game HUD
         self.board = Panel(self, "_board")    # gold diff next to the scoreboard portraits
         self.hint = Panel(self, "_hint")      # "hold Tab" reminder, until Tab has been used once
+        self.ask = Panel(self, "_queue")      # search started: does this game count for the roulette?
         self._hint_until = None
         self.hudw = HudWatcher()
         self.hudw.start()
@@ -1529,6 +1535,7 @@ class Overlay:
                 self._show_hint()
             else:
                 self.hint.hide()
+            self._queue_question()
             if fg and not previewing:
                 self._hotkeys()
             calcs = self._calcs(info, snap) if (info or snap) else {}
@@ -2159,6 +2166,60 @@ class Overlay:
             panel.pos_px = pos
             panel.push()
         panel.show()
+
+    def _queue_question(self):
+        """Over the client while a search runs with a roll pending: "this game counts" or "pause the roulette".
+        Shown while the client is in front; without an answer the game found counts."""
+        panel = self.ask
+        q = self.core.queue_prompt()
+        hwnd = self.w32.client_window() if q else None
+        if not q or not hwnd or self.w32.foreground() not in (hwnd, self.w32.root_hwnd(panel.win)):
+            panel.hide()
+            return
+        sig = ("queue", self.S, q["key"], q["role"], q["queue"], q["official"])
+        if panel.sig != sig:
+            img, m, size, regions = self._queue_image(q)
+            panel.set_image(img, m, size, regions, 0)
+            panel.sig = sig
+            panel.pos_px = None
+        rect = self.w32.rect(hwnd)
+        pos = self.px_for(0.5, 0.1, rect, panel.size) if rect else None
+        if pos and panel.pos_px != pos:
+            panel.pos_px = pos
+            panel.push()
+        panel.show(1.0)
+        panel.set_click(True)
+
+    def _queue_image(self, q):
+        p = Doc(self, 340)
+        p.y = p.px(12)
+        p.text(p.W / 2, p.y, "ROULETTE OF LEGENDS", p.f("disp", 9.5), C_GOLD, anchor="m", track=1.5)
+        p.y += p.px(20)
+        p.text(p.W / 2, p.y, T("Cette partie compte pour la roulette ?"), p.f("ui_b", 13), C_TEXT, anchor="m")
+        p.y += p.px(19)
+        p.text(p.W / 2, p.y, "%s · %s · %s" % (q["name"], q["role_label"], q["queue_label"]), p.f("ui", 12), C_GOLD_L, anchor="m")
+        p.y += p.px(18)
+        note = (T("Tirage perso : il ne compte pas pour le classeur.") if not q["official"]
+                else None if q["ranked"] else T("Hors classée : une victoire donne au mieux une carte épique."))
+        if note:
+            for line in p.wrap(note, p.f("ui", 11), p.inner):
+                p.text(p.W / 2, p.y, line, p.f("ui", 11), C_MUTED, anchor="m")
+                p.y += p.px(15)
+        p.y += p.px(6)
+        bw, bh, gap = p.px(138), p.px(28), p.px(10)
+        x0 = (p.W - 2 * bw - gap) / 2
+        p.rect(x0, p.y, x0 + bw, p.y + bh, fill=rgba(C_GOLD, 235), outline=rgba(C_GOLD_L, 200), radius=p.px(4))
+        p.text(x0 + bw / 2, p.y + p.px(6), T("ÇA COMPTE"), p.f("disp_b", 10.5), (20, 14, 6), anchor="m", track=1.3)
+        p.region(x0, p.y, x0 + bw, p.y + bh, lambda: self.core.api_queue_answer(True))
+        x1 = x0 + bw + gap
+        p.rect(x1, p.y, x1 + bw, p.y + bh, fill=rgba(C_PANEL_BOT, 230), outline=rgba(C_GOLD_D, 230), radius=p.px(4))
+        p.text(x1 + bw / 2, p.y + p.px(6), T("METTRE EN PAUSE"), p.f("disp_b", 10.5), C_GOLD_L, anchor="m", track=1.3)
+        p.region(x1, p.y, x1 + bw, p.y + bh, lambda: self.core.api_queue_answer(False))
+        p.y += bh + p.px(9)
+        p.text(p.W / 2, p.y, T("Sans réponse, la partie trouvée compte."), p.f("ui", 10.5), C_DIM, anchor="m")
+        p.y += p.px(16)
+        img, m, size = p.render()
+        return img, m, size, p.regions
 
     def _render_controls(self):
         panel = self.ctrl

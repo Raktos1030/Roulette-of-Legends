@@ -346,6 +346,7 @@ class Profile:
         "card_back": "hextech",   # back of the binder cards (unlocked by milestones, collection.BACKS)
         "rewards_seen": {},   # rewards path: per LoL account, the steps already shown (the others are "new")
         "title": None,        # title picked among the ones won (rewards.py)
+        "roulette_mode": "official",   # "official" (everything drawn: fills the binder) or "free" (favorites, picks)
         "roulette": "classic",   # looks unlocked in the rewards path (rewards.LOOKS): Roulette tab skin,
         "opening": "classic",    # booster opening
         "overlay_mode": "tab", "overlay_side": "right", "overlay_page": "early",
@@ -895,6 +896,7 @@ class Core:
         self._cs_champ = 0
         self._cs_role = None
         self._cs_shown = None
+        self._queue_ask = None   # search started with a roll pending: the overlay asks whether the game counts
         self._requested = set()
         self._window_mode = (0.0, None)   # (read at, LoL display mode)
         self._fullscreen_warned = False
@@ -1070,7 +1072,7 @@ class Core:
         keys = ("fav_champs", "fav_combos", "fav_roles", "only_fav_roles", "only_fav_champs", "no_repeat",
                 "overlay_mode", "overlay_scale", "overlay_opacity", "auto_update", "glossary_hints", "lol_dir", "ambient", "usage_stats",
                 "import_runes", "import_spells", "import_items", "import_replace", "roulette_paused", "app_update_seen",
-                "rbuild_on", "rbuild_parts", "sounds", "sound_volume", "roulette", "opening")
+                "rbuild_on", "rbuild_parts", "sounds", "sound_volume", "roulette", "opening", "roulette_mode")
         out = {k: p[k] for k in keys}
         out["overlay_pos"] = p["overlay_pos"]
         out["overlay_modules"] = {m["id"]: p.module_cfg(m["id"]) for m in OVERLAY_MODULES}
@@ -1333,6 +1335,7 @@ class Core:
         return {"combo": combo, "key": e.get("key"), "name": self.data.champ_name(e.get("key")),
                 "role": e.get("role"), "role_label": ROLE_LABEL.get(e.get("role"), ""), "status": e.get("status"),
                 "mode": MODE_LABEL.get(e.get("mode"), ""),
+                "official": collection.is_official(self.history.entries, self.history.entries.index(e)),
                 "rbuild": {"keystone": (rb.get("runes") or {}).get("perks", [None])[0], "sec": (rb.get("runes") or {}).get("sec"),
                            "sums": (rb.get("sums") or {}).get("ids") or [], "items": (rb.get("core") or {}).get("ids") or [],
                            "prio": (rb.get("skills") or {}).get("prio") or ""} if rb else None}
@@ -1429,9 +1432,9 @@ class Core:
         return items
 
     # --- rolls ------------------------------------------------------------------------
-    def _champ_pool(self, role):
+    def _champ_pool(self, role, official=False):
         keys = self.data.by_role[role]
-        if self.profile["only_fav_champs"]:
+        if self.profile["only_fav_champs"] and not official:
             keys = [k for k in keys if self.profile.is_combo_fav(self.data.combos[k]["key"], role)]
         return keys
 
@@ -1463,7 +1466,7 @@ class Core:
         return winner, {"type": "champ", "seq": items, "index": idx, "pool": len(keys),
                         "role": self.data.combos[winner]["role"]}
 
-    def _chaos_roll(self, reason=None, champ=""):
+    def _chaos_roll(self, reason=None, champ="", official=False):
         """Chaos mode: a random role, then any champion (with or without a guide in that role).
         With a picked champion: that champion in one of the five roles at random."""
         d = self.data
@@ -1477,7 +1480,8 @@ class Core:
                  "index": 53, "pool": len(keys), "role": role}
         result = d.combo_key(winner, role)
         rid = "%d%04d" % (time.time() * 1000, random.randint(0, 9999))
-        self.rolls = {rid: {"result": result, "mode": "chaos", "favs": [], "reason": reason or self.pending_reason}}
+        self.rolls = {rid: {"result": result, "mode": "chaos", "favs": [], "reason": reason or self.pending_reason,
+                            "official": official and not ch}}
         self.pending_reason = None
         self.spinning_until = time.time() + 12
         notes = [] if result in d.combos else [T("Chaos : %s n'a pas de fiche %s, sa fiche chaos est assemblée.") % (
@@ -1485,12 +1489,22 @@ class Core:
         return {"id": rid, "steps": [rstep, cstep], "result": result, "mode": "chaos", "notes": notes, "fav_filter": False}
 
     def api_roll(self, role="random", champ="", reason=None):
-        """Prepares a roll: the UI animates the roulette, then confirms with roll_commit."""
+        """Prepares a roll: the UI animates the roulette, then confirms with roll_commit.
+        Official roulette: everything drawn, no favorite filter; a champ select reroll keeps the status of the roll it
+        replaces."""
+        cs_reroll = str(reason or "").startswith(collection.CS_REROLLS)
+        with self.lock:
+            pend = self.history.pending()
+            official = bool(pend and pend.get("official")) if cs_reroll else self.profile["roulette_mode"] == "official"
+            if reason == "cs_draw":   # champion drawn in champ select for the role given there: a personal roll
+                official = False
+        if official and not cs_reroll and ((champ or "").strip() or role in ROLES):
+            return {"error": T("Roulette officielle : le rôle et le champion sont tirés au hasard. Passe en roulette perso pour les choisir.")}
         if role == "chaos":
             with self.lock:
                 if (champ or "").strip() and not self.data.find_champion(champ):
                     return {"error": T("Champion introuvable : « %s ». Choisis-le dans la liste.") % champ.strip()}
-                return self._chaos_roll(reason, champ)
+                return self._chaos_roll(reason, champ, official)
         with self.lock:
             d = self.data
             text = (champ or "").strip()
@@ -1499,8 +1513,8 @@ class Core:
                 return {"error": T("Champion introuvable : « %s ». Choisis-le dans la liste.") % text}
             p = self.profile
             fav_roles = [r for r in ROLES if r in p["fav_roles"]]
-            only_fav_roles = p["only_fav_roles"]
-            favs = [n for n, on in (("roles", only_fav_roles), ("champions", p["only_fav_champs"])) if on]
+            only_fav_roles = p["only_fav_roles"] and not official
+            favs = [] if official else [n for n, on in (("roles", only_fav_roles), ("champions", p["only_fav_champs"])) if on]
             notes, steps = [], []
 
             if c:
@@ -1532,7 +1546,7 @@ class Core:
                     result = d.combo_key(c["key"], r)
             elif role in ROLES:
                 mode = "champ"
-                keys = self._champ_pool(role)
+                keys = self._champ_pool(role, official)
                 if not keys:
                     return {"error": T("Aucun champion favori jouable en %s. Ajoute-en dans « Favoris » ou désactive "
                                        "« Champions favoris seulement ».") % ROLE_LABEL[role]}
@@ -1546,7 +1560,7 @@ class Core:
                         roles = fav_roles
                     else:
                         notes.append(T("Aucun rôle favori coché : tous les rôles sont en jeu."))
-                roles = [r for r in roles if self._champ_pool(r)]
+                roles = [r for r in roles if self._champ_pool(r, official)]
                 if not roles:
                     return {"error": T("Aucun champion favori dans ces rôles. Ajoute des favoris ou désactive un filtre.")}
                 if len(roles) == 1:
@@ -1554,15 +1568,16 @@ class Core:
                 else:
                     r, step = self._role_step(roles)
                     steps.append(step)
-                result, step = self._champ_step(self._pool(self._champ_pool(r), notes))
+                result, step = self._champ_step(self._pool(self._champ_pool(r, official), notes))
                 steps.append(step)
 
             rid = "%d%04d" % (time.time() * 1000, random.randint(0, 9999))
-            self.rolls = {rid: {"result": result, "mode": mode, "favs": favs, "reason": reason or self.pending_reason}}
+            self.rolls = {rid: {"result": result, "mode": mode, "favs": favs, "reason": reason or self.pending_reason,
+                                "official": official}}
             self.pending_reason = None
             self.spinning_until = time.time() + 12
             return {"id": rid, "steps": steps, "result": result, "mode": mode, "notes": notes,
-                    "fav_filter": bool(p["only_fav_champs"])}
+                    "fav_filter": bool(p["only_fav_champs"] and not official)}
 
     # --- group roulette ---------------------------------------------------------------
     def _role_step_to(self, roles, winner):
@@ -1617,6 +1632,10 @@ class Core:
                     chosen[i] = ch
             if len({c["key"] for c in chosen.values()}) < len(chosen):
                 return {"error": T("Deux joueurs ont choisi le même champion.")}
+            official = self.profile["roulette_mode"] == "official"
+            mine = next(p for p in ps if p["me"])
+            if official and (mine["role"] in ROLES or mine["champ"]):
+                return {"error": T("Roulette officielle : ton poste et ton champion sont tirés au hasard. Passe en roulette perso pour les choisir.")}
             taken_roles, taken_champs = set(fixed), {c["key"] for c in chosen.values()}
             out = [None] * len(ps)
             # most constrained first: picked champion, then picked role, then fully random
@@ -1646,7 +1665,7 @@ class Core:
                 taken_champs.add(combo.partition("|")[0])
                 out[i] = self._group_player(i, p, role, combo, steps)
             gid = "g%d%04d" % (time.time() * 1000, random.randint(0, 9999))
-            self.group = {"id": gid, "players": out, "inputs": ps, "committed": False, "chaos": bool(chaos)}
+            self.group = {"id": gid, "players": out, "inputs": ps, "committed": False, "chaos": bool(chaos), "official": official}
             self.spinning_until = time.time() + 20
             return {"id": gid, "players": out}
 
@@ -1670,11 +1689,13 @@ class Core:
         if reason == "group_reroll":   # same roll, new champion
             prev = self.history.pending()
             full = bool(prev and prev.get("full"))
+            official = bool(prev and prev.get("official"))
         else:
             mine = g["inputs"][g["players"].index(me)]
             full = mine["role"] == "random" and not mine["champ"]
+            official = bool(g.get("official")) and full
         self.history.add_roll(me["key"], me["role"], bool(self.lol_state.get("connected")), reason=reason, mode="group",
-                              group=members, full=full)
+                              group=members, full=full, official=official)
         self._draw_rbuild()
         self.drawn.add(me["combo"])
         if self.profile["roulette_paused"]:
@@ -1724,7 +1745,8 @@ class Core:
             key, _, role = r["result"].partition("|")
             tracking = bool(self.lol_state.get("connected"))
             full = collection.roll_full(r["mode"], r["reason"], self.history.pending(), self.history.entries)
-            self.history.add_roll(key, role, tracking, reason=r["reason"], mode=r["mode"], favs=r["favs"], full=full)
+            self.history.add_roll(key, role, tracking, reason=r["reason"], mode=r["mode"], favs=r["favs"], full=full,
+                                  official=r.get("official", False))
             self._draw_rbuild()
             if self.profile["roulette_paused"]:   # rolling means wanting to play it: the pause ends
                 self.profile["roulette_paused"] = False
@@ -1787,6 +1809,7 @@ class Core:
              "overlay_opacity": float, "import_runes": bool, "import_spells": bool, "import_items": bool,
              "import_replace": bool, "roulette_paused": bool, "app_update_seen": str, "rbuild_on": bool, "sounds": bool,
              "sound_volume": lambda v: max(0.0, min(1.0, float(v))),
+             "roulette_mode": lambda v: "free" if v == "free" else "official",
              "rbuild_parts": lambda v: [p for p in randombuild.PARTS if p in (v or [])]}
 
     def api_set_pref(self, key, value):
@@ -2026,6 +2049,8 @@ class Core:
             e = self.history.pending()
             if not e:
                 return {"error": T("Aucun tirage en attente.")}
+            if not collection.is_official(self.history.entries, self.history.entries.index(e)):
+                return {"error": T("Le Joker sert à la roulette officielle : un tirage perso se relance librement.")}
             if not rewards.joker([x for x in self.history.entries if self.history.mine(x)])["available"]:
                 return {"error": T("Pas de Joker en réserve pour l'instant.")}
             e["status"], e["reason"], e["closed"] = "cancelled", "joker", time.time()
@@ -2155,13 +2180,16 @@ class Core:
                     continue
                 out.append(e)
             rows = []
+            ents = self.history.entries
+            off = {id(x): collection.is_official(ents, i) for i, x in enumerate(ents) if not x.get("free")}
             for e in reversed(out):
                 disp = entry_display(e, d)
                 lp = e.get("lp") or {}
                 rows.append({
                     "id": e["id"], "date": e.get("date", ""), "key": e.get("key"), "name": d.champ_name(e.get("key")),
                     "role": e.get("role"), "role_label": ROLE_LABEL.get(e.get("role"), ""),
-                    "mode": T("Hors roulette") if e.get("free") else MODE_LABEL.get(e.get("mode"), "—"), "free": bool(e.get("free")),
+                    "mode": T("Hors roulette") if e.get("free") else MODE_LABEL.get(e.get("mode"), "—")
+                    + ("" if off.get(id(e)) else " · " + T("perso")), "free": bool(e.get("free")),
                     "result": disp["result"], "tone": disp["tone"],
                     "glyph": disp["glyph"], "detail": disp["detail"],
                     "kda": e.get("kda"), "queue": T(lol.queue_name(e.get("queue"))),
@@ -2562,6 +2590,54 @@ class Core:
                 view["duo"] = None
         return view
 
+    # --- search started: does this game count for the roulette? -----------------------------------
+    def _queue_search_started(self, q):
+        """A matchmaking search started with a roll pending: the overlay asks over the client whether this game counts
+        or the roulette pauses (a normal game to train...). Without an answer, the game found counts."""
+        e = self.history.pending()
+        self._queue_ask = None
+        if not e or self.profile["roulette_paused"] or not lol.roulette_game(q.get("id"), custom=q.get("custom")):
+            return
+        official = collection.is_official(self.history.entries, self.history.entries.index(e))
+        self._queue_ask = {"queue": q.get("id"), "key": e["key"], "role": e["role"], "official": official, "since": time.time()}
+        self.set_status(T("Recherche lancée (%s) : ton tirage %s %s comptera. Pas voulu ? Mets la roulette en pause.") % (
+            T(lol.queue_name(q.get("id"))) or T("partie"), self.data.champ_name(e["key"]), ROLE_LABEL.get(e["role"], "")), "gold")
+
+    def queue_prompt(self):
+        """For the overlay: the question of the search in progress, or None (answered, or nothing to ask)."""
+        a = getattr(self, "_queue_ask", None)
+        if not a or self.lol_state.get("phase") != "Matchmaking" or self.profile["roulette_paused"]:
+            return None
+        return dict(a, name=self.data.champ_name(a["key"]), role_label=ROLE_LABEL.get(a["role"], ""),
+                    queue_label=T(lol.queue_name(a["queue"])) or "", ranked=a["queue"] in collection.RANKED)
+
+    def api_queue_answer(self, counts=True):
+        """Answer from the overlay: the game counts (the question goes away) or the roulette pauses."""
+        with self.lock:
+            self._queue_ask = None
+            if not counts:
+                self.profile["roulette_paused"] = True
+                self.emit("profile", self._profile_view())
+                self.set_status(T("Roulette en pause : cette partie ne comptera pas, ton tirage t'attend."), "teal")
+            return {"ok": True}
+
+    def _autofill_keep(self, cs):
+        """Autofill on a role the rolled champion plays too (Irelia mid, autofilled top): the roll keeps its champion and
+        moves to that role, its card goes there. Otherwise (Irelia jungle) champ select offers a reroll. Chaos: any
+        champion goes anywhere."""
+        e = self.history.pending()
+        role = cs.get("assigned")
+        if (not e or role not in ROLES or e.get("role") == role or self.profile["roulette_paused"]
+                or cs.get("map") not in (None, 11)):
+            return
+        if e.get("mode") != "chaos" and self.data.combo_key(e["key"], role) not in self.data.combos:
+            return
+        old = e["role"]
+        self.history.move_role(e, role)
+        self.set_status(T("Autofill %s : %s le joue aussi, ton tirage passe de %s à %s.") % (
+            ROLE_LABEL[role], self.data.champ_name(e["key"]), ROLE_LABEL.get(old, old), ROLE_LABEL[role]), "teal")
+        self._history_changed()
+
     def _cs_duo(self):
         cs = (self.lol_state or {}).get("cs") or {}
         role, my = cs.get("assigned"), cs.get("my_champ")
@@ -2601,7 +2677,8 @@ class Core:
         if not pending:
             line(T("Aucun tirage en cours."), "muted")
             if assigned:
-                button(T("Tirer un champion %s") % ROLE_LABEL[assigned], assigned, None)
+                button((T("Tirer un champion %s (perso, hors classeur)") if self.profile["roulette_mode"] == "official"
+                        else T("Tirer un champion %s")) % ROLE_LABEL[assigned], assigned, "cs_draw")
             return view
         combo = d.combos.get(d.combo_key(pending["key"], pending["role"])) or {}
         name = combo.get("name") or d.champ_name(pending["key"])
@@ -2610,8 +2687,11 @@ class Core:
                            "combo": d.combo_key(pending["key"], pending["role"])}
         target = assigned or pending["role"]
         problem = False
+        if pending.get("rolled_role") and pending["role"] == assigned:
+            line(T("Autofill : %s joue aussi %s, tu le gardes. La carte ira en %s.") % (
+                name, ROLE_LABEL[assigned], ROLE_LABEL[assigned]), "teal")
         if assigned and assigned != pending["role"]:
-            line(T("Autofill : tu joues %s, pas %s.") % (ROLE_LABEL[assigned], ROLE_LABEL[pending["role"]]), "warn")
+            line(T("Autofill : tu joues %s, et %s n'a pas de fiche à ce poste.") % (ROLE_LABEL[assigned], name), "warn")
             button(T("Relancer en %s") % ROLE_LABEL[assigned], assigned, "autofill:%s" % assigned)
             problem = True
         if cid in (cs.get("bans") or []):
@@ -2896,6 +2976,10 @@ class Core:
         prev_connected = self.lol_state.get("connected")
         prev_phase = self.lol_state.get("phase")
         self.lol_state = st
+        if st.get("phase") == "Matchmaking" and prev_phase not in ("Matchmaking", "ReadyCheck"):
+            self._queue_search_started(st.get("lobby_queue") or {})
+        elif st.get("phase") not in ("Matchmaking", "ReadyCheck"):   # a declined ready check goes back to the search
+            self._queue_ask = None
         if not st.get("connected"):
             if prev_connected:
                 self.overlay_info = None
@@ -2916,6 +3000,7 @@ class Core:
                 self._cs_champ = cs["my_champ"]
             if cs.get("assigned"):
                 self._cs_role = cs["assigned"]
+                self._autofill_keep(cs)
             if cs.get("locked") and cs.get("my_champ") and cs["my_champ"] != self._cs_shown:
                 self._cs_shown = cs["my_champ"]
                 self._show_locked_guide(cs["my_champ"], cs.get("assigned"))

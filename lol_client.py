@@ -667,8 +667,10 @@ class LolWatcher(threading.Thread):
                 gd = (c.get("/lol-gameflow/v1/session") or {}).get("gameData") or {}
                 state["cs"]["queue"] = (gd.get("queue") or {}).get("id")
                 state["cs"]["map"] = (gd.get("queue") or {}).get("mapId")
-        if phase in ("Lobby", "Matchmaking", "ReadyCheck"):   # lobby members (group roulette)
+        if phase in ("Lobby", "Matchmaking", "ReadyCheck"):   # lobby members (group roulette), queue picked
             lb = c.get("/lol-lobby/v2/lobby")
+            gc = (lb or {}).get("gameConfig") or {}
+            state["lobby_queue"] = {"id": gc.get("queueId"), "map": gc.get("mapId"), "custom": bool(gc.get("isCustom"))}
             for m in (lb or {}).get("members") or []:
                 pu = m.get("puuid")
                 if pu and pu not in self._names and not m.get("isBot"):
@@ -871,10 +873,12 @@ class RollHistory:
                 "date": time.strftime("%d/%m %H:%M", time.localtime(created)), "key": champ_key, "played": champ_key,
                 "role": None, "game_id": game_id, "puuid": puuid}
 
-    def add_roll(self, key, role, tracking, reason=None, now=None, mode=None, favs=None, group=None, full=None):
+    def add_roll(self, key, role, tracking, reason=None, now=None, mode=None, favs=None, group=None, full=None,
+                 official=None):
         """mode: "both" (random role + champion), "role" (random role, picked champion),
         "champ" (random champion, picked role). favs: favorite filters active for the roll.
-        full: role and champion both drawn, for the collection binder (collection.py)."""
+        full: role and champion both drawn. official: made on the official roulette, it fills the binder
+        (collection.py)."""
         now = now or time.time()
         prev = self.pending()
         if prev:
@@ -893,6 +897,8 @@ class RollHistory:
             entry["mode"] = mode
         if full is not None:
             entry["full"] = bool(full)
+        if official is not None:
+            entry["official"] = bool(official)
         if favs:
             entry["favs"] = favs
         if group:
@@ -900,6 +906,12 @@ class RollHistory:
         self.entries.append(entry)
         self.save()
         return entry
+
+    def move_role(self, e, role):
+        """Autofill on a role the rolled champion plays too: the roll keeps its champion and moves to that role."""
+        e.setdefault("rolled_role", e["role"])
+        e["role"] = role
+        self.save()
 
     def on_result(self, game_id, res):
         """Immediate result (end of game screen) for the roll matched to that game."""

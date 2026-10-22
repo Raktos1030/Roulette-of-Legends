@@ -13,7 +13,7 @@ The Joker, from the first step on: one in reserve, earned back 10 rolls played a
 passed with it is closed as "joker" in the history, not counted as cancelled.
 """
 
-from collection import CARD
+from collection import CARD, is_official
 
 STAMPS = ("flawless", "domination", "penta")
 READY = {"title", "joker", "stamp", "back", "roulette", "opening"}   # reward kinds the app already gives
@@ -41,18 +41,16 @@ LADDER = (
 )
 
 
-def counted(e):
-    """A roll that fills the binder: played to the end with the rolled champion, role drawn (as collection.cards)."""
-    return (not e.get("free") and e.get("status") == "played" and e.get("mode") != "role"
-            and not (e.get("played") and e["played"] != e["key"]))
+def counted(entries):
+    """The rolls that fill the binder: official, played to the end with the rolled champion (as collection.cards)."""
+    return [e for i, e in enumerate(entries) if not e.get("free") and e.get("status") == "played"
+            and not (e.get("played") and e["played"] != e["key"]) and is_official(entries, i)]
 
 
 def exploits(entries, detail):
     """({card key: [stamps]}, {stamp: games}) from the rolls. detail(game_id): the recorded game, or None."""
     stamps, count = {}, {s: 0 for s in STAMPS}
-    for e in entries:
-        if not counted(e):
-            continue
+    for e in counted(entries):
         got = set()
         kda = e.get("kda") or []
         if e.get("win") and len(kda) == 3 and kda[1] == 0:
@@ -77,7 +75,7 @@ def counters(got, milestones, roles, entries, exploit_count):
     c = dict(milestones)
     c["epics"] = sum(1 for x in got.values() if x["level"] >= 3)
     c["roles"] = min(sum(1 for k, x in got.items() if x["level"] >= CARD and k.endswith("|" + r)) for r in roles)
-    c["rolls"] = sum(1 for e in entries if not e.get("free") and e.get("status") == "played")
+    c["rolls"] = len(counted(entries))
     c.update(exploit_count)
     return c
 
@@ -93,8 +91,8 @@ def ladder(counts):
 
 
 def joker(entries):
-    """{"unlocked", "available", "next_in"}: rolls played still needed before it comes back."""
-    played = [e for e in entries if not e.get("free") and e.get("status") == "played"]
+    """{"unlocked", "available", "next_in"}: official rolls played still needed before it comes back."""
+    played = counted(entries)
     unlocked = len(played) >= JOKER_AT
     used = [e.get("closed") or e["created"] for e in entries if e.get("reason") == "joker"]
     since = sum(1 for e in played if e["created"] > max(used)) if used else JOKER_EVERY

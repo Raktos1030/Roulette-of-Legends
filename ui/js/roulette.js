@@ -21,10 +21,14 @@ export function renderRoulette(page) {
     <nav class="mode-tabs" id="mode-tabs">
       <button class="mode-tab" data-mode="solo">${SOLO_SVG}<span>${esc(t("Solo"))}</span></button>
       <button class="mode-tab" data-mode="group">${GROUP_SVG}<span>${esc(t("Groupe"))}</span></button>
+      <span class="rl-kind-note" id="rl-kind-note"></span>
+      <div class="seg rl-kind" id="rl-kind"></div>
     </nav>
     <section class="card controls">
       <div class="gpanel" id="gpanel"></div>
       <div class="ctl-roles"><div class="ctl-label">${esc(t("Rôle"))}</div><div class="roles" id="roles"></div></div>
+      <div class="ctl-official"><div class="ctl-label">${esc(t("Roulette officielle"))}</div>
+        <p>${esc(t("Le rôle et le champion sont tirés au hasard, en solo comme en groupe, chaos ou non. C'est elle qui remplit ton classeur et fait avancer tes récompenses."))}</p></div>
       <div class="ctl-champ"><div class="ctl-label">${esc(t("Champion"))}</div>
         <div class="champ-field">
           <span class="cf-icon" id="cf-icon">?</span>
@@ -47,6 +51,7 @@ export function renderRoulette(page) {
     <div class="status-line" id="status"></div>
     <div id="stage"></div>
   </div>`;
+  paintKind();
   paintRoles();
   paintFilters();
   setupChampField();
@@ -77,6 +82,7 @@ export function renderRoulette(page) {
       if (row && lab) row.textContent = myName();
     }
     if (type === "profile") {
+      paintKind();
       paintRoles();
       paintFilters();
       if (!store.spinning) paintStripRoll();
@@ -96,11 +102,12 @@ export function rouletteKey(e) {
   const typing = t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.tagName === "SELECT");
   // shortcuts: 1 to 5 = role, 0 = random, Ctrl+F (Cmd+F on macOS) = search a champion
   if (!typing && !e.ctrlKey && !e.metaKey && !e.altKey && /^[0-5]$/.test(e.key)) {
+    if (official() && e.key !== "0") return true;   // the official roulette draws the role
     role = e.key === "0" ? "random" : ROLES[+e.key - 1];
     paintRoles();
     return true;
   }
-  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "f") {
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "f" && !official()) {
     const input = root && root.querySelector("#cf-input");
     if (input) {
       input.focus();
@@ -116,10 +123,48 @@ export function rouletteKey(e) {
 }
 
 // ---------------------------------------------------------------------------------------------
+// Official roulette (everything drawn: it fills the binder, gives the Joker and the rewards) or personal roulette
+// (favorites, picked role or champion: for fun, nothing counts). One click switches.
+const official = () => store.profile.roulette_mode !== "free";
+
+function paintKind() {
+  const off = official();
+  const box = root.querySelector("#rl-kind");
+  box.innerHTML = [["official", t("Roulette officielle")], ["free", t("Roulette perso")]].map(([k, l]) =>
+    `<button data-kind="${k}" class="${(k === "official") === off ? "on" : ""}">${esc(l)}</button>`).join("");
+  root.querySelector("#rl-kind-note").textContent = off ? t("Tout au hasard : remplit ton classeur")
+    : t("Tes choix, tes favoris : ne compte pas pour le classeur");
+  root.querySelector(".controls").classList.toggle("official", off);
+  const msg = root.querySelector(".strip-msg span");
+  if (msg) msg.textContent = off ? t("Le rôle et le champion sont tirés au hasard : appuie sur Lancer")
+    : t("Choisis un rôle ou laisse tout au hasard, puis appuie sur Lancer");
+  if (off) {
+    if (ROLES.includes(role)) role = "random";
+    if (champ || root.querySelector("#cf-input").value) {
+      champ = null;
+      root.querySelector("#cf-input").value = "";
+      showChampInfo();
+    }
+    const me = gPlayers && gPlayers.find((p) => p.me);
+    if (me) Object.assign(me, { role: "random", champ: "" });
+  }
+  box.querySelectorAll("[data-kind]").forEach((b) => (b.onclick = async () => {
+    if (store.spinning || (b.dataset.kind === "official") === official()) return;
+    const r = await call("set_pref", { key: "roulette_mode", value: b.dataset.kind });
+    if (r.error) return toast(r.error, "bad");
+    store.profile = r.profile;
+    paintKind();
+    paintRoles();
+    paintFilters();
+    paintStripRoll();
+    if (mode === "group") paintGroupPanel();
+  }));
+}
+
 function paintRoles() {
   const box = root.querySelector("#roles");
   const favRoles = store.profile.fav_roles || [];
-  box.innerHTML = [...ROLES, "random", "chaos"].map((r) => `
+  box.innerHTML = (official() ? ["random", "chaos"] : [...ROLES, "random", "chaos"]).map((r) => `
     <button class="role-btn${r === role ? " on" : ""}${r === "chaos" ? " chaos" : ""}" data-r="${r}" title="${esc(r === "random" ? t("Rôle au hasard (touche 0)") : r === "chaos" ? (isLite() ? t("Chaos : n'importe quel champion à n'importe quel poste (Yuumi jungle…).") : t("Chaos : n'importe quel champion à n'importe quel poste (Yuumi jungle…). Les postes sans fiche ont une fiche chaos.")) : t("{0} (touche {1})", ROLE_LABEL[r], ROLES.indexOf(r) + 1))}">
       ${r === "chaos" ? CHAOS_ICON : roleIcon(r)}<span>${r === "chaos" ? "Chaos" : esc(ROLE_LABEL[r])}</span>${favRoles.includes(r) ? `<i class="fav-dot" title="${esc(t("Rôle favori"))}"></i>` : ""}
     </button>`).join("");
@@ -135,7 +180,7 @@ function paintFilters() {
     ["only_fav_roles", `${esc(t("Rôles favoris seulement"))} <span class="n">${(p.fav_roles || []).length}</span>`],
     ["only_fav_champs", `${esc(t("Champions favoris seulement"))} <span class="n">${p.fav_count || 0}</span>`],
     ["no_repeat", esc(t("Pas de doublon dans la session"))],
-  ];
+  ].filter(([k]) => !official() || !k.startsWith("only_fav"));   // no favorite filter on the official roulette
   const box = root.querySelector("#filters");
   // random build: each roll also draws the picked parts (not in Lite: no import nor overlay there)
   const parts = p.rbuild_parts || [];
@@ -345,7 +390,7 @@ function paintStripRoll() {
           ${isLite() ? `<button class="btn-gold sr-guide" data-ugg title="${esc(t("Ouvre la page u.gg de ce champion à ce poste dans ton navigateur"))}">${UGG_SVG}${esc(t("Voir sur u.gg"))}</button>`
             : `<button class="btn-gold sr-guide" data-guide>${esc(t("Voir la fiche"))}</button>`}
           ${inGame ? "" : `<button class="sr-pause${paused ? " on" : ""}" data-pause title="${esc(tip)}">${paused ? PLAY_SVG + esc(t("Reprendre")) : PAUSE_SVG + esc(t("Mettre en pause"))}</button>`}
-          ${!inGame && !paused && (store.boot.joker || {}).available ? `<button class="sr-pause sr-joker" data-joker title="${esc(t("Passe ce tirage avec ton Joker : il ne compte pas comme annulé, et la roulette relance"))}">${JOKER_SVG}${esc(t("Joker"))}</button>` : ""}
+          ${!inGame && !paused && roll.official && (store.boot.joker || {}).available ? `<button class="sr-pause sr-joker" data-joker title="${esc(t("Passe ce tirage avec ton Joker : il ne compte pas comme annulé, et la roulette relance"))}">${JOKER_SVG}${esc(t("Joker"))}</button>` : ""}
         </div>
       </div>
     </div>
@@ -477,7 +522,7 @@ export async function launch(opts = {}) {
   const pend = store.roll && store.roll.status === "pending" ? store.roll : null;
   if (pend && !opts.role && !(champ && role !== "random" && role !== "chaos")) {
     store.spinning = true;   // no second roll while asking
-    const joker = (store.boot.joker || {}).available;   // passes the roll without a cancel
+    const joker = pend.official && (store.boot.joker || {}).available;   // passes an official roll without a cancel
     const ok = await confirmBox(t("Tu as déjà un tirage en attente : {0} {1}. Si tu relances, il sera compté comme annulé dans ton historique (relancé avant de jouer).", pend.name, pend.role_label)
       + (joker ? " " + t("Ton Joker peut le passer sans qu'il compte comme annulé.") : ""), t("Relancer quand même"),
     joker ? { label: t("Utiliser le Joker"), value: "joker" } : null);
@@ -649,13 +694,14 @@ function paintGroupPanel() {
       <button class="chip chaos${gChaos ? " on" : ""}" data-gchaos title="${esc(t("N'importe quel champion à n'importe quel poste, pour tout le groupe"))}">${CHAOS_ICON}Chaos</button></div>
     <div class="gp-rows">${gPlayers.map((p, i) => {
       const tk = taken(i);
+      const drawn = p.me && official();   // official roulette: your own role and champion are drawn
       const av = p.me ? `<span class="gp-av">${esc(initial(p))}</span>`
         : `<button class="gp-av" data-out title="${esc(p.out ? t("Ne joue pas cette fois : clique pour l'ajouter au tirage") : t("Clique si ce joueur ne veut pas de tirage"))}">${esc(initial(p))}</button>`;
       return `<div class="gp-row${p.me ? " me" : ""}${p.out ? " out" : ""}" data-i="${i}">
         ${av}
         <input class="input gp-name" value="${esc(p.me ? myName() : p.name)}" placeholder="${esc(t("Pseudo du joueur {0}", i + 1))}" ${p.me ? `disabled title="${esc(t("Ton pseudo LoL"))}"` : auto ? `disabled title="${esc(t("Pseudo du salon LoL"))}"` : ""} maxlength="24" spellcheck="false">
-        <div class="gp-roles">${["random", ...ROLES].map((r) => `<button class="gp-role${p.role === r ? " on" : ""}" data-role="${r}" ${p.out || (r !== "random" && tk.has(r)) ? "disabled" : ""} title="${esc(r === "random" ? t("Poste au hasard") : ROLE_LABEL[r])}">${roleIcon(r)}</button>`).join("")}</div>
-        <input class="input gp-champ" list="gp-champs" value="${esc(p.out ? "" : p.champ)}" placeholder="${esc(p.out ? t("ne joue pas") : t("Champion au hasard"))}" ${p.out ? "disabled" : ""} spellcheck="false">
+        <div class="gp-roles">${["random", ...ROLES].map((r) => `<button class="gp-role${p.role === r ? " on" : ""}" data-role="${r}" ${p.out || (r !== "random" && (tk.has(r) || drawn)) ? "disabled" : ""} title="${esc(r === "random" ? t("Poste au hasard") : ROLE_LABEL[r])}">${roleIcon(r)}</button>`).join("")}</div>
+        <input class="input gp-champ" list="gp-champs" value="${esc(p.out || drawn ? "" : p.champ)}" placeholder="${esc(p.out ? t("ne joue pas") : t("Champion au hasard"))}" ${p.out || drawn ? "disabled" : ""} spellcheck="false">
         ${p.me ? `<span class="gp-me" title="${esc(t("Ton tirage est suivi dans ton historique"))}">${esc(t("toi"))}</span>` : auto ? "<span></span>" : `<button class="gp-del" title="${esc(t("Retirer ce joueur"))}">×</button>`}
       </div>`;
     }).join("")}</div>

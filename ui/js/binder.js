@@ -7,16 +7,16 @@ import * as sound from "./sound.js";
 
 const LEVELS = [
   { id: "locked", label: "À obtenir" },
-  { id: "played", label: "Jouée" },
+  { id: "known", label: "Connue" },
   { id: "rare", label: "Rare" },
   { id: "epic", label: "Épique" },
   { id: "legendary", label: "Légendaire" },
 ];
 const HOW = {
-  played: "Champion tiré et joué",
-  rare: "Victoire hors classée, rôle choisi",
-  epic: "Victoire en classée avec rôle choisi, ou hors classée en full random",
-  legendary: "Victoire en classée, full random",
+  known: "Tiré par la roulette officielle, pas encore joué",
+  rare: "Joué sur un tirage de la roulette officielle",
+  epic: "Victoire hors classée sur la Faille",
+  legendary: "Victoire en classée (Solo/duo ou Flex)",
 };
 const state = { page: "col", view: "cards", role: "all", show: "all", q: "", chaos: true };
 const PIP = ["none", "played", "rare", "epic", "legendary"];
@@ -42,7 +42,7 @@ export function renderBinder(page) {
     <header class="page-head"><div>
       <div class="kicker">${esc(t("Collection"))}</div>
       <h1 class="page-title">${esc(t("Classeur"))}<span class="bd-title" id="bd-title" hidden></span></h1>
-      <p class="page-sub muted">${esc(t("Une carte par champion et par rôle. Joue le champion que la roulette te tire pour l'obtenir, gagne avec pour la faire monter. Le full random en classée donne les légendaires."))}</p>
+      <p class="page-sub muted">${esc(t("Une carte par champion et par rôle, gagnée avec la roulette officielle : joue le champion tiré pour l'obtenir, gagne pour la faire monter, gagne en classée pour la légendaire."))}</p>
     </div></header>
     <div class="seg bd-pages" id="bd-pages"></div>
     <div id="bd-col">
@@ -220,7 +220,7 @@ function paintStats() {
   const tile = (label, v, max, cls) => `<div class="bd-stat ${cls}"><span class="l">${esc(label)}</span>
     <b>${v}<small> / ${max}</small></b><i><em style="width:${((100 * v) / max).toFixed(1)}%"></em></i></div>`;
   root.querySelector("#bd-stats").innerHTML =
-    tile(t("Joués"), n(1), total, "") +
+    tile(t("Connus"), n(1), total, "") +
     tile(t("Cartes obtenues"), n(2), total, "win") +
     tile(t("Légendaires"), n(4), total, "leg") +
     tile(t("Champions maîtres"), data.masters.length, champs, "master");
