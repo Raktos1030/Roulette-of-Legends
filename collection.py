@@ -4,7 +4,7 @@ local history of the LoL account.
 
 Card levels, from the best game of that champion in that role:
   0 locked      never played on a roll
-  1 played      the rolled champion was played (game completed)
+  1 played      the rolled champion was played (game completed): not a card yet, the champion shows greyed
   2 rare        a win outside ranked, on a roll whose role was picked
   3 epic        a ranked win on a roll whose role was picked, or a win outside ranked on a full random roll
   4 legendary   a ranked win (solo/duo or flex) on a full random roll: what the master set asks for
@@ -18,6 +18,7 @@ fills nothing.
 RANKED = {420, 440}
 CS_REROLLS = ("champion_banned", "champion_taken", "autofill")   # reasons of a champ select reroll
 LEVELS = ("locked", "played", "rare", "epic", "legendary")
+CARD = 2        # first level that is a card (rare); a played champion only shows greyed
 LEGENDARY = 4
 
 
@@ -101,8 +102,8 @@ BACKS = (
 def milestones(got, guide_keys, champions, roles):
     """Counts the backs are unlocked by: cards collected, chaos role cards, legendaries, mastered champions."""
     return {
-        "cards": sum(1 for c in got.values() if c["level"] >= 1),
-        "chaos": sum(1 for k, c in got.items() if c["level"] >= 1 and k not in guide_keys),
+        "cards": sum(1 for c in got.values() if c["level"] >= CARD),
+        "chaos": sum(1 for k, c in got.items() if c["level"] >= CARD and k not in guide_keys),
         "legendary": sum(1 for c in got.values() if c["level"] == LEGENDARY),
         "masters": sum(1 for key in champions
                        if all((got.get("%s|%s" % (key, r)) or {}).get("level") == LEGENDARY for r in roles)),

@@ -3,6 +3,7 @@
 import { esc, img, roleIcon, norm, ROLES, ROLE_LABEL, CHAOS_ICON, t } from "./util.js";
 import { store, on, toast, backdrop } from "./ctx.js";
 import { call } from "./api.js";
+import * as sound from "./sound.js";
 
 const LEVELS = [
   { id: "locked", label: "À obtenir" },
@@ -78,8 +79,8 @@ function paintStats() {
   const tile = (label, v, max, cls) => `<div class="bd-stat ${cls}"><span class="l">${esc(label)}</span>
     <b>${v}<small> / ${max}</small></b><i><em style="width:${((100 * v) / max).toFixed(1)}%"></em></i></div>`;
   root.querySelector("#bd-stats").innerHTML =
-    tile(t("Cartes obtenues"), n(1), total, "") +
-    tile(t("Victoires"), n(2), total, "win") +
+    tile(t("Joués"), n(1), total, "") +
+    tile(t("Cartes obtenues"), n(2), total, "win") +
     tile(t("Légendaires"), n(4), total, "leg") +
     tile(t("Champions maîtres"), data.masters.length, champs, "master");
 }
@@ -114,6 +115,7 @@ function paintBacks() {
     const r = await call("set_card_back", { back: el.dataset.back });
     if (r.error) return toast(r.error, "bad");
     data.card_back = r.card_back;
+    sound.click();
     paintBooster();
     paintBacks();
     paintGrid();
@@ -122,7 +124,7 @@ function paintBacks() {
 
 function paintTools() {
   const box = root.querySelector("#bd-tools");
-  const per = (r) => data.cards.filter((c) => (r === "all" || c.role === r) && c.level >= 1 && (state.chaos || c.guide)).length;
+  const per = (r) => data.cards.filter((c) => (r === "all" || c.role === r) && c.level >= 2 && (state.chaos || c.guide)).length;
   const max = (r) => data.cards.filter((c) => (r === "all" || c.role === r) && (state.chaos || c.guide)).length;
   const champs = state.view === "champs";
   box.innerHTML = `
@@ -199,7 +201,7 @@ function paintGrid() {
   const q = norm(state.q);
   const list = data.cards.filter((c) => (state.role === "all" || c.role === state.role) && (state.chaos || c.guide)
     && (!q || norm(c.name).includes(q))
-    && (state.show === "all" || (state.show === "got" ? c.level >= 1 : c.level < 4)));
+    && (state.show === "all" || (state.show === "got" ? c.level >= 2 : c.level < 4)));
   if (!list.length) {
     box.innerHTML = `<div class="card empty">${esc(t("Aucune carte ici pour l'instant."))}</div>`;
     return watchCards();
@@ -219,7 +221,7 @@ function paintChamps() {
   const by = {};
   data.cards.forEach((c) => (by[c.key] = by[c.key] || { key: c.key, name: c.name, cards: [] }).cards.push(c));
   const list = Object.values(by).filter((ch) => {
-    const got = ch.cards.filter((c) => c.level >= 1).length;
+    const got = ch.cards.filter((c) => c.level >= 2).length;
     return (!q || norm(ch.name).includes(q)) && (state.show === "all" || (state.show === "got" ? got > 0 : !data.masters.includes(ch.key)));
   });
   const score = (ch) => ch.cards.reduce((n, c) => n + c.level, 0);
@@ -229,7 +231,7 @@ function paintChamps() {
     return;
   }
   box.innerHTML = list.map((ch) => {
-    const got = ch.cards.filter((c) => c.level >= 1).length, best = ch.cards.filter((c) => c.level === 4).length;
+    const got = ch.cards.filter((c) => c.level >= 2).length, best = ch.cards.filter((c) => c.level === 4).length;
     const master = data.masters.includes(ch.key);
     return `<button class="bd-champ${master ? " master" : ""}" data-name="${esc(ch.name)}">
       <img src="${img.icon(ch.key)}" alt="" data-ring="${esc(ch.key)}">
@@ -248,9 +250,18 @@ function paintChamps() {
   }));
 }
 
+// a card under the pointer: its sound (a soft swish, a glint on the best ones)
+let hovered = null;
+document.addEventListener("pointerover", (e) => {
+  const el = e.target.closest && e.target.closest(".bd-grid .tc, .bd-back .tc, .bd-pack, .bk-face .tc");
+  if (el === hovered) return;
+  hovered = el;
+  if (el && !el.closest(".bd-back.locked")) sound.hover(el.classList.contains("back") ? 2 : +((el.className.match(/\blv(\d)/) || [])[1] || 0));
+});
+
 // cards tilt toward the pointer; the foil and sheen follow it
 document.addEventListener("pointermove", (e) => {
-  const el = e.target.closest && e.target.closest(".tc:not(.lv0)");
+  const el = e.target.closest && e.target.closest(".tc:not(.lv0):not(.lv1)");
   if (!el || el.closest(".bd-pack")) return;
   const r = el.getBoundingClientRect();
   const x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
@@ -276,6 +287,7 @@ function openBooster(ids) {
   const box = document.createElement("div");
   box.className = "bk";
   document.body.appendChild(box);
+  sound.rip();
   let i = 0;
   const close = async () => {
     box.remove();
@@ -332,10 +344,18 @@ function openBooster(ids) {
     call("binder_open", { ids: [c.id] });
     // the back's roulette spins, then the card turns over; a champion completed is then crowned
     const stage = box.querySelector(".bk-stage");
-    requestAnimationFrame(() => setTimeout(() => stage.classList.add("flipped"), 1150));
+    sound.wheel();
+    requestAnimationFrame(() => setTimeout(() => {
+      if (!stage.isConnected) return;   // skipped in the meantime
+      stage.classList.add("flipped");
+      sound.flip();
+      setTimeout(() => stage.isConnected && sound.reveal(c.level), 260);
+    }, 1150));
     if (crown) setTimeout(() => {
+      if (!stage.isConnected) return;
       stage.classList.add("crowned");
       stage.querySelector(".bk-tier").textContent = t("Champion maître");
+      setTimeout(() => stage.isConnected && sound.crown(), 600);   // when the crown lands
     }, 2400);
     box.querySelector("[data-next]").onclick = next;
     const all = box.querySelector("[data-all]");

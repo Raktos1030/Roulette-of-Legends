@@ -46,7 +46,7 @@ export function go(route) {
 
 // completion ring around champion portraits: one segment per role (top first, clockwise), colored by the level of
 // that card in the binder; champions without any card have none
-const RING = ["rgba(255, 255, 255, .12)", "#c38d64", "#dfe6f0", "#f0d58f", "#b48cff"];
+const RING = ["rgba(255, 255, 255, .12)", "rgba(255, 255, 255, .34)", "#dfe6f0", "#f0d58f", "#b48cff"];
 export function paintRings(scope = document) {
   const rings = (store.boot && store.boot.binder_rings) || {};
   scope.querySelectorAll("img[data-champ], img[data-ring]").forEach((im) => {

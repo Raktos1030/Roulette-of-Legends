@@ -1449,7 +1449,14 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 .tc.lv0 .tc-art img { filter: grayscale(1) brightness(.2) blur(1px); }
 .tc.lv0 .tc-plate b { color: #66707f; }
 .tc.lv0 .tc-art::before { content: "?"; position: absolute; inset: 0; display: grid; place-items: center; z-index: 1; font: 54px/1 var(--display); color: rgba(255, 255, 255, .07); }
-.tc.lv1 { --frame: url("/img/cards/frame_copper.webp"); --tint: #d39a6e; }
+/* played (level 1): not a card yet, only the champion seen, greyed and see-through, without a frame */
+.tc.lv1 { --tint: #9aa3b2; filter: none; }
+.tc.lv1 .tc-frame, .tc.lv1 .tc-art::after { display: none; }
+.tc.lv1 .tc-art { inset: 0; border-radius: 7%; background: rgba(255, 255, 255, .02); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .1); }
+.tc.lv1 .tc-art img { filter: grayscale(1) brightness(.85); opacity: .34; transition: opacity .3s, transform .5s var(--ease); }
+.tc.lv1:hover .tc-art img { opacity: .5; }
+.tc.lv1 .tc-medal { background: rgba(6, 10, 18, .55); }
+.tc.lv1 .tc-plate b { color: var(--text-2); text-shadow: 0 1px 3px rgba(0, 0, 0, .9); }
 .tc.lv2 { --frame: url("/img/cards/frame_silver.webp"); --tint: #e3e9f2; --glow: rgba(200, 215, 235, .18); }
 .tc.lv3 { --frame: url("/img/cards/frame_gold.webp"); --tint: #f0d58f; --glow: rgba(232, 200, 120, .35); }
 .tc.lv4 { --frame: url("/img/cards/frame_prism.webp"); --tint: #d6c9ff; --glow: rgba(150, 120, 255, .45); }
@@ -1489,7 +1496,7 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 .tc-crown { position: absolute; top: -6.5%; left: 50%; width: 30%; transform: translateX(-50%); z-index: 3; pointer-events: none;
   filter: drop-shadow(0 0 6px rgba(255, 211, 107, .85)) drop-shadow(0 2px 3px rgba(0, 0, 0, .7)); }
 
-.tc:not(.back):not(.lv0):hover { filter: drop-shadow(0 18px 22px rgba(0, 0, 0, .6)) drop-shadow(0 0 20px var(--glow)); }
+.tc:not(.back):not(.lv0):not(.lv1):hover { filter: drop-shadow(0 18px 22px rgba(0, 0, 0, .6)) drop-shadow(0 0 20px var(--glow)); }
 
 /* face down: the card back */
 .tc.back { cursor: pointer; border-radius: 4%; background: url("/img/cards/back.webp") center / 100% 100% no-repeat; }
@@ -1503,7 +1510,6 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 .bk { position: fixed; inset: 0; z-index: 90; display: grid; place-items: center; overflow: hidden; }
 .bk-shade { position: absolute; inset: 0; background: radial-gradient(circle at 50% 42%, rgba(18, 26, 44, .9), rgba(2, 4, 8, .97)); animation: pageIn .3s both; }
 .bk-stage { --tone: 232, 208, 154; position: relative; display: grid; justify-items: center; gap: 16px; padding: 20px; }
-.bk-stage.lv1 { --tone: 201, 173, 130; }
 .bk-stage.lv2 { --tone: 223, 230, 240; }
 .bk-stage.lv3 { --tone: 240, 213, 143; }
 .bk-stage.lv4 { --tone: 170, 140, 255; }
@@ -1528,13 +1534,12 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
   background: repeating-conic-gradient(from 0deg, transparent 0 7deg, rgba(var(--tone), .45) 9deg, transparent 11deg 24deg);
   -webkit-mask: radial-gradient(circle, #000 14%, transparent 60%); mask: radial-gradient(circle, #000 14%, transparent 60%); }
 .bk-stage.flipped .bk-burst { animation: bkBurst 2.2s .5s ease-out both, bkTurn 18s linear infinite; }
-.bk-stage.lv1 .bk-burst { display: none; }
 @keyframes bkBurst { 0% { opacity: 0; transform: scale(.3); } 30% { opacity: 1; } 100% { opacity: .5; transform: scale(1); } }
 @keyframes bkTurn { to { rotate: 360deg; } }
 .bk-sparks { position: fixed; inset: 0; pointer-events: none; }
 .bk-sparks i { position: absolute; bottom: -10px; width: var(--s); height: var(--s); border-radius: 50%; opacity: 0;
   background: rgba(var(--tone), 1); box-shadow: 0 0 8px rgba(var(--tone), .9); animation: bkRise var(--d) var(--w) ease-out infinite; }
-.bk-stage:not(.flipped) .bk-sparks i, .bk-stage.lv1 .bk-sparks { display: none; }
+.bk-stage:not(.flipped) .bk-sparks i { display: none; }
 @keyframes bkRise { 0% { opacity: 0; transform: translateY(0); } 15% { opacity: 1; } 100% { opacity: 0; transform: translate(var(--x), -78vh); } }
 .bk-text { text-align: center; max-width: 560px; opacity: 0; transition: opacity .4s .75s; }
 .bk-stage.flipped .bk-text { opacity: 1; }
@@ -1610,7 +1615,7 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 .bc-roles { display: flex; gap: 4px; margin-top: 3px; }
 .bc-pip { width: 22px; height: 22px; display: grid; place-items: center; border-radius: 50%; border: 1.5px solid rgba(255, 255, 255, .1); color: rgba(255, 255, 255, .25); }
 .bc-pip svg { width: 13px; height: 13px; }
-.bc-pip.played { border-color: #c38d64; color: #c38d64; }
+.bc-pip.played { border-color: rgba(255, 255, 255, .3); color: rgba(255, 255, 255, .55); }
 .bc-pip.rare { border-color: #dfe6f0; color: #dfe6f0; }
 .bc-pip.epic { border-color: #f0d58f; color: #f0d58f; box-shadow: 0 0 6px rgba(240, 213, 143, .4); }
 .bc-pip.legendary { border-color: #b48cff; color: #e7dcff; box-shadow: 0 0 8px rgba(180, 140, 255, .55); background: rgba(139, 108, 255, .15); }
@@ -1770,3 +1775,8 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 .rb-note { grid-column: 1 / -1; display: flex; align-items: center; gap: 10px; margin: 0; padding: 10px 14px; border-radius: 12px; font-size: 13px; color: var(--gold-pale);
   border: 1px solid rgba(255, 211, 107, .3); background: rgba(255, 211, 107, .07); }
 .rb-note .dice-ic { flex: none; width: 18px; height: 18px; color: #ffd36b; }
+
+/* settings: sound volume beside its switch */
+.snd-row { display: flex; align-items: center; gap: 14px; }
+.snd-row input[type="range"] { width: 150px; }
+.snd-row input[type="range"]:disabled { opacity: .35; }

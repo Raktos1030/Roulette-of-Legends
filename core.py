@@ -353,6 +353,7 @@ class Profile:
         "favs_by_account": {},   # favorites of the other LoL accounts (the current one's are the fav_* keys)
         "board_geom": None,      # scoreboard grid (Tab), measured once for the resolution and HUD scale
         "roulette_paused": False,   # games don't count for the roulette, the current roll stays pending
+        "sounds": True, "sound_volume": 0.6,   # sound effects of the UI (ui/js/sound.js)
         "rbuild_on": False,         # each roll also draws a random build (randombuild.py)...
         "rbuild_parts": list(randombuild.PARTS),   # ...of these parts
         "app_update_seen": None,    # newer app version whose notice was dismissed
@@ -1057,7 +1058,7 @@ class Core:
         keys = ("fav_champs", "fav_combos", "fav_roles", "only_fav_roles", "only_fav_champs", "no_repeat",
                 "overlay_mode", "overlay_scale", "overlay_opacity", "auto_update", "glossary_hints", "lol_dir", "ambient", "usage_stats",
                 "import_runes", "import_spells", "import_items", "import_replace", "roulette_paused", "app_update_seen",
-                "rbuild_on", "rbuild_parts")
+                "rbuild_on", "rbuild_parts", "sounds", "sound_volume")
         out = {k: p[k] for k in keys}
         out["overlay_pos"] = p["overlay_pos"]
         out["overlay_modules"] = {m["id"]: p.module_cfg(m["id"]) for m in OVERLAY_MODULES}
@@ -1772,7 +1773,8 @@ class Core:
     PREFS = {"only_fav_roles": bool, "only_fav_champs": bool, "no_repeat": bool, "auto_update": bool,
              "glossary_hints": bool, "ambient": bool, "usage_stats": bool, "overlay_mode": str, "overlay_scale": float,
              "overlay_opacity": float, "import_runes": bool, "import_spells": bool, "import_items": bool,
-             "import_replace": bool, "roulette_paused": bool, "app_update_seen": str, "rbuild_on": bool,
+             "import_replace": bool, "roulette_paused": bool, "app_update_seen": str, "rbuild_on": bool, "sounds": bool,
+             "sound_volume": lambda v: max(0.0, min(1.0, float(v))),
              "rbuild_parts": lambda v: [p for p in randombuild.PARTS if p in (v or [])]}
 
     def api_set_pref(self, key, value):
@@ -1963,7 +1965,8 @@ class Core:
     def _binder_pending(self, got=None):
         got = self._binder_cards() if got is None else got
         seen = self._binder_seen() or {}
-        return sorted((k for k, c in got.items() if c["level"] > seen.get(k, 0)), key=lambda k: got[k].get("at") or "")
+        return sorted((k for k, c in got.items() if c["level"] >= collection.CARD and c["level"] > seen.get(k, 0)),
+                      key=lambda k: got[k].get("at") or "")
 
     def api_binder(self):
         """The binder: every card (champion x role) with its level, the cards still to open, the mastered champions."""

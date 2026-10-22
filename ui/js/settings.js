@@ -3,6 +3,7 @@ import { esc, fmtDate, t, LANG } from "./util.js";
 import { store, on, toast, isLite, isMac, wireBorderless } from "./ctx.js";
 import { aboutPromo, wirePromo } from "./promo.js";
 import { call } from "./api.js";
+import * as sound from "./sound.js";
 
 let root = null, unsub = null;
 
@@ -194,6 +195,9 @@ function paintApp() {
     <div class="set-row"><div class="txt"><b>${esc(t("Client League of Legends"))}</b><span>${l.connected ? `${esc(t("Connecté"))}${l.summoner ? " — " + esc(l.summoner) : ""}${l.rank ? " · " + esc(t("Solo/duo {0}", l.rank)) : ""}` : esc(t("Non détecté"))}</span>
         ${store.profile.lol_dir ? `<span class="tiny">${esc(t("Dossier : {0}", store.profile.lol_dir))}</span>` : ""}</div>
       <button class="btn sm" id="a-dir">${esc(t("Choisir le dossier…"))}</button></div>
+    <div class="set-row"><div class="txt"><b>${esc(t("Sons"))}</b><span>${esc(t("La roulette et les cartes du classeur. Pas de musique."))}</span></div>
+      <div class="snd-row"><input type="range" id="a-vol" min="0.1" max="1" step="0.05" value="${store.profile.sound_volume ?? 0.6}" ${store.profile.sounds === false ? "disabled" : ""}>
+        <label class="switch"><input type="checkbox" id="a-snd" ${store.profile.sounds !== false ? "checked" : ""}><i></i></label></div></div>
     <div class="set-row"><div class="txt"><b>${esc(t("Fond animé"))}</b></div>
       <label class="switch"><input type="checkbox" id="a-amb" ${store.profile.ambient !== false ? "checked" : ""}><i></i></label></div>
     <div class="set-row"><div class="txt"><b>${esc(t("Statistiques anonymes"))}</b><span>${esc(t("Compte les lancements de l'appli (version, Windows ou Mac). Rien d'autre n'est envoyé."))}</span></div>
@@ -205,6 +209,15 @@ function paintApp() {
     paintApp();
   };
   box.querySelector("#a-amb").onchange = (e) => setPref("ambient", e.target.checked);
+  box.querySelector("#a-snd").onchange = async (e) => {
+    await setPref("sounds", e.target.checked);
+    paintApp();
+    sound.win(false);
+  };
+  box.querySelector("#a-vol").onchange = async (e) => {
+    await setPref("sound_volume", +e.target.value);
+    sound.win(false);   // hear the new volume
+  };
   box.querySelector("#a-usage").onchange = (e) => setPref("usage_stats", e.target.checked);
   box.querySelectorAll("#a-lang button").forEach((b) => (b.onclick = async () => {
     if (b.dataset.lang === LANG) return;

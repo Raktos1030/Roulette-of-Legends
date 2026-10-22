@@ -5,6 +5,7 @@ import { store, on, setStatus, toast, backdrop, spinLogo, mechKick, mechRole, co
 import { rollPromo, homePromo, wirePromo } from "./promo.js";
 import { call } from "./api.js";
 import { showGuide, openCombo } from "./guides.js";
+import * as sound from "./sound.js";
 
 let role = "random";
 let champ = null;          // picked champion (boot.champions entry) or null
@@ -389,12 +390,16 @@ function spinStep(step, duration) {
   const jitter = (Math.random() - 0.5) * CARD_W * 0.64;
   const end = W / 2 - (step.index * STEP + CARD_W / 2) + jitter;
   track.style.transform = `translate3d(${start}px,0,0)`;
+  let passed = null;
   return new Promise((resolve) => {
     const t0 = performance.now();
     const frame = (now) => {
       const t = Math.min(1, (now - t0) / duration);
       const x = start + (end - start) * easeOut(t);
       track.style.transform = `translate3d(${x}px,0,0)`;
+      const under = Math.floor((W / 2 - x) / STEP);   // card under the marker
+      if (passed !== null && under !== passed) sound.tick();
+      passed = under;
       if (t < 1) requestAnimationFrame(frame);
       else {
         // smooth recentering on the winning card
@@ -406,6 +411,7 @@ function spinStep(step, duration) {
         card.classList.add("win");
         strip.className = "strip done";
         celebrate(strip);
+        sound.win(!isRole);
         setTimeout(resolve, 420);
       }
     };
@@ -468,6 +474,7 @@ export async function launch(opts = {}) {
   }
   lock(true);
   spinLogo(3.5);   // the logo wheel spins with the roulette
+  sound.spinStart();
   mechKick();
   // role already known (picked role): the mechanism settles on it; otherwise it waits for the role strip
   if (!r.steps.some((s) => s.type === "role")) setTimeout(() => mechRole(r.steps[0].role), 1800);
@@ -710,11 +717,16 @@ function spinRow(row, pl, duration) {
   const end = W / 2 - (step.index * GSTEP + GCARD / 2) + jitter;
   track.style.transition = "";
   track.style.transform = `translate3d(${start}px,0,0)`;
+  let passed = null;
   return new Promise((resolve) => {
     const t0 = performance.now();
     const frame = (now) => {
       const t = Math.min(1, (now - t0) / duration);
-      track.style.transform = `translate3d(${start + (end - start) * easeOut(t)}px,0,0)`;
+      const x = start + (end - start) * easeOut(t);
+      track.style.transform = `translate3d(${x}px,0,0)`;
+      const under = Math.floor((W / 2 - x) / GSTEP);
+      if (passed !== null && under !== passed) sound.tick(true);
+      passed = under;
       if (t < 1) return requestAnimationFrame(frame);
       const centered = W / 2 - (step.index * GSTEP + GCARD / 2);
       track.style.transition = "transform .35s cubic-bezier(.2,.8,.2,1)";
@@ -723,6 +735,7 @@ function spinRow(row, pl, duration) {
       row.className = "gs-row done";
       row.querySelector(".gs-role").innerHTML = roleChip(pl);
       celebrate(strip);
+      sound.win(false);
       setTimeout(resolve, 380);
     };
     requestAnimationFrame(frame);
@@ -746,6 +759,7 @@ async function launchGroup() {
   }
   lock(true);
   spinLogo(4.5);
+  sound.spinStart();
   mechKick();
   setStatus(t("Roulette du groupe : {0} joueurs, aucun doublon possible…", r.players.length), "gold");
   try {
