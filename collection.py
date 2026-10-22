@@ -86,3 +86,29 @@ def cards(entries, account=None):
         if level > c["level"]:
             c.update(level=level, at=e.get("date"), queue=e.get("queue"), full=full)
     return out
+
+
+# card backs: the first one from the start, the others unlocked by milestones of the binder
+BACKS = (
+    ("hextech", "Hextech", None, 0),
+    ("void", "Néant", "cards", 25),
+    ("infernal", "Infernal", "chaos", 10),
+    ("prism", "Prismatique", "legendary", 25),
+    ("crown", "Royal", "masters", 1),
+)
+
+
+def milestones(got, guide_keys, champions, roles):
+    """Counts the backs are unlocked by: cards collected, chaos role cards, legendaries, mastered champions."""
+    return {
+        "cards": sum(1 for c in got.values() if c["level"] >= 1),
+        "chaos": sum(1 for k, c in got.items() if c["level"] >= 1 and k not in guide_keys),
+        "legendary": sum(1 for c in got.values() if c["level"] == LEGENDARY),
+        "masters": sum(1 for key in champions
+                       if all((got.get("%s|%s" % (key, r)) or {}).get("level") == LEGENDARY for r in roles)),
+    }
+
+
+def backs(counts):
+    return [{"id": i, "label": label, "need": need, "goal": goal, "have": counts.get(need, 0) if need else 0,
+             "unlocked": not need or counts.get(need, 0) >= goal} for i, label, need, goal in BACKS]

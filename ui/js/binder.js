@@ -17,8 +17,16 @@ const HOW = {
   epic: "Victoire en classée avec rôle choisi, ou hors classée en full random",
   legendary: "Victoire en classée, full random",
 };
-const state = { role: "all", show: "all", q: "", chaos: true };
-const BACK = '<div class="tc back"><div class="tc-art"></div></div>';
+const state = { view: "cards", role: "all", show: "all", q: "", chaos: true };
+const PIP = ["none", "played", "rare", "epic", "legendary"];
+// a card back, in the chosen design (animated for the unlocked ones)
+const backHTML = (skin = data && data.card_back) => `<div class="tc back" data-skin="${esc(skin || "hextech")}"></div>`;
+const NEED = {
+  cards: (n) => t("{0} cartes obtenues", n),
+  chaos: (n) => t("{0} cartes de rôles chaos", n),
+  legendary: (n) => t("{0} légendaires", n),
+  masters: (n) => (n === 1 ? t("1 champion maître") : t("{0} champions maîtres", n)),
+};
 let root = null, unsub = null, data = null;
 
 export function renderBinder(page) {
@@ -33,6 +41,7 @@ export function renderBinder(page) {
     </div></header>
     <div id="bd-stats" class="bd-stats"></div>
     <div id="bd-booster"></div>
+    <div id="bd-backs"></div>
     <div id="bd-tools" class="bd-tools"></div>
     <div id="bd-grid" class="bd-grid"></div>
   </div>`;
@@ -50,6 +59,7 @@ async function load() {
   data = r;
   paintStats();
   paintBooster();
+  paintBacks();
   paintTools();
   paintGrid();
 }
@@ -75,7 +85,7 @@ function paintBooster() {
   const n = data.pending.length;
   if (!n) return (box.innerHTML = "");
   box.innerHTML = `<section class="card bd-booster">
-    <div class="bd-pack">${BACK.repeat(3)}</div>
+    <div class="bd-pack">${backHTML().repeat(3)}</div>
     <div class="grow"><div class="kicker">${esc(t("Booster"))}</div>
       <h3>${esc(n === 1 ? t("1 nouvelle carte à ouvrir") : t("{0} nouvelles cartes à ouvrir", n))}</h3>
       <p class="muted">${esc(t("Tes dernières parties sur la roulette ont rempli ton classeur."))}</p></div>
@@ -84,18 +94,49 @@ function paintBooster() {
   box.querySelector("[data-open]").onclick = () => openBooster(data.pending);
 }
 
+// card backs: the ones unlocked can be chosen, the others show what unlocks them
+function paintBacks() {
+  const box = root.querySelector("#bd-backs");
+  box.innerHTML = `<section class="card bd-backs">
+    <h3 class="card-title">${esc(t("Dos de carte"))}<span class="aside">${esc(t("{0} / {1} débloqués", data.backs.filter((b) => b.unlocked).length, data.backs.length))}</span></h3>
+    <div class="bd-back-row">${data.backs.map((b) => `
+      <button class="bd-back${b.id === data.card_back ? " on" : ""}${b.unlocked ? "" : " locked"}" data-back="${esc(b.id)}" ${b.unlocked ? "" : "disabled"}>
+        ${backHTML(b.id)}
+        <b>${esc(b.label)}</b>
+        <small>${b.id === data.card_back ? esc(t("Choisi")) : b.unlocked ? esc(t("Débloqué")) : esc(NEED[b.need](b.goal)) + ` · ${Math.min(b.have, b.goal)}/${b.goal}`}</small>
+      </button>`).join("")}</div>
+  </section>`;
+  box.querySelectorAll(".bd-back:not(.locked)").forEach((el) => (el.onclick = async () => {
+    const r = await call("set_card_back", { back: el.dataset.back });
+    if (r.error) return toast(r.error, "bad");
+    data.card_back = r.card_back;
+    paintBooster();
+    paintBacks();
+    paintGrid();
+  }));
+}
+
 function paintTools() {
   const box = root.querySelector("#bd-tools");
   const per = (r) => data.cards.filter((c) => (r === "all" || c.role === r) && c.level >= 1 && (state.chaos || c.guide)).length;
   const max = (r) => data.cards.filter((c) => (r === "all" || c.role === r) && (state.chaos || c.guide)).length;
+  const champs = state.view === "champs";
   box.innerHTML = `
-    <div class="bd-roles">${["all", ...ROLES].map((r) => `<button class="bd-role${state.role === r ? " on" : ""}" data-role="${r}">
-      ${r === "all" ? "" : roleIcon(r)}<span>${esc(r === "all" ? t("Tous") : ROLE_LABEL[r])}</span><small>${per(r)}/${max(r)}</small></button>`).join("")}</div>
+    <div class="bd-left">
+      <div class="seg sm bd-view">${[["cards", t("Cartes")], ["champs", t("Champions")]].map(([v, l]) => `<button data-view="${v}" class="${state.view === v ? "on" : ""}">${esc(l)}</button>`).join("")}</div>
+      ${champs ? "" : `<div class="bd-roles">${["all", ...ROLES].map((r) => `<button class="bd-role${state.role === r ? " on" : ""}" data-role="${r}">
+      ${r === "all" ? "" : roleIcon(r)}<span>${esc(r === "all" ? t("Tous") : ROLE_LABEL[r])}</span><small>${per(r)}/${max(r)}</small></button>`).join("")}</div>`}
+    </div>
     <div class="bd-filters">
       <div class="seg sm">${[["all", t("Toutes")], ["got", t("Obtenues")], ["todo", t("À obtenir")]].map(([v, l]) => `<button data-show="${v}" class="${state.show === v ? "on" : ""}">${esc(l)}</button>`).join("")}</div>
       <label class="bd-chaos" title="${esc(t("Les rôles où le champion n'a pas de fiche : ils comptent pour le master set"))}"><input type="checkbox" id="bd-chaos" ${state.chaos ? "checked" : ""}>${CHAOS_ICON}${esc(t("Rôles chaos"))}</label>
       <input class="input bd-search" id="bd-q" value="${esc(state.q)}" placeholder="${esc(t("Chercher un champion…"))}" spellcheck="false">
     </div>`;
+  box.querySelectorAll("[data-view]").forEach((b) => (b.onclick = () => {
+    state.view = b.dataset.view;
+    paintTools();
+    paintGrid();
+  }));
   box.querySelectorAll("[data-role]").forEach((b) => (b.onclick = () => {
     state.role = b.dataset.role;
     paintTools();
@@ -120,7 +161,7 @@ function paintTools() {
 
 // a card: metal frame by level, art window, role icon in the frame's ring, name plate
 export function cardHTML(c, opts = {}) {
-  if (opts.back) return `<div class="tc back" data-id="${esc(c.id)}" title="${esc(t("Carte à ouvrir"))}"><div class="tc-art"></div><span class="tc-new">${esc(t("à ouvrir"))}</span></div>`;
+  if (opts.back) return `<div class="tc back" data-skin="${esc(data.card_back)}" data-id="${esc(c.id)}" title="${esc(t("Carte à ouvrir"))}"><span class="tc-new">${esc(t("à ouvrir"))}</span></div>`;
   const lv = opts.level != null ? opts.level : shown(c);
   const L = levelOf(lv);
   const master = lv === 4 && data && data.masters.includes(c.key);
@@ -137,7 +178,9 @@ export function cardHTML(c, opts = {}) {
 }
 
 function paintGrid() {
+  if (state.view === "champs") return paintChamps();
   const box = root.querySelector("#bd-grid");
+  box.className = "bd-grid";
   const q = norm(state.q);
   const list = data.cards.filter((c) => (state.role === "all" || c.role === state.role) && (state.chaos || c.guide)
     && (!q || norm(c.name).includes(q))
@@ -150,6 +193,43 @@ function paintGrid() {
   list.sort((a, b) => b.level - a.level || a.name.localeCompare(b.name) || ROLES.indexOf(a.role) - ROLES.indexOf(b.role));
   box.innerHTML = list.map((c) => cardHTML(c, { back: data.pending.includes(c.id) })).join("");
   box.querySelectorAll(".tc.back").forEach((el) => (el.onclick = () => openBooster([el.dataset.id])));
+}
+
+// one tile per champion: completion ring, how many roles done, the five roles by level; a click shows its cards
+function paintChamps() {
+  const box = root.querySelector("#bd-grid");
+  box.className = "bd-champs";
+  const q = norm(state.q);
+  const by = {};
+  data.cards.forEach((c) => (by[c.key] = by[c.key] || { key: c.key, name: c.name, cards: [] }).cards.push(c));
+  const list = Object.values(by).filter((ch) => {
+    const got = ch.cards.filter((c) => c.level >= 1).length;
+    return (!q || norm(ch.name).includes(q)) && (state.show === "all" || (state.show === "got" ? got > 0 : !data.masters.includes(ch.key)));
+  });
+  const score = (ch) => ch.cards.reduce((n, c) => n + c.level, 0);
+  list.sort((a, b) => score(b) - score(a) || a.name.localeCompare(b.name));
+  if (!list.length) {
+    box.innerHTML = `<div class="card empty">${esc(t("Aucun champion ici pour l'instant."))}</div>`;
+    return;
+  }
+  box.innerHTML = list.map((ch) => {
+    const got = ch.cards.filter((c) => c.level >= 1).length, best = ch.cards.filter((c) => c.level === 4).length;
+    const master = data.masters.includes(ch.key);
+    return `<button class="bd-champ${master ? " master" : ""}" data-name="${esc(ch.name)}">
+      <img src="${img.icon(ch.key)}" alt="" data-ring="${esc(ch.key)}">
+      <span class="bc-name">${esc(ch.name)}${master ? ' <i class="bc-crown">♛</i>' : ""}</span>
+      <span class="bc-count">${esc(t("{0}/5 rôles · {1} légendaires", got, best))}</span>
+      <span class="bc-roles">${ch.cards.map((c) => `<i class="bc-pip ${PIP[c.level]}${c.guide ? "" : " chaos"}" title="${esc(`${ROLE_LABEL[c.role]} — ${t(levelOf(c.level).label)}`)}">${roleIcon(c.role)}</i>`).join("")}</span>
+    </button>`;
+  }).join("");
+  box.querySelectorAll(".bd-champ").forEach((el) => (el.onclick = () => {
+    state.view = "cards";
+    state.role = "all";
+    state.show = "all";
+    state.q = el.dataset.name;
+    paintTools();
+    paintGrid();
+  }));
 }
 
 // cards tilt toward the pointer; the foil and sheen follow it
@@ -209,7 +289,7 @@ function openBooster(ids) {
         <div class="bk-ribbon">${esc(was ? t("Amélioration : {0} → {1}", t(was.label), t(L.label)) : t("Nouvelle carte"))}</div>
         <div class="bk-card"><div class="bk-flip">
           <div class="bk-face bk-front">${cardHTML(c, { level: c.level })}</div>
-          <div class="bk-face bk-rear">${BACK}</div>
+          <div class="bk-face bk-rear">${backHTML()}</div>
         </div><div class="bk-burst"></div></div>
         <div class="bk-text">
           <div class="bk-tier">${esc(t(L.label))}</div>

@@ -339,6 +339,7 @@ class Profile:
         "fav_champs": [], "fav_combos": [], "fav_roles": [], "only_fav_roles": False,
         "only_fav_champs": False, "no_repeat": True, "lol_dir": None, "tray_hint_shown": False, "overlay_tab_seen": False,
         "binder_seen": {},   # collection binder: per LoL account, the level of each card already opened
+        "card_back": "hextech",   # back of the binder cards (unlocked by milestones, collection.BACKS)
         "overlay_mode": "tab", "overlay_side": "right", "overlay_page": "early",
         "overlay_pos": None, "overlay_scale": 1.0, "overlay_opacity": 0.95, "overlay_modules": {},
         "auto_update": True, "seen_update": None, "glossary_hints": True, "ambient": True, "usage_stats": True,
@@ -898,6 +899,7 @@ class Core:
         # newer published version of the app: {"version", "auto" (installs itself), "state", "progress", "text"}
         self.app_update = None
         self.just_updated = False   # started by an update that just finished (one notice)
+        self._binder_pending_n = (self.profile["account_puuid"], len(self._binder_pending()))   # to signal new cards
         self._installer = None
         try:
             if any(e.get("status") in ("played", "remake") and e.get("queue") and e["queue"] not in lol.SR_QUEUES
@@ -1017,6 +1019,8 @@ class Core:
                 "app_update": self.app_update,
                 "updated": self._take_updated(),
                 "binder_pending": len(self._binder_pending()),
+                "binder_rings": self._binder_rings(self._binder_cards()),
+                "card_back": self._card_back(),
                 "window": {"frameless": bool(getattr(self.ui, "frameless", False))},
                 "app": {"name": APP_NAME, "version": APP_VERSION},
                 "meta": {"patch": d.meta.get("patch"), "generated": d.meta.get("generated"),
@@ -1794,7 +1798,16 @@ class Core:
     def _history_changed(self):
         self.emit("history", {"recent": self._recent_view(), "roll": self._roll_view()})
         self.emit("cs", self._cs_view())
-        self.emit("binder", {"pending": len(self._binder_pending())})
+        got = self._binder_cards()
+        pending = len(self._binder_pending(got))
+        account = self.profile["account_puuid"]
+        new = pending - self._binder_pending_n[1] if self._binder_pending_n[0] == account else 0   # not on an account switch
+        self._binder_pending_n = (account, pending)
+        self.emit("binder", {"pending": pending, "rings": self._binder_rings(got), "card_back": self._card_back(got),
+                             "new": max(0, new)})
+        if new > 0 and self.tray and self.tray.running and not getattr(self.ui, "visible", lambda: False)():
+            self.tray.notify(T("Nouvelle carte à ouvrir dans ton classeur !") if new == 1
+                             else T("%d nouvelles cartes à ouvrir dans ton classeur !") % new)
 
     # --- collection binder (collection.py) ------------------------------------------------
     def _binder_cards(self):
@@ -1803,6 +1816,38 @@ class Core:
     def _binder_seen(self):
         """Cards already opened by this LoL account; None before the first opening."""
         return (self.profile["binder_seen"] or {}).get(self.profile["account_puuid"] or "-")
+
+    def _binder_rings(self, got):
+        """Level of each role of the champions with at least one card ("01004": top, jungle, mid, ADC, support),
+        for the completion ring around their portraits."""
+        rings = {}
+        for k, c in got.items():
+            key, _, role = k.partition("|")
+            if role in ROLES:
+                r = rings.setdefault(key, [0] * len(ROLES))
+                r[ROLES.index(role)] = c["level"]
+        return {k: "".join(map(str, v)) for k, v in rings.items()}
+
+    def _binder_backs(self, got):
+        d = self.data
+        counts = collection.milestones(got, set(d.combos), list(d.champs), ROLES)
+        return collection.backs(counts)
+
+    def _card_back(self, got=None):
+        """Chosen back, if this LoL account unlocked it."""
+        got = self._binder_cards() if got is None else got
+        back = self.profile["card_back"]
+        return back if any(b["id"] == back and b["unlocked"] for b in self._binder_backs(got)) else "hextech"
+
+    def api_set_card_back(self, back):
+        with self.lock:
+            got = self._binder_cards()
+            if not any(b["id"] == back and b["unlocked"] for b in self._binder_backs(got)):
+                return {"error": T("Ce dos de carte n'est pas encore débloqué.")}
+            self.profile["card_back"] = back
+            self.emit("binder", {"pending": len(self._binder_pending(got)), "rings": self._binder_rings(got),
+                                 "card_back": back})
+            return {"ok": True, "card_back": back}
 
     def _binder_pending(self, got=None):
         got = self._binder_cards() if got is None else got
@@ -1827,8 +1872,9 @@ class Core:
                                   "queue": T(lol.queue_name(c["queue"])) if c.get("queue") else None})
             masters = [key for key in d.champs
                        if all((got.get(d.combo_key(key, r)) or {}).get("level") == collection.LEGENDARY for r in ROLES)]
-            return {"cards": cards, "pending": self._binder_pending(got), "masters": masters,
-                    "account": bool(self.profile["account_puuid"])}
+            backs = [dict(b, label=T(b["label"])) for b in self._binder_backs(got)]
+            return {"cards": cards, "pending": self._binder_pending(got), "masters": masters, "backs": backs,
+                    "card_back": self._card_back(got), "account": bool(self.profile["account_puuid"])}
 
     def api_binder_open(self, ids=None):
         """Cards opened (revealed): they show at their new level from now on."""

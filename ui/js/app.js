@@ -1,7 +1,7 @@
 // UI entry point: boot, navigation, core events, champ select banner.
 import { call, listen } from "./api.js";
 import { esc, img, ICONS, roleIcon, setupGlossary, setupSpells, fmtDate, setupLang, t } from "./util.js";
-import { store, on, dispatch, toast, setStatus, setupTips, modalOpen, closeModal, spinLogo, mechRole, isLite, wireBorderless, champAttr } from "./ctx.js";
+import { store, on, dispatch, toast, setStatus, setupTips, modalOpen, closeModal, spinLogo, mechRole, isLite, wireBorderless, champAttr, paintRings } from "./ctx.js";
 import { renderRoulette, rouletteKey, launch } from "./roulette.js";
 import { renderGuides, showGuide, openChamp, restoreBack, clearBack } from "./guides.js";
 import { setAmbient } from "./ambient.js";
@@ -73,6 +73,17 @@ async function boot() {
   route();
   listen(onEvent);
   document.addEventListener("keydown", onKey);
+  // completion rings on the portraits drawn from now on
+  let ringQueued = false;
+  new MutationObserver(() => {
+    if (ringQueued) return;
+    ringQueued = true;
+    requestAnimationFrame(() => {
+      ringQueued = false;
+      paintRings();
+    });
+  }).observe(document.body, { childList: true, subtree: true });
+  paintRings();
   // champion portraits open their guide, wherever they are (history, game details, Game page, guides...)
   document.addEventListener("click", (e) => {
     const el = e.target.closest("[data-champ]");
@@ -228,7 +239,11 @@ async function onEvent(msg) {
       break;
     case "binder":
       store.boot.binder_pending = data.pending;
+      store.boot.binder_rings = data.rings;
+      store.boot.card_back = data.card_back;
       paintBinderBadge();
+      paintRings();
+      if (data.new > 0) toast(data.new === 1 ? t("Nouvelle carte à ouvrir dans ton classeur !") : t("{0} nouvelles cartes à ouvrir dans ton classeur !", data.new), "gold", 6500);
       dispatch("binder", data);
       break;
     case "app_update": {

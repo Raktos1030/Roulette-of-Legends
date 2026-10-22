@@ -54,7 +54,7 @@ function paintBar() {
   if (!bar) return;
   const v = store.current, r = store.roll;
   const mine = r && r.combo === v.key;
-  const who = `<img src="${img.icon(v.champ.key)}" alt=""><b>${esc(v.champ.name)}</b>${roleIcon(v.role)}<span>${esc(v.role_label)}</span>`;
+  const who = `<img src="${img.icon(v.champ.key)}" alt="" data-ring="${esc(v.champ.key)}"><b>${esc(v.champ.name)}</b>${roleIcon(v.role)}<span>${esc(v.role_label)}</span>`;
   const top = backStack[backStack.length - 1];
   const back = (top && top.guide === v.key ? `<button class="btn sm fb-back fb-ctx" data-ctx-back><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>${esc(top.label)}</button>` : "")
     + `<a class="btn sm fb-back" href="#/guides" title="${esc(t("Toutes les fiches"))}"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>${esc(t("Toutes les fiches"))}</a>`;

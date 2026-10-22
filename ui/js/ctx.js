@@ -44,6 +44,28 @@ export function go(route) {
   else dispatch("route", route);
 }
 
+// completion ring around champion portraits: one segment per role (top first, clockwise), colored by the level of
+// that card in the binder; champions without any card have none
+const RING = ["rgba(255, 255, 255, .12)", "#c38d64", "#dfe6f0", "#f0d58f", "#b48cff"];
+export function paintRings(scope = document) {
+  const rings = (store.boot && store.boot.binder_rings) || {};
+  scope.querySelectorAll("img[data-champ], img[data-ring]").forEach((im) => {
+    const code = rings[im.dataset.champ || im.dataset.ring];
+    if (im.dataset.ringCode === (code || "")) return;
+    im.dataset.ringCode = code || "";
+    if (!code) {
+      im.classList.remove("ringed", "ring-master");
+      im.style.background = "";
+      return;
+    }
+    const seg = 72, gap = 5;
+    const stops = [...code].map((lv, i) => `${RING[+lv]} ${i * seg + gap / 2}deg ${(i + 1) * seg - gap / 2}deg, transparent ${(i + 1) * seg - gap / 2}deg ${(i + 1) * seg + gap / 2}deg`);
+    im.style.background = `conic-gradient(from -36deg, transparent 0deg ${gap / 2}deg, ${stops.join(", ")})`;
+    im.classList.add("ringed");
+    im.classList.toggle("ring-master", code === "44444");
+  });
+}
+
 // champion portrait that opens its guide on click (app.js); none in the Lite, which has no guides
 export function champAttr(key, role) {
   return key && !isLite() ? ` data-champ="${esc(key)}"${role ? ` data-role="${esc(role)}"` : ""}` : "";
