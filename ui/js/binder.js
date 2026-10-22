@@ -176,7 +176,7 @@ export function cardHTML(c, opts = {}) {
     <span class="tc-frame"></span><span class="tc-prism"></span>
     <span class="tc-medal">${roleIcon(c.role)}</span>
     ${c.guide ? "" : `<span class="tc-chaos" title="${esc(t("Rôle chaos"))}">${CHAOS_ICON}</span>`}
-    ${master ? `<span class="tc-crown" title="${esc(t("Champion maître"))}">♛</span>` : ""}
+    ${master ? `<img class="tc-crown" src="/img/cards/crown.webp" alt="" title="${esc(t("Champion maître"))}">` : ""}
     <div class="tc-plate"><b>${esc(c.name)}</b><span class="tc-sub">${esc(ROLE_LABEL[c.role])} · ${esc(master ? t("Maître") : t(L.label))}</span></div>
   </div>`;
 }
@@ -233,7 +233,7 @@ function paintChamps() {
     const master = data.masters.includes(ch.key);
     return `<button class="bd-champ${master ? " master" : ""}" data-name="${esc(ch.name)}">
       <img src="${img.icon(ch.key)}" alt="" data-ring="${esc(ch.key)}">
-      <span class="bc-name">${esc(ch.name)}${master ? ' <i class="bc-crown">♛</i>' : ""}</span>
+      <span class="bc-name">${esc(ch.name)}${master ? ' <img class="bc-crown" src="/img/cards/crown.webp" alt="">' : ""}</span>
       <span class="bc-count">${esc(t("{0}/5 rôles · {1} légendaires", got, best))}</span>
       <span class="bc-roles">${ch.cards.map((c) => `<i class="bc-pip ${PIP[c.level]}${c.guide ? "" : " chaos"}" title="${esc(`${ROLE_LABEL[c.role]} — ${t(levelOf(c.level).label)}`)}">${roleIcon(c.role)}</i>`).join("")}</span>
     </button>`;
@@ -290,27 +290,39 @@ function openBooster(ids) {
     }
   };
   document.addEventListener("keydown", onKey);
+  // the reveal that completes a mastered champion (no card of it left to open after this one) crowns it
+  const keyOf = (id) => (data.cards.find((x) => x.id === id) || {}).key;
+  const crowns = (n) => {
+    const c = queue[n];
+    const done = new Set(queue.slice(0, n + 1).map((x) => x.id));
+    return c.level === 4 && data.masters.includes(c.key) && data.pending.every((id) => done.has(id) || keyOf(id) !== c.key);
+  };
   const show = () => {
     const c = queue[i];
     const L = levelOf(c.level);
     const was = c.shown ? levelOf(c.shown) : null;
-    const sparks = Array.from({ length: c.level >= 3 ? 34 : 18 }, () =>
+    const crown = crowns(i);
+    const royal = crown && data.masters.length === 1 && data.backs.find((b) => b.id === "crown");
+    const sparks = Array.from({ length: crown ? 60 : c.level >= 3 ? 34 : 18 }, () =>
       `<i style="left:${(Math.random() * 100).toFixed(1)}%;--s:${(2 + Math.random() * 3).toFixed(1)}px;--d:${(2.6 + Math.random() * 2.4).toFixed(2)}s;--w:${(Math.random() * 2.5).toFixed(2)}s;--x:${((Math.random() - 0.5) * 160).toFixed(0)}px"></i>`).join("");
     box.innerHTML = `
       <div class="bk-shade"></div>
-      <div class="bk-stage lv${c.level}">
+      <div class="bk-stage lv${c.level}${crown ? " crowning" : ""}">
         <div class="bk-glow"></div>
         <div class="bk-sparks">${sparks}</div>
         <div class="bk-count">${esc(t("Carte {0} sur {1}", i + 1, queue.length))}</div>
         <div class="bk-ribbon">${esc(was ? t("Amélioration : {0} → {1}", t(was.label), t(L.label)) : t("Nouvelle carte"))}</div>
-        <div class="bk-card"><div class="bk-flip">
+        <div class="bk-card">${crown ? `<div class="bk-fan">${data.cards.filter((x) => x.key === c.key && x.id !== c.id)
+          .map((x) => `<div class="bk-fan-card">${cardHTML(x, { level: 4 })}</div>`).join("")}</div>` : ""}<div class="bk-flip">
           <div class="bk-face bk-front">${cardHTML(c, { level: c.level })}</div>
           <div class="bk-face bk-rear">${backHTML()}</div>
-        </div><div class="bk-burst"></div></div>
+        </div><div class="bk-burst"></div>${crown ? `<div class="bk-shock"></div><div class="bk-crownfall"><img src="/img/cards/crown.webp" alt=""></div>` : ""}</div>
+        ${crown ? '<div class="bk-flash"></div>' : ""}
         <div class="bk-text">
           <div class="bk-tier">${esc(t(L.label))}</div>
           <h2>${esc(c.name)} · ${esc(ROLE_LABEL[c.role])}${c.guide ? "" : ` <span class="bk-chaos">${CHAOS_ICON}${esc(t("chaos"))}</span>`}</h2>
           <p class="muted">${esc(t(HOW[L.id]))}${c.at ? esc(` · ${c.queue || ""} · ${c.at}`) : ""}</p>
+          ${crown ? `<p class="bk-master-line">${esc(t("Ses cinq rôles sont légendaires : {0} rejoint tes champions maîtres.", c.name))}${royal ? `<br><b>${esc(t("Dos de carte {0} débloqué !", royal.label))}</b>` : ""}</p>` : ""}
         </div>
         <div class="bk-btns">
           ${queue.length - i > 1 ? `<button class="btn" data-all>${esc(t("Tout révéler"))}</button>` : ""}
@@ -318,8 +330,13 @@ function openBooster(ids) {
         </div>
       </div>`;
     call("binder_open", { ids: [c.id] });
-    // the back's roulette spins, then the card turns over
-    requestAnimationFrame(() => setTimeout(() => box.querySelector(".bk-stage").classList.add("flipped"), 1150));
+    // the back's roulette spins, then the card turns over; a champion completed is then crowned
+    const stage = box.querySelector(".bk-stage");
+    requestAnimationFrame(() => setTimeout(() => stage.classList.add("flipped"), 1150));
+    if (crown) setTimeout(() => {
+      stage.classList.add("crowned");
+      stage.querySelector(".bk-tier").textContent = t("Champion maître");
+    }, 2400);
     box.querySelector("[data-next]").onclick = next;
     const all = box.querySelector("[data-all]");
     if (all) all.onclick = async () => {

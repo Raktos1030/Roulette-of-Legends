@@ -1485,7 +1485,9 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 .tc.master::before { content: ""; position: absolute; inset: 2%; z-index: -1; pointer-events: none; border-radius: 8%;
   background: conic-gradient(from var(--tca), transparent 0 20%, rgba(255, 220, 140, .95) 25%, transparent 30% 70%, rgba(255, 220, 140, .95) 75%, transparent 80%);
   filter: blur(9px); animation: tcSpin 3.5s linear infinite; }
-.tc-crown { position: absolute; top: 9%; left: 50%; transform: translateX(-50%); z-index: 3; font-size: 18px; color: #ffd36b; text-shadow: 0 0 10px rgba(255, 211, 107, 1); }
+/* the mastered card wears the crown, on its top edge */
+.tc-crown { position: absolute; top: -6.5%; left: 50%; width: 30%; transform: translateX(-50%); z-index: 3; pointer-events: none;
+  filter: drop-shadow(0 0 6px rgba(255, 211, 107, .85)) drop-shadow(0 2px 3px rgba(0, 0, 0, .7)); }
 
 .tc:not(.back):not(.lv0):hover { filter: drop-shadow(0 18px 22px rgba(0, 0, 0, .6)) drop-shadow(0 0 20px var(--glow)); }
 
@@ -1521,7 +1523,6 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 .bk-face .tc-plate b { font-size: 24px; }
 .bk-face .tc-sub { display: block; font-size: 11px; }
 .bk-face .tc-plate { bottom: 7%; }
-.bk-face .tc-crown { font-size: 32px; }
 .bk-face .tc-new { font-size: 12px; }
 .bk-burst { position: absolute; inset: -70%; z-index: -1; opacity: 0; pointer-events: none;
   background: repeating-conic-gradient(from 0deg, transparent 0 7deg, rgba(var(--tone), .45) 9deg, transparent 11deg 24deg);
@@ -1602,9 +1603,9 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
   padding: 12px 14px; border-radius: 14px; border: 1px solid var(--hair); background: var(--glass); cursor: pointer; color: var(--text); transition: all .2s; }
 .bd-champ:hover { border-color: var(--hair-2); transform: translateY(-2px); }
 .bd-champ.master { border-color: rgba(255, 211, 107, .55); background: linear-gradient(135deg, rgba(255, 211, 107, .14), var(--glass) 60%); }
-.bd-champ img { grid-row: 1 / span 3; width: 52px; height: 52px; border-radius: 50%; }
+.bd-champ > img { grid-row: 1 / span 3; width: 52px; height: 52px; border-radius: 50%; }
 .bc-name { font: 14px/1.1 var(--display); letter-spacing: .03em; }
-.bc-crown { font-style: normal; color: #ffd36b; text-shadow: 0 0 8px rgba(255, 211, 107, .8); }
+.bc-crown { height: 1.15em; vertical-align: -.15em; margin-left: 2px; filter: drop-shadow(0 0 4px rgba(255, 211, 107, .7)); }
 .bc-count { font-size: 11.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .bc-roles { display: flex; gap: 4px; margin-top: 3px; }
 .bc-pip { width: 22px; height: 22px; display: grid; place-items: center; border-radius: 50%; border: 1.5px solid rgba(255, 255, 255, .1); color: rgba(255, 255, 255, .25); }
@@ -1692,4 +1693,52 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 .tc.off .tb-sheen, .tc.off .tb-flare { display: none; }
 @media (prefers-reduced-motion: reduce) {
   .tb-sheen, .tb-flare, .tb-gems { display: none; }
+}
+
+/* crowning: the reveal that completes a champion's five legendary roles. Its other four cards fan out behind it, a
+   crown falls on it (flash, shock wave), the light turns gold */
+.bk-stage.crowned { --tone: 255, 211, 107; }
+.bk-stage.crowning .bk-front .tc-crown { display: none; }
+.bk-stage.crowning .bk-front .tc.master::before { opacity: 0; transition: opacity .5s .55s; }
+.bk-stage.crowned .bk-front .tc.master::before { opacity: 1; }
+.bk-stage.crowning .bk-text { position: relative; z-index: 1; text-shadow: 0 2px 10px rgba(0, 0, 0, .95), 0 0 2px rgba(0, 0, 0, .9); }
+.bk-stage.crowning .bk-tier { text-shadow: none; filter: drop-shadow(0 1px 5px rgba(0, 0, 0, .95)); }
+.bk-fan { position: absolute; inset: 0; pointer-events: none; }
+.bk-fan-card { position: absolute; inset: 0; transform-origin: 50% 150%; opacity: 0; }
+.bk-fan-card .tc { width: 100%; height: 100%; }
+.bk-fan .tc-crown, .bk-fan .tc.master::before { display: none; }
+.bk-fan-card:nth-child(1) { --r: -25deg; --d: .2s; }
+.bk-fan-card:nth-child(2) { --r: -12.5deg; --d: .28s; }
+.bk-fan-card:nth-child(3) { --r: 12.5deg; --d: .28s; }
+.bk-fan-card:nth-child(4) { --r: 25deg; --d: .2s; }
+.bk-stage.crowned .bk-fan-card { animation: bkFan .9s var(--d) cubic-bezier(.2, .9, .3, 1.15) both; }
+@keyframes bkFan { from { opacity: 0; transform: rotate(0) scale(.8); } to { opacity: 1; transform: translateY(-5%) rotate(var(--r)) scale(.88); } }
+.bk-crownfall { position: absolute; left: 50%; top: -25%; width: 46%; translate: -50% 0; z-index: 3; opacity: 0; pointer-events: none;
+  filter: drop-shadow(0 0 14px rgba(255, 211, 107, .9)) drop-shadow(0 6px 10px rgba(0, 0, 0, .6)); }
+.bk-crownfall img { display: block; width: 100%; }
+.bk-stage.crowned .bk-crownfall { animation: bkCrown .7s .1s cubic-bezier(.3, 1.45, .5, 1) both, bkCrownGlow 2.4s 1.2s ease-in-out infinite; }
+@keyframes bkCrown { 0% { opacity: 0; transform: translateY(-160px) scale(1.9) rotate(-10deg); } 55% { opacity: 1; } 100% { opacity: 1; transform: none; } }
+@keyframes bkCrownGlow { 50% { filter: drop-shadow(0 0 28px rgba(255, 228, 150, 1)) drop-shadow(0 6px 10px rgba(0, 0, 0, .6)); } }
+.bk-stage.crowned .bk-flip { animation: bkHit .5s .6s ease-out; }
+@keyframes bkHit { 35% { scale: 1.07; } }
+.bk-shock { position: absolute; left: 50%; top: 0; width: 60%; aspect-ratio: 1; translate: -50% -50%; border-radius: 50%; pointer-events: none; opacity: 0;
+  border: 3px solid rgba(255, 225, 150, .95); box-shadow: 0 0 24px rgba(255, 211, 107, .9), inset 0 0 18px rgba(255, 211, 107, .7); }
+.bk-stage.crowned .bk-shock { animation: bkShock 1.1s .62s cubic-bezier(.1, .6, .3, 1) both; }
+@keyframes bkShock { 0% { opacity: 1; scale: .2; } 100% { opacity: 0; scale: 4.5; } }
+.bk-flash { position: fixed; inset: 0; pointer-events: none; opacity: 0;
+  background: radial-gradient(circle at 50% 38%, rgba(255, 244, 214, .95), rgba(255, 211, 107, .35) 28%, transparent 62%); }
+.bk-stage.crowned .bk-flash { animation: bkFlash 1.2s .6s ease-out both; }
+@keyframes bkFlash { 0% { opacity: 0; } 12% { opacity: 1; } 100% { opacity: 0; } }
+.bk-stage.crowned .bk-burst { animation: bkCrownBurst 2.6s .6s ease-out both, bkTurn 11s linear infinite; }
+@keyframes bkCrownBurst { 0% { opacity: 0; transform: scale(.3); } 25% { opacity: 1; } 100% { opacity: .75; transform: scale(1.25); } }
+.bk-stage.crowned .bk-ribbon, .bk-stage.crowned .bk-count { opacity: 0; transition: opacity .3s; }
+.bk-stage.crowned .bk-tier { background: linear-gradient(90deg, #fff1c2, #ffd36b, #e0a63a, #ffd36b); -webkit-background-clip: text; background-clip: text; color: transparent;
+  animation: bkTierIn .6s .6s both; }
+@keyframes bkTierIn { from { opacity: 0; letter-spacing: .7em; } to { opacity: 1; } }
+.bk-master-line { margin: 8px 0 0; color: var(--gold-pale); opacity: 0; transition: opacity .6s 1.3s; }
+.bk-master-line b { color: #ffd36b; font-weight: 600; }
+.bk-stage.crowned .bk-master-line { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .bk-stage.crowned .bk-crownfall, .bk-stage.crowned .bk-fan-card { animation-duration: .01s; }
+  .bk-stage.crowned .bk-shock, .bk-stage.crowned .bk-flash { display: none; }
 }
