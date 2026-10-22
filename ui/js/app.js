@@ -248,6 +248,7 @@ async function onEvent(msg) {
       break;
     case "rewards":
       store.boot.rewards_unseen = data.unseen;
+      if (data.joker) store.boot.joker = data.joker;
       paintBinderBadge();
       if ((data.new || []).length) toast(t("Récompense débloquée : {0}", data.new.join(", ")), "gold", 7000);
       dispatch("rewards", data);

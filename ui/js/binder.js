@@ -41,7 +41,7 @@ export function renderBinder(page) {
   <div class="page-enter">
     <header class="page-head"><div>
       <div class="kicker">${esc(t("Collection"))}</div>
-      <h1 class="page-title">${esc(t("Classeur"))}</h1>
+      <h1 class="page-title">${esc(t("Classeur"))}<span class="bd-title" id="bd-title" hidden></span></h1>
       <p class="page-sub muted">${esc(t("Une carte par champion et par rôle. Joue le champion que la roulette te tire pour l'obtenir, gagne avec pour la faire monter. Le full random en classée donne les légendaires."))}</p>
     </div></header>
     <div class="seg bd-pages" id="bd-pages"></div>
@@ -160,7 +160,7 @@ function paintRewards(r) {
   box.querySelectorAll("[data-title]").forEach((b) => (b.onclick = async () => {
     const res = await call("set_title", { title: b.dataset.title || null });
     if (res.error) return toast(res.error, "bad");
-    showPage();
+    load();
   }));
 }
 
@@ -180,6 +180,9 @@ async function load() {
   const r = await call("binder");
   if (!root || r.error) return;
   data = r;
+  const title = root.querySelector("#bd-title");
+  title.hidden = !r.title;
+  title.textContent = r.title || "";
   if (state.page === "rw") showPage();
   paintStats();
   paintBooster();

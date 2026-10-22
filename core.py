@@ -1039,6 +1039,7 @@ class Core:
                 "binder_rings": self._binder_rings(self._binder_cards()),
                 "card_back": self._card_back(),
                 "rewards_unseen": self._rewards_unseen(),
+                "joker": rewards.joker([e for e in self.history.entries if self.history.mine(e)]),
                 "window": {"frameless": bool(getattr(self.ui, "frameless", False))},
                 "app": {"name": APP_NAME, "version": APP_VERSION},
                 "meta": {"patch": d.meta.get("patch"), "generated": d.meta.get("generated"),
@@ -2086,7 +2087,10 @@ class Core:
             masters = [key for key in d.champs
                        if all((got.get(d.combo_key(key, r)) or {}).get("level") == collection.LEGENDARY for r in ROLES)]
             backs = [dict(b, label=T(b["label"])) for b in self._binder_backs(got)]
+            rw = self._rewards(got)
+            pick = next((t for t in rw["titles"] if t["id"] == self.profile["title"]), None)
             return {"cards": cards, "pending": self._binder_pending(got), "masters": masters, "backs": backs,
+                    "title": self._title_text(pick) if pick else None,
                     "card_back": self._card_back(got), "account": bool(self.profile["account_puuid"])}
 
     def api_binder_open(self, ids=None):

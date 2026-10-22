@@ -1780,3 +1780,81 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 .snd-row { display: flex; align-items: center; gap: 14px; }
 .snd-row input[type="range"] { width: 150px; }
 .snd-row input[type="range"]:disabled { opacity: .35; }
+
+/* binder: Collection / Rewards pages */
+.bd-pages { margin: 2px 0 18px; }
+.bd-new { display: inline-grid; place-items: center; min-width: 18px; height: 18px; padding: 0 5px; margin-left: 8px; border-radius: 9px;
+  font: 700 10.5px/1 var(--num); color: #1a1206; background: linear-gradient(135deg, #f3dfae, var(--gold)); }
+
+/* rewards path (rewards.py) */
+#bd-rw { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+#bd-rw[hidden] { display: none; }
+#bd-rw .card-title svg { width: 17px; height: 17px; fill: none; stroke: var(--gold); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+#bd-rw .card-title:has(svg)::before { display: none; }
+.rw-hero { grid-column: 1 / -1; display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 32px; align-items: center;
+  background: linear-gradient(115deg, rgba(200, 170, 110, .14), var(--glass) 55%); }
+.rw-count b { display: block; margin: 8px 0 12px; font: 46px/1 var(--display); color: var(--gold-pale); }
+.rw-count small { font-size: 18px; color: var(--muted); }
+.rw-bar { display: block; height: 6px; margin-top: 9px; border-radius: 3px; overflow: hidden; background: rgba(255, 255, 255, .07); }
+.rw-bar em { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #a8813f, #f3dfae); }
+.rw-next b { display: block; margin: 6px 0 3px; font: 21px/1.2 var(--display); color: var(--text); }
+.rw-gifts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.rw-gift { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 9px; font-size: 12.5px; color: var(--gold-pale);
+  border: 1px solid rgba(200, 170, 110, .35); background: rgba(200, 170, 110, .08); }
+.rw-gift svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.rw-gift.soon { color: var(--muted); border-color: var(--hair); background: none; }
+.rw-gift em { font: 600 9.5px/1 var(--ui); font-style: normal; letter-spacing: .12em; text-transform: uppercase; opacity: .8; }
+.rw-side { grid-column: 2; display: grid; gap: 16px; }
+.rw-path { grid-column: 1; grid-row: 2 / span 2; }
+.rw-stamps { grid-column: 2; }
+.rw-joker p { margin: 2px 0 8px; color: var(--text-2); }
+.rw-joker.on { border-color: rgba(255, 211, 107, .55); box-shadow: inset 0 0 22px rgba(255, 211, 107, .08); }
+.rw-joker.on .card-title { color: #ffd36b; }
+.rw-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.rw-step { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; grid-template-areas: "n main have" "n gifts gifts"; gap: 4px 14px;
+  padding: 13px 2px; border-top: 1px solid var(--hair); }
+.rw-step:first-of-type { border-top: 0; }
+.rw-n { grid-area: n; width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--hair-2);
+  font: 600 13px/1 var(--num); color: var(--muted); }
+.rw-step.done .rw-n { border-color: var(--gold); color: #1a1206; background: linear-gradient(135deg, #f3dfae, var(--gold)); }
+.rw-step.next .rw-n { border-color: var(--gold); color: var(--gold-pale); box-shadow: 0 0 12px rgba(232, 208, 154, .4); }
+.rw-main { grid-area: main; min-width: 0; }
+.rw-main b { font: 15px/1.25 var(--display); letter-spacing: .02em; color: var(--text); }
+.rw-step:not(.done):not(.next) .rw-main b { color: var(--text-2); }
+.rw-main small { display: block; margin-top: 2px; font-size: 12.5px; color: var(--muted); }
+.rw-step .rw-gifts { grid-area: gifts; margin-top: 4px; }
+.rw-have { grid-area: have; align-self: center; font: 600 12.5px/1 var(--num); color: var(--muted); white-space: nowrap; }
+.rw-step.done .rw-have { color: var(--gold); }
+.rw-tag { margin-left: 8px; padding: 3px 6px; border-radius: 6px; font: 700 9.5px/1 var(--ui); font-style: normal; letter-spacing: .12em;
+  text-transform: uppercase; color: #1a1206; background: #ffd36b; vertical-align: 2px; animation: tcPulse 1.6s ease-in-out infinite; }
+.rw-stamp-list { display: grid; gap: 12px; margin-top: 10px; }
+.rw-stamp-list > div { display: grid; grid-template-columns: 36px minmax(0, 1fr); column-gap: 12px; align-items: center; }
+.rw-stamp-list .tc-stamp { grid-row: span 2; width: 32px; height: 32px; }
+.rw-stamp-list small { color: var(--muted); }
+@media (max-width: 1100px) {
+  #bd-rw { grid-template-columns: 1fr; }
+  .rw-path, .rw-side, .rw-stamps { grid-column: 1; grid-row: auto; }
+  .rw-hero { grid-template-columns: 1fr; gap: 16px; }
+}
+
+/* exploit stamps on the cards: medallions down the art's right edge */
+.tc-stamps { position: absolute; right: 7.5%; top: 21%; z-index: 3; display: grid; gap: 5px; pointer-events: auto; }
+.tc-stamp { width: 13%; min-width: 20px; aspect-ratio: 1; display: grid; place-items: center; border-radius: 50%; color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .65), inset 0 0 0 1.5px rgba(255, 255, 255, .4); }
+.tc-stamps .tc-stamp { width: 22px; }
+.bk-face .tc-stamps .tc-stamp { width: 34px; }
+.tc-stamp svg { width: 62%; height: 62%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.tc-stamp.flawless { background: radial-gradient(circle at 35% 30%, #5ff0e0, #0b766f 75%); }
+.tc-stamp.domination { background: radial-gradient(circle at 35% 30%, #ff9a7a, #9c2219 75%); }
+.tc-stamp.penta { background: radial-gradient(circle at 35% 30%, #ffe7a0, #a86f10 75%); }
+.tc-stamp.penta svg { fill: currentColor; stroke-width: 1.2; }
+
+/* history: a roll passed with the Joker */
+.t-joker { color: #ffd36b; }
+.pill.t-joker { background: rgba(255, 211, 107, .12); border-color: rgba(255, 211, 107, .35); }
+.sr-joker { color: #ffd36b; border-color: rgba(255, 211, 107, .45); }
+.sr-joker svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; width: 15px; height: 15px; }
+.bd-title { margin-left: 16px; padding: 5px 12px; border-radius: 999px; vertical-align: 6px; font: 600 13px/1 var(--ui); letter-spacing: .04em;
+  text-transform: none; color: #ffd36b; border: 1px solid rgba(255, 211, 107, .45); background: rgba(255, 211, 107, .08); }
+.btn.btn-extra { color: #ffd36b; border-color: rgba(255, 211, 107, .45); }
+.btn.btn-extra, .btn.btn-extra ~ .btn-gold { white-space: nowrap; }

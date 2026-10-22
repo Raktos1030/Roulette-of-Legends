@@ -82,6 +82,7 @@ export function renderRoulette(page) {
       if (!store.spinning) paintStripRoll();
       if (champ) showChampInfo();
     }
+    if (type === "rewards" && !store.spinning) paintStripRoll();
     if ((type === "recent" || type === "roll") && !store.spinning) {
       renderWelcome(stage);
       paintStripRoll();
@@ -297,6 +298,7 @@ function idleStrip() {
 }
 
 const PAUSE_SVG = `<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="2.5" width="3" height="11" rx="1"/><rect x="9.5" y="2.5" width="3" height="11" rx="1"/></svg>`;
+const JOKER_SVG = `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M12 7.5l1.3 2.9 3.1.3-2.4 2 .8 3.1L12 14.2 9.2 15.8l.8-3.1-2.4-2 3.1-.3z"/></svg>`;
 const PLAY_SVG = `<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 2.6v10.8c0 .5.5.8.9.5l8.2-5.4a.6.6 0 0 0 0-1L5.4 2.1c-.4-.3-.9 0-.9.5z"/></svg>`;
 
 // Current roll: the idle strip becomes its card (splash, name, role), with the guide and pause buttons.
@@ -340,6 +342,7 @@ function paintStripRoll() {
           ${isLite() ? `<button class="btn-gold sr-guide" data-ugg title="${esc(t("Ouvre la page u.gg de ce champion à ce poste dans ton navigateur"))}">${UGG_SVG}${esc(t("Voir sur u.gg"))}</button>`
             : `<button class="btn-gold sr-guide" data-guide>${esc(t("Voir la fiche"))}</button>`}
           ${inGame ? "" : `<button class="sr-pause${paused ? " on" : ""}" data-pause title="${esc(tip)}">${paused ? PLAY_SVG + esc(t("Reprendre")) : PAUSE_SVG + esc(t("Mettre en pause"))}</button>`}
+          ${!inGame && !paused && (store.boot.joker || {}).available ? `<button class="sr-pause sr-joker" data-joker title="${esc(t("Passe ce tirage avec ton Joker : il ne compte pas comme annulé, et la roulette relance"))}">${JOKER_SVG}${esc(t("Joker"))}</button>` : ""}
         </div>
       </div>
     </div>
@@ -349,6 +352,14 @@ function paintStripRoll() {
   if (fb) fb.onclick = () => openCombo(roll.combo);
   const ub = box.querySelector("[data-ugg]");
   if (ub) ub.onclick = () => openUgg(roll.key, roll.role);
+  const jb = box.querySelector("[data-joker]");
+  if (jb) jb.onclick = async () => {
+    if (!(await confirmBox(t("Utiliser ton Joker sur {0} {1} ? Le tirage est passé sans compter comme annulé, puis la roulette relance.", roll.name, roll.role_label), t("Utiliser le Joker")))) return;
+    const r = await call("joker");
+    if (r.error) return toast(r.error, "warn");
+    store.roll = null;   // passed: no "pending roll" question before the new roll
+    launch();
+  };
   const pb = box.querySelector("[data-pause]");
   if (pb) pb.onclick = async () => {
     pb.disabled = true;
@@ -457,9 +468,17 @@ export async function launch(opts = {}) {
   const pend = store.roll && store.roll.status === "pending" ? store.roll : null;
   if (pend && !opts.role && !(champ && role !== "random" && role !== "chaos")) {
     store.spinning = true;   // no second roll while asking
-    const ok = await confirmBox(t("Tu as déjà un tirage en attente : {0} {1}. Si tu relances, il sera compté comme annulé dans ton historique (relancé avant de jouer).", pend.name, pend.role_label), t("Relancer quand même"));
+    const joker = (store.boot.joker || {}).available;   // passes the roll without a cancel
+    const ok = await confirmBox(t("Tu as déjà un tirage en attente : {0} {1}. Si tu relances, il sera compté comme annulé dans ton historique (relancé avant de jouer).", pend.name, pend.role_label)
+      + (joker ? " " + t("Ton Joker peut le passer sans qu'il compte comme annulé.") : ""), t("Relancer quand même"),
+    joker ? { label: t("Utiliser le Joker"), value: "joker" } : null);
     store.spinning = false;
     if (!ok || !root) return;
+    if (ok === "joker") {
+      const r = await call("joker");
+      if (r.error) return toast(r.error, "warn");
+      store.roll = null;
+    }
   }
   const body = opts.role ? { role: opts.role, reason: opts.reason || null } : { role, champ: champ ? champ.name : (root.querySelector("#cf-input").value || "") };
   const r = await call(opts.role ? "reroll" : "roll", body);

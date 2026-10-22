@@ -292,19 +292,24 @@ export function modalOpen() {
   return !document.getElementById("modal").hidden;
 }
 
-export function confirmBox(text, okLabel = t("Confirmer")) {
+// extra: {label, value}, a third choice (resolves with its value)
+export function confirmBox(text, okLabel = t("Confirmer"), extra = null) {
   return new Promise((resolve) => {
     const { box, close } = openModal(
-      `<div style="padding:34px 36px 28px;max-width:520px">
+      `<div style="padding:34px 36px 28px;max-width:${extra ? 620 : 520}px">
          <div class="card-title">${esc(t("Confirmation"))}</div>
          <p class="prose">${esc(text)}</p>
          <div class="row" style="justify-content:flex-end;margin-top:22px;gap:10px">
-           <button class="btn" data-a="no">${esc(t("Annuler"))}</button><button class="btn-gold" data-a="yes">${esc(okLabel)}</button>
+           <button class="btn" data-a="no">${esc(t("Annuler"))}</button>${extra ? `<button class="btn btn-extra" data-a="extra">${esc(extra.label)}</button>` : ""}<button class="btn-gold" data-a="yes">${esc(okLabel)}</button>
          </div></div>`,
       () => resolve(false)
     );
     box.style.width = "auto";
     box.querySelector('[data-a="no"]').onclick = () => close();
+    if (extra) box.querySelector('[data-a="extra"]').onclick = () => {
+      resolve(extra.value);
+      close();
+    };
     box.querySelector('[data-a="yes"]').onclick = () => {
       resolve(true);
       close();
