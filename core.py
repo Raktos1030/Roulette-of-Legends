@@ -128,12 +128,14 @@ def seed_data_dir():
             rel = "" if rel == "." else rel
             dirs[:] = [d for d in dirs if os.path.join(rel, d) not in USER_ENTRIES]
             os.makedirs(os.path.join(DATA, rel), exist_ok=True)
+            parts = rel.split(os.sep)
+            downloaded = parts[0] == "img" and parts[1:2] != ["cards"]   # the card designs ship with the app
             for f in files:
                 path = os.path.join(rel, f)
                 target = os.path.join(DATA, path)
                 if path in USER_ENTRIES or (path in STATS_FILES and not newer_stats):
                     continue
-                if rel.split(os.sep)[0] == "img" and os.path.exists(target):
+                if downloaded and os.path.exists(target):
                     continue   # champion and item images: downloaded ones may be newer
                 shutil.copy2(os.path.join(base, f), target)
     with open(mark, "w", encoding="utf-8") as f:

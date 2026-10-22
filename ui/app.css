@@ -1623,3 +1623,73 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 .bk-stage:not(.flipped) .bk-rear .tc.back::after { animation: backRoll 1.15s cubic-bezier(.35, 0, .25, 1) both; }
 @keyframes backWheel { to { transform: rotate(360deg); } }
 @keyframes backRoll { from { transform: rotate(0deg); } to { transform: rotate(720deg); } }
+
+/* living backs: a light turns around the wheel; it runs over the metal (mask cut from the design) and makes the
+   gems flare as it passes. Hovered, or about to be revealed, every gem lights up in turn. Gem places are shared by
+   all the designs (--a: angle around the wheel, a quarter turn = .25) */
+.tc.back { --gem: 70, 200, 255; --shine: 255, 236, 190; --beam: 8s; }
+.tc.back[data-skin="void"] { --gem: 178, 112, 255; --shine: 236, 226, 255; }
+.tc.back[data-skin="infernal"] { --gem: 255, 128, 40; --shine: 255, 206, 150; }
+.tc.back[data-skin="prism"] { --gem: 236, 226, 255; --shine: 255, 255, 255; }
+.tc.back[data-skin="crown"] { --gem: 255, 186, 50; --shine: 255, 232, 160; }
+.tb-sheen, .tb-flare, .tb-gems { position: absolute; inset: 0; z-index: 2; pointer-events: none; mix-blend-mode: screen; }
+.tb-sheen, .tb-flare { overflow: hidden; }
+.tb-sheen { -webkit-mask: url("/img/cards/back_metal.webp") center / 100% 100% no-repeat; mask: url("/img/cards/back_metal.webp") center / 100% 100% no-repeat; }
+.tc.back[data-skin="crown"] .tb-sheen { -webkit-mask-image: url("/img/cards/back_crown_metal.webp"); mask-image: url("/img/cards/back_crown_metal.webp"); }
+.tb-flare { --halos: radial-gradient(4.95% 3.54% at 50% 5.4%, #000 25%, transparent),
+    radial-gradient(7.15% 5.11% at 89.3% 7.9%, #000 25%, transparent), radial-gradient(3.58% 2.55% at 95.4% 47%, #000 25%, transparent),
+    radial-gradient(7.15% 5.11% at 89.3% 89.1%, #000 25%, transparent), radial-gradient(4.95% 3.54% at 50% 90.3%, #000 25%, transparent),
+    radial-gradient(7.15% 5.11% at 10.7% 89.1%, #000 25%, transparent), radial-gradient(3.58% 2.55% at 4.6% 47%, #000 25%, transparent),
+    radial-gradient(7.15% 5.11% at 10.7% 7.9%, #000 25%, transparent), radial-gradient(4.4% 3.14% at 50% 22.9%, #000 25%, transparent),
+    radial-gradient(2.75% 1.96% at 67.9% 34%, #000 25%, transparent), radial-gradient(3.85% 2.75% at 82.4% 47%, #000 25%, transparent),
+    radial-gradient(2.75% 1.96% at 67.9% 59.5%, #000 25%, transparent), radial-gradient(4.4% 3.14% at 50% 69.8%, #000 25%, transparent),
+    radial-gradient(2.75% 1.96% at 32.1% 59.5%, #000 25%, transparent), radial-gradient(3.85% 2.75% at 17.6% 47%, #000 25%, transparent),
+    radial-gradient(2.75% 1.96% at 32.1% 34%, #000 25%, transparent);
+  -webkit-mask-image: var(--halos); mask-image: var(--halos); }
+.tb-sheen::before, .tb-flare::before { content: ""; position: absolute; left: 50%; top: 47%; width: 190%; aspect-ratio: 1; translate: -50% -50%;
+  animation: sheenTurn var(--beam) var(--phase, 0s) linear infinite; }
+.tb-sheen::before { background: conic-gradient(rgba(255, 255, 255, .95), rgba(var(--shine), 0) 10deg 270deg, rgba(var(--shine), .25) 315deg, rgba(var(--shine), .8) 345deg, rgba(255, 255, 255, .95)); }
+.tb-flare::before { --hot: color-mix(in srgb, rgb(var(--gem)) 55%, #fff);
+  background: conic-gradient(var(--hot), rgba(var(--gem), 0) 16deg 290deg, rgba(var(--gem), .5) 330deg, rgb(var(--gem)) 352deg, var(--hot)); }
+@keyframes sheenTurn { to { rotate: 1turn; } }
+.tb-gems i { position: absolute; left: var(--x); top: var(--y); width: var(--s); aspect-ratio: 1; translate: -50% -50%; }
+.tb-gems i::after { content: ""; position: absolute; inset: -25%; opacity: 0;
+  background: linear-gradient(90deg, transparent 6%, rgba(255, 255, 255, .95) 50%, transparent 94%) center / 100% 1.5px no-repeat,
+    linear-gradient(transparent 6%, rgba(255, 255, 255, .95) 50%, transparent 94%) center / 1.5px 100% no-repeat,
+    radial-gradient(circle, #fff 0 5%, rgba(var(--gem), .95) 13%, rgba(var(--gem), .4) 30%, transparent 52%); }
+.tc.back:hover .tb-gems i::after, .bk-stage:not(.flipped) .bk-rear .tb-gems i::after {
+  animation: gemWake .55s calc(var(--a) * .5s) cubic-bezier(.2, .8, .3, 1) both; }
+.bk-stage:not(.flipped) .bk-rear .tb-gems i::after { animation-duration: .45s; animation-delay: calc(.1s + var(--a) * .6s); }
+@keyframes gemWake { 0% { opacity: 0; scale: .3; rotate: 0deg; } 55% { opacity: 1; scale: 1.3; } 100% { opacity: .85; scale: 1; rotate: 45deg; } }
+/* the heart of the wheel breathes, and flashes last when the gems wake */
+.tb-gems i:nth-child(17)::before { content: ""; position: absolute; inset: 0; border-radius: 50%; animation: gemBreath 3.2s ease-in-out infinite;
+  background: radial-gradient(circle, rgba(255, 255, 255, .85) 0 6%, rgba(var(--gem), .85) 16%, rgba(var(--gem), .3) 38%, transparent 66%); }
+.bk-stage:not(.flipped) .bk-rear .tb-gems i:nth-child(17)::after { animation: gemFlash .5s .7s ease-out both; }
+@keyframes gemBreath { 0%, 100% { opacity: .12; scale: .85; } 50% { opacity: .55; scale: 1; } }
+@keyframes gemFlash { 0% { opacity: 0; scale: .3; } 60% { opacity: 1; scale: 1.8; } 100% { opacity: 1; scale: 1.25; rotate: 45deg; } }
+/* outer frame, clockwise from the top; then the wheel's rim; then its heart */
+.tb-gems i:nth-child(1) { --x: 50%; --y: 5.4%; --s: 9%; --a: 0; }
+.tb-gems i:nth-child(2) { --x: 89.3%; --y: 7.9%; --s: 13%; --a: .099; }
+.tb-gems i:nth-child(3) { --x: 95.4%; --y: 47%; --s: 6.5%; --a: .25; }
+.tb-gems i:nth-child(4) { --x: 89.3%; --y: 89.1%; --s: 13%; --a: .406; }
+.tb-gems i:nth-child(5) { --x: 50%; --y: 90.3%; --s: 9%; --a: .5; }
+.tb-gems i:nth-child(6) { --x: 10.7%; --y: 89.1%; --s: 13%; --a: .594; }
+.tb-gems i:nth-child(7) { --x: 4.6%; --y: 47%; --s: 6.5%; --a: .75; }
+.tb-gems i:nth-child(8) { --x: 10.7%; --y: 7.9%; --s: 13%; --a: .901; }
+.tb-gems i:nth-child(9) { --x: 50%; --y: 22.9%; --s: 8%; --a: 0; }
+.tb-gems i:nth-child(10) { --x: 67.9%; --y: 34%; --s: 5%; --a: .123; }
+.tb-gems i:nth-child(11) { --x: 82.4%; --y: 47%; --s: 7%; --a: .25; }
+.tb-gems i:nth-child(12) { --x: 67.9%; --y: 59.5%; --s: 5%; --a: .373; }
+.tb-gems i:nth-child(13) { --x: 50%; --y: 69.8%; --s: 8%; --a: .5; }
+.tb-gems i:nth-child(14) { --x: 32.1%; --y: 59.5%; --s: 5%; --a: .627; }
+.tb-gems i:nth-child(15) { --x: 17.6%; --y: 47%; --s: 7%; --a: .75; }
+.tb-gems i:nth-child(16) { --x: 32.1%; --y: 34%; --s: 5%; --a: .877; }
+.tb-gems i:nth-child(17) { --x: 50%; --y: 46.9%; --s: 22%; --a: 1; }
+.bd-back.locked .tb-sheen, .bd-back.locked .tb-flare, .bd-back.locked .tb-gems { display: none; }
+
+/* cards out of sight (binder.js): a binder holds hundreds of them, their animations wait */
+.tc.off, .tc.off::before, .tc.off::after, .tc.off *, .tc.off *::before, .tc.off *::after { animation-play-state: paused !important; }
+.tc.off .tb-sheen, .tc.off .tb-flare { display: none; }
+@media (prefers-reduced-motion: reduce) {
+  .tb-sheen, .tb-flare, .tb-gems { display: none; }
+}

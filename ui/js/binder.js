@@ -19,8 +19,12 @@ const HOW = {
 };
 const state = { view: "cards", role: "all", show: "all", q: "", chaos: true };
 const PIP = ["none", "played", "rare", "epic", "legendary"];
-// a card back, in the chosen design (animated for the unlocked ones)
-const backHTML = (skin = data && data.card_back) => `<div class="tc back" data-skin="${esc(skin || "hextech")}"></div>`;
+// a card back, in the chosen design (animated for the unlocked ones): a light turns over the metal and the gems
+// catch it as it passes (each back at its own point of the turn); hovered, or about to be revealed, they all light up
+// in turn
+const BACK_PARTS = `<span class="tb-sheen"></span><span class="tb-flare"></span><span class="tb-gems">${"<i></i>".repeat(17)}</span>`;
+const backHTML = (skin = data && data.card_back, attrs = "", inner = "") =>
+  `<div class="tc back" data-skin="${esc(skin || "hextech")}" style="--phase:-${(Math.random() * 8).toFixed(2)}s"${attrs}>${BACK_PARTS}${inner}</div>`;
 const NEED = {
   cards: (n) => t("{0} cartes obtenues", n),
   chaos: (n) => t("{0} cartes de rôles chaos", n),
@@ -161,7 +165,7 @@ function paintTools() {
 
 // a card: metal frame by level, art window, role icon in the frame's ring, name plate
 export function cardHTML(c, opts = {}) {
-  if (opts.back) return `<div class="tc back" data-skin="${esc(data.card_back)}" data-id="${esc(c.id)}" title="${esc(t("Carte à ouvrir"))}"><span class="tc-new">${esc(t("à ouvrir"))}</span></div>`;
+  if (opts.back) return backHTML(data.card_back, ` data-id="${esc(c.id)}" title="${esc(t("Carte à ouvrir"))}"`, `<span class="tc-new">${esc(t("à ouvrir"))}</span>`);
   const lv = opts.level != null ? opts.level : shown(c);
   const L = levelOf(lv);
   const master = lv === 4 && data && data.masters.includes(c.key);
@@ -177,8 +181,19 @@ export function cardHTML(c, opts = {}) {
   </div>`;
 }
 
+// only the cards in sight move: a binder holds hundreds of them, the others' animations wait (class "off")
+const inSight = new IntersectionObserver((list) => list.forEach((e) => e.target.classList.toggle("off", !e.isIntersecting)));
+
+function watchCards() {
+  inSight.disconnect();
+  root.querySelectorAll(".tc").forEach((el) => inSight.observe(el));
+}
+
 function paintGrid() {
-  if (state.view === "champs") return paintChamps();
+  if (state.view === "champs") {
+    paintChamps();
+    return watchCards();
+  }
   const box = root.querySelector("#bd-grid");
   box.className = "bd-grid";
   const q = norm(state.q);
@@ -187,12 +202,13 @@ function paintGrid() {
     && (state.show === "all" || (state.show === "got" ? c.level >= 1 : c.level < 4)));
   if (!list.length) {
     box.innerHTML = `<div class="card empty">${esc(t("Aucune carte ici pour l'instant."))}</div>`;
-    return;
+    return watchCards();
   }
   // obtained cards first, best first; then the rest by name
   list.sort((a, b) => b.level - a.level || a.name.localeCompare(b.name) || ROLES.indexOf(a.role) - ROLES.indexOf(b.role));
   box.innerHTML = list.map((c) => cardHTML(c, { back: data.pending.includes(c.id) })).join("");
   box.querySelectorAll(".tc.back").forEach((el) => (el.onclick = () => openBooster([el.dataset.id])));
+  watchCards();
 }
 
 // one tile per champion: completion ring, how many roles done, the five roles by level; a click shows its cards
