@@ -118,7 +118,7 @@ function paintTools() {
   };
 }
 
-// a card: metal frame by level, art window, role medallion, name plate with one gem per level reached
+// a card: metal frame by level, art window, role icon in the frame's ring, name plate
 export function cardHTML(c, opts = {}) {
   if (opts.back) return `<div class="tc back" data-id="${esc(c.id)}" title="${esc(t("Carte à ouvrir"))}"><div class="tc-art"></div><span class="tc-new">${esc(t("à ouvrir"))}</span></div>`;
   const lv = opts.level != null ? opts.level : shown(c);
@@ -128,11 +128,11 @@ export function cardHTML(c, opts = {}) {
   const detail = c.at && lv ? ` · ${c.queue || ""} · ${c.at} · ${t("{0} parties, {1} victoires", c.games, c.wins)}` : "";
   return `<div class="tc lv${lv}${master ? " master" : ""}" data-id="${esc(c.id)}" title="${esc(`${c.name} ${ROLE_LABEL[c.role]} — ${t(L.label)}. ${how}${detail}`)}">
     <div class="tc-art"><img src="${img.tall(c.key)}" alt="" loading="lazy"><span class="tc-foil"></span></div>
+    <span class="tc-frame"></span><span class="tc-prism"></span>
     <span class="tc-medal">${roleIcon(c.role)}</span>
-    ${c.guide ? "" : `<span class="tc-medal chaos" title="${esc(t("Rôle chaos"))}">${CHAOS_ICON}</span>`}
+    ${c.guide ? "" : `<span class="tc-chaos" title="${esc(t("Rôle chaos"))}">${CHAOS_ICON}</span>`}
     ${master ? `<span class="tc-crown" title="${esc(t("Champion maître"))}">♛</span>` : ""}
-    <div class="tc-plate"><b>${esc(c.name)}</b><span class="tc-sub">${esc(ROLE_LABEL[c.role])} · ${esc(master ? t("Maître") : t(L.label))}</span>
-      <span class="tc-gems">${[1, 2, 3, 4].map((n) => `<i class="${lv >= n ? "on" : ""}"></i>`).join("")}</span></div>
+    <div class="tc-plate"><b>${esc(c.name)}</b><span class="tc-sub">${esc(ROLE_LABEL[c.role])} · ${esc(master ? t("Maître") : t(L.label))}</span></div>
   </div>`;
 }
 
