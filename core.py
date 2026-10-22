@@ -2099,7 +2099,8 @@ class Core:
                                   "level": lvl, "shown": min(lvl, seen.get(k, 0)), "games": c.get("games", 0),
                                   "wins": c.get("wins", 0), "at": c.get("at"), "full": c.get("full"),
                                   "stamps": stamps.get(k, []) if lvl >= collection.CARD else [],
-                                  "queue": T(lol.queue_name(c["queue"])) if c.get("queue") else None})
+                                  "queue": T(lol.queue_name(c["queue"])) if c.get("queue") else None,
+                                  "elo": self._elo_view(c.get("elo"))})
             masters = [key for key in d.champs
                        if all((got.get(d.combo_key(key, r)) or {}).get("level") == collection.LEGENDARY for r in ROLES)]
             backs = [dict(b, label=T(b["label"])) for b in self._binder_backs(got)]
@@ -2108,6 +2109,15 @@ class Core:
             return {"cards": cards, "pending": self._binder_pending(got), "masters": masters, "backs": backs,
                     "title": self._title_text(pick) if pick else None,
                     "card_back": self._card_back(got), "account": bool(self.profile["account_puuid"])}
+
+    @staticmethod
+    def _elo_view(r):
+        """The best win of a card: "Gold II", where (ranked queue, or a normal game with the solo/duo rank) and when."""
+        if not r:
+            return None
+        label = ("%s %s" % (T(lol.TIER_LABEL[r["tier"]]), r["division"])).strip()
+        where = T(lol.RANKED_LABEL.get(r["queue"], "")) if r["ranked"] else T("normale (ton rang Solo/duo)")
+        return {"tier": r["tier"], "label": label, "where": where, "date": r.get("date")}
 
     def api_binder_open(self, ids=None):
         """Cards opened (revealed): they show at their new level from now on."""

@@ -1888,6 +1888,30 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 .rw-theme:disabled { cursor: default; opacity: .4; }
 .rw-theme small { font: 500 10.5px/1.2 var(--ui); color: var(--muted); }
 
+/* a card's details (clicked in the binder) */
+.cd { display: grid; grid-template-columns: 250px minmax(280px, 380px); gap: 30px; align-items: center; padding: 34px 40px 32px; }
+.cd-card { width: 250px; aspect-ratio: 5 / 7; }
+.cd-card .tc { width: 100%; height: 100%; cursor: default; }
+.cd-card .tc-plate b { font-size: 21px; }
+.cd-card .tc-sub { display: block; font-size: 10.5px; }
+.cd-info h2 { margin: 6px 0 4px; font: 26px/1.15 var(--display); color: var(--gold-pale); }
+.cd-info > p { margin: 0 0 14px; }
+.cd-row { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 8px 0; border-top: 1px solid var(--hair); }
+.cd-row span { color: var(--muted); font-size: 13px; }
+.cd-row b { display: grid; justify-items: end; gap: 2px; font-weight: 600; color: var(--text); text-align: right; }
+.cd-row small { font: 12px/1.3 var(--ui); color: var(--muted); font-weight: 400; }
+.cd-tier { font-style: normal; font: 15px/1.1 var(--display); letter-spacing: .06em; }
+.cd-tier.t-iron { color: #a39a92; } .cd-tier.t-bronze { color: #c98c62; } .cd-tier.t-silver { color: #c3ccd6; }
+.cd-tier.t-gold { color: #e7c46e; } .cd-tier.t-platinum { color: #5fd0c2; } .cd-tier.t-emerald { color: #3fcf86; }
+.cd-tier.t-diamond { color: #8fb2ff; } .cd-tier.t-master { color: #c27bff; } .cd-tier.t-grandmaster { color: #ff6b6b; }
+.cd-tier.t-challenger { color: #ffd98a; }
+.cd-stamps { display: grid; gap: 8px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--hair); }
+.cd-stamps > div { display: grid; grid-template-columns: 26px 1fr; grid-template-areas: "i b" "i s"; column-gap: 10px; align-items: center; }
+.cd-stamps .tc-stamp { grid-area: i; position: static; width: 26px; height: 26px; }
+.cd-stamps b { grid-area: b; font-size: 13px; } .cd-stamps small { grid-area: s; font-size: 12px; color: var(--muted); }
+.bd-grid .tc:not(.back):not(.lv0) { cursor: pointer; }
+@media (max-width: 760px) { .cd { grid-template-columns: 1fr; justify-items: center; } }
+
 /* "Éclat d'argent" booster opening (rewards path): the back cracks from its wheel and bursts into silver shards */
 .bk-stage.silver .bk-flip { transform-style: flat; transform: scale(.86); }
 .bk-stage.silver.flipped .bk-flip { transform: scale(1); }

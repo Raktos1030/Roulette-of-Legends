@@ -16,6 +16,8 @@ fills nothing.
 """
 
 RANKED = {420, 440}
+TIERS = ("IRON", "BRONZE", "SILVER", "GOLD", "PLATINUM", "EMERALD", "DIAMOND", "MASTER", "GRANDMASTER", "CHALLENGER")
+DIVISIONS = ("IV", "III", "II", "I")
 CS_REROLLS = ("champion_banned", "champion_taken", "autofill")   # reasons of a champ select reroll
 LEVELS = ("locked", "played", "rare", "epic", "legendary")
 CARD = 2        # first level that is a card (rare); a played champion only shows greyed
@@ -59,6 +61,21 @@ def roll_full(mode, reason, replaced, entries):
     return False
 
 
+def rank_of(e):
+    """Elo of a game: the rank of its queue at the start for a ranked game, the solo/duo rank otherwise (recorded since
+    2.6); None when unranked or still in placements."""
+    r = e.get("lp_before") or e.get("rank_ref")
+    if not r or r.get("provisional") or r.get("tier") not in TIERS:
+        return None
+    apex = TIERS.index(r["tier"]) >= 7
+    return {"tier": r["tier"], "division": "" if apex else r.get("division") or "", "queue": r.get("queue"),
+            "ranked": bool(e.get("lp_before"))}
+
+
+def rank_value(r):
+    return TIERS.index(r["tier"]) * 4 + (DIVISIONS.index(r["division"]) if r["division"] in DIVISIONS else 0)
+
+
 def level_of(entry, full):
     if not entry.get("win"):
         return 1
@@ -86,6 +103,9 @@ def cards(entries, account=None):
         c["wins"] += bool(e.get("win"))
         if level > c["level"]:
             c.update(level=level, at=e.get("date"), queue=e.get("queue"), full=full)
+        rank = rank_of(e) if e.get("win") else None
+        if rank and (not c.get("elo") or rank_value(rank) >= rank_value(c["elo"])):   # the best win (the latest on a tie)
+            c["elo"] = dict(rank, date=e.get("date"), game_queue=e.get("queue"))
     return out
 
 

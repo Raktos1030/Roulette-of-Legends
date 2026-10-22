@@ -1010,5 +1010,10 @@
 "Classique": "Classic",
 "Infernale": "Infernal",
 "Ouverture des boosters": "Booster opening",
-"Éclat d'argent": "Silver Shine"
+"Éclat d'argent": "Silver Shine",
+"normale (ton rang Solo/duo)": "normal game (your Solo/duo rank)",
+"Obtenue": "Earned",
+"Meilleure victoire": "Best win",
+"Elo inconnu (victoire d'avant la version 2.6, ou sans rang)": "Elo unknown (a win from before version 2.6, or unranked)",
+"Pas encore de victoire": "No win yet"
 }

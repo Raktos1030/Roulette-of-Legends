@@ -830,7 +830,7 @@ class RollHistory:
                 g["role"] = None
                 self._insert(g)
             for k in ("game_id", "queue", "played", "win", "kda", "duration", "ended", "lp_before", "lp", "lp_protected",
-                      "src", "puuid"):
+                      "rank_ref", "src", "puuid"):
                 e.pop(k, None)
             if e is rolls[-1]:
                 e["status"] = "pending"
@@ -944,6 +944,10 @@ class RollHistory:
         qt = RANKED_QUEUES.get(queue_id)
         if qt and ranked and ranked.get(qt):
             e["lp_before"] = dict(ranked[qt], queue=qt)
+        elif ranked and ranked.get("RANKED_SOLO_5x5"):   # elo of a game outside ranked (binder cards): the solo/duo rank
+            r = ranked["RANKED_SOLO_5x5"]
+            e["rank_ref"] = {"tier": r.get("tier"), "division": r.get("division"), "provisional": r.get("provisional"),
+                             "queue": "RANKED_SOLO_5x5"}
         self.save()
         return kind
 

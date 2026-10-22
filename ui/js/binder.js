@@ -1,7 +1,7 @@
 // Binder page: one card per champion and role, filled by the games played on a roll (collection.py). New or improved
 // cards stay face down until opened, one by one, in the booster window.
 import { esc, img, roleIcon, norm, ROLES, ROLE_LABEL, CHAOS_ICON, t } from "./util.js";
-import { store, on, toast, backdrop } from "./ctx.js";
+import { store, on, toast, backdrop, openModal } from "./ctx.js";
 import { call } from "./api.js";
 import * as sound from "./sound.js";
 
@@ -355,6 +355,7 @@ function paintGrid() {
   list.sort((a, b) => b.level - a.level || a.name.localeCompare(b.name) || ROLES.indexOf(a.role) - ROLES.indexOf(b.role));
   box.innerHTML = list.map((c) => cardHTML(c, { back: data.pending.includes(c.id) })).join("");
   box.querySelectorAll(".tc.back").forEach((el) => (el.onclick = () => openBooster([el.dataset.id])));
+  box.querySelectorAll(".tc:not(.back):not(.lv0)").forEach((el) => (el.onclick = () => openCard(el.dataset.id)));
   watchCards();
 }
 
@@ -423,6 +424,32 @@ document.addEventListener("pointerout", (e) => {
   el.style.setProperty("--rx", "0deg");
   el.style.setProperty("--ry", "0deg");
 });
+
+// --- a card's details (clicked): the card big, how it was earned, its best win and the elo of it ---------
+function openCard(id) {
+  const c = data.cards.find((x) => x.id === id);
+  if (!c) return;
+  const lv = shown(c), L = levelOf(lv);
+  const master = lv === 4 && data.masters.includes(c.key);
+  const row = (k, v) => `<div class="cd-row"><span>${esc(k)}</span><b>${v}</b></div>`;
+  const e = c.elo;
+  const { box } = openModal(`<div class="cd">
+    <div class="cd-card">${cardHTML(c)}</div>
+    <div class="cd-info">
+      <span class="kicker">${esc(master ? t("Champion maître") : t(L.label))}</span>
+      <h2>${esc(c.name)} · ${esc(ROLE_LABEL[c.role])}${c.guide ? "" : ` <span class="bk-chaos">${CHAOS_ICON}${esc(t("chaos"))}</span>`}</h2>
+      <p class="muted">${esc(lv ? t(HOW[L.id]) : "")}</p>
+      ${row(t("Parties jouées"), c.games)}${row(t("Victoires"), c.wins)}
+      ${c.at ? row(t("Obtenue"), esc(`${c.queue || ""} · ${c.at}`)) : ""}
+      ${row(t("Meilleure victoire"), e ? `<i class="cd-tier t-${e.tier.toLowerCase()}">${esc(e.label)}</i><small>${esc(e.where)}${e.date ? " · " + esc(e.date) : ""}</small>`
+        : `<small>${esc(c.wins ? t("Elo inconnu (victoire d'avant la version 2.6, ou sans rang)") : t("Pas encore de victoire"))}</small>`)}
+      ${(c.stamps || []).length ? `<div class="cd-stamps">${c.stamps.map((s) => {
+        const info = STAMP_INFO.find((x) => x[0] === s) || [s, s, ""];
+        return `<div><i class="tc-stamp ${s}">${STAMP_SVG[s]}</i><b>${esc(t(info[1]))}</b><small>${esc(t(info[2]))}</small></div>`;
+      }).join("")}</div>` : ""}
+    </div></div>`);
+  box.style.width = "auto";
+}
 
 // --- booster: cards revealed one by one ---------------------------------------------------------
 // "Éclat d'argent" opening: the back cracks from its wheel, then bursts into shards (polygons in % of the card)
