@@ -24,7 +24,8 @@ from core import DATA, UI_DIR, log_error
 TYPES = {".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8",
          ".js": "text/javascript; charset=utf-8", ".json": "application/json; charset=utf-8",
          ".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".svg": "image/svg+xml",
-         ".ico": "image/x-icon", ".ttf": "font/ttf", ".otf": "font/otf", ".woff2": "font/woff2", ".webp": "image/webp"}
+         ".ico": "image/x-icon", ".ttf": "font/ttf", ".otf": "font/otf", ".woff2": "font/woff2", ".webp": "image/webp",
+         ".mp3": "audio/mpeg"}
 ROOTS = {"ui": UI_DIR, "img": os.path.join(DATA, "img"), "fonts": os.path.join(DATA, "fonts")}
 
 

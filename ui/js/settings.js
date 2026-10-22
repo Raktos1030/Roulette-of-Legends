@@ -241,6 +241,7 @@ function paintAbout() {
       <dt>${esc(t("Statistiques"))}</dt><dd>lolalytics.com, u.gg</dd>
       <dt>${esc(t("Profils de champions"))}</dt><dd>Meraki Analytics</dd>
       <dt>${esc(t("Illustrations"))}</dt><dd>Riot Games (Data Dragon)</dd>
+      <dt>${esc(t("Sons"))}</dt><dd>ElevenLabs (elevenlabs.io), Kenney</dd>
       <dt>${esc(t("Police des titres"))}</dt><dd>${esc(t("Marcellus SC (licence OFL)"))}</dd>
     </dl>
     <p class="legal">${esc(isLite()
