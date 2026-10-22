@@ -1552,7 +1552,7 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 
 @media (max-width: 1100px) { .bd-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (prefers-reduced-motion: reduce) {
-  .tc.lv4, .tc.lv3 .tc-foil, .tc.lv4 .tc-art::before, .tc.master::before, .bd-pack .tc, .tc-new, .bk-stage.flipped .bk-burst, .bk-sparks { animation: none; }
+  .tc.back::after, .tc.lv4, .tc.lv3 .tc-foil, .tc.lv4 .tc-art::before, .tc.master::before, .bd-pack .tc, .tc-new, .bk-stage.flipped .bk-burst, .bk-sparks { animation: none; }
 }
 
 /* card backs: one image per design; the unlocked designs move */
@@ -1613,3 +1613,13 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 .bc-pip.rare { border-color: #dfe6f0; color: #dfe6f0; }
 .bc-pip.epic { border-color: #f0d58f; color: #f0d58f; box-shadow: 0 0 6px rgba(240, 213, 143, .4); }
 .bc-pip.legendary { border-color: #b48cff; color: #e7dcff; box-shadow: 0 0 8px rgba(180, 140, 255, .55); background: rgba(139, 108, 255, .15); }
+
+/* the roulette in the middle of every back really turns: same image, a disc of the wheel (inside its rim) rotated
+   (all the backs share the layout: wheel centered at 47 % of the height, rim radius 25 % of the width) */
+.tc.back::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: inherit;
+  clip-path: circle(20.7% at 50% 47%); transform-origin: 50% 47%; }
+.tc.back:hover::after { animation: backRoll 2.6s cubic-bezier(.15, .7, .2, 1) both; }
+.bd-pack .tc.back:nth-child(3)::after { animation: backWheel 12s linear infinite; }
+.bk-stage:not(.flipped) .bk-rear .tc.back::after { animation: backRoll 1.15s cubic-bezier(.35, 0, .25, 1) both; }
+@keyframes backWheel { to { transform: rotate(360deg); } }
+@keyframes backRoll { from { transform: rotate(0deg); } to { transform: rotate(720deg); } }

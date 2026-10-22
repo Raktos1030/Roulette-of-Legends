@@ -302,7 +302,8 @@ function openBooster(ids) {
         </div>
       </div>`;
     call("binder_open", { ids: [c.id] });
-    requestAnimationFrame(() => setTimeout(() => box.querySelector(".bk-stage").classList.add("flipped"), 350));
+    // the back's roulette spins, then the card turns over
+    requestAnimationFrame(() => setTimeout(() => box.querySelector(".bk-stage").classList.add("flipped"), 1150));
     box.querySelector("[data-next]").onclick = next;
     const all = box.querySelector("[data-all]");
     if (all) all.onclick = async () => {
