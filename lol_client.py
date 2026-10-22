@@ -761,6 +761,7 @@ class RollHistory:
         self.path = path
         self.cid_to_key = cid_to_key
         self.entries = []
+        self.account = None   # current LoL account: each one has its own rolls (pending roll, matching)
         self.load()
 
     # --- storage ---
@@ -843,11 +844,16 @@ class RollHistory:
         return changed
 
     # --- rolls ---
+    def mine(self, e):
+        """Entry of the current LoL account (entries recorded without one, by older versions, belong to all)."""
+        owner = e.get("account") or e.get("puuid")
+        return not (self.account and owner and owner != self.account)
+
     def rolls(self):
-        return [e for e in self.entries if not e.get("free")]
+        return [e for e in self.entries if not e.get("free") and self.mine(e)]
 
     def last_roll(self):
-        return next((e for e in reversed(self.entries) if not e.get("free")), None)
+        return next((e for e in reversed(self.entries) if not e.get("free") and self.mine(e)), None)
 
     def pending(self):
         e = self.last_roll()
@@ -881,6 +887,8 @@ class RollHistory:
             prev["closed"] = now
         entry = {"id": int(now * 1000), "created": now, "date": time.strftime("%d/%m %H:%M", time.localtime(now)),
                  "key": key, "role": role, "status": "pending"}
+        if self.account:
+            entry["account"] = self.account
         if mode:
             entry["mode"] = mode
         if full is not None:

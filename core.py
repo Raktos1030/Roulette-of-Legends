@@ -347,6 +347,7 @@ class Profile:
         "import_runes": True, "import_spells": True, "import_items": True, "import_replace": False,
         "build_pick": {},   # build variant picked per guide (Build tab), imported in champ select
         "account_puuid": None,   # last connected LoL account: the history shows its games
+        "favs_by_account": {},   # favorites of the other LoL accounts (the current one's are the fav_* keys)
         "board_geom": None,      # scoreboard grid (Tab), measured once for the resolution and HUD scale
         "roulette_paused": False,   # games don't count for the roulette, the current roll stays pending
         "app_update_seen": None,    # newer app version whose notice was dismissed
@@ -862,6 +863,7 @@ class Core:
         set_lang(self.profile.get("lang") or system_lang())   # before the data: names and guides in that language
         self.data = Data()
         self.history = lol.RollHistory(HISTORY_PATH, self.data.cid_to_key)
+        self.history.account = self.profile["account_puuid"]
         self.events = queue.Queue()      # League client events
         self.actions = queue.Queue()     # tray icon / second launch actions
         self.overlay_cmds = queue.Queue()   # overlay commands (preview, placement)
@@ -1795,6 +1797,25 @@ class Core:
         self.emit("overlay_placed", self.profile["overlay_pos"])
 
     # --- history ----------------------------------------------------------------------
+    FAV_KEYS = ("fav_champs", "fav_combos", "fav_roles", "only_fav_roles", "only_fav_champs")
+
+    def _switch_account(self, account):
+        """Another LoL account in the client: its own history, pending roll, binder and favorites (a new account starts
+        with the favorites of the previous one)."""
+        p = self.profile
+        old = p["account_puuid"]
+        others = dict(p["favs_by_account"] or {})
+        if old:
+            others[old] = {k: p[k] for k in self.FAV_KEYS}
+        for k, v in (others.pop(account, None) or {}).items():
+            p.data[k] = v
+        p.data["favs_by_account"] = others
+        p.data["account_puuid"] = account
+        p.save()
+        self.history.account = account
+        self._binder_pending_n = (account, len(self._binder_pending()))
+        self.emit("profile", self._profile_view())
+
     def _history_changed(self):
         self.emit("history", {"recent": self._recent_view(), "roll": self._roll_view()})
         self.emit("cs", self._cs_view())
@@ -1896,8 +1917,7 @@ class Core:
         """kind: all (every game and roll), roulette (rolls), free (games without the roulette)."""
         with self.lock:
             d = self.data
-            account = self.profile["account_puuid"]
-            mine = [e for e in self.history.entries if not (account and e.get("puuid") and e["puuid"] != account)]
+            mine = [e for e in self.history.entries if self.history.mine(e)]
             out = []
             for e in mine:
                 if kind == "roulette" and e.get("free") or kind == "free" and not e.get("free"):
@@ -2405,7 +2425,7 @@ class Core:
                 self._on_lol_state(ev)
             elif t == "history":
                 if ev.get("puuid") and ev["puuid"] != self.profile["account_puuid"]:
-                    self.profile["account_puuid"] = ev["puuid"]
+                    self._switch_account(ev["puuid"])
                     changed = True
                 if self.history.on_history(ev.get("games") or [], ev.get("puuid"), self.profile["roulette_paused"]):
                     changed = True
