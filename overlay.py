@@ -30,7 +30,7 @@ from tkinter import font as tkfont
 
 import hud
 import live
-from analysis import counter_items, guess_roles, matchup_vs, strip_goal, team_profile, third_person
+from analysis import counter_items, guess_roles, guide_combos, labelled, matchup_vs, strip_goal, team_profile, third_person
 from core import (APP_DIR, DATA, GAMES_DIR, LITE, ROLES, ROLE_LABEL, ROLE_LONG, ROLE_ICON, OVERLAY_PAGES, OVERLAY_MODULES,
                   fmt_int, fmt_pct, log_error, T)
 
@@ -306,7 +306,7 @@ class Doc:
 
     def wrap(self, s, fnt, maxw):
         out, cur = [], ""
-        for word in s.split():
+        for word in s.translate(NO_GLYPH).split():
             t = (cur + " " + word) if cur else word
             if self.tw(t, fnt) <= maxw or not cur:
                 cur = t
@@ -320,6 +320,7 @@ class Doc:
     # --- primitives (recorded, drawn at render) ---
     def text(self, x, y, s, fnt, color, anchor="l", track=0, alpha=255):
         """Text; y = top of the line; anchor: l (left), r (right), m (center). Returns the box."""
+        s = s.translate(NO_GLYPH)
         w = self.tw(s, fnt, track)
         x0 = x if anchor == "l" else x - w if anchor == "r" else x - w / 2
         self.ops.append(("text", x0, y, s, fnt, rgba(color, alpha), track))
@@ -418,6 +419,19 @@ class Doc:
         else:
             self.y = self.lines(x, self.y, s, fnt, color, self.W - self.pad - x)
         self.y += self.px(4)
+
+    def label_col(self, labels):
+        """Width of a column of row labels (rows), long labels wrapping."""
+        return min(max([self.tw(lab.upper(), self.f("disp", 8.5)) for lab in labels if lab] or [0]), self.inner * 0.34)
+
+    def rows(self, items, color=C_GOLD_L, size=11.5, bold=True, lw=None):
+        """(label, text) lines read at a glance: the labels in a column, the texts aligned beside them."""
+        lf, vf = self.f("disp", 8.5), self.f("ui_b" if bold else "ui", size)
+        lw = self.label_col([lab for lab, _ in items]) if lw is None else lw
+        for lab, s in items:
+            x = self.pad + (lw + self.px(9) if lw else 0)
+            bottom = self.lines(self.pad, self.y + self.px(2.5), lab.upper(), lf, C_MUTED, lw) if lab else self.y
+            self.y = max(bottom, self.lines(x, self.y, s, vf, color, self.W - self.pad - x)) + self.px(6)
 
     # --- rendering ---
     def render(self, placing=False):
@@ -1825,11 +1839,18 @@ class Overlay:
         if not c:
             p.section(T("Fiche"))
             p.para(T("Pas de fiche pour %s %s.") % (data.champ_name(key), ROLE_LABEL.get(role, "")), C_MUTED)
-        elif page == "early":
-            p.section(T("Début de partie"))
-            p.para(g.get("early_game"))
-            p.section(T("Plan de jungle") if role == "jgl" else T("Plan de lane"))
-            p.para(g.get("jungle_plan") if role == "jgl" else g.get("lane_plan"))
+        elif page == "early":   # at a glance: the combos and power spikes (the explanations are in the app)
+            combos = guide_combos(g)[:6]
+            spikes = [labelled(s)[0] for s in (g.get("power_spikes") or [])[:4] if labelled(s)]
+            lw = p.label_col([lab for lab, _ in combos + spikes])
+            p.section(T("Combos"))
+            if combos:
+                p.rows(combos, lw=lw)
+            else:
+                p.para(g.get("trading"))
+            if spikes:
+                p.section(T("Pics de puissance"))
+                p.rows(spikes, C_TEXT, size=11, bold=False, lw=lw)
         elif page == "matchup":
             if opp:
                 m = next((e for e in c["matchups"].get("all") or [] if e.get("key") == opp), None)
@@ -2169,6 +2190,7 @@ class Overlay:
         panel.place()
 
 
+NO_GLYPH = str.maketrans({"→": "›"})   # characters the overlay fonts don't have (the guides' combo arrows)
 MODULE_WIDTH = {"guide": 340, "skills": 156, "stats": 224, "items": 118, "gold": 210, "objectives": 236}
 # skills, items and stats sit on the HUD without a frame, where the u.gg widgets they replace would be
 MODULE_STYLE = {"skills": "bare", "items": "bare", "stats": "bare"}

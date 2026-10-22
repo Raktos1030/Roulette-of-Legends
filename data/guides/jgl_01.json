@@ -15,7 +15,7 @@
     ],
     "lane_plan": "",
     "jungle_plan": "Clear complet en commençant par le côté opposé à ta lane la plus gankable, avec W et E sur les camps. Fin de premier clear vers le niveau 4 : gank la lane qui a la meilleure wave ou fais le crabe. Amumu n'aime pas être envahi : garde vision sur tes entrées de jungle et prends les Larves du Néant (une seule apparition, vers 8 min) quand ta botlane ou ta toplane a la priorité. Suis le jungler adverse via ses premiers camps et contre-gank si ta lane est attaquée. Ton meilleur moment : combats d'objectif après le niveau 6, où ton ultime change tout. Ta quête de rôle (vitesse en jungle, or et XP sur les gros monstres) récompense les clears propres.",
-    "trading": "En gank, entre par le côté (bush de rivière) pour que ton Q ne soit pas bloqué par les sbires. En escarmouche, attends que l'adversaire utilise son dash avant de lancer Q. En teamfight, Q sur la cible la plus proche du groupe, puis R au milieu de plusieurs ennemis. Abandonne si ton Q est bloqué et que l'adversaire a une fuite.",
+    "trading": "En gank : Q depuis le côté (bush de rivière, pour que les sbires ne le bloquent pas) → E → W, puis la seconde charge de Q si la cible fuit. En escarmouche : attends que l'adversaire utilise son dash, puis Q. En teamfight : Q sur la cible la plus proche du groupe → R au milieu de plusieurs ennemis. Abandonne si ton Q est bloqué et que l'adversaire a une fuite.",
     "threats": [
       "Junglers agressifs qui t'envahissent en early (Lee Sin, Graves).",
       "Q bloqués par les sbires ou par Mur de vent.",

@@ -924,5 +924,8 @@
 "Relancer le build": "Reroll the build",
 "Tiré au hasard pour ce tirage : {0}. Le reste vient de la fiche. Il s'importe dans LoL au verrouillage et l'overlay le suit.": "Drawn at random for this roll: {0}. The rest comes from the guide. It is imported into LoL when you lock in, and the overlay follows it.",
 "Nouveau build tiré.": "New build drawn.",
-"Ce build ne peut plus être relancé : la partie a commencé.": "This build can't be rerolled anymore: the game has started."
+"Ce build ne peut plus être relancé : la partie a commencé.": "This build can't be rerolled anymore: the game has started.",
+"Niv. %s": "Lvl %s",
+"Combos": "Combos",
+"Pics de puissance": "Power spikes"
 }

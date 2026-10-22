@@ -182,6 +182,38 @@ def counter_items(data, combo, enemies):
     return out
 
 
+def labelled(text):
+    """"Label : text." sentences of a guide paragraph (French or English) -> [(label or None, text)]."""
+    out = []
+    for sent in re.split(r"(?<=[.!])\s+", (text or "").strip()):
+        m = re.match(r"^([^:.]{2,32}?)\s?:\s(.+?)\.?$", sent)
+        out.append((m.group(1), m.group(2)) if m else (None, sent.rstrip(".")))
+    return [x for x in out if x[1]]
+
+
+COMBO_LEVEL = re.compile(r"(?i)^(combo|all-in|kit|full|premier gank|first gank|gank)")
+
+
+def guide_combos(g):
+    """Combos of a guide, to read at a glance (overlay): the labelled ones of its trading paragraph (short trade,
+    all-in, defense, gank...), then the level 2, 3 and 6 combos not already there. Explanations in brackets are
+    left to the guide."""
+    out, seen = [], set()
+
+    def add(label, seq):
+        seq = re.sub(r"\s*\([^)]*\)", "", seq).strip()
+        if label and seq not in seen and re.search(r"→|\b[QWER]{1,2}\b", seq):
+            seen.add(seq)
+            out.append((label, seq))
+    for label, seq in labelled(g.get("trading")):
+        add(label, seq)
+    for lv in ("2", "3", "6"):
+        for label, seq in labelled(g.get("level_" + lv)):
+            if label and "→" in seq and COMBO_LEVEL.match(label):
+                add(T("Niv. %s") % lv, seq)
+    return out
+
+
 def strip_goal(text):
     for prefix in ("Pour gagner cette partie, tu veux ", "To win this game, you want to "):
         if text.startswith(prefix) and len(text) > len(prefix):

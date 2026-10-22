@@ -15,7 +15,7 @@
   ],
   "lane_plan": "",
   "jungle_plan": "Full clear starting on the side opposite your most gankable lane, using W and E on camps. You finish the first clear around level 4: gank the lane with the best wave or take Scuttle. Amumu hates being invaded: keep vision on your jungle entrances and take the Void Grubs (one spawn only, around 8 minutes) when your bot or top lane has priority. Track the enemy jungler from their first camps and counter-gank if your lane gets attacked. Your best moment: objective fights after level 6, where your ultimate changes everything. Your role quest (jungle speed, gold and XP from big monsters) rewards clean clears.",
-  "trading": "When ganking, come in from the side (river bush) so your Q doesn't get blocked by minions. In skirmishes, wait for your opponent to use their dash before throwing Q. In teamfights, Q on the target closest to the group, then R in the middle of several enemies. Give up on it if your Q gets blocked and your opponent has an escape.",
+  "trading": "Ganking: Q from the side (river bush, so minions don't block it) → E → W, then the second Q charge if the target runs. Skirmishing: wait for your opponent to use their dash, then Q. Teamfighting: Q on the target closest to the group → R in the middle of several enemies. Give up on it if your Q gets blocked and your opponent has an escape.",
   "threats": [
    "Aggressive junglers who invade you early (Lee Sin, Graves).",
    "Qs blocked by minions or Wind Wall.",
