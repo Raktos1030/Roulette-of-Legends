@@ -405,7 +405,7 @@ function duoHTML(v) {
       ${du.bad.length ? card(t("Duos à éviter"), `<div class="duo-minis">${du.bad.map(mini).join("")}</div>`, "orange") : ""}
       ${card(who === "ADC" ? t("ADC les plus fréquents") : t("Supports les plus fréquents"), `<div class="duo-minis">${du.frequent.map(mini).join("")}</div>`)}
     </div>
-    <p class="src-line span-all">${esc(t("lolalytics · 30 jours · Émeraude+ · {0} {1} avec au moins {2} parties en duo · classement lissé (un duo sur peu de parties ne passe pas devant un duo éprouvé)", du.n_partners, who, int(du.min_n)))}</p>
+    <p class="src-line span-all">${esc(t("lolalytics · 30 jours · Émeraude+ · {0} {1} avec au moins {2} parties en duo · classés selon les victoires du duo, sa popularité et le rôle habituel du partenaire (un duo rare ou hors rôle ne passe pas devant un duo éprouvé)", du.n_partners, who, int(du.min_n)))}</p>
   </div>`;
 }
 

@@ -39,6 +39,7 @@ UROLE = {"top": "4", "jgl": "1", "mid": "5", "adc": "3", "sup": "2"}
 EVOLVE_CHAMPS = {"Khazix", "Viktor", "Kaisa"}    # champions with evolving abilities (order given by u.gg)
 SK = "QWER"
 K_SHRINK = 500
+DUO_POP = .3   # weight of a bot lane pair's popularity in its rank (duo_score)
 STATE_PATH = os.path.join(DATA, "update.json")
 CACHE = os.path.join(DATA, "cache")
 CHECK_EVERY = 6 * 3600
@@ -314,17 +315,28 @@ def bench(d):
 
 
 def duo_partners(role, role_share, combos):
-    """Champions that really play that role: a guide there, or at least ROLE_MIN_SHARE % of their games."""
-    return ({c["key"] for c in combos.values() if c["role"] == role}
-            | {k for k, share in role_share.items() if (share.get(role) or 0) >= ROLE_MIN_SHARE})
+    """Champions that really play that role, with the share of their games there (%): at least ROLE_MIN_SHARE %,
+    or a guide in that role (100 when the shares are unknown)."""
+    out = {k: share[role] for k, share in role_share.items() if (share.get(role) or 0) >= ROLE_MIN_SHARE}
+    for c in combos.values():
+        if c["role"] == role:
+            out.setdefault(c["key"], (role_share.get(c["key"]) or {}).get(role) or 100)
+    return out
+
+
+def duo_score(e, base):
+    """Rank of a bot lane pair: its win rate above the champion's average, weighted by how often the pair is played
+    (a rare pairing is played by its specialists: its win rate says less about what anyone else would get, and
+    rests on fewer games) and by how much the partner really plays that role (Yasuo ADC: 15 % of his games).
+    Senna support: Nilah (58 %, 2,400 games) and Jhin (55 %, 35,000) ahead of Yasuo, Karthus, Swain ADC."""
+    return (e["wr"] - base) * e["pr"] ** DUO_POP * min(1, e["share"] / 50) ** .5
 
 
 def duos(role, d_team, base, names, keys, partners=None):
-    """Bot lane partners: which supports an ADC wins the most with (and the other way around). Same rules as
-    matchups: enough games, played enough, win rate shrunk toward the champion's average (a duo over 300 games
-    doesn't rank above a duo over 5,000). partners: champions that really play the partner's role (those with a
-    guide there, or enough of their games: duo_partners); others (Tahm Kench "ADC" next to a Senna support...)
-    stay out of the lists."""
+    """Bot lane partners: which supports an ADC wins the most with (and the other way around), ranked by duo_score
+    among the pairs with enough games and played enough. partners: champions that really play the partner's role,
+    with their share of games there (duo_partners); others (Tahm Kench "ADC" next to a Senna support...) stay out
+    of the lists."""
     lane = DUO_LANE.get(role)
     allrows = [r for r in (((d_team or {}).get("team") or {}).get(lane) or []) if isinstance(r, list) and len(r) >= 6]
     if not allrows:
@@ -341,14 +353,15 @@ def duos(role, d_team, base, names, keys, partners=None):
         o, wr, _d1, d2, pr, n = r[:6]
         if partners is not None and keys.get(o) not in partners:
             continue
-        ents.append({"cid": o, "name": names.get(o, str(o)), "key": keys.get(o), "wr": round(wr, 2), "n": n,
-                     "pr": round(pr, 2), "syn": round(d2, 2),
-                     "shr": round((wr * n + base * K_SHRINK) / (n + K_SHRINK), 2),
-                     "rel": "solide" if n >= 3000 else "correct" if n >= 1000 else "limite"})
+        e = {"cid": o, "name": names.get(o, str(o)), "key": keys.get(o), "wr": round(wr, 2), "n": n, "pr": round(pr, 2),
+             "syn": round(d2, 2), "share": round(partners.get(keys.get(o), 100) if partners is not None else 100, 1),
+             "rel": "solide" if n >= 3000 else "correct" if n >= 1000 else "limite"}
+        e["score"] = round(duo_score(e, base), 3)
+        ents.append(e)
     if not ents:
         return None
-    good = sorted(ents, key=lambda e: -e["shr"])[:6]
-    bad = [e for e in sorted(ents, key=lambda e: e["shr"]) if e not in good][:4]
+    good = [e for e in sorted(ents, key=lambda e: -e["score"]) if e["score"] > 0][:6]
+    bad = [e for e in sorted(ents, key=lambda e: e["score"]) if e["score"] < 0][:4]
     return {"partner": "sup" if role == "adc" else "adc", "base": base, "min_n": min_n, "min_pr": min_pr,
             "n_partners": len(ents), "total": total, "good": good, "bad": bad,
             "frequent": sorted(ents, key=lambda e: -e["n"])[:6],
