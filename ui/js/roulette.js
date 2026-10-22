@@ -820,7 +820,9 @@ async function rerollOne(i) {
 }
 
 async function copyDiscord() {
-  const lines = [t("🎲 Roulette of Legends · tirage du groupe"), ...gResult.map((p) => t("• {0} : {1} ({2})", p.name, p.champ, p.role_label))];
+  const title = (await call("rewards")).title_label;   // the title picked in the rewards path, after my name
+  const lines = [t("🎲 Roulette of Legends · tirage du groupe"), ...gResult.map((p) =>
+    t("• {0} : {1} ({2})", p.me && title ? `${p.name} « ${title} »` : p.name, p.champ, p.role_label))];
   const text = lines.join("\n");
   try {
     await navigator.clipboard.writeText(text);

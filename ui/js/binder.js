@@ -18,7 +18,7 @@ const HOW = {
   epic: "Victoire en classée avec rôle choisi, ou hors classée en full random",
   legendary: "Victoire en classée, full random",
 };
-const state = { view: "cards", role: "all", show: "all", q: "", chaos: true };
+const state = { page: "col", view: "cards", role: "all", show: "all", q: "", chaos: true };
 const PIP = ["none", "played", "rare", "epic", "legendary"];
 // a card back, in the chosen design (animated for the unlocked ones): a light turns over the metal and the gems
 // catch it as it passes (each back at its own point of the turn); hovered, or about to be revealed, they all light up
@@ -44,24 +44,143 @@ export function renderBinder(page) {
       <h1 class="page-title">${esc(t("Classeur"))}</h1>
       <p class="page-sub muted">${esc(t("Une carte par champion et par rôle. Joue le champion que la roulette te tire pour l'obtenir, gagne avec pour la faire monter. Le full random en classée donne les légendaires."))}</p>
     </div></header>
-    <div id="bd-stats" class="bd-stats"></div>
-    <div id="bd-booster"></div>
-    <div id="bd-backs"></div>
-    <div id="bd-tools" class="bd-tools"></div>
-    <div id="bd-grid" class="bd-grid"></div>
+    <div class="seg bd-pages" id="bd-pages"></div>
+    <div id="bd-col">
+      <div id="bd-stats" class="bd-stats"></div>
+      <div id="bd-booster"></div>
+      <div id="bd-backs"></div>
+      <div id="bd-tools" class="bd-tools"></div>
+      <div id="bd-grid" class="bd-grid"></div>
+    </div>
+    <div id="bd-rw" hidden></div>
   </div>`;
+  paintPages();
   load();
   unsub && unsub();
   unsub = on((type) => {
     if (!root || !document.body.contains(root)) return;
     if (type === "binder" || type === "history") load();
+    if (type === "rewards") paintPages();
   });
 }
+
+// --- the two pages of the binder: the collection, the rewards path -----------------------------
+function paintPages() {
+  const box = root.querySelector("#bd-pages");
+  const unseen = store.boot.rewards_unseen || 0;
+  box.innerHTML = [["col", t("Collection")], ["rw", t("Récompenses")]].map(([p, l]) =>
+    `<button data-page="${p}" class="${state.page === p ? "on" : ""}">${esc(l)}${p === "rw" && unseen ? `<b class="bd-new">${unseen}</b>` : ""}</button>`).join("");
+  box.querySelectorAll("[data-page]").forEach((b) => (b.onclick = () => {
+    state.page = b.dataset.page;
+    showPage();
+  }));
+  root.querySelector("#bd-col").hidden = state.page !== "col";
+  root.querySelector("#bd-rw").hidden = state.page !== "rw";
+}
+
+async function showPage() {
+  paintPages();
+  if (state.page !== "rw") return;
+  const r = await call("rewards");
+  if (!root || r.error) return;
+  paintRewards(r);
+  if (r.steps.some((s) => s.new)) setTimeout(() => call("rewards_seen"), 1500);   // shown once as new
+}
+
+const COND = {
+  rolls: (n) => t("{0} tirages joués", n),
+  cards: (n) => t("{0} cartes (rare ou mieux)", n),
+  flawless: (n) => (n === 1 ? t("Une victoire sans mourir") : t("{0} victoires sans mourir", n)),
+  chaos: (n) => t("{0} cartes de rôles chaos", n),
+  epics: (n) => t("{0} cartes épiques ou légendaires", n),
+  domination: () => t("Le plus de dégâts des 10 joueurs d'une partie"),
+  roles: (n) => t("{0} cartes dans chacun des 5 rôles", n),
+  penta: () => t("Un pentakill"),
+  legendary: (n) => t("{0} légendaires", n),
+  masters: () => t("Un champion maître (ses 5 rôles légendaires)"),
+};
+const KIND_ICON = {
+  title: `<svg viewBox="0 0 24 24"><path d="M6 4h12v3.5a6 6 0 0 1-12 0z"/><path d="M12 13.5V18"/><path d="M8 20h8"/><path d="M6 6H3.5a3 3 0 0 0 3 3.6M18 6h2.5a3 3 0 0 1-3 3.6"/></svg>`,
+  joker: `<svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M12 7.5l1.3 2.9 3.1.3-2.4 2 .8 3.1L12 14.2 9.2 15.8l.8-3.1-2.4-2 3.1-.3z"/></svg>`,
+  stamp: `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="5"/><path d="M12 7v1.6M12 15.4V17M7 12h1.6M15.4 12H17"/></svg>`,
+  back: `<svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.5"/><circle cx="12" cy="12" r="3.6"/><path d="M12 6v2.4M12 15.6V18"/></svg>`,
+  theme: `<svg viewBox="0 0 24 24"><path d="M12 3.5a8.5 8.5 0 1 0 0 17c1.3 0 1.9-.9 1.9-1.8 0-1.4-1.2-1.6-1.2-2.8 0-1 .8-1.6 1.8-1.6h2a4 4 0 0 0 4-4C20.5 6.6 16.7 3.5 12 3.5z"/><circle cx="7.8" cy="11" r="1.1"/><circle cx="10.5" cy="7.5" r="1.1"/><circle cx="15" cy="7.8" r="1.1"/></svg>`,
+  roulette: `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="2.5"/><path d="M12 3.5v6M12 14.5v6M3.5 12h6M14.5 12h6"/></svg>`,
+  opening: `<svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg>`,
+};
+
+function paintRewards(r) {
+  const box = root.querySelector("#bd-rw");
+  const done = r.steps.filter((s) => s.done).length;
+  const next = r.steps.find((s) => !s.done);
+  const pct = (s) => Math.min(...s.conds.map((c) => c.have / c.goal));
+  const cond = (s) => s.conds.map((c) => COND[c.counter](c.goal)).join(t(" et "));
+  const have = (s) => s.conds.map((c) => `${c.have}/${c.goal}`).join(" · ");
+  const reward = (x) => `<span class="rw-gift ${x.kind}${x.ready ? "" : " soon"}" title="${esc(x.ready ? "" : t("Arrive dans une prochaine version"))}">${KIND_ICON[x.kind] || ""}${esc(x.label)}${x.ready ? "" : `<em>${esc(t("bientôt"))}</em>`}</span>`;
+  const j = r.joker;
+  box.innerHTML = `
+    <section class="card rw-hero">
+      <div class="rw-count"><span class="kicker">${esc(t("Parcours de récompenses"))}</span><b>${done}<small> / ${r.steps.length}</small></b>
+        <i class="rw-bar"><em style="width:${((100 * done) / r.steps.length).toFixed(1)}%"></em></i></div>
+      ${next ? `<div class="rw-next"><span class="kicker">${esc(t("Prochain palier"))}</span><b>${esc(next.name)}</b>
+        <span class="muted">${esc(cond(next))} · ${esc(have(next))}</span><i class="rw-bar"><em style="width:${(100 * pct(next)).toFixed(1)}%"></em></i>
+        <div class="rw-gifts">${next.rewards.map(reward).join("")}</div></div>`
+        : `<div class="rw-next"><b>${esc(t("Parcours terminé : bravo !"))}</b></div>`}
+    </section>
+    <div class="rw-side">
+      <section class="card rw-joker${j.available ? " on" : ""}">
+        <h3 class="card-title">${KIND_ICON.joker}${esc(t("Joker"))}</h3>
+        <p>${esc(!j.unlocked ? t("Se débloque au premier palier.") : j.available ? t("Disponible : sur ton tirage en attente, il le passe sans le compter comme annulé, et la roulette relance.")
+          : t("Revient dans {0} tirages joués.", j.next_in))}</p>
+        <small class="muted">${esc(t("Un seul en réserve, regagné tous les 10 tirages joués : le hasard reste roi."))}</small>
+      </section>
+      <section class="card rw-titles">
+        <h3 class="card-title">${KIND_ICON.title}${esc(t("Ton titre"))}</h3>
+        ${r.titles.length ? `<div class="rw-chips">${[{ id: "", label: t("Aucun") }, ...r.titles].map((x) =>
+          `<button class="chip${(r.title || "") === x.id ? " on" : ""}" data-title="${esc(x.id)}"><span class="ck"></span>${esc(x.label)}</button>`).join("")}</div>
+          <small class="muted">${esc(t("Affiché dans ton classeur et dans le texte « Copier » de la roulette de groupe."))}</small>`
+          : `<p class="muted">${esc(t("Le premier titre arrive au premier palier."))}</p>`}
+      </section>
+    </div>
+    <section class="card rw-path">
+      <h3 class="card-title">${esc(t("Les paliers"))}</h3>
+      ${r.steps.map((s, i) => `<div class="rw-step${s.done ? " done" : ""}${s.new ? " new" : ""}${s === next ? " next" : ""}">
+        <span class="rw-n">${s.done ? "✓" : i + 1}</span>
+        <div class="rw-main"><b>${esc(s.name)}${s.new ? `<em class="rw-tag">${esc(t("Nouveau"))}</em>` : ""}</b><small>${esc(cond(s))}</small>
+          ${s.done ? "" : `<i class="rw-bar"><em style="width:${(100 * pct(s)).toFixed(1)}%"></em></i>`}</div>
+        <div class="rw-gifts">${s.rewards.map(reward).join("")}</div>
+        <span class="rw-have">${s.done ? esc(t("Débloqué")) : esc(have(s))}</span>
+      </div>`).join("")}
+    </section>
+    <section class="card rw-stamps">
+      <h3 class="card-title">${KIND_ICON.stamp}${esc(t("Les tampons d'exploit"))}</h3>
+      <p class="muted">${esc(t("Ils se posent sur la carte du champion et du rôle de la partie, pour toujours."))}</p>
+      <div class="rw-stamp-list">${STAMP_INFO.map(([id, name, how]) => `<div><i class="tc-stamp ${id}">${STAMP_SVG[id]}</i><b>${esc(t(name))}</b><small>${esc(t(how))}</small></div>`).join("")}</div>
+    </section>`;
+  box.querySelectorAll("[data-title]").forEach((b) => (b.onclick = async () => {
+    const res = await call("set_title", { title: b.dataset.title || null });
+    if (res.error) return toast(res.error, "bad");
+    showPage();
+  }));
+}
+
+// exploit stamps on the cards (rewards.py)
+const STAMP_SVG = {
+  flawless: `<svg viewBox="0 0 24 24"><path d="M12 3l7 2.8v5.6c0 4.3-3 7.9-7 9.6-4-1.7-7-5.3-7-9.6V5.8z"/><path d="M8.6 12.1l2.3 2.3 4.5-4.6"/></svg>`,
+  domination: `<svg viewBox="0 0 24 24"><path d="M5 5l9.5 9.5M19 5L9.5 14.5"/><path d="M12.8 16.2l2 2M11.2 16.2l-2 2"/><path d="M5 5h3v3M19 5h-3v3"/><path d="M16 17.5l2.5 2.5M8 17.5L5.5 20"/></svg>`,
+  penta: `<svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.8z"/></svg>`,
+};
+const STAMP_INFO = [
+  ["flawless", "Sans faillir", "Gagner sans mourir une seule fois."],
+  ["domination", "Domination", "Faire le plus de dégâts aux champions des 10 joueurs."],
+  ["penta", "Pentakill", "Réussir un pentakill."],
+];
 
 async function load() {
   const r = await call("binder");
   if (!root || r.error) return;
   data = r;
+  if (state.page === "rw") showPage();
   paintStats();
   paintBooster();
   paintBacks();
@@ -178,6 +297,7 @@ export function cardHTML(c, opts = {}) {
     <span class="tc-frame"></span><span class="tc-prism"></span>
     <span class="tc-medal">${roleIcon(c.role)}</span>
     ${c.guide ? "" : `<span class="tc-chaos" title="${esc(t("Rôle chaos"))}">${CHAOS_ICON}</span>`}
+    ${(c.stamps || []).length ? `<span class="tc-stamps">${c.stamps.map((s) => `<i class="tc-stamp ${s}" title="${esc(t((STAMP_INFO.find((x) => x[0] === s) || [])[1] || ""))}">${STAMP_SVG[s]}</i>`).join("")}</span>` : ""}
     ${master ? `<img class="tc-crown" src="/img/cards/crown.webp" alt="" title="${esc(t("Champion maître"))}">` : ""}
     <div class="tc-plate"><b>${esc(c.name)}</b><span class="tc-sub">${esc(ROLE_LABEL[c.role])} · ${esc(master ? t("Maître") : t(L.label))}</span></div>
   </div>`;

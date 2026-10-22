@@ -20,6 +20,7 @@ import collection
 import lol_client as lol
 import lolassets
 import randombuild
+import rewards
 
 
 # Lite edition: a separate app built with lite/rol_lite.py. Roulette (solo, group, chaos), favorites and history
@@ -343,6 +344,8 @@ class Profile:
         "only_fav_champs": False, "no_repeat": True, "lol_dir": None, "tray_hint_shown": False, "overlay_tab_seen": False,
         "binder_seen": {},   # collection binder: per LoL account, the level of each card already opened
         "card_back": "hextech",   # back of the binder cards (unlocked by milestones, collection.BACKS)
+        "rewards_seen": {},   # rewards path: per LoL account, the steps already shown (the others are "new")
+        "title": None,        # title picked among the ones won (rewards.py)
         "overlay_mode": "tab", "overlay_side": "right", "overlay_page": "early",
         "overlay_pos": None, "overlay_scale": 1.0, "overlay_opacity": 0.95, "overlay_modules": {},
         "auto_update": True, "seen_update": None, "glossary_hints": True, "ambient": True, "usage_stats": True,
@@ -728,7 +731,7 @@ _LABELS.append((CHECK_LABEL, dict(CHECK_LABEL)))
 
 REASON_TEXT = {"champion_taken": "champion pris", "champion_banned": "champion banni",
                "rerolled": "relancé avant de jouer", "rerolled_offline": "relancé sans client LoL connecté",
-               "not_rift": "partie hors Faille", "group_reroll": "relancé (groupe)"}
+               "not_rift": "partie hors Faille", "group_reroll": "relancé (groupe)", "joker": "passé avec un Joker"}
 
 
 def reason_text(r):
@@ -816,6 +819,9 @@ def entry_display(e, data):
         detail = " · ".join(parts)
     elif st == "remake":
         result, tone, glyph = T("Remake"), "muted", "≈"
+    elif st == "cancelled" and e.get("reason") == "joker":   # not a cancel: the Joker of the rewards path
+        result, tone, glyph = T("Joker"), "joker", "✦"
+        detail = reason_text("joker")
     elif st == "cancelled":
         result, tone, glyph = T("Annulé"), "cancel", "↺"
         detail = reason_text(e.get("reason", ""))
@@ -909,6 +915,8 @@ class Core:
         self.app_update = None
         self.just_updated = False   # started by an update that just finished (one notice)
         self._binder_pending_n = (self.profile["account_puuid"], len(self._binder_pending()))   # to signal new cards
+        self._details = {}   # recorded games read for the exploits (a finished game doesn't change)
+        self._rewards_done = (self.profile["account_puuid"], self._done_steps())   # to signal new steps
         self._installer = None
         try:
             if any(e.get("status") in ("played", "remake") and e.get("queue") and e["queue"] not in lol.SR_QUEUES
@@ -1030,6 +1038,7 @@ class Core:
                 "binder_pending": len(self._binder_pending()),
                 "binder_rings": self._binder_rings(self._binder_cards()),
                 "card_back": self._card_back(),
+                "rewards_unseen": self._rewards_unseen(),
                 "window": {"frameless": bool(getattr(self.ui, "frameless", False))},
                 "app": {"name": APP_NAME, "version": APP_VERSION},
                 "meta": {"patch": d.meta.get("patch"), "generated": d.meta.get("generated"),
@@ -1921,6 +1930,94 @@ class Core:
         if new > 0 and self.tray and self.tray.running and not getattr(self.ui, "visible", lambda: False)():
             self.tray.notify(T("Nouvelle carte à ouvrir dans ton classeur !") if new == 1
                              else T("%d nouvelles cartes à ouvrir dans ton classeur !") % new)
+        rw = self._rewards(got)
+        done = {s["id"] for s in rw["steps"] if s["done"]}
+        before = self._rewards_done[1] if self._rewards_done[0] == account else done   # not on an account switch
+        self._rewards_done = (account, done)
+        won = [T(s["name"]) for s in rw["steps"] if s["id"] in done - before]
+        self.emit("rewards", {"new": won, "unseen": len(done - self._rewards_seen()), "joker": rw["joker"]})
+        if won and self.tray and self.tray.running and not getattr(self.ui, "visible", lambda: False)():
+            self.tray.notify(T("Récompense débloquée : %s") % ", ".join(won))
+
+    # --- rewards path (rewards.py) ----------------------------------------------------------
+    def _detail(self, game_id):
+        """Recorded game, for the exploits (kept once read: a finished game doesn't change)."""
+        if game_id not in self._details:
+            d = lol.load_detail(GAMES_DIR, game_id)
+            if d is None:
+                return None   # not saved yet: read again next time
+            self._details[game_id] = d
+        return self._details[game_id]
+
+    def _masters(self, got):
+        d = self.data
+        return [k for k in d.champs if all((got.get(d.combo_key(k, r)) or {}).get("level") == collection.LEGENDARY for r in ROLES)]
+
+    def _rewards(self, got=None):
+        d = self.data
+        got = self._binder_cards() if got is None else got
+        mine = [e for e in self.history.entries if self.history.mine(e)]
+        stamps, count = rewards.exploits(mine, self._detail)
+        counts = rewards.counters(got, collection.milestones(got, set(d.combos), list(d.champs), ROLES), ROLES, mine, count)
+        steps = rewards.ladder(counts)
+        return {"steps": steps, "stamps": stamps, "joker": rewards.joker(mine),
+                "titles": rewards.titles(steps, [(k, d.champ_name(k)) for k in self._masters(got)])}
+
+    def _done_steps(self):
+        return {s["id"] for s in self._rewards()["steps"] if s["done"]}
+
+    def _rewards_seen(self):
+        return set((self.profile["rewards_seen"] or {}).get(self.profile["account_puuid"] or "-") or [])
+
+    def _rewards_unseen(self):
+        return len(self._done_steps() - self._rewards_seen())
+
+    @staticmethod
+    def _title_text(t):
+        return T(t["label"]).replace("{0}", t["arg"] or "")
+
+    def api_rewards(self):
+        """The rewards path: steps (progress, rewards, new), the Joker, the titles won and the one picked."""
+        with self.lock:
+            rw = self._rewards()
+            seen = self._rewards_seen()
+            steps = [dict(s, name=T(s["name"]), new=s["done"] and s["id"] not in seen,
+                          rewards=[dict(r, label=T(r["label"]).replace("{0}", "…")) for r in s["rewards"]]) for s in rw["steps"]]
+            titles = [{"id": t["id"], "label": self._title_text(t)} for t in rw["titles"]]
+            pick = self.profile["title"] if any(t["id"] == self.profile["title"] for t in titles) else None
+            return {"steps": steps, "joker": rw["joker"], "titles": titles, "title": pick,
+                    "title_label": next((t["label"] for t in titles if t["id"] == pick), None)}
+
+    def api_rewards_seen(self):
+        """The rewards page was shown: its new steps aren't new anymore."""
+        with self.lock:
+            allseen = dict(self.profile["rewards_seen"] or {})
+            allseen[self.profile["account_puuid"] or "-"] = sorted(self._done_steps())
+            self.profile["rewards_seen"] = allseen
+            self.emit("rewards", {"new": [], "unseen": 0})
+            return {"ok": True}
+
+    def api_set_title(self, title=None):
+        with self.lock:
+            if title and not any(t["id"] == title for t in self._rewards()["titles"]):
+                return {"error": T("Ce titre n'est pas encore débloqué.")}
+            self.profile["title"] = title or None
+            return {"ok": True}
+
+    def api_joker(self):
+        """Passes the pending roll with the Joker: closed as "joker" (not a cancel), the roulette can roll again."""
+        with self.lock:
+            e = self.history.pending()
+            if not e:
+                return {"error": T("Aucun tirage en attente.")}
+            if not rewards.joker([x for x in self.history.entries if self.history.mine(x)])["available"]:
+                return {"error": T("Pas de Joker en réserve pour l'instant.")}
+            e["status"], e["reason"], e["closed"] = "cancelled", "joker", time.time()
+            self.history.save()
+            self.set_status(T("Joker : %s %s passé, la roulette peut relancer.") % (self.data.champ_name(e["key"]),
+                                                                                  ROLE_LABEL.get(e["role"], "")), "gold", toast=False)
+            self._history_changed()
+            return {"ok": True}
 
     # --- collection binder (collection.py) ------------------------------------------------
     def _binder_cards(self):
@@ -1974,6 +2071,7 @@ class Core:
             d = self.data
             got = self._binder_cards()
             seen = self._binder_seen() or {}
+            stamps, _ = rewards.exploits([e for e in self.history.entries if self.history.mine(e)], self._detail)
             cards = []
             for key in sorted(d.champs, key=lambda k: norm(d.champ_name(k))):
                 for role in ROLES:
@@ -1983,6 +2081,7 @@ class Core:
                     cards.append({"id": k, "key": key, "name": d.champ_name(key), "role": role, "guide": k in d.combos,
                                   "level": lvl, "shown": min(lvl, seen.get(k, 0)), "games": c.get("games", 0),
                                   "wins": c.get("wins", 0), "at": c.get("at"), "full": c.get("full"),
+                                  "stamps": stamps.get(k, []) if lvl >= collection.CARD else [],
                                   "queue": T(lol.queue_name(c["queue"])) if c.get("queue") else None})
             masters = [key for key in d.champs
                        if all((got.get(d.combo_key(key, r)) or {}).get("level") == collection.LEGENDARY for r in ROLES)]

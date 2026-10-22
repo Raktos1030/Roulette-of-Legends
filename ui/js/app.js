@@ -169,16 +169,16 @@ function moveNavIndicator() {
 function paintBinderBadge() {
   const a = document.querySelector('.nav-item[data-p="binder"]');
   if (!a) return;
-  const n = store.boot.binder_pending || 0;
+  const n = store.boot.binder_pending || 0, rw = store.boot.rewards_unseen || 0;
   let b = a.querySelector(".nav-badge");
-  if (!n) return b && b.remove();
+  if (!n && !rw) return b && b.remove();
   if (!b) {
     b = document.createElement("b");
     b.className = "nav-badge";
     a.appendChild(b);
   }
-  b.textContent = n > 99 ? "99+" : n;
-  a.title = t("{0} cartes à ouvrir", n);
+  b.textContent = n ? (n > 99 ? "99+" : n) : "★";   // a star: only rewards to see
+  a.title = [n ? t("{0} cartes à ouvrir", n) : "", rw ? t("{0} récompenses débloquées", rw) : ""].filter(Boolean).join(" · ");
 }
 
 // the Guides tab shows the portrait of the open guide's champion
@@ -245,6 +245,12 @@ async function onEvent(msg) {
       paintRings();
       if (data.new > 0) toast(data.new === 1 ? t("Nouvelle carte à ouvrir dans ton classeur !") : t("{0} nouvelles cartes à ouvrir dans ton classeur !", data.new), "gold", 6500);
       dispatch("binder", data);
+      break;
+    case "rewards":
+      store.boot.rewards_unseen = data.unseen;
+      paintBinderBadge();
+      if ((data.new || []).length) toast(t("Récompense débloquée : {0}", data.new.join(", ")), "gold", 7000);
+      dispatch("rewards", data);
       break;
     case "app_update": {
       const fresh = (store.boot.app_update || {}).version !== data.version;
