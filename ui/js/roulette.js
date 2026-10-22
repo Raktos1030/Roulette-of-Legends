@@ -1,6 +1,6 @@
 // Roulette page (home): role and champion pick, animated strip, recent rolls.
 // The result opens in the Guides page.
-import { esc, pct, img, roleIcon, norm, ROLES, ROLE_LABEL, sleep, fmtDate, CHAOS_ICON, t } from "./util.js";
+import { esc, pct, img, roleIcon, norm, ROLES, ROLE_LABEL, sleep, fmtDate, CHAOS_ICON, DICE_ICON, RBUILD_PARTS, t } from "./util.js";
 import { store, on, setStatus, toast, backdrop, spinLogo, mechKick, mechRole, confirmBox, isLite, openUgg, UGG_SVG } from "./ctx.js";
 import { rollPromo, homePromo, wirePromo } from "./promo.js";
 import { call } from "./api.js";
@@ -135,9 +135,28 @@ function paintFilters() {
     ["no_repeat", esc(t("Pas de doublon dans la session"))],
   ];
   const box = root.querySelector("#filters");
+  // random build: each roll also draws the picked parts (not in Lite: no import nor overlay there)
+  const parts = p.rbuild_parts || [];
+  const rb = isLite() ? "" : `<span class="rb-sep"></span>
+    <button class="chip rb${p.rbuild_on ? " on" : ""}" data-rb title="${esc(t("Chaque tirage tire aussi un build au hasard : il s'importe dans LoL au verrouillage et l'overlay le suit"))}"><span class="ck"></span>${DICE_ICON}${esc(t("Build random"))}</button>
+    ${p.rbuild_on ? `<span class="rb-parts">${RBUILD_PARTS.map(([k, l]) => `<button class="rb-part${parts.includes(k) ? " on" : ""}" data-part="${k}">${esc(t(l))}</button>`).join("")}</span>` : ""}`;
   box.innerHTML = `<span class="ctl-label" style="margin:0 6px 0 2px">${esc(t("Filtres"))}</span>` +
-    chips.map(([k, l]) => `<button class="chip${p[k] ? " on" : ""}" data-k="${k}"><span class="ck"></span>${l}</button>`).join("");
-  box.querySelectorAll(".chip").forEach((c) => (c.onclick = async () => {
+    chips.map(([k, l]) => `<button class="chip${p[k] ? " on" : ""}" data-k="${k}"><span class="ck"></span>${l}</button>`).join("") + rb;
+  const save = async (key, value) => {
+    const r = await call("set_pref", { key, value });
+    if (r.error) return toast(r.error, "bad");
+    store.profile = r.profile;
+    paintFilters();
+  };
+  const rbChip = box.querySelector("[data-rb]");
+  if (rbChip) rbChip.onclick = () => save("rbuild_on", !p.rbuild_on);
+  box.querySelectorAll("[data-part]").forEach((b) => (b.onclick = () => {
+    const k = b.dataset.part;
+    const next = parts.includes(k) ? parts.filter((x) => x !== k) : [...parts, k];
+    if (!next.length) return toast(t("Garde au moins une partie du build à tirer."), "warn");
+    save("rbuild_parts", next);
+  }));
+  box.querySelectorAll(".chip[data-k]").forEach((c) => (c.onclick = async () => {
     const k = c.dataset.k;
     const r = await call("set_pref", { key: k, value: !store.profile[k] });
     if (r.error) return toast(r.error, "bad");
@@ -314,6 +333,7 @@ function paintStripRoll() {
         <div class="sr-kick">${esc(kicker)}</div>
         <div class="sr-name">${esc(roll.name)}</div>
         <div class="sr-role">${roleIcon(roll.role)}<span>${esc(roll.role_label)}</span>${roll.mode ? `<em>${esc(roll.mode)}</em>` : ""}</div>
+        ${roll.rbuild ? rbuildLine(roll.rbuild) : ""}
         <div class="sr-sub">${esc(sub)}</div>
         <div class="sr-act">
           ${isLite() ? `<button class="btn-gold sr-guide" data-ugg title="${esc(t("Ouvre la page u.gg de ce champion à ce poste dans ton navigateur"))}">${UGG_SVG}${esc(t("Voir sur u.gg"))}</button>`
@@ -336,6 +356,16 @@ function paintStripRoll() {
     store.profile = r.profile;
     paintStripRoll();
   };
+}
+
+// the roll's random build in short: keystone and secondary tree, summoner spells, items in buying order, max order
+function rbuildLine(b) {
+  const pic = (src, cls = "") => `<img class="${cls}" src="${src}" alt="" onerror="this.remove()">`;
+  return `<div class="sr-rb" title="${esc(t("Ton build random"))}">${DICE_ICON}
+    ${b.keystone ? pic(`/img/runes/${b.keystone}.png`) : ""}${b.sec ? pic(`/img/runes/${b.sec}.png`, "tree") : ""}
+    ${b.sums.length ? `<span class="rb-g">${b.sums.map((s) => pic(`/img/sums/${s}.png`)).join("")}</span>` : ""}
+    ${b.items.length ? `<span class="rb-g">${b.items.map((i) => pic(`/img/items/${i}.png`)).join("")}</span>` : ""}
+    ${b.prio ? `<b>${[...b.prio].join(" › ")}</b>` : ""}</div>`;
 }
 
 function preload(urls) {
@@ -407,7 +437,7 @@ function lock(on) {
   store.spinning = on;
   const b = root.querySelector("#launch");
   if (b) b.disabled = on;
-  root.querySelectorAll(".role-btn, .chip, #cf-input, .gp-row input, .gp-role, .gp-add, .gp-del, .gp-lobby, .gp-av, .gp-manual, .mode-tab, [data-reroll]")
+  root.querySelectorAll(".role-btn, .chip, .rb-part, #cf-input, .gp-row input, .gp-role, .gp-add, .gp-del, .gp-lobby, .gp-av, .gp-manual, .mode-tab, [data-reroll]")
     .forEach((x) => (x.disabled = on));
   // group list redrawn after a roll: lobby changes held during the spin, names and taken roles locked again
   if (!on && mode === "group" && gPlayers && !syncLobby()) paintGroupPanel();
@@ -477,6 +507,7 @@ export async function launch(opts = {}) {
       return;
     }
     await sleep(750);   // time to see the winning card
+    if (c.combo.build_pick === "random") store.nextTab = "build";   // the drawn build first
     showGuide(c.combo);
   } finally {
     lock(false);

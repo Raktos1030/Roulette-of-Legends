@@ -68,6 +68,8 @@ export const img = {
 export const ROLE_ICON = { top: "top", jgl: "jungle", mid: "middle", adc: "bottom", sup: "utility", random: "fill" };
 export const ROLE_LABEL = { top: "Top", jgl: "Jungle", mid: "Mid", adc: "ADC", sup: "Support", random: "Aléatoire" };
 export const ROLES = ["top", "jgl", "mid", "adc", "sup"];
+export const DICE_ICON = `<svg class="dice-ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="8.6" cy="8.6" r="1.5"/><circle cx="15.4" cy="8.6" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="8.6" cy="15.4" r="1.5"/><circle cx="15.4" cy="15.4" r="1.5"/></svg>`;
+export const RBUILD_PARTS = [["runes", "Runes"], ["spells", "Sorts d'invocateur"], ["items", "Objets"], ["skills", "Ordre des sorts"]];
 export const CHAOS_ICON = `<svg class="chaos-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c.6 3.3 3.9 4.6 3.9 8.5a3.9 3.9 0 0 1-7.8 0c0-1.5.6-2.6 1.4-3.5.2 1.6 1 2.5 2 2.5-1.1-2.6-.4-5.5.5-7.5z"/><path d="M6.4 9.6C5.2 11 4.5 12.8 4.5 14.7A7.5 7.5 0 0 0 12 22.2a7.5 7.5 0 0 0 7.5-7.5c0-2-.8-3.9-2.1-5.3"/></svg>`;
 
 export function roleIcon(role, cls = "") {

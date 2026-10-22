@@ -1742,3 +1742,31 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
   .bk-stage.crowned .bk-crownfall, .bk-stage.crowned .bk-fan-card { animation-duration: .01s; }
   .bk-stage.crowned .bk-shock, .bk-stage.crowned .bk-flash { display: none; }
 }
+
+/* random build: chip and parts on the roulette, short line on the roll card, variant of the Build tab */
+.dice-ic { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.7; }
+.dice-ic circle { fill: currentColor; stroke: none; }
+.rb-sep { width: 1px; height: 22px; margin: 0 4px; background: var(--hair-2); }
+.chip.rb { gap: 7px; }
+.chip.rb.on { color: #ffe3a0; }
+.rb-parts { display: inline-flex; gap: 4px; padding: 3px; border-radius: 11px; border: 1px solid var(--hair); background: rgba(255, 255, 255, .02); }
+.rb-part { padding: 6px 10px; border-radius: 8px; border: 0; background: none; color: var(--muted); font: 600 12px/1 var(--ui); cursor: pointer; transition: all .2s; }
+.rb-part:hover { color: var(--text); }
+.rb-part.on { color: #1b1408; background: linear-gradient(180deg, #f3dfae, var(--gold)); }
+.sr-rb { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 10px; color: var(--gold-hi); }
+.sr-rb > .dice-ic { width: 18px; height: 18px; margin-right: 2px; }
+.sr-rb img { width: 26px; height: 26px; border-radius: 6px; background: rgba(0, 0, 0, .35); }
+.sr-rb img.tree { width: 18px; height: 18px; background: none; }
+.sr-rb .rb-g { display: inline-flex; gap: 3px; padding-left: 6px; margin-left: 2px; border-left: 1px solid var(--hair-2); }
+.sr-rb b { padding-left: 8px; margin-left: 2px; border-left: 1px solid var(--hair-2); font: 700 13px/1 var(--num); letter-spacing: .06em; color: var(--gold-pale); }
+.bvar.rb .bv-l { display: inline-flex; align-items: center; gap: 6px; }
+.bvar.rb .dice-ic { width: 15px; height: 15px; }
+.bvar.rb.on { border-color: rgba(255, 211, 107, .8); background: linear-gradient(180deg, rgba(255, 211, 107, .2), var(--glass)); }
+.bimp.rb-again { order: 98; margin-left: auto; border-color: rgba(255, 211, 107, .55); background: linear-gradient(180deg, rgba(255, 211, 107, .16), rgba(255, 211, 107, .05)); color: #ffd36b; }
+.bvars:has(.rb-again) .bimp:not(.rb-again) { margin-left: 0; }
+.bimp.rb-again:hover:not(:disabled) { box-shadow: 0 0 20px rgba(255, 211, 107, .3); color: #fff3cf; }
+.bimp.rb-again:hover:not(:disabled) .dice-ic { animation: rbDice .6s var(--ease); }
+@keyframes rbDice { to { rotate: 360deg; } }
+.rb-note { grid-column: 1 / -1; display: flex; align-items: center; gap: 10px; margin: 0; padding: 10px 14px; border-radius: 12px; font-size: 13px; color: var(--gold-pale);
+  border: 1px solid rgba(255, 211, 107, .3); background: rgba(255, 211, 107, .07); }
+.rb-note .dice-ic { flex: none; width: 18px; height: 18px; color: #ffd36b; }

@@ -19,6 +19,7 @@ import unicodedata
 import collection
 import lol_client as lol
 import lolassets
+import randombuild
 
 
 # Lite edition: a separate app built with lite/rol_lite.py. Roulette (solo, group, chaos), favorites and history
@@ -352,6 +353,8 @@ class Profile:
         "favs_by_account": {},   # favorites of the other LoL accounts (the current one's are the fav_* keys)
         "board_geom": None,      # scoreboard grid (Tab), measured once for the resolution and HUD scale
         "roulette_paused": False,   # games don't count for the roulette, the current roll stays pending
+        "rbuild_on": False,         # each roll also draws a random build (randombuild.py)...
+        "rbuild_parts": list(randombuild.PARTS),   # ...of these parts
         "app_update_seen": None,    # newer app version whose notice was dismissed
     }
 
@@ -537,6 +540,7 @@ class Data:
         self.all_champs = read_json(os.path.join(DATA, "champions.json"), {}) or {}
         # items (total price, name) and runes (trees): overlay and champ select import
         items = (read_json(os.path.join(DATA, "items.json"), {}) or {}).get("items") or {}
+        self.items = items
         self.item_prices = {k: v.get("gold", 0) for k, v in items.items()}
         self.item_names = {k: v.get("name", "") for k, v in items.items()}
         self.item_cats = {k: v.get("cat") or [] for k, v in items.items()}
@@ -1052,7 +1056,8 @@ class Core:
         p = self.profile
         keys = ("fav_champs", "fav_combos", "fav_roles", "only_fav_roles", "only_fav_champs", "no_repeat",
                 "overlay_mode", "overlay_scale", "overlay_opacity", "auto_update", "glossary_hints", "lol_dir", "ambient", "usage_stats",
-                "import_runes", "import_spells", "import_items", "import_replace", "roulette_paused", "app_update_seen")
+                "import_runes", "import_spells", "import_items", "import_replace", "roulette_paused", "app_update_seen",
+                "rbuild_on", "rbuild_parts")
         out = {k: p[k] for k in keys}
         out["overlay_pos"] = p["overlay_pos"]
         out["overlay_modules"] = {m["id"]: p.module_cfg(m["id"]) for m in OVERLAY_MODULES}
@@ -1125,7 +1130,7 @@ class Core:
             "key": key, "role": pc["role"], "role_label": ROLE_LABEL[pc["role"]], "role_long": ROLE_LONG[pc["role"]],
             "share": pc.get("share") or 0, "month": month, "patch": None, "ugg": None,
             "form": {"label": fv, "tone": ft, "ref": 50.0}, "skills": pc.get("skills") or {},
-            "builds": self._builds_view(key), "build_pick": (self.profile.get("build_pick") or {}).get(key, "reco"),
+            "builds": self._builds_view(key), "build_pick": self._shown_pick(key),
             "matchups": mv, "notes": [], "duo": None, "fav": False,
             "chaos": {"from": cx["from"], "real": cx["real"], "games": cx["games"],
                       "from_label": "%s %s" % (d.combos[cx["from"]]["name"], ROLE_LABEL[d.combos[cx["from"]]["role"]])
@@ -1183,7 +1188,7 @@ class Core:
             },
             "guide": g,
             "builds": self._builds_view(key),
-            "build_pick": (self.profile.get("build_pick") or {}).get(key, "reco"),
+            "build_pick": self._shown_pick(key),
             "notes": notes,
             "fav": self.profile.is_combo_fav(c["key"], c["role"]),
             "fav_global": c["key"] in self.profile["fav_champs"],
@@ -1241,6 +1246,9 @@ class Core:
                 "n_partners": du.get("n_partners"), "min_n": du.get("min_n"), "total": du.get("total"),
                 "good": entries("good"), "bad": entries("bad"), "frequent": entries("frequent")}
 
+    def _shown_pick(self, key):
+        return "random" if self.rbuild_of(key) and self.active_build(key) else (self.profile.get("build_pick") or {}).get(key, "reco")
+
     def _builds_view(self, key):
         d = self.data
         rn = d.runes or {}
@@ -1253,7 +1261,8 @@ class Core:
             out.update(extra or {})
             return out
         out = []
-        for b in d.builds(key):
+        rb = self.active_build(key) if self.rbuild_of(key) else None
+        for b in ([rb] if rb else []) + d.builds(key):
             r = b["runes"]
             chosen = set(r["perks"])
             tree = lambda t, first: [[{"id": x, "name": names.get(str(x), {}).get("name", ""), "on": x in chosen}
@@ -1275,6 +1284,8 @@ class Core:
                  "core": dict({k: v2 for k, v2 in b["core"].items() if k != "ids"}, list=[item(i) for i in b["core"]["ids"]]),
                  "opts": [[item(o["id"], {"wr": o.get("wr"), "games": o.get("games")}) for o in col] for col in b.get("opts") or []],
                  "skills": b.get("skills") or {}}
+            if b["id"] == "random":
+                v["parts"] = b["parts"]
             out.append(v)
         return out
 
@@ -1305,9 +1316,83 @@ class Core:
         combo = self.data.combo_key(e.get("key"), e.get("role"))
         if combo not in self.data.combos and not self.data.is_chaos_key(combo):
             return None
+        rb = e.get("rbuild")
         return {"combo": combo, "key": e.get("key"), "name": self.data.champ_name(e.get("key")),
                 "role": e.get("role"), "role_label": ROLE_LABEL.get(e.get("role"), ""), "status": e.get("status"),
-                "mode": MODE_LABEL.get(e.get("mode"), "")}
+                "mode": MODE_LABEL.get(e.get("mode"), ""),
+                "rbuild": {"keystone": (rb.get("runes") or {}).get("perks", [None])[0], "sec": (rb.get("runes") or {}).get("sec"),
+                           "sums": (rb.get("sums") or {}).get("ids") or [], "items": (rb.get("core") or {}).get("ids") or [],
+                           "prio": (rb.get("skills") or {}).get("prio") or ""} if rb else None}
+
+    # --- random build (randombuild.py) ------------------------------------------------------
+    def _draw_rbuild(self, parts=None):
+        """The roll just saved also gets its random build, when the player asked for one (parts: drawn again)."""
+        e = self.history.last_roll()
+        p = self.profile
+        parts = parts or (p["rbuild_parts"] if p["rbuild_on"] else None)
+        if LITE or not e or not parts:
+            return
+        d = self.data
+        starts = {}
+        for k in d.by_role.get(e["role"]) or []:
+            for b in d.builds(k):
+                ids = tuple(b["start"]["ids"])
+                if ids:
+                    starts.setdefault(ids, b["start"])
+        e["rbuild"] = randombuild.draw(d, e["key"], e["role"], parts, list(starts.values()))
+        self.history.save()
+
+    def rbuild_of(self, combo_key):
+        """Random build of the current roll (pending or in game) when it is that champion in that role."""
+        e = self.history.last_roll()
+        if e and e.get("rbuild") and e.get("status") in ("pending", "in_game") \
+                and self.data.combo_key(e.get("key"), e.get("role")) == combo_key:
+            return e["rbuild"]
+        return None
+
+    def active_build(self, combo_key):
+        """Build imported in champ select and followed by the overlay: the guide's (variant picked in the Build tab),
+        with the drawn parts of the roll's random build over it."""
+        d = self.data
+        b = d.build_for(combo_key, (self.profile.get("build_pick") or {}).get(combo_key))
+        rb = self.rbuild_of(combo_key)
+        if not rb:
+            return b
+        out = {"start": {"ids": [], "counts": []}, "core": {"ids": []}, "sums": {"ids": []}, "opts": []}
+        out.update(b or {})
+        for k in ("runes", "sums", "start", "core"):
+            if rb.get(k):
+                out[k] = rb[k]
+        if rb.get("core"):
+            out["opts"] = []   # the drawn items are the whole build
+        if rb.get("skills"):
+            out["skills"] = {"path": rb["skills"]["order15"], "prio": rb["skills"]["prio"]}
+        out.update(id="random", label="Build random", src=None, games=None, wr=None, parts=rb.get("parts") or [])
+        return out if out.get("runes") else None
+
+    def active_skills(self, combo_key):
+        """Skill order followed in game ({"order15", "prio"}): the random build's, otherwise the guide's."""
+        rb = self.rbuild_of(combo_key)
+        if rb and rb.get("skills"):
+            return rb["skills"]
+        return (self.data.combos.get(combo_key) or {}).get("skills") or {}
+
+    def api_rbuild_reroll(self, key):
+        """"Draw another" button: a new random build for the pending roll."""
+        with self.lock:
+            e = self.history.last_roll()
+            rb = self.rbuild_of(key)
+            if not rb or e.get("status") != "pending":
+                return {"error": T("Ce build ne peut plus être relancé : la partie a commencé.")}
+            self._draw_rbuild(rb.get("parts") or list(randombuild.PARTS))
+            self.emit("history", {"recent": self._recent_view(), "roll": self._roll_view()})
+            st = self.import_state   # already imported in champ select: the new build goes to the client
+            if st and st.get("combo") == key and self.watcher:
+                opts = {k: self.profile[k] for k in ("import_runes", "import_spells", "import_items", "import_replace")}
+                enemies = [(self.data.cid_to_key[c], None) for c in (st.get("enemies") or []) if c in self.data.cid_to_key]
+                threading.Thread(target=self._do_import, args=(key, st["spells"], st["ident"], opts, None, enemies or None),
+                                 name="import", daemon=True).start()
+        return self.api_combo(key)
 
     def api_kits(self):
         """Skills of every champion (guide tooltips): {key: {name, kit}}."""
@@ -1577,6 +1662,7 @@ class Core:
             full = mine["role"] == "random" and not mine["champ"]
         self.history.add_roll(me["key"], me["role"], bool(self.lol_state.get("connected")), reason=reason, mode="group",
                               group=members, full=full)
+        self._draw_rbuild()
         self.drawn.add(me["combo"])
         if self.profile["roulette_paused"]:
             self.profile["roulette_paused"] = False
@@ -1626,6 +1712,7 @@ class Core:
             tracking = bool(self.lol_state.get("connected"))
             full = collection.roll_full(r["mode"], r["reason"], self.history.pending(), self.history.entries)
             self.history.add_roll(key, role, tracking, reason=r["reason"], mode=r["mode"], favs=r["favs"], full=full)
+            self._draw_rbuild()
             if self.profile["roulette_paused"]:   # rolling means wanting to play it: the pause ends
                 self.profile["roulette_paused"] = False
                 self.emit("profile", self._profile_view())
@@ -1685,7 +1772,8 @@ class Core:
     PREFS = {"only_fav_roles": bool, "only_fav_champs": bool, "no_repeat": bool, "auto_update": bool,
              "glossary_hints": bool, "ambient": bool, "usage_stats": bool, "overlay_mode": str, "overlay_scale": float,
              "overlay_opacity": float, "import_runes": bool, "import_spells": bool, "import_items": bool,
-             "import_replace": bool, "roulette_paused": bool, "app_update_seen": str}
+             "import_replace": bool, "roulette_paused": bool, "app_update_seen": str, "rbuild_on": bool,
+             "rbuild_parts": lambda v: [p for p in randombuild.PARTS if p in (v or [])]}
 
     def api_set_pref(self, key, value):
         with self.lock:
@@ -2586,9 +2674,9 @@ class Core:
         c = d.combo_any(combo_key)
         client = self.watcher.client
         label = "%s %s" % (c["name"], ROLE_LABEL[c["role"]])
-        build = d.build_for(combo_key, (self.profile.get("build_pick") or {}).get(combo_key))
+        build = self.active_build(combo_key)
         if build and build["id"] != "reco":
-            label += " (%s)" % build["label"]
+            label += " (%s)" % T(build["label"])
         jobs = [("runes", "Runes", opts["import_runes"],
                  lambda: imports.import_runes(client, build, imports.page_name(c["name"], ROLE_LABEL[c["role"]]),
                                               opts["import_replace"])),
@@ -2634,7 +2722,7 @@ class Core:
             if not self.watcher or not self.lol_state.get("connected"):
                 return {"error": T("Client LoL non détecté : ouvre-le pour importer.")}
             c = d.combos[key]
-            build = d.build_for(key, variant)
+            build = self.active_build(key) if variant == "random" else d.build_for(key, variant)
             if not build:
                 return {"error": T("Pas de build pour cette fiche.")}
             client = self.watcher.client

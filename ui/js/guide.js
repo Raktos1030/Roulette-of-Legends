@@ -1,5 +1,5 @@
 // Guide of a champion + role combo: illustrated header, live numbers and guide tabs.
-import { esc, pct, int, kilo, signed, img, roleIcon, linkify, firstSentence, ICONS, spellMeta, countUp, stagger, CHAOS_ICON, t, LANG } from "./util.js";
+import { esc, pct, int, kilo, signed, img, roleIcon, linkify, firstSentence, ICONS, spellMeta, countUp, stagger, CHAOS_ICON, DICE_ICON, RBUILD_PARTS, t, LANG } from "./util.js";
 import { store, backdrop, toast, openMenu, champAttr } from "./ctx.js";
 import { call } from "./api.js";
 
@@ -437,11 +437,14 @@ function buildHTML(v) {
   const list = v.builds || [];
   if (!list.length) return `<div class="grid">${card(t("Build"), `<p class="prose muted">${esc(t("Pas encore de build pour cette fiche : il arrive avec la prochaine mise à jour des statistiques."))}</p>`)}</div>`;
   const cur = list.find((b) => b.id === v.build_pick) || list[0];
+  const r0 = store.roll;
+  const reroll = cur.id === "random" && r0 && r0.combo === v.key && r0.status === "pending";
   const tabs = `<div class="bvars">
       <button class="bimp" data-import="${esc(cur.id)}" title="${esc(t("Envoie cette variante dans le client LoL : page de runes et set d'objets (sorts d'invocateur pendant la sélection)"))}">${IMPORT_SVG}${esc(t("Importer dans LoL"))}</button>
+      ${reroll ? `<button class="bimp rb-again" data-rbreroll title="${esc(t("Tire un autre build pour ce tirage"))}">${DICE_ICON}${esc(t("Relancer le build"))}</button>` : ""}
       ${list.map((b) => `
-        <button class="bvar${b.id === cur.id ? " on" : ""}" data-bvar="${esc(b.id)}">
-          <span class="bv-l">${esc(t(b.label))}</span>
+        <button class="bvar${b.id === cur.id ? " on" : ""}${b.id === "random" ? " rb" : ""}" data-bvar="${esc(b.id)}">
+          <span class="bv-l">${b.id === "random" ? DICE_ICON : ""}${esc(t(b.label))}</span>
           <span class="bv-ic"><img src="/img/runes/${b.runes.keystone}.png" alt="">${b.core.list[0] ? itemImg(b.core.list[0]) : ""}</span>
           ${b.games ? `<span class="bv-s">${pct(b.wr, 1)} · ${kilo(b.games)}</span>` : ""}
         </button>`).join("")}
@@ -471,7 +474,9 @@ function buildHTML(v) {
     : v.role === "jgl" ? t("Build de la fiche {0}, adapté au poste : Châtiment et compagnon de jungle. Ses chiffres ne valent plus ici.", v.chaos.from_label)
     : v.role === "sup" ? t("Build de la fiche {0}, adapté au poste : objet de support. Ses chiffres ne valent plus ici.", v.chaos.from_label)
     : t("Build de la fiche {0}, adapté au poste. Ses chiffres ne valent plus ici.", v.chaos.from_label))}</p>` : "";
-  return `<div class="grid">${note}${tabs}<div class="bgrid">${runesCard}${sums}${items}${ctr}${skills}</div></div>`;
+  const drawn = cur.id === "random" ? `<p class="rb-note">${DICE_ICON}${esc(t("Tiré au hasard pour ce tirage : {0}. Le reste vient de la fiche. Il s'importe dans LoL au verrouillage et l'overlay le suit.",
+    RBUILD_PARTS.filter(([k]) => (cur.parts || []).includes(k)).map(([, l]) => t(l).toLowerCase()).join(", ")))}</p>` : "";
+  return `<div class="grid">${note}${tabs}${drawn}<div class="bgrid">${runesCard}${sums}${items}${ctr}${skills}</div></div>`;
 }
 
 const IMPORT_SVG = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11"/><path d="m7.5 10 4.5 4.5 4.5-4.5"/><path d="M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>`;
@@ -512,6 +517,19 @@ function skillGrid(v, sk) {
 function wireTab(body, v, show) {
   const ib = body.querySelector("[data-import]");
   if (ib) ib.onclick = () => importBuild(v, ib.dataset.import, ib);
+  const rr = body.querySelector("[data-rbreroll]");
+  if (rr) rr.onclick = async () => {
+    rr.disabled = true;
+    const r = await call("rbuild_reroll", { key: v.key });
+    if (r.error) {
+      rr.disabled = false;
+      return toast(r.error, "warn");
+    }
+    v.builds = r.builds;
+    v.build_pick = r.build_pick;
+    show("build");
+    toast(t("Nouveau build tiré."), "gold");
+  };
   body.querySelectorAll("[data-combo]").forEach((b) => (b.onclick = () => import("./guides.js").then((m) => m.openCombo(b.dataset.combo))));
   body.querySelectorAll("[data-bvar]").forEach((b) => (b.onclick = async () => {
     v.build_pick = b.dataset.bvar;

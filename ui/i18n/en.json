@@ -915,5 +915,14 @@
 "%d nouvelles cartes à ouvrir dans ton classeur !": "%d new cards to open in your binder!",
 "{0} nouvelles cartes à ouvrir dans ton classeur !": "{0} new cards to open in your binder!",
 "Ses cinq rôles sont légendaires : {0} rejoint tes champions maîtres.": "All five roles are legendary: {0} joins your master champions.",
-"Dos de carte {0} débloqué !": "{0} card back unlocked!"
+"Dos de carte {0} débloqué !": "{0} card back unlocked!",
+"Build random": "Random build",
+"Chaque tirage tire aussi un build au hasard : il s'importe dans LoL au verrouillage et l'overlay le suit": "Each roll also draws a random build: it is imported into LoL when you lock in, and the overlay follows it",
+"Garde au moins une partie du build à tirer.": "Keep at least one part of the build to draw.",
+"Ton build random": "Your random build",
+"Tire un autre build pour ce tirage": "Draw another build for this roll",
+"Relancer le build": "Reroll the build",
+"Tiré au hasard pour ce tirage : {0}. Le reste vient de la fiche. Il s'importe dans LoL au verrouillage et l'overlay le suit.": "Drawn at random for this roll: {0}. The rest comes from the guide. It is imported into LoL when you lock in, and the overlay follows it.",
+"Nouveau build tiré.": "New build drawn.",
+"Ce build ne peut plus être relancé : la partie a commencé.": "This build can't be rerolled anymore: the game has started."
 }

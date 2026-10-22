@@ -160,6 +160,26 @@ def item_cats(v):
     return out
 
 
+def item_kind(i, v):
+    """Place of an item in the Rift shop, for the random build: "boots" (tier 2) or "legendary" (finished item),
+    otherwise None. Items with an id over 100000 are the same items for other modes."""
+    if int(i) >= 100000 or not (v.get("gold") or {}).get("purchasable") or v.get("inStore") is False             or v.get("requiredChampion") or v.get("requiredAlly"):
+        return None
+    if "Boots" in (v.get("tags") or []):
+        return "boots" if v.get("depth") == 2 else None
+    if v.get("into") or v.get("depth") != 3 or (v.get("gold") or {}).get("total", 0) < 2000:
+        return None
+    return "legendary"
+
+
+def item_entry(i, v):
+    out = {"name": v.get("name", ""), "gold": (v.get("gold") or {}).get("total", 0), "cat": item_cats(v)}
+    kind = item_kind(i, v)
+    if kind:
+        out["kind"] = kind
+    return out
+
+
 def runes_build(d):
     """Most common rune page and summoner spells (lolalytics)."""
     pick = ((d or {}).get("summary") or {}).get("pick") or {}
@@ -856,9 +876,7 @@ class Updater:
                                                 for cid in id2key}}
 
         items_fr = fetch("%s/cdn/%s/data/fr_FR/item.json" % (DD, dd_ver))["data"]
-        item_list = {"version": dd_ver, "items": {
-            i: {"name": v.get("name", ""), "gold": (v.get("gold") or {}).get("total", 0), "cat": item_cats(v)}
-            for i, v in items_fr.items() if (v.get("maps") or {}).get("11")}}
+        item_list = {"version": dd_ver, "items": {i: item_entry(i, v) for i, v in items_fr.items() if (v.get("maps") or {}).get("11")}}
         # runes (trees, French names) and summoner spells: champ select import and display
         runes_fr = fetch("%s/cdn/%s/data/fr_FR/runesReforged.json" % (DD, dd_ver))
         sums_fr = fetch("%s/cdn/%s/data/fr_FR/summoner.json" % (DD, dd_ver))["data"]

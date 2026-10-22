@@ -1410,8 +1410,7 @@ class Overlay:
             out["gold"] = live.gold_diff(snap, prices)
             out["obj"] = live.objectives(snap)
             if info:
-                c = data.combos.get(data.combo_key(info["key"], info["role"])) or {}
-                sk = c.get("skills") or {}
+                sk = self.core.active_skills(data.combo_key(info["key"], info["role"]))
                 out["skills"] = live.skill_plan(sk.get("order15"), snap["abilities"], snap["level"], info["key"],
                                                 sk.get("prio") or "", self._skill_bonus(info, snap))
         self._calc = (ident, out, snap, info)   # kept: a freed address could be reused by another game
@@ -1931,7 +1930,7 @@ class Overlay:
         if p is None:
             return (info["key"], tuple(nxt), plan["first_level"], lit, tuple(sorted(self.spell_keys.items())), evo)
         keys = self.spell_keys
-        prio = (c.get("skills") or {}).get("prio") or ""
+        prio = self.core.active_skills(self._combo(info)[0]).get("prio") or ""
         p.header(T("Sorts"), " › ".join(keys.get(x, x) for x in prio) if prio else None)
         size, gap = p.px(28), p.px(9)
         x = p.pad
@@ -2020,7 +2019,7 @@ class Overlay:
     def _draw_items(self, p, info, snap, calcs, placing):
         ck, c = self._combo(info)
         data = self.core.data
-        b = data.build_for(ck, (self.core.profile.get("build_pick") or {}).get(ck)) if c else None
+        b = self.core.active_build(ck) if c else None
         if not b or not b.get("core"):
             return None
         owned = {it[0] for it in (live.me_of(snap)["items"] if snap else [])}

@@ -122,8 +122,8 @@ def import_itemset(client, combo, build, summoner_id, title, counters=None):
 
     st = b.get("start") or {}
     blocks = [block(T("Départ"), list(zip(st.get("ids") or [], st.get("counts") or [1] * 9))),
-              block(T("Build recommandé") if b.get("id", "reco") == "reco" else "Build " + T(b.get("label", "")),
-                    b["core"].get("ids") or [])]
+              block(T("Build recommandé") if b.get("id", "reco") == "reco" else T("Build random") if b["id"] == "random"
+                    else "Build " + T(b.get("label", "")), b["core"].get("ids") or [])]
     extra = [o for o in counters or [] if not o.get("in_core")]
     if extra:   # items against the enemy comp (known at the end of champ select)
         blocks.append(block(T("Contre leur compo : ") + " · ".join(o["label"].lower() for o in extra)[:60],
