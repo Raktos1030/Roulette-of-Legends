@@ -889,5 +889,7 @@
 "Suivante ({0})": "Next ({0})",
 "Terminer": "Done",
 "{0} cartes ajoutées à ton classeur.": "{0} cards added to your binder.",
-"{0} cartes à ouvrir": "{0} cards to open"
+"{0} cartes à ouvrir": "{0} cards to open",
+"Rôle chaos": "Chaos role",
+"Nouvelle carte": "New card"
 }

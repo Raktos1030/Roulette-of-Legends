@@ -18,6 +18,7 @@ const HOW = {
   legendary: "Victoire en classée, full random",
 };
 const state = { role: "all", show: "all", q: "", chaos: true };
+const BACK = '<div class="tc back"><div class="tc-art"></div></div>';
 let root = null, unsub = null, data = null;
 
 export function renderBinder(page) {
@@ -74,7 +75,7 @@ function paintBooster() {
   const n = data.pending.length;
   if (!n) return (box.innerHTML = "");
   box.innerHTML = `<section class="card bd-booster">
-    <div class="bd-pack">${[0, 1, 2].map(() => `<span class="tc back"></span>`).join("")}</div>
+    <div class="bd-pack">${BACK.repeat(3)}</div>
     <div class="grow"><div class="kicker">${esc(t("Booster"))}</div>
       <h3>${esc(n === 1 ? t("1 nouvelle carte à ouvrir") : t("{0} nouvelles cartes à ouvrir", n))}</h3>
       <p class="muted">${esc(t("Tes dernières parties sur la roulette ont rempli ton classeur."))}</p></div>
@@ -117,21 +118,21 @@ function paintTools() {
   };
 }
 
+// a card: metal frame by level, art window, role medallion, name plate with one gem per level reached
 export function cardHTML(c, opts = {}) {
+  if (opts.back) return `<div class="tc back" data-id="${esc(c.id)}" title="${esc(t("Carte à ouvrir"))}"><div class="tc-art"></div><span class="tc-new">${esc(t("à ouvrir"))}</span></div>`;
   const lv = opts.level != null ? opts.level : shown(c);
   const L = levelOf(lv);
-  const master = data && data.masters.includes(c.key);
-  const face = opts.back ? "back" : `lv${lv}${master ? " master" : ""}`;
-  if (opts.back) return `<div class="tc back" data-id="${esc(c.id)}" title="${esc(t("Carte à ouvrir"))}"><span class="tc-new">${esc(t("à ouvrir"))}</span></div>`;
+  const master = lv === 4 && data && data.masters.includes(c.key);
   const how = lv ? t(HOW[L.id]) : t("Joue ce champion à ce poste quand la roulette te le tire");
   const detail = c.at && lv ? ` · ${c.queue || ""} · ${c.at} · ${t("{0} parties, {1} victoires", c.games, c.wins)}` : "";
-  return `<div class="tc ${face}${c.guide ? "" : " chaos"}" data-id="${esc(c.id)}" title="${esc(`${c.name} ${ROLE_LABEL[c.role]} — ${t(L.label)}. ${how}${detail}`)}">
-    <img src="${img.tall(c.key)}" alt="" loading="lazy">
-    <span class="tc-foil"></span>
-    ${c.guide ? "" : `<span class="tc-chaos">${CHAOS_ICON}</span>`}
+  return `<div class="tc lv${lv}${master ? " master" : ""}" data-id="${esc(c.id)}" title="${esc(`${c.name} ${ROLE_LABEL[c.role]} — ${t(L.label)}. ${how}${detail}`)}">
+    <div class="tc-art"><img src="${img.tall(c.key)}" alt="" loading="lazy"><span class="tc-foil"></span></div>
+    <span class="tc-medal">${roleIcon(c.role)}</span>
+    ${c.guide ? "" : `<span class="tc-medal chaos" title="${esc(t("Rôle chaos"))}">${CHAOS_ICON}</span>`}
     ${master ? `<span class="tc-crown" title="${esc(t("Champion maître"))}">♛</span>` : ""}
-    <span class="tc-foot"><b>${esc(c.name)}</b><span class="tc-role">${roleIcon(c.role)}${esc(ROLE_LABEL[c.role])}</span>
-      <span class="tc-lvl">${esc(t(L.label))}</span></span>
+    <div class="tc-plate"><b>${esc(c.name)}</b><span class="tc-sub">${esc(ROLE_LABEL[c.role])} · ${esc(master ? t("Maître") : t(L.label))}</span>
+      <span class="tc-gems">${[1, 2, 3, 4].map((n) => `<i class="${lv >= n ? "on" : ""}"></i>`).join("")}</span></div>
   </div>`;
 }
 
@@ -151,13 +152,24 @@ function paintGrid() {
   box.querySelectorAll(".tc.back").forEach((el) => (el.onclick = () => openBooster([el.dataset.id])));
 }
 
-// holographic foil follows the pointer
+// cards tilt toward the pointer; the foil and sheen follow it
 document.addEventListener("pointermove", (e) => {
-  const el = e.target.closest && e.target.closest(".tc.lv4, .tc.lv3, .bk-card .tc");
-  if (!el) return;
+  const el = e.target.closest && e.target.closest(".tc:not(.lv0)");
+  if (!el || el.closest(".bd-pack")) return;
   const r = el.getBoundingClientRect();
-  el.style.setProperty("--mx", ((e.clientX - r.left) / r.width).toFixed(3));
-  el.style.setProperty("--my", ((e.clientY - r.top) / r.height).toFixed(3));
+  const x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+  el.classList.add("tilt");
+  el.style.setProperty("--mx", x.toFixed(3));
+  el.style.setProperty("--my", y.toFixed(3));
+  el.style.setProperty("--rx", ((0.5 - y) * 14).toFixed(2) + "deg");
+  el.style.setProperty("--ry", ((x - 0.5) * 18).toFixed(2) + "deg");
+});
+document.addEventListener("pointerout", (e) => {
+  const el = e.target.closest && e.target.closest(".tc");
+  if (!el || (e.relatedTarget && el.contains(e.relatedTarget))) return;
+  el.classList.remove("tilt");
+  el.style.setProperty("--rx", "0deg");
+  el.style.setProperty("--ry", "0deg");
 });
 
 // --- booster: cards revealed one by one ---------------------------------------------------------
@@ -186,18 +198,23 @@ function openBooster(ids) {
     const c = queue[i];
     const L = levelOf(c.level);
     const was = c.shown ? levelOf(c.shown) : null;
+    const sparks = Array.from({ length: c.level >= 3 ? 34 : 18 }, () =>
+      `<i style="left:${(Math.random() * 100).toFixed(1)}%;--s:${(2 + Math.random() * 3).toFixed(1)}px;--d:${(2.6 + Math.random() * 2.4).toFixed(2)}s;--w:${(Math.random() * 2.5).toFixed(2)}s;--x:${((Math.random() - 0.5) * 160).toFixed(0)}px"></i>`).join("");
     box.innerHTML = `
       <div class="bk-shade"></div>
       <div class="bk-stage lv${c.level}">
+        <div class="bk-glow"></div>
+        <div class="bk-sparks">${sparks}</div>
         <div class="bk-count">${esc(t("Carte {0} sur {1}", i + 1, queue.length))}</div>
+        <div class="bk-ribbon">${esc(was ? t("Amélioration : {0} → {1}", t(was.label), t(L.label)) : t("Nouvelle carte"))}</div>
         <div class="bk-card"><div class="bk-flip">
           <div class="bk-face bk-front">${cardHTML(c, { level: c.level })}</div>
-          <div class="bk-face bk-rear"><div class="tc back"></div></div>
+          <div class="bk-face bk-rear">${BACK}</div>
         </div><div class="bk-burst"></div></div>
         <div class="bk-text">
-          <div class="bk-tier t-${L.id}">${esc(t(L.label))}</div>
+          <div class="bk-tier">${esc(t(L.label))}</div>
           <h2>${esc(c.name)} · ${esc(ROLE_LABEL[c.role])}${c.guide ? "" : ` <span class="bk-chaos">${CHAOS_ICON}${esc(t("chaos"))}</span>`}</h2>
-          <p class="muted">${esc(was ? t("Amélioration : {0} → {1}", t(was.label), t(L.label)) : t("Nouvelle carte !"))} ${esc(t(HOW[L.id]))}${c.at ? esc(` · ${c.queue || ""} · ${c.at}`) : ""}</p>
+          <p class="muted">${esc(t(HOW[L.id]))}${c.at ? esc(` · ${c.queue || ""} · ${c.at}`) : ""}</p>
         </div>
         <div class="bk-btns">
           ${queue.length - i > 1 ? `<button class="btn" data-all>${esc(t("Tout révéler"))}</button>` : ""}
