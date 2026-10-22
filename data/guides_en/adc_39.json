@@ -1,0 +1,43 @@
+{
+ "Velkoz|adc": {
+  "identity": "Artillery mage. Organic Deconstruction (passive): his abilities apply stacks; at 3 stacks, the target takes a burst of true damage. Plasma Fission (Q) fires a projectile that slows and splits in two when it hits an enemy or is recast, Void Rift (W) opens a rift that damages, then explodes after a short delay, Tectonic Disruption (E) knocks up enemies in an area, and Life Form Disintegration Ray (R) channels for 2.5 seconds a ray that follows the cursor (true damage on targets marked by his passive).",
+  "playstyle": "Artillery mage in the bot lane: he farms and pokes from very far with Plasma Fission (Q) and Void Rift (W), then melts targets with the true damage of his passive and his ultimate. No mobility: his support has to protect him from engages.",
+  "early_game": "Farm with W in the wave and poke with Q (the projectile splits on an enemy). Save Tectonic Disruption (E) for an enemy engage.",
+  "level_1": "Plasma Fission (Q) first. Then max Q.",
+  "level_2": "Void Rift (W). Farm and poke: W hits the wave and your opponent.",
+  "level_3": "Tectonic Disruption (E). Combo: E (knock-up) → W → Q → passive explosion.",
+  "level_6": "Life Form Disintegration Ray: a channeled ray that follows your cursor, true damage on marked targets. Cast it after an E or on a target your support has CC'd; you can't move while channeling.",
+  "power_spikes": [
+   "Level 3: E → W → Q.",
+   "Level 6: true damage ray.",
+   "Luden's Echo: very strong poke.",
+   "Teamfights: ray on a CC'd team."
+  ],
+  "lane_plan": "Farm from range with W and poke with Q. Play for kills with your support's CC. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) helps you keep your lead.",
+  "trading": "Basic trade: split Q or W. All-in: E → W → Q → R. Defense: E on the enemy engage. Against Blitzcrank, stay behind your minions at all times.",
+  "jungle_plan": "",
+  "threats": [
+   "Engage supports (Blitzcrank, Nautilus): stay behind your minions.",
+   "Divers in teamfights: your ultimate roots you in place.",
+   "Mobile marksmen who dodge your Q."
+  ],
+  "mistakes": [
+   "Casting the ray without CC on the target: they walk out of it.",
+   "Using E to poke and being unable to push back an engage.",
+   "Stepping past your minions against hooks."
+  ],
+  "matchup_notes": {
+   "Caitlyn": "She outranges your attacks, not your spells: poke her with Q and W.",
+   "Jinx": "Not very mobile: Q and W hit her easily.",
+   "Ezreal": "He dodges with Arcane Shift: cast W where he lands.",
+   "Kai'Sa": "She dives with her ultimate: E when she lands.",
+   "Draven": "Farm from range until level 3; then punish his step-ups with E."
+  },
+  "mid_game": "Poke before objectives and push waves with W. Stay grouped: you have no escape.",
+  "late_game": "Stay far behind your frontline: Q and W before the fight, E on divers, ray on a CC'd target.",
+  "ahead": "Push and force objectives: your true damage poke wears down even tanks.",
+  "behind": "Farm with W from range and keep E to defend yourself.",
+  "win_condition": "To win this game, you want to wear the enemy team down from very far and melt them with your ray when they're CC'd.",
+  "final_tip": "Three abilities on the same target trigger the passive explosion: chain E, W and Q on the same enemy."
+ }
+}

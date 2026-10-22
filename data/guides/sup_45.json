@@ -1,0 +1,43 @@
+{
+  "Ivern|sup": {
+    "identity": "Enchanteur à dégâts magiques. Enracinement (Q) root et lui permet de bondir sur la cible (ou d'y faire bondir un allié), Main verte (W) crée des bushs qui renforcent ses attaques et donnent de la vision, Graine à retardement (E) protège un allié puis explose en slowant, et Marguerite ! (R) invoque un golem qui knock-up après plusieurs coups. En jungle, son passif (Ami de la forêt) libère les monstres au lieu de les tuer.",
+    "playstyle": "Support enchanteur : il protège son ADC avec Graine à retardement (E), engage avec Enracinement (Q) et ajoute un combattant avec Marguerite (R). En support, il monte E en priorité : un shield plus gros et une explosion plus forte.",
+    "early_game": "Shield ton ADC avec E pendant ses trades : l'explosion slow les adversaires. Q root un adversaire qui s'avance ; fais bondir ton ADC si le kill est sûr. W crée un bush pour cacher ton approche et donner de la vision dans la lane.",
+    "level_1": "Enracinement (Q) ou Graine à retardement (E) : Q pour contester le niveau 1, E pour protéger ton ADC.",
+    "level_2": "Le sort manquant entre Q et E. Root (Q), puis shield ton ADC (E) pendant son trade.",
+    "level_3": "Main verte (W). Un bush pour la vision et des attaques renforcées. E est maximisé en priorité.",
+    "level_6": "Marguerite ! : invoque le golem, qui frappe et knock-up après plusieurs coups. Envoie-la sur le champion le plus dangereux ; en lane, elle force les adversaires à reculer.",
+    "power_spikes": [
+      "Niveau 2 : Q → E avec ton ADC.",
+      "Niveau 6 : Marguerite en all-in.",
+      "Régénérateur de pierre de lune : soins et shields renforcés.",
+      "Teamfight : E sur ton carry, Q sur le diver."
+    ],
+    "lane_plan": "Shield ton ADC dans chaque trade et crée de la vision avec W dans la lane et la rivière. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers hors de la bot lane. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées dans un emplacement dédié).",
+    "trading": "Trade : E sur ton ADC quand il attaque, Q sur l'adversaire qui s'avance. All-in : Q → Marguerite → E sur ton ADC. Défense : E sur ton ADC et Q sur le diver.",
+    "jungle_plan": "",
+    "threats": [
+      "Supports d'engage et de burst (Leona, Nautilus, Pyke) qui tuent ton ADC malgré ton shield.",
+      "Poke à longue portée (Xerath, Vel'Koz).",
+      "Anti-heal et brûlures qui réduisent tes soins."
+    ],
+    "mistakes": [
+      "Garder E pour toi au lieu de ton ADC.",
+      "Lancer Q de trop loin : la cible a le temps de bouger.",
+      "Oublier la vision : tes bushs (W) et tes pinks sont ta principale aide sur la carte."
+    ],
+    "matchup_notes": {
+      "Thresh": "Si son grappin touche ton ADC, Q sur Thresh et E sur ton ADC.",
+      "Nautilus": "Shield ton ADC avant que son ancre le touche.",
+      "Lulu": "Elle protège mieux en lane : joue autour de tes roots.",
+      "Leona": "Son engage est dangereux : E sur sa cible, Q sur Leona à son arrivée.",
+      "Karma": "Elle poke beaucoup : utilise E pour absorber son Q."
+    },
+    "mid_game": "Pose des pinks et crée de la vision avec W autour des objectifs. Protège ton carry avec E dans chaque combat.",
+    "late_game": "Reste près de ton carry : E sur lui, Q sur le diver, Marguerite sur le danger principal.",
+    "ahead": "Force les objectifs avec ton équipe et prends le contrôle de la vision.",
+    "behind": "Reste près de ton carry et protège-le ; ne t'engage pas seul.",
+    "win_condition": "Pour gagner cette partie, tu veux garder ton carry en vie avec tes shields et contrôler la vision autour des objectifs.",
+    "final_tip": "Graine à retardement explose après le shield : pose-la sur l'allié au milieu des ennemis pour tous les ralentir."
+  }
+}

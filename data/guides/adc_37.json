@@ -1,0 +1,43 @@
+{
+  "Katarina|adc": {
+    "identity": "Assassin à dégâts magiques (ou mixtes) qui nettoie les combats par les réinitialisations. Ses dagues tombent au sol ; les ramasser déclenche une frappe en zone (passif). Lame rebondissante (Q) lance une dague qui rebondit puis tombe, Préparation (W) lance une dague en l'air et l'accélère, Shunpo (E) la téléporte sur une unité ou une dague, et Lotus mortel (R) canalise une pluie de lames autour d'elle. Chaque élimination ou assistance réduit fortement ses temps de recharge.",
+    "playstyle": "Katarina bot se joue en build à effets à l'impact (Conquérant, Tueur de krakens, Lame du roi déchu) : ses attaques comptent autant que ses dagues. Elle trade avec ses dagues et ses attaques, puis nettoie les combats grâce aux réinitialisations. Très forte une fois en avance, elle dépend des CC adverses : attends qu'ils soient utilisés.",
+    "early_game": "Farm avec Q et cherche les trades courts : Q → E sur la dague → ramassage → attaques. Avec ton support, chaque engage devient un kill potentiel dès le niveau 3.",
+    "level_1": "Lame rebondissante (Q) en premier. Farm et poke.",
+    "level_2": "Shunpo (E). Q → E sur la dague au sol près de l'adversaire → ramassage → attaques.",
+    "level_3": "Préparation (W). W → E sur la dague qui retombe → frappe en zone : ton combo de base.",
+    "level_6": "Lotus mortel : canalisation qui détruit tout autour et applique tes effets à l'impact. Combo : Q → E → W → R ; chaque élimination réinitialise tes sorts.",
+    "power_spikes": [
+      "Niveau 3 : combo complet.",
+      "Niveau 6 : Lotus mortel.",
+      "Tueur de krakens : attaques et trades.",
+      "Lame du roi déchu : duels et soins."
+    ],
+    "lane_plan": "Trade dès que l'adversaire s'avance, en suivant l'engage de ton support. Tu n'as pas la portée d'un ADC : farm sous ta tour face au poke et attends ton niveau 3. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) renforce ton build à effets à l'impact.",
+    "trading": "Trade court : Q → E sur la dague → ramassage → attaques. All-in : W → E → Q → R. En teamfight : attends les CC adverses, entre sur une cible basse et enchaîne. Abandonne contre les CC qui interrompent ton ultime.",
+    "jungle_plan": "",
+    "threats": [
+      "Supports à CC (Leona, Nautilus, Lulu) qui interrompent ton ultime.",
+      "Poke à longue portée qui t'empêche d'approcher.",
+      "Teamfights : entrer en premier, c'est mourir."
+    ],
+    "mistakes": [
+      "Entrer avant que les CC adverses soient utilisés.",
+      "Lancer l'ultime à portée d'un CC qui l'interrompt.",
+      "Pousser sans vision : sans tes réinitialisations, tu es fragile."
+    ],
+    "matchup_notes": {
+      "Caitlyn": "Elle te poke à distance : attends l'engage de ton support et Shunpo sur une dague près d'elle.",
+      "Jinx": "Peu mobile : un all-in au niveau 3 la tue souvent.",
+      "Ezreal": "Il fuit avec son Saut arcanique : attends qu'il l'ait utilisé avant d'entrer.",
+      "Kai'Sa": "Elle plonge aussi : garde E pour la suivre ou fuir.",
+      "Jhin": "Son root (W) interrompt ton ultime : entre quand il est en recharge."
+    },
+    "mid_game": "Joue avec ton jungler et ton support pour les picks : tes réinitialisations gagnent les combats en surnombre.",
+    "late_game": "Attends que les CC soient utilisés, puis entre sur une cible basse et enchaîne les éliminations.",
+    "ahead": "Roam et plonge sur les cibles isolées : chaque élimination réinitialise tes sorts.",
+    "behind": "Farm avec Q et attends les combats où les CC adverses partent sur tes alliés.",
+    "win_condition": "Pour gagner cette partie, tu veux entrer dans les teamfights après les CC adverses et enchaîner les éliminations.",
+    "final_tip": "Ton ultime applique tes effets à l'impact : avec Tueur de krakens et la Lame du roi déchu, Lotus mortel devient une arme de duel."
+  }
+}

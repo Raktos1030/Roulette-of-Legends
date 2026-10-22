@@ -1,0 +1,43 @@
+{
+ "Mel|sup": {
+  "identity": "Magic damage mage. Every ability gives her bonus projectiles on her attacks, and all her damage applies Overwhelm: past a threshold, the target is executed (passive Searing Brilliance). Radiant Volley (Q) fires projectiles that explode in an area, Rebuttal (W) reflects enemy projectiles and makes her briefly immune to damage, Solar Snare (E) roots in the center and slows around it, and Golden Eclipse (R) strikes every enemy marked with Overwhelm, wherever they are.",
+  "playstyle": "Poke mage as a support. Her results in the role are among the weakest (Emerald+): she offers little protection to her ADC and relies on her poke. Play her as a poke support who protects with Rebuttal (W) and roots with Solar Snare (E).",
+  "early_game": "Poke with Radiant Volley (Q) and empowered attacks to stack Overwhelm on both opponents. Save Rebuttal (W) to reflect the spell that matters (hook, CC, big poke). Solar Snare (E) roots the support who steps up.",
+  "level_1": "Radiant Volley (Q) first. Poke the opponent who comes to last hit.",
+  "level_2": "Solar Snare (E). E → Q → empowered attack on the rooted target, with your ADC.",
+  "level_3": "Rebuttal (W). Your defensive tool: reflect a hook or a CC aimed at your ADC or you.",
+  "level_6": "Golden Eclipse: hits every marked enemy, wherever they are. Stack Overwhelm on several targets before casting it.",
+  "power_spikes": [
+   "Level 2: E → Q with your ADC.",
+   "Level 6: global Golden Eclipse.",
+   "Zaz'Zak's Realmspike, then Luden's Echo: stronger poke.",
+   "Teamfights: executing several marked targets."
+  ],
+  "lane_plan": "Poke constantly and keep W to reflect the enemy engage spell. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third outside the bot lane. The support role quest then makes your Control Wards cheaper (40 gold, two stored in a dedicated slot).",
+  "trading": "Basic trade: Q, then an empowered attack. All-in: E → Q → attacks → R. Defense: W the moment the enemy hook or CC comes. Back off against engages when W is on cooldown.",
+  "jungle_plan": "",
+  "threats": [
+   "Engage supports (Nautilus, Leona, Rell) while Rebuttal is on cooldown.",
+   "Enchanters who heal off your poke (Soraka, Nami, Milio).",
+   "Your lack of protection: your ADC is alone against a dive."
+  ],
+  "mistakes": [
+   "Using W to poke and being unable to reflect the hook.",
+   "Casting your ultimate too early, before enough Overwhelm.",
+   "Forgetting vision: as a support, Control Wards and wards matter as much as your poke."
+  ],
+  "matchup_notes": {
+   "Thresh": "Reflect his hook with W.",
+   "Blitzcrank": "Keep W for his hook and stay behind your minions.",
+   "Nautilus": "Reflect his anchor with W, then root him with E.",
+   "Lulu": "She protects her ADC: poke her directly.",
+   "Soraka": "She heals off your poke: look for all-ins with E instead."
+  },
+  "mid_game": "Place Control Wards around objectives and poke before fights. Keep W for the enemy engage spell.",
+  "late_game": "Stay behind your frontline, poke with Q, reflect the key spell with W and cast your ultimate when several enemies are marked and low.",
+  "ahead": "Poke and force objectives with your team; set up vision around them.",
+  "behind": "Stay close to your ADC, keep W to protect them and poke safely.",
+  "win_condition": "To win this game, you want to wear the enemy team down before every fight and reflect their engage spell with Rebuttal.",
+  "final_tip": "As a support, your Rebuttal mostly protects your ADC: position yourself to reflect the hooks aimed at them."
+ }
+}

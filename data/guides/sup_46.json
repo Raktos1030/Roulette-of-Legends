@@ -1,0 +1,43 @@
+{
+  "Mel|sup": {
+    "identity": "Mage à dégâts magiques. Chaque sort lui donne des projectiles bonus sur ses attaques, et tous ses dégâts appliquent Accablement : au-delà d'un seuil, la cible est exécutée (passif Luminescence incandescente). Salve radieuse (Q) fait exploser des projectiles en zone, Réfutation (W) renvoie les projectiles adverses et la rend insensible aux dégâts un court instant, Piège solaire (E) root au centre et slow autour, et Éclipse dorée (R) frappe tous les ennemis marqués par Accablement, où qu'ils soient.",
+    "playstyle": "Mage de poke en support. Ses résultats au poste sont parmi les plus faibles (Émeraude+) : elle protège peu son ADC et dépend de son poke. Joue-la comme un support de poke qui protège avec Réfutation (W) et root avec Piège solaire (E).",
+    "early_game": "Poke avec Salve radieuse (Q) et les attaques renforcées pour accumuler Accablement sur les deux adversaires. Garde Réfutation (W) pour renvoyer le sort qui compte (grappin, CC, gros poke). Piège solaire (E) root le support qui s'avance.",
+    "level_1": "Salve radieuse (Q) en premier. Poke l'adversaire qui vient last hit.",
+    "level_2": "Piège solaire (E). E → Q → attaque renforcée sur la cible root, avec ton ADC.",
+    "level_3": "Réfutation (W). Ton outil défensif : renvoie un grappin ou un CC qui vise ton ADC ou toi.",
+    "level_6": "Éclipse dorée : frappe tous les ennemis marqués, où qu'ils soient. Accumule Accablement sur plusieurs cibles avant de la lancer.",
+    "power_spikes": [
+      "Niveau 2 : E → Q avec ton ADC.",
+      "Niveau 6 : Éclipse dorée globale.",
+      "Pique dimensionnelle de Zaz'Zak puis Écho de Luden : poke renforcé.",
+      "Teamfight : exécution de plusieurs cibles marquées."
+    ],
+    "lane_plan": "Poke en continu et garde W pour renvoyer le sort d'engage adverse. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers hors de la bot lane. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées dans un emplacement dédié).",
+    "trading": "Trade de base : Q puis attaque renforcée. All-in : E → Q → attaques → R. Défense : W au moment du grappin ou du CC adverse. Recule contre les engages quand W est en recharge.",
+    "jungle_plan": "",
+    "threats": [
+      "Supports d'engage (Nautilus, Leona, Rell) quand Réfutation est en recharge.",
+      "Enchanteurs qui soignent ton poke (Soraka, Nami, Milio).",
+      "Ton manque de protection : ton ADC est seul face à un dive."
+    ],
+    "mistakes": [
+      "Utiliser W pour poke et ne plus pouvoir renvoyer le grappin.",
+      "Lancer l'ultime trop tôt, avant assez d'Accablement.",
+      "Oublier la vision : en support, les pinks et les wards comptent autant que ton poke."
+    ],
+    "matchup_notes": {
+      "Thresh": "Renvoie son grappin avec W.",
+      "Blitzcrank": "Garde W pour son grappin et reste derrière tes sbires.",
+      "Nautilus": "Renvoie son ancre avec W, puis root-le avec E.",
+      "Lulu": "Elle protège son ADC : poke-la directement.",
+      "Soraka": "Elle soigne ton poke : cherche plutôt les all-in avec E."
+    },
+    "mid_game": "Pose des pinks autour des objectifs et poke avant les combats. Garde W pour le sort d'engage adverse.",
+    "late_game": "Reste derrière ta frontline, poke avec Q, renvoie le sort clé avec W et lance l'ultime quand plusieurs ennemis sont marqués et bas en PV.",
+    "ahead": "Poke et force les objectifs avec ton équipe ; pose la vision autour.",
+    "behind": "Reste près de ton ADC, garde W pour le protéger et poke en sécurité.",
+    "win_condition": "Pour gagner cette partie, tu veux affaiblir l'équipe adverse avant chaque combat et renvoyer son sort d'engage avec Réfutation.",
+    "final_tip": "En support, ta Réfutation protège surtout ton ADC : place-toi pour renvoyer les grappins qui le visent."
+  }
+}

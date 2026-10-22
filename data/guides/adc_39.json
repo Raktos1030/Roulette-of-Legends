@@ -1,0 +1,43 @@
+{
+  "Velkoz|adc": {
+    "identity": "Mage d'artillerie. Décomposition organique (passif) : ses sorts appliquent des effets ; à 3 effets, la cible subit une explosion de dégâts bruts. Fission du plasma (Q) tire un projectile qui slow et se divise en deux quand il touche un ennemi ou quand on le réactive, Ouverture de faille (W) ouvre une faille qui blesse puis explose après un court délai, Dislocation tectonique (E) knock-up les ennemis dans une zone, et Désintégrateur de formes de vie (R) canalise pendant 2,5 secondes un rayon qui suit le curseur (dégâts bruts sur les cibles marquées par son passif).",
+    "playstyle": "Mage d'artillerie en bot lane : il farm et poke de très loin avec Fission du plasma (Q) et Ouverture de faille (W), puis fait fondre les cibles avec les dégâts bruts de son passif et de son ultime. Aucune mobilité : son support doit le protéger des engages.",
+    "early_game": "Farm avec W dans la vague et poke avec Q (le projectile se divise sur un ennemi). Garde Dislocation tectonique (E) pour un engage adverse.",
+    "level_1": "Fission du plasma (Q) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Ouverture de faille (W). Farm et poke : W touche la vague et l'adversaire.",
+    "level_3": "Dislocation tectonique (E). Combo : E (knock-up) → W → Q → explosion du passif.",
+    "level_6": "Désintégrateur de formes de vie : rayon canalisé qui suit ton curseur, en dégâts bruts sur les cibles marquées. Lance-le après un E ou sur une cible CC par ton support ; tu es immobile pendant la canalisation.",
+    "power_spikes": [
+      "Niveau 3 : E → W → Q.",
+      "Niveau 6 : rayon de dégâts bruts.",
+      "Écho de Luden : poke très fort.",
+      "Teamfight : rayon sur une équipe CC."
+    ],
+    "lane_plan": "Farm de loin avec W et poke avec Q. Joue les kills avec le CC de ton support. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) t'aide à garder ton avance.",
+    "trading": "Trade de base : Q divisé ou W. All-in : E → W → Q → R. Défense : E sur l'engage adverse. Face à Blitzcrank, reste derrière tes sbires en permanence.",
+    "jungle_plan": "",
+    "threats": [
+      "Supports d'engage (Blitzcrank, Nautilus) : reste derrière tes sbires.",
+      "Divers en teamfight : ton ultime t'immobilise.",
+      "ADC mobiles qui esquivent ton Q."
+    ],
+    "mistakes": [
+      "Lancer le rayon sans CC sur la cible : elle en sort.",
+      "Utiliser E en poke et ne plus pouvoir repousser un engage.",
+      "S'avancer au-delà de tes sbires face aux grappins."
+    ],
+    "matchup_notes": {
+      "Caitlyn": "Elle te dépasse en portée d'attaque, pas en portée de sorts : poke-la avec Q et W.",
+      "Jinx": "Peu mobile : Q et W la touchent facilement.",
+      "Ezreal": "Il esquive avec son Saut arcanique : lance W là où il atterrit.",
+      "Kai'Sa": "Elle plonge avec son ultime : E à son arrivée.",
+      "Draven": "Farm de loin jusqu'au niveau 3 ; ensuite, punis ses avancées avec E."
+    },
+    "mid_game": "Poke avant les objectifs et pousse les vagues avec W. Reste groupé : tu n'as pas de fuite.",
+    "late_game": "Reste loin derrière ta frontline : Q et W avant le combat, E sur les divers, rayon sur une cible CC.",
+    "ahead": "Pousse et force les objectifs : ton poke en dégâts bruts affaiblit même les tanks.",
+    "behind": "Farm avec W de loin et garde E pour te défendre.",
+    "win_condition": "Pour gagner cette partie, tu veux affaiblir l'équipe adverse de très loin et la faire fondre avec ton rayon quand elle est CC.",
+    "final_tip": "Trois sorts sur la même cible déclenchent l'explosion du passif : enchaîne E, W et Q sur le même ennemi."
+  }
+}

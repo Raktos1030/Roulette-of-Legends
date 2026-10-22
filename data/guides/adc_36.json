@@ -1,0 +1,43 @@
+{
+  "Hwei|adc": {
+    "identity": "Mage à dégâts magiques aux neuf sorts : chaque « sujet » ouvre trois variantes. Sujet : Désastres (Q) regroupe les sorts de dégâts (QQ boule de feu, QW éclair qui punit les cibles immobiles ou basses, QE fissure qui slow), Sujet : Sérénités (W) les sorts utilitaires (WQ courant qui accélère, WW bassin qui protège, WE attaques renforcées qui rendent du mana), et Sujet : Tourments (E) les CC (EQ effroi, EW œil qui root, EE gueule qui attire). Vision de désespoir (R) slow de plus en plus puis explose. Toucher avec deux sorts différents déclenche son passif.",
+    "playstyle": "Mage de poke en bot lane, à la place d'un ADC, et l'un des meilleurs choix non conventionnels du poste. Ses neuf sorts couvrent le poke (QQ, QE), le kill sur cible immobile (EW → QW) et la défense (EQ, WW) : avec un support qui CC, chaque root devient un kill. Il n'a aucun dash : garde toujours un CC défensif.",
+    "early_game": "Farm avec Désastres (Q) et poke dès que l'adversaire vient last hit. Garde un Tourment (E) disponible : EQ effraie un support qui engage, EW root une cible pour l'éclair (QW). Joue derrière tes sbires face aux grappins.",
+    "level_1": "Sujet : Désastres (Q) en premier. Farm à distance et poke avec QQ.",
+    "level_2": "Sujet : Tourments (E). EW root une cible pour un kill avec ton support ; EQ repousse un engage.",
+    "level_3": "Sujet : Sérénités (W). WW te protège d'un all-in, WE rend du mana en farmant. Combo de kill : EW → QW → QQ.",
+    "level_6": "Vision de désespoir : slow croissant puis explosion. En lane : EW → R → QW → QQ avec ton support. En teamfight, lance-la sur une cible au milieu du groupe adverse.",
+    "power_spikes": [
+      "Niveau 2 : EW → QW sur un adversaire qui s'avance.",
+      "Niveau 6 : combo de kill complet.",
+      "Torche noire puis Tourment de Liandry : poke qui brûle en continu.",
+      "Teamfight : Vision de désespoir au milieu du groupe."
+    ],
+    "lane_plan": "Poke à distance et joue les kills avec le CC de ton support : un root (le tien ou le sien) suivi de l'éclair (QW) tue. Tu n'as pas de dash : surveille le jungler adverse et garde EQ ou WW pour t'en sortir. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) t'aide à garder ton avance.",
+    "trading": "Trade court : QQ à distance. Trade long : EW → QW → QQ. Contre un engage : EQ (effroi) ou WW (shield). Abandonne quand tes Tourments sont en recharge face à un support d'engage.",
+    "jungle_plan": "",
+    "threats": [
+      "Supports d'engage (Nautilus, Leona, Blitzcrank) quand tes Tourments sont en recharge.",
+      "Divers et assassins : tu n'as aucun dash.",
+      "ADC qui plongent avec leur ultime (Kai'Sa)."
+    ],
+    "mistakes": [
+      "Utiliser tes Tourments en poke et ne plus avoir de CC défensif.",
+      "Lancer l'éclair (QW) sur une cible qui bouge : il fait beaucoup moins mal.",
+      "Pousser seul sans vision : tu n'as aucune fuite."
+    ],
+    "matchup_notes": {
+      "Caitlyn": "Elle poke avec ses attaques et ses pièges : reste à portée de sorts, hors de ses pièges, et punis ses avancées avec EW → QW.",
+      "Kai'Sa": "Elle plonge avec son ultime : garde EQ pour l'effrayer à son arrivée.",
+      "Ezreal": "Il esquive avec son Saut arcanique : lance EW juste après.",
+      "Jinx": "Peu mobile : un root (EW) puis l'éclair la punit à chaque avancée.",
+      "Jhin": "Garde WW pour sa quatrième balle ; root-le pendant qu'il recharge."
+    },
+    "mid_game": "Poke avant chaque objectif et reste groupé : tu as besoin d'une frontline. Roots et éclairs punissent tout ennemi qui entre dans le brouillard sans vision.",
+    "late_game": "Reste derrière ta frontline, poke avec QQ et QE, garde EQ ou EW pour les divers et lance Vision de désespoir quand l'équipe adverse est groupée.",
+    "ahead": "Pousse ta lane, prends les tours et les dragons : ton poke rend chaque objectif facile.",
+    "behind": "Farm à distance, garde tes CC défensifs et joue autour de ton support : un root suivi de QW reste mortel.",
+    "win_condition": "Pour gagner cette partie, tu veux poke l'équipe adverse avant chaque objectif et transformer chaque root en kill.",
+    "final_tip": "Le CC de ton support suffit pour l'éclair : sur une cible stun ou root, QW fait ses dégâts maximum sans dépenser ton EW."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "Galio|sup": {
+    "identity": "Tank-mage à dégâts magiques, spécialiste anti-mage et de l'intervention sur la carte. Vents de guerre (Q) lance deux rafales qui se rejoignent en tornade, Bouclier de Durand (W) réduit les dégâts (surtout magiques) puis provoque autour de lui, Horion de la justice (E) charge et knock-up, et Entrée héroïque (R) protège un allié à distance avant d'atterrir à ses côtés en projetant les ennemis. Son passif renforce régulièrement une attaque qui frappe en zone.",
+    "playstyle": "Support d'engage et de protection, et l'un des bons choix du poste. Il engage avec Horion de la justice (E) suivi de Bouclier de Durand (W) et peut sauver un allié n'importe où avec son ultime. En support, il monte W en priorité : plus de réduction de dégâts.",
+    "early_game": "À partir du niveau 2, cherche l'engage E → W avec ton ADC. Sinon, reste à côté de lui et garde W pour provoquer un adversaire qui l'engage.",
+    "level_1": "Bouclier de Durand (W) en premier : réduction de dégâts et taunt pour défendre ou punir un engage. Ensuite, monte W en priorité.",
+    "level_2": "Horion de la justice (E). Engage : E (knock-up) → W (taunt) pendant que ton ADC attaque.",
+    "level_3": "Vents de guerre (Q). Combo complet : E → W → Q → attaque du passif.",
+    "level_6": "Entrée héroïque : protège un allié lointain, puis atterris en projetant les ennemis. Surveille la carte : un combat au mid ou dans la jungle peut basculer avec ton ultime.",
+    "power_spikes": [
+      "Niveau 2 : E → W.",
+      "Niveau 6 : Entrée héroïque sur toute la carte.",
+      "Médaillon de l'Iron Solari : protège toute l'équipe.",
+      "Teamfight : E → W au milieu de l'équipe adverse."
+    ],
+    "lane_plan": "Menace l'engage et protège ton ADC avec W. Après le niveau 6, surveille le mid et la jungle pour ton ultime. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers hors de la bot lane. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées dans un emplacement dédié).",
+    "trading": "Engage : E → W → Q → attaque du passif. Défense : W quand un adversaire saute sur ton ADC (le taunt le retourne contre toi). Contre les supports qui poke de loin (Xerath, Vel'Koz), attends ton engage.",
+    "jungle_plan": "",
+    "threats": [
+      "Supports de poke à longue portée qui te harcèlent avant ton engage.",
+      "Dégâts physiques : ton W réduit surtout les dégâts magiques.",
+      "Engager sans que ton ADC puisse suivre."
+    ],
+    "mistakes": [
+      "Engager avec E quand ton ADC est trop loin.",
+      "Relâcher W trop tôt : le taunt grandit avec la charge.",
+      "Garder ton ultime pour la lane alors qu'un allié se fait plonger ailleurs."
+    ],
+    "matchup_notes": {
+      "Thresh": "S'il grappine ton ADC, réponds par W pour le provoquer.",
+      "Nautilus": "Son engage t'offre un W sur lui et son ADC.",
+      "Lulu": "Elle transforme ton engage : attends qu'elle ait utilisé son W.",
+      "Xerath": "Il te poke de loin : avance quand ses sorts sont en recharge pour E.",
+      "Leona": "Elle t'engage aussi : W absorbe son burst et la provoque."
+    },
+    "mid_game": "Pose des pinks, roam vers le mid avec ton ultime et engage sur les cibles isolées. Ton ultime doit rejoindre chaque combat important.",
+    "late_game": "Frontline : engage avec E → W ou protège ton carry avec ton ultime. Lance W au milieu des ennemis groupés.",
+    "ahead": "Roam et utilise ton ultime pour gagner les combats sur toute la carte.",
+    "behind": "Protège ton ADC avec W et rejoins les combats avec ton ultime plutôt que d'engager seul.",
+    "win_condition": "Pour gagner cette partie, tu veux gagner les combats en les rejoignant avec ton ultime et en provoquant l'équipe adverse avec W.",
+    "final_tip": "Entrée héroïque protège l'allié ciblé avant même ton atterrissage : lance-la tôt sur un allié qui se fait plonger."
+  }
+}

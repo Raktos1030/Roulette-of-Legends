@@ -1,0 +1,43 @@
+{
+ "Hwei|adc": {
+  "identity": "Magic damage mage with nine abilities: each subject opens three variants. Subject: Disaster (Q) holds the damage spells (QQ fireball, QW bolt that punishes immobile or low targets, QE fissure that slows), Subject: Serenity (W) the utility spells (WQ current that speeds up, WW pool that protects, WE empowered attacks that restore mana), and Subject: Torment (E) the CC (EQ fear, EW eye that roots, EE maw that pulls). Spiraling Despair (R) slows more and more, then explodes. Hitting with two different spells triggers his passive.",
+  "playstyle": "Poke mage in the bot lane, in place of a marksman, and one of the best unconventional picks for the role. His nine spells cover poke (QQ, QE), kills on immobile targets (EW → QW) and defense (EQ, WW): with a support who has CC, every root becomes a kill. He has no dash: always keep a defensive CC.",
+  "early_game": "Farm with Disaster (Q) and poke whenever your opponent comes to last hit. Keep a Torment (E) ready: EQ fears an engaging support, EW roots a target for the bolt (QW). Play behind your minions against hooks.",
+  "level_1": "Subject: Disaster (Q) first. Farm from range and poke with QQ.",
+  "level_2": "Subject: Torment (E). EW roots a target for a kill with your support; EQ pushes back an engage.",
+  "level_3": "Subject: Serenity (W). WW protects you from an all-in, WE restores mana while farming. Kill combo: EW → QW → QQ.",
+  "level_6": "Spiraling Despair: growing slow, then an explosion. In lane: EW → R → QW → QQ with your support. In teamfights, cast it on a target in the middle of the enemy group.",
+  "power_spikes": [
+   "Level 2: EW → QW on an opponent who steps up.",
+   "Level 6: full kill combo.",
+   "Blackfire Torch, then Liandry's Torment: poke that keeps burning.",
+   "Teamfights: Spiraling Despair in the middle of the group."
+  ],
+  "lane_plan": "Poke from range and play for kills with your support's CC: a root (yours or theirs) followed by the bolt (QW) kills. You have no dash: watch the enemy jungler and keep EQ or WW to get out. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) helps you keep your lead.",
+  "trading": "Short trade: QQ from range. Long trade: EW → QW → QQ. Against an engage: EQ (fear) or WW (shield). Back off when your Torments are on cooldown against an engage support.",
+  "jungle_plan": "",
+  "threats": [
+   "Engage supports (Nautilus, Leona, Blitzcrank) while your Torments are on cooldown.",
+   "Divers and assassins: you have no dash.",
+   "Marksmen who dive with their ultimate (Kai'Sa)."
+  ],
+  "mistakes": [
+   "Using your Torments to poke and having no defensive CC left.",
+   "Casting the bolt (QW) on a moving target: it deals far less damage.",
+   "Pushing alone without vision: you have no escape."
+  ],
+  "matchup_notes": {
+   "Caitlyn": "She pokes with her attacks and traps: stay in spell range but out of her traps, and punish her step-ups with EW → QW.",
+   "Kai'Sa": "She dives with her ultimate: save EQ to fear her when she lands.",
+   "Ezreal": "He dodges with Arcane Shift: cast EW right after it.",
+   "Jinx": "Not very mobile: a root (EW) then the bolt punishes every step forward.",
+   "Jhin": "Save WW for his fourth shot; root him while he reloads."
+  },
+  "mid_game": "Poke before every objective and stay grouped: you need a frontline. Roots and bolts punish any enemy who walks into the fog without vision.",
+  "late_game": "Stay behind your frontline, poke with QQ and QE, keep EQ or EW for divers and cast Spiraling Despair when the enemy team is grouped.",
+  "ahead": "Push your lane, take towers and dragons: your poke makes every objective easy.",
+  "behind": "Farm from range, keep your defensive CC and play around your support: a root followed by QW is still lethal.",
+  "win_condition": "To win this game, you want to poke the enemy team before every objective and turn every root into a kill.",
+  "final_tip": "Your support's CC is enough for the bolt: on a stunned or rooted target, QW deals its full damage without spending your EW."
+ }
+}

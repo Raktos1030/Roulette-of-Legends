@@ -1,0 +1,43 @@
+{
+ "Xerath|adc": {
+  "identity": "Magic damage artillery mage. Arcanopulse (Q) charges up to gain range, Eye of Destruction (W) strikes an area (more damage and a slow in the center), Shocking Orb (E) stuns, and Rite of the Arcane (R) roots him in place to fire several very long-range barrages. His attacks regularly restore mana (passive Mana Surge).",
+  "playstyle": "Artillery mage in the bot lane: he farms and pokes from farther than any marksman with Arcanopulse (Q) and Eye of Destruction (W), stuns with Shocking Orb (E) and finishes targets from very far with Rite of the Arcane (R). No mobility: he relies on his support against engages.",
+  "early_game": "Poke with the center of W on the opponent who comes to last hit, then a charged Q. Save E to stun an enemy engage or start a kill.",
+  "level_1": "Arcanopulse (Q) first. Then max Q.",
+  "level_2": "Eye of Destruction (W). W center (slow), then Q: very strong poke.",
+  "level_3": "Shocking Orb (E). A stun for kills and for defense.",
+  "level_6": "Rite of the Arcane: several very long-range barrages. Finish opponents who flee the lane, or help the other lanes.",
+  "power_spikes": [
+   "Level 2: W + Q, very strong poke.",
+   "Level 3: E for kills and defense.",
+   "Level 6: very long-range executes.",
+   "Luden's Echo: devastating poke."
+  ],
+  "lane_plan": "Poke constantly with W and Q and keep E against engages. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) helps you keep your lead.",
+  "trading": "Basic trade: W then Q. All-in: E → W → Q → R. Defense: E on the enemy engage.",
+  "jungle_plan": "",
+  "threats": [
+   "Engage supports (Blitzcrank, Nautilus, Rell).",
+   "Enchanters who heal off your poke (Soraka, Nami).",
+   "Any dive: you have no mobility."
+  ],
+  "mistakes": [
+   "Casting your ultimate when a diver can reach you.",
+   "Using E to poke and being unable to stun an engage.",
+   "Stepping past your minions against hooks."
+  ],
+  "matchup_notes": {
+   "Caitlyn": "Your spell range beats hers: poke her with W and Q.",
+   "Jinx": "Not very mobile: the center of W, then Q hit her easily.",
+   "Ezreal": "He dodges with Arcane Shift: cast W where he lands.",
+   "Kai'Sa": "She dives with her ultimate: save E to stun her.",
+   "Draven": "Farm from range until level 3; then poke him when he goes for his axes."
+  },
+  "mid_game": "Poke before objectives from a safe position and finish fleeing enemies with Rite of the Arcane.",
+  "late_game": "Stay far behind your frontline: W and Q before the fight, E on divers, ultimate to finish. Never cast your ultimate when a diver can reach you.",
+  "ahead": "Poke and force objectives: the enemy shows up to fights already weakened.",
+  "behind": "Farm safely from range and keep E to defend yourself.",
+  "win_condition": "To win this game, you want to wear down the enemy team from very long range before every fight.",
+  "final_tip": "Aim the center of your W: damage and slow are much stronger there, and your Q lands easily after it."
+ }
+}

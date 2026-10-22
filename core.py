@@ -685,7 +685,7 @@ class Data:
                 if not g.get(name):
                     problems.append("%s: field '%s' empty or missing" % (key, name))
         for key in self.guides:
-            if key not in self.combos:
+            if key not in self.combos and not self.is_chaos_key(key):   # (a new guide waits for its stats)
                 problems.append("%s: guide without a matching combo" % key)
         return problems
 
@@ -2949,6 +2949,9 @@ def check():
     d = Data()
     problems = d.missing_guides() + d.guide_errors
     print("Combos: %d | guides: %d" % (len(d.combos), len(d.guides)))
+    waiting = [k for k in d.guides if k not in d.combos and d.is_chaos_key(k)]
+    if waiting:
+        print("  new guides, stats at the next update: " + ", ".join(waiting))
     for r in ROLES:
         done = sum(1 for k in d.by_role[r] if k in d.guides)
         print("  %-8s %3d champions, %3d guides" % (r, len(d.by_role[r]), done))

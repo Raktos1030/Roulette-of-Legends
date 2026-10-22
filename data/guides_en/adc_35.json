@@ -1,0 +1,43 @@
+{
+ "Brand|adc": {
+  "identity": "Magic damage mage. Blaze (passive): his abilities set targets ablaze (up to 3 stacks); at 3 stacks on a champion, the target explodes after 2 seconds, damaging everything around it. Sear (Q) stuns a target that's already ablaze, Pillar of Flame (W) strikes an area after a short delay (stronger on burning targets), Conflagration (E) blasts the target and spreads to nearby enemies (double range if the target is burning), and Pyroclasm (R) bounces up to 5 times between enemies and Brand.",
+  "playstyle": "Sustained damage mage in the bot lane. He farms from range with Pillar of Flame (W) and Conflagration (E), burns both opponents at once and dominates grouped fights with Pyroclasm (R). Fragile and immobile: he relies on his support to stay safe.",
+  "early_game": "Farm with W and E (which spreads through the wave) and poke with W when your opponent comes to last hit. Save Sear (Q) to stun an engage or start a kill on a target that's already burning.",
+  "level_1": "Pillar of Flame (W) first. Then max W.",
+  "level_2": "Conflagration (E). It spreads through the wave and to nearby champions: you farm and poke at the same time.",
+  "level_3": "Sear (Q). Full combo: E → Q (stun) → W → passive explosion.",
+  "level_6": "Pyroclasm: bounces between nearby enemies. Cast it when both opponents are close to each other and already burning.",
+  "power_spikes": [
+   "Level 3: E → Q → W.",
+   "Level 6: Pyroclasm on both opponents.",
+   "Blackfire Torch, then Rylai's Crystal Scepter: sustained damage and slows.",
+   "Teamfights: Pyroclasm on a grouped team."
+  ],
+  "lane_plan": "Farm from range and burn both opponents as soon as they get close to each other. Play for kills with your support's CC. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) helps you keep your lead.",
+  "trading": "Basic trade: W on your opponent. All-in: E → Q → W → R. Defense: Q on the enemy engage if they're already burning. Back off against engages when Q is on cooldown.",
+  "jungle_plan": "",
+  "threats": [
+   "Engage supports: you have no dash.",
+   "Enchanters who heal off your burns (Soraka, Nami, Milio).",
+   "Assassins and divers from mid game on."
+  ],
+  "mistakes": [
+   "Casting Q without setting the target ablaze first: no stun.",
+   "Casting Pyroclasm on a lone target: its bounces lose their value.",
+   "Dumping your spells on the wave when the enemy engage comes."
+  ],
+  "matchup_notes": {
+   "Caitlyn": "She outranges your attacks: farm with E and W and punish her step-ups with E → Q.",
+   "Jinx": "Not very mobile: W on her every time she last hits.",
+   "Ezreal": "He dodges with Arcane Shift: aim your W where he lands.",
+   "Kai'Sa": "She dives with her ultimate: save Q, she's often already burning.",
+   "Draven": "His damage at levels 1 and 2 is huge: farm from range until level 3."
+  },
+  "mid_game": "Push waves with E and W, poke before objectives and stay with your team.",
+  "late_game": "Stay behind your frontline: W and E on groups, Q on divers, Pyroclasm in the middle of the enemies.",
+  "ahead": "Take towers with your waves and force dragons: your area damage wins grouped fights.",
+  "behind": "Farm with E and W from range, and join fights behind your frontline to cast Pyroclasm.",
+  "win_condition": "To win this game, you want to burn the grouped enemy team with W, E and Pyroclasm in teamfights.",
+  "final_tip": "Set them ablaze first, stun second: Sear only stuns targets that are already burning."
+ }
+}

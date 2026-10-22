@@ -1,0 +1,43 @@
+{
+  "Brand|adc": {
+    "identity": "Mage à dégâts magiques. Flammes (passif) : ses sorts enflamment les cibles (jusqu'à 3 fois) ; à 3 effets sur un champion, la cible explose après 2 secondes en blessant tout autour. Brûlure (Q) stun une cible déjà enflammée, Colonne de flammes (W) frappe une zone après un court délai (plus fort sur les cibles enflammées), Conflagration (E) fait exploser la cible et se propage aux ennemis proches (portée doublée si la cible brûle), et Pyrolyse (R) rebondit jusqu'à 5 fois entre les ennemis et Brand.",
+    "playstyle": "Mage de dégâts continus en bot lane. Il farm de loin avec Colonne de flammes (W) et Conflagration (E), brûle les deux adversaires à la fois et domine les combats groupés avec Pyrolyse (R). Fragile et sans mobilité : il dépend de son support pour sa sécurité.",
+    "early_game": "Farm avec W et E (qui se propage dans la vague) et poke avec W quand l'adversaire vient last hit. Garde Brûlure (Q) pour stun un engage ou lancer un kill sur une cible déjà enflammée.",
+    "level_1": "Colonne de flammes (W) en premier. Ensuite, monte W en priorité.",
+    "level_2": "Conflagration (E). Elle se propage dans la vague et aux champions proches : tu farm et tu poke en même temps.",
+    "level_3": "Brûlure (Q). Combo complet : E → Q (stun) → W → explosion du passif.",
+    "level_6": "Pyrolyse : rebondit entre les ennemis proches. Lance-la quand les deux adversaires sont proches l'un de l'autre et déjà enflammés.",
+    "power_spikes": [
+      "Niveau 3 : E → Q → W.",
+      "Niveau 6 : Pyrolyse sur les deux adversaires.",
+      "Torche noire puis Sceptre de Rylai : dégâts continus et slows.",
+      "Teamfight : Pyrolyse sur une équipe groupée."
+    ],
+    "lane_plan": "Farm de loin et brûle les deux adversaires dès qu'ils se rapprochent l'un de l'autre. Joue les kills avec le CC de ton support. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) t'aide à garder ton avance.",
+    "trading": "Trade de base : W sur l'adversaire. All-in : E → Q → W → R. Défense : Q sur l'engage adverse, s'il brûle déjà. Abandonne contre les engages quand Q est en recharge.",
+    "jungle_plan": "",
+    "threats": [
+      "Supports d'engage : tu n'as aucun dash.",
+      "Enchanteurs qui soignent tes brûlures (Soraka, Nami, Milio).",
+      "Assassins et divers à partir du milieu de partie."
+    ],
+    "mistakes": [
+      "Lancer Q sans enflammer la cible d'abord : pas de stun.",
+      "Lancer Pyrolyse sur une cible seule : ses rebonds perdent leur intérêt.",
+      "Vider tes sorts sur la vague quand l'engage adverse arrive."
+    ],
+    "matchup_notes": {
+      "Caitlyn": "Elle te dépasse en portée d'attaque : farm avec E et W et punis ses avancées avec E → Q.",
+      "Jinx": "Peu mobile : W sur elle à chaque last hit.",
+      "Ezreal": "Il esquive avec son Saut arcanique : vise ton W là où il atterrit.",
+      "Kai'Sa": "Elle plonge avec son ultime : garde Q, elle brûle souvent déjà.",
+      "Draven": "Ses dégâts aux niveaux 1 et 2 sont énormes : farm de loin jusqu'au niveau 3."
+    },
+    "mid_game": "Pousse les vagues avec E et W, poke avant les objectifs et reste avec ton équipe.",
+    "late_game": "Reste derrière ta frontline : W et E sur les groupes, Q sur les divers, Pyrolyse au milieu des ennemis.",
+    "ahead": "Prends les tours avec tes vagues et force les dragons : tes dégâts de zone gagnent les combats groupés.",
+    "behind": "Farm avec E et W de loin, et rejoins les combats derrière ta frontline pour lancer Pyrolyse.",
+    "win_condition": "Pour gagner cette partie, tu veux brûler l'équipe adverse groupée avec W, E et Pyrolyse en teamfight.",
+    "final_tip": "Enflamme d'abord, stun ensuite : Brûlure ne stun que les cibles déjà en flammes."
+  }
+}

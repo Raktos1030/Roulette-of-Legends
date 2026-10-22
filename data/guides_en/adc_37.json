@@ -1,0 +1,43 @@
+{
+ "Katarina|adc": {
+  "identity": "Magic (or mixed) damage assassin who cleans up fights through resets. Her daggers fall to the ground; picking them up triggers an area strike (passive). Bouncing Blade (Q) throws a dagger that bounces, then lands, Preparation (W) tosses a dagger into the air and speeds her up, Shunpo (E) teleports her to a unit or dagger, and Death Lotus (R) channels a storm of blades around her. Every takedown sharply reduces her cooldowns.",
+  "playstyle": "Bot lane Katarina plays an on-hit build (Conqueror, Kraken Slayer, Blade of the Ruined King): her attacks matter as much as her daggers. She trades with daggers and attacks, then cleans up fights through resets. Very strong once ahead, she depends on the enemy CC: wait for it to be used.",
+  "early_game": "Farm with Q and look for short trades: Q → E on the dagger → pick-up → attacks. With your support, every engage can become a kill from level 3 on.",
+  "level_1": "Bouncing Blade (Q) first. Farm and poke.",
+  "level_2": "Shunpo (E). Q → E on the dagger on the ground near your opponent → pick-up → attacks.",
+  "level_3": "Preparation (W). W → E on the falling dagger → area strike: your basic combo.",
+  "level_6": "Death Lotus: a channel that shreds everything around you and applies your on-hit effects. Combo: Q → E → W → R; every takedown resets your abilities.",
+  "power_spikes": [
+   "Level 3: full combo.",
+   "Level 6: Death Lotus.",
+   "Kraken Slayer: attacks and trades.",
+   "Blade of the Ruined King: duels and sustain."
+  ],
+  "lane_plan": "Trade as soon as your opponent steps up, following your support's engage. You don't have a marksman's range: farm under your tower against poke and wait for level 3. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) boosts your on-hit build.",
+  "trading": "Short trade: Q → E on the dagger → pick-up → attacks. All-in: W → E → Q → R. In teamfights: wait for the enemy CC, go in on a low target and chain. Back off against CC that interrupts your ultimate.",
+  "jungle_plan": "",
+  "threats": [
+   "CC supports (Leona, Nautilus, Lulu) who interrupt your ultimate.",
+   "Long-range poke that keeps you from getting close.",
+   "Teamfights: going in first means dying."
+  ],
+  "mistakes": [
+   "Going in before the enemy CC is used.",
+   "Casting your ultimate in range of a CC that interrupts it.",
+   "Pushing without vision: without your resets, you're fragile."
+  ],
+  "matchup_notes": {
+   "Caitlyn": "She pokes you from range: wait for your support's engage and Shunpo to a dagger near her.",
+   "Jinx": "Not very mobile: a level 3 all-in often kills her.",
+   "Ezreal": "He escapes with Arcane Shift: wait until he's used it before going in.",
+   "Kai'Sa": "She dives too: keep E to follow her or escape.",
+   "Jhin": "His root (W) interrupts your ultimate: go in while it's on cooldown."
+  },
+  "mid_game": "Play with your jungler and support for picks: your resets win outnumbered fights.",
+  "late_game": "Wait for the CC to be used, then go in on a low target and chain takedowns.",
+  "ahead": "Roam and dive isolated targets: every takedown resets your abilities.",
+  "behind": "Farm with Q and wait for fights where the enemy CC goes on your allies.",
+  "win_condition": "To win this game, you want to enter teamfights after the enemy CC and chain takedowns.",
+  "final_tip": "Your ultimate applies your on-hit effects: with Kraken Slayer and Blade of the Ruined King, Death Lotus becomes a dueling weapon."
+ }
+}

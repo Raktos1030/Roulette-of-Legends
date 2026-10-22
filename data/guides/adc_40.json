@@ -1,0 +1,43 @@
+{
+  "Xerath|adc": {
+    "identity": "Mage d'artillerie à dégâts magiques. Rayon arcanique (Q) se charge pour gagner en portée, Œil de la destruction (W) frappe une zone (plus de dégâts et un slow au centre), Orbe d'électrocution (E) stun, et Rite arcanique (R) le root pour tirer plusieurs barrages à très longue portée. Ses attaques rendent régulièrement du mana (passif Afflux de mana).",
+    "playstyle": "Mage d'artillerie en bot lane : il farm et poke de plus loin que n'importe quel ADC avec Rayon arcanique (Q) et Œil de la destruction (W), stun avec Orbe d'électrocution (E) et achève à très longue portée avec Rite arcanique (R). Aucune mobilité : il dépend de son support face aux engages.",
+    "early_game": "Poke avec W au centre sur l'adversaire qui vient last hit, puis Q chargé. Garde E pour stun un engage adverse ou lancer un kill.",
+    "level_1": "Rayon arcanique (Q) en premier. Ensuite, monte Q en priorité.",
+    "level_2": "Œil de la destruction (W). W au centre (slow) puis Q : poke très fort.",
+    "level_3": "Orbe d'électrocution (E). Stun pour les kills et pour te défendre.",
+    "level_6": "Rite arcanique : plusieurs barrages à très longue portée. Achève les adversaires qui fuient la lane, ou aide les autres lanes.",
+    "power_spikes": [
+      "Niveau 2 : W + Q, poke très fort.",
+      "Niveau 3 : E pour les kills et la défense.",
+      "Niveau 6 : exécutions à très longue portée.",
+      "Écho de Luden : poke dévastateur."
+    ],
+    "lane_plan": "Poke avec W et Q en permanence et garde E contre les engages. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) t'aide à garder ton avance.",
+    "trading": "Trade de base : W puis Q. All-in : E → W → Q → R. Défense : E sur l'engage adverse.",
+    "jungle_plan": "",
+    "threats": [
+      "Supports d'engage (Blitzcrank, Nautilus, Rell).",
+      "Enchanteurs qui soignent ton poke (Soraka, Nami).",
+      "Tout dive : tu n'as aucune mobilité."
+    ],
+    "mistakes": [
+      "Lancer l'ultime quand un diver peut t'atteindre.",
+      "Utiliser E en poke et ne plus pouvoir stun un engage.",
+      "S'avancer au-delà de tes sbires face aux grappins."
+    ],
+    "matchup_notes": {
+      "Caitlyn": "Ta portée de sorts dépasse la sienne : poke-la avec W et Q.",
+      "Jinx": "Peu mobile : W au centre puis Q la touchent facilement.",
+      "Ezreal": "Il esquive avec son Saut arcanique : lance W là où il atterrit.",
+      "Kai'Sa": "Elle plonge avec son ultime : garde E pour la stun.",
+      "Draven": "Farm de loin jusqu'au niveau 3 ; ensuite, poke-le quand il va chercher ses haches."
+    },
+    "mid_game": "Poke avant les objectifs depuis une position sûre et achève les fuyards avec Rite arcanique.",
+    "late_game": "Reste loin derrière ta frontline : W et Q avant le combat, E sur les divers, ultime pour achever. Ne lance jamais l'ultime quand un diver peut t'atteindre.",
+    "ahead": "Poke et force les objectifs : l'adversaire arrive affaibli aux combats.",
+    "behind": "Farm à distance en sécurité et garde E pour te défendre.",
+    "win_condition": "Pour gagner cette partie, tu veux affaiblir l'équipe adverse à très longue portée avant chaque combat.",
+    "final_tip": "Vise le centre de ton W : les dégâts et le slow y sont bien plus forts, et ton Q touche ensuite facilement."
+  }
+}

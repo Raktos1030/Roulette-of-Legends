@@ -692,6 +692,12 @@ class Updater:
         en = fetch("%s/cdn/%s/data/en_US/champion.json" % (DD, dd_ver))["data"]
         id2key = {int(c["key"]): k for k, c in en.items()}
         id2fr = {int(c["key"]): full_fr[k]["name"] for k, c in en.items() if k in full_fr}
+        # a new guide (no stats yet for that champion and role): computed from this update on
+        for gk in core.data.guides:
+            champ, _, role = gk.partition("|")
+            if gk not in combos_old and champ in en and role in LANE:
+                cid = int(en[champ]["key"])
+                pool.append({"key": champ, "cid": cid, "role": role, "name": id2fr.get(cid, champ), "name_en": en[champ]["name"]})
 
         # 2. u.gg: matchups for both patches (the finished patch is cached), current patch ranking
         cids = sorted({c["cid"] for c in pool})
@@ -787,7 +793,7 @@ class Updater:
             combos[key] = {
                 "name": id2fr.get(c["cid"], c["name"]), "name_en": en.get(c["key"], {}).get("name", c["name_en"]),
                 "key": c["key"], "cid": c["cid"], "role": c["role"],
-                "share": round(share, 2) if share is not None else combos_old[key]["share"],
+                "share": round(share, 2) if share is not None else (combos_old.get(key) or {}).get("share", 0),
                 "month": month, "patch": pstats, "ugg": ugg_cur,
                 "skills": skills(d30), "items": items, "runes": rb.get("runes"), "sums": rb.get("sums"),
                 "builds": ugg_builds.get(c["cid"], {}).get(UROLE[c["role"]]) or [],

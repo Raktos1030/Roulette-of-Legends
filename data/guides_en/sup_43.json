@@ -1,0 +1,43 @@
+{
+ "Ashe|sup": {
+  "identity": "Utility physical damage marksman. Frost Shot (passive): her attacks slow and deal more damage to slowed targets (her crits strengthen the slow instead of adding damage). Ranger's Focus (Q) charges as she attacks, then turns her attacks into flurries of arrows with bonus attack speed. Volley (W) fires a cone of slowing arrows, Hawkshot (E) sends a hawk to reveal any area of the map, and Enchanted Crystal Arrow (R) flies across the map and stuns the first champion hit, longer the farther the arrow has traveled.",
+  "playstyle": "Poke and utility support: Volley (W) pokes and slows, Hawkshot (E) gives vision and Enchanted Crystal Arrow (R) engages from anywhere. She takes Arcane Comet to poke with W and items that shorten her ultimate's cooldown (Malignance, Axiom Arc). Her support results are among the weakest (Emerald+): she offers little protection to her ADC.",
+  "early_game": "Poke with W on the opponent who comes to last hit: the slow opens free attacks for your ADC. Send the hawk (E) into the river to spot the enemy jungler.",
+  "level_1": "Volley (W) first. Then max W.",
+  "level_2": "Ranger's Focus (Q). For long trades with your ADC.",
+  "level_3": "Hawkshot (E). Vision on the enemy jungler and the bushes.",
+  "level_6": "Enchanted Crystal Arrow: a global stun. Engage on an opponent who steps up, or help another lane. The farther the arrow flies, the longer the stun.",
+  "power_spikes": [
+   "Level 2: W and attacks with your ADC.",
+   "Level 6: long-range engage with the arrow.",
+   "Malignance: your ultimate is up more often.",
+   "Teamfights: arrow on the enemy carry."
+  ],
+  "lane_plan": "Poke with W and give vision with the hawk. Your arrow is your only engage: don't waste it. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third outside the bot lane. The support role quest then makes your Control Wards cheaper (40 gold, two stored in a dedicated slot).",
+  "trading": "Basic trade: W, then attacks on the slowed target. All-in: R → W → attacks with your ADC. Defense: W to slow the diver; you have no other protection.",
+  "jungle_plan": "",
+  "threats": [
+   "Engage supports (Leona, Nautilus, Rell): you protect your ADC poorly.",
+   "Enchanters who heal off your poke.",
+   "Divers in teamfights."
+  ],
+  "mistakes": [
+   "Wasting the arrow on poke instead of an engage.",
+   "Forgetting vision: Hawkshot (E) and Control Wards are your main strength.",
+   "Staying away from your ADC: you're their only help against an engage."
+  ],
+  "matchup_notes": {
+   "Thresh": "Stay behind your minions and slow him with W when he engages.",
+   "Nautilus": "Slow him with W before he reaches your ADC.",
+   "Lulu": "She protects her ADC: poke her directly.",
+   "Leona": "Her engage punishes you: stay behind your ADC.",
+   "Karma": "She pokes too: W on her when she steps up."
+  },
+  "mid_game": "Send the hawk over objectives, place Control Wards and look for picks with your arrow.",
+  "late_game": "Arrow on the enemy carry to open the fight, W to slow divers.",
+  "ahead": "Look for picks with your arrow and force objectives with your team.",
+  "behind": "Stay close to your ADC, poke with W and keep your arrow for an engage that changes the fight.",
+  "win_condition": "To win this game, you want to open fights with a Crystal Arrow on the enemy carry and control vision with Hawkshot.",
+  "final_tip": "Send the hawk before every objective: knowing where the enemies are is worth as much as an engage."
+ }
+}

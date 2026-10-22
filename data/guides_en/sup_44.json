@@ -1,0 +1,43 @@
+{
+ "Galio|sup": {
+  "identity": "Magic damage tank-mage who specializes in shutting down mages and stepping in across the map. Winds of War (Q) fires two gusts that merge into a tornado, Shield of Durand (W) reduces damage (especially magic), then taunts around him, Justice Punch (E) charges and knocks up, and Hero's Entrance (R) shields a distant ally before landing beside them, knocking enemies up. His passive regularly empowers an attack that hits in an area.",
+  "playstyle": "Engage and protection support, and one of the good picks for the role. He engages with Justice Punch (E) followed by Shield of Durand (W) and can save an ally anywhere with his ultimate. As a support, he maxes W first: more damage reduction.",
+  "early_game": "From level 2, look for the E → W engage with your ADC. Otherwise, stay next to them and keep W to taunt an opponent who engages on them.",
+  "level_1": "Shield of Durand (W) first: damage reduction and a taunt to defend or punish an engage. Then max W.",
+  "level_2": "Justice Punch (E). Engage: E (knock-up) → W (taunt) while your ADC attacks.",
+  "level_3": "Winds of War (Q). Full combo: E → W → Q → passive attack.",
+  "level_6": "Hero's Entrance: shield a distant ally, then land and knock enemies up. Watch the map: a fight in mid or in the jungle can swing with your ultimate.",
+  "power_spikes": [
+   "Level 2: E → W.",
+   "Level 6: Hero's Entrance anywhere on the map.",
+   "Locket of the Iron Solari: protects the whole team.",
+   "Teamfights: E → W in the middle of the enemy team."
+  ],
+  "lane_plan": "Threaten the engage and protect your ADC with W. After level 6, watch mid and the jungle for your ultimate. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third outside the bot lane. The support role quest then makes your Control Wards cheaper (40 gold, two stored in a dedicated slot).",
+  "trading": "Engage: E → W → Q → passive attack. Defense: W when an opponent jumps on your ADC (the taunt turns them onto you). Against supports who poke from far (Xerath, Vel'Koz), wait for your engage.",
+  "jungle_plan": "",
+  "threats": [
+   "Long-range poke supports who wear you down before your engage.",
+   "Physical damage: your W mostly reduces magic damage.",
+   "Engaging when your ADC can't follow."
+  ],
+  "mistakes": [
+   "Engaging with E when your ADC is too far away.",
+   "Releasing W too early: the taunt grows with the charge.",
+   "Keeping your ultimate for the lane while an ally gets dove elsewhere."
+  ],
+  "matchup_notes": {
+   "Thresh": "If he hooks your ADC, answer with W to taunt him.",
+   "Nautilus": "His engage gives you a W on him and his ADC.",
+   "Lulu": "She polymorphs your engage: wait until she's used her W.",
+   "Xerath": "He pokes you from far: move in for E when his spells are on cooldown.",
+   "Leona": "She engages on you too: W absorbs her burst and taunts her."
+  },
+  "mid_game": "Place Control Wards, roam to mid with your ultimate and engage on isolated targets. Your ultimate should join every important fight.",
+  "late_game": "Frontline: engage with E → W or protect your carry with your ultimate. Cast W in the middle of grouped enemies.",
+  "ahead": "Roam and use your ultimate to win fights all over the map.",
+  "behind": "Protect your ADC with W and join fights with your ultimate rather than engaging alone.",
+  "win_condition": "To win this game, you want to win fights by joining them with your ultimate and taunting the enemy team with W.",
+  "final_tip": "Hero's Entrance shields the targeted ally before you even land: cast it early on an ally who's getting dove."
+ }
+}

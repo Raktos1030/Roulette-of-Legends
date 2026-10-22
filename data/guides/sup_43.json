@@ -1,0 +1,43 @@
+{
+  "Ashe|sup": {
+    "identity": "Tireuse utilitaire à dégâts physiques. Tir givrant (passif) : ses attaques slow et font plus de dégâts aux cibles slow (ses crits renforcent le slow au lieu d'augmenter les dégâts). Concentration du ranger (Q) se charge en attaquant puis transforme ses attaques en volées de flèches avec plus de vitesse d'attaque. Salve (W) tire un cône de flèches qui slow, Rapace (E) envoie un faucon révéler n'importe quelle zone de la carte, et Flèche de cristal enchantée (R) traverse la carte et stun le premier champion touché, d'autant plus longtemps que la flèche a voyagé loin.",
+    "playstyle": "Support de poke et d'utilité : Salve (W) poke et slow, Rapace (E) donne la vision et Flèche de cristal enchantée (R) engage de n'importe où. Elle joue Comète arcanique pour poke avec W et des objets qui raccourcissent son ultime (Malfaisance, Arc axiomatique). Ses résultats en support sont parmi les plus faibles (Émeraude+) : elle protège peu son ADC.",
+    "early_game": "Poke avec W sur l'adversaire qui vient last hit : le slow ouvre des attaques gratuites pour ton ADC. Envoie le faucon (E) dans la rivière pour repérer le jungler adverse.",
+    "level_1": "Salve (W) en premier. Ensuite, monte W en priorité.",
+    "level_2": "Concentration du ranger (Q). Pour les trades longs avec ton ADC.",
+    "level_3": "Rapace (E). Vision sur le jungler adverse et sur les bushs.",
+    "level_6": "Flèche de cristal enchantée : stun global. Engage sur l'adversaire qui s'avance, ou aide une autre lane. Plus la flèche voyage loin, plus le stun est long.",
+    "power_spikes": [
+      "Niveau 2 : W et attaques avec ton ADC.",
+      "Niveau 6 : engage à distance avec la flèche.",
+      "Malfaisance : ultime plus souvent disponible.",
+      "Teamfight : flèche sur le carry adverse."
+    ],
+    "lane_plan": "Poke avec W et donne la vision avec le faucon. Ta flèche est ton seul engage : ne la gaspille pas. Reste en bot lane jusqu'au niveau 5 : depuis le patch 26.16, l'or et l'expérience de tes sbires sont réduits d'un tiers hors de la bot lane. La quête de rôle support rend ensuite tes pinks moins chères (40 PO, deux stockées dans un emplacement dédié).",
+    "trading": "Trade de base : W puis attaques sur la cible slow. All-in : R → W → attaques avec ton ADC. Défense : W pour slow le diver ; tu n'as pas d'autre protection.",
+    "jungle_plan": "",
+    "threats": [
+      "Supports d'engage (Leona, Nautilus, Rell) : tu protèges mal ton ADC.",
+      "Enchanteurs qui soignent ton poke.",
+      "Divers en teamfight."
+    ],
+    "mistakes": [
+      "Gaspiller la flèche en poke au lieu d'engager.",
+      "Oublier la vision : Rapace (E) et les pinks sont ton principal atout.",
+      "Rester loin de ton ADC : tu es sa seule aide contre un engage."
+    ],
+    "matchup_notes": {
+      "Thresh": "Reste derrière tes sbires et slow-le avec W quand il engage.",
+      "Nautilus": "Slow-le avec W avant qu'il atteigne ton ADC.",
+      "Lulu": "Elle protège son ADC : poke-la directement.",
+      "Leona": "Son engage te punit : reste derrière ton ADC.",
+      "Karma": "Elle poke aussi : W sur elle quand elle s'avance."
+    },
+    "mid_game": "Envoie le faucon sur les objectifs, pose des pinks et cherche les picks avec ta flèche.",
+    "late_game": "Flèche sur le carry adverse pour ouvrir le combat, W pour slow les divers.",
+    "ahead": "Cherche les picks avec ta flèche et force les objectifs avec ton équipe.",
+    "behind": "Reste près de ton ADC, poke avec W et garde ta flèche pour un engage qui change le combat.",
+    "win_condition": "Pour gagner cette partie, tu veux ouvrir les combats avec une Flèche de cristal sur le carry adverse et contrôler la vision avec Rapace.",
+    "final_tip": "Envoie le faucon avant chaque objectif : savoir où sont les ennemis vaut autant qu'un engage."
+  }
+}

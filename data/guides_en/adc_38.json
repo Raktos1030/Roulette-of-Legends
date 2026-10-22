@@ -1,0 +1,43 @@
+{
+ "Syndra|adc": {
+  "identity": "Magic damage burst mage. Dark Sphere (Q) summons a sphere that explodes, Force of Will (W) grabs a sphere or minion and throws it while slowing, Scatter the Weak (E) knocks back enemies and spheres (which stun whoever they hit), and Unleashed Power (R) sends every sphere at a target. She builds stacks that upgrade her abilities (passive Transcendent).",
+  "playstyle": "Burst mage in the bot lane. She pokes with Dark Sphere (Q), stuns with Scatter the Weak (E) and kills with Unleashed Power (R). Her stun keeps her safer than other bot lane mages, but she's still fragile against dives.",
+  "early_game": "Farm and poke with Q. Keep E and a sphere on the ground to stun an enemy engage. With your support, Q → E on an opponent who steps up starts the kill.",
+  "level_1": "Dark Sphere (Q) first. Poke and farm.",
+  "level_2": "Scatter the Weak (E). Q → E: the sphere is knocked forward and stuns. It's your main offensive and defensive tool.",
+  "level_3": "Force of Will (W). Full combo: Q → E (stun) → W → Q.",
+  "level_6": "Unleashed Power: every sphere strikes the target. The more spheres, the bigger the burst. Combo: Q → E → W → R on the stunned opponent.",
+  "power_spikes": [
+   "Level 2: Q → E (stun).",
+   "Level 6: full burst.",
+   "Luden's Echo: poke and burst.",
+   "Abilities upgraded by Transcendent (passive)."
+  ],
+  "lane_plan": "Poke with Q and punish every step forward with Q → E. Keep E for the enemy engage. The ADC role quest (300 gold, more gold per kill and per minion, then an extra item slot) helps you keep your lead.",
+  "trading": "Short trade: Q. All-in: Q → E → W → R. Defense: E on the enemy engage. Back off when E is on cooldown against an engage support.",
+  "jungle_plan": "",
+  "threats": [
+   "Engage supports while E is on cooldown.",
+   "Divers who dodge your stun (Kai'Sa, Ezreal).",
+   "Long-range marksmen who poke you back (Caitlyn)."
+  ],
+  "mistakes": [
+   "Using E to poke and having no defensive stun left.",
+   "Casting your ultimate with few spheres on the ground: much less damage.",
+   "Stepping up without vision: you have no dash."
+  ],
+  "matchup_notes": {
+   "Caitlyn": "She has more attack range: poke with Q and punish her step-ups with Q → E.",
+   "Kai'Sa": "She dives with her ultimate: save E to stun her when she lands.",
+   "Ezreal": "He dodges with Arcane Shift: cast Q → E right after it.",
+   "Jinx": "Not very mobile: Q → E every time she steps forward.",
+   "Lucian": "He trades fast with his dash: stun him with E when he arrives."
+  },
+  "mid_game": "Poke before objectives and stun the targets who walk into your zone. Stay with your team.",
+  "late_game": "Stay behind your frontline: Q → E on divers, ultimate on the enemy carry as soon as they're in range.",
+  "ahead": "Take towers and dragons: your burst kills an enemy carry in one combo.",
+  "behind": "Farm from range and play defense: a stun on the diver protects your team.",
+  "win_condition": "To win this game, you want to kill an enemy carry with one Q → E → W → R combo at the start of every fight.",
+  "final_tip": "Always keep a sphere and your E for the enemy engage: the stun saves you."
+ }
+}

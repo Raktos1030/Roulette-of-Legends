@@ -1,0 +1,43 @@
+{
+  "Syndra|adc": {
+    "identity": "Mage de burst à dégâts magiques. Sphère noire (Q) fait apparaître une sphère qui explose, Force de la volonté (W) attrape une sphère ou un sbire et la relance en slowant, Dispersion des faibles (E) repousse les ennemis et les sphères (qui stun ceux qu'elles touchent), et Déchaînement de puissance (R) envoie toutes les sphères sur une cible. Elle accumule des stacks qui améliorent ses sorts (passif Transcendance).",
+    "playstyle": "Mage de burst en bot lane. Elle poke avec Sphère noire (Q), stun avec Dispersion des faibles (E) et tue avec Déchaînement de puissance (R). Son stun la protège mieux que les autres mages bot, mais elle reste fragile face aux dives.",
+    "early_game": "Farm et poke avec Q. Garde E et une sphère au sol pour stun un engage adverse. Avec ton support, Q → E sur l'adversaire qui s'avance lance le kill.",
+    "level_1": "Sphère noire (Q) en premier. Poke et farm.",
+    "level_2": "Dispersion des faibles (E). Q → E : la sphère est projetée et stun. C'est ton outil offensif et défensif principal.",
+    "level_3": "Force de la volonté (W). Combo complet : Q → E (stun) → W → Q.",
+    "level_6": "Déchaînement de puissance : toutes les sphères frappent la cible. Plus il y a de sphères, plus le burst est gros. Combo : Q → E → W → R sur l'adversaire stun.",
+    "power_spikes": [
+      "Niveau 2 : Q → E (stun).",
+      "Niveau 6 : burst complet.",
+      "Écho de Luden : poke et burst.",
+      "Sorts améliorés par Transcendance (passif)."
+    ],
+    "lane_plan": "Poke avec Q et punis chaque avancée avec Q → E. Garde E pour l'engage adverse. La quête de rôle ADC (300 PO, plus d'or par kill et par sbire, puis un emplacement d'item en plus) t'aide à garder ton avance.",
+    "trading": "Trade court : Q. All-in : Q → E → W → R. Défense : E sur l'engage adverse. Abandonne quand E est en recharge face à un support d'engage.",
+    "jungle_plan": "",
+    "threats": [
+      "Supports d'engage quand E est en recharge.",
+      "Divers qui esquivent ton stun (Kai'Sa, Ezreal).",
+      "ADC à longue portée qui te poke en retour (Caitlyn)."
+    ],
+    "mistakes": [
+      "Utiliser E en poke et ne plus avoir de stun défensif.",
+      "Lancer l'ultime avec peu de sphères au sol : beaucoup moins de dégâts.",
+      "S'avancer sans vision : tu n'as pas de dash."
+    ],
+    "matchup_notes": {
+      "Caitlyn": "Elle a plus de portée d'attaque : poke avec Q et punis ses avancées avec Q → E.",
+      "Kai'Sa": "Elle plonge avec son ultime : garde E pour la stun à son arrivée.",
+      "Ezreal": "Il esquive avec son Saut arcanique : lance Q → E juste après.",
+      "Jinx": "Peu mobile : Q → E à chaque avancée.",
+      "Lucian": "Il trade vite avec son dash : stun-le avec E à son arrivée."
+    },
+    "mid_game": "Poke avant les objectifs et stun les cibles qui entrent dans ta zone. Reste avec ton équipe.",
+    "late_game": "Reste derrière ta frontline : Q → E sur les divers, ultime sur le carry adverse dès qu'il est à portée.",
+    "ahead": "Prends les tours et les dragons : ton burst tue un carry adverse en un combo.",
+    "behind": "Farm à distance et joue la défense : un stun sur le diver protège ton équipe.",
+    "win_condition": "Pour gagner cette partie, tu veux tuer un carry adverse en un combo Q → E → W → R au début de chaque combat.",
+    "final_tip": "Garde toujours une sphère et ton E pour l'engage adverse : le stun te sauve."
+  }
+}

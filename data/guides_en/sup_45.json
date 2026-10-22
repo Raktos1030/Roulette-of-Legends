@@ -1,0 +1,43 @@
+{
+ "Ivern|sup": {
+  "identity": "Magic damage enchanter. Rootcaller (Q) roots and lets him leap to the target (or have an ally leap there), Brushmaker (W) creates bushes that empower his attacks and give vision, Triggerseed (E) shields an ally, then explodes and slows, and Daisy! (R) summons a golem who knocks up after several hits. In the jungle, his passive (Friend of the Forest) frees monsters instead of killing them.",
+  "playstyle": "Enchanter support: he protects his ADC with Triggerseed (E), engages with Rootcaller (Q) and adds a fighter with Daisy (R). As a support, he maxes E first: a bigger shield and a stronger explosion.",
+  "early_game": "Shield your ADC with E during their trades: the explosion slows the opponents. Q roots an opponent who steps up; have your ADC leap in if the kill is safe. W creates a bush to hide your approach and give vision in the lane.",
+  "level_1": "Rootcaller (Q) or Triggerseed (E): Q to contest level 1, E to protect your ADC.",
+  "level_2": "The missing one between Q and E. Root (Q), then shield your ADC (E) during their trade.",
+  "level_3": "Brushmaker (W). A bush for vision and empowered attacks. Max E first.",
+  "level_6": "Daisy!: summons the golem, who hits and knocks up after several hits. Send her at the most dangerous champion; in lane, she forces the opponents to back off.",
+  "power_spikes": [
+   "Level 2: Q → E with your ADC.",
+   "Level 6: Daisy in an all-in.",
+   "Moonstone Renewer: stronger heals and shields.",
+   "Teamfights: E on your carry, Q on the diver."
+  ],
+  "lane_plan": "Shield your ADC in every trade and create vision with W in the lane and the river. Stay in the bot lane until level 5: since patch 26.16, your minion gold and XP are cut by a third outside the bot lane. The support role quest then makes your Control Wards cheaper (40 gold, two stored in a dedicated slot).",
+  "trading": "Trade: E on your ADC when they attack, Q on the opponent who steps up. All-in: Q → Daisy → E on your ADC. Defense: E on your ADC and Q on the diver.",
+  "jungle_plan": "",
+  "threats": [
+   "Engage and burst supports (Leona, Nautilus, Pyke) who kill your ADC through your shield.",
+   "Long-range poke (Xerath, Vel'Koz).",
+   "Anti-heal and burns that cut your healing."
+  ],
+  "mistakes": [
+   "Keeping E for yourself instead of your ADC.",
+   "Casting Q from too far: the target has time to move.",
+   "Forgetting vision: your bushes (W) and Control Wards are your main help on the map."
+  ],
+  "matchup_notes": {
+   "Thresh": "If his hook lands on your ADC, Q on Thresh and E on your ADC.",
+   "Nautilus": "Shield your ADC before his anchor lands.",
+   "Lulu": "She protects better in lane: play around your roots.",
+   "Leona": "Her engage is dangerous: E on her target, Q on Leona when she arrives.",
+   "Karma": "She pokes a lot: use E to absorb her Q."
+  },
+  "mid_game": "Place Control Wards and create vision with W around objectives. Protect your carry with E in every fight.",
+  "late_game": "Stay close to your carry: E on them, Q on the diver, Daisy on the main threat.",
+  "ahead": "Force objectives with your team and take control of vision.",
+  "behind": "Stay close to your carry and protect them; don't engage alone.",
+  "win_condition": "To win this game, you want to keep your carry alive with your shields and control vision around objectives.",
+  "final_tip": "Triggerseed explodes after the shield: put it on the ally in the middle of the enemies to slow them all."
+ }
+}
