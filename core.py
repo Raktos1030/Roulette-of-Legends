@@ -346,8 +346,7 @@ class Profile:
         "card_back": "hextech",   # back of the binder cards (unlocked by milestones, collection.BACKS)
         "rewards_seen": {},   # rewards path: per LoL account, the steps already shown (the others are "new")
         "title": None,        # title picked among the ones won (rewards.py)
-        "theme": "hextech",   # looks unlocked in the rewards path (rewards.LOOKS): interface theme,
-        "roulette": "classic",   # roulette strip,
+        "roulette": "classic",   # looks unlocked in the rewards path (rewards.LOOKS): Roulette tab skin,
         "opening": "classic",    # booster opening
         "overlay_mode": "tab", "overlay_side": "right", "overlay_page": "early",
         "overlay_pos": None, "overlay_scale": 1.0, "overlay_opacity": 0.95, "overlay_modules": {},
@@ -1071,7 +1070,7 @@ class Core:
         keys = ("fav_champs", "fav_combos", "fav_roles", "only_fav_roles", "only_fav_champs", "no_repeat",
                 "overlay_mode", "overlay_scale", "overlay_opacity", "auto_update", "glossary_hints", "lol_dir", "ambient", "usage_stats",
                 "import_runes", "import_spells", "import_items", "import_replace", "roulette_paused", "app_update_seen",
-                "rbuild_on", "rbuild_parts", "sounds", "sound_volume", "theme", "roulette", "opening")
+                "rbuild_on", "rbuild_parts", "sounds", "sound_volume", "roulette", "opening")
         out = {k: p[k] for k in keys}
         out["overlay_pos"] = p["overlay_pos"]
         out["overlay_modules"] = {m["id"]: p.module_cfg(m["id"]) for m in OVERLAY_MODULES}
@@ -2009,8 +2008,8 @@ class Core:
             self.profile["title"] = title or None
             return {"ok": True}
 
-    def api_set_look(self, kind="theme", id=None):
-        """Picks an interface theme, a roulette or a booster opening among the ones unlocked."""
+    def api_set_look(self, kind="roulette", id=None):
+        """Picks a roulette skin or a booster opening among the ones unlocked."""
         with self.lock:
             if kind not in rewards.LOOKS:
                 return {"error": "kind"}

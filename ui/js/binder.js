@@ -104,7 +104,6 @@ const KIND_ICON = {
   joker: `<svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M12 7.5l1.3 2.9 3.1.3-2.4 2 .8 3.1L12 14.2 9.2 15.8l.8-3.1-2.4-2 3.1-.3z"/></svg>`,
   stamp: `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="5"/><path d="M12 7v1.6M12 15.4V17M7 12h1.6M15.4 12H17"/></svg>`,
   back: `<svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.5"/><circle cx="12" cy="12" r="3.6"/><path d="M12 6v2.4M12 15.6V18"/></svg>`,
-  theme: `<svg viewBox="0 0 24 24"><path d="M12 3.5a8.5 8.5 0 1 0 0 17c1.3 0 1.9-.9 1.9-1.8 0-1.4-1.2-1.6-1.2-2.8 0-1 .8-1.6 1.8-1.6h2a4 4 0 0 0 4-4C20.5 6.6 16.7 3.5 12 3.5z"/><circle cx="7.8" cy="11" r="1.1"/><circle cx="10.5" cy="7.5" r="1.1"/><circle cx="15" cy="7.8" r="1.1"/></svg>`,
   roulette: `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="2.5"/><path d="M12 3.5v6M12 14.5v6M3.5 12h6M14.5 12h6"/></svg>`,
   opening: `<svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg>`,
 };
@@ -137,7 +136,7 @@ function paintRewards(r) {
       <section class="card rw-looks">
         ${Object.entries(LOOKS).map(([kind, L]) => `<h3 class="card-title">${KIND_ICON[kind]}${esc(t(L.title))}</h3>
         <div class="rw-themes">${r.looks[kind].options.map((x) => `<button class="rw-theme${r.looks[kind].current === x.id ? " on" : ""}" data-look="${kind}" data-id="${x.id}"
-          ${x.unlocked ? "" : "disabled"} style="--sw:${L.swatch[x.id]}"><i></i>${esc(t(L.names[x.id]))}${x.unlocked ? "" : `<small>${esc(t("Palier {0}", x.step))}</small>`}</button>`).join("")}</div>`).join("")}
+          ${x.unlocked ? "" : "disabled"} style="--sw:${L.swatch[x.id]}"><i></i>${esc(t(L.names[x.id]))}${x.unlocked ? "" : `<small>${esc(x.ready ? t("Palier {0}", x.step) : t("bientôt"))}</small>`}</button>`).join("")}</div>`).join("")}
       </section>
       <section class="card rw-titles">
         <h3 class="card-title">${KIND_ICON.title}${esc(t("Ton titre"))}</h3>
@@ -177,11 +176,9 @@ function paintRewards(r) {
 // looks unlocked in the rewards path (rewards.LOOKS): their names and swatches
 const split = (bg, acc) => `linear-gradient(135deg, ${bg} 0 55%, ${acc} 55% 100%)`;
 const LOOKS = {
-  theme: { title: "Thème de l'interface", names: { hextech: "Hextech", void: "Néant", gold: "Or" },
-    swatch: { hextech: split("#070c16", "#c8aa6e"), void: split("#0b0716", "#a77bf3"), gold: split("#110b05", "#e2b652") } },
-  roulette: { title: "Roulette", names: { classic: "Classique", infernal: "Infernale", prism: "Prismatique" },
+  roulette: { title: "Roulette", names: { classic: "Classique", infernal: "Infernale", prism: "Prismatique", void: "Néant", gold: "Dorée" },
     swatch: { classic: split("#0a1220", "#e8d09a"), infernal: 'url(hud/infernal_primary.webp) center / 100% 100%',
-      prism: 'url(hud/prism_primary.webp) center / 100% 100%' } },
+      prism: 'url(hud/prism_primary.webp) center / 100% 100%', void: split("#0b0716", "#6c4bb0"), gold: split("#120c05", "#b8913f") } },
   opening: { title: "Ouverture des boosters", names: { classic: "Classique", silver: "Éclat d'argent" },
     swatch: { classic: split("#0a1220", "#e8d09a"), silver: "linear-gradient(135deg, #5d6878, #f4f7fb 45%, #9aa6b8 60%, #e6ebf2)" } },
 };

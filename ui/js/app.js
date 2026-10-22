@@ -27,9 +27,8 @@ let current = null;
 const SIMPLE_PAGES = ["roulette", "favorites", "binder", "history", "settings"];
 const pageOn = (id) => !!PAGES[id] && (!isLite() || SIMPLE_PAGES.includes(id));
 
-// looks picked in the rewards path: interface theme and roulette skin (the booster opening is read when it opens)
+// looks picked in the rewards path: the roulette skin (the booster opening is read when it opens)
 function applyLooks(p) {
-  document.documentElement.dataset.theme = p.theme || "hextech";
   document.documentElement.dataset.roulette = p.roulette || "classic";
 }
 

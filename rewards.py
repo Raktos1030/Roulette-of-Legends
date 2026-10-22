@@ -1,7 +1,7 @@
 """
 Rewards path of the binder: one ladder of milestones, from the first rolls to a mastered champion. Each step
-unlocks its rewards: a card back, a title, a roulette skin, an interface theme, a booster opening or an exploit
-stamp. Everything is read from the history of the LoL account; nothing is stored but the steps already shown.
+unlocks its rewards: a card back, a title, a roulette skin (it dresses the Roulette tab), a booster opening or an
+exploit stamp. Everything is read from the history of the LoL account; nothing is stored but the steps already shown.
 
 Exploits, read from the games themselves (rolls only: the rolled champion, in its role, as for the cards):
   flawless    a win without dying
@@ -16,8 +16,9 @@ passed with it is closed as "joker" in the history, not counted as cancelled.
 from collection import CARD
 
 STAMPS = ("flawless", "domination", "penta")
-READY = {"title", "joker", "stamp", "back", "theme", "roulette", "opening"}   # reward kinds the app already gives
-LOOKS = {"theme": "hextech", "roulette": "classic", "opening": "classic"}   # looks picked once unlocked: their default
+READY = {"title", "joker", "stamp", "back", "roulette", "opening"}   # reward kinds the app already gives
+COMING = {("roulette", "void"), ("roulette", "gold")}   # announced, their skin still to make
+LOOKS = {"roulette": "classic", "opening": "classic"}   # looks picked once unlocked: their default
 JOKER_AT = 5        # rolls played to unlock the Joker (first step)
 JOKER_EVERY = 10    # rolls played to get it back after using it
 
@@ -30,10 +31,10 @@ LADDER = (
     ("chaos", "L'appel du chaos", [("chaos", 10)], [("back", "infernal", "Dos Infernal")]),
     ("arsenal", "L'arsenal", [("epics", 10)], [("roulette", "infernal", "Roulette infernale")]),
     ("domination", "Le prédateur", [("domination", 1)], [("stamp", "domination", "Tampon Domination")]),
-    ("five", "La voie des cinq", [("roles", 10)], [("theme", "void", "Thème Néant")]),
+    ("five", "La voie des cinq", [("roles", 10)], [("roulette", "void", "Roulette du Néant")]),
     ("untouchable", "Intouchable", [("flawless", 5)], [("title", "untouchable", "Intouchable")]),
     ("finisher", "Le finisseur", [("penta", 1)], [("stamp", "penta", "Tampon Pentakill"), ("title", "finisher", "Le finisseur")]),
-    ("gold", "La salle dorée", [("cards", 50), ("epics", 10)], [("theme", "gold", "Thème Or")]),
+    ("gold", "La salle dorée", [("cards", 50), ("epics", 10)], [("roulette", "gold", "Roulette dorée")]),
     ("prism", "Le panthéon", [("legendary", 25)], [("back", "prism", "Dos Prismatique")]),
     ("legend", "Légende vivante", [("legendary", 40)], [("roulette", "prism", "Roulette prismatique"), ("title", "legend", "Légende vivante")]),
     ("master", "Champion maître", [("masters", 1)], [("back", "crown", "Dos Royal"), ("title", "master", "Maître de {0}")]),
@@ -86,7 +87,8 @@ def ladder(counts):
     for sid, name, conds, rewards in LADDER:
         cs = [{"counter": k, "goal": g, "have": min(counts.get(k, 0), g)} for k, g in conds]
         out.append({"id": sid, "name": name, "conds": cs, "done": all(x["have"] >= x["goal"] for x in cs),
-                     "rewards": [{"kind": k, "id": i, "label": label, "ready": k in READY} for k, i, label in rewards]})
+                     "rewards": [{"kind": k, "id": i, "label": label, "ready": k in READY and (k, i) not in COMING}
+                                 for k, i, label in rewards]})
     return out
 
 
@@ -101,11 +103,12 @@ def joker(entries):
 
 
 def looks(steps, picked):
-    """{kind: {"current", "options": [{"id", "unlocked", "step"}]}} for the looks of LOOKS. picked: {kind: id}."""
+    """{kind: {"current", "options": [{"id", "unlocked", "ready", "step"}]}} for the looks of LOOKS. picked: {kind: id}.
+    A look not made yet (COMING) is never unlocked."""
     out = {}
     for kind, default in LOOKS.items():
-        opts = [{"id": default, "unlocked": True, "step": None}] + [
-            {"id": r["id"], "unlocked": s["done"], "step": i + 1}
+        opts = [{"id": default, "unlocked": True, "ready": True, "step": None}] + [
+            {"id": r["id"], "unlocked": s["done"] and r["ready"], "ready": r["ready"], "step": i + 1}
             for i, s in enumerate(steps) for r in s["rewards"] if r["kind"] == kind]
         cur = picked.get(kind)
         out[kind] = {"current": cur if any(o["id"] == cur and o["unlocked"] for o in opts) else default, "options": opts}
