@@ -45,6 +45,7 @@ async function boot() {
   if (b.status && b.status.text) store.status = b.status;
   setupGlossary(b.glossary);
   setAmbient(b.profile.ambient !== false);
+  document.documentElement.dataset.theme = b.profile.theme || "hextech";
   const k = await call("kits");
   if (!k.error) setupSpells(k.kits);
   if (b.window && b.window.frameless) buildTitlebar();
@@ -225,6 +226,7 @@ async function onEvent(msg) {
     case "profile":
       store.profile = data;
       setAmbient(data.ambient !== false);
+      document.documentElement.dataset.theme = data.theme || "hextech";
       dispatch("profile", data);
       break;
     case "show_combo": {

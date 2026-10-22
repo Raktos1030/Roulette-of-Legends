@@ -16,7 +16,7 @@ passed with it is closed as "joker" in the history, not counted as cancelled.
 from collection import CARD
 
 STAMPS = ("flawless", "domination", "penta")
-READY = {"title", "joker", "stamp", "back"}   # reward kinds the app already gives (the others come later)
+READY = {"title", "joker", "stamp", "back", "theme"}   # reward kinds the app already gives (the others come later)
 JOKER_AT = 5        # rolls played to unlock the Joker (first step)
 JOKER_EVERY = 10    # rolls played to get it back after using it
 

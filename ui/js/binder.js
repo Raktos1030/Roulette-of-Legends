@@ -134,6 +134,11 @@ function paintRewards(r) {
           : t("Revient dans {0} tirages joués.", j.next_in))}</p>
         <small class="muted">${esc(t("Un seul en réserve, regagné tous les 10 tirages joués : le hasard reste roi."))}</small>
       </section>
+      <section class="card rw-themes-card">
+        <h3 class="card-title">${KIND_ICON.theme}${esc(t("Thème de l'interface"))}</h3>
+        <div class="rw-themes">${r.themes.map((x) => `<button class="rw-theme${r.theme === x.id ? " on" : ""}" data-theme="${x.id}" ${x.unlocked ? "" : "disabled"}
+          style="--sw-bg:${THEME_SWATCH[x.id][0]};--sw-acc:${THEME_SWATCH[x.id][1]}"><i></i>${esc(t(THEME_NAME[x.id]))}${x.unlocked ? "" : `<small>${esc(t("Palier {0}", x.step))}</small>`}</button>`).join("")}</div>
+      </section>
       <section class="card rw-titles">
         <h3 class="card-title">${KIND_ICON.title}${esc(t("Ton titre"))}</h3>
         ${r.titles.length ? `<div class="rw-chips">${[{ id: "", label: t("Aucun") }, ...r.titles].map((x) =>
@@ -157,12 +162,20 @@ function paintRewards(r) {
       <p class="muted">${esc(t("Ils se posent sur la carte du champion et du rôle de la partie, pour toujours."))}</p>
       <div class="rw-stamp-list">${STAMP_INFO.map(([id, name, how]) => `<div><i class="tc-stamp ${id}">${STAMP_SVG[id]}</i><b>${esc(t(name))}</b><small>${esc(t(how))}</small></div>`).join("")}</div>
     </section>`;
+  box.querySelectorAll("[data-theme]").forEach((b) => (b.onclick = async () => {
+    const res = await call("set_theme", { theme: b.dataset.theme });
+    if (res.error) return toast(res.error, "bad");
+    showPage();
+  }));
   box.querySelectorAll("[data-title]").forEach((b) => (b.onclick = async () => {
     const res = await call("set_title", { title: b.dataset.title || null });
     if (res.error) return toast(res.error, "bad");
     load();
   }));
 }
+
+const THEME_NAME = { hextech: "Hextech", void: "Néant", gold: "Or" };
+const THEME_SWATCH = { hextech: ["#070c16", "#c8aa6e"], void: ["#0b0716", "#a77bf3"], gold: ["#110b05", "#e2b652"] };
 
 // exploit stamps on the cards (rewards.py)
 const STAMP_SVG = {
