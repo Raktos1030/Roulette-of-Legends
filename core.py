@@ -2124,7 +2124,7 @@ class Core:
                                   "wins": c.get("wins", 0), "at": c.get("at"), "full": c.get("full"),
                                   "stamps": stamps.get(k, []) if lvl >= collection.CARD else [],
                                   "queue": T(lol.queue_name(c["queue"])) if c.get("queue") else None,
-                                  "elo": self._elo_view(c.get("elo"))})
+                                  "elo": self._elo_view(c.get("elo")), "rbuild": c.get("rbuild")})
             masters = [key for key in d.champs
                        if all((got.get(d.combo_key(key, r)) or {}).get("level") == collection.LEGENDARY for r in ROLES)]
             backs = [dict(b, label=T(b["label"])) for b in self._binder_backs(got)]

@@ -1048,5 +1048,8 @@
 "Hors classée : une victoire donne au mieux une carte épique.": "Outside ranked: a win gives at best an epic card.",
 "ÇA COMPTE": "IT COUNTS",
 "METTRE EN PAUSE": "PAUSE",
-"Sans réponse, la partie trouvée compte.": "Without an answer, the game found counts."
+"Sans réponse, la partie trouvée compte.": "Without an answer, the game found counts.",
+"Oui, sur la partie qui l'a obtenue": "Yes, in the game that earned it",
+"Sur {0} parties": "In {0} games",
+"Sur 1 partie": "In 1 game"
 }

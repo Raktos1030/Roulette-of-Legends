@@ -97,8 +97,9 @@ def level_of(entry):
 
 
 def cards(entries, account=None):
-    """{"Key|role": {"level", "games", "wins", "at", "queue", "elo"}} from the account's official rolls (entries without
-    an account, from older versions, count for everyone)."""
+    """{"Key|role": {"level", "games", "wins", "at", "queue", "elo", "rbuild"}} from the account's official rolls (entries
+    without an account, from older versions, count for everyone). rbuild: games played with a random build, and whether
+    the one that set the level had it."""
     out = {}
     for i, e in enumerate(entries):
         if e.get("free") or not e.get("key") or e.get("role") not in ("top", "jgl", "mid", "adc", "sup") \
@@ -113,8 +114,11 @@ def cards(entries, account=None):
         level = level_of(e)
         c["games"] += 1
         c["wins"] += bool(e.get("win"))
+        rb = c.setdefault("rbuild", {"games": 0, "best": False})
+        rb["games"] += bool(e.get("rbuild"))
         if level > c["level"]:
             c.update(level=level, at=e.get("date"), queue=e.get("queue"))
+            rb["best"] = bool(e.get("rbuild"))
         rank = rank_of(e) if e.get("win") else None
         if rank and (not c.get("elo") or rank_value(rank) >= rank_value(c["elo"])):   # the best win (the latest on a tie)
             c["elo"] = dict(rank, date=e.get("date"), game_queue=e.get("queue"))

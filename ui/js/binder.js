@@ -438,6 +438,8 @@ function openCard(id) {
       <p class="muted">${esc(lv ? t(HOW[L.id]) : "")}</p>
       ${row(t("Parties jouées"), c.games)}${row(t("Victoires"), c.wins)}
       ${c.at ? row(t("Obtenue"), esc(`${c.queue || ""} · ${c.at}`)) : ""}
+      ${c.rbuild && c.rbuild.games ? row(t("Build random"), esc(c.rbuild.best ? t("Oui, sur la partie qui l'a obtenue")
+        : c.rbuild.games > 1 ? t("Sur {0} parties", c.rbuild.games) : t("Sur 1 partie"))) : ""}
       ${row(t("Meilleure victoire"), e ? `<i class="cd-tier t-${e.tier.toLowerCase()}">${esc(e.label)}</i><small>${esc(e.where)}${e.date ? " · " + esc(e.date) : ""}</small>`
         : `<small>${esc(c.wins ? t("Elo inconnu (victoire d'avant la version 2.6, ou sans rang)") : t("Pas encore de victoire"))}</small>`)}
       ${(c.stamps || []).length ? `<div class="cd-stamps">${c.stamps.map((s) => {
