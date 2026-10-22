@@ -7,6 +7,7 @@ import { renderGuides, showGuide, openChamp, restoreBack, clearBack } from "./gu
 import { setAmbient } from "./ambient.js";
 import { renderHistory } from "./history.js";
 import { renderFavorites } from "./favorites.js";
+import { renderBinder } from "./binder.js";
 import { renderGlossary } from "./glossary.js";
 import { renderSettings } from "./settings.js";
 import { renderLive } from "./live.js";
@@ -16,13 +17,14 @@ const PAGES = {
   guides: { label: "Fiche", icon: ICONS.guide, render: renderGuides },
   game: { label: "Partie", icon: ICONS.live, render: renderLive },
   favorites: { label: "Favoris", icon: ICONS.star, render: renderFavorites },
+  binder: { label: "Classeur", icon: ICONS.binder, render: renderBinder },
   history: { label: "Historique", icon: ICONS.history, render: renderHistory },
   glossary: { label: "Lexique", icon: ICONS.book, render: renderGlossary },
   settings: { label: "Réglages", icon: ICONS.gear, render: renderSettings },
 };
 let current = null;
 // Lite: only these pages (no guides, Game page or glossary)
-const SIMPLE_PAGES = ["roulette", "favorites", "history", "settings"];
+const SIMPLE_PAGES = ["roulette", "favorites", "binder", "history", "settings"];
 const pageOn = (id) => !!PAGES[id] && (!isLite() || SIMPLE_PAGES.includes(id));
 
 async function boot() {
@@ -120,6 +122,7 @@ function buildRail() {
   const nav = document.getElementById("rail-nav");
   nav.innerHTML = Object.entries(PAGES).filter(([id]) => pageOn(id)).map(([id, p]) => `<a class="nav-item" href="#/${id}" data-p="${id}">${p.icon}<span>${esc(t(p.label))}</span></a>`).join("") +
     `<span class="nav-ind" id="nav-ind"></span>`;
+  paintBinderBadge();
   document.getElementById("rail-lol").onclick = () => (location.hash = "#/settings");
   document.querySelector("#rail .rail-logo").addEventListener("mouseenter", () => spinLogo(1.2));
 }
@@ -149,6 +152,22 @@ function moveNavIndicator() {
   ind.style.transform = `translateY(${a.offsetTop + 14}px)`;
   ind.style.height = a.offsetHeight - 28 + "px";
   ind.style.opacity = 1;
+}
+
+// cards waiting to be opened in the binder
+function paintBinderBadge() {
+  const a = document.querySelector('.nav-item[data-p="binder"]');
+  if (!a) return;
+  const n = store.boot.binder_pending || 0;
+  let b = a.querySelector(".nav-badge");
+  if (!n) return b && b.remove();
+  if (!b) {
+    b = document.createElement("b");
+    b.className = "nav-badge";
+    a.appendChild(b);
+  }
+  b.textContent = n > 99 ? "99+" : n;
+  a.title = t("{0} cartes à ouvrir", n);
 }
 
 // the Guides tab shows the portrait of the open guide's champion
@@ -206,6 +225,11 @@ async function onEvent(msg) {
     }
     case "game":
       dispatch("game", data);
+      break;
+    case "binder":
+      store.boot.binder_pending = data.pending;
+      paintBinderBadge();
+      dispatch("binder", data);
       break;
     case "app_update": {
       const fresh = (store.boot.app_update || {}).version !== data.version;

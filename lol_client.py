@@ -865,9 +865,10 @@ class RollHistory:
                 "date": time.strftime("%d/%m %H:%M", time.localtime(created)), "key": champ_key, "played": champ_key,
                 "role": None, "game_id": game_id, "puuid": puuid}
 
-    def add_roll(self, key, role, tracking, reason=None, now=None, mode=None, favs=None, group=None):
+    def add_roll(self, key, role, tracking, reason=None, now=None, mode=None, favs=None, group=None, full=None):
         """mode: "both" (random role + champion), "role" (random role, picked champion),
-        "champ" (random champion, picked role). favs: favorite filters active for the roll."""
+        "champ" (random champion, picked role). favs: favorite filters active for the roll.
+        full: role and champion both drawn, for the collection binder (collection.py)."""
         now = now or time.time()
         prev = self.pending()
         if prev:
@@ -882,6 +883,8 @@ class RollHistory:
                  "key": key, "role": role, "status": "pending"}
         if mode:
             entry["mode"] = mode
+        if full is not None:
+            entry["full"] = bool(full)
         if favs:
             entry["favs"] = favs
         if group:

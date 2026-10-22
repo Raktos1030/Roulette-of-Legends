@@ -16,6 +16,7 @@ import threading
 import time
 import unicodedata
 
+import collection
 import lol_client as lol
 import lolassets
 
@@ -337,6 +338,7 @@ class Profile:
     DEFAULT = {
         "fav_champs": [], "fav_combos": [], "fav_roles": [], "only_fav_roles": False,
         "only_fav_champs": False, "no_repeat": True, "lol_dir": None, "tray_hint_shown": False, "overlay_tab_seen": False,
+        "binder_seen": {},   # collection binder: per LoL account, the level of each card already opened
         "overlay_mode": "tab", "overlay_side": "right", "overlay_page": "early",
         "overlay_pos": None, "overlay_scale": 1.0, "overlay_opacity": 0.95, "overlay_modules": {},
         "auto_update": True, "seen_update": None, "glossary_hints": True, "ambient": True, "usage_stats": True,
@@ -1014,6 +1016,7 @@ class Core:
                 "download": bool(DOWNLOAD_URL),
                 "app_update": self.app_update,
                 "updated": self._take_updated(),
+                "binder_pending": len(self._binder_pending()),
                 "window": {"frameless": bool(getattr(self.ui, "frameless", False))},
                 "app": {"name": APP_NAME, "version": APP_VERSION},
                 "meta": {"patch": d.meta.get("patch"), "generated": d.meta.get("generated"),
@@ -1558,8 +1561,14 @@ class Core:
         if not me:
             return
         members = [{"name": p["name"], "key": p["key"], "role": p["role"], "me": p["me"]} for p in g["players"]]
+        if reason == "group_reroll":   # same roll, new champion
+            prev = self.history.pending()
+            full = bool(prev and prev.get("full"))
+        else:
+            mine = g["inputs"][g["players"].index(me)]
+            full = mine["role"] == "random" and not mine["champ"]
         self.history.add_roll(me["key"], me["role"], bool(self.lol_state.get("connected")), reason=reason, mode="group",
-                              group=members)
+                              group=members, full=full)
         self.drawn.add(me["combo"])
         if self.profile["roulette_paused"]:
             self.profile["roulette_paused"] = False
@@ -1607,7 +1616,8 @@ class Core:
                 return {"error": T("Tirage expiré.")}
             key, _, role = r["result"].partition("|")
             tracking = bool(self.lol_state.get("connected"))
-            self.history.add_roll(key, role, tracking, reason=r["reason"], mode=r["mode"], favs=r["favs"])
+            full = collection.roll_full(r["mode"], r["reason"], self.history.pending(), self.history.entries)
+            self.history.add_roll(key, role, tracking, reason=r["reason"], mode=r["mode"], favs=r["favs"], full=full)
             if self.profile["roulette_paused"]:   # rolling means wanting to play it: the pause ends
                 self.profile["roulette_paused"] = False
                 self.emit("profile", self._profile_view())
@@ -1784,6 +1794,57 @@ class Core:
     def _history_changed(self):
         self.emit("history", {"recent": self._recent_view(), "roll": self._roll_view()})
         self.emit("cs", self._cs_view())
+        self.emit("binder", {"pending": len(self._binder_pending())})
+
+    # --- collection binder (collection.py) ------------------------------------------------
+    def _binder_cards(self):
+        return collection.cards(self.history.entries, self.profile["account_puuid"])
+
+    def _binder_seen(self):
+        """Cards already opened by this LoL account; None before the first opening."""
+        return (self.profile["binder_seen"] or {}).get(self.profile["account_puuid"] or "-")
+
+    def _binder_pending(self, got=None):
+        got = self._binder_cards() if got is None else got
+        seen = self._binder_seen() or {}
+        return sorted((k for k, c in got.items() if c["level"] > seen.get(k, 0)), key=lambda k: got[k].get("at") or "")
+
+    def api_binder(self):
+        """The binder: every card (champion x role) with its level, the cards still to open, the mastered champions."""
+        with self.lock:
+            d = self.data
+            got = self._binder_cards()
+            seen = self._binder_seen() or {}
+            cards = []
+            for key in sorted(d.champs, key=lambda k: norm(d.champ_name(k))):
+                for role in ROLES:
+                    k = d.combo_key(key, role)
+                    c = got.get(k) or {}
+                    lvl = c.get("level", 0)
+                    cards.append({"id": k, "key": key, "name": d.champ_name(key), "role": role, "guide": k in d.combos,
+                                  "level": lvl, "shown": min(lvl, seen.get(k, 0)), "games": c.get("games", 0),
+                                  "wins": c.get("wins", 0), "at": c.get("at"), "full": c.get("full"),
+                                  "queue": T(lol.queue_name(c["queue"])) if c.get("queue") else None})
+            masters = [key for key in d.champs
+                       if all((got.get(d.combo_key(key, r)) or {}).get("level") == collection.LEGENDARY for r in ROLES)]
+            return {"cards": cards, "pending": self._binder_pending(got), "masters": masters,
+                    "account": bool(self.profile["account_puuid"])}
+
+    def api_binder_open(self, ids=None):
+        """Cards opened (revealed): they show at their new level from now on."""
+        with self.lock:
+            got = self._binder_cards()
+            account = self.profile["account_puuid"] or "-"
+            allseen = dict(self.profile["binder_seen"] or {})
+            seen = dict(allseen.get(account) or {})
+            for k in ids if ids is not None else list(got):
+                if k in got:
+                    seen[k] = got[k]["level"]
+            allseen[account] = seen
+            self.profile["binder_seen"] = allseen
+            pending = self._binder_pending(got)
+            self.emit("binder", {"pending": len(pending)})
+            return {"pending": pending}
 
     def api_history(self, played_only=False, role="all", champ="all", mode="all", kind="all", queue="all"):
         """kind: all (every game and roll), roulette (rolls), free (games without the roulette)."""
