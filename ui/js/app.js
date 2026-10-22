@@ -27,6 +27,12 @@ let current = null;
 const SIMPLE_PAGES = ["roulette", "favorites", "binder", "history", "settings"];
 const pageOn = (id) => !!PAGES[id] && (!isLite() || SIMPLE_PAGES.includes(id));
 
+// looks picked in the rewards path: interface theme and roulette skin (the booster opening is read when it opens)
+function applyLooks(p) {
+  document.documentElement.dataset.theme = p.theme || "hextech";
+  document.documentElement.dataset.roulette = p.roulette || "classic";
+}
+
 async function boot() {
   const b = await call("boot");
   if (b.error) {
@@ -45,7 +51,7 @@ async function boot() {
   if (b.status && b.status.text) store.status = b.status;
   setupGlossary(b.glossary);
   setAmbient(b.profile.ambient !== false);
-  document.documentElement.dataset.theme = b.profile.theme || "hextech";
+  applyLooks(b.profile);
   const k = await call("kits");
   if (!k.error) setupSpells(k.kits);
   if (b.window && b.window.frameless) buildTitlebar();
@@ -226,7 +232,7 @@ async function onEvent(msg) {
     case "profile":
       store.profile = data;
       setAmbient(data.ambient !== false);
-      document.documentElement.dataset.theme = data.theme || "hextech";
+      applyLooks(data);
       dispatch("profile", data);
       break;
     case "show_combo": {

@@ -346,7 +346,9 @@ class Profile:
         "card_back": "hextech",   # back of the binder cards (unlocked by milestones, collection.BACKS)
         "rewards_seen": {},   # rewards path: per LoL account, the steps already shown (the others are "new")
         "title": None,        # title picked among the ones won (rewards.py)
-        "theme": "hextech",   # interface theme (unlocked in the rewards path)
+        "theme": "hextech",   # looks unlocked in the rewards path (rewards.LOOKS): interface theme,
+        "roulette": "classic",   # roulette strip,
+        "opening": "classic",    # booster opening
         "overlay_mode": "tab", "overlay_side": "right", "overlay_page": "early",
         "overlay_pos": None, "overlay_scale": 1.0, "overlay_opacity": 0.95, "overlay_modules": {},
         "auto_update": True, "seen_update": None, "glossary_hints": True, "ambient": True, "usage_stats": True,
@@ -1069,7 +1071,7 @@ class Core:
         keys = ("fav_champs", "fav_combos", "fav_roles", "only_fav_roles", "only_fav_champs", "no_repeat",
                 "overlay_mode", "overlay_scale", "overlay_opacity", "auto_update", "glossary_hints", "lol_dir", "ambient", "usage_stats",
                 "import_runes", "import_spells", "import_items", "import_replace", "roulette_paused", "app_update_seen",
-                "rbuild_on", "rbuild_parts", "sounds", "sound_volume", "theme")
+                "rbuild_on", "rbuild_parts", "sounds", "sound_volume", "theme", "roulette", "opening")
         out = {k: p[k] for k in keys}
         out["overlay_pos"] = p["overlay_pos"]
         out["overlay_modules"] = {m["id"]: p.module_cfg(m["id"]) for m in OVERLAY_MODULES}
@@ -1987,11 +1989,8 @@ class Core:
                           rewards=[dict(r, label=T(r["label"]).replace("{0}", "…")) for r in s["rewards"]]) for s in rw["steps"]]
             titles = [{"id": t["id"], "label": self._title_text(t)} for t in rw["titles"]]
             pick = self.profile["title"] if any(t["id"] == self.profile["title"] for t in titles) else None
-            themes = [{"id": "hextech", "unlocked": True}] + [
-                {"id": r["id"], "unlocked": s["done"], "step": i + 1}
-                for i, s in enumerate(rw["steps"]) for r in s["rewards"] if r["kind"] == "theme"]
-            return {"steps": steps, "joker": rw["joker"], "titles": titles, "title": pick, "themes": themes,
-                    "theme": self.profile["theme"],
+            looks = rewards.looks(rw["steps"], {k: self.profile[k] for k in rewards.LOOKS})
+            return {"steps": steps, "joker": rw["joker"], "titles": titles, "title": pick, "looks": looks,
                     "title_label": next((t["label"] for t in titles if t["id"] == pick), None)}
 
     def api_rewards_seen(self):
@@ -2010,12 +2009,15 @@ class Core:
             self.profile["title"] = title or None
             return {"ok": True}
 
-    def api_set_theme(self, theme="hextech"):
+    def api_set_look(self, kind="theme", id=None):
+        """Picks an interface theme, a roulette or a booster opening among the ones unlocked."""
         with self.lock:
-            steps = self._rewards()["steps"]
-            if theme != "hextech" and not any(s["done"] and any(r["kind"] == "theme" and r["id"] == theme for r in s["rewards"]) for s in steps):
-                return {"error": T("Ce thème n'est pas encore débloqué.")}
-            self.profile["theme"] = theme
+            if kind not in rewards.LOOKS:
+                return {"error": "kind"}
+            look = rewards.looks(self._rewards()["steps"], {})[kind]
+            if not any(o["id"] == id and o["unlocked"] for o in look["options"]):
+                return {"error": T("Pas encore débloqué.")}
+            self.profile[kind] = id
             self.emit("profile", self._profile_view())
             return {"ok": True}
 

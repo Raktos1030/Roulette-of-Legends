@@ -17,7 +17,7 @@ const CARD_W = 124, GAP = 12, STEP = CARD_W + GAP;
 export function renderRoulette(page) {
   root = page;
   page.innerHTML = `
-  <div class="page-enter">
+  <div class="page-enter rl-page">
     <nav class="mode-tabs" id="mode-tabs">
       <button class="mode-tab" data-mode="solo">${SOLO_SVG}<span>${esc(t("Solo"))}</span></button>
       <button class="mode-tab" data-mode="group">${GROUP_SVG}<span>${esc(t("Groupe"))}</span></button>
@@ -40,7 +40,7 @@ export function renderRoulette(page) {
     <section class="gstrips" id="gstrips" hidden></section>
     <div id="gresult"></div>
     <section class="strip idle" id="strip">
-      <div class="strip-track" id="track"></div>
+      <div class="strip-track" id="track"></div>${HUD}
       <div class="strip-marker"><i class="top"></i><i class="bot"></i></div>
       <div class="strip-msg"><div><b>${esc(t("LA FAILLE DÉCIDE POUR TOI"))}</b><span>${esc(t("Choisis un rôle ou laisse tout au hasard, puis appuie sur Lancer"))}</span></div></div>
     </section>
@@ -278,6 +278,9 @@ function shuffle(a) {
   return a;
 }
 
+// frame of the roulette skins (rewards path): the frame, its glow and its bloom, and the two pointers of the center
+const HUD = `<div class="strip-hud"><i class="hf"></i><i class="hg"></i><i class="hb"></i><b class="pt"></b><b class="pb"></b></div>`;
+
 function champCard(key, name) {
   return `<div class="scard" style="background-image:url('${img.tall(key)}')"><b>${esc(name)}</b></div>`;
 }
@@ -430,7 +433,10 @@ function spinStep(step, duration) {
   });
 }
 
+// the win: a flash and sparks, in the roulette's look (forge sparks falling for the infernal one, glints for the
+// prismatic one)
 function celebrate(strip) {
+  const skin = document.documentElement.dataset.roulette;
   const fl = document.createElement("div");
   fl.className = "flash";
   strip.appendChild(fl);
@@ -440,10 +446,13 @@ function celebrate(strip) {
     const s = document.createElement("i");
     s.className = "spark";
     const a = Math.random() * Math.PI * 2, d = 80 + Math.random() * 150;
+    const fall = skin === "infernal" ? 70 + Math.random() * 90 : 0;
     s.style.left = cx + "px";
     s.style.top = cy + "px";
     s.style.setProperty("--dx", Math.cos(a) * d + "px");
-    s.style.setProperty("--dy", Math.sin(a) * d * 0.7 + "px");
+    s.style.setProperty("--dy", Math.sin(a) * d * (fall ? 0.45 : 0.7) + fall + "px");
+    if (skin === "infernal") s.style.setProperty("--h", (26 + Math.random() * 24).toFixed(0));
+    else if (skin === "prism") s.style.setProperty("--h", (Math.random() * 360).toFixed(0));
     s.style.animationDelay = Math.random() * 0.12 + "s";
     strip.appendChild(s);
     setTimeout(() => s.remove(), 1200);
@@ -718,7 +727,7 @@ function paintGroupStrips() {
     return `<div class="gs-row idle" data-i="${i}">
       <div class="gs-who"><span class="gs-av">${esc(initial(p))}</span>
         <div class="gs-id"><b>${esc(nameOf(p, gPlayers.indexOf(p)))}</b><span class="gs-role">${roleChip(p)}</span></div></div>
-      <div class="gs-strip"><div class="gs-track">${cards}${cards}</div><i class="gs-mark"></i></div>
+      <div class="gs-strip"><div class="gs-track">${cards}${cards}</div><i class="gs-mark"></i>${HUD}</div>
     </div>`;
   }).join("");
 }

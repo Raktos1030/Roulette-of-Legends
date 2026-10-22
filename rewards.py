@@ -16,7 +16,8 @@ passed with it is closed as "joker" in the history, not counted as cancelled.
 from collection import CARD
 
 STAMPS = ("flawless", "domination", "penta")
-READY = {"title", "joker", "stamp", "back", "theme"}   # reward kinds the app already gives (the others come later)
+READY = {"title", "joker", "stamp", "back", "theme", "roulette", "opening"}   # reward kinds the app already gives
+LOOKS = {"theme": "hextech", "roulette": "classic", "opening": "classic"}   # looks picked once unlocked: their default
 JOKER_AT = 5        # rolls played to unlock the Joker (first step)
 JOKER_EVERY = 10    # rolls played to get it back after using it
 
@@ -97,6 +98,18 @@ def joker(entries):
     since = sum(1 for e in played if e["created"] > max(used)) if used else JOKER_EVERY
     available = unlocked and since >= JOKER_EVERY
     return {"unlocked": unlocked, "available": available, "next_in": 0 if available or not unlocked else JOKER_EVERY - since}
+
+
+def looks(steps, picked):
+    """{kind: {"current", "options": [{"id", "unlocked", "step"}]}} for the looks of LOOKS. picked: {kind: id}."""
+    out = {}
+    for kind, default in LOOKS.items():
+        opts = [{"id": default, "unlocked": True, "step": None}] + [
+            {"id": r["id"], "unlocked": s["done"], "step": i + 1}
+            for i, s in enumerate(steps) for r in s["rewards"] if r["kind"] == kind]
+        cur = picked.get(kind)
+        out[kind] = {"current": cur if any(o["id"] == cur and o["unlocked"] for o in opts) else default, "options": opts}
+    return out
 
 
 def titles(steps, masters):

@@ -4,10 +4,10 @@
 // the volume comes from the settings too.
 import { store } from "./ctx.js";
 
-const FILES = ["tick", "spin", "stop_role", "stop_champ", "hover", "open", "wheel", "flip", "rare", "epic", "legendary", "crown", "click"];
+const FILES = ["tick", "spin", "stop_role", "stop_champ", "hover", "open", "wheel", "flip", "shatter", "rare", "epic", "legendary", "crown", "click"];
 // loudness of each sound against the others (the files all peak at the same level)
 const GAIN = { tick: 0.35, hover: 0.25, click: 0.4, spin: 0.55, stop_role: 0.6, stop_champ: 0.8, open: 0.7, wheel: 0.6, flip: 0.7,
-  rare: 0.75, epic: 0.8, legendary: 0.9, crown: 0.9 };
+  shatter: 0.75, rare: 0.75, epic: 0.8, legendary: 0.9, crown: 0.9 };
 
 let ac = null, out = null, lastTick = 0, lastHover = 0;
 const buffers = {}, loading = {};
@@ -79,5 +79,6 @@ export const rip = () => play("open");
 // the back's roulette turns before the card flips over
 export const wheel = () => play("wheel");
 export const flip = () => play("flip");
+export const shatter = () => play("shatter");   // the "Éclat d'argent" opening
 export const reveal = (level) => play(level >= 4 ? "legendary" : level === 3 ? "epic" : "rare");
 export const crown = () => play("crown");

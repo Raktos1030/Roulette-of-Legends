@@ -134,10 +134,10 @@ function paintRewards(r) {
           : t("Revient dans {0} tirages joués.", j.next_in))}</p>
         <small class="muted">${esc(t("Un seul en réserve, regagné tous les 10 tirages joués : le hasard reste roi."))}</small>
       </section>
-      <section class="card rw-themes-card">
-        <h3 class="card-title">${KIND_ICON.theme}${esc(t("Thème de l'interface"))}</h3>
-        <div class="rw-themes">${r.themes.map((x) => `<button class="rw-theme${r.theme === x.id ? " on" : ""}" data-theme="${x.id}" ${x.unlocked ? "" : "disabled"}
-          style="--sw-bg:${THEME_SWATCH[x.id][0]};--sw-acc:${THEME_SWATCH[x.id][1]}"><i></i>${esc(t(THEME_NAME[x.id]))}${x.unlocked ? "" : `<small>${esc(t("Palier {0}", x.step))}</small>`}</button>`).join("")}</div>
+      <section class="card rw-looks">
+        ${Object.entries(LOOKS).map(([kind, L]) => `<h3 class="card-title">${KIND_ICON[kind]}${esc(t(L.title))}</h3>
+        <div class="rw-themes">${r.looks[kind].options.map((x) => `<button class="rw-theme${r.looks[kind].current === x.id ? " on" : ""}" data-look="${kind}" data-id="${x.id}"
+          ${x.unlocked ? "" : "disabled"} style="--sw:${L.swatch[x.id]}"><i></i>${esc(t(L.names[x.id]))}${x.unlocked ? "" : `<small>${esc(t("Palier {0}", x.step))}</small>`}</button>`).join("")}</div>`).join("")}
       </section>
       <section class="card rw-titles">
         <h3 class="card-title">${KIND_ICON.title}${esc(t("Ton titre"))}</h3>
@@ -162,8 +162,8 @@ function paintRewards(r) {
       <p class="muted">${esc(t("Ils se posent sur la carte du champion et du rôle de la partie, pour toujours."))}</p>
       <div class="rw-stamp-list">${STAMP_INFO.map(([id, name, how]) => `<div><i class="tc-stamp ${id}">${STAMP_SVG[id]}</i><b>${esc(t(name))}</b><small>${esc(t(how))}</small></div>`).join("")}</div>
     </section>`;
-  box.querySelectorAll("[data-theme]").forEach((b) => (b.onclick = async () => {
-    const res = await call("set_theme", { theme: b.dataset.theme });
+  box.querySelectorAll("[data-look]").forEach((b) => (b.onclick = async () => {
+    const res = await call("set_look", { kind: b.dataset.look, id: b.dataset.id });
     if (res.error) return toast(res.error, "bad");
     showPage();
   }));
@@ -174,8 +174,17 @@ function paintRewards(r) {
   }));
 }
 
-const THEME_NAME = { hextech: "Hextech", void: "Néant", gold: "Or" };
-const THEME_SWATCH = { hextech: ["#070c16", "#c8aa6e"], void: ["#0b0716", "#a77bf3"], gold: ["#110b05", "#e2b652"] };
+// looks unlocked in the rewards path (rewards.LOOKS): their names and swatches
+const split = (bg, acc) => `linear-gradient(135deg, ${bg} 0 55%, ${acc} 55% 100%)`;
+const LOOKS = {
+  theme: { title: "Thème de l'interface", names: { hextech: "Hextech", void: "Néant", gold: "Or" },
+    swatch: { hextech: split("#070c16", "#c8aa6e"), void: split("#0b0716", "#a77bf3"), gold: split("#110b05", "#e2b652") } },
+  roulette: { title: "Roulette", names: { classic: "Classique", infernal: "Infernale", prism: "Prismatique" },
+    swatch: { classic: split("#0a1220", "#e8d09a"), infernal: 'url(hud/infernal_primary.webp) center / 100% 100%',
+      prism: 'url(hud/prism_primary.webp) center / 100% 100%' } },
+  opening: { title: "Ouverture des boosters", names: { classic: "Classique", silver: "Éclat d'argent" },
+    swatch: { classic: split("#0a1220", "#e8d09a"), silver: "linear-gradient(135deg, #5d6878, #f4f7fb 45%, #9aa6b8 60%, #e6ebf2)" } },
+};
 
 // exploit stamps on the cards (rewards.py)
 const STAMP_SVG = {
@@ -416,6 +425,48 @@ document.addEventListener("pointerout", (e) => {
 });
 
 // --- booster: cards revealed one by one ---------------------------------------------------------
+// "Éclat d'argent" opening: the back cracks from its wheel, then bursts into shards (polygons in % of the card)
+function shatterHTML(skin) {
+  const C = [50, 47], K = 9;
+  const norm = (a) => (a + 2 * Math.PI) % (2 * Math.PI);
+  const exit = (a) => {   // where the ray from the wheel leaves the card
+    const dx = Math.cos(a), dy = Math.sin(a);
+    const tx = dx > 0 ? (100 - C[0]) / dx : dx < 0 ? -C[0] / dx : Infinity;
+    const ty = dy > 0 ? (100 - C[1]) / dy : dy < 0 ? -C[1] / dy : Infinity;
+    const k = Math.min(tx, ty);
+    return [C[0] + dx * k, C[1] + dy * k];
+  };
+  const angles = Array.from({ length: K }, (_, i) => ((i + 0.2 + Math.random() * 0.6) / K) * 2 * Math.PI);
+  const hits = angles.map(exit);
+  const mids = angles.map((a, i) => {   // a bend on each crack, shared by the two shards on its sides
+    const f = 0.3 + Math.random() * 0.25, off = (Math.random() - 0.5) * 7;
+    return [C[0] + (hits[i][0] - C[0]) * f - Math.sin(a) * off, C[1] + (hits[i][1] - C[1]) * f + Math.cos(a) * off];
+  });
+  const corners = [[100, 100], [0, 100], [0, 0], [100, 0]].map((p) => ({ p, a: norm(Math.atan2(p[1] - C[1], p[0] - C[0])) }));
+  const between = (a, b) => corners.filter((c) => (b > a ? c.a > a && c.a < b : c.a > a || c.a < b))
+    .sort((u, v) => norm(u.a - a) - norm(v.a - a)).map((c) => c.p);
+  const pieces = [];
+  for (let i = 0; i < K; i++) {
+    const j = (i + 1) % K;
+    pieces.push({ pts: [C, mids[i], mids[j]], inner: true });
+    pieces.push({ pts: [mids[i], hits[i], ...between(angles[i], angles[j]), hits[j], mids[j]] });
+  }
+  const pt = ([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`;
+  const cracks = hits.map((h, i) => `<path d="M${pt(C)} L${pt(mids[i])} L${pt(h)}" pathLength="1"/>`).join("")
+    + mids.map((m, i) => `<path class="ring" d="M${pt(m)} L${pt(mids[(i + 1) % K])}" pathLength="1"/>`).join("");
+  const shards = pieces.map(({ pts, inner }) => {
+    const cx = pts.reduce((s, p) => s + p[0], 0) / pts.length, cy = pts.reduce((s, p) => s + p[1], 0) / pts.length;
+    const dx = cx - C[0], dy = cy - C[1], len = Math.hypot(dx, dy) || 1;
+    const push = (inner ? 300 : 190) + Math.random() * 140;
+    const r = (n) => ((Math.random() - 0.5) * n).toFixed(0);
+    return `<i style="clip-path:polygon(${pts.map(([x, y]) => `${x.toFixed(1)}% ${y.toFixed(1)}%`).join(",")});transform-origin:${cx.toFixed(1)}% ${cy.toFixed(1)}%;`
+      + `--tx:${((dx / len) * push).toFixed(0)}px;--ty:${((dy / len) * push + 60).toFixed(0)}px;--rz:${r(200)}deg;--rx:${r(140)}deg;--ry:${r(140)}deg;--d:${(Math.random() * 0.07).toFixed(2)}s"></i>`;
+  }).join("");
+  const src = `/img/cards/back${skin && skin !== "hextech" ? "_" + skin : ""}.webp`;
+  return `<svg class="bk-cracks" viewBox="0 0 100 100" preserveAspectRatio="none">${cracks}</svg>
+    <div class="bk-shards" style="--img:url('${src}')">${shards}</div><div class="bk-impact"></div>`;
+}
+
 function openBooster(ids) {
   const queue = ids.map((id) => data.cards.find((c) => c.id === id)).filter(Boolean)
     .sort((a, b) => a.level - b.level);   // the best card last
@@ -445,6 +496,7 @@ function openBooster(ids) {
     const done = new Set(queue.slice(0, n + 1).map((x) => x.id));
     return c.level === 4 && data.masters.includes(c.key) && data.pending.every((id) => done.has(id) || keyOf(id) !== c.key);
   };
+  const silver = store.profile.opening === "silver";
   const show = () => {
     const c = queue[i];
     const L = levelOf(c.level);
@@ -455,7 +507,7 @@ function openBooster(ids) {
       `<i style="left:${(Math.random() * 100).toFixed(1)}%;--s:${(2 + Math.random() * 3).toFixed(1)}px;--d:${(2.6 + Math.random() * 2.4).toFixed(2)}s;--w:${(Math.random() * 2.5).toFixed(2)}s;--x:${((Math.random() - 0.5) * 160).toFixed(0)}px"></i>`).join("");
     box.innerHTML = `
       <div class="bk-shade"></div>
-      <div class="bk-stage lv${c.level}${crown ? " crowning" : ""}">
+      <div class="bk-stage lv${c.level}${crown ? " crowning" : ""}${silver ? " silver" : ""}">
         <div class="bk-glow"></div>
         <div class="bk-sparks">${sparks}</div>
         <div class="bk-count">${esc(t("Carte {0} sur {1}", i + 1, queue.length))}</div>
@@ -463,7 +515,7 @@ function openBooster(ids) {
         <div class="bk-card">${crown ? `<div class="bk-fan">${data.cards.filter((x) => x.key === c.key && x.id !== c.id)
           .map((x) => `<div class="bk-fan-card">${cardHTML(x, { level: 4 })}</div>`).join("")}</div>` : ""}<div class="bk-flip">
           <div class="bk-face bk-front">${cardHTML(c, { level: c.level })}</div>
-          <div class="bk-face bk-rear">${backHTML()}</div>
+          <div class="bk-face bk-rear">${backHTML()}</div>${silver ? shatterHTML(data.card_back) : ""}
         </div><div class="bk-burst"></div>${crown ? `<div class="bk-shock"></div><div class="bk-crownfall"><img src="/img/cards/crown.webp" alt=""></div>` : ""}</div>
         ${crown ? '<div class="bk-flash"></div>' : ""}
         <div class="bk-text">
@@ -484,9 +536,11 @@ function openBooster(ids) {
     requestAnimationFrame(() => setTimeout(() => {
       if (!stage.isConnected) return;   // skipped in the meantime
       stage.classList.add("flipped");
-      sound.flip();
+      if (silver) sound.shatter();
+      else sound.flip();
       setTimeout(() => stage.isConnected && sound.reveal(c.level), 260);
     }, 1150));
+    if (silver) setTimeout(() => stage.isConnected && stage.classList.add("cracking"), 720);
     if (crown) setTimeout(() => {
       if (!stage.isConnected) return;
       stage.classList.add("crowned");
