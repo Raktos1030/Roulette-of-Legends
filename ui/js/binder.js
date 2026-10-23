@@ -597,8 +597,8 @@ function openBooster(ids) {
     if (all) all.onclick = () => revealAll(queue.slice(i));
     box.querySelector(".bk-shade").onclick = close;
   };
-  // every card left at once, in two steps: dealt face down on the table, each one turned over with a click; or all of
-  // them, one after another (the best last)
+  // every card left at once: dealt face down on the table, each one turned over with a click or all of them one after
+  // another (the best last); once they are all turned, Finish
   const revealAll = async (rest) => {
     await call("binder_open", { ids: rest.map((x) => x.id) });
     box.innerHTML = `<div class="bk-shade"></div>
@@ -608,7 +608,7 @@ function openBooster(ids) {
           <div class="bk-face bk-front">${cardHTML(c, { level: c.level })}</div><div class="bk-face bk-rear">${backHTML()}</div></div></div>`).join("")}</div>
         <p class="bk-hint">${esc(t("Clique une carte pour la retourner, ou retourne-les toutes."))}</p>
         <p class="bk-sum"></p>
-        <div class="bk-btns"><button class="btn" data-flipall>${esc(t("Tout retourner"))}</button><button class="btn-gold" data-done>${esc(t("Terminer"))}</button></div>
+        <div class="bk-btns"><button class="btn-gold" data-flipall>${esc(t("Tout retourner"))}</button><button class="btn-gold" data-done hidden>${esc(t("Terminer"))}</button></div>
       </div>`;
     box.querySelector(".bk-shade").onclick = close;
     box.querySelector("[data-done]").onclick = close;
@@ -624,7 +624,8 @@ function openBooster(ids) {
         .filter(([lv]) => n(lv)).map(([lv, one, many]) => `${n(lv)} ${t(n(lv) > 1 ? many : one).toLowerCase()}`).join(" · ");
       sum.classList.add("on");
       box.querySelector(".bk-hint").classList.add("off");
-      all.hidden = true;
+      all.hidden = true;   // every card turned: the only step left is to finish
+      box.querySelector("[data-done]").hidden = false;
     };
     // quiet: in a run, only the legendaries chime (and the last card)
     const flip = (k, quiet = false) => {

@@ -2009,9 +2009,9 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
   --frame: url("hud/infernal_frame.webp"); --frame-glow: url("hud/infernal_frame_glow.webp"); --ptr-t: url("hud/infernal_ptr_t.webp"); --ptr-t-glow: url("hud/infernal_ptr_t_glow.webp"); --ptr-b: url("hud/infernal_ptr_b.webp"); --ptr-b-glow: url("hud/infernal_ptr_b_glow.webp"); }
 :root[data-roulette="infernal"] .gs-strip { --k: 0.235; }
 :root[data-roulette="prism"] .strip-hud { display: block; }
-:root[data-roulette="prism"] :is(.strip, .gs-strip) { --edge-t: 32; --edge-b: 34; --edge-s: 4; --k: 0.5; --top: 71; --bottom: 72; --left: 99; --right: 96; --pw: 140; --pth: 109; --pbh: 114;
+:root[data-roulette="prism"] :is(.strip, .gs-strip) { --edge-t: 36; --edge-b: 43; --edge-s: 7; --k: 0.412; --top: 85; --bottom: 93; --left: 112; --right: 111; --pw: 184; --pth: 125; --pbh: 145;
   --frame: url("hud/prism_frame.webp"); --frame-glow: url("hud/prism_frame_glow.webp"); --ptr-t: url("hud/prism_ptr_t.webp"); --ptr-t-glow: url("hud/prism_ptr_t_glow.webp"); --ptr-b: url("hud/prism_ptr_b.webp"); --ptr-b-glow: url("hud/prism_ptr_b_glow.webp"); }
-:root[data-roulette="prism"] .gs-strip { --k: 0.235; }
+:root[data-roulette="prism"] .gs-strip { --k: 0.194; }
 :root[data-roulette="void"] .strip-hud { display: block; }
 :root[data-roulette="void"] :is(.strip, .gs-strip) { --edge-t: 43; --edge-b: 45; --edge-s: 5; --k: 0.357; --top: 98; --bottom: 102; --left: 116; --right: 113; --pw: 184; --pth: 134; --pbh: 148;
   --frame: url("hud/void_frame.webp"); --frame-glow: url("hud/void_frame_glow.webp"); --ptr-t: url("hud/void_ptr_t.webp"); --ptr-t-glow: url("hud/void_ptr_t_glow.webp"); --ptr-b: url("hud/void_ptr_b.webp"); --ptr-b-glow: url("hud/void_ptr_b_glow.webp"); }
@@ -2023,7 +2023,7 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) :is(.strip, .gs-strip) {   /* the art ends under the middle of the rails and side bars */
   --et: calc((var(--edge-t) + var(--top)) / 2 * var(--k) * 1px); --eb: calc((var(--edge-b) + var(--bottom)) / 2 * var(--k) * 1px);
   --es: calc(var(--left) * .45 * var(--k) * 1px); }
-:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip { height: 298px; border-color: transparent; border-radius: 0; box-shadow: none;
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip { transition: none; height: 298px; border-color: transparent; border-radius: 0; box-shadow: none;
   padding: var(--et) var(--es) var(--eb); background-clip: content-box; }
 /* nothing of the strip outside the frame: its art, edge shadows and flash stay within the rails */
 :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip-roll { inset: var(--et) var(--es) var(--eb); overflow: hidden; }
@@ -2073,8 +2073,18 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 .strip-hud .ht { mix-blend-mode: multiply; background: linear-gradient(100deg, transparent 0 30%, rgba(255, 168, 208, .95) 36%,
   rgba(132, 222, 232, .95) 41%, rgba(186, 160, 255, .95) 46%, transparent 50% 100%) 100% 0 / 260% 100% no-repeat; }
 :root[data-roulette="prism"] .strip-hud :is(.hs, .ht) { display: block; animation: hudSweep 6.5s ease-in-out infinite; }
+/* the opal never stops shifting: its hues turn slowly, and a sheet of iridescence glides along the rails */
+:root[data-roulette="prism"] .strip-hud .ht { mix-blend-mode: color; opacity: .62; animation: iriGlide 14s linear infinite;
+  background: repeating-linear-gradient(100deg, #ff9fcf 0, #8fe6f0 140px, #c3a6ff 280px, #ffe39a 420px, #ff9fcf 560px) 0 0 / 560px 100%; }
+@keyframes iriGlide { to { background-position: 560px 0; } }
+:root[data-roulette="prism"] .strip-hud .hm, :root[data-roulette="prism"] .launch .lm { animation: iriHue 11s ease-in-out infinite alternate; }
+:root[data-roulette="prism"] .strip-hud b s { animation: matterPos 9s linear infinite, iriHue 11s ease-in-out infinite alternate; }
+@keyframes iriHue { from { filter: hue-rotate(-50deg) saturate(1.9) contrast(1.08); } to { filter: hue-rotate(70deg) saturate(1.9) contrast(1.08); } }
+/* the pearly glow would wash the opal out: kept around it only, faint */
+:root[data-roulette="prism"] .strip-hud b::after { display: none; }
+:root[data-roulette="prism"] .strip-hud :is(.hg, .hb) { opacity: .35; animation: none; }
 :root[data-roulette="prism"] .strip.spinning .strip-hud :is(.hs, .ht, b), :root[data-roulette="prism"] .gs-row.spinning .strip-hud :is(.hs, .ht, b) { animation-duration: 2s; }
-:root[data-roulette="prism"] .strip-hud .hf { filter: brightness(.86); }
+
 @keyframes hudSweep { 0%, 12% { background-position: 100% 0; } 60%, 100% { background-position: 0% 0; } }
 :root[data-roulette="prism"] .strip-hud b { animation: ptrGlint 6.5s ease-in-out infinite; }
 @keyframes ptrGlint { 0%, 30%, 44%, 100% { filter: none; } 36% { filter: brightness(1.9) drop-shadow(0 0 6px rgba(255, 240, 250, .9)); } }
@@ -2137,7 +2147,7 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 :root[data-roulette="prism"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/prism_primary_glow.webp"); -webkit-mask-box-image-slice: 74 74 74 74; -webkit-mask-box-image-width: 25px 25px 25px 25px; -webkit-mask-box-image-repeat: stretch; }
 :root[data-roulette="infernal"] { --matter: url("hud/infernal_matter.webp"); --matter-blend: screen; }
 :root[data-roulette="void"] { --matter: url("hud/void_matter.webp"); }
-:root[data-roulette="prism"] { --matter: url("hud/prism_matter.webp"); --matter-blend: soft-light; }
+:root[data-roulette="prism"] { --matter: url("hud/prism_matter.webp"); --matter-blend: overlay; }
 :root:is([data-roulette="infernal"], [data-roulette="void"], [data-roulette="prism"]) .strip-hud .hm { display: block; }
 :root:is([data-roulette="infernal"], [data-roulette="void"], [data-roulette="prism"]) .strip-hud b s { display: block; }
 .strip.spinning .strip-hud .hm s { animation-duration: 3s; }
