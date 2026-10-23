@@ -23,8 +23,7 @@ const PIP = ["none", "played", "rare", "epic", "legendary"];
 // a card back, in the chosen design (animated for the unlocked ones): a light turns over the metal and the gems
 // catch it as it passes (each back at its own point of the turn); hovered, or about to be revealed, they all light up
 // in turn
-const BACK_PARTS = `<span class="tb-sheen"></span><span class="tb-flare"></span><span class="tb-gems">${"<i></i>".repeat(17)}</span>`
-  + '<span class="tb-ball"><i></i></span>';   // the roulette ball, thrown when the wheel turns
+const BACK_PARTS = `<span class="tb-sheen"></span><span class="tb-flare"></span><span class="tb-gems">${"<i></i>".repeat(17)}</span>`;
 const backHTML = (skin = data && data.card_back, attrs = "", inner = "") =>
   `<div class="tc back" data-skin="${esc(skin || "hextech")}" style="--phase:-${(Math.random() * 8).toFixed(2)}s"${attrs}>${BACK_PARTS}${inner}</div>`;
 const NEED = {
@@ -310,7 +309,8 @@ function paintTools() {
 
 // a card: metal frame by level, art window, role icon in the frame's ring, name plate
 export function cardHTML(c, opts = {}) {
-  if (opts.back) return backHTML(data.card_back, ` data-id="${esc(c.id)}" title="${esc(t("Carte à ouvrir"))}"`, `<span class="tc-new">${esc(t("à ouvrir"))}</span>`);
+  if (opts.back) return backHTML(data.card_back, ` data-id="${esc(c.id)}" data-lv="${c.level}" title="${esc(t("Carte à ouvrir"))}"`,
+    `<span class="tc-new">${esc(t("à ouvrir"))}</span>`);
   const lv = opts.level != null ? opts.level : shown(c);
   const L = levelOf(lv);
   const master = lv === 4 && data && data.masters.includes(c.key);
@@ -539,20 +539,18 @@ function openBooster(ids) {
     const was = c.shown ? levelOf(c.shown) : null;
     const crown = crowns(i);
     const royal = crown && data.masters.length === 1 && data.backs.find((b) => b.id === "crown");
-    const sparks = Array.from({ length: crown ? 60 : c.level >= 3 ? 34 : 18 }, () =>
-      `<i style="left:${(Math.random() * 100).toFixed(1)}%;--s:${(2 + Math.random() * 3).toFixed(1)}px;--d:${(2.6 + Math.random() * 2.4).toFixed(2)}s;--w:${(Math.random() * 2.5).toFixed(2)}s;--x:${((Math.random() - 0.5) * 160).toFixed(0)}px"></i>`).join("");
     box.innerHTML = `
       <div class="bk-shade"></div>
       <div class="bk-stage lv${c.level}${crown ? " crowning" : ""}${silver ? " silver" : ""}">
         <div class="bk-glow"></div>
-        <div class="bk-sparks">${sparks}</div>
+        <div class="bk-dust"><i></i><i></i></div>
         <div class="bk-count">${esc(t("Carte {0} sur {1}", i + 1, queue.length))}</div>
         <div class="bk-ribbon">${esc(was ? t("Amélioration : {0} → {1}", t(was.label), t(L.label)) : t("Nouvelle carte"))}</div>
         <div class="bk-card">${crown ? `<div class="bk-fan">${data.cards.filter((x) => x.key === c.key && x.id !== c.id)
           .map((x) => `<div class="bk-fan-card">${cardHTML(x, { level: 4 })}</div>`).join("")}</div>` : ""}<div class="bk-flip">
           <div class="bk-face bk-front">${cardHTML(c, { level: c.level })}</div>
           <div class="bk-face bk-rear">${backHTML()}</div>${silver ? shatterHTML(data.card_back) : ""}
-        </div><div class="bk-burst"></div>${crown ? `<div class="bk-shock"></div><div class="bk-crownfall"><img src="/img/cards/crown.webp" alt=""></div>` : ""}</div>
+        </div><div class="bk-burst"><i></i><i></i></div>${crown ? `<div class="bk-shock"></div><div class="bk-crownfall"><img src="/img/cards/crown.webp" alt=""></div>` : ""}</div>
         ${crown ? '<div class="bk-flash"></div>' : ""}
         <div class="bk-text">
           <div class="bk-tier">${esc(t(L.label))}</div>
@@ -569,7 +567,6 @@ function openBooster(ids) {
     // the back's roulette spins, then the card turns over; a champion completed is then crowned
     const stage = box.querySelector(".bk-stage");
     sound.wheel();
-    for (const ms of [640, 730, 790, 840]) setTimeout(() => stage.isConnected && sound.tick(true), ms);   // the ball lands
     requestAnimationFrame(() => setTimeout(() => {
       if (!stage.isConnected) return;   // skipped in the meantime
       stage.classList.add("flipped");
