@@ -44,7 +44,7 @@ export function renderRoulette(page) {
     <section class="gstrips" id="gstrips" hidden></section>
     <div id="gresult"></div>
     <section class="strip idle" id="strip">
-      <div class="strip-track" id="track"></div>${HUD}
+      <div class="strip-view"><div class="strip-track" id="track"></div></div>${HUD}
       <div class="strip-marker"><i class="top"></i><i class="bot"></i></div>
       <div class="strip-msg"><div><b>${esc(t("LA FAILLE DÉCIDE POUR TOI"))}</b><span>${esc(t("Choisis un rôle ou laisse tout au hasard, puis appuie sur Lancer"))}</span></div></div>
     </section>
@@ -774,7 +774,7 @@ function paintGroupStrips() {
     return `<div class="gs-row idle" data-i="${i}">
       <div class="gs-who"><span class="gs-av">${esc(initial(p))}</span>
         <div class="gs-id"><b>${esc(nameOf(p, gPlayers.indexOf(p)))}</b><span class="gs-role">${roleChip(p)}</span></div></div>
-      <div class="gs-strip"><div class="gs-track">${cards}${cards}</div><i class="gs-mark"></i>${HUD}</div>
+      <div class="gs-strip"><div class="gs-view"><div class="gs-track">${cards}${cards}</div></div><i class="gs-mark"></i>${HUD}</div>
     </div>`;
   }).join("");
 }

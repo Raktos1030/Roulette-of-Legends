@@ -419,6 +419,8 @@ input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px;
 .strip::before, .strip::after { content: ""; position: absolute; top: 0; bottom: 0; width: 180px; z-index: 3; pointer-events: none; }
 .strip::before { left: 0; background: linear-gradient(90deg, rgba(var(--bg0-rgb), .96), transparent); }
 .strip::after { right: 0; background: linear-gradient(270deg, rgba(var(--bg0-rgb), .96), transparent); }
+/* the moving cards sit in a still view: a skin cuts it to the inside of its frame (the cards never show around it) */
+.strip-view, .gs-view { position: absolute; inset: 0; }
 .strip-track { position: absolute; top: 18px; left: 0; display: flex; gap: 12px; will-change: transform; }
 .strip.idle .strip-track { animation: drift 160s linear infinite; }
 .strip.idle .scard { filter: brightness(.5) saturate(.75); }
@@ -2011,9 +2013,9 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
   --frame: url("hud/prism_frame.webp"); --frame-glow: url("hud/prism_frame_glow.webp"); --ptr-t: url("hud/prism_ptr_t.webp"); --ptr-t-glow: url("hud/prism_ptr_t_glow.webp"); --ptr-b: url("hud/prism_ptr_b.webp"); --ptr-b-glow: url("hud/prism_ptr_b_glow.webp"); }
 :root[data-roulette="prism"] .gs-strip { --k: 0.235; }
 :root[data-roulette="void"] .strip-hud { display: block; }
-:root[data-roulette="void"] :is(.strip, .gs-strip) { --edge-t: 27; --edge-b: 29; --edge-s: 3; --k: 0.5; --top: 64; --bottom: 66; --left: 90; --right: 85; --pw: 132; --pth: 97; --pbh: 107;
+:root[data-roulette="void"] :is(.strip, .gs-strip) { --edge-t: 43; --edge-b: 45; --edge-s: 5; --k: 0.357; --top: 98; --bottom: 102; --left: 116; --right: 113; --pw: 184; --pth: 134; --pbh: 148;
   --frame: url("hud/void_frame.webp"); --frame-glow: url("hud/void_frame_glow.webp"); --ptr-t: url("hud/void_ptr_t.webp"); --ptr-t-glow: url("hud/void_ptr_t_glow.webp"); --ptr-b: url("hud/void_ptr_b.webp"); --ptr-b-glow: url("hud/void_ptr_b_glow.webp"); }
-:root[data-roulette="void"] .gs-strip { --k: 0.235; }
+:root[data-roulette="void"] .gs-strip { --k: 0.168; }
 :root[data-roulette="gold"] .strip-hud { display: block; }
 :root[data-roulette="gold"] :is(.strip, .gs-strip) { --edge-t: 30; --edge-b: 32; --edge-s: 4; --k: 0.5; --top: 67; --bottom: 69; --left: 90; --right: 89; --pw: 132; --pth: 103; --pbh: 109;
   --frame: url("hud/gold_frame.webp"); --frame-glow: url("hud/gold_frame_glow.webp"); --ptr-t: url("hud/gold_ptr_t.webp"); --ptr-t-glow: url("hud/gold_ptr_t_glow.webp"); --ptr-b: url("hud/gold_ptr_b.webp"); --ptr-b-glow: url("hud/gold_ptr_b_glow.webp"); }
@@ -2025,6 +2027,7 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
   padding: var(--et) var(--es) var(--eb); background-clip: content-box; }
 /* nothing of the strip outside the frame: its art, edge shadows and flash stay within the rails */
 :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip-roll { inset: var(--et) var(--es) var(--eb); overflow: hidden; }
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) :is(.strip-view, .gs-view) { clip-path: inset(var(--et) var(--es) var(--eb)); }
 :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) :is(.strip, .gs-strip)::before, :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) :is(.strip, .gs-strip)::after { top: var(--et); bottom: var(--eb); }
 :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip::before { left: var(--es); }
 :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip::after { right: var(--es); }
