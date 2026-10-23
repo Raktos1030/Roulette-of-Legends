@@ -23,7 +23,8 @@ const PIP = ["none", "played", "rare", "epic", "legendary"];
 // a card back, in the chosen design (animated for the unlocked ones): a light turns over the metal and the gems
 // catch it as it passes (each back at its own point of the turn); hovered, or about to be revealed, they all light up
 // in turn
-const BACK_PARTS = `<span class="tb-sheen"></span><span class="tb-flare"></span><span class="tb-gems">${"<i></i>".repeat(17)}</span>`;
+const BACK_PARTS = `<span class="tb-sheen"></span><span class="tb-flare"></span><span class="tb-gems">${"<i></i>".repeat(17)}</span>`
+  + '<span class="tb-ball"><i></i></span>';   // the roulette ball, thrown when the wheel turns
 const backHTML = (skin = data && data.card_back, attrs = "", inner = "") =>
   `<div class="tc back" data-skin="${esc(skin || "hextech")}" style="--phase:-${(Math.random() * 8).toFixed(2)}s"${attrs}>${BACK_PARTS}${inner}</div>`;
 const NEED = {
@@ -560,6 +561,7 @@ function openBooster(ids) {
     // the back's roulette spins, then the card turns over; a champion completed is then crowned
     const stage = box.querySelector(".bk-stage");
     sound.wheel();
+    for (const ms of [640, 730, 790, 840]) setTimeout(() => stage.isConnected && sound.tick(true), ms);   // the ball lands
     requestAnimationFrame(() => setTimeout(() => {
       if (!stage.isConnected) return;   // skipped in the meantime
       stage.classList.add("flipped");
