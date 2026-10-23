@@ -1435,7 +1435,7 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 .bd-chaos .chaos-ic { width: 15px; height: 15px; fill: none; stroke: #ff7a59; stroke-width: 1.8; }
 .bd-search { width: 210px; }
 
-.bd-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 22px 18px; perspective: 1200px; }
+.bd-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 22px 18px; }
 
 /* --- a card -------------------------------------------------------------------------------------------
    art under a metal frame (image by level, /img/cards), role icon in the frame's ring, name on the frame's plate.
@@ -1443,8 +1443,10 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 .tc { --mx: .5; --my: .5; --rx: 0deg; --ry: 0deg; --frame: url("/img/cards/frame_iron.webp"); --tint: #8a93a3; --glow: rgba(0, 0, 0, 0);
   position: relative; aspect-ratio: 5 / 7; isolation: isolate;
   filter: drop-shadow(0 10px 14px rgba(0, 0, 0, .55)) drop-shadow(0 0 14px var(--glow));
-  transform: perspective(800px) rotateX(var(--rx)) rotateY(var(--ry)); transition: transform .35s var(--ease), filter .3s; will-change: transform; }
-.tc.tilt { transition: transform .08s linear, filter .3s; }
+  transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry)); transition: transform .35s var(--ease), filter .3s; will-change: transform; }
+/* hovered, the card lifts a little and leans toward the pointer (its own perspective only: no stretching) */
+.tc.tilt { transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry)) scale(1.04); transition: transform .12s ease-out, filter .3s;
+  filter: drop-shadow(0 16px 18px rgba(0, 0, 0, .6)) drop-shadow(0 0 16px var(--glow)); }
 .tc-art { position: absolute; left: 5.5%; right: 5.5%; top: 4.5%; bottom: 18.4%; overflow: hidden; border-radius: 3%; background: #070b13; }
 .tc-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 16%; transition: transform .5s var(--ease); }
 .tc:hover .tc-art img { transform: scale(1.05); }

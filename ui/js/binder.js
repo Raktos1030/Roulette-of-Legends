@@ -413,8 +413,8 @@ document.addEventListener("pointermove", (e) => {
   el.classList.add("tilt");
   el.style.setProperty("--mx", x.toFixed(3));
   el.style.setProperty("--my", y.toFixed(3));
-  el.style.setProperty("--rx", ((0.5 - y) * 14).toFixed(2) + "deg");
-  el.style.setProperty("--ry", ((x - 0.5) * 18).toFixed(2) + "deg");
+  el.style.setProperty("--rx", ((0.5 - y) * 10).toFixed(2) + "deg");
+  el.style.setProperty("--ry", ((x - 0.5) * 12).toFixed(2) + "deg");
 });
 document.addEventListener("pointerout", (e) => {
   const el = e.target.closest && e.target.closest(".tc");

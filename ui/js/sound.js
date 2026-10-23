@@ -1,4 +1,5 @@
-// Sound effects: short recordings in ui/sfx (generated with ElevenLabs, the button click from Kenney, CC0), no music.
+// Sound effects: short recordings in ui/sfx, no music. One family: a chime (generated with ElevenLabs) is the motif,
+// pitched into the chords of the results and the rarities; cards, chips, dice and glass are real recordings (Kenney, CC0).
 // The roulette (a tick as each card passes the marker, the launch, the role and the champion found) and the binder
 // cards (hover, booster, the back's wheel, flip, a reveal per rarity, the crowning). Off with the "Sons" setting;
 // the volume comes from the settings too.
@@ -6,8 +7,8 @@ import { store } from "./ctx.js";
 
 const FILES = ["tick", "spin", "stop_role", "stop_champ", "hover", "open", "wheel", "flip", "shatter", "rare", "epic", "legendary", "crown", "click"];
 // loudness of each sound against the others (the files all peak at the same level)
-const GAIN = { tick: 0.35, hover: 0.25, click: 0.4, spin: 0.55, stop_role: 0.6, stop_champ: 0.8, open: 0.7, wheel: 0.6, flip: 0.7,
-  shatter: 0.75, rare: 0.75, epic: 0.8, legendary: 0.9, crown: 0.9 };
+const GAIN = { tick: 0.3, hover: 0.22, click: 0.4, spin: 0.5, stop_role: 0.6, stop_champ: 0.65, open: 0.6, wheel: 0.45, flip: 0.6,
+  shatter: 0.6, rare: 0.55, epic: 0.6, legendary: 0.68, crown: 0.75 };
 
 let ac = null, out = null, lastTick = 0, lastHover = 0;
 const buffers = {}, loading = {};
