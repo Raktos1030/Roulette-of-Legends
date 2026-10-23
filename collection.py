@@ -18,6 +18,7 @@ A champion is mastered when its five roles are legendary; roles without a guide 
 """
 
 RANKED = {420, 440}
+BOTS = {830, 840, 850, 870, 880, 890}   # co-op vs AI games attached to a roll by older versions: they don't count
 TIERS = ("IRON", "BRONZE", "SILVER", "GOLD", "PLATINUM", "EMERALD", "DIAMOND", "MASTER", "GRANDMASTER", "CHALLENGER")
 DIVISIONS = ("IV", "III", "II", "I")
 CS_REROLLS = ("champion_banned", "champion_taken", "autofill")   # reasons of a champ select reroll
@@ -108,8 +109,8 @@ def cards(entries, account=None):
         if account and e.get("puuid") and e["puuid"] != account:
             continue
         c = out.setdefault("%s|%s" % (e["key"], e["role"]), {"level": 0, "games": 0, "wins": 0})
-        if e.get("status") != "played" or (e.get("played") and e["played"] != e["key"]):
-            c["level"] = max(c["level"], KNOWN)   # not played, or another champion was: known only
+        if e.get("status") != "played" or (e.get("played") and e["played"] != e["key"]) or e.get("queue") in BOTS:
+            c["level"] = max(c["level"], KNOWN)   # not played, another champion was, or against bots: known only
             continue
         level = level_of(e)
         c["games"] += 1

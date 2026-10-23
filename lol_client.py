@@ -40,11 +40,13 @@ QUEUE_NAMES = {
 GAME_PHASES = ("InProgress", "Reconnect", "WaitingForStats", "PreEndOfGame", "EndOfGame")
 # Summoner's Rift queues (ranked, normal, quickplay, Clash, co-op vs AI)
 SR_QUEUES = {400, 420, 430, 440, 480, 490, 700, 830, 840, 850, 870, 880, 890}
+BOT_QUEUES = {830, 840, 850, 870, 880, 890}   # co-op vs AI: never counts for a roll
 
 
 def roulette_game(queue_id=None, mode=None, custom=False):
-    """Only Summoner's Rift games can count for a roll (no ARAM, Arena, URF, practice tool or custom games)."""
-    if custom:
+    """Only Summoner's Rift games against players can count for a roll (no ARAM, Arena, URF, co-op vs AI, practice
+    tool or custom games)."""
+    if custom or queue_id in BOT_QUEUES:
         return False
     if mode:
         return str(mode).upper() == "CLASSIC"

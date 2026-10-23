@@ -13,7 +13,7 @@ The Joker, from the first step on: one in reserve, earned back 10 rolls played a
 passed with it is closed as "joker" in the history, not counted as cancelled.
 """
 
-from collection import CARD, is_official
+from collection import BOTS, CARD, is_official
 
 STAMPS = ("flawless", "domination", "penta")
 READY = {"title", "joker", "stamp", "back", "roulette", "opening"}   # reward kinds the app already gives
@@ -44,7 +44,7 @@ LADDER = (
 def counted(entries):
     """The rolls that fill the binder: official, played to the end with the rolled champion (as collection.cards)."""
     return [e for i, e in enumerate(entries) if not e.get("free") and e.get("status") == "played"
-            and not (e.get("played") and e["played"] != e["key"]) and is_official(entries, i)]
+            and not (e.get("played") and e["played"] != e["key"]) and e.get("queue") not in BOTS and is_official(entries, i)]
 
 
 def exploits(entries, detail):
