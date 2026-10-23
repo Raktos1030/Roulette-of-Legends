@@ -252,11 +252,11 @@ body[data-bg="mech"] .bd-grain { opacity: .035; }
 .btn-gold:active { transform: translateY(1px); }
 .btn-gold:disabled { filter: grayscale(.7) brightness(.6); pointer-events: none; }
 .btn-gold::after {
-  content: ""; position: absolute; top: 0; bottom: 0; width: 40%; left: -60%;
+  content: ""; position: absolute; top: 0; bottom: 0; width: 40%; left: 0;
   background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .55), transparent);
-  transform: skewX(-20deg); animation: shine 6s infinite 2s;
+  transform: translateX(-150%) skewX(-20deg); animation: shine 6s infinite 2s;   /* moved, not laid out again */
 }
-@keyframes shine { 0%, 80% { left: -60%; } 100% { left: 130%; } }
+@keyframes shine { 0%, 80% { transform: translateX(-150%) skewX(-20deg); } 100% { transform: translateX(325%) skewX(-20deg); } }
 
 .chip {
   display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
@@ -548,7 +548,7 @@ input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px;
   background: linear-gradient(100deg, var(--gold-pale) 0 42%, #fffaf0 50%, var(--gold-pale) 58% 100%);
   background-size: 260% 100%; background-position: 100% 0; -webkit-background-clip: text; background-clip: text;
   filter: drop-shadow(0 6px 24px rgba(0, 0, 0, .75));
-  animation: nameIn .9s var(--ease) both .1s, nameShine 9s ease-in-out 1.4s infinite;
+  animation: nameIn .9s var(--ease) both .1s, nameShine 9s ease-in-out 1.4s 2;   /* twice, then still */
 }
 @keyframes nameShine { 0% { background-position: 100% 0; } 16%, 100% { background-position: 0% 0; } }
 @keyframes nameIn { from { opacity: 0; letter-spacing: .2em; } }
@@ -1444,11 +1444,11 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
    Frame geometry (percent of the card): art window 6.4-93.7 x 7.5-80.4, plate 4.3-95.7 x 81.3-97.3, ring 4.9-16 x 3.8-11.8 */
 .tc { --mx: .5; --my: .5; --rx: 0deg; --ry: 0deg; --frame: url("/img/cards/frame_iron.webp"); --tint: #8a93a3; --glow: rgba(0, 0, 0, 0);
   position: relative; aspect-ratio: 5 / 7; isolation: isolate;
-  filter: drop-shadow(0 10px 14px rgba(0, 0, 0, .55)) drop-shadow(0 0 14px var(--glow));
+  border-radius: 5% / 3.6%; box-shadow: 0 10px 18px rgba(0, 0, 0, .5), 0 0 16px var(--glow);
   transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry)); transition: transform .35s var(--ease), filter .3s; will-change: transform; }
 /* hovered, the card lifts a little and leans toward the pointer (its own perspective only: no stretching) */
-.tc.tilt { transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry)) scale(1.04); transition: transform .12s ease-out, filter .3s;
-  filter: drop-shadow(0 16px 18px rgba(0, 0, 0, .6)) drop-shadow(0 0 16px var(--glow)); }
+.tc.tilt { transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry)) scale(1.04); transition: transform .12s ease-out, box-shadow .3s;
+  box-shadow: 0 16px 24px rgba(0, 0, 0, .55), 0 0 20px var(--glow); }
 .tc-art { position: absolute; left: 5.5%; right: 5.5%; top: 4.5%; bottom: 18.4%; overflow: hidden; border-radius: 3%; background: #070b13; }
 .tc-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 16%; transition: transform .5s var(--ease); }
 .tc:hover .tc-art img { transform: scale(1.05); }
@@ -1471,7 +1471,7 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 .tc.lv0 .tc-plate b { color: #66707f; }
 .tc.lv0 .tc-art::before { content: "?"; position: absolute; inset: 0; display: grid; place-items: center; z-index: 1; font: 54px/1 var(--display); color: rgba(255, 255, 255, .07); }
 /* played (level 1): not a card yet, only the champion seen, greyed and see-through, without a frame */
-.tc.lv1 { --tint: #9aa3b2; filter: none; }
+.tc.lv1 { --tint: #9aa3b2; box-shadow: none; }
 .tc.lv1 .tc-frame, .tc.lv1 .tc-art::after { display: none; }
 .tc.lv1 .tc-art { inset: 0; border-radius: 7%; background: rgba(255, 255, 255, .02); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .1); }
 .tc.lv1 .tc-art img { filter: grayscale(1) brightness(.85); opacity: .34; transition: opacity .3s, transform .5s var(--ease); }
@@ -1483,18 +1483,19 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 .tc.lv4 { --frame: url("/img/cards/frame_prism.webp"); --tint: #d6c9ff; --glow: rgba(150, 120, 255, .45); }
 /* legendary: the frame's metal takes an iridescent gradient that turns */
 .tc-prism { display: none; }
-.tc.lv4 .tc-prism { display: block; position: absolute; inset: 0; z-index: 2; pointer-events: none; mix-blend-mode: color; opacity: .9;
-  background: conic-gradient(from var(--tca), #19d3c4, #8b6cff, #ff6fb5, #ffd36b, #19d3c4);
-  -webkit-mask: url("/img/cards/frame_mask.webp") center / 100% 100% no-repeat; mask: url("/img/cards/frame_mask.webp") center / 100% 100% no-repeat;
-  animation: tcSpin 6s linear infinite; }
-@property --tca { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
-@keyframes tcSpin { to { --tca: 360deg; } }
+.tc.lv4 .tc-prism { display: block; position: absolute; inset: 0; z-index: 2; pointer-events: none; mix-blend-mode: color; opacity: .9; overflow: hidden;
+  -webkit-mask: url("/img/cards/frame_mask.webp") center / 100% 100% no-repeat; mask: url("/img/cards/frame_mask.webp") center / 100% 100% no-repeat; }
+.tc.lv4 .tc-prism::before { content: ""; position: absolute; left: 50%; top: 50%; width: 160%; aspect-ratio: 1; translate: -50% -50%;
+  background: conic-gradient(#19d3c4, #8b6cff, #ff6fb5, #ffd36b, #19d3c4); animation: turn 6s linear infinite; }
+@keyframes turn { to { rotate: 1turn; } }
 
 /* finishes: sheen (rare, epic), holographic foil and sparkles (legendary) */
 .tc.lv2 .tc-foil, .tc.lv3 .tc-foil { background: linear-gradient(115deg, transparent 36%, rgba(255, 255, 255, .3) 50%, transparent 64%);
   background-size: 280% 100%; background-position: calc(var(--mx) * 100%) 0; mix-blend-mode: soft-light; }
-.tc.lv3 .tc-foil { animation: tcShine 5.5s ease-in-out infinite; }
-@keyframes tcShine { 0%, 68% { background-position: 135% 0; } 100% { background-position: -35% 0; } }
+.tc.lv3 .tc-foil { overflow: hidden; }
+.tc.lv3 .tc-foil::after { content: ""; position: absolute; inset: 0 -100%; animation: tcShine 5.5s ease-in-out infinite;
+  background: linear-gradient(115deg, transparent 45%, rgba(255, 255, 255, .3) 50%, transparent 55%); }
+@keyframes tcShine { 0%, 68% { transform: translateX(-40%); } 100% { transform: translateX(40%); } }
 .tc.lv4 .tc-foil { background:
     radial-gradient(circle at calc(var(--mx) * 100%) calc(var(--my) * 100%), rgba(255, 255, 255, .4), transparent 42%),
     repeating-linear-gradient(118deg, #19d3c4 0, #8b6cff 8%, #ff6fb5 16%, #ffd36b 24%, #19d3c4 32%);
@@ -1510,28 +1511,29 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 
 /* mastered champion: golden aura and crown */
 .tc.master { --glow: rgba(255, 211, 107, .7); }
-.tc.master::before { content: ""; position: absolute; inset: 2%; z-index: -1; pointer-events: none; border-radius: 8%;
-  background: conic-gradient(from var(--tca), transparent 0 20%, rgba(255, 220, 140, .95) 25%, transparent 30% 70%, rgba(255, 220, 140, .95) 75%, transparent 80%);
-  filter: blur(9px); animation: tcSpin 3.5s linear infinite; }
+.tc-aura { position: absolute; inset: 2%; z-index: -1; pointer-events: none; border-radius: 8%; overflow: hidden; filter: blur(9px); }
+.tc-aura::before { content: ""; position: absolute; left: 50%; top: 50%; width: 170%; aspect-ratio: 1; translate: -50% -50%;
+  background: conic-gradient(transparent 0 20%, rgba(255, 220, 140, .95) 25%, transparent 30% 70%, rgba(255, 220, 140, .95) 75%, transparent 80%);
+  animation: turn 3.5s linear infinite; }
 /* the mastered card wears the crown, on its top edge */
 .tc-crown { position: absolute; top: -6.5%; left: 50%; width: 30%; transform: translateX(-50%); z-index: 3; pointer-events: none;
   filter: drop-shadow(0 0 6px rgba(255, 211, 107, .85)) drop-shadow(0 2px 3px rgba(0, 0, 0, .7)); }
 
-.tc:not(.back):not(.lv0):not(.lv1):hover { filter: drop-shadow(0 18px 22px rgba(0, 0, 0, .6)) drop-shadow(0 0 20px var(--glow)); }
+.tc:not(.back):not(.lv0):not(.lv1):hover { box-shadow: 0 18px 26px rgba(0, 0, 0, .55), 0 0 22px var(--glow); }
 
 /* face down: the card back */
 .tc.back { cursor: pointer; border-radius: 4%; background: url("/img/cards/back.webp") center / 100% 100% no-repeat; }
 .tc.back .tc-art, .tc.back .tc-frame { display: none; }
-.tc.back:hover { filter: drop-shadow(0 14px 20px rgba(0, 0, 0, .6)) drop-shadow(0 0 18px rgba(232, 200, 120, .6)); }
+.tc.back:hover { box-shadow: 0 14px 22px rgba(0, 0, 0, .55), 0 0 20px rgba(232, 200, 120, .55); }
 /* a card still to open: hovered, its back glows in the color of what it hides (silver rare, gold epic, legendary
    shifting through the prism) */
-.tc.back[data-lv="2"]:hover { filter: drop-shadow(0 14px 20px rgba(0, 0, 0, .6)) drop-shadow(0 0 10px rgba(225, 233, 245, .7)) drop-shadow(0 0 22px rgba(190, 205, 230, .45)); }
-.tc.back[data-lv="3"]:hover { filter: drop-shadow(0 14px 20px rgba(0, 0, 0, .6)) drop-shadow(0 0 10px rgba(255, 214, 120, .8)) drop-shadow(0 0 26px rgba(240, 180, 70, .55)); }
+.tc.back[data-lv="2"]:hover { box-shadow: 0 14px 22px rgba(0, 0, 0, .55), 0 0 10px rgba(225, 233, 245, .7), 0 0 26px rgba(190, 205, 230, .45); }
+.tc.back[data-lv="3"]:hover { box-shadow: 0 14px 22px rgba(0, 0, 0, .55), 0 0 10px rgba(255, 214, 120, .8), 0 0 30px rgba(240, 180, 70, .55); }
 .tc.back[data-lv="4"]:hover { animation: backLegend 2.4s linear infinite; }
 @keyframes backLegend {
-  0%, 100% { filter: drop-shadow(0 14px 20px rgba(0, 0, 0, .6)) drop-shadow(0 0 12px rgba(170, 130, 255, .9)) drop-shadow(0 0 30px rgba(120, 90, 255, .6)); }
-  33% { filter: drop-shadow(0 14px 20px rgba(0, 0, 0, .6)) drop-shadow(0 0 12px rgba(90, 220, 230, .9)) drop-shadow(0 0 30px rgba(40, 200, 220, .55)); }
-  66% { filter: drop-shadow(0 14px 20px rgba(0, 0, 0, .6)) drop-shadow(0 0 12px rgba(255, 140, 200, .9)) drop-shadow(0 0 30px rgba(255, 110, 180, .55)); } }
+  0%, 100% { box-shadow: 0 14px 22px rgba(0, 0, 0, .55), 0 0 12px rgba(170, 130, 255, .9), 0 0 34px rgba(120, 90, 255, .6); }
+  33% { box-shadow: 0 14px 22px rgba(0, 0, 0, .55), 0 0 12px rgba(90, 220, 230, .9), 0 0 34px rgba(40, 200, 220, .55); }
+  66% { box-shadow: 0 14px 22px rgba(0, 0, 0, .55), 0 0 12px rgba(255, 140, 200, .9), 0 0 34px rgba(255, 110, 180, .55); } }
 .tc-new { position: absolute; left: 0; right: 0; bottom: 10%; text-align: center; z-index: 2; font: 600 9px/1 var(--ui); letter-spacing: .22em; text-transform: uppercase;
   color: #ffe9b0; text-shadow: 0 0 6px rgba(0, 0, 0, 1), 0 0 10px rgba(0, 0, 0, 1); animation: tcPulse 1.6s ease-in-out infinite; }
 @keyframes tcPulse { 50% { opacity: .45; } }
@@ -1597,7 +1599,7 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 
 @media (max-width: 1100px) { .bd-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (prefers-reduced-motion: reduce) {
-  .tc.back::after, .tc.lv4, .tc.lv3 .tc-foil, .tc.lv4 .tc-art::before, .tc.master::before, .bd-pack .tc, .tc-new, .bk-burst i, .bk-dust i { animation: none; }
+  .tc.back::after, .tc.lv4, .tc.lv3 .tc-foil, .tc.lv4 .tc-art::before, .tc-aura::before, .tc.lv4 .tc-prism::before, .tc.lv3 .tc-foil::after, .bd-pack .tc, .tc-new, .bk-burst i, .bk-dust i { animation: none; }
 }
 
 /* card backs: one image per design; the unlocked designs move */
@@ -1607,20 +1609,21 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 .tc.back[data-skin="prism"] { background-image: url("/img/cards/back_prism.webp"); }
 .tc.back[data-skin="crown"] { background-image: url("/img/cards/back_crown.webp"); }
 .tc.back::before { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 1; }
-.tc.back[data-skin="void"]::before { background: radial-gradient(circle at 30% 35%, rgba(168, 85, 247, .35), transparent 40%),
-  radial-gradient(circle at 70% 70%, rgba(110, 60, 220, .3), transparent 42%); background-size: 200% 200%; mix-blend-mode: screen; animation: backMist 9s ease-in-out infinite alternate; }
-@keyframes backMist { from { background-position: 0% 0%, 100% 100%; } to { background-position: 100% 60%, 0% 30%; } }
+.tc.back[data-skin="void"]::before { inset: -50%; background: radial-gradient(circle at 40% 42%, rgba(168, 85, 247, .35), transparent 20%),
+  radial-gradient(circle at 60% 60%, rgba(110, 60, 220, .3), transparent 21%); mix-blend-mode: screen; animation: backMist 9s ease-in-out infinite alternate; }
+@keyframes backMist { from { transform: translate(-12%, -10%); } to { transform: translate(12%, 6%); } }
 .tc.back[data-skin="infernal"]::before { mix-blend-mode: screen; animation: backEmbers 3.2s linear infinite;
   background: radial-gradient(1.6px 1.6px at 20% 90%, #ffb26b, transparent), radial-gradient(1.4px 1.4px at 45% 80%, #ff7a3a, transparent),
     radial-gradient(1.8px 1.8px at 70% 95%, #ffc58a, transparent), radial-gradient(1.2px 1.2px at 85% 75%, #ff8a4a, transparent),
     radial-gradient(1.5px 1.5px at 30% 60%, #ffa060, transparent), radial-gradient(circle at 50% 46%, rgba(255, 106, 42, .25), transparent 35%);
   background-size: 100% 100%; }
 @keyframes backEmbers { 0% { transform: translateY(8%); opacity: .4; } 50% { opacity: 1; } 100% { transform: translateY(-14%); opacity: .3; } }
-.tc.back[data-skin="prism"]::before { background: conic-gradient(from var(--tca), rgba(25, 211, 196, .5), rgba(139, 108, 255, .5), rgba(255, 111, 181, .5), rgba(255, 211, 107, .5), rgba(25, 211, 196, .5));
-  mix-blend-mode: color; opacity: .55; animation: tcSpin 8s linear infinite; }
-.tc.back[data-skin="crown"]::before { background: linear-gradient(115deg, transparent 38%, rgba(255, 236, 170, .55) 50%, transparent 62%); background-size: 280% 100%;
+.tc.back[data-skin="prism"]::before { inset: auto; left: 50%; top: 50%; width: 170%; aspect-ratio: 1; translate: -50% -50%;
+  background: conic-gradient(rgba(25, 211, 196, .5), rgba(139, 108, 255, .5), rgba(255, 111, 181, .5), rgba(255, 211, 107, .5), rgba(25, 211, 196, .5));
+  mix-blend-mode: color; opacity: .55; animation: turn 8s linear infinite; }
+.tc.back[data-skin="crown"]::before { inset: 0 -100%; background: linear-gradient(115deg, transparent 44%, rgba(255, 236, 170, .55) 50%, transparent 56%);
   mix-blend-mode: screen; animation: backShine 4.5s ease-in-out infinite; }
-@keyframes backShine { 0%, 55% { background-position: 140% 0; } 100% { background-position: -40% 0; } }
+@keyframes backShine { 0%, 55% { transform: translateX(-45%); } 100% { transform: translateX(45%); } }
 
 .bd-backs { margin-bottom: 18px; }
 .bd-back-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 16px; }
@@ -1744,14 +1747,14 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
    crown falls on it (flash, shock wave), the light turns gold */
 .bk-stage.crowned { --tone: 255, 211, 107; }
 .bk-stage.crowning .bk-front .tc-crown { display: none; }
-.bk-stage.crowning .bk-front .tc.master::before { opacity: 0; transition: opacity .5s .55s; }
-.bk-stage.crowned .bk-front .tc.master::before { opacity: 1; }
+.bk-stage.crowning .bk-front .tc-aura { opacity: 0; transition: opacity .5s .55s; }
+.bk-stage.crowned .bk-front .tc-aura { opacity: 1; }
 .bk-stage.crowning .bk-text { position: relative; z-index: 1; text-shadow: 0 2px 10px rgba(0, 0, 0, .95), 0 0 2px rgba(0, 0, 0, .9); }
 .bk-stage.crowning .bk-tier { text-shadow: none; filter: drop-shadow(0 1px 5px rgba(0, 0, 0, .95)); }
 .bk-fan { position: absolute; inset: 0; pointer-events: none; }
 .bk-fan-card { position: absolute; inset: 0; transform-origin: 50% 150%; opacity: 0; }
 .bk-fan-card .tc { width: 100%; height: 100%; }
-.bk-fan .tc-crown, .bk-fan .tc.master::before { display: none; }
+.bk-fan .tc-crown, .bk-fan .tc-aura { display: none; }
 .bk-fan-card:nth-child(1) { --r: -25deg; --d: .2s; }
 .bk-fan-card:nth-child(2) { --r: -12.5deg; --d: .28s; }
 .bk-fan-card:nth-child(3) { --r: 12.5deg; --d: .28s; }
@@ -1995,7 +1998,7 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
    pointers marking the winning slot, the glow alive (breathing, brighter while it spins, flaring on the win) ---------- */
 .strip-hud { position: absolute; inset: 0; z-index: 7; display: none; pointer-events: none; }
 .strip-hud, .launch .lm { transition: opacity .4s ease; }
-.rl-page.hud-wait :is(.strip-hud .hm, .strip-hud b s, .launch .lm, .card::after) { opacity: 0; transition: none; }
+.rl-page.hud-wait :is(.strip-hud .hm, .strip-hud b s, .launch .lm, .pm) { opacity: 0; transition: none; }
 .strip-hud .hf, .strip-hud .hg, .strip-hud .hb { position: absolute; inset: 0; border-style: solid; border-color: transparent;
   border-width: calc(var(--top) * var(--k) * 1px) calc(var(--right) * var(--k) * 1px) calc(var(--bottom) * var(--k) * 1px) calc(var(--left) * var(--k) * 1px);
   border-image-slice: var(--top) var(--right) var(--bottom) var(--left); border-image-repeat: round; }   /* edges repeated at scale, never stretched */
@@ -2072,11 +2075,15 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 /* the iridescence travels with it: the nacre turns rose, aqua, then lavender as the light goes by */
 .strip-hud .ht { mix-blend-mode: multiply; background: linear-gradient(100deg, transparent 0 30%, rgba(255, 168, 208, .95) 36%,
   rgba(132, 222, 232, .95) 41%, rgba(186, 160, 255, .95) 46%, transparent 50% 100%) 100% 0 / 260% 100% no-repeat; }
-:root[data-roulette="prism"] .strip-hud :is(.hs, .ht) { display: block; animation: hudSweep 6.5s ease-in-out infinite; }
+:root[data-roulette="prism"] .strip-hud :is(.hs, .ht) { display: block; }
+:root[data-roulette="prism"] .strip-hud .hs { overflow: hidden; background: none; }
+.strip-hud .hs s { position: absolute; inset: 0; animation: hudSweep 6.5s ease-in-out infinite; will-change: transform;
+  background: linear-gradient(100deg, transparent 0 44%, rgba(255, 255, 255, .7) 47.5%, #fff 49.5%, #fff 50.5%, rgba(255, 255, 255, .7) 52.5%, transparent 56% 100%); }
 /* the opal never stops shifting: its hues turn slowly, and a sheet of iridescence glides along the rails */
-:root[data-roulette="prism"] .strip-hud .ht { mix-blend-mode: color; opacity: .62; animation: iriGlide 14s linear infinite;
+:root[data-roulette="prism"] .strip-hud .ht { mix-blend-mode: color; opacity: .62; overflow: hidden; background: none; }
+.strip-hud .ht s { position: absolute; top: 0; bottom: 0; left: -560px; right: 0; animation: iriGlide 14s linear infinite; will-change: transform;
   background: linear-gradient(90deg, #ff9fcf 0, #8fe6f0 140px, #c3a6ff 280px, #ffe39a 420px, #ff9fcf 560px) 0 0 / 560px 100% repeat-x; }
-@keyframes iriGlide { to { background-position: 560px 0; } }
+@keyframes iriGlide { to { transform: translateX(560px); } }
 :root[data-roulette="prism"] .strip-hud .hm, :root[data-roulette="prism"] .launch .lm { animation: iriHue 11s ease-in-out infinite alternate; }
 :root[data-roulette="prism"] .strip-hud b s { animation: matterPos 9s linear infinite, iriHue 11s ease-in-out infinite alternate; }
 @keyframes iriHue { from { filter: hue-rotate(-50deg) saturate(1.9) contrast(1.08); } to { filter: hue-rotate(70deg) saturate(1.9) contrast(1.08); } }
@@ -2084,7 +2091,7 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 :root[data-roulette="prism"] .strip-hud b::after { display: none; }
 :root[data-roulette="prism"] .strip-hud :is(.hg, .hb) { opacity: .35; animation: none; }
 
-@keyframes hudSweep { 0%, 12% { background-position: 100% 0; } 60%, 100% { background-position: 0% 0; } }
+@keyframes hudSweep { 0%, 12% { transform: translateX(-60%); } 60%, 100% { transform: translateX(60%); } }
 :root[data-roulette="prism"] .strip-hud b { animation: ptrGlint 6.5s ease-in-out infinite; }
 @keyframes ptrGlint { 0%, 30%, 44%, 100% { filter: none; } 36% { filter: brightness(1.9) drop-shadow(0 0 6px rgba(255, 240, 250, .9)); } }
 :root[data-roulette="prism"] .strip-marker::before, :root[data-roulette="prism"] .gs-mark {
@@ -2128,15 +2135,16 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
    Two layers of it drift in different directions and speeds, cut to the inlays by the glow image of each piece. Every
    loop moves each layer by whole tiles of its seamless texture, and its speed never changes: it flows on endlessly. */
 .strip-hud .hm { position: absolute; inset: 0; display: none; overflow: hidden; pointer-events: none;
+  clip-path: inset(calc(var(--edge-t) * var(--k) * 1px) calc(var(--edge-s) * var(--k) * 1px) calc(var(--edge-b) * var(--k) * 1px));   /* never past the metal */
   -webkit-mask-box-image-source: var(--frame-glow); -webkit-mask-box-image-slice: var(--top) var(--right) var(--bottom) var(--left);
   -webkit-mask-box-image-width: calc(var(--top) * var(--k) * 1px) calc(var(--right) * var(--k) * 1px) calc(var(--bottom) * var(--k) * 1px) calc(var(--left) * var(--k) * 1px);
   -webkit-mask-box-image-repeat: round; }
-.strip-hud .hm s, .strip-hud b s, .launch .lm s { position: absolute; inset: -240px; background: var(--matter) 0 0 / 240px 240px repeat; animation: matterA 14s linear infinite; }
-.strip-hud .hm s + s, .launch .lm s + s { background-size: 170px 170px; mix-blend-mode: var(--matter-blend, lighten); opacity: .85; animation: matterB 13s linear infinite; }
+.pm { display: none; position: absolute; inset: 0; z-index: 2; overflow: hidden; pointer-events: none; }
+.strip-hud .hm s, .strip-hud b s, .launch .lm s, .pm s { position: absolute; inset: -240px; background: var(--matter) 0 0 / 240px 240px repeat; animation: matterA 14s linear infinite; will-change: transform; }
+.strip-hud .hm s + s, .launch .lm s + s, .pm s + s { background-size: 170px 170px; mix-blend-mode: var(--matter-blend, lighten); opacity: .85; animation: matterB 13s linear infinite; }
 @keyframes matterA { to { transform: translate(240px, 240px); } }   /* whole tiles both ways: the loop never jumps */
 @keyframes matterB { from { transform: translate(170px, 0); } to { transform: translate(0, 170px); } }
 /* the same material in the panels' channels: two layers drifting their whole tile each loop */
-@keyframes panelMatter { to { background-position: 240px 240px, -170px 170px; } }
 @keyframes wordMatter { to { background-position: 150px 150px; } }   /* LANCER written in the living material */
 @keyframes wordSheen { to { background-position: -150% 0; } }
 /* prismatic: the opal word shifts through its colors (a more specific rule than the skin blocks) */
@@ -2168,7 +2176,8 @@ body.rolling #rail .nav-item:not(.on), body.rolling #rail-lol { opacity: .35; po
 :root[data-roulette="infernal"] .rl-page { --pe: 7px 1px 7px 1px; }   /* where the panel frame's bars begin: the panels stay within */
 :root[data-roulette="infernal"] .rl-page .card { background: linear-gradient(180deg, rgba(22, 16, 13, .8), rgba(11, 8, 7, .84)) 1px 7px / calc(100% - 2px) calc(100% - 14px) no-repeat; backdrop-filter: none;
   border: 0; border-radius: 0; padding: 24px 28px; isolation: isolate; }
-:root[data-roulette="infernal"] .rl-page .card::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: var(--matter) 0 0 / 240px 240px repeat, var(--matter) 0 0 / 170px 170px repeat; background-blend-mode: var(--matter-blend, lighten); -webkit-mask-box-image-source: url("hud/infernal_panel_glow.webp"); -webkit-mask-box-image-slice: 165 136 165 136; -webkit-mask-box-image-width: 28px 23px 28px 23px; -webkit-mask-box-image-repeat: round; animation: panelMatter 14s linear infinite; }
+:root[data-roulette="infernal"] .rl-page .card::after { display: none; }
+:root[data-roulette="infernal"] .rl-page .card > .pm { display: block; -webkit-mask-box-image-source: url("hud/infernal_panel_glow.webp"); -webkit-mask-box-image-slice: 165 136 165 136; -webkit-mask-box-image-width: 28px 23px 28px 23px; -webkit-mask-box-image-repeat: round; clip-path: inset(7px 1px 7px 1px); }
 :root[data-roulette="infernal"] .rl-page .w-hero .w-art, :root[data-roulette="infernal"] .rl-page .w-hero .w-shade { inset: var(--pe); border-radius: 0; }
 :root[data-roulette="infernal"] .rl-page .controls { padding: 26px 30px 22px; }
 :root[data-roulette="infernal"] .rl-page .roll-now { border-color: rgba(240, 164, 106, .4); background: linear-gradient(90deg, rgba(240, 164, 106, .13), rgba(240, 164, 106, .02)); border-radius: 4px; }
@@ -2199,7 +2208,7 @@ body.rolling #rail .nav-item:not(.on), body.rolling #rail-lol { opacity: .35; po
 :root[data-roulette="infernal"] .rl-page .launch { background: none; box-shadow: 0 12px 30px rgba(0, 0, 0, .5); border-radius: 0; overflow: visible; }
 :root[data-roulette="infernal"] .rl-page .launch::before { padding: 0; -webkit-mask: none; mask: none; border: solid transparent; border-width: 28px 23px 28px 23px; border-image: url("hud/infernal_panel.webp") 165 136 165 136 / 28px 23px 28px 23px round; z-index: -1; background: radial-gradient(120% 90% at 50% 0%, rgba(var(--acc), .12), transparent 62%) 1px 7px / calc(100% - 2px) calc(100% - 14px) no-repeat, linear-gradient(180deg, #1c120d, #0e0907) 1px 7px / calc(100% - 2px) calc(100% - 14px) no-repeat; background-origin: border-box; background-clip: border-box; }
 :root[data-roulette="infernal"] .rl-page .launch::after { display: none; }
-:root[data-roulette="infernal"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/infernal_panel_glow.webp"); -webkit-mask-box-image-slice: 165 136 165 136; -webkit-mask-box-image-width: 28px 23px 28px 23px; -webkit-mask-box-image-repeat: round; }
+:root[data-roulette="infernal"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/infernal_panel_glow.webp"); -webkit-mask-box-image-slice: 165 136 165 136; -webkit-mask-box-image-width: 28px 23px 28px 23px; -webkit-mask-box-image-repeat: round; clip-path: inset(7px 1px 7px 1px); }
 :root[data-roulette="infernal"] .rl-page .launch .lm s { inset: -240px; }
 :root[data-roulette="infernal"] .rl-page .launch .lt, :root[data-roulette="infernal"] .rl-page .launch:hover .lt { background: var(--matter) 0 0 / 150px 150px repeat; animation: wordMatter 12s linear infinite; -webkit-text-stroke: .5px rgba(var(--acc-hi), .55); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 1px rgba(0, 0, 0, .9)) drop-shadow(0 2px 6px rgba(0, 0, 0, .6)); }
 :root[data-roulette="infernal"] .rl-page .launch:hover .lt { filter: brightness(1.25) drop-shadow(0 0 1px rgba(0, 0, 0, .9)) drop-shadow(0 0 10px rgba(var(--acc), .5)); }
@@ -2215,7 +2224,8 @@ body.rolling #rail .nav-item:not(.on), body.rolling #rail-lol { opacity: .35; po
 :root[data-roulette="prism"] .rl-page { --pe: 7px 1px 8px 1px; }   /* where the panel frame's bars begin: the panels stay within */
 :root[data-roulette="prism"] .rl-page .card { background: linear-gradient(180deg, rgba(20, 20, 22, .8), rgba(11, 11, 13, .84)) 1px 7px / calc(100% - 2px) calc(100% - 15px) no-repeat; backdrop-filter: none;
   border: 0; border-radius: 0; padding: 24px 28px; isolation: isolate; }
-:root[data-roulette="prism"] .rl-page .card::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: var(--matter) 0 0 / 240px 240px repeat, var(--matter) 0 0 / 170px 170px repeat; background-blend-mode: var(--matter-blend, lighten); -webkit-mask-box-image-source: url("hud/prism_panel_glow.webp"); -webkit-mask-box-image-slice: 173 148 184 147; -webkit-mask-box-image-width: 26px 22px 27px 22px; -webkit-mask-box-image-repeat: round; animation: panelMatter 14s linear infinite, iriHue 11s ease-in-out infinite alternate; }
+:root[data-roulette="prism"] .rl-page .card::after { display: none; }
+:root[data-roulette="prism"] .rl-page .card > .pm { display: block; -webkit-mask-box-image-source: url("hud/prism_panel_glow.webp"); -webkit-mask-box-image-slice: 173 148 184 147; -webkit-mask-box-image-width: 26px 22px 27px 22px; -webkit-mask-box-image-repeat: round; clip-path: inset(7px 1px 8px 1px); animation: iriHue 11s ease-in-out infinite alternate; }
 :root[data-roulette="prism"] .rl-page .w-hero .w-art, :root[data-roulette="prism"] .rl-page .w-hero .w-shade { inset: var(--pe); border-radius: 0; }
 :root[data-roulette="prism"] .rl-page .controls { padding: 26px 30px 22px; }
 :root[data-roulette="prism"] .rl-page .roll-now { border-color: rgba(201, 230, 228, .4); background: linear-gradient(90deg, rgba(201, 230, 228, .13), rgba(201, 230, 228, .02)); border-radius: 4px; }
@@ -2246,7 +2256,7 @@ body.rolling #rail .nav-item:not(.on), body.rolling #rail-lol { opacity: .35; po
 :root[data-roulette="prism"] .rl-page .launch { background: none; box-shadow: 0 12px 30px rgba(0, 0, 0, .5); border-radius: 0; overflow: visible; }
 :root[data-roulette="prism"] .rl-page .launch::before { padding: 0; -webkit-mask: none; mask: none; border: solid transparent; border-width: 26px 22px 27px 22px; border-image: url("hud/prism_panel.webp") 173 148 184 147 / 26px 22px 27px 22px round; z-index: -1; background: radial-gradient(120% 90% at 50% 0%, rgba(var(--acc), .12), transparent 62%) 1px 7px / calc(100% - 2px) calc(100% - 15px) no-repeat, linear-gradient(180deg, #1e1e23, #111114) 1px 7px / calc(100% - 2px) calc(100% - 15px) no-repeat; background-origin: border-box; background-clip: border-box; }
 :root[data-roulette="prism"] .rl-page .launch::after { display: none; }
-:root[data-roulette="prism"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/prism_panel_glow.webp"); -webkit-mask-box-image-slice: 173 148 184 147; -webkit-mask-box-image-width: 26px 22px 27px 22px; -webkit-mask-box-image-repeat: round; }
+:root[data-roulette="prism"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/prism_panel_glow.webp"); -webkit-mask-box-image-slice: 173 148 184 147; -webkit-mask-box-image-width: 26px 22px 27px 22px; -webkit-mask-box-image-repeat: round; clip-path: inset(7px 1px 8px 1px); }
 :root[data-roulette="prism"] .rl-page .launch .lm s { inset: -240px; }
 :root[data-roulette="prism"] .rl-page .launch .lt, :root[data-roulette="prism"] .rl-page .launch:hover .lt { background: var(--matter) 0 0 / 150px 150px repeat; animation: wordMatter 12s linear infinite; -webkit-text-stroke: .5px rgba(var(--acc-hi), .55); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 1px rgba(0, 0, 0, .9)) drop-shadow(0 2px 6px rgba(0, 0, 0, .6)); }
 :root[data-roulette="prism"] .rl-page .launch:hover .lt { filter: brightness(1.25) drop-shadow(0 0 1px rgba(0, 0, 0, .9)) drop-shadow(0 0 10px rgba(var(--acc), .5)); }
@@ -2262,7 +2272,8 @@ body.rolling #rail .nav-item:not(.on), body.rolling #rail-lol { opacity: .35; po
 :root[data-roulette="void"] .rl-page { --pe: 5px 0px 5px 1px; }   /* where the panel frame's bars begin: the panels stay within */
 :root[data-roulette="void"] .rl-page .card { background: linear-gradient(180deg, rgba(16, 12, 22, .82), rgba(8, 6, 12, .86)) 1px 5px / calc(100% - 1px) calc(100% - 10px) no-repeat; backdrop-filter: none;
   border: 0; border-radius: 0; padding: 24px 28px; isolation: isolate; }
-:root[data-roulette="void"] .rl-page .card::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: var(--matter) 0 0 / 240px 240px repeat, var(--matter) 0 0 / 170px 170px repeat; background-blend-mode: var(--matter-blend, lighten); -webkit-mask-box-image-source: url("hud/void_panel_glow.webp"); -webkit-mask-box-image-slice: 119 109 111 107; -webkit-mask-box-image-width: 24px 22px 22px 21px; -webkit-mask-box-image-repeat: round; animation: panelMatter 14s linear infinite; }
+:root[data-roulette="void"] .rl-page .card::after { display: none; }
+:root[data-roulette="void"] .rl-page .card > .pm { display: block; -webkit-mask-box-image-source: url("hud/void_panel_glow.webp"); -webkit-mask-box-image-slice: 119 109 111 107; -webkit-mask-box-image-width: 24px 22px 22px 21px; -webkit-mask-box-image-repeat: round; clip-path: inset(5px 0px 5px 1px); }
 :root[data-roulette="void"] .rl-page .w-hero .w-art, :root[data-roulette="void"] .rl-page .w-hero .w-shade { inset: var(--pe); border-radius: 0; }
 :root[data-roulette="void"] .rl-page .controls { padding: 26px 30px 22px; }
 :root[data-roulette="void"] .rl-page .roll-now { border-color: rgba(197, 168, 242, .4); background: linear-gradient(90deg, rgba(197, 168, 242, .13), rgba(197, 168, 242, .02)); border-radius: 4px; }
@@ -2293,7 +2304,7 @@ body.rolling #rail .nav-item:not(.on), body.rolling #rail-lol { opacity: .35; po
 :root[data-roulette="void"] .rl-page .launch { background: none; box-shadow: 0 12px 30px rgba(0, 0, 0, .5); border-radius: 0; overflow: visible; }
 :root[data-roulette="void"] .rl-page .launch::before { padding: 0; -webkit-mask: none; mask: none; border: solid transparent; border-width: 24px 22px 22px 21px; border-image: url("hud/void_panel.webp") 119 109 111 107 / 24px 22px 22px 21px round; z-index: -1; background: radial-gradient(120% 90% at 50% 0%, rgba(var(--acc), .12), transparent 62%) 1px 5px / calc(100% - 1px) calc(100% - 10px) no-repeat, linear-gradient(180deg, #150f20, #0a0710) 1px 5px / calc(100% - 1px) calc(100% - 10px) no-repeat; background-origin: border-box; background-clip: border-box; }
 :root[data-roulette="void"] .rl-page .launch::after { display: none; }
-:root[data-roulette="void"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/void_panel_glow.webp"); -webkit-mask-box-image-slice: 119 109 111 107; -webkit-mask-box-image-width: 24px 22px 22px 21px; -webkit-mask-box-image-repeat: round; }
+:root[data-roulette="void"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/void_panel_glow.webp"); -webkit-mask-box-image-slice: 119 109 111 107; -webkit-mask-box-image-width: 24px 22px 22px 21px; -webkit-mask-box-image-repeat: round; clip-path: inset(5px 0px 5px 1px); }
 :root[data-roulette="void"] .rl-page .launch .lm s { inset: -240px; }
 :root[data-roulette="void"] .rl-page .launch .lt, :root[data-roulette="void"] .rl-page .launch:hover .lt { background: var(--matter) 0 0 / 150px 150px repeat; animation: wordMatter 12s linear infinite; -webkit-text-stroke: .5px rgba(var(--acc-hi), .55); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 1px rgba(0, 0, 0, .9)) drop-shadow(0 2px 6px rgba(0, 0, 0, .6)); }
 :root[data-roulette="void"] .rl-page .launch:hover .lt { filter: brightness(1.25) drop-shadow(0 0 1px rgba(0, 0, 0, .9)) drop-shadow(0 0 10px rgba(var(--acc), .5)); }
@@ -2310,6 +2321,7 @@ body.rolling #rail .nav-item:not(.on), body.rolling #rail-lol { opacity: .35; po
 :root[data-roulette="gold"] .rl-page .card { background: linear-gradient(180deg, rgba(21, 17, 11, .82), rgba(11, 9, 6, .86)) 1px 8px / calc(100% - 3px) calc(100% - 17px) no-repeat; backdrop-filter: none;
   border: 0; border-radius: 0; padding: 24px 28px; isolation: isolate; }
 :root[data-roulette="gold"] .rl-page .card::after { display: none; }
+
 :root[data-roulette="gold"] .rl-page .w-hero .w-art, :root[data-roulette="gold"] .rl-page .w-hero .w-shade { inset: var(--pe); border-radius: 0; }
 :root[data-roulette="gold"] .rl-page .controls { padding: 26px 30px 22px; }
 :root[data-roulette="gold"] .rl-page .roll-now { border-color: rgba(233, 196, 124, .4); background: linear-gradient(90deg, rgba(233, 196, 124, .13), rgba(233, 196, 124, .02)); border-radius: 4px; }

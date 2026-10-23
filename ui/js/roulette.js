@@ -59,6 +59,12 @@ export function renderRoulette(page) {
   const rl = page.querySelector(".rl-page");
   rl.classList.add("hud-wait");
   hudWhenReady(rl);
+  // every panel of the tab gets its layer of living material (shown only by the skins that have one)
+  const dress = () => rl.querySelectorAll(".card").forEach((c) => {
+    if (!c.querySelector(":scope > .pm")) c.insertAdjacentHTML("afterbegin", '<i class="pm"><s></s><s></s></i>');
+  });
+  dress();
+  new MutationObserver(dress).observe(rl, { childList: true, subtree: true });
   page.querySelector("#launch").onclick = () => launch();
   page.querySelectorAll(".mode-tab").forEach((b) => (b.onclick = () => {
     if (store.spinning) return;
@@ -328,7 +334,7 @@ function shuffle(a) {
 
 // frame of the roulette skins (rewards path): the frame, its glow, its bloom and a sweeping light, and the two pointers
 // of the center
-const HUD = `<div class="strip-hud"><i class="hf"></i><i class="hg"></i><i class="hb"></i><i class="hm"><s></s><s></s></i><i class="ht"></i><i class="hs"></i><b class="pt"><s></s></b><b class="pb"><s></s></b></div>`;
+const HUD = `<div class="strip-hud"><i class="hf"></i><i class="hg"></i><i class="hb"></i><i class="hm"><s></s><s></s></i><i class="ht"><s></s></i><i class="hs"><s></s></i><b class="pt"><s></s></b><b class="pb"><s></s></b></div>`;
 
 function champCard(key, name) {
   return `<div class="scard" style="background-image:url('${img.tall(key)}')"><b>${esc(name)}</b></div>`;

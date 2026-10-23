@@ -318,7 +318,7 @@ export function cardHTML(c, opts = {}) {
   const detail = c.at && lv ? ` · ${c.queue || ""} · ${c.at} · ${t("{0} parties, {1} victoires", c.games, c.wins)}` : "";
   return `<div class="tc lv${lv}${master ? " master" : ""}" data-id="${esc(c.id)}" title="${esc(`${c.name} ${ROLE_LABEL[c.role]} — ${t(L.label)}. ${how}${detail}`)}">
     <div class="tc-art"><img src="${img.tall(c.key)}" alt="" loading="lazy"><span class="tc-foil"></span></div>
-    <span class="tc-frame"></span><span class="tc-prism"></span>
+    <span class="tc-frame"></span><span class="tc-prism"></span>${master ? '<span class="tc-aura"></span>' : ""}
     <span class="tc-medal">${roleIcon(c.role)}</span>
     ${c.guide ? "" : `<span class="tc-chaos" title="${esc(t("Rôle chaos"))}">${CHAOS_ICON}</span>`}
     ${(c.stamps || []).length ? `<span class="tc-stamps">${c.stamps.map((s) => `<i class="tc-stamp ${s}" title="${esc(t((STAMP_INFO.find((x) => x[0] === s) || [])[1] || ""))}">${STAMP_SVG[s]}</i>`).join("")}</span>` : ""}
