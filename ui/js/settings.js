@@ -198,7 +198,7 @@ function paintApp() {
     <div class="set-row"><div class="txt"><b>${esc(t("Sons"))}</b><span>${esc(t("La roulette et les cartes du classeur. Pas de musique."))}</span></div>
       <div class="snd-row"><input type="range" id="a-vol" min="0.1" max="1" step="0.05" value="${store.profile.sound_volume ?? 0.6}" ${store.profile.sounds === false ? "disabled" : ""}>
         <label class="switch"><input type="checkbox" id="a-snd" ${store.profile.sounds !== false ? "checked" : ""}><i></i></label></div></div>
-    <div class="set-row"><div class="txt"><b>${esc(t("Fond animé"))}</b></div>
+    <div class="set-row"><div class="txt"><b>${esc(t("Animations"))}</b><span>${esc(t("Coupées, l'appli reste immobile : fond, cadres, effets des cartes, transitions. La roulette tourne toujours."))}</span></div>
       <label class="switch"><input type="checkbox" id="a-amb" ${store.profile.ambient !== false ? "checked" : ""}><i></i></label></div>
     <div class="set-row"><div class="txt"><b>${esc(t("Statistiques anonymes"))}</b><span>${esc(t("Compte les lancements de l'appli (version, Windows ou Mac). Rien d'autre n'est envoyé."))}</span></div>
       <label class="switch"><input type="checkbox" id="a-usage" ${store.profile.usage_stats !== false ? "checked" : ""}><i></i></label></div>`;

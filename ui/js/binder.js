@@ -232,7 +232,7 @@ function paintBooster() {
   const n = data.pending.length;
   if (!n) return (box.innerHTML = "");
   box.innerHTML = `<section class="card bd-booster">
-    <div class="bd-pack">${backHTML().repeat(3)}</div>
+    <div class="bd-pack">${backHTML().repeat(2)}<span class="bd-top">${backHTML()}</span></div>
     <div class="grow"><div class="kicker">${esc(t("Booster"))}</div>
       <h3>${esc(n === 1 ? t("1 nouvelle carte à ouvrir") : t("{0} nouvelles cartes à ouvrir", n))}</h3>
       <p class="muted">${esc(t("Tes dernières parties sur la roulette ont rempli ton classeur."))}</p></div>
@@ -327,12 +327,16 @@ export function cardHTML(c, opts = {}) {
   </div>`;
 }
 
-// only the cards in sight move: a binder holds hundreds of them, the others' animations wait (class "off")
-const inSight = new IntersectionObserver((list) => list.forEach((e) => e.target.classList.toggle("off", !e.isIntersecting)));
+// only the cards in sight move: a binder holds hundreds of them, the others' animations stop (class "off"). Only
+// the cards that have moving effects are watched, and they start a little before they scroll into sight. Not the
+// pack's cards: a watched card that moves itself has its sight measured again at every frame.
+let inSight = null;
 
 function watchCards() {
+  inSight = inSight || new IntersectionObserver((list) => list.forEach((e) => e.target.classList.toggle("off", !e.isIntersecting)),
+    { root: document.getElementById("main"), rootMargin: "300px 0px" });
   inSight.disconnect();
-  root.querySelectorAll(".tc").forEach((el) => inSight.observe(el));
+  root.querySelectorAll(".tc.lv3, .tc.lv4, .tc.back:not(.bd-pack .tc)").forEach((el) => inSight.observe(el));
 }
 
 function paintGrid() {

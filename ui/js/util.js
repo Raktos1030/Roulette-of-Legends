@@ -281,7 +281,7 @@ export const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 // numbers counting up to their value (elements with data-count, data-dec and data-suf)
 export function countUp(root, ms = 850) {
   const els = [...root.querySelectorAll("[data-count]")];
-  if (!els.length || (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
+  if (!els.length || document.body.classList.contains("still")) return;
   const items = els.map((el) => ({ el, to: parseFloat(el.dataset.count), dec: +(el.dataset.dec || 1), suf: el.dataset.suf || "" }))
     .filter((x) => !Number.isNaN(x.to));
   const t0 = performance.now();
