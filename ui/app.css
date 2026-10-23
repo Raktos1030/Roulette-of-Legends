@@ -2108,6 +2108,31 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 :root[data-roulette="gold"] .spark { width: 3px; height: 3px; background: #fff3cf; box-shadow: 0 0 6px #f0c060, 0 0 12px rgba(230, 170, 60, .55); }
 @media (prefers-reduced-motion: reduce) { .strip-hud .hg, .strip-hud .hb, .strip-hud b::after { animation: none !important; } }
 
+/* living material (rarest skins): a texture flowing inside the inlays of the frame, its pointers and the launch plate.
+   Two layers of it drift in different directions and speeds, cut to the inlays by the glow image of each piece. */
+.strip-hud .hm { position: absolute; inset: 0; display: none; overflow: hidden; pointer-events: none;
+  -webkit-mask-box-image-source: var(--frame-glow); -webkit-mask-box-image-slice: var(--top) var(--right) var(--bottom) var(--left);
+  -webkit-mask-box-image-width: calc(var(--top) * var(--k) * 1px) calc(var(--right) * var(--k) * 1px) calc(var(--bottom) * var(--k) * 1px) calc(var(--left) * var(--k) * 1px);
+  -webkit-mask-box-image-repeat: stretch; }
+.strip-hud .hm s, .strip-hud b s, .launch .lm s { position: absolute; inset: -240px; background: var(--matter) 0 0 / 240px 240px repeat; animation: matterA 9s linear infinite; }
+.strip-hud .hm s + s, .launch .lm s + s { background-size: 170px 170px; mix-blend-mode: var(--matter-blend, lighten); opacity: .85; animation: matterB 13s linear infinite; }
+@keyframes matterA { to { transform: translate(240px, 120px); } }
+@keyframes matterB { from { transform: translate(170px, 0); } to { transform: translate(0, 170px); } }
+.strip-hud b s { display: none; inset: 0; background-size: 120px 120px; animation: matterPos 9s linear infinite;
+  -webkit-mask: var(--gl) center / 100% 100% no-repeat; mask: var(--gl) center / 100% 100% no-repeat; }
+@keyframes matterPos { to { background-position: 120px 60px; } }
+.launch .lm { display: none; position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.launch .lt { position: relative; z-index: 1; }
+:root[data-roulette="void"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/void_primary_glow.webp"); -webkit-mask-box-image-slice: 73 73 73 73; -webkit-mask-box-image-width: 25px 25px 25px 25px; -webkit-mask-box-image-repeat: stretch; }
+:root[data-roulette="prism"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/prism_primary_glow.webp"); -webkit-mask-box-image-slice: 74 74 74 74; -webkit-mask-box-image-width: 25px 25px 25px 25px; -webkit-mask-box-image-repeat: stretch; }
+:root[data-roulette="void"] { --matter: url("hud/void_matter.webp"); }
+:root[data-roulette="prism"] { --matter: url("hud/prism_matter.webp"); --matter-blend: soft-light; }
+:root[data-roulette="void"] .strip-hud .hm, :root[data-roulette="prism"] .strip-hud .hm { display: block; }
+:root[data-roulette="void"] .strip-hud b s, :root[data-roulette="prism"] .strip-hud b s { display: block; }
+.strip.spinning .strip-hud .hm s { animation-duration: 3s; }
+.strip.spinning .strip-hud .hm s + s { animation-duration: 4.5s; }
+@media (prefers-reduced-motion: reduce) { .strip-hud .hm s, .strip-hud b s, .launch .lm s { animation: none; } }
+
 /* infernal: the Roulette tab dressed in the kit of its skin (the other tabs don't change) */
 :root[data-roulette="infernal"] .rl-page { --gold: #d9a273; --gold-hi: #f6c99c; --gold-pale: #f4e3d3; --gold-deep: #7a3d1c; --gold-light: #f6d2b0;
   --acc: 217, 162, 115; --acc-hi: 246, 201, 156; --hair-gold: rgba(217, 162, 115, .26);

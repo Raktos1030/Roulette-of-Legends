@@ -38,7 +38,7 @@ export function renderRoulette(page) {
           <div class="champ-info" id="cf-info"></div>
         </div>
       </div>
-      <button class="btn-gold launch" id="launch" title="${esc(t("Raccourcis : 1 à 5 choisissent le rôle, 0 = aléatoire, Ctrl+F = chercher un champion"))}"><span class="lt">${esc(t("Lancer"))}</span></button>
+      <button class="btn-gold launch" id="launch" title="${esc(t("Raccourcis : 1 à 5 choisissent le rôle, 0 = aléatoire, Ctrl+F = chercher un champion"))}"><span class="lm"><s></s><s></s></span><span class="lt">${esc(t("Lancer"))}</span></button>
       <div class="filters" id="filters"></div>
     </section>
     <section class="gstrips" id="gstrips" hidden></section>
@@ -325,7 +325,7 @@ function shuffle(a) {
 
 // frame of the roulette skins (rewards path): the frame, its glow, its bloom and a sweeping light, and the two pointers
 // of the center
-const HUD = `<div class="strip-hud"><i class="hf"></i><i class="hg"></i><i class="hb"></i><i class="ht"></i><i class="hs"></i><b class="pt"></b><b class="pb"></b></div>`;
+const HUD = `<div class="strip-hud"><i class="hf"></i><i class="hg"></i><i class="hb"></i><i class="hm"><s></s><s></s></i><i class="ht"></i><i class="hs"></i><b class="pt"><s></s></b><b class="pb"><s></s></b></div>`;
 
 function champCard(key, name) {
   return `<div class="scard" style="background-image:url('${img.tall(key)}')"><b>${esc(name)}</b></div>`;
