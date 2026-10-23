@@ -1971,12 +1971,13 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 :root[data-roulette="gold"] :is(.strip, .gs-strip) { --edge-t: 30; --edge-b: 32; --edge-s: 4; --k: 0.5; --top: 67; --bottom: 69; --left: 90; --right: 89; --pw: 132; --pth: 103; --pbh: 109;
   --frame: url("hud/gold_frame.webp"); --frame-glow: url("hud/gold_frame_glow.webp"); --ptr-t: url("hud/gold_ptr_t.webp"); --ptr-t-glow: url("hud/gold_ptr_t_glow.webp"); --ptr-b: url("hud/gold_ptr_b.webp"); --ptr-b-glow: url("hud/gold_ptr_b_glow.webp"); }
 :root[data-roulette="gold"] .gs-strip { --k: 0.235; }
-:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) :is(.strip, .gs-strip) { --et: calc(var(--edge-t) * var(--k) * 1px); --eb: calc(var(--edge-b) * var(--k) * 1px);
-  --es: calc(var(--edge-s) * var(--k) * 1px); }
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) :is(.strip, .gs-strip) {   /* the art ends under the middle of the rails and side bars */
+  --et: calc((var(--edge-t) + var(--top)) / 2 * var(--k) * 1px); --eb: calc((var(--edge-b) + var(--bottom)) / 2 * var(--k) * 1px);
+  --es: calc(var(--left) * .45 * var(--k) * 1px); }
 :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip { height: 298px; border-color: transparent; border-radius: 0; box-shadow: none;
   padding: var(--et) var(--es) var(--eb); background-clip: content-box; }
 /* nothing of the strip outside the frame: its art, edge shadows and flash stay within the rails */
-:root[data-roulette="infernal"] .strip-roll, :root[data-roulette="prism"] .strip-roll { inset: var(--et) var(--es) var(--eb); overflow: hidden; }
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip-roll { inset: var(--et) var(--es) var(--eb); overflow: hidden; }
 :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) :is(.strip, .gs-strip)::before, :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) :is(.strip, .gs-strip)::after { top: var(--et); bottom: var(--eb); }
 :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip::before { left: var(--es); }
 :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip::after { right: var(--es); }
@@ -1986,7 +1987,7 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .gs-track { top: 17px; }
 :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .scard.win { transform: scale(1.04); }
 /* the frame has its own pointers: the marker is only the line between them */
-:root[data-roulette="infernal"] .strip-marker i, :root[data-roulette="prism"] .strip-marker i { display: none; }
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip-marker i { display: none; }
 :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip-marker::before { top: 44px; bottom: 44px; width: 2px; left: -1px; }
 :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .gs-mark { top: 20px; bottom: 20px; }
 
