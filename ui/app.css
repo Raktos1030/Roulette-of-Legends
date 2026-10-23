@@ -1934,7 +1934,8 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 
 /* "reveal all": the cards left are dealt face down on the table, then turned over one after another */
 .bk-table { position: relative; display: grid; justify-items: center; gap: 14px; width: min(1180px, 94vw); padding: 20px; }
-.bk-spread { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 12px; max-height: 70vh; overflow-y: auto; padding: 14px; }
+.bk-spread { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 14px; padding: 30px; }
+.bk-spread.many { max-height: 70vh; overflow-y: auto; }   /* only a long table scrolls (a scroll box would cut the glows) */
 .bk-mini { position: relative; width: clamp(92px, 9.5vw, 132px); aspect-ratio: 5 / 7; perspective: 900px;
   animation: bkDeal .55s calc(var(--i) * 45ms) cubic-bezier(.2, .8, .25, 1) both; }
 @keyframes bkDeal { from { opacity: 0; transform: translate(0, 60px) rotate(-6deg) scale(.7); } }
@@ -1945,6 +1946,11 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 .bk-spread.many .bk-mini .tc-plate b { font-size: 9px; }
 .bk-mini .tc-sub, .bk-mini .tc-new { display: none; }
 .bk-mini .tc { cursor: default; }
+.bk-mini:not(.flipped) { cursor: pointer; }
+.bk-mini:not(.flipped):hover .bk-flip { translate: 0 -6px; }
+.bk-mini .bk-flip { transition: transform .55s cubic-bezier(.2, .8, .2, 1), translate .2s; }
+.bk-hint { margin: 0; font-size: 13px; color: var(--muted); transition: opacity .4s; }
+.bk-hint.off { opacity: 0; }
 .bk-mini.lv3.flipped { filter: drop-shadow(0 0 12px rgba(240, 213, 143, .45)); }
 .bk-mini.lv4.flipped { filter: drop-shadow(0 0 16px rgba(170, 140, 255, .55)); animation: bkDeal .55s calc(var(--i) * 45ms) both, bkPop .5s ease-out; }
 @keyframes bkPop { 40% { scale: 1.08; } }

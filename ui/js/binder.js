@@ -399,7 +399,7 @@ function paintChamps() {
 // from under the pointer for a moment: coming back to the same card soon after makes no new sound.
 let hovered = null, leftAt = 0;
 document.addEventListener("pointerover", (e) => {
-  const el = e.target.closest && e.target.closest(".bd-grid .tc, .bd-back .tc, .bd-pack, .bk-front .tc, .bk-stage:not(.flipped) .bk-rear .tc");
+  const el = e.target.closest && e.target.closest(".bd-grid .tc, .bd-back .tc, .bd-pack, .bk-card, .bk-mini");
   const now = performance.now();
   if (!el) {
     if (hovered && !leftAt) leftAt = now;
@@ -409,27 +409,38 @@ document.addEventListener("pointerover", (e) => {
   leftAt = 0;
   if (again) return;
   hovered = el;
-  if (!el.closest(".bd-back.locked")) sound.hover(el.classList.contains("back") ? 2 : +((el.className.match(/\blv(\d)/) || [])[1] || 0));
+  if (el.closest(".bd-back.locked")) return;
+  const face = el.matches(".bk-card") ? el.closest(".bk-stage.flipped") && el.querySelector(".bk-front .tc")
+    : el.matches(".bk-mini") ? el.classList.contains("flipped") && el.querySelector(".bk-front .tc") : el;
+  sound.hover(!face || face.classList.contains("back") ? 2 : +((face.className.match(/\blv(\d)/) || [])[1] || 0));
 });
 
-// cards tilt toward the pointer; the foil and sheen follow it
+// cards tilt toward the pointer; the foil and sheen follow it. The pointer is read on a box that stays still (the
+// card's slot in the booster, on the reveal table, in the details): the leaning card itself would slip from under it
+// and come back, and shake.
+const tiltOf = (target) => {
+  const slot = target.closest && target.closest(".bk-card, .bk-mini, .cd-card");
+  const card = slot ? slot.querySelector(".bk-front .tc, :scope > .tc") : target.closest && target.closest(".tc");
+  if (!card || card.matches(".lv0, .lv1") || card.closest(".bd-pack")) return null;
+  return { box: slot || card, card };
+};
 document.addEventListener("pointermove", (e) => {
-  const el = e.target.closest && e.target.closest(".tc:not(.lv0):not(.lv1)");
-  if (!el || el.closest(".bd-pack")) return;
-  const r = el.getBoundingClientRect();
-  const x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
-  el.classList.add("tilt");
-  el.style.setProperty("--mx", x.toFixed(3));
-  el.style.setProperty("--my", y.toFixed(3));
-  el.style.setProperty("--rx", ((0.5 - y) * 10).toFixed(2) + "deg");
-  el.style.setProperty("--ry", ((x - 0.5) * 12).toFixed(2) + "deg");
+  const h = tiltOf(e.target);
+  if (!h) return;
+  const r = h.box.getBoundingClientRect();
+  const x = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width)), y = Math.min(1, Math.max(0, (e.clientY - r.top) / r.height));
+  h.card.classList.add("tilt");
+  h.card.style.setProperty("--mx", x.toFixed(3));
+  h.card.style.setProperty("--my", y.toFixed(3));
+  h.card.style.setProperty("--rx", ((0.5 - y) * 10).toFixed(2) + "deg");
+  h.card.style.setProperty("--ry", ((x - 0.5) * 12).toFixed(2) + "deg");
 });
 document.addEventListener("pointerout", (e) => {
-  const el = e.target.closest && e.target.closest(".tc");
-  if (!el || (e.relatedTarget && el.contains(e.relatedTarget))) return;
-  el.classList.remove("tilt");
-  el.style.setProperty("--rx", "0deg");
-  el.style.setProperty("--ry", "0deg");
+  const h = tiltOf(e.target);
+  if (!h || (e.relatedTarget && h.box.contains(e.relatedTarget))) return;
+  h.card.classList.remove("tilt");
+  h.card.style.setProperty("--rx", "0deg");
+  h.card.style.setProperty("--ry", "0deg");
 });
 
 // --- a card's details (clicked): the card big, how it was earned, its best win and the elo of it ---------
@@ -586,7 +597,8 @@ function openBooster(ids) {
     if (all) all.onclick = () => revealAll(queue.slice(i));
     box.querySelector(".bk-shade").onclick = close;
   };
-  // every card left at once: dealt face down on the table, then turned over one after another (the best last)
+  // every card left at once, in two steps: dealt face down on the table, each one turned over with a click; or all of
+  // them, one after another (the best last)
   const revealAll = async (rest) => {
     await call("binder_open", { ids: rest.map((x) => x.id) });
     box.innerHTML = `<div class="bk-shade"></div>
@@ -594,29 +606,47 @@ function openBooster(ids) {
         <div class="bk-count">${esc(t("{0} cartes", rest.length))}</div>
         <div class="bk-spread${rest.length > 24 ? " many" : ""}">${rest.map((c, k) => `<div class="bk-mini lv${c.level}" style="--i:${k}"><div class="bk-flip">
           <div class="bk-face bk-front">${cardHTML(c, { level: c.level })}</div><div class="bk-face bk-rear">${backHTML()}</div></div></div>`).join("")}</div>
+        <p class="bk-hint">${esc(t("Clique une carte pour la retourner, ou retourne-les toutes."))}</p>
         <p class="bk-sum"></p>
-        <div class="bk-btns"><button class="btn-gold" data-done>${esc(t("Terminer"))}</button></div>
+        <div class="bk-btns"><button class="btn" data-flipall>${esc(t("Tout retourner"))}</button><button class="btn-gold" data-done>${esc(t("Terminer"))}</button></div>
       </div>`;
     box.querySelector(".bk-shade").onclick = close;
     box.querySelector("[data-done]").onclick = close;
     const minis = [...box.querySelectorAll(".bk-mini")];
-    const dealt = 450 + minis.length * 45;
+    const all = box.querySelector("[data-flipall]");
+    let left = minis.length;
     sound.rip();
-    minis.forEach((m, k) => setTimeout(() => {
-      if (!m.isConnected) return;
-      m.classList.add("flipped");
-      m.scrollIntoView({ block: "nearest", behavior: "smooth" });   // the table follows the cards being turned
-      sound.flip();
-      if (k === minis.length - 1 || (rest[k].level >= 4 && rest[k + 1] && rest[k + 1].level < 4)) setTimeout(() => sound.reveal(rest[k].level), 220);
-    }, dealt + k * Math.max(90, 1800 / minis.length)));
     const n = (lv) => rest.filter((c) => c.level === lv).length;
-    setTimeout(() => {
+    const finished = () => {
       const sum = box.querySelector(".bk-sum");
       if (!sum) return;
       sum.textContent = [[4, "Légendaire", "Légendaires"], [3, "Épique", "Épiques"], [2, "Rare", "Rares"]]
         .filter(([lv]) => n(lv)).map(([lv, one, many]) => `${n(lv)} ${t(n(lv) > 1 ? many : one).toLowerCase()}`).join(" · ");
       sum.classList.add("on");
-    }, dealt + minis.length * Math.max(90, 1800 / minis.length) + 500);
+      box.querySelector(".bk-hint").classList.add("off");
+      all.hidden = true;
+    };
+    // quiet: in a run, only the legendaries chime (and the last card)
+    const flip = (k, quiet = false) => {
+      const m = minis[k];
+      if (!m.isConnected || m.classList.contains("flipped")) return;
+      m.classList.add("flipped");
+      left -= 1;
+      sound.flip();
+      if (!quiet || rest[k].level >= 4 || !left) setTimeout(() => sound.reveal(rest[k].level), 220);
+      if (!left) setTimeout(finished, 700);
+    };
+    minis.forEach((m, k) => (m.onclick = () => flip(k)));
+    all.onclick = () => {
+      all.disabled = true;
+      const todo = minis.map((m, k) => k).filter((k) => !minis[k].classList.contains("flipped"));
+      const step = Math.max(90, 1800 / todo.length);
+      todo.forEach((k, j) => setTimeout(() => {
+        if (!minis[k].isConnected) return;
+        minis[k].scrollIntoView({ block: "nearest", behavior: "smooth" });   // the table follows the cards being turned
+        flip(k, true);
+      }, j * step));
+    };
   };
   const next = () => {
     i += 1;

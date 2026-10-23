@@ -1054,5 +1054,7 @@
 "Sur 1 partie": "In 1 game",
 "Épiques": "Epics",
 "Rares": "Rares",
-"{0} cartes": "{0} cards"
+"{0} cartes": "{0} cards",
+"Clique une carte pour la retourner, ou retourne-les toutes.": "Click a card to turn it over, or turn them all over.",
+"Tout retourner": "Turn all over"
 }
