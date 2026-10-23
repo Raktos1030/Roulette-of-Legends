@@ -323,8 +323,9 @@ function shuffle(a) {
   return a;
 }
 
-// frame of the roulette skins (rewards path): the frame, its glow and its bloom, and the two pointers of the center
-const HUD = `<div class="strip-hud"><i class="hf"></i><i class="hg"></i><i class="hb"></i><b class="pt"></b><b class="pb"></b></div>`;
+// frame of the roulette skins (rewards path): the frame, its glow, its bloom and a sweeping light, and the two pointers
+// of the center
+const HUD = `<div class="strip-hud"><i class="hf"></i><i class="hg"></i><i class="hb"></i><i class="ht"></i><i class="hs"></i><b class="pt"></b><b class="pb"></b></div>`;
 
 function champCard(key, name) {
   return `<div class="scard" style="background-image:url('${img.tall(key)}')"><b>${esc(name)}</b></div>`;
