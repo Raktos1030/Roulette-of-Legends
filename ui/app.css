@@ -1963,24 +1963,32 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 :root[data-roulette="prism"] :is(.strip, .gs-strip) { --edge-t: 30; --edge-b: 30; --edge-s: 6; --k: 0.5; --top: 70; --bottom: 69; --left: 80; --right: 80; --pw: 128; --pth: 104; --pbh: 103;
   --frame: url("hud/prism_frame.webp"); --frame-glow: url("hud/prism_frame_glow.webp"); --ptr-t: url("hud/prism_ptr_t.webp"); --ptr-t-glow: url("hud/prism_ptr_t_glow.webp"); --ptr-b: url("hud/prism_ptr_b.webp"); --ptr-b-glow: url("hud/prism_ptr_b_glow.webp"); }
 :root[data-roulette="prism"] .gs-strip { --k: 0.235; }
-:root[data-roulette="infernal"] :is(.strip, .gs-strip), :root[data-roulette="prism"] :is(.strip, .gs-strip) { --et: calc(var(--edge-t) * var(--k) * 1px); --eb: calc(var(--edge-b) * var(--k) * 1px);
+:root[data-roulette="void"] .strip-hud { display: block; }
+:root[data-roulette="void"] :is(.strip, .gs-strip) { --edge-t: 27; --edge-b: 29; --edge-s: 3; --k: 0.5; --top: 64; --bottom: 66; --left: 90; --right: 85; --pw: 132; --pth: 97; --pbh: 107;
+  --frame: url("hud/void_frame.webp"); --frame-glow: url("hud/void_frame_glow.webp"); --ptr-t: url("hud/void_ptr_t.webp"); --ptr-t-glow: url("hud/void_ptr_t_glow.webp"); --ptr-b: url("hud/void_ptr_b.webp"); --ptr-b-glow: url("hud/void_ptr_b_glow.webp"); }
+:root[data-roulette="void"] .gs-strip { --k: 0.235; }
+:root[data-roulette="gold"] .strip-hud { display: block; }
+:root[data-roulette="gold"] :is(.strip, .gs-strip) { --edge-t: 30; --edge-b: 32; --edge-s: 4; --k: 0.5; --top: 67; --bottom: 69; --left: 90; --right: 89; --pw: 132; --pth: 103; --pbh: 109;
+  --frame: url("hud/gold_frame.webp"); --frame-glow: url("hud/gold_frame_glow.webp"); --ptr-t: url("hud/gold_ptr_t.webp"); --ptr-t-glow: url("hud/gold_ptr_t_glow.webp"); --ptr-b: url("hud/gold_ptr_b.webp"); --ptr-b-glow: url("hud/gold_ptr_b_glow.webp"); }
+:root[data-roulette="gold"] .gs-strip { --k: 0.235; }
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) :is(.strip, .gs-strip) { --et: calc(var(--edge-t) * var(--k) * 1px); --eb: calc(var(--edge-b) * var(--k) * 1px);
   --es: calc(var(--edge-s) * var(--k) * 1px); }
-:root[data-roulette="infernal"] .strip, :root[data-roulette="prism"] .strip { height: 298px; border-color: transparent; border-radius: 0; box-shadow: none;
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip { height: 298px; border-color: transparent; border-radius: 0; box-shadow: none;
   padding: var(--et) var(--es) var(--eb); background-clip: content-box; }
 /* nothing of the strip outside the frame: its art, edge shadows and flash stay within the rails */
 :root[data-roulette="infernal"] .strip-roll, :root[data-roulette="prism"] .strip-roll { inset: var(--et) var(--es) var(--eb); overflow: hidden; }
-:root[data-roulette="infernal"] :is(.strip, .gs-strip)::before, :root[data-roulette="prism"] :is(.strip, .gs-strip)::before, :root[data-roulette="infernal"] :is(.strip, .gs-strip)::after, :root[data-roulette="prism"] :is(.strip, .gs-strip)::after { top: var(--et); bottom: var(--eb); }
-:root[data-roulette="infernal"] .strip::before, :root[data-roulette="prism"] .strip::before { left: var(--es); }
-:root[data-roulette="infernal"] .strip::after, :root[data-roulette="prism"] .strip::after { right: var(--es); }
-:root[data-roulette="infernal"] .flash, :root[data-roulette="prism"] .flash { inset: var(--et) var(--es) var(--eb); }
-:root[data-roulette="infernal"] .strip-track, :root[data-roulette="prism"] .strip-track { top: 36px; }
-:root[data-roulette="infernal"] .gs-strip, :root[data-roulette="prism"] .gs-strip { height: 150px; border-radius: 4px; }
-:root[data-roulette="infernal"] .gs-track, :root[data-roulette="prism"] .gs-track { top: 17px; }
-:root[data-roulette="infernal"] .scard.win, :root[data-roulette="prism"] .scard.win { transform: scale(1.04); }
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) :is(.strip, .gs-strip)::before, :root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) :is(.strip, .gs-strip)::after { top: var(--et); bottom: var(--eb); }
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip::before { left: var(--es); }
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip::after { right: var(--es); }
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .flash { inset: var(--et) var(--es) var(--eb); }
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip-track { top: 36px; }
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .gs-strip { height: 150px; border-radius: 4px; }
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .gs-track { top: 17px; }
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .scard.win { transform: scale(1.04); }
 /* the frame has its own pointers: the marker is only the line between them */
 :root[data-roulette="infernal"] .strip-marker i, :root[data-roulette="prism"] .strip-marker i { display: none; }
-:root[data-roulette="infernal"] .strip-marker::before, :root[data-roulette="prism"] .strip-marker::before { top: 44px; bottom: 44px; width: 2px; left: -1px; }
-:root[data-roulette="infernal"] .gs-mark, :root[data-roulette="prism"] .gs-mark { top: 20px; bottom: 20px; }
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .strip-marker::before { top: 44px; bottom: 44px; width: 2px; left: -1px; }
+:root:is([data-roulette="infernal"], [data-roulette="prism"], [data-roulette="void"], [data-roulette="gold"]) .gs-mark { top: 20px; bottom: 20px; }
 
 /* infernal: forged steel, the red-hot ends breathe */
 :root[data-roulette="infernal"] .strip-hud .hg, :root[data-roulette="infernal"] .strip-hud .hb, :root[data-roulette="infernal"] .strip-hud b::after {
@@ -2014,6 +2022,34 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 :root[data-roulette="prism"] .flash { background: radial-gradient(closest-side, rgba(236, 241, 255, .32), transparent); }
 :root[data-roulette="prism"] .spark { width: 4px; height: 4px; border-radius: 1px; rotate: 45deg; background: hsl(var(--h) 45% 90%);
   box-shadow: 0 0 6px hsl(var(--h) 70% 75%), 0 0 12px rgba(220, 228, 255, .5); }
+/* void: obsidian and amethyst, the stones glow softly */
+:root[data-roulette="void"] .strip-hud .hg, :root[data-roulette="void"] .strip-hud .hb, :root[data-roulette="void"] .strip-hud b::after {
+  animation: hudHeat 4.6s ease-in-out infinite alternate; }
+:root[data-roulette="void"] .strip.spinning .strip-hud .hg, :root[data-roulette="void"] .gs-row.spinning .strip-hud .hg { animation-duration: 1s; }
+:root[data-roulette="void"] .strip.done .strip-hud .hb, :root[data-roulette="void"] .gs-row.done .strip-hud .hb { animation: hudFlare 1.8s ease-out both; }
+:root[data-roulette="void"] .strip-marker::before, :root[data-roulette="void"] .gs-mark {
+  background: linear-gradient(180deg, transparent, rgba(205, 172, 255, .95) 12%, #f1e7ff 50%, rgba(205, 172, 255, .95) 88%, transparent);
+  box-shadow: 0 0 8px rgba(160, 110, 240, .85), 0 0 22px rgba(120, 70, 220, .4); }
+:root[data-roulette="void"] .scard.win, :root[data-roulette="void"] .gcard.win { border-color: #cdb2f5;
+  box-shadow: 0 0 0 1px rgba(205, 178, 245, .5), 0 0 34px rgba(140, 90, 230, .45), 0 14px 40px rgba(0, 0, 0, .6); }
+:root[data-roulette="void"] .gs-row.done { border-color: rgba(205, 178, 245, .4); box-shadow: inset 0 0 40px rgba(0, 0, 0, .5), 0 0 22px rgba(140, 90, 230, .1); }
+:root[data-roulette="void"] .flash { background: radial-gradient(closest-side, rgba(190, 150, 255, .3), transparent); }
+:root[data-roulette="void"] .spark { width: 4px; height: 4px; border-radius: 1px; rotate: 45deg; background: #e6d8ff;
+  box-shadow: 0 0 6px #a77bf3, 0 0 12px rgba(120, 70, 220, .5); }
+
+/* golden: solid gold, a shine runs over its polished edges */
+:root[data-roulette="gold"] .strip-hud .hg, :root[data-roulette="gold"] .strip-hud .hb, :root[data-roulette="gold"] .strip-hud b::after {
+  animation: hudHeat 6s ease-in-out infinite alternate; }
+:root[data-roulette="gold"] .strip.spinning .strip-hud .hg, :root[data-roulette="gold"] .gs-row.spinning .strip-hud .hg { animation-duration: 1.2s; }
+:root[data-roulette="gold"] .strip.done .strip-hud .hb, :root[data-roulette="gold"] .gs-row.done .strip-hud .hb { animation: hudFlare 1.8s ease-out both; }
+:root[data-roulette="gold"] .strip-marker::before, :root[data-roulette="gold"] .gs-mark {
+  background: linear-gradient(180deg, transparent, rgba(255, 220, 150, .95) 12%, #fff6dc 50%, rgba(255, 220, 150, .95) 88%, transparent);
+  box-shadow: 0 0 8px rgba(240, 190, 90, .85), 0 0 22px rgba(220, 160, 60, .4); }
+:root[data-roulette="gold"] .scard.win, :root[data-roulette="gold"] .gcard.win { border-color: #f1d79a;
+  box-shadow: 0 0 0 1px rgba(241, 215, 154, .55), 0 0 34px rgba(230, 180, 80, .45), 0 14px 40px rgba(0, 0, 0, .6); }
+:root[data-roulette="gold"] .gs-row.done { border-color: rgba(241, 215, 154, .4); box-shadow: inset 0 0 40px rgba(0, 0, 0, .5), 0 0 22px rgba(230, 180, 80, .1); }
+:root[data-roulette="gold"] .flash { background: radial-gradient(closest-side, rgba(255, 222, 150, .32), transparent); }
+:root[data-roulette="gold"] .spark { width: 3px; height: 3px; background: #fff3cf; box-shadow: 0 0 6px #f0c060, 0 0 12px rgba(230, 170, 60, .55); }
 @media (prefers-reduced-motion: reduce) { .strip-hud .hg, .strip-hud .hb, .strip-hud b::after { animation: none !important; } }
 
 /* infernal: the Roulette tab dressed in the kit of its skin (the other tabs don't change) */
@@ -2095,3 +2131,83 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 :root[data-roulette="prism"] .rl-page .launch::after { left: 0; width: auto; right: 0; transform: none; background: url("hud/prism_primary_glow.webp") center / 100% 100% no-repeat; mix-blend-mode: screen; animation: hudDichro 7s ease-in-out infinite alternate; }
 :root[data-roulette="prism"] .rl-page .launch:hover { box-shadow: 0 14px 36px rgba(0, 0, 0, .55), 0 0 30px rgba(var(--acc), .18); }
 :root[data-roulette="prism"] .rl-page .launch:hover::before { filter: brightness(1.15); }
+
+/* void: the Roulette tab dressed in the kit of its skin (the other tabs don't change) */
+:root[data-roulette="void"] .rl-page { --gold: #b897e6; --gold-hi: #dac6f6; --gold-pale: #efe7fb; --gold-deep: #4a2f6e; --gold-light: #ddcdf4;
+  --acc: 184, 151, 230; --acc-hi: 218, 198, 246; --hair-gold: rgba(184, 151, 230, .26);
+  --metal-hi: #f4eefc; --metal: #cbb7e8; --metal-lo: #6f5697; --on-metal: #170e25;
+  --teal: #c5a8f2; }
+:root[data-roulette="void"] #main:has(.rl-page) { background: radial-gradient(110% 60% at 50% -10%, rgba(140, 90, 220, .08), transparent 60%), linear-gradient(180deg, rgba(10, 8, 15, .55), rgba(7, 5, 11, .72)); }
+:root[data-roulette="void"] .rl-page { --pe: 7px 1px 8px 1px; }   /* where the panel frame's bars begin: the panels stay within */
+:root[data-roulette="void"] .rl-page .card { background: none; backdrop-filter: none; border: 0; border-radius: 0; padding: 24px 28px; isolation: isolate; }
+:root[data-roulette="void"] .rl-page .card::after { content: ""; position: absolute; inset: var(--pe); z-index: -1; background: linear-gradient(180deg, rgba(16, 12, 22, .82), rgba(8, 6, 12, .86)); pointer-events: none; }
+:root[data-roulette="void"] .rl-page .w-hero .w-art, :root[data-roulette="void"] .rl-page .w-hero .w-shade { inset: var(--pe); border-radius: 0; }
+:root[data-roulette="void"] .rl-page .controls { padding: 26px 30px 22px; }
+:root[data-roulette="void"] .rl-page .roll-now { border-color: rgba(197, 168, 242, .4); background: linear-gradient(90deg, rgba(197, 168, 242, .13), rgba(197, 168, 242, .02)); border-radius: 4px; }
+:root[data-roulette="void"] .rl-page .roll-now:hover { box-shadow: 0 0 18px rgba(197, 168, 242, .16); }
+:root[data-roulette="void"] .rl-page .card::before { inset: 0; border-radius: 0; background: none; border: solid transparent; border-width: 15px 25px 15px 25px;
+  border-image: url("hud/void_panel.webp") 61 105 61 105 / 15px 25px 15px 25px stretch; z-index: 1; }
+:root[data-roulette="void"] .rl-page .role-btn, :root[data-roulette="void"] .rl-page .chip, :root[data-roulette="void"] .rl-page .btn, :root[data-roulette="void"] .rl-page .sr-pause { border: 0; border-radius: 0; background: none; box-shadow: none; isolation: isolate; color: #c9c1d6; }
+:root[data-roulette="void"] .rl-page .role-btn::before, :root[data-roulette="void"] .rl-page .chip::before, :root[data-roulette="void"] .rl-page .btn::before, :root[data-roulette="void"] .rl-page .sr-pause::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; transition: filter .2s; }
+:root[data-roulette="void"] .rl-page .role-btn::before { border: solid transparent; border-width: 14px 14px 14px 14px; border-image: url("hud/void_btn.webp") 48 48 48 48 fill / 14px 14px 14px 14px stretch; }
+:root[data-roulette="void"] .rl-page .chip::before, :root[data-roulette="void"] .rl-page .btn::before, :root[data-roulette="void"] .rl-page .sr-pause::before { border: solid transparent; border-width: 10px 10px 10px 10px; border-image: url("hud/void_btn.webp") 48 48 48 48 fill / 10px 10px 10px 10px stretch; }
+:root[data-roulette="void"] .rl-page .chip, :root[data-roulette="void"] .rl-page .btn, :root[data-roulette="void"] .rl-page .sr-pause { position: relative; }
+:root[data-roulette="void"] .rl-page .role-btn:hover::before, :root[data-roulette="void"] .rl-page .chip:hover::before, :root[data-roulette="void"] .rl-page .btn:hover::before, :root[data-roulette="void"] .rl-page .sr-pause:hover::before { filter: brightness(1.25); }
+:root[data-roulette="void"] .rl-page .role-btn.on, :root[data-roulette="void"] .rl-page .chip.on { color: #f3ebff; background: none; box-shadow: none; }
+:root[data-roulette="void"] .rl-page .role-btn.on::before { border-image-source: url("hud/void_btn_on.webp"); filter: brightness(1.25); }
+:root[data-roulette="void"] .rl-page .chip.on::before { border-image-source: url("hud/void_btn_on.webp"); filter: brightness(1.25); }
+:root[data-roulette="void"] .rl-page .role-btn.on::after, :root[data-roulette="void"] .rl-page .chip.on::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: url("hud/void_btn_on_glow.webp") center / 100% 100% no-repeat; mix-blend-mode: screen; animation: hudHeat 4.6s ease-in-out infinite alternate; }
+:root[data-roulette="void"] .rl-page .gs-row { border-radius: 4px; background: linear-gradient(180deg, rgba(16, 12, 22, .82), rgba(8, 6, 12, .86)); }
+:root[data-roulette="void"] .rl-page .gp-role { position: relative; border: 0; border-radius: 0; background: none; box-shadow: none; isolation: isolate; }
+:root[data-roulette="void"] .rl-page .gp-role::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; border: solid transparent; border-width: 6px 6px 6px 6px; border-image: url("hud/void_btn.webp") 48 48 48 48 fill / 6px 6px 6px 6px stretch; }
+:root[data-roulette="void"] .rl-page .gp-role.on { background: none; box-shadow: none; }
+:root[data-roulette="void"] .rl-page .gp-role.on::before { border-image-source: url("hud/void_btn_on.webp"); filter: brightness(1.25); }
+:root[data-roulette="void"] .rl-page .input { background: rgba(6, 5, 5, .55); border-color: rgba(var(--acc), .22); border-radius: 3px; }
+:root[data-roulette="void"] .rl-page .btn-gold:not(.launch) { background: none; box-shadow: none; border-radius: 0; isolation: isolate; color: #f3ebff; overflow: visible; }
+:root[data-roulette="void"] .rl-page .btn-gold:not(.launch)::before { content: ""; position: absolute; inset: 0; z-index: -1; border: solid transparent; border-width: 11px 11px 11px 11px; border-image: url("hud/void_btn_on.webp") 48 48 48 48 fill / 11px 11px 11px 11px stretch; }
+:root[data-roulette="void"] .rl-page .btn-gold:not(.launch)::after { display: none; }
+:root[data-roulette="void"] .rl-page .launch { background: none; box-shadow: 0 12px 30px rgba(0, 0, 0, .5); border-radius: 0; overflow: visible; }
+:root[data-roulette="void"] .rl-page .launch::before { padding: 0; -webkit-mask: none; mask: none; background: none; border: solid transparent; border-width: 25px 25px 25px 25px; border-image: url("hud/void_primary.webp") 73 73 73 73 fill / 25px 25px 25px 25px stretch; }
+:root[data-roulette="void"] .rl-page .launch::after { left: 0; width: auto; right: 0; transform: none; background: url("hud/void_primary_glow.webp") center / 100% 100% no-repeat; mix-blend-mode: screen; animation: hudHeat 4.6s ease-in-out infinite alternate; }
+:root[data-roulette="void"] .rl-page .launch:hover { box-shadow: 0 14px 36px rgba(0, 0, 0, .55), 0 0 30px rgba(var(--acc), .18); }
+:root[data-roulette="void"] .rl-page .launch:hover::before { filter: brightness(1.15); }
+
+/* gold: the Roulette tab dressed in the kit of its skin (the other tabs don't change) */
+:root[data-roulette="gold"] .rl-page { --gold: #d9b56b; --gold-hi: #f2d99c; --gold-pale: #f8eed5; --gold-deep: #7d5a1e; --gold-light: #f4e0b0;
+  --acc: 217, 181, 107; --acc-hi: 242, 217, 156; --hair-gold: rgba(217, 181, 107, .28);
+  --metal-hi: #fff5da; --metal: #efcd80; --metal-lo: #a5782b; --on-metal: #241806;
+  --teal: #e9c47c; }
+:root[data-roulette="gold"] #main:has(.rl-page) { background: radial-gradient(110% 60% at 50% 110%, rgba(230, 180, 80, .07), transparent 60%), linear-gradient(180deg, rgba(14, 11, 7, .55), rgba(10, 8, 5, .72)); }
+:root[data-roulette="gold"] .rl-page { --pe: 8px 1px 7px 1px; }   /* where the panel frame's bars begin: the panels stay within */
+:root[data-roulette="gold"] .rl-page .card { background: none; backdrop-filter: none; border: 0; border-radius: 0; padding: 24px 28px; isolation: isolate; }
+:root[data-roulette="gold"] .rl-page .card::after { content: ""; position: absolute; inset: var(--pe); z-index: -1; background: linear-gradient(180deg, rgba(21, 17, 11, .82), rgba(11, 9, 6, .86)); pointer-events: none; }
+:root[data-roulette="gold"] .rl-page .w-hero .w-art, :root[data-roulette="gold"] .rl-page .w-hero .w-shade { inset: var(--pe); border-radius: 0; }
+:root[data-roulette="gold"] .rl-page .controls { padding: 26px 30px 22px; }
+:root[data-roulette="gold"] .rl-page .roll-now { border-color: rgba(233, 196, 124, .4); background: linear-gradient(90deg, rgba(233, 196, 124, .13), rgba(233, 196, 124, .02)); border-radius: 4px; }
+:root[data-roulette="gold"] .rl-page .roll-now:hover { box-shadow: 0 0 18px rgba(233, 196, 124, .16); }
+:root[data-roulette="gold"] .rl-page .card::before { inset: 0; border-radius: 0; background: none; border: solid transparent; border-width: 14px 25px 14px 25px;
+  border-image: url("hud/gold_panel.webp") 60 105 60 105 / 14px 25px 14px 25px stretch; z-index: 1; }
+:root[data-roulette="gold"] .rl-page .role-btn, :root[data-roulette="gold"] .rl-page .chip, :root[data-roulette="gold"] .rl-page .btn, :root[data-roulette="gold"] .rl-page .sr-pause { border: 0; border-radius: 0; background: none; box-shadow: none; isolation: isolate; color: #d6cbb5; }
+:root[data-roulette="gold"] .rl-page .role-btn::before, :root[data-roulette="gold"] .rl-page .chip::before, :root[data-roulette="gold"] .rl-page .btn::before, :root[data-roulette="gold"] .rl-page .sr-pause::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; transition: filter .2s; }
+:root[data-roulette="gold"] .rl-page .role-btn::before { border: solid transparent; border-width: 15px 15px 15px 15px; border-image: url("hud/gold_btn.webp") 49 49 49 49 fill / 15px 15px 15px 15px stretch; }
+:root[data-roulette="gold"] .rl-page .chip::before, :root[data-roulette="gold"] .rl-page .btn::before, :root[data-roulette="gold"] .rl-page .sr-pause::before { border: solid transparent; border-width: 10px 10px 10px 10px; border-image: url("hud/gold_btn.webp") 49 49 49 49 fill / 10px 10px 10px 10px stretch; }
+:root[data-roulette="gold"] .rl-page .chip, :root[data-roulette="gold"] .rl-page .btn, :root[data-roulette="gold"] .rl-page .sr-pause { position: relative; }
+:root[data-roulette="gold"] .rl-page .role-btn:hover::before, :root[data-roulette="gold"] .rl-page .chip:hover::before, :root[data-roulette="gold"] .rl-page .btn:hover::before, :root[data-roulette="gold"] .rl-page .sr-pause:hover::before { filter: brightness(1.25); }
+:root[data-roulette="gold"] .rl-page .role-btn.on, :root[data-roulette="gold"] .rl-page .chip.on { color: #fff4d8; background: none; box-shadow: none; }
+:root[data-roulette="gold"] .rl-page .role-btn.on::before { border-image-source: url("hud/gold_btn_on.webp"); filter: brightness(1.2); }
+:root[data-roulette="gold"] .rl-page .chip.on::before { border-image-source: url("hud/gold_btn_on.webp"); filter: brightness(1.2); }
+:root[data-roulette="gold"] .rl-page .role-btn.on::after, :root[data-roulette="gold"] .rl-page .chip.on::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: url("hud/gold_btn_on_glow.webp") center / 100% 100% no-repeat; mix-blend-mode: screen; animation: hudHeat 6s ease-in-out infinite alternate; }
+:root[data-roulette="gold"] .rl-page .gs-row { border-radius: 4px; background: linear-gradient(180deg, rgba(21, 17, 11, .82), rgba(11, 9, 6, .86)); }
+:root[data-roulette="gold"] .rl-page .gp-role { position: relative; border: 0; border-radius: 0; background: none; box-shadow: none; isolation: isolate; }
+:root[data-roulette="gold"] .rl-page .gp-role::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; border: solid transparent; border-width: 6px 6px 6px 6px; border-image: url("hud/gold_btn.webp") 49 49 49 49 fill / 6px 6px 6px 6px stretch; }
+:root[data-roulette="gold"] .rl-page .gp-role.on { background: none; box-shadow: none; }
+:root[data-roulette="gold"] .rl-page .gp-role.on::before { border-image-source: url("hud/gold_btn_on.webp"); filter: brightness(1.2); }
+:root[data-roulette="gold"] .rl-page .input { background: rgba(6, 5, 5, .55); border-color: rgba(var(--acc), .22); border-radius: 3px; }
+:root[data-roulette="gold"] .rl-page .btn-gold:not(.launch) { background: none; box-shadow: none; border-radius: 0; isolation: isolate; color: #fff4d8; overflow: visible; }
+:root[data-roulette="gold"] .rl-page .btn-gold:not(.launch)::before { content: ""; position: absolute; inset: 0; z-index: -1; border: solid transparent; border-width: 11px 11px 11px 11px; border-image: url("hud/gold_btn_on.webp") 49 49 49 49 fill / 11px 11px 11px 11px stretch; }
+:root[data-roulette="gold"] .rl-page .btn-gold:not(.launch)::after { display: none; }
+:root[data-roulette="gold"] .rl-page .launch { background: none; box-shadow: 0 12px 30px rgba(0, 0, 0, .5); border-radius: 0; overflow: visible; }
+:root[data-roulette="gold"] .rl-page .launch::before { padding: 0; -webkit-mask: none; mask: none; background: none; border: solid transparent; border-width: 26px 26px 26px 26px; border-image: url("hud/gold_primary.webp") 75 75 75 75 fill / 26px 26px 26px 26px stretch; }
+:root[data-roulette="gold"] .rl-page .launch::after { left: 0; width: auto; right: 0; transform: none; background: url("hud/gold_primary_glow.webp") center / 100% 100% no-repeat; mix-blend-mode: screen; animation: hudHeat 6s ease-in-out infinite alternate; }
+:root[data-roulette="gold"] .rl-page .launch:hover { box-shadow: 0 14px 36px rgba(0, 0, 0, .55), 0 0 30px rgba(var(--acc), .18); }
+:root[data-roulette="gold"] .rl-page .launch:hover::before { filter: brightness(1.15); }

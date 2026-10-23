@@ -178,7 +178,8 @@ const split = (bg, acc) => `linear-gradient(135deg, ${bg} 0 55%, ${acc} 55% 100%
 const LOOKS = {
   roulette: { title: "Roulette", names: { classic: "Classique", infernal: "Infernale", prism: "Prismatique", void: "Néant", gold: "Dorée" },
     swatch: { classic: split("#0a1220", "#e8d09a"), infernal: 'url(hud/infernal_primary.webp) center / 100% 100%',
-      prism: 'url(hud/prism_primary.webp) center / 100% 100%', void: split("#0b0716", "#6c4bb0"), gold: split("#120c05", "#b8913f") } },
+      prism: 'url(hud/prism_primary.webp) center / 100% 100%', void: 'url(hud/void_primary.webp) center / 100% 100%',
+      gold: 'url(hud/gold_primary.webp) center / 100% 100%' } },
   opening: { title: "Ouverture des boosters", names: { classic: "Classique", silver: "Éclat d'argent" },
     swatch: { classic: split("#0a1220", "#e8d09a"), silver: "linear-gradient(135deg, #5d6878, #f4f7fb 45%, #9aa6b8 60%, #e6ebf2)" } },
 };

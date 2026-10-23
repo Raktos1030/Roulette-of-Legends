@@ -17,7 +17,7 @@ from collection import BOTS, CARD, is_official
 
 STAMPS = ("flawless", "domination", "penta")
 READY = {"title", "joker", "stamp", "back", "roulette", "opening"}   # reward kinds the app already gives
-COMING = {("roulette", "void"), ("roulette", "gold")}   # announced, their skin still to make
+COMING = set()   # (kind, id) announced, their look still to make
 LOOKS = {"roulette": "classic", "opening": "classic"}   # looks picked once unlocked: their default
 JOKER_AT = 5        # rolls played to unlock the Joker (first step)
 JOKER_EVERY = 10    # rolls played to get it back after using it
