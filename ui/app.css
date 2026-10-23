@@ -1997,9 +1997,9 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 .strip-hud .pt { top: 0; height: calc(var(--pth) * var(--k) * 1px); --img: var(--ptr-t); --gl: var(--ptr-t-glow); }
 .strip-hud .pb { bottom: 0; height: calc(var(--pbh) * var(--k) * 1px); --img: var(--ptr-b); --gl: var(--ptr-b-glow); }
 :root[data-roulette="infernal"] .strip-hud { display: block; }
-:root[data-roulette="infernal"] :is(.strip, .gs-strip) { --edge-t: 19; --edge-b: 20; --edge-s: 1; --k: 0.85; --top: 40; --bottom: 40; --left: 71; --right: 72; --pw: 58; --pth: 63; --pbh: 60;
+:root[data-roulette="infernal"] :is(.strip, .gs-strip) { --edge-t: 32; --edge-b: 34; --edge-s: 5; --k: 0.5; --top: 75; --bottom: 77; --left: 102; --right: 97; --pw: 144; --pth: 113; --pbh: 116;
   --frame: url("hud/infernal_frame.webp"); --frame-glow: url("hud/infernal_frame_glow.webp"); --ptr-t: url("hud/infernal_ptr_t.webp"); --ptr-t-glow: url("hud/infernal_ptr_t_glow.webp"); --ptr-b: url("hud/infernal_ptr_b.webp"); --ptr-b-glow: url("hud/infernal_ptr_b_glow.webp"); }
-:root[data-roulette="infernal"] .gs-strip { --k: 0.4; }
+:root[data-roulette="infernal"] .gs-strip { --k: 0.235; }
 :root[data-roulette="prism"] .strip-hud { display: block; }
 :root[data-roulette="prism"] :is(.strip, .gs-strip) { --edge-t: 32; --edge-b: 34; --edge-s: 4; --k: 0.5; --top: 71; --bottom: 72; --left: 99; --right: 96; --pw: 140; --pth: 109; --pbh: 114;
   --frame: url("hud/prism_frame.webp"); --frame-glow: url("hud/prism_frame_glow.webp"); --ptr-t: url("hud/prism_ptr_t.webp"); --ptr-t-glow: url("hud/prism_ptr_t_glow.webp"); --ptr-b: url("hud/prism_ptr_b.webp"); --ptr-b-glow: url("hud/prism_ptr_b_glow.webp"); }
@@ -2123,12 +2123,14 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 @keyframes matterPos { to { background-position: 120px 60px; } }
 .launch .lm { display: none; position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
 .launch .lt { position: relative; z-index: 1; }
+:root[data-roulette="infernal"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/infernal_primary_glow.webp"); -webkit-mask-box-image-slice: 68 68 68 68; -webkit-mask-box-image-width: 23px 23px 23px 23px; -webkit-mask-box-image-repeat: stretch; }
 :root[data-roulette="void"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/void_primary_glow.webp"); -webkit-mask-box-image-slice: 73 73 73 73; -webkit-mask-box-image-width: 25px 25px 25px 25px; -webkit-mask-box-image-repeat: stretch; }
 :root[data-roulette="prism"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/prism_primary_glow.webp"); -webkit-mask-box-image-slice: 74 74 74 74; -webkit-mask-box-image-width: 25px 25px 25px 25px; -webkit-mask-box-image-repeat: stretch; }
+:root[data-roulette="infernal"] { --matter: url("hud/infernal_matter.webp"); --matter-blend: screen; }
 :root[data-roulette="void"] { --matter: url("hud/void_matter.webp"); }
 :root[data-roulette="prism"] { --matter: url("hud/prism_matter.webp"); --matter-blend: soft-light; }
-:root[data-roulette="void"] .strip-hud .hm, :root[data-roulette="prism"] .strip-hud .hm { display: block; }
-:root[data-roulette="void"] .strip-hud b s, :root[data-roulette="prism"] .strip-hud b s { display: block; }
+:root:is([data-roulette="infernal"], [data-roulette="void"], [data-roulette="prism"]) .strip-hud .hm { display: block; }
+:root:is([data-roulette="infernal"], [data-roulette="void"], [data-roulette="prism"]) .strip-hud b s { display: block; }
 .strip.spinning .strip-hud .hm s { animation-duration: 3s; }
 .strip.spinning .strip-hud .hm s + s { animation-duration: 4.5s; }
 @media (prefers-reduced-motion: reduce) { .strip-hud .hm s, .strip-hud b s, .launch .lm s { animation: none; } }
