@@ -970,8 +970,10 @@
       [t("Favoris"), 1, 1, 1],
       [t("Tirage suivi dans le client LoL (autofill, ban, champion pris)"), 0, 1, 1],
       [t("Historique, résultats et LP"), 0, 1, 1],
+      [t("Classeur de cartes et parcours de récompenses"), 0, 1, 1],
       [t("Fiches de jeu pour chaque champion à chaque poste"), 0, 0, 1],
       [t("Runes, sorts et set d'objets importés dans LoL"), 0, 0, 1],
+      [t("Build random importé dans LoL"), 0, 0, 1],
       [t("Overlay en jeu"), 0, 0, 1],
       [t("Page Partie : les deux équipes et leurs classements"), 0, 0, 1],
     ];
@@ -993,6 +995,7 @@
             t("Ton tirage est suivi dans le client : autofill, ban ou champion pris détectés, relance en un clic."),
             t("Résultat, KDA et LP ajoutés à ton historique, même pour les parties jouées sans la roulette."),
             t("Roulette de groupe avec les pseudos de ton salon LoL."),
+            t("Un classeur à remplir : une carte par champion et par poste, gagnée en jouant tes tirages, et des récompenses à débloquer."),
             t("Discrète : elle attend près de l'horloge et peut se lancer avec Windows."),
           ])}
           <div class="app-dl">${downloadButton("lite_win", t("Windows"), "btn")}${downloadButton("lite_mac", t("Mac"), "btn")}</div>

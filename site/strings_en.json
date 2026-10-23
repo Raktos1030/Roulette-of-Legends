@@ -66,5 +66,8 @@
 "{0} : champion introuvable (« {1} »).": "{0}: champion not found (\"{1}\").",
 "{0} : plus de poste libre pour {1}.": "{0}: no role left for {1}.",
 "{0} : un seul rôle possible ({1}).": "{0}: only one possible role ({1}).",
-"{0} : {1} n'est pas joué {2}.": "{0}: {1} isn't played as {2}."
+"{0} : {1} n'est pas joué {2}.": "{0}: {1} isn't played as {2}.",
+"Classeur de cartes et parcours de récompenses": "Card binder and rewards path",
+"Build random importé dans LoL": "Random build imported into LoL",
+"Un classeur à remplir : une carte par champion et par poste, gagnée en jouant tes tirages, et des récompenses à débloquer.": "A binder to fill: a card per champion and role, earned by playing your rolls, and rewards to unlock."
 }
