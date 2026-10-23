@@ -6,7 +6,7 @@ crowning) and a roll pending.
 Its profile, history and games live in a folder of their own (%TEMP%/RoL-demo, made again at each start unless
 --keep): the player's own data, the LoL client, the Windows startup entry and the stats are never touched.
 
-usage: python dev/demo.py [--keep] [--lang en]
+usage: python dev/demo.py [--keep] [--lang en] [--dev]
 """
 
 import json
@@ -143,7 +143,7 @@ def main():
     import roulette_lol
     start = roulette_lol.start_services
     roulette_lol.start_services = lambda c, **kw: start(c, **dict(kw, with_updater=False))   # stats left as they are
-    sys.argv = [sys.argv[0], "--no-lol", "--no-tray"]
+    sys.argv = [sys.argv[0], "--no-lol", "--no-tray"] + (["--dev"] if "--dev" in args else [])   # --dev: server only, for a browser
     roulette_lol.main()
 
 

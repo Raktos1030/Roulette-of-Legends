@@ -1994,6 +1994,8 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 /* ---------- roulette skins (rewards path): a frame around the strip (ui/hud, 9-slice so it fits any size), its two
    pointers marking the winning slot, the glow alive (breathing, brighter while it spins, flaring on the win) ---------- */
 .strip-hud { position: absolute; inset: 0; z-index: 7; display: none; pointer-events: none; }
+.strip-hud, .launch .lm { transition: opacity .4s ease; }
+.rl-page.hud-wait :is(.strip-hud, .launch .lm) { opacity: 0; transition: none; }
 .strip-hud .hf, .strip-hud .hg, .strip-hud .hb { position: absolute; inset: 0; border-style: solid; border-color: transparent;
   border-width: calc(var(--top) * var(--k) * 1px) calc(var(--right) * var(--k) * 1px) calc(var(--bottom) * var(--k) * 1px) calc(var(--left) * var(--k) * 1px);
   border-image-slice: var(--top) var(--right) var(--bottom) var(--left); border-image-repeat: stretch; }
@@ -2314,3 +2316,5 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 :root[data-roulette="prism"] .rl-page .launch::after { background: linear-gradient(100deg, transparent 0 40%, rgba(255, 246, 252, .95) 48%, rgba(225, 245, 255, .8) 52%, transparent 60% 100%) 100% 0 / 260% 100% no-repeat; mix-blend-mode: screen; -webkit-mask-box-image-source: url("hud/prism_primary_glow.webp"); -webkit-mask-box-image-slice: 74 74 74 74; -webkit-mask-box-image-width: 25px 25px 25px 25px; -webkit-mask-box-image-repeat: stretch; animation: hudSweep 6.5s 1.2s ease-in-out infinite; }
 :root[data-roulette="prism"] .rl-page .launch:hover { box-shadow: 0 14px 36px rgba(0, 0, 0, .55), 0 0 30px rgba(var(--acc), .18); }
 :root[data-roulette="prism"] .rl-page .launch:hover::before { filter: brightness(1.15); }
+/* a roll in progress: the rest of the app waits (the menu dims and doesn't answer) */
+body.rolling #rail .nav-item:not(.on), body.rolling #rail-lol { opacity: .35; pointer-events: none; transition: opacity .3s; }

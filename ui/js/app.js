@@ -93,7 +93,7 @@ async function boot() {
   // champion portraits open their guide, wherever they are (history, game details, Game page, guides...)
   document.addEventListener("click", (e) => {
     const el = e.target.closest("[data-champ]");
-    if (!el) return;
+    if (!el || store.spinning) return;
     e.preventDefault();
     e.stopPropagation();
     openChamp(el.dataset.champ, el.dataset.role);
@@ -146,6 +146,10 @@ function buildRail() {
 
 function route() {
   const id = (location.hash.replace(/^#\/?/, "") || "roulette").split("/")[0];
+  if (store.spinning && current && id !== current) {   // a roll in progress holds the app: no other page meanwhile
+    history.replaceState(null, "", "#/" + current);
+    return;
+  }
   const p = pageOn(id) ? PAGES[id] : PAGES.roulette;
   current = pageOn(id) ? id : "roulette";
   document.getElementById("menu").hidden = true;   // an open menu doesn't survive a page change

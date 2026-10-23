@@ -56,6 +56,9 @@ export function renderRoulette(page) {
   paintFilters();
   setupChampField();
   idleStrip();
+  const rl = page.querySelector(".rl-page");
+  rl.classList.add("hud-wait");
+  hudWhenReady(rl);
   page.querySelector("#launch").onclick = () => launch();
   page.querySelectorAll(".mode-tab").forEach((b) => (b.onclick = () => {
     if (store.spinning) return;
@@ -507,12 +510,29 @@ function celebrate(strip) {
 
 function lock(on) {
   store.spinning = on;
+  document.body.classList.toggle("rolling", on);   // the rest of the app waits for the roll (app.js route)
   const b = root.querySelector("#launch");
   if (b) b.disabled = on;
   root.querySelectorAll(".role-btn, .chip, .rb-part, #cf-input, .gp-row input, .gp-role, .gp-add, .gp-del, .gp-lobby, .gp-av, .gp-manual, .mode-tab, [data-reroll]")
     .forEach((x) => (x.disabled = on));
   // group list redrawn after a roll: lobby changes held during the spin, names and taken roles locked again
   if (!on && mode === "group" && gPlayers && !syncLobby()) paintGroupPanel();
+}
+
+// The skin's frame and its living material show once their images are decoded and the page has settled: in the
+// first frames the material was drawn at its place while the frame still had its earlier size (a stray line).
+function hudWhenReady(el) {
+  const strip = el.querySelector(".strip");
+  const st = strip && getComputedStyle(strip);
+  const urls = st ? ["--frame", "--frame-glow", "--ptr-t", "--ptr-t-glow", "--ptr-b", "--ptr-b-glow", "--matter"]
+    .map((v) => (st.getPropertyValue(v).match(/url\(["']?([^"')]+)/) || [])[1]).filter(Boolean) : [];
+  const shown = () => el.classList.remove("hud-wait");
+  if (!urls.length) return shown();
+  Promise.all(urls.map((u) => {
+    const im = new Image();
+    im.src = u;
+    return im.decode().catch(() => null);
+  })).then(() => setTimeout(() => requestAnimationFrame(shown), 450));
 }
 
 export async function launch(opts = {}) {
@@ -589,6 +609,7 @@ export async function launch(opts = {}) {
     }
     await sleep(750);   // time to see the winning card
     if (c.combo.build_pick === "random") store.nextTab = "build";   // the drawn build first
+    lock(false);   // the roll is over: its guide may open
     showGuide(c.combo);
   } finally {
     lock(false);
