@@ -1544,6 +1544,7 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 .bk-stage.flipped .bk-flip { transform: rotateY(0) scale(1); }
 .bk-face { position: absolute; inset: 0; backface-visibility: hidden; }
 .bk-rear { transform: rotateY(180deg); }
+.bk-stage.flipped .bk-rear { pointer-events: none; }   /* turned away: only the card face answers the pointer */
 .bk-face .tc { width: 100%; height: 100%; }
 .bk-face .tc-plate b { font-size: 24px; }
 .bk-face .tc-sub { display: block; font-size: 11px; }

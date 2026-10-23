@@ -395,13 +395,21 @@ function paintChamps() {
   }));
 }
 
-// a card under the pointer: its sound (a soft swish, a glint on the best ones)
-let hovered = null;
+// a card under the pointer: its sound once (a soft swish, a glint on the best ones). A tilted card's edge can slip
+// from under the pointer for a moment: coming back to the same card soon after makes no new sound.
+let hovered = null, leftAt = 0;
 document.addEventListener("pointerover", (e) => {
-  const el = e.target.closest && e.target.closest(".bd-grid .tc, .bd-back .tc, .bd-pack, .bk-face .tc");
-  if (el === hovered) return;
+  const el = e.target.closest && e.target.closest(".bd-grid .tc, .bd-back .tc, .bd-pack, .bk-front .tc, .bk-stage:not(.flipped) .bk-rear .tc");
+  const now = performance.now();
+  if (!el) {
+    if (hovered && !leftAt) leftAt = now;
+    return;
+  }
+  const again = el === hovered && (!leftAt || now - leftAt < 900);
+  leftAt = 0;
+  if (again) return;
   hovered = el;
-  if (el && !el.closest(".bd-back.locked")) sound.hover(el.classList.contains("back") ? 2 : +((el.className.match(/\blv(\d)/) || [])[1] || 0));
+  if (!el.closest(".bd-back.locked")) sound.hover(el.classList.contains("back") ? 2 : +((el.className.match(/\blv(\d)/) || [])[1] || 0));
 });
 
 // cards tilt toward the pointer; the foil and sheen follow it
