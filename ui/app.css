@@ -1929,6 +1929,25 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 .bd-grid .tc:not(.back):not(.lv0) { cursor: pointer; }
 @media (max-width: 760px) { .cd { grid-template-columns: 1fr; justify-items: center; } }
 
+/* "reveal all": the cards left are dealt face down on the table, then turned over one after another */
+.bk-table { position: relative; display: grid; justify-items: center; gap: 14px; width: min(1180px, 94vw); padding: 20px; }
+.bk-spread { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 12px; max-height: 70vh; overflow-y: auto; padding: 14px; }
+.bk-mini { position: relative; width: clamp(92px, 9.5vw, 132px); aspect-ratio: 5 / 7; perspective: 900px;
+  animation: bkDeal .55s calc(var(--i) * 45ms) cubic-bezier(.2, .8, .25, 1) both; }
+@keyframes bkDeal { from { opacity: 0; transform: translate(0, 60px) rotate(-6deg) scale(.7); } }
+.bk-mini .bk-flip { transform: rotateY(180deg); transition: transform .55s cubic-bezier(.2, .8, .2, 1); }
+.bk-mini.flipped .bk-flip { transform: none; }
+.bk-spread.many .bk-mini { width: clamp(70px, 6.6vw, 98px); }
+.bk-mini .tc-plate b { font-size: 11px; }
+.bk-spread.many .bk-mini .tc-plate b { font-size: 9px; }
+.bk-mini .tc-sub, .bk-mini .tc-new { display: none; }
+.bk-mini .tc { cursor: default; }
+.bk-mini.lv3.flipped { filter: drop-shadow(0 0 12px rgba(240, 213, 143, .45)); }
+.bk-mini.lv4.flipped { filter: drop-shadow(0 0 16px rgba(170, 140, 255, .55)); animation: bkDeal .55s calc(var(--i) * 45ms) both, bkPop .5s ease-out; }
+@keyframes bkPop { 40% { scale: 1.08; } }
+.bk-sum { min-height: 1.4em; margin: 0; font: 600 13px/1.4 var(--ui); letter-spacing: .14em; text-transform: uppercase; color: var(--gold-pale); opacity: 0; transition: opacity .5s; }
+.bk-sum.on { opacity: 1; }
+
 /* "Éclat d'argent" booster opening (rewards path): the back cracks from its wheel and bursts into silver shards */
 .bk-stage.silver .bk-flip { transform-style: flat; transform: scale(.86); }
 .bk-stage.silver.flipped .bk-flip { transform: scale(1); }

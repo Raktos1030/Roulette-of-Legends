@@ -586,12 +586,40 @@ function openBooster(ids) {
     }, 2400);
     box.querySelector("[data-next]").onclick = next;
     const all = box.querySelector("[data-all]");
-    if (all) all.onclick = async () => {
-      await call("binder_open", { ids: queue.slice(i).map((x) => x.id) });
-      toast(t("{0} cartes ajoutées à ton classeur.", queue.length - i), "good");
-      close();
-    };
+    if (all) all.onclick = () => revealAll(queue.slice(i));
     box.querySelector(".bk-shade").onclick = close;
+  };
+  // every card left at once: dealt face down on the table, then turned over one after another (the best last)
+  const revealAll = async (rest) => {
+    await call("binder_open", { ids: rest.map((x) => x.id) });
+    box.innerHTML = `<div class="bk-shade"></div>
+      <div class="bk-table">
+        <div class="bk-count">${esc(t("{0} cartes", rest.length))}</div>
+        <div class="bk-spread${rest.length > 24 ? " many" : ""}">${rest.map((c, k) => `<div class="bk-mini lv${c.level}" style="--i:${k}"><div class="bk-flip">
+          <div class="bk-face bk-front">${cardHTML(c, { level: c.level })}</div><div class="bk-face bk-rear">${backHTML()}</div></div></div>`).join("")}</div>
+        <p class="bk-sum"></p>
+        <div class="bk-btns"><button class="btn-gold" data-done>${esc(t("Terminer"))}</button></div>
+      </div>`;
+    box.querySelector(".bk-shade").onclick = close;
+    box.querySelector("[data-done]").onclick = close;
+    const minis = [...box.querySelectorAll(".bk-mini")];
+    const dealt = 450 + minis.length * 45;
+    sound.rip();
+    minis.forEach((m, k) => setTimeout(() => {
+      if (!m.isConnected) return;
+      m.classList.add("flipped");
+      m.scrollIntoView({ block: "nearest", behavior: "smooth" });   // the table follows the cards being turned
+      sound.flip();
+      if (k === minis.length - 1 || (rest[k].level >= 4 && rest[k + 1] && rest[k + 1].level < 4)) setTimeout(() => sound.reveal(rest[k].level), 220);
+    }, dealt + k * Math.max(90, 1800 / minis.length)));
+    const n = (lv) => rest.filter((c) => c.level === lv).length;
+    setTimeout(() => {
+      const sum = box.querySelector(".bk-sum");
+      if (!sum) return;
+      sum.textContent = [[4, "Légendaire", "Légendaires"], [3, "Épique", "Épiques"], [2, "Rare", "Rares"]]
+        .filter(([lv]) => n(lv)).map(([lv, one, many]) => `${n(lv)} ${t(n(lv) > 1 ? many : one).toLowerCase()}`).join(" · ");
+      sum.classList.add("on");
+    }, dealt + minis.length * Math.max(90, 1800 / minis.length) + 500);
   };
   const next = () => {
     i += 1;
