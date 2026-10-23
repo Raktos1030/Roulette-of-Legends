@@ -2,7 +2,7 @@
 import { call, listen } from "./api.js";
 import { esc, img, ICONS, roleIcon, setupGlossary, setupSpells, fmtDate, setupLang, t } from "./util.js";
 import { store, on, dispatch, toast, setStatus, setupTips, modalOpen, closeModal, spinLogo, mechRole, isLite, wireBorderless, champAttr, paintRings } from "./ctx.js";
-import { renderRoulette, rouletteKey, launch } from "./roulette.js";
+import { renderRoulette, rouletteKey, launch, preloadSkin } from "./roulette.js";
 import { renderGuides, showGuide, openChamp, restoreBack, clearBack } from "./guides.js";
 import { setAmbient } from "./ambient.js";
 import { renderHistory } from "./history.js";
@@ -30,6 +30,7 @@ const pageOn = (id) => !!PAGES[id] && (!isLite() || SIMPLE_PAGES.includes(id));
 // looks picked in the rewards path: the roulette skin (the booster opening is read when it opens)
 function applyLooks(p) {
   document.documentElement.dataset.roulette = p.roulette || "classic";
+  preloadSkin();   // its images ready before the Roulette tab opens
 }
 
 async function boot() {

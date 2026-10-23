@@ -1995,7 +1995,7 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
    pointers marking the winning slot, the glow alive (breathing, brighter while it spins, flaring on the win) ---------- */
 .strip-hud { position: absolute; inset: 0; z-index: 7; display: none; pointer-events: none; }
 .strip-hud, .launch .lm { transition: opacity .4s ease; }
-.rl-page.hud-wait :is(.strip-hud, .launch .lm) { opacity: 0; transition: none; }
+.rl-page.hud-wait :is(.strip-hud .hm, .strip-hud b s, .launch .lm, .card::after) { opacity: 0; transition: none; }
 .strip-hud .hf, .strip-hud .hg, .strip-hud .hb { position: absolute; inset: 0; border-style: solid; border-color: transparent;
   border-width: calc(var(--top) * var(--k) * 1px) calc(var(--right) * var(--k) * 1px) calc(var(--bottom) * var(--k) * 1px) calc(var(--left) * var(--k) * 1px);
   border-image-slice: var(--top) var(--right) var(--bottom) var(--left); border-image-repeat: round; }   /* edges repeated at scale, never stretched */
@@ -2137,14 +2137,18 @@ img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 @keyframes matterB { from { transform: translate(170px, 0); } to { transform: translate(0, 170px); } }
 /* the same material in the panels' channels: two layers drifting their whole tile each loop */
 @keyframes panelMatter { to { background-position: 240px 240px, -170px 170px; } }
+@keyframes wordMatter { to { background-position: 150px 150px; } }   /* LANCER written in the living material */
+@keyframes wordSheen { to { background-position: -150% 0; } }
+/* prismatic: the opal word shifts through its colors (a more specific rule than the skin blocks) */
+:root[data-roulette="prism"] body .rl-page .launch .lt { animation: wordMatter 12s linear infinite, wordIri 9s ease-in-out infinite alternate; }
+@keyframes wordIri {
+  from { filter: hue-rotate(-60deg) saturate(2.6) drop-shadow(0 0 1px rgba(0, 0, 0, .9)) drop-shadow(0 2px 6px rgba(0, 0, 0, .6)); }
+  to { filter: hue-rotate(80deg) saturate(2.6) drop-shadow(0 0 1px rgba(0, 0, 0, .9)) drop-shadow(0 2px 6px rgba(0, 0, 0, .6)); } }
 .strip-hud b s { display: none; inset: 0; background-size: 120px 120px; animation: matterPos 9s linear infinite;
   -webkit-mask: var(--gl) center / 100% 100% no-repeat; mask: var(--gl) center / 100% 100% no-repeat; }
 @keyframes matterPos { to { background-position: 120px 120px; } }
 .launch .lm { display: none; position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
 .launch .lt { position: relative; z-index: 1; }
-:root[data-roulette="infernal"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/infernal_primary_glow.webp"); -webkit-mask-box-image-slice: 68 68 68 68; -webkit-mask-box-image-width: 23px 23px 23px 23px; -webkit-mask-box-image-repeat: round; }
-:root[data-roulette="void"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/void_primary_glow.webp"); -webkit-mask-box-image-slice: 73 73 73 73; -webkit-mask-box-image-width: 25px 25px 25px 25px; -webkit-mask-box-image-repeat: round; }
-:root[data-roulette="prism"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/prism_primary_glow.webp"); -webkit-mask-box-image-slice: 74 74 74 74; -webkit-mask-box-image-width: 25px 25px 25px 25px; -webkit-mask-box-image-repeat: round; }
 :root[data-roulette="infernal"] { --matter: url("hud/infernal_matter.webp"); --matter-blend: screen; }
 :root[data-roulette="void"] { --matter: url("hud/void_matter.webp"); }
 :root[data-roulette="prism"] { --matter: url("hud/prism_matter.webp"); --matter-blend: overlay; }
@@ -2193,9 +2197,12 @@ body.rolling #rail .nav-item:not(.on), body.rolling #rail-lol { opacity: .35; po
 :root[data-roulette="infernal"] .rl-page .btn-gold:not(.launch)::before { content: ""; position: absolute; inset: 0; z-index: -1; border: solid transparent; border-width: 9px 9px 9px 9px; border-image: url("hud/infernal_btn_on.webp") 43 43 43 43 fill / 9px 9px 9px 9px round; }
 :root[data-roulette="infernal"] .rl-page .btn-gold:not(.launch)::after { display: none; }
 :root[data-roulette="infernal"] .rl-page .launch { background: none; box-shadow: 0 12px 30px rgba(0, 0, 0, .5); border-radius: 0; overflow: visible; }
-:root[data-roulette="infernal"] .rl-page .launch::before { padding: 0; -webkit-mask: none; mask: none; background: none; border: solid transparent; border-width: 23px 23px 23px 23px; border-image: url("hud/infernal_primary.webp") 68 68 68 68 fill / 23px 23px 23px 23px round; }
-:root[data-roulette="infernal"] .rl-page .launch::after { left: 0; width: auto; right: 0; transform: none; background: none; border: solid transparent; border-width: 23px 23px 23px 23px; border-image: url("hud/infernal_primary_glow.webp") 68 68 68 68 fill / 23px 23px 23px 23px round; mix-blend-mode: screen; animation: hudHeat 3.4s ease-in-out infinite alternate; }
-
+:root[data-roulette="infernal"] .rl-page .launch::before { padding: 0; -webkit-mask: none; mask: none; border: solid transparent; border-width: 28px 23px 28px 23px; border-image: url("hud/infernal_panel.webp") 165 136 165 136 / 28px 23px 28px 23px round; z-index: -1; background: radial-gradient(120% 90% at 50% 0%, rgba(var(--acc), .12), transparent 62%) 1px 7px / calc(100% - 2px) calc(100% - 14px) no-repeat, linear-gradient(180deg, #1c120d, #0e0907) 1px 7px / calc(100% - 2px) calc(100% - 14px) no-repeat; background-origin: border-box; background-clip: border-box; }
+:root[data-roulette="infernal"] .rl-page .launch::after { display: none; }
+:root[data-roulette="infernal"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/infernal_panel_glow.webp"); -webkit-mask-box-image-slice: 165 136 165 136; -webkit-mask-box-image-width: 28px 23px 28px 23px; -webkit-mask-box-image-repeat: round; }
+:root[data-roulette="infernal"] .rl-page .launch .lm s { inset: -240px; }
+:root[data-roulette="infernal"] .rl-page .launch .lt, :root[data-roulette="infernal"] .rl-page .launch:hover .lt { background: var(--matter) 0 0 / 150px 150px repeat; animation: wordMatter 12s linear infinite; -webkit-text-stroke: .5px rgba(var(--acc-hi), .55); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 1px rgba(0, 0, 0, .9)) drop-shadow(0 2px 6px rgba(0, 0, 0, .6)); }
+:root[data-roulette="infernal"] .rl-page .launch:hover .lt { filter: brightness(1.25) drop-shadow(0 0 1px rgba(0, 0, 0, .9)) drop-shadow(0 0 10px rgba(var(--acc), .5)); }
 :root[data-roulette="infernal"] .rl-page .launch:hover { box-shadow: 0 14px 36px rgba(0, 0, 0, .55), 0 0 30px rgba(var(--acc), .18); }
 :root[data-roulette="infernal"] .rl-page .launch:hover::before { filter: brightness(1.15); }
 
@@ -2237,9 +2244,12 @@ body.rolling #rail .nav-item:not(.on), body.rolling #rail-lol { opacity: .35; po
 :root[data-roulette="prism"] .rl-page .btn-gold:not(.launch)::before { content: ""; position: absolute; inset: 0; z-index: -1; border: solid transparent; border-width: 11px 11px 11px 11px; border-image: url("hud/prism_btn_on.webp") 49 49 49 49 fill / 11px 11px 11px 11px round; }
 :root[data-roulette="prism"] .rl-page .btn-gold:not(.launch)::after { display: none; }
 :root[data-roulette="prism"] .rl-page .launch { background: none; box-shadow: 0 12px 30px rgba(0, 0, 0, .5); border-radius: 0; overflow: visible; }
-:root[data-roulette="prism"] .rl-page .launch::before { padding: 0; -webkit-mask: none; mask: none; background: none; border: solid transparent; border-width: 25px 25px 25px 25px; border-image: url("hud/prism_primary.webp") 74 74 74 74 fill / 25px 25px 25px 25px round; }
-:root[data-roulette="prism"] .rl-page .launch::after { left: 0; width: auto; right: 0; transform: none; background: none; border: solid transparent; border-width: 25px 25px 25px 25px; border-image: url("hud/prism_primary_glow.webp") 74 74 74 74 fill / 25px 25px 25px 25px round; mix-blend-mode: screen; animation: hudHeat 5s ease-in-out infinite alternate; }
-:root[data-roulette="prism"] .rl-page .launch::after { background: linear-gradient(100deg, transparent 0 40%, rgba(255, 246, 252, .95) 48%, rgba(225, 245, 255, .8) 52%, transparent 60% 100%) 100% 0 / 260% 100% no-repeat; mix-blend-mode: screen; -webkit-mask-box-image-source: url("hud/prism_primary_glow.webp"); -webkit-mask-box-image-slice: 74 74 74 74; -webkit-mask-box-image-width: 25px 25px 25px 25px; -webkit-mask-box-image-repeat: round; animation: hudSweep 6.5s 1.2s ease-in-out infinite; }
+:root[data-roulette="prism"] .rl-page .launch::before { padding: 0; -webkit-mask: none; mask: none; border: solid transparent; border-width: 26px 22px 27px 22px; border-image: url("hud/prism_panel.webp") 173 148 184 147 / 26px 22px 27px 22px round; z-index: -1; background: radial-gradient(120% 90% at 50% 0%, rgba(var(--acc), .12), transparent 62%) 1px 7px / calc(100% - 2px) calc(100% - 15px) no-repeat, linear-gradient(180deg, #1e1e23, #111114) 1px 7px / calc(100% - 2px) calc(100% - 15px) no-repeat; background-origin: border-box; background-clip: border-box; }
+:root[data-roulette="prism"] .rl-page .launch::after { display: none; }
+:root[data-roulette="prism"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/prism_panel_glow.webp"); -webkit-mask-box-image-slice: 173 148 184 147; -webkit-mask-box-image-width: 26px 22px 27px 22px; -webkit-mask-box-image-repeat: round; }
+:root[data-roulette="prism"] .rl-page .launch .lm s { inset: -240px; }
+:root[data-roulette="prism"] .rl-page .launch .lt, :root[data-roulette="prism"] .rl-page .launch:hover .lt { background: var(--matter) 0 0 / 150px 150px repeat; animation: wordMatter 12s linear infinite; -webkit-text-stroke: .5px rgba(var(--acc-hi), .55); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 1px rgba(0, 0, 0, .9)) drop-shadow(0 2px 6px rgba(0, 0, 0, .6)); }
+:root[data-roulette="prism"] .rl-page .launch:hover .lt { filter: brightness(1.25) drop-shadow(0 0 1px rgba(0, 0, 0, .9)) drop-shadow(0 0 10px rgba(var(--acc), .5)); }
 :root[data-roulette="prism"] .rl-page .launch:hover { box-shadow: 0 14px 36px rgba(0, 0, 0, .55), 0 0 30px rgba(var(--acc), .18); }
 :root[data-roulette="prism"] .rl-page .launch:hover::before { filter: brightness(1.15); }
 
@@ -2281,9 +2291,12 @@ body.rolling #rail .nav-item:not(.on), body.rolling #rail-lol { opacity: .35; po
 :root[data-roulette="void"] .rl-page .btn-gold:not(.launch)::before { content: ""; position: absolute; inset: 0; z-index: -1; border: solid transparent; border-width: 11px 11px 11px 11px; border-image: url("hud/void_btn_on.webp") 48 48 48 48 fill / 11px 11px 11px 11px round; }
 :root[data-roulette="void"] .rl-page .btn-gold:not(.launch)::after { display: none; }
 :root[data-roulette="void"] .rl-page .launch { background: none; box-shadow: 0 12px 30px rgba(0, 0, 0, .5); border-radius: 0; overflow: visible; }
-:root[data-roulette="void"] .rl-page .launch::before { padding: 0; -webkit-mask: none; mask: none; background: none; border: solid transparent; border-width: 25px 25px 25px 25px; border-image: url("hud/void_primary.webp") 73 73 73 73 fill / 25px 25px 25px 25px round; }
-:root[data-roulette="void"] .rl-page .launch::after { left: 0; width: auto; right: 0; transform: none; background: none; border: solid transparent; border-width: 25px 25px 25px 25px; border-image: url("hud/void_primary_glow.webp") 73 73 73 73 fill / 25px 25px 25px 25px round; mix-blend-mode: screen; animation: hudHeat 4.6s ease-in-out infinite alternate; }
-
+:root[data-roulette="void"] .rl-page .launch::before { padding: 0; -webkit-mask: none; mask: none; border: solid transparent; border-width: 24px 22px 22px 21px; border-image: url("hud/void_panel.webp") 119 109 111 107 / 24px 22px 22px 21px round; z-index: -1; background: radial-gradient(120% 90% at 50% 0%, rgba(var(--acc), .12), transparent 62%) 1px 5px / calc(100% - 1px) calc(100% - 10px) no-repeat, linear-gradient(180deg, #150f20, #0a0710) 1px 5px / calc(100% - 1px) calc(100% - 10px) no-repeat; background-origin: border-box; background-clip: border-box; }
+:root[data-roulette="void"] .rl-page .launch::after { display: none; }
+:root[data-roulette="void"] .rl-page .launch .lm { display: block; -webkit-mask-box-image-source: url("hud/void_panel_glow.webp"); -webkit-mask-box-image-slice: 119 109 111 107; -webkit-mask-box-image-width: 24px 22px 22px 21px; -webkit-mask-box-image-repeat: round; }
+:root[data-roulette="void"] .rl-page .launch .lm s { inset: -240px; }
+:root[data-roulette="void"] .rl-page .launch .lt, :root[data-roulette="void"] .rl-page .launch:hover .lt { background: var(--matter) 0 0 / 150px 150px repeat; animation: wordMatter 12s linear infinite; -webkit-text-stroke: .5px rgba(var(--acc-hi), .55); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 1px rgba(0, 0, 0, .9)) drop-shadow(0 2px 6px rgba(0, 0, 0, .6)); }
+:root[data-roulette="void"] .rl-page .launch:hover .lt { filter: brightness(1.25) drop-shadow(0 0 1px rgba(0, 0, 0, .9)) drop-shadow(0 0 10px rgba(var(--acc), .5)); }
 :root[data-roulette="void"] .rl-page .launch:hover { box-shadow: 0 14px 36px rgba(0, 0, 0, .55), 0 0 30px rgba(var(--acc), .18); }
 :root[data-roulette="void"] .rl-page .launch:hover::before { filter: brightness(1.15); }
 
@@ -2325,8 +2338,10 @@ body.rolling #rail .nav-item:not(.on), body.rolling #rail-lol { opacity: .35; po
 :root[data-roulette="gold"] .rl-page .btn-gold:not(.launch)::before { content: ""; position: absolute; inset: 0; z-index: -1; border: solid transparent; border-width: 11px 11px 11px 11px; border-image: url("hud/gold_btn_on.webp") 49 49 49 49 fill / 11px 11px 11px 11px round; }
 :root[data-roulette="gold"] .rl-page .btn-gold:not(.launch)::after { display: none; }
 :root[data-roulette="gold"] .rl-page .launch { background: none; box-shadow: 0 12px 30px rgba(0, 0, 0, .5); border-radius: 0; overflow: visible; }
-:root[data-roulette="gold"] .rl-page .launch::before { padding: 0; -webkit-mask: none; mask: none; background: none; border: solid transparent; border-width: 26px 26px 26px 26px; border-image: url("hud/gold_primary.webp") 75 75 75 75 fill / 26px 26px 26px 26px round; }
-:root[data-roulette="gold"] .rl-page .launch::after { left: 0; width: auto; right: 0; transform: none; background: none; border: solid transparent; border-width: 26px 26px 26px 26px; border-image: url("hud/gold_primary_glow.webp") 75 75 75 75 fill / 26px 26px 26px 26px round; mix-blend-mode: screen; animation: hudHeat 6s ease-in-out infinite alternate; }
-
+:root[data-roulette="gold"] .rl-page .launch::before { padding: 0; -webkit-mask: none; mask: none; border: solid transparent; border-width: 28px 22px 29px 22px; border-image: url("hud/gold_panel.webp") 172 140 179 140 / 28px 22px 29px 22px round; z-index: -1; background: radial-gradient(120% 90% at 50% 0%, rgba(var(--acc), .12), transparent 62%) 1px 8px / calc(100% - 3px) calc(100% - 17px) no-repeat, linear-gradient(180deg, #1d160b, #0f0b06) 1px 8px / calc(100% - 3px) calc(100% - 17px) no-repeat; background-origin: border-box; background-clip: border-box; }
+:root[data-roulette="gold"] .rl-page .launch::after { display: none; }
+:root[data-roulette="gold"] .rl-page .launch .lm { display: none; }
+:root[data-roulette="gold"] .rl-page .launch .lt, :root[data-roulette="gold"] .rl-page .launch:hover .lt { background: linear-gradient(100deg, #9c6a18 0%, #e9be5c 30%, #fff4d2 46%, #e9be5c 62%, #9c6a18 100%) 0 0 / 300% 100%; animation: wordSheen 5s linear infinite; -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 1px rgba(0, 0, 0, .9)) drop-shadow(0 2px 6px rgba(0, 0, 0, .6)); }
+:root[data-roulette="gold"] .rl-page .launch:hover .lt { filter: brightness(1.25) drop-shadow(0 0 1px rgba(0, 0, 0, .9)) drop-shadow(0 0 10px rgba(var(--acc), .5)); }
 :root[data-roulette="gold"] .rl-page .launch:hover { box-shadow: 0 14px 36px rgba(0, 0, 0, .55), 0 0 30px rgba(var(--acc), .18); }
 :root[data-roulette="gold"] .rl-page .launch:hover::before { filter: brightness(1.15); }

@@ -519,20 +519,27 @@ function lock(on) {
   if (!on && mode === "group" && gPlayers && !syncLobby()) paintGroupPanel();
 }
 
-// The skin's frame and its living material show once their images are decoded and the page has settled: in the
-// first frames the material was drawn at its place while the frame still had its earlier size (a stray line).
+// The skin's images are decoded ahead (app.js preloads them at boot and on a change of skin): the frame shows at once.
+// Only the living material waits for its masks, a frame: drawn unmasked for an instant it made a stray line.
 function hudWhenReady(el) {
-  const strip = el.querySelector(".strip");
-  const st = strip && getComputedStyle(strip);
-  const urls = st ? ["--frame", "--frame-glow", "--ptr-t", "--ptr-t-glow", "--ptr-b", "--ptr-b-glow", "--matter"]
-    .map((v) => (st.getPropertyValue(v).match(/url\(["']?([^"')]+)/) || [])[1]).filter(Boolean) : [];
-  const shown = () => el.classList.remove("hud-wait");
-  if (!urls.length) return shown();
-  Promise.all(urls.map((u) => {
-    const im = new Image();
-    im.src = u;
-    return im.decode().catch(() => null);
-  })).then(() => setTimeout(() => requestAnimationFrame(shown), 450));
+  preloadSkin().then(() => requestAnimationFrame(() => requestAnimationFrame(() => el.classList.remove("hud-wait"))));
+}
+
+const decoded = {};
+export function preloadSkin() {
+  const skin = document.documentElement.dataset.roulette;
+  if (!skin || skin === "classic") return Promise.resolve();
+  const names = ["frame", "frame_glow", "ptr_t", "ptr_t_glow", "ptr_b", "ptr_b_glow", "panel", "panel_glow", "btn", "btn_on",
+    "btn_on_glow", "primary", "primary_glow", "matter"];
+  return Promise.all(names.map((n) => {
+    const u = `hud/${skin}_${n}.webp`;
+    if (!decoded[u]) {
+      const im = new Image();
+      im.src = u;
+      decoded[u] = im.decode().catch(() => null).then(() => im);   // the decoded image is kept in memory
+    }
+    return decoded[u];
+  }));
 }
 
 export async function launch(opts = {}) {
