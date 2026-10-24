@@ -151,7 +151,7 @@ export function spinLogo(turns = 1.2) {
 const MECH_ORDER = ["top", "jgl", "mid", "adc", "sup"];   // emblems at 0°, 72°, 144°, 216°, 288°
 const mechAngles = { m1: 0, m2: 0, m3: 0, m4: 0 };
 function mechTurn(cls, deg, ms, set = false) {
-  const img = document.querySelector(`.bg-mech .${cls} img`);
+  const img = document.querySelector(`.bg-mech .${cls} i`);
   if (!img) return;
   mechAngles[cls] = set ? deg : mechAngles[cls] + deg;
   img.style.transition = ms ? `transform ${ms}ms cubic-bezier(.12,.72,.18,1)` : "none";

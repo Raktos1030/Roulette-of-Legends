@@ -316,7 +316,7 @@ export function cardHTML(c, opts = {}) {
   const master = lv === 4 && data && data.masters.includes(c.key);
   const how = lv ? t(HOW[L.id]) : t("Joue ce champion à ce poste quand la roulette te le tire");
   const detail = c.at && lv ? ` · ${c.queue || ""} · ${c.at} · ${t("{0} parties, {1} victoires", c.games, c.wins)}` : "";
-  return `<div class="tc lv${lv}${master ? " master" : ""}" data-id="${esc(c.id)}" title="${esc(`${c.name} ${ROLE_LABEL[c.role]} — ${t(L.label)}. ${how}${detail}`)}">
+  return `<div class="tc lv${lv}${master ? " master" : ""}" data-id="${esc(c.id)}" style="--len:${[...c.name].length}" title="${esc(`${c.name} ${ROLE_LABEL[c.role]} — ${t(L.label)}. ${how}${detail}`)}">
     <div class="tc-art"><img src="${img.tall(c.key)}" alt="" loading="lazy"><span class="tc-foil"></span></div>
     <span class="tc-frame"></span><span class="tc-prism"></span>${master ? '<span class="tc-aura"></span>' : ""}
     <span class="tc-medal">${roleIcon(c.role)}</span>
