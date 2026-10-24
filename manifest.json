@@ -1,0 +1,28 @@
+{
+ "format": 1,
+ "patch": "26.21",
+ "generated": "2026-10-24",
+ "ddragon": "16.21.1",
+ "files": {
+  "stats.json": {
+   "sha256": "b2c444a7e5355d70343eb9f858bfeb8238db03537d72bd89535f63ff6445198e",
+   "size": 3076821
+  },
+  "compo.json": {
+   "sha256": "d708ee5a41ad5a32f82ad6eeee7824466dd9bbe53d9e4e28106c4455004e54fc",
+   "size": 1504597
+  },
+  "champions.json": {
+   "sha256": "b7b9b629d2db0e7bf2cf9e023c7421c74ee3bcf0339bbdc981ba0745a6e02c26",
+   "size": 6692
+  },
+  "items.json": {
+   "sha256": "d26c12062a1bfe02ca1de404f806973791be3c12de93b419467672659de566dc",
+   "size": 21045
+  },
+  "runes.json": {
+   "sha256": "b9bd526dc9d0ad97fe45f3d66713d40daff16e1d5dabd99979dd79b35076fc83",
+   "size": 5878
+  }
+ }
+}
