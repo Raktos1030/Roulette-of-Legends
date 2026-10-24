@@ -25,6 +25,7 @@ Les applis sont en français et en anglais.
 |---|:---:|:---:|
 | Roulette solo et de groupe (jusqu'à 5 joueurs), mode chaos | ✓ | ✓ |
 | Roulette officielle (tout au hasard) ou perso (favoris, rôle ou champion choisi), en un clic | ✓ | ✓ |
+| Pas de doublon : aucun champion à un poste déjà tiré dans la journée ou la veille (chacun le sien en groupe) | ✓ | ✓ |
 | Favoris (rôles et champions) | ✓ | ✓ |
 | Classeur : une carte par champion et par poste, gagnée en jouant tes tirages officiels ; parcours de récompenses, skins de roulette | ✓ | ✓ |
 | Tirage suivi dans le client : autofill, ban ou champion pris détectés | ✓ | ✓ |

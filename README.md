@@ -25,6 +25,7 @@ The apps are available in French and English.
 |---|:---:|:---:|
 | Solo and group roulette (up to 5 players), chaos mode | ✓ | ✓ |
 | Official roulette (everything drawn) or personal roulette (favorites, picked role or champion), one click apart | ✓ | ✓ |
+| No duplicate: no champion in a role already rolled today or the day before (each player their own in a group) | ✓ | ✓ |
 | Favorites (roles and champions) | ✓ | ✓ |
 | Binder: a card per champion and role, earned by playing your official rolls; rewards path, roulette skins | ✓ | ✓ |
 | Roll tracked in the client: autofill, bans or a taken champion detected | ✓ | ✓ |
