@@ -1613,6 +1613,10 @@ class Core:
                            "champ": str(p.get("champ") or "").strip()})
             if not 2 <= len(ps) <= 5:
                 return {"error": T("La roulette de groupe se joue de 2 à 5 joueurs.")}
+            official = self.profile["roulette_mode"] == "official"
+            if official:   # the official roulette draws everyone's role and champion
+                for p in ps:
+                    p["role"], p["champ"] = "random", ""
             if sum(1 for p in ps if p["me"]) != 1:
                 ps[0]["me"] = True
                 for p in ps[1:]:
@@ -1632,10 +1636,6 @@ class Core:
                     chosen[i] = ch
             if len({c["key"] for c in chosen.values()}) < len(chosen):
                 return {"error": T("Deux joueurs ont choisi le même champion.")}
-            official = self.profile["roulette_mode"] == "official"
-            mine = next(p for p in ps if p["me"])
-            if official and (mine["role"] in ROLES or mine["champ"]):
-                return {"error": T("Roulette officielle : ton poste et ton champion sont tirés au hasard. Passe en roulette perso pour les choisir.")}
             taken_roles, taken_champs = set(fixed), {c["key"] for c in chosen.values()}
             out = [None] * len(ps)
             # most constrained first: picked champion, then picked role, then fully random

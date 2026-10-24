@@ -166,7 +166,10 @@ function paintKind() {
     paintRoles();
     paintFilters();
     paintStripRoll();
-    if (mode === "group") paintGroupPanel();
+    if (mode === "group") {
+      paintGroupPanel();
+      paintGroupStrips();
+    }
   }));
 }
 
@@ -729,13 +732,13 @@ function paintGroupPanel() {
       <button class="chip chaos${gChaos ? " on" : ""}" data-gchaos title="${esc(t("N'importe quel champion à n'importe quel poste, pour tout le groupe"))}">${CHAOS_ICON}Chaos</button></div>
     <div class="gp-rows">${gPlayers.map((p, i) => {
       const tk = taken(i);
-      const drawn = p.me && official();   // official roulette: your own role and champion are drawn
+      const drawn = official();   // the official roulette draws everyone's role and champion
       const av = p.me ? `<span class="gp-av">${esc(initial(p))}</span>`
         : `<button class="gp-av" data-out title="${esc(p.out ? t("Ne joue pas cette fois : clique pour l'ajouter au tirage") : t("Clique si ce joueur ne veut pas de tirage"))}">${esc(initial(p))}</button>`;
       return `<div class="gp-row${p.me ? " me" : ""}${p.out ? " out" : ""}" data-i="${i}">
         ${av}
         <input class="input gp-name" value="${esc(p.me ? myName() : p.name)}" placeholder="${esc(t("Pseudo du joueur {0}", i + 1))}" ${p.me ? `disabled title="${esc(t("Ton pseudo LoL"))}"` : auto ? `disabled title="${esc(t("Pseudo du salon LoL"))}"` : ""} maxlength="24" spellcheck="false">
-        <div class="gp-roles">${["random", ...ROLES].map((r) => `<button class="gp-role${p.role === r ? " on" : ""}" data-role="${r}" ${p.out || (r !== "random" && (tk.has(r) || drawn)) ? "disabled" : ""} title="${esc(r === "random" ? t("Poste au hasard") : ROLE_LABEL[r])}">${roleIcon(r)}</button>`).join("")}</div>
+        <div class="gp-roles">${["random", ...ROLES].map((r) => `<button class="gp-role${(drawn ? "random" : p.role) === r ? " on" : ""}" data-role="${r}" ${p.out || (r !== "random" && (tk.has(r) || drawn)) ? "disabled" : ""} title="${esc(r === "random" ? t("Poste au hasard") : ROLE_LABEL[r])}">${roleIcon(r)}</button>`).join("")}</div>
         <input class="input gp-champ" list="gp-champs" value="${esc(p.out || drawn ? "" : p.champ)}" placeholder="${esc(p.out ? t("ne joue pas") : t("Champion au hasard"))}" ${p.out || drawn ? "disabled" : ""} spellcheck="false">
         ${p.me ? `<span class="gp-me" title="${esc(t("Ton tirage est suivi dans ton historique"))}">${esc(t("toi"))}</span>` : auto ? "<span></span>" : `<button class="gp-del" title="${esc(t("Retirer ce joueur"))}">×</button>`}
       </div>`;
@@ -807,7 +810,7 @@ function paintGroupStrips() {
     const cards = pool.map((c) => gCard(c.key, c.name)).join("");
     return `<div class="gs-row idle" data-i="${i}">
       <div class="gs-who"><span class="gs-av">${esc(initial(p))}</span>
-        <div class="gs-id"><b>${esc(nameOf(p, gPlayers.indexOf(p)))}</b><span class="gs-role">${roleChip(p)}</span></div></div>
+        <div class="gs-id"><b>${esc(nameOf(p, gPlayers.indexOf(p)))}</b><span class="gs-role">${roleChip(official() ? { role: "random" } : p)}</span></div></div>
       <div class="gs-strip"><div class="gs-view"><div class="gs-track">${cards}${cards}</div></div><i class="gs-mark"></i>${HUD}</div>
     </div>`;
   }).join("");
@@ -860,7 +863,8 @@ async function launchGroup() {
     store.spinning = false;
     if (!ok || !root) return;
   }
-  const r = await call("group_roll", { chaos: gChaos, players: playing().map((p) => ({ name: nameOf(p, gPlayers.indexOf(p)), me: p.me, role: p.role, champ: p.champ })) });
+  const r = await call("group_roll", { chaos: gChaos, players: playing().map((p) => ({ name: nameOf(p, gPlayers.indexOf(p)), me: p.me,
+    role: official() ? "random" : p.role, champ: official() ? "" : p.champ })) });
   if (r.error) {
     setStatus(r.error, "warn");
     toast(r.error, "warn");
