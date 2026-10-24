@@ -18,7 +18,7 @@ const HOW = {
   epic: "Victoire hors classée sur la Faille",
   legendary: "Victoire en classée (Solo/duo ou Flex)",
 };
-const state = { page: "col", view: "cards", role: "all", show: "all", q: "", chaos: true };
+const state = { page: "col", role: "all", show: "all", q: "", chaos: true };
 const PIP = ["none", "played", "rare", "epic", "legendary"];
 // a card back, in the chosen design (animated for the unlocked ones): a light turns over the metal and the gems
 // catch it as it passes (each back at its own point of the turn); hovered, or about to be revealed, they all light up
@@ -200,6 +200,7 @@ async function load() {
   const r = await call("binder");
   if (!root || r.error) return;
   data = r;
+  byChamp = null;
   const title = root.querySelector("#bd-title");
   title.hidden = !r.title;
   title.textContent = r.title || "";
@@ -266,25 +267,18 @@ function paintBacks() {
 
 function paintTools() {
   const box = root.querySelector("#bd-tools");
-  const per = (r) => data.cards.filter((c) => (r === "all" || c.role === r) && c.level >= 2 && (state.chaos || c.guide)).length;
-  const max = (r) => data.cards.filter((c) => (r === "all" || c.role === r) && (state.chaos || c.guide)).length;
-  const champs = state.view === "champs";
+  const counted = (c) => state.chaos || c.guide;
+  const per = (r) => (r === "all" ? champs().filter((ch) => shown(best(ch)) >= 2).length
+    : data.cards.filter((c) => c.role === r && c.level >= 2 && counted(c)).length);
+  const max = (r) => (r === "all" ? champs().length : data.cards.filter((c) => c.role === r && counted(c)).length);
   box.innerHTML = `
-    <div class="bd-left">
-      <div class="seg sm bd-view">${[["cards", t("Cartes")], ["champs", t("Champions")]].map(([v, l]) => `<button data-view="${v}" class="${state.view === v ? "on" : ""}">${esc(l)}</button>`).join("")}</div>
-      ${champs ? "" : `<div class="bd-roles">${["all", ...ROLES].map((r) => `<button class="bd-role${state.role === r ? " on" : ""}" data-role="${r}">
-      ${r === "all" ? "" : roleIcon(r)}<span>${esc(r === "all" ? t("Tous") : ROLE_LABEL[r])}</span><small>${per(r)}/${max(r)}</small></button>`).join("")}</div>`}
-    </div>
+    <div class="bd-roles">${["all", ...ROLES].map((r) => `<button class="bd-role${state.role === r ? " on" : ""}" data-role="${r}">
+      ${r === "all" ? "" : roleIcon(r)}<span>${esc(r === "all" ? t("Tous") : ROLE_LABEL[r])}</span><small>${per(r)}/${max(r)}</small></button>`).join("")}</div>
     <div class="bd-filters">
       <div class="seg sm">${[["all", t("Toutes")], ["got", t("Obtenues")], ["todo", t("À obtenir")]].map(([v, l]) => `<button data-show="${v}" class="${state.show === v ? "on" : ""}">${esc(l)}</button>`).join("")}</div>
       <label class="bd-chaos" title="${esc(t("Les rôles où le champion n'a pas de fiche : ils comptent pour le master set"))}"><input type="checkbox" id="bd-chaos" ${state.chaos ? "checked" : ""}>${CHAOS_ICON}${esc(t("Rôles chaos"))}</label>
       <input class="input bd-search" id="bd-q" value="${esc(state.q)}" placeholder="${esc(t("Chercher un champion…"))}" spellcheck="false">
     </div>`;
-  box.querySelectorAll("[data-view]").forEach((b) => (b.onclick = () => {
-    state.view = b.dataset.view;
-    paintTools();
-    paintGrid();
-  }));
   box.querySelectorAll("[data-role]").forEach((b) => (b.onclick = () => {
     state.role = b.dataset.role;
     paintTools();
@@ -307,6 +301,22 @@ function paintTools() {
   };
 }
 
+// the champions, each with its five cards (roles in order)
+let byChamp = null;
+function champs() {
+  if (!byChamp) {
+    const by = {};
+    data.cards.forEach((c) => (by[c.key] = by[c.key] || { key: c.key, name: c.name, cards: [] }).cards.push(c));
+    byChamp = Object.values(by);
+    byChamp.forEach((ch) => ch.cards.sort((a, b) => ROLES.indexOf(a.role) - ROLES.indexOf(b.role)));
+  }
+  return byChamp;
+}
+// a champion's face in the binder: its best card (as shown: a card still to open keeps its old level), a role with a
+// guide before a chaos one; with nothing yet, its main role locked
+const best = (ch) => ch.cards.filter((c) => state.chaos || c.guide)
+  .reduce((b, c) => (!b || shown(c) > shown(b) || (shown(c) === shown(b) && c.guide && !b.guide) ? c : b), null);
+
 // a card: metal frame by level, art window, role icon in the frame's ring, name plate
 export function cardHTML(c, opts = {}) {
   if (opts.back) return backHTML(data.card_back, ` data-id="${esc(c.id)}" data-lv="${c.level}" title="${esc(t("Carte à ouvrir"))}"`,
@@ -316,14 +326,14 @@ export function cardHTML(c, opts = {}) {
   const master = lv === 4 && data && data.masters.includes(c.key);
   const how = lv ? t(HOW[L.id]) : t("Joue ce champion à ce poste quand la roulette te le tire");
   const detail = c.at && lv ? ` · ${c.queue || ""} · ${c.at} · ${t("{0} parties, {1} victoires", c.games, c.wins)}` : "";
-  return `<div class="tc lv${lv}${master ? " master" : ""}" data-id="${esc(c.id)}" style="--len:${[...c.name].length}" title="${esc(`${c.name} ${ROLE_LABEL[c.role]} — ${t(L.label)}. ${how}${detail}`)}">
+  return `<div class="tc lv${lv}${master ? " master" : ""}" data-id="${esc(c.id)}" style="--len:${[...(opts.label || c.name)].length}" title="${esc(`${c.name} ${ROLE_LABEL[c.role]} — ${t(L.label)}. ${how}${detail}`)}">
     <div class="tc-art"><img src="${img.tall(c.key)}" alt="" loading="lazy"><span class="tc-foil"></span></div>
     <span class="tc-frame"></span><span class="tc-prism"></span>${master ? '<span class="tc-aura"></span>' : ""}
     <span class="tc-medal">${roleIcon(c.role)}</span>
     ${c.guide ? "" : `<span class="tc-chaos" title="${esc(t("Rôle chaos"))}">${CHAOS_ICON}</span>`}
     ${(c.stamps || []).length ? `<span class="tc-stamps">${c.stamps.map((s) => `<i class="tc-stamp ${s}" title="${esc(t((STAMP_INFO.find((x) => x[0] === s) || [])[1] || ""))}">${STAMP_SVG[s]}</i>`).join("")}</span>` : ""}
     ${master ? `<img class="tc-crown" src="/img/cards/crown.webp" alt="" title="${esc(t("Champion maître"))}">` : ""}
-    <div class="tc-plate"><b>${esc(c.name)}</b><span class="tc-sub">${esc(ROLE_LABEL[c.role])} · ${esc(master ? t("Maître") : t(L.label))}</span></div>
+    <div class="tc-plate"><b>${esc(opts.label || c.name)}</b><span class="tc-sub">${opts.label ? "" : `${esc(ROLE_LABEL[c.role])} · `}${esc(master ? t("Maître") : t(L.label))}</span></div>
   </div>`;
 }
 
@@ -340,70 +350,55 @@ function watchCards() {
 }
 
 function paintGrid() {
-  if (state.view === "champs") {
-    paintChamps();
-    return watchCards();
-  }
   const box = root.querySelector("#bd-grid");
-  box.className = "bd-grid";
   const q = norm(state.q);
-  const list = data.cards.filter((c) => (state.role === "all" || c.role === state.role) && (state.chaos || c.guide)
-    && (!q || norm(c.name).includes(q))
-    && (state.show === "all" || (state.show === "got" ? c.level >= 2 : c.level < 4)));
-  if (!list.length) {
-    box.innerHTML = `<div class="card empty">${esc(t("Aucune carte ici pour l'instant."))}</div>`;
+  const counted = (c) => state.chaos || c.guide;
+  const pending = (c) => data.pending.includes(c.id);
+  if (state.role === "all") {   // one card per champion: its best, its five roles below
+    const list = champs().filter((ch) => (!q || norm(ch.name).includes(q)) && (state.show === "all"
+      || (state.show === "got" ? shown(best(ch)) >= 2 : ch.cards.some((c) => counted(c) && c.level < 4))));
+    const score = (ch) => ch.cards.reduce((n, c) => n + (counted(c) ? shown(c) : 0), 0);
+    list.sort((a, b) => shown(best(b)) - shown(best(a)) || score(b) - score(a) || a.name.localeCompare(b.name));
+    box.innerHTML = list.length ? list.map((ch) => `<div class="bd-slot" data-ck="${esc(ch.key)}">
+      ${cardHTML(best(ch), { level: shown(best(ch)) })}
+      ${ch.cards.some(pending) ? `<b class="bd-dot" title="${esc(t("Carte à ouvrir"))}"></b>` : ""}
+      <span class="bd-pips">${ch.cards.filter(counted).map((c) => `<i class="bc-pip ${PIP[shown(c)]}" title="${esc(`${ROLE_LABEL[c.role]} — ${t(levelOf(shown(c)).label)}`)}">${roleIcon(c.role)}</i>`).join("")}</span>
+    </div>`).join("") : `<div class="card empty">${esc(t("Aucun champion ici pour l'instant."))}</div>`;
+    box.querySelectorAll(".bd-slot").forEach((el) => (el.onclick = () => openChampion(el.dataset.ck)));
     return watchCards();
   }
-  // obtained cards first, best first; then the rest by name
-  list.sort((a, b) => b.level - a.level || a.name.localeCompare(b.name) || ROLES.indexOf(a.role) - ROLES.indexOf(b.role));
-  box.innerHTML = list.map((c) => cardHTML(c, { back: data.pending.includes(c.id) })).join("");
+  const list = data.cards.filter((c) => c.role === state.role && counted(c) && (!q || norm(c.name).includes(q))
+    && (state.show === "all" || (state.show === "got" ? c.level >= 2 : c.level < 4)));
+  list.sort((a, b) => b.level - a.level || a.name.localeCompare(b.name));
+  box.innerHTML = list.length ? list.map((c) => `<div class="bd-slot">${cardHTML(c, { back: pending(c) })}</div>`).join("")
+    : `<div class="card empty">${esc(t("Aucune carte ici pour l'instant."))}</div>`;
   box.querySelectorAll(".tc.back").forEach((el) => (el.onclick = () => openBooster([el.dataset.id])));
   box.querySelectorAll(".tc:not(.back):not(.lv0)").forEach((el) => (el.onclick = () => openCard(el.dataset.id)));
   watchCards();
 }
 
-// one tile per champion: completion ring, how many roles done, the five roles by level; a click shows its cards
-function paintChamps() {
-  const box = root.querySelector("#bd-grid");
-  box.className = "bd-champs";
-  const q = norm(state.q);
-  const by = {};
-  data.cards.forEach((c) => (by[c.key] = by[c.key] || { key: c.key, name: c.name, cards: [] }).cards.push(c));
-  const list = Object.values(by).filter((ch) => {
-    const got = ch.cards.filter((c) => c.level >= 2).length;
-    return (!q || norm(ch.name).includes(q)) && (state.show === "all" || (state.show === "got" ? got > 0 : !data.masters.includes(ch.key)));
-  });
-  const score = (ch) => ch.cards.reduce((n, c) => n + c.level, 0);
-  list.sort((a, b) => score(b) - score(a) || a.name.localeCompare(b.name));
-  if (!list.length) {
-    box.innerHTML = `<div class="card empty">${esc(t("Aucun champion ici pour l'instant."))}</div>`;
-    return;
-  }
-  box.innerHTML = list.map((ch) => {
-    const got = ch.cards.filter((c) => c.level >= 2).length, best = ch.cards.filter((c) => c.level === 4).length;
-    const master = data.masters.includes(ch.key);
-    return `<button class="bd-champ${master ? " master" : ""}" data-name="${esc(ch.name)}">
-      <img src="${img.icon(ch.key)}" alt="" data-ring="${esc(ch.key)}">
-      <span class="bc-name">${esc(ch.name)}${master ? ' <img class="bc-crown" src="/img/cards/crown.webp" alt="">' : ""}</span>
-      <span class="bc-count">${esc(t("{0}/5 rôles · {1} légendaires", got, best))}</span>
-      <span class="bc-roles">${ch.cards.map((c) => `<i class="bc-pip ${PIP[c.level]}${c.guide ? "" : " chaos"}" title="${esc(`${ROLE_LABEL[c.role]} — ${t(levelOf(c.level).label)}`)}">${roleIcon(c.role)}</i>`).join("")}</span>
-    </button>`;
-  }).join("");
-  box.querySelectorAll(".bd-champ").forEach((el) => (el.onclick = () => {
-    state.view = "cards";
-    state.role = "all";
-    state.show = "all";
-    state.q = el.dataset.name;
-    paintTools();
-    paintGrid();
-  }));
+// a champion's five cards (a click on one shows its details, a card to open opens the booster)
+function openChampion(key) {
+  const ch = champs().find((x) => x.key === key);
+  if (!ch) return;
+  const master = data.masters.includes(key);
+  const got = ch.cards.filter((c) => shown(c) >= 2).length;
+  const { box } = openModal(`<div class="bch">
+    <span class="kicker">${esc(master ? t("Champion maître") : t("{0}/5 rôles", got))}</span>
+    <h2>${esc(ch.name)}</h2>
+    <div class="bch-cards">${ch.cards.map((c) => `<div class="bch-card">${data.pending.includes(c.id)
+      ? cardHTML(c, { back: true }) : cardHTML(c, { label: ROLE_LABEL[c.role] })}</div>`).join("")}</div>
+  </div>`);
+  box.style.width = "auto";
+  box.querySelectorAll(".tc.back").forEach((el) => (el.onclick = () => openBooster([el.dataset.id])));
+  box.querySelectorAll(".tc:not(.back):not(.lv0)").forEach((el) => (el.onclick = () => openCard(el.dataset.id, key)));
 }
 
 // a card under the pointer: its sound once (a soft swish, a glint on the best ones). A tilted card's edge can slip
 // from under the pointer for a moment: coming back to the same card soon after makes no new sound.
 let hovered = null, leftAt = 0;
 document.addEventListener("pointerover", (e) => {
-  const el = e.target.closest && e.target.closest(".bd-grid .tc, .bd-back .tc, .bd-pack, .bk-card, .bk-mini");
+  const el = e.target.closest && e.target.closest(".bd-grid .tc, .bch-card .tc, .bd-back .tc, .bd-pack, .bk-card, .bk-mini");
   const now = performance.now();
   if (!el) {
     if (hovered && !leftAt) leftAt = now;
@@ -423,7 +418,7 @@ document.addEventListener("pointerover", (e) => {
 // card's slot in the booster, on the reveal table, in the details): the leaning card itself would slip from under it
 // and come back, and shake.
 const tiltOf = (target) => {
-  const slot = target.closest && target.closest(".bk-card, .bk-mini, .cd-card");
+  const slot = target.closest && target.closest(".bk-card, .bk-mini, .cd-card, .bch-card, .bd-slot");
   const card = slot ? slot.querySelector(".bk-front .tc, :scope > .tc") : target.closest && target.closest(".tc");
   if (!card || card.matches(".lv0, .lv1") || card.closest(".bd-pack")) return null;
   return { box: slot || card, card };
@@ -448,7 +443,7 @@ document.addEventListener("pointerout", (e) => {
 });
 
 // --- a card's details (clicked): the card big, how it was earned, its best win and the elo of it ---------
-function openCard(id) {
+function openCard(id, from) {
   const c = data.cards.find((x) => x.id === id);
   if (!c) return;
   const lv = shown(c), L = levelOf(lv);
@@ -458,6 +453,7 @@ function openCard(id) {
   const { box } = openModal(`<div class="cd">
     <div class="cd-card">${cardHTML(c)}</div>
     <div class="cd-info">
+      ${from ? `<button class="cd-back" data-back>‹ ${esc(c.name)}</button>` : ""}
       <span class="kicker">${esc(master ? t("Champion maître") : t(L.label))}</span>
       <h2>${esc(c.name)} · ${esc(ROLE_LABEL[c.role])}${c.guide ? "" : ` <span class="bk-chaos">${CHAOS_ICON}${esc(t("chaos"))}</span>`}</h2>
       <p class="muted">${esc(lv ? t(HOW[L.id]) : "")}</p>
@@ -473,6 +469,7 @@ function openCard(id) {
       }).join("")}</div>` : ""}
     </div></div>`);
   box.style.width = "auto";
+  if (from) box.querySelector("[data-back]").onclick = () => openChampion(from);
 }
 
 // --- booster: cards revealed one by one ---------------------------------------------------------

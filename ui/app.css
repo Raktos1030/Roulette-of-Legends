@@ -1489,8 +1489,8 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 .tc-sub { display: none; max-width: 100%; font: 600 3.3cqw/1 var(--ui); letter-spacing: .14em; text-transform: uppercase; color: var(--tint);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 /* with the second line (big cards): both lines in the window */
-:is(.bk-face, .cd-card) .tc-sub { display: block; }
-:is(.bk-face, .cd-card) .tc-plate b { font-size: min(6.4cqw, calc(var(--fit) / var(--len, 8))); line-height: 1.1; }
+:is(.bk-face, .cd-card, .bch-card) .tc-sub { display: block; }
+:is(.bk-face, .cd-card, .bch-card) .tc-plate b { font-size: min(6.4cqw, calc(var(--fit) / var(--len, 8))); line-height: 1.1; }
 
 /* levels: frame metal, accent and glow */
 .tc.lv0 .tc-art img { filter: grayscale(1) brightness(.2) blur(1px); }
@@ -1668,18 +1668,25 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 img.ringed { box-sizing: border-box; padding: 2.5px; background-origin: border-box; }
 img.ring-master { box-shadow: 0 0 10px rgba(255, 211, 107, .75); }
 
-/* binder: view switch and champion tiles */
-.bd-left { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
-.bd-champs { display: grid; grid-template-columns: repeat(auto-fill, minmax(232px, 1fr)); gap: 12px; }
-.bd-champ { display: grid; grid-template-columns: 52px 1fr; grid-template-rows: auto auto auto; column-gap: 12px; row-gap: 3px; align-items: center; text-align: left;
-  padding: 12px 14px; border-radius: 14px; border: 1px solid var(--hair); background: var(--glass); cursor: pointer; color: var(--text); transition: all .2s; }
-.bd-champ:hover { border-color: var(--hair-2); transform: translateY(-2px); }
-.bd-champ.master { border-color: rgba(255, 211, 107, .55); background: linear-gradient(135deg, rgba(255, 211, 107, .14), var(--glass) 60%); }
-.bd-champ > img { grid-row: 1 / span 3; width: 52px; height: 52px; border-radius: 50%; }
-.bc-name { font: 14px/1.1 var(--display); letter-spacing: .03em; }
-.bc-crown { height: 1.15em; vertical-align: -.15em; margin-left: 2px; filter: drop-shadow(0 0 4px rgba(255, 211, 107, .7)); }
-.bc-count { font-size: 11.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.bc-roles { display: flex; gap: 4px; margin-top: 3px; }
+/* binder by champion: each one's best card, its five roles below as pips colored by level; a dot when a card waits
+   to be opened; a click shows its five cards */
+.bd-slot { position: relative; display: grid; gap: 9px; justify-items: center; align-content: start; }
+.bd-slot > .tc { width: 100%; }
+.bd-slot[data-ck] { cursor: pointer; }
+.bd-pips { display: flex; gap: 4px; }
+.bd-pips .bc-pip { width: 19px; height: 19px; border-width: 1.5px; }
+.bd-pips .bc-pip svg { width: 11px; height: 11px; }
+.bd-dot { position: absolute; top: -4px; right: -4px; z-index: 4; width: 12px; height: 12px; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle at 35% 30%, #fff3cf, #e8b04a 60%, #a06a18); box-shadow: 0 0 0 2px rgb(var(--bg1-rgb)), 0 0 10px rgba(255, 200, 90, .8); }
+.bch { padding: 30px 34px 34px; }
+.bch h2 { margin: 6px 0 20px; font: 30px/1.1 var(--display); letter-spacing: .03em; color: var(--gold-pale); }
+.bch-cards { display: grid; grid-template-columns: repeat(5, 170px); gap: 18px; }
+.bch-card .tc { width: 100%; }
+.bch-card .tc:not(.lv0) { cursor: pointer; }
+@media (max-width: 1080px) { .bch-cards { grid-template-columns: repeat(3, 160px); } }
+.cd-back { display: block; margin: -6px 0 10px; padding: 4px 0; border: 0; background: none; cursor: pointer;
+  font: 12px/1 var(--display); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); transition: color .2s; }
+.cd-back:hover { color: var(--gold-hi); }
 .bc-pip { width: 22px; height: 22px; display: grid; place-items: center; border-radius: 50%; border: 1.5px solid rgba(255, 255, 255, .1); color: rgba(255, 255, 255, .25); }
 .bc-pip svg { width: 13px; height: 13px; }
 .bc-pip.played { border-color: rgba(255, 255, 255, .3); color: rgba(255, 255, 255, .55); }
