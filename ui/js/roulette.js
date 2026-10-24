@@ -191,7 +191,6 @@ function paintFilters() {
   const chips = [
     ["only_fav_roles", `${esc(t("Rôles favoris seulement"))} <span class="n">${(p.fav_roles || []).length}</span>`],
     ["only_fav_champs", `${esc(t("Champions favoris seulement"))} <span class="n">${p.fav_count || 0}</span>`],
-    ["no_repeat", esc(t("Pas de doublon")), t("Aucun champion déjà sorti aujourd'hui ou hier (la journée commence à 6 h)")],
   ].filter(() => !official());   // the official roulette is pure chance: no filter
   const box = root.querySelector("#filters");
   // random build: each roll also draws the picked parts (not in Lite: no import nor overlay there)

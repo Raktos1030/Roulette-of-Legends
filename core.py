@@ -354,7 +354,7 @@ def write_json(path, data, compact=False):
 class Profile:
     DEFAULT = {
         "fav_champs": [], "fav_combos": [], "fav_roles": [], "only_fav_roles": False,
-        "only_fav_champs": False, "no_repeat": True, "lol_dir": None, "tray_hint_shown": False, "overlay_tab_seen": False,
+        "only_fav_champs": False, "lol_dir": None, "tray_hint_shown": False, "overlay_tab_seen": False,
         "binder_seen": {},   # collection binder: per LoL account, the level of each card already opened
         "card_back": "hextech",   # back of the binder cards (unlocked by milestones, collection.BACKS)
         "rewards_seen": {},   # rewards path: per LoL account, the steps already shown (the others are "new")
@@ -1082,7 +1082,7 @@ class Core:
 
     def _profile_view(self):
         p = self.profile
-        keys = ("fav_champs", "fav_combos", "fav_roles", "only_fav_roles", "only_fav_champs", "no_repeat",
+        keys = ("fav_champs", "fav_combos", "fav_roles", "only_fav_roles", "only_fav_champs",
                 "overlay_mode", "overlay_scale", "overlay_opacity", "auto_update", "glossary_hints", "lol_dir", "ambient", "usage_stats",
                 "import_runes", "import_spells", "import_items", "import_replace", "roulette_paused", "app_update_seen",
                 "rbuild_on", "rbuild_parts", "sounds", "sound_volume", "roulette", "opening", "roulette_mode")
@@ -1459,19 +1459,27 @@ class Core:
             self.session_day = today
         return self.session_day
 
-    def _recent_champs(self):
-        """Champions rolled on this roulette day and the day before."""
+    def _recent(self, player=None):
+        """Combos (a champion in a role) rolled on this roulette day and the day before: yours, or in the group rolls
+        those of the player of that name (each player has their own)."""
         day = self._day()
         days = {day, (datetime.date.fromisoformat(day) - datetime.timedelta(days=1)).isoformat()}
-        return {e["key"] for e in self.history.rolls() if (e.get("day") or roulette_day(e["created"])) in days}
+        who = player.strip().casefold() if player else None
+        out = set()
+        for e in self.history.rolls():
+            if (e.get("day") or roulette_day(e["created"])) not in days:
+                continue
+            if who is None:
+                out.add(self.data.combo_key(e["key"], e["role"]))
+            else:
+                out.update(self.data.combo_key(m["key"], m["role"]) for m in e.get("group") or []
+                           if not m.get("me") and str(m.get("name") or "").strip().casefold() == who)
+        return out
 
-    def _pool(self, keys, notes, official=False):
-        """No duplicate (personal roulette): none of the champions rolled today or yesterday, while some are left.
-        The official roulette is pure chance."""
-        if official or not self.profile["no_repeat"]:
-            return list(keys)
-        recent = self._recent_champs()
-        left = [k for k in keys if k.partition("|")[0] not in recent]
+    def _pool(self, keys, notes, recent=None):
+        """No duplicate, a rule of the roulette: none of the combos rolled today or yesterday, while some are left."""
+        recent = self._recent() if recent is None else recent
+        left = [k for k in keys if k not in recent]
         if not left:
             notes.append(T("Tous les champions de ce tirage sont déjà sortis aujourd'hui ou hier."))
             left = list(keys)
@@ -1498,12 +1506,10 @@ class Core:
         """Chaos mode: a random role, then any champion (with or without a guide in that role).
         With a picked champion: that champion in one of the five roles at random."""
         d = self.data
-        role, rstep = self._role_step(ROLES)
+        recent = self._recent()
         ch = d.find_champion(champ) if (champ or "").strip() else None
-        keys = [ch["key"]] if ch else list(d.champs)
-        if not ch and not official and self.profile["no_repeat"]:
-            recent = self._recent_champs()
-            keys = [k for k in keys if k not in recent] or keys
+        role, rstep = self._role_step([r for r in ROLES if not ch or d.combo_key(ch["key"], r) not in recent] or ROLES)
+        keys = [ch["key"]] if ch else [k for k in d.champs if d.combo_key(k, role) not in recent] or list(d.champs)
         winner = random.choice(keys)
         seq = [random.choice(keys) for _ in range(60)]
         seq[53] = winner
@@ -1567,6 +1573,8 @@ class Core:
                     if not cand:
                         cand = roles
                         notes.append(T("Aucun rôle de %s n'est dans tes favoris : tous ses rôles sont en jeu.") % c["name"])
+                recent = self._recent()   # no duplicate: a role it wasn't rolled in today or yesterday
+                cand = [r for r in cand if d.combo_key(c["key"], r) not in recent] or cand
                 if len(cand) == 1:
                     notes.append(T("%s : un seul rôle possible (%s).") % (c["name"], ROLE_LABEL[cand[0]]))
                     result, step = self._champ_step([d.combo_key(c["key"], cand[0])])
@@ -1581,7 +1589,7 @@ class Core:
                 if not keys:
                     return {"error": T("Aucun champion favori jouable en %s. Ajoute-en dans « Favoris » ou désactive "
                                        "« Champions favoris seulement ».") % ROLE_LABEL[role]}
-                result, step = self._champ_step(self._pool(keys, notes, official))
+                result, step = self._champ_step(self._pool(keys, notes))
                 steps.append(step)
             else:
                 mode = "both"
@@ -1599,7 +1607,7 @@ class Core:
                 else:
                     r, step = self._role_step(roles)
                     steps.append(step)
-                result, step = self._champ_step(self._pool(self._champ_pool(r, official), notes, official))
+                result, step = self._champ_step(self._pool(self._champ_pool(r, official), notes))
                 steps.append(step)
 
             rid = "%d%04d" % (time.time() * 1000, random.randint(0, 9999))
@@ -1688,7 +1696,9 @@ class Core:
                     combo = d.combo_key(chosen[i]["key"], role)
                     steps.append(self._champ_step_to(every, combo))
                 else:
-                    pool = [k for k in every if k.partition("|")[0] not in taken_champs]
+                    free = [k for k in every if k.partition("|")[0] not in taken_champs]
+                    recent = self._recent() if p["me"] else self._recent(p["name"])
+                    pool = [k for k in free if k not in recent] or free
                     combo = random.choice(pool)
                     steps.append(self._champ_step_to(pool, combo))
                 if combo not in d.combos:
@@ -1748,6 +1758,8 @@ class Core:
             others = {q["key"] for j, q in enumerate(g["players"]) if j != i}
             every = [d.combo_key(k, p["role"]) for k in d.champs] if g.get("chaos") else d.by_role[p["role"]]
             pool = [k for k in every if k.partition("|")[0] not in others and k != p["combo"]]
+            recent = self._recent() if p["me"] else self._recent(p["name"])
+            pool = [k for k in pool if k not in recent] or pool
             if not pool:
                 return {"error": T("Plus aucun autre champion disponible pour ce poste.")}
             combo = random.choice(pool)
@@ -1833,7 +1845,7 @@ class Core:
             return {"profile": self._profile_view()}
 
     # --- settings -------------------------------------------------------------------
-    PREFS = {"only_fav_roles": bool, "only_fav_champs": bool, "no_repeat": bool, "auto_update": bool,
+    PREFS = {"only_fav_roles": bool, "only_fav_champs": bool, "auto_update": bool,
              "glossary_hints": bool, "ambient": bool, "usage_stats": bool, "overlay_mode": str, "overlay_scale": float,
              "overlay_opacity": float, "import_runes": bool, "import_spells": bool, "import_items": bool,
              "import_replace": bool, "roulette_paused": bool, "app_update_seen": str, "rbuild_on": bool, "sounds": bool,
