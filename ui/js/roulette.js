@@ -191,16 +191,16 @@ function paintFilters() {
   const chips = [
     ["only_fav_roles", `${esc(t("Rôles favoris seulement"))} <span class="n">${(p.fav_roles || []).length}</span>`],
     ["only_fav_champs", `${esc(t("Champions favoris seulement"))} <span class="n">${p.fav_count || 0}</span>`],
-    ["no_repeat", esc(t("Pas de doublon dans la session"))],
-  ].filter(([k]) => !official() || !k.startsWith("only_fav"));   // no favorite filter on the official roulette
+    ["no_repeat", esc(t("Pas de doublon")), t("Aucun champion déjà sorti aujourd'hui ou hier (la journée commence à 6 h)")],
+  ].filter(() => !official());   // the official roulette is pure chance: no filter
   const box = root.querySelector("#filters");
   // random build: each roll also draws the picked parts (not in Lite: no import nor overlay there)
   const parts = p.rbuild_parts || [];
   const rb = isLite() ? "" : `<span class="rb-sep"></span>
     <button class="chip rb${p.rbuild_on ? " on" : ""}" data-rb title="${esc(t("Chaque tirage tire aussi un build au hasard : il s'importe dans LoL au verrouillage et l'overlay le suit"))}"><span class="ck"></span>${DICE_ICON}${esc(t("Build random"))}</button>
     ${p.rbuild_on ? `<span class="rb-parts">${RBUILD_PARTS.map(([k, l]) => `<button class="rb-part${parts.includes(k) ? " on" : ""}" data-part="${k}">${esc(t(l))}</button>`).join("")}</span>` : ""}`;
-  box.innerHTML = `<span class="ctl-label" style="margin:0 6px 0 2px">${esc(t("Filtres"))}</span>` +
-    chips.map(([k, l]) => `<button class="chip${p[k] ? " on" : ""}" data-k="${k}"><span class="ck"></span>${l}</button>`).join("") + rb;
+  box.innerHTML = !chips.length && !rb ? "" : `<span class="ctl-label" style="margin:0 6px 0 2px">${esc(t("Filtres"))}</span>` +
+    chips.map(([k, l, tip]) => `<button class="chip${p[k] ? " on" : ""}" data-k="${k}"${tip ? ` title="${esc(tip)}"` : ""}><span class="ck"></span>${l}</button>`).join("") + rb;
   const save = async (key, value) => {
     const r = await call("set_pref", { key, value });
     if (r.error) return toast(r.error, "bad");

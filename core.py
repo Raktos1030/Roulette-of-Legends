@@ -5,6 +5,7 @@ The UI (ui/ folder, shown in a WebView2 window) talks to this core through the l
 the in-game overlay (overlay.py) reads it directly. Every public method takes the lock, so any thread can call it.
 """
 
+import datetime
 import glob
 import json
 import os
@@ -41,7 +42,19 @@ DOWNLOAD_URL = "https://github.com/Raktos1030/Roulette-of-Legends/releases/lates
 # anonymous launch count (edition, version, system), sent once per launch by release builds; off in Settings
 USAGE_COUNTER = "https://rouletteoflegends.goatcounter.com/count"
 OLD_NAMES = () if LITE else ("Roulette LoL",)   # former app names (Windows startup entry to migrate)
-APP_VERSION = "2.5.1"
+APP_VERSION = "3.0"
+
+
+DAY_START = 6   # the roulette's day starts at 6:00: a late night belongs to the day before
+
+
+def roulette_day(t):
+    """The roulette day of a moment, as an ISO date (it starts at DAY_START)."""
+    return time.strftime("%Y-%m-%d", time.localtime(t - DAY_START * 3600))
+
+
+def _day_after(day):
+    return (datetime.date.fromisoformat(day) + datetime.timedelta(days=1)).isoformat()
 
 
 def find_layout():
@@ -901,7 +914,7 @@ class Core:
         self._window_mode = (0.0, None)   # (read at, LoL display mode)
         self._fullscreen_warned = False
         self.rolls = {}
-        self.drawn = set()
+        self.session_day = roulette_day(time.time())
         self.pending_reason = None
         self.current = None
         self.group = None               # last group roll (to reroll one player)
@@ -1438,14 +1451,29 @@ class Core:
             keys = [k for k in keys if self.profile.is_combo_fav(self.data.combos[k]["key"], role)]
         return keys
 
-    def _pool(self, keys, notes):
-        if not self.profile["no_repeat"]:
+    def _day(self):
+        """This session's roulette day: the day the app was opened, kept through one 6:00 reset (a late night stays
+        in its day until the app is closed); at the next one it catches up with the calendar."""
+        today = roulette_day(time.time())
+        if today > _day_after(self.session_day):   # ISO dates: in order as strings
+            self.session_day = today
+        return self.session_day
+
+    def _recent_champs(self):
+        """Champions rolled on this roulette day and the day before."""
+        day = self._day()
+        days = {day, (datetime.date.fromisoformat(day) - datetime.timedelta(days=1)).isoformat()}
+        return {e["key"] for e in self.history.rolls() if (e.get("day") or roulette_day(e["created"])) in days}
+
+    def _pool(self, keys, notes, official=False):
+        """No duplicate (personal roulette): none of the champions rolled today or yesterday, while some are left.
+        The official roulette is pure chance."""
+        if official or not self.profile["no_repeat"]:
             return list(keys)
-        left = [k for k in keys if k not in self.drawn]
+        recent = self._recent_champs()
+        left = [k for k in keys if k.partition("|")[0] not in recent]
         if not left:
-            for k in keys:
-                self.drawn.discard(k)
-            notes.append(T("Tous les champions de ce tirage sont sortis : la liste repart de zéro."))
+            notes.append(T("Tous les champions de ce tirage sont déjà sortis aujourd'hui ou hier."))
             left = list(keys)
         return left
 
@@ -1473,6 +1501,9 @@ class Core:
         role, rstep = self._role_step(ROLES)
         ch = d.find_champion(champ) if (champ or "").strip() else None
         keys = [ch["key"]] if ch else list(d.champs)
+        if not ch and not official and self.profile["no_repeat"]:
+            recent = self._recent_champs()
+            keys = [k for k in keys if k not in recent] or keys
         winner = random.choice(keys)
         seq = [random.choice(keys) for _ in range(60)]
         seq[53] = winner
@@ -1550,7 +1581,7 @@ class Core:
                 if not keys:
                     return {"error": T("Aucun champion favori jouable en %s. Ajoute-en dans « Favoris » ou désactive "
                                        "« Champions favoris seulement ».") % ROLE_LABEL[role]}
-                result, step = self._champ_step(self._pool(keys, notes))
+                result, step = self._champ_step(self._pool(keys, notes, official))
                 steps.append(step)
             else:
                 mode = "both"
@@ -1568,7 +1599,7 @@ class Core:
                 else:
                     r, step = self._role_step(roles)
                     steps.append(step)
-                result, step = self._champ_step(self._pool(self._champ_pool(r, official), notes))
+                result, step = self._champ_step(self._pool(self._champ_pool(r, official), notes, official))
                 steps.append(step)
 
             rid = "%d%04d" % (time.time() * 1000, random.randint(0, 9999))
@@ -1695,9 +1726,8 @@ class Core:
             full = mine["role"] == "random" and not mine["champ"]
             official = bool(g.get("official")) and full
         self.history.add_roll(me["key"], me["role"], bool(self.lol_state.get("connected")), reason=reason, mode="group",
-                              group=members, full=full, official=official)
+                              group=members, full=full, official=official, day=self._day())
         self._draw_rbuild()
-        self.drawn.add(me["combo"])
         if self.profile["roulette_paused"]:
             self.profile["roulette_paused"] = False
             self.emit("profile", self._profile_view())
@@ -1746,12 +1776,11 @@ class Core:
             tracking = bool(self.lol_state.get("connected"))
             full = collection.roll_full(r["mode"], r["reason"], self.history.pending(), self.history.entries)
             self.history.add_roll(key, role, tracking, reason=r["reason"], mode=r["mode"], favs=r["favs"], full=full,
-                                  official=r.get("official", False))
+                                  official=r.get("official", False), day=self._day())
             self._draw_rbuild()
             if self.profile["roulette_paused"]:   # rolling means wanting to play it: the pause ends
                 self.profile["roulette_paused"] = False
                 self.emit("profile", self._profile_view())
-            self.drawn.add(r["result"])
             self.set_status(T("Résultat : %s %s%s") % (self.data.champ_name(key), ROLE_LABEL[role],
                                                     " (chaos)" if r["mode"] == "chaos" else ""), "gold", toast=False)
             self._history_changed()

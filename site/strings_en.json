@@ -69,5 +69,9 @@
 "{0} : {1} n'est pas joué {2}.": "{0}: {1} isn't played as {2}.",
 "Classeur de cartes et parcours de récompenses": "Card binder and rewards path",
 "Build random importé dans LoL": "Random build imported into LoL",
-"Un classeur à remplir : une carte par champion et par poste, gagnée en jouant tes tirages, et des récompenses à débloquer.": "A binder to fill: a card per champion and role, earned by playing your rolls, and rewards to unlock."
+"Un classeur à remplir : une carte par champion et par poste, gagnée en jouant tes tirages, et des récompenses à débloquer.": "A binder to fill: a card per champion and role, earned by playing your rolls, and rewards to unlock.",
+"Appuie sur « Lancer » !": "Hit \"Spin\"!",
+"Pas de doublon dans la session": "No repeats this session",
+"Ton tirage : {0} {1}. Bonne partie !": "Your roll: {0} {1}. Have a good game!",
+"Tous les champions de ce tirage sont sortis : on remet tout en jeu.": "Every champion in this pool has come up: putting them all back in."
 }

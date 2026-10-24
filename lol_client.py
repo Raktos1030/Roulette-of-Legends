@@ -876,11 +876,11 @@ class RollHistory:
                 "role": None, "game_id": game_id, "puuid": puuid}
 
     def add_roll(self, key, role, tracking, reason=None, now=None, mode=None, favs=None, group=None, full=None,
-                 official=None):
+                 official=None, day=None):
         """mode: "both" (random role + champion), "role" (random role, picked champion),
         "champ" (random champion, picked role). favs: favorite filters active for the roll.
         full: role and champion both drawn. official: made on the official roulette, it fills the binder
-        (collection.py)."""
+        (collection.py). day: the roulette day it belongs to (core.Core._day)."""
         now = now or time.time()
         prev = self.pending()
         if prev:
@@ -905,6 +905,8 @@ class RollHistory:
             entry["favs"] = favs
         if group:
             entry["group"] = group
+        if day:
+            entry["day"] = day
         self.entries.append(entry)
         self.save()
         return entry

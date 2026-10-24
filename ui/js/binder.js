@@ -460,7 +460,7 @@ function openCard(id, from) {
       ${c.rbuild && c.rbuild.games ? row(t("Build random"), esc(c.rbuild.best ? t("Oui, sur la partie qui l'a obtenue")
         : c.rbuild.games > 1 ? t("Sur {0} parties", c.rbuild.games) : t("Sur 1 partie"))) : ""}
       ${row(t("Meilleure victoire"), e ? `<i class="cd-tier t-${e.tier.toLowerCase()}">${esc(e.label)}</i><small>${esc(e.where)}${e.date ? " · " + esc(e.date) : ""}</small>`
-        : `<small>${esc(c.wins ? t("Elo inconnu (victoire d'avant la version 2.6, ou sans rang)") : t("Pas encore de victoire"))}</small>`)}
+        : `<small>${esc(c.wins ? t("Elo inconnu (victoire d'avant la version 3.0, ou sans rang)") : t("Pas encore de victoire"))}</small>`)}
       ${(c.stamps || []).length ? `<div class="cd-stamps">${c.stamps.map((s) => {
         const info = STAMP_INFO.find((x) => x[0] === s) || [s, s, ""];
         return `<div><i class="tc-stamp ${s}">${STAMP_SVG[s]}</i><b>${esc(t(info[1]))}</b><small>${esc(t(info[2]))}</small></div>`;

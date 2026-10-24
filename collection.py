@@ -58,7 +58,7 @@ def is_full(entries, i, depth=0):
 
 
 def is_official(entries, i):
-    """Whether the roll of entry i counts for the binder. Rolls saved before 2.6 have no flag: read from what they
+    """Whether the roll of entry i counts for the binder. Rolls saved before 3.0 have no flag: read from what they
     were (full random, no favorite filter)."""
     e = entries[i]
     if "official" in e:
@@ -77,7 +77,7 @@ def roll_full(mode, reason, replaced, entries):
 
 def rank_of(e):
     """Elo of a game: the rank of its queue at the start for a ranked game, the solo/duo rank otherwise (recorded since
-    2.6); None when unranked or still in placements."""
+    3.0); None when unranked or still in placements."""
     r = e.get("lp_before") or e.get("rank_ref")
     if not r or r.get("provisional") or r.get("tier") not in TIERS:
         return None
