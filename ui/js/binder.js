@@ -42,7 +42,7 @@ export function renderBinder(page) {
     <header class="page-head"><div>
       <div class="kicker">${esc(t("Collection"))}</div>
       <h1 class="page-title">${esc(t("Classeur"))}<span class="bd-title" id="bd-title" hidden></span></h1>
-      <p class="page-sub muted">${esc(t("Une carte par champion et par rôle, gagnée avec la roulette officielle : joue le champion tiré pour l'obtenir, gagne pour la faire monter, gagne en classée pour la légendaire."))}</p>
+      <p class="page-sub muted">${esc(t("Une carte par champion et par rôle, sur la roulette officielle : partie jouée = rare, victoire = épique, victoire en classée = légendaire."))}</p>
     </div></header>
     <div class="seg bd-pages" id="bd-pages"></div>
     <div id="bd-col">
@@ -124,14 +124,14 @@ function paintRewards(r) {
       ${next ? `<div class="rw-next"><span class="kicker">${esc(t("Prochain palier"))}</span><b>${esc(next.name)}</b>
         <span class="muted">${esc(cond(next))} · ${esc(have(next))}</span><i class="rw-bar"><em style="width:${(100 * pct(next)).toFixed(1)}%"></em></i>
         <div class="rw-gifts">${next.rewards.map(reward).join("")}</div></div>`
-        : `<div class="rw-next"><b>${esc(t("Parcours terminé : bravo !"))}</b></div>`}
+        : `<div class="rw-next"><b>${esc(t("Parcours terminé"))}</b></div>`}
     </section>
     <div class="rw-side">
       <section class="card rw-joker${j.available ? " on" : ""}">
         <h3 class="card-title">${KIND_ICON.joker}${esc(t("Joker"))}</h3>
-        <p>${esc(!j.unlocked ? t("Se débloque au premier palier.") : j.available ? t("Disponible : sur ton tirage en attente, il le passe sans le compter comme annulé, et la roulette relance.")
+        <p>${esc(!j.unlocked ? t("Se débloque au premier palier.") : j.available ? t("Disponible : passe ton tirage en attente sans qu'il compte comme annulé, puis relance.")
           : t("Revient dans {0} tirages joués.", j.next_in))}</p>
-        <small class="muted">${esc(t("Un seul en réserve, regagné tous les 10 tirages joués : le hasard reste roi."))}</small>
+        <small class="muted">${esc(t("Un seul en réserve, regagné tous les 10 tirages joués."))}</small>
       </section>
       <section class="card rw-looks">
         ${Object.entries(LOOKS).map(([kind, L]) => `<h3 class="card-title">${KIND_ICON[kind]}${esc(t(L.title))}</h3>
@@ -141,8 +141,7 @@ function paintRewards(r) {
       <section class="card rw-titles">
         <h3 class="card-title">${KIND_ICON.title}${esc(t("Ton titre"))}</h3>
         ${r.titles.length ? `<div class="rw-chips">${[{ id: "", label: t("Aucun") }, ...r.titles].map((x) =>
-          `<button class="chip${(r.title || "") === x.id ? " on" : ""}" data-title="${esc(x.id)}"><span class="ck"></span>${esc(x.label)}</button>`).join("")}</div>
-          <small class="muted">${esc(t("Affiché dans ton classeur et dans le texte « Copier » de la roulette de groupe."))}</small>`
+          `<button class="chip${(r.title || "") === x.id ? " on" : ""}" data-title="${esc(x.id)}"><span class="ck"></span>${esc(x.label)}</button>`).join("")}</div>`
           : `<p class="muted">${esc(t("Le premier titre arrive au premier palier."))}</p>`}
       </section>
     </div>
@@ -158,7 +157,7 @@ function paintRewards(r) {
     </section>
     <section class="card rw-stamps">
       <h3 class="card-title">${KIND_ICON.stamp}${esc(t("Les tampons d'exploit"))}</h3>
-      <p class="muted">${esc(t("Ils se posent sur la carte du champion et du rôle de la partie, pour toujours."))}</p>
+      <p class="muted">${esc(t("Sur la carte du champion et du rôle de la partie."))}</p>
       <div class="rw-stamp-list">${STAMP_INFO.map(([id, name, how]) => `<div><i class="tc-stamp ${id}">${STAMP_SVG[id]}</i><b>${esc(t(name))}</b><small>${esc(t(how))}</small></div>`).join("")}</div>
     </section>`;
   box.querySelectorAll("[data-look]").forEach((b) => (b.onclick = async () => {
@@ -235,8 +234,7 @@ function paintBooster() {
   box.innerHTML = `<section class="card bd-booster">
     <div class="bd-pack">${backHTML().repeat(2)}<span class="bd-top">${backHTML()}</span></div>
     <div class="grow"><div class="kicker">${esc(t("Booster"))}</div>
-      <h3>${esc(n === 1 ? t("1 nouvelle carte à ouvrir") : t("{0} nouvelles cartes à ouvrir", n))}</h3>
-      <p class="muted">${esc(t("Tes dernières parties sur la roulette ont rempli ton classeur."))}</p></div>
+      <h3>${esc(n === 1 ? t("1 nouvelle carte à ouvrir") : t("{0} nouvelles cartes à ouvrir", n))}</h3></div>
     <button class="btn-gold" data-open>${esc(t("Ouvrir"))}</button>
   </section>`;
   box.querySelector("[data-open]").onclick = () => openBooster(data.pending);
@@ -568,7 +566,7 @@ function openBooster(ids) {
           <div class="bk-tier">${esc(t(L.label))}</div>
           <h2>${esc(c.name)} · ${esc(ROLE_LABEL[c.role])}${c.guide ? "" : ` <span class="bk-chaos">${CHAOS_ICON}${esc(t("chaos"))}</span>`}</h2>
           <p class="muted">${esc(t(HOW[L.id]))}${c.at ? esc(` · ${c.queue || ""} · ${c.at}`) : ""}</p>
-          ${crown ? `<p class="bk-master-line">${esc(t("Ses cinq rôles sont légendaires : {0} rejoint tes champions maîtres.", c.name))}${royal ? `<br><b>${esc(t("Dos de carte {0} débloqué !", royal.label))}</b>` : ""}</p>` : ""}
+          ${crown ? `<p class="bk-master-line">${esc(t("{0} : champion maître (ses 5 rôles légendaires).", c.name))}${royal ? `<br><b>${esc(t("Dos de carte {0} débloqué", royal.label))}</b>` : ""}</p>` : ""}
         </div>
         <div class="bk-btns">
           ${queue.length - i > 1 ? `<button class="btn" data-all>${esc(t("Tout révéler"))}</button>` : ""}
@@ -607,7 +605,7 @@ function openBooster(ids) {
         <div class="bk-count">${esc(t("{0} cartes", rest.length))}</div>
         <div class="bk-spread${rest.length > 24 ? " many" : ""}">${rest.map((c, k) => `<div class="bk-mini lv${c.level}" style="--i:${k}"><div class="bk-flip">
           <div class="bk-face bk-front">${cardHTML(c, { level: c.level })}</div><div class="bk-face bk-rear">${backHTML()}</div></div></div>`).join("")}</div>
-        <p class="bk-hint">${esc(t("Clique une carte pour la retourner, ou retourne-les toutes."))}</p>
+        <p class="bk-hint">${esc(t("Clique une carte pour la retourner."))}</p>
         <p class="bk-sum"></p>
         <div class="bk-btns"><button class="btn-gold" data-flipall>${esc(t("Tout retourner"))}</button><button class="btn-gold" data-done hidden>${esc(t("Terminer"))}</button></div>
       </div>`;

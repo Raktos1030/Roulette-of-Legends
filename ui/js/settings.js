@@ -195,7 +195,7 @@ function paintApp() {
     <div class="set-row"><div class="txt"><b>${esc(t("Client League of Legends"))}</b><span>${l.connected ? `${esc(t("Connecté"))}${l.summoner ? " — " + esc(l.summoner) : ""}${l.rank ? " · " + esc(t("Solo/duo {0}", l.rank)) : ""}` : esc(t("Non détecté"))}</span>
         ${store.profile.lol_dir ? `<span class="tiny">${esc(t("Dossier : {0}", store.profile.lol_dir))}</span>` : ""}</div>
       <button class="btn sm" id="a-dir">${esc(t("Choisir le dossier…"))}</button></div>
-    <div class="set-row"><div class="txt"><b>${esc(t("Sons"))}</b><span>${esc(t("La roulette et les cartes du classeur. Pas de musique."))}</span></div>
+    <div class="set-row"><div class="txt"><b>${esc(t("Sons"))}</b><span>${esc(t("La roulette et les cartes du classeur."))}</span></div>
       <div class="snd-row"><input type="range" id="a-vol" min="0.1" max="1" step="0.05" value="${store.profile.sound_volume ?? 0.6}" ${store.profile.sounds === false ? "disabled" : ""}>
         <label class="switch"><input type="checkbox" id="a-snd" ${store.profile.sounds !== false ? "checked" : ""}><i></i></label></div></div>
     <div class="set-row"><div class="txt"><b>${esc(t("Animations"))}</b><span>${esc(t("Coupées, l'appli reste immobile : fond, cadres, effets des cartes, transitions. La roulette tourne toujours."))}</span></div>

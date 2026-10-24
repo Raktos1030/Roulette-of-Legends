@@ -474,7 +474,7 @@ function buildHTML(v) {
     : v.role === "jgl" ? t("Build de la fiche {0}, adapté au poste : Châtiment et compagnon de jungle. Ses chiffres ne valent plus ici.", v.chaos.from_label)
     : v.role === "sup" ? t("Build de la fiche {0}, adapté au poste : objet de support. Ses chiffres ne valent plus ici.", v.chaos.from_label)
     : t("Build de la fiche {0}, adapté au poste. Ses chiffres ne valent plus ici.", v.chaos.from_label))}</p>` : "";
-  const drawn = cur.id === "random" ? `<p class="rb-note">${DICE_ICON}${esc(t("Tiré au hasard pour ce tirage : {0}. Le reste vient de la fiche. Il s'importe dans LoL au verrouillage et l'overlay le suit.",
+  const drawn = cur.id === "random" ? `<p class="rb-note">${DICE_ICON}${esc(t("Tiré au hasard pour ce tirage : {0}. Le reste vient de la fiche.",
     RBUILD_PARTS.filter(([k]) => (cur.parts || []).includes(k)).map(([, l]) => t(l).toLowerCase()).join(", ")))}</p>` : "";
   return `<div class="grid">${note}${tabs}${drawn}<div class="bgrid">${runesCard}${sums}${items}${ctr}${skills}</div></div>`;
 }

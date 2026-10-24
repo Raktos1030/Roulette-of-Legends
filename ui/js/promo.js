@@ -29,7 +29,7 @@ export function openPromo() {
         <div class="pm-art" style="background-image:url('${img.splash(hero)}')"></div><div class="pm-shade"></div>
         <div class="kicker">${esc(t("Version complète"))}</div>
         <h2 class="w-brand">Roulette<small>of</small>Legends</h2>
-        <p class="w-text">${esc(t("La même roulette, avec tout ce qu'il faut pour jouer ton tirage : la fiche du champion, son build et un overlay en partie."))}</p>
+        <p class="w-text">${esc(t("La même roulette, avec la fiche du champion, son build et un overlay en partie."))}</p>
       </div>
       <div class="pm-feats">${features().map(([icon, title, text]) => `
         <div class="pm-feat"><span class="pm-ic">${icon}</span><div><b>${esc(title)}</b><span>${esc(text)}</span></div></div>`).join("")}
@@ -63,7 +63,7 @@ export function wirePromo(box) {
 export function rollPromo(roll) {
   return `<div class="sr-promo">
     <div class="kicker">${esc(t("Version complète"))}</div>
-    <p>${esc(t("La fiche {0} {1} t'attend dans la version complète : plan de lane, matchups et build importé dans LoL.", roll.name, roll.role_label))}</p>
+    <p>${esc(t("La fiche {0} {1} est dans la version complète : plan de lane, matchups et build importé dans LoL.", roll.name, roll.role_label))}</p>
     <button class="more-link" data-promo>${esc(t("Découvrir →"))}</button>
   </div>`;
 }
@@ -72,9 +72,8 @@ export function rollPromo(roll) {
 export function homePromo() {
   return `<section class="card promo-card">
     <div class="pc-text">
-      <div class="kicker">${esc(t("Envie d'aller plus loin ?"))}</div>
       <h3>${esc(t("Roulette of Legends, la version complète"))}</h3>
-      <p class="muted">${esc(t("Ton tirage arrive avec sa fiche de jeu et son build, et un overlay t'accompagne en partie."))}</p>
+      <p class="muted">${esc(t("Fiche de jeu et build pour chaque tirage, overlay en partie."))}</p>
     </div>
     <div class="pc-feats">${features().map(([icon, title]) => `<span class="pc-feat">${icon}${esc(title)}</span>`).join("")}</div>
     <button class="btn-gold" data-promo>${esc(t("Découvrir"))}</button>

@@ -14,12 +14,12 @@ import { renderLive } from "./live.js";
 
 const PAGES = {
   roulette: { label: "Roulette", icon: ICONS.roulette, render: renderRoulette },
-  guides: { label: "Fiche", icon: ICONS.guide, render: renderGuides },
   game: { label: "Partie", icon: ICONS.live, render: renderLive },
+  history: { label: "Historique", icon: ICONS.history, render: renderHistory },
+  guides: { label: "Fiche", icon: ICONS.guide, render: renderGuides },
   favorites: { label: "Favoris", icon: ICONS.star, render: renderFavorites },
   binder: { label: "Classeur", icon: ICONS.binder, render: renderBinder },
-  history: { label: "Historique", icon: ICONS.history, render: renderHistory },
-  glossary: { label: "Lexique", icon: ICONS.book, render: renderGlossary },
+  glossary: { label: "Lexique", icon: ICONS.book, render: renderGlossary, hidden: true },   // out of the menu: the definitions show on hover
   settings: { label: "Réglages", icon: ICONS.gear, render: renderSettings },
 };
 let current = null;
@@ -138,7 +138,7 @@ function buildTitlebar() {
 
 function buildRail() {
   const nav = document.getElementById("rail-nav");
-  nav.innerHTML = Object.entries(PAGES).filter(([id]) => pageOn(id)).map(([id, p]) => `<a class="nav-item" href="#/${id}" data-p="${id}">${p.icon}<span>${esc(t(p.label))}</span></a>`).join("") +
+  nav.innerHTML = Object.entries(PAGES).filter(([id, p]) => pageOn(id) && !p.hidden).map(([id, p]) => `<a class="nav-item" href="#/${id}" data-p="${id}">${p.icon}<span>${esc(t(p.label))}</span></a>`).join("") +
     `<span class="nav-ind" id="nav-ind"></span>`;
   paintBinderBadge();
   document.getElementById("rail-lol").onclick = () => (location.hash = "#/settings");
@@ -255,7 +255,7 @@ async function onEvent(msg) {
       store.boot.card_back = data.card_back;
       paintBinderBadge();
       paintRings();
-      if (data.new > 0) toast(data.new === 1 ? t("Nouvelle carte à ouvrir dans ton classeur !") : t("{0} nouvelles cartes à ouvrir dans ton classeur !", data.new), "gold", 6500);
+      if (data.new > 0) toast(data.new === 1 ? t("Nouvelle carte à ouvrir dans ton classeur") : t("{0} nouvelles cartes à ouvrir dans ton classeur", data.new), "gold", 6500);
       dispatch("binder", data);
       break;
     case "rewards":

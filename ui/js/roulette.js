@@ -28,7 +28,7 @@ export function renderRoulette(page) {
       <div class="gpanel" id="gpanel"></div>
       <div class="ctl-roles"><div class="ctl-label">${esc(t("Rôle"))}</div><div class="roles" id="roles"></div></div>
       <div class="ctl-official"><div class="ctl-label">${esc(t("Roulette officielle"))}</div>
-        <p>${esc(t("Le rôle et le champion sont tirés au hasard, en solo comme en groupe, chaos ou non. C'est elle qui remplit ton classeur et fait avancer tes récompenses."))}</p></div>
+        <p>${esc(t("Rôle et champion tirés au hasard, en solo comme en groupe. Remplit ton classeur et fait avancer tes récompenses."))}</p></div>
       <div class="ctl-champ"><div class="ctl-label">${esc(t("Champion"))}</div>
         <div class="champ-field">
           <span class="cf-icon" id="cf-icon">?</span>
@@ -385,10 +385,10 @@ function paintStripRoll() {
   }
   const kicker = inGame ? t("Partie en cours") : paused ? t("Tirage en pause") : t("Ton tirage");
   const sub = inGame ? t("Le résultat et les LP s'ajoutent à ton historique à la fin de la partie.")
-    : paused ? t("Tes parties ne comptent pas pour la roulette. Il t'attend, reprends quand tu veux.")
-    : t("À jouer sur la Faille. L'ARAM et les autres modes ne le comptent jamais.");
+    : paused ? t("Tes parties ne comptent pas pour la roulette.")
+    : t("À jouer sur la Faille : les autres modes ne comptent pas.");
   const tip = paused ? t("Tes prochaines parties sur la Faille compteront à nouveau pour ce tirage")
-    : t("Pour une partie sans la roulette (classée avec des potes…) : elle ne comptera pas, ton tirage restera en attente");
+    : t("Tes parties ne compteront pas, ton tirage reste en attente");
   box.innerHTML = `
     <div class="sr-art" style="background-image:url('${img.splash(roll.key)}')"></div><div class="sr-shade"></div>
     <div class="sr-body">
@@ -620,7 +620,7 @@ export async function launch(opts = {}) {
       if (!root || !document.body.contains(root)) return;
       idleStrip();
       renderWelcome(root.querySelector("#stage"));
-      setStatus(t("Ton tirage : {0} {1}. Bonne partie !", c.combo.champ.name, c.combo.role_label), "gold");
+      setStatus(t("Ton tirage : {0} {1}.", c.combo.champ.name, c.combo.role_label), "gold");
       return;
     }
     await sleep(750);   // time to see the winning card
@@ -984,7 +984,7 @@ function renderWelcome(stage) {
         <div class="recent-item" data-combo="${esc(it.combo)}"><img src="${img.icon(it.key)}" alt="">
           <div><div class="ri-name">${esc(it.name)}</div><div class="ri-sub">${esc(it.sub)}</div></div>
           <span class="ri-glyph t-${it.tone}">${esc(it.glyph)}</span></div>`).join("")}</div>`
-        : `<div class="empty">${esc(t("Aucun tirage pour l'instant."))}<br>${esc(t("Appuie sur « Lancer » !"))}</div>`}
+        : `<div class="empty">${esc(t("Aucun tirage pour l'instant."))}</div>`}
     </section>
     ${isLite() ? homePromo() : ""}
   </div>`;

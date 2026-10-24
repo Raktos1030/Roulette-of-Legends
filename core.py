@@ -1445,7 +1445,7 @@ class Core:
         if not left:
             for k in keys:
                 self.drawn.discard(k)
-            notes.append(T("Tous les champions de ce tirage sont sortis : on remet tout en jeu."))
+            notes.append(T("Tous les champions de ce tirage sont sortis : la liste repart de zéro."))
             left = list(keys)
         return left
 
@@ -1954,8 +1954,8 @@ class Core:
         self.emit("binder", {"pending": pending, "rings": self._binder_rings(got), "card_back": self._card_back(got),
                              "new": max(0, new)})
         if new > 0 and self.tray and self.tray.running and not getattr(self.ui, "visible", lambda: False)():
-            self.tray.notify(T("Nouvelle carte à ouvrir dans ton classeur !") if new == 1
-                             else T("%d nouvelles cartes à ouvrir dans ton classeur !") % new)
+            self.tray.notify(T("Nouvelle carte à ouvrir dans ton classeur") if new == 1
+                             else T("%d nouvelles cartes à ouvrir dans ton classeur") % new)
         rw = self._rewards(got)
         done = {s["id"] for s in rw["steps"] if s["done"]}
         before = self._rewards_done[1] if self._rewards_done[0] == account else done   # not on an account switch
@@ -2600,7 +2600,7 @@ class Core:
             return
         official = collection.is_official(self.history.entries, self.history.entries.index(e))
         self._queue_ask = {"queue": q.get("id"), "key": e["key"], "role": e["role"], "official": official, "since": time.time()}
-        self.set_status(T("Recherche lancée (%s) : ton tirage %s %s comptera. Pas voulu ? Mets la roulette en pause.") % (
+        self.set_status(T("Recherche lancée (%s) : ton tirage %s %s comptera, sauf si tu mets la roulette en pause.") % (
             T(lol.queue_name(q.get("id"))) or T("partie"), self.data.champ_name(e["key"]), ROLE_LABEL.get(e["role"], "")), "gold")
 
     def queue_prompt(self):
@@ -2618,7 +2618,7 @@ class Core:
             if not counts:
                 self.profile["roulette_paused"] = True
                 self.emit("profile", self._profile_view())
-                self.set_status(T("Roulette en pause : cette partie ne comptera pas, ton tirage t'attend."), "teal")
+                self.set_status(T("Roulette en pause : cette partie ne comptera pas, ton tirage reste en attente."), "teal")
             return {"ok": True}
 
     def _autofill_keep(self, cs):
@@ -2707,7 +2707,7 @@ class Core:
         if not problem:
             my = cs.get("my_champ")
             if my == cid and cs.get("locked"):
-                line(T("%s verrouillé. Bonne partie !") % name, "good")
+                line(T("%s verrouillé.") % name, "good")
             elif my and my != cid and cs.get("locked"):
                 line(T("Tu as verrouillé %s au lieu de %s.") % (d.champ_name(d.cid_to_key.get(my)), name), "warn")
             else:
