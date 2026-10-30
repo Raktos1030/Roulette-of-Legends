@@ -1,3 +1,8 @@
+### What's new in 3.0.1
+
+- Legal notices, privacy and credits on one page of the site, linked from Settings › About.
+- Anonymous statistics, still with no identifier: a new install, an update, a presence once a day and once a week. Settings › About › Privacy turns them off.
+
 ### What's new in 3.0
 
 - Official roulette (role and champion drawn, it fills the binder) and personal roulette (favorites, picked role or champion), one click apart.
@@ -9,6 +14,11 @@
 - Pending roll and favorites per LoL account.
 - Guides for Hwei, Brand, Syndra, Vel'Koz, Xerath and Katarina ADC, Ashe, Galio, Ivern and Mel support; bot lane duos ranked again.
 - Sounds, an Animations setting (off: the app holds still), a smoother app.
+
+### Nouveautés de la 3.0.1
+
+- Mentions légales, confidentialité et crédits sur une page du site, accessible depuis Réglages › À propos.
+- Statistiques anonymes, toujours sans identifiant : nouvelle installation, mise à jour, présence une fois par jour et une fois par semaine. Réglages › À propos › Confidentialité les coupe.
 
 ### Nouveautés de la 3.0
 

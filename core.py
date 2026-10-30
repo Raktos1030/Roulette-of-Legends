@@ -43,7 +43,7 @@ SITE_URL = "https://raktos1030.github.io/Roulette-of-Legends/"
 # anonymous launch count (edition, version, system), sent once per launch by release builds; off in Settings
 USAGE_COUNTER = "https://rouletteoflegends.goatcounter.com/count"
 OLD_NAMES = () if LITE else ("Roulette LoL",)   # former app names (Windows startup entry to migrate)
-APP_VERSION = "3.0"
+APP_VERSION = "3.0.1"
 
 
 DAY_START = 6   # the roulette's day starts at 6:00: a late night belongs to the day before
