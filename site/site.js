@@ -1029,6 +1029,49 @@
   }
 
   // =============================================================================================================
+  // Legal notices, privacy and credits (out of the menu: linked from the footer and from the apps' settings)
+  // =============================================================================================================
+  function renderInfos(page) {
+    root = page;
+    backdrop(heroKey);
+    const ext = (url, label) => `<a href="${url}" target="_blank" rel="noopener">${esc(label)}</a>`;
+    const list = (rows) => `<dl class="info-list">${rows.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join("")}</dl>`;
+    page.innerHTML = `
+    <div class="page-enter info-page">
+      <header class="page-head"><div><h1 class="page-title">${esc(t("Mentions légales et crédits"))}</h1></div></header>
+      <section class="card">
+        <h3 class="card-title">Roulette of Legends</h3>
+        <p>${esc(t("Site et applis gratuits, sans compte, faits par Raktos."))} ${ext("https://github.com/Raktos1030/Roulette-of-Legends", t("Code source sur GitHub"))}</p>
+      </section>
+      <section class="card">
+        <h3 class="card-title">Riot Games</h3>
+        <p>${esc(t("Roulette of Legends n'est pas approuvée par Riot Games et ne reflète pas les opinions de Riot Games ni de quiconque officiellement impliqué dans la production ou la gestion des propriétés de Riot Games. Riot Games et toutes les propriétés associées sont des marques commerciales ou déposées de Riot Games, Inc."))}</p>
+        <p>${esc(t("Les applis lisent le client LoL et ne jouent jamais à ta place : aucun pick, ban, verrouillage ni message. Si tu l'actives, la version complète importe ta page de runes, tes sorts d'invocateur et un set d'objets une fois ton champion verrouillé, et passe le jeu en « Sans bordure » quand tu cliques sur ce bouton."))}</p>
+      </section>
+      <section class="card">
+        <h3 class="card-title">${esc(t("Confidentialité"))}</h3>
+        ${list([
+          [t("Tes données"), esc(t("Tirages, historique, classeur et réglages restent sur ton ordinateur ; sur le site, dans ton navigateur."))],
+          [t("Comptages de l'appli"), esc(t("Anonymes, sans identifiant : une nouvelle installation, une mise à jour, une présence par jour et par semaine, avec l'édition, la version et le système. Réglages › Statistiques anonymes les coupe."))],
+          [t("Comptages du site"), esc(t("Les visites et les clics sur « Télécharger », sans cookie."))],
+          [t("Mesure d'audience"), `${ext("https://www.goatcounter.com", "GoatCounter")}${esc(t(", qui ne conserve pas les adresses IP : il en déduit seulement le pays."))}`],
+          [t("Mises à jour"), esc(t("L'appli télécharge les statistiques du patch (GitHub, ou lolalytics et u.gg) et les images du jeu (Data Dragon de Riot)."))],
+        ])}
+      </section>
+      <section class="card">
+        <h3 class="card-title">${esc(t("Crédits"))}</h3>
+        ${list([
+          [t("Statistiques"), `${ext("https://lolalytics.com", "lolalytics.com")}, ${ext("https://u.gg", "u.gg")}`],
+          [t("Profils de champions"), "Meraki Analytics"],
+          [t("Illustrations et données du jeu"), esc(t("Riot Games (Data Dragon)"))],
+          [t("Polices"), esc(t("Marcellus SC et Cinzel (SIL Open Font License). Dans l'appli, les polices de LoL sont lues dans ton installation du jeu, jamais redistribuées."))],
+          [t("Sons de l'appli"), `${ext("https://elevenlabs.io", "ElevenLabs")}, ${ext("https://kenney.nl", "Kenney")} (CC0)`],
+        ])}
+      </section>
+    </div>`;
+  }
+
+  // =============================================================================================================
   // Favorites page
   // =============================================================================================================
   const favState = { q: "", role: "all", only: false };
@@ -1178,12 +1221,13 @@
     favorites: { label: "Favoris", icon: NAV_ICONS.favorites, render: renderFavorites },
     rolls: { label: "Tirages", icon: NAV_ICONS.rolls, render: renderRolls },
     app: { label: "App", icon: NAV_ICONS.app, render: renderApps },
+    infos: { label: "Mentions légales et crédits", render: renderInfos, hidden: true },   // linked from the footer
   };
   let heroKey = pick(CHAMPS).key;
 
   function buildChrome() {
     document.documentElement.lang = LANG;
-    document.getElementById("top-nav").innerHTML = Object.entries(PAGES).map(([id, p]) =>
+    document.getElementById("top-nav").innerHTML = Object.entries(PAGES).filter(([, p]) => !p.hidden).map(([id, p]) =>
       `<a class="top-item" href="#/${id}" data-p="${id}">${p.icon}<span>${esc(t(p.label))}</span></a>`).join("");
     document.querySelectorAll("#top-lang button").forEach((b) => {
       b.classList.toggle("on", b.dataset.lang === LANG);
@@ -1196,9 +1240,7 @@
     document.getElementById("foot").innerHTML = `
       <div class="foot-row"><span>${esc(t("Statistiques du patch {0} : rôles joués par chaque champion (Émeraude+).", D.patch))}</span>
         <a href="#/app" class="t-gold">${esc(t("Télécharger l'appli →"))}</a>
-        <span>${esc(t("Illustrations : Riot Games (Data Dragon)."))}</span>
-        <span>${esc(t("Mesure d'audience anonyme, sans cookies."))}</span></div>
-      <p class="legal">${esc(t("Roulette of Legends n'est pas approuvée par Riot Games et ne reflète pas les opinions de Riot Games ni de quiconque officiellement impliqué dans la production ou la gestion des propriétés de Riot Games. Riot Games et toutes les propriétés associées sont des marques commerciales ou déposées de Riot Games, Inc."))}</p>`;
+        <a href="#/infos">${esc(t("Mentions légales et crédits"))}</a></div>`;
     document.querySelector("#top .top-brand").onmouseenter = () => spinLogo(1.2);
   }
 

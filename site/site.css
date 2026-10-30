@@ -92,6 +92,15 @@ body.site .btn-gold::after { left: 0; transform: translateX(-150%) skewX(-20deg)
 .app-dl .btn, .app-dl .btn-gold { display: inline-flex; align-items: center; gap: 9px; }
 .app-dl svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .app-note { margin: 12px 0 0; font-size: 12.5px; color: var(--muted); }
+/* legal notices and credits */
+.info-page { display: grid; gap: 16px; }
+.info-page .card { display: grid; gap: 10px; }
+.info-page p { margin: 0; max-width: 78ch; color: var(--text-2); font-size: 14px; line-height: 1.6; }
+.info-page a { color: var(--gold-hi); }
+.info-list { display: grid; grid-template-columns: minmax(150px, 230px) minmax(0, 1fr); gap: 10px 22px; margin: 0; font-size: 14px; }
+.info-list dt { color: var(--muted); }
+.info-list dd { margin: 0; color: var(--text-2); line-height: 1.55; }
+@media (max-width: 640px) { .info-list { grid-template-columns: 1fr; gap: 2px 0; } .info-list dd { margin-bottom: 10px; } }
 .app-card .btn-gold svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .cmp { width: 100%; border-collapse: collapse; font-size: 14px; }
 .cmp th, .cmp td { padding: 10px 12px; border-bottom: 1px solid var(--hair); }

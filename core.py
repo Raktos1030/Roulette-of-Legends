@@ -39,6 +39,7 @@ INSTALLER_ID = "{A36DEF74-B253-4708-9DA3-548AAB07E962}" if LITE else "{3F6AB0D1-
 APP_SHORT = "RoL"
 # download page of both apps (release page), shown by the Lite to promote the full app; empty until published
 DOWNLOAD_URL = "https://github.com/Raktos1030/Roulette-of-Legends/releases/latest"
+SITE_URL = "https://raktos1030.github.io/Roulette-of-Legends/"
 # anonymous launch count (edition, version, system), sent once per launch by release builds; off in Settings
 USAGE_COUNTER = "https://rouletteoflegends.goatcounter.com/count"
 OLD_NAMES = () if LITE else ("Roulette LoL",)   # former app names (Windows startup entry to migrate)
@@ -1893,6 +1894,12 @@ class Core:
         import webbrowser
         webbrowser.open(url)
         return {"ok": True, "url": url}
+
+    def api_open_legal(self):
+        """Settings link: legal notices, privacy and credits, on the site's page in the app's language."""
+        import webbrowser
+        webbrowser.open(SITE_URL + ("en/" if lang() == "en" else "") + "#/infos")
+        return {"ok": True}
 
     def api_open_download(self):
         """"Download" button of the Lite's full app promo: opens the release page."""
