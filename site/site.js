@@ -1052,7 +1052,7 @@
         <h3 class="card-title">${esc(t("Confidentialité"))}</h3>
         ${list([
           [t("Tes données"), esc(t("Tirages, historique, classeur et réglages restent sur ton ordinateur ; sur le site, dans ton navigateur."))],
-          [t("Comptages de l'appli"), esc(t("Anonymes, sans identifiant : une nouvelle installation, une mise à jour, une présence par jour et par semaine, avec l'édition, la version et le système. Réglages › Statistiques anonymes les coupe."))],
+          [t("Comptages de l'appli"), esc(t("Anonymes, sans identifiant : une nouvelle installation, une mise à jour, une présence par jour et par semaine, avec l'édition, la version et le système. Réglages › À propos › Statistiques anonymes les coupe."))],
           [t("Comptages du site"), esc(t("Les visites et les clics sur « Télécharger », sans cookie."))],
           [t("Mesure d'audience"), `${ext("https://www.goatcounter.com", "GoatCounter")}${esc(t(", qui ne conserve pas les adresses IP : il en déduit seulement le pays."))}`],
           [t("Mises à jour"), esc(t("L'appli télécharge les statistiques du patch (GitHub, ou lolalytics et u.gg) et les images du jeu (Data Dragon de Riot)."))],

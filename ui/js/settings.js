@@ -199,9 +199,7 @@ function paintApp() {
       <div class="snd-row"><input type="range" id="a-vol" min="0.1" max="1" step="0.05" value="${store.profile.sound_volume ?? 0.6}" ${store.profile.sounds === false ? "disabled" : ""}>
         <label class="switch"><input type="checkbox" id="a-snd" ${store.profile.sounds !== false ? "checked" : ""}><i></i></label></div></div>
     <div class="set-row"><div class="txt"><b>${esc(t("Animations"))}</b><span>${esc(t("Coupées, l'appli reste immobile : fond, cadres, effets des cartes, transitions. La roulette tourne toujours."))}</span></div>
-      <label class="switch"><input type="checkbox" id="a-amb" ${store.profile.ambient !== false ? "checked" : ""}><i></i></label></div>
-    <div class="set-row"><div class="txt"><b>${esc(t("Statistiques anonymes"))}</b><span>${esc(t("Sans identifiant : nouvelle installation, mise à jour, et une présence par jour et par semaine (édition, version, Windows ou Mac)."))}</span></div>
-      <label class="switch"><input type="checkbox" id="a-usage" ${store.profile.usage_stats !== false ? "checked" : ""}><i></i></label></div>`;
+      <label class="switch"><input type="checkbox" id="a-amb" ${store.profile.ambient !== false ? "checked" : ""}><i></i></label></div>`;
   const auto = box.querySelector("#a-auto");
   if (auto) auto.onchange = async (e) => {
     const r = await call("autostart", { on: e.target.checked });
@@ -218,7 +216,6 @@ function paintApp() {
     await setPref("sound_volume", +e.target.value);
     sound.win(false);   // hear the new volume
   };
-  box.querySelector("#a-usage").onchange = (e) => setPref("usage_stats", e.target.checked);
   box.querySelectorAll("#a-lang button").forEach((b) => (b.onclick = async () => {
     if (b.dataset.lang === LANG) return;
     const r = await call("set_lang", { lang: b.dataset.lang });
@@ -239,13 +236,15 @@ function paintAbout() {
       <dt>${esc(t("Version"))}</dt><dd>${esc(b.app.name)} ${esc(b.app.version)}${b.app_update ? ` · <a href="#" class="t-gold" data-dl>${esc(t("version {0} disponible", b.app_update.version))}</a>` : ""}</dd>
       ${isLite() ? "" : `<dt>${esc(t("Fiches"))}</dt><dd>${esc(t("{0} combinaisons champion + rôle", b.meta.guides))}</dd>`}
     </dl>
-    <a href="#" class="about-legal" data-legal>${esc(t("Mentions légales et crédits"))} ↗</a>
+    <div class="about-foot"><a href="#" class="about-legal" data-legal>${esc(t("Mentions légales et crédits"))} ↗</a>
+      <label class="about-usage" title="${esc(t("Sans identifiant : nouvelle installation, mise à jour, et une présence par jour et par semaine (édition, version, Windows ou Mac)."))}"><input type="checkbox" id="a-usage" ${store.profile.usage_stats !== false ? "checked" : ""}>${esc(t("Statistiques anonymes"))}</label></div>
     ${isLite() ? aboutPromo() : ""}`;
   wirePromo(root.querySelector("#s-about"));
   root.querySelector("#s-about [data-legal]").onclick = (e) => {
     e.preventDefault();
     call("open_legal");
   };
+  root.querySelector("#a-usage").onchange = (e) => setPref("usage_stats", e.target.checked);
   const dl = root.querySelector("#s-about [data-dl]");
   if (dl) dl.onclick = async (e) => {
     e.preventDefault();

@@ -82,7 +82,6 @@
 "Tes données": "Your data",
 "Tirages, historique, classeur et réglages restent sur ton ordinateur ; sur le site, dans ton navigateur.": "Rolls, history, binder and settings stay on your computer; on the site, in your browser.",
 "Comptages de l'appli": "App counts",
-"Anonymes, sans identifiant : une nouvelle installation, une mise à jour, une présence par jour et par semaine, avec l'édition, la version et le système. Réglages › Statistiques anonymes les coupe.": "Anonymous, with no identifier: a new install, an update, a presence once a day and once a week, with the edition, the version and the system. Settings › Anonymous statistics turns them off.",
 "Comptages du site": "Site counts",
 "Les visites et les clics sur « Télécharger », sans cookie.": "Visits and clicks on \"Download\", with no cookie.",
 "Mesure d'audience": "Audience measurement",
@@ -96,5 +95,6 @@
 "Riot Games (Data Dragon)": "Riot Games (Data Dragon)",
 "Polices": "Fonts",
 "Marcellus SC et Cinzel (SIL Open Font License). Dans l'appli, les polices de LoL sont lues dans ton installation du jeu, jamais redistribuées.": "Marcellus SC and Cinzel (SIL Open Font License). In the app, LoL's fonts are read from your game install, never redistributed.",
-"Sons de l'appli": "App sounds"
+"Sons de l'appli": "App sounds",
+"Anonymes, sans identifiant : une nouvelle installation, une mise à jour, une présence par jour et par semaine, avec l'édition, la version et le système. Réglages › À propos › Statistiques anonymes les coupe.": "Anonymous, with no identifier: a new install, an update, a presence once a day and once a week, with the edition, the version and the system. Settings › About › Anonymous statistics turns them off."
 }
