@@ -200,7 +200,7 @@ function paintApp() {
         <label class="switch"><input type="checkbox" id="a-snd" ${store.profile.sounds !== false ? "checked" : ""}><i></i></label></div></div>
     <div class="set-row"><div class="txt"><b>${esc(t("Animations"))}</b><span>${esc(t("Coupées, l'appli reste immobile : fond, cadres, effets des cartes, transitions. La roulette tourne toujours."))}</span></div>
       <label class="switch"><input type="checkbox" id="a-amb" ${store.profile.ambient !== false ? "checked" : ""}><i></i></label></div>
-    <div class="set-row"><div class="txt"><b>${esc(t("Statistiques anonymes"))}</b><span>${esc(t("Compte les lancements de l'appli (version, Windows ou Mac). Rien d'autre n'est envoyé."))}</span></div>
+    <div class="set-row"><div class="txt"><b>${esc(t("Statistiques anonymes"))}</b><span>${esc(t("Sans identifiant : nouvelle installation, mise à jour, et une présence par jour et par semaine (édition, version, Windows ou Mac)."))}</span></div>
       <label class="switch"><input type="checkbox" id="a-usage" ${store.profile.usage_stats !== false ? "checked" : ""}><i></i></label></div>`;
   const auto = box.querySelector("#a-auto");
   if (auto) auto.onchange = async (e) => {

@@ -116,17 +116,20 @@ USER_ENTRIES = {"profile.json", "history.json", "games", "cache", "update.json",
 STATS_FILES = ("stats.json", "compo.json", "champions.json", "items.json", "runes.json")   # also refreshed online
 ROLE_MIN_SHARE = 10   # % of a champion's games: below that, a role is marginal (Tahm Kench in the bot lane...)
 BUNDLE_MARK = ".bundle"   # in data/: app version whose bundled data was last copied
+INSTALL_STATE = None      # "new" (first launch on this computer) or "update" (first launch of a version): seed_data_dir
 
 
 def seed_data_dir():
     """Release build: fills the user's data/ from the bundled one. First launch: copies everything (with the
     profile and history of a version that kept them next to the exe). After an update: copies the new guides and
     texts, and the bundled stats only when they are newer than the ones downloaded since."""
+    global INSTALL_STATE
     if not BUNDLED_DATA:
         return
     mark = os.path.join(DATA, BUNDLE_MARK)
     if not os.path.isdir(DATA):
         shutil.copytree(BUNDLED_DATA, DATA)
+        INSTALL_STATE = "new"
     else:
         try:
             with open(mark, encoding="utf-8") as f:
@@ -134,6 +137,7 @@ def seed_data_dir():
                     return
         except OSError:
             pass
+        INSTALL_STATE = "update"
 
         def generated(folder):
             return ((read_json(os.path.join(folder, "stats.json"), {}) or {}).get("meta") or {}).get("generated") or ""
@@ -365,6 +369,7 @@ class Profile:
         "overlay_mode": "tab", "overlay_side": "right", "overlay_page": "early",
         "overlay_pos": None, "overlay_scale": 1.0, "overlay_opacity": 0.95, "overlay_modules": {},
         "auto_update": True, "seen_update": None, "glossary_hints": True, "ambient": True, "usage_stats": True,
+        "usage_day": None, "usage_week": None,   # last day and week counted as a presence (count_usage)
         "lang": "",              # "fr", "en"; empty = the Windows language
         "import_runes": True, "import_spells": True, "import_items": True, "import_replace": False,
         "build_pick": {},   # build variant picked per guide (Build tab), imported in champ select
@@ -3163,24 +3168,49 @@ class Core:
             self._installer.start()
         return {"ok": True}
 
-    def count_launch(self):
-        """One anonymous hit per launch: path /app/<edition>/<version>/<system>, nothing else about the user."""
-        if not (USAGE_COUNTER and BUNDLED_DATA and self.profile.get("usage_stats", True)) or os.environ.get("ROL_NO_COUNT"):
-            return
+    def _count(self, path, title):
+        """One anonymous hit on the counter (a page with a plain title); False when it couldn't be sent."""
+        if not self.profile.get("usage_stats", True):
+            return True   # turned off: nothing to send, nothing to retry
         import urllib.parse
         import urllib.request
-        system = "mac" if MAC else "windows"
-        query = urllib.parse.urlencode({"p": "/app/%s/%s/%s" % ("lite" if LITE else "full", APP_VERSION, system),
-                                        "t": "%s %s" % (APP_NAME, APP_VERSION), "b": 0,
-                                        "rnd": "%05x" % random.randrange(16 ** 5)})
+        query = urllib.parse.urlencode({"p": path, "t": title, "b": 0, "rnd": "%05x" % random.randrange(16 ** 5)})
         # the system as a web view of that platform reports it (shown in the counter's "Systems")
         ua = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)" if MAC else
               "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36")
         try:
             urllib.request.urlopen(urllib.request.Request(USAGE_COUNTER + "?" + query, headers={"User-Agent": ua}),
                                    timeout=15).close()
+            return True
         except Exception:
-            pass
+            return False
+
+    def count_usage(self):
+        """Anonymous usage counts, without any identifier (off in Settings), that tell new players from old ones:
+          /app/new/<edition>/<system>     a new player: first launch of the app on this computer;
+          /app/update/<edition>/<version> an update: first launch of a version on a computer that had the app;
+          /app/day/<edition>              a player of the day: at most once a day per computer;
+          /app/week/<edition>             a player of the week: at most once a week per computer.
+        Checked again every hour while the app stays open (it can run for days)."""
+        if not (USAGE_COUNTER and BUNDLED_DATA) or os.environ.get("ROL_NO_COUNT"):
+            return
+        ed, label = ("lite", "Lite") if LITE else ("full", "complète")
+        system = "Mac" if MAC else "Windows"
+        first = {"new": ("/app/new/%s/%s" % (ed, system.lower()), "Nouveau joueur · %s · %s" % (label, system)),
+                 "update": ("/app/update/%s/%s" % (ed, APP_VERSION), "Mise à jour %s · %s" % (APP_VERSION, label))
+                 }.get(INSTALL_STATE)
+        while True:
+            if first and self._count(*first):
+                first = None
+            today = datetime.date.today()
+            week = "%d-W%02d" % today.isocalendar()[:2]
+            if self.profile["usage_day"] != today.isoformat() and self._count("/app/day/" + ed, "Joueur du jour · " + label):
+                with self.lock:
+                    self.profile["usage_day"] = today.isoformat()
+            if self.profile["usage_week"] != week and self._count("/app/week/" + ed, "Joueur de la semaine · " + label):
+                with self.lock:
+                    self.profile["usage_week"] = week
+            time.sleep(3600)
 
     def _take_updated(self):
         updated, self.just_updated = self.just_updated, False

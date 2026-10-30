@@ -389,7 +389,7 @@ def run_app(args):
     c.just_updated = "--updated" in args
     if core.BUNDLED_DATA:
         import selfupdate
-        for delay, job in ((20, selfupdate.cleanup), (10, c.count_launch)):
+        for delay, job in ((20, selfupdate.cleanup), (10, c.count_usage)):
             t = threading.Timer(delay, job)
             t.daemon = True
             t.start()

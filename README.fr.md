@@ -38,7 +38,7 @@ Les applis sont en français et en anglais.
 
 Les applis lisent le client LoL et ne jouent jamais à ta place : aucun pick, ban, verrouillage ni message. Les seules écritures (version complète, réglables) sont ta page de runes, tes sorts d'invocateur et un set d'objets, une fois ton champion verrouillé.
 
-Chaque lancement envoie un comptage anonyme (édition, version, Windows ou Mac), sans cookie ni identifiant ; il se coupe dans Réglages. Le site compte ses visites de la même façon.
+L'appli envoie des comptages anonymes, sans cookie ni identifiant : nouvelle installation, mise à jour, et une présence par jour et par semaine (édition, version, Windows ou Mac) ; ils se coupent dans Réglages. Le site compte ses visites de la même façon.
 
 ## Depuis le code
 
