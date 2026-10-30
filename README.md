@@ -38,7 +38,7 @@ The apps are available in French and English.
 
 The apps read the LoL client and never play for you: no picks, bans, lock-ins or chat. The only writes (full version, optional) are your rune page, summoner spells and an item set, once your champion is locked in.
 
-The app sends anonymous counts, with no cookie or identifier: a new install, an update, and a presence once a day and once a week (edition, version, Windows or Mac); they can be turned off in Settings › About. The website counts its visits the same way.
+The app sends anonymous counts, with no cookie or identifier: a new install, an update, and a presence once a day and once a week (edition, version, Windows or Mac); they can be turned off in Settings › About › Privacy. The website counts its visits the same way.
 
 ## From source
 

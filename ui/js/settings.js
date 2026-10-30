@@ -237,12 +237,20 @@ function paintAbout() {
       ${isLite() ? "" : `<dt>${esc(t("Fiches"))}</dt><dd>${esc(t("{0} combinaisons champion + rôle", b.meta.guides))}</dd>`}
     </dl>
     <div class="about-foot"><a href="#" class="about-legal" data-legal>${esc(t("Mentions légales et crédits"))} ↗</a>
-      <label class="about-usage" title="${esc(t("Sans identifiant : nouvelle installation, mise à jour, et une présence par jour et par semaine (édition, version, Windows ou Mac)."))}"><input type="checkbox" id="a-usage" ${store.profile.usage_stats !== false ? "checked" : ""}>${esc(t("Statistiques anonymes"))}</label></div>
+      <button class="about-priv" data-priv>${esc(t("Confidentialité"))}</button></div>
+    <div class="about-priv-box" id="a-priv" hidden>
+      <p>${esc(t("L'appli envoie des statistiques anonymes. Sans identifiant : nouvelle installation, mise à jour, et une présence par jour et par semaine (édition, version, Windows ou Mac)."))}</p>
+      <label><input type="checkbox" id="a-usage" ${store.profile.usage_stats !== false ? "checked" : ""}>${esc(t("Envoyer les statistiques anonymes"))}</label>
+    </div>
     ${isLite() ? aboutPromo() : ""}`;
   wirePromo(root.querySelector("#s-about"));
   root.querySelector("#s-about [data-legal]").onclick = (e) => {
     e.preventDefault();
     call("open_legal");
+  };
+  root.querySelector("#s-about [data-priv]").onclick = () => {
+    const box = root.querySelector("#a-priv");
+    box.hidden = !box.hidden;
   };
   root.querySelector("#a-usage").onchange = (e) => setPref("usage_stats", e.target.checked);
   const dl = root.querySelector("#s-about [data-dl]");
