@@ -270,7 +270,7 @@ footer { color: var(--muted); font-size: 12.5px; display: grid; gap: 4px; }
 </div>
 {{legacy}}
 <footer><span>Tes propres lancements comptent aussi : coupe « Statistiques anonymes » dans les Réglages de ton appli pour ne pas te compter.</span>
-<span>Les zips GitHub comptent aussi les mises à jour faites depuis l'appli. Les comptages nouveaux joueurs / joueurs du jour existent depuis la 3.0.1.</span></footer>
+<span>Les zips GitHub comptent aussi les mises à jour faites depuis l'appli. Les comptages nouveaux joueurs / joueurs du jour existent depuis la 3.0.2.</span></footer>
 </main></body></html>"""
 
 
@@ -299,7 +299,7 @@ def page(s, generated):
         "releases": table(["Version", "Publiée", "Installeurs", "Zips"], s["releases"], "Aucune release."),
         "pages": table(["Page", "Titre", "Visites"], s["pages"], "Aucune visite."),
         "clicks": table(["Lien", "30 jours", "Total"], s["clicks"], "Aucun clic."),
-        "legacy": ('<section><h2>Avant la 3.0.1 · lancements par version</h2><div class="wrap">%s</div></section>'
+        "legacy": ('<section><h2>Avant la 3.0.2 · lancements par version</h2><div class="wrap">%s</div></section>'
                    % table(["Version", "Lancements"], s["legacy"], "")) if s["legacy"] else "",
     }
     out = TEMPLATE
