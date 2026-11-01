@@ -239,7 +239,7 @@ function paintAbout() {
     <div class="about-foot"><a href="#" class="about-legal" data-legal>${esc(t("Mentions légales et crédits"))} ↗</a>
       <button class="about-priv" data-priv>${esc(t("Confidentialité"))}</button></div>
     <div class="about-priv-box" id="a-priv" hidden>
-      <p>${esc(t("L'appli envoie des statistiques anonymes. Sans identifiant : nouvelle installation, mise à jour, et une présence par jour et par semaine (édition, version, Windows ou Mac)."))}</p>
+      <p>${esc(t("L'appli envoie des statistiques anonymes. Sans identifiant : installation, mise à jour, et une présence par jour, par semaine et par mois (édition, version, Windows ou Mac)."))}</p>
       <label><input type="checkbox" id="a-usage" ${store.profile.usage_stats !== false ? "checked" : ""}>${esc(t("Envoyer les statistiques anonymes"))}</label>
     </div>
     ${isLite() ? aboutPromo() : ""}`;

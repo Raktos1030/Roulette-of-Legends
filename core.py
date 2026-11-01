@@ -370,7 +370,7 @@ class Profile:
         "overlay_mode": "tab", "overlay_side": "right", "overlay_page": "early",
         "overlay_pos": None, "overlay_scale": 1.0, "overlay_opacity": 0.95, "overlay_modules": {},
         "auto_update": True, "seen_update": None, "glossary_hints": True, "ambient": True, "usage_stats": True,
-        "usage_day": None, "usage_week": None,   # last day and week counted as a presence (count_usage)
+        "usage_day": None, "usage_week": None, "usage_month": None,   # last day, week and month counted (count_usage)
         "lang": "",              # "fr", "en"; empty = the Windows language
         "import_runes": True, "import_spells": True, "import_items": True, "import_replace": False,
         "build_pick": {},   # build variant picked per guide (Build tab), imported in champ select
@@ -3193,30 +3193,33 @@ class Core:
             return False
 
     def count_usage(self):
-        """Anonymous usage counts, without any identifier (off in Settings), that tell new players from old ones:
+        """Anonymous usage counts, without any identifier (off in Settings › About › Privacy), that tell new players
+        from old ones; each computer is counted once as a player, by the first of these it sends:
           /app/new/<edition>/<system>     a new player: first launch of the app on this computer;
           /app/update/<edition>/<version> an update: first launch of a version on a computer that had the app;
-          /app/day/<edition>              a player of the day: at most once a day per computer;
-          /app/week/<edition>             a player of the week: at most once a week per computer.
+          /app/known/<edition>/<system>   a player who had the app before the counts (3.0.2): once per computer;
+          /app/day|week|month/<edition>   a player of the day, of the week, of the month: at most once each.
         Checked again every hour while the app stays open (it can run for days)."""
         if not (USAGE_COUNTER and BUNDLED_DATA) or os.environ.get("ROL_NO_COUNT"):
             return
         ed, label = ("lite", "Lite") if LITE else ("full", "complète")
         system = "Mac" if MAC else "Windows"
-        first = {"new": ("/app/new/%s/%s" % (ed, system.lower()), "Nouveau joueur · %s · %s" % (label, system)),
-                 "update": ("/app/update/%s/%s" % (ed, APP_VERSION), "Mise à jour %s · %s" % (APP_VERSION, label))
-                 }.get(INSTALL_STATE)
+        first = []
+        if INSTALL_STATE == "new":
+            first.append(("/app/new/%s/%s" % (ed, system.lower()), "Nouveau joueur · %s · %s" % (label, system)))
+        elif INSTALL_STATE == "update":
+            first.append(("/app/update/%s/%s" % (ed, APP_VERSION), "Mise à jour %s · %s" % (APP_VERSION, label)))
+            if not self.profile["usage_day"]:   # this computer never counted: a player from before the counts
+                first.append(("/app/known/%s/%s" % (ed, system.lower()), "Joueur déjà là · %s · %s" % (label, system)))
         while True:
-            if first and self._count(*first):
-                first = None
+            first = [f for f in first if not self._count(*f)]   # kept for the next round when not sent
             today = datetime.date.today()
-            week = "%d-W%02d" % today.isocalendar()[:2]
-            if self.profile["usage_day"] != today.isoformat() and self._count("/app/day/" + ed, "Joueur du jour · " + label):
-                with self.lock:
-                    self.profile["usage_day"] = today.isoformat()
-            if self.profile["usage_week"] != week and self._count("/app/week/" + ed, "Joueur de la semaine · " + label):
-                with self.lock:
-                    self.profile["usage_week"] = week
+            for key, value, kind in (("usage_day", today.isoformat(), ("day", "Joueur du jour")),
+                                     ("usage_week", "%d-W%02d" % today.isocalendar()[:2], ("week", "Joueur de la semaine")),
+                                     ("usage_month", today.strftime("%Y-%m"), ("month", "Joueur du mois"))):
+                if self.profile[key] != value and self._count("/app/%s/%s" % (kind[0], ed), "%s · %s" % (kind[1], label)):
+                    with self.lock:
+                        self.profile[key] = value
             time.sleep(3600)
 
     def _take_updated(self):
