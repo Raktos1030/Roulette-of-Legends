@@ -52,7 +52,7 @@ function paintSummary(s) {
   const rate = counted > 0 ? Math.round((100 * s.games_wins) / counted) : null;
   const games = [
     [t("Parties jouées"), s.games, "", filt.kind === "all" && s.roll_games ? t("dont {0} avec la roulette", s.roll_games) : ""],
-    [t("Victoires"), `${s.games_wins}${rate != null ? ` · ${rate}${sp}%` : ""}`, "t-good", s.games_protected ? t("hors défaites sans perte") : ""],
+    [t("Victoires"), s.games_wins, "t-good", rate != null ? t("{0} des parties", `${rate}${sp}%`) + (s.games_protected ? t(", hors défaites sans perte") : "") : ""],
     [t("KDA moyen"), s.kda ? s.kda.map((x) => (LANG === "en" ? String(x) : String(x).replace(".", ","))).join(" / ") : "—", "", ""],
     lpCard,
   ];
@@ -61,7 +61,7 @@ function paintSummary(s) {
     [t("Tirages"), s.total, "", ""],
     [t("Parties jouées"), s.played, "", ""],
     [t("Champion tiré joué"), s.respected, "", s.played ? t("{0} des parties", `${Math.round((100 * s.respected) / s.played)}${sp}%`) : ""],
-    [t("Victoires"), `${s.respected_wins}${s.rate != null ? ` · ${s.rate}${sp}%` : ""}`, "t-good", t("avec le champion tiré") + (s.respected_protected ? t(", hors défaites sans perte") : "")],
+    [t("Victoires"), s.respected_wins, "t-good", (s.rate != null ? t("{0} des parties", `${s.rate}${sp}%`) + " · " : "") + t("avec le champion tiré") + (s.respected_protected ? t(", hors défaites sans perte") : "")],
     lpCard,
     [t("Annulés"), s.cancelled, "t-warn", ""],
   ];

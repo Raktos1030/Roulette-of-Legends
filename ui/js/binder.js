@@ -99,6 +99,22 @@ const COND = {
   legendary: (n) => t("{0} légendaires", n),
   masters: () => t("Un champion maître (ses 5 rôles légendaires)"),
 };
+// a step with several conditions names each count ("32/50 cartes · 10/10 épiques")
+const UNIT = { rolls: "{0} tirages", cards: "{0} cartes", chaos: "{0} cartes chaos", epics: "{0} épiques", legendary: "{0} légendaires" };
+// progress of a condition: the five roles count the roles done ("4/5 rôles"), the mastered champion shows the one
+// closest to it ("Yasuo 3/5")
+function condHave(c, several) {
+  if (c.counter === "roles" && c.each) return t("{0}/5 rôles", ROLES.filter((r) => (c.each[r] || 0) >= c.goal).length);
+  if (c.counter === "masters" && c.have < c.goal && c.best) return `${c.best.name} ${c.best.n}/5`;
+  const n = `${c.have}/${c.goal}`;
+  return several && UNIT[c.counter] ? t(UNIT[c.counter], n) : n;
+}
+const condPct = (c) => (c.counter === "roles" && c.each ? ROLES.reduce((a, r) => a + Math.min(c.each[r] || 0, c.goal), 0) / (5 * c.goal)
+  : c.counter === "masters" && c.have < c.goal ? (c.best ? c.best.n / 5 : 0) : c.have / c.goal);
+// the roles still short of the goal: "Mid : 8/10"
+const condMissing = (c) => (c.counter === "roles" && c.each ? ROLES.filter((r) => (c.each[r] || 0) < c.goal)
+  .map((r) => t("{0} : {1}", ROLE_LABEL[r], `${c.each[r] || 0}/${c.goal}`)).join(", ") : "");
+
 const KIND_ICON = {
   title: `<svg viewBox="0 0 24 24"><path d="M6 4h12v3.5a6 6 0 0 1-12 0z"/><path d="M12 13.5V18"/><path d="M8 20h8"/><path d="M6 6H3.5a3 3 0 0 0 3 3.6M18 6h2.5a3 3 0 0 1-3 3.6"/></svg>`,
   joker: `<svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M12 7.5l1.3 2.9 3.1.3-2.4 2 .8 3.1L12 14.2 9.2 15.8l.8-3.1-2.4-2 3.1-.3z"/></svg>`,
@@ -112,9 +128,11 @@ function paintRewards(r) {
   const box = root.querySelector("#bd-rw");
   const done = r.steps.filter((s) => s.done).length;
   const next = r.steps.find((s) => !s.done);
-  const pct = (s) => Math.min(...s.conds.map((c) => c.have / c.goal));
+  const pct = (s) => Math.min(...s.conds.map(condPct));
   const cond = (s) => s.conds.map((c) => COND[c.counter](c.goal)).join(t(" et "));
-  const have = (s) => s.conds.map((c) => `${c.have}/${c.goal}`).join(" · ");
+  const have = (s) => s.conds.map((c) => condHave(c, s.conds.length > 1)).join(" · ");
+  const missing = (s) => (s.done ? "" : s.conds.map(condMissing).filter(Boolean).join(" · "));
+  const line = (s) => [cond(s), missing(s)].filter(Boolean).join(" · ");
   const reward = (x) => `<span class="rw-gift ${x.kind}${x.ready ? "" : " soon"}" title="${esc(x.ready ? "" : t("Arrive dans une prochaine version"))}">${KIND_ICON[x.kind] || ""}${esc(x.label)}${x.ready ? "" : `<em>${esc(t("bientôt"))}</em>`}</span>`;
   const j = r.joker;
   box.innerHTML = `
@@ -122,7 +140,7 @@ function paintRewards(r) {
       <div class="rw-count"><span class="kicker">${esc(t("Parcours de récompenses"))}</span><b>${done}<small> / ${r.steps.length}</small></b>
         <i class="rw-bar"><em style="width:${((100 * done) / r.steps.length).toFixed(1)}%"></em></i></div>
       ${next ? `<div class="rw-next"><span class="kicker">${esc(t("Prochain palier"))}</span><b>${esc(next.name)}</b>
-        <span class="muted">${esc(cond(next))} · ${esc(have(next))}</span><i class="rw-bar"><em style="width:${(100 * pct(next)).toFixed(1)}%"></em></i>
+        <span class="muted">${esc([cond(next), have(next), missing(next)].filter(Boolean).join(" · "))}</span><i class="rw-bar"><em style="width:${(100 * pct(next)).toFixed(1)}%"></em></i>
         <div class="rw-gifts">${next.rewards.map(reward).join("")}</div></div>`
         : `<div class="rw-next"><b>${esc(t("Parcours terminé"))}</b></div>`}
     </section>
@@ -144,21 +162,21 @@ function paintRewards(r) {
           `<button class="chip${(r.title || "") === x.id ? " on" : ""}" data-title="${esc(x.id)}"><span class="ck"></span>${esc(x.label)}</button>`).join("")}</div>`
           : `<p class="muted">${esc(t("Le premier titre arrive au premier palier."))}</p>`}
       </section>
+      <section class="card rw-stamps">
+        <h3 class="card-title">${KIND_ICON.stamp}${esc(t("Les tampons d'exploit"))}</h3>
+        <p class="muted">${esc(t("Sur la carte du champion et du rôle de la partie."))}</p>
+        <div class="rw-stamp-list">${STAMP_INFO.map(([id, name, how]) => `<div><i class="tc-stamp ${id}">${STAMP_SVG[id]}</i><b>${esc(t(name))}</b><small>${esc(t(how))}</small></div>`).join("")}</div>
+      </section>
     </div>
     <section class="card rw-path">
       <h3 class="card-title">${esc(t("Les paliers"))}</h3>
       ${r.steps.map((s, i) => `<div class="rw-step${s.done ? " done" : ""}${s.new ? " new" : ""}${s === next ? " next" : ""}">
         <span class="rw-n">${s.done ? "✓" : i + 1}</span>
-        <div class="rw-main"><b>${esc(s.name)}${s.new ? `<em class="rw-tag">${esc(t("Nouveau"))}</em>` : ""}</b><small>${esc(cond(s))}</small>
+        <div class="rw-main"><b>${esc(s.name)}${s.new ? `<em class="rw-tag">${esc(t("Nouveau"))}</em>` : ""}</b><small>${esc(line(s))}</small>
           ${s.done ? "" : `<i class="rw-bar"><em style="width:${(100 * pct(s)).toFixed(1)}%"></em></i>`}</div>
         <div class="rw-gifts">${s.rewards.map(reward).join("")}</div>
         <span class="rw-have">${s.done ? esc(t("Débloqué")) : esc(have(s))}</span>
       </div>`).join("")}
-    </section>
-    <section class="card rw-stamps">
-      <h3 class="card-title">${KIND_ICON.stamp}${esc(t("Les tampons d'exploit"))}</h3>
-      <p class="muted">${esc(t("Sur la carte du champion et du rôle de la partie."))}</p>
-      <div class="rw-stamp-list">${STAMP_INFO.map(([id, name, how]) => `<div><i class="tc-stamp ${id}">${STAMP_SVG[id]}</i><b>${esc(t(name))}</b><small>${esc(t(how))}</small></div>`).join("")}</div>
     </section>`;
   box.querySelectorAll("[data-look]").forEach((b) => (b.onclick = async () => {
     const res = await call("set_look", { kind: b.dataset.look, id: b.dataset.id });
@@ -221,7 +239,7 @@ function paintStats() {
   const tile = (label, v, max, cls) => `<div class="bd-stat ${cls}"><span class="l">${esc(label)}</span>
     <b>${v}<small> / ${max}</small></b><i><em style="width:${((100 * v) / max).toFixed(1)}%"></em></i></div>`;
   root.querySelector("#bd-stats").innerHTML =
-    tile(t("Connus"), n(1), total, "") +
+    tile(t("Tirés"), n(1), total, "") +
     tile(t("Cartes obtenues"), n(2), total, "win") +
     tile(t("Légendaires"), n(4), total, "leg") +
     tile(t("Champions maîtres"), data.masters.length, champs, "master");

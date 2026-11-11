@@ -137,7 +137,7 @@ function paintImport() {
     ${sw("i-runes", "import_runes", "Runes", "Page « RoL · Champion Poste », remplacée à chaque partie.")}
     ${sw("i-spells", "import_spells", "Sorts d'invocateur", "Ton Flash reste sur la touche où tu l'avais mis.")}
     ${sw("i-items", "import_items", "Set d'objets", "Dans l'onglet des sets du magasin, en jeu. Un seul set « RoL » à la fois ; celui d'un autre outil (u.gg…) pour le même champion est remplacé, tes propres sets ne bougent pas.")}
-    ${sw("i-replace", "import_replace", "Plus de place pour une page de runes ?", "Remplacer alors la page sélectionnée. Sinon, le bandeau de sélection te le propose.")}`;
+    ${sw("i-replace", "import_replace", "Remplacer la page de runes sélectionnée quand il n'y a plus de place", "Sinon, le bandeau de la sélection te le propose.")}`;
   [["i-runes", "import_runes"], ["i-spells", "import_spells"], ["i-items", "import_items"], ["i-replace", "import_replace"]].forEach(
     ([id, key]) => (box.querySelector("#" + id).onchange = (e) => setPref(key, e.target.checked))
   );
@@ -162,20 +162,22 @@ function paintData() {
   const u = store.update || {};
   const busy = u.state === "downloading" || u.state === "building" || u.state === "checking";
   const box = root.querySelector("#s-data");
+  // Lite: the patch and the update button only (the sources are those of the guides it doesn't have)
   box.innerHTML = `
     <h3 class="card-title">${esc(t("Statistiques"))}</h3>
     <dl class="kv">
       <dt>${esc(t("Patch"))}</dt><dd><b class="t-gold">${esc(b.meta.patch)}</b></dd>
-      <dt>${esc(t("Données du"))}</dt><dd>${esc(fmtDate(b.meta.generated))}</dd>
+      ${isLite() ? "" : `<dt>${esc(t("Données du"))}</dt><dd>${esc(fmtDate(b.meta.generated))}</dd>
       <dt>${esc(t("Sources"))}</dt><dd>${esc(t("lolalytics (30 jours et patch actuel, Émeraude+) · u.gg (recoupement)"))}</dd>
-      ${u.last_check ? `<dt>${esc(t("Dernière vérification"))}</dt><dd>${esc(u.last_check)}</dd>` : ""}
+      ${u.last_check ? `<dt>${esc(t("Dernière vérification"))}</dt><dd>${esc(u.last_check)}</dd>` : ""}`}
     </dl>
-    <div class="set-row" style="margin-top:8px" title="${esc(t("Dès qu'un nouveau patch a assez de parties (environ 3 jours), puis une fois par semaine, en arrière-plan."))}"><div class="txt"><b>${esc(t("Mise à jour automatique"))}</b></div>
-      <label class="switch"><input type="checkbox" id="d-auto" ${store.profile.auto_update ? "checked" : ""}><i></i></label></div>
+    ${isLite() ? "" : `<div class="set-row" style="margin-top:8px" title="${esc(t("Dès qu'un nouveau patch a assez de parties (environ 3 jours), puis une fois par semaine, en arrière-plan."))}"><div class="txt"><b>${esc(t("Mise à jour automatique"))}</b></div>
+      <label class="switch"><input type="checkbox" id="d-auto" ${store.profile.auto_update ? "checked" : ""}><i></i></label></div>`}
     <div class="set-row"><div class="txt"><b>${esc(t("Mettre à jour maintenant"))}</b><span class="${u.state === "error" ? "t-bad" : ""}">${esc(updateText(u))}</span>
         ${busy ? `<div class="progress"><i style="width:${Math.round((u.progress || 0) * 100)}%"></i></div>` : ""}</div>
       <button class="btn sm" id="d-now" ${busy ? "disabled" : ""}>${esc(busy ? t("En cours…") : t("Mettre à jour"))}</button></div>`;
-  box.querySelector("#d-auto").onchange = (e) => setPref("auto_update", e.target.checked);
+  const auto = box.querySelector("#d-auto");
+  if (auto) auto.onchange = (e) => setPref("auto_update", e.target.checked);
   box.querySelector("#d-now").onclick = async () => {
     const r = await call("update", { action: "now" });
     if (r.error) toast(r.error, "bad");
@@ -198,7 +200,7 @@ function paintApp() {
     <div class="set-row"><div class="txt"><b>${esc(t("Sons"))}</b><span>${esc(t("La roulette et les cartes du classeur."))}</span></div>
       <div class="snd-row"><input type="range" id="a-vol" min="0.1" max="1" step="0.05" value="${store.profile.sound_volume ?? 0.6}" ${store.profile.sounds === false ? "disabled" : ""}>
         <label class="switch"><input type="checkbox" id="a-snd" ${store.profile.sounds !== false ? "checked" : ""}><i></i></label></div></div>
-    <div class="set-row"><div class="txt"><b>${esc(t("Animations"))}</b><span>${esc(t("Coupées, l'appli reste immobile : fond, cadres, effets des cartes, transitions. La roulette tourne toujours."))}</span></div>
+    <div class="set-row"><div class="txt"><b>${esc(t("Animations"))}</b><span>${esc(t("Fond, cadres, effets des cartes, transitions. Coupées, l'appli reste immobile ; la roulette tourne toujours."))}</span></div>
       <label class="switch"><input type="checkbox" id="a-amb" ${store.profile.ambient !== false ? "checked" : ""}><i></i></label></div>`;
   const auto = box.querySelector("#a-auto");
   if (auto) auto.onchange = async (e) => {

@@ -137,8 +137,13 @@ BACKS = (
 
 
 def milestones(got, guide_keys, champions, roles):
-    """Counts the backs are unlocked by: cards collected, chaos role cards, legendaries, mastered champions."""
+    """Counts the backs are unlocked by: cards collected, chaos role cards, legendaries, mastered champions.
+    master_best: (champion, legendary roles) of the champion closest to being mastered, None without any card."""
+    level = lambda key, r: (got.get("%s|%s" % (key, r)) or {}).get("level", 0)
+    close = max(((sum(level(k, r) == LEGENDARY for r in roles), sum(level(k, r) >= CARD for r in roles), k) for k in champions
+                 if any(level(k, r) >= CARD for r in roles)), default=None)
     return {
+        "master_best": (close[2], close[0]) if close else None,
         "cards": sum(1 for c in got.values() if c["level"] >= CARD),
         "chaos": sum(1 for k, c in got.items() if c["level"] >= CARD and k not in guide_keys),
         "legendary": sum(1 for c in got.values() if c["level"] == LEGENDARY),

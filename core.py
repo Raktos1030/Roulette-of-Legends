@@ -768,7 +768,8 @@ def reason_text(r):
 # History display (texts and tones, shared by the UI and notifications)
 # ----------------------------------------------------------------------------
 
-def lp_text(e, with_rank=True):
+def lp_text(e, with_rank=True, with_delta=True):
+    """with_delta False: the LP won or lost left out (the history has a column of its own for them)."""
     lp = e.get("lp")
     if not lp:
         return T("LP en attente…") if e.get("lp_before") and e.get("status") == "played" else ""
@@ -781,13 +782,13 @@ def lp_text(e, with_rank=True):
         txt = T("non comptée par le client · 0 LP")
     elif lp.get("delta") is None:
         return ""
+    elif with_delta:
+        txt = "%s LP" % signed(lp["delta"]) + (T(" (perte évitée)") if e.get("lp_protected") else "")
     else:
-        d = lp["delta"]
-        txt = "%s LP" % signed(d)
-        if e.get("lp_protected"):
-            txt += T(" (perte évitée)")
+        txt = T("perte évitée") if e.get("lp_protected") else ""
     if with_rank:
-        txt += " → " + lol.rank_label(lp)
+        rank = lol.rank_label(lp)
+        txt = txt + " → " + rank if with_delta else " · ".join(x for x in (txt, rank.replace(" · ", ", ")) if x)
     return txt
 
 
@@ -835,7 +836,7 @@ def entry_display(e, data):
             tone = "other"
         if not win and e.get("lp_protected"):
             result, tone, glyph = T("Défaite sans perte"), "shield", "⊘"
-        lp = lp_text(e)
+        lp = lp_text(e, with_delta=False)
         if lp:
             parts.append(lp)
         detail = " · ".join(parts)
@@ -2061,7 +2062,11 @@ class Core:
             rw = self._rewards()
             seen = self._rewards_seen()
             steps = [dict(s, name=T(s["name"]), new=s["done"] and s["id"] not in seen,
-                          rewards=[dict(r, label=T(r["label"]).replace("{0}", "…")) for r in s["rewards"]]) for s in rw["steps"]]
+                          conds=[dict(c, best={"name": self.data.champ_name(c["best"][0]), "n": c["best"][1]})
+                                 if c.get("best") else c for c in s["conds"]],
+                          # one "Master of" title per champion: said as such before any champion is mastered
+                          rewards=[dict(r, label=T("Un titre « Maître de … » par champion maîtrisé") if (r["kind"], r["id"]) == ("title", "master")
+                                        else T(r["label"])) for r in s["rewards"]]) for s in rw["steps"]]
             titles = [{"id": t["id"], "label": self._title_text(t)} for t in rw["titles"]]
             pick = self.profile["title"] if any(t["id"] == self.profile["title"] for t in titles) else None
             looks = rewards.looks(rw["steps"], {k: self.profile[k] for k in rewards.LOOKS})

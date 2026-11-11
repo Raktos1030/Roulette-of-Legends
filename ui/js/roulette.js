@@ -21,7 +21,6 @@ export function renderRoulette(page) {
     <nav class="mode-tabs" id="mode-tabs">
       <button class="mode-tab" data-mode="solo">${SOLO_SVG}<span>${esc(t("Solo"))}</span></button>
       <button class="mode-tab" data-mode="group">${GROUP_SVG}<span>${esc(t("Groupe"))}</span></button>
-      <span class="rl-kind-note" id="rl-kind-note"></span>
       <div class="seg rl-kind" id="rl-kind"></div>
     </nav>
     <section class="card controls">
@@ -141,8 +140,6 @@ function paintKind() {
   const box = root.querySelector("#rl-kind");
   box.innerHTML = [["official", t("Roulette officielle")], ["free", t("Roulette perso")]].map(([k, l]) =>
     `<button data-kind="${k}" class="${(k === "official") === off ? "on" : ""}">${esc(l)}</button>`).join("");
-  root.querySelector("#rl-kind-note").textContent = off ? t("Tout au hasard : remplit ton classeur")
-    : t("Tes choix, tes favoris : ne compte pas pour le classeur");
   root.querySelector(".controls").classList.toggle("official", off);
   const msg = root.querySelector(".strip-msg span");
   if (msg) msg.textContent = off ? t("Le rôle et le champion sont tirés au hasard : appuie sur Lancer")
@@ -966,12 +963,12 @@ function renderWelcome(stage) {
       <div class="w-feats">
         <div class="w-feat"><b>${esc(t("Relié à LoL"))}</b><span>${esc(t("Autofill, ban, résultat et LP : chaque tirage est suivi jusqu'au bout, et ton historique se remplit tout seul."))}</span></div>
         <div class="w-feat"><b>${esc(t("Chaos"))}</b><span>${esc(t("N'importe quel champion à n'importe quel poste. Yuumi jungle, quelqu'un ?"))}</span></div>
-        <div class="w-feat"><b>u.gg</b><span>${esc(t("Après le tirage, un clic ouvre la page u.gg du champion à ce poste."))}</span></div>
+        <div class="w-feat"><b>${esc(t("Classeur"))}</b><span>${esc(t("Chaque tirage officiel joué te donne sa carte : épique si tu gagnes, légendaire en classée. Les paliers débloquent dos de cartes, titres et roulettes."))}</span></div>
       </div>` : `<p class="w-text">${esc(t("Choisis un rôle ou laisse la roulette tout décider. Chaque tirage arrive avec sa fiche de jeu et son build, sur les statistiques du patch {0}, mises à jour automatiquement.", b.meta.patch))}</p>
       <div class="w-feats">
         <div class="w-feat"><b>${esc(t("Relié à LoL"))}</b><span>${esc(t("Autofill, ban, résultat et LP : chaque tirage est suivi jusqu'au bout. Runes, sorts et objets importés dès que tu verrouilles."))}</span></div>
         <div class="w-feat"><b>${esc(t("Overlay en jeu"))}</b><span>${esc(t("Maintiens Tab en partie : ta fiche, ton build, tes stats et l'écart d'or. Le sort à monter s'allume sur ton HUD."))}</span></div>
-        <div class="w-feat"><b>${esc(t("Lexique"))}</b><span>${esc(t("Survole un terme souligné dans une fiche pour sa définition."))}</span></div>
+        <div class="w-feat"><b>${esc(t("Classeur"))}</b><span>${esc(t("Chaque tirage officiel joué te donne sa carte : épique si tu gagnes, légendaire en classée. Les paliers débloquent dos de cartes, titres et roulettes."))}</span></div>
       </div>`}
     </section>
     <section class="card">

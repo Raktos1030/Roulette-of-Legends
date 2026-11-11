@@ -89,6 +89,8 @@ function paintCount() {
   const c = root.querySelector("#f-count");
   const nc = store.profile.fav_count, nr = store.profile.fav_roles.length;
   if (c) c.textContent = (nc > 1 ? t("{0} champions favoris", nc) : t("{0} champion favori", nc)) + " · " + (nr > 1 ? t("{0} rôles favoris", nr) : t("{0} rôle favori", nr));
+  const clear = root.querySelector("#f-clear");
+  if (clear) clear.disabled = !nc && !nr;   // nothing to remove
 }
 
 function favState(key, roles) {

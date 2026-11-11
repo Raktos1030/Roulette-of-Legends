@@ -132,7 +132,7 @@ function paintTools() {
   box.innerHTML = `
     <input class="input" id="fl-q" placeholder="${esc(t("Rechercher un champion…"))}" value="${esc(state.q)}" spellcheck="false">
     ${["all", ...ROLES].map((r) => `<button class="chip${state.role === r ? " on" : ""}" data-role="${r}">${r === "all" ? esc(t("Tous")) : roleIcon(r) + esc(ROLE_LABEL[r])}</button>`).join("")}
-    <button class="chip chaos${state.chaos ? " on" : ""}" data-chaos title="${esc(t("Tous les champions à tous les postes : les postes sans fiche (en rouge) ouvrent une fiche chaos"))}">${CHAOS_ICON}${esc(t("Postes chaos"))}</button>
+    <button class="chip chaos${state.chaos ? " on" : ""}" data-chaos title="${esc(t("Tous les champions à tous les rôles : les rôles sans fiche (en rouge) ouvrent une fiche chaos"))}">${CHAOS_ICON}${esc(t("Rôles chaos"))}</button>
     <span class="grow"></span>
     <span class="t-teal small" id="fl-count"></span>`;
   const q = box.querySelector("#fl-q");

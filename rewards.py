@@ -74,7 +74,8 @@ def counters(got, milestones, roles, entries, exploit_count):
     """Every counter the ladder reads. milestones: collection.milestones (cards, chaos, legendary, masters)."""
     c = dict(milestones)
     c["epics"] = sum(1 for x in got.values() if x["level"] >= 3)
-    c["roles"] = min(sum(1 for k, x in got.items() if x["level"] >= CARD and k.endswith("|" + r)) for r in roles)
+    c["roles_each"] = {r: sum(1 for k, x in got.items() if x["level"] >= CARD and k.endswith("|" + r)) for r in roles}
+    c["roles"] = min(c["roles_each"].values())
     c["rolls"] = len(counted(entries))
     c.update(exploit_count)
     return c
@@ -84,6 +85,11 @@ def ladder(counts):
     out = []
     for sid, name, conds, rewards in LADDER:
         cs = [{"counter": k, "goal": g, "have": min(counts.get(k, 0), g)} for k, g in conds]
+        for c in cs:   # what the progress is made of: the cards of each role, the champion closest to mastery
+            if c["counter"] == "roles":
+                c["each"] = counts.get("roles_each") or {}
+            elif c["counter"] == "masters":
+                c["best"] = counts.get("master_best")
         out.append({"id": sid, "name": name, "conds": cs, "done": all(x["have"] >= x["goal"] for x in cs),
                      "rewards": [{"kind": k, "id": i, "label": label, "ready": k in READY and (k, i) not in COMING}
                                  for k, i, label in rewards]})

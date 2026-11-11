@@ -40,7 +40,7 @@ function paint(v, first = false) {
         <div class="kicker">${esc(t("Ta partie en direct"))}</div>
         <h1 class="page-title">${esc(t("Partie"))}</h1>
       </div></header>
-      <section class="card empty lv-empty">${esc(store.lol && store.lol.connected ? t("Aucune partie en cours.") : t("Client LoL non détecté."))}</section>`;
+      <section class="card empty lv-empty">${esc(store.lol && store.lol.connected ? t("Aucune partie en cours.") : t("Client LoL non détecté. Les deux équipes apparaissent ici pendant la sélection et en partie."))}</section>`;
     return;
   }
   const cs = v.mode === "cs";

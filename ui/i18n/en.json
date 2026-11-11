@@ -1055,5 +1055,17 @@
 "Rares": "Rares",
 "{0} cartes": "{0} cards",
 "Clique une carte pour la retourner.": "Click a card to turn it over.",
-"Tout retourner": "Turn all over"
+"Tout retourner": "Turn all over",
+"Client LoL non détecté. Les deux équipes apparaissent ici pendant la sélection et en partie.": "LoL client not detected. Both teams show here during champ select and in game.",
+"Tous les champions à tous les rôles : les rôles sans fiche (en rouge) ouvrent une fiche chaos": "Every champion in every role: roles without a guide (in red) open a chaos guide",
+"Tirés": "Drawn",
+"Remplacer la page de runes sélectionnée quand il n'y a plus de place": "Replace the selected rune page when there's no room left",
+"Sinon, le bandeau de la sélection te le propose.": "Otherwise, the champ select banner offers it.",
+"Fond, cadres, effets des cartes, transitions. Coupées, l'appli reste immobile ; la roulette tourne toujours.": "Background, frames, card effects, transitions. Off, the app stays still; the roulette still spins.",
+"Chaque tirage officiel joué te donne sa carte : épique si tu gagnes, légendaire en classée. Les paliers débloquent dos de cartes, titres et roulettes.": "Every official roll you play gives you its card: epic if you win, legendary in ranked. Milestones unlock card backs, titles and roulettes.",
+"perte évitée": "loss prevented",
+"Un titre « Maître de … » par champion maîtrisé": "A “Master of …” title for each mastered champion",
+"{0} tirages": "{0} rolls",
+"{0} cartes chaos": "{0} chaos cards",
+"{0} épiques": "{0} epics"
 }
