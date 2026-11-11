@@ -96,5 +96,8 @@
 "Polices": "Fonts",
 "Marcellus SC et Cinzel (SIL Open Font License). Dans l'appli, les polices de LoL sont lues dans ton installation du jeu, jamais redistribuées.": "Marcellus SC and Cinzel (SIL Open Font License). In the app, LoL's fonts are read from your game install, never redistributed.",
 "Sons de l'appli": "App sounds",
-"Anonymes, sans identifiant : une installation, une mise à jour, une présence par jour, par semaine et par mois, avec l'édition, la version et le système. Réglages › À propos › Confidentialité les coupe.": "Anonymous, with no identifier: an install, an update, a presence once a day, once a week and once a month, with the edition, the version and the system. Settings › About › Privacy turns them off."
+"Anonymes, sans identifiant : une installation, une mise à jour, une présence par jour, par semaine et par mois, avec l'édition, la version et le système. Réglages › À propos › Confidentialité les coupe.": "Anonymous, with no identifier: an install, an update, a presence once a day, once a week and once a month, with the edition, the version and the system. Settings › About › Privacy turns them off.",
+"Chaque tirage tire aussi un build au hasard : runes, sorts, objets et ordre des sorts": "Each roll also draws a random build: runes, spells, items and skill order",
+"Runes, sorts d'invocateur, objets et ordre des sorts tirés au hasard avec ton champion.": "Runes, summoner spells, items and skill order drawn at random with your champion.",
+"Bonne partie ! Ton build random est juste en dessous.": "Have a good game! Your random build is right below."
 }

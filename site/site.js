@@ -1,4 +1,4 @@
-// Roulette of Legends, web edition: just the roulette (solo, group, chaos), favorites and recent rolls.
+// Roulette of Legends, web edition: just the roulette (solo, group, chaos, random build), favorites and recent rolls.
 // No link with the LoL client. Everything stays in the browser (localStorage); rolls follow the same logic as the
 // desktop app (core.py: api_roll, api_group_roll), ported to JavaScript.
 (function () {
@@ -66,6 +66,7 @@
   const GROUP_SVG = `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8.5" r="3.4"/><circle cx="16.6" cy="9.4" r="2.7"/><path d="M2.8 20c.5-3.5 3-5.6 6.2-5.6s5.7 2.1 6.2 5.6"/><path d="M15.4 14.6c2.9-.3 5.2 1.6 5.8 4.9"/></svg>`;
   const COPY_SVG = `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2.5"/><path d="M15.5 8.5V6a2.5 2.5 0 0 0-2.5-2.5H6A2.5 2.5 0 0 0 3.5 6v7A2.5 2.5 0 0 0 6 15.5h2.5"/></svg>`;
   const UGG_SVG = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v4.5A1.5 1.5 0 0 1 16.5 20h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10"/></svg>`;
+  const DICE_ICON = `<svg class="dice-ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="8.6" cy="8.6" r="1.5"/><circle cx="15.4" cy="8.6" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="8.6" cy="15.4" r="1.5"/><circle cx="15.4" cy="15.4" r="1.5"/></svg>`;
   const STAR_SVG = `<svg class="star" viewBox="0 0 24 24"><path d="M12 3.2l2.7 5.5 6 .9-4.4 4.2 1 6-5.3-2.8-5.3 2.8 1-6-4.4-4.2 6-.9z"/></svg>`;
   // release downloads (github.com/<owner>/<repo>/releases/latest/download/<file>); empty until published
   const RELEASE = "https://github.com/Raktos1030/Roulette-of-Legends/releases/latest/download/";
@@ -94,7 +95,8 @@
   }
 
   // --- profile (favorites, filters) and recent rolls ----------------------------------------------------------
-  const profile = Object.assign({ favRoles: [], favChamps: [], onlyFavRoles: false, onlyFavChamps: false, noRepeat: true }, ls.get("profile", {}));
+  const profile = Object.assign({ favRoles: [], favChamps: [], onlyFavRoles: false, onlyFavChamps: false, noRepeat: true,
+    rbuildOn: false, rbuildParts: ["runes", "spells", "items", "skills"] }, ls.get("profile", {}));
   const saveProfile = () => ls.set("profile", profile);
   let recent = ls.get("recent", []);   // [{key, role, mode, at, group:[{name, key, role}]}]
   const saveRecent = () => ls.set("recent", recent.slice(0, 100));
@@ -106,6 +108,78 @@
   // group player label: their nickname, otherwise "Player 2" in the current language
   const playerLabel = (p, i) => String((p && p.name) || "").trim() || t("Joueur {0}", (p && p.i != null ? p.i : i) + 1);
   const MODE_LABEL = () => ({ both: t("Rôle + champion"), role: t("Rôle aléatoire"), champ: t("Champion aléatoire"), group: t("Groupe"), chaos: "Chaos" });
+
+  // =============================================================================================================
+  // Random build: the app's rules (randombuild.py) ported here, drawn with the roll; shown, never imported
+  // =============================================================================================================
+  const RB = D.rbuild;
+  const RB_PARTS = [["runes", "Runes"], ["spells", "Sorts d'invocateur"], ["items", "Objets"], ["skills", "Ordre des sorts"]];
+  function sample(a, n = a.length) {
+    const c = [...a];
+    for (let i = c.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [c[i], c[j]] = [c[j], c[i]];
+    }
+    return c.slice(0, n);
+  }
+  // a random primary tree, its keystone and one rune per row; another secondary tree, two runes from two rows; shards
+  function drawRunes() {
+    const trees = Object.keys(RB.trees);
+    if (trees.length < 2) return null;
+    const [pri, sec] = sample(trees, 2);
+    const perks = RB.trees[pri].slots.map((s) => pick(s));
+    perks.push(...sample([1, 2, 3], 2).sort().map((i) => pick(RB.trees[sec].slots[i])));
+    return { pri: +pri, sec: +sec, perks, shards: RB.shard_rows.map((row) => pick(row)) };
+  }
+  // two different spells of the Rift; Smite in the jungle, never outside
+  const drawSpells = (role) => (role === "jgl" ? [RB.smite, pick(RB.spells)] : sample(RB.spells, 2));
+  // a starting set of the role's guides, tier 2 boots within the first three items, legendary items (one per unique
+  // group); the jungle and support items take a slot
+  function drawItems(role, key) {
+    const n = RB.slot_roles.includes(role) ? 5 : 6;
+    const boots = RB.no_boots.includes(key) ? null : pick(RB.boots);
+    const legend = [];
+    for (const i of sample(RB.legendary)) {
+      if (legend.length === n - (boots ? 1 : 0)) break;
+      if (RB.groups.some((g) => g.includes(i) && legend.some((j) => g.includes(j)))) continue;
+      legend.push(i);
+    }
+    const core = [...legend];
+    if (boots) core.splice(Math.floor(Math.random() * 3), 0, boots);
+    const starts = RB.starts[role] || [];
+    return { start: starts.length ? pick(starts) : RB.default_start[role] || { ids: [], counts: [] }, core };
+  }
+  // a max order of Q, W and E, the ultimate at 6, 11 and 16, the game's rank limits
+  function canLevel(c, ranks, lv, key) {
+    if (RB.free_ranks.includes(key)) return true;
+    if (ranks[c] >= (c === "R" ? 3 : RB.auto_r.includes(key) ? 6 : 5)) return false;
+    if (c === "R") return ranks.R < [6, 11, 16].filter((x) => lv >= x).length;
+    return ranks[c] < Math.floor((lv + 1) / 2);
+  }
+  function drawSkills(key) {
+    if (RB.no_skills.includes(key) || RB.free_ranks.includes(key)) return null;
+    const prio = sample(["Q", "W", "E"]).join(""), first = sample(["Q", "W", "E"]);
+    const ranks = { Q: 0, W: 0, E: 0, R: 0 };
+    let order = "";
+    for (let lv = 1; lv <= 15; lv++) {
+      let c = null;
+      if (lv === 1 && RB.auto_first[key]) c = RB.auto_first[key];
+      else if (!RB.auto_r.includes(key) && canLevel("R", ranks, lv, key)) c = "R";
+      else c = (lv <= 3 && first.find((x) => ranks[x] === 0)) || [...prio].find((x) => canLevel(x, ranks, lv, key));
+      if (!c) break;
+      order += c;
+      ranks[c]++;
+    }
+    return { order, prio };
+  }
+  function drawBuild(key, role, parts) {
+    const b = { parts: RB_PARTS.map(([k]) => k).filter((k) => parts.includes(k)) };
+    if (b.parts.includes("runes")) b.runes = drawRunes();
+    if (b.parts.includes("spells")) b.spells = drawSpells(role);
+    if (b.parts.includes("items")) b.items = drawItems(role, key);
+    if (b.parts.includes("skills")) b.skills = drawSkills(key);
+    return b;
+  }
 
   // =============================================================================================================
   // Rolls: everything is decided here at once; the animation only reveals the result
@@ -422,6 +496,7 @@
         <div class="strip-marker"><i class="top"></i><i class="bot"></i></div>
         <div class="strip-msg"><div><b>${esc(t("LA FAILLE DÉCIDE POUR TOI"))}</b><span>${esc(t("Choisis un rôle ou laisse tout au hasard, puis appuie sur Lancer"))}</span></div></div>
       </section>
+      <div id="rbuild"></div>
       <div class="status-line" id="status"></div>
       <div id="stage"></div>
     </div>`;
@@ -460,13 +535,73 @@
       ["noRepeat", esc(t("Pas de doublon dans la session"))],
     ];
     const box = root.querySelector("#filters");
+    // random build (solo): each roll also draws the picked parts
+    const parts = profile.rbuildParts;
+    const rb = mode !== "solo" ? "" : `<span class="rb-sep"></span>
+      <button class="chip rb${profile.rbuildOn ? " on" : ""}" data-rb title="${esc(t("Chaque tirage tire aussi un build au hasard : runes, sorts, objets et ordre des sorts"))}"><span class="ck"></span>${DICE_ICON}${esc(t("Build random"))}</button>
+      ${profile.rbuildOn ? `<span class="rb-parts">${RB_PARTS.map(([k, l]) => `<button class="rb-part${parts.includes(k) ? " on" : ""}" data-part="${k}">${esc(t(l))}</button>`).join("")}</span>` : ""}`;
     box.innerHTML = `<span class="ctl-label" style="margin:0 6px 0 2px">${esc(t("Filtres"))}</span>` +
-      chips.map(([k, l]) => `<button class="chip${profile[k] ? " on" : ""}" data-k="${k}"><span class="ck"></span>${l}</button>`).join("");
-    box.querySelectorAll(".chip").forEach((c) => (c.onclick = () => {
+      chips.map(([k, l]) => `<button class="chip${profile[k] ? " on" : ""}" data-k="${k}"><span class="ck"></span>${l}</button>`).join("") + rb;
+    box.querySelectorAll(".chip[data-k]").forEach((c) => (c.onclick = () => {
       profile[c.dataset.k] = !profile[c.dataset.k];
       saveProfile();
       paintFilters();
     }));
+    const rbChip = box.querySelector("[data-rb]");
+    if (rbChip) rbChip.onclick = () => {
+      profile.rbuildOn = !profile.rbuildOn;
+      saveProfile();
+      paintFilters();
+    };
+    box.querySelectorAll("[data-part]").forEach((b) => (b.onclick = () => {
+      const k = b.dataset.part;
+      const next = parts.includes(k) ? parts.filter((x) => x !== k) : [...parts, k];
+      if (!next.length) return toast(t("Garde au moins une partie du build à tirer."), "warn");
+      profile.rbuildParts = next;
+      saveProfile();
+      paintFilters();
+    }));
+  }
+
+  // the build of the last roll, under its card: runes, summoner spells, items in buying order, skill order
+  const nm = (x) => (x ? x[LANG] || x.fr : "");
+  const perkImg = (path) => `${DD}img/${path}`;
+  const itemImg = (id) => `${DD}${D.ddragon}/img/item/${id}.png`;
+  const spellImg = (s) => `${DD}${D.ddragon}/img/spell/${RB.spell_info[s].image}`;
+  function buildRows(b) {
+    const pic = (src, title, cls = "") => `<img class="${cls}" src="${src}" alt="" title="${esc(title)}" onerror="this.style.visibility='hidden'">`;
+    const rune = (id, cls = "") => (RB.icons[id] ? pic(perkImg(RB.icons[id]), nm(RB.runes[id]), cls) : `<span class="rb-name">${esc(nm(RB.runes[id]))}</span>`);
+    const rows = [];
+    if (b.runes) {
+      const r = b.runes;
+      rows.push([t("Runes"), `${rune(r.perks[0], "ks")}${r.perks.slice(1, 4).map((p) => rune(p)).join("")}<i class="rb-div"></i>
+        ${RB.icons[r.sec] ? pic(perkImg(RB.icons[r.sec]), nm(RB.trees[r.sec].name), "tree") : ""}${r.perks.slice(4).map((p) => rune(p)).join("")}
+        <span class="rb-shards">${r.shards.map((s) => esc(nm(RB.shards[s]))).join(" · ")}</span>`]);
+    }
+    if (b.spells) rows.push([t("Sorts d'invocateur"), b.spells.map((s) => pic(spellImg(s), nm(RB.spell_info[s].name))).join("")]);
+    if (b.items) {
+      const st = b.items.start;
+      rows.push([t("Objets"), `${st.ids.map((i, k) => `<span class="rb-it">${pic(itemImg(i), nm(RB.items[i]))}${st.counts[k] > 1 ? `<b>${st.counts[k]}</b>` : ""}</span>`).join("")}
+        <i class="rb-arrow">›</i>${b.items.core.map((i) => pic(itemImg(i), nm(RB.items[i]))).join("")}`]);
+    }
+    if (b.skills) rows.push([t("Ordre des sorts"), `<b class="rb-prio">${[...b.skills.prio].join(" › ")}</b>
+      <span class="rb-order">${[...b.skills.order].map((c) => `<i class="${c === "R" ? "r" : ""}">${c}</i>`).join("")}</span>`]);
+    return rows;
+  }
+  function paintBuild() {
+    const box = root && root.querySelector("#rbuild");
+    if (!box) return;
+    const b = mode === "solo" && lastRoll && lastRoll.rbuild;
+    if (!b) return (box.innerHTML = "");
+    box.innerHTML = `<section class="card rbuild">
+      <h3 class="card-title">${DICE_ICON}${esc(t("Ton build random"))}<span class="aside"><button class="btn sm" data-rbagain>${esc(t("Relancer le build"))}</button></span></h3>
+      <div class="rb-rows">${buildRows(b).map(([l, v]) => `<div class="rb-row"><span class="rb-l">${esc(l)}</span><div class="rb-v">${v}</div></div>`).join("")}</div>
+    </section>`;
+    box.querySelector("[data-rbagain]").onclick = () => {
+      lastRoll.rbuild = drawBuild(lastRoll.key, lastRoll.role, b.parts);
+      ls.set("last", lastRoll);
+      paintBuild();
+    };
   }
 
   function setupChampField() {
@@ -567,6 +702,7 @@
 
   // last roll: the idle strip becomes its card (splash, name, role) with "View on u.gg"
   function paintStripRoll() {
+    paintBuild();
     const strip = root && root.querySelector("#strip");
     if (!strip || !strip.classList.contains("idle")) return;
     strip.classList.toggle("has-roll", !!lastRoll);
@@ -588,8 +724,8 @@
         <div class="sr-info">
           <div class="sr-kick">${esc(t("Ton tirage"))}</div>
           <div class="sr-name">${esc(nameOf(r.key))}</div>
-          <div class="sr-role">${roleIcon(r.role)}<span>${esc(roleLabel(r.role))}</span>${r.mode ? `<em>${esc(MODE_LABEL()[r.mode] || "")}</em>` : ""}</div>
-          <div class="sr-sub">${esc(t("Bonne partie ! Le build du moment est sur u.gg."))}</div>
+          <div class="sr-role">${roleIcon(r.role)}<span>${esc(roleLabel(r.role))}</span>${r.mode && r.mode !== "both" ? `<em>${esc(MODE_LABEL()[r.mode] || "")}</em>` : ""}</div>
+          <div class="sr-sub">${esc(r.rbuild ? t("Bonne partie ! Ton build random est juste en dessous.") : t("Bonne partie ! Le build du moment est sur u.gg."))}</div>
           <div class="sr-act"><a class="btn-gold sr-guide" data-ugg href="${ugg(r.key, r.role)}" target="_blank" rel="noopener">${UGG_SVG}${esc(t("Voir sur u.gg"))}</a></div>
         </div>
       </div>
@@ -690,6 +826,7 @@
         }
       }
       const res = Object.assign({ mode: r.mode }, r.result);
+      if (profile.rbuildOn) res.rbuild = drawBuild(res.key, res.role, profile.rbuildParts);
       drawn.add(res.key + "|" + res.role);
       addRecent(res);
       lastRoll = res;
@@ -712,6 +849,8 @@
 
   function paintMode() {
     root.querySelectorAll(".mode-tab").forEach((b) => b.classList.toggle("on", b.dataset.mode === mode));
+    paintFilters();   // the random build is solo only
+    paintBuild();
     const group = mode === "group";
     root.querySelector(".controls").classList.toggle("group", group);
     root.querySelector("#strip").hidden = group;
@@ -930,7 +1069,7 @@
         <div class="w-feats">
           <div class="w-feat"><b>${esc(t("Groupe"))}</b><span>${esc(t("Jusqu'à 5 joueurs : postes et champions différents pour tout le monde, prêts à copier sur Discord."))}</span></div>
           <div class="w-feat"><b>${esc(t("Chaos"))}</b><span>${esc(t("N'importe quel champion à n'importe quel poste. Yuumi jungle, quelqu'un ?"))}</span></div>
-          <div class="w-feat"><b>u.gg</b><span>${esc(t("Après le tirage, un clic ouvre la page u.gg du champion à ce poste."))}</span></div>
+          <div class="w-feat"><b>${esc(t("Build random"))}</b><span>${esc(t("Runes, sorts d'invocateur, objets et ordre des sorts tirés au hasard avec ton champion."))}</span></div>
         </div>
       </section>
       <section class="card">
@@ -973,6 +1112,7 @@
       [t("Classeur de cartes et parcours de récompenses"), 0, 1, 1],
       [t("Fiches de jeu pour chaque champion à chaque poste"), 0, 0, 1],
       [t("Runes, sorts et set d'objets importés dans LoL"), 0, 0, 1],
+      [t("Build random"), 1, 0, 1],
       [t("Build random importé dans LoL"), 0, 0, 1],
       [t("Overlay en jeu"), 0, 0, 1],
       [t("Page Partie : les deux équipes et leurs classements"), 0, 0, 1],

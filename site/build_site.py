@@ -2,7 +2,8 @@
 Builds the roulette website (site/ folder) from the desktop app. Run it again after a stats update or a change to
 ui/app.css.
 
-  - data.js: champions and their roles (share of each role), the patch, the Data Dragon version;
+  - data.js: champions and their roles (share of each role), the patch, the Data Dragon version, and what the random
+    build needs (rune trees, summoner spells, boots and legendary items, starting sets, the skill rules of the app);
   - en.js: the English strings used by site.js (from ui/i18n/en.json, otherwise from strings_en.json);
   - app.css: the desktop app's stylesheet (paths adapted to the site);
   - fonts/, bg/, img/: free fonts (OFL), hextech backgrounds, logo and role icons;
@@ -17,6 +18,8 @@ import json
 import os
 import re
 import shutil
+import sys
+import urllib.request
 
 SITE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(SITE)
@@ -66,9 +69,87 @@ def build_data():
         ch["roles"].sort(key=lambda r: ROLES.index(r[0]))
     meta = stats["meta"]
     out = {"patch": meta.get("patch"), "generated": meta.get("generated"), "ddragon": meta.get("ddragon"),
-           "champions": sorted(champs.values(), key=lambda c: c["name"])}
+           "champions": sorted(champs.values(), key=lambda c: c["name"]), "rbuild": build_rbuild(stats)}
     write_js(os.path.join(SITE, "data.js"), "ROL_DATA", out)
     return len(champs), sum(len(c["roles"]) for c in champs.values())
+
+
+SHARDS_EN = {5008: "Adaptive Force", 5005: "Attack Speed", 5007: "Ability Haste", 5010: "Move Speed", 5011: "Health",
+             5013: "Tenacity and Slow Resist", 5001: "Health Scaling"}
+
+
+def rune_icons(version):
+    """{rune or tree id: Data Dragon image path}; on a network failure, the ones of the data.js already built."""
+    try:
+        url = "https://ddragon.leagueoflegends.com/cdn/%s/data/en_US/runesReforged.json" % version
+        trees = json.loads(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "rol-site"}),
+                                                  timeout=30).read().decode("utf-8"))
+        out = {}
+        for tree in trees:
+            out[tree["id"]] = tree["icon"]
+            for slot in tree["slots"]:
+                for r in slot["runes"]:
+                    out[r["id"]] = r["icon"]
+        return out
+    except (OSError, ValueError, KeyError):
+        try:
+            old = open(os.path.join(SITE, "data.js"), encoding="utf-8").read()
+            old = json.loads(old[old.index("{"):old.rindex("}") + 1])
+            return {int(k): v for k, v in ((old.get("rbuild") or {}).get("icons") or {}).items()}
+        except (OSError, ValueError):
+            return {}
+
+
+def build_rbuild(stats):
+    """The random build of the app (randombuild.py), for the site: the same rules, drawn in the browser, never
+    imported. Names in both languages, images from Data Dragon."""
+    sys.path.insert(0, ROOT)
+    import randombuild
+    import live
+    runes = json.load(open(os.path.join(DATA, "runes.json"), encoding="utf-8"))
+    items = json.load(open(os.path.join(DATA, "items.json"), encoding="utf-8"))["items"]
+    en = json.load(open(os.path.join(DATA, "en", "names.json"), encoding="utf-8"))
+    names = lambda fr, en_name: {"fr": fr, "en": en_name or fr}
+    rune_names = {int(k): names(v["name"], en["runes"].get(k)) for k, v in runes["runes"].items()}
+    trees = {int(k): {"name": names(v["name"], en["trees"].get(k)), "slots": v["slots"]}
+             for k, v in runes["trees"].items() if len(v.get("slots") or []) == 4}
+    spells = list(randombuild.SPELLS) + [randombuild.SMITE]
+    kinds = {"boots": [], "legendary": []}
+    for i, v in items.items():
+        if v.get("kind") in kinds:
+            kinds[v["kind"]].append(int(i))
+    item_names = {int(i): names(items[str(i)]["name"], en["items"].get(str(i))) for ids in kinds.values() for i in ids}
+    # the starting sets of each role's guides (as core.Data.builds reads them), with the role item when there is one
+    starts = {r: [] for r in ROLES}
+    for c in stats["combos"].values():
+        counts = {i: n for i, n in ((c.get("items") or {}).get("start") or [])}
+        for b in c.get("builds") or []:
+            uniq, n = [], {}
+            for i in (b.get("start") or {}).get("ids") or []:
+                if i not in n:
+                    uniq.append(i)
+                n[i] = n.get(i, 0) + 1
+            st = {"ids": uniq, "counts": [n[i] if n[i] > 1 else counts.get(i, 1) for i in uniq]}
+            role_items = randombuild.ROLE_ITEMS.get(c["role"])
+            if uniq and st not in starts[c["role"]] and (not role_items or role_items & set(uniq)):
+                starts[c["role"]].append(st)
+    for i in {i for s in starts.values() for st in s for i in st["ids"]}:
+        if str(i) in items:
+            item_names[i] = names(items[str(i)]["name"], en["items"].get(str(i)))
+    return {
+        "trees": trees, "runes": rune_names, "icons": rune_icons(stats["meta"].get("ddragon")),
+        "shard_rows": runes["shard_rows"],
+        "shards": {int(k): names(v, SHARDS_EN.get(int(k))) for k, v in runes["shards"].items()},
+        "spells": list(randombuild.SPELLS), "smite": randombuild.SMITE,
+        "spell_info": {s: {"image": runes["sums"][str(s)]["image"], "name": names(runes["sums"][str(s)]["name"], en["sums"].get(str(s)))}
+                       for s in spells},
+        "boots": sorted(kinds["boots"]), "legendary": sorted(kinds["legendary"]), "items": item_names,
+        "groups": [sorted(g) for g in randombuild.GROUPS], "no_boots": sorted(randombuild.NO_BOOTS),
+        "slot_roles": sorted(randombuild.SLOT_ROLES), "starts": starts,
+        "default_start": randombuild.DEFAULT_START,
+        "no_skills": sorted(live.NO_SKILLS), "free_ranks": sorted(live.FREE_RANKS), "auto_r": sorted(live.AUTO_R),
+        "auto_first": live.AUTO_FIRST,
+    }
 
 
 def build_strings():
