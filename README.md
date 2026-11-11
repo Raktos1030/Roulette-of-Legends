@@ -24,11 +24,11 @@ The apps are available in French and English.
 | | Lite | Full |
 |---|:---:|:---:|
 | Solo and group roulette (up to 5 players), chaos mode | ✓ | ✓ |
-| Official roulette (everything drawn) or personal roulette (favorites, picked role or champion), one click apart | ✓ | ✓ |
+| Official roulette (everything drawn) or personal roulette (favorites, picked role or champion), solo or in a group: each keeps its own roll | ✓ | ✓ |
 | No duplicate: no champion in a role already rolled today or the day before (each player their own in a group) | ✓ | ✓ |
 | Favorites (roles and champions) | ✓ | ✓ |
 | Binder: a card per champion and role, earned by playing your official rolls; rewards path, roulette skins | ✓ | ✓ |
-| Roll tracked in the client: autofill, bans or a taken champion detected | ✓ | ✓ |
+| Roll tracked in the client: autofill, bans or a taken champion detected; queued on another position, a swapped role or another champion pause the official roll instead of losing it | ✓ | ✓ |
 | Game history, results and LP | ✓ | ✓ |
 | A guide for every champion in every role | | ✓ |
 | Runes, summoner spells and item set imported into LoL | | ✓ |

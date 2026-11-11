@@ -12,6 +12,8 @@ RollHistory tracks rolls through their lifecycle:
   pending -> in_game -> played | remake
   pending -> cancelled   (rerolled before playing, autofill, champion banned or taken)
   pending -> to_check    (rerolled while the client was offline; resolved later from the match history)
+Each roulette (solo or group, official or personal) keeps its own roll: a new roll only replaces the one of its
+roulette, and a pending roll can be paused (it waits, games don't count for it).
 """
 
 import base64
@@ -41,6 +43,17 @@ GAME_PHASES = ("InProgress", "Reconnect", "WaitingForStats", "PreEndOfGame", "En
 # Summoner's Rift queues (ranked, normal, quickplay, Clash, co-op vs AI)
 SR_QUEUES = {400, 420, 430, 440, 480, 490, 700, 830, 840, 850, 870, 880, 890}
 BOT_QUEUES = {830, 840, 850, 870, 880, 890}   # co-op vs AI: never counts for a roll
+POSITION_QUEUES = {400, 420, 440, 480, 490}   # positions picked in the lobby (draft, ranked, quick play)
+ROULETTES = ("solo_official", "solo_free", "group_official", "group_free")
+
+
+def roulette_of(e):
+    """The roulette a roll belongs to; rolls saved before the roulettes were apart are read from what they were."""
+    if e.get("roulette") in ROULETTES:
+        return e["roulette"]
+    kind = "group" if e.get("group") or e.get("mode") == "group" else "solo"
+    official = e["official"] if "official" in e else e.get("full") and not e.get("favs")
+    return kind + ("_official" if official else "_free")
 
 
 def roulette_game(queue_id=None, mode=None, custom=False):
@@ -836,7 +849,7 @@ class RollHistory:
             for k in ("game_id", "queue", "played", "win", "kda", "duration", "ended", "lp_before", "lp", "lp_protected",
                       "rank_ref", "src", "puuid"):
                 e.pop(k, None)
-            if e is rolls[-1]:
+            if e is self.last_roll(roulette_of(e)):
                 e["status"] = "pending"
                 e.pop("reason", None)
             else:
@@ -853,15 +866,32 @@ class RollHistory:
         owner = e.get("account") or e.get("puuid")
         return not (self.account and owner and owner != self.account)
 
-    def rolls(self):
-        return [e for e in self.entries if not e.get("free") and self.mine(e)]
+    def rolls(self, roulette=None):
+        return [e for e in self.entries if not e.get("free") and self.mine(e) and (not roulette or roulette_of(e) == roulette)]
 
-    def last_roll(self):
-        return next((e for e in reversed(self.entries) if not e.get("free") and self.mine(e)), None)
+    def last_roll(self, roulette=None):
+        return next((e for e in reversed(self.entries)
+                     if not e.get("free") and self.mine(e) and (not roulette or roulette_of(e) == roulette)), None)
 
-    def pending(self):
-        e = self.last_roll()
+    def pending(self, roulette):
+        """The roll waiting to be played on that roulette (paused or not)."""
+        e = self.last_roll(roulette)
         return e if e and e.get("status") == "pending" else None
+
+    def in_game(self):
+        """The roll of the game in progress, whatever its roulette."""
+        return next((e for e in reversed(self.entries) if not e.get("free") and self.mine(e)
+                     and e.get("status") == "in_game"), None)
+
+    def set_paused(self, e, paused, why=None):
+        """why: "manual", "queue_role" (search started on another position), "swap" (role traded in champ select),
+        "other_champ" (another champion locked), "late" (champ select seen too late to tell)."""
+        if paused:
+            e["paused"], e["paused_why"] = True, why or "manual"
+        else:
+            e.pop("paused", None)
+            e.pop("paused_why", None)
+        self.save()
 
     def _insert(self, entry):
         """Inserts a game in chronological order (caught-up games can be older)."""
@@ -876,13 +906,16 @@ class RollHistory:
                 "role": None, "game_id": game_id, "puuid": puuid}
 
     def add_roll(self, key, role, tracking, reason=None, now=None, mode=None, favs=None, group=None, full=None,
-                 official=None, day=None):
+                 official=None, day=None, roulette=None):
         """mode: "both" (random role + champion), "role" (random role, picked champion),
         "champ" (random champion, picked role). favs: favorite filters active for the roll.
         full: role and champion both drawn. official: made on the official roulette, it fills the binder
-        (collection.py). day: the roulette day it belongs to (core.Core._day)."""
+        (collection.py). day: the roulette day it belongs to (core.Core._day). roulette: the one it is made on
+        (ROULETTES); it replaces that roulette's pending roll only."""
         now = now or time.time()
-        prev = self.pending()
+        if roulette not in ROULETTES:
+            roulette = ("group" if group else "solo") + ("_official" if official else "_free")
+        prev = self.pending(roulette)
         if prev:
             if tracking:
                 prev["status"] = "cancelled"
@@ -892,7 +925,7 @@ class RollHistory:
                 prev["reason"] = reason or "rerolled_offline"
             prev["closed"] = now
         entry = {"id": int(now * 1000), "created": now, "date": time.strftime("%d/%m %H:%M", time.localtime(now)),
-                 "key": key, "role": role, "status": "pending"}
+                 "key": key, "role": role, "status": "pending", "roulette": roulette}
         if self.account:
             entry["account"] = self.account
         if mode:
@@ -935,15 +968,16 @@ class RollHistory:
         return {e.get("game_id") for e in self.entries if e.get("game_id")}
 
     def on_game_start(self, game_id, queue_id, played_cid, started_at=None, ranked=None, role=None, puuid=None,
-                      custom=False, mode=None, paused=False):
-        """A game just started: matched to the pending roll (created before it), otherwise stored as a free game.
-        ranked: current rank, the LP baseline for this game. Returns "roll", "free" or None."""
+                      custom=False, mode=None, roll=None):
+        """A game just started: matched to the roll that counts (pending on the roulette in use, not paused, created
+        before it), otherwise stored as a free game. ranked: current rank, the LP baseline for this game.
+        Returns "roll", "free" or None."""
         started_at = started_at or time.time()
         if not game_id or game_id in self._used_games():
             return None
-        e = self.pending()
+        e = roll
         kind = "roll"
-        if not e or e["created"] > started_at or paused or not roulette_game(queue_id, mode, custom):
+        if not e or e.get("status") != "pending" or e["created"] > started_at or not roulette_game(queue_id, mode, custom):
             if custom:
                 return None   # custom / practice game without a roll: not stored
             e = self._free_entry(game_id, started_at, self.cid_to_key.get(played_cid), puuid)
@@ -952,6 +986,8 @@ class RollHistory:
             kind = "free"
         if puuid:
             e["puuid"] = puuid
+        e.pop("paused", None)
+        e.pop("paused_why", None)
         e["status"] = "in_game"
         e["game_id"] = game_id
         e["queue"] = queue_id
@@ -1046,9 +1082,10 @@ class RollHistory:
         e.setdefault("ended", time.time())
         e.pop("reason", None)
 
-    def on_history(self, games, puuid=None, paused=False):
+    def on_history(self, games, puuid=None, current=None):
         """Syncs with the client's match history (last 20 games): rolls matched to their game, then every other
-        matchmade game added as a free game. Returns True on change."""
+        matchmade game added as a free game. current: the pending roll that counts (games played while the app was
+        closed can be its); the other pending rolls wait. Returns True on change."""
         if not games:
             return False
         changed = False
@@ -1057,7 +1094,11 @@ class RollHistory:
         oldest = min(g["creation"] for g in games)
         ordered = sorted(games, key=lambda g: g["creation"])
         rolls = self.rolls()
-        for i, e in enumerate(rolls):
+        ends, nxt = {}, {}   # a roll could be played until the next roll of its roulette
+        for e in reversed(rolls):
+            ends[id(e)] = nxt.get(roulette_of(e), float("inf"))
+            nxt[roulette_of(e)] = e["created"]
+        for e in rolls:
             st = e.get("status")
             if (st == "in_game" or e.get("src") == "eog") and e.get("game_id") in by_id:
                 self._apply(e, by_id[e["game_id"]])
@@ -1065,8 +1106,8 @@ class RollHistory:
                 changed = True
             elif st in ("to_check", "pending"):
                 start = e["created"]
-                end = rolls[i + 1]["created"] if i + 1 < len(rolls) else float("inf")
-                g = None if (paused and st == "pending") else next(
+                end = ends[id(e)]
+                g = None if (st == "pending" and e is not current) else next(
                     (g for g in ordered if start < g["creation"] < end and g["gameId"] not in used
                      and roulette_game(g.get("queueId"), g.get("mode"), g.get("type") == "CUSTOM_GAME")), None)
                 if g:

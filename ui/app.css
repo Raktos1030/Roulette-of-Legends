@@ -1279,6 +1279,8 @@ button.gp-av:hover { border-color: var(--gold-hi); filter: brightness(1.2); }
 .controls.group .ctl-official { display: none; }
 
 /* group result */
+.gres-note { margin: -4px 0 12px; font-size: 13px; color: var(--teal); }
+.gres.paused .gres-card.me { filter: grayscale(.55) brightness(.8); }
 .gres { margin-top: 14px; }
 .gr-copy { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 999px; cursor: pointer;
   border: 1px solid rgba(114, 137, 218, .55); background: rgba(88, 101, 242, .12); color: #b7c2ff; font-weight: 600; font-size: 12.5px; letter-spacing: 0; text-transform: none; transition: all .2s; }

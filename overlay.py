@@ -985,7 +985,8 @@ class TrayMenu:
         from system import autostart_command, autostart_enabled, set_autostart
         core = self.ov.core
         out = [("item", T("Ouvrir la roulette"), lambda: core.actions.put("show"), None)]
-        out.append(("toggle", T("Tirage en pause"), lambda: core.actions.put("pause"), bool(core.profile["roulette_paused"])))
+        roll = core._active_roll()
+        out.append(("toggle", T("Tirage en pause"), lambda: core.actions.put("pause"), bool(roll and roll.get("paused"))))
         if not LITE:
             on = core.profile["overlay_mode"] != "never"
             out.append(("toggle", T("Overlay en jeu"), lambda: core.actions.put("overlay:" + ("never" if on else "tab")), on))
@@ -998,9 +999,9 @@ class TrayMenu:
 
     def _status(self):
         core = self.ov.core
-        e = core.history.pending()
-        if e:
-            return T("%s : %s %s") % (T("En pause") if core.profile["roulette_paused"] else T("Tirage en attente"),
+        e = core._active_roll()
+        if e and e.get("status") == "pending":
+            return T("%s : %s %s") % (T("En pause") if e.get("paused") else T("Tirage en attente"),
                                       core.data.champ_name(e.get("key")), ROLE_LABEL.get(e.get("role"), "")), C_GOLD
         if core.lol_state.get("connected"):
             return T("Relié à League of Legends"), C_GREEN

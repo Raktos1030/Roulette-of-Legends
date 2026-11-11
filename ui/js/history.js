@@ -129,7 +129,8 @@ function paintFilters() {
     <select class="input" id="h-champ"><option value="all">${esc(t("Tous les champions"))}</option></select>
     <select class="input" id="h-queue"><option value="all">${esc(t("Tous les modes"))}</option></select>
     <select class="input" id="h-mode">
-      <option value="all">${esc(t("Tous les tirages"))}</option><option value="both">${esc(t("Rôle + champion"))}</option><option value="role">${esc(t("Rôle aléatoire"))}</option><option value="champ">${esc(t("Champion aléatoire"))}</option>
+      <option value="all">${esc(t("Toutes les roulettes"))}</option>${[["solo_official", "Solo officielle"], ["solo_free", "Solo perso"], ["group_official", "Groupe officielle"], ["group_free", "Groupe perso"], ["chaos", "Chaos"]]
+        .map(([v, l]) => `<option value="${v}">${esc(t(l))}</option>`).join("")}
     </select>
     <span class="grow"></span>
     <button class="btn sm" id="h-refresh">${esc(t("Actualiser depuis LoL"))}</button>

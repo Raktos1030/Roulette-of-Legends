@@ -61,7 +61,7 @@ function paintBar() {
   if (mine) {
     bar.className = "guide-bar mine";
     bar.innerHTML = `${back}
-      <span class="fb-badge"><i class="fb-dot"></i>${esc(r.status === "in_game" ? t("Partie en cours") : t("Ton tirage"))}</span>
+      <span class="fb-badge"><i class="fb-dot"></i>${esc(r.status === "in_game" ? t("Partie en cours") : r.paused ? t("Tirage en pause") : t("Ton tirage"))}</span>
       <span class="fb-who">${who}</span>
       <span class="fb-sub">${esc(r.mode || "")}</span>
       <span class="grow"></span>
@@ -111,7 +111,7 @@ function paintQuick() {
   if (r) {
     cards.push(`<button class="flq mine" data-k="${esc(r.combo)}">
       <img src="${img.icon(r.key)}" alt="">
-      <span class="flq-t"><span class="fb-badge"><i class="fb-dot"></i>${esc(r.status === "in_game" ? t("Partie en cours") : t("Ton tirage en cours"))}</span>
+      <span class="flq-t"><span class="fb-badge"><i class="fb-dot"></i>${esc(r.status === "in_game" ? t("Partie en cours") : r.paused ? t("Tirage en pause") : t("Ton tirage en cours"))}</span>
         <b>${esc(r.name)}</b><span class="flq-r">${roleIcon(r.role)}${esc(r.role_label)}</span></span>
       <span class="flq-go">${esc(t("Ouvrir la fiche"))}<svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span></button>`);
   }

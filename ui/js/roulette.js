@@ -65,11 +65,14 @@ export function renderRoulette(page) {
   dress();
   new MutationObserver(dress).observe(rl, { childList: true, subtree: true });
   page.querySelector("#launch").onclick = () => launch();
-  page.querySelectorAll(".mode-tab").forEach((b) => (b.onclick = () => {
-    if (store.spinning) return;
+  mode = kindOf();
+  page.querySelectorAll(".mode-tab").forEach((b) => (b.onclick = async () => {
+    if (store.spinning || b.dataset.mode === mode) return;
     mode = b.dataset.mode;
-    try { localStorage.setItem("rol_mode", mode); } catch (e) { /* storage unavailable: not important */ }
     paintMode();
+    const r = await call("set_pref", { key: "roulette_kind", value: mode });   // the roulette open is the one that counts
+    if (r.error) return toast(r.error, "bad");
+    store.profile = r.profile;
   }));
   paintMode();
   paintStatus();
@@ -90,6 +93,10 @@ export function renderRoulette(page) {
       if (row && lab) row.textContent = myName();
     }
     if (type === "profile") {
+      if (kindOf() !== mode && !store.spinning) {   // switched by the app (group roll, personal roll in champ select)
+        mode = kindOf();
+        paintMode();
+      }
       paintKind();
       paintRoles();
       paintFilters();
@@ -100,6 +107,7 @@ export function renderRoulette(page) {
     if ((type === "recent" || type === "roll") && !store.spinning) {
       renderWelcome(stage);
       paintStripRoll();
+      if (mode === "group") paintGroupResult();
     }
   });
 }
@@ -359,14 +367,14 @@ const JOKER_SVG = `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3"
 const PLAY_SVG = `<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 2.6v10.8c0 .5.5.8.9.5l8.2-5.4a.6.6 0 0 0 0-1L5.4 2.1c-.4-.3-.9 0-.9.5z"/></svg>`;
 
 // Current roll: the idle strip becomes its card (splash, name, role), with the guide and pause buttons.
-// While paused the card freezes: games don't count for the roulette and the roll waits.
+// While paused the card freezes: games don't count for this roll, it waits (the other roulettes keep theirs).
 function paintStripRoll() {
   const strip = root && root.querySelector("#strip");
   if (!strip || !strip.classList.contains("idle")) return;
   const roll = store.roll;
   const show = !!roll && (roll.status === "pending" || roll.status === "in_game");
   const inGame = show && roll.status === "in_game";
-  const paused = show && !inGame && !!store.profile.roulette_paused;
+  const paused = show && !inGame && !!roll.paused;
   strip.classList.toggle("has-roll", show);
   strip.classList.toggle("paused", paused);
   let box = strip.querySelector(".strip-roll");
@@ -381,7 +389,8 @@ function paintStripRoll() {
   }
   const kicker = inGame ? t("Partie en cours") : paused ? t("Tirage en pause") : t("Ton tirage");
   const sub = inGame ? t("Le résultat et les LP s'ajoutent à ton historique à la fin de la partie.")
-    : paused ? t("Tes parties ne comptent pas pour la roulette.")
+    : paused ? (roll.paused_why ? t("En pause ({0}) : tes parties ne comptent pas pour ce tirage.", roll.paused_why)
+      : t("Tes parties ne comptent pas pour ce tirage."))
     : t("À jouer sur la Faille : les autres modes ne comptent pas.");
   const tip = paused ? t("Tes prochaines parties sur la Faille compteront à nouveau pour ce tirage")
     : t("Tes parties ne compteront pas, ton tirage reste en attente");
@@ -418,13 +427,16 @@ function paintStripRoll() {
     launch();
   };
   const pb = box.querySelector("[data-pause]");
-  if (pb) pb.onclick = async () => {
-    pb.disabled = true;
-    const r = await call("set_pref", { key: "roulette_paused", value: !paused });
-    if (r.error) return toast(r.error, "bad");
-    store.profile = r.profile;
-    paintStripRoll();
-  };
+  if (pb) pb.onclick = () => togglePause(pb, paused);
+}
+
+async function togglePause(btn, paused) {
+  btn.disabled = true;
+  const r = await call("pause", { paused: !paused });   // the card follows with the roll sent back
+  if (r.error) {
+    btn.disabled = false;
+    toast(r.error, "bad");
+  }
 }
 
 // the roll's random build in short: keystone and secondary tree, summoner spells, items in buying order, max order
@@ -567,6 +579,10 @@ export async function launch(opts = {}) {
       store.roll = null;
     }
   }
+  if (opts.reason === "cs_draw" && mode === "group") {   // a personal roll for champ select: on the solo roulette
+    mode = "solo";
+    paintMode();
+  }
   const body = opts.role ? { role: opts.role, reason: opts.reason || null } : { role, champ: champ ? champ.name : (root.querySelector("#cf-input").value || "") };
   const r = await call(opts.role ? "reroll" : "roll", body);
   if (r.error) {
@@ -579,6 +595,7 @@ export async function launch(opts = {}) {
     return;
   }
   lock(true);
+  root.querySelector("#strip").hidden = false;   // champ select reroll of the group roulette: shown on this strip
   spinLogo(3.5);   // the logo wheel spins with the roulette
   sound.spinStart();
   mechKick();
@@ -625,6 +642,7 @@ export async function launch(opts = {}) {
     showGuide(c.combo);
   } finally {
     lock(false);
+    if (root && mode === "group") paintMode();
   }
 }
 
@@ -636,9 +654,8 @@ const GROUP_SVG = `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy
 const COPY_SVG = `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2.5"/><path d="M15.5 8.5V6a2.5 2.5 0 0 0-2.5-2.5H6A2.5 2.5 0 0 0 3.5 6v7A2.5 2.5 0 0 0 6 15.5h2.5"/></svg>`;
 const GCARD = 92, GSTEP = GCARD + 8;
 let mode = "solo";
-try { mode = localStorage.getItem("rol_mode") === "group" ? "group" : "solo"; } catch (e) { /* storage unavailable */ }
+const kindOf = () => (store.profile.roulette_kind === "group" ? "group" : "solo");
 let gPlayers = null;   // [{name, me, role, champ, out}]; out: in the lobby but not in this roll
-let gResult = null;    // last group roll
 let gChaos = false;    // chaos for the whole group: any champion in any role
 let gManual = false;   // list edited by hand: the LoL lobby no longer fills it
 const gKeep = {};      // each lobby player's choices (role, champion, sitting out), kept while the lobby changes
@@ -690,7 +707,7 @@ function paintMode() {
     else if (synced()) gPlayers = playersFromLobby();   // the lobby may have changed meanwhile
     paintGroupPanel();
     paintGroupStrips();
-    if (gResult) paintGroupResult();
+    paintGroupResult();
   }
 }
 
@@ -881,8 +898,8 @@ async function launchGroup() {
     await Promise.all(r.players.map((pl, i) => spinRow(rows[i], pl, 2300 + i * 750)));
     const c = await call("group_commit", { id: r.id });
     if (c.error) return toast(c.error, "bad");
-    gResult = c.players;
-    const me = gResult.find((p) => p.me);
+    if (c.roll) store.roll = c.roll;
+    const me = c.players.find((p) => p.me);
     setStatus(me ? t("Tirage du groupe enregistré : {0}, {1} {2}.", me.name, me.champ, me.role_label) : t("Tirage du groupe enregistré."), "gold");
     paintGroupResult();
   } finally {
@@ -890,18 +907,32 @@ async function launchGroup() {
   }
 }
 
+// the group roll in use: the one of the group roulette open (pending or in game)
+const groupRoll = () => {
+  const r = store.roll;
+  return r && r.group && String(r.roulette || "").startsWith("group") ? r : null;
+};
+
 function paintGroupResult() {
-  const box = root.querySelector("#gresult");
-  if (!gResult) return (box.innerHTML = "");
-  box.innerHTML = `<section class="card gres page-enter">
-    <h3 class="card-title">${esc(t("Le tirage du groupe"))}<span class="aside"><button class="gr-copy" data-copy>${COPY_SVG}${esc(t("Copier"))}</button></span></h3>
-    <div class="gres-row">${gResult.map((p) => `
+  const box = root && root.querySelector("#gresult");
+  if (!box) return;
+  const roll = groupRoll();
+  if (!roll) return (box.innerHTML = "");
+  const pending = roll.status === "pending", paused = pending && roll.paused;
+  const joker = pending && !paused && roll.official && (store.boot.joker || {}).available;
+  box.innerHTML = `<section class="card gres page-enter${paused ? " paused" : ""}">
+    <h3 class="card-title">${esc(paused ? t("Tirage du groupe en pause") : t("Le tirage du groupe"))}<span class="aside">
+      ${pending ? `<button class="gr-copy" data-gpause>${paused ? PLAY_SVG + esc(t("Reprendre")) : PAUSE_SVG + esc(t("Mettre en pause"))}</button>` : ""}
+      ${joker ? `<button class="gr-copy" data-gjoker title="${esc(t("Passe ce tirage avec ton Joker : il ne compte pas comme annulé"))}">${JOKER_SVG}${esc(t("Joker"))}</button>` : ""}
+      <button class="gr-copy" data-copy>${COPY_SVG}${esc(t("Copier"))}</button></span></h3>
+    ${paused ? `<p class="gres-note">${esc(roll.paused_why ? t("En pause ({0}) : tes parties ne comptent pas pour ce tirage.", roll.paused_why) : t("Tes parties ne comptent pas pour ce tirage."))}</p>` : ""}
+    <div class="gres-row">${roll.group.map((p) => `
       <div class="gres-card${p.me ? " me" : ""}" style="--art:url('${img.tall(p.key)}')">
         <span class="gr-who">${esc(p.name)}${p.me ? `<i class="gr-me">${esc(t("toi"))}</i>` : ""}</span>
         <div class="gr-foot">
           <b>${esc(p.champ)}</b>
           <span class="gr-role">${roleIcon(p.role)}${esc(p.role_label)}</span>
-          <div class="gr-act">${isLite() ? `<button class="btn sm" data-ugg="${esc(p.combo)}" title="${esc(t("Ouvre la page u.gg de ce champion à ce poste dans ton navigateur"))}">u.gg</button>` : `<button class="btn sm" data-guide="${esc(p.combo)}">${esc(t("Fiche"))}</button>`}<button class="btn sm" data-reroll="${p.i}" title="${esc(t("Nouveau champion au même poste (banni, déjà pris…)"))}">${esc(t("Relancer"))}</button></div>
+          <div class="gr-act">${isLite() ? `<button class="btn sm" data-ugg="${esc(p.combo)}" title="${esc(t("Ouvre la page u.gg de ce champion à ce poste dans ton navigateur"))}">u.gg</button>` : `<button class="btn sm" data-guide="${esc(p.combo)}">${esc(t("Fiche"))}</button>`}${pending ? `<button class="btn sm" data-reroll="${p.i}" title="${esc(t("Nouveau champion au même poste (banni, déjà pris…)"))}">${esc(t("Relancer"))}</button>` : ""}</div>
         </div>
       </div>`).join("")}</div>
   </section>`;
@@ -909,6 +940,15 @@ function paintGroupResult() {
   box.querySelectorAll("[data-ugg]").forEach((b) => (b.onclick = () => openUgg(...b.dataset.ugg.split("|"))));
   box.querySelectorAll("[data-reroll]").forEach((b) => (b.onclick = () => rerollOne(+b.dataset.reroll)));
   box.querySelector("[data-copy]").onclick = copyDiscord;
+  const pb = box.querySelector("[data-gpause]");
+  if (pb) pb.onclick = () => togglePause(pb, paused);
+  const jb = box.querySelector("[data-gjoker]");
+  if (jb) jb.onclick = async () => {
+    const me = roll.group.find((p) => p.me);
+    if (!(await confirmBox(t("Utiliser ton Joker sur {0} {1} ? Le tirage est passé sans compter comme annulé.", me ? me.champ : roll.name, roll.role_label), t("Utiliser le Joker")))) return;
+    const r = await call("joker");
+    if (r.error) toast(r.error, "warn");
+  };
 }
 
 async function rerollOne(i) {
@@ -920,7 +960,7 @@ async function rerollOne(i) {
     await preload(r.player.steps[0].seq.map((x) => img.tall(x.key)));
     const row = root.querySelector(`.gs-row[data-i="${i}"]`);
     if (row) await spinRow(row, r.player, 1900);
-    gResult[i] = r.player;
+    if (r.roll) store.roll = r.roll;
     paintGroupResult();
     setStatus(t("{0} : {1} {2}.", r.player.name, r.player.champ, r.player.role_label), "gold");
   } finally {
@@ -929,8 +969,10 @@ async function rerollOne(i) {
 }
 
 async function copyDiscord() {
+  const roll = groupRoll();
+  if (!roll) return;
   const title = (await call("rewards")).title_label;   // the title picked in the rewards path, after my name
-  const lines = [t("🎲 Roulette of Legends · tirage du groupe"), ...gResult.map((p) =>
+  const lines = [t("🎲 Roulette of Legends · tirage du groupe"), ...roll.group.map((p) =>
     t("• {0} : {1} ({2})", p.me && title ? `${p.name} « ${title} »` : p.name, p.champ, p.role_label))];
   const text = lines.join("\n");
   try {
@@ -951,8 +993,8 @@ function renderWelcome(stage) {
   const b = store.boot;
   const hero = b.hero;
   backdrop(hero);
-  const recent = store.recent || [];
   const roll = store.roll;
+  const recent = (store.recent || []).filter((it) => !roll || it.id !== roll.id);   // the roll in use shows above
   stage.innerHTML = `
   <div class="welcome page-enter">
     <section class="card w-hero">
@@ -974,7 +1016,7 @@ function renderWelcome(stage) {
     <section class="card">
       <h3 class="card-title">${esc(t("Derniers tirages"))}<span class="aside"><a href="#/history" class="t-gold">${esc(t("Historique complet →"))}</a></span></h3>
       ${roll ? `<button class="roll-now" data-combo="${esc(roll.combo)}">
-          <img src="${img.icon(roll.key)}" alt=""><span><small>${esc(roll.status === "in_game" ? t("Partie en cours") : store.profile.roulette_paused ? t("Tirage en pause") : t("Ton tirage en cours"))}</small><b>${esc(roll.name)} · ${esc(roll.role_label)}</b></span>
+          <img src="${img.icon(roll.key)}" alt=""><span><small>${esc(roll.status === "in_game" ? t("Partie en cours") : roll.paused ? t("Tirage en pause") : t("Ton tirage en cours"))}</small><b>${esc(roll.name)} · ${esc(roll.role_label)}</b></span>
           <span class="rn-go">${esc(isLite() ? t("Voir sur u.gg →") : t("Voir la fiche →"))}</span></button>` : ""}
       ${recent.length ? `<div class="recent-list scroll">${recent.slice(0, 12).map((it) => `
         <div class="recent-item" data-combo="${esc(it.combo)}"><img src="${img.icon(it.key)}" alt="">

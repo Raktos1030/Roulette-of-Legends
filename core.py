@@ -186,8 +186,10 @@ ROLES = ["top", "jgl", "mid", "adc", "sup"]
 ROLE_LABEL = {"top": "Top", "jgl": "Jungle", "mid": "Mid", "adc": "ADC", "sup": "Support", "random": "Aléatoire"}
 ROLE_LONG = {"top": "TOP", "jgl": "JUNGLE", "mid": "MID", "adc": "ADC", "sup": "SUPPORT"}
 ROLE_ICON = {"top": "top", "jgl": "jungle", "mid": "middle", "adc": "bottom", "sup": "utility", "random": "fill"}
-MODE_LABEL = {"both": "Rôle + champion", "role": "Rôle aléatoire", "champ": "Champion aléatoire", "group": "Groupe",
+MODE_LABEL = {"both": "Tout au hasard", "role": "Rôle aléatoire", "champ": "Champion aléatoire", "group": "Groupe",
               "chaos": "Chaos"}
+ROULETTE_LABEL = {"solo_official": "Solo officielle", "solo_free": "Solo perso", "group_official": "Groupe officielle",
+                  "group_free": "Groupe perso"}
 SPELL_KEYS = ["P", "Q", "W", "E", "R"]
 _LABELS = [(ROLE_LABEL, dict(ROLE_LABEL)), (MODE_LABEL, dict(MODE_LABEL))]
 GUIDE_FIELDS = [
@@ -365,6 +367,7 @@ class Profile:
         "rewards_seen": {},   # rewards path: per LoL account, the steps already shown (the others are "new")
         "title": None,        # title picked among the ones won (rewards.py)
         "roulette_mode": "official",   # "official" (everything drawn: fills the binder) or "free" (favorites, picks)
+        "roulette_kind": "solo",       # "solo" or "group": with roulette_mode, the roulette whose roll counts
         "roulette": "classic",   # looks unlocked in the rewards path (rewards.LOOKS): Roulette tab skin,
         "opening": "classic",    # booster opening
         "overlay_mode": "tab", "overlay_side": "right", "overlay_page": "early",
@@ -377,7 +380,7 @@ class Profile:
         "account_puuid": None,   # last connected LoL account: the history shows its games
         "favs_by_account": {},   # favorites of the other LoL accounts (the current one's are the fav_* keys)
         "board_geom": None,      # scoreboard grid (Tab), measured once for the resolution and HUD scale
-        "roulette_paused": False,   # games don't count for the roulette, the current roll stays pending
+        "roulette_paused": False,   # before 3.1: one pause for everything (moved to the roll in use at start)
         "sounds": True, "sound_volume": 0.6,   # sound effects of the UI (ui/js/sound.js)
         "rbuild_on": False,         # each roll also draws a random build (randombuild.py)...
         "rbuild_parts": list(randombuild.PARTS),   # ...of these parts
@@ -754,6 +757,9 @@ _LABELS.append((CHECK_LABEL, dict(CHECK_LABEL)))
 REASON_TEXT = {"champion_taken": "champion pris", "champion_banned": "champion banni",
                "rerolled": "relancé avant de jouer", "rerolled_offline": "relancé sans client LoL connecté",
                "not_rift": "partie hors Faille", "group_reroll": "relancé (groupe)", "joker": "passé avec un Joker"}
+# why a roll waits (paused): by hand, or the official roll not played as drawn
+PAUSE_TEXT = {"queue_role": "file lancée sur un autre poste", "swap": "poste échangé", "other_champ": "autre champion",
+              "late": "sélection vue en cours de route"}
 
 
 def reason_text(r):
@@ -761,6 +767,9 @@ def reason_text(r):
     if (r or "").startswith("autofill:"):
         role = r.partition(":")[2]
         return T("autofill (%s)") % ROLE_LABEL.get(role, role)
+    if (r or "").startswith("role:"):   # a personal roll rerolled for the role the player went to
+        role = r.partition(":")[2]
+        return T("poste changé (%s)") % ROLE_LABEL.get(role, role)
     return T(REASON_TEXT.get(r, r or ""))
 
 
@@ -855,6 +864,9 @@ def entry_display(e, data):
         result, tone, glyph = T("En partie"), "live", "▶"
         if other:
             detail = T("joue %s") % data.champ_name(played)
+    elif e.get("paused"):
+        result, tone, glyph = T("En pause"), "pending", "‖"
+        detail = T(PAUSE_TEXT.get(e.get("paused_why"), ""))
     else:
         result, tone, glyph = T("En attente"), "pending", "…"
     return {"result": result, "tone": tone, "glyph": glyph, "detail": detail}
@@ -900,6 +912,11 @@ class Core:
         self.data = Data()
         self.history = lol.RollHistory(HISTORY_PATH, self.data.cid_to_key)
         self.history.account = self.profile["account_puuid"]
+        if self.profile["roulette_paused"]:   # one pause for everything before 3.1: it goes to the roll in use
+            e = self.history.pending(self._roulette())
+            if e:
+                self.history.set_paused(e, True)
+            self.profile["roulette_paused"] = False
         self.events = queue.Queue()      # League client events
         self.actions = queue.Queue()     # tray icon / second launch actions
         self.overlay_cmds = queue.Queue()   # overlay commands (preview, placement)
@@ -916,6 +933,9 @@ class Core:
         self._cs_champ = 0
         self._cs_role = None
         self._cs_shown = None
+        self._cs_first = None    # champ select: {"session", "role" given at the start, "start": seen from the start}
+        self._cs_from_start = False
+        self._search_pos1 = "?"   # first position of the last search ("?": unknown, or a queue without positions)
         self._queue_ask = None   # search started with a roll pending: the overlay asks whether the game counts
         self._requested = set()
         self._window_mode = (0.0, None)   # (read at, LoL display mode)
@@ -1036,7 +1056,8 @@ class Core:
             elif action.startswith("overlay:"):
                 self.api_set_pref("overlay_mode", action.split(":", 1)[1])
             elif action == "pause":
-                self.api_set_pref("roulette_paused", not self.profile["roulette_paused"])
+                e = self._active_roll()
+                self.api_pause(not (e and e.get("paused")))
 
     # --- views for the UI ------------------------------------------------------------
     def api_boot(self):
@@ -1091,8 +1112,8 @@ class Core:
         p = self.profile
         keys = ("fav_champs", "fav_combos", "fav_roles", "only_fav_roles", "only_fav_champs",
                 "overlay_mode", "overlay_scale", "overlay_opacity", "auto_update", "glossary_hints", "lol_dir", "ambient", "usage_stats",
-                "import_runes", "import_spells", "import_items", "import_replace", "roulette_paused", "app_update_seen",
-                "rbuild_on", "rbuild_parts", "sounds", "sound_volume", "roulette", "opening", "roulette_mode")
+                "import_runes", "import_spells", "import_items", "import_replace", "app_update_seen",
+                "rbuild_on", "rbuild_parts", "sounds", "sound_volume", "roulette", "opening", "roulette_mode", "roulette_kind")
         out = {k: p[k] for k in keys}
         out["overlay_pos"] = p["overlay_pos"]
         out["overlay_modules"] = {m["id"]: p.module_cfg(m["id"]) for m in OVERLAY_MODULES}
@@ -1343,27 +1364,72 @@ class Core:
                 return {"ok": True, "build_pick": variant, "reimport": True}
             return {"ok": True, "build_pick": variant}
 
+    # --- the roulettes: solo or group, official or personal, each with its roll ----------------------
+    def _roulette(self):
+        """The roulette that counts: the one open on the Roulette page."""
+        return "%s_%s" % (self.profile["roulette_kind"], "free" if self.profile["roulette_mode"] == "free" else "official")
+
+    def _active_roll(self):
+        """The roll shown and followed: the one of the game in progress, otherwise the pending roll of the roulette
+        in use (paused or not)."""
+        return self.history.in_game() or self.history.pending(self._roulette())
+
+    def _counting_roll(self):
+        """The roll the next game counts for: the pending roll of the roulette in use, unless it is paused."""
+        e = self.history.pending(self._roulette())
+        return e if e and not e.get("paused") else None
+
+    def _official(self, e):
+        return collection.is_official(self.history.entries, self.history.entries.index(e))
+
+    def api_pause(self, paused=True, why="manual"):
+        """Pauses the roll of the roulette in use (it waits, games don't count for it), or resumes it."""
+        with self.lock:
+            e = self.history.pending(self._roulette())
+            if not e:
+                return {"error": T("Aucun tirage en attente.")}
+            self.history.set_paused(e, bool(paused), why)
+            name = "%s %s" % (self.data.champ_name(e["key"]), ROLE_LABEL.get(e["role"], ""))
+            self.set_status((T("Tirage en pause : %s.") if paused else T("Tirage repris : %s.")) % name, "teal")
+            self._history_changed()
+            return {"ok": True}
+
+    def _auto_pause(self, e, why):
+        """The official roll isn't played as drawn (position, swap, another champion): it waits instead of being lost."""
+        if e.get("paused"):
+            return
+        self.history.set_paused(e, True, why)
+        self.set_status(T("Tirage officiel %s %s en pause (%s).") % (
+            self.data.champ_name(e["key"]), ROLE_LABEL.get(e["role"], ""), T(PAUSE_TEXT.get(why, why))), "teal")
+        self._history_changed()
+
     def _roll_view(self):
-        """Current roll (pending or in game), for the Guides page and the home screen."""
-        e = self.history.last_roll()
-        if not e or e.get("status") not in ("pending", "in_game"):
+        """Current roll (in game, or pending on the roulette in use), for the Guides page and the home screen."""
+        e = self._active_roll()
+        if not e:
             return None
         combo = self.data.combo_key(e.get("key"), e.get("role"))
         if combo not in self.data.combos and not self.data.is_chaos_key(combo):
             return None
         rb = e.get("rbuild")
-        return {"combo": combo, "key": e.get("key"), "name": self.data.champ_name(e.get("key")),
+        group = [{"i": i, "name": m.get("name") or "", "me": bool(m.get("me")), "key": m["key"], "role": m["role"],
+                  "role_label": ROLE_LABEL.get(m["role"], ""), "champ": self.data.champ_name(m["key"]),
+                  "combo": self.data.combo_key(m["key"], m["role"])}
+                 for i, m in enumerate(e.get("group") or []) if m.get("key") and m.get("role") in ROLES]
+        return {"id": e.get("id"), "combo": combo, "key": e.get("key"), "name": self.data.champ_name(e.get("key")),
                 "role": e.get("role"), "role_label": ROLE_LABEL.get(e.get("role"), ""), "status": e.get("status"),
-                "mode": MODE_LABEL.get(e.get("mode"), ""),
-                "official": collection.is_official(self.history.entries, self.history.entries.index(e)),
+                "mode": "" if e.get("mode") in ("both", "group") else MODE_LABEL.get(e.get("mode"), ""),
+                "roulette": lol.roulette_of(e), "group": group or None,
+                "paused": bool(e.get("paused")) and e.get("status") == "pending",
+                "paused_why": T(PAUSE_TEXT[e["paused_why"]]) if e.get("paused") and e.get("paused_why") in PAUSE_TEXT else "",
+                "official": self._official(e),
                 "rbuild": {"keystone": (rb.get("runes") or {}).get("perks", [None])[0], "sec": (rb.get("runes") or {}).get("sec"),
                            "sums": (rb.get("sums") or {}).get("ids") or [], "items": (rb.get("core") or {}).get("ids") or [],
                            "prio": (rb.get("skills") or {}).get("prio") or ""} if rb else None}
 
     # --- random build (randombuild.py) ------------------------------------------------------
-    def _draw_rbuild(self, parts=None):
+    def _draw_rbuild(self, e, parts=None):
         """The roll just saved also gets its random build, when the player asked for one (parts: drawn again)."""
-        e = self.history.last_roll()
         p = self.profile
         parts = parts or (p["rbuild_parts"] if p["rbuild_on"] else None)
         if LITE or not e or not parts:
@@ -1380,7 +1446,7 @@ class Core:
 
     def rbuild_of(self, combo_key):
         """Random build of the current roll (pending or in game) when it is that champion in that role."""
-        e = self.history.last_roll()
+        e = self._active_roll()
         if e and e.get("rbuild") and e.get("status") in ("pending", "in_game") \
                 and self.data.combo_key(e.get("key"), e.get("role")) == combo_key:
             return e["rbuild"]
@@ -1416,11 +1482,11 @@ class Core:
     def api_rbuild_reroll(self, key):
         """"Draw another" button: a new random build for the pending roll."""
         with self.lock:
-            e = self.history.last_roll()
+            e = self._active_roll()
             rb = self.rbuild_of(key)
             if not rb or e.get("status") != "pending":
                 return {"error": T("Ce build ne peut plus être relancé : la partie a commencé.")}
-            self._draw_rbuild(rb.get("parts") or list(randombuild.PARTS))
+            self._draw_rbuild(e, rb.get("parts") or list(randombuild.PARTS))
             self.emit("history", {"recent": self._recent_view(), "roll": self._roll_view()})
             st = self.import_state   # already imported in champ select: the new build goes to the client
             if st and st.get("combo") == key and self.watcher:
@@ -1509,7 +1575,7 @@ class Core:
         return winner, {"type": "champ", "seq": items, "index": idx, "pool": len(keys),
                         "role": self.data.combos[winner]["role"]}
 
-    def _chaos_roll(self, reason=None, champ="", official=False):
+    def _chaos_roll(self, reason=None, champ="", official=False, roulette=None):
         """Chaos mode: a random role, then any champion (with or without a guide in that role).
         With a picked champion: that champion in one of the five roles at random."""
         d = self.data
@@ -1525,7 +1591,7 @@ class Core:
         result = d.combo_key(winner, role)
         rid = "%d%04d" % (time.time() * 1000, random.randint(0, 9999))
         self.rolls = {rid: {"result": result, "mode": "chaos", "favs": [], "reason": reason or self.pending_reason,
-                            "official": official and not ch}}
+                            "official": official and not ch, "roulette": roulette}}
         self.pending_reason = None
         self.spinning_until = time.time() + 12
         notes = [] if result in d.combos else [T("Chaos : %s n'a pas de fiche %s, sa fiche chaos est assemblée.") % (
@@ -1538,17 +1604,19 @@ class Core:
         replaces."""
         cs_reroll = str(reason or "").startswith(collection.CS_REROLLS)
         with self.lock:
-            pend = self.history.pending()
-            official = bool(pend and pend.get("official")) if cs_reroll else self.profile["roulette_mode"] == "official"
+            roulette = self._roulette()
+            pend = self.history.pending(roulette)
+            official = bool(pend and pend.get("official")) if cs_reroll else roulette.endswith("_official")
             if reason == "cs_draw":   # champion drawn in champ select for the role given there: a personal roll
                 official = False
+                roulette = "solo_free"
         if official and not cs_reroll and ((champ or "").strip() or role in ROLES):
             return {"error": T("Roulette officielle : le rôle et le champion sont tirés au hasard. Passe en roulette perso pour les choisir.")}
         if role == "chaos":
             with self.lock:
                 if (champ or "").strip() and not self.data.find_champion(champ):
                     return {"error": T("Champion introuvable : « %s ». Choisis-le dans la liste.") % champ.strip()}
-                return self._chaos_roll(reason, champ, official)
+                return self._chaos_roll(reason, champ, official, roulette)
         with self.lock:
             d = self.data
             text = (champ or "").strip()
@@ -1619,7 +1687,7 @@ class Core:
 
             rid = "%d%04d" % (time.time() * 1000, random.randint(0, 9999))
             self.rolls = {rid: {"result": result, "mode": mode, "favs": favs, "reason": reason or self.pending_reason,
-                                "official": official}}
+                                "official": official, "roulette": roulette}}
             self.pending_reason = None
             self.spinning_until = time.time() + 12
             return {"id": rid, "steps": steps, "result": result, "mode": mode, "notes": notes,
@@ -1713,7 +1781,8 @@ class Core:
                 taken_champs.add(combo.partition("|")[0])
                 out[i] = self._group_player(i, p, role, combo, steps)
             gid = "g%d%04d" % (time.time() * 1000, random.randint(0, 9999))
-            self.group = {"id": gid, "players": out, "inputs": ps, "committed": False, "chaos": bool(chaos), "official": official}
+            self.group = {"id": gid, "players": out, "inputs": ps, "committed": False, "chaos": bool(chaos), "official": official,
+                          "roulette": "group_official" if official else "group_free"}
             self.spinning_until = time.time() + 20
             return {"id": gid, "players": out}
 
@@ -1727,7 +1796,7 @@ class Core:
             if not g["committed"]:
                 self._group_record(g)
                 g["committed"] = True
-            return {"ok": True, "players": g["players"]}
+            return {"ok": True, "players": g["players"], "roll": self._roll_view()}
 
     def _group_record(self, g, reason=None):
         me = next((p for p in g["players"] if p["me"]), None)
@@ -1735,26 +1804,44 @@ class Core:
             return
         members = [{"name": p["name"], "key": p["key"], "role": p["role"], "me": p["me"]} for p in g["players"]]
         if reason == "group_reroll":   # same roll, new champion
-            prev = self.history.pending()
+            prev = self.history.pending(g.get("roulette") or self._roulette())
             full = bool(prev and prev.get("full"))
             official = bool(prev and prev.get("official"))
         else:
             mine = g["inputs"][g["players"].index(me)]
             full = mine["role"] == "random" and not mine["champ"]
             official = bool(g.get("official")) and full
-        self.history.add_roll(me["key"], me["role"], bool(self.lol_state.get("connected")), reason=reason, mode="group",
-                              group=members, full=full, official=official, day=self._day())
-        self._draw_rbuild()
-        if self.profile["roulette_paused"]:
-            self.profile["roulette_paused"] = False
+        e = self.history.add_roll(me["key"], me["role"], bool(self.lol_state.get("connected")), reason=reason, mode="group",
+                                  group=members, full=full, official=official, day=self._day(),
+                                  roulette="group_official" if official else "group_free")
+        self._draw_rbuild(e)
+        if self.profile["roulette_kind"] != "group":   # the group roulette is the one in use
+            self.profile["roulette_kind"] = "group"
             self.emit("profile", self._profile_view())
         self._history_changed()
+
+    def _group_from_roll(self):
+        """The group roll in use, rebuilt from its saved roll (after a restart) to reroll one player."""
+        e = self._active_roll()
+        if not e or e.get("status") != "pending" or not e.get("group") \
+                or any(not m.get("key") or m.get("role") not in ROLES for m in e["group"]):
+            return None
+        d = self.data
+        inputs = [{"name": m.get("name") or "", "me": bool(m.get("me")), "role": m["role"], "champ": ""} for m in e["group"]]
+        players = [dict(self._group_player(i, p, p["role"], d.combo_key(m["key"], m["role"]), []), random_role=False)
+                   for i, (p, m) in enumerate(zip(inputs, e["group"]))]
+        self.group = {"id": "saved", "players": players, "inputs": inputs, "committed": True, "official": self._official(e),
+                      "chaos": any(d.combo_key(m["key"], m["role"]) not in d.combos for m in e["group"]),
+                      "roulette": lol.roulette_of(e)}
+        return self.group
 
     def api_group_reroll(self, i):
         """Rerolls a single player (banned, champion taken...): new champion in the same role, no duplicates."""
         with self.lock:
             g = self.group
             if not g or not g["committed"]:
+                g = self._group_from_roll()
+            if not g:
                 return {"error": T("Aucun tirage de groupe à relancer.")}
             try:
                 i = int(i)
@@ -1778,11 +1865,12 @@ class Core:
             if np_["me"]:
                 self._group_record(g, reason="group_reroll")
             else:   # keep the group list stored with the roll in sync
-                e = self.history.last_roll()
+                e = self.history.pending(g.get("roulette") or self._roulette())
                 if e and e.get("group"):
                     e["group"][i] = {"name": np_["name"], "key": np_["key"], "role": np_["role"], "me": False}
                     self.history.save()
-            return {"player": np_}
+                    self._history_changed()
+            return {"player": np_, "roll": self._roll_view()}
 
     def api_roll_commit(self, id):
         """The roulette stopped: the roll is saved and its guide returned."""
@@ -1793,12 +1881,17 @@ class Core:
                 return {"error": T("Tirage expiré.")}
             key, _, role = r["result"].partition("|")
             tracking = bool(self.lol_state.get("connected"))
-            full = collection.roll_full(r["mode"], r["reason"], self.history.pending(), self.history.entries)
-            self.history.add_roll(key, role, tracking, reason=r["reason"], mode=r["mode"], favs=r["favs"], full=full,
-                                  official=r.get("official", False), day=self._day())
-            self._draw_rbuild()
-            if self.profile["roulette_paused"]:   # rolling means wanting to play it: the pause ends
-                self.profile["roulette_paused"] = False
+            roulette = r.get("roulette") or self._roulette()
+            prev = self.history.pending(roulette)
+            full = collection.roll_full(r["mode"], r["reason"], prev, self.history.entries)
+            e = self.history.add_roll(key, role, tracking, reason=r["reason"], mode=r["mode"], favs=r["favs"], full=full,
+                                      official=r.get("official", False), day=self._day(), roulette=roulette)
+            if prev and prev.get("group"):   # champ select reroll on the group roulette: the group stays with it
+                e["group"] = [dict(m, key=key, role=role) if m.get("me") else m for m in prev["group"]]
+                self.history.save()
+            self._draw_rbuild(e)
+            if roulette != self._roulette():   # personal roll drawn in champ select: that roulette is now the one in use
+                self.profile["roulette_kind"], self.profile["roulette_mode"] = "solo", "free"
                 self.emit("profile", self._profile_view())
             self.set_status(T("Résultat : %s %s%s") % (self.data.champ_name(key), ROLE_LABEL[role],
                                                     " (chaos)" if r["mode"] == "chaos" else ""), "gold", toast=False)
@@ -1855,9 +1948,10 @@ class Core:
     PREFS = {"only_fav_roles": bool, "only_fav_champs": bool, "auto_update": bool,
              "glossary_hints": bool, "ambient": bool, "usage_stats": bool, "overlay_mode": str, "overlay_scale": float,
              "overlay_opacity": float, "import_runes": bool, "import_spells": bool, "import_items": bool,
-             "import_replace": bool, "roulette_paused": bool, "app_update_seen": str, "rbuild_on": bool, "sounds": bool,
+             "import_replace": bool, "app_update_seen": str, "rbuild_on": bool, "sounds": bool,
              "sound_volume": lambda v: max(0.0, min(1.0, float(v))),
              "roulette_mode": lambda v: "free" if v == "free" else "official",
+             "roulette_kind": lambda v: "group" if v == "group" else "solo",
              "rbuild_parts": lambda v: [p for p in randombuild.PARTS if p in (v or [])]}
 
     def api_set_pref(self, key, value):
@@ -1871,14 +1965,10 @@ class Core:
                 value = max(0.7, min(1.4, value))
             if key == "overlay_opacity":
                 value = max(0.5, min(1.0, value))
+            changed = self.profile[key] != value
             self.profile[key] = value
             self.emit("profile", self._profile_view())
-            if key == "roulette_paused":
-                e = self.history.pending()
-                pending = T(" Ton tirage %s %s reste en attente.") % (self.data.champ_name(e["key"]), ROLE_LABEL.get(e["role"], "")) \
-                    if e else ""
-                self.set_status((T("Roulette en pause : tes parties ne comptent pas pour la roulette.") + pending) if value
-                                else T("Roulette réactivée."), "teal")
+            if key in ("roulette_mode", "roulette_kind") and changed:   # another roulette counts: its roll shows
                 self._history_changed()
             if key.startswith("overlay_"):
                 self.overlay_cmds.put(("refresh", None))
@@ -2104,10 +2194,10 @@ class Core:
     def api_joker(self):
         """Passes the pending roll with the Joker: closed as "joker" (not a cancel), the roulette can roll again."""
         with self.lock:
-            e = self.history.pending()
+            e = self.history.pending(self._roulette())
             if not e:
                 return {"error": T("Aucun tirage en attente.")}
-            if not collection.is_official(self.history.entries, self.history.entries.index(e)):
+            if not self._official(e):
                 return {"error": T("Le Joker sert à la roulette officielle : un tirage perso se relance librement.")}
             if not rewards.joker([x for x in self.history.entries if self.history.mine(x)])["available"]:
                 return {"error": T("Pas de Joker en réserve pour l'instant.")}
@@ -2232,22 +2322,21 @@ class Core:
                     continue
                 if champ != "all" and e.get("key") != champ:
                     continue
-                if mode != "all" and (e.get("free") or e.get("mode") != mode):
+                if mode != "all" and (e.get("free") or (lol.roulette_of(e) != mode if mode in lol.ROULETTES
+                                                        else e.get("mode") != mode)):
                     continue
                 if queue != "all" and str(e.get("queue")) != str(queue):
                     continue
                 out.append(e)
             rows = []
-            ents = self.history.entries
-            off = {id(x): collection.is_official(ents, i) for i, x in enumerate(ents) if not x.get("free")}
             for e in reversed(out):
                 disp = entry_display(e, d)
                 lp = e.get("lp") or {}
                 rows.append({
                     "id": e["id"], "date": e.get("date", ""), "key": e.get("key"), "name": d.champ_name(e.get("key")),
                     "role": e.get("role"), "role_label": ROLE_LABEL.get(e.get("role"), ""),
-                    "mode": T("Hors roulette") if e.get("free") else MODE_LABEL.get(e.get("mode"), "—")
-                    + ("" if off.get(id(e)) else " · " + T("perso")), "free": bool(e.get("free")),
+                    "mode": T("Hors roulette") if e.get("free") else T(ROULETTE_LABEL[lol.roulette_of(e)])
+                    + (" · Chaos" if e.get("mode") == "chaos" else ""), "free": bool(e.get("free")),
                     "result": disp["result"], "tone": disp["tone"],
                     "glyph": disp["glyph"], "detail": disp["detail"],
                     "kda": e.get("kda"), "queue": T(lol.queue_name(e.get("queue"))),
@@ -2649,14 +2738,29 @@ class Core:
         return view
 
     # --- search started: does this game count for the roulette? -----------------------------------
-    def _queue_search_started(self, q):
-        """A matchmaking search started with a roll pending: the overlay asks over the client whether this game counts
-        or the roulette pauses (a normal game to train...). Without an answer, the game found counts."""
-        e = self.history.pending()
+    def _queue_search_started(self, q, lobby=None):
+        """A matchmaking search started with a roll pending. In the queues with positions, the roll's role has to be
+        the first one picked: otherwise an official roll pauses at once (it waits, a personal roll is offered in champ
+        select), and a roll paused for that resumes when a search starts on its role. Then the overlay asks over the
+        client whether this game counts or the roll pauses (a normal game to train...); without an answer it counts."""
         self._queue_ask = None
-        if not e or self.profile["roulette_paused"] or not lol.roulette_game(q.get("id"), custom=q.get("custom")):
+        me = next((m for m in lobby or [] if m.get("me")), None)
+        positions = me is not None and q.get("id") in lol.POSITION_QUEUES
+        self._search_pos1 = me.get("pos1") if positions else "?"   # "?": no position to go by
+        e = self.history.pending(self._roulette())
+        if not e or not lol.roulette_game(q.get("id"), custom=q.get("custom")):
             return
-        official = collection.is_official(self.history.entries, self.history.entries.index(e))
+        if positions:
+            if me.get("pos1") != e["role"] and self._official(e):
+                self._auto_pause(e, "queue_role")
+            elif me.get("pos1") == e["role"] and e.get("paused_why") == "queue_role":
+                self.history.set_paused(e, False)
+                self.set_status(T("Tirage repris : %s.") % ("%s %s" % (
+                    self.data.champ_name(e["key"]), ROLE_LABEL.get(e["role"], ""))), "teal")
+                self._history_changed()
+        if e.get("paused"):
+            return
+        official = self._official(e)
         self._queue_ask = {"queue": q.get("id"), "key": e["key"], "role": e["role"], "official": official, "since": time.time()}
         self.set_status(T("Recherche lancée (%s) : ton tirage %s %s comptera, sauf si tu mets la roulette en pause.") % (
             T(lol.queue_name(q.get("id"))) or T("partie"), self.data.champ_name(e["key"]), ROLE_LABEL.get(e["role"], "")), "gold")
@@ -2664,29 +2768,49 @@ class Core:
     def queue_prompt(self):
         """For the overlay: the question of the search in progress, or None (answered, or nothing to ask)."""
         a = getattr(self, "_queue_ask", None)
-        if not a or self.lol_state.get("phase") != "Matchmaking" or self.profile["roulette_paused"]:
+        if not a or self.lol_state.get("phase") != "Matchmaking" or not self._counting_roll():
             return None
         return dict(a, name=self.data.champ_name(a["key"]), role_label=ROLE_LABEL.get(a["role"], ""),
                     queue_label=T(lol.queue_name(a["queue"])) or "", ranked=a["queue"] in collection.RANKED)
 
     def api_queue_answer(self, counts=True):
-        """Answer from the overlay: the game counts (the question goes away) or the roulette pauses."""
+        """Answer from the overlay: the game counts (the question goes away) or the roll pauses."""
         with self.lock:
             self._queue_ask = None
-            if not counts:
-                self.profile["roulette_paused"] = True
-                self.emit("profile", self._profile_view())
-                self.set_status(T("Roulette en pause : cette partie ne comptera pas, ton tirage reste en attente."), "teal")
+            e = self._counting_roll()
+            if not counts and e:
+                self.history.set_paused(e, True, "manual")
+                self.set_status(T("Tirage en pause : cette partie ne comptera pas, ton tirage reste en attente."), "teal")
+                self._history_changed()
             return {"ok": True}
 
-    def _autofill_keep(self, cs):
-        """Autofill on a role the rolled champion plays too (Irelia mid, autofilled top): the roll keeps its champion and
-        moves to that role, its card goes there. Otherwise (Irelia jungle) champ select offers a reroll. Chaos: any
-        champion goes anywhere."""
-        e = self.history.pending()
+    def _cs_check(self, cs):
+        """Champ select against the roll that counts. The role given at the start is the queue's doing (second
+        position, autofill): the roll moves there when its champion plays that role too (Irelia mid, autofilled top),
+        otherwise champ select offers a reroll that stays official. A role changed afterwards (traded with an ally), a
+        role seen too late to tell, or another champion locked are the player's doing: the official roll waits
+        (paused), a personal roll is offered. Chaos: any champion goes anywhere."""
+        if cs.get("map") not in (None, 11):
+            return
         role = cs.get("assigned")
-        if (not e or role not in ROLES or e.get("role") == role or self.profile["roulette_paused"]
-                or cs.get("map") not in (None, 11)):
+        if role in ROLES and (not self._cs_first or self._cs_first["session"] != cs.get("session")):
+            self._cs_first = {"session": cs.get("session"), "role": role, "start": self._cs_from_start}
+        e = self._counting_roll()
+        first = self._cs_first
+        if not e:
+            return
+        official = self._official(e)
+        cid = (self.data.champs.get(e["key"]) or {}).get("cid")
+        if official and cs.get("locked") and cs.get("my_champ") and cid and cs["my_champ"] != cid:
+            self._auto_pause(e, "other_champ")
+            return
+        if role not in ROLES or e.get("role") == role or not first:
+            return
+        if role != first["role"] or not first["start"]:   # traded with an ally, or champ select seen too late
+            if official:
+                self._auto_pause(e, "swap" if role != first["role"] else "late")
+            return
+        if self._search_pos1 not in ("?", e["role"]):   # searched on another position: no autofill to follow
             return
         if e.get("mode") != "chaos" and self.data.combo_key(e["key"], role) not in self.data.combos:
             return
@@ -2715,28 +2839,36 @@ class Core:
         d = self.data
         cs = st["cs"]
         assigned = cs.get("assigned")
-        pending = self.history.pending()
+        pending = self.history.pending(self._roulette())
         imp = self.import_state
         view = {"assigned": assigned, "assigned_label": ROLE_LABEL.get(assigned, "") if assigned else "",
                 "lines": [], "buttons": [], "pending": None,
                 "imports": {"label": imp["label"], "results": imp["results"]} if imp else None}
         line = lambda text, tone: view["lines"].append({"text": text, "tone": tone})
         button = lambda label, role, reason: view["buttons"].append({"label": label, "role": role, "reason": reason})
-        paused = self.profile["roulette_paused"]
-        if paused or cs.get("map") not in (None, 11):
-            why = T("Roulette en pause") if paused else T("%s : la roulette ne compte pas") % (
-                T(lol.queue_name(cs.get("queue"))) or T("Autre mode"))
+        free = self.profile["roulette_mode"] == "free"
+
+        def draw():   # a personal roll for the role given here (it becomes the roulette in use)
+            if assigned:
+                button((T("Tirer un champion %s") if free else T("Tirer un champion %s (perso)")) % ROLE_LABEL[assigned],
+                       assigned, "cs_draw")
+        if cs.get("map") not in (None, 11):
+            why = T("%s : la roulette ne compte pas") % (T(lol.queue_name(cs.get("queue"))) or T("Autre mode"))
             if pending:
                 line(T("%s. Ton tirage %s %s reste en attente.") % (why, d.champ_name(pending["key"]),
                                                                   ROLE_LABEL.get(pending["role"], "")), "teal")
             else:
                 line(why + ".", "muted")
             return view
+        if pending and pending.get("paused"):
+            why = PAUSE_TEXT.get(pending.get("paused_why"))
+            line(T("Tirage %s %s en pause%s : cette partie ne compte pas pour lui.") % (
+                d.champ_name(pending["key"]), ROLE_LABEL.get(pending["role"], ""), " (%s)" % T(why) if why else ""), "teal")
+            draw()
+            return view
         if not pending:
             line(T("Aucun tirage en cours."), "muted")
-            if assigned:
-                button((T("Tirer un champion %s (perso, hors classeur)") if self.profile["roulette_mode"] == "official"
-                        else T("Tirer un champion %s")) % ROLE_LABEL[assigned], assigned, "cs_draw")
+            draw()
             return view
         combo = d.combos.get(d.combo_key(pending["key"], pending["role"])) or {}
         name = combo.get("name") or d.champ_name(pending["key"])
@@ -2749,8 +2881,12 @@ class Core:
             line(T("Autofill : %s joue aussi %s, tu le gardes. La carte ira en %s.") % (
                 name, ROLE_LABEL[assigned], ROLE_LABEL[assigned]), "teal")
         if assigned and assigned != pending["role"]:
-            line(T("Autofill : tu joues %s, et %s n'a pas de fiche à ce poste.") % (ROLE_LABEL[assigned], name), "warn")
-            button(T("Relancer en %s") % ROLE_LABEL[assigned], assigned, "autofill:%s" % assigned)
+            first = self._cs_first or {}
+            # the queue's doing (searched on the roll's role, given that one at the start), not the player's
+            given = first.get("start") and first.get("role") == assigned and self._search_pos1 in ("?", pending["role"])
+            line(T("Autofill : tu joues %s, et %s n'a pas de fiche à ce poste.") % (ROLE_LABEL[assigned], name) if given
+                 else T("Tu joues %s, ton tirage %s est prévu en %s.") % (ROLE_LABEL[assigned], name, ROLE_LABEL[pending["role"]]), "warn")
+            button(T("Relancer en %s") % ROLE_LABEL[assigned], assigned, ("autofill:%s" if given else "role:%s") % assigned)
             problem = True
         if cid in (cs.get("bans") or []):
             line(T("%s a été banni.") % name, "bad")
@@ -2768,6 +2904,8 @@ class Core:
                 line(T("%s verrouillé.") % name, "good")
             elif my and my != cid and cs.get("locked"):
                 line(T("Tu as verrouillé %s au lieu de %s.") % (d.champ_name(d.cid_to_key.get(my)), name), "warn")
+            elif my and my != cid and self._official(pending):
+                line(T("Si tu verrouilles %s, ton tirage officiel passe en pause.") % d.champ_name(d.cid_to_key.get(my)), "warn")
             else:
                 line(T("Tout est bon : joue %s.") % name, "good")
         return view
@@ -2786,7 +2924,7 @@ class Core:
                 if ev.get("puuid") and ev["puuid"] != self.profile["account_puuid"]:
                     self._switch_account(ev["puuid"])
                     changed = True
-                if self.history.on_history(ev.get("games") or [], ev.get("puuid"), self.profile["roulette_paused"]):
+                if self.history.on_history(ev.get("games") or [], ev.get("puuid"), self._counting_roll()):
                     changed = True
                 if self._fetch_missing_details():
                     changed = True
@@ -2923,7 +3061,7 @@ class Core:
                                  name="import", daemon=True).start()
             return
         combo = self._combo_for(cs["my_champ"], cs.get("assigned"))
-        pend = self.history.pending()
+        pend = self.history.pending(self._roulette())
         ck = self.data.cid_to_key.get(cs["my_champ"])
         if pend and pend.get("key") == ck and pend.get("role") in ROLES and cs.get("assigned") in (None, "", pend["role"]):
             pk = self.data.combo_key(ck, pend["role"])
@@ -3035,9 +3173,11 @@ class Core:
         prev_phase = self.lol_state.get("phase")
         self.lol_state = st
         if st.get("phase") == "Matchmaking" and prev_phase not in ("Matchmaking", "ReadyCheck"):
-            self._queue_search_started(st.get("lobby_queue") or {})
+            self._queue_search_started(st.get("lobby_queue") or {}, st.get("lobby"))
         elif st.get("phase") not in ("Matchmaking", "ReadyCheck"):   # a declined ready check goes back to the search
             self._queue_ask = None
+        if st.get("phase") == "ChampSelect" and prev_phase != "ChampSelect":   # seen from its start: the role given
+            self._cs_from_start = prev_phase in ("Lobby", "Matchmaking", "ReadyCheck")   # then is the queue's doing
         if not st.get("connected"):
             if prev_connected:
                 self.overlay_info = None
@@ -3058,13 +3198,14 @@ class Core:
                 self._cs_champ = cs["my_champ"]
             if cs.get("assigned"):
                 self._cs_role = cs["assigned"]
-                self._autofill_keep(cs)
+            self._cs_check(cs)
             if cs.get("locked") and cs.get("my_champ") and cs["my_champ"] != self._cs_shown:
                 self._cs_shown = cs["my_champ"]
                 self._show_locked_guide(cs["my_champ"], cs.get("assigned"))
             self._maybe_import(cs)
         elif phase not in lol.GAME_PHASES:
             self._cs_shown = None
+            self._cs_first = None
         if phase != "ChampSelect":
             self._imported = None
             self.import_state = None
@@ -3072,14 +3213,17 @@ class Core:
         gid = game.get("gameId")
         if gid and phase in ("InProgress", "Reconnect") and gid != self._game_id:
             self._game_id = gid
-            had = self.history.pending()
+            roll = self._counting_roll()
+            if roll and self._cs_champ and self._official(roll) and self.data.cid_to_key.get(self._cs_champ) not in (None, roll["key"]):
+                self._auto_pause(roll, "other_champ")   # another champion went in (a late trade, champ select missed)
+                roll = None
+            had = self.history.pending(self._roulette())
             kind = self.history.on_game_start(gid, game.get("queueId"), self._cs_champ, ranked=self.ranked,
                                               role=self._cs_role, puuid=getattr(self.watcher, "_puuid", None),
-                                              custom=game.get("custom"), mode=game.get("mode"),
-                                              paused=self.profile["roulette_paused"])
-            if kind == "free" and had and self.history.pending() is had:
+                                              custom=game.get("custom"), mode=game.get("mode"), roll=roll)
+            if kind == "free" and had and had.get("status") == "pending":
                 self.set_status(T("Partie hors roulette (%s) : ton tirage %s %s reste en attente.") % (
-                    T("pause") if self.profile["roulette_paused"] else T(lol.queue_name(game.get("queueId"))) or T("autre mode"),
+                    T("pause") if had.get("paused") else T(lol.queue_name(game.get("queueId"))) or T("autre mode"),
                     self.data.champ_name(had["key"]), ROLE_LABEL.get(had["role"], "")), "teal")
             if kind == "roll":
                 msg = T("Partie lancée : le tirage est suivi jusqu'au résultat")

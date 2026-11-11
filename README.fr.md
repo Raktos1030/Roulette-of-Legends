@@ -24,11 +24,11 @@ Les applis sont en français et en anglais.
 | | Lite | Complète |
 |---|:---:|:---:|
 | Roulette solo et de groupe (jusqu'à 5 joueurs), mode chaos | ✓ | ✓ |
-| Roulette officielle (tout au hasard) ou perso (favoris, rôle ou champion choisi), en un clic | ✓ | ✓ |
+| Roulette officielle (tout au hasard) ou perso (favoris, rôle ou champion choisi), en solo ou en groupe : chacune garde son tirage | ✓ | ✓ |
 | Pas de doublon : aucun champion à un poste déjà tiré dans la journée ou la veille (chacun le sien en groupe) | ✓ | ✓ |
 | Favoris (rôles et champions) | ✓ | ✓ |
 | Classeur : une carte par champion et par poste, gagnée en jouant tes tirages officiels ; parcours de récompenses, skins de roulette | ✓ | ✓ |
-| Tirage suivi dans le client : autofill, ban ou champion pris détectés | ✓ | ✓ |
+| Tirage suivi dans le client : autofill, ban ou champion pris détectés ; file sur un autre poste, poste échangé ou autre champion : le tirage officiel passe en pause au lieu d'être perdu | ✓ | ✓ |
 | Historique des parties, résultats et LP | ✓ | ✓ |
 | Fiche de jeu pour chaque champion à chaque poste | | ✓ |
 | Runes, sorts d'invocateur et set d'objets importés dans LoL | | ✓ |
