@@ -1,7 +1,12 @@
-### What's new in 3.0.2
+### What's new in 3.1
 
-- Legal notices, privacy and credits on one page of the site, linked from Settings › About.
-- Anonymous statistics, still with no identifier: a new install, an update, a presence once a day and once a week. Settings › About › Privacy turns them off.
+- Four roulettes apart: solo or group, official or personal. Each keeps its own roll and its own pause; the tab you're on is the one that counts.
+- Your official roll is no longer lost when you don't play it as drawn: a search with another first position, a role swap in champ select or another champion locked pause it, and a personal roll is offered for your role. The role the queue gives you (second position, autofill) still gets an official reroll.
+- The group roll stays on screen, even after a restart, with its pause, the Joker and the rerolls.
+- A clearer rewards path: what each step still needs (roles done and short, the champion closest to mastery).
+- History: the roulette of each roll, paused rolls, a filter by roulette.
+- The binder on the home page, plainer texts here and there.
+- Anonymous statistics: a presence once a month too.
 
 ### What's new in 3.0
 
@@ -15,10 +20,15 @@
 - Guides for Hwei, Brand, Syndra, Vel'Koz, Xerath and Katarina ADC, Ashe, Galio, Ivern and Mel support; bot lane duos ranked again.
 - Sounds, an Animations setting (off: the app holds still), a smoother app.
 
-### Nouveautés de la 3.0.2
+### Nouveautés de la 3.1
 
-- Mentions légales, confidentialité et crédits sur une page du site, accessible depuis Réglages › À propos.
-- Statistiques anonymes, toujours sans identifiant : nouvelle installation, mise à jour, présence une fois par jour et une fois par semaine. Réglages › À propos › Confidentialité les coupe.
+- Quatre roulettes séparées : solo ou groupe, officielle ou perso. Chacune garde son tirage et sa pause ; l'onglet ouvert est celui qui compte.
+- Ton tirage officiel n'est plus perdu quand tu ne le joues pas comme tiré : une file lancée avec un autre poste en premier, un échange de rôle en sélection ou un autre champion verrouillé le mettent en pause, et un tirage perso t'est proposé pour ton poste. Le poste donné par la file (2e poste, autofill) donne toujours une relance officielle.
+- Le tirage du groupe reste affiché, même après un redémarrage, avec sa pause, le Joker et les relances.
+- Parcours de récompenses plus clair : ce qu'il manque à chaque palier (rôles faits et manquants, le champion le plus proche de la maîtrise).
+- Historique : la roulette de chaque tirage, les tirages en pause, un filtre par roulette.
+- Le classeur sur l'accueil, des textes plus simples un peu partout.
+- Statistiques anonymes : aussi une présence par mois.
 
 ### Nouveautés de la 3.0
 
